@@ -13,3 +13,5 @@
 - No statistical superiority claim is established. Do not merge heterogeneous historical runs into independent trial counts. Do not interpret no-contact, PROCESS_OK, or CELL_PASS as navigation success.
 - User subsequently required static unknown-obstacle stability before dynamics. The active bounded window is experiments/v649_static_stability/PROTOCOL.md; V648 evidence remains frozen. Do not start dynamics until the static gate is met. Check the V649 trial ledger and report before continuing; development successes and repeated seeds are not independent confirmation trials.
 
+
+- User renewed static acceptance authorization. Active confirmation is experiments/v650_static_acceptance/PROTOCOL.md plus POOL_EXTENSION_PREREG.md, shared 14400s window; see ACCEPTANCE_PROGRESS.json. Algorithm frozen before navigation; do not tune on confirmation failures. Even after passing static, wait for user review and explicit continuation before dynamics.
