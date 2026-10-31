@@ -1,10 +1,9 @@
 {
-  "status": "FROZEN_REV29_READY_FOR_FRESH_CONFIRMATION",
+  "status": "FROZEN_STATIC_CONFIRMATION_RUNNING",
   "active_window": "runs/v652_static_confirmation/confirmation_window01",
   "protocol": "experiments/v652_static_confirmation/PROTOCOL.md",
-  "pre_navigation_pool_extension": "experiments/v650_static_acceptance/POOL_EXTENSION_PREREG.md",
   "decision_freeze": "experiments/v652_static_confirmation/CANDIDATE_FREEZE.json",
-  "selection_freeze": "runs/v650_static_acceptance/acceptance_window02/SELECTION_FREEZE.json",
+  "selection_freeze": "runs/v652_static_confirmation/confirmation_window01/SELECTION_FREEZE.json",
   "goal": "24 fixed tasks >=23 strict arrivals; each class >=11/12; zero contacts; three-scene repeats and physical clearance audits",
   "dynamic_started": false,
   "dynamic_requires_user_review_and_explicit_continue": true,
@@ -19,5 +18,6 @@
     "strict_arrivals": 11,
     "non_successes": 2,
     "status": "FAILED"
-  }
+  },
+  "pre_navigation_screening_rule": "experiments/v652_static_confirmation/PRE_NAVIGATION_SCREENING_AMENDMENT.md"
 }

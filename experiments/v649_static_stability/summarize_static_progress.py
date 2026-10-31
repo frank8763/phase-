@@ -4,6 +4,8 @@ from pathlib import Path
 repo = Path(__file__).resolve().parents[2]
 dev = repo/'runs/v651_static_progress'
 for run in sorted(dev.glob('dev*')):
+    if not run.is_dir():
+        continue
     pair = run/'paired'
     result = pair/'geometry_memory/result.json'
     if result.exists():

@@ -1,5 +1,5 @@
 {
-  "status": "FROZEN_REV29_READY_FOR_FRESH_STATIC_CONFIRMATION",
+  "status": "FROZEN_STATIC_CONFIRMATION_RUNNING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": "experiments/v652_static_confirmation/run_static.py",
@@ -15,51 +15,13 @@
     "geometry_memory"
   ],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
-  "completed_development_tasks": [
-    {
-      "seed": 91000002,
-      "scene": "single_event",
-      "strict_safe_arrival": true,
-      "public_steps": 773,
-      "physics_steps": 6184,
-      "obstacle_contact_records": 0,
-      "unknown_contact_records": 0
-    },
-    {
-      "seed": 91000004,
-      "scene": "single_event",
-      "strict_safe_arrival": true,
-      "public_steps": 621,
-      "physics_steps": 4968,
-      "obstacle_contact_records": 0,
-      "unknown_contact_records": 0
-    },
-    {
-      "seed": 92000003,
-      "scene": "single_event",
-      "strict_safe_arrival": true,
-      "public_steps": 1131,
-      "physics_steps": 9048,
-      "obstacle_contact_records": 0,
-      "unknown_contact_records": 0
-    },
-    {
-      "seed": 92000005,
-      "scene": "legacy_two",
-      "strict_safe_arrival": true,
-      "public_steps": 650,
-      "physics_steps": 5200,
-      "obstacle_contact_records": 0,
-      "unknown_contact_records": 0
-    }
-  ],
   "independent_confirmation_trials": 0,
   "static_gate_met": false,
   "dynamic_started": false,
   "sac_training_updates": 0,
   "limitations": [
     "development cases including geometrically selected two-obstacle task, not an independent random success rate",
-    "24-scene confirmation and cross-scene repeats uncompleted",
+    "fresh V652 confirmation and three-scene repeats pending; previous V650 confirmation failed",
     "fixed rectangle self-configuration domain; geometry-infeasible tasks require a predefined evaluation contract",
     "static circle shape prior and known prior map, accurate localization",
     "finite local range hypotheses without calibrated continuous coverage",
@@ -98,5 +60,70 @@
     "distinct_tasks": 3,
     "all_strict_arrivals": true,
     "all_development_audits_passed": true
-  }
+  },
+  "selection_status": "T0_SCREENING_BEFORE_ANY_NAVIGATION",
+  "previous_v649_development_tasks": [
+    {
+      "seed": 91000002,
+      "scene": "single_event",
+      "strict_safe_arrival": true,
+      "public_steps": 773,
+      "physics_steps": 6184,
+      "obstacle_contact_records": 0,
+      "unknown_contact_records": 0
+    },
+    {
+      "seed": 91000004,
+      "scene": "single_event",
+      "strict_safe_arrival": true,
+      "public_steps": 621,
+      "physics_steps": 4968,
+      "obstacle_contact_records": 0,
+      "unknown_contact_records": 0
+    },
+    {
+      "seed": 92000003,
+      "scene": "single_event",
+      "strict_safe_arrival": true,
+      "public_steps": 1131,
+      "physics_steps": 9048,
+      "obstacle_contact_records": 0,
+      "unknown_contact_records": 0
+    },
+    {
+      "seed": 92000005,
+      "scene": "legacy_two",
+      "strict_safe_arrival": true,
+      "public_steps": 650,
+      "physics_steps": 5200,
+      "obstacle_contact_records": 0,
+      "unknown_contact_records": 0
+    }
+  ],
+  "completed_development_tasks": [
+    {
+      "seed": 91000002,
+      "scene": "single_event",
+      "strict_safe_arrival": true,
+      "public_steps": 789,
+      "physics_steps": 6312,
+      "full_development_audit_passed": true
+    },
+    {
+      "seed": 93000045,
+      "scene": "single_event",
+      "strict_safe_arrival": true,
+      "public_steps": 1027,
+      "physics_steps": 8216,
+      "full_development_audit_passed": true
+    },
+    {
+      "seed": 93000074,
+      "scene": "legacy_two",
+      "strict_safe_arrival": true,
+      "public_steps": 1046,
+      "physics_steps": 8368,
+      "full_development_audit_passed": true
+    }
+  ]
 }
