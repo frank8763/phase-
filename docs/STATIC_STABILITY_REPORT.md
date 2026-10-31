@@ -37,3 +37,5 @@
 源码与有界协议见[当前配置](../experiments/v649_static_stability/CANDIDATE_FREEZE.json)、[协议](../experiments/v649_static_stability/PROTOCOL.md)。本轮保守预算、完整尝试账本、必要负例、精选物理日志与文件哈希见[证据包](../evidence/static_stability_20261031/README.md)。旧的单场景地图消融仍见[V648报告](STATIC_UNKNOWN_REPORT.md)，不由本轮结果覆盖。
 
 下一步仍为静态：补齐预先定义的可行性任务协议，冻结配置后完成新场景确认、跨场景重复和机制消融；没有达到这些门槛前不进入动态。
+
+本轮源码、精选证据与报告已在本地Git提交。GitHub批量同步因网络超时尚未完成，远端核对仍为上一轮227c267；原始运行副本暂不删除。同步状态见[SYNC_STATUS.json](../SYNC_STATUS.json)，恢复同步后须核对远端清单，再执行已有哈希保护清理计划。
