@@ -1,11 +1,11 @@
 {
-  "status": "OVERNIGHT_VALIDATOR_DEVELOPMENT_RUNNING",
+  "status": "OVERNIGHT_FIXED_WORK_DEVELOPMENT_RUNNING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v654_static_overnight/run_static.py",
-  "decision_freeze": "experiments/v654_static_overnight/SOURCE_FREEZE.json",
-  "source_revision": "progress_29_joint_consistent_projection",
-  "protocol": "experiments/v654_static_overnight/PROTOCOL.md",
+  "active_entrypoint": "experiments/v656_static_deterministic_work/run_static.py",
+  "decision_freeze": "experiments/v656_static_deterministic_work/SOURCE_FREEZE.json",
+  "source_revision": "progress_30_fixed_search_work",
+  "protocol": "experiments/v656_static_deterministic_work/PROTOCOL.md",
   "report": "docs/STATIC_SAME_LIST_ACCEPTANCE_REPORT.md",
   "execution_window_closed": false,
   "selected_configuration_arguments": [
@@ -21,7 +21,7 @@
   "sac_training_updates": 0,
   "limitations": [
     "development cases including geometrically selected two-obstacle task, not an independent random success rate",
-    "V652 interrupted and V653 raw-contact-digest repeat failed; path-only diagnostic proven; V654 offline-validator development and V655 wholly fresh frozen confirmation pending",
+    "V654 actual repeat divergence from online wall-clock search; V655 unstarted due failed dependency; V656 fixed-work revision30 development and fresh V657 pending",
     "fixed rectangle self-configuration domain; geometry-infeasible tasks require a predefined evaluation contract",
     "static circle shape prior and known prior map, accurate localization",
     "finite local range hypotheses without calibrated continuous coverage",
@@ -36,9 +36,9 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "PENDING_NETWORK_TIMEOUT",
   "raw_run_cleanup_executed": false,
-  "active_run": "dev01_repeat_93000045_single_event",
+  "active_run": "dev30_seed93000074_legacy_two",
   "previous_development_window_closed": true,
-  "active_window": "runs/v654_static_overnight/development01",
+  "active_window": "runs/v656_static_deterministic_work/development02",
   "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
@@ -137,12 +137,12 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-10-31T23:02:35.771012+08:00",
+  "last_observed_at": "2026-10-31T23:29:59.988285+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": {
-    "protocol": "experiments/v655_static_fresh_confirmation/PROTOCOL.md",
-    "candidate_freeze": "experiments/v655_static_fresh_confirmation/CANDIDATE_FREEZE.json",
-    "requires_v654_development_passed": true,
+    "protocol": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
+    "candidate_freeze": "experiments/v657_static_fixed_work_confirmation/CANDIDATE_FREEZE.json",
+    "requires_v656_development_passed": true,
     "started": false
   }
 }

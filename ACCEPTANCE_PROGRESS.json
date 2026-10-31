@@ -1,7 +1,7 @@
 {
-  "status": "V653_FAILED_REPEAT_PATH_METADATA_V654_DEVELOPMENT",
-  "active_window": "runs/v654_static_overnight/development01",
-  "protocol": "experiments/v654_static_overnight/PROTOCOL.md",
+  "status": "V654_REAL_REPEAT_DIVERGENCE_V656_FIXED_WORK_DEVELOPMENT",
+  "active_window": "runs/v656_static_deterministic_work/development02",
+  "protocol": "experiments/v656_static_deterministic_work/PROTOCOL.md",
   "decision_freeze": "experiments/v652_static_confirmation/CANDIDATE_FREEZE.json",
   "selection_freeze": "runs/v652_static_confirmation/confirmation_window01/SELECTION_FREEZE.json",
   "goal": "24 fixed tasks >=23 strict arrivals; each class >=11/12; zero contacts; three-scene repeats and physical clearance audits",
@@ -27,7 +27,7 @@
   "original_interruption_retained": true,
   "deadline_unchanged": "2026-10-31T23:40:51.861+08:00",
   "decision_equivalence": "experiments/v653_static_log_recovery/DECISION_EQUIVALENCE.json",
-  "last_observed_at": "2026-10-31T23:02:35.771012+08:00",
+  "last_observed_at": "2026-10-31T23:29:59.988285+08:00",
   "source": "runs/v653_static_log_recovery/continuation01/CONFIRMATION_RESULTS.json",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "conditional_overnight_protocol": "experiments/v654_static_overnight/PROTOCOL.md",
@@ -43,5 +43,13 @@
     "raw_contact_digest_equal": false,
     "cause": "only verified generated XML absolute path in support classification provenance",
     "original_completion_unchanged": true
+  },
+  "v654_development": {
+    "passed": false,
+    "seed93000045_full_repeat_matched": true,
+    "seed91000002_full_repeat_matched": false,
+    "seed91000002_arrival": true,
+    "cause": "2s preferred search deadline crossed between2998 and3197 expansions under identical causal input",
+    "first_state_difference_step": 197
   }
 }
