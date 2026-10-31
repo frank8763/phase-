@@ -1,0 +1,35 @@
+{
+  "status": "STATIC_CONFIRMATION_FAILED",
+  "completed_tasks": 13,
+  "strict_arrivals": 11,
+  "selected_tasks": 24,
+  "gate_minimum_strict_arrivals": 23,
+  "stopped_early_after_two_non_successes": true,
+  "failures": [
+    {
+      "seed": 93000045,
+      "scene": "single_event",
+      "outcome": "HORIZON",
+      "public_steps": 1200,
+      "goal_distance_m": 2.091346586876113,
+      "planning_attempts": 10
+    },
+    {
+      "seed": 93000074,
+      "scene": "legacy_two",
+      "outcome": "HORIZON",
+      "public_steps": 1200,
+      "goal_distance_m": 5.932127011079942,
+      "planning_attempts": 13
+    }
+  ],
+  "obstacle_contacts_total": 0,
+  "dynamic_started": false,
+  "static_acceptance_passed": false,
+  "next_required": [
+    "diagnose_and_repair_progress_failures_under_bounded_development_protocol",
+    "freeze_revised_candidate_and_preregister_fresh_confirmation_tasks",
+    "pass_navigation_reproducibility_and_native_physics_safety_audits"
+  ],
+  "source": "acceptance_window02/CONFIRMATION_RESULTS.json"
+}

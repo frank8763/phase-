@@ -1,5 +1,5 @@
 {
-  "status": "FROZEN_STATIC_ACCEPTANCE_RUNNING",
+  "status": "CONFIRMATION_FAILED_PROGRESS_REPAIR_DEVELOPMENT",
   "active_window": "runs/v650_static_acceptance/acceptance_window02",
   "protocol": "experiments/v650_static_acceptance/PROTOCOL.md",
   "pre_navigation_pool_extension": "experiments/v650_static_acceptance/POOL_EXTENSION_PREREG.md",
@@ -7,5 +7,10 @@
   "selection_freeze": "runs/v650_static_acceptance/acceptance_window02/SELECTION_FREEZE.json",
   "goal": "24 fixed tasks >=23 strict arrivals; each class >=11/12; zero contacts; three-scene repeats and physical clearance audits",
   "dynamic_started": false,
-  "dynamic_requires_user_review_and_explicit_continue": true
+  "dynamic_requires_user_review_and_explicit_continue": true,
+  "completed_confirmation_tasks": 13,
+  "strict_arrivals": 11,
+  "non_successes": 2,
+  "development_protocol": "experiments/v651_static_progress/PROTOCOL.md",
+  "static_acceptance_passed": false
 }
