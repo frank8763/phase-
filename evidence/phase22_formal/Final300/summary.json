@@ -1,0 +1,119 @@
+{
+  "protocol": {
+    "frozen_at": "2026-09-14T18:20:45",
+    "policy": "training/phase20_unknown_obstacle_adaptation/checkpoints/stage_b_randomized/phase20_stage_b_325000_steps.zip",
+    "policy_sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f",
+    "baseline": {
+      "label": "phase21_v11",
+      "module": "envs.phase21.mkmini_phase21_v11_candidate_recovery_env",
+      "class": "MkMiniPhase21V11CandidateRecoveryEnv"
+    },
+    "proposed": {
+      "label": "phase22_v1",
+      "module": "envs.phase22.mkmini_phase22_v1_continuous_corridor_env",
+      "class": "MkMiniPhase22V1ContinuousCorridorEnv"
+    },
+    "seeds": [
+      22800,
+      23099
+    ],
+    "seed_count": 300,
+    "paired": true,
+    "per_rollout_hard_wall_seconds": 120.0,
+    "strict_collision": [
+      "robot_sample_points(env)",
+      "check_map_penetration(env, margin=0.02)",
+      "robot_obstacle_contact(env)"
+    ],
+    "training": false,
+    "post_holdout_tuning_allowed": false
+  },
+  "summary": {
+    "phase21_v11": {
+      "n": 300,
+      "safe_success_count": 165,
+      "safe_success_rate": 0.55,
+      "safe_success_95ci_wilson": [
+        0.4934256045239535,
+        0.6053100983535921
+      ],
+      "collision_count": 57,
+      "collision_rate": 0.19,
+      "collision_95ci_wilson": [
+        0.14963485033440665,
+        0.23820379182481183
+      ],
+      "env_timeout_count": 0,
+      "wall_timeout_count": 78,
+      "worker_error_count": 0,
+      "unknown_penetration_count": 36,
+      "known_penetration_count": 20,
+      "robot_obstacle_contact_count": 0,
+      "map_penetration_count": 0,
+      "mean_steps": 83.49549549549549,
+      "mean_wall_seconds": 50.60550793121307,
+      "p95_wall_seconds": 120.15924081397534,
+      "planner_call_count_total": 663,
+      "planner_call_latency_mean_seconds": 4.502058920464292,
+      "planner_call_latency_p95_seconds": 11.08190059498883,
+      "planner_call_latency_max_seconds": 28.498787171032745,
+      "planner_deadline_exceed_count": 78,
+      "real_time_1p5s_gate_pass": false
+    },
+    "phase22_v1": {
+      "n": 300,
+      "safe_success_count": 214,
+      "safe_success_rate": 0.7133333333333334,
+      "safe_success_95ci_wilson": [
+        0.6597183711272249,
+        0.7615539611503023
+      ],
+      "collision_count": 65,
+      "collision_rate": 0.21666666666666667,
+      "collision_95ci_wilson": [
+        0.1737878350698321,
+        0.2667098486240773
+      ],
+      "env_timeout_count": 1,
+      "wall_timeout_count": 20,
+      "worker_error_count": 0,
+      "unknown_penetration_count": 32,
+      "known_penetration_count": 31,
+      "robot_obstacle_contact_count": 0,
+      "map_penetration_count": 0,
+      "mean_steps": 100.99642857142857,
+      "mean_wall_seconds": 29.32574669988719,
+      "p95_wall_seconds": 120.10143631082028,
+      "planner_call_count_total": 280,
+      "planner_call_latency_mean_seconds": 7.174304104530789,
+      "planner_call_latency_p95_seconds": 22.725684179519888,
+      "planner_call_latency_max_seconds": 35.28843480499927,
+      "planner_deadline_exceed_count": 20,
+      "real_time_1p5s_gate_pass": false
+    }
+  },
+  "paired_statistics": {
+    "n_pairs": 300,
+    "scenario_mismatch_count": 0,
+    "both_success": 164,
+    "phase22_only_success": 50,
+    "phase21_only_success": 1,
+    "neither_success": 85,
+    "safe_success_rate_difference_phase22_minus_phase21": 0.16333333333333333,
+    "safe_success_rate_difference_95ci_paired_bootstrap": [
+      0.12333333333333334,
+      0.20666666666666667
+    ],
+    "safe_success_mcnemar_exact_p": 4.618527782440651e-14,
+    "phase22_only_collision": 22,
+    "phase21_only_collision": 14,
+    "collision_rate_difference_phase22_minus_phase21": 0.026666666666666672,
+    "collision_mcnemar_exact_p": 0.2429849540349096
+  },
+  "conclusion": {
+    "confirmatory_accuracy_safety_gate_pass": false,
+    "real_time_gate_phase22_v1_pass": false,
+    "post_holdout_tuning_allowed": false,
+    "interpretation": "FINAL_HOLDOUT_DID_NOT_CONFIRM_PRE_REGISTERED_GAIN"
+  }
+}

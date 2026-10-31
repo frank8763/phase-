@@ -1,0 +1,3730 @@
+{
+  "completed_pairs": 40,
+  "formal_complete": true,
+  "preregistration": {
+    "baseline": "MkMiniPhase21V11CandidateRecoveryEnv",
+    "candidate_seed_pool": [
+      23400,
+      23999
+    ],
+    "control_domain_randomization": false,
+    "external_post_ready_watchdog_s": 135,
+    "final_holdout_22800_23099_reused": false,
+    "g2a_23100_23179_reused": false,
+    "long_horizon_rule": {
+      "astar_path_length_m_min": 3.0,
+      "euclidean_start_goal_m_min": 2.5
+    },
+    "max_steps": 600,
+    "method_tuning_after_open": false,
+    "method_wall_timeout_s": 120,
+    "model_sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f",
+    "paper_runtime_accelerators": false,
+    "penetration_margin": 0.02,
+    "primary_endpoint": "collision-free task success",
+    "proposed": "MkMiniPhase22V1ContinuousCorridorEnv",
+    "protocol_version": "G2B_LH40_V1_20260915",
+    "purpose": "fresh long-horizon randomized unknown-obstacle stress test",
+    "randomized": true,
+    "safe_clearance": 0.35,
+    "secondary_metrics": [
+      "collision",
+      "wall_timeout",
+      "env_timeout",
+      "astar_path_length_m",
+      "euclidean_start_goal_m",
+      "steps",
+      "minimum_unknown_clearance",
+      "phase22_attempted",
+      "phase22_corridor_success",
+      "method_wall_seconds"
+    ],
+    "selection_order": "ascending_seed_first_eligible",
+    "selection_rollout_performed": false,
+    "selection_uses_outcomes": false,
+    "statistics": [
+      "Wilson95",
+      "paired bootstrap20k",
+      "exact McNemar"
+    ],
+    "success_dist_m": 0.9,
+    "target_pairs": 40,
+    "terminate_on_collision": true
+  },
+  "protocol_failures": [],
+  "protocol_version": "G2B_LH40_V1_20260915",
+  "rows": [
+    {
+      "astar_path_length_m": 4.11293592255573,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.041195496916770935,
+        "safe_success": true,
+        "steps": 78,
+        "success": true,
+        "timeout": false,
+        "total_reward": 464.75140704270575,
+        "trigger_risk": 0.0,
+        "wall_seconds": 8.479767323005944,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.6587625414627785,
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.041195496916770935,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 78,
+        "success": true,
+        "timeout": false,
+        "total_reward": 464.75140704270575,
+        "trigger_risk": 0.0,
+        "wall_seconds": 8.629475047993765,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "f16b626938e5e6d2a2e390c55f65b21c292de16f9d2f3ff91d6b501f07f14704",
+        "endpoint_clearance": 1.1534187,
+        "goal_xy": [
+          0.8676059,
+          4.1068306
+        ],
+        "original_path_hash": "3ca777988838606567b0a6e67fa4172e595c8a88a9cc2ea3e25affe452b5bc9c",
+        "rect_hash": "d17ff78eacda5a6c6ec5af5250fea34c692565073f378196ba079604ce18e569",
+        "robot_xy": [
+          2.8,
+          1.0
+        ],
+        "unknown_hash": "4728317f3d8e217652f6efb72747be160d5ede17dea6f3e4bf63c5aed09b86b7",
+        "unknown_lateral_offset": 0.5197553,
+        "unknown_path_fraction": 0.6467517,
+        "unknown_radius": 0.1359194
+      },
+      "seed": 23403
+    },
+    {
+      "astar_path_length_m": 3.240138943673414,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.16232499480247498,
+        "safe_success": true,
+        "steps": 58,
+        "success": true,
+        "timeout": false,
+        "total_reward": 485.1309163361378,
+        "trigger_risk": 0.24727879130059843,
+        "wall_seconds": 13.119512068995391,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.057591455162519,
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.16232499480247498,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 58,
+        "success": true,
+        "timeout": false,
+        "total_reward": 485.1309163361378,
+        "trigger_risk": 0.24727879130059843,
+        "wall_seconds": 12.87986686899967,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "134e73ed271aeaa0074c97e0c5ac24360f687b445a592d273ebab080d9f2e6d0",
+        "endpoint_clearance": 1.293793,
+        "goal_xy": [
+          -2.7930651,
+          -1.8201478
+        ],
+        "original_path_hash": "76774071d7e5add22d0c2a4e4394188010d8bc9024815b7a0b2082e4dcccbeb8",
+        "rect_hash": "e112f74e0818404223015bece2b16b5a466985776bd832d0e71c976553d6527c",
+        "robot_xy": [
+          -0.2,
+          -0.2
+        ],
+        "unknown_hash": "26d150aa6735ad05337b599b85336636bb23b54f20814de774cedb528084e7f6",
+        "unknown_lateral_offset": 0.4472066,
+        "unknown_path_fraction": 0.472261,
+        "unknown_radius": 0.1819039
+      },
+      "seed": 23404
+    },
+    {
+      "astar_path_length_m": 4.24767352658591,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.7933905124664307,
+        "safe_success": false,
+        "steps": 1,
+        "success": false,
+        "timeout": false,
+        "total_reward": -63.3664235641244,
+        "trigger_risk": 0.0,
+        "wall_seconds": 0.10189702099887654,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.2076484359456385,
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.7933905124664307,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 1,
+        "success": false,
+        "timeout": false,
+        "total_reward": -63.3664235641244,
+        "trigger_risk": 0.0,
+        "wall_seconds": 0.09795758299878798,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "74c27263185d794a6296876fa96a69005497de9ce823fe08283b4543a0628856",
+        "endpoint_clearance": 1.381858,
+        "goal_xy": [
+          -3.6096649,
+          -3.7813807
+        ],
+        "original_path_hash": "808ff345063dee60e3126ebf6c213a3b6732748abbe598a718836145f25bbb41",
+        "rect_hash": "8a907469c46146f291ffacb2c605ce866c61d1a149257e1229c3820174df07c7",
+        "robot_xy": [
+          -3.2,
+          -0.6
+        ],
+        "unknown_hash": "68dcd798299197a7353c45be917fafc2fc8de7d4301c2d90cd1ccb5b86f3b9dd",
+        "unknown_lateral_offset": 0.4816935,
+        "unknown_path_fraction": 0.550029,
+        "unknown_radius": 0.146988
+      },
+      "seed": 23406
+    },
+    {
+      "astar_path_length_m": 3.311279466330424,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.041609570384025574,
+        "safe_success": true,
+        "steps": 63,
+        "success": true,
+        "timeout": false,
+        "total_reward": 483.0855766110931,
+        "trigger_risk": 0.19807204902863013,
+        "wall_seconds": 10.403840708000644,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.132403055567061,
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.041609570384025574,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 63,
+        "success": true,
+        "timeout": false,
+        "total_reward": 483.0855766110931,
+        "trigger_risk": 0.19807204902863013,
+        "wall_seconds": 10.178704642006778,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "e3baf5307fb75c583601e96ce321c959889cbe909092a3f3d7020790ba2dca99",
+        "endpoint_clearance": 1.0673301,
+        "goal_xy": [
+          0.2348595,
+          -0.2375169
+        ],
+        "original_path_hash": "35587ae49a89a5db500de331dbb0264753b9f09a71d1eb98898c0c1b14e70e73",
+        "rect_hash": "cb0ed3f312d03e523b39b1ca7ed026a0441c3b6c54b93cd68c5443f35effee07",
+        "robot_xy": [
+          1.0,
+          2.8
+        ],
+        "unknown_hash": "90b427accdb62985cc3c7b777430eeafcf67a540e1c44c097dfd39d7e9a2e120",
+        "unknown_lateral_offset": 0.4636206,
+        "unknown_path_fraction": 0.6404414,
+        "unknown_radius": 0.1478319
+      },
+      "seed": 23409
+    },
+    {
+      "astar_path_length_m": 5.3623190173392725,
+      "baseline": {
+        "collision": false,
+        "env_timeout": false,
+        "final_class": "WALL_TIMEOUT",
+        "safe_success": false,
+        "success": false,
+        "wall_seconds": 120.00003023900001,
+        "wall_timeout": true
+      },
+      "euclidean_start_goal_m": 2.6184892112274682,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.09924370050430298,
+        "phase22_attempted": true,
+        "phase22_candidate_count": 648,
+        "phase22_corridor_success": true,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": 0.006806612014770508,
+        "phase22_selected_known_margin": 0.09410563111305237,
+        "phase22_selected_p95_curvature": 0.6506457924842834,
+        "phase22_selected_sensor_margin": 0.2846948504447937,
+        "safe_success": true,
+        "steps": 392,
+        "success": true,
+        "timeout": false,
+        "total_reward": 270.3651659186095,
+        "trigger_risk": 0.3489242461905733,
+        "wall_seconds": 85.29527980199998,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "cb19dfc404b90d3ae87b5f4c790ad303eefcf0f94d9be76f028e8507fa10ee3a",
+        "endpoint_clearance": 1.0437536,
+        "goal_xy": [
+          0.8903704,
+          3.6691294
+        ],
+        "original_path_hash": "9b943f09b5555d1b63fce6e8e9669c41fe7db79772b486b73f55c5b17c2692f0",
+        "rect_hash": "6139be5c0e36de12f451403a43a5334db706f0aaf2282670f260f852e8d75585",
+        "robot_xy": [
+          -1.4,
+          2.4000001
+        ],
+        "unknown_hash": "effc9016d9362696e400bd8d5bcf784e1da42d9d93b1bf66f3d659f3d30df5fa",
+        "unknown_lateral_offset": 0.327755,
+        "unknown_path_fraction": 0.5660504,
+        "unknown_radius": 0.1720753
+      },
+      "seed": 23410
+    },
+    {
+      "astar_path_length_m": 3.4384824587909124,
+      "baseline": {
+        "collision": false,
+        "env_timeout": false,
+        "final_class": "WALL_TIMEOUT",
+        "safe_success": false,
+        "success": false,
+        "wall_seconds": 120.00002010499998,
+        "wall_timeout": true
+      },
+      "euclidean_start_goal_m": 2.869643286438821,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "collision": false,
+        "env_timeout": false,
+        "external_watchdog_enforced": true,
+        "external_watchdog_observed_elapsed_s": 135.14569906399993,
+        "final_class": "WALL_TIMEOUT",
+        "phase22_attempted": null,
+        "phase22_candidate_count": null,
+        "phase22_corridor_success": null,
+        "phase22_failure_reason": "TELEMETRY_UNAVAILABLE_EXTERNAL_WATCHDOG",
+        "phase22_telemetry_unavailable": true,
+        "safe_success": false,
+        "success": false,
+        "wall_seconds": 120.0,
+        "wall_timeout": true,
+        "wall_timeout_protocol_s": 120
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "4520e9484185a7ace52b60aa9980dbcdc5a0bf9007d85f64deec1dd4ea86cf9f",
+        "endpoint_clearance": 1.1788199,
+        "goal_xy": [
+          -1.3493516,
+          2.5069578
+        ],
+        "original_path_hash": "d06a334bd46e2b15a87e74e2bcdae956d4e264b81748f276c860668708967e0b",
+        "rect_hash": "69c04446d9e43448c2e19923bc614f38b349a90b5b91f6e31abe2251a7ad2b37",
+        "robot_xy": [
+          -3.8,
+          4.0
+        ],
+        "unknown_hash": "e27c817798af41b766ee49c0475c0b38cf255ca3fff7de72fc3b24fdacfdcee6",
+        "unknown_lateral_offset": 0.4211078,
+        "unknown_path_fraction": 0.64463,
+        "unknown_radius": 0.1450337
+      },
+      "seed": 23411
+    },
+    {
+      "astar_path_length_m": 6.04013899334608,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.003852859139442444,
+        "safe_success": false,
+        "steps": 323,
+        "success": false,
+        "timeout": false,
+        "total_reward": -291.257457382876,
+        "trigger_risk": 0.18049586993138125,
+        "wall_seconds": 51.10831709800004,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.360675949736115,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.003852859139442444,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 323,
+        "success": false,
+        "timeout": false,
+        "total_reward": -291.257457382876,
+        "trigger_risk": 0.18049586993138125,
+        "wall_seconds": 51.340543177000086,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "3a5bb24a0f916e0f57fec4981cfab8438940a2d0ba7a717a55bab74f406952f6",
+        "endpoint_clearance": 1.2413601,
+        "goal_xy": [
+          1.2823557,
+          2.1345966
+        ],
+        "original_path_hash": "789415a77b32bb19af84ab8b7fc2841de36fd3223ce2278c74fe111a27dfe82e",
+        "rect_hash": "507fcf8d46f6a88f1aa8ba4218f2c3b4abe59e62d3a8a8bbd41f74a6d5b5d31a",
+        "robot_xy": [
+          -1.2,
+          4.4000001
+        ],
+        "unknown_hash": "cb78b11f38b9510ea881040c95c7af6ff753ee765da1aca1ca29c701d52e72d0",
+        "unknown_lateral_offset": 0.447479,
+        "unknown_path_fraction": 0.634403,
+        "unknown_radius": 0.1412005
+      },
+      "seed": 23412
+    },
+    {
+      "astar_path_length_m": 3.601656476740322,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.22022582590579987,
+        "safe_success": false,
+        "steps": 243,
+        "success": false,
+        "timeout": false,
+        "total_reward": -221.28165150302794,
+        "trigger_risk": 0.25280881039100817,
+        "wall_seconds": 53.42881223200004,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.1681948571761884,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.22022582590579987,
+        "phase22_attempted": true,
+        "phase22_candidate_count": 648,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "no_continuous_corridor",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 243,
+        "success": false,
+        "timeout": false,
+        "total_reward": -221.28165150302794,
+        "trigger_risk": 0.25280881039100817,
+        "wall_seconds": 57.20875083399994,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "da862efe8ce9f85ef5839c09a7e37aa77d5688f8ad6940c41f3c9a93c911d2ed",
+        "endpoint_clearance": 1.2448702,
+        "goal_xy": [
+          -1.4889358,
+          1.09942
+        ],
+        "original_path_hash": "296deaa69dc7259e317a48d5f595283bc8fd3dfa653555cbc7ca3eeee67edacb",
+        "rect_hash": "c37e633df02f89fcd1157dbda43397c0f91eb06801a18e4646a35c0034b938f1",
+        "robot_xy": [
+          1.4,
+          2.4000001
+        ],
+        "unknown_hash": "c728f3bfcd2e3dec99224c011b159e68178bb3c32abfcc639263acd22c0b0e22",
+        "unknown_lateral_offset": 0.4433023,
+        "unknown_path_fraction": 0.5403265,
+        "unknown_radius": 0.165367
+      },
+      "seed": 23414
+    },
+    {
+      "astar_path_length_m": 3.6928311253705965,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.10389070212841034,
+        "safe_success": true,
+        "steps": 64,
+        "success": true,
+        "timeout": false,
+        "total_reward": 444.3866629620641,
+        "trigger_risk": 0.2403707819783453,
+        "wall_seconds": 6.800086401000044,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.547771090636328,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.10389070212841034,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 64,
+        "success": true,
+        "timeout": false,
+        "total_reward": 444.3866629620641,
+        "trigger_risk": 0.2403707819783453,
+        "wall_seconds": 6.709225501999981,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "2e20e81613397d25376fbe0a3376c00d58a575e1137c519be1351f3dcc973703",
+        "endpoint_clearance": 1.0818626,
+        "goal_xy": [
+          0.2819572,
+          0.2902548
+        ],
+        "original_path_hash": "84d1e3b7c1dd8d5355fe39fd0f7e10b33d9dbf31765cc20160ca1f6f27c541ab",
+        "rect_hash": "e112f74e0818404223015bece2b16b5a466985776bd832d0e71c976553d6527c",
+        "robot_xy": [
+          0.8,
+          3.8
+        ],
+        "unknown_hash": "f24342fe0a02592657e7da9524ae402049904efb69f485acdf65d47332523d47",
+        "unknown_lateral_offset": 0.4282301,
+        "unknown_path_fraction": 0.4512634,
+        "unknown_radius": 0.190921
+      },
+      "seed": 23415
+    },
+    {
+      "astar_path_length_m": 3.964181834358281,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.019125550985336304,
+        "safe_success": false,
+        "steps": 207,
+        "success": false,
+        "timeout": false,
+        "total_reward": -456.7689200154682,
+        "trigger_risk": 0.7831908529455012,
+        "wall_seconds": 31.410976824000045,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.692800926700111,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.019125550985336304,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 207,
+        "success": false,
+        "timeout": false,
+        "total_reward": -456.7689200154682,
+        "trigger_risk": 0.7831908529455012,
+        "wall_seconds": 31.054237059000002,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "0e428073c97471ff684ccadb4c28e975370d716995d6f21f14bbe591abdb057c",
+        "endpoint_clearance": 1.0203043,
+        "goal_xy": [
+          0.7825159,
+          -0.9183235
+        ],
+        "original_path_hash": "844be95c7b7ed810aa0c80cdc32d9fcfd79febdfbd911e1b0fdffef1c9b98076",
+        "rect_hash": "4ad031db032c999ca6cb0056c94b32af9cce8f0776483f27a0a582838b9a0651",
+        "robot_xy": [
+          -2.5999999,
+          -2.4000001
+        ],
+        "unknown_hash": "72c9c2c2ed72b0b267c1d7f8380c79bc194086bc9d2ae422d6b541e0563a6416",
+        "unknown_lateral_offset": 0.3397735,
+        "unknown_path_fraction": 0.4203438,
+        "unknown_radius": 0.1929977
+      },
+      "seed": 23416
+    },
+    {
+      "astar_path_length_m": 4.050184689361051,
+      "baseline": {
+        "chosen_side": "LEFT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.019565165042877197,
+        "safe_success": false,
+        "steps": 75,
+        "success": false,
+        "timeout": false,
+        "total_reward": -95.23571165845502,
+        "trigger_risk": 0.1968975890937998,
+        "wall_seconds": 12.693256376000022,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.7252492845374645,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.019565165042877197,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 75,
+        "success": false,
+        "timeout": false,
+        "total_reward": -95.23571165845502,
+        "trigger_risk": 0.1968975890937998,
+        "wall_seconds": 12.446842584000024,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "46d6c482bfa0ecfa1ecedf94cc46a9c64d90a26cfc3c8cf016b2c7ecc699a060",
+        "endpoint_clearance": 1.1060098,
+        "goal_xy": [
+          -0.3598983,
+          -0.608902
+        ],
+        "original_path_hash": "f0be74705c254f262119af4ec4fd67f8a0e3ff38c7117e38da7e88a3824566ae",
+        "rect_hash": "18bb171d73041a3a4742b415d2981c793a06972653a923385a2b52c1540b3fe4",
+        "robot_xy": [
+          3.0,
+          1.0
+        ],
+        "unknown_hash": "706fe860df453a945794fa93d34229e381ba463bb188fe9bd12b1fd9e2471bcd",
+        "unknown_lateral_offset": 0.4412774,
+        "unknown_path_fraction": 0.5538236,
+        "unknown_radius": 0.1311475
+      },
+      "seed": 23417
+    },
+    {
+      "astar_path_length_m": 5.7664868061291195,
+      "baseline": {
+        "collision": false,
+        "env_timeout": false,
+        "external_watchdog_enforced": true,
+        "external_watchdog_observed_elapsed_s": 135.14702595400001,
+        "final_class": "WALL_TIMEOUT",
+        "safe_success": false,
+        "success": false,
+        "wall_seconds": 120.0,
+        "wall_timeout": true,
+        "wall_timeout_protocol_s": 120
+      },
+      "euclidean_start_goal_m": 3.728345868304401,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "collision": false,
+        "env_timeout": false,
+        "final_class": "WALL_TIMEOUT",
+        "phase22_attempted": true,
+        "phase22_candidate_count": 648,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "no_continuous_corridor",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "success": false,
+        "wall_seconds": 120.00002393000011,
+        "wall_timeout": true
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "131969181828d065574d0f424e4fe7e8042fcd8dfe934e60daa36038c9326e65",
+        "endpoint_clearance": 1.051138,
+        "goal_xy": [
+          -2.4451914,
+          -2.5251305
+        ],
+        "original_path_hash": "7f5e1dfa8865c43151f781037e9cafd50f6c7a619b88bf815ebbdd48c8deb067",
+        "rect_hash": "0915abaa9c6845fc98fd1fe4b21688a118984f65621587a1a3f846b92c7e8f0f",
+        "robot_xy": [
+          -2.5999999,
+          1.2
+        ],
+        "unknown_hash": "2a1097e7294ce87d7234eafc7002e27503d5f0f17b2e9d29e0d924a0a4d18804",
+        "unknown_lateral_offset": 0.4785428,
+        "unknown_path_fraction": 0.5829682,
+        "unknown_radius": 0.1675173
+      },
+      "seed": 23418
+    },
+    {
+      "astar_path_length_m": 3.8870105736296794,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.09124311804771423,
+        "safe_success": true,
+        "steps": 97,
+        "success": true,
+        "timeout": false,
+        "total_reward": 377.7739123481907,
+        "trigger_risk": 0.288153886523513,
+        "wall_seconds": 52.80107786799999,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.6472597494880907,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.08326256275177002,
+        "phase22_attempted": true,
+        "phase22_candidate_count": 648,
+        "phase22_corridor_success": true,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": 0.003908097743988037,
+        "phase22_selected_known_margin": 0.06887394189834595,
+        "phase22_selected_p95_curvature": 0.41727834939956665,
+        "phase22_selected_sensor_margin": 0.051207929849624634,
+        "safe_success": false,
+        "steps": 112,
+        "success": false,
+        "timeout": false,
+        "total_reward": -275.66315694656714,
+        "trigger_risk": 0.3702023282307844,
+        "wall_seconds": 51.84468656199999,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "a6bdb0152c3258485770a2f7479f1e521e5a555e9432ffab08f3a6a8b83d805b",
+        "endpoint_clearance": 1.0160154,
+        "goal_xy": [
+          3.0685363,
+          0.9277232
+        ],
+        "original_path_hash": "34da8c6a6a61a8142923368a73c72fc9f0ab90726ab498d7f96571514e6be0ed",
+        "rect_hash": "7a6539885b4912760f3b86d6189aa4c9c09fc0da3db9c4292e9226af0f5f7fe8",
+        "robot_xy": [
+          -0.4,
+          -0.2
+        ],
+        "unknown_hash": "49a9fd87e4f086571906cec165c049f40bc970ebefce040bace16e5fe983c53a",
+        "unknown_lateral_offset": 0.4539618,
+        "unknown_path_fraction": 0.6304598,
+        "unknown_radius": 0.1896109
+      },
+      "seed": 23419
+    },
+    {
+      "astar_path_length_m": 3.568851876627628,
+      "baseline": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.3967215418815613,
+        "safe_success": true,
+        "steps": 96,
+        "success": true,
+        "timeout": false,
+        "total_reward": 412.2400660992781,
+        "trigger_risk": 0.5656482328361234,
+        "wall_seconds": 11.979216297999983,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.246375991922799,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.3967215418815613,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 96,
+        "success": true,
+        "timeout": false,
+        "total_reward": 412.2400660992781,
+        "trigger_risk": 0.5656482328361234,
+        "wall_seconds": 12.077260122999974,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "f2ca689857a7d14fe82ed23b36af49a938c2f6d71784f4ad8718e42febdffaba",
+        "endpoint_clearance": 1.1956472,
+        "goal_xy": [
+          -0.3951315,
+          -0.4192742
+        ],
+        "original_path_hash": "4fe19f2a2c4e339f888534023bf2a03d0b00861133d7629320a9ff16db5a6652",
+        "rect_hash": "76b348ec61808819b8e83a74088d04fa80f189ca1964ff270b4944acd514419d",
+        "robot_xy": [
+          -2.8,
+          -2.5999999
+        ],
+        "unknown_hash": "dd8ae4a6fe6991f4c1523099d6c7d5130eee59d138c710fbb87dd401c238d699",
+        "unknown_lateral_offset": 0.3636933,
+        "unknown_path_fraction": 0.6751605,
+        "unknown_radius": 0.1646417
+      },
+      "seed": 23420
+    },
+    {
+      "astar_path_length_m": 3.555639862815068,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.1407005935907364,
+        "safe_success": true,
+        "steps": 94,
+        "success": true,
+        "timeout": false,
+        "total_reward": 377.0507787757131,
+        "trigger_risk": 0.216011926541158,
+        "wall_seconds": 9.902681755999993,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 2.9288613977283284,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.1407005935907364,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 94,
+        "success": true,
+        "timeout": false,
+        "total_reward": 377.0507787757131,
+        "trigger_risk": 0.216011926541158,
+        "wall_seconds": 9.704462737999961,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "c07a3e2d82d037776511a41094ed8a7cd3a47d123ca46dd2d7bc4cd0d6304d40",
+        "endpoint_clearance": 1.0999391,
+        "goal_xy": [
+          -1.6823746,
+          -1.9078733
+        ],
+        "original_path_hash": "b8c2208037b1ca80f584bf23bb2838c48162a71039021597b1450d916f33101f",
+        "rect_hash": "cf733f945f0cc538e27e2dae047bd0f650bd930ca3173fbe0b23b57031b3ee2c",
+        "robot_xy": [
+          -4.4000001,
+          -3.0
+        ],
+        "unknown_hash": "4120438d76b9e958ecf23ef6d55e4da201c418c4c7bbfd3f9d4636878e749c20",
+        "unknown_lateral_offset": 0.3543632,
+        "unknown_path_fraction": 0.5772093,
+        "unknown_radius": 0.1548718
+      },
+      "seed": 23429
+    },
+    {
+      "astar_path_length_m": 4.7966336101829175,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.08261866867542267,
+        "safe_success": true,
+        "steps": 96,
+        "success": true,
+        "timeout": false,
+        "total_reward": 463.7570550031646,
+        "trigger_risk": 0.21248608354895385,
+        "wall_seconds": 12.601278233000016,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.7127772731090074,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.08261866867542267,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 96,
+        "success": true,
+        "timeout": false,
+        "total_reward": 463.7570550031646,
+        "trigger_risk": 0.21248608354895385,
+        "wall_seconds": 12.53305605300011,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "6d807bcd33309e61ac2992cbb8275661fb0776821629723571cb6c794cd32ced",
+        "endpoint_clearance": 1.3205992,
+        "goal_xy": [
+          -2.11765,
+          1.1332926
+        ],
+        "original_path_hash": "172d9ec5590a87d7435ad57db9f107014da94400674be20717c8e979e5ae0ec7",
+        "rect_hash": "c2957c83791fc54595de3eb8b2144e75004a0d6e954cbdf1435272980abcdd0e",
+        "robot_xy": [
+          1.2,
+          2.8
+        ],
+        "unknown_hash": "d2e866a958271feb9ff57d9c850e31467d5042378830207c53977467417c271f",
+        "unknown_lateral_offset": 0.3891924,
+        "unknown_path_fraction": 0.4821084,
+        "unknown_radius": 0.1583536
+      },
+      "seed": 23431
+    },
+    {
+      "astar_path_length_m": 4.833459541702185,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.12178541719913483,
+        "safe_success": true,
+        "steps": 88,
+        "success": true,
+        "timeout": false,
+        "total_reward": 441.04993557032384,
+        "trigger_risk": 0.2814241998725469,
+        "wall_seconds": 14.011726984000006,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.558009071911342,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.12178541719913483,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 88,
+        "success": true,
+        "timeout": false,
+        "total_reward": 441.04993557032384,
+        "trigger_risk": 0.2814241998725469,
+        "wall_seconds": 14.38707892299999,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "c3e196536178a9448342c85283c983cd3cdccf153ff7a38cff0183b2a105178b",
+        "endpoint_clearance": 1.0928817,
+        "goal_xy": [
+          -3.768151,
+          4.2875671
+        ],
+        "original_path_hash": "5ba94561d92b2b9386779a19463666622513b7f1f6e037161eb0c4f8a571363e",
+        "rect_hash": "e112f74e0818404223015bece2b16b5a466985776bd832d0e71c976553d6527c",
+        "robot_xy": [
+          -2.0,
+          1.2
+        ],
+        "unknown_hash": "a2b30ff835891ab3adf8ca0703e37ccac852daa9fefd13f38369310dae4293fe",
+        "unknown_lateral_offset": 0.4163804,
+        "unknown_path_fraction": 0.4830107,
+        "unknown_radius": 0.1977604
+      },
+      "seed": 23436
+    },
+    {
+      "astar_path_length_m": 5.445161773354534,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": -0.003487318754196167,
+        "safe_success": false,
+        "steps": 114,
+        "success": false,
+        "timeout": false,
+        "total_reward": -134.4099643180922,
+        "trigger_risk": 0.0,
+        "wall_seconds": 12.37552588699998,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 2.621018485219164,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": -0.003487318754196167,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 114,
+        "success": false,
+        "timeout": false,
+        "total_reward": -134.4099643180922,
+        "trigger_risk": 0.0,
+        "wall_seconds": 12.367124549999971,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "e29c866ed638a7cdead21dea9c48d3a62aeddacace5791c9864ac7d7dcc9bcc5",
+        "endpoint_clearance": 1.353727,
+        "goal_xy": [
+          -1.6639466,
+          2.5062971
+        ],
+        "original_path_hash": "84a9e61b2f391c4b095780cfc778661ff91808eec39ab8c79d21ff6a82a0bffa",
+        "rect_hash": "358e08b5397b4cddd9ee5c5dc9b2cfc05d738e617c3d0101401c97de0f151bae",
+        "robot_xy": [
+          0.8,
+          3.4000001
+        ],
+        "unknown_hash": "c74cfa41457f78301c9066e45aa1b62a4b9940d4ea50e14ba0bf4169d74b794a",
+        "unknown_lateral_offset": 0.4682138,
+        "unknown_path_fraction": 0.6051735,
+        "unknown_radius": 0.130664
+      },
+      "seed": 23437
+    },
+    {
+      "astar_path_length_m": 3.5941219333261154,
+      "baseline": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.129668727517128,
+        "safe_success": true,
+        "steps": 66,
+        "success": true,
+        "timeout": false,
+        "total_reward": 468.57496741105587,
+        "trigger_risk": 0.20165387770839102,
+        "wall_seconds": 10.090844714000013,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.3423614594300535,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.129668727517128,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 66,
+        "success": true,
+        "timeout": false,
+        "total_reward": 468.57496741105587,
+        "trigger_risk": 0.20165387770839102,
+        "wall_seconds": 10.162308064000058,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "5989460d988094fddf6e0b3b5a9ed68b30553ffbff8a13ef620c4d13a1dfe9f1",
+        "endpoint_clearance": 1.1144501,
+        "goal_xy": [
+          -0.5971068,
+          3.2445652
+        ],
+        "original_path_hash": "0b4c1744a79f518fff0a82c8b7eaf3386cc323c4f0a2668eea8a021b12647c56",
+        "rect_hash": "35a3e1853285e78802a14b50ae68aeb52e774c8bc1d55ea71defe1f15dad9c4d",
+        "robot_xy": [
+          -3.8,
+          4.1999998
+        ],
+        "unknown_hash": "2a030713e336972ef3900f960785c7932a892a005025aa9cb3472c24020dfdc8",
+        "unknown_lateral_offset": 0.3325964,
+        "unknown_path_fraction": 0.6150639,
+        "unknown_radius": 0.1823926
+      },
+      "seed": 23440
+    },
+    {
+      "astar_path_length_m": 3.780466471762713,
+      "baseline": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.09274300932884216,
+        "safe_success": true,
+        "steps": 394,
+        "success": true,
+        "timeout": false,
+        "total_reward": 234.5712282297448,
+        "trigger_risk": 0.46148313135739705,
+        "wall_seconds": 52.289600932999974,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.683000608884601,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.09274300932884216,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 394,
+        "success": true,
+        "timeout": false,
+        "total_reward": 234.5712282297448,
+        "trigger_risk": 0.46148313135739705,
+        "wall_seconds": 53.180139343000064,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "b651d4a76a019c3f5cff9194ca0a9e0eb1368336d821e36b4925aff7ffe27c16",
+        "endpoint_clearance": 1.1277537,
+        "goal_xy": [
+          -0.3992347,
+          0.3182395
+        ],
+        "original_path_hash": "71cd32f73c9eb805c7a574c86ff9fcb7ed527ce89464ed8190b9198873bee4b5",
+        "rect_hash": "7002dba10d2182c79ab8e9b8df644cf33fe67c9dd8a3c44a7928ef85f3a03a05",
+        "robot_xy": [
+          -1.6,
+          3.8
+        ],
+        "unknown_hash": "785324768c486e24c8d463032714b2e4706d87d7325e392550d3618805c0fb8a",
+        "unknown_lateral_offset": 0.3802227,
+        "unknown_path_fraction": 0.4800367,
+        "unknown_radius": 0.1584205
+      },
+      "seed": 23441
+    },
+    {
+      "astar_path_length_m": 3.7890992456802115,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.06041720509529114,
+        "safe_success": true,
+        "steps": 373,
+        "success": true,
+        "timeout": false,
+        "total_reward": 310.8482784612653,
+        "trigger_risk": 0.0,
+        "wall_seconds": 57.47734836300003,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.483608833571715,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.06041720509529114,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 373,
+        "success": true,
+        "timeout": false,
+        "total_reward": 310.8482784612653,
+        "trigger_risk": 0.0,
+        "wall_seconds": 58.66302146800001,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "430b963c40928018c21dd20a82603fa4d007707a36dfb09fd578c07ca91b1439",
+        "endpoint_clearance": 1.2876548,
+        "goal_xy": [
+          -0.0481767,
+          0.7510541
+        ],
+        "original_path_hash": "06d0d24d62ebddc80bdd2ca92d693209f2337ab455f0a3862efe7df71f550e6b",
+        "rect_hash": "4047ff1aa0a713697eefc76c2a34893fa6be3be37b1e18004e551308b0b4aa35",
+        "robot_xy": [
+          -1.0,
+          -2.5999999
+        ],
+        "unknown_hash": "3c63ec184a00e458eb4ad83706725f907283d7e1b5cec31000bcba8f099d242c",
+        "unknown_lateral_offset": 0.4978201,
+        "unknown_path_fraction": 0.5188041,
+        "unknown_radius": 0.1670912
+      },
+      "seed": 23442
+    },
+    {
+      "astar_path_length_m": 3.5310452252262894,
+      "baseline": {
+        "chosen_side": "LEFT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.21886959671974182,
+        "safe_success": false,
+        "steps": 111,
+        "success": false,
+        "timeout": false,
+        "total_reward": -207.24573629717682,
+        "trigger_risk": 0.4760537436105965,
+        "wall_seconds": 17.52100541499999,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.34478926561771,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.21886959671974182,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 111,
+        "success": false,
+        "timeout": false,
+        "total_reward": -207.24573629717682,
+        "trigger_risk": 0.4760537436105965,
+        "wall_seconds": 17.409781607000014,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "19b97a27de83b05abf07b7d0b1f48e82a34cbfde7d1cc6c8ac8f98ee8970515e",
+        "endpoint_clearance": 1.0929021,
+        "goal_xy": [
+          0.5742261,
+          2.6494455
+        ],
+        "original_path_hash": "04640db16d5306db48cd3f718591795c8ce53ff4f5ecbd478c469f975d000437",
+        "rect_hash": "e381eb5a2c528a0f91f30b634534b5cc3b0313046a2ca76ed72b56a238db4959",
+        "robot_xy": [
+          -0.8,
+          -0.4
+        ],
+        "unknown_hash": "b8430eb1914e20f3e99acba4ad7ab84f36bc0573eac1678363550ca57caec449",
+        "unknown_lateral_offset": 0.4108743,
+        "unknown_path_fraction": 0.5499154,
+        "unknown_radius": 0.1806201
+      },
+      "seed": 23445
+    },
+    {
+      "astar_path_length_m": 4.035116082293445,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.04364687204360962,
+        "safe_success": true,
+        "steps": 80,
+        "success": true,
+        "timeout": false,
+        "total_reward": 404.9566268599251,
+        "trigger_risk": 0.1984327386926723,
+        "wall_seconds": 17.32673244,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.639060061567433,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.04364687204360962,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 80,
+        "success": true,
+        "timeout": false,
+        "total_reward": 404.9566268599251,
+        "trigger_risk": 0.1984327386926723,
+        "wall_seconds": 17.11684839499992,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "0c68c1a9f4233bfc4330449f6b877e8786975615a3ade3837c66e9d06cf0f9aa",
+        "endpoint_clearance": 1.2392341,
+        "goal_xy": [
+          3.2389011,
+          1.4019586
+        ],
+        "original_path_hash": "6468012ce585861dc5bc7ad9c8fa84805c3686ef027fb40edf57aa9a2d0ad29e",
+        "rect_hash": "968dc4e896c50645f0b230e13764587ec33bb7aed5340631d8abdefa4c683e0e",
+        "robot_xy": [
+          0.2,
+          -0.6
+        ],
+        "unknown_hash": "f8f9f9e890615ee16b1a2e4942ec1ca0abc4957b90b483281f368872d7aadeac",
+        "unknown_lateral_offset": 0.484746,
+        "unknown_path_fraction": 0.6228418,
+        "unknown_radius": 0.1738298
+      },
+      "seed": 23447
+    },
+    {
+      "astar_path_length_m": 3.8158700230550453,
+      "baseline": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.22127468883991241,
+        "safe_success": true,
+        "steps": 64,
+        "success": true,
+        "timeout": false,
+        "total_reward": 478.54351149693497,
+        "trigger_risk": 0.2656747638407315,
+        "wall_seconds": 8.500160656999924,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.4496637872889875,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.22127468883991241,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 64,
+        "success": true,
+        "timeout": false,
+        "total_reward": 478.54351149693497,
+        "trigger_risk": 0.2656747638407315,
+        "wall_seconds": 8.819827835999945,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "562e736ed0ce5690e939194412c61251fbc28c5885ff66c238703220cf251de8",
+        "endpoint_clearance": 1.2764544,
+        "goal_xy": [
+          -0.6798684,
+          0.5212538
+        ],
+        "original_path_hash": "e2d3ecc69527083f1cd9360a31c29de1bf881a823b857cff04535fbaa48f876a",
+        "rect_hash": "c7c53f8a9e33fd71ec3706c2dc897d1bf3e7e8bfef1288cf25491ed2fc0f791d",
+        "robot_xy": [
+          -2.8,
+          -2.2
+        ],
+        "unknown_hash": "f725d42533d84f60a784ff2fd72ae4eda5b33de984b1b656776a94e3f50f1f8c",
+        "unknown_lateral_offset": 0.4057044,
+        "unknown_path_fraction": 0.4159103,
+        "unknown_radius": 0.1298227
+      },
+      "seed": 23449
+    },
+    {
+      "astar_path_length_m": 4.635971079792505,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.049221694469451904,
+        "safe_success": false,
+        "steps": 327,
+        "success": false,
+        "timeout": false,
+        "total_reward": -234.33373799620605,
+        "trigger_risk": 0.0,
+        "wall_seconds": 47.90507856900001,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.810522369461317,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.049221694469451904,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 327,
+        "success": false,
+        "timeout": false,
+        "total_reward": -234.33373799620605,
+        "trigger_risk": 0.0,
+        "wall_seconds": 48.95488199700014,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "0843bc48e0c2efb80960ebb7c50eaafbbce6b68f8845a463c956b38d81cdf1f9",
+        "endpoint_clearance": 1.2370694,
+        "goal_xy": [
+          -0.8440598,
+          -2.430501
+        ],
+        "original_path_hash": "10dfc35c8260275ebf31649e3eee72a2538fe01b436234d8b51de25564358512",
+        "rect_hash": "4d73fbc734376094ed371bac8b48588d989601ba6e9c0309548d2b30c626af88",
+        "robot_xy": [
+          2.5999999,
+          -0.8
+        ],
+        "unknown_hash": "593ae33b8e62ca944f14404475d8f05d6cf759ec54ca8a0920a40aaf7fe98346",
+        "unknown_lateral_offset": 0.5167437,
+        "unknown_path_fraction": 0.6732237,
+        "unknown_radius": 0.1608733
+      },
+      "seed": 23451
+    },
+    {
+      "astar_path_length_m": 6.917958498425094,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.2159106284379959,
+        "safe_success": true,
+        "steps": 161,
+        "success": true,
+        "timeout": false,
+        "total_reward": 429.2388182284275,
+        "trigger_risk": 0.0,
+        "wall_seconds": 14.265908100000047,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 2.8179275724073265,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.2159106284379959,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 161,
+        "success": true,
+        "timeout": false,
+        "total_reward": 429.2388182284275,
+        "trigger_risk": 0.0,
+        "wall_seconds": 14.860129641000071,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "1baf3b80b9db022a54d8fd5525b3847c872bad39323813bedccc1cad672f0619",
+        "endpoint_clearance": 1.0153845,
+        "goal_xy": [
+          -2.8194034,
+          0.6670984
+        ],
+        "original_path_hash": "b385c49ad8f609ff4b75d7115c7c83219330e9cb1fd26915b04865e938f03c6b",
+        "rect_hash": "ff8952b2cd2e5cee0d203f64e672ef2c6de63a3cabb4565a3bc3cf18417ff4c4",
+        "robot_xy": [
+          -4.4000001,
+          3.0
+        ],
+        "unknown_hash": "092b022b6766a4c45c45295b2881d8cef70708fb8f44a8a54a1674aa9e070aeb",
+        "unknown_lateral_offset": 0.5170747,
+        "unknown_path_fraction": 0.4290304,
+        "unknown_radius": 0.1262179
+      },
+      "seed": 23454
+    },
+    {
+      "astar_path_length_m": 4.360662405158294,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.14465321600437164,
+        "safe_success": true,
+        "steps": 78,
+        "success": true,
+        "timeout": false,
+        "total_reward": 474.2354886136957,
+        "trigger_risk": 0.24828123306786587,
+        "wall_seconds": 14.517243043999997,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.479462073566943,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.14465321600437164,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 78,
+        "success": true,
+        "timeout": false,
+        "total_reward": 474.2354886136957,
+        "trigger_risk": 0.24828123306786587,
+        "wall_seconds": 13.988079496000069,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "b1a1d340c6e784a8886312bab91731da15f6b1d68c80a1d6f8b6e4db5e32ced1",
+        "endpoint_clearance": 1.3659496,
+        "goal_xy": [
+          4.0425329,
+          1.9119093
+        ],
+        "original_path_hash": "4c45b6e7fdae0c0c888bd30a4e9c17e67b87461a3ce90bbaa62a2e25fbf71036",
+        "rect_hash": "927a8c6f0db052f3bc08d7843ca084d99ef390339346d2741e83df23b9dd65ee",
+        "robot_xy": [
+          1.0,
+          3.5999999
+        ],
+        "unknown_hash": "636a2aea7c962ae8ed12c821cda803edc0dc3d92386f5a54fe79444e46b8f851",
+        "unknown_lateral_offset": 0.3502216,
+        "unknown_path_fraction": 0.6553614,
+        "unknown_radius": 0.1310234
+      },
+      "seed": 23456
+    },
+    {
+      "astar_path_length_m": 3.4843279852921913,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.019214242696762085,
+        "safe_success": false,
+        "steps": 264,
+        "success": false,
+        "timeout": false,
+        "total_reward": -445.56141878879043,
+        "trigger_risk": 0.6077480714955966,
+        "wall_seconds": 42.97192513499999,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.367183954258814,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.019214242696762085,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 264,
+        "success": false,
+        "timeout": false,
+        "total_reward": -445.56141878879043,
+        "trigger_risk": 0.6077480714955966,
+        "wall_seconds": 43.91742184100008,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "1cde7070057c44ae0744aef64ed2d7eacc0bd63a6194ab281cee845e649055ed",
+        "endpoint_clearance": 1.1743517,
+        "goal_xy": [
+          0.8322679,
+          2.2473819
+        ],
+        "original_path_hash": "a000fa094cb165253648b5fc559522f86a18750e4dd03a69a4b2c98b4a9c8826",
+        "rect_hash": "dc6ab072f1f16edeae72c5116460d94181696497a36cb59590b3bf0aaf0aa990",
+        "robot_xy": [
+          -0.6,
+          -0.8
+        ],
+        "unknown_hash": "152de1907e9d9f10c0b07a8e84efb6e850028482a8acae4f1476c4719e888dad",
+        "unknown_lateral_offset": 0.3257231,
+        "unknown_path_fraction": 0.612053,
+        "unknown_radius": 0.1381828
+      },
+      "seed": 23457
+    },
+    {
+      "astar_path_length_m": 3.133027136911105,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.028196439146995544,
+        "safe_success": true,
+        "steps": 63,
+        "success": true,
+        "timeout": false,
+        "total_reward": 444.5600482426539,
+        "trigger_risk": 0.0,
+        "wall_seconds": 6.59349265100002,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.096231716508189,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.028196439146995544,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 63,
+        "success": true,
+        "timeout": false,
+        "total_reward": 444.5600482426539,
+        "trigger_risk": 0.0,
+        "wall_seconds": 6.257943049999994,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "353cc06c4ced9c29c6ed7919ea04bf2897e9341c06d6d6af562dd6b8426613dc",
+        "endpoint_clearance": 1.3602608,
+        "goal_xy": [
+          0.9055673,
+          1.9196484
+        ],
+        "original_path_hash": "71fccc5bb7e0e687bf5403e27019afac413b59334a72369bac465a3210d93d83",
+        "rect_hash": "bb87fd4ccdf6fc105818bc3634d85fe52f55d729465a23b814da463866124953",
+        "robot_xy": [
+          3.0,
+          4.1999998
+        ],
+        "unknown_hash": "93c841a6e820709028759b359808363fa0b05b17f9cdfc13656d4e32ca55ae1e",
+        "unknown_lateral_offset": 0.4848346,
+        "unknown_path_fraction": 0.487215,
+        "unknown_radius": 0.1413325
+      },
+      "seed": 23458
+    },
+    {
+      "astar_path_length_m": 3.0744533652878876,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.08105097711086273,
+        "safe_success": true,
+        "steps": 73,
+        "success": true,
+        "timeout": false,
+        "total_reward": 487.45606778646254,
+        "trigger_risk": 0.0,
+        "wall_seconds": 8.742539670000042,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 2.7363963099332853,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.08105097711086273,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 73,
+        "success": true,
+        "timeout": false,
+        "total_reward": 487.45606778646254,
+        "trigger_risk": 0.0,
+        "wall_seconds": 7.6485396970000465,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "027e9efe651d2e900b2df380c7567a7987bd412a8c92e9ef099541615cc336cf",
+        "endpoint_clearance": 1.2768011,
+        "goal_xy": [
+          3.6189675,
+          4.0012646
+        ],
+        "original_path_hash": "608a28d8428a373bfd5876af2e7b4dce9dae6113f8bd98e260dcf543c7b736e6",
+        "rect_hash": "089f2fcf2475a4c04e11095ba337f1e0ff5c7c98fa249973e7a70cd35522624a",
+        "robot_xy": [
+          1.4,
+          2.4000001
+        ],
+        "unknown_hash": "ebe1ad7143df4f2a3b309dc6db72c3b4683c9661acc5aaa0964304f71d69fdd8",
+        "unknown_lateral_offset": 0.5175599,
+        "unknown_path_fraction": 0.5282152,
+        "unknown_radius": 0.1982532
+      },
+      "seed": 23460
+    },
+    {
+      "astar_path_length_m": 3.155639963836352,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.1465638279914856,
+        "safe_success": true,
+        "steps": 57,
+        "success": true,
+        "timeout": false,
+        "total_reward": 497.06556514214105,
+        "trigger_risk": 0.0,
+        "wall_seconds": 6.49077846199998,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.067891801156077,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.1465638279914856,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 57,
+        "success": true,
+        "timeout": false,
+        "total_reward": 497.06556514214105,
+        "trigger_risk": 0.0,
+        "wall_seconds": 6.073931542999958,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "8167dbd62a02615a17397af84961bb1e049a327e57b1800edd53078c3bd90198",
+        "endpoint_clearance": 1.38527,
+        "goal_xy": [
+          1.6366862,
+          3.8463032
+        ],
+        "original_path_hash": "3a6577725bed4bbaf84640953e8bbe203c25943a115d41d98d9aed6943406087",
+        "rect_hash": "78aca1bcc10486ca2a474b2ce2a6e696f22c634f6ed7711a2c85ff5c620f3e39",
+        "robot_xy": [
+          2.0,
+          0.8
+        ],
+        "unknown_hash": "e951486fa7c04781e083043ad259ac778059b6b7bb90ccfd4c29697cffd4ac05",
+        "unknown_lateral_offset": 0.4589107,
+        "unknown_path_fraction": 0.4891499,
+        "unknown_radius": 0.1369231
+      },
+      "seed": 23462
+    },
+    {
+      "astar_path_length_m": 3.220892704909895,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.003620848059654236,
+        "safe_success": false,
+        "steps": 46,
+        "success": false,
+        "timeout": false,
+        "total_reward": -80.28226038798181,
+        "trigger_risk": 0.0,
+        "wall_seconds": 6.873740374000022,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.1667384019597655,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.003620848059654236,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 46,
+        "success": false,
+        "timeout": false,
+        "total_reward": -80.28226038798181,
+        "trigger_risk": 0.0,
+        "wall_seconds": 7.3484169809999,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "c6a25c64ed69cd4118cd7fc364f752d6ba95efdf2af2d3350f9515eae28fbe5e",
+        "endpoint_clearance": 1.1886313,
+        "goal_xy": [
+          -2.827687,
+          -2.6333637
+        ],
+        "original_path_hash": "a5f92e17dcb509ff0dcdedc54c7633d85f3914b9e5e42d6a51e8135f2a176a65",
+        "rect_hash": "bc3b4f62e7c98289595f099e3e846513b5e0d00e61b5389d1ad209a1119b7a1e",
+        "robot_xy": [
+          -0.4,
+          -0.6
+        ],
+        "unknown_hash": "b35f38f2ec94c4bf78622d2db4f4208967254c096b6fcbdb2ec3ad053b2ca8c9",
+        "unknown_lateral_offset": 0.453366,
+        "unknown_path_fraction": 0.4062414,
+        "unknown_radius": 0.1281514
+      },
+      "seed": 23464
+    },
+    {
+      "astar_path_length_m": 3.6300931745965546,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.20182202756404877,
+        "safe_success": true,
+        "steps": 63,
+        "success": true,
+        "timeout": false,
+        "total_reward": 505.06676175519897,
+        "trigger_risk": 0.22554491759114917,
+        "wall_seconds": 14.833921136999948,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.4272325906912124,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.20182202756404877,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 63,
+        "success": true,
+        "timeout": false,
+        "total_reward": 505.06676175519897,
+        "trigger_risk": 0.22554491759114917,
+        "wall_seconds": 14.866326321000088,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "fec1aca4936dce80982d02fbd300b115dd4ad5a4f3f08e0044673ef736a4c0a5",
+        "endpoint_clearance": 1.149946,
+        "goal_xy": [
+          -0.08965,
+          0.4764861
+        ],
+        "original_path_hash": "8c533e00ad5a517d8e7e57ada268e4298e33f15c77d2698e56863fbda2a443e1",
+        "rect_hash": "147ad79f355ebe629c990736559e64d6199e133badaba4dd3e528c507dfcee9f",
+        "robot_xy": [
+          -1.6,
+          -2.5999999
+        ],
+        "unknown_hash": "e654b2cbe86811e022e110c7a2a30f70edeabab85ca5d02fb9dc2fbd117141e9",
+        "unknown_lateral_offset": 0.4807095,
+        "unknown_path_fraction": 0.4971728,
+        "unknown_radius": 0.177005
+      },
+      "seed": 23469
+    },
+    {
+      "astar_path_length_m": 4.869430537016468,
+      "baseline": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.1648259162902832,
+        "safe_success": true,
+        "steps": 124,
+        "success": true,
+        "timeout": false,
+        "total_reward": 469.9449525860417,
+        "trigger_risk": 0.3761905980583889,
+        "wall_seconds": 24.77820490399995,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.5349630908587573,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.1648259162902832,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 124,
+        "success": true,
+        "timeout": false,
+        "total_reward": 469.9449525860417,
+        "trigger_risk": 0.3761905980583889,
+        "wall_seconds": 24.04446347699991,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "56e248e4ef2b7fc235334a0b6a5fe2c9d97cadcde84b14a4ffa4f98bae147025",
+        "endpoint_clearance": 1.0525362,
+        "goal_xy": [
+          -1.6129227,
+          2.6858721
+        ],
+        "original_path_hash": "4d737ba5fc9b6bbe1e8fc236150589b7a644be0ac657641ba242e04eccaad529",
+        "rect_hash": "de7cc4d7ed40af41d638a0522940c50bb39ffbf812ff120b19e64481ca1703e3",
+        "robot_xy": [
+          -2.2,
+          -0.8
+        ],
+        "unknown_hash": "de3bce86f48bead916592b347de68a524de275146b54c6a8218a2eec31ba18a0",
+        "unknown_lateral_offset": 0.3902818,
+        "unknown_path_fraction": 0.6117535,
+        "unknown_radius": 0.1657982
+      },
+      "seed": 23470
+    },
+    {
+      "astar_path_length_m": 3.9266418703647057,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 1.8533213883638382,
+        "safe_success": false,
+        "steps": 17,
+        "success": false,
+        "timeout": false,
+        "total_reward": -77.13254351948285,
+        "trigger_risk": 0.0,
+        "wall_seconds": 2.981915769000125,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.265332360390796,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": true,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 1.8533213883638382,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 17,
+        "success": false,
+        "timeout": false,
+        "total_reward": -77.13254351948285,
+        "trigger_risk": 0.0,
+        "wall_seconds": 2.834666587999891,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "8f29cdb273eb06cbdd23c30ded1b42a055f06a3bc8a0590e64027444e3b5093e",
+        "endpoint_clearance": 1.0102281,
+        "goal_xy": [
+          -2.9963157,
+          -2.1840122
+        ],
+        "original_path_hash": "e64b69e4da87d3190dffc7fa105b6018b9840b2b0a00e5951e8e9080aed35193",
+        "rect_hash": "fd588675c7d7fcef0e8f144693d23348befafb4e012f0a74b27460df9546257a",
+        "robot_xy": [
+          -1.0,
+          0.4
+        ],
+        "unknown_hash": "60ef4bc7bdf17c3c1e14cf8e2ed392981296a5a4f931222aa1a7384b0d65eb0e",
+        "unknown_lateral_offset": 0.4618246,
+        "unknown_path_fraction": 0.4402348,
+        "unknown_radius": 0.1863772
+      },
+      "seed": 23477
+    },
+    {
+      "astar_path_length_m": 3.9609565162758895,
+      "baseline": {
+        "chosen_side": "LEFT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.019292399287223816,
+        "safe_success": false,
+        "steps": 443,
+        "success": false,
+        "timeout": false,
+        "total_reward": -882.3393074585405,
+        "trigger_risk": 0.18579885622601883,
+        "wall_seconds": 67.6984262599999,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.0985175051094496,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": true,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "COLLISION",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.019292399287223816,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": false,
+        "steps": 443,
+        "success": false,
+        "timeout": false,
+        "total_reward": -882.3393074585405,
+        "trigger_risk": 0.18579885622601883,
+        "wall_seconds": 63.57216143599999,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "a01be11fb064fef1a928e5606a7ba48690063a171dc4813a0543f1cb4ae87d32",
+        "endpoint_clearance": 1.1172726,
+        "goal_xy": [
+          1.8703235,
+          3.3086588
+        ],
+        "original_path_hash": "760351d5b868810507e5a37d0753eb74b3d3bfebe6e19b09885ece2e225ca339",
+        "rect_hash": "5e1b85dbc7c4fffaa073cd575fc2d10a43e635db363aecc825afc653ad64eca6",
+        "robot_xy": [
+          -0.4,
+          1.2
+        ],
+        "unknown_hash": "415b29bc628e82ece97922e521f68ee56ffc4b22615d18ba30eae576e1f74c6f",
+        "unknown_lateral_offset": 0.3934919,
+        "unknown_path_fraction": 0.4644921,
+        "unknown_radius": 0.1336001
+      },
+      "seed": 23480
+    },
+    {
+      "astar_path_length_m": 4.48198751774463,
+      "baseline": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.032453060150146484,
+        "safe_success": true,
+        "steps": 389,
+        "success": true,
+        "timeout": false,
+        "total_reward": 143.31927470235962,
+        "trigger_risk": 0.0,
+        "wall_seconds": 40.2681713569998,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.6252080613206528,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "NONE",
+        "collision": false,
+        "detour_applied": false,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.032453060150146484,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 389,
+        "success": true,
+        "timeout": false,
+        "total_reward": 143.31927470235962,
+        "trigger_risk": 0.0,
+        "wall_seconds": 40.31237822000003,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "d5ae528fcfe6bc14d3f11d0af7bed4392688c8e7ce3aef12aa48023994bf6c09",
+        "endpoint_clearance": 1.2960306,
+        "goal_xy": [
+          -0.8895691,
+          -4.1613712
+        ],
+        "original_path_hash": "e993c9072de8a8c4b96b68e9c32fdbdd57647d627e763ec4b6dba99f62d3234a",
+        "rect_hash": "f4e6ea925498e8824531d158bb71e5293c93c7d5129713c523e878ae9c432a87",
+        "robot_xy": [
+          -3.8,
+          -2.0
+        ],
+        "unknown_hash": "3f662475e4ac34ae14f31dc911a86f36ff14e04e821282507d15018e261be511",
+        "unknown_lateral_offset": 0.5070634,
+        "unknown_path_fraction": 0.6567833,
+        "unknown_radius": 0.134784
+      },
+      "seed": 23481
+    },
+    {
+      "astar_path_length_m": 3.069430599456279,
+      "baseline": {
+        "collision": false,
+        "env_timeout": false,
+        "external_watchdog_enforced": true,
+        "external_watchdog_observed_elapsed_s": 135.1443559689999,
+        "final_class": "WALL_TIMEOUT",
+        "safe_success": false,
+        "success": false,
+        "wall_seconds": 120.0,
+        "wall_timeout": true,
+        "wall_timeout_protocol_s": 120
+      },
+      "euclidean_start_goal_m": 2.726416901944679,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "RIGHT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.14572711288928986,
+        "phase22_attempted": true,
+        "phase22_candidate_count": 648,
+        "phase22_corridor_success": true,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": 0.02714797854423523,
+        "phase22_selected_known_margin": 0.17528274655342102,
+        "phase22_selected_p95_curvature": 1.6799349784851074,
+        "phase22_selected_sensor_margin": 0.2564506530761719,
+        "safe_success": true,
+        "steps": 122,
+        "success": true,
+        "timeout": false,
+        "total_reward": 346.2155074198996,
+        "trigger_risk": 0.7030134750135018,
+        "wall_seconds": 16.372085452999954,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "df394d49065e988580431b4bd2859302f8e2c68edcfd9d57a3ff0702f32260e9",
+        "endpoint_clearance": 1.1151786,
+        "goal_xy": [
+          -0.1759779,
+          1.0263989
+        ],
+        "original_path_hash": "681d7d13c48be652ea971de914b47f6455000eb731085cda081ed82a149a1fe5",
+        "rect_hash": "aa3e5c86edd63f1f46fa4ee8a3b6df7c64b3c317b4175984496be06316e94ac6",
+        "robot_xy": [
+          -2.0,
+          -1.0
+        ],
+        "unknown_hash": "53fb75d636a63065a45583b21fb66f92d79552becc5fc31ecff0c9736857830e",
+        "unknown_lateral_offset": 0.3241451,
+        "unknown_path_fraction": 0.4126557,
+        "unknown_radius": 0.1869336
+      },
+      "seed": 23484
+    },
+    {
+      "astar_path_length_m": 3.444346236874092,
+      "baseline": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.05152633786201477,
+        "safe_success": true,
+        "steps": 67,
+        "success": true,
+        "timeout": false,
+        "total_reward": 406.88278548211645,
+        "trigger_risk": 0.5839086334777525,
+        "wall_seconds": 8.996313456000053,
+        "wall_timeout": false
+      },
+      "euclidean_start_goal_m": 3.327723955408856,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.05152633786201477,
+        "phase22_attempted": false,
+        "phase22_candidate_count": 0,
+        "phase22_corridor_success": false,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": null,
+        "phase22_selected_known_margin": null,
+        "phase22_selected_p95_curvature": null,
+        "phase22_selected_sensor_margin": null,
+        "safe_success": true,
+        "steps": 67,
+        "success": true,
+        "timeout": false,
+        "total_reward": 406.88278548211645,
+        "trigger_risk": 0.5839086334777525,
+        "wall_seconds": 9.202978836000057,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "1cd0af226ec86ccda2bb5a4af2b261c8a5811eb4edea6b5796a9d1db808f1d1e",
+        "endpoint_clearance": 1.3571467,
+        "goal_xy": [
+          0.5652936,
+          -0.485399
+        ],
+        "original_path_hash": "8e82b51bc36c0cabd05ad9390b1727eaad429701878ea5adac6e6a178153f8e4",
+        "rect_hash": "4df880d8eeda8963ff63bb7ff111ea7ca8da8c40b43ec7b63e868fa2ea5c3c47",
+        "robot_xy": [
+          -1.4,
+          2.2
+        ],
+        "unknown_hash": "46a58f5b4f8c383a9fd890e3bf4505403c4b2e6b3a94c496cddb4708f865a697",
+        "unknown_lateral_offset": 0.33838,
+        "unknown_path_fraction": 0.4348939,
+        "unknown_radius": 0.1631823
+      },
+      "seed": 23485
+    },
+    {
+      "astar_path_length_m": 5.194122008976076,
+      "baseline": {
+        "collision": false,
+        "env_timeout": false,
+        "external_watchdog_enforced": true,
+        "external_watchdog_observed_elapsed_s": 135.1422990409999,
+        "final_class": "WALL_TIMEOUT",
+        "safe_success": false,
+        "success": false,
+        "wall_seconds": 120.0,
+        "wall_timeout": true,
+        "wall_timeout_protocol_s": 120
+      },
+      "euclidean_start_goal_m": 2.883856669232583,
+      "parallel_overnight_infrastructure": {
+        "algorithm_changed": false,
+        "methods_within_pair_sequential": true,
+        "model_changed": false,
+        "pair_parallelism_only": true,
+        "post_ready_external_watchdog_s": 135,
+        "scientific_method_wall_s": 120,
+        "selection_changed": false,
+        "version": "v1"
+      },
+      "proposed": {
+        "chosen_side": "LEFT",
+        "collision": false,
+        "detour_applied": true,
+        "detour_enabled": true,
+        "done": true,
+        "env_timeout": false,
+        "failure_reason": "none",
+        "final_class": "SAFE_SUCCESS",
+        "ground_truth_used_for_control": false,
+        "min_unknown_clearance": 0.029442444443702698,
+        "phase22_attempted": true,
+        "phase22_candidate_count": 648,
+        "phase22_corridor_success": true,
+        "phase22_failure_reason": "none",
+        "phase22_reverse_count": 0,
+        "phase22_selected_heading_delta": 0.005329787731170654,
+        "phase22_selected_known_margin": 0.06576290726661682,
+        "phase22_selected_p95_curvature": 0.4426853358745575,
+        "phase22_selected_sensor_margin": 0.16346842050552368,
+        "safe_success": true,
+        "steps": 86,
+        "success": true,
+        "timeout": false,
+        "total_reward": 438.7920868882528,
+        "trigger_risk": 0.26737322397997176,
+        "wall_seconds": 39.47227790200009,
+        "wall_timeout": false
+      },
+      "protocol_info": {
+        "collision_evidence": [
+          "collision"
+        ],
+        "path": "/home/linghu/catkin_ws/src/mk-mini/training/phase21_risk_switch_fusion_sac/tests/eval_phase21_v3_exact_pair_5ep.py",
+        "rollout_signature": "(env, observation: 'np.ndarray', reset_info: 'dict[str, Any]', model: 'SAC') -> 'dict[str, Any]'",
+        "sha256": "d86f20aa3e8e22d876ec2f4b2cca84f6494f641fc9720da5b0afb1818d2bd87d"
+      },
+      "protocol_version": "G2B_LH40_V1_20260915",
+      "same_scenario": true,
+      "scenario_signature": {
+        "circle_hash": "e5c877dcd0f5ef1dea91c178716d534d61f8f38e110aa1c7e0df7a0822f6caf9",
+        "endpoint_clearance": 1.30371,
+        "goal_xy": [
+          1.7166266,
+          1.8824812
+        ],
+        "original_path_hash": "ef286480f98a4401bcf172857e92d86d70d0f450e3f05e24351289f3d5d8c436",
+        "rect_hash": "da59d1d02b3752ec9ebe71c524aa6799806e3390bcddecd7d2828203005afdfa",
+        "robot_xy": [
+          -0.6,
+          3.5999999
+        ],
+        "unknown_hash": "27295298e9492fee66b3ac6fa4e4d631e3bbc98a7817efb4b24e6322b11c5265",
+        "unknown_lateral_offset": 0.3807346,
+        "unknown_path_fraction": 0.5804733,
+        "unknown_radius": 0.125396
+      },
+      "seed": 23492
+    }
+  ],
+  "selection_manifest": "/home/linghu/catkin_ws/src/mk-mini/experiments/phase_paper_stageG2B_LH40_v1/results/selection_manifest.json",
+  "summary": {
+    "baseline": {
+      "collision": {
+        "count": 12,
+        "n": 40,
+        "rate": 0.3,
+        "wilson95": [
+          0.18074845229746528,
+          0.45430018818144935
+        ]
+      },
+      "mean_min_unknown_clearance": 0.17180159432547434,
+      "mean_steps": 141.62857142857143,
+      "mean_wall_s": 34.30853437080002,
+      "safe_success": {
+        "count": 23,
+        "n": 40,
+        "rate": 0.575,
+        "wilson95": [
+          0.42195068541991065,
+          0.7149060744004962
+        ]
+      },
+      "wall_timeout": {
+        "count": 5,
+        "n": 40,
+        "rate": 0.125,
+        "wilson95": [
+          0.05459500250945401,
+          0.261121198388511
+        ]
+      }
+    },
+    "long_horizon_coverage": {
+      "astar_path_length_m": {
+        "max": 6.917958498425094,
+        "mean": 4.100518177028874,
+        "min": 3.069430599456279
+      },
+      "euclidean_start_goal_m": {
+        "max": 3.810522369461317,
+        "mean": 3.296399182071071,
+        "min": 2.6184892112274682
+      }
+    },
+    "n_pairs": 40,
+    "paired_collision": {
+      "baseline_only": 0,
+      "difference": 0.025000000000000022,
+      "mcnemar_p": 1.0,
+      "proposed_only": 1
+    },
+    "paired_safe_success": {
+      "baseline_only": 1,
+      "bootstrap95": [
+        -0.05,
+        0.15
+      ],
+      "both": 22,
+      "difference": 0.050000000000000044,
+      "mcnemar_p": 0.625,
+      "neither": 14,
+      "proposed_only": 3
+    },
+    "proposed": {
+      "collision": {
+        "count": 13,
+        "n": 40,
+        "rate": 0.325,
+        "wilson95": [
+          0.200845022317827,
+          0.47982253810122333
+        ]
+      },
+      "mean_min_unknown_clearance": 0.1652496974719198,
+      "mean_steps": 146.6315789473684,
+      "mean_wall_s": 28.845829629274988,
+      "phase22_attempted": 6,
+      "phase22_corridor_success": 4,
+      "safe_success": {
+        "count": 25,
+        "n": 40,
+        "rate": 0.625,
+        "wilson95": [
+          0.47032439137301096,
+          0.7577702083276673
+        ]
+      },
+      "wall_timeout": {
+        "count": 2,
+        "n": 40,
+        "rate": 0.05,
+        "wilson95": [
+          0.013820667386148344,
+          0.16503877369140962
+        ]
+      }
+    }
+  },
+  "target_pairs": 40
+}

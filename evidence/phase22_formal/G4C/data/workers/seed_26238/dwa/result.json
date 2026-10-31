@@ -1,0 +1,51 @@
+{
+  "steps": 21,
+  "done": true,
+  "success": false,
+  "collision": true,
+  "timeout": false,
+  "total_reward": -116.67990022149218,
+  "min_unknown_clearance": 0.000967174768447876,
+  "detour_enabled": true,
+  "detour_applied": false,
+  "chosen_side": "NONE",
+  "trigger_risk": 0.5475010111178591,
+  "failure_reason": "g4_dwa_no_feasible_candidate",
+  "ground_truth_used_for_control": false,
+  "safe_success": false,
+  "env_timeout": false,
+  "wall_timeout": false,
+  "wall_seconds": 2.123676281000371,
+  "final_class": "COLLISION",
+  "seed": 26238,
+  "method": "dwa",
+  "scenario_signature": {
+    "unknown_radius": 0.130093,
+    "unknown_lateral_offset": 0.3709923,
+    "unknown_path_fraction": 0.4954676,
+    "endpoint_clearance": 1.1288501,
+    "robot_xy": [
+      2.5999999,
+      -0.6
+    ],
+    "goal_xy": [
+      1.0326647,
+      -0.8701267
+    ],
+    "rect_hash": "cd81878070f826f2de187fdffe851c43a2338a797a87d2c7c344928b750cd83d",
+    "circle_hash": "03feb94aa3b05ca8fabb17d9136db14bb725b7a60dc84e1676fd0b9d675d4f93",
+    "unknown_hash": "f97a7988a03f1929d48e75362c1de69bdbc2da200f2b706cdf21911928ced40a",
+    "original_path_hash": "42a48b42b59ab641127be2822a2d1be7c6109512217716057973d92d6cde8b8e"
+  },
+  "method_metrics": {
+    "g4_dwa_attempt_count": 22,
+    "g4_dwa_success_count": 0,
+    "g4_dwa_failure_count": 22,
+    "g4_dwa_candidate_count": 726,
+    "g4_dwa_feasible_count": 0,
+    "g4_dwa_plan_time_total_s": 0.03707545800716616,
+    "g4_dwa_plan_time_max_s": 0.0019639009988168254,
+    "g4_dwa_last_failure_reason": "no_sensor_safe_dynamic_window_candidate",
+    "g4_dwa_gt_obstacle_used_for_control": false
+  }
+}

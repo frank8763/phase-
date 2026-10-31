@@ -1,0 +1,19 @@
+G4C THREE-WAY FORMAL EXTERNAL-BASELINE EVALUATION — 100 FRESH SCENARIOS
+==============================================================================================================
+SEEDS=26200-26299 N=100
+METHODS=DWA_FROZEN_C3,PHASE21_V11,PHASE22_V1
+PRIMARY_EXTERNAL_COMPARISON=PHASE22_V1_VS_DWA
+PRIMARY_ENDPOINT=COLLISION_FREE_TASK_SUCCESS
+SCENARIO_MISMATCH_N=0
+POST_OPEN_TUNING=FALSE
+
+dwa: safe=61/100 (61.00%) collision=39/100 (39.00%) wall_timeout=0 env_timeout=0 other=0 wall_mean=11.736s wall_p95=42.377s
+phase21_v11: safe=47/100 (47.00%) collision=29/100 (29.00%) wall_timeout=24 env_timeout=0 other=0 wall_mean=52.058s wall_p95=125.836s
+phase22_v1: safe=60/100 (60.00%) collision=30/100 (30.00%) wall_timeout=10 env_timeout=0 other=0 wall_mean=28.453s wall_p95=125.831s
+
+phase22_vs_dwa: SAFE b-a=-1.00pp CI95=[-10.00,8.00] b_only=9 a_only=10 McNemar_p=1; COLLISION b-a=-9.00pp CI95=[-19.00,1.00] McNemar_p=0.10775214
+phase22_vs_phase21: SAFE b-a=13.00pp CI95=[6.00,20.00] b_only=14 a_only=1 McNemar_p=0.0009765625; COLLISION b-a=1.00pp CI95=[-7.00,9.00] McNemar_p=1
+dwa_vs_phase21: SAFE b-a=14.00pp CI95=[5.00,23.00] b_only=19 a_only=5 McNemar_p=0.0066107512; COLLISION b-a=10.00pp CI95=[1.00,19.00] McNemar_p=0.063914657
+
+G4C_FORMAL_COMPLETE=TRUE
+NEXT=LOCK_SIMULATION_RESULTS_AND_WRITE_PAPER

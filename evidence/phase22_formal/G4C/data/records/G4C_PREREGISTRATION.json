@@ -1,0 +1,39 @@
+{
+  "protocol_version": "G4C_THREEWAY_FORMAL_100_V1",
+  "purpose": "fresh external-baseline comparison after DWA development freeze",
+  "seeds": [26200, 26299],
+  "n_scenarios": 100,
+  "methods": ["dwa", "phase21_v11", "phase22_v1"],
+  "primary_external_comparison": "phase22_v1 vs dwa",
+  "primary_endpoint": "collision-free task success",
+  "secondary_endpoints": [
+    "collision",
+    "wall timeout",
+    "environment timeout",
+    "episode wall time",
+    "planner activation"
+  ],
+  "randomized": true,
+  "terminate_on_collision": true,
+  "penetration_margin": 0.02,
+  "safe_clearance": 0.35,
+  "max_steps": 600,
+  "success_dist_m": 0.90,
+  "method_wall_timeout_s": 120,
+  "outer_os_kill_s": 125,
+  "control_domain_randomization": false,
+  "global_astar_rerun_after_unknown": false,
+  "unknown_gt_for_control": false,
+  "same_frozen_residual_sac": true,
+  "same_safety_shield": true,
+  "dwa_frozen_config": "C3_CLEARANCE_BIASED",
+  "dwa_frozen_config_sha256": "ff3e9c3d3fff5d9722bcf4d450e36c22c5b4c57966b488f0ac0a9d716ee0c11e",
+  "dwa_tuning_after_formal_open": false,
+  "phase21_tuning_after_formal_open": false,
+  "phase22_tuning_after_formal_open": false,
+  "statistics": [
+    "Wilson 95% interval per method",
+    "paired bootstrap 20000 for rate differences",
+    "exact McNemar for paired binary endpoints"
+  ]
+}

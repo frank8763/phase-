@@ -1,0 +1,84 @@
+{
+  "branch": "frozen_original",
+  "seed": 73105157,
+  "scope": "FULL_FROM_RESET_DEVELOPMENT",
+  "steps": 112,
+  "physics_steps": 896,
+  "observer_checks": 896,
+  "strict_safe_arrival": false,
+  "native_goal": false,
+  "goal_distance_m": 1.7391141653060913,
+  "native_collision": false,
+  "terminated": false,
+  "truncated": false,
+  "censored": false,
+  "planning_attempts": 0,
+  "gate_unavailable_events": 0,
+  "actual_planner_calls": 0,
+  "new_paths": 0,
+  "planning_wall_s": 0.0,
+  "contacts": {
+    "physics_steps": 896,
+    "all_contact_records": 9703,
+    "contact_type_counts": {
+      "ground_support": 7164,
+      "robot_self_contact": 2521,
+      "robot_obstacle_penetration": 18
+    },
+    "negative_distance_counts_all_types": {
+      "ground_support": 7164,
+      "robot_self_contact": 2521,
+      "robot_obstacle_penetration": 18
+    },
+    "robot_obstacle_contact_records": 18,
+    "robot_obstacle_penetration_records": 18,
+    "robot_obstacle_contact_steps": 8,
+    "robot_obstacle_penetration_steps": 8,
+    "maximum_obstacle_penetration_depth_m": 0.02043637964406237,
+    "minimum_obstacle_distance_m": -0.02043637964406237,
+    "first_anomaly": {
+      "physics_step": 889,
+      "public_step": 111,
+      "sim_time": 8.889999999999855,
+      "geom1_id": 25,
+      "geom2_id": 4,
+      "body1_id": 3,
+      "body2_id": 0,
+      "geom1_name": null,
+      "geom2_name": "real_rect_obs_3",
+      "contact_distance": -0.013737222255123518,
+      "negative_distance_penetration": true,
+      "contact_type": "robot_obstacle_penetration",
+      "position": [
+        1.3068686826531355,
+        -0.06955481903751673,
+        0.08309129775656675
+      ],
+      "classification_basis": {
+        "geom1": {
+          "reason": "geom_bodyid in verified free-root body subtree",
+          "root_body_id": 1,
+          "body_id": 3
+        },
+        "geom2": {
+          "xml": "/home/linghu/catkin_ws/src/mk-mini/experiments/phase_v647_risk_revocable_20261031_095115_269753/seed_73105157/output_v630/assets/isolated_indoor.xml",
+          "xml_attachment": "worldbody/direct_geom",
+          "declared_type": "box",
+          "actual_body_id": 0,
+          "reason": "environment generator declaration + compiled world attachment/type",
+          "construction": "training/envs/mkmini_real_indoor_astar_sac_env.py::_make_real_indoor_xml",
+          "activation": "Phase19::_phase19_activate_geom (evaluation-only, hidden included)"
+        }
+      }
+    },
+    "unknown_contact_records": 0,
+    "robot_obstacle_geom_pairs": [
+      [
+        4,
+        25
+      ]
+    ],
+    "contact_log_content_sha256": "553597c0638cd76633437abe52cfdf4c92046433e1451cf53202a250e06530e9"
+  },
+  "elapsed_s": 82.51627107901732
+}

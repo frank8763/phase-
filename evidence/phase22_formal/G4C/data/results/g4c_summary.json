@@ -1,0 +1,183 @@
+{
+  "formal_complete": true,
+  "formal_dwa_config": "C3_CLEARANCE_BIASED",
+  "formal_dwa_config_sha256": "ff3e9c3d3fff5d9722bcf4d450e36c22c5b4c57966b488f0ac0a9d716ee0c11e",
+  "max_steps": 600,
+  "method_wall_timeout_s": 120.0,
+  "methods": {
+    "dwa": {
+      "collision": {
+        "n": 39,
+        "rate": 0.39,
+        "wilson95": [
+          0.3001687400639441,
+          0.4879698295415926
+        ]
+      },
+      "env_timeout_n": 0,
+      "mean_steps_when_recorded": 93.56,
+      "n": 100,
+      "other_failure_n": 0,
+      "planner": {
+        "attempts": 1440,
+        "failures": 497,
+        "max_single_plan_time_s": 0.011532531992997974,
+        "mean_time_s_per_attempt": 0.0033106502965084576,
+        "success_rate_per_attempt": 0.6548611111111111,
+        "successes": 943
+      },
+      "safe_success": {
+        "n": 61,
+        "rate": 0.61,
+        "wilson95": [
+          0.5120301704584073,
+          0.6998312599360558
+        ]
+      },
+      "wall_mean_s": 11.735515314749355,
+      "wall_median_s": 7.825681191003241,
+      "wall_p95_s": 42.37673626045506,
+      "wall_timeout_n": 0
+    },
+    "phase21_v11": {
+      "collision": {
+        "n": 29,
+        "rate": 0.29,
+        "wilson95": [
+          0.2101483574912227,
+          0.3853889117557111
+        ]
+      },
+      "env_timeout_n": 0,
+      "mean_steps_when_recorded": 82.57894736842105,
+      "n": 100,
+      "other_failure_n": 0,
+      "safe_success": {
+        "n": 47,
+        "rate": 0.47,
+        "wilson95": [
+          0.3751081795934127,
+          0.5671114302990063
+        ]
+      },
+      "wall_mean_s": 52.05846672475949,
+      "wall_median_s": 22.778401206996932,
+      "wall_p95_s": 125.83612426449108,
+      "wall_timeout_n": 24
+    },
+    "phase22_v1": {
+      "collision": {
+        "n": 30,
+        "rate": 0.3,
+        "wilson95": [
+          0.2189488529493276,
+          0.3958485463334666
+        ]
+      },
+      "env_timeout_n": 0,
+      "mean_steps_when_recorded": 95.04444444444445,
+      "n": 100,
+      "other_failure_n": 0,
+      "phase22_activation": {
+        "attempted_episodes": 34,
+        "successful_corridor_episodes": 31
+      },
+      "safe_success": {
+        "n": 60,
+        "rate": 0.6,
+        "wilson95": [
+          0.5020025867910618,
+          0.6905987135675411
+        ]
+      },
+      "wall_mean_s": 28.452907974049303,
+      "wall_median_s": 12.716187704500044,
+      "wall_p95_s": 125.83072456234223,
+      "wall_timeout_n": 10
+    }
+  },
+  "n_scenarios": 100,
+  "pairwise": {
+    "dwa_vs_phase21": {
+      "a": "phase21_v11",
+      "b": "dwa",
+      "collision": {
+        "a_only": 7,
+        "b_minus_a_pp": 10.0,
+        "b_only": 17,
+        "bootstrap95_pp": [
+          1.0,
+          19.0
+        ],
+        "mcnemar_p": 0.06391465663909912
+      },
+      "safe_success": {
+        "a_only": 5,
+        "b_minus_a_pp": 14.000000000000002,
+        "b_only": 19,
+        "bootstrap95_pp": [
+          5.0,
+          23.0
+        ],
+        "mcnemar_p": 0.006610751152038574
+      }
+    },
+    "phase22_vs_dwa": {
+      "a": "dwa",
+      "b": "phase22_v1",
+      "collision": {
+        "a_only": 17,
+        "b_minus_a_pp": -9.0,
+        "b_only": 8,
+        "bootstrap95_pp": [
+          -19.0,
+          1.0
+        ],
+        "mcnemar_p": 0.10775214433670044
+      },
+      "safe_success": {
+        "a_only": 10,
+        "b_minus_a_pp": -1.0,
+        "b_only": 9,
+        "bootstrap95_pp": [
+          -10.0,
+          8.0
+        ],
+        "mcnemar_p": 1.0
+      }
+    },
+    "phase22_vs_phase21": {
+      "a": "phase21_v11",
+      "b": "phase22_v1",
+      "collision": {
+        "a_only": 7,
+        "b_minus_a_pp": 1.0,
+        "b_only": 8,
+        "bootstrap95_pp": [
+          -7.000000000000001,
+          9.0
+        ],
+        "mcnemar_p": 1.0
+      },
+      "safe_success": {
+        "a_only": 1,
+        "b_minus_a_pp": 13.0,
+        "b_only": 14,
+        "bootstrap95_pp": [
+          6.0,
+          20.0
+        ],
+        "mcnemar_p": 0.0009765625
+      }
+    }
+  },
+  "post_open_tuning": false,
+  "primary_endpoint": "collision-free task success",
+  "primary_external_comparison": "phase22_v1 vs dwa",
+  "protocol": "G4C_THREEWAY_FORMAL_100_V1",
+  "scenario_mismatch_n": 0,
+  "seed_range": [
+    26200,
+    26299
+  ]
+}

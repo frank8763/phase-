@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-09-14T18:20:45",
+  "policy": "training/phase20_unknown_obstacle_adaptation/checkpoints/stage_b_randomized/phase20_stage_b_325000_steps.zip",
+  "policy_sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f",
+  "baseline": {
+    "label": "phase21_v11",
+    "module": "envs.phase21.mkmini_phase21_v11_candidate_recovery_env",
+    "class": "MkMiniPhase21V11CandidateRecoveryEnv"
+  },
+  "proposed": {
+    "label": "phase22_v1",
+    "module": "envs.phase22.mkmini_phase22_v1_continuous_corridor_env",
+    "class": "MkMiniPhase22V1ContinuousCorridorEnv"
+  },
+  "seeds": [
+    22800,
+    23099
+  ],
+  "seed_count": 300,
+  "paired": true,
+  "per_rollout_hard_wall_seconds": 120.0,
+  "strict_collision": [
+    "robot_sample_points(env)",
+    "check_map_penetration(env, margin=0.02)",
+    "robot_obstacle_contact(env)"
+  ],
+  "training": false,
+  "post_holdout_tuning_allowed": false
+}

@@ -1,0 +1,1 @@
+These files are the original historical audit, retained for provenance. The original Final300 summary is authoritative about its failed preregistered accuracy/safety and real-time gates. No claims were newly certified during migration.

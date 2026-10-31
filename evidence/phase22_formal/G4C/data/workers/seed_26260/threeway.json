@@ -1,0 +1,192 @@
+{
+  "method_order": [
+    "dwa",
+    "phase21_v11",
+    "phase22_v1"
+  ],
+  "methods": {
+    "dwa": {
+      "chosen_side": "NONE",
+      "collision": true,
+      "detour_applied": true,
+      "detour_enabled": true,
+      "done": true,
+      "env_timeout": false,
+      "failure_reason": "none",
+      "final_class": "COLLISION",
+      "ground_truth_used_for_control": false,
+      "method": "dwa",
+      "method_metrics": {
+        "g4_dwa_attempt_count": 39,
+        "g4_dwa_candidate_count": 1287,
+        "g4_dwa_failure_count": 30,
+        "g4_dwa_feasible_count": 62,
+        "g4_dwa_gt_obstacle_used_for_control": false,
+        "g4_dwa_last_failure_reason": "none",
+        "g4_dwa_plan_time_max_s": 0.0029126029985491186,
+        "g4_dwa_plan_time_total_s": 0.06711695005651563,
+        "g4_dwa_success_count": 9
+      },
+      "min_unknown_clearance": 0.1917557716369629,
+      "safe_success": false,
+      "scenario_signature": {
+        "circle_hash": "62db73a00e6a2382059e5088a34e9d6747c899a37fc5789a8940e1bfb508ab24",
+        "endpoint_clearance": 1.3512436,
+        "goal_xy": [
+          0.5293002,
+          0.0095443
+        ],
+        "original_path_hash": "408e5fe3347fbb6745299474bd99f514acd0c39d2b5a7711768e2e8ec0f7d437",
+        "rect_hash": "1dbd5bd3992da7df8da868fce19d61817d099cd2dcbe896f68395c26bfdbf900",
+        "robot_xy": [
+          -0.6,
+          1.6
+        ],
+        "unknown_hash": "9b4f46c0d088d14d3adbb4bf23ef409901782e6e121665661a75bf446ce01a70",
+        "unknown_lateral_offset": 0.4119986,
+        "unknown_path_fraction": 0.496676,
+        "unknown_radius": 0.1923755
+      },
+      "seed": 26260,
+      "steps": 108,
+      "success": false,
+      "timeout": false,
+      "total_reward": -421.0832785474689,
+      "trigger_risk": 0.4683954701984086,
+      "wall_seconds": 13.475216744001955,
+      "wall_timeout": false
+    },
+    "phase21_v11": {
+      "chosen_side": "LEFT",
+      "collision": true,
+      "detour_applied": true,
+      "detour_enabled": true,
+      "done": true,
+      "env_timeout": false,
+      "failure_reason": "none",
+      "final_class": "COLLISION",
+      "ground_truth_used_for_control": false,
+      "method": "phase21_v11",
+      "method_metrics": {
+        "phase21_v11_recovery_attempt_count": 1,
+        "phase21_v11_recovery_candidate_count": 588,
+        "phase21_v11_recovery_feasible_count": 6,
+        "phase21_v11_recovery_success_count": 1,
+        "phase21_v3_apply_count": 1,
+        "phase21_v4_attempt_count": 2,
+        "phase21_v4_failed_attempt_count": 0,
+        "phase21_v4_feasible_count": 6
+      },
+      "min_unknown_clearance": 0.21425408124923706,
+      "safe_success": false,
+      "scenario_signature": {
+        "circle_hash": "62db73a00e6a2382059e5088a34e9d6747c899a37fc5789a8940e1bfb508ab24",
+        "endpoint_clearance": 1.3512436,
+        "goal_xy": [
+          0.5293002,
+          0.0095443
+        ],
+        "original_path_hash": "408e5fe3347fbb6745299474bd99f514acd0c39d2b5a7711768e2e8ec0f7d437",
+        "rect_hash": "1dbd5bd3992da7df8da868fce19d61817d099cd2dcbe896f68395c26bfdbf900",
+        "robot_xy": [
+          -0.6,
+          1.6
+        ],
+        "unknown_hash": "9b4f46c0d088d14d3adbb4bf23ef409901782e6e121665661a75bf446ce01a70",
+        "unknown_lateral_offset": 0.4119986,
+        "unknown_path_fraction": 0.496676,
+        "unknown_radius": 0.1923755
+      },
+      "seed": 26260,
+      "steps": 150,
+      "success": false,
+      "timeout": false,
+      "total_reward": -520.1236277036185,
+      "trigger_risk": 0.5236868882785513,
+      "wall_seconds": 19.235759217990562,
+      "wall_timeout": false
+    },
+    "phase22_v1": {
+      "chosen_side": "LEFT",
+      "collision": true,
+      "detour_applied": true,
+      "detour_enabled": true,
+      "done": true,
+      "env_timeout": false,
+      "failure_reason": "none",
+      "final_class": "COLLISION",
+      "ground_truth_used_for_control": false,
+      "method": "phase22_v1",
+      "method_metrics": {
+        "phase21_v11_recovery_attempt_count": 1,
+        "phase21_v11_recovery_success_count": 1,
+        "phase21_v3_apply_count": 1,
+        "phase21_v4_attempt_count": 2,
+        "phase21_v4_failed_attempt_count": 0,
+        "phase21_v4_feasible_count": 6,
+        "phase22_v1_attempted": false,
+        "phase22_v1_candidate_count": 0,
+        "phase22_v1_failure_reason": "none",
+        "phase22_v1_reverse_count": 0,
+        "phase22_v1_selected_heading_delta": null,
+        "phase22_v1_selected_known_margin": null,
+        "phase22_v1_selected_p95_curvature": null,
+        "phase22_v1_selected_sensor_margin": null,
+        "phase22_v1_success": false
+      },
+      "min_unknown_clearance": 0.21425408124923706,
+      "safe_success": false,
+      "scenario_signature": {
+        "circle_hash": "62db73a00e6a2382059e5088a34e9d6747c899a37fc5789a8940e1bfb508ab24",
+        "endpoint_clearance": 1.3512436,
+        "goal_xy": [
+          0.5293002,
+          0.0095443
+        ],
+        "original_path_hash": "408e5fe3347fbb6745299474bd99f514acd0c39d2b5a7711768e2e8ec0f7d437",
+        "rect_hash": "1dbd5bd3992da7df8da868fce19d61817d099cd2dcbe896f68395c26bfdbf900",
+        "robot_xy": [
+          -0.6,
+          1.6
+        ],
+        "unknown_hash": "9b4f46c0d088d14d3adbb4bf23ef409901782e6e121665661a75bf446ce01a70",
+        "unknown_lateral_offset": 0.4119986,
+        "unknown_path_fraction": 0.496676,
+        "unknown_radius": 0.1923755
+      },
+      "seed": 26260,
+      "steps": 150,
+      "success": false,
+      "timeout": false,
+      "total_reward": -520.1236277036185,
+      "trigger_risk": 0.5236868882785513,
+      "wall_seconds": 19.59774383700278,
+      "wall_timeout": false
+    }
+  },
+  "resumed": {
+    "dwa": false,
+    "phase21_v11": false,
+    "phase22_v1": false
+  },
+  "same_scenario": true,
+  "scenario_signature": {
+    "circle_hash": "62db73a00e6a2382059e5088a34e9d6747c899a37fc5789a8940e1bfb508ab24",
+    "endpoint_clearance": 1.3512436,
+    "goal_xy": [
+      0.5293002,
+      0.0095443
+    ],
+    "original_path_hash": "408e5fe3347fbb6745299474bd99f514acd0c39d2b5a7711768e2e8ec0f7d437",
+    "rect_hash": "1dbd5bd3992da7df8da868fce19d61817d099cd2dcbe896f68395c26bfdbf900",
+    "robot_xy": [
+      -0.6,
+      1.6
+    ],
+    "unknown_hash": "9b4f46c0d088d14d3adbb4bf23ef409901782e6e121665661a75bf446ce01a70",
+    "unknown_lateral_offset": 0.4119986,
+    "unknown_path_fraction": 0.496676,
+    "unknown_radius": 0.1923755
+  },
+  "seed": 26260
+}
