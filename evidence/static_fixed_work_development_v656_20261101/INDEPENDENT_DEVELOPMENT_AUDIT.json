@@ -1,0 +1,192 @@
+{
+  "development_passed": true,
+  "static_acceptance_passed": false,
+  "checks": {
+    "six_physical_audits": true,
+    "three_full_repeats": true,
+    "source_and_protocol_frozen": true,
+    "zero_sim_clock_replay": true,
+    "bounded_completion": true
+  },
+  "runs": [
+    {
+      "name": "dev30_seed93000074_legacy_two",
+      "passed": true,
+      "checks": {
+        "snapshot": true,
+        "raw_contact_sha_and_count": true,
+        "strict_goal": true,
+        "zero_contacts": true,
+        "counts": true,
+        "state_replay": true,
+        "clearance": true,
+        "self_domain": true,
+        "same_model_as_v651": true,
+        "same_initial_as_v651": true,
+        "causal_static_native": true
+      },
+      "public_steps": 1046,
+      "native_steps": 8368,
+      "minimum_native_clearance_m": 0.1810620717210027
+    },
+    {
+      "name": "dev30_repeat93000074_legacy_two",
+      "passed": true,
+      "checks": {
+        "snapshot": true,
+        "raw_contact_sha_and_count": true,
+        "strict_goal": true,
+        "zero_contacts": true,
+        "counts": true,
+        "state_replay": true,
+        "clearance": true,
+        "self_domain": true,
+        "same_model_as_v651": true,
+        "same_initial_as_v651": true,
+        "causal_static_native": true
+      },
+      "public_steps": 1046,
+      "native_steps": 8368,
+      "minimum_native_clearance_m": 0.1810620717210027
+    },
+    {
+      "name": "dev30_seed93000045_single_event",
+      "passed": true,
+      "checks": {
+        "snapshot": true,
+        "raw_contact_sha_and_count": true,
+        "strict_goal": true,
+        "zero_contacts": true,
+        "counts": true,
+        "state_replay": true,
+        "clearance": true,
+        "self_domain": true,
+        "same_model_as_v651": true,
+        "same_initial_as_v651": true,
+        "causal_static_native": true
+      },
+      "public_steps": 1027,
+      "native_steps": 8216,
+      "minimum_native_clearance_m": 0.18544366499830145
+    },
+    {
+      "name": "dev30_repeat93000045_single_event",
+      "passed": true,
+      "checks": {
+        "snapshot": true,
+        "raw_contact_sha_and_count": true,
+        "strict_goal": true,
+        "zero_contacts": true,
+        "counts": true,
+        "state_replay": true,
+        "clearance": true,
+        "self_domain": true,
+        "same_model_as_v651": true,
+        "same_initial_as_v651": true,
+        "causal_static_native": true
+      },
+      "public_steps": 1027,
+      "native_steps": 8216,
+      "minimum_native_clearance_m": 0.18544366499830145
+    },
+    {
+      "name": "dev30_seed91000002_single_event",
+      "passed": true,
+      "checks": {
+        "snapshot": true,
+        "raw_contact_sha_and_count": true,
+        "strict_goal": true,
+        "zero_contacts": true,
+        "counts": true,
+        "state_replay": true,
+        "clearance": true,
+        "self_domain": true,
+        "same_model_as_v651": true,
+        "same_initial_as_v651": true,
+        "causal_static_native": true
+      },
+      "public_steps": 770,
+      "native_steps": 6160,
+      "minimum_native_clearance_m": 0.21730881526141857
+    },
+    {
+      "name": "dev30_repeat91000002_single_event",
+      "passed": true,
+      "checks": {
+        "snapshot": true,
+        "raw_contact_sha_and_count": true,
+        "strict_goal": true,
+        "zero_contacts": true,
+        "counts": true,
+        "state_replay": true,
+        "clearance": true,
+        "self_domain": true,
+        "same_model_as_v651": true,
+        "same_initial_as_v651": true,
+        "causal_static_native": true
+      },
+      "public_steps": 770,
+      "native_steps": 6160,
+      "minimum_native_clearance_m": 0.21730881526141857
+    }
+  ],
+  "repeats": [
+    {
+      "seed": 93000074,
+      "scene": "legacy_two",
+      "passed": true,
+      "checks": {
+        "full_state_ctrl": true,
+        "same_xml_bytes": true,
+        "all_contact_events_equal_except_verified_xml_path": true,
+        "same_normalized_initial": true
+      },
+      "maximum_errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0
+      },
+      "contact_records": 91819,
+      "non_path_contact_differences": 0
+    },
+    {
+      "seed": 93000045,
+      "scene": "single_event",
+      "passed": true,
+      "checks": {
+        "full_state_ctrl": true,
+        "same_xml_bytes": true,
+        "all_contact_events_equal_except_verified_xml_path": true,
+        "same_normalized_initial": true
+      },
+      "maximum_errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0
+      },
+      "contact_records": 94524,
+      "non_path_contact_differences": 0
+    },
+    {
+      "seed": 91000002,
+      "scene": "single_event",
+      "passed": true,
+      "checks": {
+        "full_state_ctrl": true,
+        "same_xml_bytes": true,
+        "all_contact_events_equal_except_verified_xml_path": true,
+        "same_normalized_initial": true
+      },
+      "maximum_errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0
+      },
+      "contact_records": 70396,
+      "non_path_contact_differences": 0
+    }
+  ],
+  "simulation_steps": 0,
+  "dynamic_started": false,
+  "training_updates": 0
+}

@@ -1,11 +1,11 @@
 {
-  "status": "OVERNIGHT_FIXED_WORK_DEVELOPMENT_RUNNING",
+  "status": "OVERNIGHT_FRESH_STATIC_CONFIRMATION_RUNNING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v656_static_deterministic_work/run_static.py",
-  "decision_freeze": "experiments/v656_static_deterministic_work/SOURCE_FREEZE.json",
+  "active_entrypoint": "experiments/v657_static_fixed_work_confirmation/run_static.py",
+  "decision_freeze": "experiments/v657_static_fixed_work_confirmation/CANDIDATE_FREEZE.json",
   "source_revision": "progress_30_fixed_search_work",
-  "protocol": "experiments/v656_static_deterministic_work/PROTOCOL.md",
+  "protocol": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
   "report": "docs/STATIC_SAME_LIST_ACCEPTANCE_REPORT.md",
   "execution_window_closed": false,
   "selected_configuration_arguments": [
@@ -21,7 +21,7 @@
   "sac_training_updates": 0,
   "limitations": [
     "development cases including geometrically selected two-obstacle task, not an independent random success rate",
-    "V654 actual repeat divergence from online wall-clock search; V655 unstarted due failed dependency; V656 fixed-work revision30 development and fresh V657 pending",
+    "V657 fresh frozen confirmation underway after independent six-run V656 development audit; old V652/V653/V654 failures retained",
     "fixed rectangle self-configuration domain; geometry-infeasible tasks require a predefined evaluation contract",
     "static circle shape prior and known prior map, accurate localization",
     "finite local range hypotheses without calibrated continuous coverage",
@@ -36,16 +36,16 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "PENDING_NETWORK_TIMEOUT",
   "raw_run_cleanup_executed": false,
-  "active_run": "dev30_seed93000074_legacy_two",
+  "active_run": null,
   "previous_development_window_closed": true,
-  "active_window": "runs/v656_static_deterministic_work/development02",
+  "active_window": "runs/v657_static_fixed_work_confirmation/confirmation01",
   "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
     "all_strict_arrivals": true,
     "all_development_audits_passed": true
   },
-  "selection_status": "24_TASKS_LOCKED_BEFORE_NAVIGATION",
+  "selection_status": "FRESH_POOL_PREFLIGHT_PENDING_LOCK",
   "previous_v649_development_tasks": [
     {
       "seed": 91000002,
@@ -110,7 +110,7 @@
       "full_development_audit_passed": true
     }
   ],
-  "selection_freeze": "runs/v652_static_confirmation/confirmation_window01/SELECTION_FREEZE.json",
+  "selection_freeze": "runs/v657_static_fixed_work_confirmation/confirmation01/SELECTION_FREEZE.json",
   "original_logging_interruption_retained": true,
   "previous_confirmation_summary": {
     "selected": 24,
@@ -120,15 +120,6 @@
     "status": "FAILED_SECOND_NON_SUCCESS_STOP",
     "remaining_unattempted": 11
   },
-  "confirmation_summary": {
-    "selected": 24,
-    "recorded": 24,
-    "strict_arrivals": 23,
-    "non_successes": 1,
-    "status": "V653_FAILED_RAW_CONTACT_DIGEST_REPEAT",
-    "remaining_unattempted": 0,
-    "full_confirmation_gate_passed": false
-  },
   "previous_revision28_development_success": {
     "revision": 28,
     "seed": 93000074,
@@ -137,12 +128,36 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-10-31T23:29:59.988285+08:00",
+  "last_observed_at": "2026-11-01T00:26:49.075354+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": {
     "protocol": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
     "candidate_freeze": "experiments/v657_static_fixed_work_confirmation/CANDIDATE_FREEZE.json",
     "requires_v656_development_passed": true,
-    "started": false
+    "started": true
+  },
+  "v653_previous_confirmation_summary": {
+    "selected": 24,
+    "recorded": 24,
+    "strict_arrivals": 23,
+    "non_successes": 1,
+    "status": "V653_FAILED_RAW_CONTACT_DIGEST_REPEAT",
+    "remaining_unattempted": 0,
+    "full_confirmation_gate_passed": false
+  },
+  "confirmation_summary": {
+    "selected": 0,
+    "recorded": 0,
+    "strict_arrivals": 0,
+    "non_successes": 0,
+    "status": "NEW_POOL_T0_SCREENING"
+  },
+  "v656_development": {
+    "passed": true,
+    "independent_audit": "runs/v656_static_deterministic_work/INDEPENDENT_DEVELOPMENT_AUDIT.json",
+    "distinct_tasks": 3,
+    "full_repeats": 3,
+    "maximum_full_state_ctrl_error": 0.0,
+    "evidence": "evidence/static_fixed_work_development_v656_20261101"
   }
 }
