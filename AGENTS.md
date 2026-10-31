@@ -15,3 +15,5 @@
 
 
 - User renewed static acceptance authorization. Active confirmation is experiments/v650_static_acceptance/PROTOCOL.md plus POOL_EXTENSION_PREREG.md, shared 14400s window; see ACCEPTANCE_PROGRESS.json. Algorithm frozen before navigation; do not tune on confirmation failures. Even after passing static, wait for user review and explicit continuation before dynamics.
+
+- V650 confirmation failed after 13 tasks (11 strict arrivals, 2 HORIZON); remaining 11 unattempted. Active V651 development uses the SAME original deadline 2026-10-31 19:45:11 +0800; read experiments/v651_static_progress/PROTOCOL.md. Do not relabel repaired old tasks as independent confirmation.

@@ -1,13 +1,13 @@
 {
-  "status": "DEVELOPMENT_MULTI_SCENE_SUCCESS_NOT_STATIC_STABILITY_ACCEPTED",
+  "status": "STATIC_CONFIRMATION_FAILED_PROGRESS_REPAIR_RUNNING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v649_static_stability/run_static.py",
-  "decision_freeze": "experiments/v649_static_stability/CANDIDATE_FREEZE.json",
-  "source_revision": "stability_27_consistent_admission",
-  "protocol": "experiments/v649_static_stability/PROTOCOL.md",
-  "report": "docs/STATIC_STABILITY_REPORT.md",
-  "execution_window_closed": true,
+  "active_entrypoint": "experiments/v651_static_progress/run_static.py",
+  "decision_freeze": "experiments/v651_static_progress/CANDIDATE_29.json",
+  "source_revision": "progress_29_joint_consistent_projection",
+  "protocol": "experiments/v651_static_progress/PROTOCOL.md",
+  "report": "docs/STATIC_ACCEPTANCE_REPORT.md",
+  "execution_window_closed": false,
   "selected_configuration_arguments": [
     "--scene",
     "single_event",
@@ -53,7 +53,7 @@
       "unknown_contact_records": 0
     }
   ],
-  "independent_confirmation_trials": 0,
+  "independent_confirmation_trials": 13,
   "static_gate_met": false,
   "dynamic_started": false,
   "sac_training_updates": 0,
@@ -73,5 +73,22 @@
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "PENDING_NETWORK_TIMEOUT",
-  "raw_run_cleanup_executed": false
+  "raw_run_cleanup_executed": false,
+  "active_run": "runs/v651_static_progress/dev29_seed93000074_legacy_two",
+  "confirmation_summary": {
+    "selected": 24,
+    "completed": 13,
+    "strict_arrivals": 11,
+    "non_successes": 2,
+    "status": "FAILED_SECOND_NON_SUCCESS_STOP",
+    "remaining_unattempted": 11
+  },
+  "current_development_success": {
+    "revision": 28,
+    "seed": 93000074,
+    "scene": "legacy_two",
+    "public_steps": 1104,
+    "native_clearance_min_m": 0.1927867356233937,
+    "cusp_bookkeeping_audit_passed": false
+  }
 }

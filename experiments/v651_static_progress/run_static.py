@@ -11,6 +11,7 @@ from perception import measured_points
 from circle_memory import CircleMemory
 from range_circle_memory import RangeCircleMemory
 from tracking import switch_if_settled
+from control_contract import planner_steering_bound
 from geometry_predictor import RobotPredictor as GeometryPredictor,SELF_DOMAIN
 from self_geometry import SelfGeometry,containment_margin
 from exact_footprint import build as exact_field
@@ -82,6 +83,8 @@ try:
         bounds=SELF_DOMAIN.tolist();mujoco.mj_kinematics(env.model,env.data)
         assert containment_margin(SelfGeometry(env.model,mujoco).actual(env.model,env.data),bounds)>=.002,'INITIAL_SELF_CONFIGURATION_OUTSIDE_DOMAIN'
     original_apply=env.inner._apply_wheel_ctrl
+    planner_steer_limit,planner_contract=planner_steering_bound(env,mujoco)
+    dump(out/'PLANNER_CONTROL_CONTRACT.json',planner_contract)
     initial_obs=obs.copy()
     snapshot=B.Snapshot(env,shift)
     scene_pos=env.model.geom_pos[gid].copy()
@@ -98,7 +101,7 @@ try:
         raise RuntimeError('INITIAL_TASK_MARGIN_INVALID_BEFORE_NAVIGATION')
     if a.feasibility_only:
         from task_preflight import certify
-        feasibility=certify(audit_world,start_pose,env.goal_xy,float(env.inner.wheel_base),float(env.inner.max_steer),F,initial_margin)
+        feasibility=certify(audit_world,start_pose,env.goal_xy,float(env.inner.wheel_base),planner_steer_limit,F,initial_margin)
         dump(out/'TASK_FEASIBILITY.json',feasibility)
     static_ids=np.array([mujoco.mj_name2id(env.model,mujoco.mjtObj.mjOBJ_GEOM,u['name'])for u in physical_unknown],int)
     static_positions=env.model.geom_pos[static_ids].copy()
@@ -158,7 +161,7 @@ try:
                     with (cell/'sensor_censoring.jsonl').open('a') as stream:stream.write(json.dumps({'step':step,**sensor_stats})+'\n')
                     points=memory.update(sensor,rect,circ,step,persist=condition!='no_memory')
                     need=(path is None)
-                    world=H.world_input(env,points);world['footprint_bounds']=bounds;world['max_steer']=float(env.inner.max_steer);world['wheel_base']=float(env.inner.wheel_base)
+                    world=H.world_input(env,points);world['footprint_bounds']=bounds;world['max_steer']=planner_steer_limit;world['control_candidate_max_steer']=float(env.inner.max_steer);world['wheel_base']=float(env.inner.wheel_base)
                     if condition in ('circle_memory','circle_repeat'):
                         assert a.scene=='single_event','CYLINDER_MODEL_SCOPE_IS_SINGLE_EVENT'
                         estimated,fit_stats=circle_memory.update(sensor,rect,circ,step,current[:2])
@@ -183,7 +186,9 @@ try:
                         segment_end=index+1
                         while segment_end<len(path)-1 and int(path[segment_end+1,3])==active_gear:segment_end+=1
                         distances=np.linalg.norm(path[index:min(segment_end+1,index+40),:2]-current[:2],axis=1)
-                        index+=int(np.argmin(distances))
+                        # A nearest-point update cannot bypass the stopped-cusp gate.
+                        nearest_index=index+int(np.argmin(distances))
+                        index=min(nearest_index,segment_end-1) if segment_end<len(path)-1 else nearest_index
                         index,transition=switch_if_settled(path,index,current,env.data.qvel)
                         if transition is not None:
                             with (cell/'gear_transitions.jsonl').open('a')as stream:stream.write(json.dumps({'step':step,**transition})+'\n')
@@ -197,10 +202,10 @@ try:
                             previous=np.asarray(rows[-30]['pose'])
                             if np.linalg.norm(current[:2]-previous[:2])<.04 and abs(wrap(current[2]-previous[2]))<.06:need=True
                     if need and backup_remaining==0:
-                        t=time.monotonic();candidate,stats=search(field,current,env.goal_xy,float(env.inner.wheel_base),float(env.inner.max_steer),guard=.18,budget=2. if geometry_mode else 6.,dense_requested_guard=geometry_mode)
+                        t=time.monotonic();candidate,stats=search(field,current,env.goal_xy,float(env.inner.wheel_base),planner_steer_limit,guard=.18,budget=2. if geometry_mode else 6.,dense_requested_guard=geometry_mode)
                         if geometry_mode and stats['status']!='GLOBAL_GOAL_PATH':
                             preferred=candidate;preferred_stats=stats
-                            candidate,stats=search(field,current,env.goal_xy,float(env.inner.wheel_base),float(env.inner.max_steer),guard=.155,budget=8.,resolution=.05,heading_bins=144,dense_requested_guard=True)
+                            candidate,stats=search(field,current,env.goal_xy,float(env.inner.wheel_base),planner_steer_limit,guard=.155,budget=8.,resolution=.05,heading_bins=144,dense_requested_guard=True)
                             if candidate is None and preferred is not None:candidate,stats=preferred,preferred_stats
                             stats['preferred_search']=preferred_stats
                         planning_wall+=time.monotonic()-t;last_plan=step
@@ -260,7 +265,7 @@ try:
                 if term or trunc:outcome='NATIVE_TERMINATION';break
             contacts=recorder.summary();distance=float(np.linalg.norm(pose()[:2]-env.goal_xy))
             strict=bool(distance<=.45 and contacts['robot_obstacle_contact_records']==0 and contacts['unknown_contact_records']==0)
-            record={'condition':condition,'seed':a.seed,'outcome':outcome,'strict_safe_arrival':strict,'goal_distance_m':distance,'public_steps':len(rows),'physics_steps':count[0],'contacts':contacts,'backup_attempts':backup_attempts,'backup_steps':backup_steps,'planning_attempts':len(events),'planning_wall_s':planning_wall,'command_overrides':overrides,'elapsed_s':time.monotonic()-branch_start,'initial_state_hash':initial_hash,'normalized_initial_state_hash':normalized_initial_hash,'minimum_actual_self_domain_margin_m':min(self_margins)if self_margins else None,'self_geometry_checked_native_ticks':len(self_margins),'static_obstacle_pose_unchanged':np.array_equal(env.model.geom_pos[static_ids],static_positions),'root_mutations_outside_mjstep':0,'source_revision':'progress_28_path_projection'if geometry_mode else 'stability_25_stopped_cusp','prediction_steps':0 if predictor is None else predictor.prediction_steps}
+            record={'condition':condition,'seed':a.seed,'outcome':outcome,'strict_safe_arrival':strict,'goal_distance_m':distance,'public_steps':len(rows),'physics_steps':count[0],'contacts':contacts,'backup_attempts':backup_attempts,'backup_steps':backup_steps,'planning_attempts':len(events),'planning_wall_s':planning_wall,'command_overrides':overrides,'elapsed_s':time.monotonic()-branch_start,'initial_state_hash':initial_hash,'normalized_initial_state_hash':normalized_initial_hash,'minimum_actual_self_domain_margin_m':min(self_margins)if self_margins else None,'self_geometry_checked_native_ticks':len(self_margins),'static_obstacle_pose_unchanged':np.array_equal(env.model.geom_pos[static_ids],static_positions),'root_mutations_outside_mjstep':0,'source_revision':'progress_29_joint_consistent_projection'if geometry_mode else 'stability_25_stopped_cusp','prediction_steps':0 if predictor is None else predictor.prediction_steps}
             dump(cell/'result.json',record)
             dump(cell/'trace.json',rows)
             results.append(record);dump(out/'results_so_far.json',results);print('V649_RESULT',json.dumps(record),flush=True)
