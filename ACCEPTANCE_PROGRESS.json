@@ -1,15 +1,15 @@
 {
-  "status": "FROZEN_STATIC_CONFIRMATION_NAVIGATING",
-  "active_window": "runs/v652_static_confirmation/confirmation_window01",
-  "protocol": "experiments/v652_static_confirmation/PROTOCOL.md",
+  "status": "LOGGING_ONLY_CONTINUATION_OF_LOCKED_CONFIRMATION",
+  "active_window": "runs/v653_static_log_recovery/continuation01",
+  "protocol": "experiments/v653_static_log_recovery/PROTOCOL.md",
   "decision_freeze": "experiments/v652_static_confirmation/CANDIDATE_FREEZE.json",
   "selection_freeze": "runs/v652_static_confirmation/confirmation_window01/SELECTION_FREEZE.json",
   "goal": "24 fixed tasks >=23 strict arrivals; each class >=11/12; zero contacts; three-scene repeats and physical clearance audits",
   "dynamic_started": false,
   "dynamic_requires_user_review_and_explicit_continue": true,
-  "completed_confirmation_tasks": 0,
-  "strict_arrivals": 0,
-  "non_successes": 0,
+  "completed_confirmation_tasks": 5,
+  "strict_arrivals": 4,
+  "non_successes": 1,
   "development_protocol": "experiments/v651_static_progress/PROTOCOL.md",
   "static_acceptance_passed": false,
   "previous_confirmation": {
@@ -23,5 +23,8 @@
   "selection_audit": "runs/v652_static_confirmation/SELECTION_AUDIT.json",
   "selected_tasks": 24,
   "screened_candidates": 286,
-  "selection_locked_before_navigation": true
+  "selection_locked_before_navigation": true,
+  "original_interruption_retained": true,
+  "deadline_unchanged": "2026-10-31T23:40:51.861+08:00",
+  "decision_equivalence": "experiments/v653_static_log_recovery/DECISION_EQUIVALENCE.json"
 }

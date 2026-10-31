@@ -1,11 +1,11 @@
 {
-  "status": "FROZEN_STATIC_CONFIRMATION_RUNNING",
+  "status": "LOGGING_ONLY_CONTINUATION_STATIC_CONFIRMATION",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v652_static_confirmation/run_static.py",
-  "decision_freeze": "experiments/v652_static_confirmation/CANDIDATE_FREEZE.json",
+  "active_entrypoint": "experiments/v653_static_log_recovery/run_static.py",
+  "decision_freeze": "experiments/v653_static_log_recovery/SOURCE_FREEZE.json",
   "source_revision": "progress_29_joint_consistent_projection",
-  "protocol": "experiments/v652_static_confirmation/PROTOCOL.md",
+  "protocol": "experiments/v653_static_log_recovery/PROTOCOL.md",
   "report": "docs/STATIC_REPAIR_REPORT.md",
   "execution_window_closed": false,
   "selected_configuration_arguments": [
@@ -15,7 +15,7 @@
     "geometry_memory"
   ],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
-  "independent_confirmation_trials": 0,
+  "independent_confirmation_trials": 5,
   "static_gate_met": false,
   "dynamic_started": false,
   "sac_training_updates": 0,
@@ -54,7 +54,7 @@
     "cusp_bookkeeping_audit_passed": false
   },
   "previous_development_window_closed": true,
-  "active_window": "runs/v652_static_confirmation/confirmation_window01",
+  "active_window": "runs/v653_static_log_recovery/continuation01",
   "previous_confirmation_trials": 13,
   "revision29_development_checks": {
     "distinct_tasks": 3,
@@ -126,5 +126,6 @@
       "full_development_audit_passed": true
     }
   ],
-  "selection_freeze": "runs/v652_static_confirmation/confirmation_window01/SELECTION_FREEZE.json"
+  "selection_freeze": "runs/v652_static_confirmation/confirmation_window01/SELECTION_FREEZE.json",
+  "original_logging_interruption_retained": true
 }
