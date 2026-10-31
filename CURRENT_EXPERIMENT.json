@@ -1,47 +1,75 @@
 {
-  "status": "VERIFIED_DEVELOPMENT_SINGLE_CYLINDER_CANDIDATE",
+  "status": "DEVELOPMENT_MULTI_SCENE_SUCCESS_NOT_STATIC_STABILITY_ACCEPTED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v648_static_unknown/run_static.py",
-  "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
-  "source_revision": "pilot_21_braking_after_steering_response",
-  "protocol": "experiments/v648_static_unknown/PROTOCOL.md",
-  "report": "docs/STATIC_UNKNOWN_REPORT.md",
-  "verified_scope": {
-    "seed": 91000004,
-    "scene": "single_event",
-    "strict_goal_tolerance_m": 0.45,
-    "actual_public_steps": 633,
-    "actual_physics_steps": 5064,
-    "obstacle_contact_records": 0,
-    "obstacle_penetration_records": 0,
-    "unknown_contact_records": 0,
-    "same_state_repeat": true
-  },
-  "limitations": [
-    "development scene only, not independent generalization",
-    "single circle shape prior",
-    "empirical map envelope not independently calibrated",
-    "full low-level takeover, SAC benefit unisolated",
-    "not real-time",
-    "no real robot validation"
-  ],
-  "legacy_current_directory_role": "immutable V647 handoff and environment dependency, not the active experiment entrypoint",
+  "active_entrypoint": "experiments/v649_static_stability/run_static.py",
+  "decision_freeze": "experiments/v649_static_stability/CANDIDATE_FREEZE.json",
+  "source_revision": "stability_27_consistent_admission",
+  "protocol": "experiments/v649_static_stability/PROTOCOL.md",
+  "report": "docs/STATIC_STABILITY_REPORT.md",
+  "execution_window_closed": true,
   "selected_configuration_arguments": [
-    "--seed",
-    "91000004",
     "--scene",
     "single_event",
     "--conditions",
-    "frozen_sac,circle_memory"
+    "geometry_memory"
   ],
-  "output_name_rule": "Supply a new --name for every actual run; do not overwrite preserved runs",
-  "verified_map_ablation": {
-    "same_controller_and_state": true,
-    "raw_point_memory_public_steps": 258,
-    "raw_point_memory_outcome": "OBSERVED_HARD_FLOOR_BREACH",
-    "circle_memory_public_steps": 633,
-    "circle_memory_outcome": "GOAL",
-    "strict_arrivals_in_same_development_scene_including_repeats": 3
-  }
+  "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
+  "completed_development_tasks": [
+    {
+      "seed": 91000002,
+      "scene": "single_event",
+      "strict_safe_arrival": true,
+      "public_steps": 773,
+      "physics_steps": 6184,
+      "obstacle_contact_records": 0,
+      "unknown_contact_records": 0
+    },
+    {
+      "seed": 91000004,
+      "scene": "single_event",
+      "strict_safe_arrival": true,
+      "public_steps": 621,
+      "physics_steps": 4968,
+      "obstacle_contact_records": 0,
+      "unknown_contact_records": 0
+    },
+    {
+      "seed": 92000003,
+      "scene": "single_event",
+      "strict_safe_arrival": true,
+      "public_steps": 1131,
+      "physics_steps": 9048,
+      "obstacle_contact_records": 0,
+      "unknown_contact_records": 0
+    },
+    {
+      "seed": 92000005,
+      "scene": "legacy_two",
+      "strict_safe_arrival": true,
+      "public_steps": 650,
+      "physics_steps": 5200,
+      "obstacle_contact_records": 0,
+      "unknown_contact_records": 0
+    }
+  ],
+  "independent_confirmation_trials": 0,
+  "static_gate_met": false,
+  "dynamic_started": false,
+  "sac_training_updates": 0,
+  "limitations": [
+    "development cases including geometrically selected two-obstacle task, not an independent random success rate",
+    "24-scene confirmation and cross-scene repeats uncompleted",
+    "fixed rectangle self-configuration domain; geometry-infeasible tasks require a predefined evaluation contract",
+    "static circle shape prior and known prior map, accurate localization",
+    "finite local range hypotheses without calibrated continuous coverage",
+    "full low-level takeover; SAC benefit unisolated",
+    "not real-time, no real-robot validation"
+  ],
+  "previous_candidate": {
+    "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
+    "report": "docs/STATIC_UNKNOWN_REPORT.md",
+    "evidence": "evidence/static_unknown_20261031"
+  },
+  "legacy_current_directory_role": "immutable V647 handoff and environment dependency"
 }
