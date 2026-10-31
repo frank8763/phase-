@@ -19,6 +19,7 @@ for row, (seed, scene) in enumerate([(93000074, 'legacy_two'), (93000045, 'singl
         ax.add_patch(Circle((x, y), r, facecolor='.75', edgecolor='.4'))
     for obstacle in protocol['physical_unknown_obstacles']:
         ax.add_patch(Circle(obstacle['xy'], obstacle['radius'], facecolor='#dc8d26', edgecolor='#935400'))
+    ax.plot([],[], 'o', color='#dc8d26', label='Unknown cylinders (evaluation only)')
     goal = protocol['goal_xy']
     ax.add_patch(Circle(goal, .45, facecolor='#3c9f6c', alpha=.15))
     ax.scatter(*goal, marker='*', s=100, color='#23754b', label='Goal (0.45 m)')
@@ -28,7 +29,8 @@ for row, (seed, scene) in enumerate([(93000074, 'legacy_two'), (93000045, 'singl
         if (branch/'result.json').exists():
             result = json.loads((branch/'result.json').read_text())
             revision = result['source_revision'].replace('progress_', '')
-            trials.append((f'V651 {revision} / {result["outcome"]}', run/'paired', '#2372a5' if '28_' in revision else '#7f4f99'))
+            label = f'V651 r28 / {result["outcome"]} (cusp audit failed)' if '28_' in revision else f'V651 r29 / {result["outcome"]}'
+            trials.append((label, run/'paired', '#2372a5' if '28_' in revision else '#7f4f99'))
     for label, pair, color in trials:
         branch = pair/'geometry_memory'
         trace = json.loads((branch/'trace.json').read_text())

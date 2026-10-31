@@ -1,5 +1,5 @@
 """One bounded fresh static confirmation; no tuning or automatic new windows."""
-import datetime, fcntl, hashlib, json, os, signal, subprocess, time
+import datetime, fcntl, hashlib, json, os, signal, subprocess, time, traceback
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import numpy as np
@@ -48,6 +48,8 @@ dump(window/'WINDOW.json', {'started_unix':started_unix,'started_local':datetime
 dump(window/'SOURCE_FREEZE.json',freeze)
 dump(window/'DECISION_EQUIVALENCE.json',{'parent':'V651 revision29','files':equivalent,'only_normalization':'runner output root v652 -> v651','parent_registered_hashes':registered_parent})
 (window/'PROTOCOL.md').write_bytes((src/'PROTOCOL.md').read_bytes())
+(window/'PRE_NAVIGATION_SCREENING_AMENDMENT.md').write_bytes((src/'PRE_NAVIGATION_SCREENING_AMENDMENT.md').read_bytes())
+(window/'CANDIDATE_FREEZE.json').write_bytes((src/'CANDIDATE_FREEZE.json').read_bytes())
 ledger, outcomes, physical, repeats = [], [], [], []
 
 def remaining():
@@ -68,6 +70,13 @@ def execute(cmd, log, seconds):
             except subprocess.TimeoutExpired:
                 os.killpg(proc.pid,signal.SIGKILL); proc.wait()
             return 124
+        except BaseException:
+            if proc.poll() is None:
+                os.killpg(proc.pid,signal.SIGTERM)
+                try: proc.wait(timeout=3)
+                except subprocess.TimeoutExpired:
+                    os.killpg(proc.pid,signal.SIGKILL); proc.wait()
+            raise
 
 def run(name, seed, scene, feasibility=False):
     frozen()
@@ -106,17 +115,25 @@ def audit_run(name, result):
 
 status = 'PREFLIGHT_RUNNING'
 selected = []
+def stop_signal(*_):
+    raise RuntimeError('BOUNDARY_OR_USER_STOP_SIGNAL')
+signal.signal(signal.SIGTERM,stop_signal)
 try:
     for seed in range(94000001,94000361):
         scene = 'single_event' if seed%2 else 'legacy_two'
         if run(f'preflight_{seed}_{scene}',seed,scene,True) is None:
             status = 'PREFLIGHT_BUDGET_INCOMPLETE'; break
+        eligible = {kind:sum(x['scene'] == kind and bool(x['feasibility'] and x['feasibility']['eligible']) for x in ledger) for kind in ['single_event','legacy_two']}
+        if all(count >= 12 for count in eligible.values()):
+            status = 'SCREENING_QUOTAS_REACHED'; break
     else:
+        status = 'SCREENING_POOL_EXHAUSTED'
+    if status in ['SCREENING_QUOTAS_REACHED','SCREENING_POOL_EXHAUSTED']:
         for scene in ['single_event','legacy_two']:
             candidates = [x for x in ledger if x['scene'] == scene and x['feasibility'] and x['feasibility']['eligible']]
             selected += candidates[:12]
         selected.sort(key=lambda x:x['seed'])
-        dump(window/'SELECTION_FREEZE.json',{'status':'LOCKED_BEFORE_NAVIGATION','screened':len(ledger),'tasks':[{'seed':x['seed'],'scene':x['scene'],'preflight_name':x['name'],'scene_model_sha256':x['protocol']['full_model_sha256']} for x in selected],'eligible_counts':{scene:sum(x['scene'] == scene and bool(x['feasibility'] and x['feasibility']['eligible']) for x in ledger) for scene in ['single_event','legacy_two']},'scope':'joint-limit-consistent geometric-reference-selected static cylinder tasks; not unfiltered random population'})
+        dump(window/'SELECTION_FREEZE.json',{'status':'LOCKED_BEFORE_NAVIGATION','screened':len(ledger),'candidate_pool_maximum':360,'unscreened_candidates_not_counted':360-len(ledger),'tasks':[{'seed':x['seed'],'scene':x['scene'],'preflight_name':x['name'],'scene_model_sha256':x['protocol']['full_model_sha256']} for x in selected],'eligible_counts':{scene:sum(x['scene'] == scene and bool(x['feasibility'] and x['feasibility']['eligible']) for x in ledger) for scene in ['single_event','legacy_two']},'scope':'joint-limit-consistent geometric-reference-selected static cylinder tasks; not unfiltered random population'})
         status = 'CONFIRMATION_RUNNING' if len(selected) == 24 else 'INSUFFICIENT_ELIGIBLE_TASKS'
     if status == 'CONFIRMATION_RUNNING':
         for task in selected:
@@ -154,7 +171,7 @@ try:
         else: status = 'ALL_TASKS_AND_REPEATS_AUDITED'
 except BaseException as error:
     status = 'STOPPED_EXCEPTION'
-    dump(window/'ERROR.json',{'type':type(error).__name__,'message':str(error)})
+    dump(window/'ERROR.json',{'type':type(error).__name__,'message':str(error),'traceback':traceback.format_exc()})
 finally:
     classes = {s:sum(x['strict_success'] for x in outcomes if x['scene'] == s) for s in ['single_event','legacy_two']}
     checks = {'24_fixed_distinct_tasks':len(selected) == 24 and len({x['seed'] for x in selected}) == 24,'all_24_completed':len(outcomes) == 24,'at_least_23_strict_arrivals':sum(x['strict_success'] for x in outcomes) >= 23,'single_at_least_11':classes['single_event'] >= 11,'two_at_least_11':classes['legacy_two'] >= 11,'all_27_physical_audits':len(physical) == 27 and all(x['passed'] for x in physical),'three_matching_cross_scene_repeats':len(repeats) == 3 and all(x['matched'] for x in repeats),'bounded_window_respected':remaining() >= 0,'source_and_protocol_unchanged':all(hashlib.sha256((src/n).read_bytes()).hexdigest() == h for n,h in freeze.items()) and hashlib.sha256((src/'PROTOCOL.md').read_bytes()).hexdigest() == protocol_hash}

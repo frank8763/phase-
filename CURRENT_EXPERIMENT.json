@@ -1,12 +1,12 @@
 {
-  "status": "STATIC_CONFIRMATION_FAILED_PROGRESS_REPAIR_RUNNING",
+  "status": "FROZEN_REV29_READY_FOR_FRESH_STATIC_CONFIRMATION",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v651_static_progress/run_static.py",
-  "decision_freeze": "experiments/v651_static_progress/CANDIDATE_29.json",
+  "active_entrypoint": "experiments/v652_static_confirmation/run_static.py",
+  "decision_freeze": "experiments/v652_static_confirmation/CANDIDATE_FREEZE.json",
   "source_revision": "progress_29_joint_consistent_projection",
-  "protocol": "experiments/v651_static_progress/PROTOCOL.md",
-  "report": "docs/STATIC_ACCEPTANCE_REPORT.md",
+  "protocol": "experiments/v652_static_confirmation/PROTOCOL.md",
+  "report": "docs/STATIC_REPAIR_REPORT.md",
   "execution_window_closed": false,
   "selected_configuration_arguments": [
     "--scene",
@@ -53,7 +53,7 @@
       "unknown_contact_records": 0
     }
   ],
-  "independent_confirmation_trials": 13,
+  "independent_confirmation_trials": 0,
   "static_gate_met": false,
   "dynamic_started": false,
   "sac_training_updates": 0,
@@ -74,7 +74,7 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "PENDING_NETWORK_TIMEOUT",
   "raw_run_cleanup_executed": false,
-  "active_run": "runs/v651_static_progress/dev29_seed93000074_legacy_two",
+  "active_run": null,
   "confirmation_summary": {
     "selected": 24,
     "completed": 13,
@@ -90,5 +90,13 @@
     "public_steps": 1104,
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
+  },
+  "previous_development_window_closed": true,
+  "active_window": "runs/v652_static_confirmation/confirmation_window01",
+  "previous_confirmation_trials": 13,
+  "revision29_development_checks": {
+    "distinct_tasks": 3,
+    "all_strict_arrivals": true,
+    "all_development_audits_passed": true
   }
 }

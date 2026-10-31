@@ -26,10 +26,21 @@ source_matches_candidate = all(source_hashes.get(name) == digest for name,digest
 protocol = json.loads((pair/'STATIC_PROTOCOL.json').read_text())
 seed, scene = result['seed'], protocol['scene']
 baseline = repo/'runs/v650_static_acceptance'/f'confirm_{seed}_{scene}/paired/geometry_memory/result.json'
-same_initial_state = None
+same_initial_state = False
+same_scene_model = False
+reference_kind = None
 if baseline.exists():
     previous = json.loads(baseline.read_text())
+    old_protocol = json.loads((baseline.parents[1]/'STATIC_PROTOCOL.json').read_text())
+    reference_kind = 'V650 same confirmation task, before repair'
+elif seed == 91000002 and scene == 'single_event':
+    archived = repo/'evidence/static_stability_20261031/selected/dev27b_seed91000002_single_event'
+    previous = json.loads(gzip.decompress((archived/'geometry_memory/result.json.gz').read_bytes()))
+    old_protocol = json.loads(gzip.decompress((archived/'STATIC_PROTOCOL.json.gz').read_bytes()))
+    reference_kind = 'V649 prior successful development task, before repair'
+if reference_kind:
     same_initial_state = previous['normalized_initial_state_hash'] == result['normalized_initial_state_hash']
+    same_scene_model = old_protocol['full_model_sha256'] == protocol['full_model_sha256']
 contact_digest = hashlib.sha256()
 with gzip.open(cell/'contacts.jsonl.gz','rb') as stream:
     for block in iter(lambda:stream.read(1048576),b''):
@@ -38,7 +49,8 @@ native = json.loads((pair/'NATIVE_REPLAY_AUDIT.json').read_text())
 checks = {
     'source_snapshot_verified':source_verified,
     'source_matches_registered_candidate':source_matches_candidate,
-    'same_initial_state_as_confirmation_failure':same_initial_state,
+    'same_initial_state_as_reference':same_initial_state,
+    'same_physical_scene_model_as_reference':same_scene_model,
     'contact_digest_matches':contact_digest.hexdigest() == result['contacts']['contact_log_content_sha256'],
     'actual_native_steps_match':len(trace) == result['public_steps'] and result['physics_steps'] == 8*len(trace),
     'all_contacts_zero':all(result['contacts'][k] == 0 for k in ['robot_obstacle_contact_records','robot_obstacle_penetration_records','unknown_contact_records']),
@@ -48,6 +60,6 @@ checks = {
     'static_and_integrated_only':result['static_obstacle_pose_unchanged'] and result['root_mutations_outside_mjstep'] == 0,
     'no_unchecked_same_plan_cusp_switch':not bypasses,
 }
-out = {'run':run.name,'source_revision':result['source_revision'],'strict_safe_arrival':result['strict_safe_arrival'],'checks':checks,'unchecked_cusp_switch_steps':bypasses,'checks_passed':all(v is not False for v in checks.values()),'public_steps':result['public_steps'],'goal_distance_m':result['goal_distance_m'],'minimum_native_reconstructed_clearance_m':native['minimum_reconstructed_native_actual_axis_AABB_clearance_m'],'simulation_steps_in_auditor':0,'static_acceptance_passed':False,'scope':'development only; original confirmation failures remain failures'}
+out = {'run':run.name,'source_revision':result['source_revision'],'strict_safe_arrival':result['strict_safe_arrival'],'checks':checks,'unchecked_cusp_switch_steps':bypasses,'reference_kind':reference_kind,'checks_passed':all(v is True for v in checks.values()),'public_steps':result['public_steps'],'goal_distance_m':result['goal_distance_m'],'minimum_native_reconstructed_clearance_m':native['minimum_reconstructed_native_actual_axis_AABB_clearance_m'],'simulation_steps_in_auditor':0,'static_acceptance_passed':False,'scope':'development only; original confirmation failures remain failures'}
 (pair/'DEVELOPMENT_AUDIT.json').write_text(json.dumps(out,indent=2)+'\n')
 print(json.dumps(out,indent=2))
