@@ -28,3 +28,9 @@
 [static_acceptance_v650_20261031/](static_acceptance_v650_20261031/README.md)保存全部13项确认的11个到达和2个失败、完整任务选择账本及原生控制重放，未执行项明确不计结果，确认未通过。
 
 [static_progress_repair_v651_20261031/](static_progress_repair_v651_20261031/README.md)保存4次开发运行的全证据。最终修订29在两个原失败与一个困难回归中严格到达、完整审计通过；修订28虽到达但换向审计未通过，仍保留。版本/重复不混成独立确认样本。
+
+## V652 原批次中断与V653日志续验
+
+[static_confirmation_v652_interrupted_20261031/](static_confirmation_v652_interrupted_20261031/README.md)保留286项预检、原清单和4个完整成功分支及第5项19步日志中断；原批次不通过，原失败不改写。
+
+[static_logging_continuation_v653_preregistration/](static_logging_continuation_v653_preregistration/README.md)记录仅诊断字典拷贝的修复证明、仍保留一次未成功且不重置截止时间的续验协议；实际后续结果尚待完成，不能将预注册当作通过。

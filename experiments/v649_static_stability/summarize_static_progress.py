@@ -30,3 +30,15 @@ if window.exists():
             if q.exists():
                 j = json.loads(q.read_text());print('active progress',{k:j[k] for k in ['public_steps','goal_distance_m','elapsed_s']})
     if (window/'COMPLETION.json').exists():print('V652 completion',json.loads((window/'COMPLETION.json').read_text()))
+continuation = repo/'runs/v653_static_log_recovery/continuation01'
+if continuation.exists():
+    p = continuation/'CONFIRMATION_RESULTS.json'
+    rows = json.loads(p.read_text()) if p.exists() else []
+    print('V653 same-list continuation attempts',len(rows),'strict',sum(x['strict_success'] for x in rows),'non_successes',sum(not x['strict_success'] for x in rows),'original interruption retained')
+    if (continuation/'ACTIVE.json').exists():
+        active=json.loads((continuation/'ACTIVE.json').read_text());print('V653 active',active)
+        if active.get('name'):
+            p=continuation.parent/active['name']/'paired/geometry_memory/partial_progress.json'
+            if p.exists():
+                j=json.loads(p.read_text());print('V653 progress',{k:j[k] for k in ['public_steps','goal_distance_m','elapsed_s']})
+    if (continuation/'COMPLETION.json').exists():print('V653 completion',json.loads((continuation/'COMPLETION.json').read_text()))

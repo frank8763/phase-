@@ -1,0 +1,80 @@
+{
+  "static_engineering_acceptance_passed": false,
+  "checks": {
+    "execution_completed": true,
+    "selection_fixed_and_first_eligible_per_class": true,
+    "reference_clearance_and_terminal_requirements_met": true,
+    "24_distinct_tasks": true,
+    "24_completed_records": false,
+    "at_least_23_audited_arrivals": false,
+    "single_at_least_11": false,
+    "two_at_least_11": false,
+    "all_27_native_and_source_records": false,
+    "three_full_state_repeats_match": false,
+    "execution_within_timebox": true,
+    "current_source_unchanged": true,
+    "protocol_unchanged": true
+  },
+  "completed_confirmation_attempts": 5,
+  "strict_audited_arrivals": 4,
+  "class_successes": {
+    "single_event": 1,
+    "legacy_two": 3
+  },
+  "runs": [
+    {
+      "name": "confirm_94000004_legacy_two",
+      "passed": true,
+      "native_clearance_min_m": 0.23355022736668565,
+      "native_steps": 7296,
+      "unchecked_cusp_switch_steps": []
+    },
+    {
+      "name": "confirm_94000008_legacy_two",
+      "passed": true,
+      "native_clearance_min_m": 0.2143821018077814,
+      "native_steps": 5680,
+      "unchecked_cusp_switch_steps": []
+    },
+    {
+      "name": "confirm_94000010_legacy_two",
+      "passed": true,
+      "native_clearance_min_m": 0.2066151039089129,
+      "native_steps": 5896,
+      "unchecked_cusp_switch_steps": []
+    },
+    {
+      "name": "confirm_94000033_single_event",
+      "passed": true,
+      "native_clearance_min_m": 0.19837380432135476,
+      "native_steps": 4800,
+      "unchecked_cusp_switch_steps": []
+    },
+    {
+      "name": "confirm_94000040_legacy_two",
+      "passed": false,
+      "reason": "missing result/replay/protocol"
+    }
+  ],
+  "repeats": [
+    {
+      "name": "repeat_93000074_legacy_two",
+      "passed": false,
+      "reason": "not completed"
+    },
+    {
+      "name": "repeat_93000045_single_event",
+      "passed": false,
+      "reason": "not completed"
+    },
+    {
+      "name": "repeat_91000002_single_event",
+      "passed": false,
+      "reason": "not completed"
+    }
+  ],
+  "simulation_steps": 0,
+  "training_updates": 0,
+  "dynamic_started": false,
+  "scope": "finite selected static cylinder benchmark; independent read-only recomputation, not general probabilistic/continuous-time/real-time/real-robot certification"
+}
