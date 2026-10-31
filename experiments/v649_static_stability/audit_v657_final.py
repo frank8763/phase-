@@ -35,7 +35,7 @@ def audit_pair(pair):
     with gzip.open(cell/'contacts.jsonl.gz','rb')as stream:
         for line in stream:
             h.update(line);contacts+=1;c=json.loads(line)
-            if c['contact_type']in ['robot_obstacle','unknown']:anomalies+=1
+            if c['contact_type']not in ['ground_support','robot_self_contact']:anomalies+=1
     plans={int(p.stem.split('_')[-1])for p in cell.glob('planning_*.json')}
     f=cell/'gear_transitions.jsonl';switches={json.loads(s)['step']for s in f.read_text().splitlines()}if f.exists()else set()
     bypass=[b['step']for a,b in zip(admissions[:-1],admissions[1:])if a['active_gear']!=b['active_gear']and b['step']not in plans and b['step']not in switches]
@@ -114,7 +114,7 @@ checks={'source_and_protocol_frozen':bool(frozen)and bool(documents)and all(sha(
         'unchanged_online_decisions':bool(equivalence)and all(equivalence.values()),
         'fresh_screening_order':bool(screened)and [x['seed']for x in screened]==list(range(95000001,95000001+len(screened))),
         'same_first12_each_locked24':len(tasks)==24 and [(x['seed'],x['scene'])for x in tasks]==[(x['seed'],x['scene'])for x in expected],
-        'prelocked_before_first_navigation':bool(selection.get('locked_unix')and all(x['feasibility_only']for x in ledger[:len(screened)])),
+        'prelocked_before_first_navigation':bool(selection.get('locked_unix')and all(x['feasibility_only']for x in ledger[:len(screened)])and all((root/x['name']/'source_snapshot/INVOCATION.json').stat().st_mtime>=selection['locked_unix']for x in ledger if not x['feasibility_only'])),
         'registered_reference_requirements':references,'all24_attempts':len(rows)==24,'at_least23_audited_arrivals':sum(success)>=23,
         'single_at_least11':classes['single_event']>=11,'two_at_least11':classes['legacy_two']>=11,
         'all27_physical_audits':len(records)==27 and all(x['passed']for x in records),

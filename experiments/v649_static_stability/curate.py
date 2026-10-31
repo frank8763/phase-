@@ -16,7 +16,8 @@ for run in sorted(x for x in root.iterdir()if x.is_dir()):
         b=source.read_bytes();h=sha(b);record['source_hashes'][source.name]=h;to=blobs/(h+source.suffix)
         if not to.exists():to.write_bytes(b)
     for f in sorted(run.rglob('*')):
-        if not f.is_file()or any(x in {'cache','assets','frozen_original','source_snapshot'}for x in f.relative_to(run).parts):continue
+        parts=f.relative_to(run).parts
+        if not f.is_file()or any(x in {'cache','frozen_original','source_snapshot'}for x in parts)or('assets'in parts and f.name!='isolated_indoor.xml'):continue
         rel=str(f.relative_to(run));inventory.append({'run':run.name,'path':rel,'bytes':f.stat().st_size,'sha256':sha(f.read_bytes())})
         if f.suffix=='.json' and not f.name.startswith(('planning_','trace')):
             record['metadata'][rel]=json.loads(f.read_text())
@@ -39,7 +40,8 @@ for run in root.iterdir():
 for name in a.selected:
     paired=root/name/'paired';assert paired.is_dir(),name
     for f in sorted(paired.rglob('*')):
-        if not f.is_file()or any(x in {'cache','assets','frozen_original'}for x in f.relative_to(paired).parts):continue
+        parts=f.relative_to(paired).parts
+        if not f.is_file()or any(x in {'cache','frozen_original'}for x in parts)or('assets'in parts and f.name!='isolated_indoor.xml'):continue
         to=dest/'selected'/name/f.relative_to(paired);to.parent.mkdir(parents=True,exist_ok=True)
         if f.suffix in {'.json','.jsonl','.mjb'}:compressed(f,Path(str(to)+'.gz'))
         else:shutil.copy2(f,to)

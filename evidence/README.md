@@ -40,3 +40,7 @@
 [static_validator_development_v654_20261031/](static_validator_development_v654_20261031/README.md)保留两项实际到达及全部接触/重放证据：93000045完整复现，91000002因墙钟搜索路径不同而未复现，开发未通过，V655从未执行。V656固定在线工作量开发与V657新池确认事前冻结分别见static_fixed_work_v656_preregistration与static_fixed_work_confirmation_v657_preregistration，预注册不是通过证明。
 
 [static_fixed_work_development_v656_20261101/](static_fixed_work_development_v656_20261101/README.md)保存3个修订30困难基准和3次完整同版本重复、独立物理/接触/状态审计与32倍时钟速率零仿真探针。开发通过但不是独立确认率，V657全新池确认另行记账。
+
+## 最新静态工程验收（用户审阅入口）
+
+[static_acceptance_v657_20261101/](static_acceptance_v657_20261101/README.md)：全新24项23严格到达（单12/12、双11/12），1HORIZON失败保留；3同版本完整重复误差0、27物理审计与独立重算通过。160112原生步审计、导航最小净空0.192639338m、含困难重复0.181062072m。1461清单文件校验通过，完整保留全部310预检、24导航与3重复来源和必要XML字节。仅有限筛选静态基准工程验收；动态未开始，后续等待用户审阅。[最终报告](../docs/STATIC_ACCEPTANCE_V657_REPORT.md)。

@@ -4,15 +4,32 @@
   "development_revisions_maximum": 3,
   "fresh_confirmation_batches_started": 1,
   "fresh_confirmation_batches_maximum": 2,
-  "current_phase": "V657 revision30 fresh frozen confirmation01",
+  "current_phase": "V657 finite static engineering gate passed; simulations stopped, user review pending",
   "active_window": "runs/v657_static_fixed_work_confirmation/confirmation01",
   "next_candidate_frozen": "experiments/v657_static_fixed_work_confirmation/CANDIDATE_FREEZE.json",
   "next_protocol": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
   "next_start_dependency": null,
   "prior_v653_complete_failed": "runs/v653_static_log_recovery/continuation01/COMPLETION.json",
-  "updated_at": "2026-11-01T00:26:49.075354+08:00",
+  "updated_at": "2026-11-01T04:02:21.110624+08:00",
   "cancelled_unstarted_confirmation": "experiments/v655_static_fresh_confirmation/CANCELLED_BEFORE_EXECUTION.json",
   "v656_development_passed": true,
   "v657_started_unix": 1793463964.677864,
-  "v657_absolute_deadline_local": "2026-11-01T05:26:04.677864+08:00"
+  "v657_absolute_deadline_local": "2026-11-01T05:26:04.677864+08:00",
+  "completed_static_acceptance": true,
+  "additional_simulations_authorized_without_user_review": false,
+  "final_summary": {
+    "selected": 24,
+    "recorded": 24,
+    "strict_arrivals": 23,
+    "non_successes": 1,
+    "class_successes": {
+      "single_event": 12,
+      "legacy_two": 11
+    },
+    "status": "ALL_TASKS_AND_REPEATS_AUDITED",
+    "full_confirmation_gate_passed": true,
+    "failed_task_seed": 95000132
+  },
+  "experiment_elapsed_s": 12562.581766312003,
+  "final_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md"
 }

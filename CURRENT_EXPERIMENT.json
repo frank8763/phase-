@@ -1,13 +1,13 @@
 {
-  "status": "OVERNIGHT_FRESH_STATIC_CONFIRMATION_RUNNING",
+  "status": "STATIC_ENGINEERING_ACCEPTANCE_PASSED_AWAITING_USER_REVIEW",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": "experiments/v657_static_fixed_work_confirmation/run_static.py",
   "decision_freeze": "experiments/v657_static_fixed_work_confirmation/CANDIDATE_FREEZE.json",
   "source_revision": "progress_30_fixed_search_work",
   "protocol": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
-  "report": "docs/STATIC_SAME_LIST_ACCEPTANCE_REPORT.md",
-  "execution_window_closed": false,
+  "report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
+  "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--scene",
     "single_event",
@@ -15,13 +15,13 @@
     "geometry_memory"
   ],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
-  "independent_confirmation_trials": 0,
-  "static_gate_met": false,
+  "independent_confirmation_trials": 24,
+  "static_gate_met": true,
   "dynamic_started": false,
   "sac_training_updates": 0,
   "limitations": [
-    "development cases including geometrically selected two-obstacle task, not an independent random success rate",
-    "V657 fresh frozen confirmation underway after independent six-run V656 development audit; old V652/V653/V654 failures retained",
+    "finite geometric-reference-selected known-map static cylinder benchmark, not an unfiltered random population",
+    "one HORIZON task retained in 24 denominator; old V652/V653/V654 failures remain failed",
     "fixed rectangle self-configuration domain; geometry-infeasible tasks require a predefined evaluation contract",
     "static circle shape prior and known prior map, accurate localization",
     "finite local range hypotheses without calibrated continuous coverage",
@@ -45,7 +45,7 @@
     "all_strict_arrivals": true,
     "all_development_audits_passed": true
   },
-  "selection_status": "FRESH_POOL_PREFLIGHT_PENDING_LOCK",
+  "selection_status": "24_FRESH_TASKS_LOCKED_BEFORE_NAVIGATION",
   "previous_v649_development_tasks": [
     {
       "seed": 91000002,
@@ -128,14 +128,9 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-11-01T00:26:49.075354+08:00",
+  "last_observed_at": "2026-11-01T04:02:21.110624+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
-  "next_fresh_confirmation": {
-    "protocol": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
-    "candidate_freeze": "experiments/v657_static_fixed_work_confirmation/CANDIDATE_FREEZE.json",
-    "requires_v656_development_passed": true,
-    "started": true
-  },
+  "next_fresh_confirmation": null,
   "v653_previous_confirmation_summary": {
     "selected": 24,
     "recorded": 24,
@@ -146,11 +141,17 @@
     "full_confirmation_gate_passed": false
   },
   "confirmation_summary": {
-    "selected": 0,
-    "recorded": 0,
-    "strict_arrivals": 0,
-    "non_successes": 0,
-    "status": "NEW_POOL_T0_SCREENING"
+    "selected": 24,
+    "recorded": 24,
+    "strict_arrivals": 23,
+    "non_successes": 1,
+    "class_successes": {
+      "single_event": 12,
+      "legacy_two": 11
+    },
+    "status": "ALL_TASKS_AND_REPEATS_AUDITED",
+    "full_confirmation_gate_passed": true,
+    "failed_task_seed": 95000132
   },
   "v656_development": {
     "passed": true,
@@ -159,5 +160,22 @@
     "full_repeats": 3,
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
+  },
+  "evidence": "evidence/static_acceptance_v657_20261101",
+  "requires_user_review_before_next_experiment": true,
+  "independent_acceptance_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json",
+  "repeat_summary": {
+    "distinct_development_tasks": 3,
+    "full_same_version_repeats": 3,
+    "maximum_qpos_qvel_ctrl_error": 0.0,
+    "raw_contact_hashes_identical": false,
+    "physical_contact_events_exact_after_preregistered_verified_xml_path_normalization": true
+  },
+  "native_audit_summary": {
+    "confirmation_native_steps": 137368,
+    "including_repeats_native_steps": 160112,
+    "confirmation_minimum_clearance_m": 0.19263933767896363,
+    "including_repeats_minimum_clearance_m": 0.1810620717210027,
+    "obstacle_contact_penetration_unknown_records": 0
   }
 }

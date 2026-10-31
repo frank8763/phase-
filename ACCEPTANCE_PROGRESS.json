@@ -1,5 +1,5 @@
 {
-  "status": "V657_FRESH_PREFLIGHT_RUNNING",
+  "status": "STATIC_ENGINEERING_GATE_PASSED_AWAITING_USER_REVIEW",
   "active_window": "runs/v657_static_fixed_work_confirmation/confirmation01",
   "protocol": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
   "decision_freeze": "experiments/v657_static_fixed_work_confirmation/CANDIDATE_FREEZE.json",
@@ -7,11 +7,11 @@
   "goal": "24 fixed tasks >=23 strict arrivals; each class >=11/12; zero contacts; three-scene repeats and physical clearance audits",
   "dynamic_started": false,
   "dynamic_requires_user_review_and_explicit_continue": true,
-  "completed_confirmation_tasks": 0,
-  "strict_arrivals": 0,
-  "non_successes": 0,
+  "completed_confirmation_tasks": 24,
+  "strict_arrivals": 23,
+  "non_successes": 1,
   "development_protocol": "experiments/v651_static_progress/PROTOCOL.md",
-  "static_acceptance_passed": false,
+  "static_acceptance_passed": true,
   "previous_confirmation": {
     "window": "runs/v650_static_acceptance/acceptance_window02",
     "completed": 13,
@@ -20,14 +20,14 @@
     "status": "FAILED"
   },
   "pre_navigation_screening_rule": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
-  "selection_audit": null,
-  "selected_tasks": 0,
-  "screened_candidates": 0,
-  "selection_locked_before_navigation": false,
+  "selection_audit": "runs/v657_static_fixed_work_confirmation/SELECTION_AUDIT.json",
+  "selected_tasks": 24,
+  "screened_candidates": 310,
+  "selection_locked_before_navigation": true,
   "original_interruption_retained": false,
   "deadline_unchanged": "2026-11-01T05:26:04.677864+08:00",
   "decision_equivalence": "experiments/v657_static_fixed_work_confirmation/DECISION_EQUIVALENCE.json",
-  "last_observed_at": "2026-11-01T00:26:49.075354+08:00",
+  "last_observed_at": "2026-11-01T04:02:21.110624+08:00",
   "source": "runs/v653_static_log_recovery/continuation01/CONFIRMATION_RESULTS.json",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "conditional_overnight_protocol": "experiments/v654_static_overnight/PROTOCOL.md",
@@ -53,5 +53,14 @@
     "first_state_difference_step": 197
   },
   "v656_development_passed": true,
-  "original_interruption_retained_in_previous_v653_only": true
+  "original_interruption_retained_in_previous_v653_only": true,
+  "class_successes": {
+    "single_event": 12,
+    "legacy_two": 11
+  },
+  "three_full_state_repeats_passed": true,
+  "all27_physical_audits_passed": true,
+  "final_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
+  "evidence": "evidence/static_acceptance_v657_20261101",
+  "independent_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json"
 }
