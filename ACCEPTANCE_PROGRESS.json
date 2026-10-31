@@ -1,14 +1,14 @@
 {
-  "status": "LOGGING_ONLY_CONTINUATION_OF_LOCKED_CONFIRMATION",
-  "active_window": "runs/v653_static_log_recovery/continuation01",
-  "protocol": "experiments/v653_static_log_recovery/PROTOCOL.md",
+  "status": "V653_FAILED_REPEAT_PATH_METADATA_V654_DEVELOPMENT",
+  "active_window": "runs/v654_static_overnight/development01",
+  "protocol": "experiments/v654_static_overnight/PROTOCOL.md",
   "decision_freeze": "experiments/v652_static_confirmation/CANDIDATE_FREEZE.json",
   "selection_freeze": "runs/v652_static_confirmation/confirmation_window01/SELECTION_FREEZE.json",
   "goal": "24 fixed tasks >=23 strict arrivals; each class >=11/12; zero contacts; three-scene repeats and physical clearance audits",
   "dynamic_started": false,
   "dynamic_requires_user_review_and_explicit_continue": true,
-  "completed_confirmation_tasks": 17,
-  "strict_arrivals": 16,
+  "completed_confirmation_tasks": 24,
+  "strict_arrivals": 23,
   "non_successes": 1,
   "development_protocol": "experiments/v651_static_progress/PROTOCOL.md",
   "static_acceptance_passed": false,
@@ -27,8 +27,21 @@
   "original_interruption_retained": true,
   "deadline_unchanged": "2026-10-31T23:40:51.861+08:00",
   "decision_equivalence": "experiments/v653_static_log_recovery/DECISION_EQUIVALENCE.json",
-  "last_observed_at": "2026-10-31T22:07:36.131211+08:00",
+  "last_observed_at": "2026-10-31T23:02:35.771012+08:00",
   "source": "runs/v653_static_log_recovery/continuation01/CONFIRMATION_RESULTS.json",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
-  "conditional_overnight_protocol": "experiments/v654_static_overnight/PROTOCOL.md"
+  "conditional_overnight_protocol": "experiments/v654_static_overnight/PROTOCOL.md",
+  "v653_complete": {
+    "full_gate_passed": false,
+    "status": "GATE_FAILED_REPEAT",
+    "strict_arrivals": 23,
+    "single": 12,
+    "two": 11,
+    "physical_audits_passed": 25,
+    "repeats_executed": 1,
+    "repeat_full_state_error": 0.0,
+    "raw_contact_digest_equal": false,
+    "cause": "only verified generated XML absolute path in support classification provenance",
+    "original_completion_unchanged": true
+  }
 }

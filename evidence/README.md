@@ -34,3 +34,5 @@
 [static_confirmation_v652_interrupted_20261031/](static_confirmation_v652_interrupted_20261031/README.md)保留286项预检、原清单和4个完整成功分支及第5项19步日志中断；原批次不通过，原失败不改写。
 
 [static_logging_continuation_v653_preregistration/](static_logging_continuation_v653_preregistration/README.md)记录仅诊断字典拷贝的修复证明、仍保留一次未成功且不重置截止时间的续验协议；实际后续结果尚待完成，不能将预注册当作通过。
+
+[static_same_list_v653_20261031/](static_same_list_v653_20261031/README.md)保存19项续验导航与首重复的完整证据、组合24项账本和原失败：导航23/24，但接触摘要含输出目录导致原复现未通过，整轮未通过。停止后的离线诊断不回填旧验收；后续V654核验修复开发与V655新池单列。

@@ -1,12 +1,12 @@
 {
-  "status": "LOGGING_ONLY_CONTINUATION_STATIC_CONFIRMATION",
+  "status": "OVERNIGHT_VALIDATOR_DEVELOPMENT_RUNNING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v653_static_log_recovery/run_static.py",
-  "decision_freeze": "experiments/v653_static_log_recovery/SOURCE_FREEZE.json",
+  "active_entrypoint": "experiments/v654_static_overnight/run_static.py",
+  "decision_freeze": "experiments/v654_static_overnight/SOURCE_FREEZE.json",
   "source_revision": "progress_29_joint_consistent_projection",
-  "protocol": "experiments/v653_static_log_recovery/PROTOCOL.md",
-  "report": "docs/STATIC_REPAIR_REPORT.md",
+  "protocol": "experiments/v654_static_overnight/PROTOCOL.md",
+  "report": "docs/STATIC_SAME_LIST_ACCEPTANCE_REPORT.md",
   "execution_window_closed": false,
   "selected_configuration_arguments": [
     "--scene",
@@ -15,13 +15,13 @@
     "geometry_memory"
   ],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
-  "independent_confirmation_trials": 17,
+  "independent_confirmation_trials": 0,
   "static_gate_met": false,
   "dynamic_started": false,
   "sac_training_updates": 0,
   "limitations": [
     "development cases including geometrically selected two-obstacle task, not an independent random success rate",
-    "V652 original runner failed on logging; equivalent-decision V653 continuation and three-scene repeats pending; V650 remains failed",
+    "V652 interrupted and V653 raw-contact-digest repeat failed; path-only diagnostic proven; V654 offline-validator development and V655 wholly fresh frozen confirmation pending",
     "fixed rectangle self-configuration domain; geometry-infeasible tasks require a predefined evaluation contract",
     "static circle shape prior and known prior map, accurate localization",
     "finite local range hypotheses without calibrated continuous coverage",
@@ -36,10 +36,10 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "PENDING_NETWORK_TIMEOUT",
   "raw_run_cleanup_executed": false,
-  "active_run": null,
+  "active_run": "dev01_repeat_93000045_single_event",
   "previous_development_window_closed": true,
-  "active_window": "runs/v653_static_log_recovery/continuation01",
-  "previous_confirmation_trials": 13,
+  "active_window": "runs/v654_static_overnight/development01",
+  "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
     "all_strict_arrivals": true,
@@ -122,11 +122,12 @@
   },
   "confirmation_summary": {
     "selected": 24,
-    "recorded": 17,
-    "strict_arrivals": 16,
+    "recorded": 24,
+    "strict_arrivals": 23,
     "non_successes": 1,
-    "remaining_unattempted": 7,
-    "status": "RUNNING_WITH_ORIGINAL_INTERRUPTION_RETAINED"
+    "status": "V653_FAILED_RAW_CONTACT_DIGEST_REPEAT",
+    "remaining_unattempted": 0,
+    "full_confirmation_gate_passed": false
   },
   "previous_revision28_development_success": {
     "revision": 28,
@@ -136,6 +137,12 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-10-31T22:07:36.131211+08:00",
-  "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json"
+  "last_observed_at": "2026-10-31T23:02:35.771012+08:00",
+  "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
+  "next_fresh_confirmation": {
+    "protocol": "experiments/v655_static_fresh_confirmation/PROTOCOL.md",
+    "candidate_freeze": "experiments/v655_static_fresh_confirmation/CANDIDATE_FREEZE.json",
+    "requires_v654_development_passed": true,
+    "started": false
+  }
 }
