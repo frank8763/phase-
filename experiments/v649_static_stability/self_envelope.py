@@ -57,4 +57,3 @@ def extract_self_envelope(env, mj):
             'steering_joints': joints, 'max_steer_command_rad': float(env.inner.max_steer),
             'max_wheel_delta_per_public_step': float(env.inner.max_wheel_delta),
             'scope': 'current articulated configuration; cylinders rotation-enclosed; no obstacle truth'}
-
