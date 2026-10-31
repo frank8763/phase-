@@ -1,0 +1,30 @@
+{
+  "source_revision": "pilot_21_braking_after_steering_response",
+  "development_case": {
+    "seed": 91000004,
+    "scene": "single_event"
+  },
+  "freeze_after": "Declared after first strict goal; hash record written during repeat and matches the exact pre-run snapshot",
+  "online_source_sha256": {
+    "run_static.py": "e9e7a2eed97836e19eb0651b049adb336c870f939f89b7da35a6bcc44f0a8935",
+    "factory.py": "d7839f616e9ae0c1dba0a403bcca504b4ed6ec3d8b3402e64a8374393a3732c5",
+    "instrumentation.py": "02a78216ef496c4929760bbf2ac40e8489b9076867e409a8fdfe7a9b14047545",
+    "planner.py": "ded4e04d4564cd2d1920b6f4eaa391460f59244d74ae406fff6e02791fa382fc",
+    "perception.py": "2141b8daa06cbc3e7a7cfc93b98ba89cfe3dec070e29bba013aad268cd2f27b6",
+    "robot_predictor.py": "0536cd4e17db1037b04fcd52956c69d082eadaa2b358807d15e5fbd82765c0a2",
+    "circle_memory.py": "fc578845d7a92ac53e5400eec23a9830ab60398e44ca48b089ea11f0a86987da",
+    "scene_sensors.py": "24cf6857f8f7c36132994fbca39691e2fb891d15c33a95927f43efefa8a28c57"
+  },
+  "status": "development candidate, not calibrated or holdout-confirmed",
+  "parameters": {
+    "goal_m": 0.45,
+    "footprint_hard_floor_m": 0.15,
+    "normal_prediction_floor_m": 0.155,
+    "normal_command_prefix_physics_steps": 80,
+    "prediction_total_steps": 240,
+    "terminal_speed_max_m_s": 0.025,
+    "physical_dt_s": 0.01,
+    "physics_steps_per_public_step": 8,
+    "max_public_steps": 1200
+  }
+}

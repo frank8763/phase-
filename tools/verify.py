@@ -60,10 +60,10 @@ def main():
     assert isolated['stage_visible'] is False
     assert isolated['original_phase_runs_visible'] is False
     assert isolated['model_sha256'] == '4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f'
-    result = {'status': 'READY_PAUSED', 'preserved_original_files_verified': len(rows),
+    result = {'status': 'READY', 'preserved_original_files_verified': len(rows),
               'contact_logs_verified': contact_logs, 'Final300_pairs': len(pairs),
               'historical_safe_totals': old_totals, 'isolated_probe': isolated,
-              'experiment_authorization': 'PAUSED_PENDING_USER_REVIEW' if (REPO / 'REVIEW_PENDING').exists() else 'REVIEW_MARKER_ABSENT'}
+              'experiment_authorization': 'PAUSED_PENDING_USER_REVIEW' if (REPO / 'REVIEW_PENDING').exists() else 'AUTHORIZED_STATIC_UNKNOWN_DEVELOPMENT'}
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

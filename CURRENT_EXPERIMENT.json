@@ -1,0 +1,47 @@
+{
+  "status": "VERIFIED_DEVELOPMENT_SINGLE_CYLINDER_CANDIDATE",
+  "research_line": "Phase",
+  "target_journal": "Robotics and Autonomous Systems",
+  "active_entrypoint": "experiments/v648_static_unknown/run_static.py",
+  "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
+  "source_revision": "pilot_21_braking_after_steering_response",
+  "protocol": "experiments/v648_static_unknown/PROTOCOL.md",
+  "report": "docs/STATIC_UNKNOWN_REPORT.md",
+  "verified_scope": {
+    "seed": 91000004,
+    "scene": "single_event",
+    "strict_goal_tolerance_m": 0.45,
+    "actual_public_steps": 633,
+    "actual_physics_steps": 5064,
+    "obstacle_contact_records": 0,
+    "obstacle_penetration_records": 0,
+    "unknown_contact_records": 0,
+    "same_state_repeat": true
+  },
+  "limitations": [
+    "development scene only, not independent generalization",
+    "single circle shape prior",
+    "empirical map envelope not independently calibrated",
+    "full low-level takeover, SAC benefit unisolated",
+    "not real-time",
+    "no real robot validation"
+  ],
+  "legacy_current_directory_role": "immutable V647 handoff and environment dependency, not the active experiment entrypoint",
+  "selected_configuration_arguments": [
+    "--seed",
+    "91000004",
+    "--scene",
+    "single_event",
+    "--conditions",
+    "frozen_sac,circle_memory"
+  ],
+  "output_name_rule": "Supply a new --name for every actual run; do not overwrite preserved runs",
+  "verified_map_ablation": {
+    "same_controller_and_state": true,
+    "raw_point_memory_public_steps": 258,
+    "raw_point_memory_outcome": "OBSERVED_HARD_FLOOR_BREACH",
+    "circle_memory_public_steps": 633,
+    "circle_memory_outcome": "GOAL",
+    "strict_arrivals_in_same_development_scene_including_repeats": 3
+  }
+}
