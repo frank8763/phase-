@@ -1,6 +1,7 @@
 """Final same-list continuation report with original interruption visible."""
 import json
 from pathlib import Path
+import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -34,9 +35,22 @@ for task in tasks:
     lines.append(f'| {task["seed"]} | {task["scene"]} | {source}/{"日志中断未成功"if interrupted else r["outcome"]} | {prefix.get("public_steps","—")} | {distance:.6f} | {clearance:.6f} | {"前缀PASS，任务未成功"if interrupted and record.get("passed") else "PASS"if record.get("passed")else"未通过/未完成"} |'if distance is not None and clearance is not None else f'| {task["seed"]} | {task["scene"]} | {source}/未完整完成 | {prefix.get("public_steps","—")} | — | — | 未通过 |')
 lines+=['','## 独立重算门槛','','门槛未放宽：原24项至少23项严格到达、单/双各至少11/12，所有已执行原生步障碍接触/穿透/未知接触0、完整自体覆盖、静态障碍不移动、积分外根状态修改0、净空≥0.15m。一次原日志中断保留为失败，所以剩余19项必须全成功。第二次未成功或任意安全/源码/模型审计失败立即停止。','','| 核验项 | 结果 |','|---|---|']
 for name,ok in audit['checks'].items():lines.append(f'| {name} | {"PASS"if ok else"未通过/未完成"} |')
+full_results=[x['result']for x in rows if x['result']is not None]
+audited_native_steps=sum(x.get('native_steps',0)for x in audit['runs'])
+nav_audits=audit['runs'][:len(rows)]
+minimum_clearance=min((x['minimum_native_clearance_m']for x in audit['runs']if x.get('minimum_native_clearance_m')is not None),default=None)
+if full_results and minimum_clearance is not None:
+    ratios=[r['elapsed_s']/(.01*r['physics_steps'])for r in full_results]
+    lines+=['','## 物理核验与计算开销','',
+            f'本次已完整审计的确认导航（含原中断前缀）共{sum(x.get("native_steps",0)for x in nav_audits)}个实际原生步；连同独立列出的重复，累计审计{audited_native_steps}个原生步。所有已审计步中的实际自体投影轴向AABB净空最小{minimum_clearance:.9f}m；这是离散原生步上的重建净空，不是连续时间下界。','',
+            f'完整确认分支墙钟耗时/仿真时长的中位数为{np.median(ratios):.2f}倍，范围{min(ratios):.2f}–{max(ratios):.2f}倍（本机、当前完整日志配置，未扣除感知/规划/记录开销；不含离线审计）。这说明当前尚不能声称实时控制，亦不是逐控制调用的p95延迟。','']
 lines+=['','## 三场景同版本重复','','按原预定V651修订29基准，比较规范初态、模型、每公开步完整qpos/qvel/ctrl、接触内容摘要和到达结局，容差1e-8。重复不进入24项分母。','']
 for row in audit['repeats']:lines.append(f'- {row["seed"]} {row["scene"]}：{"PASS"if row["passed"]else"未完成/不匹配"}；{row.get("maximum_full_state_error",row.get("reason"))}。')
 lines+=['','## 时间、证据与研究边界','',f'从原V652起点计耗时{done["elapsed_from_original_origin_s"]:.3f}秒，上限{done["limit_s"]:.3f}秒，截止未重置。原V652失败报告见[原批次记录](STATIC_CONFIRMATION_V652_REPORT.md)，开发修复见[路径进展修复](STATIC_REPAIR_REPORT.md)。','', '原始运行和中断完整保留；GitHub远端验证前不删除。原生控制重放是审计而非新增独立试验，公开完整状态匹配也不证明物理连续时间安全。','', '工程门槛只适用于上述有限筛选静态圆柱基准。没有校准概率风险、连续时间安全、统计优越性、任意未知地图/障碍、实时性或实机结论；恢复器可接管全部控制，SAC收益未隔离。RAS论文仍需同输入/足迹/预算下对照、组件消融和真实计算开销。','', '给用户查看本报告后停止；动态必须等用户明确继续。','', '![固定清单全部尝试的进展](figures/v653_same_list_confirmation.png)','']
+lines += ['## 实际轨迹查看','',
+          '下图固定取原清单每类第一项，便于查看绕障过程；它们不代替完整24项分母。灰色为先验已知障碍，红色为起初未知障碍的离线真值展示，轮廓是固定规划自体域；真值不进入在线规划。轨迹来自已记录控制步，绘图新增仿真0步。','',
+          '![每类第一项的实际轨迹](figures/v653_first_each_class.png)','',
+          '[查看全部24项轨迹，含原日志中断及任何未执行项](figures/v653_all_trajectories.png)','']
 (repo/'docs/STATIC_SAME_LIST_ACCEPTANCE_REPORT.md').write_text('\n'.join(lines))
 out=repo.parent/'outputs/Phase静态最终验收报告.md'
 if not out.exists():out.symlink_to('../phase-/docs/STATIC_SAME_LIST_ACCEPTANCE_REPORT.md')

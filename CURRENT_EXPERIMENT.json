@@ -15,13 +15,13 @@
     "geometry_memory"
   ],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
-  "independent_confirmation_trials": 5,
+  "independent_confirmation_trials": 13,
   "static_gate_met": false,
   "dynamic_started": false,
   "sac_training_updates": 0,
   "limitations": [
     "development cases including geometrically selected two-obstacle task, not an independent random success rate",
-    "fresh V652 confirmation and three-scene repeats pending; previous V650 confirmation failed",
+    "V652 original runner failed on logging; equivalent-decision V653 continuation and three-scene repeats pending; V650 remains failed",
     "fixed rectangle self-configuration domain; geometry-infeasible tasks require a predefined evaluation contract",
     "static circle shape prior and known prior map, accurate localization",
     "finite local range hypotheses without calibrated continuous coverage",
@@ -37,22 +37,6 @@
   "github_sync_status": "PENDING_NETWORK_TIMEOUT",
   "raw_run_cleanup_executed": false,
   "active_run": null,
-  "confirmation_summary": {
-    "selected": 24,
-    "completed": 13,
-    "strict_arrivals": 11,
-    "non_successes": 2,
-    "status": "FAILED_SECOND_NON_SUCCESS_STOP",
-    "remaining_unattempted": 11
-  },
-  "current_development_success": {
-    "revision": 28,
-    "seed": 93000074,
-    "scene": "legacy_two",
-    "public_steps": 1104,
-    "native_clearance_min_m": 0.1927867356233937,
-    "cusp_bookkeeping_audit_passed": false
-  },
   "previous_development_window_closed": true,
   "active_window": "runs/v653_static_log_recovery/continuation01",
   "previous_confirmation_trials": 13,
@@ -127,5 +111,30 @@
     }
   ],
   "selection_freeze": "runs/v652_static_confirmation/confirmation_window01/SELECTION_FREEZE.json",
-  "original_logging_interruption_retained": true
+  "original_logging_interruption_retained": true,
+  "previous_confirmation_summary": {
+    "selected": 24,
+    "completed": 13,
+    "strict_arrivals": 11,
+    "non_successes": 2,
+    "status": "FAILED_SECOND_NON_SUCCESS_STOP",
+    "remaining_unattempted": 11
+  },
+  "confirmation_summary": {
+    "selected": 24,
+    "recorded": 13,
+    "strict_arrivals": 12,
+    "non_successes": 1,
+    "remaining_unattempted": 11,
+    "status": "RUNNING_WITH_ORIGINAL_INTERRUPTION_RETAINED"
+  },
+  "previous_revision28_development_success": {
+    "revision": 28,
+    "seed": 93000074,
+    "scene": "legacy_two",
+    "public_steps": 1104,
+    "native_clearance_min_m": 0.1927867356233937,
+    "cusp_bookkeeping_audit_passed": false
+  },
+  "last_observed_at": "2026-10-31T21:40:54.299411+08:00"
 }
