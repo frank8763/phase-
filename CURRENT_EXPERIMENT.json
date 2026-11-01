@@ -1,12 +1,12 @@
 {
-  "status": "DYNAMIC_V678_CLOSED_CAUSAL_NON_SUCCESS_SCENE_WITNESS_PASS",
+  "status": "V679_V681_CLOSED_DYNAMIC_NON_SUCCESS",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "runs/v678_dynamic_forecast_guidance/development01/SOURCE_FREEZE.json",
-  "source_revision": "dynamic_45_forecast_guidance",
-  "protocol": "experiments/v678_dynamic_forecast_guidance/PROTOCOL.md",
-  "report": "docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md",
+  "decision_freeze": "runs/v680_dynamic_later_stop_reserve/development01/SOURCE_FREEZE.json",
+  "source_revision": "dynamic_47_later_stop_reserve",
+  "protocol": "experiments/v680_dynamic_later_stop_reserve/PROTOCOL.md",
+  "report": "docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--scene",
@@ -50,7 +50,7 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "LOCAL_V673_EVIDENCE_COMMITTED_REMOTE_UNVERIFIED_TIMEOUT",
+  "github_sync_status": "LOCAL_V679_ROUND_READY_REMOTE_NOT_YET_VERIFIED",
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
@@ -143,7 +143,7 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-11-01T11:54:26.764816+08:00",
+  "last_observed_at": "2026-11-01T15:41:10.486734+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": null,
   "v653_previous_confirmation_summary": {
@@ -163,7 +163,7 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/dynamic_command_scene_v676_round_20261101",
+  "evidence": "evidence/dynamic_forward_reserve_v679_round_20261101",
   "requires_user_review_before_next_experiment": false,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
@@ -228,9 +228,9 @@
   },
   "static_selection_freeze": "runs/v657_static_fixed_work_confirmation/confirmation01/SELECTION_FREEZE.json",
   "static_independent_confirmation_trials": 24,
-  "independent_dynamic_evidence_audit": "runs/v678_dynamic_forecast_guidance/dev45_95000011_forecast/paired/INDEPENDENT_CANONICAL_AUDIT.json",
+  "independent_dynamic_evidence_audit": "runs/v680_dynamic_later_stop_reserve/dev47_95000011_laterstop/paired/INDEPENDENT_CANONICAL_AUDIT.json",
   "static_independent_acceptance_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json",
-  "final_implementation_role": "V678 last executed causal candidate, non-arrival; V677 privileged witness never substitutes as algorithm success",
+  "final_implementation_role": "V680 last executed causal candidate, safe non-arrival; V681 design rejected before navigation; old privileged scene witness excluded",
   "previous_dynamic_round": {
     "report": "docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md",
     "ledger": "runs/v661_dynamic_corridor_consistency/DYNAMIC_ROUND_LEDGER.json",
@@ -425,179 +425,154 @@
     "automatic_additional_candidates": false,
     "static_v657_unchanged": true
   },
-  "next_research_design": "docs/DYNAMIC_TEMPORAL_EXECUTION_NEXT.md",
+  "next_research_design": "docs/DYNAMIC_TEMPORAL_KERNEL_DESIGN.md",
   "paper_method_draft": "docs/PHASE_DYNAMIC_METHOD_DRAFT.md",
   "next_experiment_requires_new_bounded_protocol": true,
-  "offline_validation": "runs/v676_dynamic_canonical_commands/pre_navigation_retry02/COMPLETION.json",
-  "current_dynamic_report": "docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md",
-  "latest_final_ledger": "runs/v676_dynamic_canonical_commands/FINAL_ANALYSIS.json",
+  "offline_validation": "runs/v680_dynamic_later_stop_reserve/pre_navigation/COMPLETION.json",
+  "current_dynamic_report": "docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md",
+  "latest_final_ledger": "runs/v679_dynamic_forward_reserve/FINAL_ANALYSIS.json",
   "latest_evidence": [
-    "evidence/dynamic_command_scene_v676_round_20261101"
+    "evidence/dynamic_forward_reserve_v679_round_20261101"
   ],
-  "latest_result_role": "Two causal non-arrivals and one separately marked privileged safe scene witness; all raw commands/states audited; not unknown-dynamic acceptance",
+  "latest_result_role": "One causal non-arrival and one rejected zero-integration prefix-route preflight; no dynamic acceptance",
   "next_candidate": null,
   "paper_evaluation_design": "docs/DYNAMIC_EVALUATION_DESIGN.md",
-  "latest_completed_entrypoint": "experiments/v678_dynamic_forecast_guidance/run_static.py",
+  "latest_completed_entrypoint": "experiments/v680_dynamic_later_stop_reserve/run_static.py",
   "latest_round_summary": {
-    "status": "CLOSED_CAUSAL_NON_SUCCESS_WITH_PRIVILEGED_SCENE_WITNESS",
-    "branches": [
-      {
-        "version": "V676",
-        "information_role": "CAUSAL_UNKNOWN_DYNAMIC",
-        "run": "runs/v676_dynamic_canonical_commands/dev43_95000011_canonical/paired",
-        "is_repeat": false,
-        "outcome": "BOUNDED_WALL_STOP",
-        "strict_arrival": false,
-        "counts_as_causal_arrival": false,
-        "public_steps": 881,
-        "navigation_native_steps": 7048,
-        "logged_control_replay_native_steps": 7048,
-        "private_prediction_integrations": 4978872,
-        "minimum_actual_native_clearance_m": 0.2527128748399221,
-        "goal_distance_final_m": 5.926372535657426,
-        "best_goal_distance_m": 5.275040667078356,
-        "traveled_m": 8.476302941888779,
-        "actual_elapsed_s": 777.7926506039948,
-        "native_actual_ctrl_checks": 7048,
-        "backup_activations": 8,
-        "backup_public_steps": 120,
-        "handover_attempts": 30,
-        "handover_successes": 8,
-        "alternate_ordinary_inputs": 12,
-        "plans": 19,
-        "global_goal_paths": 18,
-        "local_arc_positive_actual_goal_regression_steps": 224,
-        "ordinary_nominal_statuses": {
-          "MODEL_SAFE_COMMAND": 757,
-          "NO_MODEL_SAFE_COMMAND": 4
-        },
-        "ordinary_backup_statuses": {
-          "APPENDABLE_BACKUP_FOUND": 753,
-          "NO_APPENDABLE_BACKUP": 28,
-          "SKIPPED_NO_NOMINAL": 4
-        },
-        "independent_audit_status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
-        "independent_audit_failed_checks": [],
-        "causal_source_flag_verified": true,
-        "unknown_dynamic_acceptance": false
-      },
-      {
-        "version": "V677",
-        "information_role": "ORACLE_FULL_SWEEP_SCENE_WITNESS",
-        "run": "runs/v677_dynamic_scene_witness/witness44_95000011_fullsweep/paired",
-        "is_repeat": false,
-        "outcome": "GOAL",
-        "strict_arrival": true,
-        "counts_as_causal_arrival": false,
-        "public_steps": 474,
-        "navigation_native_steps": 3792,
-        "logged_control_replay_native_steps": 3792,
-        "private_prediction_integrations": 2203152,
-        "minimum_actual_native_clearance_m": 0.2208791472358605,
-        "goal_distance_final_m": 0.44297660585099957,
-        "best_goal_distance_m": 0.44297660585099957,
-        "traveled_m": 6.926554074670276,
-        "actual_elapsed_s": 261.87982630600163,
-        "native_actual_ctrl_checks": 3792,
-        "backup_activations": 0,
-        "backup_public_steps": 0,
-        "handover_attempts": 0,
-        "handover_successes": 0,
-        "alternate_ordinary_inputs": 0,
-        "plans": 1,
-        "global_goal_paths": 1,
-        "local_arc_positive_actual_goal_regression_steps": 0,
-        "ordinary_nominal_statuses": {
-          "MODEL_SAFE_COMMAND": 474
-        },
-        "ordinary_backup_statuses": {
-          "APPENDABLE_BACKUP_FOUND": 474
-        },
-        "independent_audit_status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
-        "independent_audit_failed_checks": [],
-        "causal_source_flag_verified": null,
-        "unknown_dynamic_acceptance": false
-      },
-      {
-        "version": "V678",
-        "information_role": "CAUSAL_UNKNOWN_DYNAMIC",
-        "run": "runs/v678_dynamic_forecast_guidance/dev45_95000011_forecast/paired",
-        "is_repeat": false,
-        "outcome": "BOUNDED_WALL_STOP",
-        "strict_arrival": false,
-        "counts_as_causal_arrival": false,
-        "public_steps": 495,
-        "navigation_native_steps": 3960,
-        "logged_control_replay_native_steps": 3960,
-        "private_prediction_integrations": 2048400,
-        "minimum_actual_native_clearance_m": 0.23318727656353366,
-        "goal_distance_final_m": 5.729854678661944,
-        "best_goal_distance_m": 5.715324778508223,
-        "traveled_m": 4.286837909515773,
-        "actual_elapsed_s": 792.2083909959911,
-        "native_actual_ctrl_checks": 3960,
-        "backup_activations": 3,
-        "backup_public_steps": 45,
-        "handover_attempts": 10,
-        "handover_successes": 1,
-        "alternate_ordinary_inputs": 0,
-        "plans": 13,
-        "global_goal_paths": 0,
-        "local_arc_positive_actual_goal_regression_steps": 158,
-        "ordinary_nominal_statuses": {
-          "MODEL_SAFE_COMMAND": 449,
-          "SPATIAL_PROPOSAL_UNAVAILABLE": 3
-        },
-        "ordinary_backup_statuses": {
-          "APPENDABLE_BACKUP_FOUND": 449,
-          "SKIPPED_NO_NOMINAL": 3
-        },
-        "independent_audit_status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
-        "independent_audit_failed_checks": [],
-        "causal_source_flag_verified": true,
-        "unknown_dynamic_acceptance": false
-      }
-    ],
-    "causal_algorithm_candidates": 2,
-    "causal_navigation_branches_including_repeats": 2,
-    "causal_strict_arrivals_including_repeats": 0,
-    "causal_distinct_development_geometries": 1,
-    "causal_full_repeats": 0,
-    "privileged_scene_diagnostic_branches": 1,
-    "privileged_safe_arrival_witnesses": 1,
-    "privileged_witnesses_counted_in_causal_success": 0,
-    "independent_confirmation_tasks": 0,
-    "all_navigation_attempts": 3,
-    "causal_navigation_native_steps": 11008,
-    "privileged_navigation_native_steps": 3792,
-    "all_navigation_native_steps": 14800,
-    "all_navigation_logged_control_replay_native_steps": 14800,
-    "causal_navigation_private_prediction_integrations": 7027272,
-    "privileged_navigation_private_prediction_integrations": 2203152,
-    "diagnostic_control_replay_native_steps_including_failed_validation": 6848,
-    "diagnostic_private_prediction_integrations_including_failed_validation": 13424,
-    "all_completed_runs_full_state_and_raw_ctrl_audit_passed": true,
-    "original_absolute_deadline_unix": 1793521281.695544,
+    "status": "CLOSED_ONE_NAV_NON_SUCCESS_AND_REJECTED_PREFIX_DESIGN",
     "round_closed": true,
-    "third_algorithm_candidate_started": false,
-    "dynamic_stability_acceptance_passed": false,
+    "original_round_started_unix": 1793517201.5197222,
+    "original_absolute_deadline_unix": 1793524401.5197222,
+    "navigation_candidates_started": 1,
+    "candidate_designs_prepared": 2,
+    "candidate_designs_rejected_before_navigation": 1,
+    "new_navigation_attempts": 1,
+    "strict_arrivals": 0,
+    "repeats": 0,
+    "distinct_development_tasks": 1,
+    "independent_confirmation_tasks": 0,
+    "privileged_branches": 0,
+    "dynamic_acceptance": false,
+    "navigation": {
+      "version": "V680",
+      "role": "CAUSAL_UNKNOWN_DYNAMIC",
+      "run": "runs/v680_dynamic_later_stop_reserve/dev47_95000011_laterstop/paired",
+      "outcome": "BOUNDED_WALL_STOP",
+      "strict_arrival": false,
+      "public_steps": 804,
+      "native_steps": 6432,
+      "goal_distance_final_m": 5.967326437073141,
+      "best_goal_distance_m": 5.268479195223042,
+      "minimum_actual_native_clearance_m": 0.2527128748399221,
+      "actual_elapsed_s": 777.7254505520104,
+      "simulated_s": 64.32000000000001,
+      "traveled_m": 8.370626624394824,
+      "ordinary_forward_admission_steps": [
+        686
+      ],
+      "forward_tail_activated_public_steps": 0,
+      "reserved_public_steps": 80,
+      "certified_handover_successes": 5,
+      "active_gears": {
+        "1": 504,
+        "-1": 220,
+        "None": 80
+      },
+      "planning_statuses": {
+        "GLOBAL_GOAL_PATH": 15,
+        "SAFE_PROGRESS_PREFIX": 2
+      },
+      "public_command_statuses": {
+        "MODEL_SAFE_COMMAND": 724,
+        "RETAINED_REVERSE_BRAKE_CONTRACT": 80
+      },
+      "private_integrations": 4492352,
+      "replay_native_steps": 6432,
+      "full_state_replay_max_error": 0.0,
+      "independent_audit_status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+      "saved_tail_geometry_audit_status": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+      "saved_tail_count": 10,
+      "source_and_snapshot_sha_unchanged": true
+    },
+    "fixed_diagnostics": {
+      "checkpoints": [
+        217,
+        227,
+        686
+      ],
+      "original_forward160_appendable_checkpoints": 0,
+      "later_stop_single_target_appendable_checkpoints": 1,
+      "actual_library_appendable_checkpoints": 1,
+      "diagnostic_logged_control_replay_native_steps": 16488,
+      "diagnostic_private_integrations": 58656,
+      "positive_checkpoint": 686,
+      "positive_minimum_causal_clearance_m": 0.1553344410819982,
+      "scope": "private retained-tail feasibility only, not executed navigation or acceptance"
+    },
+    "prefix_projection_preflight": {
+      "status": "FAILED",
+      "error": "NO_REGISTERED_PREFIX_GLOBAL_PATH",
+      "source_packets": 804,
+      "future_grid": 81,
+      "containment_max_excess_m": -0.006009499999999779,
+      "registered_steps": [
+        0,
+        49
+      ],
+      "route_statuses": [
+        {
+          "step": 0,
+          "role": "CURRENT_ONLY",
+          "status": "GLOBAL_GOAL_PATH",
+          "expanded": 150,
+          "goal_distance_m": 0.27973890922282046
+        },
+        {
+          "step": 0,
+          "role": "PREFIX_0_8",
+          "status": "GLOBAL_GOAL_PATH",
+          "expanded": 194,
+          "goal_distance_m": 0.20859356829532347
+        },
+        {
+          "step": 49,
+          "role": "CURRENT_ONLY",
+          "status": "GLOBAL_GOAL_PATH",
+          "expanded": 13763,
+          "goal_distance_m": 0.15655964722920607
+        },
+        {
+          "step": 49,
+          "role": "PREFIX_0_8",
+          "status": "SAFE_PROGRESS_PREFIX",
+          "expanded": 16000,
+          "goal_distance_m": 3.862749948288196
+        }
+      ],
+      "navigation_attempted": false,
+      "simulation_integrations": 0
+    },
+    "total_navigation_native_steps": 6432,
+    "total_navigation_replay_native_steps": 6432,
+    "navigation_private_integrations": 4492352,
     "training_updates": 0,
     "real_robot_runs": 0,
     "stage_access": 0,
     "raw_evidence_deleted": false,
-    "scope": "one fixed development geometry; privileged sweep-information execution separately counted, never an unknown dynamic success rate; geometric path or physical prefix safety not universal solvability"
+    "automatic_additional_simulation": false,
+    "scope": "one original development task and two locked geometric inputs; bounded search failure is not physical or causal infeasibility proof"
   },
   "active_protocol": null,
   "control_pipeline_diagnosis": "runs/v674_dynamic_renewable_backup/CONTROL_PIPELINE_DIAGNOSIS.json",
   "automatic_additional_simulation": false,
   "previous_dynamic_evidence_commit": "86b6aa818ae185c68b2a1f2a650220c32aac96c2",
-  "candidate02_prerequisite": "runs/v678_dynamic_forecast_guidance/PRE_NAV_VALIDATION_RETRY02.json",
+  "candidate02_prerequisite": "runs/v681_dynamic_prefix_guidance/PRE_NAV_VALIDATION.json",
   "latest_evidence_verification": {
     "status": "ALL_ARCHIVED_BYTES_VERIFIED",
-    "raw_files": 490,
-    "manifest_files": 283,
-    "raw_bytes": 89944359,
-    "stored_bytes": 25029175,
+    "raw_files": 141,
+    "manifest_files": 141,
+    "raw_bytes": 36914368,
+    "stored_bytes": 13783487,
     "raw_deleted": false
   },
   "canonical_command_repair_verified": true,
@@ -637,5 +612,16 @@
     "raw_evidence_deleted": false,
     "additional_simulation_steps": 0,
     "automatic_repeated_push": false
+  },
+  "previous_round_pointer": {
+    "status": "V680_LATER_STOP_RESERVE_NAVIGATION",
+    "active_entrypoint": "experiments/v680_dynamic_later_stop_reserve/run_static.py",
+    "decision_freeze": "runs/v678_dynamic_forecast_guidance/development01/SOURCE_FREEZE.json",
+    "source_revision": "dynamic_45_forecast_guidance",
+    "protocol": "experiments/v678_dynamic_forecast_guidance/PROTOCOL.md",
+    "report": "docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md",
+    "active_run": "runs/v680_dynamic_later_stop_reserve/development01",
+    "active_window": "runs/v679_dynamic_forward_reserve/ROUND_WINDOW.json",
+    "active_protocol": "experiments/v680_dynamic_later_stop_reserve/PROTOCOL.md"
   }
 }

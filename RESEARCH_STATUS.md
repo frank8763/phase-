@@ -1,6 +1,7 @@
 # 研究状态 · 2026-11-01
 
-状态：`V678_CLOSED_CAUSAL_NON_SUCCESS_SCENE_WITNESS_PASS`。本轮2因果候选均未到达：V676881公开、V678495公开；原生命令/完整状态/安全/覆盖/源模型审计均PASS，命令契约已修复。V677同物理场景获完整扫掠信息后474公开严格到达，证明存在带额外信息的安全可执行通路，不能计未知动态成功。成功轨迹474帧中49帧未来位姿采样被原因果外覆盖拒绝，提示信息—时序规划缺口；静态投影仍未解决。现无活动仿真，2候选上限已用完，不追加/续窗/换场景。[最终报告](docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md)。
+状态：`V679_V681_CLOSED_DYNAMIC_NON_SUCCESS`。本轮V680单原开发例804公开/6432原生未到达，净空0.252713m、全状态/ctrl重放误差0、完整独立审计PASS；新增前进尾仅686使一个普通输入准入、0前进尾实际接管，仍反复退回。V681前向0.8秒空间提案在固定49输入只能找到安全前缀，前置失败未导航；无第三设计/自动续窗。固定诊断16488旧控制重放/58656私有；导航另计6432重放/4492352私有。0重复/新场景/确认/训练/实机/Stage。当前无仿真，原静态V657不变。见docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md；下一未执行规格docs/DYNAMIC_TEMPORAL_KERNEL_DESIGN.md。
+
 
 迁移后的原授权状态：`AUTHORIZED_STATIC_UNKNOWN_DEVELOPMENT`。用户于 2026-10-31 审阅迁移后确认 RAS 目标，并明确授权下一步静态未知障碍实验及文献研究。迁移轮仿真/训练均为 0；新一轮按 experiments/v648_static_unknown/PROTOCOL.md 独立记账。
 
