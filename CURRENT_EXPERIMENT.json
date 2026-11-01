@@ -1,12 +1,12 @@
 {
-  "status": "V679_V681_CLOSED_DYNAMIC_NON_SUCCESS",
+  "status": "V683_V685_CLOSED_DYNAMIC_NON_SUCCESS",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "runs/v680_dynamic_later_stop_reserve/development01/SOURCE_FREEZE.json",
-  "source_revision": "dynamic_47_later_stop_reserve",
-  "protocol": "experiments/v680_dynamic_later_stop_reserve/PROTOCOL.md",
-  "report": "docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md",
+  "decision_freeze": "runs/v683_dynamic_current_state_diagnosis/CANDIDATE_FREEZE.json",
+  "source_revision": "diagnosis49_current_state_only",
+  "protocol": "experiments/v683_dynamic_current_state_diagnosis/PROTOCOL.md",
+  "report": "docs/DYNAMIC_INFO_VALIDATION_V683_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--scene",
@@ -50,7 +50,7 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "LOCAL_V679_EVIDENCE_COMMITTED_REMOTE_UNVERIFIED_TIMEOUT",
+  "github_sync_status": "LOCAL_V683_EVIDENCE_PENDING_COMMIT_REMOTE_UNVERIFIED",
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
@@ -163,7 +163,7 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/dynamic_forward_reserve_v679_round_20261101",
+  "evidence": "evidence/dynamic_current_info_v683_round_20261101",
   "requires_user_review_before_next_experiment": false,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
@@ -228,9 +228,9 @@
   },
   "static_selection_freeze": "runs/v657_static_fixed_work_confirmation/confirmation01/SELECTION_FREEZE.json",
   "static_independent_confirmation_trials": 24,
-  "independent_dynamic_evidence_audit": "runs/v680_dynamic_later_stop_reserve/dev47_95000011_laterstop/paired/INDEPENDENT_CANONICAL_AUDIT.json",
+  "independent_dynamic_evidence_audit": "runs/v683_dynamic_current_state_diagnosis/diagnosis49_95000011_currentstate/paired/INDEPENDENT_CANONICAL_AUDIT.json",
   "static_independent_acceptance_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json",
-  "final_implementation_role": "V680 last executed causal candidate, safe non-arrival; V681 design rejected before navigation; old privileged scene witness excluded",
+  "final_implementation_role": "V683 diagnostic only; V684 never navigated; full-state temporal kernel still not implemented",
   "previous_dynamic_round": {
     "report": "docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md",
     "ledger": "runs/v661_dynamic_corridor_consistency/DYNAMIC_ROUND_LEDGER.json",
@@ -429,138 +429,151 @@
   "paper_method_draft": "docs/PHASE_DYNAMIC_METHOD_DRAFT.md",
   "next_experiment_requires_new_bounded_protocol": true,
   "offline_validation": "runs/v680_dynamic_later_stop_reserve/pre_navigation/COMPLETION.json",
-  "current_dynamic_report": "docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md",
-  "latest_final_ledger": "runs/v679_dynamic_forward_reserve/FINAL_ANALYSIS.json",
+  "current_dynamic_report": "docs/DYNAMIC_INFO_VALIDATION_V683_REPORT.md",
+  "latest_final_ledger": "runs/v683_dynamic_current_state_diagnosis/FINAL_ANALYSIS.json",
   "latest_evidence": [
-    "evidence/dynamic_forward_reserve_v679_round_20261101"
+    "evidence/dynamic_current_info_v683_round_20261101"
   ],
-  "latest_result_role": "One causal non-arrival and one rejected zero-integration prefix-route preflight; no dynamic acceptance",
+  "latest_result_role": "Exact current-state privileged non-arrival; rejected causal target repair; final18prediction component attribution. No unknown dynamic success.",
   "next_candidate": null,
   "paper_evaluation_design": "docs/DYNAMIC_EVALUATION_DESIGN.md",
-  "latest_completed_entrypoint": "experiments/v680_dynamic_later_stop_reserve/run_static.py",
+  "latest_completed_entrypoint": "experiments/v683_dynamic_current_state_diagnosis/run_static.py",
   "latest_round_summary": {
-    "status": "CLOSED_ONE_NAV_NON_SUCCESS_AND_REJECTED_PREFIX_DESIGN",
+    "status": "CLOSED_PRIVILEGED_NON_ARRIVAL_AND_REJECTED_CAUSAL_DESIGN",
     "round_closed": true,
-    "original_round_started_unix": 1793517201.5197222,
-    "original_absolute_deadline_unix": 1793524401.5197222,
-    "navigation_candidates_started": 1,
-    "candidate_designs_prepared": 2,
-    "candidate_designs_rejected_before_navigation": 1,
-    "new_navigation_attempts": 1,
-    "strict_arrivals": 0,
-    "repeats": 0,
-    "distinct_development_tasks": 1,
+    "original_absolute_deadline_unix": 1793527512.016538,
+    "deadline_extended": false,
+    "original_driver_completion_preserved": {
+      "status": "STOPPED_EVIDENCE_ANOMALY",
+      "elapsed_s": 601.2437278129946,
+      "original_round_deadline_unix": 1793527512.016538,
+      "executed_branches": 1,
+      "privileged_strict_arrivals_including_repeat": 0,
+      "information_role": "ORACLE_CURRENT_STATE_ONLY",
+      "counts_as_unknown_dynamic_success": false,
+      "dynamic_acceptance_passed": false,
+      "training_updates": 0,
+      "automatic_next_revision_started": false
+    },
+    "zero_integration_count_review": "VALIDATOR_COUNTING_ERROR_RESOLVED_ZERO_INTEGRATION",
+    "privileged_navigation_branches": 1,
+    "privileged_strict_arrivals": 0,
+    "causal_navigation_branches": 0,
+    "causal_strict_arrivals": 0,
+    "causal_designs_tested_offline": 1,
+    "causal_designs_rejected_before_navigation": 1,
+    "new_geometry_tasks": 0,
     "independent_confirmation_tasks": 0,
-    "privileged_branches": 0,
-    "dynamic_acceptance": false,
+    "repeats": 0,
+    "dynamic_acceptance_passed": false,
     "navigation": {
-      "version": "V680",
-      "role": "CAUSAL_UNKNOWN_DYNAMIC",
-      "run": "runs/v680_dynamic_later_stop_reserve/dev47_95000011_laterstop/paired",
-      "outcome": "BOUNDED_WALL_STOP",
-      "strict_arrival": false,
-      "public_steps": 804,
-      "native_steps": 6432,
-      "goal_distance_final_m": 5.967326437073141,
-      "best_goal_distance_m": 5.268479195223042,
-      "minimum_actual_native_clearance_m": 0.2527128748399221,
-      "actual_elapsed_s": 777.7254505520104,
-      "simulated_s": 64.32000000000001,
-      "traveled_m": 8.370626624394824,
-      "ordinary_forward_admission_steps": [
-        686
-      ],
-      "forward_tail_activated_public_steps": 0,
-      "reserved_public_steps": 80,
-      "certified_handover_successes": 5,
-      "active_gears": {
-        "1": 504,
-        "-1": 220,
-        "None": 80
-      },
-      "planning_statuses": {
-        "GLOBAL_GOAL_PATH": 15,
-        "SAFE_PROGRESS_PREFIX": 2
-      },
-      "public_command_statuses": {
-        "MODEL_SAFE_COMMAND": 724,
-        "RETAINED_REVERSE_BRAKE_CONTRACT": 80
-      },
-      "private_integrations": 4492352,
-      "replay_native_steps": 6432,
-      "full_state_replay_max_error": 0.0,
-      "independent_audit_status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
-      "saved_tail_geometry_audit_status": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
-      "saved_tail_count": 10,
-      "source_and_snapshot_sha_unchanged": true
+      "version": "V683",
+      "information_role": "ORACLE_CURRENT_STATE_ONLY",
+      "counts_as_unknown_dynamic_success": false,
+      "run": "runs/v683_dynamic_current_state_diagnosis/diagnosis49_95000011_currentstate/paired",
+      "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+      "public_steps": 753,
+      "native_steps": 6024,
+      "goal_distance_m": 4.412587361808102,
+      "minimum_native_actual_clearance_m": 0.21339147085486265,
+      "elapsed_s": 593.3320796220069,
+      "private_prediction_integrations": 3690624,
+      "full_state_raw_ctrl_audit_status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+      "information_audit_status_v2": "ALL_CURRENT_STATE_INFORMATION_CHECKS_PASS",
+      "original_information_audit_fail_preserved": true,
+      "information_decisions_checked": 754,
+      "unexecuted_final_rejected_decisions": 1,
+      "saved_tail_geometry_audit": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS"
     },
-    "fixed_diagnostics": {
-      "checkpoints": [
-        217,
-        227,
-        686
-      ],
-      "original_forward160_appendable_checkpoints": 0,
-      "later_stop_single_target_appendable_checkpoints": 1,
-      "actual_library_appendable_checkpoints": 1,
-      "diagnostic_logged_control_replay_native_steps": 16488,
-      "diagnostic_private_integrations": 58656,
-      "positive_checkpoint": 686,
-      "positive_minimum_causal_clearance_m": 0.1553344410819982,
-      "scope": "private retained-tail feasibility only, not executed navigation or acceptance"
-    },
-    "prefix_projection_preflight": {
-      "status": "FAILED",
-      "error": "NO_REGISTERED_PREFIX_GLOBAL_PATH",
-      "source_packets": 804,
-      "future_grid": 81,
-      "containment_max_excess_m": -0.006009499999999779,
-      "registered_steps": [
-        0,
-        49
-      ],
-      "route_statuses": [
+    "causal_design_preflight": {
+      "version": "V684",
+      "algorithm_change": "ordinary target front/rear turning-circle consistency; all original causal inputs and safety gates",
+      "status": "COMPLETE_NO_REGISTERED_INCREMENT",
+      "registered_increments": 0,
+      "target_context_audit": "ALL_FIXED_TARGET_CONTEXTS_MATCH",
+      "cases": [
         {
-          "step": 0,
-          "role": "CURRENT_ONLY",
-          "status": "GLOBAL_GOAL_PATH",
-          "expanded": 150,
-          "goal_distance_m": 0.27973890922282046
+          "checkpoint": 49,
+          "original_nominal_status": "MODEL_SAFE_COMMAND",
+          "original_highest_score_appendable": true,
+          "new_appendable": true,
+          "predicted_goal_progress_m": 0.21431966808604397,
+          "old_reference_terminal_error": 0.0038847517154626406,
+          "new_reference_terminal_error": 0.01946280320838737,
+          "registered_increment": false,
+          "full_private_execute": {
+            "full_prefix_and320_tail_qpos_qvel_ctrl_match": true,
+            "native_ticks": 328
+          }
         },
         {
-          "step": 0,
-          "role": "PREFIX_0_8",
-          "status": "GLOBAL_GOAL_PATH",
-          "expanded": 194,
-          "goal_distance_m": 0.20859356829532347
+          "checkpoint": 227,
+          "original_nominal_status": "MODEL_SAFE_COMMAND",
+          "original_highest_score_appendable": false,
+          "new_appendable": false,
+          "predicted_goal_progress_m": 0.17382634598003754,
+          "old_reference_terminal_error": 0.020548154289741057,
+          "new_reference_terminal_error": 0.034572127527568344,
+          "registered_increment": false,
+          "full_private_execute": null
         },
         {
-          "step": 49,
-          "role": "CURRENT_ONLY",
-          "status": "GLOBAL_GOAL_PATH",
-          "expanded": 13763,
-          "goal_distance_m": 0.15655964722920607
-        },
-        {
-          "step": 49,
-          "role": "PREFIX_0_8",
-          "status": "SAFE_PROGRESS_PREFIX",
-          "expanded": 16000,
-          "goal_distance_m": 3.862749948288196
+          "checkpoint": 245,
+          "original_nominal_status": "NO_MODEL_SAFE_COMMAND",
+          "original_highest_score_appendable": false,
+          "new_appendable": false,
+          "predicted_goal_progress_m": null,
+          "old_reference_terminal_error": null,
+          "new_reference_terminal_error": null,
+          "registered_increment": false,
+          "full_private_execute": null
         }
       ],
-      "navigation_attempted": false,
-      "simulation_integrations": 0
+      "first_failed_fixture_replay_native_steps": 392,
+      "first_failed_fixture_private_integrations": 0,
+      "completed_fixture_replay_native_steps": 1968,
+      "completed_fixture_private_integrations": 20344,
+      "navigation_started": false
     },
-    "total_navigation_native_steps": 6432,
-    "total_navigation_replay_native_steps": 6432,
-    "navigation_private_integrations": 4492352,
+    "terminal_component_audit": {
+      "version": "V685",
+      "source_decision_step": 753,
+      "new_input_targets_tested": 0,
+      "original_targets_reproduced": 18,
+      "original_prediction_maximum_reproduction_error": 0.0,
+      "all_rejecting_dynamic_only": true,
+      "known_static_minimum_range_m": [
+        0.1839648037116401,
+        0.19388426486531174
+      ],
+      "retrospective_actual_future_minimum_range_m": [
+        0.17612568772158196,
+        0.19388426486531174
+      ],
+      "best_original_outer_set_minimum_m": 0.04465480505514316,
+      "all_limiting_tick240": true,
+      "maximum_terminal_forward_y_displacement_m": 0.18385255830757874,
+      "first_failed_replay_native_steps": 6024,
+      "first_failed_private_integrations": 0,
+      "completed_replay_native_steps": 6024,
+      "completed_private_integrations": 4320,
+      "scope": "only original240native predictions; retrospective future is not online input or executed arrival and no328tail claim"
+    },
+    "account": {
+      "new_navigation_native_steps": 6024,
+      "navigation_full_control_replay_native_steps": 6024,
+      "fixed_causal_diagnostic_replay_native_steps": 2360,
+      "final_component_replay_native_steps_including_failed_wrapper": 12048,
+      "navigation_private_prediction_integrations": 3690624,
+      "all_fixed_diagnostic_private_integrations_including_failures": 24664,
+      "fixed_private_cap": 40000
+    },
     "training_updates": 0,
-    "real_robot_runs": 0,
     "stage_access": 0,
-    "raw_evidence_deleted": false,
-    "automatic_additional_simulation": false,
-    "scope": "one original development task and two locked geometric inputs; bounded search failure is not physical or causal infeasibility proof"
+    "real_robot_runs": 0,
+    "raw_deleted": false,
+    "no_further_simulation_this_round": true,
+    "scope": "one original development scene; privileged information ablation and one rejected causal design, no unknown dynamic success/generalization proof"
   },
   "active_protocol": null,
   "control_pipeline_diagnosis": "runs/v674_dynamic_renewable_backup/CONTROL_PIPELINE_DIAGNOSIS.json",
@@ -569,12 +582,11 @@
   "candidate02_prerequisite": "runs/v681_dynamic_prefix_guidance/PRE_NAV_VALIDATION.json",
   "latest_evidence_verification": {
     "status": "ALL_ARCHIVED_BYTES_VERIFIED",
-    "raw_files": 141,
-    "manifest_files": 141,
-    "raw_bytes": 36914368,
-    "stored_bytes": 13783487,
-    "raw_deleted": false,
-    "local_evidence_commit": "3b6ec22a367094a76c1bb2174b9f199fe20a96da"
+    "raw_files": 135,
+    "manifest_files": 135,
+    "raw_bytes": 33203303,
+    "stored_bytes": 13150393,
+    "raw_deleted": false
   },
   "canonical_command_repair_verified": true,
   "privileged_scene_safe_witness": {
@@ -652,5 +664,13 @@
       "robot_integrations": 0,
       "raw_deleted": false
     }
+  },
+  "current_diagnostic_role": {
+    "information_role": "ORACLE_CURRENT_STATE_ONLY",
+    "counts_as_unknown_dynamic_success": false,
+    "maximum_navigation_branches_including_success_repeat": 2,
+    "future_class_unchanged": true,
+    "validation": "runs/v683_dynamic_current_state_diagnosis/PRE_NAV_VALIDATION.json",
+    "status": "CLOSED_PRIVILEGED_NON_ARRIVAL"
   }
 }
