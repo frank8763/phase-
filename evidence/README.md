@@ -56,3 +56,7 @@
 [dynamic_interval_tracking_v663_20261101/](dynamic_interval_tracking_v663_20261101/README.md)保留同源码32/0步起点观测两条未到达轨迹；3832导航原生步和完整重放通过，481帧各121个未来时刻有限集合覆盖通过。两包175清单文件、95来源引用校验通过，不能把证据PASS叫动态验收。详见[当前诊断报告](../docs/DYNAMIC_INTERVAL_DEVELOPMENT_REPORT.md)。
 
 [dynamic_causal_proposal_v664_20261101/](dynamic_causal_proposal_v664_20261101/README.md)保存最新一次285步未到达及2280原生步完整核验；[dynamic_dense_edge_diagnosis_v665_20261101/](dynamic_dense_edge_diagnosis_v665_20261101/README.md)只保存两个锁定输入的零积分密集边段候选核验，不是导航成功。V662–V665四包266清单文件/130来源引用均通过，另dynamic_interval_round_account_20261101保存累计分账。
+
+## 动态测距一致性与有限恢复 · V666–V669
+
+[dynamic_dense_navigation_v666_20261101/](dynamic_dense_navigation_v666_20261101/README.md)、[dynamic_first_hit_v667_20261101/](dynamic_first_hit_v667_20261101/README.md)、[dynamic_recovery_probe_v668_20261101/](dynamic_recovery_probe_v668_20261101/README.md)、[dynamic_reserved_recovery_v669_20261101/](dynamic_reserved_recovery_v669_20261101/README.md)保留全3未到达导航、同测距估计消融、405固定输入诊断和实际40公开步反向制动尾。9592新导航原生/完整重放核验通过，有限后备成功未转化为到达。四包289清单文件/173来源引用与原始接触SHA通过；原日志目录中断及重试源/步数完整保留。[当前报告](../docs/DYNAMIC_RECOVERY_V669_REPORT.md)给出预算、未执行项、机制边界和论文草稿入口。

@@ -1,12 +1,12 @@
 {
-  "status": "DYNAMIC_INTERVAL_CLOSED_NON_SUCCESS_OFFLINE_FIX_PREPARED",
+  "status": "DYNAMIC_RECOVERY_CLOSED_NON_SUCCESS_INFORMATION_RENEWAL_GAP",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v664_dynamic_causal_proposals/run_static.py",
-  "decision_freeze": "runs/v664_dynamic_causal_proposals/PREREGISTERED_FREEZE.json",
-  "source_revision": "dynamic_34_causal_proposal_full_time_gate",
-  "protocol": "experiments/v664_dynamic_causal_proposals/PROTOCOL.md",
-  "report": "docs/DYNAMIC_INTERVAL_DEVELOPMENT_REPORT.md",
+  "active_entrypoint": "experiments/v669_dynamic_reserved_recovery/run_static.py",
+  "decision_freeze": "runs/v669_dynamic_reserved_recovery/PREREGISTERED_FREEZE.json",
+  "source_revision": "dynamic_37_reserved_reverse_recovery",
+  "protocol": "experiments/v669_dynamic_reserved_recovery/PROTOCOL.md",
+  "report": "docs/DYNAMIC_RECOVERY_V669_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--scene",
@@ -26,11 +26,13 @@
     "static circle shape prior and known prior map, accurate localization",
     "full low-level takeover; SAC benefit unisolated",
     "not real-time, no real-robot validation",
-    "dynamic first round: one previously known static geometry task, three non-arrival development branches, no independent dynamic confirmation",
     "loss of actor observations causes expanding age occupancy and failed recovery; indefinite waiting safety not tested",
     "scripted mocap actor, known static prior; occluded emergence and multiple actors untested",
     "V663/V664 set-membership predictor passed finite767x121 future-grid checks only; no calibrated probability or continuous-time coverage claim",
-    "Latest dynamic branches remain non-arrivals; V665 dense-edge repair only saved-input planning, with roughly3x search cost"
+    "All dynamic versions reuse one development geometry, no independent dynamic confirmation or comparative superiority",
+    "First-hit same-packet estimator reduction validated; does not establish navigation improvement",
+    "V669 finite320native reverse-brake tail executed exactly; terminal uncertainty expands and no renewed safe plan exists",
+    "No terminal invariant observation/recoverability set or progress theorem; deterministic observation renewal not guaranteed by a5percent dropout rate"
   ],
   "previous_candidate": {
     "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
@@ -38,7 +40,7 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "PENDING_BOUNDED_GIT_TIMEOUT_REMOTE_UNVERIFIED",
+  "github_sync_status": "REMOTE_V648_VERIFIED_BEHIND_LOCAL_PENDING_PUSH",
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
@@ -131,7 +133,7 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-11-01T10:40:58.892206+08:00",
+  "last_observed_at": "2026-11-01T11:54:26.764816+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": null,
   "v653_previous_confirmation_summary": {
@@ -151,7 +153,7 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/dynamic_causal_proposal_v664_20261101",
+  "evidence": "evidence/dynamic_reserved_recovery_v669_20261101",
   "requires_user_review_before_next_experiment": false,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
@@ -216,9 +218,9 @@
   },
   "static_selection_freeze": "runs/v657_static_fixed_work_confirmation/confirmation01/SELECTION_FREEZE.json",
   "static_independent_confirmation_trials": 24,
-  "independent_dynamic_evidence_audit": "runs/v664_dynamic_causal_proposals/INDEPENDENT_DYNAMIC_AUDIT.json",
+  "independent_dynamic_evidence_audit": "runs/v669_dynamic_reserved_recovery/INDEPENDENT_DYNAMIC_AUDIT.json",
   "static_independent_acceptance_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json",
-  "final_implementation_role": "V664 is the last actually executed dynamic development, non-arrival; V665 planner is an offline-only candidate, not an accepted best navigator",
+  "final_implementation_role": "V669 last executed developer, real finite reverse-brake tail completed, no arrival; not accepted best dynamic navigator",
   "local_dynamic_evidence_commit": "86b6aa818ae185c68b2a1f2a650220c32aac96c2",
   "previous_dynamic_round": {
     "report": "docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md",
@@ -270,11 +272,151 @@
     "real_robot_runs": 0,
     "raw_evidence_deleted": false
   },
-  "next_offline_candidate": {
-    "planner": "experiments/v665_dynamic_dense_edges/planner.py",
-    "protocol": "experiments/v665_dynamic_dense_edges/PROTOCOL.md",
-    "validation": "runs/v665_dynamic_dense_edges/INDEPENDENT_OFFLINE_CHECK.json",
-    "navigation_executed": false,
-    "requires_complete_candidate_freeze_and_new_bounded_navigation_protocol": true
-  }
+  "next_offline_candidate": null,
+  "dynamic_recovery_round": {
+    "status": "CLOSED_THREE_CANDIDATES_NO_DYNAMIC_ARRIVAL",
+    "start_unix": 1793501532.9454718,
+    "original_absolute_deadline_unix": 1793508732.9454718,
+    "maximum_s": 7200,
+    "last_actual_simulation_completed_unix": 1793504185.7657814,
+    "charged_elapsed_to_last_simulation_s": 2652.820309638977,
+    "candidate_count": 3,
+    "new_navigation_branches": 3,
+    "distinct_development_tasks": 1,
+    "strict_arrivals": 0,
+    "conditional_repeats": 0,
+    "new_geometry_preflights": 0,
+    "new_geometries_unexecuted": [
+      {
+        "seed": 95000039,
+        "reason": "DEPENDENT_MAIN_ARRIVAL_NOT_MET"
+      },
+      {
+        "seed": 95000053,
+        "reason": "DEPENDENT_MAIN_ARRIVAL_NOT_MET"
+      }
+    ],
+    "independent_confirmation_tasks": 0,
+    "dynamic_stability_acceptance_passed": false,
+    "navigation": [
+      {
+        "candidate": "v666_dynamic_dense_navigation",
+        "name": "dev35_95000011_dense",
+        "public_steps": 764,
+        "native_steps": 6112,
+        "control_replay_steps": 6112,
+        "private_prediction_integrations": 3160080,
+        "outcome": "MPC_AND_BACKUP_NO_SAFE_COMMAND",
+        "strict_arrival": false,
+        "minimum_actual_native_clearance_m": 0.2156495361904734,
+        "goal_distance_m": 5.580764542454815,
+        "independent_audit": "runs/v666_dynamic_dense_navigation/INDEPENDENT_DYNAMIC_AUDIT.json"
+      },
+      {
+        "candidate": "v667_dynamic_first_hit",
+        "name": "dev36_95000011_firsthit",
+        "public_steps": 209,
+        "native_steps": 1672,
+        "control_replay_steps": 1672,
+        "private_prediction_integrations": 892800,
+        "outcome": "MPC_AND_BACKUP_NO_SAFE_COMMAND",
+        "strict_arrival": false,
+        "minimum_actual_native_clearance_m": 0.3083705625532229,
+        "goal_distance_m": 5.295253463411635,
+        "independent_audit": "runs/v667_dynamic_first_hit/INDEPENDENT_DYNAMIC_AUDIT.json"
+      },
+      {
+        "candidate": "v669_dynamic_reserved_recovery",
+        "name": "dev37_95000011_reserve",
+        "public_steps": 226,
+        "native_steps": 1808,
+        "control_replay_steps": 1808,
+        "private_prediction_integrations": 1692536,
+        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "strict_arrival": false,
+        "minimum_actual_native_clearance_m": 0.36938211624531336,
+        "goal_distance_m": 5.668413731996869,
+        "independent_audit": "runs/v669_dynamic_reserved_recovery/INDEPENDENT_DYNAMIC_AUDIT.json"
+      }
+    ],
+    "diagnostic_replay_attempts": [
+      {
+        "file": "runs/v668_dynamic_recovery_probe/COMPLETION.json",
+        "status": "COMPLETE_FIXED_GRID",
+        "error": null,
+        "elapsed_s": 10.787259158998495,
+        "replay_native_steps": 1672,
+        "private_prediction_integrations": 108000,
+        "candidate_count": 405,
+        "new_navigation_tasks": 0,
+        "worst_full_qpos_qvel_mocap_errors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_replay_actual_native_clearance_m": 0.3083705625532229,
+        "minimum_replay_self_domain_margin_m": 0.009193052990576545,
+        "obstacle_unknown_contact_records": 0,
+        "original_round_deadline_unix": 1793508732.9454718,
+        "scope": "actuator-grid diagnostic at3causal checkpoints, no executed navigation alternative"
+      },
+      {
+        "file": "runs/v669_dynamic_reserved_recovery/PRE_NAV_DIAGNOSTIC.json",
+        "status": "FAILED_OR_INTERRUPTED",
+        "error": {
+          "type": "FileNotFoundError",
+          "message": "[Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v669_dynamic_reserved_recovery/private_contract_checks/recovery_contracts'"
+        },
+        "elapsed_s": 1.1835875639953883,
+        "replay_native_steps": 1280,
+        "private_prediction_integrations": 4808,
+        "checkpoint_count": 1,
+        "new_navigation_tasks": 0,
+        "worst_full_qpos_qvel_mocap_errors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_replay_actual_native_clearance_m": 0.36938211624531336,
+        "minimum_replay_self_domain_margin_m": 0.009193052990576545,
+        "obstacle_unknown_contact_records": 0,
+        "original_round_deadline_unix": 1793508732.9454718,
+        "scope": "reserved-recovery logic at3locked causal checkpoints; exact logged prefix and private-tail execution, no new navigation"
+      },
+      {
+        "file": "runs/v669_dynamic_reserved_recovery/pre_nav_retry02/PRE_NAV_DIAGNOSTIC.json",
+        "status": "COMPLETE_FIXED_GRID",
+        "error": null,
+        "elapsed_s": 2.2361175959958928,
+        "replay_native_steps": 1672,
+        "private_prediction_integrations": 14744,
+        "checkpoint_count": 3,
+        "new_navigation_tasks": 0,
+        "worst_full_qpos_qvel_mocap_errors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_replay_actual_native_clearance_m": 0.3083705625532229,
+        "minimum_replay_self_domain_margin_m": 0.009193052990576545,
+        "obstacle_unknown_contact_records": 0,
+        "original_round_deadline_unix": 1793508732.9454718,
+        "scope": "reserved-recovery logic at3locked causal checkpoints; exact logged prefix and private-tail execution, no new navigation"
+      }
+    ],
+    "new_navigation_native_steps": 9592,
+    "navigation_control_log_replay_native_steps": 9592,
+    "diagnostic_logged_control_replay_native_steps_including_partial_failure": 4624,
+    "navigation_private_prediction_integrations": 5745416,
+    "diagnostic_private_prediction_integrations": 127552,
+    "raw_evidence_deleted": false,
+    "training_updates": 0,
+    "real_robot_runs": 0,
+    "stage_access": 0,
+    "automatic_additional_candidates": false,
+    "static_v657_unchanged": true
+  },
+  "next_research_design": "docs/DYNAMIC_LITERATURE_DESIGN.md",
+  "paper_method_draft": "docs/PHASE_DYNAMIC_METHOD_DRAFT.md",
+  "next_experiment_requires_new_bounded_protocol": true
 }

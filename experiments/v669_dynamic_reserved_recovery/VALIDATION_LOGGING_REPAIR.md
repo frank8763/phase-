@@ -1,0 +1,3 @@
+# 预导航验证日志目录修复
+
+attempt01在160检查点首步完整qpos/qvel误差0且15条恢复候选通过后，因诊断输出的父目录尚不存在而FileNotFoundError。原失败、部分重放统计、全部源版本保存在runs/v669_dynamic_reserved_recovery/pre_nav_attempt01；不改写原PRE_NAV_DIAGNOSTIC.json。只把恢复证书目录创建改成parents=True，重试输出独立pre_nav_retry02，不改轨迹/模型/门槛或原总截止；单次125秒重试，原导航仍0。模型/控制逻辑不因日志错误更换，重放和私有积分按两次实数累计。

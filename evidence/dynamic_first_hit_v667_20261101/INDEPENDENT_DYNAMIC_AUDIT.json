@@ -1,0 +1,79 @@
+{
+  "status": "EVIDENCE_AND_EXECUTED_NATIVE_CHECKS_PASS",
+  "checks": {
+    "all_native_records": true,
+    "finite_prediction_coverage": true,
+    "frozen_source_protocol": true,
+    "deadline_unchanged": true,
+    "within_deadline": true,
+    "within_registered_attempt_caps": true,
+    "old_task_model_initial_unchanged": true,
+    "first_public_predicted_pose_matches": true,
+    "all_registered_repeats_match": true
+  },
+  "branches": [
+    {
+      "run": "runs/v667_dynamic_first_hit/dev36_95000011_firsthit/paired",
+      "passed": true,
+      "checks": {
+        "all_public_and_native_records": true,
+        "source_snapshot": true,
+        "saved_model": true,
+        "causal_admission": true,
+        "actor_motion_formula": true,
+        "actor_mocap_at_all_native_ticks": true,
+        "native_time_steps": true,
+        "motion_bounds": true,
+        "smaller_actor": true,
+        "not_at_junction": true,
+        "swept_known_geometry_clearance": true,
+        "full_sweep_bypass": true,
+        "online_native_clearance": true,
+        "full_replay": true,
+        "replay_safety": true,
+        "zero_contact": true,
+        "raw_contact_digest": true,
+        "self_coverage": true,
+        "native_root_only": true,
+        "strict_outcome_consistent": true
+      },
+      "outcome": "MPC_AND_BACKUP_NO_SAFE_COMMAND",
+      "strict_arrival": false,
+      "public_steps": 209,
+      "native_steps": 1672,
+      "minimum_native_clearance_m": 0.3083705625532229,
+      "actor_displacement_span_m": 0.49999979630995195,
+      "actor_max_native_displacement_m": 0.0007999994073471597,
+      "raw_contact_records": 19829
+    }
+  ],
+  "coverage": [
+    {
+      "run": "runs/v667_dynamic_first_hit/dev36_95000011_firsthit/paired",
+      "frames": 210,
+      "forecast_times_per_frame": 121,
+      "maximum_center_box_excess_m": -0.0048804654437739625,
+      "maximum_velocity_box_excess_m_s": -0.03688704312091644,
+      "saved_rows_pass": true,
+      "passed": true
+    }
+  ],
+  "prediction_first_public_pose_checks": [
+    {
+      "run": "runs/v667_dynamic_first_hit/dev36_95000011_firsthit/paired",
+      "maximum_first_public_xy_yaw_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "public_steps": 209
+    }
+  ],
+  "distinct_development_tasks": 1,
+  "navigation_branches_including_repeats": 1,
+  "independent_confirmation_tasks": 0,
+  "strict_arrivals_including_repeats": 0,
+  "verification_simulation_steps": 0,
+  "dynamic_stability_acceptance_passed": false,
+  "scope": "finite development, no population, continuous-time or real-time guarantee"
+}

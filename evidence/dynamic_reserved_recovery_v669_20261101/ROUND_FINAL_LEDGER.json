@@ -1,0 +1,143 @@
+{
+  "status": "CLOSED_THREE_CANDIDATES_NO_DYNAMIC_ARRIVAL",
+  "start_unix": 1793501532.9454718,
+  "original_absolute_deadline_unix": 1793508732.9454718,
+  "maximum_s": 7200,
+  "last_actual_simulation_completed_unix": 1793504185.7657814,
+  "charged_elapsed_to_last_simulation_s": 2652.820309638977,
+  "candidate_count": 3,
+  "new_navigation_branches": 3,
+  "distinct_development_tasks": 1,
+  "strict_arrivals": 0,
+  "conditional_repeats": 0,
+  "new_geometry_preflights": 0,
+  "new_geometries_unexecuted": [
+    {
+      "seed": 95000039,
+      "reason": "DEPENDENT_MAIN_ARRIVAL_NOT_MET"
+    },
+    {
+      "seed": 95000053,
+      "reason": "DEPENDENT_MAIN_ARRIVAL_NOT_MET"
+    }
+  ],
+  "independent_confirmation_tasks": 0,
+  "dynamic_stability_acceptance_passed": false,
+  "navigation": [
+    {
+      "candidate": "v666_dynamic_dense_navigation",
+      "name": "dev35_95000011_dense",
+      "public_steps": 764,
+      "native_steps": 6112,
+      "control_replay_steps": 6112,
+      "private_prediction_integrations": 3160080,
+      "outcome": "MPC_AND_BACKUP_NO_SAFE_COMMAND",
+      "strict_arrival": false,
+      "minimum_actual_native_clearance_m": 0.2156495361904734,
+      "goal_distance_m": 5.580764542454815,
+      "independent_audit": "runs/v666_dynamic_dense_navigation/INDEPENDENT_DYNAMIC_AUDIT.json"
+    },
+    {
+      "candidate": "v667_dynamic_first_hit",
+      "name": "dev36_95000011_firsthit",
+      "public_steps": 209,
+      "native_steps": 1672,
+      "control_replay_steps": 1672,
+      "private_prediction_integrations": 892800,
+      "outcome": "MPC_AND_BACKUP_NO_SAFE_COMMAND",
+      "strict_arrival": false,
+      "minimum_actual_native_clearance_m": 0.3083705625532229,
+      "goal_distance_m": 5.295253463411635,
+      "independent_audit": "runs/v667_dynamic_first_hit/INDEPENDENT_DYNAMIC_AUDIT.json"
+    },
+    {
+      "candidate": "v669_dynamic_reserved_recovery",
+      "name": "dev37_95000011_reserve",
+      "public_steps": 226,
+      "native_steps": 1808,
+      "control_replay_steps": 1808,
+      "private_prediction_integrations": 1692536,
+      "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+      "strict_arrival": false,
+      "minimum_actual_native_clearance_m": 0.36938211624531336,
+      "goal_distance_m": 5.668413731996869,
+      "independent_audit": "runs/v669_dynamic_reserved_recovery/INDEPENDENT_DYNAMIC_AUDIT.json"
+    }
+  ],
+  "diagnostic_replay_attempts": [
+    {
+      "file": "runs/v668_dynamic_recovery_probe/COMPLETION.json",
+      "status": "COMPLETE_FIXED_GRID",
+      "error": null,
+      "elapsed_s": 10.787259158998495,
+      "replay_native_steps": 1672,
+      "private_prediction_integrations": 108000,
+      "candidate_count": 405,
+      "new_navigation_tasks": 0,
+      "worst_full_qpos_qvel_mocap_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum_replay_actual_native_clearance_m": 0.3083705625532229,
+      "minimum_replay_self_domain_margin_m": 0.009193052990576545,
+      "obstacle_unknown_contact_records": 0,
+      "original_round_deadline_unix": 1793508732.9454718,
+      "scope": "actuator-grid diagnostic at3causal checkpoints, no executed navigation alternative"
+    },
+    {
+      "file": "runs/v669_dynamic_reserved_recovery/PRE_NAV_DIAGNOSTIC.json",
+      "status": "FAILED_OR_INTERRUPTED",
+      "error": {
+        "type": "FileNotFoundError",
+        "message": "[Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v669_dynamic_reserved_recovery/private_contract_checks/recovery_contracts'"
+      },
+      "elapsed_s": 1.1835875639953883,
+      "replay_native_steps": 1280,
+      "private_prediction_integrations": 4808,
+      "checkpoint_count": 1,
+      "new_navigation_tasks": 0,
+      "worst_full_qpos_qvel_mocap_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum_replay_actual_native_clearance_m": 0.36938211624531336,
+      "minimum_replay_self_domain_margin_m": 0.009193052990576545,
+      "obstacle_unknown_contact_records": 0,
+      "original_round_deadline_unix": 1793508732.9454718,
+      "scope": "reserved-recovery logic at3locked causal checkpoints; exact logged prefix and private-tail execution, no new navigation"
+    },
+    {
+      "file": "runs/v669_dynamic_reserved_recovery/pre_nav_retry02/PRE_NAV_DIAGNOSTIC.json",
+      "status": "COMPLETE_FIXED_GRID",
+      "error": null,
+      "elapsed_s": 2.2361175959958928,
+      "replay_native_steps": 1672,
+      "private_prediction_integrations": 14744,
+      "checkpoint_count": 3,
+      "new_navigation_tasks": 0,
+      "worst_full_qpos_qvel_mocap_errors": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "minimum_replay_actual_native_clearance_m": 0.3083705625532229,
+      "minimum_replay_self_domain_margin_m": 0.009193052990576545,
+      "obstacle_unknown_contact_records": 0,
+      "original_round_deadline_unix": 1793508732.9454718,
+      "scope": "reserved-recovery logic at3locked causal checkpoints; exact logged prefix and private-tail execution, no new navigation"
+    }
+  ],
+  "new_navigation_native_steps": 9592,
+  "navigation_control_log_replay_native_steps": 9592,
+  "diagnostic_logged_control_replay_native_steps_including_partial_failure": 4624,
+  "navigation_private_prediction_integrations": 5745416,
+  "diagnostic_private_prediction_integrations": 127552,
+  "raw_evidence_deleted": false,
+  "training_updates": 0,
+  "real_robot_runs": 0,
+  "stage_access": 0,
+  "automatic_additional_candidates": false,
+  "static_v657_unchanged": true
+}
