@@ -56,3 +56,6 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 
 
 最新动态分层验证：[V686空白场地报告](docs/DYNAMIC_OPEN_CURRICULUM_V686_REPORT.md)：能检测运动障碍并规划绕行，600步仍未通行；训练更新0。下一步依据[能力课程策略](docs/DYNAMIC_CURRICULUM_STRATEGY.md)定位执行与时序决策。
+
+
+[C0基础控制课程V687](docs/CONTROL_CURRICULUM_V687_REPORT.md)：直线、转弯、原绕行三项到达，绕行完整重复误差0。基础功能通过，动态未知障碍通行仍待解决，训练更新0。

@@ -1,0 +1,3 @@
+# 初始化目录冲突修复
+
+原driver和run_course冻结文件/原COMPLETION保持不变。原straight01在factory创建paired目录前，该目录被启动器预先创建，FileExistsError；0物理/0私有积分。retry02只将预创建对象改为parent，原factory仍创建paired；算法/任务/门槛逐字节相同。原ROUND_WINDOW保持已失败关闭；独立RECOVERY_LEDGER沿用原absolute_deadline_unix，不延期或复开原driver。新3原定路线名加retry02，最多仍3实际基础导航及全成功时1同版本绕行重复；原失败另计并永久保留。
