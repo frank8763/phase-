@@ -1,0 +1,100 @@
+{
+  "status": "CLOSED_DYNAMIC_DEVELOPMENT_NON_SUCCESS",
+  "started_unix": 1793496467.7743042,
+  "absolute_deadline_unix": 1793500067.7739408,
+  "closed_unix": 1793497542.996275,
+  "charged_original_window_elapsed_s": 1075.221970796585,
+  "maximum_original_window_s": 3600,
+  "windows": [
+    {
+      "version": "v658",
+      "window": "runs/v658_dynamic_unknown/development01",
+      "started_unix": 1793496467.7743042,
+      "status": "NO_ELIGIBLE_DYNAMIC_SCENE",
+      "elapsed_s": 9.418110697995871,
+      "remaining_limit_at_start_s": 3599.9996366500854,
+      "closed_unix": 1793496477.1924148
+    },
+    {
+      "version": "v659",
+      "window": "runs/v659_dynamic_scene_repair/development02",
+      "started_unix": 1793496624.8728564,
+      "status": "STOPPED_PHYSICAL_OR_RECORD_AUDIT",
+      "elapsed_s": 155.1766475559998,
+      "remaining_limit_at_start_s": 3442.901084423065,
+      "closed_unix": 1793496780.049504
+    },
+    {
+      "version": "v660",
+      "window": "runs/v660_dynamic_audit_recovery/development03",
+      "started_unix": 1793496892.0637264,
+      "status": "PREDICTIVE_NON_SUCCESS",
+      "elapsed_s": 143.2987346519949,
+      "remaining_limit_at_start_s": 3175.7102143764496,
+      "closed_unix": 1793497035.362461
+    },
+    {
+      "version": "v661",
+      "window": "runs/v661_dynamic_corridor_consistency/development04",
+      "started_unix": 1793497148.4722738,
+      "status": "PREDICTIVE_NON_SUCCESS",
+      "elapsed_s": 394.52400107200083,
+      "remaining_limit_at_start_s": 2919.3016669750214,
+      "closed_unix": 1793497542.996275
+    }
+  ],
+  "t0_attempts": {
+    "v658_preflights_rejected": 3,
+    "v659_diagnostic_rejected": 1,
+    "v659_preflight_eligible": 1,
+    "navigation_in_all_preflights": 0
+  },
+  "branches": [
+    {
+      "path": "runs/v659_dynamic_scene_repair/dev31_95000011_instant/paired",
+      "outcome": "OBSERVED_HARD_FLOOR_BREACH",
+      "public_steps": 264,
+      "native_steps": 2112,
+      "prediction_integrations": 1134000,
+      "strict_arrival": false,
+      "minimum_native_clearance_m": 0.2244282515286955,
+      "goal_distance_m": 4.376485529230937
+    },
+    {
+      "path": "runs/v660_dynamic_audit_recovery/dev31_95000011_predictive/paired",
+      "outcome": "MPC_AND_BACKUP_NO_SAFE_COMMAND",
+      "public_steps": 231,
+      "native_steps": 1848,
+      "prediction_integrations": 1000080,
+      "strict_arrival": false,
+      "minimum_native_clearance_m": 0.2295818086093751,
+      "goal_distance_m": 4.90184648084277
+    },
+    {
+      "path": "runs/v661_dynamic_corridor_consistency/dev32_95000011_predictive/paired",
+      "outcome": "NO_SAFE_PROGRESS_PATH",
+      "public_steps": 471,
+      "native_steps": 3768,
+      "prediction_integrations": 2034000,
+      "strict_arrival": false,
+      "minimum_native_clearance_m": 0.23671778517437336,
+      "goal_distance_m": 7.443994655589251
+    }
+  ],
+  "distinct_development_tasks": 1,
+  "independent_confirmation_tasks": 0,
+  "strict_arrivals": 0,
+  "complete_same_version_repeats_executed": 0,
+  "conditional_repeats_unexecuted_due_to_non_success": true,
+  "actual_navigation_native_steps": 7728,
+  "replay_native_steps": 9840,
+  "robot_only_candidate_prediction_integrations": 4168080,
+  "simulation_and_training_closed": true,
+  "training_updates": 0,
+  "real_robot_runs": 0,
+  "stage_access": 0,
+  "forecast_coverage_verified": false,
+  "all_executed_native_evidence_audited": true,
+  "dynamic_stability_acceptance_passed": false,
+  "no_additional_algorithm_revision_this_round": true
+}

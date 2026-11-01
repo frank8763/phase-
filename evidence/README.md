@@ -44,3 +44,7 @@
 ## 最新静态工程验收（用户审阅入口）
 
 [static_acceptance_v657_20261101/](static_acceptance_v657_20261101/README.md)：全新24项23严格到达（单12/12、双11/12），1HORIZON失败保留；3同版本完整重复误差0、27物理审计与独立重算通过。160112原生步审计、导航最小净空0.192639338m、含困难重复0.181062072m。1461清单文件校验通过，完整保留全部310预检、24导航与3重复来源和必要XML字节。仅有限筛选静态基准工程验收；动态未开始，后续等待用户审阅。[最终报告](../docs/STATIC_ACCEPTANCE_V657_REPORT.md)。
+
+## 用户授权后的动态首轮 · V658–V661
+
+四包dynamic_scene_v658_20261101、dynamic_scene_repair_v659_20261101、dynamic_time_gate_v660_20261101、dynamic_forecast_route_v661_20261101完整保留场景预检、导入错误、补充核验及三个未到达分支。仅一个开发任务，动态确认0；7728导航原生步物理审计通过不等于动态验收通过。293清单文件及248来源引用核验通过。[动态开发报告](../docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md)和[研究路线](../docs/DYNAMIC_RESEARCH_PLAN.md)为当前入口；静态V657原结果保持通过。

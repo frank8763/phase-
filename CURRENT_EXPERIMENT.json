@@ -1,12 +1,12 @@
 {
-  "status": "STATIC_ENGINEERING_ACCEPTANCE_PASSED_AWAITING_USER_REVIEW",
+  "status": "DYNAMIC_DEVELOPMENT_CLOSED_NON_SUCCESS",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v657_static_fixed_work_confirmation/run_static.py",
-  "decision_freeze": "experiments/v657_static_fixed_work_confirmation/CANDIDATE_FREEZE.json",
-  "source_revision": "progress_30_fixed_search_work",
-  "protocol": "experiments/v657_static_fixed_work_confirmation/PROTOCOL.md",
-  "report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
+  "active_entrypoint": "experiments/v661_dynamic_corridor_consistency/run_static.py",
+  "decision_freeze": "runs/v661_dynamic_corridor_consistency/development04/SOURCE_FREEZE.json",
+  "source_revision": "dynamic_32_consistent_forecast_corridor",
+  "protocol": "experiments/v661_dynamic_corridor_consistency/PROTOCOL.md",
+  "report": "docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--scene",
@@ -15,9 +15,9 @@
     "geometry_memory"
   ],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
-  "independent_confirmation_trials": 24,
+  "independent_confirmation_trials": 0,
   "static_gate_met": true,
-  "dynamic_started": false,
+  "dynamic_started": true,
   "sac_training_updates": 0,
   "limitations": [
     "finite geometric-reference-selected known-map static cylinder benchmark, not an unfiltered random population",
@@ -26,7 +26,11 @@
     "static circle shape prior and known prior map, accurate localization",
     "finite local range hypotheses without calibrated continuous coverage",
     "full low-level takeover; SAC benefit unisolated",
-    "not real-time, no real-robot validation"
+    "not real-time, no real-robot validation",
+    "dynamic first round: one previously known static geometry task, three non-arrival development branches, no independent dynamic confirmation",
+    "causal centroid/CV tube empirically undercovers true actor; uncertainty is not calibrated",
+    "loss of actor observations causes expanding age occupancy and failed recovery; indefinite waiting safety not tested",
+    "scripted mocap actor, known static prior; occluded emergence and multiple actors untested"
   ],
   "previous_candidate": {
     "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
@@ -38,14 +42,14 @@
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
-  "active_window": "runs/v657_static_fixed_work_confirmation/confirmation01",
+  "active_window": "runs/v661_dynamic_corridor_consistency/development04",
   "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
     "all_strict_arrivals": true,
     "all_development_audits_passed": true
   },
-  "selection_status": "24_FRESH_TASKS_LOCKED_BEFORE_NAVIGATION",
+  "selection_status": "FIRST_PREREGISTERED_NONBLOCKING_DEVELOPMENT_SCENE_SELECTED",
   "previous_v649_development_tasks": [
     {
       "seed": 91000002,
@@ -110,7 +114,6 @@
       "full_development_audit_passed": true
     }
   ],
-  "selection_freeze": "runs/v657_static_fixed_work_confirmation/confirmation01/SELECTION_FREEZE.json",
   "original_logging_interruption_retained": true,
   "previous_confirmation_summary": {
     "selected": 24,
@@ -128,7 +131,7 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-11-01T04:02:21.110624+08:00",
+  "last_observed_at": "2026-11-01T09:50:20.553658+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": null,
   "v653_previous_confirmation_summary": {
@@ -140,7 +143,51 @@
     "remaining_unattempted": 0,
     "full_confirmation_gate_passed": false
   },
-  "confirmation_summary": {
+  "v656_development": {
+    "passed": true,
+    "independent_audit": "runs/v656_static_deterministic_work/INDEPENDENT_DEVELOPMENT_AUDIT.json",
+    "distinct_tasks": 3,
+    "full_repeats": 3,
+    "maximum_full_state_ctrl_error": 0.0,
+    "evidence": "evidence/static_fixed_work_development_v656_20261101"
+  },
+  "evidence": "evidence/dynamic_forecast_route_v661_20261101",
+  "requires_user_review_before_next_experiment": false,
+  "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
+  "dynamic_development": {
+    "shared_original_window": "runs/v658_dynamic_unknown/development01/WINDOW.json",
+    "absolute_deadline_unix": 1793500067.7739408,
+    "actor_radius_m": 0.1,
+    "amplitude_m": 0.25,
+    "maximum_speed_m_s": 0.08,
+    "selected_seed": 95000011,
+    "scope": "same-task development; no dynamic acceptance or statistical claim",
+    "baseline_outcome": "OBSERVED_HARD_FLOOR_BREACH",
+    "baseline_physical_replay_passed_after_import_repair": true,
+    "original_failed_audit_preserved": true,
+    "supplemental_audit": "runs/v660_dynamic_audit_recovery/development03/BASELINE_SUPPLEMENTAL_AUDIT.json",
+    "first_predictive_outcome": "MPC_AND_BACKUP_NO_SAFE_COMMAND",
+    "first_predictive_native_clearance_m": 0.2295818086093751,
+    "first_pair_independent_audit": "runs/v660_dynamic_audit_recovery/INDEPENDENT_DYNAMIC_AUDIT.json",
+    "one_algorithm_repair": "Forecast spatial route uses conservative projection of same causal 2.4s gate tube; no threshold reduction; no further repair this round",
+    "closed": true,
+    "strict_arrivals": 0,
+    "distinct_development_tasks": 1,
+    "independent_confirmation_tasks": 0,
+    "complete_repeats": 0,
+    "executed_navigation_native_steps": 7728,
+    "replay_native_steps": 9840,
+    "candidate_prediction_integrations": 4168080,
+    "forecast_coverage_verified": false,
+    "all_executed_native_evidence_audited": true,
+    "charged_original_window_elapsed_s": 1075.221970796585,
+    "no_additional_revision_this_round": true,
+    "next_work_plan": "docs/DYNAMIC_RESEARCH_PLAN.md",
+    "next_experiment_requires_new_bounded_protocol": true
+  },
+  "previous_static_acceptance_evidence": "evidence/static_acceptance_v657_20261101",
+  "dynamic_stability_acceptance_passed": false,
+  "static_confirmation_summary": {
     "selected": 24,
     "recorded": 24,
     "strict_arrivals": 23,
@@ -153,29 +200,23 @@
     "full_confirmation_gate_passed": true,
     "failed_task_seed": 95000132
   },
-  "v656_development": {
-    "passed": true,
-    "independent_audit": "runs/v656_static_deterministic_work/INDEPENDENT_DEVELOPMENT_AUDIT.json",
-    "distinct_tasks": 3,
-    "full_repeats": 3,
-    "maximum_full_state_ctrl_error": 0.0,
-    "evidence": "evidence/static_fixed_work_development_v656_20261101"
-  },
-  "evidence": "evidence/static_acceptance_v657_20261101",
-  "requires_user_review_before_next_experiment": true,
-  "independent_acceptance_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json",
-  "repeat_summary": {
+  "static_repeat_summary": {
     "distinct_development_tasks": 3,
     "full_same_version_repeats": 3,
     "maximum_qpos_qvel_ctrl_error": 0.0,
     "raw_contact_hashes_identical": false,
     "physical_contact_events_exact_after_preregistered_verified_xml_path_normalization": true
   },
-  "native_audit_summary": {
+  "static_native_audit_summary": {
     "confirmation_native_steps": 137368,
     "including_repeats_native_steps": 160112,
     "confirmation_minimum_clearance_m": 0.19263933767896363,
     "including_repeats_minimum_clearance_m": 0.1810620717210027,
     "obstacle_contact_penetration_unknown_records": 0
-  }
+  },
+  "static_selection_freeze": "runs/v657_static_fixed_work_confirmation/confirmation01/SELECTION_FREEZE.json",
+  "static_independent_confirmation_trials": 24,
+  "independent_dynamic_evidence_audit": "runs/v661_dynamic_corridor_consistency/INDEPENDENT_DYNAMIC_AUDIT.json",
+  "static_independent_acceptance_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json",
+  "final_implementation_role": "V661 last bounded development revision, navigation non-success; not an accepted best dynamic navigator"
 }
