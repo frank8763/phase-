@@ -1,0 +1,161 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "retained_recovery_certificates": true,
+    "all_native_records": false,
+    "finite_prediction_coverage": true,
+    "frozen_source_protocol": true,
+    "deadline_unchanged": true,
+    "within_deadline": true,
+    "within_registered_attempt_caps": true,
+    "old_task_model_initial_unchanged": true,
+    "first_public_predicted_pose_matches": true,
+    "all_registered_repeats_match": true
+  },
+  "branches": [
+    {
+      "run": "runs/v670_dynamic_empty_samples/dev38_95000011_empty/paired",
+      "passed": false,
+      "outcome": "INTERRUPTED_OR_NATIVE_REPLAY_MISSING",
+      "interrupted": {
+        "outcome": "INTERRUPTED",
+        "strict_safe_arrival": false,
+        "public_steps": 843,
+        "physics_steps": 6744,
+        "contacts": {
+          "physics_steps": 6744,
+          "all_contact_records": 74981,
+          "contact_type_counts": {
+            "ground_support": 53952,
+            "robot_self_contact": 21029
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 53952,
+            "robot_self_contact": 21029
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "2e49eb78c7476861b1789b0c6afd9483414385b0c8cc5405eab5491adaac6499"
+        },
+        "elapsed_s": 897.0377417639975,
+        "initial_state_hash": "e7779cdd2eba9c06d5e6220ccf5778f52f2209a01e832ceee626ba8bb85d5296"
+      },
+      "scope": "no completed full physical audit claimed"
+    }
+  ],
+  "coverage": [
+    {
+      "run": "runs/v670_dynamic_empty_samples/dev38_95000011_empty/paired",
+      "frames": 844,
+      "forecast_times_per_frame": 165,
+      "maximum_center_box_excess_m": -0.0024069266986224136,
+      "maximum_velocity_box_excess_m_s": -0.02533283877650342,
+      "saved_rows_pass": true,
+      "passed": true
+    }
+  ],
+  "prediction_first_public_pose_checks": [
+    {
+      "run": "runs/v670_dynamic_empty_samples/dev38_95000011_empty/paired",
+      "maximum_first_public_xy_yaw_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "public_steps": 843
+    }
+  ],
+  "reserved_recovery_checks": [
+    {
+      "run": "runs/v670_dynamic_empty_samples/dev38_95000011_empty/paired",
+      "public_state_matches": 843,
+      "maximum_full_qpos_qvel_error": 0.0,
+      "contracts": [
+        {
+          "file": "runs/v670_dynamic_empty_samples/dev38_95000011_empty/paired/geometry_memory/recovery_contracts/contract_0229.json.gz",
+          "activation_step": 229,
+          "created_step": 228,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.05039443124389664,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "genuine_reverse_displacement": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v670_dynamic_empty_samples/dev38_95000011_empty/paired/geometry_memory/recovery_contracts/contract_0639.json.gz",
+          "activation_step": 639,
+          "created_step": 638,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.05947414844910548,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "genuine_reverse_displacement": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v670_dynamic_empty_samples/dev38_95000011_empty/paired/geometry_memory/recovery_contracts/contract_0687.json.gz",
+          "activation_step": 687,
+          "created_step": 686,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.12032807500959075,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "genuine_reverse_displacement": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "distinct_development_tasks": 1,
+  "navigation_branches_including_repeats": 1,
+  "independent_confirmation_tasks": 0,
+  "strict_arrivals_including_repeats": 0,
+  "verification_simulation_steps": 0,
+  "dynamic_stability_acceptance_passed": false,
+  "scope": "finite development, no population, continuous-time or real-time guarantee"
+}

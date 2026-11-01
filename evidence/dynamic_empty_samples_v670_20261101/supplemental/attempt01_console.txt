@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v670_dynamic_empty_samples/validate_empty_samples.py", line 25, in <module>
+    packetfile=path/'geometry_memory/sensor_packets.jsonl.gz';inputs[str(packetfile.relative_to(repo))]=hashlib.sha256(packetfile.read_bytes()).hexdigest()
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v666_dynamic_dense_navigation/dev35_95000011_dense/paired/geometry_memory/sensor_packets.jsonl.gz'

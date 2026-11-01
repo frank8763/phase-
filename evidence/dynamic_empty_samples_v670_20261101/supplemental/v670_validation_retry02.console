@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "geometry_cases_with_first_hit": 5000,
+  "maximum_geometry_truth_excess_m": -0.00500457163415291,
+  "datasets": [
+    {
+      "dataset": "v662_dynamic_sensor_diagnosis/sensor_replay_95000011/paired",
+      "frames": 264,
+      "old_mean_area_m2": 0.051958284548065406,
+      "new_mean_area_m2": 0.04799041668522607,
+      "mean_area_reduction_fraction": 0.07636641389052701,
+      "terminal_old_area_m2": 0.017592266501616313,
+      "terminal_new_area_m2": 0.01098838612559463,
+      "maximum_future_excess_m": -0.0048804654437739625,
+      "maximum_velocity_excess_m_s": -0.038639030683453104,
+      "frames_with_deleted_continuous_cells": 198
+    },
+    {
+      "dataset": "v667_dynamic_first_hit/dev36_95000011_firsthit/paired",
+      "frames": 210,
+      "old_mean_area_m2": 0.03030628350482926,
+      "new_mean_area_m2": 0.02671119927427385,
+      "mean_area_reduction_fraction": 0.1186250445384548,
+      "terminal_old_area_m2": 0.15290388554752407,
+      "terminal_new_area_m2": 0.15290388554752407,
+      "maximum_future_excess_m": -0.0048804654437739625,
+      "maximum_velocity_excess_m_s": -0.03688704312091644,
+      "frames_with_deleted_continuous_cells": 145
+    },
+    {
+      "dataset": "v669_dynamic_reserved_recovery/dev37_95000011_reserve/paired",
+      "frames": 227,
+      "old_mean_area_m2": 0.035378451645207004,
+      "new_mean_area_m2": 0.030071453604574163,
+      "mean_area_reduction_fraction": 0.15000650943840332,
+      "terminal_old_area_m2": 0.20785073672944748,
+      "terminal_new_area_m2": 0.1527569883768711,
+      "maximum_future_excess_m": -0.0048804654437739625,
+      "maximum_velocity_excess_m_s": -0.03688704312091644,
+      "frames_with_deleted_continuous_cells": 162
+    }
+  ],
+  "frames": 701,
+  "future_times_per_frame": 165,
+  "simulation_integrations": 0,
+  "navigation_tasks": 0,
+  "elapsed_s": 7.493954845995177,
+  "scope": "samplewise geometry and recorded same-packet ablation; continuous-cell exclusion rule, not full floating-point certification or navigation acceptance"
+}

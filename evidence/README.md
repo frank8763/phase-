@@ -60,3 +60,7 @@
 ## 动态测距一致性与有限恢复 · V666–V669
 
 [dynamic_dense_navigation_v666_20261101/](dynamic_dense_navigation_v666_20261101/README.md)、[dynamic_first_hit_v667_20261101/](dynamic_first_hit_v667_20261101/README.md)、[dynamic_recovery_probe_v668_20261101/](dynamic_recovery_probe_v668_20261101/README.md)、[dynamic_reserved_recovery_v669_20261101/](dynamic_reserved_recovery_v669_20261101/README.md)保留全3未到达导航、同测距估计消融、405固定输入诊断和实际40公开步反向制动尾。9592新导航原生/完整重放核验通过，有限后备成功未转化为到达。四包289清单文件/173来源引用与原始接触SHA通过；原日志目录中断及重试源/步数完整保留。[当前报告](../docs/DYNAMIC_RECOVERY_V669_REPORT.md)给出预算、未执行项、机制边界和论文草稿入口。
+
+## V670连续未命中约束开发
+
+[dynamic_empty_samples_v670_20261101/](dynamic_empty_samples_v670_20261101/README.md)保留一次843公开/6744原生步的900秒超时未到达、原始失败与完整前缀重放、5000几何/701旧包验证和844实际包同输入估计消融。119清单文件/69来源引用校验通过，另核对打包原始接触74981条及SHA；原完整验收FAIL不改。实际面积缩小28.13%仍无持续通行，不能将前缀核验PASS称动态通过。[最新报告](../docs/DYNAMIC_EMPTY_SAMPLES_V670_REPORT.md)。

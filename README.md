@@ -8,7 +8,9 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 
 | 入口 | 内容 |
 |---|---|
-| [最新动态恢复报告](docs/DYNAMIC_RECOVERY_V669_REPORT.md) | 三候选未到达、首次命中消融、实际有限倒车制动与信息退化 |
+| [最新动态开发报告](docs/DYNAMIC_EMPTY_SAMPLES_V670_REPORT.md) | V670未命中连续约束、843步超时未到达、完整前缀核验与信息表示诊断 |
+| [公平验证设计](docs/DYNAMIC_EVALUATION_DESIGN.md) | 未执行的强基线、机制消融、新池与计算预算要求 |
+| [V669动态恢复报告](docs/DYNAMIC_RECOVERY_V669_REPORT.md) | 三候选未到达、首次命中消融、实际有限倒车制动与信息退化 |
 | [动态相关工作与设计](docs/DYNAMIC_LITERATURE_DESIGN.md) | 原始文献、增量边界、下一研究问题 |
 | [方法草稿](docs/PHASE_DYNAMIC_METHOD_DRAFT.md) | 实际实现、条件性分析及尚未证明的活性 |
 | [动态测距集合与规划诊断](docs/DYNAMIC_INTERVAL_DEVELOPMENT_REPORT.md) | V662精确测距回放、V663观测消融与V664有界开发 |

@@ -39,3 +39,7 @@
 ## 本次推进后的判断
 
 V666–V669三开发导航仍未到达；首次命中约束在同210包上使集合平均面积减少14.53%，保留反向制动尾实际40步完整执行、状态和控制误差0，但停车后集合扩张、无新安全计划。现在有更具体的机制证据，仍没有强基线优势、动态稳定或全局进展证明。新增2026的OcclusionCBF/RAYA及RA-L2025 Visibility-Aware RRT*说明后备、调度和可见性已有近邻；这些部件本身不够成为主创新。应把研究问题收紧到带噪测距信息如何在真实执行限制下支撑可持续恢复，并做足公平配对与失败分析。详见DYNAMIC_RECOVERY_V669_REPORT.md、DYNAMIC_LITERATURE_DESIGN.md及PHASE_DYNAMIC_METHOD_DRAFT.md。
+
+## V670后的证据更新
+
+连续未命中约束有同包收缩28.13%与覆盖核验，仍843步/900秒超时未到达；安全前缀不是通行成功。区间负观测已有明确先例，主贡献仍需可续接观测/执行的恢复机制与公平独立验证。当前不能主张证据成熟可直接投RAS。见DYNAMIC_EMPTY_SAMPLES_V670_REPORT.md及DYNAMIC_EVALUATION_DESIGN.md。
