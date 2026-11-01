@@ -1,13 +1,13 @@
 {
-  "status": "V696_FROZEN_FRESH_CONFIRMATION01_RUNNING",
+  "status": "V696_CLOSED_PREFLIGHT_BLOCKED_NOT_CONFIRMED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": "experiments/v691_discovery_in_motion/execute.py",
   "decision_freeze": "runs/v696_discovery_fresh_confirmation/confirmation01/SOURCE_FREEZE.json",
   "source_revision": "dynamic_56_renewal_preview_verified_fixture",
   "protocol": "experiments/v696_discovery_fresh_confirmation/PROTOCOL.md",
-  "report": "docs/DYNAMIC_DISCOVERY_V695_REPORT.md",
-  "execution_window_closed": false,
+  "report": "docs/DYNAMIC_OVERNIGHT_20261101_REPORT.md",
+  "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--seed",
     "95000011",
@@ -162,7 +162,7 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/dynamic_discovery_v691_20261101",
+  "evidence": "evidence/dynamic_confirmation_v696_20261101",
   "requires_user_review_before_next_experiment": false,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
@@ -1052,15 +1052,17 @@
     "absolute_deadline_unix": 1793554739.8214698,
     "limit_s": 15000,
     "pid": 319769,
-    "round_closed": false,
+    "round_closed": true,
     "navigation_attempts": 0,
-    "preflight_attempts": 10,
+    "preflight_attempts": 12,
     "supervised_gradient_updates": 0,
     "sac_gradient_updates": 0,
     "single_cpu_sequential": true,
     "moving_discovery_gate_passed": false,
     "stage_access": 0,
-    "real_robot": 0
+    "real_robot": 0,
+    "status": "STOPPED_EXCEPTION",
+    "elapsed_s": 114.03729915618896
   },
   "initial_visibility_prerequisites": "BOTH_PHASES_PASSED_ZERO_INTEGRATION",
   "latest_v690_summary": {
@@ -1198,7 +1200,7 @@
     "raw_deleted": false,
     "scope": "finite initially-visible8m supervised course; not original invisible8m or field dynamic acceptance"
   },
-  "final_independent_audit": "runs/v691_discovery_in_motion/FINAL_ACCOUNT_AUDIT.json",
+  "final_independent_audit": "runs/v696_discovery_fresh_confirmation/FINAL_INDEPENDENT_AUDIT.json",
   "original_auditor_failure_preserved": "runs/v690_visible_eight_meter/FINAL_ACCOUNT_AUDIT.json",
   "precision_diagnosis": "runs/v690_visible_eight_meter/INITIALIZATION_PRECISION_DIAGNOSIS.json",
   "sync_status": {
@@ -1224,7 +1226,7 @@
     "source_revision": "dynamic_54_visible_eight_meter",
     "decision_freeze": "runs/v690_visible_eight_meter/curriculum01/SOURCE_FREEZE.json"
   },
-  "entry": "experiments/v696_discovery_fresh_confirmation/execute.py",
+  "entry": null,
   "moving_discovery_gate_passed": false,
   "latest_v691_summary": {
     "status": "CLOSED_NON_ARRIVAL",
@@ -1353,33 +1355,15 @@
   "night_plan": "docs/DYNAMIC_OVERNIGHT_20261101_PLAN.md",
   "night_handoff": "runs/dynamic_overnight_20261101/OVERNIGHT_HANDOFF.md",
   "automation_id": "phase-11-2-08-00",
-  "automation_status": "ACTIVE",
+  "automation_status": "DELETED",
   "current_active": {
-    "command": [
-      "experiments/v695_discovery_verified_fixture/run_static.py",
-      "--name",
-      "fresh01_t0_slot10",
-      "--seed",
-      "97010010",
-      "--wall-seconds",
-      "45",
-      "--max-steps",
-      "1200",
-      "--initial-observation-steps",
-      "0",
-      "--feasibility-only"
-    ],
-    "started_unix": 1793539806.2283149,
-    "env": {
-      "PHASE_COURSE_DISTANCE": "8",
-      "PHASE_COURSE_PHASE": "1.4478200440266533",
-      "PHASE_PROPOSAL_MODEL": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v690_visible_eight_meter/training_8m/proposer.json"
-    }
+    "status": "STOPPED_EXCEPTION",
+    "completed": true
   },
-  "observed_at": "2026-11-01T21:30:14.919254+08:00",
+  "observed_at": "2026-11-01T21:37:20.531104+08:00",
   "prepared_confirmation": {
     "name": "V696",
-    "status": "STARTED_FROZEN_CONFIRMATION01",
+    "status": "CLOSED_PREFLIGHT_FAILED_NO_NAVIGATION",
     "protocol": "experiments/v696_discovery_fresh_confirmation/PROTOCOL.md",
     "task_list": "experiments/v696_discovery_fresh_confirmation/TASK_LIST.json",
     "freeze": "experiments/v696_discovery_fresh_confirmation/CANDIDATE_FREEZE.json",
@@ -1528,5 +1512,15 @@
     "scope": "complete finite moving-discovery development under startup3m prior; not fresh confirmation or original complex field"
   },
   "moving_discovery_development_gate_passed": true,
-  "moving_discovery_confirmation_gate_passed": false
+  "moving_discovery_confirmation_gate_passed": false,
+  "final_account_diagnosis": "runs/v696_discovery_fresh_confirmation/FINAL_ACCOUNT_DIAGNOSIS.json",
+  "additional_simulation_authorized_in_this_night": false,
+  "final_archive": {
+    "status": "ALL_ARCHIVED_BYTES_VERIFIED",
+    "raw_files": 915,
+    "manifest_files": 228,
+    "raw_bytes": 129461154,
+    "stored_bytes": 5096886,
+    "raw_deleted": false
+  }
 }

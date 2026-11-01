@@ -1,7 +1,7 @@
 {
   "authorization": "DYNAMIC_OVERNIGHT_AUTHORIZATION_20261101.json",
   "hard_deadline_unix": 1793577600.0,
-  "status": "CONFIRMATION_FAILED_STOP_NO_FOURTH_DEVELOPMENT",
+  "status": "CLOSED_PREFLIGHT_BLOCKED_NOT_CONFIRMED",
   "development_revisions_started": 3,
   "fresh_confirmations_started": 1,
   "max_development_revisions": 3,
@@ -95,5 +95,14 @@
     "v694_private_integrations": 0,
     "ranges_not_replaced_by_success": true
   },
-  "replay_counter_reconciliation": "runs/dynamic_overnight_20261101/LEDGER_RECONCILIATION_2126.json"
+  "replay_counter_reconciliation": "runs/dynamic_overnight_20261101/LEDGER_RECONCILIATION_2126.json",
+  "night_closed": true,
+  "closed_at": "2026-11-01T21:37:20.531104+08:00",
+  "stop_reason": "Frozen confirmation t0 failed at slot12; three development revisions used; no new pool/retry authorized by current stop rules.",
+  "confirmation_gate_passed": false,
+  "automation_id": "phase-11-2-08-00",
+  "automation_status": "DELETED",
+  "second_confirmation_not_started": true,
+  "additional_simulation_authorized_in_this_night": false,
+  "final_diagnosis": "runs/v696_discovery_fresh_confirmation/FINAL_ACCOUNT_DIAGNOSIS.json"
 }
