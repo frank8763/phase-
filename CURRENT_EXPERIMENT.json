@@ -1,13 +1,13 @@
 {
-  "status": "V691_CLOSED_MOVING_DISCOVERY_NON_ARRIVAL",
+  "status": "V695_FINAL_NIGHT_DEVELOPMENT03_RUNNING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": "experiments/v691_discovery_in_motion/execute.py",
-  "decision_freeze": "runs/v691_discovery_in_motion/development01/SOURCE_FREEZE.json",
-  "source_revision": "dynamic_55_discovery_in_motion",
-  "protocol": "experiments/v691_discovery_in_motion/PROTOCOL.md",
-  "report": "docs/DYNAMIC_DISCOVERY_V691_REPORT.md",
-  "execution_window_closed": true,
+  "decision_freeze": "runs/v695_discovery_verified_fixture/development03/SOURCE_FREEZE.json",
+  "source_revision": "dynamic_56_renewal_preview_verified_fixture",
+  "protocol": "experiments/v695_discovery_verified_fixture/PROTOCOL.md",
+  "report": "docs/DYNAMIC_ESCAPE_V692_REPORT.md",
+  "execution_window_closed": false,
   "selected_configuration_arguments": [
     "--seed",
     "95000011",
@@ -1048,21 +1048,19 @@
     "decision_freeze": "runs/v689_dynamic_route_commitment/curriculum01/SOURCE_FREEZE.json"
   },
   "bounded_window": {
-    "started_unix": 1793535429.353489,
-    "absolute_deadline_unix": 1793539029.353489,
-    "limit_s": 3600,
-    "pid": 306337,
-    "round_closed": true,
+    "started_unix": 1793537716.2669244,
+    "absolute_deadline_unix": 1793542674.813786,
+    "limit_s": 5400,
+    "pid": 315604,
+    "round_closed": false,
     "navigation_attempts": 1,
-    "preflight_attempts": 1,
+    "preflight_attempts": 2,
     "supervised_gradient_updates": 0,
     "sac_gradient_updates": 0,
     "single_cpu_sequential": true,
     "moving_discovery_gate_passed": false,
     "stage_access": 0,
-    "real_robot": 0,
-    "status": "CLOSED_NON_ARRIVAL",
-    "elapsed_s": 172.1243040561676
+    "real_robot": 0
   },
   "initial_visibility_prerequisites": "BOTH_PHASES_PASSED_ZERO_INTEGRATION",
   "latest_v690_summary": {
@@ -1226,7 +1224,7 @@
     "source_revision": "dynamic_54_visible_eight_meter",
     "decision_freeze": "runs/v690_visible_eight_meter/curriculum01/SOURCE_FREEZE.json"
   },
-  "entry": null,
+  "entry": "experiments/v695_discovery_verified_fixture/execute.py",
   "moving_discovery_gate_passed": false,
   "latest_v691_summary": {
     "status": "CLOSED_NON_ARRIVAL",
@@ -1293,5 +1291,89 @@
     "raw_deleted": false,
     "scope": "finite natural range-entry with public startup3m center-exclusion prior; observed/stopped/replanned/continued but not arrived"
   },
-  "no_automatic_followup": true
+  "no_automatic_followup": true,
+  "previous_v691_state": {
+    "status": "V691_CLOSED_MOVING_DISCOVERY_NON_ARRIVAL",
+    "protocol": "experiments/v691_discovery_in_motion/PROTOCOL.md",
+    "report": "docs/DYNAMIC_DISCOVERY_V691_REPORT.md",
+    "source_revision": "dynamic_55_discovery_in_motion",
+    "decision_freeze": "runs/v691_discovery_in_motion/development01/SOURCE_FREEZE.json"
+  },
+  "latest_v692_summary": {
+    "status": "FINITE_REGISTERED_SET_NO_CERTIFICATE",
+    "error": null,
+    "elapsed_s": 4.122469596986775,
+    "replay_native_steps": 3264,
+    "forecast_integrations": 32472,
+    "private_execution_integrations": 0,
+    "private_prediction_integrations": 32472,
+    "maximum_old_qpos_qvel_mocap_errors": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "minimum_replay_native_clearance_m": 0.4778161143599079,
+    "minimum_replay_self_margin_m": 0.009051655421852822,
+    "bad_contacts": 0,
+    "qualified_candidates": 0,
+    "verified_families": {},
+    "new_navigation_tasks": 0,
+    "gradient_updates": 0,
+    "scope": "fixed saved state finite causal command feasibility only; not arrival or global impossibility",
+    "reason_counts": {
+      "TIME_CLEARANCE": 99,
+      "TERMINAL_SPEED": 14
+    },
+    "best_other_checks_passed": {
+      "index": 33,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.0729973272701819,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009039563557048658,
+      "terminal_speed_m_s": 0.008516729175963512,
+      "signed_displacement_m": 0.6859135649696347,
+      "terminal_pose": [
+        0.20641005842948165,
+        -3.3339818315752843,
+        -0.2365219094186713
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    "moving_discovery_gate_passed": false
+  },
+  "night_authorization": "DYNAMIC_OVERNIGHT_AUTHORIZATION_20261101.json",
+  "night_ledger": "DYNAMIC_OVERNIGHT_LEDGER_20261101.json",
+  "night_plan": "docs/DYNAMIC_OVERNIGHT_20261101_PLAN.md",
+  "night_handoff": "runs/dynamic_overnight_20261101/OVERNIGHT_HANDOFF.md",
+  "automation_id": "phase-11-2-08-00",
+  "automation_status": "ACTIVE",
+  "current_active": {
+    "command": [
+      "experiments/v695_discovery_verified_fixture/run_static.py",
+      "--name",
+      "phase0",
+      "--seed",
+      "95000011",
+      "--wall-seconds",
+      "900",
+      "--max-steps",
+      "1200",
+      "--initial-observation-steps",
+      "0"
+    ],
+    "started_unix": 1793537726.9018033,
+    "env": {
+      "PHASE_COURSE_DISTANCE": "8",
+      "PHASE_COURSE_PHASE": "0.0",
+      "PHASE_PROPOSAL_MODEL": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v690_visible_eight_meter/training_8m/proposer.json"
+    }
+  },
+  "observed_at": "2026-11-01T20:57:34.424132+08:00"
 }

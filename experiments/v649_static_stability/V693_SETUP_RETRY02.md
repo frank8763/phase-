@@ -1,0 +1,3 @@
+# V693原初始化错误与一次配置修复
+
+原development01 ERROR/COMPLETION、源码和5400绝对截止保留。零积分6.56秒验证PASS；固定73验证在任何旧控制重放/私有预测前因初始化未提供PHASE_COURSE_DISTANCE而KeyError。仅补原声明8m/相位0环境，输出另立fixed73_retry02；运行原冻结probe源码的仅输出路径映射副本，不改算法/矩阵/门槛。resume驱动另立development01_retry02，严格复用原started/deadline和全夜开发01账目，不新增修订预算/不重跑任何已执行导航（原导航0）。所有包装源码SHA记录，原候选冻结字节须仍匹配。只允许此次配置修复；实际前置不通过则停止。

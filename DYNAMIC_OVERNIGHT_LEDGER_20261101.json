@@ -1,0 +1,71 @@
+{
+  "authorization": "DYNAMIC_OVERNIGHT_AUTHORIZATION_20261101.json",
+  "hard_deadline_unix": 1793577600.0,
+  "status": "DEVELOPMENT03_RUNNING",
+  "development_revisions_started": 3,
+  "fresh_confirmations_started": 0,
+  "max_development_revisions": 3,
+  "max_fresh_confirmations": 2,
+  "navigation_tasks": 0,
+  "training_updates": 0,
+  "cumulative_native_navigation_steps": 0,
+  "cumulative_native_replay_steps": 1,
+  "cumulative_private_integrations": 0,
+  "attempts": [
+    {
+      "kind": "DEVELOPMENT",
+      "revision": 1,
+      "candidate": "v693_discovery_renewal_preview",
+      "root": "runs/v693_discovery_renewal_preview",
+      "started_unix": 1793537274.813786,
+      "deadline_unix": 1793542674.813786,
+      "pid": 313993,
+      "status": "STOPPED_EXCEPTION",
+      "completed_unix": 1793537390.1840687,
+      "moving_discovery_gate_passed": false,
+      "setup_retry02_started_unix": 1793537348.763613,
+      "setup_retry02_pid": 314320,
+      "original_failure_preserved": true,
+      "setup_retry03_started_unix": 1793537387.558468,
+      "setup_retry03_pid": 314402,
+      "unverified_fixed_prefix": true
+    },
+    {
+      "kind": "DEVELOPMENT",
+      "revision": 2,
+      "candidate": "v694_discovery_execution_recovery",
+      "root": "runs/v694_discovery_execution_recovery",
+      "started_unix": 1793537578.4616158,
+      "deadline_unix": 1793542674.813786,
+      "pid": 315100,
+      "status": "STOPPED_EXCEPTION",
+      "completed_unix": 1793537634.1330247,
+      "moving_discovery_gate_passed": false,
+      "setup_once_started_unix": 1793537631.5087621,
+      "setup_once_pid": 315310
+    },
+    {
+      "kind": "DEVELOPMENT",
+      "revision": 3,
+      "candidate": "v695_discovery_verified_fixture",
+      "root": "runs/v695_discovery_verified_fixture",
+      "started_unix": 1793537716.2669244,
+      "deadline_unix": 1793542674.813786,
+      "pid": 315604,
+      "status": "RUNNING"
+    }
+  ],
+  "old_v691_v692_preserved": true,
+  "raw_deleted": false,
+  "unverified_development01_account": {
+    "status": "ORIGINAL_PREFIX_RESULT_UNVERIFIED_TELEMETRY_WRITE_REJECTED",
+    "original_logs_preserved": true,
+    "new_navigation_tasks": 0,
+    "replay_native_steps_lower_bound": 0,
+    "replay_native_steps_upper_bound": 584,
+    "private_integrations_lower_bound": 0,
+    "private_integrations_upper_bound": 20000,
+    "no_safety_or_success_claim_for_missing_prefix": true,
+    "reason": "initialization guard restricted output to child; finally write error masked internal diagnostic result"
+  }
+}

@@ -8,7 +8,9 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 
 | 入口 | 内容 |
 |---|---|
-| [最新V691：行驶中首次发现](docs/DYNAMIC_DISCOVERY_V691_REPORT.md) | 真实行驶后检测、完整制动、重新规划和继续移动已验证；408步未到达，完整门未通过 |
+| [当前动态夜间计划](docs/DYNAMIC_OVERNIGHT_20261101_PLAN.md) | 硬截止11月2日08:00，V695前置通过、完整课程开发中；尚未确认通过 |
+| [固定状态99动作验证](docs/DYNAMIC_ESCAPE_V692_REPORT.md) | 99项均无法获完整证书，有限动作集结论与原重放/账目保留 |
+| [V691：行驶中首次发现](docs/DYNAMIC_DISCOVERY_V691_REPORT.md) | 真实行驶后检测、完整制动、重新规划和继续移动已验证；408步未到达，完整门未通过 |
 | [V690：8米动态学习课程通过](docs/DYNAMIC_VISIBLE_EIGHT_METER_V690_REPORT.md) | 可比初始观测新任务，学习两相位827/722步与完整重复误差0；原不可见8米失败、V1精度审计失败保留，V2核验通过 |
 | [动态信息诊断：V683–V685](docs/DYNAMIC_INFO_VALIDATION_V683_REPORT.md) | 准确当前信息仍未到达；候选修正未过前置；末端18拒绝全部来自动态外覆盖 |
 | [动态根因彻底复核：V682](docs/DYNAMIC_ROOT_CAUSE_V682.md) | 804帧零积分重查：运动假设、估计保守性、局部倒车进展和墙钟停止 |

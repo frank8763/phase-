@@ -275,3 +275,23 @@ V690完整代码/模型/证据本地提交28d350e04c3979ff628a5d902bb858822df76d
 
 ## V691途中发现与制动通过，完整通行未通过
 V691已闭批未到达：首次检测32步，已真实行驶.477933m/速度.213569m/s；328原生步完整制动末速.000056408m/s，73步因果新路线，之后位移3.205290m，但408公开/3264原生终距4.608025m。最低实际净空.477816m，接触/穿透/未知0，3264完整重放状态误差0，1692424私有积分；全部物理/因果/原车/命令审计PASS但功能门false、重复0。最终仍有新鲜回波；未来3.28s空间投影起点净空-.109946，原搜索0展开拒绝，最后16切回候选未来净空最佳.128099<.155。当前占据空间探针36节点可找路，但未作时序/动力学证明，不能称救回。仅公共3m起步未知中心排除先验下的自然进入视野，不代表任意遮挡突入。训练/Stage/实机0，原冻结源码/失败不改。223原文件/154清单全解压哈希通过，原始runs保留。报告docs/DYNAMIC_DISCOVERY_V691_REPORT.md；原3600秒窗口172.124秒按失败依赖关闭，无追加导航。
+
+
+## V692 新授权固定失败状态验证
+User continuation authorizes V692 new3600s fixed-state causal escape diagnosis. Read experiments/v692_discovery_escape_diagnosis/PROTOCOL.md; exact old408 replay3264 then99preregistered actuator schedules,180s/35000private cap,0newnav initially. Keep V691closed, no source edits whilelive; conditional single navigation candidate needs separate freeze under same deadline, no automatic new actions/window. Stage/realrobot/training0.
+
+## V692固定状态动作验证未获证
+V692 CLOSED99/99有限动作均TIME_CLEARANCE，14另末速拒绝；其他门合格最佳未来净空.072997<.155。3264原完整重放误差0/零坏接触，32472私有、0新导航/训练。全账目独立0积分审计PASS，但私有失败状态数组未保存，不称独立预测重跑或全局无解。原3600窗4.424秒按无候选关闭，报告docs/DYNAMIC_ESCAPE_V692_REPORT.md。
+
+## 新动态夜间授权
+User explicitly confirmed overnight dynamic experiments through 2026-11-02 08:00 Asia/Shanghai, max3development/2fresh confirmation, pass stops early. Read DYNAMIC_OVERNIGHT_AUTHORIZATION_20261101.json, DYNAMIC_OVERNIGHT_LEDGER_20261101.json and experiments/v693_discovery_renewal_preview/PROTOCOL.md. Old static deadline/V691/V692 remain closed. No training/Stage/realrobot/newchat/agents, allactualintegration run_phase.sh singleCPU. Frozen livepy/md immutable; failure diagnose before separate bounded revision; hard stop cannot reset.
+
+## V694执行修复接续
+V693开发01停止，导航0；原初始化/包装导入失败及第三次固定验证写出被guard拒绝保留。第三次内部结果不明，不能称物理PASS/精确积分，replay[0,584]/private[0,20000]永久分账。V694开发02仅修课程env与诊断输出根/先print后write，算法仍6.56投影和所有原门；主动消耗夜间第2开发名额，共余1修订/2确认，沿用V693原22:17:54.814截止不重置。冻结独立源码，输出runs/v694_discovery_execution_recovery；读其PROTOCOL。
+
+## V695最后开发修订
+V694唯一接续在第1原生重放后评估夹具list/NumPy接口TypeError停止，完整错误/COMPLETION保存，0私有/导航，不能称物理PASS。V695开发03（最后额度）仅修评估数组类型和factory目录预建，算法仍6.56投影；零积分非空圆障碍API测试通过。相同最初22:17:54.814硬截止，前置失败不再续跑，最多两相位主/完整重复4导航。夜间余0开发/2确认，完整开发PASS前不能确认。
+
+
+## 动态夜间当前有效运行
+V695前置通过：旧409×657有限覆盖与新73完整空间路线、584旧控制重放全状态误差0、3776私有（3448预测+328串行首步后备核验）通过，两相位t0预检通过；首个phase0完整8米正在运行，后续严格依赖主任务/全部审计通过。自动接续phase-11-2-08-00每15分钟沿本聊天，单一硬截止2026-11-02 08:00。累计3/3开发名额已用（包括执行夹具修复），确认0/2；若本开发失败不再第四修订。V693缺失账目与V694原失败永久保留，不将初始化修复算新算法或成功。
