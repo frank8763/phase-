@@ -8,9 +8,10 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 
 | 入口 | 内容 |
 |---|---|
-| [最新动态验证：V683–V685](docs/DYNAMIC_INFO_VALIDATION_V683_REPORT.md) | 准确当前信息仍未到达；候选修正未过前置；末端18拒绝全部来自动态外覆盖 |
+| [最新V690：8米动态学习课程通过](docs/DYNAMIC_VISIBLE_EIGHT_METER_V690_REPORT.md) | 可比初始观测新任务，学习两相位827/722步与完整重复误差0；原不可见8米失败、V1精度审计失败保留，V2核验通过 |
+| [动态信息诊断：V683–V685](docs/DYNAMIC_INFO_VALIDATION_V683_REPORT.md) | 准确当前信息仍未到达；候选修正未过前置；末端18拒绝全部来自动态外覆盖 |
 | [动态根因彻底复核：V682](docs/DYNAMIC_ROOT_CAUSE_V682.md) | 804帧零积分重查：运动假设、估计保守性、局部倒车进展和墙钟停止 |
-| [最新动态实验：V679–V681](docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md) | 前进有限尾有局部增量，804步仍未到达；短时空间提案前置失败未导航 |
+| [动态恢复实验：V679–V681](docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md) | 前进有限尾有局部增量，804步仍未到达；短时空间提案前置失败未导航 |
 | [下一时序内核规格](docs/DYNAMIC_TEMPORAL_KERNEL_DESIGN.md) | 完整状态、绝对时间、合法命令与保留尾段；尚未实现/运行 |
 | [V676–V678命令与场景分解](docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md) | 命令修复、两因果未到达、同场景特权474步到达见证，分母明确 |
 | [算法还是场景：原文核对](docs/DYNAMIC_ALGORITHM_VS_SCENE_V676.md) | 有限观测与时序规划、SIPP-IP/不确定性学习原文及适用边界 |
@@ -64,4 +65,7 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 [6米动态学习V688](docs/DYNAMIC_DISTANCE_V688_REPORT.md)：参考控制一次到达，完成512次真实监督训练；学习版900步未到达，8米未启动，完整安全/状态重放通过。独立提案学习与冻结SAC分开，当前动态稳定未验收。
 
 
-[最新V689：6米动态学习课程通过](docs/DYNAMIC_ROUTE_COMMITMENT_V689_REPORT.md)：两相位629/631步到达，完整重复误差0。8米已尝试但在起步前因有效回波不足停止，0实际步；8米训练未执行，原失败与全部证据保留。
+[V689：6米动态学习课程通过](docs/DYNAMIC_ROUTE_COMMITMENT_V689_REPORT.md)：两相位629/631步到达，完整重复误差0。8米已尝试但在起步前因有效回波不足停止，0实际步；8米训练未执行，原失败与全部证据保留。
+
+
+[V690八米有限动态课程](docs/DYNAMIC_VISIBLE_EIGHT_METER_V690_REPORT.md)：两相位及完整重复通过，最低实际净空0.291524m；完成512次监督微调，冻结SAC0。初始观测为明确新几何，原复杂场地动态稳定仍待验收，全部旧失败和本轮V1精度审计失败保留。

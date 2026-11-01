@@ -108,3 +108,7 @@
 
 ## V689有限6米动态学习课程通过，8米初始观测失败
 [dynamic_route_commitment_v689_20261101/](dynamic_route_commitment_v689_20261101/README.md)保存全部15次旧重规划诊断/前置、两相位6m629/631步到达及631步完整重复（全qpos/qvel/ctrl/mocap误差0、模型/规范初态/真实接触事件匹配）。15128导航/15128重放原生、9234400私有，本轮梯度0，复用旧6m网络，实际360/554和460/599普通步网络参与。8m已尝试但在0步因NO_INITIAL_ACTOR_OBSERVATION失败，原FAILED/driverCOMPLETION保留；47束原包/有效hit筛选/2.96m采样复算通过，8m训练和评估未执行。487份原文件/211清单完整解压哈希回读，存储20,518,861字节，原始runs保留，Stage/实机0。[完整报告](../docs/DYNAMIC_ROUTE_COMMITMENT_V689_REPORT.md)。
+
+
+## V690 可比初始观测8米动态学习课程通过
+[dynamic_visible_eight_meter_v690_20261101/](dynamic_visible_eight_meter_v690_20261101/README.md)保存两相位零积分可观测性/全扫掠预检、teacher854公开步到达、765样本/512监督微调、冻结学习相位0 827和pi2 722步到达及722完整重复。25000导航/25000重放原生、15032720私有，全部物理/控制/因果/原车参数审计通过；最低实际净空.291524，全状态/控制/actor重复误差0、接触事件匹配。原V1初始损失精度假设FAIL、0积分载入舍入诊断与V2全账目PASS一并保留，未重跑/改模型。624原始文件/265清单解压哈希核验、存储34,163,706字节，原始runs全部保留。明确新8米初始可见任务，不回填原V689不可见失败，不是复杂场地或统计动态验收，Stage/实机0。[报告](../docs/DYNAMIC_VISIBLE_EIGHT_METER_V690_REPORT.md)。
