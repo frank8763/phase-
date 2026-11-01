@@ -1,12 +1,12 @@
 {
-  "status": "V695_FINAL_NIGHT_DEVELOPMENT03_RUNNING",
+  "status": "V696_FROZEN_FRESH_CONFIRMATION01_RUNNING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": "experiments/v691_discovery_in_motion/execute.py",
-  "decision_freeze": "runs/v695_discovery_verified_fixture/development03/SOURCE_FREEZE.json",
+  "decision_freeze": "runs/v696_discovery_fresh_confirmation/confirmation01/SOURCE_FREEZE.json",
   "source_revision": "dynamic_56_renewal_preview_verified_fixture",
-  "protocol": "experiments/v695_discovery_verified_fixture/PROTOCOL.md",
-  "report": "docs/DYNAMIC_ESCAPE_V692_REPORT.md",
+  "protocol": "experiments/v696_discovery_fresh_confirmation/PROTOCOL.md",
+  "report": "docs/DYNAMIC_DISCOVERY_V695_REPORT.md",
   "execution_window_closed": false,
   "selected_configuration_arguments": [
     "--seed",
@@ -1048,13 +1048,13 @@
     "decision_freeze": "runs/v689_dynamic_route_commitment/curriculum01/SOURCE_FREEZE.json"
   },
   "bounded_window": {
-    "started_unix": 1793537716.2669244,
-    "absolute_deadline_unix": 1793542674.813786,
-    "limit_s": 5400,
-    "pid": 315604,
+    "started_unix": 1793539739.8214698,
+    "absolute_deadline_unix": 1793554739.8214698,
+    "limit_s": 15000,
+    "pid": 319769,
     "round_closed": false,
-    "navigation_attempts": 3,
-    "preflight_attempts": 2,
+    "navigation_attempts": 0,
+    "preflight_attempts": 10,
     "supervised_gradient_updates": 0,
     "sac_gradient_updates": 0,
     "single_cpu_sequential": true,
@@ -1224,7 +1224,7 @@
     "source_revision": "dynamic_54_visible_eight_meter",
     "decision_freeze": "runs/v690_visible_eight_meter/curriculum01/SOURCE_FREEZE.json"
   },
-  "entry": "experiments/v695_discovery_verified_fixture/execute.py",
+  "entry": "experiments/v696_discovery_fresh_confirmation/execute.py",
   "moving_discovery_gate_passed": false,
   "latest_v691_summary": {
     "status": "CLOSED_NON_ARRIVAL",
@@ -1358,27 +1358,28 @@
     "command": [
       "experiments/v695_discovery_verified_fixture/run_static.py",
       "--name",
-      "phasepi2",
+      "fresh01_t0_slot10",
       "--seed",
-      "95000011",
+      "97010010",
       "--wall-seconds",
-      "900",
+      "45",
       "--max-steps",
       "1200",
       "--initial-observation-steps",
-      "0"
+      "0",
+      "--feasibility-only"
     ],
-    "started_unix": 1793538454.8396301,
+    "started_unix": 1793539806.2283149,
     "env": {
       "PHASE_COURSE_DISTANCE": "8",
-      "PHASE_COURSE_PHASE": "1.5707963267948966",
+      "PHASE_COURSE_PHASE": "1.4478200440266533",
       "PHASE_PROPOSAL_MODEL": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v690_visible_eight_meter/training_8m/proposer.json"
     }
   },
-  "observed_at": "2026-11-01T21:09:51.355372+08:00",
+  "observed_at": "2026-11-01T21:30:14.919254+08:00",
   "prepared_confirmation": {
     "name": "V696",
-    "status": "FROZEN_NOT_STARTED_DEPENDENT_ON_FULL_V695_PASS",
+    "status": "STARTED_FROZEN_CONFIRMATION01",
     "protocol": "experiments/v696_discovery_fresh_confirmation/PROTOCOL.md",
     "task_list": "experiments/v696_discovery_fresh_confirmation/TASK_LIST.json",
     "freeze": "experiments/v696_discovery_fresh_confirmation/CANDIDATE_FREEZE.json",
@@ -1391,5 +1392,141 @@
     "minimum_actual_clearance_m": 0.44925492026888136,
     "full_state_ctrl_mocap_maximum_error": 0.0,
     "all_physical_causal_and_chain_audits": true
-  }
+  },
+  "previous_v695_state": {
+    "status": "DEVELOPMENT03_BOTH_PHASES_AND_REPEATS_PASS",
+    "report": "docs/DYNAMIC_DISCOVERY_V695_REPORT.md",
+    "audit": "runs/v695_discovery_verified_fixture/FINAL_ACCOUNT_AUDIT.json"
+  },
+  "confirmation_source_freeze": "runs/v696_discovery_fresh_confirmation/confirmation01/CONFIRMATION_SOURCE_FREEZE.json",
+  "locked_tasks": "runs/v696_discovery_fresh_confirmation/confirmation01/LOCKED_TASK_LIST.json",
+  "latest_v695_summary": {
+    "status": "ALL_DEVELOPMENT_PREREQUISITES_INDEPENDENTLY_VERIFIED",
+    "checks": {
+      "SOURCE_FREEZE.json": true,
+      "DOCUMENT_FREEZE.json": true,
+      "phase0": true,
+      "phase0_repeat": true,
+      "phasepi2": true,
+      "phasepi2_repeat": true,
+      "phase0_repeat_full_repeat": true,
+      "phasepi2_repeat_full_repeat": true,
+      "fixed73": true,
+      "confirmation_preregistered_bytes": true,
+      "window_closed": true,
+      "fresh_confirmation_not_started": true,
+      "enough_night_budget": true,
+      "phase_execution_lock_free": true
+    },
+    "records": [
+      {
+        "name": "phase0",
+        "public_steps": 765,
+        "native_steps": 6120,
+        "private_integrations": 3507560,
+        "minimum_actual_clearance_m": 0.44925492026888136,
+        "goal_distance_m": 0.44134163040850716,
+        "discovery": {
+          "first_detection_step": 32,
+          "first_detection_sim_time_s": 2.5599999999999894,
+          "speed_before_discovery_m_s": 0.2135690077409653,
+          "forward_progress_before_discovery_m": 0.4779329684024334,
+          "minimum_last10_speed_m_s": 0.21298912729598268,
+          "terminal_stop_speed_m_s": 5.640839839661003e-05,
+          "stop_public_steps": 41,
+          "stop_minimum_causal_clearance_m": 1.0394475077504275,
+          "maximum_stop_state_control_error": 0.0,
+          "first_post_stop_replan_step": 73,
+          "new_reference_current_causal_clearance_m": 0.3514686648698374,
+          "post_stop_actual_displacement_m": 7.61760719340296,
+          "preserves_task_assumption": "startup3m exclusion is a declared prior, not inferred from nondetections"
+        },
+        "all_audits": true
+      },
+      {
+        "name": "phase0_repeat",
+        "public_steps": 765,
+        "native_steps": 6120,
+        "private_integrations": 3507560,
+        "minimum_actual_clearance_m": 0.44925492026888136,
+        "goal_distance_m": 0.44134163040850716,
+        "discovery": {
+          "first_detection_step": 32,
+          "first_detection_sim_time_s": 2.5599999999999894,
+          "speed_before_discovery_m_s": 0.2135690077409653,
+          "forward_progress_before_discovery_m": 0.4779329684024334,
+          "minimum_last10_speed_m_s": 0.21298912729598268,
+          "terminal_stop_speed_m_s": 5.640839839661003e-05,
+          "stop_public_steps": 41,
+          "stop_minimum_causal_clearance_m": 1.0394475077504275,
+          "maximum_stop_state_control_error": 0.0,
+          "first_post_stop_replan_step": 73,
+          "new_reference_current_causal_clearance_m": 0.3514686648698374,
+          "post_stop_actual_displacement_m": 7.61760719340296,
+          "preserves_task_assumption": "startup3m exclusion is a declared prior, not inferred from nondetections"
+        },
+        "all_audits": true
+      },
+      {
+        "name": "phasepi2",
+        "public_steps": 770,
+        "native_steps": 6160,
+        "private_integrations": 3562960,
+        "minimum_actual_clearance_m": 0.3987136952469541,
+        "goal_distance_m": 0.44475008318044906,
+        "discovery": {
+          "first_detection_step": 33,
+          "first_detection_sim_time_s": 2.6399999999999877,
+          "speed_before_discovery_m_s": 0.21291497831115547,
+          "forward_progress_before_discovery_m": 0.49503104335923753,
+          "minimum_last10_speed_m_s": 0.21291497831115547,
+          "terminal_stop_speed_m_s": 1.1354439579199318e-05,
+          "stop_public_steps": 41,
+          "stop_minimum_causal_clearance_m": 1.0565521392524233,
+          "maximum_stop_state_control_error": 0.0,
+          "first_post_stop_replan_step": 74,
+          "new_reference_current_causal_clearance_m": 0.3030812215724783,
+          "post_stop_actual_displacement_m": 7.592325416711863,
+          "preserves_task_assumption": "startup3m exclusion is a declared prior, not inferred from nondetections"
+        },
+        "all_audits": true
+      },
+      {
+        "name": "phasepi2_repeat",
+        "public_steps": 770,
+        "native_steps": 6160,
+        "private_integrations": 3562960,
+        "minimum_actual_clearance_m": 0.3987136952469541,
+        "goal_distance_m": 0.44475008318044906,
+        "discovery": {
+          "first_detection_step": 33,
+          "first_detection_sim_time_s": 2.6399999999999877,
+          "speed_before_discovery_m_s": 0.21291497831115547,
+          "forward_progress_before_discovery_m": 0.49503104335923753,
+          "minimum_last10_speed_m_s": 0.21291497831115547,
+          "terminal_stop_speed_m_s": 1.1354439579199318e-05,
+          "stop_public_steps": 41,
+          "stop_minimum_causal_clearance_m": 1.0565521392524233,
+          "maximum_stop_state_control_error": 0.0,
+          "first_post_stop_replan_step": 74,
+          "new_reference_current_causal_clearance_m": 0.3030812215724783,
+          "post_stop_actual_displacement_m": 7.592325416711863,
+          "preserves_task_assumption": "startup3m exclusion is a declared prior, not inferred from nondetections"
+        },
+        "all_audits": true
+      }
+    ],
+    "development_navigation_tasks": 4,
+    "distinct_development_phases": 2,
+    "full_repeats": 2,
+    "navigation_native_steps": 24560,
+    "navigation_private_integrations": 14141040,
+    "fixed_private_integrations": 3776,
+    "minimum_actual_clearance_m": 0.3987136952469541,
+    "verification_integrations": 0,
+    "independent_confirmation_started": false,
+    "scope": "complete finite moving-discovery development under startup3m prior; not fresh confirmation or original complex field"
+  },
+  "moving_discovery_development_gate_passed": true,
+  "moving_discovery_confirmation_gate_passed": false
 }
