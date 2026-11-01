@@ -48,3 +48,11 @@
 ## 用户授权后的动态首轮 · V658–V661
 
 四包dynamic_scene_v658_20261101、dynamic_scene_repair_v659_20261101、dynamic_time_gate_v660_20261101、dynamic_forecast_route_v661_20261101完整保留场景预检、导入错误、补充核验及三个未到达分支。仅一个开发任务，动态确认0；7728导航原生步物理审计通过不等于动态验收通过。293清单文件及248来源引用核验通过。[动态开发报告](../docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md)和[研究路线](../docs/DYNAMIC_RESEARCH_PLAN.md)为当前入口；静态V657原结果保持通过。
+
+## 动态测距集合与起点观测消融 · V662–V663
+
+[dynamic_sensor_diagnosis_v662_20261101/](dynamic_sensor_diagnosis_v662_20261101/README.md)保留原264控制精确回放和实际测距包；不是新导航。
+
+[dynamic_interval_tracking_v663_20261101/](dynamic_interval_tracking_v663_20261101/README.md)保留同源码32/0步起点观测两条未到达轨迹；3832导航原生步和完整重放通过，481帧各121个未来时刻有限集合覆盖通过。两包175清单文件、95来源引用校验通过，不能把证据PASS叫动态验收。详见[当前诊断报告](../docs/DYNAMIC_INTERVAL_DEVELOPMENT_REPORT.md)。
+
+[dynamic_causal_proposal_v664_20261101/](dynamic_causal_proposal_v664_20261101/README.md)保存最新一次285步未到达及2280原生步完整核验；[dynamic_dense_edge_diagnosis_v665_20261101/](dynamic_dense_edge_diagnosis_v665_20261101/README.md)只保存两个锁定输入的零积分密集边段候选核验，不是导航成功。V662–V665四包266清单文件/130来源引用均通过，另dynamic_interval_round_account_20261101保存累计分账。

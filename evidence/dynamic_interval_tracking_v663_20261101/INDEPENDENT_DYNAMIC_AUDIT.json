@@ -1,0 +1,111 @@
+{
+  "status": "EVIDENCE_AND_EXECUTED_NATIVE_CHECKS_PASS",
+  "checks": {
+    "all_native_records": true,
+    "prediction_coverage_finite_grid": true,
+    "frozen_source_and_protocol": true,
+    "same_model": true,
+    "same_normalized_initial_state": true,
+    "original_deadline_unchanged": true,
+    "completed_within_original_deadline": true,
+    "v662_diagnosis_pass": true
+  },
+  "branches": [
+    {
+      "run": "runs/v663_dynamic_interval_tracking/dev33_95000011_observe32/paired",
+      "passed": true,
+      "checks": {
+        "all_public_and_native_records": true,
+        "source_snapshot": true,
+        "saved_model": true,
+        "causal_admission": true,
+        "actor_motion_formula": true,
+        "actor_mocap_at_all_native_ticks": true,
+        "native_time_steps": true,
+        "motion_bounds": true,
+        "smaller_actor": true,
+        "not_at_junction": true,
+        "swept_known_geometry_clearance": true,
+        "full_sweep_bypass": true,
+        "online_native_clearance": true,
+        "full_replay": true,
+        "replay_safety": true,
+        "zero_contact": true,
+        "raw_contact_digest": true,
+        "self_coverage": true,
+        "native_root_only": true,
+        "strict_outcome_consistent": true
+      },
+      "outcome": "NO_SAFE_PROGRESS_PATH",
+      "strict_arrival": false,
+      "public_steps": 231,
+      "native_steps": 1848,
+      "minimum_native_clearance_m": 0.26708776731610506,
+      "actor_displacement_span_m": 0.49999979630995195,
+      "actor_max_native_displacement_m": 0.0007999994073471597,
+      "raw_contact_records": 20710
+    },
+    {
+      "run": "runs/v663_dynamic_interval_tracking/dev33_95000011_observe0/paired",
+      "passed": true,
+      "checks": {
+        "all_public_and_native_records": true,
+        "source_snapshot": true,
+        "saved_model": true,
+        "causal_admission": true,
+        "actor_motion_formula": true,
+        "actor_mocap_at_all_native_ticks": true,
+        "native_time_steps": true,
+        "motion_bounds": true,
+        "smaller_actor": true,
+        "not_at_junction": true,
+        "swept_known_geometry_clearance": true,
+        "full_sweep_bypass": true,
+        "online_native_clearance": true,
+        "full_replay": true,
+        "replay_safety": true,
+        "zero_contact": true,
+        "raw_contact_digest": true,
+        "self_coverage": true,
+        "native_root_only": true,
+        "strict_outcome_consistent": true
+      },
+      "outcome": "NO_SAFE_PROGRESS_PATH",
+      "strict_arrival": false,
+      "public_steps": 248,
+      "native_steps": 1984,
+      "minimum_native_clearance_m": 0.3430722795885208,
+      "actor_displacement_span_m": 0.49999979630995195,
+      "actor_max_native_displacement_m": 0.000799999658580271,
+      "raw_contact_records": 21754
+    }
+  ],
+  "coverage": [
+    {
+      "run": "runs/v663_dynamic_interval_tracking/dev33_95000011_observe32/paired",
+      "frames": 232,
+      "forecast_times_per_frame": 121,
+      "maximum_center_box_excess_m": -0.0034448039639252137,
+      "maximum_velocity_box_excess_m_s": -0.02996552846177869,
+      "saved_rows_pass": true,
+      "passed": true
+    },
+    {
+      "run": "runs/v663_dynamic_interval_tracking/dev33_95000011_observe0/paired",
+      "frames": 249,
+      "forecast_times_per_frame": 121,
+      "maximum_center_box_excess_m": -0.0017422946441898457,
+      "maximum_velocity_box_excess_m_s": -0.03288890747801604,
+      "saved_rows_pass": true,
+      "passed": true
+    }
+  ],
+  "distinct_development_tasks": 1,
+  "new_navigation_branches": 2,
+  "independent_confirmation_tasks": 0,
+  "strict_arrivals": 0,
+  "conditional_repeat_attempted": false,
+  "verification_simulation_steps": 0,
+  "dynamic_stability_acceptance_passed": false,
+  "scope": "finite one-scene paired observation ablation; non-arrivals preserved; sampled future coverage is not a calibrated probability or continuous-time proof"
+}

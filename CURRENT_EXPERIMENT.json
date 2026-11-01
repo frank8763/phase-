@@ -1,12 +1,12 @@
 {
-  "status": "DYNAMIC_DEVELOPMENT_CLOSED_NON_SUCCESS",
+  "status": "DYNAMIC_INTERVAL_CLOSED_NON_SUCCESS_OFFLINE_FIX_PREPARED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v661_dynamic_corridor_consistency/run_static.py",
-  "decision_freeze": "runs/v661_dynamic_corridor_consistency/development04/SOURCE_FREEZE.json",
-  "source_revision": "dynamic_32_consistent_forecast_corridor",
-  "protocol": "experiments/v661_dynamic_corridor_consistency/PROTOCOL.md",
-  "report": "docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md",
+  "active_entrypoint": "experiments/v664_dynamic_causal_proposals/run_static.py",
+  "decision_freeze": "runs/v664_dynamic_causal_proposals/PREREGISTERED_FREEZE.json",
+  "source_revision": "dynamic_34_causal_proposal_full_time_gate",
+  "protocol": "experiments/v664_dynamic_causal_proposals/PROTOCOL.md",
+  "report": "docs/DYNAMIC_INTERVAL_DEVELOPMENT_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--scene",
@@ -24,13 +24,13 @@
     "one HORIZON task retained in 24 denominator; old V652/V653/V654 failures remain failed",
     "fixed rectangle self-configuration domain; geometry-infeasible tasks require a predefined evaluation contract",
     "static circle shape prior and known prior map, accurate localization",
-    "finite local range hypotheses without calibrated continuous coverage",
     "full low-level takeover; SAC benefit unisolated",
     "not real-time, no real-robot validation",
     "dynamic first round: one previously known static geometry task, three non-arrival development branches, no independent dynamic confirmation",
-    "causal centroid/CV tube empirically undercovers true actor; uncertainty is not calibrated",
     "loss of actor observations causes expanding age occupancy and failed recovery; indefinite waiting safety not tested",
-    "scripted mocap actor, known static prior; occluded emergence and multiple actors untested"
+    "scripted mocap actor, known static prior; occluded emergence and multiple actors untested",
+    "V663/V664 set-membership predictor passed finite767x121 future-grid checks only; no calibrated probability or continuous-time coverage claim",
+    "Latest dynamic branches remain non-arrivals; V665 dense-edge repair only saved-input planning, with roughly3x search cost"
   ],
   "previous_candidate": {
     "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
@@ -42,7 +42,7 @@
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
-  "active_window": "runs/v661_dynamic_corridor_consistency/development04",
+  "active_window": null,
   "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
@@ -131,7 +131,7 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-11-01T09:50:20.553658+08:00",
+  "last_observed_at": "2026-11-01T10:40:58.892206+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": null,
   "v653_previous_confirmation_summary": {
@@ -151,7 +151,7 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/dynamic_forecast_route_v661_20261101",
+  "evidence": "evidence/dynamic_causal_proposal_v664_20261101",
   "requires_user_review_before_next_experiment": false,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
@@ -216,8 +216,65 @@
   },
   "static_selection_freeze": "runs/v657_static_fixed_work_confirmation/confirmation01/SELECTION_FREEZE.json",
   "static_independent_confirmation_trials": 24,
-  "independent_dynamic_evidence_audit": "runs/v661_dynamic_corridor_consistency/INDEPENDENT_DYNAMIC_AUDIT.json",
+  "independent_dynamic_evidence_audit": "runs/v664_dynamic_causal_proposals/INDEPENDENT_DYNAMIC_AUDIT.json",
   "static_independent_acceptance_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json",
-  "final_implementation_role": "V661 last bounded development revision, navigation non-success; not an accepted best dynamic navigator",
-  "local_dynamic_evidence_commit": "7b9d50deb7c6c331ebc04641c1ce1f7458595cac"
+  "final_implementation_role": "V664 is the last actually executed dynamic development, non-arrival; V665 planner is an offline-only candidate, not an accepted best navigator",
+  "local_dynamic_evidence_commit": "7b9d50deb7c6c331ebc04641c1ce1f7458595cac",
+  "previous_dynamic_round": {
+    "report": "docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md",
+    "ledger": "runs/v661_dynamic_corridor_consistency/DYNAMIC_ROUND_LEDGER.json",
+    "closed": true,
+    "strict_arrivals": 0
+  },
+  "v663_development": {
+    "closed": true,
+    "navigation_branches": 2,
+    "strict_arrivals": 0,
+    "independent_confirmation": 0,
+    "audit": "runs/v663_dynamic_interval_tracking/INDEPENDENT_DYNAMIC_AUDIT.json"
+  },
+  "dynamic_interval_round": {
+    "status": "CLOSED_NON_SUCCESS_WITH_OFFLINE_FIX_PREPARED",
+    "phase_only": true,
+    "static_acceptance_v657_unchanged": true,
+    "dynamic_stability_acceptance_passed": false,
+    "distinct_new_development_tasks": 1,
+    "independent_confirmation_tasks": 0,
+    "new_navigation_branches": 3,
+    "strict_arrivals": 0,
+    "conditional_full_repeats": 0,
+    "v662_diagnostic_native_steps": 2112,
+    "v662_diagnostic_replay_steps": 2112,
+    "v663_navigation_native_steps": 3832,
+    "v663_replay_steps": 3832,
+    "v664_navigation_native_steps": 2280,
+    "v664_replay_steps": 2280,
+    "total_new_navigation_native_steps": 6112,
+    "total_actual_steps_including_diagnostic": 8224,
+    "total_control_log_replay_steps": 8224,
+    "private_robot_prediction_steps": 3218400,
+    "finite_forecast_coverage": {
+      "decisions": 767,
+      "future_times_per_decision": 121,
+      "new_navigation_coverage_passed": true,
+      "scope": "V663/V664 executed-prefix decision times; not continuous or independent population"
+    },
+    "v662_v663_ledger_closed_unchanged": true,
+    "v664_user_continuation_separate_one_navigation_budget": true,
+    "hard_deadline_unix": 1793502431.7726939,
+    "v665_zero_integration_inputs": 2,
+    "v665_navigation_tasks": 0,
+    "v665_offline_candidate_only": true,
+    "automatic_further_simulation": false,
+    "training_updates": 0,
+    "real_robot_runs": 0,
+    "raw_evidence_deleted": false
+  },
+  "next_offline_candidate": {
+    "planner": "experiments/v665_dynamic_dense_edges/planner.py",
+    "protocol": "experiments/v665_dynamic_dense_edges/PROTOCOL.md",
+    "validation": "runs/v665_dynamic_dense_edges/INDEPENDENT_OFFLINE_CHECK.json",
+    "navigation_executed": false,
+    "requires_complete_candidate_freeze_and_new_bounded_navigation_protocol": true
+  }
 }
