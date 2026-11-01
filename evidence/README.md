@@ -68,3 +68,9 @@
 ## V671–V673失败分解与结构验证
 
 [dynamic_structure_diagnosis_v671_20261101/](dynamic_structure_diagnosis_v671_20261101/README.md)、[dynamic_minimal_backup_v672_20261101/](dynamic_minimal_backup_v672_20261101/README.md)、[dynamic_joint_forecast_v673_20261101/](dynamic_joint_forecast_v673_20261101/README.md)三包247清单文件/123来源引用通过。两个同开发任务分支929/940公开步均未到达；14952导航/14952控制重放完整公开状态误差0、障碍/穿透/未知0、最低实际净空0.247080403m。固定5200诊断重放、100私有控制和32零机器人积分LP分别计账；初始JSON及缺依赖错误保留，安装树仅runs可重建。无重复/新池/训练/实机/Stage访问，不把证据核验PASS当成通行通过。[最终分析](../docs/DYNAMIC_STRUCTURE_V673_REPORT.md)。
+
+
+## V674–V675有界续接开发：未通过
+[dynamic_renewable_backup_v674_round_20261101/](dynamic_renewable_backup_v674_round_20261101/README.md)保存本轮全部两未到达导航、固定同状态诊断、原失败/源/模型/接触/控制与完整账目。14304导航原生/完整重放状态误差0，最低实际净空0.252712875m、障碍/穿透/未知0；两版各10步原始证书命令与实际ctrl因执行器裁剪而不同，完整命令契约未通过。V675原FAIL、V674原较窄检查PASS、扩大命令核验及原COMPLETION均保留，不能用裁剪等效回填验收通过。0重复/新几何/确认/训练/实机/Stage访问，无第三候选，原始runs保留。[最终报告](../docs/DYNAMIC_RENEWABLE_BACKUP_V674_REPORT.md)。
+
+本包320份原始文件、253份清单文件全部逐字节解压/哈希回读通过，压缩后27,725,391字节；所有原始runs保留。

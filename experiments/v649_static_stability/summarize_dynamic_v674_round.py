@@ -1,0 +1,37 @@
+"""Complete round denominator, interventions, and separately charged diagnostics."""
+from pathlib import Path
+from collections import Counter
+import json,numpy as np
+repo=Path(__file__).resolve().parents[2];out=repo/'runs/v674_dynamic_renewable_backup';read=lambda p:json.loads(p.read_text());lines=lambda p:[json.loads(s)for s in p.read_text().splitlines()]if p.exists()else[]
+ledger=read(out/'ROUND_WINDOW.json');assert ledger['round_closed'],'ROUND_ACTIVE'
+branches=[]
+for folder in ['v674_dynamic_renewable_backup','v675_dynamic_joint_admission']:
+ root=repo/'runs'/folder;audit=read(root/'INDEPENDENT_DYNAMIC_AUDIT.json')
+ for x in read(root/'development01/RESULTS.json'):
+  pair=root/x['name']/'paired';cell=pair/'geometry_memory';r=read(cell/'result.json');ad=lines(cell/'model_admission.jsonl');trace=read(cell/'trace.json');xy=np.asarray([t['pose'][:2]for t in trace]);decisions=lines(cell/'control_decisions.jsonl');nominal=[d for d in decisions if d['stage']=='NOMINAL'and d['candidate_role']=='ORDINARY'];backup=[d for d in decisions if d['stage']=='BACKUP_APPEND'and d['candidate_role']=='ORDINARY'];coverage=lines(cell/'forecast_coverage.jsonl')
+  branches.append({'version':'V674'if'v674'in folder else'V675','run':str(pair.relative_to(repo)),'is_repeat':'repeat'in x['name'],'outcome':r['outcome'],'strict_arrival':r['strict_safe_arrival'],'public_steps':r['public_steps'],'navigation_native_steps':r['physics_steps'],'logged_control_replay_native_steps':read(pair/'NATIVE_REPLAY_AUDIT.json')['replay_integration_steps'],'private_prediction_integrations':r['prediction_steps'],'minimum_actual_native_clearance_m':r['minimum_dynamic_native_clearance_m'],'final_goal_distance_m':r['goal_distance_m'],'best_goal_distance_m':min(t['goal_distance_m']for t in trace),'traveled_m':float(np.linalg.norm(np.diff(xy,axis=0),axis=1).sum()),'elapsed_s':r['elapsed_s'],'backup_activations':r['reserved_recovery_activations'],'executed_backup_public_steps':r['reserved_recovery_public_steps'],'handover_attempts':r['certified_handover_attempts'],'certified_handover_successes':r['certified_handover_successes'],'alternate_ordinary_admissions':sum(a.get('joint_admission_distinct_command_rank',0)>0 for a in ad),'ordinary_selected_rank_histogram':dict(Counter(a['joint_admission_distinct_command_rank']for a in ad if'joint_admission_distinct_command_rank'in a)),'ordinary_nominal_statuses':dict(Counter(d['summary']['status']for d in nominal)),'ordinary_backup_candidate_statuses':dict(Counter(d['detail']['status']for d in backup)),'finite_forecast_frames':len(coverage),'future_samples_per_frame':329,'registered_independent_audit_status':audit['status'],'registered_independent_audit_passed':audit['status']=='EVIDENCE_AND_EXECUTED_NATIVE_CHECKS_PASS','independent_full_evidence_audit_passed':False})
+for branch in branches:
+ cell=repo/branch['run']/'geometry_memory';trace=read(cell/'trace.json');ad=lines(cell/'model_admission.jsonl');plans=[read(f)for f in sorted(cell.glob('planning_*.json'))];model=read(cell.parent/'STATIC_PROTOCOL.json');start_distance=float(np.linalg.norm(np.asarray(model['start_qpos'])[:2]-model['goal_xy']));nominal_regression=0;route_records=[]
+ for i,(row,admit)in enumerate(zip(trace,ad)):
+  previous=start_distance if i==0 else trace[i-1]['goal_distance_m']
+  if admit.get('status')=='MODEL_SAFE_COMMAND'and admit.get('terminal_projected_arc_m',0)>admit.get('current_projected_arc_m',0)+1e-6 and row['goal_distance_m']>previous+1e-5:nominal_regression+=1
+ for i,plan in enumerate(plans):
+  begin=plan['step'];end=plans[i+1]['step']if i+1<len(plans)else len(trace);path=plan['path'];before=start_distance if begin==0 else trace[min(begin-1,len(trace)-1)]['goal_distance_m'];after=trace[min(end-1,len(trace)-1)]['goal_distance_m']
+  route_records.append({'step':begin,'next_replan_or_end_step':end,'public_steps_until_next_plan_or_end':end-begin,'status':plan['stats']['status'],'geometric_goal_distance_m':plan['stats'].get('goal_distance_m'),'first_gear':int(path[1][3])if path is not None else None,'actual_goal_distance_change_m':after-before})
+ branch['spatial_plan_analysis']={'plans':len(plans),'global_goal_paths':sum(x['stats']['status']=='GLOBAL_GOAL_PATH'for x in plans),'first_reverse_paths':sum(x['path']is not None and int(x['path'][1][3])==-1 for x in plans),'nominal_positive_predicted_arc_but_actual_goal_regression_steps':nominal_regression,'records':route_records,'scope':'regression may be necessary for reverse maneuvers; global geometry route is not a dynamics/timing feasibility proof'}
+reference=lines(out/'dev41_95000011_renewable/paired/geometry_memory/v648_execution.jsonl')
+for branch in branches:
+ if branch['version']!='V675'or branch['is_repeat']:continue
+ rows=lines(repo/branch['run']/'geometry_memory/v648_execution.jsonl');first=None;maximum=0.
+ for left,right in zip(reference,rows):
+  error=max(float(np.max(abs(np.asarray(left[k])-right[k])))for k in ['qpos_full','qvel_full','ctrl','mocap_pos'])
+  if error>1e-8:first=left['step'];break
+  maximum=max(maximum,error)
+ branch['v674_paired_prefix']={'first_full_state_input_difference':first,'maximum_pre_difference_error':maximum}
+pipeline=read(out/'CONTROL_PIPELINE_DIAGNOSIS.json')
+for branch in branches:
+ record=next(x for x in pipeline['records']if x['run']==branch['run'])
+ branch['raw_command_mismatch_public_steps']=record['raw_mismatch_public_steps'];branch['maximum_after_actuator_clipping_command_error']=record['maximum_after_clipping_command_error'];branch['independent_full_evidence_audit_passed']=branch['registered_independent_audit_passed']and record['raw_mismatch_public_steps']==0
+pre=read(out/'validation_attempt02/PRE_NAV_VALIDATION.json');probe=read(out/'selection_probe/COMPLETION.json')
+final={'status':'CLOSED_CONTROL_CONTRACT_AUDIT_FAILURE_NO_ARRIVAL','branches':branches,'candidate_count':ledger['candidates_started'],'navigation_attempts':ledger['navigation_attempts'],'distinct_development_geometries':1,'independent_confirmation_tasks':0,'strict_arrivals_including_repeats':sum(x['strict_arrival']for x in branches),'full_repeats':sum(x['is_repeat']for x in branches),'navigation_native_steps':sum(x['navigation_native_steps']for x in branches),'navigation_logged_control_replay_native_steps':sum(x['logged_control_replay_native_steps']for x in branches),'navigation_private_prediction_integrations':sum(x['private_prediction_integrations']for x in branches),'diagnostic_control_replay_native_steps':pre['logged_control_replay_native_steps']+probe['replay_native_steps'],'diagnostic_private_prediction_integrations':pre['private_prediction_integrations']+probe['private_prediction_integrations'],'original_output_scope_failed_attempt_integrations':0,'original_absolute_deadline_unix':ledger['absolute_deadline_unix'],'round_closed':True,'third_candidate_started':False,'all_executed_physical_evidence_audited':True,'all_control_contract_checks_passed':False,'raw_command_mismatch_public_steps':sum(x['raw_command_mismatch_public_steps']for x in branches),'control_anomaly_discovered_after_navigation':True,'dynamic_stability_acceptance_passed':False,'training_updates':0,'real_robot_runs':0,'stage_access':0,'raw_evidence_deleted':False,'scope':'same-geometry development and success-only repeat; neither intervention counts nor physical-audit PASS establish dynamic acceptance'}
+(out/'FINAL_ANALYSIS.json').write_text(json.dumps(final,indent=2)+'\n');print(json.dumps(final,indent=2))

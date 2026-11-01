@@ -1,12 +1,12 @@
 {
-  "status": "DYNAMIC_V673_CLOSED_CONTINUATION_FEASIBILITY_GAP",
+  "status": "DYNAMIC_V675_CLOSED_CONTROL_CONTRACT_AUDIT_FAILURE",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "runs/v673_dynamic_joint_forecast/development01/SOURCE_FREEZE.json",
-  "source_revision": "dynamic_40_joint_position_velocity_gate",
-  "protocol": "experiments/v673_dynamic_joint_forecast/PROTOCOL.md",
-  "report": "docs/DYNAMIC_STRUCTURE_V673_REPORT.md",
+  "decision_freeze": "runs/v675_dynamic_joint_admission/development01/SOURCE_FREEZE.json",
+  "source_revision": "dynamic_42_joint_admission",
+  "protocol": "experiments/v675_dynamic_joint_admission/PROTOCOL.md",
+  "report": "docs/DYNAMIC_RENEWABLE_BACKUP_V674_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--scene",
@@ -41,7 +41,8 @@
     "V670 actual same-packet mean position area reduced28.13percent without sustained arrival; exact total private rollout count unavailable at interruption",
     "V672 brake-first backup did not change the original843public controls; actual fallback still reverse",
     "V673 joint cover keeps position-velocity association but940steps failed after finite brake tail completed; recursive continuation not established",
-    "Fixed64frame linear temporal constraints only slightly narrowed some y velocity intervals; no information-theoretic impossibility proof"
+    "Fixed64frame linear temporal constraints only slightly narrowed some y velocity intervals; no information-theoretic impossibility proof",
+    "V674/V675 each have10raw-command-vs-applied-ctrl mismatches; exact physical state replay does not imply complete command contract PASS"
   ],
   "previous_candidate": {
     "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
@@ -162,7 +163,7 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/dynamic_reserved_recovery_v669_20261101",
+  "evidence": "evidence/dynamic_renewable_backup_v674_round_20261101",
   "requires_user_review_before_next_experiment": false,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
@@ -227,10 +228,9 @@
   },
   "static_selection_freeze": "runs/v657_static_fixed_work_confirmation/confirmation01/SELECTION_FREEZE.json",
   "static_independent_confirmation_trials": 24,
-  "independent_dynamic_evidence_audit": "runs/v669_dynamic_reserved_recovery/INDEPENDENT_DYNAMIC_AUDIT.json",
+  "independent_dynamic_evidence_audit": "runs/v675_dynamic_joint_admission/INDEPENDENT_DYNAMIC_AUDIT.json",
   "static_independent_acceptance_audit": "runs/v657_static_fixed_work_confirmation/INDEPENDENT_ACCEPTANCE_AUDIT.json",
-  "final_implementation_role": "V669 last executed developer, real finite reverse-brake tail completed, no arrival; not accepted best dynamic navigator",
-  "local_dynamic_evidence_commit": "86b6aa818ae185c68b2a1f2a650220c32aac96c2",
+  "final_implementation_role": "V675 final frozen executed candidate, two-candidate round closed; raw-control audit FAIL",
   "previous_dynamic_round": {
     "report": "docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md",
     "ledger": "runs/v661_dynamic_corridor_consistency/DYNAMIC_ROUND_LEDGER.json",
@@ -425,93 +425,486 @@
     "automatic_additional_candidates": false,
     "static_v657_unchanged": true
   },
-  "next_research_design": "docs/DYNAMIC_LITERATURE_DESIGN.md",
+  "next_research_design": "docs/DYNAMIC_TEMPORAL_EXECUTION_NEXT.md",
   "paper_method_draft": "docs/PHASE_DYNAMIC_METHOD_DRAFT.md",
   "next_experiment_requires_new_bounded_protocol": true,
-  "offline_validation": "runs/v670_dynamic_empty_samples/OFFLINE_VALIDATION.json",
-  "current_dynamic_report": "docs/DYNAMIC_STRUCTURE_V673_REPORT.md",
-  "latest_final_ledger": "runs/v671_dynamic_consistency_diagnosis/FINAL_ANALYSIS.json",
+  "offline_validation": "runs/v674_dynamic_renewable_backup/validation_attempt02/PRE_NAV_VALIDATION.json",
+  "current_dynamic_report": "docs/DYNAMIC_RENEWABLE_BACKUP_V674_REPORT.md",
+  "latest_final_ledger": "runs/v674_dynamic_renewable_backup/FINAL_ANALYSIS.json",
   "latest_evidence": [
-    "evidence/dynamic_structure_diagnosis_v671_20261101",
-    "evidence/dynamic_minimal_backup_v672_20261101",
-    "evidence/dynamic_joint_forecast_v673_20261101"
+    "evidence/dynamic_renewable_backup_v674_round_20261101"
   ],
-  "latest_result_role": "Two non-arrivals on one development geometry; full executed native/source/model/coverage audits PASS, not dynamic acceptance",
+  "latest_result_role": "Two non-arrivals; physical states replay exactly but raw command contract fails in both versions; not accepted dynamic navigator",
   "next_candidate": null,
   "paper_evaluation_design": "docs/DYNAMIC_EVALUATION_DESIGN.md",
-  "latest_completed_entrypoint": "experiments/v673_dynamic_joint_forecast/run_static.py",
+  "latest_completed_entrypoint": "experiments/v675_dynamic_joint_admission/run_static.py",
   "latest_round_summary": {
-    "status": "CLOSED_TWO_CANDIDATES_NO_ARRIVAL_FULL_EVIDENCE_PASS",
+    "status": "CLOSED_CONTROL_CONTRACT_AUDIT_FAILURE_NO_ARRIVAL",
     "branches": [
       {
-        "version": "V672",
-        "run": "runs/v672_dynamic_minimal_backup/dev39_95000011_minimal/paired",
+        "version": "V674",
+        "run": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired",
+        "is_repeat": false,
         "outcome": "BOUNDED_WALL_STOP",
         "strict_arrival": false,
-        "public_steps": 929,
-        "navigation_native_steps": 7432,
-        "replay_native_steps": 7432,
-        "private_prediction_integrations": 4446088,
-        "minimum_actual_native_clearance_m": 0.3380801336461309,
-        "goal_distance_final_m": 5.81541443844687,
-        "best_goal_distance_m": 5.441639151805084,
-        "travel_m": 9.195886166215093,
-        "actual_elapsed_s": 777.1632815570047,
-        "backup_public_steps": 120,
-        "backup_activations": 3,
-        "executed_brake_public_steps": 0,
-        "executed_reverse_public_steps": 120,
-        "brake_certificates_retained": 657,
-        "full_evidence_audit_pass": true,
-        "forecast_decision_frames": 929,
-        "future_samples_per_frame": 165
+        "public_steps": 860,
+        "navigation_native_steps": 6880,
+        "logged_control_replay_native_steps": 6880,
+        "private_prediction_integrations": 3993040,
+        "minimum_actual_native_clearance_m": 0.25881438435838966,
+        "final_goal_distance_m": 5.683998277731883,
+        "best_goal_distance_m": 5.340907117491731,
+        "traveled_m": 8.633739350454183,
+        "elapsed_s": 777.1715184869972,
+        "backup_activations": 14,
+        "executed_backup_public_steps": 204,
+        "handover_attempts": 51,
+        "certified_handover_successes": 14,
+        "alternate_ordinary_admissions": 0,
+        "ordinary_selected_rank_histogram": {},
+        "ordinary_nominal_statuses": {
+          "MODEL_SAFE_COMMAND": 653,
+          "NO_MODEL_SAFE_COMMAND": 3
+        },
+        "ordinary_backup_candidate_statuses": {
+          "APPENDABLE_BACKUP_FOUND": 642,
+          "NO_APPENDABLE_BACKUP": 11,
+          "SKIPPED_NO_NOMINAL": 3
+        },
+        "finite_forecast_frames": 860,
+        "future_samples_per_frame": 329,
+        "registered_independent_audit_status": "EVIDENCE_AND_EXECUTED_NATIVE_CHECKS_PASS",
+        "registered_independent_audit_passed": true,
+        "independent_full_evidence_audit_passed": false,
+        "spatial_plan_analysis": {
+          "plans": 15,
+          "global_goal_paths": 12,
+          "first_reverse_paths": 3,
+          "nominal_positive_predicted_arc_but_actual_goal_regression_steps": 182,
+          "records": [
+            {
+              "step": 0,
+              "next_replan_or_end_step": 49,
+              "public_steps_until_next_plan_or_end": 49,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.27973890922282046,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.7096285319128723
+            },
+            {
+              "step": 49,
+              "next_replan_or_end_step": 282,
+              "public_steps_until_next_plan_or_end": 233,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.15655964722920607,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.6433886524174319
+            },
+            {
+              "step": 282,
+              "next_replan_or_end_step": 316,
+              "public_steps_until_next_plan_or_end": 34,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.23403991965816126,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": 0.39797050069566975
+            },
+            {
+              "step": 316,
+              "next_replan_or_end_step": 424,
+              "public_steps_until_next_plan_or_end": 108,
+              "status": "SAFE_PROGRESS_PREFIX",
+              "geometric_goal_distance_m": 3.803438996298483,
+              "first_gear": -1,
+              "actual_goal_distance_change_m": 0.15736459035316397
+            },
+            {
+              "step": 424,
+              "next_replan_or_end_step": 473,
+              "public_steps_until_next_plan_or_end": 49,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.2530726241614395,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.5491370240567202
+            },
+            {
+              "step": 473,
+              "next_replan_or_end_step": 481,
+              "public_steps_until_next_plan_or_end": 8,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.15600332456189114,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.10857413686190576
+            },
+            {
+              "step": 481,
+              "next_replan_or_end_step": 485,
+              "public_steps_until_next_plan_or_end": 4,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.12599702450685316,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.03318579123569165
+            },
+            {
+              "step": 485,
+              "next_replan_or_end_step": 491,
+              "public_steps_until_next_plan_or_end": 6,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.14946755120124472,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.010496716241641835
+            },
+            {
+              "step": 491,
+              "next_replan_or_end_step": 507,
+              "public_steps_until_next_plan_or_end": 16,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.12889222130580527,
+              "first_gear": -1,
+              "actual_goal_distance_change_m": 0.15055291688781303
+            },
+            {
+              "step": 507,
+              "next_replan_or_end_step": 522,
+              "public_steps_until_next_plan_or_end": 15,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.23646223084831003,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.040583483860480385
+            },
+            {
+              "step": 522,
+              "next_replan_or_end_step": 692,
+              "public_steps_until_next_plan_or_end": 170,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.1845727665640917,
+              "first_gear": -1,
+              "actual_goal_distance_change_m": -0.05823822013542568
+            },
+            {
+              "step": 692,
+              "next_replan_or_end_step": 765,
+              "public_steps_until_next_plan_or_end": 73,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.2686851174609702,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": 0.14032893742100683
+            },
+            {
+              "step": 765,
+              "next_replan_or_end_step": 775,
+              "public_steps_until_next_plan_or_end": 10,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.2000847017739378,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.019168568863662472
+            },
+            {
+              "step": 775,
+              "next_replan_or_end_step": 821,
+              "public_steps_until_next_plan_or_end": 46,
+              "status": "SAFE_PROGRESS_PREFIX",
+              "geometric_goal_distance_m": 3.860551510344295,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": 0.18939461867667529
+            },
+            {
+              "step": 821,
+              "next_replan_or_end_step": 860,
+              "public_steps_until_next_plan_or_end": 39,
+              "status": "SAFE_PROGRESS_PREFIX",
+              "geometric_goal_distance_m": 3.8329016174234782,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.1453089926282214
+            }
+          ],
+          "scope": "regression may be necessary for reverse maneuvers; global geometry route is not a dynamics/timing feasibility proof"
+        },
+        "raw_command_mismatch_public_steps": 10,
+        "maximum_after_actuator_clipping_command_error": 0.0
       },
       {
-        "version": "V673",
-        "run": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired",
-        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "version": "V675",
+        "run": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired",
+        "is_repeat": false,
+        "outcome": "BOUNDED_WALL_STOP",
         "strict_arrival": false,
-        "public_steps": 940,
-        "navigation_native_steps": 7520,
-        "replay_native_steps": 7520,
-        "private_prediction_integrations": 3610600,
-        "minimum_actual_native_clearance_m": 0.24708040266281328,
-        "goal_distance_final_m": 5.236436609105755,
-        "best_goal_distance_m": 5.236185835887207,
-        "travel_m": 9.47948509294037,
-        "actual_elapsed_s": 712.267335053999,
-        "backup_public_steps": 320,
-        "backup_activations": 8,
-        "executed_brake_public_steps": 40,
-        "executed_reverse_public_steps": 280,
-        "brake_certificates_retained": 469,
-        "full_evidence_audit_pass": true,
-        "forecast_decision_frames": 941,
-        "future_samples_per_frame": 329
+        "public_steps": 928,
+        "navigation_native_steps": 7424,
+        "logged_control_replay_native_steps": 7424,
+        "private_prediction_integrations": 4783976,
+        "minimum_actual_native_clearance_m": 0.2527128748399221,
+        "final_goal_distance_m": 5.382761230018289,
+        "best_goal_distance_m": 5.308665800948284,
+        "traveled_m": 9.778704020322856,
+        "elapsed_s": 778.6876522880048,
+        "backup_activations": 10,
+        "executed_backup_public_steps": 125,
+        "handover_attempts": 31,
+        "certified_handover_successes": 9,
+        "alternate_ordinary_admissions": 9,
+        "ordinary_selected_rank_histogram": {
+          "0": 785,
+          "1": 5,
+          "2": 4
+        },
+        "ordinary_nominal_statuses": {
+          "MODEL_SAFE_COMMAND": 799,
+          "NO_MODEL_SAFE_COMMAND": 5
+        },
+        "ordinary_backup_candidate_statuses": {
+          "APPENDABLE_BACKUP_FOUND": 794,
+          "NO_APPENDABLE_BACKUP": 24,
+          "SKIPPED_NO_NOMINAL": 5
+        },
+        "finite_forecast_frames": 928,
+        "future_samples_per_frame": 329,
+        "registered_independent_audit_status": "FAIL",
+        "registered_independent_audit_passed": false,
+        "independent_full_evidence_audit_passed": false,
+        "spatial_plan_analysis": {
+          "plans": 21,
+          "global_goal_paths": 20,
+          "first_reverse_paths": 5,
+          "nominal_positive_predicted_arc_but_actual_goal_regression_steps": 253,
+          "records": [
+            {
+              "step": 0,
+              "next_replan_or_end_step": 49,
+              "public_steps_until_next_plan_or_end": 49,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.27973890922282046,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.7096285319128723
+            },
+            {
+              "step": 49,
+              "next_replan_or_end_step": 299,
+              "public_steps_until_next_plan_or_end": 250,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.15655964722920607,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.5495177298472065
+            },
+            {
+              "step": 299,
+              "next_replan_or_end_step": 370,
+              "public_steps_until_next_plan_or_end": 71,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.2555171437572371,
+              "first_gear": -1,
+              "actual_goal_distance_change_m": 0.30205609068267325
+            },
+            {
+              "step": 370,
+              "next_replan_or_end_step": 477,
+              "public_steps_until_next_plan_or_end": 107,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.21114802057875695,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.3242741195136567
+            },
+            {
+              "step": 477,
+              "next_replan_or_end_step": 530,
+              "public_steps_until_next_plan_or_end": 53,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.27199528221359376,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": 0.07520637957743226
+            },
+            {
+              "step": 530,
+              "next_replan_or_end_step": 534,
+              "public_steps_until_next_plan_or_end": 4,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.26014079990684186,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.0041905966164099695
+            },
+            {
+              "step": 534,
+              "next_replan_or_end_step": 546,
+              "public_steps_until_next_plan_or_end": 12,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.15519496437249453,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.038877151756211425
+            },
+            {
+              "step": 546,
+              "next_replan_or_end_step": 553,
+              "public_steps_until_next_plan_or_end": 7,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.14670547007226514,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.013035186676716215
+            },
+            {
+              "step": 553,
+              "next_replan_or_end_step": 554,
+              "public_steps_until_next_plan_or_end": 1,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.12268381612738026,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": 0.00026952180370898304
+            },
+            {
+              "step": 554,
+              "next_replan_or_end_step": 562,
+              "public_steps_until_next_plan_or_end": 8,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.26517975263061433,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": 0.024310232263817788
+            },
+            {
+              "step": 562,
+              "next_replan_or_end_step": 679,
+              "public_steps_until_next_plan_or_end": 117,
+              "status": "SAFE_PROGRESS_PREFIX",
+              "geometric_goal_distance_m": 3.730067279987359,
+              "first_gear": -1,
+              "actual_goal_distance_change_m": 0.2948241616993412
+            },
+            {
+              "step": 679,
+              "next_replan_or_end_step": 684,
+              "public_steps_until_next_plan_or_end": 5,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.19828227117644592,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.06626914394925265
+            },
+            {
+              "step": 684,
+              "next_replan_or_end_step": 696,
+              "public_steps_until_next_plan_or_end": 12,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.15236771166344412,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.15236797979439576
+            },
+            {
+              "step": 696,
+              "next_replan_or_end_step": 718,
+              "public_steps_until_next_plan_or_end": 22,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.17943142834093515,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.2833089008609626
+            },
+            {
+              "step": 718,
+              "next_replan_or_end_step": 725,
+              "public_steps_until_next_plan_or_end": 7,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.1788922367843929,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.0765954123768049
+            },
+            {
+              "step": 725,
+              "next_replan_or_end_step": 738,
+              "public_steps_until_next_plan_or_end": 13,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.10452992429167399,
+              "first_gear": -1,
+              "actual_goal_distance_change_m": 0.057375193561186144
+            },
+            {
+              "step": 738,
+              "next_replan_or_end_step": 741,
+              "public_steps_until_next_plan_or_end": 3,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.15789118657416645,
+              "first_gear": -1,
+              "actual_goal_distance_change_m": 0.04451758084074964
+            },
+            {
+              "step": 741,
+              "next_replan_or_end_step": 751,
+              "public_steps_until_next_plan_or_end": 10,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.20140975350882628,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": 0.04786338551906422
+            },
+            {
+              "step": 751,
+              "next_replan_or_end_step": 756,
+              "public_steps_until_next_plan_or_end": 5,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.2534594538920314,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.03393553001724037
+            },
+            {
+              "step": 756,
+              "next_replan_or_end_step": 789,
+              "public_steps_until_next_plan_or_end": 33,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.11696122230916758,
+              "first_gear": 1,
+              "actual_goal_distance_change_m": -0.06395859926912006
+            },
+            {
+              "step": 789,
+              "next_replan_or_end_step": 928,
+              "public_steps_until_next_plan_or_end": 139,
+              "status": "GLOBAL_GOAL_PATH",
+              "geometric_goal_distance_m": 0.23889669367147134,
+              "first_gear": -1,
+              "actual_goal_distance_change_m": -0.11379926525044226
+            }
+          ],
+          "scope": "regression may be necessary for reverse maneuvers; global geometry route is not a dynamics/timing feasibility proof"
+        },
+        "v674_paired_prefix": {
+          "first_full_state_input_difference": 217,
+          "maximum_pre_difference_error": 0.0
+        },
+        "raw_command_mismatch_public_steps": 10,
+        "maximum_after_actuator_clipping_command_error": 0.0
       }
     ],
+    "candidate_count": 2,
     "navigation_attempts": 2,
     "distinct_development_geometries": 1,
     "independent_confirmation_tasks": 0,
-    "conditional_repeats": 0,
-    "navigation_native_steps": 14952,
-    "control_log_replay_native_steps": 14952,
-    "diagnostic_control_replay_native_steps": 5200,
-    "navigation_private_prediction_integrations": 8056688,
-    "diagnostic_private_prediction_integrations_including_failed_json_logging": 25296,
-    "additional_robot_integrations_for_lp_or_dependency_install": 0,
-    "temporal_lp_linear_programs": 32,
+    "strict_arrivals_including_repeats": 0,
+    "full_repeats": 0,
+    "navigation_native_steps": 14304,
+    "navigation_logged_control_replay_native_steps": 14304,
+    "navigation_private_prediction_integrations": 8777016,
+    "diagnostic_control_replay_native_steps": 9328,
+    "diagnostic_private_prediction_integrations": 54824,
+    "original_output_scope_failed_attempt_integrations": 0,
+    "original_absolute_deadline_unix": 1793515741.924395,
+    "round_closed": true,
+    "third_candidate_started": false,
+    "all_executed_physical_evidence_audited": true,
+    "all_control_contract_checks_passed": false,
+    "raw_command_mismatch_public_steps": 20,
+    "control_anomaly_discovered_after_navigation": true,
+    "dynamic_stability_acceptance_passed": false,
     "training_updates": 0,
     "real_robot_runs": 0,
     "stage_access": 0,
-    "source_or_safety_anomalies": 0,
     "raw_evidence_deleted": false,
-    "candidate_caps_unchanged": true,
-    "absolute_deadline_unix": 1793512655.5551636,
-    "third_candidate_started": false,
-    "dynamic_stability_acceptance_passed": false,
-    "scope": "two negative versions of one development task, not independent failure/success rates; LP and coverage PASS not navigation PASS",
-    "closed_at_unix": 1793509726.7737176,
-    "closed_at_local": "2026-11-01T13:08:46.773722+08:00"
+    "scope": "same-geometry development and success-only repeat; neither intervention counts nor physical-audit PASS establish dynamic acceptance"
+  },
+  "active_protocol": null,
+  "control_pipeline_diagnosis": "runs/v674_dynamic_renewable_backup/CONTROL_PIPELINE_DIAGNOSIS.json",
+  "automatic_additional_simulation": false,
+  "previous_dynamic_evidence_commit": "86b6aa818ae185c68b2a1f2a650220c32aac96c2",
+  "candidate02_prerequisite": "runs/v674_dynamic_renewable_backup/selection_probe/COMPLETION.json",
+  "latest_evidence_verification": {
+    "status": "ALL_ARCHIVED_BYTES_VERIFIED",
+    "raw_files": 320,
+    "manifest_files": 253,
+    "raw_bytes": 81477317,
+    "stored_bytes": 27725391,
+    "raw_deleted": false
   }
 }
