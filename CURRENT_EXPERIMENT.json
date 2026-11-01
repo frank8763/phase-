@@ -1,12 +1,12 @@
 {
-  "status": "V690_VISIBLE_EIGHT_METER_FINITE_COURSE_PASS",
+  "status": "V691_CLOSED_MOVING_DISCOVERY_NON_ARRIVAL",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": null,
-  "decision_freeze": "runs/v690_visible_eight_meter/curriculum01/SOURCE_FREEZE.json",
-  "source_revision": "dynamic_54_visible_eight_meter",
-  "protocol": "experiments/v690_visible_eight_meter/PROTOCOL.md",
-  "report": "docs/DYNAMIC_VISIBLE_EIGHT_METER_V690_REPORT.md",
+  "active_entrypoint": "experiments/v691_discovery_in_motion/execute.py",
+  "decision_freeze": "runs/v691_discovery_in_motion/development01/SOURCE_FREEZE.json",
+  "source_revision": "dynamic_55_discovery_in_motion",
+  "protocol": "experiments/v691_discovery_in_motion/PROTOCOL.md",
+  "report": "docs/DYNAMIC_DISCOVERY_V691_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [
     "--seed",
@@ -162,7 +162,7 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/dynamic_visible_eight_meter_v690_20261101",
+  "evidence": "evidence/dynamic_discovery_v691_20261101",
   "requires_user_review_before_next_experiment": false,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
@@ -928,7 +928,7 @@
     "decision_freeze": "runs/v688_dynamic_distance_curriculum/curriculum01/SOURCE_FREEZE.json"
   },
   "eight_meter_gate_passed": true,
-  "supervised_gradient_updates_this_round": 512,
+  "supervised_gradient_updates_this_round": 0,
   "latest_v689_summary": {
     "status": "STOPPED_EXCEPTION",
     "records": [
@@ -1048,22 +1048,21 @@
     "decision_freeze": "runs/v689_dynamic_route_commitment/curriculum01/SOURCE_FREEZE.json"
   },
   "bounded_window": {
-    "started_unix": 1793532318.292341,
-    "absolute_deadline_unix": 1793537718.292341,
-    "limit_s": 5400,
+    "started_unix": 1793535429.353489,
+    "absolute_deadline_unix": 1793539029.353489,
+    "limit_s": 3600,
+    "pid": 306337,
     "round_closed": true,
-    "pid": 296793,
-    "navigation_attempts": 4,
-    "preflight_attempts": 2,
-    "supervised_gradient_updates": 512,
+    "navigation_attempts": 1,
+    "preflight_attempts": 1,
+    "supervised_gradient_updates": 0,
     "sac_gradient_updates": 0,
-    "six_meter_gate_passed": true,
-    "eight_meter_started": true,
-    "eight_meter_gate_passed": true,
-    "stage_access": 0,
     "single_cpu_sequential": true,
-    "status": "VISIBLE_EIGHT_METER_FINITE_CURRICULUM_PASS",
-    "elapsed_s": 1627.4740059375763
+    "moving_discovery_gate_passed": false,
+    "stage_access": 0,
+    "real_robot": 0,
+    "status": "CLOSED_NON_ARRIVAL",
+    "elapsed_s": 172.1243040561676
   },
   "initial_visibility_prerequisites": "BOTH_PHASES_PASSED_ZERO_INTEGRATION",
   "latest_v690_summary": {
@@ -1201,7 +1200,7 @@
     "raw_deleted": false,
     "scope": "finite initially-visible8m supervised course; not original invisible8m or field dynamic acceptance"
   },
-  "final_independent_audit": "runs/v690_visible_eight_meter/FINAL_ACCOUNT_AUDIT_V2.json",
+  "final_independent_audit": "runs/v691_discovery_in_motion/FINAL_ACCOUNT_AUDIT.json",
   "original_auditor_failure_preserved": "runs/v690_visible_eight_meter/FINAL_ACCOUNT_AUDIT.json",
   "precision_diagnosis": "runs/v690_visible_eight_meter/INITIALIZATION_PRECISION_DIAGNOSIS.json",
   "sync_status": {
@@ -1219,5 +1218,80 @@
     "raw_cleanup_executed": false,
     "automatic_repeated_push": false,
     "recorded_at": "2026-11-01T19:58:10.531998+08:00"
-  }
+  },
+  "previous_v690_state": {
+    "status": "V690_VISIBLE_EIGHT_METER_FINITE_COURSE_PASS",
+    "protocol": "experiments/v690_visible_eight_meter/PROTOCOL.md",
+    "report": "docs/DYNAMIC_VISIBLE_EIGHT_METER_V690_REPORT.md",
+    "source_revision": "dynamic_54_visible_eight_meter",
+    "decision_freeze": "runs/v690_visible_eight_meter/curriculum01/SOURCE_FREEZE.json"
+  },
+  "entry": null,
+  "moving_discovery_gate_passed": false,
+  "latest_v691_summary": {
+    "status": "CLOSED_NON_ARRIVAL",
+    "moving_discovery_gate_passed": false,
+    "strict_arrival": false,
+    "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+    "goal_distance_m": 4.608025459587741,
+    "actual_navigation_tasks": 1,
+    "new_navigation_native_steps": 3264,
+    "full_control_replay_native_steps": 3264,
+    "private_prediction_integrations": 1692424,
+    "maximum_full_replay_error": 0.0,
+    "minimum_actual_clearance_m": 0.4778161143599079,
+    "first_discovery_and_brake": {
+      "first_detection_step": 32,
+      "first_detection_sim_time_s": 2.5599999999999894,
+      "speed_before_discovery_m_s": 0.2135690077409653,
+      "forward_progress_before_discovery_m": 0.4779329684024334,
+      "minimum_last10_speed_m_s": 0.21298912729598268,
+      "terminal_stop_speed_m_s": 5.640839839661003e-05,
+      "stop_public_steps": 41,
+      "stop_minimum_causal_clearance_m": 1.0394475077504275,
+      "maximum_stop_state_control_error": 0.0,
+      "first_post_stop_replan_step": 73,
+      "new_reference_current_causal_clearance_m": 0.38918545384342784,
+      "post_stop_actual_displacement_m": 3.2052897639158795,
+      "preserves_task_assumption": "startup3m exclusion is a declared prior, not inferred from nondetections"
+    },
+    "functional_checks": {
+      "initial_raw_sensor_filter_exact": true,
+      "initial_prior_reconstructed": true,
+      "initial_unobserved_real_actor": true,
+      "registered_geometry": true,
+      "all_raw_packets_reconstructed": true,
+      "all_causal_states_reconstructed": true,
+      "all329_future_coverage": true,
+      "first_detection_from_actual_sensor": true,
+      "moving_before_discovery": true,
+      "discovery_state_exact": true,
+      "no_initial_stationary_observation": true,
+      "complete328_stop": true,
+      "stop_canonical_commands": true,
+      "stop_geometry_recomputed": true,
+      "stop_full_state_ctrl": true,
+      "actual_deceleration": true,
+      "new_causal_route_after_stop": true,
+      "actually_continued_after_replanning": true,
+      "strict_arrival": false
+    },
+    "physical_command_audit": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+    "final_account_audit": "ALL_FINAL_ACCOUNT_CHECKS_PASS",
+    "finite_forecast_decision_frames": 409,
+    "finite_forecast_samples": 134561,
+    "full_repeat_executed": false,
+    "repeat_skip_reason": "MAIN_STRICT_ARRIVAL_FAILED",
+    "diagnostic_new_simulation_integrations": 0,
+    "supervised_gradient_updates": 0,
+    "sac_gradient_updates": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "independent_confirmation": 0,
+    "actual_whole_round_elapsed_s": 172.1243040561676,
+    "original_absolute_deadline_unix": 1793539029.353489,
+    "raw_deleted": false,
+    "scope": "finite natural range-entry with public startup3m center-exclusion prior; observed/stopped/replanned/continued but not arrived"
+  },
+  "no_automatic_followup": true
 }
