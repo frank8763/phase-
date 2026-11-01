@@ -51,3 +51,6 @@
 - 全账目：runs/v690_visible_eight_meter/FINAL_ACCOUNT_AUDIT_V2.json（原V1失败保留于FINAL_ACCOUNT_AUDIT.json）、FINAL_ANALYSIS.json、TEACHER_LEARNER_COMPARISON.json。
 - 完整内容寻址证据：evidence/dynamic_visible_eight_meter_v690_20261101；每原文件字节哈希回读核验，原始runs在远端验证前保留。
 - 图：figures/dynamic_visible_eight_meter_v690.png（并有独立PDF）。
+
+
+V690完整代码/模型/证据本地提交28d350e04c3979ff628a5d902bb858822df76d14。一次60秒GitHub推送exit124超时；随后5秒有界只读核验成功，远端main为227c267628b85cca4a66dce84a2e7f42a149dc3d，V690新证据尚未同步。全部原始runs保留，没有重复推送或追加仿真。
