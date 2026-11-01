@@ -65,3 +65,5 @@ V665全核验60.350秒<240秒，环境实例与所有积分均0；失败输入�
 [完整V664失败证据](../evidence/dynamic_causal_proposal_v664_20261101/README.md)78清单文件/32来源引用；[V665零积分候选证据](../evidence/dynamic_dense_edge_diagnosis_v665_20261101/README.md)13清单文件/3来源引用。连同V662/V663四包共266清单文件/130来源引用，另累计账目单文件，均核验通过。当前没有活动仿真或自动追加作业；原始数据全部保留，GitHub同步另以SYNC_STATUS.json为准。
 
 ![同场景实际轨迹、净空、进展与区间宽度](figures/dynamic_interval_development.png)
+
+本次完整证据及源码已本地提交`86b6aa8`。30秒有界git push与12秒远端读取均超时，未确认GitHub同步；全部原始运行保留。

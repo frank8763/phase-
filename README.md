@@ -25,7 +25,7 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 | `current/` | 字节不变的V647历史接力与环境依赖，新实验使用上面的独立入口 |
 | `runtime/` | 必需的冻结环境、控制器、模型、状态与资源 |
 | `manifests/` | 原始来源、逐文件 SHA256、清理明细与验证结果 |
-| [当前确认协议](experiments/v657_static_fixed_work_confirmation/PROTOCOL.md) | 冻结开发配置与有界协议；实际输出仅在 `runs/` |
+| [静态确认冻结协议](experiments/v657_static_fixed_work_confirmation/PROTOCOL.md) | 冻结开发配置与有界协议；实际输出仅在 `runs/` |
 
 只读准备检查：
 
