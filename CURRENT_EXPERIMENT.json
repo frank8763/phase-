@@ -50,7 +50,7 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "LOCAL_V683_EVIDENCE_PENDING_COMMIT_REMOTE_UNVERIFIED",
+  "github_sync_status": "LOCAL_V683_EVIDENCE_COMMITTED_REMOTE_UNVERIFIED_TIMEOUT",
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
@@ -586,7 +586,8 @@
     "manifest_files": 135,
     "raw_bytes": 33203303,
     "stored_bytes": 13150393,
-    "raw_deleted": false
+    "raw_deleted": false,
+    "local_evidence_commit": "02ba413929fc8dfbcfd374a6b4fcf2c54a8d6aa9"
   },
   "canonical_command_repair_verified": true,
   "privileged_scene_safe_witness": {
@@ -595,26 +596,8 @@
     "counts_as_unknown_dynamic_success": false,
     "public_steps": 474
   },
-  "previous_latest_local_evidence_commit": "e3835f2139a1af79646c8ec4e9652e81149e4aa3",
+  "previous_latest_local_evidence_commit": "3b6ec22a367094a76c1bb2174b9f199fe20a96da",
   "previous_remote_sync": {
-    "status": "BOUNDED_PUSH_AND_FRESH_READ_TIMEOUT_REMOTE_UNVERIFIED",
-    "attempted_target_commit": "e3835f2139a1af79646c8ec4e9652e81149e4aa3",
-    "push_limit_s": 180,
-    "push_exit_code": 124,
-    "push_log_empty": true,
-    "push_options": "single pack thread, no delta window, compression1, HTTP1.1, noninteractive",
-    "fresh_remote_read_limit_s": 10,
-    "fresh_remote_read_exit_code": 124,
-    "github_connector_currently_unavailable": "Unknown tool github.fetch; metadata still advertised it. Store error after first failed fetch also recorded in tool transcript; no remote write via connector.",
-    "last_earlier_verified_remote_head": "227c267628b85cca4a66dce84a2e7f42a149dc3d",
-    "latest_remote_head_verified": false,
-    "recorded_unix": 1793516917.0866299,
-    "raw_evidence_deleted": false,
-    "additional_simulation_steps": 0,
-    "automatic_repeated_push": false
-  },
-  "latest_local_evidence_commit": "3b6ec22a367094a76c1bb2174b9f199fe20a96da",
-  "remote_sync": {
     "status": "BOUNDED_PUSH_AND_FRESH_READ_TIMEOUT_REMOTE_UNVERIFIED",
     "attempted_target_commit": "dab2eea4a9c770fe08e5bc1ed321e2494840dfeb",
     "local_evidence_commit": "3b6ec22a367094a76c1bb2174b9f199fe20a96da",
@@ -627,6 +610,19 @@
     "recorded_unix": 1793519043.8772988,
     "raw_evidence_deleted": false,
     "automatic_repeated_push": false
+  },
+  "latest_local_evidence_commit": "02ba413929fc8dfbcfd374a6b4fcf2c54a8d6aa9",
+  "remote_sync": {
+    "status": "BOUNDED_PUSH_AND_FRESH_READ_TIMEOUT_REMOTE_UNVERIFIED",
+    "attempted_target_commit": "02ba413929fc8dfbcfd374a6b4fcf2c54a8d6aa9",
+    "push_limit_s": 20,
+    "push_exit_code": 124,
+    "fresh_remote_read_limit_s": 5,
+    "fresh_remote_read_exit_code": 124,
+    "latest_remote_head_verified": false,
+    "raw_evidence_deleted": false,
+    "automatic_repeated_push": false,
+    "recorded_unix": 1793522573.8755846
   },
   "previous_round_pointer": {
     "status": "V680_LATER_STOP_RESERVE_NAVIGATION",
