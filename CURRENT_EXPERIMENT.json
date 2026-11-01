@@ -586,7 +586,8 @@
     "raw_bytes": 92294270,
     "stored_bytes": 20584006,
     "raw_deleted": false,
-    "evidence": "evidence/dynamic_distance_v688_20261101"
+    "evidence": "evidence/dynamic_distance_v688_20261101",
+    "local_evidence_commit": "ce8eb1dbdc51d4aee6cc043919d0b2ff4c84e1df"
   },
   "canonical_command_repair_verified": true,
   "privileged_scene_safe_witness": {
@@ -595,7 +596,7 @@
     "counts_as_unknown_dynamic_success": false,
     "public_steps": 474
   },
-  "previous_latest_local_evidence_commit": "51289e62505df013d3fec52145ded0633b0442cb",
+  "previous_latest_local_evidence_commit": "f7c5e8f08aa1b5ce194f76af273211c7a4fc3941",
   "previous_remote_sync": {
     "status": "BOUNDED_PUSH_AND_FRESH_READ_TIMEOUT_REMOTE_UNVERIFIED",
     "attempted_target_commit": "dab2eea4a9c770fe08e5bc1ed321e2494840dfeb",
@@ -610,21 +611,22 @@
     "raw_evidence_deleted": false,
     "automatic_repeated_push": false
   },
-  "latest_local_evidence_commit": "f7c5e8f08aa1b5ce194f76af273211c7a4fc3941",
+  "latest_local_evidence_commit": "ce8eb1dbdc51d4aee6cc043919d0b2ff4c84e1df",
   "remote_sync": {
-    "status": "LOCAL_V687_COMMITTED_REMOTE_UNVERIFIED",
-    "local_evidence_commit": "f7c5e8f08aa1b5ce194f76af273211c7a4fc3941",
+    "status": "LOCAL_V688_COMMITTED_REMOTE_CONFIRMED_OLD_AFTER_PUSH_TIMEOUT",
+    "local_evidence_commit": "ce8eb1dbdc51d4aee6cc043919d0b2ff4c84e1df",
     "push_limit_s": 10,
     "push_exit_code": 124,
     "fresh_remote_read_limit_s": 3,
-    "fresh_remote_read_exit_code": 124,
-    "latest_remote_head_verified": false,
-    "last_earlier_verified_remote_head": "227c267628b85cca4a66dce84a2e7f42a149dc3d",
-    "push_log": "runs/v687_bounded_push.console",
-    "read_log": "runs/v687_remote_after_push.txt",
+    "fresh_remote_read_exit_code": 0,
+    "latest_remote_head_verified": true,
+    "verified_remote_head": "227c267628b85cca4a66dce84a2e7f42a149dc3d",
+    "remote_contains_v688_evidence": false,
+    "push_log": "runs/v688_bounded_push.console",
+    "read_log": "runs/v688_remote_after_push.txt",
     "raw_cleanup_executed": false,
     "automatic_repeated_push": false,
-    "recorded_at": "2026-11-01T17:31:57.600448+08:00"
+    "recorded_at": "2026-11-01T18:02:57.592249+08:00"
   },
   "previous_round_pointer": {
     "status": "V680_LATER_STOP_RESERVE_NAVIGATION",
