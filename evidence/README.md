@@ -104,3 +104,7 @@
 
 ## V688 6米动态参考通行与提案学习：学习版未通过
 [dynamic_distance_v688_20261101/](dynamic_distance_v688_20261101/README.md)保存6mteacher884公开到达、852样本/512次监督训练、学习版900公开未到达终距1.074496m及实际470/868普通步网络控制。两次14272导航/14272完整重放、8253760私有，物理/控制/源模型/联合覆盖/投影/训练来源审计PASS；学习版未到达后相位测试/重复和8m全部未执行。原numpy.bool_JSON审计失败与原driverCOMPLETION保留，补充只修写出、0积分、未重跑teacher或延期。300原文件/176清单解压哈希回读通过，存储20,584,006字节，原始runs保留；训练是独立监督提案器，冻结SAC0，Stage/实机0。[完整报告](../docs/DYNAMIC_DISTANCE_V688_REPORT.md)。
+
+
+## V689有限6米动态学习课程通过，8米初始观测失败
+[dynamic_route_commitment_v689_20261101/](dynamic_route_commitment_v689_20261101/README.md)保存全部15次旧重规划诊断/前置、两相位6m629/631步到达及631步完整重复（全qpos/qvel/ctrl/mocap误差0、模型/规范初态/真实接触事件匹配）。15128导航/15128重放原生、9234400私有，本轮梯度0，复用旧6m网络，实际360/554和460/599普通步网络参与。8m已尝试但在0步因NO_INITIAL_ACTOR_OBSERVATION失败，原FAILED/driverCOMPLETION保留；47束原包/有效hit筛选/2.96m采样复算通过，8m训练和评估未执行。487份原文件/211清单完整解压哈希回读，存储20,518,861字节，原始runs保留，Stage/实机0。[完整报告](../docs/DYNAMIC_ROUTE_COMMITMENT_V689_REPORT.md)。
