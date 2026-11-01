@@ -8,6 +8,7 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 
 | 入口 | 内容 |
 |---|---|
+| [动态根因彻底复核：V682](docs/DYNAMIC_ROOT_CAUSE_V682.md) | 804帧零积分重查：运动假设、估计保守性、局部倒车进展和墙钟停止 |
 | [最新动态实验：V679–V681](docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md) | 前进有限尾有局部增量，804步仍未到达；短时空间提案前置失败未导航 |
 | [下一时序内核规格](docs/DYNAMIC_TEMPORAL_KERNEL_DESIGN.md) | 完整状态、绝对时间、合法命令与保留尾段；尚未实现/运行 |
 | [V676–V678命令与场景分解](docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md) | 命令修复、两因果未到达、同场景特权474步到达见证，分母明确 |

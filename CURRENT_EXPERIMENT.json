@@ -626,5 +626,31 @@
     "active_run": "runs/v680_dynamic_later_stop_reserve/development01",
     "active_window": "runs/v679_dynamic_forward_reserve/ROUND_WINDOW.json",
     "active_protocol": "experiments/v680_dynamic_later_stop_reserve/PROTOCOL.md"
+  },
+  "latest_diagnosis": {
+    "version": "V682",
+    "report": "docs/DYNAMIC_ROOT_CAUSE_V682.md",
+    "source": "experiments/v682_dynamic_root_cause",
+    "output": "runs/v682_dynamic_root_cause",
+    "status": "ZERO_INTEGRATION_ROOT_CAUSE_REVIEW_COMPLETE",
+    "robot_integrations": 0,
+    "new_navigation_tasks": 0,
+    "key_findings": [
+      "frequent actor returns with weak velocity information",
+      "online motion class broader than true bounded sweep",
+      "ordinary safe input may lack longer appendable tail",
+      "220 reverse commands reward local arc while predicting goal regression",
+      "ordinary reverse loses2.310727m vs backup0.790830m net",
+      "last stop due wall budget with16 ordinary safe candidates",
+      "geometry controller applied all804 commands; not direct SAC rollout"
+    ],
+    "evidence": "evidence/dynamic_root_cause_v682_20261101",
+    "archive_verification": {
+      "status": "ALL_DIAGNOSIS_BYTES_VERIFIED",
+      "raw_files": 6,
+      "manifest_files": 9,
+      "robot_integrations": 0,
+      "raw_deleted": false
+    }
   }
 }
