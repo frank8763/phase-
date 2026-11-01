@@ -1,0 +1,17 @@
+"""Counterfactual geometry on saved successful poses; no control or integration."""
+import os,sys,json,hashlib
+from pathlib import Path
+from types import SimpleNamespace,MethodType
+import numpy as np
+repo=Path(os.environ['PHASE_REPO']);sys.path.insert(0,str(repo/'experiments/v676_dynamic_canonical_commands'))
+from motion_tracker import install_time_gate
+from exact_footprint import pose_values
+root=repo/'runs/v677_dynamic_scene_witness/witness44_95000011_fullsweep/paired';cell=root/'geometry_memory';read=lambda p:json.loads(p.read_text());out=repo/'runs/v676_dynamic_canonical_commands/WITNESS_CAUSAL_GATE_OFFLINE.json';assert not out.exists()
+assert read(root/'INDEPENDENT_CANONICAL_AUDIT.json')['status']=='ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS'
+trace=read(cell/'trace.json');states=[json.loads(s)for s in(cell/'motion_estimate.jsonl').read_text().splitlines()];protocol=read(root/'STATIC_PROTOCOL.json');config=read(root/'DYNAMIC_PROTOCOL.json');bounds=np.asarray(protocol['footprint_bounds']);static=dict(half=(bounds[2:]-bounds[:2])/2,center_local=(bounds[2:]+bounds[:2])/2,rectangles=np.asarray(protocol['known_rectangles']).reshape(-1,4),circles=np.asarray(protocol['known_circles']).reshape(-1,3),sensor_points=[],sensor_extra=0.,config=SimpleNamespace(lower=-5.,upper=5.));sweep=SimpleNamespace(**{**static,'circles':np.asarray([*protocol['known_circles'],[*config['anchor_xy'],.35]]).reshape(-1,3)})
+records=[]
+for k,state in enumerate(states):
+ future=np.asarray([t['pose']for t in trace[k:k+30]]);field=SimpleNamespace(**static);field.pose_values=MethodType(pose_values,field);install_time_gate(field,state,'predictive',protocol['known_circles'],protocol['known_rectangles']);values=field.trajectory_values(future,.08);known=pose_values(sweep,future);fail=np.flatnonzero(values<.155)
+ records.append({'step':k,'future_recorded_public_poses':len(future),'minimum_causal_future_clearance_lower_bound_m':float(values.min()),'minimum_known_full_sweep_clearance_m':float(known.min()),'causal_original_0155_gate_rejects_recorded_pose_samples':bool(len(fail)),'first_rejected_future_time_s':float((fail[0]+1)*.08)if len(fail)else None})
+result={'status':'COMPLETE_ZERO_INTEGRATION_COUNTERFACTUAL','successful_privileged_public_steps':len(trace),'causal_forecast_frames':len(records),'frames_whose_saved_successful_future_samples_fail_causal_0155_gate':sum(x['causal_original_0155_gate_rejects_recorded_pose_samples']for x in records),'minimum_causal_future_clearance_lower_bound_m':min(x['minimum_causal_future_clearance_lower_bound_m']for x in records),'minimum_full_sweep_pose_sample_clearance_m':min(x['minimum_known_full_sweep_clearance_m']for x in records),'records':records,'simulation_integrations':0,'navigation_tasks':0,'controller_or_input_changed':False,'scope':'future samples from a saved privileged trajectory are evaluator-only counterfactual; 30public poses at0.08s, not full native2.4s certificate. A lower-bound rejection does not prove physical unsafety, no feasible causal action, or that this trajectory is selectable by the original MPC.','input_sha256':{str(p.relative_to(repo)):hashlib.sha256(p.read_bytes()).hexdigest()for p in [cell/'trace.json',cell/'motion_estimate.jsonl',root/'STATIC_PROTOCOL.json',root/'DYNAMIC_PROTOCOL.json']}}
+out.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items()if k not in ['records','input_sha256']},indent=2))
