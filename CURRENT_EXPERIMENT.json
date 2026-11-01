@@ -50,7 +50,7 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "LOCAL_V679_EVIDENCE_COMMITTED_REMOTE_READ_TIMEOUT",
+  "github_sync_status": "LOCAL_V679_EVIDENCE_COMMITTED_REMOTE_UNVERIFIED_TIMEOUT",
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
@@ -585,19 +585,6 @@
   },
   "previous_latest_local_evidence_commit": "e3835f2139a1af79646c8ec4e9652e81149e4aa3",
   "previous_remote_sync": {
-    "status": "BOUNDED_PUSH_TIMEOUT_REMOTE_UNCHANGED",
-    "attempted_target_commit": "4b60dbe3d0083f7019f19f06f92481542f3a625a",
-    "limit_s": 300,
-    "exit_code": 124,
-    "remote_head_after_attempt": "227c267628b85cca4a66dce84a2e7f42a149dc3d",
-    "remote_verified_via": "GitHub connector GET branches/main",
-    "checked_unix": 1793513537.9524157,
-    "raw_evidence_deleted": false,
-    "additional_simulation_steps": 0,
-    "no_second_repeated_push": true
-  },
-  "latest_local_evidence_commit": "3b6ec22a367094a76c1bb2174b9f199fe20a96da",
-  "remote_sync": {
     "status": "BOUNDED_PUSH_AND_FRESH_READ_TIMEOUT_REMOTE_UNVERIFIED",
     "attempted_target_commit": "e3835f2139a1af79646c8ec4e9652e81149e4aa3",
     "push_limit_s": 180,
@@ -612,6 +599,21 @@
     "recorded_unix": 1793516917.0866299,
     "raw_evidence_deleted": false,
     "additional_simulation_steps": 0,
+    "automatic_repeated_push": false
+  },
+  "latest_local_evidence_commit": "3b6ec22a367094a76c1bb2174b9f199fe20a96da",
+  "remote_sync": {
+    "status": "BOUNDED_PUSH_AND_FRESH_READ_TIMEOUT_REMOTE_UNVERIFIED",
+    "attempted_target_commit": "dab2eea4a9c770fe08e5bc1ed321e2494840dfeb",
+    "local_evidence_commit": "3b6ec22a367094a76c1bb2174b9f199fe20a96da",
+    "push_limit_s": 45,
+    "push_exit_code": 124,
+    "fresh_remote_read_limit_s": 10,
+    "fresh_remote_read_exit_code": 124,
+    "latest_remote_head_verified": false,
+    "last_earlier_verified_remote_head": "227c267628b85cca4a66dce84a2e7f42a149dc3d",
+    "recorded_unix": 1793519043.8772988,
+    "raw_evidence_deleted": false,
     "automatic_repeated_push": false
   },
   "previous_round_pointer": {

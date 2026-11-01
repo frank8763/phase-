@@ -8,7 +8,9 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 
 | 入口 | 内容 |
 |---|---|
-| [最新动态原因分解与实验](docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md) | 命令修复、两因果未到达、同场景特权474步到达见证，分母明确 |
+| [最新动态实验：V679–V681](docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md) | 前进有限尾有局部增量，804步仍未到达；短时空间提案前置失败未导航 |
+| [下一时序内核规格](docs/DYNAMIC_TEMPORAL_KERNEL_DESIGN.md) | 完整状态、绝对时间、合法命令与保留尾段；尚未实现/运行 |
+| [V676–V678命令与场景分解](docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md) | 命令修复、两因果未到达、同场景特权474步到达见证，分母明确 |
 | [算法还是场景：原文核对](docs/DYNAMIC_ALGORITHM_VS_SCENE_V676.md) | 有限观测与时序规划、SIPP-IP/不确定性学习原文及适用边界 |
 | [V674–V675续接实验与审计](docs/DYNAMIC_RENEWABLE_BACKUP_V674_REPORT.md) | V674/V675两未到达、次优漏选实证、实际命令契约失败与全账目 |
 | [后备相关工作与创新边界](docs/DYNAMIC_BACKUP_RELATED_WORK_V674.md) | gatekeeper直接重叠、适用假设及尚缺的论文增量 |
