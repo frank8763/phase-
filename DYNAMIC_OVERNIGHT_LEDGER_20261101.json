@@ -9,7 +9,7 @@
   "navigation_tasks": 0,
   "training_updates": 0,
   "cumulative_native_navigation_steps": 0,
-  "cumulative_native_replay_steps": 1,
+  "cumulative_native_replay_steps": 2,
   "cumulative_private_integrations": 0,
   "attempts": [
     {
@@ -67,5 +67,19 @@
     "private_integrations_upper_bound": 20000,
     "no_safety_or_success_claim_for_missing_prefix": true,
     "reason": "initialization guard restricted output to child; finally write error masked internal diagnostic result"
+  },
+  "v694_one_replay_step_reconciled": true,
+  "predecessor_diagnostics_account": {
+    "v693_unverified_replay_range": [
+      0,
+      584
+    ],
+    "v693_unverified_private_range": [
+      0,
+      20000
+    ],
+    "v694_observed_replay_steps": 1,
+    "v694_private_integrations": 0,
+    "ranges_not_replaced_by_success": true
   }
 }

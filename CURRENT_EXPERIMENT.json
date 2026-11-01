@@ -1053,7 +1053,7 @@
     "limit_s": 5400,
     "pid": 315604,
     "round_closed": false,
-    "navigation_attempts": 1,
+    "navigation_attempts": 3,
     "preflight_attempts": 2,
     "supervised_gradient_updates": 0,
     "sac_gradient_updates": 0,
@@ -1202,20 +1202,20 @@
   "original_auditor_failure_preserved": "runs/v690_visible_eight_meter/FINAL_ACCOUNT_AUDIT.json",
   "precision_diagnosis": "runs/v690_visible_eight_meter/INITIALIZATION_PRECISION_DIAGNOSIS.json",
   "sync_status": {
-    "status": "LOCAL_V690_COMMITTED_REMOTE_CONFIRMED_OLD_AFTER_PUSH_TIMEOUT",
-    "local_evidence_commit": "28d350e04c3979ff628a5d902bb858822df76d14",
-    "push_limit_s": 60,
+    "status": "LOCAL_NIGHT_WORK_COMMITTED_LATEST_REMOTE_IS_V690",
+    "local_code_evidence_commit_before_fresh_confirmation_preparation": "b455c59c879d50ac9c9fe7c68bb2d886b3df641f",
+    "push_limit_s": 15,
     "push_exit_code": 124,
     "fresh_remote_read_limit_s": 5,
     "fresh_remote_read_exit_code": 0,
-    "latest_remote_head_verified": true,
-    "verified_remote_head": "227c267628b85cca4a66dce84a2e7f42a149dc3d",
-    "remote_contains_v690_evidence": false,
-    "push_log": "runs/v690_bounded_push.console",
-    "read_log": "runs/v690_remote_after_push.txt",
-    "raw_cleanup_executed": false,
+    "verified_remote_head": "28d350e04c3979ff628a5d902bb858822df76d14",
+    "remote_contains_v690": true,
+    "latest_night_commits_remote_verified": false,
+    "push_log": "runs/dynamic_night_20261101_push.console",
+    "read_log": "runs/dynamic_night_20261101_remote.txt",
+    "raw_deleted": false,
     "automatic_repeated_push": false,
-    "recorded_at": "2026-11-01T19:58:10.531998+08:00"
+    "recorded_at": "2026-11-01T21:09:51.354839+08:00"
   },
   "previous_v690_state": {
     "status": "V690_VISIBLE_EIGHT_METER_FINITE_COURSE_PASS",
@@ -1358,7 +1358,7 @@
     "command": [
       "experiments/v695_discovery_verified_fixture/run_static.py",
       "--name",
-      "phase0",
+      "phasepi2",
       "--seed",
       "95000011",
       "--wall-seconds",
@@ -1368,12 +1368,28 @@
       "--initial-observation-steps",
       "0"
     ],
-    "started_unix": 1793537726.9018033,
+    "started_unix": 1793538454.8396301,
     "env": {
       "PHASE_COURSE_DISTANCE": "8",
-      "PHASE_COURSE_PHASE": "0.0",
+      "PHASE_COURSE_PHASE": "1.5707963267948966",
       "PHASE_PROPOSAL_MODEL": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v690_visible_eight_meter/training_8m/proposer.json"
     }
   },
-  "observed_at": "2026-11-01T20:57:34.424132+08:00"
+  "observed_at": "2026-11-01T21:09:51.355372+08:00",
+  "prepared_confirmation": {
+    "name": "V696",
+    "status": "FROZEN_NOT_STARTED_DEPENDENT_ON_FULL_V695_PASS",
+    "protocol": "experiments/v696_discovery_fresh_confirmation/PROTOCOL.md",
+    "task_list": "experiments/v696_discovery_fresh_confirmation/TASK_LIST.json",
+    "freeze": "experiments/v696_discovery_fresh_confirmation/CANDIDATE_FREEZE.json",
+    "entry": "experiments/v696_discovery_fresh_confirmation/execute.py",
+    "final_auditor": "experiments/v696_discovery_fresh_confirmation/audit_final.py"
+  },
+  "phase0_complete_repeat": {
+    "strict_arrivals": 2,
+    "public_steps_each": 765,
+    "minimum_actual_clearance_m": 0.44925492026888136,
+    "full_state_ctrl_mocap_maximum_error": 0.0,
+    "all_physical_causal_and_chain_audits": true
+  }
 }
