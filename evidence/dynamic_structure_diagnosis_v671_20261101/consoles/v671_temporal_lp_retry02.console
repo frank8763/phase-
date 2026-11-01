@@ -1,0 +1,371 @@
+/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v671_dynamic_consistency_diagnosis/diagnose_temporal_lp.py:37: OptimizeWarning: Unrecognized options detected: {'threads': 1, 'parallel': False}. These will be passed to HiGHS verbatim.
+  c=np.zeros(4*n);c[4*(n-1)+d]=sign;r=linprog(c,A_ub=A,b_ub=b,bounds=bounds,method='highs',options={'dual_feasibility_tolerance':1e-8,'primal_feasibility_tolerance':1e-8,'threads':1,'parallel':False});solver.append({'success':bool(r.success),'status':int(r.status)})
+{
+  "status": "PASS_FIXED_LOG_INFORMATION_DIAGNOSIS",
+  "checkpoints": [
+    48,
+    192,
+    300,
+    650
+  ],
+  "linear_programs": 32,
+  "records": [
+    {
+      "checkpoint": 48,
+      "frames": 49,
+      "lp_variables": 196,
+      "linear_inequalities": 1839,
+      "original_bounds": [
+        [
+          -1.3504300333292576,
+          -1.2799602925205833
+        ],
+        [
+          1.3981436871134338,
+          1.5591361962773673
+        ],
+        [
+          -0.020059955090636163,
+          0.11678574338076766
+        ],
+        [
+          -0.08931284579520005,
+          0.12
+        ]
+      ],
+      "temporal_lp_bounds": [
+        [
+          -1.3504310333292575,
+          -1.2799597725205836
+        ],
+        [
+          1.4045282959291658,
+          1.5591371962773672
+        ],
+        [
+          -0.020060955090636164,
+          0.11678674338076767
+        ],
+        [
+          -0.08688806416850232,
+          0.120001
+        ]
+      ],
+      "position_area_old_m2": 0.011345100392920514,
+      "position_area_lp_m2": 0.01089548413978038,
+      "velocity_width_old_m_s": [
+        0.13684569847140382,
+        0.20931284579520004
+      ],
+      "velocity_width_lp_m_s": [
+        0.13684769847140382,
+        0.20688906416850233
+      ],
+      "maximum_true_history_constraint_violation": -5.383696756848104e-05,
+      "current_truth_box_excess": -0.029849747024456752,
+      "solver": [
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "checkpoint": 192,
+      "frames": 64,
+      "lp_variables": 256,
+      "linear_inequalities": 2334,
+      "original_bounds": [
+        [
+          -1.8367336322375947,
+          -1.7156720738936464
+        ],
+        [
+          1.1694158505203602,
+          1.4578867849335855
+        ],
+        [
+          -0.0902351735371911,
+          0.0677692094858377
+        ],
+        [
+          -0.12,
+          0.11359183411934087
+        ]
+      ],
+      "temporal_lp_bounds": [
+        [
+          -1.836734172237595,
+          -1.7156714430936464
+        ],
+        [
+          1.1843898437326648,
+          1.4530394588474542
+        ],
+        [
+          -0.0902361735371911,
+          0.0677702094858377
+        ],
+        [
+          -0.120001,
+          0.10854295527962529
+        ]
+      ],
+      "position_area_old_m2": 0.034922740856999944,
+      "position_area_lp_m2": 0.03252345558926779,
+      "velocity_width_old_m_s": [
+        0.1580043830230288,
+        0.23359183411934087
+      ],
+      "velocity_width_lp_m_s": [
+        0.1580063830230288,
+        0.2285439552796253
+      ],
+      "maximum_true_history_constraint_violation": -4.90362379636339e-05,
+      "current_truth_box_excess": -0.05223524459067172,
+      "solver": [
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "checkpoint": 300,
+      "frames": 64,
+      "lp_variables": 256,
+      "linear_inequalities": 2351,
+      "original_bounds": [
+        [
+          -1.3658494939347818,
+          -1.2437157394279026
+        ],
+        [
+          1.3386934258693293,
+          1.5689600707236546
+        ],
+        [
+          -0.033415854070562176,
+          0.11318487383690093
+        ],
+        [
+          -0.10698030973393338,
+          0.12
+        ]
+      ],
+      "temporal_lp_bounds": [
+        [
+          -1.3658504939347818,
+          -1.2437152094279027
+        ],
+        [
+          1.3386928858693294,
+          1.5689610707236545
+        ],
+        [
+          -0.03341685407056218,
+          0.11318587383690093
+        ],
+        [
+          -0.10698130973393338,
+          0.120001
+        ]
+      ],
+      "position_area_old_m2": 0.02812332987376092,
+      "position_area_lp_m2": 0.028123870270065614,
+      "velocity_width_old_m_s": [
+        0.1466007279074631,
+        0.22698030973393338
+      ],
+      "velocity_width_lp_m_s": [
+        0.1466027279074631,
+        0.22698230973393338
+      ],
+      "maximum_true_history_constraint_violation": -5.034630283115213e-05,
+      "current_truth_box_excess": -0.046767745965421645,
+      "solver": [
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "checkpoint": 650,
+      "frames": 64,
+      "lp_variables": 256,
+      "linear_inequalities": 2249,
+      "original_bounds": [
+        [
+          -1.8633029545646749,
+          -1.633237042263347
+        ],
+        [
+          1.2881888481290251,
+          1.5450594083991729
+        ],
+        [
+          -0.12,
+          0.03719840298115964
+        ],
+        [
+          -0.10308351376678829,
+          0.12
+        ]
+      ],
+      "temporal_lp_bounds": [
+        [
+          -1.8633039545646748,
+          -1.6332360422633472
+        ],
+        [
+          1.2881878481290252,
+          1.5450604083991728
+        ],
+        [
+          -0.120001,
+          0.03719940298115964
+        ],
+        [
+          -0.10308451376678829,
+          0.120001
+        ]
+      ],
+      "position_area_old_m2": 0.059097159791904746,
+      "position_area_lp_m2": 0.05909813366884981,
+      "velocity_width_old_m_s": [
+        0.15719840298115964,
+        0.22308351376678828
+      ],
+      "velocity_width_lp_m_s": [
+        0.15720040298115964,
+        0.22308551376678828
+      ],
+      "maximum_true_history_constraint_violation": -6.367303839363388e-05,
+      "current_truth_box_excess": -0.06294594860219416,
+      "solver": [
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        },
+        {
+          "success": true,
+          "status": 0
+        }
+      ]
+    }
+  ],
+  "elapsed_s": 1.7988688750047004,
+  "robot_simulation_integrations": 0,
+  "navigation_tasks": 0,
+  "online_tracker_modified": false,
+  "scope": "causal history compatibility diagnostics only; not a third control candidate, certified estimator or dynamic navigation outcome"
+}

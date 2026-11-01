@@ -64,3 +64,7 @@
 ## V670连续未命中约束开发
 
 [dynamic_empty_samples_v670_20261101/](dynamic_empty_samples_v670_20261101/README.md)保留一次843公开/6744原生步的900秒超时未到达、原始失败与完整前缀重放、5000几何/701旧包验证和844实际包同输入估计消融。119清单文件/69来源引用校验通过，另核对打包原始接触74981条及SHA；原完整验收FAIL不改。实际面积缩小28.13%仍无持续通行，不能将前缀核验PASS称动态通过。[最新报告](../docs/DYNAMIC_EMPTY_SAMPLES_V670_REPORT.md)。
+
+## V671–V673失败分解与结构验证
+
+[dynamic_structure_diagnosis_v671_20261101/](dynamic_structure_diagnosis_v671_20261101/README.md)、[dynamic_minimal_backup_v672_20261101/](dynamic_minimal_backup_v672_20261101/README.md)、[dynamic_joint_forecast_v673_20261101/](dynamic_joint_forecast_v673_20261101/README.md)三包247清单文件/123来源引用通过。两个同开发任务分支929/940公开步均未到达；14952导航/14952控制重放完整公开状态误差0、障碍/穿透/未知0、最低实际净空0.247080403m。固定5200诊断重放、100私有控制和32零机器人积分LP分别计账；初始JSON及缺依赖错误保留，安装树仅runs可重建。无重复/新池/训练/实机/Stage访问，不把证据核验PASS当成通行通过。[最终分析](../docs/DYNAMIC_STRUCTURE_V673_REPORT.md)。

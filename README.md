@@ -8,7 +8,9 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 
 | 入口 | 内容 |
 |---|---|
-| [最新动态开发报告](docs/DYNAMIC_EMPTY_SAMPLES_V670_REPORT.md) | V670未命中连续约束、843步超时未到达、完整前缀核验与信息表示诊断 |
+| [最新动态结构实验报告](docs/DYNAMIC_STRUCTURE_V673_REPORT.md) | V671原因分解、V672/V673两未到达、有限后备末端缺口与真实积分审计 |
+| [扩展原论文核对](docs/DYNAMIC_LITERATURE_FAILURE_ANALYSIS_V671.md) | 部分闭环观测、时序等待、路线一致性与预测安全策略；读取范围明确 |
+| [V670动态开发报告](docs/DYNAMIC_EMPTY_SAMPLES_V670_REPORT.md) | V670未命中连续约束、843步超时未到达、完整前缀核验与信息表示诊断 |
 | [公平验证设计](docs/DYNAMIC_EVALUATION_DESIGN.md) | 未执行的强基线、机制消融、新池与计算预算要求 |
 | [V669动态恢复报告](docs/DYNAMIC_RECOVERY_V669_REPORT.md) | 三候选未到达、首次命中消融、实际有限倒车制动与信息退化 |
 | [动态相关工作与设计](docs/DYNAMIC_LITERATURE_DESIGN.md) | 原始文献、增量边界、下一研究问题 |

@@ -1,0 +1,201 @@
+<mujoco model="mkmini_mobile_manipulator_v1">
+    <compiler angle="radian" meshdir="meshes_fixed" autolimits="true" />
+    <option timestep="0.01" gravity="0 0 -9.81" />
+
+    <asset>
+        <mesh name="chassis_mesh" file="mkmini_chassis_fixed.stl" />
+        <mesh name="wheel_mesh" file="mkmini_wheel_fixed.stl" />
+
+        <material name="body_white" rgba="0.78 0.78 0.78 1" />
+        <material name="wheel_black" rgba="0.03 0.03 0.03 1" />
+        <material name="fr_light" rgba="0.82 0.82 0.82 1" />
+        <material name="fr_dark" rgba="0.08 0.08 0.08 1" />
+        <material name="camera_blue" rgba="0.06 0.24 0.90 1" />
+        <material name="lidar_red" rgba="0.90 0.05 0.05 1" />
+    </asset>
+
+    <default>
+        <joint damping="2.0" armature="0.01" />
+        <geom friction="1.0 0.005 0.0001" />
+    </default>
+
+    <worldbody>
+        <light pos="0 0 5" />
+        <geom name="floor" type="plane" size="8 8 0.1" rgba="0.65 0.65 0.65 1" friction="5.0 0.4 0.05" condim="6" />
+
+        <body name="mkmini_base" pos="0 0 0.24">
+            <freejoint name="base_freejoint" />
+
+            
+            <geom name="chassis_visual" type="mesh" mesh="chassis_mesh" pos="0 0 0" material="body_white" contype="0" conaffinity="0" />
+
+            <geom name="chassis_collision" type="box" size="0.43 0.27 0.10" pos="0 0 0" rgba="0.8 0.8 0.8 0.0" />
+
+            
+            <body name="left_front_steer" pos="0.30 0.27 -0.12">
+                <joint name="left_front_steer_joint" type="hinge" axis="0 0 1" limited="true" range="-0.45 0.45" damping="2.0" armature="0.06" />
+                <inertial pos="0 0 0" mass="0.05" diaginertia="0.0005 0.0005 0.0005" />
+                <body name="left_front_wheel" pos="0 0 0">
+                    <joint name="left_front_wheel_joint" type="hinge" axis="0 1 0" damping="0.01" />
+                    <geom type="mesh" mesh="wheel_mesh" material="wheel_black" contype="0" conaffinity="0" />
+                    <geom type="cylinder" size="0.12 0.035" euler="1.5708 0 0" rgba="0.02 0.02 0.02 0.65" contype="1" conaffinity="1" friction="6.0 0.5 0.08" condim="6" solref="0.008 1" solimp="0.95 0.99 0.001" />
+                </body>
+            </body>
+
+            <body name="right_front_steer" pos="0.30 -0.27 -0.12">
+                <joint name="right_front_steer_joint" type="hinge" axis="0 0 1" limited="true" range="-0.45 0.45" damping="2.0" armature="0.06" />
+                <inertial pos="0 0 0" mass="0.05" diaginertia="0.0005 0.0005 0.0005" />
+                <body name="right_front_wheel" pos="0 0 0">
+                    <joint name="right_front_wheel_joint" type="hinge" axis="0 1 0" damping="0.01" />
+                    <geom type="mesh" mesh="wheel_mesh" material="wheel_black" contype="0" conaffinity="0" />
+                    <geom type="cylinder" size="0.12 0.035" euler="1.5708 0 0" rgba="0.02 0.02 0.02 0.65" contype="1" conaffinity="1" friction="6.0 0.5 0.08" condim="6" solref="0.008 1" solimp="0.95 0.99 0.001" />
+                </body>
+            </body>
+
+            <body name="left_rear_wheel" pos="-0.30 0.27 -0.12">
+                <joint name="left_rear_wheel_joint" type="hinge" axis="0 1 0" damping="0.01" />
+                <geom type="mesh" mesh="wheel_mesh" material="wheel_black" contype="0" conaffinity="0" />
+                <geom type="cylinder" size="0.12 0.035" euler="1.5708 0 0" rgba="0.02 0.02 0.02 0.65" contype="1" conaffinity="1" friction="6.0 0.5 0.08" condim="6" solref="0.008 1" solimp="0.95 0.99 0.001" />
+            </body>
+
+            <body name="right_rear_wheel" pos="-0.30 -0.27 -0.12">
+                <joint name="right_rear_wheel_joint" type="hinge" axis="0 1 0" damping="0.01" />
+                <geom type="mesh" mesh="wheel_mesh" material="wheel_black" contype="0" conaffinity="0" />
+                <geom type="cylinder" size="0.12 0.035" euler="1.5708 0 0" rgba="0.02 0.02 0.02 0.65" contype="1" conaffinity="1" friction="6.0 0.5 0.08" condim="6" solref="0.008 1" solimp="0.95 0.99 0.001" />
+            </body>
+
+            
+            
+            <camera name="d435i_depth_camera" pos="0.42 0 0.48" xyaxes="0 -1 0 0.410 0 0.912" fovy="70" />
+
+            
+            <body name="laser_link" pos="0.30 0 0.105">
+                <geom name="lidar_mount" type="cylinder" size="0.035 0.018" pos="0 0 -0.018" material="fr_dark" />
+                <geom name="lidar_body" type="cylinder" size="0.050 0.025" pos="0 0 0.020" material="lidar_red" />
+            </body>
+
+            
+            <body name="fr3_base" pos="0.02 0 0.145">
+                <geom name="fr3_base_geom" type="cylinder" size="0.085 0.050" material="fr_dark" />
+
+                <body name="fr3_link1" pos="0 0 0.060">
+                    <joint name="fr3_joint1" type="hinge" axis="0 0 1" range="-2.9 2.9" />
+                    <geom type="sphere" size="0.050" material="fr_dark" />
+                    <geom type="capsule" fromto="0 0 0 0 0 0.18" size="0.028" material="fr_light" />
+
+                    <body name="fr3_link2" pos="0 0 0.18" euler="0 -1.20 0">
+                        <joint name="fr3_joint2" type="hinge" axis="0 1 0" range="-1.8 1.8" />
+                        <geom type="sphere" size="0.046" material="fr_dark" />
+                        <geom type="capsule" fromto="0 0 0 0.15 0 0.03" size="0.026" material="fr_light" />
+
+                        <body name="fr3_link3" pos="0.15 0 0.03" euler="0 -1.65 0">
+                            <joint name="fr3_joint3" type="hinge" axis="0 0 1" range="-2.9 2.9" />
+                            <geom type="sphere" size="0.043" material="fr_dark" />
+                            <geom type="capsule" fromto="0 0 0 0.17 0 0.02" size="0.024" material="fr_light" />
+
+                            <body name="fr3_link4" pos="0.17 0 0.02" euler="0 1.25 0">
+                                <joint name="fr3_joint4" type="hinge" axis="0 1 0" range="-3.0 0.1" />
+                                <geom type="sphere" size="0.039" material="fr_dark" />
+                                <geom type="capsule" fromto="0 0 0 0.11 0 0.00" size="0.021" material="fr_light" />
+
+                                <body name="fr3_link5" pos="0.11 0 0.00" euler="0 0.85 0">
+                                    <joint name="fr3_joint5" type="hinge" axis="0 0 1" range="-2.9 2.9" />
+                                    <geom type="sphere" size="0.035" material="fr_dark" />
+                                    <geom type="capsule" fromto="0 0 0 0.090 0 0.00" size="0.019" material="fr_light" />
+
+                                    <body name="fr3_link6" pos="0.090 0 0.00" euler="0 0.95 0">
+                                        <joint name="fr3_joint6" type="hinge" axis="0 1 0" range="-0.2 3.0" />
+                                        <geom type="sphere" size="0.032" material="fr_dark" />
+                                        <geom type="capsule" fromto="0 0 0 0.075 0 0.00" size="0.017" material="fr_light" />
+
+                                        <body name="fr3_link7" pos="0.075 0 -0.005" euler="0 0.35 0">
+                                            <joint name="fr3_joint7" type="hinge" axis="0 0 1" range="-2.9 2.9" />
+                                            <geom type="sphere" size="0.029" material="fr_dark" />
+                                            <geom type="capsule" fromto="0 0 0 0.055 0 0" size="0.015" material="fr_light" />
+
+                                            
+                                            <body name="fr3_gripper" pos="0.060 0 -0.005" euler="0 0.65 0">
+                                                <geom name="fr3_gripper_base" type="box" size="0.030 0.022 0.018" material="fr_dark" />
+                                                <geom name="fr3_left_finger" type="box" pos="0.035 0.018 0" size="0.022 0.005 0.007" material="fr_dark" />
+                                                <geom name="fr3_right_finger" type="box" pos="0.035 -0.018 0" size="0.022 0.005 0.007" material="fr_dark" />
+
+                                                
+                                                <body name="d435i_camera_link" pos="0.055 0 0.035">
+                                                    <geom name="d435i_body" type="box" size="0.016 0.043 0.013" material="camera_blue" />
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    
+        
+        
+        <geom name="real_rect_obs_0" type="box" pos="0.0 3.25 0.25" size="0.07999999821186066 1.75 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_1" type="box" pos="0.0 -3.25 0.25" size="0.07999999821186066 1.75 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_2" type="box" pos="-3.1500000953674316 0.0 0.25" size="1.850000023841858 0.07999999821186066 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_3" type="box" pos="3.1500000953674316 0.0 0.25" size="1.850000023841858 0.07999999821186066 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_4" type="box" pos="-2.9000000953674316 2.950000047683716 0.25" size="0.550000011920929 0.3499999940395355 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_5" type="box" pos="2.8499999046325684 2.5 0.25" size="0.550000011920929 0.3499999940395355 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_6" type="box" pos="-4.150000095367432 1.100000023841858 0.25" size="0.30000001192092896 0.949999988079071 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_7" type="box" pos="4.050000190734863 -3.0999999046325684 0.25" size="0.3499999940395355 1.100000023841858 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_8" type="box" pos="-2.200000047683716 -3.799999952316284 0.25" size="0.8500000238418579 0.2800000011920929 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_rect_obs_9" type="box" pos="2.200000047683716 -1.850000023841858 0.25" size="0.75 0.30000001192092896 0.25" rgba="0.35 0.25 0.15 1" />
+            
+        <geom name="real_circle_obs_0" type="cylinder" pos="-3.200000047683716 3.3499999046325684 0.25" size="0.2199999988079071 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_1" type="cylinder" pos="-2.549999952316284 3.3499999046325684 0.25" size="0.2199999988079071 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_2" type="cylinder" pos="-3.200000047683716 2.549999952316284 0.25" size="0.2199999988079071 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_3" type="cylinder" pos="-2.549999952316284 2.549999952316284 0.25" size="0.2199999988079071 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_4" type="cylinder" pos="2.549999952316284 2.8499999046325684 0.25" size="0.2199999988079071 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_5" type="cylinder" pos="3.1500000953674316 2.8499999046325684 0.25" size="0.2199999988079071 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_6" type="cylinder" pos="2.549999952316284 2.200000047683716 0.25" size="0.2199999988079071 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_7" type="cylinder" pos="3.1500000953674316 2.200000047683716 0.25" size="0.2199999988079071 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_8" type="cylinder" pos="-3.5999999046325684 -2.9000000953674316 0.25" size="0.2800000011920929 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <geom name="real_circle_obs_9" type="cylinder" pos="0.8999999761581421 -3.0999999046325684 0.25" size="0.25 0.25" rgba="0.75 0.05 0.05 1" />
+            
+        <body name="phase_dynamic_actor" mocap="true" pos="-1.5476415440893287 1.4044493420864133 0"><geom name="real_circle_obs_10" type="cylinder" pos="0 0 .22" size=".10 .20" rgba=".9 .25 .08 1" contype="1" conaffinity="1" />
+            
+    </body></worldbody>
+
+    <actuator>
+        
+        <position name="left_front_steer_act" joint="left_front_steer_joint" kp="1200" ctrlrange="-0.45 0.45" forcerange="-500 500" />
+        <position name="right_front_steer_act" joint="right_front_steer_joint" kp="1200" ctrlrange="-0.45 0.45" forcerange="-500 500" />
+
+        
+        <velocity name="left_rear_wheel_act" joint="left_rear_wheel_joint" kv="35" ctrlrange="-20 20" forcerange="-120 120" />
+        <velocity name="right_rear_wheel_act" joint="right_rear_wheel_joint" kv="35" ctrlrange="-20 20" forcerange="-120 120" />
+
+        
+        <position name="fr3_joint1_hold" joint="fr3_joint1" kp="90" />
+        <position name="fr3_joint2_hold" joint="fr3_joint2" kp="90" />
+        <position name="fr3_joint3_hold" joint="fr3_joint3" kp="90" />
+        <position name="fr3_joint4_hold" joint="fr3_joint4" kp="90" />
+        <position name="fr3_joint5_hold" joint="fr3_joint5" kp="90" />
+        <position name="fr3_joint6_hold" joint="fr3_joint6" kp="90" />
+        <position name="fr3_joint7_hold" joint="fr3_joint7" kp="90" />
+    </actuator>
+</mujoco>

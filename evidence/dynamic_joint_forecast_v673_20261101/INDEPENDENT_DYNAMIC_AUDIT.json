@@ -1,0 +1,298 @@
+{
+  "status": "EVIDENCE_AND_EXECUTED_NATIVE_CHECKS_PASS",
+  "checks": {
+    "retained_recovery_certificates": true,
+    "all_native_records": true,
+    "finite_prediction_coverage": true,
+    "frozen_source_protocol": true,
+    "deadline_unchanged": true,
+    "within_deadline": true,
+    "within_registered_attempt_caps": true,
+    "old_task_model_initial_unchanged": true,
+    "first_public_predicted_pose_matches": true,
+    "all_registered_repeats_match": true
+  },
+  "branches": [
+    {
+      "run": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired",
+      "passed": true,
+      "checks": {
+        "all_public_and_native_records": true,
+        "source_snapshot": true,
+        "saved_model": true,
+        "causal_admission": true,
+        "actor_motion_formula": true,
+        "actor_mocap_at_all_native_ticks": true,
+        "native_time_steps": true,
+        "motion_bounds": true,
+        "smaller_actor": true,
+        "not_at_junction": true,
+        "swept_known_geometry_clearance": true,
+        "full_sweep_bypass": true,
+        "online_native_clearance": true,
+        "full_replay": true,
+        "replay_safety": true,
+        "zero_contact": true,
+        "raw_contact_digest": true,
+        "self_coverage": true,
+        "native_root_only": true,
+        "strict_outcome_consistent": true
+      },
+      "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+      "strict_arrival": false,
+      "public_steps": 940,
+      "native_steps": 7520,
+      "minimum_native_clearance_m": 0.24708040266281328,
+      "actor_displacement_span_m": 0.49999996476132635,
+      "actor_max_native_displacement_m": 0.000799999658580271,
+      "raw_contact_records": 82433
+    }
+  ],
+  "coverage": [
+    {
+      "run": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired",
+      "frames": 941,
+      "forecast_times_per_frame": 329,
+      "maximum_center_union_excess_m": -2.6411339901777353e-06,
+      "maximum_joint_current_state_excess": -2.6411339901777353e-06,
+      "saved_rows_pass": true,
+      "passed": true
+    }
+  ],
+  "prediction_first_public_pose_checks": [
+    {
+      "run": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired",
+      "maximum_first_public_xy_yaw_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "public_steps": 940
+    }
+  ],
+  "reserved_recovery_checks": [
+    {
+      "run": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired",
+      "public_state_matches": 940,
+      "maximum_full_qpos_qvel_error": 0.0,
+      "contracts": [
+        {
+          "file": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired/geometry_memory/recovery_contracts/contract_0217.json.gz",
+          "activation_step": 217,
+          "created_step": 216,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.2023438477498926,
+          "terminal_speed_m_s": 0.0006950670686465149,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.005151824022571416,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired/geometry_memory/recovery_contracts/contract_0279.json.gz",
+          "activation_step": 279,
+          "created_step": 278,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.5611408447451812,
+          "terminal_speed_m_s": 0.0010136135469634528,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.0007545174296048618,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired/geometry_memory/recovery_contracts/contract_0371.json.gz",
+          "activation_step": 371,
+          "created_step": 370,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.1390748697273351,
+          "terminal_speed_m_s": 0.00020667341148758494,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.004017667362872235,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired/geometry_memory/recovery_contracts/contract_0419.json.gz",
+          "activation_step": 419,
+          "created_step": 418,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.5485735352918635,
+          "terminal_speed_m_s": 0.0009731048645378161,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.0025347586706681025,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired/geometry_memory/recovery_contracts/contract_0505.json.gz",
+          "activation_step": 505,
+          "created_step": 504,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.24892286523002186,
+          "terminal_speed_m_s": 0.0006554116104814187,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.00453049871503497,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired/geometry_memory/recovery_contracts/contract_0724.json.gz",
+          "activation_step": 724,
+          "created_step": 723,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.2167775319670996,
+          "terminal_speed_m_s": 0.0002282630334272327,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.00479261144976495,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired/geometry_memory/recovery_contracts/contract_0793.json.gz",
+          "activation_step": 793,
+          "created_step": 792,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.5692759022883316,
+          "terminal_speed_m_s": 0.0010607414097767197,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.001511563750410394,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v673_dynamic_joint_forecast/dev40_95000011_joint/paired/geometry_memory/recovery_contracts/contract_0900.json.gz",
+          "activation_step": 900,
+          "created_step": 899,
+          "recovery_kind": "BRAKE_ONLY",
+          "signed_displacement_m": 0.06077575344166052,
+          "terminal_speed_m_s": 7.756501304882153e-07,
+          "executed_public_steps": 40,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.00017401536339578527,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "distinct_development_tasks": 1,
+  "navigation_branches_including_repeats": 1,
+  "independent_confirmation_tasks": 0,
+  "strict_arrivals_including_repeats": 0,
+  "verification_simulation_steps": 0,
+  "dynamic_stability_acceptance_passed": false,
+  "scope": "finite development, no population, continuous-time or real-time guarantee"
+}
