@@ -1,22 +1,20 @@
 {
-  "status": "V683_V685_CLOSED_DYNAMIC_NON_SUCCESS",
+  "status": "V686_CLOSED_OPEN_ARENA_NON_ARRIVAL",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "runs/v683_dynamic_current_state_diagnosis/CANDIDATE_FREEZE.json",
-  "source_revision": "diagnosis49_current_state_only",
-  "protocol": "experiments/v683_dynamic_current_state_diagnosis/PROTOCOL.md",
-  "report": "docs/DYNAMIC_INFO_VALIDATION_V683_REPORT.md",
+  "decision_freeze": "runs/v686_dynamic_open_curriculum/development01/SOURCE_FREEZE.json",
+  "source_revision": "dynamic_51_open_arena",
+  "protocol": "experiments/v686_dynamic_open_curriculum/PROTOCOL.md",
+  "report": "docs/DYNAMIC_OPEN_CURRICULUM_V686_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [
-    "--scene",
-    "single_event",
-    "--conditions",
-    "geometry_memory",
-    "--dynamic-mode",
-    "predictive",
+    "--seed",
+    "95000011",
+    "--max-steps",
+    "600",
     "--initial-observation-steps",
-    "0"
+    "32"
   ],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
   "independent_confirmation_trials": 0,
@@ -582,12 +580,12 @@
   "candidate02_prerequisite": "runs/v681_dynamic_prefix_guidance/PRE_NAV_VALIDATION.json",
   "latest_evidence_verification": {
     "status": "ALL_ARCHIVED_BYTES_VERIFIED",
-    "raw_files": 135,
-    "manifest_files": 135,
-    "raw_bytes": 33203303,
-    "stored_bytes": 13150393,
+    "raw_files": 193,
+    "manifest_files": 139,
+    "raw_bytes": 41419452,
+    "stored_bytes": 11416725,
     "raw_deleted": false,
-    "local_evidence_commit": "02ba413929fc8dfbcfd374a6b4fcf2c54a8d6aa9"
+    "evidence": "evidence/dynamic_open_curriculum_v686_20261101"
   },
   "canonical_command_repair_verified": true,
   "privileged_scene_safe_witness": {
@@ -668,5 +666,34 @@
     "future_class_unchanged": true,
     "validation": "runs/v683_dynamic_current_state_diagnosis/PRE_NAV_VALIDATION.json",
     "status": "CLOSED_PRIVILEGED_NON_ARRIVAL"
+  },
+  "previous_v683_state": {
+    "status": "V683_V685_CLOSED_DYNAMIC_NON_SUCCESS",
+    "active_entrypoint": null,
+    "protocol": "experiments/v683_dynamic_current_state_diagnosis/PROTOCOL.md",
+    "report": "docs/DYNAMIC_INFO_VALIDATION_V683_REPORT.md",
+    "execution_window_closed": true
+  },
+  "latest_v686_summary": {
+    "status": "CLOSED_OPEN_ARENA_NON_ARRIVAL_WITH_ORIGINAL_AUDITOR_FAILURE",
+    "new_task": "OPEN_SINGLE_CROSSING_01",
+    "new_navigation_native_steps": 4800,
+    "full_navigation_replay_native_steps": 4800,
+    "navigation_private_prediction_integrations": 3632848,
+    "geometry_tasks": 1,
+    "training_updates": 0,
+    "net_goal_progress_m": 0.598266048832472
+  },
+  "latest_v686_layer_result": {
+    "detected_frames": 574,
+    "frames": 600,
+    "global_safe_spatial_routes": 19,
+    "strict_arrival": false,
+    "goal_distance_m": 3.401733951167528,
+    "minimum_actual_clearance_m": 0.540338341744264,
+    "full_replay_error": 0,
+    "original_driver_exception_preserved": true,
+    "independent_audit_v2": "PASS",
+    "old_wall_field_unresolved": true
   }
 }

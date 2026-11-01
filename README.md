@@ -53,3 +53,6 @@ Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**
 
 聊天接力来源：[phase继续推进10.30](https://chatgpt.com/share/6ae54f9f-2730-83e8-8ae6-10b45198db16)。仓库保留核对后的研究摘要，不复制冗长聊天和附件占位内容。
 
+
+
+最新动态分层验证：[V686空白场地报告](docs/DYNAMIC_OPEN_CURRICULUM_V686_REPORT.md)：能检测运动障碍并规划绕行，600步仍未通行；训练更新0。下一步依据[能力课程策略](docs/DYNAMIC_CURRICULUM_STRATEGY.md)定位执行与时序决策。
