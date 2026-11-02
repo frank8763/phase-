@@ -41,7 +41,7 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "V700_COMPLETE_EVIDENCE_AND_V701_PREREGISTRATION_REMOTE_SHA_VERIFIED",
+  "github_sync_status": "V701_FINAL_PUSH_ACKNOWLEDGED_REMOTE_READBACK_TIMEOUT",
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
@@ -1624,7 +1624,7 @@
   },
   "github_verified_evidence_commit": "1788cfb9def6af36c5141316a3459de03a9b109f",
   "github_remote_main_readback": "1788cfb9def6af36c5141316a3459de03a9b109f",
-  "github_sync_record": "runs/v701_prereg_git_sync_result.json",
+  "github_sync_record": "runs/v701_final_git_sync_result.json",
   "analysis_protocol": "experiments/v699_dynamic_packet_audit/PROTOCOL.md",
   "analysis_entrypoint": "experiments/v699_dynamic_packet_audit/launch.py",
   "analysis_active_run": null,
@@ -2091,5 +2091,17 @@
     "stop_reason": "All six preregistered diagnostic executions, exact references/repeats, independent audit and complete archive readback finished. Stop for user review.",
     "automatic_additional_simulation": false,
     "evidence_interpretation": "Supports a local reachability effect of intermediate certified return on two selected known mechanism-active cases. Does not establish less reversing, same-actual-compute advantage, generalization, full RP-CCR superiority, calibrated risk or recursive feasibility."
+  },
+  "v701_final_github_sync": {
+    "phase": "V701_FINAL_SCIENTIFIC_EVIDENCE",
+    "evidence_commit": "121a01947e76748d5fbcce7a631bd85e44b07807",
+    "push_attempts": 1,
+    "push_limit_s": 30,
+    "readback_limit_s": 5,
+    "push_exit": 0,
+    "readback_exit": 124,
+    "remote_main": null,
+    "verified_remote_matches": false,
+    "elapsed_s": 21.11157464981079
   }
 }
