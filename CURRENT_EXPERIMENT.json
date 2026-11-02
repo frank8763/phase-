@@ -1,12 +1,12 @@
 {
-  "status": "V702_CLOSED_V703_ZERO_BOOTSTRAP_TRACE_DIAGNOSED",
+  "status": "V704_PREREGISTERED_BOOTSTRAP_REPAIR",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
-  "protocol": "experiments/v702_rpccr_prospective_compute/PROTOCOL.md",
-  "report": "docs/RPCCR_BOOTSTRAP_TRACE_V703_REPORT.md",
+  "protocol": "experiments/v704_bootstrap_repair/PROTOCOL.md",
+  "report": "docs/RPCCR_BOOTSTRAP_REPAIR_V704_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -2277,5 +2277,20 @@
   },
   "last_verified_remote_main": "121a01947e76748d5fbcce7a631bd85e44b07807",
   "v701_final_remote_verified_at": "2026-11-02T18:06:01.032424+08:00",
-  "v702_v703_remote_verified": false
+  "v702_v703_remote_verified": false,
+  "v704_authorization": {
+    "user_instruction": "下一步？",
+    "date": "2026-11-02",
+    "scope": "Implement proposed initialization repair, four original zero-integration preflights and two exact old anchors only",
+    "protocol": "experiments/v704_bootstrap_repair/PROTOCOL.md",
+    "limit_s": 2700,
+    "max_navigation": 2,
+    "max_preflights": 4,
+    "new_task_navigation": 0,
+    "algorithm_revisions": 0,
+    "initialization_engineering_revisions": 1,
+    "old_windows_closed": true,
+    "training_updates": 0,
+    "automatic_fresh_pairs": false
+  }
 }
