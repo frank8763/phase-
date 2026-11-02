@@ -41,7 +41,7 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "V700_LOCAL_EVIDENCE_COMMITTED_PUSH_TIMEOUT_REMOTE_OLDER_CONFIRMED",
+  "github_sync_status": "V700_COMPLETE_EVIDENCE_AND_V701_PREREGISTRATION_REMOTE_SHA_VERIFIED",
   "raw_run_cleanup_executed": false,
   "active_run": "runs/v701_rpccr_recovery_ablation",
   "previous_development_window_closed": true,
@@ -1622,9 +1622,9 @@
     "raw_evidence_retained": true,
     "original_archive_reverified": true
   },
-  "github_verified_evidence_commit": "4d32f47e4ac032df86c4a70b7c93cd19eb74ffe6",
-  "github_remote_main_readback": "4d32f47e4ac032df86c4a70b7c93cd19eb74ffe6",
-  "github_sync_record": "runs/v698_git_sync_result.json",
+  "github_verified_evidence_commit": "1788cfb9def6af36c5141316a3459de03a9b109f",
+  "github_remote_main_readback": "1788cfb9def6af36c5141316a3459de03a9b109f",
+  "github_sync_record": "runs/v701_prereg_git_sync_result.json",
   "analysis_protocol": "experiments/v699_dynamic_packet_audit/PROTOCOL.md",
   "analysis_entrypoint": "experiments/v699_dynamic_packet_audit/launch.py",
   "analysis_active_run": null,
@@ -1836,5 +1836,18 @@
     "scientific_evidence_commit": "d373fa570cff43080a8c705d959f8ef20af6d81f",
     "verified_scientific_commit_remote": false,
     "note": "One push attempt started before evidence commit finished; it timed out. Readback confirms older remote head only; V700 complete evidence is not remotely verified. No second attempt this round; raw evidence retained."
-  }
+  },
+  "v701_prereg_github_sync": {
+    "round": "V701_PREREGISTRATION",
+    "evidence_commit": "1788cfb9def6af36c5141316a3459de03a9b109f",
+    "push_attempts": 1,
+    "push_limit_s": 30,
+    "readback_limit_s": 5,
+    "push_exit": 0,
+    "readback_exit": 0,
+    "remote_main": "1788cfb9def6af36c5141316a3459de03a9b109f",
+    "verified_remote_matches": true,
+    "elapsed_s": 6.221340656280518
+  },
+  "v700_evidence_later_remote_verified_by_v701": "1788cfb9def6af36c5141316a3459de03a9b109f"
 }
