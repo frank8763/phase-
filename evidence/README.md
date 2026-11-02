@@ -180,3 +180,9 @@ V698[零积分原因补充](rpccr_dynamic_confirmation_v698_diagnosis_20261102/R
 
 ## V706原场地预检失败
 [原失败全证据](rpccr_global_field_v706_20261102/README.md)85原文件/87清单回读，首预检无注册宽敞晚发现点，actor未生成、导航/私有/重放0；[后续零积分诊断](rpccr_global_field_v706_diagnosis_20261102/README.md)独立保存，不覆盖原归档。不能把未执行计失败或称全场无解。
+
+## V707最后开发预检失败与夜间封账
+[原V707全证据](rpccr_field_reference_v707_20261102/README.md)84原文件/86清单回读，首例未返回合格离线完整目标参考，actor未生成、导航/私有/重放0。全夜2开发额度用尽，独立24全部未执行；[夜间实际报告](../docs/GLOBAL_DYNAMIC_OVERNIGHT_20261102_REPORT.md)不把建场失败或未执行冒充导航通过/失败率。原始runs保留。
+
+## 完整场地夜间最终封账
+[夜间授权/台账/报告与全部离线诊断快照](rpccr_global_dynamic_overnight_20261102/README.md)逐文件回读。两开发均在actor生成前预检失败、2零积分初始化、导航/私有/重放0，24确认和3重复未执行；开发额度用尽提前停止。原各批归档独立保留，不把零积分或未执行计导航成功率。
