@@ -1686,7 +1686,7 @@
   },
   "v699_github_sync_record": "runs/v699_git_sync_result.json",
   "v700_scope": "Original24 across audit versions; import13/new11+3fixed repeats, not a fresh pool or reopened V698",
-  "active_automation": "phase-global-overnight",
+  "active_automation": null,
   "v700_initial_monitor": {
     "old13_independent_reaudit": "PASS",
     "original24_noise_preflight": "PASS",
@@ -2651,7 +2651,7 @@
   },
   "v705_preflight_status": "PASS",
   "queued_overnight_plan": {
-    "status": "CLOSED_PRE_NAVIGATION_FAILURE_DEVELOPMENT_CAP_USED",
+    "status": "CLOSED_MONITOR_DELETED_NO_FURTHER_SIMULATION",
     "authorization": "GLOBAL_DYNAMIC_OVERNIGHT_AUTHORIZATION_20261102.json",
     "ledger": "GLOBAL_DYNAMIC_OVERNIGHT_LEDGER_20261102.json",
     "plan": "docs/GLOBAL_DYNAMIC_OVERNIGHT_20261102_PLAN.md",
@@ -3074,5 +3074,38 @@
     "stop_reason": "Both allowed development revisions failed original-field scene qualification before navigation; no third revision or confirmation is authorized in this night.",
     "review_guard_restored": true,
     "no_further_simulation": true
+  },
+  "global_overnight_final_git_sync": {
+    "phase": "FULL_FIELD_OVERNIGHT_FINAL_SCIENTIFIC_EVIDENCE",
+    "at": "2026-11-02T22:31:35.726314+08:00",
+    "evidence_commit": "5f11c3baaf29b663885a0eca96f5254233343a31",
+    "push_attempts": 1,
+    "push_limit_s": 30,
+    "readback_limit_s": 5,
+    "push_exit": 0,
+    "readback_exit": 124,
+    "remote_main": null,
+    "verified_remote_matches": false,
+    "elapsed_s": 9.786652531009167
+  },
+  "global_overnight_monitor_stop": {
+    "automation_deleted": "phase-global-overnight",
+    "deleted_at": "2026-11-02T22:32:08.156891+08:00",
+    "reason": "Two preregistered development revisions both failed scene qualification before navigation. Development cap used; no confirmation or further simulation allowed in this night.",
+    "review_guard_present": true,
+    "sync": {
+      "phase": "FULL_FIELD_OVERNIGHT_FINAL_SCIENTIFIC_EVIDENCE",
+      "at": "2026-11-02T22:31:35.726314+08:00",
+      "evidence_commit": "5f11c3baaf29b663885a0eca96f5254233343a31",
+      "push_attempts": 1,
+      "push_limit_s": 30,
+      "readback_limit_s": 5,
+      "push_exit": 0,
+      "readback_exit": 124,
+      "remote_main": null,
+      "verified_remote_matches": false,
+      "elapsed_s": 9.786652531009167
+    },
+    "scientific_archive_unchanged": true
   }
 }
