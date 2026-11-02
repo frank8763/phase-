@@ -159,3 +159,7 @@ V698[零积分原因补充](rpccr_dynamic_confirmation_v698_diagnosis_20261102/R
 
 ## V700 RP-CCR动态原清单接续
 [完整证据](rpccr_dynamic_continuation_v700_20261102/README.md)独立结论FINITE_MOVING_DISCOVERY_SAME24_CONTINUATION_PASS，尝试24/24、完整链到达24、未执行0，重复3/3；全部已归档字节解压哈希核验通过，原始runs保留。见[实际报告](../docs/RPCCR_DYNAMIC_CONTINUATION_V700_REPORT.md)。不凭归档完成宣称导航成功。
+
+
+## V701恢复续接机制诊断
+[完整证据](rpccr_recovery_ablation_v701_20261102/README.md)保存固定两已观察案例的FULL/COMPLETE_TAIL及消融完整重复6执行。FULL2到达，消融2安全非到达并各完全复现；全部6物理审核/4完整比较通过，24000导航与完整重放、12641776私有准确。769原文件/327清单全解压哈希回读，不把证据完整PASS当作泛化或全面算法优越。[报告与解释](../docs/RPCCR_RECOVERY_ABLATION_V701_REPORT.md)。原始runs保留。
