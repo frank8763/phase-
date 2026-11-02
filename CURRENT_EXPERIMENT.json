@@ -1,13 +1,13 @@
 {
-  "status": "V705_PREREGISTERED_ORIGINAL_FOUR_PAIRS",
+  "status": "V705_RUNNING_ORIGINAL_FOUR_PROSPECTIVE_PAIRS",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": null,
+  "active_entrypoint": "experiments/v705_rpccr_prospective_pairs/execute_prospective.py",
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
   "protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
   "report": "docs/RPCCR_PROSPECTIVE_PAIRS_V705_REPORT.md",
-  "execution_window_closed": true,
+  "execution_window_closed": false,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
   "independent_confirmation_trials": 0,
@@ -43,7 +43,7 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "V701_FINAL_PUSH_ACKNOWLEDGED_REMOTE_READBACK_TIMEOUT",
   "raw_run_cleanup_executed": false,
-  "active_run": null,
+  "active_run": "runs/v705_rpccr_prospective_pairs/prospective01",
   "previous_development_window_closed": true,
   "active_window": null,
   "previous_confirmation_trials": 24,
@@ -1530,7 +1530,7 @@
     "PHASE_COURSE_DISTANCE=6"
   ],
   "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip",
-  "active_pid": null,
+  "active_pid": 504288,
   "absolute_deadline_unix": 1793623749.9278908,
   "dynamic_independent_confirmation_trials": 24,
   "v697_development": {
@@ -1628,7 +1628,7 @@
   "analysis_protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
   "analysis_entrypoint": "experiments/v699_dynamic_packet_audit/launch.py",
   "analysis_active_run": null,
-  "analysis_window_closed": true,
+  "analysis_window_closed": false,
   "analysis_result": {
     "status": "V699_ZERO_AUDIT_REPAIR_VALIDATED_CLOSED",
     "closed_at": "2026-11-02T12:58:39.010137+08:00",
@@ -1686,7 +1686,7 @@
   },
   "v699_github_sync_record": "runs/v699_git_sync_result.json",
   "v700_scope": "Original24 across audit versions; import13/new11+3fixed repeats, not a fresh pool or reopened V698",
-  "active_automation": null,
+  "active_automation": "phase-v705",
   "v700_initial_monitor": {
     "old13_independent_reaudit": "PASS",
     "original24_noise_preflight": "PASS",
@@ -2293,21 +2293,23 @@
     "training_updates": 0,
     "automatic_fresh_pairs": false
   },
-  "round_window": "runs/v704_bootstrap_repair/ROUND_WINDOW.json",
-  "analysis_active": null,
+  "round_window": "runs/v705_rpccr_prospective_pairs/ROUND_WINDOW.json",
+  "analysis_active": "V705",
   "v704_window": {
     "started_unix": 1793623742.492043,
     "absolute_deadline_unix": 1793626442.492043,
     "limit_s": 2700,
     "pid": 501797,
-    "round_closed": false,
-    "navigation_attempts": 1,
+    "round_closed": true,
+    "navigation_attempts": 2,
     "max_navigation_executions": 2,
     "training_updates": 0,
     "algorithm_revisions": 0,
     "stage_access": 0,
     "real_robot": 0,
-    "single_cpu_sequential": true
+    "single_cpu_sequential": true,
+    "status": "BOOTSTRAP_REPAIR_ANCHORS_COMPLETE",
+    "elapsed_s": 557.2872202396393
   },
   "v704_preflight_status": "PASS",
   "v704_result": {
@@ -2632,5 +2634,20 @@
     "training_updates": 0,
     "old_windows_and_failures_preserved": true,
     "automatic_additional_pool": false
-  }
+  },
+  "v705_window": {
+    "started_unix": 1793624876.4872396,
+    "absolute_deadline_unix": 1793632076.4872396,
+    "limit_s": 7200,
+    "pid": 504288,
+    "round_closed": false,
+    "navigation_attempts": 1,
+    "max_navigation_executions": 10,
+    "training_updates": 0,
+    "algorithm_revisions": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "single_cpu_sequential": true
+  },
+  "v705_preflight_status": "PASS"
 }
