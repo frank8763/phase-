@@ -1,0 +1,104 @@
+{
+  "status": "V706_PREFLIGHT_FAILED_BEFORE_ACTOR_CONSTRUCTION_NO_NAVIGATION",
+  "review_at": "2026-11-02T22:22:12.009985+08:00",
+  "development_revision": 1,
+  "preflight_attempts": 1,
+  "qualified_preflights": 0,
+  "failed_seed": 10010001,
+  "failed_case": "WEST_EAST",
+  "failure": "NO_REGISTERED_WIDE_NONBLOCKING_LATE_ENCOUNTER_PATCH",
+  "actor_model_constructed": false,
+  "navigation_executions": 0,
+  "native_steps": 0,
+  "replay_steps": 0,
+  "private_integrations": 0,
+  "all_integration_accounts_exact": true,
+  "unexecuted": [
+    "t0_slot02",
+    "t0_slot03",
+    "main01",
+    "main02",
+    "main03",
+    "repeat01",
+    "repeat02",
+    "repeat03"
+  ],
+  "frozen_inputs_unchanged": 7867,
+  "archive": {
+    "status": "ALL_ARCHIVED_BYTES_VERIFIED",
+    "raw_files": 85,
+    "manifest_files": 87,
+    "stored_bytes": 143506,
+    "raw_deleted": false
+  },
+  "same_route_100x_densification": {
+    "scope": "100x densification of exactly the same saved route polyline, no changed geometry or threshold",
+    "dense_points": 22801,
+    "eligible_count": 0,
+    "max_known_clearance_with_other_constraints_m": 0.8879280381929998,
+    "new_integrations": 0,
+    "cannot_conclude_entire_scene_impossible": true
+  },
+  "offline_patch_diagnosis": {
+    "status": "OFFLINE_KNOWN_REFERENCE_PATCH_DIAGNOSIS",
+    "route_stats": {
+      "status": "GLOBAL_GOAL_PATH",
+      "expanded": 283,
+      "wall_s": 0.2652020390087273,
+      "minimum_clearance_m": 0.15526361127043398,
+      "local_goal_distance_m": 0.2375969236513672,
+      "goal_distance_m": 0.2375969236513672,
+      "guard_m": 0.155
+    },
+    "route_points": 229,
+    "route_length_m": 9.119875579704019,
+    "individual_condition_counts": {
+      "arc_start": 184,
+      "arc_end": 193,
+      "known_clearance_090": 88,
+      "start_distance_360": 133,
+      "goal_distance_140": 191,
+      "junction": 181
+    },
+    "combined_except_known_clearance_count": 49,
+    "all_conditions_count": 0,
+    "maximum_route_point_clearance_m": 1.7200061426519264,
+    "maximum_route_point_clearance_with_other_conditions_m": 0.8826558884106844,
+    "best_legal_except_clearance_point": [
+      3.1200815008817253,
+      -0.8964251946531504,
+      -0.42940174781786966,
+      1.0
+    ],
+    "physical_steps": 0,
+    "not_physical_impossibility_proof": true,
+    "whole_known_map_grid_necessary_conditions": [
+      {
+        "case_id": "WEST_EAST",
+        "sampled_known_clear_nonjunction_late_points": 3130,
+        "maximum_point_clearance_m": 1.4212669875137196,
+        "scope": "Necessary point constraints only; not reference, full sweep or dynamics certification"
+      },
+      {
+        "case_id": "NORTH_SOUTH",
+        "sampled_known_clear_nonjunction_late_points": 3096,
+        "maximum_point_clearance_m": 1.6700000017881491,
+        "scope": "Necessary point constraints only; not reference, full sweep or dynamics certification"
+      },
+      {
+        "case_id": "EAST_WEST",
+        "sampled_known_clear_nonjunction_late_points": 3746,
+        "maximum_point_clearance_m": 1.7608331292929944,
+        "scope": "Necessary point constraints only; not reference, full sweep or dynamics certification"
+      }
+    ]
+  },
+  "no_scene_impossibility_conclusion": true,
+  "original_completion_and_deadline_preserved": true,
+  "original_deadline_unix": 1793634462.3065274,
+  "overnight_deadline_unix": 1793664000.0,
+  "review_guard_present": true,
+  "remaining_development_revisions": 1,
+  "fresh_confirmation_not_started": true,
+  "no_training_stage_real_robot": true
+}

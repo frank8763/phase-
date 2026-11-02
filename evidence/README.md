@@ -177,3 +177,6 @@ V698[零积分原因补充](rpccr_dynamic_confirmation_v698_diagnosis_20261102/R
 
 ## V705原4新任务成对与计算对照
 [完整证据](rpccr_prospective_pairs_v705_20261102/README.md)保存8主+2固定完整重复、4t0及所有原始物理/控制/传感/源模型/因果/尾/配对审计。FULL4/4、SHADOW3/4，仅1对实际触发并出现到达差异；其余3对未触发且相同，全部保留。两完整重复误差0，53440导航/53440重放/30118368私有精确；1626原文件/485清单全解压哈希回读，原始runs保留。不把归档或影子消融当强基线与全面优势。[报告与范围](../docs/RPCCR_PROSPECTIVE_PAIRS_V705_REPORT.md)。
+
+## V706原场地预检失败
+[原失败全证据](rpccr_global_field_v706_20261102/README.md)85原文件/87清单回读，首预检无注册宽敞晚发现点，actor未生成、导航/私有/重放0；[后续零积分诊断](rpccr_global_field_v706_diagnosis_20261102/README.md)独立保存，不覆盖原归档。不能把未执行计失败或称全场无解。

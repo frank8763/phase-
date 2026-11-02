@@ -1,12 +1,12 @@
 {
-  "status": "V705_PROSPECTIVE_COMPUTE_CLOSED",
+  "status": "V706_FIELD_DEVELOPMENT_NOT_PASSED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
-  "protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
-  "report": "docs/RPCCR_PROSPECTIVE_PAIRS_V705_REPORT.md",
+  "protocol": "experiments/v706_global_field_qualification/PROTOCOL.md",
+  "report": "docs/RPCCR_GLOBAL_FIELD_V706_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -1686,7 +1686,7 @@
   },
   "v699_github_sync_record": "runs/v699_git_sync_result.json",
   "v700_scope": "Original24 across audit versions; import13/new11+3fixed repeats, not a fresh pool or reopened V698",
-  "active_automation": null,
+  "active_automation": "phase-global-overnight",
   "v700_initial_monitor": {
     "old13_independent_reaudit": "PASS",
     "original24_noise_preflight": "PASS",
@@ -2294,7 +2294,7 @@
     "automatic_fresh_pairs": false
   },
   "round_window": "runs/v705_rpccr_prospective_pairs/ROUND_WINDOW.json",
-  "analysis_active": null,
+  "analysis_active": "V706",
   "v704_window": {
     "started_unix": 1793623742.492043,
     "absolute_deadline_unix": 1793626442.492043,
@@ -2926,5 +2926,39 @@
     "remote_main": "e7c9e76323df11168ae07292bd5f8ba3455c78c8",
     "verified_remote_matches": true,
     "elapsed_s": 23.669519858027343
+  },
+  "v706_result": {
+    "status": "FIELD_DEVELOPMENT_NOT_PASSED",
+    "checks": {
+      "all_frozen_inputs": true,
+      "closed": true,
+      "fixed_window": true,
+      "exact_schedule": false,
+      "driver_completed": false,
+      "no_training_or_extra_navigation": true,
+      "v705_closed_prerequisite": true,
+      "all6_full_physical_causal_evidence": false,
+      "all3_fixed_preflights": false
+    },
+    "records": [],
+    "navigation_native_steps": 0,
+    "replay_native_steps": 0,
+    "private_integrations": 0,
+    "native_account_exact": true,
+    "replay_account_exact": true,
+    "private_account_exact": true,
+    "unique_development_tasks_executed": 0,
+    "confirmed_new_tasks": 0,
+    "unexecuted": [
+      "main01",
+      "main02",
+      "main03",
+      "repeat01",
+      "repeat02",
+      "repeat03"
+    ],
+    "training_updates": 0,
+    "new_integrations_in_audit": 0,
+    "scope": "Three predeclared routes in one original known field layout, development only. Not independent24 confirmation or algorithm superiority."
   }
 }
