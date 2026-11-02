@@ -1,0 +1,88 @@
+{
+  "status": "FULL_DECODE_QA_PASS",
+  "videos": [
+    {
+      "case": "single",
+      "seed": 95000011,
+      "label": "单未知障碍",
+      "source_pair": "runs/v657_static_fixed_work_confirmation/confirm_95000011_single_event/paired",
+      "source_hashes": {
+        "runs/v657_static_fixed_work_confirmation/confirm_95000011_single_event/paired/scene_model.mjb": "93812664873c649e631aa7ccaacfe7d4f37c2e9f248ec062eb6f177dbae4c95a",
+        "runs/v657_static_fixed_work_confirmation/confirm_95000011_single_event/paired/STATIC_PROTOCOL.json": "1ec3b15f101a9b216df17cb380359a29a955152362d2ad13a2c9c9356f203dbd",
+        "runs/v657_static_fixed_work_confirmation/confirm_95000011_single_event/paired/geometry_memory/v648_execution.jsonl": "1a0dbd01429772a9f6cac080e47d0fdcf94d84ad395de8ba7cc85877d85436aa",
+        "runs/v657_static_fixed_work_confirmation/confirm_95000011_single_event/paired/geometry_memory/result.json": "08588845d8f84bed54679367abadd455a76cf5740e93812a515313f6f389e6f4",
+        "runs/v657_static_fixed_work_confirmation/confirm_95000011_single_event/paired/NATIVE_REPLAY_AUDIT.json": "c4cc06d9a26510cdcbdd37fbeb796fd0c0405c59a633334c82c607da0b15bcf5"
+      },
+      "video": "phase_static_single_1080p.mp4",
+      "video_sha256": "6977938293e62fbb60ebc89a017516de7bb7e49f88f482cd8d068a9471a40c39",
+      "width": 1920,
+      "height": 1080,
+      "fps": 25,
+      "expected_video_frames": 1123,
+      "expected_duration_s": 44.92,
+      "original_simulation_time_s": 39.92,
+      "original_public_steps": 499,
+      "recorded_state_interval_s": 0.08,
+      "state_interpolation": false,
+      "playback_speed": 1.0,
+      "intro_s": 2,
+      "outro_s": 3,
+      "source_strict_arrival": true,
+      "source_final_goal_distance_m": 0.4443286412266003,
+      "source_minimum_native_clearance_m": 0.2227139908951845,
+      "render_integration_calls": 0,
+      "new_training_updates": 0,
+      "render_only_visual_changes": [
+        "camera",
+        "obstacle RGBA",
+        "decorative trail/goal/footprint",
+        "Chinese captions"
+      ],
+      "maximum_qpos_qvel_time_change_after_forward": 0.0
+    },
+    {
+      "case": "double",
+      "seed": 95000004,
+      "label": "双未知障碍",
+      "source_pair": "runs/v657_static_fixed_work_confirmation/confirm_95000004_legacy_two/paired",
+      "source_hashes": {
+        "runs/v657_static_fixed_work_confirmation/confirm_95000004_legacy_two/paired/scene_model.mjb": "d9a022f8aaa722814071f950f4c35e194987992ccdb59850103ab93735066587",
+        "runs/v657_static_fixed_work_confirmation/confirm_95000004_legacy_two/paired/STATIC_PROTOCOL.json": "e05d0e580d15acf88b1f344ccb6ebe938ab30246b19ca0e5940ad41fc3d37d9e",
+        "runs/v657_static_fixed_work_confirmation/confirm_95000004_legacy_two/paired/geometry_memory/v648_execution.jsonl": "61915e4405737e5a0d5e031dc99b57df235d6b861f995d903c44ec7a672fa18d",
+        "runs/v657_static_fixed_work_confirmation/confirm_95000004_legacy_two/paired/geometry_memory/result.json": "18da3d59d351867fa7cb360896250d93f257e015c3e55381d51998e2c4bfbf57",
+        "runs/v657_static_fixed_work_confirmation/confirm_95000004_legacy_two/paired/NATIVE_REPLAY_AUDIT.json": "8f638a44462a152962cced82c0d655fcf33e2743d7f5dea60bacb09b267fa86b"
+      },
+      "video": "phase_static_double_1080p.mp4",
+      "video_sha256": "5842386449160ac6c5dcb266c7a56f853cef1949f6b38b49bab10529b9c6d6dc",
+      "width": 1920,
+      "height": 1080,
+      "fps": 25,
+      "expected_video_frames": 1483,
+      "expected_duration_s": 59.32,
+      "original_simulation_time_s": 54.32,
+      "original_public_steps": 679,
+      "recorded_state_interval_s": 0.08,
+      "state_interpolation": false,
+      "playback_speed": 1.0,
+      "intro_s": 2,
+      "outro_s": 3,
+      "source_strict_arrival": true,
+      "source_final_goal_distance_m": 0.4453133291110104,
+      "source_minimum_native_clearance_m": 0.20188680526827185,
+      "render_integration_calls": 0,
+      "new_training_updates": 0,
+      "render_only_visual_changes": [
+        "camera",
+        "obstacle RGBA",
+        "decorative trail/goal/footprint",
+        "Chinese captions"
+      ],
+      "maximum_qpos_qvel_time_change_after_forward": 0.0
+    }
+  ],
+  "integration_calls": 0,
+  "training_updates": 0,
+  "review_guard_preserved": true,
+  "elapsed_s": 267.77638071001275,
+  "qa": "VIDEO_QA.json"
+}

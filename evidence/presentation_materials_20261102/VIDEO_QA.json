@@ -1,0 +1,53 @@
+{
+  "status": "BOTH_VIDEOS_FULL_DECODE_AND_PROVENANCE_PASS",
+  "videos": [
+    {
+      "video": "phase_static_single_1080p.mp4",
+      "checks": {
+        "native1080p": true,
+        "fps25": true,
+        "full_decode_frame_count": true,
+        "expected_duration": true,
+        "h264": true,
+        "source_and_video_hashes_verified": true,
+        "three_visual_samples": true,
+        "yuv420p": true
+      },
+      "codec_fourcc": "h264",
+      "stream_description": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 555 kb/s, 25 fps, 25 tbr, 12800 tbn (default)",
+      "decoded_frames": 1123,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_s": 44.92,
+      "bytes": 3132055,
+      "sha256": "6977938293e62fbb60ebc89a017516de7bb7e49f88f482cd8d068a9471a40c39"
+    },
+    {
+      "video": "phase_static_double_1080p.mp4",
+      "checks": {
+        "native1080p": true,
+        "fps25": true,
+        "full_decode_frame_count": true,
+        "expected_duration": true,
+        "h264": true,
+        "source_and_video_hashes_verified": true,
+        "three_visual_samples": true,
+        "yuv420p": true
+      },
+      "codec_fourcc": "h264",
+      "stream_description": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080, 539 kb/s, 25 fps, 25 tbr, 12800 tbn (default)",
+      "decoded_frames": 1483,
+      "fps": 25.0,
+      "width": 1920,
+      "height": 1080,
+      "duration_s": 59.32,
+      "bytes": 4019553,
+      "sha256": "5842386449160ac6c5dcb266c7a56f853cef1949f6b38b49bab10529b9c6d6dc"
+    }
+  ],
+  "new_physics_integration_steps": 0,
+  "new_training_updates": 0,
+  "review_guard_preserved": true,
+  "no_new_independent_trials": true
+}
