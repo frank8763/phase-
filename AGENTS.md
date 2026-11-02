@@ -165,3 +165,5 @@
 - 用户2026-11-02问下一步，按已提出的修复启动V704独立2700秒初始化工程验证；读experiments/v704_bootstrap_repair/PROTOCOL.md。最多4原t0/2旧slot14 FULL和SHADOW锚点，原45/50秒初始化上限不变，reset之前禁旧detour，原线上RP-CCR和安全不改。先原噪声/模型/规范初态，再完整旧811到达/335非到达等价和307共同计算/证书；首次异常停，不重试/换种子/继续新4对导航。原V702/V703失败和截止保持，源冻结运行中不编辑，所有积分只run_phase.sh单CPU，训练/Stage/实机0；闭批独立终审、全证据回读、恢复REVIEW_PENDING并删除本轮自动任务。
 
 - FINAL V704 BOOTSTRAP_REPAIR_AND_ANCHOR_EQUIVALENCE_VALIDATED；只修新factory reset之前旧detour开关，4预检/2旧slot14校准上限，全部实际/失败/未执行与原轨迹等价见docs/RPCCR_BOOTSTRAP_REPAIR_V704_REPORT.md。原4新任务导航仍0，旧失败/源码/截止不改；REVIEW_PENDING恢复，不自动追加新4对/距离/训练，Stage完全隔离。
+
+- 用户2026-11-02明确要求先报动态成功率再继续实验，V704已完全验证且远端2a5841d核验，授权独立V705原4项成对机制实验；读experiments/v705_rpccr_prospective_pairs/PROTOCOL.md。7200秒/4原t0/8新主+2固定重复，原99010001–04及相位/顺序不换。V704已验证factory/线上RP-CCR保持，旧2校准只复核证据不再导航；算法/训练0，FULL与SHADOW共同前缀及首提交计算/证书一致，影子不提交。原安全/因果/状态重放/329/657/路线/实际及影子尾/固定重复全部保留，首次异常停，不补种子/再修算法/扩大任务。源冻结运行中不编辑，只run_phase.sh单CPU单实例；截止一次固定不延长，旧V702/V703/V704封账不变，Stage完全隔离。闭批独立终审/全归档/恢复REVIEW_PENDING/删除本轮自动任务，再一次有界同步。

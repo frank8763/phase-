@@ -1,12 +1,12 @@
 {
-  "status": "V704_BOOTSTRAP_REPAIR_AND_ANCHOR_EQUIVALENCE_VALIDATED",
+  "status": "V705_PREREGISTERED_ORIGINAL_FOUR_PAIRS",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
-  "protocol": "experiments/v704_bootstrap_repair/PROTOCOL.md",
-  "report": "docs/RPCCR_BOOTSTRAP_REPAIR_V704_REPORT.md",
+  "protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
+  "report": "docs/RPCCR_PROSPECTIVE_PAIRS_V705_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -1625,7 +1625,7 @@
   "github_verified_evidence_commit": "1788cfb9def6af36c5141316a3459de03a9b109f",
   "github_remote_main_readback": "1788cfb9def6af36c5141316a3459de03a9b109f",
   "github_sync_record": "runs/v701_final_git_sync_result.json",
-  "analysis_protocol": "experiments/v704_bootstrap_repair/PROTOCOL.md",
+  "analysis_protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
   "analysis_entrypoint": "experiments/v699_dynamic_packet_audit/launch.py",
   "analysis_active_run": null,
   "analysis_window_closed": true,
@@ -2275,7 +2275,7 @@
     "elapsed_s": 30.874127318995306,
     "includes_v701_final_evidence": true
   },
-  "last_verified_remote_main": "121a01947e76748d5fbcce7a631bd85e44b07807",
+  "last_verified_remote_main": "2a5841d02016544f0904556394618dc92b555dab",
   "v701_final_remote_verified_at": "2026-11-02T18:06:01.032424+08:00",
   "v702_v703_remote_verified": false,
   "v704_authorization": {
@@ -2602,5 +2602,35 @@
     "old_v702_v703_failures_preserved": true,
     "training_updates": 0,
     "stage_access": 0
+  },
+  "v704_final_github_sync": {
+    "phase": "V704_FINAL_SCIENTIFIC_EVIDENCE",
+    "at": "2026-11-02T21:00:48.585200+08:00",
+    "evidence_commit": "2a5841d02016544f0904556394618dc92b555dab",
+    "push_attempts": 1,
+    "push_limit_s": 30,
+    "readback_limit_s": 5,
+    "push_exit": 0,
+    "readback_exit": 0,
+    "remote_main": "2a5841d02016544f0904556394618dc92b555dab",
+    "verified_remote_matches": true,
+    "elapsed_s": 11.016564912017202
+  },
+  "v705_authorization": {
+    "user_instruction": "好，先回答我现在这个动态的成功多少了？然后继续推进实验",
+    "date": "2026-11-02",
+    "scope": "After V704 validated closure continue the original four prespecified V702 tasks, paired FULL/SHADOW, plus original two fixed repeats",
+    "protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
+    "limit_s": 7200,
+    "max_navigation": 10,
+    "max_zero_integral_preflights": 4,
+    "new_unique_tasks": 4,
+    "main_per_condition": 4,
+    "fixed_repeats": 2,
+    "new_old_anchor_navigation": 0,
+    "algorithm_revisions": 0,
+    "training_updates": 0,
+    "old_windows_and_failures_preserved": true,
+    "automatic_additional_pool": false
   }
 }
