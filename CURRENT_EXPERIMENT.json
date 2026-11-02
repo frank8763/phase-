@@ -1,13 +1,13 @@
 {
-  "status": "V698_RUNNING_FROZEN_DYNAMIC_CONFIRMATION",
+  "status": "V698_NOT_PASSED_CLOSED_EMPTY_PACKET_AUDIT_BUG_DIAGNOSED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v698_rpccr_dynamic_confirmation/execute.py",
+  "active_entrypoint": null,
   "decision_freeze": "experiments/v698_rpccr_dynamic_confirmation/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
   "protocol": "experiments/v698_rpccr_dynamic_confirmation/PROTOCOL.md",
-  "report": "docs/RPCCR_DYNAMIC_INITIALIZATION_V697_REPORT.md",
-  "execution_window_closed": false,
+  "report": "docs/RPCCR_DYNAMIC_CONFIRMATION_V698_REPORT.md",
+  "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
   "independent_confirmation_trials": 0,
@@ -41,11 +41,11 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "LATEST_EVIDENCE_LOCAL_REMOTE_STATUS_UNVERIFIED",
+  "github_sync_status": "V698_RESULTS_LOCAL_COMMIT_PENDING_REMOTE_UNVERIFIED",
   "raw_run_cleanup_executed": false,
-  "active_run": "runs/v698_rpccr_dynamic_confirmation/confirmation01",
+  "active_run": null,
   "previous_development_window_closed": true,
-  "active_window": "runs/v698_rpccr_dynamic_confirmation/ROUND_WINDOW.json",
+  "active_window": null,
   "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
@@ -134,7 +134,7 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-11-02T03:03:30.540118+00:00",
+  "last_observed_at": "2026-11-02T12:35:58.823622+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": null,
   "v653_previous_confirmation_summary": {
@@ -154,8 +154,8 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/rpccr_dynamic_initialization_v697_20261102",
-  "requires_user_review_before_next_experiment": false,
+  "evidence": "evidence/rpccr_dynamic_confirmation_v698_20261102",
+  "requires_user_review_before_next_experiment": true,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
     "shared_original_window": "runs/v658_dynamic_unknown/development01/WINDOW.json",
@@ -1530,7 +1530,7 @@
     "PHASE_COURSE_DISTANCE=6"
   ],
   "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip",
-  "active_pid": 394222,
+  "active_pid": null,
   "absolute_deadline_unix": 1793603416.4944575,
   "dynamic_independent_confirmation_trials": 0,
   "v697_development": {
@@ -1556,5 +1556,70 @@
     "automatic_additional_simulation": false,
     "report": "docs/RPCCR_DYNAMIC_INITIALIZATION_V697_REPORT.md"
   },
-  "active_authorization": "RPCCR_DYNAMIC_CONFIRMATION_AUTHORIZATION_20261102.json"
+  "active_authorization": "RPCCR_DYNAMIC_CONFIRMATION_AUTHORIZATION_20261102.json",
+  "v698_result": {
+    "status": "NOT_PASSED",
+    "checks": {
+      "frozen_all_inputs": true,
+      "task_list_exact": true,
+      "closed": true,
+      "registered_absolute_window": true,
+      "no_algorithm_training_change": true,
+      "preflight24_independent": true,
+      "all24_main_without_replacement": false,
+      "exact_three_preselected_repeats": false,
+      "driver_provisional_gate": false,
+      "outer_freeze_unchanged": true,
+      "all_physical_evidence": false,
+      "at_least23_main_arrivals": false,
+      "both_groups_at_least11": false,
+      "three_full_repeats_recomputed": false
+    },
+    "fixed_task_denominator": 24,
+    "main_navigation_attempted": 13,
+    "main_result_count": 13,
+    "main_functional_arrivals": 12,
+    "main_navigation_unexecuted": 11,
+    "groups": {
+      "POSITIVE_Y": 12,
+      "NEGATIVE_Y": 0
+    },
+    "complete_repeats_attempted": 0,
+    "full24_navigation_success_rate": null,
+    "known_navigation_native_steps": 79472,
+    "known_native_replay_steps": 79472,
+    "known_private_integrations": 45532272,
+    "private_account_exact": true,
+    "minimum_actual_clearance_m": 0.264350748312812,
+    "verification_integrations": 0,
+    "training_updates": 0,
+    "algorithm_revisions": 0,
+    "scope": "Finite fixed blank8m/small actor/full-phase range-entry test under public3m startup prior; not arbitrary emergence, complex field, statistical superiority, mechanism attribution or infinite safety.",
+    "native_account_exact": true,
+    "replay_account_exact": true
+  },
+  "v698_diagnosis": {
+    "status": "V698_NOT_PASSED_CLOSED_DIAGNOSED",
+    "closed_at": "2026-11-02T12:35:58.823622+08:00",
+    "original_final_status": "NOT_PASSED",
+    "stop_reason": "Original frozen auditor compared empty ray array shape(0,7) with JSON[] shape(0,), causing false raw-packet mismatch",
+    "actual_strict_arrivals": 13,
+    "original_full_chain_audit_passes": 12,
+    "remaining_main_unexecuted": 11,
+    "preselected_repeats_unexecuted": 3,
+    "diagnosis": "runs/v698_rpccr_dynamic_confirmation/EMPTY_PACKET_DIAGNOSIS.json",
+    "diagnosis_integrations": 0,
+    "original_raw_packet_frames_checked": 9934,
+    "empty_observation_frames": 136,
+    "numeric_error": 0.0,
+    "original_navigation_native_steps": 79472,
+    "original_replay_native_steps": 79472,
+    "original_private_integrations": 45532272,
+    "all_original_accounts_exact": true,
+    "automation_deleted": "phase-v698",
+    "automatic_additional_simulation": false,
+    "original_deadline_unchanged": 1793603416.4944575,
+    "raw_evidence_retained": true,
+    "original_archive_reverified": true
+  }
 }
