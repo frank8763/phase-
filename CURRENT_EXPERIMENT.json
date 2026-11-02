@@ -2,21 +2,13 @@
   "status": "V696_CLOSED_PREFLIGHT_BLOCKED_NOT_CONFIRMED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v691_discovery_in_motion/execute.py",
+  "active_entrypoint": null,
   "decision_freeze": "runs/v696_discovery_fresh_confirmation/confirmation01/SOURCE_FREEZE.json",
   "source_revision": "dynamic_56_renewal_preview_verified_fixture",
   "protocol": "experiments/v696_discovery_fresh_confirmation/PROTOCOL.md",
   "report": "docs/DYNAMIC_OVERNIGHT_20261101_REPORT.md",
   "execution_window_closed": true,
-  "selected_configuration_arguments": [
-    "--seed",
-    "95000011",
-    "--initial-observation-steps",
-    "32",
-    "--max-steps",
-    "900",
-    "PHASE_COURSE_DISTANCE=6"
-  ],
+  "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
   "independent_confirmation_trials": 0,
   "static_gate_met": true,
@@ -1523,5 +1515,19 @@
     "raw_bytes": 129461154,
     "stored_bytes": 5096886,
     "raw_deleted": false
-  }
+  },
+  "research_algorithm": "RP-CCR",
+  "research_contract": "docs/RPCCR_RESEARCH_CONTRACT.md",
+  "research_objective": "Develop and validate RP-CCR risk/progress constrained continuous corridor recovery for a RAS methods paper.",
+  "implementation_scope": "Current V648–V696 geometry/dynamics/uncertainty/backup/BC work is implementation and component evidence; no independent full RP-CCR superiority claim.",
+  "historical_configuration_not_active": [
+    "--seed",
+    "95000011",
+    "--initial-observation-steps",
+    "32",
+    "--max-steps",
+    "900",
+    "PHASE_COURSE_DISTANCE=6"
+  ],
+  "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip"
 }

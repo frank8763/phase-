@@ -311,3 +311,9 @@ V696首次确认在slot12零步初始化失败提前关闭：旧临时任务采�
 
 ## 2026-11-02 用户汇报素材交付
 主要方法与长距离问题整理为8页PPT可复制文字（docs/PHASE_PPT_CONTENT_20261102.md）。两个静态视频取V657单95000011/双95000004，原成功状态双视角渲染1920×1080/25fps/H.264；完整解码1123/1483帧及44.92/59.32秒、来源SHA/原状态时间不变核验通过。精选包evidence/presentation_materials_20261102，原输出runs/report_materials_20261102；本次新增仿真积分/训练/独立试验0，原始证据、REVIEW_PENDING及已关闭夜间状态均保持。
+
+
+## RP-CCR研究主线明确校正
+2026-11-02用户明确纠正：核心研究算法是RP-CCR，目标是增强RAS方法论文的机制贡献与证据。后续修订必须对应RP-CCR的风险、目标进展或连续走廊恢复机制并设计同输入/控制/预算对照和消融；不能把通用安全监督器、BC课程或前瞻参数调整替代RP-CCR研究主体。当前组件开发与完整RP-CCR主张分开，不回填冻结历史，不把已有到达率当算法独立净收益；风险概率校准、持续可行/活性和原创性均按证据表述。执行约束见docs/RPCCR_RESEARCH_CONTRACT.md。
+
+RP-CCR修正版汇报素材已生成：evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip；docs/PHASE_PPT_CONTENT_20261102.md和docs/figures/rpccr_method_20261102.png已校正研究名称与贡献边界。两视频字节不变，0新增仿真/训练。
