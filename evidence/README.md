@@ -167,3 +167,7 @@ V698[零积分原因补充](rpccr_dynamic_confirmation_v698_diagnosis_20261102/R
 
 ## V702新任务计算对照：预检超时，导航未执行
 [完整原证据](rpccr_prospective_compute_v702_20261102/README.md)329原文件/128清单全解压回读通过，3项t0通过/第4旧初始化超时，全部旧校准/8新主/2重复未执行；没有全4成功率或触发率，不能把未执行计失败。原记录保持，[停止原因报告](../docs/RPCCR_PROSPECTIVE_COMPUTE_V702_REPORT.md)明确阶段和未知根因，不把工程预检异常当算法无效。原始runs全部保留。
+
+
+## V703零积分初始化栈诊断
+[原栈与失败证据](rpccr_bootstrap_trace_v703_20261102/README.md)保留旧reset几何/Hermite/B样条规划采样和结构化写出guard失败；不是新导航或初始化PASS。12原文件/14清单全部解压哈希回读通过，原始runs保留。[原因与修复设计](../docs/RPCCR_BOOTSTRAP_TRACE_V703_REPORT.md)。

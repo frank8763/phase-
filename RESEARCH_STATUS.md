@@ -401,3 +401,7 @@ V702于2026-11-02T17:49:09.927891+08:00启动master486078，唯一新硬截止20
 2026-11-02T17:50:20.493234+08:00 INCOMPLETE_OR_EXCEPTION；12固定执行中完成记录0，未执行['anchor_full', 'anchor_shadow', 'full1', 'shadow1', 'shadow2', 'full2', 'full3', 'shadow3', 'shadow4', 'full4', 'full1_repeat', 'shadow1_repeat']；导航/重放/私有已知0/0/0，精确性[True, True, True]。不是机制优越PASS或独立确认，原V700/V698不改，停止待审阅。
 
 V702停止原因已零积分定位到旧bootstrap选点之后、initialize返回/实际8m场景构建之前，slot4超时；无被停子进程栈，具体函数/环境根因未知。前3零积分预检通过，全部12实际导航未开始：旧校准0、新主0、重复0，新4到达/触发率未评估，原数字0不表示0/4实验失败。6808冻结输入不变，329原文件/128清单完整回读通过。原错误/COMPLETION/冻结代码/清单/截止不改，无重跑/换seed。REVIEW_PENDING恢复、phase-v702因已异常闭批和收尾删除；原V700/V701有效结论保持。下一步需单独有限零积分初始化阶段/栈诊断，当前没有追加积分。闭批记录RPCCR_PROSPECTIVE_COMPUTE_CLOSED_20261102.json。
+
+
+## V703单次零积分栈诊断
+同99010004在45秒内层/50秒外层、mj_step/1/2全部拒绝下采样栈，确认旧reset的风险绕行经过几何/Hermite/B样条，真实8m场地尚未构建；旧detour关闭在initialize之后，下一修复需提前隔离这一旧分支。诊断46.238s exit1，RESULT写出被旧guard拒绝，原异常保留未重跑，初始化是否最终返回不追认PASS。原V702被停进程仍无原栈，不伪称完全恢复根因。新增导航/预测/重放/训练0，REVIEW_PENDING保持，所有旧科学输入不变；当前仅定位与修复设计，未实施新初始化。报告docs/RPCCR_BOOTSTRAP_TRACE_V703_REPORT.md。
