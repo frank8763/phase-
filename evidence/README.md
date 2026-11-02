@@ -163,3 +163,7 @@ V698[零积分原因补充](rpccr_dynamic_confirmation_v698_diagnosis_20261102/R
 
 ## V701恢复续接机制诊断
 [完整证据](rpccr_recovery_ablation_v701_20261102/README.md)保存固定两已观察案例的FULL/COMPLETE_TAIL及消融完整重复6执行。FULL2到达，消融2安全非到达并各完全复现；全部6物理审核/4完整比较通过，24000导航与完整重放、12641776私有准确。769原文件/327清单全解压哈希回读，不把证据完整PASS当作泛化或全面算法优越。[报告与解释](../docs/RPCCR_RECOVERY_ABLATION_V701_REPORT.md)。原始runs保留。
+
+
+## V702新任务计算对照：预检超时，导航未执行
+[完整原证据](rpccr_prospective_compute_v702_20261102/README.md)329原文件/128清单全解压回读通过，3项t0通过/第4旧初始化超时，全部旧校准/8新主/2重复未执行；没有全4成功率或触发率，不能把未执行计失败。原记录保持，[停止原因报告](../docs/RPCCR_PROSPECTIVE_COMPUTE_V702_REPORT.md)明确阶段和未知根因，不把工程预检异常当算法无效。原始runs全部保留。
