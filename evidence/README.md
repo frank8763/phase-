@@ -171,3 +171,6 @@ V698[零积分原因补充](rpccr_dynamic_confirmation_v698_diagnosis_20261102/R
 
 ## V703零积分初始化栈诊断
 [原栈与失败证据](rpccr_bootstrap_trace_v703_20261102/README.md)保留旧reset几何/Hermite/B样条规划采样和结构化写出guard失败；不是新导航或初始化PASS。12原文件/14清单全部解压哈希回读通过，原始runs保留。[原因与修复设计](../docs/RPCCR_BOOTSTRAP_TRACE_V703_REPORT.md)。
+
+## V704初始化入口修复与旧锚点等价
+[完整证据](rpccr_bootstrap_repair_v704_20261102/README.md)包含4原t0通过和2旧slot14轨迹精确复现，FULL811到达/SHADOW335安全非到达；共同307步首提交候选与1297608共同预测积分相同。609原文件/254清单全部解压哈希再核验，9168导航/9168重放/5070640私有精确；旧V702/V703失败不改，原4新主导航0。[报告](../docs/RPCCR_BOOTSTRAP_REPAIR_V704_REPORT.md)。原始runs保留。

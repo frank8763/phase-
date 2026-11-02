@@ -163,3 +163,5 @@
 - V703单次零积分同99010004初始化诊断已封账：5秒栈确认旧Phase21 reset风险绕行规划经过几何/Hermite/B样条，真实8m arena尚未构建；run_static在initialize之后才禁用旧detour，入口耦合已定位。原V702进程无栈，不假装恢复其精确最终指令。V703 46.238s exit1，结构化RESULT因旧输出guard拒绝而缺失，初始阶段/栈/异常和COMPLETION保留，不能称初始化PASS，未重跑。mj_step/1/2全部前置拒绝，新增积分/导航/训练0、REVIEW_PENDING保持，6808旧输入与新冻结源不变。下一修复须新目录提前隔离旧reset规划并先模型/噪声计数/两旧轨迹等价校准，再另立原4任务导航协议；不延时刷种子。报告docs/RPCCR_BOOTSTRAP_TRACE_V703_REPORT.md。
 
 - 用户2026-11-02问下一步，按已提出的修复启动V704独立2700秒初始化工程验证；读experiments/v704_bootstrap_repair/PROTOCOL.md。最多4原t0/2旧slot14 FULL和SHADOW锚点，原45/50秒初始化上限不变，reset之前禁旧detour，原线上RP-CCR和安全不改。先原噪声/模型/规范初态，再完整旧811到达/335非到达等价和307共同计算/证书；首次异常停，不重试/换种子/继续新4对导航。原V702/V703失败和截止保持，源冻结运行中不编辑，所有积分只run_phase.sh单CPU，训练/Stage/实机0；闭批独立终审、全证据回读、恢复REVIEW_PENDING并删除本轮自动任务。
+
+- FINAL V704 BOOTSTRAP_REPAIR_AND_ANCHOR_EQUIVALENCE_VALIDATED；只修新factory reset之前旧detour开关，4预检/2旧slot14校准上限，全部实际/失败/未执行与原轨迹等价见docs/RPCCR_BOOTSTRAP_REPAIR_V704_REPORT.md。原4新任务导航仍0，旧失败/源码/截止不改；REVIEW_PENDING恢复，不自动追加新4对/距离/训练，Stage完全隔离。

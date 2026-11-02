@@ -412,3 +412,5 @@ V702停止原因已零积分定位到旧bootstrap选点之后、initialize返回
 在旧reset之前关闭无用detour分支并保留旧reset门，4原任务零积分预检后，仅2旧slot14等价校准；2700秒、不重试、无原4新任务导航。源边界核验通过，原6808冻结输入不变，原线上算法字节未改。协议experiments/v704_bootstrap_repair/PROTOCOL.md。
 
 - V704已启动2026-11-02 20:49:02.492+0800/master501797，积分硬截止21:34:02.492+0800（1793626442.492043），不可重置。4原t0已全PASS、噪声逐值误差0、原前3初始包/调用计数完全相同、reset前禁detour/旧detour调用0/初始化积分0；当前旧FULL/SHADOW校准阶段，原4新主导航仍0。phase-v704仅监控，完成/失败/截止后删；不自动扩展。
+
+- V704闭批 2026-11-02T20:58:39.511550+08:00：BOOTSTRAP_REPAIR_AND_ANCHOR_EQUIVALENCE_VALIDATED，4原种子预检及2旧锚点校准的实际执行/未执行见报告。新增原生/重放/私有 [9168, 9168, 5070640]，精确标志 [True, True, True]。原4新任务导航0，不报成功率；初始化工程修复不算算法创新，旧V702/V703失败不改，REVIEW_PENDING恢复，不自动追加导航。报告docs/RPCCR_BOOTSTRAP_REPAIR_V704_REPORT.md。
