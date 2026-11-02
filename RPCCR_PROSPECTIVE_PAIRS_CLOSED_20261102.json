@@ -1,0 +1,67 @@
+{
+  "status": "V705_PROSPECTIVE_COMPUTE_EVIDENCE_COMPLETE",
+  "closed_review_at": "2026-11-02T22:10:23.972547+08:00",
+  "original_driver_status": "FIXED_PROSPECTIVE_COMPUTE_PAIRS_COMPLETE",
+  "independent_status": "PROSPECTIVE_COMPUTE_EVIDENCE_COMPLETE",
+  "new_unique_tasks": 4,
+  "main_executions": 8,
+  "full_condition_arrivals": 4,
+  "shadow_condition_arrivals": 3,
+  "main_success_rates": {
+    "FULL": 1.0,
+    "SHADOW_COMPLETE_TAIL": 0.75
+  },
+  "mechanism_triggered_pairs": 1,
+  "mechanism_trigger_rate": 0.25,
+  "pair1_first_commit_and_physical_divergence_step": 312,
+  "pair1_equal_common_prefix_prediction_steps": 1312952,
+  "pair1_matching_return_decisions": 8,
+  "pairs_without_trigger_or_physical_difference": [
+    2,
+    3,
+    4
+  ],
+  "fixed_complete_repeats": 2,
+  "complete_repeat_errors": [
+    {
+      "qpos_full": 0.0,
+      "qvel_full": 0.0,
+      "ctrl": 0.0,
+      "mocap_pos": 0.0
+    },
+    {
+      "qpos_full": 0.0,
+      "qvel_full": 0.0,
+      "ctrl": 0.0,
+      "mocap_pos": 0.0
+    }
+  ],
+  "all_ten_physical_audits_passed": true,
+  "bad_obstacle_penetration_unknown_contacts_all_ten": 0,
+  "minimum_native_clearance_m": 0.3028490423853132,
+  "navigation_native_steps": 53440,
+  "replay_native_steps": 53440,
+  "private_integrations": 30118368,
+  "all_accounts_exact": true,
+  "unexecuted": [],
+  "elapsed_s": 3137.216479063034,
+  "original_limit_s": 7200,
+  "original_absolute_deadline_unix": 1793632076.4872396,
+  "deadline_not_extended": true,
+  "archive": {
+    "status": "ALL_ARCHIVED_BYTES_VERIFIED",
+    "raw_files": 1626,
+    "manifest_files": 485,
+    "stored_bytes": 57858384,
+    "raw_deleted": false
+  },
+  "frozen_inputs_unchanged": 7797,
+  "review_guard_restored": true,
+  "phase_execution_lock_available": true,
+  "training_updates": 0,
+  "stage_access": 0,
+  "real_robot": 0,
+  "old_v700_v698_v702_v703_v704_preserved": true,
+  "interpretation": "One reachability benefit among four prespecified new noise/phase pairs. Same compute only on common decisions before commit; endpoints and total actual work differ. Not broad superiority, a strong baseline comparison, complex-field acceptance, calibrated risk, recursive safety or RAS acceptance.",
+  "next_authorized_scope": "Separate prepared overnight original-field development V706, only after this review/commit/sync record and old monitor deletion; no new navigation in V705."
+}
