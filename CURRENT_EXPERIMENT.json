@@ -1,12 +1,12 @@
 {
-  "status": "V696_CLOSED_PREFLIGHT_BLOCKED_NOT_CONFIRMED",
+  "status": "V697_DEVELOPMENT_PASSED_CLOSED_NOT_DYNAMIC_ACCEPTANCE",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "runs/v696_discovery_fresh_confirmation/confirmation01/SOURCE_FREEZE.json",
-  "source_revision": "dynamic_56_renewal_preview_verified_fixture",
-  "protocol": "experiments/v696_discovery_fresh_confirmation/PROTOCOL.md",
-  "report": "docs/DYNAMIC_OVERNIGHT_20261101_REPORT.md",
+  "decision_freeze": "experiments/v697_rpccr_dynamic_initialization/CANDIDATE_FREEZE.json",
+  "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
+  "protocol": "experiments/v697_rpccr_dynamic_initialization/PROTOCOL.md",
+  "report": "docs/RPCCR_DYNAMIC_INITIALIZATION_V697_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -41,7 +41,7 @@
     "evidence": "evidence/static_unknown_20261031"
   },
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
-  "github_sync_status": "LOCAL_V683_EVIDENCE_COMMITTED_REMOTE_UNVERIFIED_TIMEOUT",
+  "github_sync_status": "LATEST_EVIDENCE_LOCAL_REMOTE_STATUS_UNVERIFIED",
   "raw_run_cleanup_executed": false,
   "active_run": null,
   "previous_development_window_closed": true,
@@ -134,7 +134,7 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-11-01T15:41:10.486734+08:00",
+  "last_observed_at": "2026-11-02T10:39:50.377622+08:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": null,
   "v653_previous_confirmation_summary": {
@@ -154,8 +154,8 @@
     "maximum_full_state_ctrl_error": 0.0,
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
-  "evidence": "evidence/dynamic_confirmation_v696_20261101",
-  "requires_user_review_before_next_experiment": false,
+  "evidence": "evidence/rpccr_dynamic_initialization_v697_20261102",
+  "requires_user_review_before_next_experiment": true,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
     "shared_original_window": "runs/v658_dynamic_unknown/development01/WINDOW.json",
@@ -1529,5 +1529,32 @@
     "900",
     "PHASE_COURSE_DISTANCE=6"
   ],
-  "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip"
+  "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip",
+  "active_pid": null,
+  "absolute_deadline_unix": 1793589208.691719,
+  "dynamic_independent_confirmation_trials": 0,
+  "v697_development": {
+    "status": "V697_DEVELOPMENT_PASSED_CLOSED",
+    "closed_at": "2026-11-02T10:39:50.377622+08:00",
+    "protocol": "experiments/v697_rpccr_dynamic_initialization/PROTOCOL.md",
+    "registered_absolute_deadline_unix": 1793589208.691719,
+    "registered_limit_seconds": 3600,
+    "actual_window_elapsed_seconds": 1446.3232443332672,
+    "preflights_passed": 24,
+    "navigation_executions_passed": 3,
+    "new_unique_development_tasks": 1,
+    "independent_confirmation_navigation_trials": 0,
+    "navigation_native_steps": 18728,
+    "native_replay_steps": 18728,
+    "private_prediction_integrations": 11440168,
+    "algorithm_revisions": 0,
+    "training_updates": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "old_overnight_records_preserved": true,
+    "phase_execution_lock_available_at_close": true,
+    "automatic_additional_simulation": false,
+    "report": "docs/RPCCR_DYNAMIC_INITIALIZATION_V697_REPORT.md"
+  },
+  "active_authorization": null
 }
