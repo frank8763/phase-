@@ -1,13 +1,13 @@
 {
-  "status": "V697_DEVELOPMENT_PASSED_CLOSED_NOT_DYNAMIC_ACCEPTANCE",
+  "status": "V698_RUNNING_FROZEN_DYNAMIC_CONFIRMATION",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": null,
-  "decision_freeze": "experiments/v697_rpccr_dynamic_initialization/CANDIDATE_FREEZE.json",
+  "active_entrypoint": "experiments/v698_rpccr_dynamic_confirmation/execute.py",
+  "decision_freeze": "experiments/v698_rpccr_dynamic_confirmation/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
-  "protocol": "experiments/v697_rpccr_dynamic_initialization/PROTOCOL.md",
+  "protocol": "experiments/v698_rpccr_dynamic_confirmation/PROTOCOL.md",
   "report": "docs/RPCCR_DYNAMIC_INITIALIZATION_V697_REPORT.md",
-  "execution_window_closed": true,
+  "execution_window_closed": false,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
   "independent_confirmation_trials": 0,
@@ -43,9 +43,9 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "LATEST_EVIDENCE_LOCAL_REMOTE_STATUS_UNVERIFIED",
   "raw_run_cleanup_executed": false,
-  "active_run": null,
+  "active_run": "runs/v698_rpccr_dynamic_confirmation/confirmation01",
   "previous_development_window_closed": true,
-  "active_window": null,
+  "active_window": "runs/v698_rpccr_dynamic_confirmation/ROUND_WINDOW.json",
   "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
@@ -134,7 +134,7 @@
     "native_clearance_min_m": 0.1927867356233937,
     "cusp_bookkeeping_audit_passed": false
   },
-  "last_observed_at": "2026-11-02T10:39:50.377622+08:00",
+  "last_observed_at": "2026-11-02T03:03:30.540118+00:00",
   "conditional_overnight_authorization": "OVERNIGHT_AUTHORIZATION.json",
   "next_fresh_confirmation": null,
   "v653_previous_confirmation_summary": {
@@ -155,7 +155,7 @@
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
   "evidence": "evidence/rpccr_dynamic_initialization_v697_20261102",
-  "requires_user_review_before_next_experiment": true,
+  "requires_user_review_before_next_experiment": false,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
     "shared_original_window": "runs/v658_dynamic_unknown/development01/WINDOW.json",
@@ -1530,8 +1530,8 @@
     "PHASE_COURSE_DISTANCE=6"
   ],
   "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip",
-  "active_pid": null,
-  "absolute_deadline_unix": 1793589208.691719,
+  "active_pid": 394222,
+  "absolute_deadline_unix": 1793603416.4944575,
   "dynamic_independent_confirmation_trials": 0,
   "v697_development": {
     "status": "V697_DEVELOPMENT_PASSED_CLOSED",
@@ -1556,5 +1556,5 @@
     "automatic_additional_simulation": false,
     "report": "docs/RPCCR_DYNAMIC_INITIALIZATION_V697_REPORT.md"
   },
-  "active_authorization": null
+  "active_authorization": "RPCCR_DYNAMIC_CONFIRMATION_AUTHORIZATION_20261102.json"
 }
