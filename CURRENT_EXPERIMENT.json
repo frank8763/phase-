@@ -1,5 +1,5 @@
 {
-  "status": "V704_PREREGISTERED_BOOTSTRAP_REPAIR",
+  "status": "V704_RUNNING_OLD_ANCHOR_EQUIVALENCE",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
@@ -43,7 +43,7 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "V701_FINAL_PUSH_ACKNOWLEDGED_REMOTE_READBACK_TIMEOUT",
   "raw_run_cleanup_executed": false,
-  "active_run": null,
+  "active_run": "runs/v704_bootstrap_repair/repair01",
   "previous_development_window_closed": true,
   "active_window": null,
   "previous_confirmation_trials": 24,
@@ -1625,10 +1625,10 @@
   "github_verified_evidence_commit": "1788cfb9def6af36c5141316a3459de03a9b109f",
   "github_remote_main_readback": "1788cfb9def6af36c5141316a3459de03a9b109f",
   "github_sync_record": "runs/v701_final_git_sync_result.json",
-  "analysis_protocol": "experiments/v703_bootstrap_trace/PROTOCOL.md",
+  "analysis_protocol": "experiments/v704_bootstrap_repair/PROTOCOL.md",
   "analysis_entrypoint": "experiments/v699_dynamic_packet_audit/launch.py",
   "analysis_active_run": null,
-  "analysis_window_closed": true,
+  "analysis_window_closed": false,
   "analysis_result": {
     "status": "V699_ZERO_AUDIT_REPAIR_VALIDATED_CLOSED",
     "closed_at": "2026-11-02T12:58:39.010137+08:00",
@@ -1686,7 +1686,7 @@
   },
   "v699_github_sync_record": "runs/v699_git_sync_result.json",
   "v700_scope": "Original24 across audit versions; import13/new11+3fixed repeats, not a fresh pool or reopened V698",
-  "active_automation": null,
+  "active_automation": "phase-v704",
   "v700_initial_monitor": {
     "old13_independent_reaudit": "PASS",
     "original24_noise_preflight": "PASS",
@@ -2292,5 +2292,22 @@
     "old_windows_closed": true,
     "training_updates": 0,
     "automatic_fresh_pairs": false
-  }
+  },
+  "round_window": "runs/v704_bootstrap_repair/ROUND_WINDOW.json",
+  "analysis_active": "V704",
+  "v704_window": {
+    "started_unix": 1793623742.492043,
+    "absolute_deadline_unix": 1793626442.492043,
+    "limit_s": 2700,
+    "pid": 501797,
+    "round_closed": false,
+    "navigation_attempts": 1,
+    "max_navigation_executions": 2,
+    "training_updates": 0,
+    "algorithm_revisions": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "single_cpu_sequential": true
+  },
+  "v704_preflight_status": "PASS"
 }
