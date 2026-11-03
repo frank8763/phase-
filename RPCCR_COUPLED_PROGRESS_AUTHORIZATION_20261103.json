@@ -1,0 +1,74 @@
+{
+  "authorized_at": "2026-11-03T17:35:23.704380+08:00",
+  "user_instruction": "下一步开始",
+  "scope": "One new finite coupled observation/progress component qualification, three fixed schedules plus successful exact repeats; no full navigation",
+  "limit_s": 1200,
+  "checkpoint": 32,
+  "profiles": [
+    "STRAIGHT",
+    "LEFT_RIGHT",
+    "RIGHT_LEFT"
+  ],
+  "profile_targets": {
+    "STRAIGHT": [
+      [
+        2,
+        2
+      ]
+    ],
+    "LEFT_RIGHT": [
+      [
+        -4,
+        8
+      ],
+      [
+        8,
+        -4
+      ],
+      [
+        -4,
+        8
+      ],
+      [
+        8,
+        -4
+      ]
+    ],
+    "RIGHT_LEFT": [
+      [
+        8,
+        -4
+      ],
+      [
+        -4,
+        8
+      ],
+      [
+        8,
+        -4
+      ],
+      [
+        -4,
+        8
+      ]
+    ]
+  },
+  "refresh_public": 4,
+  "phase_public": 24,
+  "scheduled_public": 96,
+  "maximum_public_per_branch": 137,
+  "maximum_branches": 6,
+  "old_replay_native": 584,
+  "old_replayed_packets": 41,
+  "maximum_private_integrations": 47560,
+  "maximum_actual_validation_native": 6576,
+  "maximum_new_packets": 822,
+  "new_navigation": 0,
+  "new_confirmation": 0,
+  "training_updates": 0,
+  "stage_access": 0,
+  "real_robot": 0,
+  "no_retries": true,
+  "old_failures_and_deadlines_preserved": true,
+  "protocol": "experiments/v749_coupled_observation_progress/PROTOCOL.md"
+}
