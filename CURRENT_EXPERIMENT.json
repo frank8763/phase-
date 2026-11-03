@@ -1,5 +1,5 @@
 {
-  "status": "MAP_CONDITIONED_PROGRESS_RUNNING",
+  "status": "TAIL_REENTRY_QUALIFICATION_PREPARED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
@@ -3108,7 +3108,7 @@
     },
     "scientific_archive_unchanged": true
   },
-  "entrypoint": "experiments/v772_map_conditioned_progress/execute_probe.py",
+  "entrypoint": "experiments/v776_retained_tail_reentry_qualification/execute_probe.py",
   "v710_result": {
     "status": "FIELD_DEVELOPMENT_NOT_PASSED",
     "checks": {
@@ -4060,8 +4060,8 @@
     "raw_evidence_retained": true,
     "no_automatic_retry": true
   },
-  "current_protocol": "experiments/v772_map_conditioned_progress/PROTOCOL.md",
-  "current_report": "docs/RPCCR_OBSERVATION_COMMITMENT_V762_V768_REPORT.md",
+  "current_protocol": "experiments/v776_retained_tail_reentry_qualification/PROTOCOL.md",
+  "current_report": "docs/RPCCR_MAP_CONDITIONED_V769_V775_REPORT.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
     "status": "CLOSED_OBSERVATION_INTERFACE_VERIFIED_CONTINUATION_NOT_QUALIFIED",
@@ -4610,5 +4610,80 @@
       "D": 2
     },
     "conditional_map_motion_class": true
+  },
+  "map_conditioned_closure": {
+    "status": "CLOSED_MAP_CONDITIONED_PHYSICAL_PROGRESS_NOT_PASSED",
+    "closed_at": "2026-11-03T19:38:28.734874+08:00",
+    "report": "docs/RPCCR_MAP_CONDITIONED_V769_V775_REPORT.md",
+    "qualification_passed": true,
+    "qualification_state116_counts": {
+      "A": 0,
+      "B": 6,
+      "C": 7,
+      "D": 2
+    },
+    "qualification_audit": "GEOMETRY_REACHABILITY_ALL_SAVED_SETS_AND_QUERIES_VERIFIED",
+    "original_v770_import_failure_preserved": true,
+    "conditional_nonpenetrating_motion_class": true,
+    "physical_profiles": [
+      {
+        "profile": "MAP_HISTORY",
+        "active_public": 124,
+        "public_steps": 161,
+        "accepted_refreshes": 31,
+        "attempted_refreshes": 32,
+        "actual_goal_progress_before_tail_m": 0.5418941700326894,
+        "final_goal_progress_m": 0.5596003894263282,
+        "actual_after_release_goal_progress_m": 0.13399898213270944,
+        "target_turn_sign_flips": 3,
+        "actual_active_yaw_range_deg": 46.32414956228613,
+        "last_static_rejections": 0,
+        "last_unknown_rejections": 15,
+        "last_terminal_tick_rejections": 15,
+        "repeat_executed": false
+      },
+      {
+        "profile": "MAP_FUTURE",
+        "active_public": 92,
+        "public_steps": 129,
+        "accepted_refreshes": 23,
+        "attempted_refreshes": 24,
+        "actual_goal_progress_before_tail_m": 0.5104551402707482,
+        "final_goal_progress_m": 0.5098186023903288,
+        "actual_after_release_goal_progress_m": 0.0842171950967101,
+        "target_turn_sign_flips": 3,
+        "actual_active_yaw_range_deg": 26.87495130361328,
+        "last_static_rejections": 0,
+        "last_unknown_rejections": 15,
+        "last_terminal_tick_rejections": 3,
+        "repeat_executed": false
+      }
+    ],
+    "physical_independent_audit": "MAP_CONDITIONED_PROGRESS_SAVED_EVIDENCE_VERIFIED",
+    "component_qualified": false,
+    "full_dynamic_passed": false,
+    "conditional_repeats_unexecuted": 2,
+    "old_replayed_native": 584,
+    "private_integrations": 275848,
+    "actual_new_native": 2320,
+    "actual_new_packets": 290,
+    "coverage_queries": 95410,
+    "minimum_actual_clearance_m": 0.31181304893907813,
+    "bad_contacts": 0,
+    "maximum_replay_and_prediction_error": 0.0,
+    "history_saved_trajectories": 30,
+    "history_admission_flips": 0,
+    "history_direct_error": 6.661338147750939e-16,
+    "new_complete_navigation": 0,
+    "new_confirmation": 0,
+    "training_updates": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "old_failures_and_deadlines_preserved": true,
+    "review_guard_restored": true,
+    "execution_lock_free": true,
+    "entrypoint": null,
+    "active_automation": null,
+    "no_additional_control_versions_this_round": true
   }
 }
