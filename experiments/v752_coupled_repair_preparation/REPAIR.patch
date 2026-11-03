@@ -1,0 +1,38 @@
+--- frozen_v749/probe.py
++++ future_candidate/probe.py
+@@ -16,6 +16,8 @@
+ from renewal_state import decode,encode
+ from sensor_model import packet as sensed_packet
+ from retained_coupled import prepare_retained
++from packet_contract import packet_equal
++from canonical_sensor_pose import sensor_pose
+ read=lambda p:json.loads(p.read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+ root=repo/'runs/v749_coupled_observation_progress';root.mkdir(exist_ok=False)
+ def dump(n,v):(root/n).write_text(json.dumps(v,indent=2,allow_nan=False)+'\n')
+@@ -36,7 +38,7 @@
+   with gzip.open(cell/'sensor_packets.jsonl.gz','rt')as stream:old_packets=[json.loads(s)for s in stream]
+   for packet in old_packets:
+    regenerated=sensed_packet(packet['xy'],packet['yaw'],packet['time'],packet['step'],protocol,motion,initial_calls)
+-   assert all(np.array_equal(packet[k],regenerated[k])for k in['lidar','depth']),'ORIGINAL_SENSOR_BACKEND_NOT_EXACT'
++   assert packet_equal(packet,regenerated),'ORIGINAL_SENSOR_BACKEND_NOT_EXACT'
+   dump('SENSOR_CALIBRATION.json',dict(status='ALL_ORIGINAL_177_NOISY_PACKETS_EXACT',packets=len(old_packets),model_initializations=0,new_integrations=0))
+   assert len(old_packets)==177
+   m=mujoco.MjModel.from_binary_path(str(pair/'scene_model.mjb'));d=mujoco.MjData(m);d.qpos[:]=protocol['start_qpos'];motion.apply(m,d);mujoco.mj_forward(m,d);geometry=SelfGeometry(m,mujoco);catalog=GeometryCatalog(m,mujoco,pair/'assets/isolated_indoor.xml');bounds=np.asarray(protocol['footprint_bounds']);fixed_geom=m.geom_pos.copy()
+@@ -82,7 +84,7 @@
+    else:max_validation=max(max_validation,error)
+    return error
+   def observe(real,domain,public):
+-   pp=poses(real.qpos[None,:])[0];packet=sensed_packet(pp[:2].astype(np.float32),pp[2],float(real.time),public,protocol,motion,initial_calls);domain.update(packet);times=domain.time+np.linspace(0,3.28,329);truth=np.asarray([motion.xy(t)for t in times]);excess=float(domain.point_lower(truth,times).max());assert excess<=1e-7,'CAUSAL_DOMAIN_TRUE_ACTOR_EXCLUSION';return dict(packet=packet,domain=encode(domain),maximum_actual_coverage_excess_m=excess)
++   xy,yaw=sensor_pose(real.qpos);packet=sensed_packet(xy,yaw,float(real.time),public,protocol,motion,initial_calls);domain.update(packet);times=domain.time+np.linspace(0,3.28,329);truth=np.asarray([motion.xy(t)for t in times]);excess=float(domain.point_lower(truth,times).max());assert excess<=1e-7,'CAUSAL_DOMAIN_TRUE_ACTOR_EXCLUSION';return dict(packet=packet,domain=encode(domain),maximum_actual_coverage_excess_m=excess)
+   calibration=forecast(d,base,np.array([0.,0.,8.,-8.]),'CALIBRATION',hold_first=True);cr,cq,cv,cc=calibration;assert cr['admissible'];cz=np.load(root/'CALIBRATION_PRIVATE.npz')
+   with gzip.open(cell/'observation_scan_certificate.json.gz','rt')as f:original_scan=json.load(f)
+   assert max(np.max(abs(cq-original_scan['qpos'])),np.max(abs(cv-original_scan['qvel'])),np.max(abs(cc-original_scan['controls'])))<=1e-8,'OLD_SCAN_PREDICTION_NOT_IDENTICAL'
+@@ -91,7 +93,7 @@
+    tick=public*8
+    if public==0:command=cc[0]
+    else:command,gate=controller.command(d);assert np.array_equal(command,cc[tick])
+-   perform(d,command,cq[tick:tick+8],cv[tick:tick+8],33+public,store,True);obs=observe(d,bd,33+public);assert obs['packet']==old_packets[33+public]and obs['domain']==beliefs[33+public]['free_space_renewal'];calobs.append(obs)
++   perform(d,command,cq[tick:tick+8],cv[tick:tick+8],33+public,store,True);obs=observe(d,bd,33+public);assert packet_equal(obs['packet'],old_packets[33+public])and obs['domain']==beliefs[33+public]['free_space_renewal'];calobs.append(obs)
+    if public==0:
+     cache,evidence=prepare_retained(proof,d,predictor.command_map);controller.cache=cache;controller.executing=True
+     import copy

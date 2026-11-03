@@ -1,0 +1,35 @@
+--- frozen_v750/audit.py
++++ future_audit/audit.py
+@@ -14,6 +14,7 @@
+ from recursive_domain import RecursiveDomain
+ from renewal_state import encode
+ from sensor_model import packet as sensed_packet
++from packet_contract import packet_equal
+ repo=Path(__file__).resolve().parents[2];raw=repo/'runs/v749_coupled_observation_progress';root=repo/'runs/v750_coupled_progress_audit';root.mkdir(exist_ok=False);read=lambda p:json.loads(p.read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();started=time.time();window=dict(started_unix=started,absolute_deadline_unix=started+600,limit_s=600,round_closed=False,new_initializations=0,new_integrations=0)
+ def dump(n,v):(root/n).write_text(json.dumps(v,indent=2,allow_nan=False)+'\n')
+ def clone(d):
+@@ -36,7 +37,7 @@
+  with gzip.open(cell/'sensor_packets.jsonl.gz','rt')as f:old=[json.loads(s)for s in f]
+  beliefs={x['step']:x for x in map(json.loads,(cell/'motion_estimate.jsonl').read_text().splitlines())};domain=RecursiveDomain(p['start_qpos'][:2])
+  for pkt in old:
+-  assert pkt==sensed_packet(pkt['xy'],pkt['yaw'],pkt['time'],pkt['step'],p,motion,initial_calls);domain.update(pkt);assert encode(domain)==beliefs[pkt['step']]['free_space_renewal']
++  assert packet_equal(pkt,sensed_packet(pkt['xy'],pkt['yaw'],pkt['time'],pkt['step'],p,motion,initial_calls));domain.update(pkt);assert encode(domain)==beliefs[pkt['step']]['free_space_renewal']
+   if pkt['step']==32:base=clone(domain)
+  assert len(old)==177
+  rows=[json.loads(s)for s in(cell/'v648_execution.jsonl').read_text().splitlines()];replay=np.load(raw/'ORIGINAL_256_NATIVE_REPLAY.npz');assert replay['qpos'].shape[0]==256;old_replay=np.load(repo/'runs/v746_early_observation_handover/ORIGINAL_944_NATIVE_REPLAY.npz')
+@@ -71,13 +72,13 @@
+     except AssertionError:pass
+     else:raise AssertionError('NEGATIVE_JOIN_ACCEPTED')
+  def observe(row,q,step,domain):
+-  pkt=row['packet'];pp=poses(q[None,:])[0];assert pkt['step']==step and abs(pkt['time']-(step*.08))<=1e-9 and np.array_equal(np.asarray(pkt['xy']),pp[:2].astype(np.float32).astype(float))and abs(pkt['yaw']-pp[2])<=1e-12 and pkt==sensed_packet(pkt['xy'],pkt['yaw'],pkt['time'],step,p,motion,initial_calls);domain.update(pkt);assert row['domain']==encode(domain);times=domain.time+np.linspace(0,3.28,329);excess=float(domain.point_lower(np.asarray([motion.xy(t)for t in times]),times).max());assert excess<=1e-7 and abs(excess-row['maximum_actual_coverage_excess_m'])<=1e-10
++  pkt=row['packet'];pp=poses(q[None,:])[0];assert pkt['step']==step and abs(pkt['time']-(step*.08))<=1e-9 and np.array_equal(np.asarray(pkt['xy']),pp[:2].astype(np.float32).astype(float))and abs(pkt['yaw']-pp[2])<=1e-12 and packet_equal(pkt,sensed_packet(pkt['xy'],pkt['yaw'],pkt['time'],step,p,motion,initial_calls));domain.update(pkt);assert row['domain']==encode(domain);times=domain.time+np.linspace(0,3.28,329);excess=float(domain.point_lower(np.asarray([motion.xy(t)for t in times]),times).max());assert excess<=1e-7 and abs(excess-row['maximum_actual_coverage_excess_m'])<=1e-10
+  geometry(replay,0.);cal=read(raw/'CALIBRATION.json');cr=cal['record'];cz=prediction(cr,initialq,initialv,initialc,base);assert cr['admissible']and cr['target']==[0.,0.,8.,-8.];adapter(cr,cz,base,True)
+  with gzip.open(cell/'observation_scan_certificate.json.gz','rt')as f:oldcert=json.load(f)
+  assert max(np.max(abs(cz[k]-oldcert[k]))for k in ['qpos','qvel','controls','poses'])<=1e-8
+  ca=np.load(raw/'CALIBRATION_ACTUAL.npz');assert all(np.max(abs(ca[k]-cz[k]))<=1e-8 for k in ['qpos','qvel','controls']);geometry(ca,base.time);cd=clone(base)
+  with gzip.open(raw/'CALIBRATION_OBSERVATIONS.json.gz','rt')as f:co=json.load(f)
+- for j,o in enumerate(co):observe(o,ca['qpos'][8*j+7],33+j,cd);assert o['packet']==old[33+j]and o['domain']==beliefs[33+j]['free_space_renewal']
++ for j,o in enumerate(co):observe(o,ca['qpos'][8*j+7],33+j,cd);assert packet_equal(o['packet'],old[33+j])and o['domain']==beliefs[33+j]['free_space_renewal']
+  assert len(co)==41 and cal['negative_cases']==['qpos','qvel','time','ctrl','schedule']and cal['original_replay']==584
+  expected_order=[];qualified_profiles=[]
+  for profile in ['STRAIGHT','LEFT_RIGHT','RIGHT_LEFT']:
