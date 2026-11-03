@@ -1,12 +1,12 @@
 {
-  "status": "V724_CLOSED_NOT_PASSED_FUNCTIONAL_AND_AUDIT_EXCEPTION",
+  "status": "CLOSED_FIXED_DIAGNOSES_COMPLETE_FULL_FIELD_DYNAMIC_NOT_PASSED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
   "protocol": "experiments/v707_field_reference_revision/PROTOCOL.md",
-  "report": "docs/RPCCR_PROGRESS_OBSERVATION_V724_ANALYSIS.md",
+  "report": "docs/RPCCR_GLOBAL_DYNAMIC_BOTTLENECK_V726_V729_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -3670,5 +3670,62 @@
     "elapsed_s": 35.00555601599626,
     "raw_evidence_retained": true,
     "no_automatic_retry": true
+  },
+  "global_bottleneck_diagnosis": {
+    "status": "CLOSED_FIXED_DIAGNOSES_COMPLETE_FULL_FIELD_DYNAMIC_NOT_PASSED",
+    "closed_at": "2026-11-03T12:10:08.668319+08:00",
+    "original_v724_failure_unchanged": true,
+    "v726_supplement": {
+      "started_unix": 1793677779.542945,
+      "absolute_deadline_unix": 1793678079.542945,
+      "limit_s": 300,
+      "round_closed": true,
+      "new_initializations": 0,
+      "new_integrations": 0,
+      "status": "REMAINING_PHYSICAL_CAUSAL_SAVED_CHECKS_COMPLETE_FUNCTIONAL_FAIL_RETAINED",
+      "records": [
+        {
+          "script": "audit_shadow_mode.py",
+          "status": "PASS",
+          "failed_checks": []
+        },
+        {
+          "script": "audit_field_discovery.py",
+          "status": "FAIL",
+          "failed_checks": [
+            "moving_before_discovery",
+            "new_causal_route_after_stop",
+            "actually_continued_after_replanning",
+            "strict_arrival"
+          ]
+        }
+      ],
+      "elapsed_s": 12.651753664016724
+    },
+    "v727_eligibility_status": "NOT_QUALIFIED",
+    "v727_probability_domain_used_for_physics": false,
+    "v727_saved_packets": 455,
+    "v727_actual_coverage_samples": 149695,
+    "v728_native_diagnosis_status": "FIXED_EARLY_OBSERVATION_NATIVE_DIAGNOSIS_COMPLETE",
+    "v729_saved_audit_status": "ALL_SAVED_NATIVE_SENSOR_RENEWAL_AND_FINITE_ACCOUNTS_VERIFIED",
+    "fixed_native_candidates": 11,
+    "safe_native_branches": 5,
+    "terminal_forward_witnesses_passed": 0,
+    "original_replay_steps": 512,
+    "private_integrations": 3528,
+    "candidate_scene_validation_integrations": 1640,
+    "all_integration_accounts_exact": true,
+    "minimum_actual_native_clearance_m": 0.31181304893907813,
+    "bad_contacts": 0,
+    "full_native_state_errors": 0.0,
+    "new_navigation_samples": 0,
+    "new_confirmation_samples": 0,
+    "training_updates": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "active_automation": null,
+    "no_automatic_more_physics": true,
+    "review_guard_restored": true,
+    "report": "docs/RPCCR_GLOBAL_DYNAMIC_BOTTLENECK_V726_V729_REPORT.md"
   }
 }
