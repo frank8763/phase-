@@ -1,5 +1,5 @@
 {
-  "status": "V778_FROZEN_GLOBAL_MAIN_READY",
+  "status": "V779_GLOBAL_ENTRY_CONTINUATION_READY",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
@@ -3108,7 +3108,7 @@
     },
     "scientific_archive_unchanged": true
   },
-  "entrypoint": "experiments/v778_global_retained_reentry/execute_global.py",
+  "entrypoint": "experiments/v779_global_entry_continuation/execute_continuation.py",
   "v710_result": {
     "status": "FIELD_DEVELOPMENT_NOT_PASSED",
     "checks": {
@@ -4060,8 +4060,8 @@
     "raw_evidence_retained": true,
     "no_automatic_retry": true
   },
-  "current_protocol": "experiments/v778_global_retained_reentry/PROTOCOL.md",
-  "current_report": "docs/RPCCR_MAP_CONDITIONED_V769_V777_REPORT.md",
+  "current_protocol": "experiments/v779_global_entry_continuation/PROTOCOL.md",
+  "current_report": "docs/RPCCR_GLOBAL_REENTRY_V778_REPORT.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
     "status": "CLOSED_OBSERVATION_INTERFACE_VERIFIED_CONTINUATION_NOT_QUALIFIED",
@@ -4751,5 +4751,30 @@
     "raw_evidence_retained": true,
     "no_automatic_retry": true
   },
-  "global_reentry_authorization": "RPCCR_GLOBAL_REENTRY_AUTHORIZATION_20261103.json"
+  "global_reentry_authorization": "RPCCR_GLOBAL_REENTRY_AUTHORIZATION_20261103.json",
+  "global_reentry_window": {
+    "started_unix": 1793708019.1040614,
+    "absolute_deadline_unix": 1793711019.1040614,
+    "limit_s": 3000,
+    "pid": 686466,
+    "round_closed": true,
+    "attempted_navigation": 0,
+    "training_updates": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "task": {
+      "slot": 1,
+      "seed": 10010001,
+      "phase": 0.6573753567727383,
+      "case_id": "WEST_EAST",
+      "initial_axis_motion_direction": "POSITIVE_AXIS",
+      "course_distance_m": 8.0,
+      "role": "DEVELOPMENT_KNOWN_TASK",
+      "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route"
+    },
+    "status": "STOPPED_EXCEPTION",
+    "elapsed_s": 8.907196760177612
+  },
+  "original_global_deadline_unix": 1793711019.1040614,
+  "old_v778_recording_failure_preserved": true
 }
