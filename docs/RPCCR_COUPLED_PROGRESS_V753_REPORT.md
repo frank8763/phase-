@@ -80,3 +80,5 @@ V753实际25.786秒提前闭批，唯一1200秒窗不延长。V754独立零模�
 - 归因：runs/v755_coupled_failure_attribution/RESULT.json、DECISIONS.json。
 - 历史证书：runs/v756_coupled_history_certificate_check/RESULT.json、RECORDS.json。
 - 完整证据：evidence/rpccr_coupled_progress_v753_v756_20261103/RAW_INVENTORY.json.gz、MANIFEST.json。
+
+最终同步：科学证据提交eb77a899bb35880b4e384dd9175f0d3ec2b34802；30秒push和5秒只读核验均超时，远端状态未知，未循环重试。全部本地证据和原始runs完整保留。
