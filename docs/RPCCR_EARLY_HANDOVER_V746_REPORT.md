@@ -71,3 +71,5 @@ V748仅使用已保存数据，模型初始化和积分API前置拒绝，零新�
 - 归因全部候选/包：runs/v748_handover_failure_attribution/CANDIDATES.json、OBSERVATION_WINDOWS.json、RESULT.json。
 - 全证据：evidence/rpccr_early_handover_v746_v748_20261103/RAW_INVENTORY.json.gz、MANIFEST.json。
 - 有界同步实际记录：RPCCR_EARLY_HANDOVER_SYNC_20261103.json（一次30秒push、5秒只读核验，不循环）。
+
+本次同步实际结果：30秒push和5秒只读远端核验均超时，远端是否收到提交未知，不能声称已同步成功。已保留本地完整提交与全部原始证据，不自动循环重试；详见RPCCR_EARLY_HANDOVER_SYNC_20261103.json。
