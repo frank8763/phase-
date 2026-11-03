@@ -1,12 +1,12 @@
 {
-  "status": "V708_JOINT_GEOMETRY_FROZEN",
+  "status": "V710_CLOSED_PREFLIGHT_AUDITOR_IMPORT_ERROR_NO_NAVIGATION",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
   "protocol": "experiments/v707_field_reference_revision/PROTOCOL.md",
-  "report": "docs/GLOBAL_DYNAMIC_OVERNIGHT_20261102_REPORT.md",
+  "report": "docs/RPCCR_JOINT_FIELD_V710_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -155,7 +155,7 @@
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
   "evidence": "evidence/rpccr_dynamic_continuation_v700_20261102",
-  "requires_user_review_before_next_experiment": false,
+  "requires_user_review_before_next_experiment": true,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
     "shared_original_window": "runs/v658_dynamic_unknown/development01/WINDOW.json",
@@ -1531,7 +1531,7 @@
   ],
   "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip",
   "active_pid": null,
-  "absolute_deadline_unix": 1793623749.9278908,
+  "absolute_deadline_unix": 1793673470.1656423,
   "dynamic_independent_confirmation_trials": 24,
   "v697_development": {
     "status": "V697_DEVELOPMENT_PASSED_CLOSED",
@@ -1628,7 +1628,7 @@
   "analysis_protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
   "analysis_entrypoint": "experiments/v699_dynamic_packet_audit/launch.py",
   "analysis_active_run": null,
-  "analysis_window_closed": true,
+  "analysis_window_closed": false,
   "analysis_result": {
     "status": "V699_ZERO_AUDIT_REPAIR_VALIDATED_CLOSED",
     "closed_at": "2026-11-02T12:58:39.010137+08:00",
@@ -2294,7 +2294,7 @@
     "automatic_fresh_pairs": false
   },
   "round_window": "runs/v705_rpccr_prospective_pairs/ROUND_WINDOW.json",
-  "analysis_active": "V708_PURE_GEOMETRY",
+  "analysis_active": "ZERO_INTEGRATION_AUDIT_ENTRY_DIAGNOSIS",
   "v704_window": {
     "started_unix": 1793623742.492043,
     "absolute_deadline_unix": 1793626442.492043,
@@ -3108,5 +3108,39 @@
     },
     "scientific_archive_unchanged": true
   },
-  "entrypoint": null
+  "entrypoint": null,
+  "v710_result": {
+    "status": "FIELD_DEVELOPMENT_NOT_PASSED",
+    "checks": {
+      "all_frozen_inputs": true,
+      "closed": true,
+      "fixed_window": true,
+      "exact_schedule": false,
+      "driver_completed": false,
+      "no_training_or_extra_navigation": true,
+      "v705_closed_prerequisite": true,
+      "all6_full_physical_causal_evidence": false,
+      "all3_fixed_preflights": false
+    },
+    "records": [],
+    "navigation_native_steps": 0,
+    "replay_native_steps": 0,
+    "private_integrations": 0,
+    "native_account_exact": true,
+    "replay_account_exact": true,
+    "private_account_exact": true,
+    "unique_development_tasks_executed": 0,
+    "confirmed_new_tasks": 0,
+    "unexecuted": [
+      "main01",
+      "main02",
+      "main03",
+      "repeat01",
+      "repeat02",
+      "repeat03"
+    ],
+    "training_updates": 0,
+    "new_integrations_in_audit": 0,
+    "scope": "Three predeclared routes in one original known field layout, development only. Not independent24 confirmation or algorithm superiority."
+  }
 }
