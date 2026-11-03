@@ -43,3 +43,5 @@ RP-CCR风险与恢复交接需纳入“未发现阶段”的因果自由空间�
 [联合资格几何报告](RPCCR_JOINT_GEOMETRY_V708_V709_REPORT.md)，[V712原独立报告](RPCCR_JOINT_FIELD_V712_REPORT.md)，[零积分诊断](../runs/v713_unseen_frontier_diagnosis/DIAGNOSIS.json)。
 
 ![仅几何资格参考，非实际导航轨迹](../runs/joint_geometry_review_20261103/joint_geometry_v709.png)
+
+同步记录：科学证据本地提交72cf781d631cc46a888be06bc49c843725ad75ad；一次有界30秒push与5秒远端只读均超时，远端更新未确认，不循环重试，原始证据保留。
