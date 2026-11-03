@@ -1,0 +1,114 @@
+{
+  "status": "CLOSED_PHYSICAL_PROGRESS_NOT_PASSED_TAIL_REENTRY_QUALIFIED",
+  "closed_at": "2026-11-03T19:47:28.376451+08:00",
+  "report": "docs/RPCCR_MAP_CONDITIONED_V769_V777_REPORT.md",
+  "qualification_passed": true,
+  "qualification_state116_counts": {
+    "A": 0,
+    "B": 6,
+    "C": 7,
+    "D": 2
+  },
+  "qualification_audit": "GEOMETRY_REACHABILITY_ALL_SAVED_SETS_AND_QUERIES_VERIFIED",
+  "original_v770_import_failure_preserved": true,
+  "conditional_nonpenetrating_motion_class": true,
+  "physical_profiles": [
+    {
+      "profile": "MAP_HISTORY",
+      "active_public": 124,
+      "public_steps": 161,
+      "accepted_refreshes": 31,
+      "attempted_refreshes": 32,
+      "actual_goal_progress_before_tail_m": 0.5418941700326894,
+      "final_goal_progress_m": 0.5596003894263282,
+      "actual_after_release_goal_progress_m": 0.13399898213270944,
+      "target_turn_sign_flips": 3,
+      "actual_active_yaw_range_deg": 46.32414956228613,
+      "last_static_rejections": 0,
+      "last_unknown_rejections": 15,
+      "last_terminal_tick_rejections": 15,
+      "repeat_executed": false
+    },
+    {
+      "profile": "MAP_FUTURE",
+      "active_public": 92,
+      "public_steps": 129,
+      "accepted_refreshes": 23,
+      "attempted_refreshes": 24,
+      "actual_goal_progress_before_tail_m": 0.5104551402707482,
+      "final_goal_progress_m": 0.5098186023903288,
+      "actual_after_release_goal_progress_m": 0.0842171950967101,
+      "target_turn_sign_flips": 3,
+      "actual_active_yaw_range_deg": 26.87495130361328,
+      "last_static_rejections": 0,
+      "last_unknown_rejections": 15,
+      "last_terminal_tick_rejections": 3,
+      "repeat_executed": false
+    }
+  ],
+  "physical_independent_audit": "MAP_CONDITIONED_PROGRESS_SAVED_EVIDENCE_VERIFIED",
+  "component_qualified": false,
+  "full_dynamic_passed": false,
+  "conditional_repeats_unexecuted": 2,
+  "old_replayed_native": 584,
+  "private_integrations": 275848,
+  "actual_new_native": 2320,
+  "actual_new_packets": 290,
+  "coverage_queries": 95410,
+  "minimum_actual_clearance_m": 0.31181304893907813,
+  "bad_contacts": 0,
+  "maximum_replay_and_prediction_error": 0.0,
+  "history_saved_trajectories": 30,
+  "history_admission_flips": 0,
+  "history_direct_error": 6.661338147750939e-16,
+  "new_complete_navigation": 0,
+  "new_confirmation": 0,
+  "training_updates": 0,
+  "stage_access": 0,
+  "real_robot": 0,
+  "old_failures_and_deadlines_preserved": true,
+  "review_guard_restored": true,
+  "execution_lock_free": true,
+  "entrypoint": null,
+  "active_automation": null,
+  "no_additional_control_versions_this_round": true,
+  "old_replayed_native_total": 4216,
+  "private_integrations_total": 290608,
+  "tail_geometric_reference_pass_windows": {
+    "MAP_HISTORY": [
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144
+    ],
+    "MAP_FUTURE": []
+  },
+  "tail_reentry_qualification": {
+    "states": [
+      138,
+      140,
+      144
+    ],
+    "admissible_counts": [
+      12,
+      9,
+      2
+    ],
+    "positive_progress_counts": [
+      4,
+      3,
+      0
+    ],
+    "old_replay_native": 3632,
+    "private_integrations": 14760,
+    "old_reproduced_packets": 422,
+    "actual_new_native": 0,
+    "new_actual_executed": false,
+    "independent_audit": "RETAINED_TAIL_REENTRY_SAVED_EVIDENCE_VERIFIED"
+  },
+  "tail_interface_original_failure_preserved": true,
+  "no_active_model_or_integrations": true
+}
