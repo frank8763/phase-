@@ -1,5 +1,5 @@
 {
-  "status": "PREPARING_FINITE_OBSERVATION_PROGRESS_CYCLE",
+  "status": "PREPARED_FINAL_BOUNDED_CERTIFIED_RELEASE",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
@@ -4060,7 +4060,7 @@
     "raw_evidence_retained": true,
     "no_automatic_retry": true
   },
-  "current_protocol": "experiments/v764_observation_progress_cycle/PROTOCOL.md",
+  "current_protocol": "experiments/v767_certified_progress_release/PROTOCOL.md",
   "current_report": "docs/RPCCR_STATE_FEEDBACK_V759_REPORT.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
@@ -4484,5 +4484,25 @@
     "private": 236488,
     "audit": "OBSERVATION_COMMITMENT_SAVED_EVIDENCE_VERIFIED",
     "full_dynamic_passed": false
+  },
+  "observation_cycle_closure": {
+    "status": "CLOSED_NO_OBSERVATION_RELEASE",
+    "active_public_steps": 112,
+    "actual_native": 1192,
+    "private": 143008,
+    "actual_packets": 149,
+    "audit": "OBSERVATION_PROGRESS_CYCLE_SAVED_EVIDENCE_VERIFIED",
+    "zero_physics_release_alternatives": [
+      64,
+      68,
+      72,
+      76,
+      80,
+      84,
+      88,
+      92,
+      96,
+      100
+    ]
   }
 }
