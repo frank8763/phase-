@@ -1,5 +1,5 @@
 {
-  "status": "PREPARED_FIXED_STATE_FEEDBACK_QUALIFICATION",
+  "status": "PREPARING_BOUNDED_STATE_FEEDBACK_EXECUTION",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
@@ -4060,7 +4060,7 @@
     "raw_evidence_retained": true,
     "no_automatic_retry": true
   },
-  "current_protocol": "experiments/v757_state_feedback_qualification/PROTOCOL.md",
+  "current_protocol": "experiments/v759_state_feedback_execution/PROTOCOL.md",
   "current_report": "docs/RPCCR_COUPLED_PROGRESS_V753_REPORT.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
@@ -4364,5 +4364,22 @@
     "raw_evidence_retained": true,
     "no_automatic_retry": true
   },
-  "state_feedback_authorization": "RPCCR_STATE_FEEDBACK_AUTHORIZATION_20261103.json"
+  "state_feedback_authorization": "RPCCR_STATE_FEEDBACK_AUTHORIZATION_20261103.json",
+  "state_feedback_qualification_closure": {
+    "status": "CLOSED_THREE_SAVED_STATES_HAVE_QUALIFIED_ALTERNATIVES",
+    "audit": "runs/v758_state_feedback_audit/RESULT.json",
+    "original_replay_native": 1184,
+    "private_integrations": 15744,
+    "actual_new_native": 0,
+    "admissible_counts": [
+      5,
+      12,
+      10
+    ],
+    "positive_progress_counts": [
+      1,
+      11,
+      6
+    ]
+  }
 }
