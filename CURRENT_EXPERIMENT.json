@@ -1,5 +1,5 @@
 {
-  "status": "CLOSED_PHYSICAL_PROGRESS_NOT_PASSED_TAIL_REENTRY_QUALIFIED",
+  "status": "V778_FROZEN_GLOBAL_MAIN_READY",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
@@ -33,7 +33,7 @@
     "V672 brake-first backup did not change the original843public controls; actual fallback still reverse",
     "V673 joint cover keeps position-velocity association but940steps failed after finite brake tail completed; recursive continuation not established",
     "Fixed64frame linear temporal constraints only slightly narrowed some y velocity intervals; no information-theoretic impossibility proof",
-    "Previous V674/V675 raw-command mismatch failures preserved; canonical actuator mapping verified V676\u2013V678. Privileged scene witness is not causal unknown dynamic success."
+    "Previous V674/V675 raw-command mismatch failures preserved; canonical actuator mapping verified V676–V678. Privileged scene witness is not causal unknown dynamic success."
   ],
   "previous_candidate": {
     "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
@@ -1519,7 +1519,7 @@
   "research_algorithm": "RP-CCR",
   "research_contract": "docs/RPCCR_RESEARCH_CONTRACT.md",
   "research_objective": "Develop and validate RP-CCR risk/progress constrained continuous corridor recovery for a RAS methods paper.",
-  "implementation_scope": "Current V648\u2013V696 geometry/dynamics/uncertainty/backup/BC work is implementation and component evidence; no independent full RP-CCR superiority claim.",
+  "implementation_scope": "Current V648–V696 geometry/dynamics/uncertainty/backup/BC work is implementation and component evidence; no independent full RP-CCR superiority claim.",
   "historical_configuration_not_active": [
     "--seed",
     "95000011",
@@ -2279,7 +2279,7 @@
   "v701_final_remote_verified_at": "2026-11-02T18:06:01.032424+08:00",
   "v702_v703_remote_verified": false,
   "v704_authorization": {
-    "user_instruction": "\u4e0b\u4e00\u6b65\uff1f",
+    "user_instruction": "下一步？",
     "date": "2026-11-02",
     "scope": "Implement proposed initialization repair, four original zero-integration preflights and two exact old anchors only",
     "protocol": "experiments/v704_bootstrap_repair/PROTOCOL.md",
@@ -2619,7 +2619,7 @@
     "elapsed_s": 11.016564912017202
   },
   "v705_authorization": {
-    "user_instruction": "\u597d\uff0c\u5148\u56de\u7b54\u6211\u73b0\u5728\u8fd9\u4e2a\u52a8\u6001\u7684\u6210\u529f\u591a\u5c11\u4e86\uff1f\u7136\u540e\u7ee7\u7eed\u63a8\u8fdb\u5b9e\u9a8c",
+    "user_instruction": "好，先回答我现在这个动态的成功多少了？然后继续推进实验",
     "date": "2026-11-02",
     "scope": "After V704 validated closure continue the original four prespecified V702 tasks, paired FULL/SHADOW, plus original two fixed repeats",
     "protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
@@ -3050,7 +3050,7 @@
     "private_integrations": 0,
     "replay_integrations": 0,
     "account_scope": "Two completed zero-integration field initializations/preflights both stopped before actor construction; no navigation/predictor/replay or training reached. All actual integration counts exact0.",
-    "reserved_confirmation_pool": "10020001\u201310020024",
+    "reserved_confirmation_pool": "10020001–10020024",
     "confirmation_pool_used": false,
     "training_updates": 0,
     "stage_access": 0,
@@ -3108,7 +3108,7 @@
     },
     "scientific_archive_unchanged": true
   },
-  "entrypoint": null,
+  "entrypoint": "experiments/v778_global_retained_reentry/execute_global.py",
   "v710_result": {
     "status": "FIELD_DEVELOPMENT_NOT_PASSED",
     "checks": {
@@ -4060,7 +4060,7 @@
     "raw_evidence_retained": true,
     "no_automatic_retry": true
   },
-  "current_protocol": "experiments/v776_retained_tail_reentry_qualification/PROTOCOL.md",
+  "current_protocol": "experiments/v778_global_retained_reentry/PROTOCOL.md",
   "current_report": "docs/RPCCR_MAP_CONDITIONED_V769_V777_REPORT.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
@@ -4382,7 +4382,7 @@
       6
     ]
   },
-  "window_closed": true,
+  "window_closed": false,
   "state_feedback_closure": {
     "status": "CLOSED_STATE_FEEDBACK_COMPONENT_NOT_QUALIFIED",
     "closed_at": "2026-11-03T18:39:35.839280+08:00",
@@ -4750,5 +4750,6 @@
     "elapsed_s": 10.016626029042527,
     "raw_evidence_retained": true,
     "no_automatic_retry": true
-  }
+  },
+  "global_reentry_authorization": "RPCCR_GLOBAL_REENTRY_AUTHORIZATION_20261103.json"
 }
