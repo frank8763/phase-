@@ -56,3 +56,5 @@ V752从原V735已经真实执行的33–73帧完整状态提取修复副本的�
 - 部分证据独立审核：runs/v751_coupled_packet_schema_diagnosis/RESULT.json。
 - 完整旧校准离线预演：runs/v752_coupled_fixture_rehearsal/RESULT.json。
 - 全证据清单：evidence/rpccr_coupled_progress_v749_v752_20261103/RAW_INVENTORY.json.gz、MANIFEST.json。
+
+本次同步实际结果：30秒push与5秒只读核验均超时，远端状态未知，未重试；本地科学证据提交c815417c3701e884b875b6fb79e1fc4c1a3549ad和全部原始runs完整保留。
