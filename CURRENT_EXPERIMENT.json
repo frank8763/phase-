@@ -1,11 +1,11 @@
 {
-  "status": "V737_FIXED_JOINT_RETURN_DIAGNOSIS_PREPARED",
+  "status": "CLOSED_ALL_FIXED_INPUTS_REJECTED_GLOBAL_DYNAMIC_NOT_PASSED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
-  "protocol": "experiments/v707_field_reference_revision/PROTOCOL.md",
+  "protocol": "experiments/v737_joint_return_qualification/PROTOCOL.md",
   "report": "docs/RPCCR_JOINT_RETURN_V737_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
@@ -3910,5 +3910,63 @@
     "raw_evidence_retained": true,
     "no_automatic_retry": true
   },
-  "joint_return_diagnosis_authorization": "RPCCR_JOINT_RETURN_AUTHORIZATION_20261103.json"
+  "joint_return_diagnosis_authorization": "RPCCR_JOINT_RETURN_AUTHORIZATION_20261103.json",
+  "joint_return_diagnosis": {
+    "status": "CLOSED_ALL_FIXED_INPUTS_REJECTED_GLOBAL_DYNAMIC_NOT_PASSED",
+    "closed_at": "2026-11-03T13:31:46.703600+08:00",
+    "protocol": "experiments/v737_joint_return_qualification/PROTOCOL.md",
+    "report": "docs/RPCCR_JOINT_RETURN_V737_REPORT.md",
+    "window": {
+      "started_unix": 1793683465.029425,
+      "absolute_deadline_unix": 1793684065.029425,
+      "limit_s": 600,
+      "round_closed": true,
+      "pid": 2,
+      "status": "FIXED_JOINT_INPUT_QUALIFICATION_COMPLETE",
+      "elapsed_s": 22.058181762695312
+    },
+    "old_v735_failure_and_deadline_preserved": true,
+    "checkpoints": [
+      140,
+      144,
+      148
+    ],
+    "distinct_first_commands": [
+      11,
+      11,
+      5
+    ],
+    "total_commands": 27,
+    "total_tail_predictions": 567,
+    "joint_admissible": 0,
+    "missed_qualified_returns": {
+      "140": 0,
+      "144": 0,
+      "148": 0
+    },
+    "all_old_top_rejections_exact": true,
+    "original_replay_native_steps": 1184,
+    "private_integrations": 188136,
+    "scene_validation_integrations": 0,
+    "maximum_original_replay_error": 0.0,
+    "minimum_actual_replay_clearance_m": 0.2993410208635221,
+    "minimum_actual_replay_self_margin_m": 0.009263626050671714,
+    "bad_contacts": 0,
+    "new_navigation_samples": 0,
+    "new_confirmation_samples": 0,
+    "independent_audit": "ALL_FIXED_JOINT_RETURN_EVIDENCE_VERIFIED",
+    "attribution_status": "FIXED_JOINT_REJECTION_ATTRIBUTION_COMPLETE",
+    "known_static_passes": 567,
+    "self_and_terminal_passes": 567,
+    "unaged_information_counterfactual_passes": 561,
+    "unaged_counterfactual_used_for_execution": false,
+    "training_updates": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "all_accounts_exact": true,
+    "review_guard_restored": true,
+    "execution_lock_free": true,
+    "no_active_automation": true,
+    "no_additional_physics_in_this_batch": true
+  }
 }
