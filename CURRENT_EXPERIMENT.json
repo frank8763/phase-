@@ -1,12 +1,12 @@
 {
-  "status": "V717_TEMPORAL_INTERVAL_OFFLINE_RUNNING",
+  "status": "RECURSIVE_UNSEEN_IMPLEMENTED_PILOT_NOT_PASSED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
   "protocol": "experiments/v707_field_reference_revision/PROTOCOL.md",
-  "report": "docs/RPCCR_JOINT_FIELD_20261103_REPORT.md",
+  "report": "docs/RPCCR_RENEWAL_PILOT_V721_ANALYSIS.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -155,7 +155,7 @@
     "evidence": "evidence/static_fixed_work_development_v656_20261101"
   },
   "evidence": "evidence/rpccr_dynamic_continuation_v700_20261102",
-  "requires_user_review_before_next_experiment": false,
+  "requires_user_review_before_next_experiment": true,
   "previous_static_acceptance_report": "docs/STATIC_ACCEPTANCE_V657_REPORT.md",
   "dynamic_development": {
     "shared_original_window": "runs/v658_dynamic_unknown/development01/WINDOW.json",
@@ -1531,7 +1531,7 @@
   ],
   "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip",
   "active_pid": null,
-  "absolute_deadline_unix": 1793673470.1656423,
+  "absolute_deadline_unix": 1793675376.3270504,
   "dynamic_independent_confirmation_trials": 24,
   "v697_development": {
     "status": "V697_DEVELOPMENT_PASSED_CLOSED",
@@ -2294,7 +2294,7 @@
     "automatic_fresh_pairs": false
   },
   "round_window": "runs/v705_rpccr_prospective_pairs/ROUND_WINDOW.json",
-  "analysis_active": "V717_PURE_TEMPORAL_INTERVAL_PROOF",
+  "analysis_active": null,
   "v704_window": {
     "started_unix": 1793623742.492043,
     "absolute_deadline_unix": 1793626442.492043,
@@ -3255,5 +3255,111 @@
     "verified_remote_matches": false,
     "elapsed_s": 35.03714832698461,
     "original_evidence_retained": true
+  },
+  "v721_result": {
+    "status": "RECURSIVE_UNSEEN_PILOT_NOT_PASSED",
+    "checks": {
+      "all_frozen_inputs": true,
+      "closed": true,
+      "fixed_window": true,
+      "exact_schedule": false,
+      "driver_completed": false,
+      "no_training_or_extra_navigation": true,
+      "v705_closed_prerequisite": true,
+      "causal_renewal_prerequisites": true,
+      "all_two_full_physical_causal_evidence": false,
+      "one_fixed_preflight": true
+    },
+    "records": [
+      {
+        "name": "main01",
+        "role": "DEVELOPMENT_MAIN",
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "checks": {
+          "INDEPENDENT_CANONICAL_AUDIT.json": true,
+          "ROUTE_COMMITMENT_AUDIT.json": true,
+          "PROJECTION_LEARNING_AUDIT.json": true,
+          "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+          "SHADOW_MODE_AUDIT.json": true,
+          "v699_discovery_audit/DISCOVERY_CHAIN_AUDIT_V699.json": false,
+          "strict_full_chain": false,
+          "complete_replay": true
+        },
+        "passed": false,
+        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "public_steps": 174,
+        "goal_distance_m": 7.265067352637195,
+        "minimum_native_clearance_m": 0.31181304893907813,
+        "native_steps": 1392,
+        "private_integrations": 724680,
+        "replay_steps": 1392,
+        "wall_seconds": 103.98865496201324
+      }
+    ],
+    "navigation_native_steps": 1392,
+    "replay_native_steps": 1392,
+    "private_integrations": 724680,
+    "native_account_exact": true,
+    "replay_account_exact": true,
+    "private_account_exact": true,
+    "unique_development_tasks_executed": 1,
+    "confirmed_new_tasks": 0,
+    "unexecuted": [
+      "repeat01"
+    ],
+    "training_updates": 0,
+    "new_integrations_in_audit": 0,
+    "scope": "One original WEST_EAST development task and conditional exact repeat. Other original routes and24 confirmation remain unexecuted; no global superiority."
+  },
+  "recursive_unseen_closure": {
+    "status": "RECURSIVE_UNSEEN_IMPLEMENTED_PILOT_NOT_PASSED",
+    "closed_at": "2026-11-03T10:31:54.691388+08:00",
+    "algorithm_candidates": 1,
+    "navigation_main_attempts": 1,
+    "strict_arrivals": 0,
+    "full_repeat_unexecuted": 1,
+    "first_discovery": null,
+    "public_steps": 174,
+    "navigation_native_steps": 1392,
+    "replay_native_steps": 1392,
+    "private_integrations": 724680,
+    "all_accounts_exact": true,
+    "minimum_native_clearance_m": 0.31181304893907813,
+    "bad_contacts": 0,
+    "complete_state_replay_error": 0.0,
+    "all_raw_sensor_causal_renewal_reconstructed": true,
+    "all_original_physical_control_tail_projection_audits_passed": true,
+    "full_discovery_chain_passed": false,
+    "maximum_displacement_m": 1.452515518465207,
+    "old_maximum_displacement_m": 0.9661535477373088,
+    "first_physical_difference_step": 44,
+    "native_diagnostic_V720": {
+      "original_replay_native_steps": 512,
+      "private_prediction_integrations": 984,
+      "scene_state_validation_integrations": 984,
+      "new_navigation_samples": 0
+    },
+    "preliminary_V719_import_failure": {
+      "model_loads": 0,
+      "integrations": 0
+    },
+    "offline_V714_to_V718_and_V722": {
+      "model_initializations": 0,
+      "integrations": 0
+    },
+    "old_results_and_deadlines_preserved": true,
+    "deadline_unix": 1793675376.3270504,
+    "deadline_not_extended": true,
+    "training_updates": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "no_more_simulation_in_this_window": true,
+    "review_guard_restored": true,
+    "execution_lock_available": true,
+    "automation_deleted": "phase-rpccr-v721",
+    "fresh_confirmation_tasks_executed": 0,
+    "fair_external_baseline_comparisons": 0,
+    "report": "docs/RPCCR_RENEWAL_PILOT_V721_ANALYSIS.md"
   }
 }
