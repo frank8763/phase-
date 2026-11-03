@@ -1,12 +1,12 @@
 {
-  "status": "RECURSIVE_UNSEEN_IMPLEMENTED_PILOT_NOT_PASSED",
+  "status": "V724_CLOSED_NOT_PASSED_FUNCTIONAL_AND_AUDIT_EXCEPTION",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v702_rpccr_prospective_compute/CANDIDATE_FREEZE.json",
   "source_revision": "V695_navigation_unchanged_with_V697_fixed_scene_bootstrap_task_noise_separation",
   "protocol": "experiments/v707_field_reference_revision/PROTOCOL.md",
-  "report": "docs/RPCCR_RENEWAL_PILOT_V721_ANALYSIS.md",
+  "report": "docs/RPCCR_PROGRESS_OBSERVATION_V724_ANALYSIS.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -3375,5 +3375,285 @@
     "verified_remote_matches": false,
     "elapsed_s": 35.03737869200995,
     "raw_evidence_retained": true
+  },
+  "v724_absolute_deadline_unix": 1793677923.6454237,
+  "v724_limit_s": 2700,
+  "v724_source_commit": "ff99da06447c97ae9b7d580e671c8a6e1abb4cc8",
+  "v724_result": {
+    "status": "PROGRESS_OBSERVATION_PILOT_NOT_PASSED",
+    "checks": {
+      "all_frozen_inputs": true,
+      "closed": true,
+      "fixed_window": true,
+      "exact_schedule": false,
+      "driver_completed": false,
+      "no_training_or_extra_navigation": true,
+      "v705_closed_prerequisite": true,
+      "causal_renewal_prerequisites": true,
+      "new_recovery_selection_prerequisite": true,
+      "all_two_full_physical_causal_evidence": false,
+      "one_fixed_preflight": true
+    },
+    "records": [
+      {
+        "name": "main01",
+        "role": "DEVELOPMENT_MAIN",
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "checks": {
+          "INDEPENDENT_CANONICAL_AUDIT.json": true,
+          "RECOVERY_SELECTION_AUDIT.json": false,
+          "ROUTE_COMMITMENT_AUDIT.json": false,
+          "PROJECTION_LEARNING_AUDIT.json": false,
+          "SAVED_TAIL_GEOMETRY_AUDIT.json": false,
+          "SHADOW_MODE_AUDIT.json": false,
+          "v699_discovery_audit/DISCOVERY_CHAIN_AUDIT_V699.json": false,
+          "strict_full_chain": false,
+          "complete_replay": true
+        },
+        "passed": false,
+        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "public_steps": 133,
+        "goal_distance_m": 6.754882780036459,
+        "minimum_native_clearance_m": 0.31181304893907813,
+        "native_steps": 1064,
+        "private_integrations": 580824,
+        "replay_steps": 1064,
+        "wall_seconds": 84.34015255697886
+      }
+    ],
+    "navigation_native_steps": 1064,
+    "replay_native_steps": 1064,
+    "private_integrations": 580824,
+    "native_account_exact": true,
+    "replay_account_exact": true,
+    "private_account_exact": true,
+    "unique_development_tasks_executed": 1,
+    "confirmed_new_tasks": 0,
+    "unexecuted": [
+      "repeat01"
+    ],
+    "training_updates": 0,
+    "new_integrations_in_audit": 0,
+    "scope": "One original WEST_EAST development task and conditional exact repeat. Other original routes and24 confirmation remain unexecuted; no global superiority."
+  },
+  "v724_closure": {
+    "status": "CLOSED_NOT_PASSED_FUNCTIONAL_NONARRIVAL_AND_AUDIT_OUTPUT_EXCEPTION",
+    "closed_at": "2026-11-03T11:20:14.688768+08:00",
+    "original_driver_closed_at_unix": 1793675330.7773137,
+    "original_window_limit_s": 2700,
+    "original_absolute_deadline_unix": 1793677923.6454237,
+    "deadline_not_extended": true,
+    "algorithm_candidates": 1,
+    "t0_preflights_passed": 1,
+    "main_navigation_attempts": 1,
+    "strict_arrivals": 0,
+    "conditional_repeat_unexecuted": 1,
+    "first_discovery": null,
+    "public_steps": 133,
+    "navigation_native_steps": 1064,
+    "replay_native_steps": 1064,
+    "private_integrations": 580824,
+    "all_accounts_exact": true,
+    "minimum_native_clearance_m": 0.31181304893907813,
+    "bad_contacts": 0,
+    "complete_state_replay_error": 0.0,
+    "maximum_displacement_m": 1.452515518465207,
+    "maximum_displacement_gain_over_v721_m": 0.0,
+    "first_physical_control_difference_vs_v721_step": 99,
+    "selection_choices": 16,
+    "extra_visibility_evaluations": 50,
+    "extra_selection_wall_seconds": 1.7823185960005503,
+    "original_recovery_selection_audit": "EXCEPTION_NUMPY_BOOL_JSON_SERIALIZATION_AFTER_COMPUTATION",
+    "supplemental_audits": {
+      "runs/v725_progress_observation_supplement/audit_all_tail_geometry/SAVED_TAIL_GEOMETRY_AUDIT.json": {
+        "status": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+        "checks": null,
+        "new_integrations": 0,
+        "original_v724_status_not_changed": true
+      },
+      "runs/v725_progress_observation_supplement/audit_projection_learning/PROJECTION_LEARNING_AUDIT.json": {
+        "status": "PASS",
+        "checks": {
+          "causal_projection_sources": true,
+          "all_registered_plans_recomputed": true,
+          "projection_contains_original_joint_cells": true,
+          "model_sha_matches": true,
+          "learned_inference_matches": true,
+          "teacher_samples_executed_only": true,
+          "course_distance_matches": true
+        },
+        "new_integrations": 0,
+        "original_v724_status_not_changed": true
+      },
+      "runs/v725_progress_observation_supplement/audit_recovery_selection/RECOVERY_SELECTION_AUDIT.json": {
+        "status": "ALL_RECOVERY_SELECTIONS_RECOMPUTED",
+        "checks": {
+          "all_actual_choices_recomputed": true,
+          "all_saved_nonbrake_recovery_choices": true,
+          "same_event_count": true
+        },
+        "new_integrations": 0,
+        "original_v724_status_not_changed": true
+      },
+      "runs/v725_progress_observation_supplement/audit_route_commitment/ROUTE_COMMITMENT_AUDIT.json": {
+        "status": "PASS",
+        "checks": {
+          "has_revalidation_rows": true,
+          "all_current_geometry_and_progress_recomputed": true,
+          "no_control_authorization_from_proposal": true,
+          "full_future_control_gates_present": true
+        },
+        "new_integrations": 0,
+        "original_v724_status_not_changed": true
+      }
+    },
+    "remaining_supplemental_checks": {
+      "shadow_mode": "ADAPTER_OUTPUT_PATH_ASSERT_BEFORE_EXECUTION",
+      "full_raw_packet_discovery_chain": "UNEXECUTED_AFTER_ADAPTER_STOP"
+    },
+    "no_full_causal_or_discovery_pass_claim": true,
+    "old_failed_audits_and_archives_preserved": true,
+    "training_updates": 0,
+    "stage_access": 0,
+    "real_robot": 0,
+    "fresh_confirmation_tasks_executed": 0,
+    "external_algorithm_comparisons": 0,
+    "review_guard_restored": true,
+    "new_navigation_after_closure": 0,
+    "active_automation": null,
+    "report": "docs/RPCCR_PROGRESS_OBSERVATION_V724_ANALYSIS.md"
+  },
+  "v725_saved_data_comparison": {
+    "status": "CLOSED_PILOT_TRAJECTORIES_AND_ACCOUNT_COMPARISON_COMPLETE",
+    "v724_final_status": "PROGRESS_OBSERVATION_PILOT_NOT_PASSED",
+    "summaries": [
+      {
+        "version": "V712",
+        "run": "runs/v712_joint_field_continuation/main01/paired",
+        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "strict_arrival": false,
+        "public_steps": 145,
+        "maximum_displacement_m": 0.9661535477373088,
+        "closest_goal_distance_m": 7.0338478236925415,
+        "final_goal_distance_m": 8.062159649979325,
+        "first_discovery": null,
+        "minimum_native_clearance_m": 0.29878159639450563,
+        "navigation_native_steps": 1160,
+        "replay_native_steps": 1160,
+        "private_integrations": 529144,
+        "wall_seconds": 79.59726308702375,
+        "normalized_initial_state_hash": "fcd26304e4b0dc879085c5da4b23fd54dfb7718d1b242b5eda537c1ead2b437c",
+        "model_sha256": "f3c4cd06c2305190388a0b5ecbd6c6224357cad73cd17affad3603d06643231e",
+        "maximum_replay_error": 0.0,
+        "recovery_selection_choices": 0,
+        "extra_selection_visibility_evaluations": null,
+        "extra_selection_wall_seconds": null
+      },
+      {
+        "version": "V721",
+        "run": "runs/v721_recursive_unseen_navigation/main01/paired",
+        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "strict_arrival": false,
+        "public_steps": 174,
+        "maximum_displacement_m": 1.452515518465207,
+        "closest_goal_distance_m": 6.54748585587888,
+        "final_goal_distance_m": 7.265067352637195,
+        "first_discovery": null,
+        "minimum_native_clearance_m": 0.31181304893907813,
+        "navigation_native_steps": 1392,
+        "replay_native_steps": 1392,
+        "private_integrations": 724680,
+        "wall_seconds": 103.98865496201324,
+        "normalized_initial_state_hash": "fcd26304e4b0dc879085c5da4b23fd54dfb7718d1b242b5eda537c1ead2b437c",
+        "model_sha256": "f3c4cd06c2305190388a0b5ecbd6c6224357cad73cd17affad3603d06643231e",
+        "maximum_replay_error": 0.0,
+        "recovery_selection_choices": 0,
+        "extra_selection_visibility_evaluations": null,
+        "extra_selection_wall_seconds": null
+      },
+      {
+        "version": "V724",
+        "run": "runs/v724_progress_observation_recovery/main01/paired",
+        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "strict_arrival": false,
+        "public_steps": 133,
+        "maximum_displacement_m": 1.452515518465207,
+        "closest_goal_distance_m": 6.54748585587888,
+        "final_goal_distance_m": 6.754882780036459,
+        "first_discovery": null,
+        "minimum_native_clearance_m": 0.31181304893907813,
+        "navigation_native_steps": 1064,
+        "replay_native_steps": 1064,
+        "private_integrations": 580824,
+        "wall_seconds": 84.34015255697886,
+        "normalized_initial_state_hash": "fcd26304e4b0dc879085c5da4b23fd54dfb7718d1b242b5eda537c1ead2b437c",
+        "model_sha256": "f3c4cd06c2305190388a0b5ecbd6c6224357cad73cd17affad3603d06643231e",
+        "maximum_replay_error": 0.0,
+        "recovery_selection_choices": 16,
+        "extra_selection_visibility_evaluations": 50,
+        "extra_selection_wall_seconds": 1.7823185960005503
+      }
+    ],
+    "comparisons": [
+      {
+        "base": "V712",
+        "new": "V724",
+        "same_normalized_initial": true,
+        "same_model_bytes": true,
+        "first_physical_or_control_difference_public_step": 45,
+        "maximum_displacement_delta_m": 0.4863619707278982,
+        "closest_goal_improvement_m": 0.4863619678136617,
+        "not_same_later_observation_input": true,
+        "independent_new_confirmation_samples": 0
+      },
+      {
+        "base": "V721",
+        "new": "V724",
+        "same_normalized_initial": true,
+        "same_model_bytes": true,
+        "first_physical_or_control_difference_public_step": 99,
+        "maximum_displacement_delta_m": 0.0,
+        "closest_goal_improvement_m": 0.0,
+        "not_same_later_observation_input": true,
+        "independent_new_confirmation_samples": 0
+      }
+    ],
+    "new_initializations": 0,
+    "new_integrations": 0,
+    "training_updates": 0,
+    "scope": "Three sequential implementations on one observed old development case; divergent later observations, unequal total compute. Not independent confirmation, success-rate gain or global superiority."
+  },
+  "v725_supplement_status": {
+    "started_unix": 1793675602.0560608,
+    "absolute_deadline_unix": 1793676202.0560608,
+    "limit_s": 600,
+    "round_closed": true,
+    "new_initializations": 0,
+    "new_integrations": 0,
+    "training_updates": 0,
+    "records": [
+      {
+        "script": "audit_recovery_selection.py",
+        "exit_code": 0
+      },
+      {
+        "script": "audit_route_commitment.py",
+        "exit_code": 0
+      },
+      {
+        "script": "audit_projection_learning.py",
+        "exit_code": 0
+      },
+      {
+        "script": "audit_all_tail_geometry.py",
+        "exit_code": 0
+      },
+      {
+        "script": "audit_shadow_mode.py",
+        "exit_code": 1
+      }
+    ],
+    "elapsed_s": 12.550960302352905
   }
 }

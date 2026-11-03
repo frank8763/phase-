@@ -1,0 +1,87 @@
+{
+  "status": "CLOSED_NOT_PASSED_FUNCTIONAL_NONARRIVAL_AND_AUDIT_OUTPUT_EXCEPTION",
+  "closed_at": "2026-11-03T11:20:14.688768+08:00",
+  "original_driver_closed_at_unix": 1793675330.7773137,
+  "original_window_limit_s": 2700,
+  "original_absolute_deadline_unix": 1793677923.6454237,
+  "deadline_not_extended": true,
+  "algorithm_candidates": 1,
+  "t0_preflights_passed": 1,
+  "main_navigation_attempts": 1,
+  "strict_arrivals": 0,
+  "conditional_repeat_unexecuted": 1,
+  "first_discovery": null,
+  "public_steps": 133,
+  "navigation_native_steps": 1064,
+  "replay_native_steps": 1064,
+  "private_integrations": 580824,
+  "all_accounts_exact": true,
+  "minimum_native_clearance_m": 0.31181304893907813,
+  "bad_contacts": 0,
+  "complete_state_replay_error": 0.0,
+  "maximum_displacement_m": 1.452515518465207,
+  "maximum_displacement_gain_over_v721_m": 0.0,
+  "first_physical_control_difference_vs_v721_step": 99,
+  "selection_choices": 16,
+  "extra_visibility_evaluations": 50,
+  "extra_selection_wall_seconds": 1.7823185960005503,
+  "original_recovery_selection_audit": "EXCEPTION_NUMPY_BOOL_JSON_SERIALIZATION_AFTER_COMPUTATION",
+  "supplemental_audits": {
+    "runs/v725_progress_observation_supplement/audit_all_tail_geometry/SAVED_TAIL_GEOMETRY_AUDIT.json": {
+      "status": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+      "checks": null,
+      "new_integrations": 0,
+      "original_v724_status_not_changed": true
+    },
+    "runs/v725_progress_observation_supplement/audit_projection_learning/PROJECTION_LEARNING_AUDIT.json": {
+      "status": "PASS",
+      "checks": {
+        "causal_projection_sources": true,
+        "all_registered_plans_recomputed": true,
+        "projection_contains_original_joint_cells": true,
+        "model_sha_matches": true,
+        "learned_inference_matches": true,
+        "teacher_samples_executed_only": true,
+        "course_distance_matches": true
+      },
+      "new_integrations": 0,
+      "original_v724_status_not_changed": true
+    },
+    "runs/v725_progress_observation_supplement/audit_recovery_selection/RECOVERY_SELECTION_AUDIT.json": {
+      "status": "ALL_RECOVERY_SELECTIONS_RECOMPUTED",
+      "checks": {
+        "all_actual_choices_recomputed": true,
+        "all_saved_nonbrake_recovery_choices": true,
+        "same_event_count": true
+      },
+      "new_integrations": 0,
+      "original_v724_status_not_changed": true
+    },
+    "runs/v725_progress_observation_supplement/audit_route_commitment/ROUTE_COMMITMENT_AUDIT.json": {
+      "status": "PASS",
+      "checks": {
+        "has_revalidation_rows": true,
+        "all_current_geometry_and_progress_recomputed": true,
+        "no_control_authorization_from_proposal": true,
+        "full_future_control_gates_present": true
+      },
+      "new_integrations": 0,
+      "original_v724_status_not_changed": true
+    }
+  },
+  "remaining_supplemental_checks": {
+    "shadow_mode": "ADAPTER_OUTPUT_PATH_ASSERT_BEFORE_EXECUTION",
+    "full_raw_packet_discovery_chain": "UNEXECUTED_AFTER_ADAPTER_STOP"
+  },
+  "no_full_causal_or_discovery_pass_claim": true,
+  "old_failed_audits_and_archives_preserved": true,
+  "training_updates": 0,
+  "stage_access": 0,
+  "real_robot": 0,
+  "fresh_confirmation_tasks_executed": 0,
+  "external_algorithm_comparisons": 0,
+  "review_guard_restored": true,
+  "new_navigation_after_closure": 0,
+  "active_automation": null,
+  "report": "docs/RPCCR_PROGRESS_OBSERVATION_V724_ANALYSIS.md"
+}
