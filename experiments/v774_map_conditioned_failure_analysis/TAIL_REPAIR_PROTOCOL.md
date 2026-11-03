@@ -1,0 +1,2 @@
+# 尾部离线写出接口修复补充
+原tail_check.py末尾因with-gzip变量f覆盖输入SHA字典而失败，原源码/console/TAIL_FREEZE永不修改，原结果缺失不能称已完成。新tail_check_repaired.py只将输入SHA变量命名为freeze_inputs、读取另立REPAIR_FREEZE，并输出新runs/v774_tail_interface_recovery/RESULT；原全部74包/几何查询/覆盖/安全阈值不改，600秒零模型/积分重新核验，不重跑导航或追加控制。不是恢复原失败或延长原窗口。全部错误原样保存，新输出独立归档；若再失败保存未知，不无限重试。
