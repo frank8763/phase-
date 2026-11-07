@@ -15,6 +15,8 @@ def main():
     with(OUT/'LEAN_GIT_FETCH.console').open('wb')as log:git('fetch','--depth=1','--filter=blob:none','--no-tags','origin','refs/heads/main:refs/heads/main',stdout=log,stderr=subprocess.STDOUT,timeout=300)
     actual=git('rev-parse','refs/heads/main',capture_output=True,text=True).stdout.strip();assert actual==commit,'REMOTE_HEAD_CHANGED_BEFORE_LOCAL_CACHE_RESET'
     git('symbolic-ref','HEAD','refs/heads/main');git('config','core.bare','false');git('config','core.worktree',str(R));git('read-tree',commit)
+    verified=json.loads((OUT/'SOURCE_SNAPSHOT.json').read_text());paths=sorted(verified['sha256']);assert all('\n'not in p and '\r'not in p for p in paths)
+    git('hash-object','-w','--no-filters','--stdin-paths',input='\n'.join(paths)+'\n',text=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
     old.rename(backup)
     try:
         thin.rename(old)
