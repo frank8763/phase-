@@ -1,0 +1,14 @@
+{
+  "status": "STOPPED_FIRST_FAILURE_OR_DEADLINE",
+  "tasks": [],
+  "qualification": null,
+  "new24": 0,
+  "training": 0,
+  "old_windows_reopened": false,
+  "passed": false,
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v856_nav2_foundation/campaign.py\", line 37, in main\n    qp=OUT/'vehicle_qualification01/RESULT.json';qualification=json.loads(qp.read_text())if qp.exists()else json.loads((OUT/'QUALIFICATION_ENTRY_ERROR.json').read_text());ledger['qualification']=qualification;dump(OUT/'LEDGER.json',ledger)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v856_nav2_foundation/QUALIFICATION_ENTRY_ERROR.json'\n",
+  "closed": true,
+  "closed_unix": 1794041153.9149234,
+  "review_pending_original_bytes_restored": true
+}

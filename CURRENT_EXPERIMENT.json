@@ -33,7 +33,7 @@
     "V672 brake-first backup did not change the original843public controls; actual fallback still reverse",
     "V673 joint cover keeps position-velocity association but940steps failed after finite brake tail completed; recursive continuation not established",
     "Fixed64frame linear temporal constraints only slightly narrowed some y velocity intervals; no information-theoretic impossibility proof",
-    "Previous V674/V675 raw-command mismatch failures preserved; canonical actuator mapping verified V676–V678. Privileged scene witness is not causal unknown dynamic success."
+    "Previous V674/V675 raw-command mismatch failures preserved; canonical actuator mapping verified V676\u2013V678. Privileged scene witness is not causal unknown dynamic success."
   ],
   "previous_candidate": {
     "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
@@ -1494,7 +1494,7 @@
   "research_algorithm": "RP-CCR",
   "research_contract": "docs/RPCCR_RESEARCH_CONTRACT.md",
   "research_objective": "Develop and validate RP-CCR risk/progress constrained continuous corridor recovery for a RAS methods paper.",
-  "implementation_scope": "Current V648–V696 geometry/dynamics/uncertainty/backup/BC work is implementation and component evidence; no independent full RP-CCR superiority claim.",
+  "implementation_scope": "Current V648\u2013V696 geometry/dynamics/uncertainty/backup/BC work is implementation and component evidence; no independent full RP-CCR superiority claim.",
   "historical_configuration_not_active": [
     "--seed",
     "95000011",
@@ -2254,7 +2254,7 @@
   "v701_final_remote_verified_at": "2026-11-02T18:06:01.032424+08:00",
   "v702_v703_remote_verified": false,
   "v704_authorization": {
-    "user_instruction": "下一步？",
+    "user_instruction": "\u4e0b\u4e00\u6b65\uff1f",
     "date": "2026-11-02",
     "scope": "Implement proposed initialization repair, four original zero-integration preflights and two exact old anchors only",
     "protocol": "experiments/v704_bootstrap_repair/PROTOCOL.md",
@@ -2594,7 +2594,7 @@
     "elapsed_s": 11.016564912017202
   },
   "v705_authorization": {
-    "user_instruction": "好，先回答我现在这个动态的成功多少了？然后继续推进实验",
+    "user_instruction": "\u597d\uff0c\u5148\u56de\u7b54\u6211\u73b0\u5728\u8fd9\u4e2a\u52a8\u6001\u7684\u6210\u529f\u591a\u5c11\u4e86\uff1f\u7136\u540e\u7ee7\u7eed\u63a8\u8fdb\u5b9e\u9a8c",
     "date": "2026-11-02",
     "scope": "After V704 validated closure continue the original four prespecified V702 tasks, paired FULL/SHADOW, plus original two fixed repeats",
     "protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
@@ -3025,7 +3025,7 @@
     "private_integrations": 0,
     "replay_integrations": 0,
     "account_scope": "Two completed zero-integration field initializations/preflights both stopped before actor construction; no navigation/predictor/replay or training reached. All actual integration counts exact0.",
-    "reserved_confirmation_pool": "10020001–10020024",
+    "reserved_confirmation_pool": "10020001\u201310020024",
     "confirmation_pool_used": false,
     "training_updates": 0,
     "stage_access": 0,
@@ -4815,7 +4815,7 @@
   "user_green_corridor_review": {
     "report": "docs/RPCCR_GREEN_CORRIDOR_REVIEW_V784.md",
     "result": "runs/v784_green_corridor_review/RESULT.json",
-    "user_intent": "持续向前通过中央开口并到达右侧目标；修复执行中的前进/倒车振荡",
+    "user_intent": "\u6301\u7eed\u5411\u524d\u901a\u8fc7\u4e2d\u592e\u5f00\u53e3\u5e76\u5230\u8fbe\u53f3\u4fa7\u76ee\u6807\uff1b\u4fee\u590d\u6267\u884c\u4e2d\u7684\u524d\u8fdb/\u5012\u8f66\u632f\u8361",
     "all_saved_global_plans_forward": true,
     "control_backup_trigger_steps": [
       98,
@@ -5904,5 +5904,30 @@
     "local_git_cache_shallow": true,
     "report": "docs/STORAGE_CLEANUP_20261107_REPORT.md",
     "future_temporary_evidence_budget_GiB": 2
+  },
+  "v856_nav2_foundation": {
+    "status": "STOPPED_FIRST_FAILURE_OR_DEADLINE",
+    "closed": true,
+    "model_deadline": 1794052800.0,
+    "new24": 0,
+    "report": "docs/NAV2_FOUNDATION_V856_REPORT.md"
+  },
+  "v856_nav2_entry_continuation": {
+    "closed": true,
+    "status": "STOPPED_FIRST_FAILURE_OR_DEADLINE",
+    "model_deadline": 1794052800.0,
+    "new24": 0
+  },
+  "latest_nav2_foundation": {
+    "status": "CLOSED_SOFTWARE_PASS_NATIVE_SPEED_QUALIFICATION_FAILED",
+    "report": "docs/NAV2_FOUNDATION_V856_REPORT.md",
+    "source": "experiments/v856_nav2_foundation",
+    "one_output_scope_continuation": "experiments/v856_nav2_entry_continuation",
+    "actual_native": 1100,
+    "replay_native": 1100,
+    "private_native": 0,
+    "new_navigation": 0,
+    "new24": 0,
+    "self_contact_model_issue_confirmed": true
   }
 }

@@ -1,0 +1,52 @@
+{
+  "type": "NATIVE_EXECUTOR_QUALIFICATION",
+  "environment_initializations": 1,
+  "static_case": "WEST_EAST",
+  "seed": 10010001,
+  "schedule_seconds": [
+    {
+      "from": 0,
+      "until": 1,
+      "v": 0,
+      "w": 0
+    },
+    {
+      "from": 1,
+      "until": 4,
+      "v": 0.2,
+      "w": 0
+    },
+    {
+      "from": 4,
+      "until": 6,
+      "v": 0,
+      "w": 0
+    },
+    {
+      "from": 6,
+      "until": 9,
+      "v": 0.15,
+      "w": 0.05
+    },
+    {
+      "from": 9,
+      "until": 11,
+      "v": 0,
+      "w": 0
+    }
+  ],
+  "native_hz": 100,
+  "forward_mean_range": [
+    0.1,
+    0.3
+  ],
+  "yaw_mean_range": [
+    0.01,
+    0.15
+  ],
+  "brake_final_speed_max": 0.03,
+  "max_wall_lag_s": 0.1,
+  "replay_error_max": 1e-08,
+  "on_any_failure": "STOP_NO_PHYSICAL_PATCH_OR_RERUN",
+  "root_deadline_unix": 1794052800.0
+}

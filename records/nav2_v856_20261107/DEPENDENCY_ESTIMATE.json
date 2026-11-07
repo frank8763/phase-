@@ -1,0 +1,2846 @@
+{
+  "packages": 469,
+  "download_bytes": 214827868,
+  "installed_bytes": 1245683712,
+  "combined_peak_estimate_bytes": 1460511580,
+  "cap_bytes": 2147483648,
+  "official_ros_release_signature_verified": true,
+  "ros_packages_index_sha256": "79af8187309b1eef0d53fbd78a4587fd837d1bd1c300c80969952a99b96ffac1",
+  "rootless": true,
+  "no_system_package_changes": true,
+  "models": 0,
+  "requested": [
+    "ros-jazzy-nav2-planner",
+    "ros-jazzy-nav2-smac-planner",
+    "ros-jazzy-nav2-controller",
+    "ros-jazzy-nav2-mppi-controller",
+    "ros-jazzy-nav2-bt-navigator",
+    "ros-jazzy-nav2-behaviors",
+    "ros-jazzy-nav2-lifecycle-manager",
+    "ros-jazzy-nav2-map-server",
+    "ros-jazzy-nav2-collision-monitor",
+    "ros-jazzy-nav2-velocity-smoother",
+    "ros-jazzy-rclpy",
+    "ros-jazzy-tf2-ros-py",
+    "ros-jazzy-nav2-msgs",
+    "ros-jazzy-rosgraph-msgs",
+    "python3-numpy",
+    "python3-yaml"
+  ],
+  "packages_to_fetch": [
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/l/ltt-control/liblttng-ctl0t64_2.13.11-2.1build4_amd64.deb",
+      "filename": "liblttng-ctl0t64_2.13.11-2.1build4_amd64.deb",
+      "download_bytes": 197318,
+      "apt_checksum": "MD5Sum:d6388a761737c79b952475bfdc40d2ab"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/u/ust/liblttng-ust-common1t64_2.13.7-1.1ubuntu2_amd64.deb",
+      "filename": "liblttng-ust-common1t64_2.13.7-1.1ubuntu2_amd64.deb",
+      "download_bytes": 27486,
+      "apt_checksum": "MD5Sum:5a88e8a6ef11bcd5873b3b57146de5a6"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/u/ust/liblttng-ust-ctl5t64_2.13.7-1.1ubuntu2_amd64.deb",
+      "filename": "liblttng-ust-ctl5t64_2.13.7-1.1ubuntu2_amd64.deb",
+      "download_bytes": 74890,
+      "apt_checksum": "MD5Sum:3b8b38174dc986b3ada6ed7be83cfcb2"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libu/liburcu/liburcu8t64_0.14.0-3.1build1_amd64.deb",
+      "filename": "liburcu8t64_0.14.0-3.1build1_amd64.deb",
+      "download_bytes": 62984,
+      "apt_checksum": "MD5Sum:6325359028489aff553d74d9549eeb6a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/l/ltt-control/lttng-tools_2.13.11-2.1build4_amd64.deb",
+      "filename": "lttng-tools_2.13.11-2.1build4_amd64.deb",
+      "download_bytes": 1140034,
+      "apt_checksum": "MD5Sum:8bdd41b60472c8a348ae9f0a69c2852a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/krb5-locales_1.20.1-6ubuntu2.10_all.deb",
+      "filename": "krb5-locales_1.20.1-6ubuntu2.10_all.deb",
+      "download_bytes": 15332,
+      "apt_checksum": "MD5Sum:a18aab7661ab48005f6857b71417470c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libgssapi-krb5-2_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libgssapi-krb5-2_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 142830,
+      "apt_checksum": "MD5Sum:ebeb2e454de28636924ffe6baa15f930"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libkrb5-3_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libkrb5-3_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 347568,
+      "apt_checksum": "MD5Sum:7457358796194ad2e17742ae9a587766"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libkrb5support0_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libkrb5support0_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 34942,
+      "apt_checksum": "MD5Sum:31d52cd9cd04b711826b9d43b0c9e67f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libk5crypto3_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libk5crypto3_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 81944,
+      "apt_checksum": "MD5Sum:00ca0cb4f52afa37fd204a5c54dd7e71"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/s/sqlite3/libsqlite3-0_3.45.1-1ubuntu2.9_amd64.deb",
+      "filename": "libsqlite3-0_3.45.1-1ubuntu2.9_amd64.deb",
+      "download_bytes": 701804,
+      "apt_checksum": "MD5Sum:d1e3df794a081e5fd546f74b819714e1"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/m/m4/m4_1.4.19-4build1_amd64.deb",
+      "filename": "m4_1.4.19-4build1_amd64.deb",
+      "download_bytes": 243640,
+      "apt_checksum": "MD5Sum:c1547de12f5fc33542129c016e8040bc"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/a/autoconf/autoconf_2.71-3_all.deb",
+      "filename": "autoconf_2.71-3_all.deb",
+      "download_bytes": 338946,
+      "apt_checksum": "MD5Sum:236e6a793a6ee85dae4507b067486a65"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/a/autotools-dev/autotools-dev_20220109.1_all.deb",
+      "filename": "autotools-dev_20220109.1_all.deb",
+      "download_bytes": 44886,
+      "apt_checksum": "MD5Sum:554dc72dc46c7ebd3caf852031a94fe8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/a/automake-1.16/automake_1.16.5-1.3ubuntu1_all.deb",
+      "filename": "automake_1%3a1.16.5-1.3ubuntu1_all.deb",
+      "download_bytes": 558172,
+      "apt_checksum": "MD5Sum:0d3e4fe4ac2b80e59b7a6a867694f914"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/c/catch2/catch2_3.4.0-1build1_amd64.deb",
+      "filename": "catch2_3.4.0-1build1_amd64.deb",
+      "download_bytes": 607414,
+      "apt_checksum": "MD5Sum:b1825a7a79730a0a37da10517196e6ef"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libj/libjsoncpp/libjsoncpp25_1.9.5-6build1_amd64.deb",
+      "filename": "libjsoncpp25_1.9.5-6build1_amd64.deb",
+      "download_bytes": 82754,
+      "apt_checksum": "MD5Sum:33704387481a5debaf6efb22a45b4a6c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/r/rhash/librhash0_1.4.3-3build1_amd64.deb",
+      "filename": "librhash0_1.4.3-3build1_amd64.deb",
+      "download_bytes": 128748,
+      "apt_checksum": "MD5Sum:5d952e5e028103797f3bc745e32fd1e3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/c/cmake/cmake-data_3.28.3-1build7_all.deb",
+      "filename": "cmake-data_3.28.3-1build7_all.deb",
+      "download_bytes": 2154936,
+      "apt_checksum": "MD5Sum:82125d8d38ef02f611e7a2c493101854"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/c/cmake/cmake_3.28.3-1build7_amd64.deb",
+      "filename": "cmake_3.28.3-1build7_amd64.deb",
+      "download_bytes": 11190006,
+      "apt_checksum": "MD5Sum:adf6332b9137fbddcaa7bcd12ff8fc44"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/t/tinyxml2/libtinyxml2-10_10.0.0%2bdfsg-2_amd64.deb",
+      "filename": "libtinyxml2-10_10.0.0+dfsg-2_amd64.deb",
+      "download_bytes": 32524,
+      "apt_checksum": "MD5Sum:3f8cd94da0dab231e6d5d7792be34eb4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/c/cppcheck/cppcheck_2.13.0-2ubuntu3_amd64.deb",
+      "filename": "cppcheck_2.13.0-2ubuntu3_amd64.deb",
+      "download_bytes": 2136256,
+      "apt_checksum": "MD5Sum:136c600caa96626aaabc8891e05694fb"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/n/norm/libnorm1t64_1.5.9%2bdfsg-3.1build1_amd64.deb",
+      "filename": "libnorm1t64_1.5.9+dfsg-3.1build1_amd64.deb",
+      "download_bytes": 153694,
+      "apt_checksum": "MD5Sum:9f72472282e92441fbd7656f81dee3c4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/libp/libpgm/libpgm-5.3-0t64_5.3.128%7edfsg-2.1build1_amd64.deb",
+      "filename": "libpgm-5.3-0t64_5.3.128~dfsg-2.1build1_amd64.deb",
+      "download_bytes": 166620,
+      "apt_checksum": "MD5Sum:2dd9ebce77f9d97720376294a6c627c5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libs/libsodium/libsodium23_1.0.18-1ubuntu0.24.04.1_amd64.deb",
+      "filename": "libsodium23_1.0.18-1ubuntu0.24.04.1_amd64.deb",
+      "download_bytes": 161290,
+      "apt_checksum": "MD5Sum:630c21cc1dceb17c12a00f2ad7ab4d80"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/z/zeromq3/libzmq5_4.3.5-1build2_amd64.deb",
+      "filename": "libzmq5_4.3.5-1build2_amd64.deb",
+      "download_bytes": 260300,
+      "apt_checksum": "MD5Sum:1909921bc815ad8a45306c2095cfe7a2"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/libp/libpgm/libpgm-dev_5.3.128%7edfsg-2.1build1_amd64.deb",
+      "filename": "libpgm-dev_5.3.128~dfsg-2.1build1_amd64.deb",
+      "download_bytes": 211972,
+      "apt_checksum": "MD5Sum:06e59ee120e3774580faa50250a5ead5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libs/libsodium/libsodium-dev_1.0.18-1ubuntu0.24.04.1_amd64.deb",
+      "filename": "libsodium-dev_1.0.18-1ubuntu0.24.04.1_amd64.deb",
+      "download_bytes": 184784,
+      "apt_checksum": "MD5Sum:69b5a77e870baac9a4a7f75683d3b3e1"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/i/icu/icu-devtools_74.2-1ubuntu3.1_amd64.deb",
+      "filename": "icu-devtools_74.2-1ubuntu3.1_amd64.deb",
+      "download_bytes": 211852,
+      "apt_checksum": "MD5Sum:8890780a20989f000a7ad00c4d488426"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/i/icu/libicu-dev_74.2-1ubuntu3.1_amd64.deb",
+      "filename": "libicu-dev_74.2-1ubuntu3.1_amd64.deb",
+      "download_bytes": 11892666,
+      "apt_checksum": "MD5Sum:7f73398bf0378f2c47c158210d6275ea"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libx/libxml2/libxml2-dev_2.9.14%2bdfsg-1.3ubuntu3.10_amd64.deb",
+      "filename": "libxml2-dev_2.9.14+dfsg-1.3ubuntu3.10_amd64.deb",
+      "download_bytes": 781344,
+      "apt_checksum": "MD5Sum:87851692da29f524620321a32acd68ce"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/n/norm/libnorm-dev_1.5.9%2bdfsg-3.1build1_amd64.deb",
+      "filename": "libnorm-dev_1.5.9+dfsg-3.1build1_amd64.deb",
+      "download_bytes": 428566,
+      "apt_checksum": "MD5Sum:6ece205aef663f6488b4bdb96cc5166c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/e/e2fsprogs/comerr-dev_2.1-1.47.0-2.4%7eexp1ubuntu4.1_amd64.deb",
+      "filename": "comerr-dev_2.1-1.47.0-2.4~exp1ubuntu4.1_amd64.deb",
+      "download_bytes": 43770,
+      "apt_checksum": "MD5Sum:52496548ae80885d985f877a75795775"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libgssrpc4t64_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libgssrpc4t64_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 57256,
+      "apt_checksum": "MD5Sum:8b049c1784d27b44d01ed8d49abd7c66"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libkadm5clnt-mit12_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libkadm5clnt-mit12_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 40048,
+      "apt_checksum": "MD5Sum:23a39a979103ec4150c86366d2f0fc43"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libkdb5-10t64_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libkdb5-10t64_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 40392,
+      "apt_checksum": "MD5Sum:76a362070fe46c20c481428ca3592a75"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libkadm5srv-mit12_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libkadm5srv-mit12_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 53024,
+      "apt_checksum": "MD5Sum:2af8988187f759c907b179bd29879d4f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/krb5-multidev_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "krb5-multidev_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 124770,
+      "apt_checksum": "MD5Sum:a3524f0b50d71c885e0c38d4456480fe"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/k/krb5/libkrb5-dev_1.20.1-6ubuntu2.10_amd64.deb",
+      "filename": "libkrb5-dev_1.20.1-6ubuntu2.10_amd64.deb",
+      "download_bytes": 11886,
+      "apt_checksum": "MD5Sum:54991a9d23b3a2cba143c69903031250"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libm/libmd/libmd-dev_1.1.0-2build1.1_amd64.deb",
+      "filename": "libmd-dev_1.1.0-2build1.1_amd64.deb",
+      "download_bytes": 45476,
+      "apt_checksum": "MD5Sum:6afcce0a09e3456bbdc18ccd6b5599de"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libb/libbsd/libbsd-dev_0.12.1-1build1.1_amd64.deb",
+      "filename": "libbsd-dev_0.12.1-1build1.1_amd64.deb",
+      "download_bytes": 168930,
+      "apt_checksum": "MD5Sum:658bc70ffaab3d0b4daf499cc071c332"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/z/zeromq3/libzmq3-dev_4.3.5-1build2_amd64.deb",
+      "filename": "libzmq3-dev_4.3.5-1build2_amd64.deb",
+      "download_bytes": 527228,
+      "apt_checksum": "MD5Sum:75e4ecf7deeaf60943b7df8e1fdb344b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/c/cppzmq/cppzmq-dev_4.10.0-1build1_amd64.deb",
+      "filename": "cppzmq-dev_4.10.0-1build1_amd64.deb",
+      "download_bytes": 25954,
+      "apt_checksum": "MD5Sum:b1599d70a17eee8410041cf1897584c3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/p/python-docutils/docutils-common_0.20.1%2bdfsg-3_all.deb",
+      "filename": "docutils-common_0.20.1+dfsg-3_all.deb",
+      "download_bytes": 131566,
+      "apt_checksum": "MD5Sum:1b76a421ed6f12e7428957d22fe1618e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/gcc-14/libgfortran5_14.2.0-4ubuntu2%7e24.04.1_amd64.deb",
+      "filename": "libgfortran5_14.2.0-4ubuntu2~24.04.1_amd64.deb",
+      "download_bytes": 916316,
+      "apt_checksum": "MD5Sum:6c07c383b45732063a46227cbbc0a5fd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/gcc-13/libgfortran-13-dev_13.3.0-6ubuntu2%7e24.04.1_amd64.deb",
+      "filename": "libgfortran-13-dev_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "download_bytes": 928110,
+      "apt_checksum": "MD5Sum:1551c02b54d5d90c2f5b2a45dc0988fe"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/gcc-13/gfortran-13-x86-64-linux-gnu_13.3.0-6ubuntu2%7e24.04.1_amd64.deb",
+      "filename": "gfortran-13-x86-64-linux-gnu_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "download_bytes": 11408640,
+      "apt_checksum": "MD5Sum:1ace0efe31cd92f60a5430bc6bcf16be"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/g/gcc-13/gfortran-13_13.3.0-6ubuntu2%7e24.04.1_amd64.deb",
+      "filename": "gfortran-13_13.3.0-6ubuntu2~24.04.1_amd64.deb",
+      "download_bytes": 13914,
+      "apt_checksum": "MD5Sum:3e7634cb183f6772969a1b629a32af87"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/googletest/googletest_1.14.0-1_all.deb",
+      "filename": "googletest_1.14.0-1_all.deb",
+      "download_bytes": 520880,
+      "apt_checksum": "MD5Sum:ab42cdc6622419ebee46ec0c06b5cf0d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/googletest/google-mock_1.14.0-1_amd64.deb",
+      "filename": "google-mock_1.14.0-1_amd64.deb",
+      "download_bytes": 4836,
+      "apt_checksum": "MD5Sum:9c3cefa75e5b742930dc265e0a1f7e7d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/liba/libaec/libaec0_1.1.2-1build1_amd64.deb",
+      "filename": "libaec0_1.1.2-1build1_amd64.deb",
+      "download_bytes": 22918,
+      "apt_checksum": "MD5Sum:b6012c328ac179c0c869497ab402edfb"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/l/llvm-toolchain-17/libllvm17t64_17.0.6-9ubuntu1_amd64.deb",
+      "filename": "libllvm17t64_1%3a17.0.6-9ubuntu1_amd64.deb",
+      "download_bytes": 26162724,
+      "apt_checksum": "MD5Sum:474c7c3ed7cd0f5cf8071cdda3739678"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/r/rocm-compilersupport/libamd-comgr2_6.0%2bgit20231212.4510c28%2bdfsg-3build2_amd64.deb",
+      "filename": "libamd-comgr2_6.0+git20231212.4510c28+dfsg-3build2_amd64.deb",
+      "download_bytes": 14405016,
+      "apt_checksum": "MD5Sum:522bc793a113bb3320a674a8e627b679"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/r/roct-thunk-interface/libhsakmt1_5.7.0-1build1_amd64.deb",
+      "filename": "libhsakmt1_5.7.0-1build1_amd64.deb",
+      "download_bytes": 62912,
+      "apt_checksum": "MD5Sum:c7ef1a1325c03823bd2ad50135449304"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/r/rocr-runtime/libhsa-runtime64-1_5.7.1-2build1_amd64.deb",
+      "filename": "libhsa-runtime64-1_5.7.1-2build1_amd64.deb",
+      "download_bytes": 490966,
+      "apt_checksum": "MD5Sum:4fb10b08b6630dc55f08a2a9a3ce3eb5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/r/rocm-hipamd/libamdhip64-5_5.7.1-3_amd64.deb",
+      "filename": "libamdhip64-5_5.7.1-3_amd64.deb",
+      "download_bytes": 9621212,
+      "apt_checksum": "MD5Sum:d1b6acd3005678511a3ddfd54a43fe85"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/a/aom/libaom-dev_3.8.2-2ubuntu0.2_amd64.deb",
+      "filename": "libaom-dev_3.8.2-2ubuntu0.2_amd64.deb",
+      "download_bytes": 2265852,
+      "apt_checksum": "MD5Sum:724f8e81c94a8b67e91ed8ee808a9757"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/benchmark/libbenchmark1.8.3_1.8.3-3_amd64.deb",
+      "filename": "libbenchmark1.8.3_1.8.3-3_amd64.deb",
+      "download_bytes": 159816,
+      "apt_checksum": "MD5Sum:02e79225237087a47e9e7d7080568858"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/benchmark/libbenchmark-dev_1.8.3-3_amd64.deb",
+      "filename": "libbenchmark-dev_1.8.3-3_amd64.deb",
+      "download_bytes": 86818,
+      "apt_checksum": "MD5Sum:e9b5c4fa2dffea35f5d1792da30aa1fa"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/l/lapack/libblas3_3.12.0-3build1.1_amd64.deb",
+      "filename": "libblas3_3.12.0-3build1.1_amd64.deb",
+      "download_bytes": 237978,
+      "apt_checksum": "MD5Sum:dfb3d8597d7c1a56ae310bc5e732861f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 10745362,
+      "apt_checksum": "MD5Sum:9c5a26f0608ca7726b5a006fb1e5301c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost-defaults/libboost-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4308,
+      "apt_checksum": "MD5Sum:a839d2779f0b43da8b23823150c52346"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost1.83-tools-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost1.83-tools-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 1401970,
+      "apt_checksum": "MD5Sum:fd5725e747c9f613c22aeaf54928cd88"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-tools-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-tools-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4238,
+      "apt_checksum": "MD5Sum:eab108f45c92c8ab82a4798c23b2f955"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-atomic1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-atomic1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 240046,
+      "apt_checksum": "MD5Sum:3acc2a78eb8386ffe114e424b7f09cdf"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-atomic1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-atomic1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 235318,
+      "apt_checksum": "MD5Sum:ed1591499eb5d80402f5b126896eefe5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-atomic-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-atomic-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4360,
+      "apt_checksum": "MD5Sum:8a71ce2210c18be9c62ff666e720e8a9"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-chrono1.83.0t64_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-chrono1.83.0t64_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 244582,
+      "apt_checksum": "MD5Sum:1d83665f5911b5b8bbae153a8c9d26fd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-chrono1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-chrono1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 246090,
+      "apt_checksum": "MD5Sum:a6a03d8ce46007959a1e6ba5ff2efa30"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-chrono-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-chrono-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4672,
+      "apt_checksum": "MD5Sum:8b6052c935768f6b344fd30e49d7e9a3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-container1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-container1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 260666,
+      "apt_checksum": "MD5Sum:cd3e7553c3814e72776f3830ea1e50c8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-container1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-container1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 267428,
+      "apt_checksum": "MD5Sum:4d81bbe9696a92e2d192cebf9a8aba40"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-container-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-container-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4530,
+      "apt_checksum": "MD5Sum:7a45ef02a5656156e5438cf5718878b3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-date-time1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-date-time1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 236104,
+      "apt_checksum": "MD5Sum:d0cd096d1aedf5fbfb083ccc223f2c7a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-serialization1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-serialization1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 341320,
+      "apt_checksum": "MD5Sum:fff57249598ec611b1abed5c2b182070"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-serialization1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-serialization1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 387374,
+      "apt_checksum": "MD5Sum:244c4d1c0591d485dee0dfecc9241d7d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-date-time1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-date-time1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 238844,
+      "apt_checksum": "MD5Sum:40ae652bfa317efb1b360bf60b8b0d39"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-system1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-system1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 236232,
+      "apt_checksum": "MD5Sum:6851f1bda0a804fddbd231f16b9a764f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-system1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-system1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 231032,
+      "apt_checksum": "MD5Sum:2b22ddbed0b89fe659e70a5b4e3dc4a1"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-thread1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-thread1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 275806,
+      "apt_checksum": "MD5Sum:60ddd5be68f5c2f0dbb2c03608a5f06b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-thread1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-thread1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 281636,
+      "apt_checksum": "MD5Sum:49ee8aeacbd42b3ac20b5d95370e29d2"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-context1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-context1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 237090,
+      "apt_checksum": "MD5Sum:bd0c91b0f6df4ec7e7314b909ad32503"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-context1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-context1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 232440,
+      "apt_checksum": "MD5Sum:d69c8532e48e2732017920377f3ce7a1"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-context-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-context-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4276,
+      "apt_checksum": "MD5Sum:43271e5aa8e6326ae21a5f4a5f74d31f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-coroutine1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-coroutine1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 233904,
+      "apt_checksum": "MD5Sum:8eda49baea9b38dba6cbc17054374e77"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-coroutine1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-coroutine1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 236654,
+      "apt_checksum": "MD5Sum:bc948e9ddbe6520008100e320a9e0bfa"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-coroutine-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-coroutine-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4344,
+      "apt_checksum": "MD5Sum:5e59bb2a29262dbe26ef0e7721f09af4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-date-time-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-date-time-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4058,
+      "apt_checksum": "MD5Sum:e98101a4d36d45c1130ab9bb20c08eba"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-exception1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-exception1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 229408,
+      "apt_checksum": "MD5Sum:db2148049a06318eecfb5282cfb160be"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-exception-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-exception-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4058,
+      "apt_checksum": "MD5Sum:204ed1d1f6f59c54e86ec6024214d721"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-filesystem1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-filesystem1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 283562,
+      "apt_checksum": "MD5Sum:11a118fc20b54f59a873b563e0f3c3ee"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-filesystem1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-filesystem1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 301158,
+      "apt_checksum": "MD5Sum:7eadb5c2ca65437326ef62c80f9d2ba4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-fiber1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-fiber1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 254502,
+      "apt_checksum": "MD5Sum:b5cccee23543f350f2b6da85804e4f69"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-fiber1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-fiber1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 267550,
+      "apt_checksum": "MD5Sum:6e31e48a512072b30706698128ee5a26"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-fiber-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-fiber-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4486,
+      "apt_checksum": "MD5Sum:13f436f3e8717879b743055a9c42f2bf"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-filesystem-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-filesystem-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4096,
+      "apt_checksum": "MD5Sum:d353e5601eba26a2d7273b72a5630800"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-graph1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-graph1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 360584,
+      "apt_checksum": "MD5Sum:caa5ebc0bb516db7090eb8a053178024"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-regex1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-regex1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 339538,
+      "apt_checksum": "MD5Sum:6baac80b564f8a0424859da15d333e3b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-regex1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-regex1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 354640,
+      "apt_checksum": "MD5Sum:de0604b39270fe91515f724ad1347207"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-test1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-test1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 453982,
+      "apt_checksum": "MD5Sum:dc03a798ac95a616b5368fd72a1d0c9c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-test1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-test1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 565924,
+      "apt_checksum": "MD5Sum:ac52da754ea6755eca14efffaec6108b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-graph1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-graph1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 399194,
+      "apt_checksum": "MD5Sum:331b42a7ce12ca8f2b5b6431ca20d91b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-graph-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-graph-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4160,
+      "apt_checksum": "MD5Sum:d840ecc5db61b787a9cab4c404500053"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libe/libevent/libevent-core-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "filename": "libevent-core-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "download_bytes": 91942,
+      "apt_checksum": "MD5Sum:8ce7ab8f13a4e34ba2a9d28cce5dbd96"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libe/libevent/libevent-pthreads-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "filename": "libevent-pthreads-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "download_bytes": 7988,
+      "apt_checksum": "MD5Sum:e40d7d81edee509041705681ea7e2255"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/i/infinipath-psm/libpsm-infinipath1_3.3%2b20.604758e7-6.3build1_amd64.deb",
+      "filename": "libpsm-infinipath1_3.3+20.604758e7-6.3build1_amd64.deb",
+      "download_bytes": 178148,
+      "apt_checksum": "MD5Sum:ea7e0255ca074a0497f9b1e0a5309771"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/libp/libpsm2/libpsm2-2_11.2.185-2build1_amd64.deb",
+      "filename": "libpsm2-2_11.2.185-2build1_amd64.deb",
+      "download_bytes": 193594,
+      "apt_checksum": "MD5Sum:7aad4bf6db3884feddda3fe82c3a2cd8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/r/rdma-core/librdmacm1t64_50.0-2ubuntu0.2_amd64.deb",
+      "filename": "librdmacm1t64_50.0-2ubuntu0.2_amd64.deb",
+      "download_bytes": 70698,
+      "apt_checksum": "MD5Sum:ee8a7afc1614421014545d902ffa265e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/libf/libfabric/libfabric1_1.17.0-3build2_amd64.deb",
+      "filename": "libfabric1_1.17.0-3build2_amd64.deb",
+      "download_bytes": 656666,
+      "apt_checksum": "MD5Sum:dd5346f39c9352fc229f706015702a81"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hwloc/libhwloc15_2.10.0-1build1_amd64.deb",
+      "filename": "libhwloc15_2.10.0-1build1_amd64.deb",
+      "download_bytes": 172340,
+      "apt_checksum": "MD5Sum:4d19fedf98522278127cf486636ea541"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/m/munge/libmunge2_0.5.15-4ubuntu0.1_amd64.deb",
+      "filename": "libmunge2_0.5.15-4ubuntu0.1_amd64.deb",
+      "download_bytes": 14846,
+      "apt_checksum": "MD5Sum:040b87d11201896946d798c92806b260"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hwloc/libhwloc-plugins_2.10.0-1build1_amd64.deb",
+      "filename": "libhwloc-plugins_2.10.0-1build1_amd64.deb",
+      "download_bytes": 15664,
+      "apt_checksum": "MD5Sum:b79d8d241a389f36743c00a36f227a25"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/pmix/libpmix2t64_5.0.1-4.1build1_amd64.deb",
+      "filename": "libpmix2t64_5.0.1-4.1build1_amd64.deb",
+      "download_bytes": 697360,
+      "apt_checksum": "MD5Sum:498550533163feaaa5a27a071555e690"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/u/ucx/libucx0_1.16.0%2bds-5ubuntu1_amd64.deb",
+      "filename": "libucx0_1.16.0+ds-5ubuntu1_amd64.deb",
+      "download_bytes": 1139558,
+      "apt_checksum": "MD5Sum:ca83331fd1ef724652361c7bf7532e5a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/o/openmpi/libopenmpi3t64_4.1.6-7ubuntu2_amd64.deb",
+      "filename": "libopenmpi3t64_4.1.6-7ubuntu2_amd64.deb",
+      "download_bytes": 2563070,
+      "apt_checksum": "MD5Sum:86f58e998752e21042253c2d7fc77311"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-mpi1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-mpi1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 270784,
+      "apt_checksum": "MD5Sum:894c3d82d9ed93d3178a24db09d363ae"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-graph-parallel1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-graph-parallel1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 277706,
+      "apt_checksum": "MD5Sum:fd28bd511002daf37a05b4486a2250da"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-graph-parallel1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-graph-parallel1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 287684,
+      "apt_checksum": "MD5Sum:7a1cdff592b555a79dc1e70199c6df20"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-graph-parallel-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-graph-parallel-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4192,
+      "apt_checksum": "MD5Sum:d53bd3a948d81cde93536524647ae966"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-iostreams1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-iostreams1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 259534,
+      "apt_checksum": "MD5Sum:a6f690836c248d79d4b91c425a3062de"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-iostreams1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-iostreams1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 264020,
+      "apt_checksum": "MD5Sum:18a0ccc6029ab636992301eb3f6aa3d0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-iostreams-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-iostreams-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4046,
+      "apt_checksum": "MD5Sum:984a9778e2c02adcf3addaeeb1cd7f8d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-json1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-json1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 365280,
+      "apt_checksum": "MD5Sum:96efc32bbbd4b58d72524305b421f06b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-json1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-json1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 379988,
+      "apt_checksum": "MD5Sum:490ebb1888358aa136a9f68929de353a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-json-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-json-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4172,
+      "apt_checksum": "MD5Sum:87085fe55c7b6bdb9db65479928aec70"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-locale1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-locale1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 413408,
+      "apt_checksum": "MD5Sum:d21650e9282e9f77449a581ba338341a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-locale1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-locale1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 582068,
+      "apt_checksum": "MD5Sum:8abe9a76f50db75dde1b19cb640f9500"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-locale-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-locale-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4378,
+      "apt_checksum": "MD5Sum:b4616202a1fbd39b423d611124b24aad"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-log1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-log1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 678790,
+      "apt_checksum": "MD5Sum:fb646a18b8348b2f02fcaf2b2afacea9"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-log1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-log1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 936640,
+      "apt_checksum": "MD5Sum:08409403abb5817e2d5da10c577e291a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-log-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-log-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4260,
+      "apt_checksum": "MD5Sum:356fbda2ba9554395b9da23440a3e09e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-math1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-math1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 439784,
+      "apt_checksum": "MD5Sum:e56f79d611be65e1d90e0a06172f1158"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-math1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-math1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 585656,
+      "apt_checksum": "MD5Sum:8af37609e9a6cd97296f116eb0d31add"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-math-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-math-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4264,
+      "apt_checksum": "MD5Sum:77e5ddec3284c3b581126c8dee61ec7b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/o/openmpi/openmpi-common_4.1.6-7ubuntu2_all.deb",
+      "filename": "openmpi-common_4.1.6-7ubuntu2_all.deb",
+      "download_bytes": 169738,
+      "apt_checksum": "MD5Sum:b65ba1a925a3558a41b4b849fb70f043"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libn/libnl3/libnl-3-dev_3.7.0-0.3build1.1_amd64.deb",
+      "filename": "libnl-3-dev_3.7.0-0.3build1.1_amd64.deb",
+      "download_bytes": 99492,
+      "apt_checksum": "MD5Sum:8ca037755dcfa978acc3e8c6b8255308"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libn/libnl3/libnl-route-3-dev_3.7.0-0.3build1.1_amd64.deb",
+      "filename": "libnl-route-3-dev_3.7.0-0.3build1.1_amd64.deb",
+      "download_bytes": 215712,
+      "apt_checksum": "MD5Sum:362ff72ea08f493e32b8e7b9dbfb3c97"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/r/rdma-core/libibverbs-dev_50.0-2ubuntu0.2_amd64.deb",
+      "filename": "libibverbs-dev_50.0-2ubuntu0.2_amd64.deb",
+      "download_bytes": 685732,
+      "apt_checksum": "MD5Sum:f95ea956820a0dd6a1fc0115e9dbdda6"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/n/numactl/libnuma-dev_2.0.18-1ubuntu0.24.04.1_amd64.deb",
+      "filename": "libnuma-dev_2.0.18-1ubuntu0.24.04.1_amd64.deb",
+      "download_bytes": 36996,
+      "apt_checksum": "MD5Sum:6de26d274e00e2015b6c906c68ed57d3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libt/libtool/libltdl-dev_2.4.7-7build1_amd64.deb",
+      "filename": "libltdl-dev_2.4.7-7build1_amd64.deb",
+      "download_bytes": 168468,
+      "apt_checksum": "MD5Sum:07084856ad90e193f43a35d4c1faa38c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hwloc/libhwloc-dev_2.10.0-1build1_amd64.deb",
+      "filename": "libhwloc-dev_2.10.0-1build1_amd64.deb",
+      "download_bytes": 267592,
+      "apt_checksum": "MD5Sum:7643d25dd4e3dd6b251989dcdc653b8f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libe/libevent/libevent-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "filename": "libevent-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "download_bytes": 145930,
+      "apt_checksum": "MD5Sum:ef711e9a8412e7eddd9e3959320a6dd4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libe/libevent/libevent-extra-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "filename": "libevent-extra-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "download_bytes": 64648,
+      "apt_checksum": "MD5Sum:a78586e8048c22f80448fef15fda4675"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libe/libevent/libevent-openssl-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "filename": "libevent-openssl-2.1-7t64_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "download_bytes": 15770,
+      "apt_checksum": "MD5Sum:e92d717ad96b6b6ca6d92bae8e690c3d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libe/libevent/libevent-dev_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "filename": "libevent-dev_2.1.12-stable-9ubuntu2.2_amd64.deb",
+      "download_bytes": 274008,
+      "apt_checksum": "MD5Sum:71a55302059ead0e274ea75506406dfb"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/pmix/libpmix-dev_5.0.1-4.1build1_amd64.deb",
+      "filename": "libpmix-dev_5.0.1-4.1build1_amd64.deb",
+      "download_bytes": 4017936,
+      "apt_checksum": "MD5Sum:4cd86c8ba2f739bc1609067dcff2fc33"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/j/jqueryui/libjs-jquery-ui_1.13.2%2bdfsg-1_all.deb",
+      "filename": "libjs-jquery-ui_1.13.2+dfsg-1_all.deb",
+      "download_bytes": 251790,
+      "apt_checksum": "MD5Sum:4e8d39b3ca3d5da037d1aa7aca8f43b3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/o/openmpi/openmpi-bin_4.1.6-7ubuntu2_amd64.deb",
+      "filename": "openmpi-bin_4.1.6-7ubuntu2_amd64.deb",
+      "download_bytes": 113584,
+      "apt_checksum": "MD5Sum:311e5086133fcbd761dc0e903149294a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/o/openmpi/libopenmpi-dev_4.1.6-7ubuntu2_amd64.deb",
+      "filename": "libopenmpi-dev_4.1.6-7ubuntu2_amd64.deb",
+      "download_bytes": 864350,
+      "apt_checksum": "MD5Sum:bf73f11fb77aaa8926c4b691808cd131"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/m/mpi-defaults/mpi-default-dev_1.15build1_amd64.deb",
+      "filename": "mpi-default-dev_1.15build1_amd64.deb",
+      "download_bytes": 3154,
+      "apt_checksum": "MD5Sum:1d8914fb6776cebea62a126bdefb4131"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-mpi1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-mpi1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 296050,
+      "apt_checksum": "MD5Sum:58b3d8741f5c0bf5885ea55894ab2d99"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-mpi-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-mpi-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4144,
+      "apt_checksum": "MD5Sum:f9e677e033b39ec2c19b8c203ac1a1a7"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-python1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-python1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 312188,
+      "apt_checksum": "MD5Sum:0af41c16b09f58b7d4d6fda820a89d77"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/m/mpi-defaults/mpi-default-bin_1.15build1_amd64.deb",
+      "filename": "mpi-default-bin_1.15build1_amd64.deb",
+      "download_bytes": 2376,
+      "apt_checksum": "MD5Sum:57b557a50b71d5de8727537cba6957e9"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-mpi-python1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-mpi-python1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 361880,
+      "apt_checksum": "MD5Sum:646f278e8fa47fea6cfc9e695157b550"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-mpi-python1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-mpi-python1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 237074,
+      "apt_checksum": "MD5Sum:3570082d26c565f8b1a22c9c0c5870fe"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-mpi-python-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-mpi-python-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4196,
+      "apt_checksum": "MD5Sum:ae946cf50f55916dca750e789425c85f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-numpy1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-numpy1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 242292,
+      "apt_checksum": "MD5Sum:35f12d7a1879538f08966deb06703b6e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-numpy1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-numpy1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 247134,
+      "apt_checksum": "MD5Sum:021b8021cf4ca59ceeac579d4bc3f0da"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-numpy-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-numpy-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4100,
+      "apt_checksum": "MD5Sum:1fb5ef87848be470a49c1ebfdcab2f86"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-program-options1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-program-options1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 320510,
+      "apt_checksum": "MD5Sum:e594242aecec4e1024882a2ee7b6c655"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-program-options1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-program-options1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 388288,
+      "apt_checksum": "MD5Sum:7d8d4af12c07ba1be870a6b5154f89a3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost-defaults/libboost-program-options-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-program-options-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4086,
+      "apt_checksum": "MD5Sum:00b994e47f4e54cccb83544182b57b4a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-python1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-python1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 337432,
+      "apt_checksum": "MD5Sum:1b7d2a4bdc94b949e9d0d4a0bb602b56"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-python-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-python-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4344,
+      "apt_checksum": "MD5Sum:15e74e30a50ccb5ef12d2e0c81d76c97"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-random1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-random1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 242424,
+      "apt_checksum": "MD5Sum:889581a58e2ca9fc2592e5a688149ec0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-random1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-random1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 241332,
+      "apt_checksum": "MD5Sum:fd54b2bb05e7085f7c9529fb926761ba"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-random-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-random-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4062,
+      "apt_checksum": "MD5Sum:cd7c65c86dbbfc6eea71c7df7ab97cde"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost-defaults/libboost-regex-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-regex-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4324,
+      "apt_checksum": "MD5Sum:df6379b18f6e8847009fe884340d638b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-serialization-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-serialization-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4280,
+      "apt_checksum": "MD5Sum:04a2e36b9f238c9041565d1041d4c7c4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-stacktrace1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-stacktrace1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 290182,
+      "apt_checksum": "MD5Sum:b3f281a2979751f91a283a3d56754fd5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-stacktrace1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-stacktrace1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 246548,
+      "apt_checksum": "MD5Sum:42722f5efa21920e6d085bdb78640c78"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-stacktrace-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-stacktrace-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4068,
+      "apt_checksum": "MD5Sum:eec3f7e54d362480c25e953a8fc06582"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-system-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-system-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4206,
+      "apt_checksum": "MD5Sum:104cd8fed802933e78b8c27896238b64"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-test-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-test-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4090,
+      "apt_checksum": "MD5Sum:59b4712703fdc2d4572f7671176fc4a6"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost-defaults/libboost-thread-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-thread-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4088,
+      "apt_checksum": "MD5Sum:7b87dcc2cdacf1c8dd1956d5b4e67e5e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-timer1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-timer1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 240900,
+      "apt_checksum": "MD5Sum:f91d9cde84368dbaf54bcfeb51217bd5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-timer1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-timer1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 236768,
+      "apt_checksum": "MD5Sum:607c4ab80c2b35421970781f80bf5de7"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-timer-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-timer-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4190,
+      "apt_checksum": "MD5Sum:c7b8f827a43cef3ac7d2c9816c82f11f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-type-erasure1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-type-erasure1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 245510,
+      "apt_checksum": "MD5Sum:de88dc24e7ff0364c202df71b709e368"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-type-erasure1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-type-erasure1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 250092,
+      "apt_checksum": "MD5Sum:2183bb63b664bfb1dab3bc918f68b906"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-type-erasure-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-type-erasure-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4162,
+      "apt_checksum": "MD5Sum:11fd94a501b23279707abca9b0b181ee"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/boost1.83/libboost-url1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-url1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 343430,
+      "apt_checksum": "MD5Sum:e13c84b81443f6566b6d689dd18b8e99"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-url1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-url1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 443730,
+      "apt_checksum": "MD5Sum:3d24375f22f10c41a1aa6c04628bf35a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-url-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-url-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4192,
+      "apt_checksum": "MD5Sum:e2bb6d4e16241822438d2ac9933dbb19"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-wave1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-wave1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 454242,
+      "apt_checksum": "MD5Sum:dc9fc094f6cf92f1437c620f493c2302"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-wave1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-wave1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 498918,
+      "apt_checksum": "MD5Sum:3e0de830c87e1130827f396019f68849"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-wave-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-wave-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4096,
+      "apt_checksum": "MD5Sum:8470b4d66f9399d782114ab183c36b79"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-nowide1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-nowide1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 240488,
+      "apt_checksum": "MD5Sum:d98bfda3316be889607ad23ce0bc3983"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost1.83/libboost-nowide1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "filename": "libboost-nowide1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb",
+      "download_bytes": 236270,
+      "apt_checksum": "MD5Sum:b4718a2a8af2df30f62853695f737285"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-nowide-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-nowide-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 4136,
+      "apt_checksum": "MD5Sum:1dbc8de18b30d71c0fc0e324d6937339"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/b/boost-defaults/libboost-all-dev_1.83.0.1ubuntu2_amd64.deb",
+      "filename": "libboost-all-dev_1.83.0.1ubuntu2_amd64.deb",
+      "download_bytes": 2286,
+      "apt_checksum": "MD5Sum:679eee3fa08b846cda7de9121e1b8f68"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/brotli/libbrotli-dev_1.1.0-2ubuntu0.1_amd64.deb",
+      "filename": "libbrotli-dev_1.1.0-2ubuntu0.1_amd64.deb",
+      "download_bytes": 353330,
+      "apt_checksum": "MD5Sum:189ad9dda000c392fcf4da1674ffa64d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/b/bzip2/libbz2-dev_1.0.8-5.1ubuntu0.1_amd64.deb",
+      "filename": "libbz2-dev_1.0.8-5.1ubuntu0.1_amd64.deb",
+      "download_bytes": 33608,
+      "apt_checksum": "MD5Sum:3f1e58d143e8d10902cad64fb04c1c0f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/c/console-bridge/libconsole-bridge1.0_1.0.1%2bdfsg2-3build1_amd64.deb",
+      "filename": "libconsole-bridge1.0_1.0.1+dfsg2-3build1_amd64.deb",
+      "download_bytes": 11286,
+      "apt_checksum": "MD5Sum:ae31960705bacc193185add3e33d4870"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/c/curl/libcurl4-openssl-dev_8.5.0-2ubuntu10.16_amd64.deb",
+      "filename": "libcurl4-openssl-dev_8.5.0-2ubuntu10.16_amd64.deb",
+      "download_bytes": 446636,
+      "apt_checksum": "MD5Sum:bca570c8be89294bb3f87093114c5931"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/d/dav1d/libdav1d7_1.4.1-1build1_amd64.deb",
+      "filename": "libdav1d7_1.4.1-1build1_amd64.deb",
+      "download_bytes": 604018,
+      "apt_checksum": "MD5Sum:eae121d7ace00e9db8d484c33ebee766"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/d/dav1d/libdav1d-dev_1.4.1-1build1_amd64.deb",
+      "filename": "libdav1d-dev_1.4.1-1build1_amd64.deb",
+      "download_bytes": 25268,
+      "apt_checksum": "MD5Sum:0ee093e7a5e974e7f359a24d95cfbfa0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libd/libde265/libde265-dev_1.0.15-1ubuntu0.2_amd64.deb",
+      "filename": "libde265-dev_1.0.15-1ubuntu0.2_amd64.deb",
+      "download_bytes": 12634,
+      "apt_checksum": "MD5Sum:8fa6c675f08fc8fb1d7de5d6c08bbaf4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libd/libdeflate/libdeflate-dev_1.19-1build1.1_amd64.deb",
+      "filename": "libdeflate-dev_1.19-1build1.1_amd64.deb",
+      "download_bytes": 50936,
+      "apt_checksum": "MD5Sum:d955a0d828bae086548f47b92b157543"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libe/libexif/libexif-dev_0.6.24-1ubuntu0.24.04.1_amd64.deb",
+      "filename": "libexif-dev_0.6.24-1ubuntu0.24.04.1_amd64.deb",
+      "download_bytes": 109926,
+      "apt_checksum": "MD5Sum:b71d9fe605e8b1a4eef225d49612a0af"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/flann/libflann1.9_1.9.2%2bdfsg-2build1_amd64.deb",
+      "filename": "libflann1.9_1.9.2+dfsg-2build1_amd64.deb",
+      "download_bytes": 794492,
+      "apt_checksum": "MD5Sum:f96d08df254bc60c241645205739e068"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/liba/libaec/libsz2_1.1.2-1build1_amd64.deb",
+      "filename": "libsz2_1.1.2-1build1_amd64.deb",
+      "download_bytes": 5476,
+      "apt_checksum": "MD5Sum:ea04864dbcbd8ec714896855627dfe5b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hdf5/libhdf5-openmpi-103-1t64_1.10.10%2brepack-3.1ubuntu4_amd64.deb",
+      "filename": "libhdf5-openmpi-103-1t64_1.10.10+repack-3.1ubuntu4_amd64.deb",
+      "download_bytes": 1325282,
+      "apt_checksum": "MD5Sum:f32b976d5d0c8c1a91202188e39130ab"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hdf5/libhdf5-openmpi-fortran-102t64_1.10.10%2brepack-3.1ubuntu4_amd64.deb",
+      "filename": "libhdf5-openmpi-fortran-102t64_1.10.10+repack-3.1ubuntu4_amd64.deb",
+      "download_bytes": 85494,
+      "apt_checksum": "MD5Sum:d27a696723f00dffd36710f07d65f3f9"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hdf5/libhdf5-openmpi-hl-100t64_1.10.10%2brepack-3.1ubuntu4_amd64.deb",
+      "filename": "libhdf5-openmpi-hl-100t64_1.10.10+repack-3.1ubuntu4_amd64.deb",
+      "download_bytes": 56410,
+      "apt_checksum": "MD5Sum:6f9690be391297d246ab6574ab81b716"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hdf5/libhdf5-openmpi-hl-fortran-100t64_1.10.10%2brepack-3.1ubuntu4_amd64.deb",
+      "filename": "libhdf5-openmpi-hl-fortran-100t64_1.10.10+repack-3.1ubuntu4_amd64.deb",
+      "download_bytes": 31704,
+      "apt_checksum": "MD5Sum:39d2d4b1e35c003ae6aebd79a359ebba"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hdf5/libhdf5-openmpi-cpp-103-1t64_1.10.10%2brepack-3.1ubuntu4_amd64.deb",
+      "filename": "libhdf5-openmpi-cpp-103-1t64_1.10.10+repack-3.1ubuntu4_amd64.deb",
+      "download_bytes": 127090,
+      "apt_checksum": "MD5Sum:2b5d721dcdbf989b304c64858a38cf5b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hdf5/libhdf5-openmpi-hl-cpp-100t64_1.10.10%2brepack-3.1ubuntu4_amd64.deb",
+      "filename": "libhdf5-openmpi-hl-cpp-100t64_1.10.10+repack-3.1ubuntu4_amd64.deb",
+      "download_bytes": 11150,
+      "apt_checksum": "MD5Sum:3bbb37d465037d4c1dec05591506a552"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/liba/libaec/libaec-dev_1.1.2-1build1_amd64.deb",
+      "filename": "libaec-dev_1.1.2-1build1_amd64.deb",
+      "download_bytes": 19794,
+      "apt_checksum": "MD5Sum:3291c1fe187992e5dbc151e97ba26ff3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libj/libjpeg-turbo/libjpeg-turbo8-dev_2.1.5-2ubuntu2_amd64.deb",
+      "filename": "libjpeg-turbo8-dev_2.1.5-2ubuntu2_amd64.deb",
+      "download_bytes": 294776,
+      "apt_checksum": "MD5Sum:c4fc40cfe77f60afe10e647c05482ea5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libj/libjpeg8-empty/libjpeg8-dev_8c-2ubuntu11_amd64.deb",
+      "filename": "libjpeg8-dev_8c-2ubuntu11_amd64.deb",
+      "download_bytes": 1484,
+      "apt_checksum": "MD5Sum:713833d2d17eb42b1b5b1546f757d44e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libj/libjpeg8-empty/libjpeg-dev_8c-2ubuntu11_amd64.deb",
+      "filename": "libjpeg-dev_8c-2ubuntu11_amd64.deb",
+      "download_bytes": 1482,
+      "apt_checksum": "MD5Sum:743deecf33daebc7b37993b49db94cf5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/o/openssl/libssl-dev_3.0.13-0ubuntu3.16_amd64.deb",
+      "filename": "libssl-dev_3.0.13-0ubuntu3.16_amd64.deb",
+      "download_bytes": 2408684,
+      "apt_checksum": "MD5Sum:adc05020a21eb2e2122aba01360bb74e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hdf5/libhdf5-openmpi-dev_1.10.10%2brepack-3.1ubuntu4_amd64.deb",
+      "filename": "libhdf5-openmpi-dev_1.10.10+repack-3.1ubuntu4_amd64.deb",
+      "download_bytes": 2849816,
+      "apt_checksum": "MD5Sum:4847c197cee52f62ecad14a4cd451c4f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/hdf5/libhdf5-mpi-dev_1.10.10%2brepack-3.1ubuntu4_amd64.deb",
+      "filename": "libhdf5-mpi-dev_1.10.10+repack-3.1ubuntu4_amd64.deb",
+      "download_bytes": 4622,
+      "apt_checksum": "MD5Sum:af191d712e5a3562d5683a8495866eed"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/l/lz4/liblz4-dev_1.9.4-1build1.1_amd64.deb",
+      "filename": "liblz4-dev_1.9.4-1build1.1_amd64.deb",
+      "download_bytes": 87642,
+      "apt_checksum": "MD5Sum:b9e996819b51c43e31557d591c91dd96"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/flann/libflann-dev_1.9.2%2bdfsg-2build1_amd64.deb",
+      "filename": "libflann-dev_1.9.2+dfsg-2build1_amd64.deb",
+      "download_bytes": 816440,
+      "apt_checksum": "MD5Sum:75def9d6b4db4a581e2d4137d2a9583d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/fmtlib/libfmt9_9.1.0%2bds1-2_amd64.deb",
+      "filename": "libfmt9_9.1.0+ds1-2_amd64.deb",
+      "download_bytes": 62960,
+      "apt_checksum": "MD5Sum:de8f26e1a86f0bb05ce0f4dd36760e7b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libp/libpng1.6/libpng-dev_1.6.43-5ubuntu0.7_amd64.deb",
+      "filename": "libpng-dev_1.6.43-5ubuntu0.7_amd64.deb",
+      "download_bytes": 264970,
+      "apt_checksum": "MD5Sum:4d09f73ee76dc401d957bd74b13b5072"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/f/freetype/libfreetype-dev_2.13.2%2bdfsg-1ubuntu0.2_amd64.deb",
+      "filename": "libfreetype-dev_2.13.2+dfsg-1ubuntu0.2_amd64.deb",
+      "download_bytes": 574070,
+      "apt_checksum": "MD5Sum:4949950064a7cac95d7ab47edac68738"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/highway/libhwy1t64_1.0.7-8.1build1_amd64.deb",
+      "filename": "libhwy1t64_1.0.7-8.1build1_amd64.deb",
+      "download_bytes": 584050,
+      "apt_checksum": "MD5Sum:96f46ff55f48790604d8bddefbe3d3e7"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/j/jpeg-xl/libjxl0.7_0.7.0-10.2ubuntu6.1_amd64.deb",
+      "filename": "libjxl0.7_0.7.0-10.2ubuntu6.1_amd64.deb",
+      "download_bytes": 1001370,
+      "apt_checksum": "MD5Sum:fc7f390b8fd86a738789851017e84c6d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/graphicsmagick/libgraphicsmagick-q16-3t64_1.4%2breally1.3.42-1.1build3_amd64.deb",
+      "filename": "libgraphicsmagick-q16-3t64_1.4+really1.3.42-1.1build3_amd64.deb",
+      "download_bytes": 1257164,
+      "apt_checksum": "MD5Sum:e7530c2534e6e5b46ffc1bac02146388"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/graphicsmagick/libgraphics-magick-perl_1.4%2breally1.3.42-1.1build3_amd64.deb",
+      "filename": "libgraphics-magick-perl_1.4+really1.3.42-1.1build3_amd64.deb",
+      "download_bytes": 57988,
+      "apt_checksum": "MD5Sum:96fb3cfb7a800d2dca3c5a0d37003663"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/graphicsmagick/libgraphicsmagick%2b%2b-q16-12t64_1.4%2breally1.3.42-1.1build3_amd64.deb",
+      "filename": "libgraphicsmagick++-q16-12t64_1.4+really1.3.42-1.1build3_amd64.deb",
+      "download_bytes": 116954,
+      "apt_checksum": "MD5Sum:db5e10247e77f82a7bbb51b0eb7cccae"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/l/lcms2/liblcms2-dev_2.14-2ubuntu0.1_amd64.deb",
+      "filename": "liblcms2-dev_2.14-2ubuntu0.1_amd64.deb",
+      "download_bytes": 1809114,
+      "apt_checksum": "MD5Sum:441cc48efc6b52fc739720d00396548b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/x/xorg-sgml-doctools/xorg-sgml-doctools_1.11-1.1_all.deb",
+      "filename": "xorg-sgml-doctools_1%3a1.11-1.1_all.deb",
+      "download_bytes": 10936,
+      "apt_checksum": "MD5Sum:cd9ce4694a205d3d61711d88a256e3aa"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/x/xorgproto/x11proto-dev_2023.2-1_all.deb",
+      "filename": "x11proto-dev_2023.2-1_all.deb",
+      "download_bytes": 602398,
+      "apt_checksum": "MD5Sum:2110948885ae787ca787f2cb0886b1ca"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/x/xorgproto/x11proto-core-dev_2023.2-1_all.deb",
+      "filename": "x11proto-core-dev_2023.2-1_all.deb",
+      "download_bytes": 2444,
+      "apt_checksum": "MD5Sum:366cf0f11e5c9a2afe7b6687dfa033b2"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libx/libxau/libxau-dev_1.0.9-1build6_amd64.deb",
+      "filename": "libxau-dev_1%3a1.0.9-1build6_amd64.deb",
+      "download_bytes": 9570,
+      "apt_checksum": "MD5Sum:56019f76dde0281a3299089216f5365c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libx/libxdmcp/libxdmcp-dev_1.1.3-0ubuntu6_amd64.deb",
+      "filename": "libxdmcp-dev_1%3a1.1.3-0ubuntu6_amd64.deb",
+      "download_bytes": 26546,
+      "apt_checksum": "MD5Sum:6ba509d3ae63287d24e91c3f992202f0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/x/xtrans/xtrans-dev_1.4.0-1_all.deb",
+      "filename": "xtrans-dev_1.4.0-1_all.deb",
+      "download_bytes": 68900,
+      "apt_checksum": "MD5Sum:5411362f7caeccc1185750f3a1a508ee"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libp/libpthread-stubs/libpthread-stubs0-dev_0.4-1build3_amd64.deb",
+      "filename": "libpthread-stubs0-dev_0.4-1build3_amd64.deb",
+      "download_bytes": 4746,
+      "apt_checksum": "MD5Sum:8e587f51b32cf51ed54c0734840432d9"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libx/libxcb/libxcb1-dev_1.15-1ubuntu2_amd64.deb",
+      "filename": "libxcb1-dev_1.15-1ubuntu2_amd64.deb",
+      "download_bytes": 85790,
+      "apt_checksum": "MD5Sum:1e4450158a96673730029fda74fdfac6"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libx/libx11/libx11-dev_1.8.7-1ubuntu0.1_amd64.deb",
+      "filename": "libx11-dev_2%3a1.8.7-1ubuntu0.1_amd64.deb",
+      "download_bytes": 732278,
+      "apt_checksum": "MD5Sum:b479c8cb2770787da9656a9cfdbcd3c3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libw/libwmf/libwmf-dev_0.2.13-1.1build3_amd64.deb",
+      "filename": "libwmf-dev_0.2.13-1.1build3_amd64.deb",
+      "download_bytes": 235914,
+      "apt_checksum": "MD5Sum:5da46c893c9f9bf672b12c06fe02ebca"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libi/libice/libice-dev_1.0.10-1build3_amd64.deb",
+      "filename": "libice-dev_2%3a1.0.10-1build3_amd64.deb",
+      "download_bytes": 50958,
+      "apt_checksum": "MD5Sum:69711014951f1c5f35b19860257e3a9b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libs/libsm/libsm-dev_1.2.3-1build3_amd64.deb",
+      "filename": "libsm-dev_2%3a1.2.3-1build3_amd64.deb",
+      "download_bytes": 17806,
+      "apt_checksum": "MD5Sum:80c57c441b21041a0304da4592dfd48f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libx/libxext/libxext-dev_1.3.4-1build2_amd64.deb",
+      "filename": "libxext-dev_2%3a1.3.4-1build2_amd64.deb",
+      "download_bytes": 83470,
+      "apt_checksum": "MD5Sum:66849483334a72b49b229c37d0d907ce"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/j/jbigkit/libjbig-dev_2.1-6.1ubuntu2_amd64.deb",
+      "filename": "libjbig-dev_2.1-6.1ubuntu2_amd64.deb",
+      "download_bytes": 27886,
+      "apt_checksum": "MD5Sum:a07271babc9c637491c64d051dd985e8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/x/xz-utils/liblzma-dev_5.6.1%2breally5.4.5-1ubuntu0.4_amd64.deb",
+      "filename": "liblzma-dev_5.6.1+really5.4.5-1ubuntu0.4_amd64.deb",
+      "download_bytes": 176184,
+      "apt_checksum": "MD5Sum:2127ba2b33a58482493719df68b07f9a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libz/libzstd/libzstd-dev_1.5.5%2bdfsg2-2build1.1_amd64.deb",
+      "filename": "libzstd-dev_1.5.5+dfsg2-2build1.1_amd64.deb",
+      "download_bytes": 363956,
+      "apt_checksum": "MD5Sum:0e86b489c84680d6b4ead9bcf441b6a2"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libw/libwebp/libwebpdecoder3_1.3.2-0.4build3_amd64.deb",
+      "filename": "libwebpdecoder3_1.3.2-0.4build3_amd64.deb",
+      "download_bytes": 114352,
+      "apt_checksum": "MD5Sum:41934691f2bce0d42e067811996771f2"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libw/libwebp/libsharpyuv-dev_1.3.2-0.4build3_amd64.deb",
+      "filename": "libsharpyuv-dev_1.3.2-0.4build3_amd64.deb",
+      "download_bytes": 16018,
+      "apt_checksum": "MD5Sum:422af6648552307752ae4c6b5554e103"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libw/libwebp/libwebp-dev_1.3.2-0.4build3_amd64.deb",
+      "filename": "libwebp-dev_1.3.2-0.4build3_amd64.deb",
+      "download_bytes": 366856,
+      "apt_checksum": "MD5Sum:48a96271584881e10136aba3f1fcb19a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/t/tiff/libtiffxx6_4.5.1%2bgit230720-4ubuntu2.5_amd64.deb",
+      "filename": "libtiffxx6_4.5.1+git230720-4ubuntu2.5_amd64.deb",
+      "download_bytes": 5642,
+      "apt_checksum": "MD5Sum:ca4f88322e135b7cdc0b1295cfdc83eb"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/l/lerc/liblerc-dev_4.0.0%2bds-4ubuntu2_amd64.deb",
+      "filename": "liblerc-dev_4.0.0+ds-4ubuntu2_amd64.deb",
+      "download_bytes": 182412,
+      "apt_checksum": "MD5Sum:670f9ae70449a6edf651ac18a5878eaf"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/t/tiff/libtiff-dev_4.5.1%2bgit230720-4ubuntu2.5_amd64.deb",
+      "filename": "libtiff-dev_4.5.1+git230720-4ubuntu2.5_amd64.deb",
+      "download_bytes": 338168,
+      "apt_checksum": "MD5Sum:bb533e4351830ec174add04db1c4d944"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/x/x265/libx265-199_3.5-2build1_amd64.deb",
+      "filename": "libx265-199_3.5-2build1_amd64.deb",
+      "download_bytes": 1226422,
+      "apt_checksum": "MD5Sum:41a0db28c7ab0f8bfdb99a5cd7a2c875"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/x/x265/libx265-dev_3.5-2build1_amd64.deb",
+      "filename": "libx265-dev_3.5-2build1_amd64.deb",
+      "download_bytes": 1351172,
+      "apt_checksum": "MD5Sum:b32d83bcbdf2d71a39b487d97150c084"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/libh/libheif/libheif-dev_1.17.6-1ubuntu4.9_amd64.deb",
+      "filename": "libheif-dev_1.17.6-1ubuntu4.9_amd64.deb",
+      "download_bytes": 41732,
+      "apt_checksum": "MD5Sum:44fd1eccf734f12ef40a1f3887efde3d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/h/highway/libhwy-dev_1.0.7-8.1build1_amd64.deb",
+      "filename": "libhwy-dev_1.0.7-8.1build1_amd64.deb",
+      "download_bytes": 316008,
+      "apt_checksum": "MD5Sum:61be75af6f1d3c99b5399c44671c70be"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/j/jpeg-xl/libjxl-dev_0.7.0-10.2ubuntu6.1_amd64.deb",
+      "filename": "libjxl-dev_0.7.0-10.2ubuntu6.1_amd64.deb",
+      "download_bytes": 42228,
+      "apt_checksum": "MD5Sum:d01bbdb1880b0a644b92b0d5a9f46845"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/graphicsmagick/libgraphicsmagick1-dev_1.4%2breally1.3.42-1.1build3_amd64.deb",
+      "filename": "libgraphicsmagick1-dev_1.4+really1.3.42-1.1build3_amd64.deb",
+      "download_bytes": 1554590,
+      "apt_checksum": "MD5Sum:25beb14c89d00ce6ece2f8b37c7a90b4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/graphicsmagick/libgraphicsmagick%2b%2b1-dev_1.4%2breally1.3.42-1.1build3_amd64.deb",
+      "filename": "libgraphicsmagick++1-dev_1.4+really1.3.42-1.1build3_amd64.deb",
+      "download_bytes": 292772,
+      "apt_checksum": "MD5Sum:777a76eb7233c5a08905dcbb3aee0d30"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/googletest/libgtest-dev_1.14.0-1_amd64.deb",
+      "filename": "libgtest-dev_1.14.0-1_amd64.deb",
+      "download_bytes": 268320,
+      "apt_checksum": "MD5Sum:17ce0993cf0654a283e503001b3937e4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/l/lapack/liblapack3_3.12.0-3build1.1_amd64.deb",
+      "filename": "liblapack3_3.12.0-3build1.1_amd64.deb",
+      "download_bytes": 2646422,
+      "apt_checksum": "MD5Sum:a795d3ca6f154077a08282b66907ad0f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/u/ust/liblttng-ust1t64_2.13.7-1.1ubuntu2_amd64.deb",
+      "filename": "liblttng-ust1t64_2.13.7-1.1ubuntu2_amd64.deb",
+      "download_bytes": 184666,
+      "apt_checksum": "MD5Sum:325ccecbf87f1e5c468b8bdb3842104d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/u/ust/liblttng-ust-python-agent1t64_2.13.7-1.1ubuntu2_amd64.deb",
+      "filename": "liblttng-ust-python-agent1t64_2.13.7-1.1ubuntu2_amd64.deb",
+      "download_bytes": 11394,
+      "apt_checksum": "MD5Sum:5c8cbcf455defbd860a130f6048ce058"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/l/llvm-toolchain-18/libomp5-18_18.1.3-1ubuntu1_amd64.deb",
+      "filename": "libomp5-18_1%3a18.1.3-1ubuntu1_amd64.deb",
+      "download_bytes": 607896,
+      "apt_checksum": "MD5Sum:c41ec6dcb0a4ac3d8313dcc5178e4ab3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/l/llvm-toolchain-18/libomp-18-dev_18.1.3-1ubuntu1_amd64.deb",
+      "filename": "libomp-18-dev_1%3a18.1.3-1ubuntu1_amd64.deb",
+      "download_bytes": 968210,
+      "apt_checksum": "MD5Sum:2b8f59a55448f485e320b8128660a13f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/o/orocos-kdl/liborocos-kdl1.5_1.5.1-4build1_amd64.deb",
+      "filename": "liborocos-kdl1.5_1.5.1-4build1_amd64.deb",
+      "download_bytes": 247792,
+      "apt_checksum": "MD5Sum:78c0b2482355e93f6fad48590e8c9499"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/e/eigen3/libeigen3-dev_3.4.0-4build0.1_all.deb",
+      "filename": "libeigen3-dev_3.4.0-4build0.1_all.deb",
+      "download_bytes": 1056510,
+      "apt_checksum": "MD5Sum:db3f406cf7c421a0c160e10776533a81"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/o/orocos-kdl/liborocos-kdl-dev_1.5.1-4build1_amd64.deb",
+      "filename": "liborocos-kdl-dev_1.5.1-4build1_amd64.deb",
+      "download_bytes": 84298,
+      "apt_checksum": "MD5Sum:d69c3685c074f7784565bfb26dace7b7"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/s/spdlog/libspdlog1.12_1.12.0%2bds-2build1_amd64.deb",
+      "filename": "libspdlog1.12_1%3a1.12.0+ds-2build1_amd64.deb",
+      "download_bytes": 146610,
+      "apt_checksum": "MD5Sum:ca95a3ddbdb0ec4cfb4dc1c9105a74cb"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/fmtlib/libfmt-dev_9.1.0%2bds1-2_amd64.deb",
+      "filename": "libfmt-dev_9.1.0+ds1-2_amd64.deb",
+      "download_bytes": 121674,
+      "apt_checksum": "MD5Sum:9fbe1d3f2f23a08f1cc7ade9c6cbbd08"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/s/spdlog/libspdlog-dev_1.12.0%2bds-2build1_amd64.deb",
+      "filename": "libspdlog-dev_1%3a1.12.0+ds-2build1_amd64.deb",
+      "download_bytes": 83504,
+      "apt_checksum": "MD5Sum:4c24fe3f9d598a13650721e1b5dfc71a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/s/sqlite3/libsqlite3-dev_3.45.1-1ubuntu2.9_amd64.deb",
+      "filename": "libsqlite3-dev_3.45.1-1ubuntu2.9_amd64.deb",
+      "download_bytes": 911066,
+      "apt_checksum": "MD5Sum:56b1d73d130ca557e795a6b807172b01"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/x/xtl/xtl-dev_0.7.5-3_all.deb",
+      "filename": "xtl-dev_0.7.5-3_all.deb",
+      "download_bytes": 91932,
+      "apt_checksum": "MD5Sum:2df69836d9d0c64c4822043d91602f3b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/x/xsimd/libxsimd-dev_12.1.1-3build1_amd64.deb",
+      "filename": "libxsimd-dev_12.1.1-3build1_amd64.deb",
+      "download_bytes": 122918,
+      "apt_checksum": "MD5Sum:054f63b001fc5da1767308e9fec919e3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/n/nlohmann-json3/nlohmann-json3-dev_3.11.3-1_all.deb",
+      "filename": "nlohmann-json3-dev_3.11.3-1_all.deb",
+      "download_bytes": 189676,
+      "apt_checksum": "MD5Sum:7494c8d1e468574bb43884ba9b96698b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/x/xtensor/libxtensor-dev_0.25.0-1_all.deb",
+      "filename": "libxtensor-dev_0.25.0-1_all.deb",
+      "download_bytes": 199100,
+      "apt_checksum": "MD5Sum:72ff733b7028d9a3101d2cbde1b6d4aa"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/y/yaml-cpp/libyaml-cpp0.8_0.8.0%2bdfsg-6build1_amd64.deb",
+      "filename": "libyaml-cpp0.8_0.8.0+dfsg-6build1_amd64.deb",
+      "download_bytes": 115458,
+      "apt_checksum": "MD5Sum:9a52c818f4c463a6f7397affeeb62b54"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/y/yaml-cpp/libyaml-cpp-dev_0.8.0%2bdfsg-6build1_amd64.deb",
+      "filename": "libyaml-cpp-dev_0.8.0+dfsg-6build1_amd64.deb",
+      "download_bytes": 187528,
+      "apt_checksum": "MD5Sum:3225cd1c84930231ffbd90a8e8781778"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/m/more-itertools/python3-more-itertools_10.2.0-1_all.deb",
+      "filename": "python3-more-itertools_10.2.0-1_all.deb",
+      "download_bytes": 52906,
+      "apt_checksum": "MD5Sum:16a0bb1040f30d0700927d4e6d65fe72"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/p/python-zipp/python3-zipp_1.0.0-6ubuntu0.1_all.deb",
+      "filename": "python3-zipp_1.0.0-6ubuntu0.1_all.deb",
+      "download_bytes": 6774,
+      "apt_checksum": "MD5Sum:d3475468533c1496ed1b598b637768dd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/p/python-importlib-metadata/python3-importlib-metadata_4.12.0-1_all.deb",
+      "filename": "python3-importlib-metadata_4.12.0-1_all.deb",
+      "download_bytes": 17822,
+      "apt_checksum": "MD5Sum:a17bfe5ee894f79b08f04b95fa579a22"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/s/snowball/python3-snowballstemmer_2.2.0-4build1_all.deb",
+      "filename": "python3-snowballstemmer_2.2.0-4build1_all.deb",
+      "download_bytes": 59820,
+      "apt_checksum": "MD5Sum:d6a17501fc75b0ececd7b3f75a116779"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/pydocstyle/python3-pydocstyle_6.3.0-1.1_all.deb",
+      "filename": "python3-pydocstyle_6.3.0-1.1_all.deb",
+      "download_bytes": 35216,
+      "apt_checksum": "MD5Sum:837bd1ed786e26d7ca54a2a7d09177ed"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/pydocstyle/pydocstyle_6.3.0-1.1_all.deb",
+      "filename": "pydocstyle_6.3.0-1.1_all.deb",
+      "download_bytes": 8554,
+      "apt_checksum": "MD5Sum:5c745246a79c9b724ec86e629dd7d8f5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/python-argcomplete/python3-argcomplete_3.1.4-1ubuntu0.1_all.deb",
+      "filename": "python3-argcomplete_3.1.4-1ubuntu0.1_all.deb",
+      "download_bytes": 33800,
+      "apt_checksum": "MD5Sum:05cc0b310eabacb16cf111a4ecd672cd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/p/python-roman/python3-roman_3.3-3_all.deb",
+      "filename": "python3-roman_3.3-3_all.deb",
+      "download_bytes": 9632,
+      "apt_checksum": "MD5Sum:fef32e99c6d3b949727c1ed12a64cc8a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/p/python-docutils/python3-docutils_0.20.1%2bdfsg-3_all.deb",
+      "filename": "python3-docutils_0.20.1+dfsg-3_all.deb",
+      "download_bytes": 393004,
+      "apt_checksum": "MD5Sum:dfb147677437a6271577683154d6f8ff"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/p/python3-catkin-pkg-modules/python3-catkin-pkg-modules_1.1.1-1_all.deb",
+      "filename": "python3-catkin-pkg-modules_1.1.1-1_all.deb",
+      "download_bytes": 43428,
+      "apt_checksum": "MD5Sum:96cab0fcfca085bfe3856b5be6ee2524"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/e/empy/python3-empy_3.3.4-2_all.deb",
+      "filename": "python3-empy_3.3.4-2_all.deb",
+      "download_bytes": 65668,
+      "apt_checksum": "MD5Sum:66883de61b0b00d0ff69ec67b0d8b9ec"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/python-mccabe/python3-mccabe_0.7.0-1_all.deb",
+      "filename": "python3-mccabe_0.7.0-1_all.deb",
+      "download_bytes": 8678,
+      "apt_checksum": "MD5Sum:5f94dd86181ef61e2cdb78e78f9932de"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/pycodestyle/python3-pycodestyle_2.11.1-1_all.deb",
+      "filename": "python3-pycodestyle_2.11.1-1_all.deb",
+      "download_bytes": 29944,
+      "apt_checksum": "MD5Sum:206cf718c52d00704f81617b4253814a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/pyflakes/python3-pyflakes_3.2.0-1_all.deb",
+      "filename": "python3-pyflakes_3.2.0-1_all.deb",
+      "download_bytes": 52770,
+      "apt_checksum": "MD5Sum:cb434ef11f99810efe9f268c435f543e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/python-flake8/python3-flake8_7.0.0-1_all.deb",
+      "filename": "python3-flake8_7.0.0-1_all.deb",
+      "download_bytes": 43686,
+      "apt_checksum": "MD5Sum:29558aadcd22417d09da681432f671ad"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/flake8-builtins/python3-flake8-builtins_2.1.0-1_all.deb",
+      "filename": "python3-flake8-builtins_2.1.0-1_all.deb",
+      "download_bytes": 7680,
+      "apt_checksum": "MD5Sum:9c3ddb2f9e4fb79183f7bc1e7b3a1ee3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/flake8-comprehensions/python3-flake8-comprehensions_3.14.0-1_all.deb",
+      "filename": "python3-flake8-comprehensions_3.14.0-1_all.deb",
+      "download_bytes": 8628,
+      "apt_checksum": "MD5Sum:a43e4741c1ff414474832af26e3abcbf"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/flake8-docstrings/python3-flake8-docstrings_1.6.0-2_all.deb",
+      "filename": "python3-flake8-docstrings_1.6.0-2_all.deb",
+      "download_bytes": 6736,
+      "apt_checksum": "MD5Sum:adee0da12a4302741172c7cb8356a70e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/flake8-import-order/python3-flake8-import-order_0.18.2-2_all.deb",
+      "filename": "python3-flake8-import-order_0.18.2-2_all.deb",
+      "download_bytes": 15704,
+      "apt_checksum": "MD5Sum:3d5efe2894cbe9c675ba3f1565a15ed4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/f/flake8-quotes/python3-flake8-quotes_3.4.0-1_all.deb",
+      "filename": "python3-flake8-quotes_3.4.0-1_all.deb",
+      "download_bytes": 9510,
+      "apt_checksum": "MD5Sum:d9711f13ad3fcd079d5cab63271796ed"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/p/python-lark/python3-lark_1.1.9-1_all.deb",
+      "filename": "python3-lark_1.1.9-1_all.deb",
+      "download_bytes": 129512,
+      "apt_checksum": "MD5Sum:fff552c8be66816aa03d643b168e32af"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/n/numpy/python3-numpy_1.26.4%2bds-6ubuntu1_amd64.deb",
+      "filename": "python3-numpy_1%3a1.26.4+ds-6ubuntu1_amd64.deb",
+      "download_bytes": 4436924,
+      "apt_checksum": "MD5Sum:a436bc71f9144ca06f15efd3551ed8d4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ros-workspace/ros-jazzy-ros-workspace_1.0.3-7noble.20260224.191628_amd64.deb",
+      "filename": "ros-jazzy-ros-workspace_1.0.3-7noble.20260224.191628_amd64.deb",
+      "download_bytes": 14950,
+      "apt_checksum": "MD5Sum:f5687ac4deefaf28d6c218cfd1cb1e83"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-fastcdr/ros-jazzy-fastcdr_2.2.8-1noble.20260901.205404_amd64.deb",
+      "filename": "ros-jazzy-fastcdr_2.2.8-1noble.20260901.205404_amd64.deb",
+      "download_bytes": 62336,
+      "apt_checksum": "MD5Sum:b48a21692f1f0be19869f66753e9819c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-package/ros-jazzy-ament-package_0.16.5-1noble.20260121.174946_amd64.deb",
+      "filename": "ros-jazzy-ament-package_0.16.5-1noble.20260121.174946_amd64.deb",
+      "download_bytes": 25934,
+      "apt_checksum": "MD5Sum:32325df4b24178b5d7730af467b02b3b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-core/ros-jazzy-ament-cmake-core_2.5.6-2noble.20260224.191131_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-core_2.5.6-2noble.20260224.191131_amd64.deb",
+      "download_bytes": 27128,
+      "apt_checksum": "MD5Sum:20d2b7c44d5d27718a6c6c8cdae16549"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-export-definitions/ros-jazzy-ament-cmake-export-definitions_2.5.6-2noble.20260224.232207_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-export-definitions_2.5.6-2noble.20260224.232207_amd64.deb",
+      "download_bytes": 7262,
+      "apt_checksum": "MD5Sum:a5f30a114cd4b9ec073a8e226ff79b24"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-libraries/ros-jazzy-ament-cmake-libraries_2.5.6-2noble.20260225.042312_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-libraries_2.5.6-2noble.20260225.042312_amd64.deb",
+      "download_bytes": 7192,
+      "apt_checksum": "MD5Sum:472779e52808b7adec4c824d07be283c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-export-dependencies/ros-jazzy-ament-cmake-export-dependencies_2.5.6-2noble.20260225.043730_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-export-dependencies_2.5.6-2noble.20260225.043730_amd64.deb",
+      "download_bytes": 8638,
+      "apt_checksum": "MD5Sum:9ef08121cc58012047ea3695aa34550c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-export-include-directories/ros-jazzy-ament-cmake-export-include-directories_2.5.6-2noble.20260224.232223_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-export-include-directories_2.5.6-2noble.20260224.232223_amd64.deb",
+      "download_bytes": 7568,
+      "apt_checksum": "MD5Sum:bb1e6478129a021a9918930c3b3d9bdf"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-export-libraries/ros-jazzy-ament-cmake-export-libraries_2.5.6-2noble.20260224.232254_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-export-libraries_2.5.6-2noble.20260224.232254_amd64.deb",
+      "download_bytes": 9598,
+      "apt_checksum": "MD5Sum:e1c21e2e3e894787e943a74d52b7cd62"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-export-interfaces/ros-jazzy-ament-cmake-export-interfaces_2.5.6-2noble.20260225.042039_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-export-interfaces_2.5.6-2noble.20260225.042039_amd64.deb",
+      "download_bytes": 7976,
+      "apt_checksum": "MD5Sum:2dce17796e3792a04ec1d6eb03394dc9"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-export-link-flags/ros-jazzy-ament-cmake-export-link-flags_2.5.6-2noble.20260225.042107_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-export-link-flags_2.5.6-2noble.20260225.042107_amd64.deb",
+      "download_bytes": 7180,
+      "apt_checksum": "MD5Sum:9e1a66224269a2085cdd81a75eafe07c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-export-targets/ros-jazzy-ament-cmake-export-targets_2.5.6-2noble.20260225.042100_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-export-targets_2.5.6-2noble.20260225.042100_amd64.deb",
+      "download_bytes": 8286,
+      "apt_checksum": "MD5Sum:7d703516e5e64debde196c0f10901210"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-gen-version-h/ros-jazzy-ament-cmake-gen-version-h_2.5.6-2noble.20260225.042237_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-gen-version-h_2.5.6-2noble.20260225.042237_amd64.deb",
+      "download_bytes": 9758,
+      "apt_checksum": "MD5Sum:0ad0469cc7b1e9c130ea10c20f6ad253"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-python/ros-jazzy-ament-cmake-python_2.5.6-2noble.20260225.042312_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-python_2.5.6-2noble.20260225.042312_amd64.deb",
+      "download_bytes": 10298,
+      "apt_checksum": "MD5Sum:cfefc4fab0a433c415f809d5611a13dd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-include-directories/ros-jazzy-ament-cmake-include-directories_2.5.6-2noble.20260225.042241_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-include-directories_2.5.6-2noble.20260225.042241_amd64.deb",
+      "download_bytes": 7342,
+      "apt_checksum": "MD5Sum:9e4f818a7c21c43bebbb18391e19e418"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-target-dependencies/ros-jazzy-ament-cmake-target-dependencies_2.5.6-2noble.20260225.043936_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-target-dependencies_2.5.6-2noble.20260225.043936_amd64.deb",
+      "download_bytes": 9516,
+      "apt_checksum": "MD5Sum:3be5c227f64f69e43d7dfe7207dcfcba"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-test/ros-jazzy-ament-cmake-test_2.5.6-2noble.20260225.143205_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-test_2.5.6-2noble.20260225.143205_amd64.deb",
+      "download_bytes": 15490,
+      "apt_checksum": "MD5Sum:d15f9958198210480ef21605f65376d8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-version/ros-jazzy-ament-cmake-version_2.5.6-2noble.20260225.042330_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-version_2.5.6-2noble.20260225.042330_amd64.deb",
+      "download_bytes": 7546,
+      "apt_checksum": "MD5Sum:4b206985eda50d345df617f81964364a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake/ros-jazzy-ament-cmake_2.5.6-2noble.20260225.222913_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake_2.5.6-2noble.20260225.222913_amd64.deb",
+      "download_bytes": 7482,
+      "apt_checksum": "MD5Sum:6946a2353aede22a00e61129309c0077"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cppcheck/ros-jazzy-ament-cppcheck_0.17.5-1noble.20260410.080408_amd64.deb",
+      "filename": "ros-jazzy-ament-cppcheck_0.17.5-1noble.20260410.080408_amd64.deb",
+      "download_bytes": 16646,
+      "apt_checksum": "MD5Sum:fe59cf7a97f2004792e46e6afed3bc3d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-cppcheck/ros-jazzy-ament-cmake-cppcheck_0.17.5-1noble.20260410.113607_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-cppcheck_0.17.5-1noble.20260410.113607_amd64.deb",
+      "download_bytes": 9628,
+      "apt_checksum": "MD5Sum:49702106e419fc3bc81c2b2d36e94d37"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cpplint/ros-jazzy-ament-cpplint_0.17.5-1noble.20260410.080348_amd64.deb",
+      "filename": "ros-jazzy-ament-cpplint_0.17.5-1noble.20260410.080348_amd64.deb",
+      "download_bytes": 147110,
+      "apt_checksum": "MD5Sum:1db6f3c61d3f202e443d07401305d41b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-cpplint/ros-jazzy-ament-cmake-cpplint_0.17.5-1noble.20260410.105800_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-cpplint_0.17.5-1noble.20260410.105800_amd64.deb",
+      "download_bytes": 8464,
+      "apt_checksum": "MD5Sum:8839141a76f054cd44de2039efe0746d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-lint/ros-jazzy-ament-lint_0.17.5-1noble.20260410.080358_amd64.deb",
+      "filename": "ros-jazzy-ament-lint_0.17.5-1noble.20260410.080358_amd64.deb",
+      "download_bytes": 4806,
+      "apt_checksum": "MD5Sum:82ddea96b56f94f549ff38eef84cc0ed"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-flake8/ros-jazzy-ament-flake8_0.17.5-1noble.20260410.113507_amd64.deb",
+      "filename": "ros-jazzy-ament-flake8_0.17.5-1noble.20260410.113507_amd64.deb",
+      "download_bytes": 17452,
+      "apt_checksum": "MD5Sum:af40f3802cb51ab686f5d4a87c7ed050"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-flake8/ros-jazzy-ament-cmake-flake8_0.17.5-1noble.20260410.113910_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-flake8_0.17.5-1noble.20260410.113910_amd64.deb",
+      "download_bytes": 7716,
+      "apt_checksum": "MD5Sum:c0787517c188c0d0eb4610222fd63fbd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-pep257/ros-jazzy-ament-pep257_0.17.5-1noble.20260410.113520_amd64.deb",
+      "filename": "ros-jazzy-ament-pep257_0.17.5-1noble.20260410.113520_amd64.deb",
+      "download_bytes": 13604,
+      "apt_checksum": "MD5Sum:a5320ab6b1d8ef0dfd741aff2a6ebf12"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-pep257/ros-jazzy-ament-cmake-pep257_0.17.5-1noble.20260410.113929_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-pep257_0.17.5-1noble.20260410.113929_amd64.deb",
+      "download_bytes": 7434,
+      "apt_checksum": "MD5Sum:0b6cea8ecba22100e2b20f9daa329ba7"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/u/uncrustify/uncrustify_0.78.1%2bdfsg1-1_amd64.deb",
+      "filename": "uncrustify_0.78.1+dfsg1-1_amd64.deb",
+      "download_bytes": 654140,
+      "apt_checksum": "MD5Sum:1735075e84d0ddb86dfc5f5d859a6f37"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-uncrustify-vendor/ros-jazzy-uncrustify-vendor_3.0.1-1noble.20260225.230730_amd64.deb",
+      "filename": "ros-jazzy-uncrustify-vendor_3.0.1-1noble.20260225.230730_amd64.deb",
+      "download_bytes": 8308,
+      "apt_checksum": "MD5Sum:98690417081b343a14f92b401da6acee"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-uncrustify/ros-jazzy-ament-uncrustify_0.17.5-1noble.20260410.080359_amd64.deb",
+      "filename": "ros-jazzy-ament-uncrustify_0.17.5-1noble.20260410.080359_amd64.deb",
+      "download_bytes": 50794,
+      "apt_checksum": "MD5Sum:4be19a8aef6aa0e8409ab2e536da019f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-uncrustify/ros-jazzy-ament-cmake-uncrustify_0.17.5-1noble.20260410.113615_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-uncrustify_0.17.5-1noble.20260410.113615_amd64.deb",
+      "download_bytes": 8918,
+      "apt_checksum": "MD5Sum:0357d67cde3d3e54ba847821af0736ac"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-index-python/ros-jazzy-ament-index-python_1.8.4-1noble.20260519.010916_amd64.deb",
+      "filename": "ros-jazzy-ament-index-python_1.8.4-1noble.20260519.010916_amd64.deb",
+      "download_bytes": 14742,
+      "apt_checksum": "MD5Sum:12117c48656d2687c259fc67b3669f3f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-python-cmake-module/ros-jazzy-python-cmake-module_0.11.1-2noble.20260226.000327_amd64.deb",
+      "filename": "ros-jazzy-python-cmake-module_0.11.1-2noble.20260226.000327_amd64.deb",
+      "download_bytes": 7456,
+      "apt_checksum": "MD5Sum:fc91e7eb968aeea9ce9028d9f215f0a0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcutils/ros-jazzy-rcutils_6.7.6-1noble.20260911.045439_amd64.deb",
+      "filename": "ros-jazzy-rcutils_6.7.6-1noble.20260911.045439_amd64.deb",
+      "download_bytes": 91782,
+      "apt_checksum": "MD5Sum:885843a7d08bdc3a9c4491e54f874dae"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-typesupport-interface/ros-jazzy-rosidl-typesupport-interface_4.6.9-1noble.20260612.045126_amd64.deb",
+      "filename": "ros-jazzy-rosidl-typesupport-interface_4.6.9-1noble.20260612.045126_amd64.deb",
+      "download_bytes": 9404,
+      "apt_checksum": "MD5Sum:11a4154b47b43eb8d88f0f3395120770"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-runtime-c/ros-jazzy-rosidl-runtime-c_4.6.9-1noble.20260911.045549_amd64.deb",
+      "filename": "ros-jazzy-rosidl-runtime-c_4.6.9-1noble.20260911.045549_amd64.deb",
+      "download_bytes": 56418,
+      "apt_checksum": "MD5Sum:d083cea47ea8679f2bdcff96621b16e9"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-dynamic-typesupport/ros-jazzy-rosidl-dynamic-typesupport_0.1.2-3noble.20260911.050021_amd64.deb",
+      "filename": "ros-jazzy-rosidl-dynamic-typesupport_0.1.2-3noble.20260911.050021_amd64.deb",
+      "download_bytes": 37358,
+      "apt_checksum": "MD5Sum:49dbf1560d95edaaf347d150149879a7"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rmw/ros-jazzy-rmw_7.3.4-1noble.20260911.050254_amd64.deb",
+      "filename": "ros-jazzy-rmw_7.3.4-1noble.20260911.050254_amd64.deb",
+      "download_bytes": 72218,
+      "apt_checksum": "MD5Sum:1f2ca3ae7c62094759cf3ab913c5261d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-cli/ros-jazzy-rosidl-cli_4.6.9-1noble.20260612.045120_amd64.deb",
+      "filename": "ros-jazzy-rosidl-cli_4.6.9-1noble.20260612.045120_amd64.deb",
+      "download_bytes": 26640,
+      "apt_checksum": "MD5Sum:f9d4d4b66c51ffddb235b55e8510e294"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-adapter/ros-jazzy-rosidl-adapter_4.6.9-1noble.20260612.045507_amd64.deb",
+      "filename": "ros-jazzy-rosidl-adapter_4.6.9-1noble.20260612.045507_amd64.deb",
+      "download_bytes": 20076,
+      "apt_checksum": "MD5Sum:e27d528d8e14da5afd5f8ea6cbbbe33a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-parser/ros-jazzy-rosidl-parser_4.6.9-1noble.20260612.045810_amd64.deb",
+      "filename": "ros-jazzy-rosidl-parser_4.6.9-1noble.20260612.045810_amd64.deb",
+      "download_bytes": 19986,
+      "apt_checksum": "MD5Sum:613a53bb226bf74c8fc7ebab703899f8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-pycommon/ros-jazzy-rosidl-pycommon_4.6.9-1noble.20260612.045929_amd64.deb",
+      "filename": "ros-jazzy-rosidl-pycommon_4.6.9-1noble.20260612.045929_amd64.deb",
+      "download_bytes": 11080,
+      "apt_checksum": "MD5Sum:08bddae1c29c540148b6a69347a1266d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-cmake/ros-jazzy-rosidl-cmake_4.6.9-1noble.20260612.050210_amd64.deb",
+      "filename": "ros-jazzy-rosidl-cmake_4.6.9-1noble.20260612.050210_amd64.deb",
+      "download_bytes": 16574,
+      "apt_checksum": "MD5Sum:1c176d7ddf05e2b0abeb63d16ab5ffd4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-generator-type-description/ros-jazzy-rosidl-generator-type-description_4.6.9-1noble.20260911.045349_amd64.deb",
+      "filename": "ros-jazzy-rosidl-generator-type-description_4.6.9-1noble.20260911.045349_amd64.deb",
+      "download_bytes": 15494,
+      "apt_checksum": "MD5Sum:a1e91fd0cb37207a19c9ca51f05e8413"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-generator-c/ros-jazzy-rosidl-generator-c_4.6.9-1noble.20260911.045714_amd64.deb",
+      "filename": "ros-jazzy-rosidl-generator-c_4.6.9-1noble.20260911.045714_amd64.deb",
+      "download_bytes": 26054,
+      "apt_checksum": "MD5Sum:2de0d2606a15990433c4567040c1a3ec"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcpputils/ros-jazzy-rcpputils_2.11.4-1noble.20260911.045839_amd64.deb",
+      "filename": "ros-jazzy-rcpputils_2.11.4-1noble.20260911.045839_amd64.deb",
+      "download_bytes": 55734,
+      "apt_checksum": "MD5Sum:a89978337e95ed304cddf98efda09641"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-typesupport-c/ros-jazzy-rosidl-typesupport-c_3.2.3-1noble.20260911.050252_amd64.deb",
+      "filename": "ros-jazzy-rosidl-typesupport-c_3.2.3-1noble.20260911.050252_amd64.deb",
+      "download_bytes": 24704,
+      "apt_checksum": "MD5Sum:34eb17dd4fec14014ed29911c30d7bfc"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rpyutils/ros-jazzy-rpyutils_0.4.2-1noble.20260225.142204_amd64.deb",
+      "filename": "ros-jazzy-rpyutils_0.4.2-1noble.20260225.142204_amd64.deb",
+      "download_bytes": 7352,
+      "apt_checksum": "MD5Sum:5f987364c5db65404196c5d5b28edb8f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-generator-py/ros-jazzy-rosidl-generator-py_0.22.2-1noble.20260911.050634_amd64.deb",
+      "filename": "ros-jazzy-rosidl-generator-py_0.22.2-1noble.20260911.050634_amd64.deb",
+      "download_bytes": 29124,
+      "apt_checksum": "MD5Sum:39c50d9e3d09b8229f9ac881f534a6ae"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-runtime-cpp/ros-jazzy-rosidl-runtime-cpp_4.6.9-1noble.20260911.045824_amd64.deb",
+      "filename": "ros-jazzy-rosidl-runtime-cpp_4.6.9-1noble.20260911.045824_amd64.deb",
+      "download_bytes": 20714,
+      "apt_checksum": "MD5Sum:e7fcaa987496085e5050cc93e51a9b16"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-typesupport-cpp/ros-jazzy-rosidl-typesupport-cpp_3.2.3-1noble.20260911.050655_amd64.deb",
+      "filename": "ros-jazzy-rosidl-typesupport-cpp_3.2.3-1noble.20260911.050655_amd64.deb",
+      "download_bytes": 23782,
+      "apt_checksum": "MD5Sum:a76bb54d17dbf12090b1dc6c360f265e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-gtest-vendor/ros-jazzy-gtest-vendor_1.14.9000-2noble.20260225.055309_amd64.deb",
+      "filename": "ros-jazzy-gtest-vendor_1.14.9000-2noble.20260225.055309_amd64.deb",
+      "download_bytes": 182924,
+      "apt_checksum": "MD5Sum:25adbe16b9a055ec195d5fa612bdf402"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-gtest/ros-jazzy-ament-cmake-gtest_2.5.6-2noble.20260225.145055_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-gtest_2.5.6-2noble.20260225.145055_amd64.deb",
+      "download_bytes": 10348,
+      "apt_checksum": "MD5Sum:43782126a88efb5f5926e4bbf9ef867a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-gmock-vendor/ros-jazzy-gmock-vendor_1.14.9000-2noble.20260225.143751_amd64.deb",
+      "filename": "ros-jazzy-gmock-vendor_1.14.9000-2noble.20260225.143751_amd64.deb",
+      "download_bytes": 101688,
+      "apt_checksum": "MD5Sum:32d928a8708854ae05f69b4e40bee1bd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-gmock/ros-jazzy-ament-cmake-gmock_2.5.6-2noble.20260225.215706_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-gmock_2.5.6-2noble.20260225.215706_amd64.deb",
+      "download_bytes": 10086,
+      "apt_checksum": "MD5Sum:5241d06ae0e0286f175d9c6cf28a05ac"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-pytest/ros-jazzy-ament-cmake-pytest_2.5.6-2noble.20260225.145739_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-pytest_2.5.6-2noble.20260225.145739_amd64.deb",
+      "download_bytes": 10272,
+      "apt_checksum": "MD5Sum:e1a868ce1415c3b24203d9b4311b76c5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-domain-coordinator/ros-jazzy-domain-coordinator_0.12.2-1noble.20260911.044440_amd64.deb",
+      "filename": "ros-jazzy-domain-coordinator_0.12.2-1noble.20260911.044440_amd64.deb",
+      "download_bytes": 5966,
+      "apt_checksum": "MD5Sum:1d64eedfc7adb040a6c5a59d87a3d109"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-cmake-ros/ros-jazzy-ament-cmake-ros_0.12.2-1noble.20260911.044924_amd64.deb",
+      "filename": "ros-jazzy-ament-cmake-ros_0.12.2-1noble.20260911.044924_amd64.deb",
+      "download_bytes": 8262,
+      "apt_checksum": "MD5Sum:882889d5a2fed134165a7d7e4b84694e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-fastrtps-cmake-module/ros-jazzy-fastrtps-cmake-module_3.6.4-1noble.20260603.150331_amd64.deb",
+      "filename": "ros-jazzy-fastrtps-cmake-module_3.6.4-1noble.20260603.150331_amd64.deb",
+      "download_bytes": 6994,
+      "apt_checksum": "MD5Sum:9aee041e42942101912af43eb506208c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-generator-cpp/ros-jazzy-rosidl-generator-cpp_4.6.9-1noble.20260911.050038_amd64.deb",
+      "filename": "ros-jazzy-rosidl-generator-cpp_4.6.9-1noble.20260911.050038_amd64.deb",
+      "download_bytes": 23300,
+      "apt_checksum": "MD5Sum:08bb6acfe78f9807040c23b429dc110f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-typesupport-fastrtps-cpp/ros-jazzy-rosidl-typesupport-fastrtps-cpp_3.6.4-1noble.20260911.050552_amd64.deb",
+      "filename": "ros-jazzy-rosidl-typesupport-fastrtps-cpp_3.6.4-1noble.20260911.050552_amd64.deb",
+      "download_bytes": 28454,
+      "apt_checksum": "MD5Sum:57fc081dd6734fee8b1e3839d1291abc"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-typesupport-fastrtps-c/ros-jazzy-rosidl-typesupport-fastrtps-c_3.6.4-1noble.20260911.050839_amd64.deb",
+      "filename": "ros-jazzy-rosidl-typesupport-fastrtps-c_3.6.4-1noble.20260911.050839_amd64.deb",
+      "download_bytes": 26498,
+      "apt_checksum": "MD5Sum:39b310428a18e3fd88def8413b645082"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-typesupport-introspection-c/ros-jazzy-rosidl-typesupport-introspection-c_4.6.9-1noble.20260911.045954_amd64.deb",
+      "filename": "ros-jazzy-rosidl-typesupport-introspection-c_4.6.9-1noble.20260911.045954_amd64.deb",
+      "download_bytes": 24626,
+      "apt_checksum": "MD5Sum:2790f46d2e0adbabda3f541f8755fa20"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-typesupport-introspection-cpp/ros-jazzy-rosidl-typesupport-introspection-cpp_4.6.9-1noble.20260911.050322_amd64.deb",
+      "filename": "ros-jazzy-rosidl-typesupport-introspection-cpp_4.6.9-1noble.20260911.050322_amd64.deb",
+      "download_bytes": 24518,
+      "apt_checksum": "MD5Sum:4550e95f5fe60a663163b5422dc6fd74"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-core-runtime/ros-jazzy-rosidl-core-runtime_0.2.1-1noble.20260911.051106_amd64.deb",
+      "filename": "ros-jazzy-rosidl-core-runtime_0.2.1-1noble.20260911.051106_amd64.deb",
+      "download_bytes": 5860,
+      "apt_checksum": "MD5Sum:34b90cdbb11c8dbcdcb39de580349195"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-builtin-interfaces/ros-jazzy-builtin-interfaces_2.0.4-1noble.20260911.051559_amd64.deb",
+      "filename": "ros-jazzy-builtin-interfaces_2.0.4-1noble.20260911.051559_amd64.deb",
+      "download_bytes": 46754,
+      "apt_checksum": "MD5Sum:478d720aaf2ebbdce33252e7fcf05d85"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-service-msgs/ros-jazzy-service-msgs_2.0.4-1noble.20260911.051911_amd64.deb",
+      "filename": "ros-jazzy-service-msgs_2.0.4-1noble.20260911.051911_amd64.deb",
+      "download_bytes": 45322,
+      "apt_checksum": "MD5Sum:57d4130ac940d9f622fffe3285362610"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-unique-identifier-msgs/ros-jazzy-unique-identifier-msgs_2.5.1-1noble.20260911.051544_amd64.deb",
+      "filename": "ros-jazzy-unique-identifier-msgs_2.5.1-1noble.20260911.051544_amd64.deb",
+      "download_bytes": 40958,
+      "apt_checksum": "MD5Sum:1ad6e536afaf2cbf46aad3c9d28d23ef"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-action-msgs/ros-jazzy-action-msgs_2.0.4-1noble.20260911.052334_amd64.deb",
+      "filename": "ros-jazzy-action-msgs_2.0.4-1noble.20260911.052334_amd64.deb",
+      "download_bytes": 100170,
+      "apt_checksum": "MD5Sum:df3928a8bcd3055053345dcaa94e26f4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ament-index-cpp/ros-jazzy-ament-index-cpp_1.8.4-1noble.20260519.011052_amd64.deb",
+      "filename": "ros-jazzy-ament-index-cpp_1.8.4-1noble.20260519.011052_amd64.deb",
+      "download_bytes": 29134,
+      "apt_checksum": "MD5Sum:cbf9b55fd5fec2f0fd9a6ddbe0b065bc"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-angles/ros-jazzy-angles_1.16.1-1noble.20260225.231445_amd64.deb",
+      "filename": "ros-jazzy-angles_1.16.1-1noble.20260225.231445_amd64.deb",
+      "download_bytes": 13866,
+      "apt_checksum": "MD5Sum:a259f0df34e13b52d0ed792ba5004235"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/t/tinyxml2/libtinyxml2-dev_10.0.0%2bdfsg-2_amd64.deb",
+      "filename": "libtinyxml2-dev_10.0.0+dfsg-2_amd64.deb",
+      "download_bytes": 21488,
+      "apt_checksum": "MD5Sum:fae5cf2b514dcf8bba1a58211b5ed5ae"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/liby/libyaml/libyaml-dev_0.2.5-1build1_amd64.deb",
+      "filename": "libyaml-dev_0.2.5-1build1_amd64.deb",
+      "download_bytes": 62190,
+      "apt_checksum": "MD5Sum:4dbf9226e75a0215c17f86e7aaa5fd6b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-libyaml-vendor/ros-jazzy-libyaml-vendor_1.6.4-2noble.20260603.150356_amd64.deb",
+      "filename": "ros-jazzy-libyaml-vendor_1.6.4-2noble.20260603.150356_amd64.deb",
+      "download_bytes": 8724,
+      "apt_checksum": "MD5Sum:da0645b529e444e2cfd81a54cc7742c2"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-default-runtime/ros-jazzy-rosidl-default-runtime_1.6.1-1noble.20260911.052508_amd64.deb",
+      "filename": "ros-jazzy-rosidl-default-runtime_1.6.1-1noble.20260911.052508_amd64.deb",
+      "download_bytes": 7150,
+      "apt_checksum": "MD5Sum:1521ee38f17f14809fa31152439bc335"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcl-interfaces/ros-jazzy-rcl-interfaces_2.0.4-1noble.20260911.093433_amd64.deb",
+      "filename": "ros-jazzy-rcl-interfaces_2.0.4-1noble.20260911.093433_amd64.deb",
+      "download_bytes": 396678,
+      "apt_checksum": "MD5Sum:09a956a79c119bc48f428b17bfe935d1"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcl-logging-interface/ros-jazzy-rcl-logging-interface_3.1.1-1noble.20260911.045823_amd64.deb",
+      "filename": "ros-jazzy-rcl-logging-interface_3.1.1-1noble.20260911.045823_amd64.deb",
+      "download_bytes": 13352,
+      "apt_checksum": "MD5Sum:5329f03269b465ae1aed2843c8b89859"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-spdlog-vendor/ros-jazzy-spdlog-vendor_1.6.2-1noble.20260603.150612_amd64.deb",
+      "filename": "ros-jazzy-spdlog-vendor_1.6.2-1noble.20260603.150612_amd64.deb",
+      "download_bytes": 6898,
+      "apt_checksum": "MD5Sum:87c4dd58e43c526af4721490e77668d5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcl-logging-spdlog/ros-jazzy-rcl-logging-spdlog_3.1.1-1noble.20260911.050258_amd64.deb",
+      "filename": "ros-jazzy-rcl-logging-spdlog_3.1.1-1noble.20260911.050258_amd64.deb",
+      "download_bytes": 22564,
+      "apt_checksum": "MD5Sum:70628a78336aab907578832a14bbc14e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcl-yaml-param-parser/ros-jazzy-rcl-yaml-param-parser_9.2.11-1noble.20260911.050612_amd64.deb",
+      "filename": "ros-jazzy-rcl-yaml-param-parser_9.2.11-1noble.20260911.050612_amd64.deb",
+      "download_bytes": 29690,
+      "apt_checksum": "MD5Sum:f9184e727f40a297d91bfbb444c02b64"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rmw-implementation-cmake/ros-jazzy-rmw-implementation-cmake_7.3.4-1noble.20260911.035024_amd64.deb",
+      "filename": "ros-jazzy-rmw-implementation-cmake_7.3.4-1noble.20260911.035024_amd64.deb",
+      "download_bytes": 9118,
+      "apt_checksum": "MD5Sum:d103130ecbd2b410ecb3f795fd08ee48"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-foonathan-memory-vendor/ros-jazzy-foonathan-memory-vendor_1.3.1-3noble.20260225.055155_amd64.deb",
+      "filename": "ros-jazzy-foonathan-memory-vendor_1.3.1-3noble.20260225.055155_amd64.deb",
+      "download_bytes": 786790,
+      "apt_checksum": "MD5Sum:09db5e0f7b06299d601eeee748381050"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-fastrtps/ros-jazzy-fastrtps_2.14.7-1noble.20260911.035053_amd64.deb",
+      "filename": "ros-jazzy-fastrtps_2.14.7-1noble.20260911.035053_amd64.deb",
+      "download_bytes": 3164896,
+      "apt_checksum": "MD5Sum:1e31826d5e55c52f416dbf5bfb1e9f39"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rmw-dds-common/ros-jazzy-rmw-dds-common_3.1.1-1noble.20260911.094648_amd64.deb",
+      "filename": "ros-jazzy-rmw-dds-common_3.1.1-1noble.20260911.094648_amd64.deb",
+      "download_bytes": 120980,
+      "apt_checksum": "MD5Sum:e1b66224b573783c80c2ef11f3780a0d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/libu/liburcu/liburcu-dev_0.14.0-3.1build1_amd64.deb",
+      "filename": "liburcu-dev_0.14.0-3.1build1_amd64.deb",
+      "download_bytes": 134194,
+      "apt_checksum": "MD5Sum:876506e1ad032ce25bcc1cc6f8ed4ee8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/u/util-linux/uuid-dev_2.39.3-9ubuntu6.6_amd64.deb",
+      "filename": "uuid-dev_2.39.3-9ubuntu6.6_amd64.deb",
+      "download_bytes": 33546,
+      "apt_checksum": "MD5Sum:dd2aaa66893bdb873867a5b6d6b8845c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/u/ust/liblttng-ust-dev_2.13.7-1.1ubuntu2_amd64.deb",
+      "filename": "liblttng-ust-dev_2.13.7-1.1ubuntu2_amd64.deb",
+      "download_bytes": 97362,
+      "apt_checksum": "MD5Sum:0a62c918603ba1e10f06ded459723faf"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tracetools/ros-jazzy-tracetools_8.2.6-1noble.20260911.045452_amd64.deb",
+      "filename": "ros-jazzy-tracetools_8.2.6-1noble.20260911.045452_amd64.deb",
+      "download_bytes": 37424,
+      "apt_checksum": "MD5Sum:0729ebe8d10028132cc83db3b7ed755a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rmw-fastrtps-shared-cpp/ros-jazzy-rmw-fastrtps-shared-cpp_8.4.4-1noble.20260911.095823_amd64.deb",
+      "filename": "ros-jazzy-rmw-fastrtps-shared-cpp_8.4.4-1noble.20260911.095823_amd64.deb",
+      "download_bytes": 171962,
+      "apt_checksum": "MD5Sum:ada4412b48570e5644cd829004bc48cb"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-dynamic-typesupport-fastrtps/ros-jazzy-rosidl-dynamic-typesupport-fastrtps_0.1.0-3noble.20260911.050333_amd64.deb",
+      "filename": "ros-jazzy-rosidl-dynamic-typesupport-fastrtps_0.1.0-3noble.20260911.050333_amd64.deb",
+      "download_bytes": 49074,
+      "apt_checksum": "MD5Sum:c1645379f65bf8132c3589261972567c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rmw-fastrtps-cpp/ros-jazzy-rmw-fastrtps-cpp_8.4.4-1noble.20260911.100940_amd64.deb",
+      "filename": "ros-jazzy-rmw-fastrtps-cpp_8.4.4-1noble.20260911.100940_amd64.deb",
+      "download_bytes": 92008,
+      "apt_checksum": "MD5Sum:1810cd913a89acd19018d20d22f202fc"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rmw-implementation/ros-jazzy-rmw-implementation_2.15.6-1noble.20260911.103206_amd64.deb",
+      "filename": "ros-jazzy-rmw-implementation_2.15.6-1noble.20260911.103206_amd64.deb",
+      "download_bytes": 24522,
+      "apt_checksum": "MD5Sum:7fa957ffcc46262c39a9d64085d2997a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-type-description-interfaces/ros-jazzy-type-description-interfaces_2.0.4-1noble.20260911.052935_amd64.deb",
+      "filename": "ros-jazzy-type-description-interfaces_2.0.4-1noble.20260911.052935_amd64.deb",
+      "download_bytes": 160800,
+      "apt_checksum": "MD5Sum:d5df9d1bbb8b0f29399010a1db0574bf"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcl/ros-jazzy-rcl_9.2.11-1noble.20260911.104031_amd64.deb",
+      "filename": "ros-jazzy-rcl_9.2.11-1noble.20260911.104031_amd64.deb",
+      "download_bytes": 160532,
+      "apt_checksum": "MD5Sum:1d3222e6bc68817bde84cfc4f851c7ea"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-statistics-msgs/ros-jazzy-statistics-msgs_2.0.4-1noble.20260911.094428_amd64.deb",
+      "filename": "ros-jazzy-statistics-msgs_2.0.4-1noble.20260911.094428_amd64.deb",
+      "download_bytes": 68884,
+      "apt_checksum": "MD5Sum:1fe090bfec8aab5f929a7561b9e4a2e3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-libstatistics-collector/ros-jazzy-libstatistics-collector_1.7.4-1noble.20260911.104623_amd64.deb",
+      "filename": "ros-jazzy-libstatistics-collector_1.7.4-1noble.20260911.104623_amd64.deb",
+      "download_bytes": 26922,
+      "apt_checksum": "MD5Sum:91c8c9b2f4a9dbafeb8e9b5b5df906d4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosgraph-msgs/ros-jazzy-rosgraph-msgs_2.0.4-1noble.20260911.094503_amd64.deb",
+      "filename": "ros-jazzy-rosgraph-msgs_2.0.4-1noble.20260911.094503_amd64.deb",
+      "download_bytes": 164500,
+      "apt_checksum": "MD5Sum:b392987f9e595f4a757622c868f5901e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rclcpp/ros-jazzy-rclcpp_28.1.22-1noble.20260911.105434_amd64.deb",
+      "filename": "ros-jazzy-rclcpp_28.1.22-1noble.20260911.105434_amd64.deb",
+      "download_bytes": 835984,
+      "apt_checksum": "MD5Sum:3530359f3c5e274256087310ff690a2d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tinyxml2-vendor/ros-jazzy-tinyxml2-vendor_0.9.2-1noble.20260225.230621_amd64.deb",
+      "filename": "ros-jazzy-tinyxml2-vendor_0.9.2-1noble.20260225.230621_amd64.deb",
+      "download_bytes": 6798,
+      "apt_checksum": "MD5Sum:a19f8c36fcb82c22827b18eb1612361e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-behaviortree-cpp/ros-jazzy-behaviortree-cpp_4.10.0-1noble.20260911.134208_amd64.deb",
+      "filename": "ros-jazzy-behaviortree-cpp_4.10.0-1noble.20260911.134208_amd64.deb",
+      "download_bytes": 639904,
+      "apt_checksum": "MD5Sum:dc1fff75182e9e33a92db04c39ba145b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-std-msgs/ros-jazzy-std-msgs_5.3.8-1noble.20260911.094424_amd64.deb",
+      "filename": "ros-jazzy-std-msgs_5.3.8-1noble.20260911.094424_amd64.deb",
+      "download_bytes": 235942,
+      "apt_checksum": "MD5Sum:172af1f930eef49902a0eb00d85c991d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-bond/ros-jazzy-bond_4.2.0-1noble.20260911.100854_amd64.deb",
+      "filename": "ros-jazzy-bond_4.2.0-1noble.20260911.100854_amd64.deb",
+      "download_bytes": 55372,
+      "apt_checksum": "MD5Sum:ff53d33313af4d50b9e9c4409311b7f0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-lifecycle-msgs/ros-jazzy-lifecycle-msgs_2.0.4-1noble.20260911.054418_amd64.deb",
+      "filename": "ros-jazzy-lifecycle-msgs_2.0.4-1noble.20260911.054418_amd64.deb",
+      "download_bytes": 183644,
+      "apt_checksum": "MD5Sum:f3249254bca2fb860186599efd5ad219"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcl-lifecycle/ros-jazzy-rcl-lifecycle_9.2.11-1noble.20260912.161943_amd64.deb",
+      "filename": "ros-jazzy-rcl-lifecycle_9.2.11-1noble.20260912.161943_amd64.deb",
+      "download_bytes": 27836,
+      "apt_checksum": "MD5Sum:5951f04679b3cfeffa27250d2c8c1687"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rclcpp-lifecycle/ros-jazzy-rclcpp-lifecycle_28.1.22-1noble.20260912.162427_amd64.deb",
+      "filename": "ros-jazzy-rclcpp-lifecycle_28.1.22-1noble.20260912.162427_amd64.deb",
+      "download_bytes": 82490,
+      "apt_checksum": "MD5Sum:5855d8b690178d9475aea4d180454d8d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-smclib/ros-jazzy-smclib_4.2.0-1noble.20260317.155007_amd64.deb",
+      "filename": "ros-jazzy-smclib_4.2.0-1noble.20260317.155007_amd64.deb",
+      "download_bytes": 14104,
+      "apt_checksum": "MD5Sum:cdab0951015352e59453811c704110f0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-bondcpp/ros-jazzy-bondcpp_4.2.0-1noble.20260912.163203_amd64.deb",
+      "filename": "ros-jazzy-bondcpp_4.2.0-1noble.20260912.163203_amd64.deb",
+      "download_bytes": 122996,
+      "apt_checksum": "MD5Sum:09a5134ef116de978e3ea3c5aff1aafe"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/c/console-bridge/libconsole-bridge-dev_1.0.1%2bdfsg2-3build1_amd64.deb",
+      "filename": "libconsole-bridge-dev_1.0.1+dfsg2-3build1_amd64.deb",
+      "download_bytes": 6952,
+      "apt_checksum": "MD5Sum:7ded1fd6d0020a2db91d7c06bf30cf25"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-console-bridge-vendor/ros-jazzy-console-bridge-vendor_1.7.2-1noble.20260603.150411_amd64.deb",
+      "filename": "ros-jazzy-console-bridge-vendor_1.7.2-1noble.20260603.150411_amd64.deb",
+      "download_bytes": 5394,
+      "apt_checksum": "MD5Sum:b6296e9e0524a12a136da16832190279"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-class-loader/ros-jazzy-class-loader_2.7.1-1noble.20260911.050218_amd64.deb",
+      "filename": "ros-jazzy-class-loader_2.7.1-1noble.20260911.050218_amd64.deb",
+      "download_bytes": 47032,
+      "apt_checksum": "MD5Sum:15d74d4719b922ce57f0a353e2bec027"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-composition-interfaces/ros-jazzy-composition-interfaces_2.0.4-1noble.20260911.094556_amd64.deb",
+      "filename": "ros-jazzy-composition-interfaces_2.0.4-1noble.20260911.094556_amd64.deb",
+      "download_bytes": 156602,
+      "apt_checksum": "MD5Sum:c20e589e1b79bae1a34bddda824a9c7d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-geometry-msgs/ros-jazzy-geometry-msgs_5.3.8-1noble.20260911.102920_amd64.deb",
+      "filename": "ros-jazzy-geometry-msgs_5.3.8-1noble.20260911.102920_amd64.deb",
+      "download_bytes": 273060,
+      "apt_checksum": "MD5Sum:70b9baf2e376e504a22fef9cb3758261"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-diagnostic-msgs/ros-jazzy-diagnostic-msgs_5.3.8-1noble.20260911.111839_amd64.deb",
+      "filename": "ros-jazzy-diagnostic-msgs_5.3.8-1noble.20260911.111839_amd64.deb",
+      "download_bytes": 142612,
+      "apt_checksum": "MD5Sum:25c72976f036943aa8f3151afc4e41ac"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rcl-action/ros-jazzy-rcl-action_9.2.11-1noble.20260912.161932_amd64.deb",
+      "filename": "ros-jazzy-rcl-action_9.2.11-1noble.20260912.161932_amd64.deb",
+      "download_bytes": 48292,
+      "apt_checksum": "MD5Sum:b50d4be4809bc5bc4737ef8a05e00220"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rclpy/ros-jazzy-rclpy_7.1.12-1noble.20260912.162354_amd64.deb",
+      "filename": "ros-jazzy-rclpy_7.1.12-1noble.20260912.162354_amd64.deb",
+      "download_bytes": 467768,
+      "apt_checksum": "MD5Sum:e4f53df0edefd3ee58775e9aebfbf089"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-diagnostic-updater/ros-jazzy-diagnostic-updater_4.2.7-1noble.20260912.163704_amd64.deb",
+      "filename": "ros-jazzy-diagnostic-updater_4.2.7-1noble.20260912.163704_amd64.deb",
+      "download_bytes": 111894,
+      "apt_checksum": "MD5Sum:d64608e3728c647ecfe19c314d3c1642"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-eigen3-cmake-module/ros-jazzy-eigen3-cmake-module_0.3.1-1noble.20260603.150413_amd64.deb",
+      "filename": "ros-jazzy-eigen3-cmake-module_0.3.1-1noble.20260603.150413_amd64.deb",
+      "download_bytes": 6424,
+      "apt_checksum": "MD5Sum:8709f07e07cca93eeb963dea7e928d2d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-geographic-msgs/ros-jazzy-geographic-msgs_1.0.6-2noble.20260911.110242_amd64.deb",
+      "filename": "ros-jazzy-geographic-msgs_1.0.6-2noble.20260911.110242_amd64.deb",
+      "download_bytes": 320508,
+      "apt_checksum": "MD5Sum:a2d6932ddeed9934c3079b9921190983"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-sensor-msgs/ros-jazzy-sensor-msgs_5.3.8-1noble.20260911.140426_amd64.deb",
+      "filename": "ros-jazzy-sensor-msgs_5.3.8-1noble.20260911.140426_amd64.deb",
+      "download_bytes": 391172,
+      "apt_checksum": "MD5Sum:26aac2341c635e7f1ced562620a1dc45"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-sensor-msgs-py/ros-jazzy-sensor-msgs-py_5.3.8-1noble.20260911.143022_amd64.deb",
+      "filename": "ros-jazzy-sensor-msgs-py_5.3.8-1noble.20260911.143022_amd64.deb",
+      "download_bytes": 16536,
+      "apt_checksum": "MD5Sum:23339634706af4b168ffa0a2ac72dc10"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tf2/ros-jazzy-tf2_0.36.23-1noble.20260915.172312_amd64.deb",
+      "filename": "ros-jazzy-tf2_0.36.23-1noble.20260915.172312_amd64.deb",
+      "download_bytes": 95106,
+      "apt_checksum": "MD5Sum:034d33e61e404ced71bf7a2da375d85a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-laser-geometry/ros-jazzy-laser-geometry_2.7.2-1noble.20260915.190032_amd64.deb",
+      "filename": "ros-jazzy-laser-geometry_2.7.2-1noble.20260915.190032_amd64.deb",
+      "download_bytes": 26474,
+      "apt_checksum": "MD5Sum:a4e256859b7e60ccf8d5244d51ac400e"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-osrf-pycommon/ros-jazzy-osrf-pycommon_2.1.7-1noble.20260225.055811_amd64.deb",
+      "filename": "ros-jazzy-osrf-pycommon_2.1.7-1noble.20260225.055811_amd64.deb",
+      "download_bytes": 49452,
+      "apt_checksum": "MD5Sum:9bee9f6a5b67b3e135da5a0933d9c11d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-launch/ros-jazzy-launch_3.4.12-1noble.20260920.232232_amd64.deb",
+      "filename": "ros-jazzy-launch_3.4.12-1noble.20260920.232232_amd64.deb",
+      "download_bytes": 204734,
+      "apt_checksum": "MD5Sum:d8249de8f57d6afd36cec3602a75d882"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-launch-ros/ros-jazzy-launch-ros_0.26.13-1noble.20260920.233704_amd64.deb",
+      "filename": "ros-jazzy-launch-ros_0.26.13-1noble.20260920.233704_amd64.deb",
+      "download_bytes": 94318,
+      "apt_checksum": "MD5Sum:e3348f22698c0bc0e75fd69e2b2106ab"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-launch-xml/ros-jazzy-launch-xml_3.4.12-1noble.20260920.233548_amd64.deb",
+      "filename": "ros-jazzy-launch-xml_3.4.12-1noble.20260920.233548_amd64.deb",
+      "download_bytes": 11630,
+      "apt_checksum": "MD5Sum:8a4b46ab407d49ad0dbd0e1848748058"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-launch-yaml/ros-jazzy-launch-yaml_3.4.12-1noble.20260920.233506_amd64.deb",
+      "filename": "ros-jazzy-launch-yaml_3.4.12-1noble.20260920.233506_amd64.deb",
+      "download_bytes": 11928,
+      "apt_checksum": "MD5Sum:fa924810db9d486ec5e53c5a28bf7be5"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-launch-testing/ros-jazzy-launch-testing_3.4.12-1noble.20260920.233733_amd64.deb",
+      "filename": "ros-jazzy-launch-testing_3.4.12-1noble.20260920.233733_amd64.deb",
+      "download_bytes": 88764,
+      "apt_checksum": "MD5Sum:e4d93d187f8f1a9c6ac3221f79c52b0c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav-msgs/ros-jazzy-nav-msgs_5.3.8-1noble.20260911.110342_amd64.deb",
+      "filename": "ros-jazzy-nav-msgs_5.3.8-1noble.20260911.110342_amd64.deb",
+      "download_bytes": 244288,
+      "apt_checksum": "MD5Sum:35abb71b47739cbe649bc015a82caafb"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-map-msgs/ros-jazzy-map-msgs_2.4.1-2noble.20260911.141843_amd64.deb",
+      "filename": "ros-jazzy-map-msgs_2.4.1-2noble.20260911.141843_amd64.deb",
+      "download_bytes": 240224,
+      "apt_checksum": "MD5Sum:b89063988caacf391394283a8b543a80"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-message-filters/ros-jazzy-message-filters_4.11.17-1noble.20260912.163757_amd64.deb",
+      "filename": "ros-jazzy-message-filters_4.11.17-1noble.20260912.163757_amd64.deb",
+      "download_bytes": 49302,
+      "apt_checksum": "MD5Sum:1d96b59e76ac7ab893456445ce578a88"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ros-environment/ros-jazzy-ros-environment_4.2.1-1noble.20260225.043405_amd64.deb",
+      "filename": "ros-jazzy-ros-environment_4.2.1-1noble.20260225.043405_amd64.deb",
+      "download_bytes": 5732,
+      "apt_checksum": "MD5Sum:715a38f2272455d4b7a38dca43122f90"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-generator-rs/ros-jazzy-rosidl-generator-rs_0.5.0-1noble.20260911.050557_amd64.deb",
+      "filename": "ros-jazzy-rosidl-generator-rs_0.5.0-1noble.20260911.050557_amd64.deb",
+      "download_bytes": 24886,
+      "apt_checksum": "MD5Sum:927b08cac8dacda80ad1b79642b12065"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-core-generators/ros-jazzy-rosidl-core-generators_0.2.1-1noble.20260911.051143_amd64.deb",
+      "filename": "ros-jazzy-rosidl-core-generators_0.2.1-1noble.20260911.051143_amd64.deb",
+      "download_bytes": 6814,
+      "apt_checksum": "MD5Sum:fd84626f7336b9c665db0f696236703c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rosidl-default-generators/ros-jazzy-rosidl-default-generators_1.6.1-1noble.20260911.052510_amd64.deb",
+      "filename": "ros-jazzy-rosidl-default-generators_1.6.1-1noble.20260911.052510_amd64.deb",
+      "download_bytes": 6802,
+      "apt_checksum": "MD5Sum:346d7ccf2eb8136503f7e7d3014e44cc"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav-2d-msgs/ros-jazzy-nav-2d-msgs_1.3.13-1noble.20260911.135428_amd64.deb",
+      "filename": "ros-jazzy-nav-2d-msgs_1.3.13-1noble.20260911.135428_amd64.deb",
+      "download_bytes": 81856,
+      "apt_checksum": "MD5Sum:bc895730ebcb98095548a0467dcc5ec8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-msgs/ros-jazzy-nav2-msgs_1.3.13-1noble.20260921.023049_amd64.deb",
+      "filename": "ros-jazzy-nav2-msgs_1.3.13-1noble.20260921.023049_amd64.deb",
+      "download_bytes": 1826476,
+      "apt_checksum": "MD5Sum:5ac79acd867132ac508970c41559ad7b"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-common/ros-jazzy-nav2-common_1.3.13-1noble.20260920.234759_amd64.deb",
+      "filename": "ros-jazzy-nav2-common_1.3.13-1noble.20260920.234759_amd64.deb",
+      "download_bytes": 10300,
+      "apt_checksum": "MD5Sum:dc01e8b638d96944f06aa9614dcd0020"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rclcpp-action/ros-jazzy-rclcpp-action_28.1.22-1noble.20260912.162328_amd64.deb",
+      "filename": "ros-jazzy-rclcpp-action_28.1.22-1noble.20260912.162328_amd64.deb",
+      "download_bytes": 100226,
+      "apt_checksum": "MD5Sum:bf274c0145bc8866aa65c151f76cb5fd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-orocos-kdl-vendor/ros-jazzy-orocos-kdl-vendor_0.5.2-1noble.20260603.150813_amd64.deb",
+      "filename": "ros-jazzy-orocos-kdl-vendor_0.5.2-1noble.20260603.150813_amd64.deb",
+      "download_bytes": 7160,
+      "apt_checksum": "MD5Sum:fb08235b82100a10f62dcbdb8198f41d"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-rclcpp-components/ros-jazzy-rclcpp-components_28.1.22-1noble.20260911.115213_amd64.deb",
+      "filename": "ros-jazzy-rclcpp-components_28.1.22-1noble.20260911.115213_amd64.deb",
+      "download_bytes": 88582,
+      "apt_checksum": "MD5Sum:3e6f20afa68f2ea7a9424c9c237e9ba8"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tf2-msgs/ros-jazzy-tf2-msgs_0.36.23-1noble.20260915.172312_amd64.deb",
+      "filename": "ros-jazzy-tf2-msgs_0.36.23-1noble.20260915.172312_amd64.deb",
+      "download_bytes": 179384,
+      "apt_checksum": "MD5Sum:6646165ce93f61cba76e580da1089bc6"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tf2-ros/ros-jazzy-tf2-ros_0.36.23-1noble.20260915.173839_amd64.deb",
+      "filename": "ros-jazzy-tf2-ros_0.36.23-1noble.20260915.173839_amd64.deb",
+      "download_bytes": 330852,
+      "apt_checksum": "MD5Sum:f66dfd57e5306b34d3d2ce741a50d212"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tf2-py/ros-jazzy-tf2-py_0.36.23-1noble.20260915.173947_amd64.deb",
+      "filename": "ros-jazzy-tf2-py_0.36.23-1noble.20260915.173947_amd64.deb",
+      "download_bytes": 28338,
+      "apt_checksum": "MD5Sum:8aa84867ad997e4e34b11696ca877e80"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tf2-ros-py/ros-jazzy-tf2-ros-py_0.36.23-1noble.20260915.174232_amd64.deb",
+      "filename": "ros-jazzy-tf2-ros-py_0.36.23-1noble.20260915.174232_amd64.deb",
+      "download_bytes": 28298,
+      "apt_checksum": "MD5Sum:8ce438832ca34cded9cc0f9d0dd169af"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tf2-geometry-msgs/ros-jazzy-tf2-geometry-msgs_0.36.23-1noble.20260915.174516_amd64.deb",
+      "filename": "ros-jazzy-tf2-geometry-msgs_0.36.23-1noble.20260915.174516_amd64.deb",
+      "download_bytes": 20088,
+      "apt_checksum": "MD5Sum:9e46f8c58ef2bd2fb96d9b6a669956e6"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-util/ros-jazzy-nav2-util_1.3.13-1noble.20260921.024419_amd64.deb",
+      "filename": "ros-jazzy-nav2-util_1.3.13-1noble.20260921.024419_amd64.deb",
+      "download_bytes": 170594,
+      "apt_checksum": "MD5Sum:d73aa93f0fb6d60df90e59fb8a474047"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav-2d-utils/ros-jazzy-nav-2d-utils_1.3.13-1noble.20260921.025012_amd64.deb",
+      "filename": "ros-jazzy-nav-2d-utils_1.3.13-1noble.20260921.025012_amd64.deb",
+      "download_bytes": 23992,
+      "apt_checksum": "MD5Sum:030beb01e457942c2c77042666f85ecc"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-std-srvs/ros-jazzy-std-srvs_5.3.8-1noble.20260911.100759_amd64.deb",
+      "filename": "ros-jazzy-std-srvs_5.3.8-1noble.20260911.100759_amd64.deb",
+      "download_bytes": 112028,
+      "apt_checksum": "MD5Sum:1108fa94d73fa45a44574e4be64648d0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-behavior-tree/ros-jazzy-nav2-behavior-tree_1.3.13-1noble.20260921.024958_amd64.deb",
+      "filename": "ros-jazzy-nav2-behavior-tree_1.3.13-1noble.20260921.024958_amd64.deb",
+      "download_bytes": 1957984,
+      "apt_checksum": "MD5Sum:4c48d79294cb08c0c20d423b18497b0a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-voxel-grid/ros-jazzy-nav2-voxel-grid_1.3.13-1noble.20260921.023047_amd64.deb",
+      "filename": "ros-jazzy-nav2-voxel-grid_1.3.13-1noble.20260921.023047_amd64.deb",
+      "download_bytes": 19770,
+      "apt_checksum": "MD5Sum:6770be33a7cec947ea053b94c73420db"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-pluginlib/ros-jazzy-pluginlib_5.4.6-1noble.20260911.050818_amd64.deb",
+      "filename": "ros-jazzy-pluginlib_5.4.6-1noble.20260911.050818_amd64.deb",
+      "download_bytes": 98334,
+      "apt_checksum": "MD5Sum:7e06f22dfbe1339b431dae12aa2f1d03"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tf2-sensor-msgs/ros-jazzy-tf2-sensor-msgs_0.36.23-1noble.20260915.174517_amd64.deb",
+      "filename": "ros-jazzy-tf2-sensor-msgs_0.36.23-1noble.20260915.174517_amd64.deb",
+      "download_bytes": 15244,
+      "apt_checksum": "MD5Sum:cea8cff2506eaafd04c4d59fbd39cda0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-visualization-msgs/ros-jazzy-visualization-msgs_5.3.8-1noble.20260911.141359_amd64.deb",
+      "filename": "ros-jazzy-visualization-msgs_5.3.8-1noble.20260911.141359_amd64.deb",
+      "download_bytes": 264376,
+      "apt_checksum": "MD5Sum:0efda30b3b2f47f42738c5b5ba7443f2"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-costmap-2d/ros-jazzy-nav2-costmap-2d_1.3.13-1noble.20260921.024946_amd64.deb",
+      "filename": "ros-jazzy-nav2-costmap-2d_1.3.13-1noble.20260921.024946_amd64.deb",
+      "download_bytes": 1073034,
+      "apt_checksum": "MD5Sum:4d58047ada9f26eabe9b4618ab8a1e98"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-core/ros-jazzy-nav2-core_1.3.13-1noble.20260921.031435_amd64.deb",
+      "filename": "ros-jazzy-nav2-core_1.3.13-1noble.20260921.031435_amd64.deb",
+      "download_bytes": 14268,
+      "apt_checksum": "MD5Sum:cea4b576bbed4e518e649c57a2af07b4"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-behaviors/ros-jazzy-nav2-behaviors_1.3.13-1noble.20260921.031747_amd64.deb",
+      "filename": "ros-jazzy-nav2-behaviors_1.3.13-1noble.20260921.031747_amd64.deb",
+      "download_bytes": 533060,
+      "apt_checksum": "MD5Sum:7e13c886a6bf9604d248b1690bcdb2ef"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-bt-navigator/ros-jazzy-nav2-bt-navigator_1.3.13-1noble.20260921.031756_amd64.deb",
+      "filename": "ros-jazzy-nav2-bt-navigator_1.3.13-1noble.20260921.031756_amd64.deb",
+      "download_bytes": 473926,
+      "apt_checksum": "MD5Sum:072df2cf0303f9358ffba37de359c88a"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-collision-monitor/ros-jazzy-nav2-collision-monitor_1.3.13-1noble.20260921.030324_amd64.deb",
+      "filename": "ros-jazzy-nav2-collision-monitor_1.3.13-1noble.20260921.030324_amd64.deb",
+      "download_bytes": 647978,
+      "apt_checksum": "MD5Sum:72e6ca7d247017b820981783d4e43ce7"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-controller/ros-jazzy-nav2-controller_1.3.13-1noble.20260921.031754_amd64.deb",
+      "filename": "ros-jazzy-nav2-controller_1.3.13-1noble.20260921.031754_amd64.deb",
+      "download_bytes": 347558,
+      "apt_checksum": "MD5Sum:2e82c6a53f9820a40884d6e4f68746dd"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-lifecycle-manager/ros-jazzy-nav2-lifecycle-manager_1.3.13-1noble.20260921.025008_amd64.deb",
+      "filename": "ros-jazzy-nav2-lifecycle-manager_1.3.13-1noble.20260921.025008_amd64.deb",
+      "download_bytes": 91196,
+      "apt_checksum": "MD5Sum:c5117c4a7197fdb3125fe54763c045ef"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/g/graphicsmagick/graphicsmagick-libmagick-dev-compat_1.4%2breally1.3.42-1.1build3_all.deb",
+      "filename": "graphicsmagick-libmagick-dev-compat_1.4+really1.3.42-1.1build3_all.deb",
+      "download_bytes": 8600,
+      "apt_checksum": "MD5Sum:ad2f25b2c829342d93b79b963c6209d3"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-yaml-cpp-vendor/ros-jazzy-yaml-cpp-vendor_9.0.1-1noble.20260225.230938_amd64.deb",
+      "filename": "ros-jazzy-yaml-cpp-vendor_9.0.1-1noble.20260225.230938_amd64.deb",
+      "download_bytes": 6824,
+      "apt_checksum": "MD5Sum:6da7c6d30d9cab38e3ab3687c8a9cb9c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-map-server/ros-jazzy-nav2-map-server_1.3.13-1noble.20260921.024942_amd64.deb",
+      "filename": "ros-jazzy-nav2-map-server_1.3.13-1noble.20260921.024942_amd64.deb",
+      "download_bytes": 224418,
+      "apt_checksum": "MD5Sum:0d261f2439d831e3e177c0527c2a01a0"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/universe/l/llvm-defaults/libomp-dev_18.0-59%7eexp2_amd64.deb",
+      "filename": "libomp-dev_1%3a18.0-59~exp2_amd64.deb",
+      "download_bytes": 5366,
+      "apt_checksum": "MD5Sum:d07f986db34c82f87fcb641f6b0ee05c"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-tf2-eigen/ros-jazzy-tf2-eigen_0.36.23-1noble.20260915.174549_amd64.deb",
+      "filename": "ros-jazzy-tf2-eigen_0.36.23-1noble.20260915.174549_amd64.deb",
+      "download_bytes": 13862,
+      "apt_checksum": "MD5Sum:ae1b44ec741ffa311b93d4fbea5f769f"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-mppi-controller/ros-jazzy-nav2-mppi-controller_1.3.13-1noble.20260921.031754_amd64.deb",
+      "filename": "ros-jazzy-nav2-mppi-controller_1.3.13-1noble.20260921.031754_amd64.deb",
+      "download_bytes": 455494,
+      "apt_checksum": "MD5Sum:f341af23264c30b9774c72967e16cb99"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-planner/ros-jazzy-nav2-planner_1.3.13-1noble.20260921.031801_amd64.deb",
+      "filename": "ros-jazzy-nav2-planner_1.3.13-1noble.20260921.031801_amd64.deb",
+      "download_bytes": 208572,
+      "apt_checksum": "MD5Sum:9e1b038bbbb2106a775622f176f84a45"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-ompl/ros-jazzy-ompl_1.7.0-2noble.20260225.055751_amd64.deb",
+      "filename": "ros-jazzy-ompl_1.7.0-2noble.20260225.055751_amd64.deb",
+      "download_bytes": 2388018,
+      "apt_checksum": "MD5Sum:7bb21e4afc3ba1032153a20b91701568"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-smac-planner/ros-jazzy-nav2-smac-planner_1.3.13-1noble.20260921.031850_amd64.deb",
+      "filename": "ros-jazzy-nav2-smac-planner_1.3.13-1noble.20260921.031850_amd64.deb",
+      "download_bytes": 621002,
+      "apt_checksum": "MD5Sum:1a584f4e501eba72ba086ecf4582ef55"
+    },
+    {
+      "url": "https://mirrors.tuna.tsinghua.edu.cn/ros2/ubuntu/pool/main/r/ros-jazzy-nav2-velocity-smoother/ros-jazzy-nav2-velocity-smoother_1.3.13-1noble.20260921.024954_amd64.deb",
+      "filename": "ros-jazzy-nav2-velocity-smoother_1.3.13-1noble.20260921.024954_amd64.deb",
+      "download_bytes": 160184,
+      "apt_checksum": "MD5Sum:c868a3771311d41ac479a4ef598da129"
+    }
+  ]
+}

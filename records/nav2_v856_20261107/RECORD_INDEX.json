@@ -1,0 +1,66 @@
+{
+  "format_version": 1,
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-nav2-v856-20261107",
+  "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v856-20261107",
+  "created_unix": 1794041767.2297761,
+  "archives": [
+    {
+      "group": "v856-evidence",
+      "source_files": 199,
+      "raw_bytes": 22066725,
+      "archive_bytes": 8751574,
+      "archive_sha256": "554dbb81110e6bde55aab0a33718e72aef3dd0175d79763118ab0b113d8f2ad1",
+      "parts": [
+        {
+          "name": "v856-evidence.tar.zst.part000",
+          "bytes": 8751574,
+          "sha256": "554dbb81110e6bde55aab0a33718e72aef3dd0175d79763118ab0b113d8f2ad1"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    },
+    {
+      "group": "v856-ros-runtime",
+      "source_files": 6100,
+      "raw_bytes": 179778005,
+      "archive_bytes": 43697345,
+      "archive_sha256": "30c35a648722b8a4de3453efd3423eda2bc8150d54384d3d06d6e4956b652904",
+      "parts": [
+        {
+          "name": "v856-ros-runtime.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "ffa51ff8113f8af7a3608af7f63d7ca0840a23a15aad2d1745fe6aa5c57daa7c"
+        },
+        {
+          "name": "v856-ros-runtime.tar.zst.part001",
+          "bytes": 10142913,
+          "sha256": "76a86a836fdd9dcad6850d1e9eba36a575261687554a1f88c835ea0fe903b043"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    },
+    {
+      "group": "v856-third-party-licenses",
+      "source_files": 306,
+      "raw_bytes": 3711159,
+      "archive_bytes": 601524,
+      "archive_sha256": "dd0314fd068ea6c008ac50674b4b252160ac35dfd6eeb10a1f38d58a9a6109c7",
+      "parts": [
+        {
+          "name": "v856-third-party-licenses.tar.zst.part000",
+          "bytes": 601524,
+          "sha256": "dd0314fd068ea6c008ac50674b4b252160ac35dfd6eeb10a1f38d58a9a6109c7"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ],
+  "runtime_requires": "Compatible Ubuntu24.04 amd64 and system Python3.12 plus host system libraries listed in RUNTIME_SELECTED.json; restore v856-third-party-licenses for redistribution notices",
+  "status": "LOCAL_ALL_ARCHIVE_MEMBER_AND_PART_SHA_VERIFIED_SEE_REMOTE_RECEIPTS",
+  "scientific_outcome": "SOFTWARE_INTERFACE_PASSED_NATIVE_SPEED_QUALIFICATION_FAILED_NO_NAVIGATION",
+  "final_remote_index_asset": "FINAL_RECORD_INDEX.json"
+}

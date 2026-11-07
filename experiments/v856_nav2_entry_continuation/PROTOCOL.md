@@ -1,0 +1,7 @@
+# V856 单次输出目录接口接续
+
+原V856冻结源和已闭批LAUNCH_CLAIM/ROUND_WINDOW/ERROR/COMPLETION全部保持，不能追认原启动通过。模型已初始化一次，factory保存INITIALIZATION_PROVENANCE证明bootstrap0积分/原生时间0；随后INITIAL_STATE写入位于paired外，被原B.write_guard限制，异常结果也被同一限制拦住。错误发生在首step之前；导航/私有/重放积分0，原科学控制未测试，EGL退出清理告警不是主因。
+
+用户已授权真实Nav2实验及继续。本接续明确是对原“任何错误停止”计划的一次操作接口例外：只在原factory返回后把B.OUT从paired子目录提升至**本轮runs/v856_nav2_foundation**，保留原审计钩子与Stage隔离、冻结源码不可写。零模型AST提取原guard正负测试须先过；冻结原全部V856科学py/md/json/任务/阈值一个字节不改。
+
+仅一次新的同一11s执行器资格，独立输出entry01/vehicle_qualification01；原一次模型入口失败计账。通过后才执行原尚未执行的TASK_LIST九导航同原顺序，无重复导航或新科学候选。三个框架文件common/vehicle/worker仅输出域适配，start是如实处理无结果计数的操作驱动。任何新功能/安全/源/接口/证据异常停止，不再第二入口修补或更名重跑。原20:00/1794052800绝对截止、2GiB、本车实际安全/完整重放门及Nav2声明限制全部保持；结束原错误/本接续证据一起上传GitHub，SHA下载回读后清理本地临时环境。

@@ -1,0 +1,132 @@
+{
+  "scope": "SAVED_NATIVE_ZERO_MODEL_DIAGNOSIS",
+  "new_model_initializations": 0,
+  "new_integrations": 0,
+  "actual_native": 1100,
+  "replay_native": 1100,
+  "steady_interval_native_ticks": [
+    251,
+    390
+  ],
+  "commanded_forward_m_s": 0.2,
+  "actual_mean_forward_m_s": 0.09611520907312478,
+  "mean_body_tracking_error_m_s": 0.10388479092687523,
+  "actual_to_command_ratio": 0.48057604536562387,
+  "mean_rear_target_rad_s": [
+    3.5565419170787065,
+    3.557359193108878
+  ],
+  "mean_rear_actual_rad_s": [
+    1.7840900735715495,
+    1.7814940442091398
+  ],
+  "mean_front_actual_rad_s": [
+    0.14403631891309837,
+    0.1406491095839242
+  ],
+  "robot_self_contact_ticks": 1100,
+  "robot_self_contact_pairs": [
+    {
+      "geom_ids": [
+        23,
+        25
+      ],
+      "declarations": [
+        {
+          "geom_id": 23,
+          "body_name": "mkmini_base",
+          "geom": {
+            "name": "chassis_collision",
+            "type": "box",
+            "size": "0.43 0.27 0.10",
+            "pos": "0 0 0",
+            "rgba": "0.8 0.8 0.8 0.0"
+          }
+        },
+        {
+          "geom_id": 25,
+          "body_name": "left_front_wheel",
+          "geom": {
+            "type": "cylinder",
+            "size": "0.12 0.035",
+            "euler": "1.5708 0 0",
+            "rgba": "0.02 0.02 0.02 0.65",
+            "contype": "1",
+            "conaffinity": "1",
+            "friction": "6.0 0.5 0.08",
+            "condim": "6",
+            "solref": "0.008 1",
+            "solimp": "0.95 0.99 0.001"
+          }
+        }
+      ],
+      "records": 3422,
+      "minimum_distance_m": -0.08180347737271837,
+      "maximum_penetration_m": 0.08180347737271837
+    },
+    {
+      "geom_ids": [
+        23,
+        27
+      ],
+      "declarations": [
+        {
+          "geom_id": 23,
+          "body_name": "mkmini_base",
+          "geom": {
+            "name": "chassis_collision",
+            "type": "box",
+            "size": "0.43 0.27 0.10",
+            "pos": "0 0 0",
+            "rgba": "0.8 0.8 0.8 0.0"
+          }
+        },
+        {
+          "geom_id": 27,
+          "body_name": "right_front_wheel",
+          "geom": {
+            "type": "cylinder",
+            "size": "0.12 0.035",
+            "euler": "1.5708 0 0",
+            "rgba": "0.02 0.02 0.02 0.65",
+            "contype": "1",
+            "conaffinity": "1",
+            "friction": "6.0 0.5 0.08",
+            "condim": "6",
+            "solref": "0.008 1",
+            "solimp": "0.95 0.99 0.001"
+          }
+        }
+      ],
+      "records": 3264,
+      "minimum_distance_m": -0.0697807320609785,
+      "maximum_penetration_m": 0.0697807320609785
+    }
+  ],
+  "all_contact_type_counts": {
+    "ground_support": 8800,
+    "robot_self_contact": 6686
+  },
+  "checks": {
+    "native_trace_coverage": true,
+    "exact_times": true,
+    "full_actual_replay_record_passed": true,
+    "same_qualification_metric": true,
+    "front_chassis_pairs_present": true,
+    "obstacle_unknown_contact_absent": true
+  },
+  "independent_audit_passed": true,
+  "confirmed": "Native body speed failed the preregistered gate; front wheel/chassis penetrating contacts are present.",
+  "inference": "Interpenetrating wheel/chassis collision geometry is a plausible source of drag and steering disturbance. Its causal share and sufficiency have not been measured by an ablation. Raising PI gains alone is not yet justified.",
+  "old_rpccr_failures_reclassified": false,
+  "model_xml_is_construction_record": "Legacy initialization also mutates compiled parameters; the saved MJB remains the actual model of record. XML joint/actuator limits are not substituted for actual SETUP limits.",
+  "inputs": {
+    "runs/v856_nav2_foundation/entry01/vehicle_qualification01/NATIVE_TRACE.npz": "823e85e7ba2974c61bdc5627b3e58038ee4e09e2e3ec9d7691a4cf567963c64d",
+    "runs/v856_nav2_foundation/entry01/vehicle_qualification01/BODY_COMMANDS.json": "c99e927352f0c380f6c151833d1153d10cb22339b8e396caf62281c9477d7e86",
+    "runs/v856_nav2_foundation/entry01/vehicle_qualification01/CONTACTS.json.gz": "50d3d02f0b268196b9c4a21f38607a040ca3e4afd507a0a3461d4ab696d96c74",
+    "runs/v856_nav2_foundation/entry01/vehicle_qualification01/SETUP.json": "a4f4d862be34e2978e2b36a0dd07849dc9f3a593929586ca6e97dd9e64e5a2e4",
+    "runs/v856_nav2_foundation/entry01/vehicle_qualification01/REPLAY.json": "309bd42ed1b0c4c9e7de19874dc4d81e4a3d694a303c87f87a6a5e0ced50416b",
+    "runs/v856_nav2_foundation/entry01/vehicle_qualification01/RESULT.json": "d21e3e1b21b780d19a31eb3ec119ffe9ef9ed8a4d3baa3bb5338190b0640ed5f",
+    "runs/v856_nav2_foundation/entry01/vehicle_qualification01/paired/assets/isolated_indoor.xml": "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5"
+  }
+}

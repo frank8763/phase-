@@ -1,0 +1,36 @@
+{
+  "passed": false,
+  "actual_native": 1100,
+  "replay_native": 1100,
+  "private_native": 0,
+  "environment_initializations_attempted": 1,
+  "minimum_actual_clearance_m": 0.278178120575329,
+  "minimum_self_margin_m": 0.009378379166941286,
+  "bad_contacts": 0,
+  "final_body": [
+    -3.485810461069575,
+    -1.990663274668436,
+    0.009513613879644042,
+    8.255302357310007e-07,
+    -0.0045827487551644685
+  ],
+  "goal_distance_m": 7.485816283712725,
+  "maximum_wall_lag_s": 0.0023174689849838614,
+  "steady_forward_m_s": 0.09611520907312478,
+  "steady_turn_yaw_rad_s": 0.021577323973305564,
+  "final_translation_speed_m_s": 7.082530818518048e-06,
+  "replay": {
+    "replay_native": 1100,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "checks": {
+    "forward_tracks_fixed_02_command": false,
+    "positive_yaw_response": true,
+    "brake_settles_below_003": true,
+    "physical_safety": true,
+    "full_native_replay": true,
+    "wall_paced": true
+  }
+}
