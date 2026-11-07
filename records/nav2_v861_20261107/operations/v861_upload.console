@@ -1,0 +1,12 @@
+HTTP 422: Validation Failed (https://api.github.com/repos/frank8763/phase-/releases)
+Release.target_commitish is invalid
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v861_closure/upload.py", line 55, in <module>
+    if __name__=='__main__':main()
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v861_closure/upload.py", line 21, in main
+    head=subprocess.run(['git','rev-parse','HEAD'],cwd=R,check=True,capture_output=True,text=True).stdout.strip();gh(['release','create',TAG,'--repo',REPO,'--target',head,'--draft','--title','Phase V861 startup and fixed curve qualification','--notes-file',str(notes)],timeout=90);found=[x for x in api(f'repos/{REPO}/releases?per_page=100')if x['tag_name']==TAG]
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v861_closure/upload.py", line 5, in gh
+    def gh(args,**kwargs):return subprocess.run([str(GH),*args],cwd=R,check=True,**kwargs)
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/tools/phase_storage_20261107/vendor/gh', 'release', 'create', 'phase-nav2-v861-20261107', '--repo', 'frank8763/phase-', '--target', '9e4d623a60de810ecf44b2fbbbe46b89414862ba', '--draft', '--title', 'Phase V861 startup and fixed curve qualification', '--notes-file', '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v861_startup_gate/cloud/RELEASE_NOTES.md']' returned non-zero exit status 1.

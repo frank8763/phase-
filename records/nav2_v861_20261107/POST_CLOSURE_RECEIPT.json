@@ -1,0 +1,186 @@
+{
+  "status": "CLOSED_QUALIFICATION_PASSED_NOT_DYNAMIC_ACCEPTANCE",
+  "source_and_evidence_public": true,
+  "vehicle_models_stopped": true,
+  "new24_executed": 0,
+  "integrations_after_deadline": 0,
+  "original_review_guard_restored": true,
+  "completed_unix": 1794052967.7305198,
+  "records": {
+    "SOURCE_SYNC_RESULT.json": {
+      "source_commit": "db0e42c43aa5bb3e06817d7722d90c9f9afc982d",
+      "attempted_once": true,
+      "push_succeeded": true,
+      "remote_head_verified": true,
+      "push_returncode": 0,
+      "remote_head": "db0e42c43aa5bb3e06817d7722d90c9f9afc982d",
+      "completed_unix": 1794052884.6693912
+    },
+    "FULL_REMOTE_VERIFIED.json": {
+      "passed": true,
+      "release_id": 437547253,
+      "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v861-20261107",
+      "assets": 3,
+      "asset_bytes": 5396115,
+      "all_server_digests_matched": true,
+      "all_streamed_download_sha_verified": true,
+      "verified_unix": 1794052737.341754,
+      "status": "PUBLIC_RELEASE_AND_SOURCE_REMOTE_VERIFIED",
+      "source_commit": "db0e42c43aa5bb3e06817d7722d90c9f9afc982d",
+      "release_tag_commit": "db0e42c43aa5bb3e06817d7722d90c9f9afc982d",
+      "published_unix": 1794052901.5292232
+    },
+    "PUBLIC_RESTORE_QUALIFICATION.json": {
+      "passed": true,
+      "public_part_download_sha_passed": true,
+      "whole_reassembly_sha_passed": true,
+      "actual_extracted_members_sha_passed": true,
+      "members": 125,
+      "raw_bytes": 13076496,
+      "model_initializations": 0,
+      "model_integrations": 0,
+      "temporary_restore_removed": true,
+      "verified_unix": 1794052908.156998
+    },
+    "FINAL_INDEPENDENT_AUDIT.json": {
+      "passed": true,
+      "checks": {
+        "SOFTWARE_FREEZE.json": true,
+        "PHYSICAL_FREEZE.json": true,
+        "software_all_seven_nodes_in_every_trial": true,
+        "all_six_completed": true,
+        "gated_three_passed": true,
+        "old_three_also_passed_not_reproduced": true,
+        "unresponsive_real_server_blocked": true,
+        "curve_saved_independent": true,
+        "guard_exact": true,
+        "finished_before_root": true
+      },
+      "scope": "Only software readiness and fixed body curve qualification",
+      "dynamic_acceptance_passed": false,
+      "nav2_path_navigation": 0,
+      "new24_executed": 0,
+      "actual_native": 1600,
+      "replay_native": 1600,
+      "private_native": 0,
+      "closed_unix": 1794052564.0209494,
+      "original_root_deadline_unix": 1794052800.0,
+      "no_new_vehicle_models_in_audit": true
+    },
+    "CURVE_INDEPENDENT_AUDIT.json": {
+      "evidence_passed": true,
+      "functional_passed": true,
+      "passed": true,
+      "checks": {
+        "full_count": true,
+        "every_native_time": true,
+        "all_arrays_finite": true,
+        "same_fixed_commands": true,
+        "actual_clearance": true,
+        "actual_self": true,
+        "contact_coverage": true,
+        "no_bad_contacts": true,
+        "actuator_amplitude": true,
+        "actuator_slew": true,
+        "other_actuators_unchanged": true,
+        "replay_exact": true,
+        "model_sha": true,
+        "no_root_mutation": true,
+        "online_reference_rebuilt": true
+      },
+      "functional_checks": {
+        "maximum_position": true,
+        "rms_position": true,
+        "maximum_heading": true,
+        "along_axis_progress": true,
+        "actual_stop": true
+      },
+      "maximum_position_error_m": 0.09385683034542015,
+      "rms_position_error_m": 0.06967314986586358,
+      "maximum_heading_error_rad": 0.06996349442602101,
+      "along_axis_progress_m": 1.7213097381743885,
+      "final_translation_speed_m_s": 6.050849810350424e-06,
+      "minimum_clearance_m": 0.2849907499343378,
+      "minimum_self_margin_m": 0.008966854592717177,
+      "actual_native": 1600,
+      "replay_native": 1600,
+      "private_native": 0,
+      "model_initializations_in_audit": 0,
+      "native_integrations_in_audit": 0,
+      "not_nav2_navigation_or_dynamic_acceptance": true
+    },
+    "CLEANUP_RESULT.json": {
+      "status": "COMPLETE",
+      "targets": [
+        {
+          "path": "runs/v861_startup_gate",
+          "existed": true,
+          "logical_bytes": 6117641,
+          "allocated_bytes": 6344704,
+          "reason": "Closed evidence remotely source/member/downloadSHA verified; selected ROS runtime previously verified in V856 Release"
+        },
+        {
+          "path": "runs/v858_nav2_verified/v861_curve",
+          "existed": true,
+          "logical_bytes": 12252775,
+          "allocated_bytes": 12333056,
+          "reason": "Closed evidence remotely source/member/downloadSHA verified; selected ROS runtime previously verified in V856 Release"
+        },
+        {
+          "path": "runs/v856_nav2_foundation/rootfs",
+          "existed": true,
+          "logical_bytes": 179778005,
+          "allocated_bytes": 196530176,
+          "reason": "Closed evidence remotely source/member/downloadSHA verified; selected ROS runtime previously verified in V856 Release"
+        },
+        {
+          "path": "runs/v856_nav2_foundation/ros_logs",
+          "existed": true,
+          "logical_bytes": 126843,
+          "allocated_bytes": 253952,
+          "reason": "Closed evidence remotely source/member/downloadSHA verified; selected ROS runtime previously verified in V856 Release"
+        },
+        {
+          "path": "runs/v861_restore_qualification",
+          "existed": true,
+          "logical_bytes": 0,
+          "allocated_bytes": 0,
+          "reason": "Closed evidence remotely source/member/downloadSHA verified; selected ROS runtime previously verified in V856 Release"
+        }
+      ],
+      "logical_bytes": 198275264,
+      "allocated_bytes": 215461888,
+      "source_commit": "db0e42c43aa5bb3e06817d7722d90c9f9afc982d",
+      "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v861-20261107",
+      "models_initialized": 0,
+      "integrations": 0,
+      "stage_accessed": false,
+      "all_target_paths_removed": true,
+      "completed_unix": 1794052967.6042883,
+      "local_phase_allocated_bytes": 547143680
+    },
+    "TEARDOWN_NOTE.json": {
+      "render_cleanup_warning": true,
+      "warning_phase": "process teardown after saved native RESULT and full replay; ignored renderer destructor warnings retained",
+      "driver_exit_success": true,
+      "saved_physics_evidence_independent_audit_passed": true,
+      "no_rendered_camera_claim": true,
+      "not_clean_graphics_shutdown_claim": true
+    },
+    "LOCAL_ARCHIVE_READBACK.json": {
+      "passed": true,
+      "source_members": 125,
+      "part_sha_verified": true,
+      "decompressed_members_sha_verified": true,
+      "source_changed_since_archive": [],
+      "model_initializations": 0,
+      "native_integrations": 0
+    },
+    "UPLOAD_PREPARATION_NOTE.json": {
+      "reason": "Initial draft creation targeted unpublished local metadata commit9e4d623 and GitHub422 rejected target. No release/assets created; corrected draft target to actual existing remote main SHA. Scientific files/archive unchanged.",
+      "release_creation_before_correction": 0,
+      "asset_uploads_before_correction": 0,
+      "old_console": "runs/v861_upload.console"
+    }
+  }
+}
