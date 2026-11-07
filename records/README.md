@@ -4,7 +4,7 @@
 
 本地保留运行依赖和小摘要，原始数据按需恢复；不默认下载全历史。恢复前运行 `python3 tools/phase_storage_20261107/restore.py --list` 查看各组大小，再指定一个组恢复。下载临时分块在恢复完成后自动删除。
 
-`verified_three_route_v827`保存选定旧内容寻址记录。恢复该组后，以其 `V827_SELECTED_BLOB_INVENTORY.json.gz` 调用 `unpack_blobs.py`，按原SHA还原实际轨迹。历史预测/信念缓存明确裁剪，不再声称档案包含全部旧候选池。最新V855保留完整实际运行及原保存审核所用记录，原未通过结果保持。
+`verified_three_route_v827`保存选定旧内容寻址记录。恢复该组后，以其 `V827_SELECTED_BLOB_INVENTORY.json.gz` 调用 `unpack_blobs.py`，按原SHA还原实际轨迹。历史预测/信念缓存明确裁剪，不再声称档案包含全部旧候选池。最新V855保留完整实际运行、已执行控制合同、独立审核结果和末失败见证，早期未选候选池裁剪，原未通过结果保持。
 
 `fixtures/v854_b64_motion_estimate_selected.jsonl`仅四个原始保存状态，供零模型公式资格复算；不是完整历史跟踪日志。需要复算原资格时将这四行作为所选夹具输入，不能声称重新建立全历史因果覆盖。
 

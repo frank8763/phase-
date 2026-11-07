@@ -1,5 +1,5 @@
 """Upload selected Release assets and verify every byte by streaming them back."""
-import hashlib,json,subprocess,time
+import fcntl,hashlib,json,subprocess,time
 from pathlib import Path
 from plan import R,OUT,dump
 GH=R/'tools/phase_storage_20261107/vendor/gh';REPO='frank8763/phase-';TAG='phase-essential-records-20261107'
@@ -13,10 +13,11 @@ def sha(p):
     return h.hexdigest()
 
 def main():
+    lock=(OUT/'upload.lock').open('a+');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     source=json.loads((OUT/'SOURCE_REMOTE_VERIFIED.json').read_text());assert source['passed'];index=json.loads((OUT/'RECORD_INDEX.json').read_text());index['source_commit']=source['commit'];index['release_url']=f'https://github.com/{REPO}/releases/tag/{TAG}';dump(OUT/'RECORD_INDEX.json',index)
     releases=api(f'repos/{REPO}/releases?per_page=100');found=[x for x in releases if x['tag_name']==TAG]
     if not found:
-        notes=OUT/'RELEASE_NOTES.md';notes.write_text('Essential Phase research records through2026-11-07.\n\nSelected static acceptance, verified three-route development milestone, latest V855 full evidence and reproduction inputs, and the failed fresh-confirmation actual trajectories are retained. Original failed outcomes remain failed. Superseded intermediate candidate pools and duplicate archives are intentionally omitted by user request.\n\nSource and reports: '+source['commit']+'\n\nEvery asset has SHA256 in RECORD_INDEX.json; the upload was verified by streamed download. Restore only the required archive using tools/phase_storage_20261107/restore.py.\n')
+        notes=OUT/'RELEASE_NOTES.md';notes.write_text('Essential Phase research records through2026-11-07.\n\nSelected static acceptance, verified three-route development milestone, latest V855 actual evidence and terminal rejection witnesses and reproduction inputs, and the failed fresh-confirmation actual trajectories are retained. Original failed outcomes remain failed. Superseded intermediate candidate pools and duplicate archives are intentionally omitted by user request.\n\nSource and reports: '+source['commit']+'\n\nEvery asset has SHA256 in RECORD_INDEX.json; the upload was verified by streamed download. Restore only the required archive using tools/phase_storage_20261107/restore.py.\n')
         gh(['release','create',TAG,'--repo',REPO,'--target',source['commit'],'--draft','--title','Phase essential research records ·2026-11-07','--notes-file',str(notes)],timeout=90)
         found=[x for x in api(f'repos/{REPO}/releases?per_page=100')if x['tag_name']==TAG]
     release=found[0];items=[]
