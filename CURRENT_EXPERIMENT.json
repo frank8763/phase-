@@ -2,7 +2,7 @@
   "status": "REVIEW_PENDING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": null,
+  "active_entrypoint": "experiments/v858_nav2_verified/component_start.py",
   "decision_freeze": "experiments/v855_renewal_progress/CANDIDATE_FREEZE.json",
   "source_revision": "V848_GOAL_REFERENCE_AND_FIRST_CERTIFIED_NOMINAL",
   "protocol": "experiments/v855_renewal_progress/PROTOCOL.md",
@@ -43,7 +43,7 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "GOAL_ACCEPTANCE_PUSH_TIMED_OUT_REMOTE_OLD_HEAD_CONFIRMED",
   "raw_run_cleanup_executed": false,
-  "active_run": null,
+  "active_run": "runs/v858_nav2_verified",
   "previous_development_window_closed": true,
   "active_window": null,
   "previous_confirmation_trials": 24,
@@ -5954,5 +5954,55 @@
     "sequence": "SIMULATION_MODEL_CONTROL_STATIC_DYNAMIC_COMPARISON_CONFIRMATION_FIRST_THEN_HARDWARE",
     "hardware_work_started": false,
     "user_order": "现在先在仿真里面进行，一切都跑通之后才开始实体机"
+  },
+  "v858_nav2_verified": {
+    "status": "CLOSED_NOT_PASSED_STATIC01",
+    "closed": true,
+    "deadline_unix": 1794052800.0,
+    "new24": 0,
+    "hardware": false,
+    "component_passed": true,
+    "true_t0_passed": 6,
+    "new24_executed": 0,
+    "original_entry_failed_before_model": true,
+    "entry_exception": "factory cwd scoped, no science modification",
+    "actual_nav_native": 4174
+  },
+  "v859_nav2_steering": {
+    "status": "CLOSED_QUALIFICATION_FAILED",
+    "deadline_unix": 1794052800.0,
+    "new24": 0,
+    "scientific_revision": "Remove inner yaw P feedback only; original MPPI unchanged",
+    "closed": true,
+    "actual_native": 5274,
+    "replay_native": 5274,
+    "navigation": 0,
+    "new24_executed": 0,
+    "stop_reason": "yaw RMSE0.099278 exceeds original0.073998 and required0.059198"
+  },
+  "v860_nav2_prediction": {
+    "status": "CLOSED_LIFECYCLE_ENTRY_FAILED",
+    "closed": true,
+    "deadline_unix": 1794052800.0,
+    "only_change": "MPPI prediction speed initial state open_loop=True",
+    "last_candidate_today": true,
+    "new24_executed": 0,
+    "actual_native": 3327,
+    "replay_native": 3327,
+    "nav_commands": 0,
+    "stop_reason": "bt_navigator/get_state async_send_request failed, bringup aborted, 35s readiness timeout"
+  },
+  "latest_nav2_simulation": {
+    "status": "NOT_PASSED",
+    "rounds": [
+      "V858",
+      "V859",
+      "V860"
+    ],
+    "models_stopped": true,
+    "original_guard_restored": true,
+    "report": "docs/NAV2_PREDICTION_V860_REPORT.md",
+    "new_dynamic_navigation": 0,
+    "new24": 0
   }
 }

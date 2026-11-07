@@ -1,0 +1,4 @@
+{
+  "error": "AssertionError(\"NATIVE_EXCEPTION RuntimeError('WRONG_PROJECT_DIRECTORY')\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/campaign.py\", line 47, in main\n    row=run_task(t);rows.append(row);dump(OUT/'RESULTS.json',dict(rows=rows));assert row['audit']['evidence_passed'],'DEVELOPMENT_SAFETY_OR_EVIDENCE_FAILED';assert row['passed'],'DEVELOPMENT_FUNCTIONAL_FAILED '+t['id']\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/campaign.py\", line 31, in run_task\n    verify();assert(out/'RESULT.json').exists(),'NATIVE_RESULT_MISSING_COUNTS_UNKNOWN';result=json.loads((out/'RESULT.json').read_text());assert result.get('status')=='NATIVE_COMPLETE','NATIVE_EXCEPTION '+str(result.get('error'));saved=audit(t)\nAssertionError: NATIVE_EXCEPTION RuntimeError('WRONG_PROJECT_DIRECTORY')\n"
+}

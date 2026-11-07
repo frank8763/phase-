@@ -1,0 +1,25 @@
+{
+  "registered_before_scene_navigation": true,
+  "pool": "10080001-10080024",
+  "phase_rng": "Python MT19937 seed202611075858, uniform phase then predeclared direction reflection",
+  "new_vs_old_100600_pool": true,
+  "full_denominator": 24,
+  "per_route": 8,
+  "direction_each": 12,
+  "strict_chain_minimum": 23,
+  "per_route_minimum": 7,
+  "per_direction_minimum": 11,
+  "fixed_full_repeats": [
+    1,
+    9,
+    17
+  ],
+  "first_safety_or_evidence_failure_stops": true,
+  "second_functional_failure_stops": true,
+  "no_replacement": true,
+  "per_navigation_wall_limit_s": 180,
+  "latest_root_deadline_unix": 1794052800.0,
+  "confirmation_start_requires_remaining_s": 5700,
+  "development_must_pass_first": true,
+  "scope": "Finite declared single-actor Nav2 baseline acceptance only, not RP-CCR or algorithm superiority"
+}

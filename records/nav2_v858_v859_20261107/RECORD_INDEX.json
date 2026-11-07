@@ -1,0 +1,42 @@
+{
+  "format_version": 1,
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-nav2-v858-v860-20261107",
+  "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v858-v860-20261107",
+  "created_unix": 1794045794.2698443,
+  "archives": [
+    {
+      "group": "v858-v860-evidence",
+      "source_files": 551,
+      "raw_bytes": 155525854,
+      "archive_bytes": 65264376,
+      "archive_sha256": "3235232eefccd90f1435c61235a9bae085445586b03773fe72b4de83f7c763f0",
+      "parts": [
+        {
+          "name": "v858-v860-evidence.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "9c8e82a87c500f70c3f787298c4aff221eaf65a31a623570b7073b51c9e8c591"
+        },
+        {
+          "name": "v858-v860-evidence.tar.zst.part001",
+          "bytes": 31709944,
+          "sha256": "83dc5c8dfa58cb9809dc653cebb14dc9b954a0dc2a084762470232367ee90545"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ],
+  "dependencies": [
+    {
+      "release": "phase-nav2-v856-20261107",
+      "groups": [
+        "v856-evidence",
+        "v856-ros-runtime"
+      ],
+      "reason": "Original component replay inputs and verified ROS runtime; already archived, do not duplicate"
+    }
+  ],
+  "scientific_outcome": "NOT_PASSED_V858_STATIC_TRACKING_V859_RESPONSE_QUALIFICATION_V860_LIFECYCLE_ENTRY_FAILURE",
+  "status": "LOCAL_SOURCE_DECOMPRESSION_AND_PART_SHA_VERIFIED_REMOTE_PENDING"
+}

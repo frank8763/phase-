@@ -1,0 +1,4 @@
+{
+  "error": "AssertionError('DEVELOPMENT_FUNCTIONAL_FAILED static_main_01')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/campaign.py\", line 47, in main\n    row=run_task(t);rows.append(row);dump(OUT/'RESULTS.json',dict(rows=rows));assert row['audit']['evidence_passed'],'DEVELOPMENT_SAFETY_OR_EVIDENCE_FAILED';assert row['passed'],'DEVELOPMENT_FUNCTIONAL_FAILED '+t['id']\nAssertionError: DEVELOPMENT_FUNCTIONAL_FAILED static_main_01\n"
+}

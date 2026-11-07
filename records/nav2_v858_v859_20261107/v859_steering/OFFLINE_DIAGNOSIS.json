@@ -1,0 +1,16 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "old_failure": "V858 entry02 static WE action6/error104, full4174 safety/replay passed",
+  "hypotheses": [
+    "inner yaw P gain1.5 with observed delay creates oscillation",
+    "nominal MPPI does not represent actuator yaw response",
+    "lidar scan coordinates mismatch"
+  ],
+  "lidar_hypothesis_rejected": "original ray function yaw+2pi*i/32 equals ROS metadata",
+  "saved_yaw_rmse_rad_s": 0.07399774684224214,
+  "saved_command_yaw_sign_flips_3_30s": 108,
+  "one_declared_change": "Remove inner yaw error amplification only; use already clipped body yaw feedforward. Nav2 outer pose/yaw feedback remains.",
+  "no_confirmatory_data_seen": true,
+  "root_deadline_unix": 1794052800.0
+}

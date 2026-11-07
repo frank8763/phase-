@@ -1,0 +1,113 @@
+{
+  "returncode": 0,
+  "result": {
+    "passed": true,
+    "branches": [
+      {
+        "passed": true,
+        "role": "old_replay",
+        "native_ticks": 1100,
+        "minimum_actual_clearance_m": 0.278178120575329,
+        "minimum_self_margin_m": 0.009378379166941286,
+        "bad_obstacle_unknown_contacts": 0,
+        "robot_self_contact_records": 6686,
+        "steady_forward_m_s": 0.09611520907312478,
+        "turn_mean_yaw_rad_s": 0.021577323973305564,
+        "final_translation_speed_m_s": 7.082530818518048e-06,
+        "maximum_body_speed_m_s": 0.10315272986050276,
+        "maximum_wall_lag_s": 0.0,
+        "maximum_replay_state_ctrl_mocap_error": 0.0,
+        "wall_paced": false
+      },
+      {
+        "passed": true,
+        "role": "same_control_actual",
+        "native_ticks": 1100,
+        "minimum_actual_clearance_m": 0.3102629063279424,
+        "minimum_self_margin_m": 0.008723012141918673,
+        "bad_obstacle_unknown_contacts": 0,
+        "robot_self_contact_records": 0,
+        "steady_forward_m_s": 0.3260779317811279,
+        "turn_mean_yaw_rad_s": 0.08868535748703528,
+        "final_translation_speed_m_s": 9.201716778495089e-06,
+        "maximum_body_speed_m_s": 0.3507896113884131,
+        "maximum_wall_lag_s": 0.002854997990652919,
+        "maximum_replay_state_ctrl_mocap_error": 0.0,
+        "wall_paced": true
+      },
+      {
+        "passed": true,
+        "role": "same_control_replay",
+        "native_ticks": 1100,
+        "minimum_actual_clearance_m": 0.3102629063279424,
+        "minimum_self_margin_m": 0.008723012141918673,
+        "bad_obstacle_unknown_contacts": 0,
+        "robot_self_contact_records": 0,
+        "steady_forward_m_s": 0.3260779317811279,
+        "turn_mean_yaw_rad_s": 0.08868535748703528,
+        "final_translation_speed_m_s": 9.201716778495089e-06,
+        "maximum_body_speed_m_s": 0.3507896113884131,
+        "maximum_wall_lag_s": 0.0,
+        "maximum_replay_state_ctrl_mocap_error": 0.0,
+        "wall_paced": false
+      },
+      {
+        "passed": true,
+        "role": "closed_loop_actual",
+        "native_ticks": 1100,
+        "minimum_actual_clearance_m": 0.2826253232042468,
+        "minimum_self_margin_m": 0.008816480510861091,
+        "bad_obstacle_unknown_contacts": 0,
+        "robot_self_contact_records": 0,
+        "steady_forward_m_s": 0.18612294564009887,
+        "turn_mean_yaw_rad_s": 0.05835148211869471,
+        "final_translation_speed_m_s": 6.2031180174315925e-06,
+        "maximum_body_speed_m_s": 0.19317710288082313,
+        "maximum_wall_lag_s": 0.0035072820028290153,
+        "maximum_replay_state_ctrl_mocap_error": 0.0,
+        "wall_paced": true
+      },
+      {
+        "passed": true,
+        "role": "closed_loop_replay",
+        "native_ticks": 1100,
+        "minimum_actual_clearance_m": 0.2826253232042468,
+        "minimum_self_margin_m": 0.008816480510861091,
+        "bad_obstacle_unknown_contacts": 0,
+        "robot_self_contact_records": 0,
+        "steady_forward_m_s": 0.18612294564009887,
+        "turn_mean_yaw_rad_s": 0.05835148211869471,
+        "final_translation_speed_m_s": 6.2031180174315925e-06,
+        "maximum_body_speed_m_s": 0.19317710288082313,
+        "maximum_wall_lag_s": 0.0,
+        "maximum_replay_state_ctrl_mocap_error": 0.0,
+        "wall_paced": false
+      }
+    ],
+    "functional_checks": {
+      "forward_same_original_gate": true,
+      "turn_same_original_gate": true,
+      "brake_same_original_gate": true
+    },
+    "same_control_speed_ratio_to_old": 3.392573713625767,
+    "same_controller_forward_relative_error": 0.06938527179950568,
+    "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+    "model_change": "two assembly body-pair exclusions only; all actual physical arrays identical",
+    "status": "ASSEMBLY_MODEL_AND_FIXED_CONTROLLER_QUALIFIED",
+    "counts": {
+      "model_loads": 1,
+      "model_compiles": 1,
+      "old_replay_native": 1100,
+      "same_control_actual_native": 1100,
+      "same_control_replay_native": 1100,
+      "closed_loop_actual_native": 1100,
+      "closed_loop_replay_native": 1100,
+      "private_native": 0
+    },
+    "closed": true,
+    "old_failures_preserved": true,
+    "new_navigation": 0,
+    "new24": 0
+  },
+  "closed": true
+}

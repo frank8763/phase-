@@ -1,0 +1,62 @@
+{
+  "passed": false,
+  "error": "RuntimeError('NAV2_OR_NATIVE_STARTUP_TIMEOUT')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/native_ros.py\", line 58, in main\n    if not sent and time.monotonic()-start>35:raise RuntimeError('NAV2_OR_NATIVE_STARTUP_TIMEOUT')\n                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: NAV2_OR_NATIVE_STARTUP_TIMEOUT\n",
+  "reason": "ROS_INTERFACE_EXCEPTION",
+  "wall_s": 35.00041252700612,
+  "odometry_messages": 2516,
+  "plan_messages": 0,
+  "cmd_vel_messages": 0,
+  "last_native_observation": {
+    "native_tick": 3125,
+    "sim_time": 31.250000000002085,
+    "wall_monotonic": 272628.978284538,
+    "body": [
+      -4.000371305894828,
+      -1.9999544604063841,
+      -1.7178537152546803e-07,
+      -1.0543160851152712e-05,
+      -3.4010756551169234e-09
+    ],
+    "scan": {
+      "native_tick": 3121,
+      "time": 31.21000000000208,
+      "ranges": [
+        3.0,
+        3.0,
+        2.975132942199707,
+        3.0,
+        2.693476438522339,
+        2.277134656906128,
+        2.069927215576172,
+        2.0000405311584473,
+        1.9269096851348877,
+        3.0,
+        2.1030831336975098,
+        1.822434663772583,
+        1.4483909606933594,
+        1.3113417625427246,
+        1.1276007890701294,
+        1.0386872291564941,
+        1.0591020584106445,
+        1.0343897342681885,
+        1.124140977859497,
+        1.267478585243225,
+        3.0,
+        1.8736927509307861,
+        2.6706645488739014,
+        2.9748141765594482,
+        3.0,
+        0.8007093071937561,
+        0.7120825052261353,
+        0.7863438129425049,
+        3.0,
+        2.9675230979919434,
+        2.9658710956573486,
+        2.9898176193237305
+      ]
+    }
+  },
+  "maximum_odometry_receive_age_s": 0.005921030999161303,
+  "maximum_scan_receive_age_s": 0.014485593992286994
+}
