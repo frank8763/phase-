@@ -46,6 +46,6 @@ Nav2名义基线没有RP-CCR未知动态集合与完整328尾证书，不能追�
 
 ## 证据及存储
 
-独立保存审核在closed_analysis/FINAL_INDEPENDENT_AUDIT.json，全15项非功能证据门通过，科学资格仍false。保留本轮所有失败/成功软件日志、命令/轨迹、固定任务/冻结SHA、实际MJB/初态/1100状态控制与接触/完整重放结论。必要原生证据约8.75MB压缩、精选ROS运行库约43.70MB压缩及第三方许可约0.60MB压缩已上传同仓Release；共9附件/54,736,913字节全部通过GitHub服务端digest与流式下载SHA回读。源码与报告存Git，开发头文件、静态库、APT可重建缓存不上传。完成源码发布后清除本地临时环境与原始缓存。恢复入口与最终远端核验见records/nav2_v856_20261107/README.md及RECORD_INDEX.json。
+独立保存审核在closed_analysis/FINAL_INDEPENDENT_AUDIT.json，全15项非功能证据门通过，科学资格仍false。保留本轮所有失败/成功软件日志、命令/轨迹、固定任务/冻结SHA、实际MJB/初态/1100状态控制与接触/完整重放结论。必要原生证据约8.75MB压缩、精选ROS运行库约43.70MB压缩及第三方许可约0.60MB压缩已上传同仓Release；共9附件/54,736,913字节全部通过GitHub服务端digest与流式下载SHA回读。源码与报告存Git，开发头文件、静态库、APT可重建缓存不上传。源码提交69876c5已在main和Release目标核验，4个关键源码/报告/索引远端原字节SHA回读一致；恢复脚本另从公开Release重建完整证据组、逐成员SHA通过。随后已清除本地临时环境、开发/下载缓存、已验证原始证据与重复打包缓存，释放约1.43 GiB；需要时按组恢复。恢复入口与最终远端核验见records/nav2_v856_20261107/README.md及RECORD_INDEX.json。
 
 上游参考：[Jazzy默认配置](https://github.com/ros-navigation/navigation2/blob/jazzy/nav2_bringup/params/nav2_params.yaml)、[MPPI噪声生成实现](https://github.com/ros-navigation/navigation2/blob/jazzy/nav2_mppi_controller/src/noise_generator.cpp)。实际下载版本和本地字节SHA在本轮元数据中锁定，分支链接不替代内容哈希。
