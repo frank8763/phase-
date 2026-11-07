@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_saved_audit/archive.py", line 52, in <module>
+    if __name__=='__main__':main()
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_saved_audit/archive.py", line 39, in main
+    release=api(f'repos/{REPO}/releases/tags/{TAG}')
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_saved_audit/archive.py", line 12, in api
+    def api(path):return json.loads(gh(['api',path],capture_output=True,text=True,timeout=45).stdout)
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_saved_audit/archive.py", line 11, in gh
+    def gh(args,**kwargs):return run([str(GH),*args],**kwargs)
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_saved_audit/archive.py", line 10, in run
+    def run(args,**kwargs):return subprocess.run(args,cwd=R,check=True,**kwargs)
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/tools/phase_storage_20261107/vendor/gh', 'api', 'repos/frank8763/phase-/releases/tags/phase-v857-assembly-20261107']' returned non-zero exit status 1.

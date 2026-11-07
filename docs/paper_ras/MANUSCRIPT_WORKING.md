@@ -71,6 +71,7 @@ Record sensing age, solver start/end, verification time, candidate age at commit
 | V856 native actuator qualification | 0.20 m/s command, mean 0.0961 m/s; internal contacts | Failed native controller/model qualification; no Nav2 scene navigation |
 | V857 assembly-filter model query | Physical arrays preserved; exact two-pair contact change; external collision fixtures retained | Zero-integration model-query qualification only |
 | V857 original-model replay | One exact state step; serialization comparison error stopped batch | No corrected-model motion, causal speed improvement or full replay established |
+| V857 one operational serialization continuation | Full original 1100-step state/contact replay exact; corrected-model actuator contract rejected before motion | Original failure preserved; corrected-model dynamics still untested |
 | Final-model algorithm comparison and held-out confirmation | Pending | No superiority estimate |
 | Real robot | Pending | No sim-to-real or deployment claim |
 

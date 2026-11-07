@@ -3,7 +3,7 @@ import argparse,hashlib,json,shutil,subprocess,tarfile,tempfile,urllib.request
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];INDEX=R/'records/v857_20261107/RECORD_INDEX.json'
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--verify-only',action='store_true');a=ap.parse_args();index=json.loads(INDEX.read_text());base=f'https://github.com/{index["repository"]}/releases/download/{index["release_tag"]}/';cache=R/'runs/v857_restore_cache';cache.mkdir(exist_ok=True)
+ ap=argparse.ArgumentParser();ap.add_argument('--verify-only',action='store_true');ap.add_argument('--interface',action='store_true');a=ap.parse_args();index=json.loads((INDEX.with_name('INTERFACE_RECORD_INDEX.json')if a.interface else INDEX).read_text());base=f'https://github.com/{index["repository"]}/releases/download/{index["release_tag"]}/';cache=R/'runs/v857_restore_cache';cache.mkdir(exist_ok=True)
  with tempfile.TemporaryDirectory(dir=cache)as temp:
   p=Path(temp)/index['archive_name'];h=hashlib.sha256();size=0
   with urllib.request.urlopen(base+index['archive_name'],timeout=120)as source,p.open('xb')as target:

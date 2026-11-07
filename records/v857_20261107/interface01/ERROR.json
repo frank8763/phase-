@@ -1,0 +1,14 @@
+{
+  "error": "AssertionError('ACTUATOR_LIMITS_REQUIRED')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_assembly_contact/component.py\", line 81, in main\n    arr,cc,s=branch(fixed,initial,geometry,catalog,known,'same_control_actual',source['ctrl']);branches.append(s);arr2,cc2,s2=branch(fixed,initial,geometry,catalog,known,'same_control_replay',arr['ctrl'],arr,cc);branches.append(s2);dump(OUT/'RESULT_PARTIAL.json',dict(branches=branches,counts=COUNTS));unchanged()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_assembly_contact/component.py\", line 29, in branch\n    out=OUT/role;out.mkdir(exist_ok=False);d=initial_data(m,initial);a=Adapter(m,mj,.01);rows=[];cc=[];commandrows=[];minimum=1e6;selfmin=1e6;lagmax=0.;maxerror=0.;maxbody=0.;previous=None;start=time.monotonic();fixed={k:getattr(m,k).copy()for k in ['geom_pos','geom_quat','geom_size','geom_contype','geom_conaffinity']};native_replay=role.endswith('replay');assembly={tuple(sorted(x))for x in [(23,25),(23,27)]};nself=0;summary=None\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v856_nav2_foundation/vehicle_control.py\", line 12, in __init__\n    self.commands=CommandMap(model,mj);self.dt=dt;self.last=np.zeros(4);self.integral=0.\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v855_renewal_worker/actuator_commands.py\", line 8, in __init__\n    assert min(self.ids)>=0 and np.all(model.actuator_ctrllimited[self.ids]),'ACTUATOR_LIMITS_REQUIRED'\nAssertionError: ACTUATOR_LIMITS_REQUIRED\n",
+  "counts": {
+    "model_loads": 1,
+    "model_compiles": 1,
+    "old_replay_native": 1100,
+    "same_control_actual_native": 0,
+    "same_control_replay_native": 0,
+    "closed_loop_actual_native": 0,
+    "closed_loop_replay_native": 0,
+    "private_native": 0
+  }
+}

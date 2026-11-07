@@ -20,3 +20,9 @@ python3 -B experiments/v857_saved_audit/restore.py
 复现旧输入需要V856证据组，按其[恢复说明](../nav2_v856_20261107/README.md)另行恢复；不默认下载ROS运行库或全部历史。
 
 `SAVED_INTERFACE_AUDIT.json`仅保存数据/类型接口审核，新增模型与积分0；`STATISTICAL_SCOPE.json`只是设计示例：在固定独立同分布24次零事件条件下，一侧95%事件概率上界仍约11.7%，不是当前未完成实验的风险估计。
+
+## 原窗口内的一次操作例外及最新结果
+
+用户继续明确仿真先行后，另注册一次仅接触序列化比较器接续，原科学源/模型/命令/门不改，继承原17:31:10.700组件截止而不重新900秒，原失败保持。接续原1100原生控制完整重放状态/接触误差0；随后修正模型在Adapter构造的ACTUATOR_LIMITS_REQUIRED被拒，修正模型积分仍0，按规则停止，不作第二接续。原1步与新1100重放共1101，模型加载2/编译2，实际新分支/私有/导航0。物理参数数组相同不足以证明重编译后的命名索引契约正确：差异清单含name_actuatoradr重写和names_map结构变化；这是待独立模型接口审核的疑点，不是已测得执行器动力学失败。当前科学假设仍未验证。独立操作证据审核在records/v857_20261107/interface01/FINAL_INDEPENDENT_AUDIT.json，原始接续证据独立附件保留。
+
+原批与一次操作接续各有独立不可覆盖档案；后者索引INTERFACE_RECORD_INDEX.json，使用`python3 -B experiments/v857_saved_audit/restore.py --interface --verify-only`核验或去掉--verify-only恢复。接续原1100完整重放通过，新修正模型执行器契约未过/积分0；不能追认原批通过。

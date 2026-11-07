@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "scope": "CLOSED_OPERATIONAL_EVIDENCE_ONLY_NOT_SCIENTIFIC_PASS",
+  "checks": {
+    "original_source_unchanged": true,
+    "interface_source_unchanged": true,
+    "original_guard_restored": true,
+    "both_rounds_closed": true,
+    "original_full_replay_exact": true,
+    "corrected_model_not_integrated": true,
+    "inherited_original_deadline": true,
+    "lock_idle": true
+  },
+  "total_counts": {
+    "model_loads": 2,
+    "model_compiles": 2,
+    "old_native_replay_total": 1101,
+    "corrected_model_actual_native": 0,
+    "corrected_model_replay_native": 0,
+    "private_native": 0,
+    "new_navigation": 0
+  },
+  "second_interface_contract_failure": "ACTUATOR_LIMITS_REQUIRED before corrected-model first step; do not infer torque/steering physical failure",
+  "no_further_continuation": true,
+  "new_models_in_this_audit": 0,
+  "new_integrations_in_this_audit": 0
+}
