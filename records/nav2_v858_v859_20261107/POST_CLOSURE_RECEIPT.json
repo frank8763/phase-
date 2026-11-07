@@ -1,0 +1,229 @@
+{
+  "created_unix": 1794046351.6794906,
+  "status": "CLOSED_NOT_PASSED_EVIDENCE_PUBLISHED_LOCAL_CACHE_CLEANED",
+  "dynamic_acceptance_passed": false,
+  "new_dynamic_navigation": 0,
+  "new24_executed": 0,
+  "source_sync": {
+    "source_commit": "4719ce28b1d25ec41e459431fbef9c355b4c9209",
+    "attempted_once": true,
+    "push_succeeded": true,
+    "remote_head_verified": true,
+    "push_returncode": 0,
+    "remote_head": "4719ce28b1d25ec41e459431fbef9c355b4c9209",
+    "completed_unix": 1794046102.67398
+  },
+  "public_evidence": {
+    "passed": true,
+    "release_id": 437489726,
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v858-v860-20261107",
+    "assets": 6,
+    "asset_bytes": 65391691,
+    "all_server_digests_matched": true,
+    "all_streamed_download_sha_verified": true,
+    "verified_unix": 1794046059.734279,
+    "status": "PUBLIC_RELEASE_AND_SOURCE_REMOTE_VERIFIED",
+    "source_commit": "4719ce28b1d25ec41e459431fbef9c355b4c9209",
+    "release_tag_commit": "4719ce28b1d25ec41e459431fbef9c355b4c9209",
+    "published_unix": 1794046199.6699355
+  },
+  "public_restore": {
+    "passed": true,
+    "public_part_download_sha_passed": true,
+    "whole_reassembly_sha_passed": true,
+    "actual_extracted_members_sha_passed": true,
+    "members": 551,
+    "raw_bytes": 155525854,
+    "model_initializations": 0,
+    "model_integrations": 0,
+    "temporary_restore_removed": true,
+    "verified_unix": 1794046211.116814
+  },
+  "cleanup": {
+    "status": "COMPLETE",
+    "targets": [
+      {
+        "path": "runs/v858_nav2_verified",
+        "existed": true,
+        "logical_bytes": 231296160,
+        "allocated_bytes": 232833024,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/rootfs",
+        "existed": true,
+        "logical_bytes": 179778005,
+        "allocated_bytes": 196530176,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/entry01/vehicle_qualification01",
+        "existed": true,
+        "logical_bytes": 11879047,
+        "allocated_bytes": 11935744,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/vehicle_qualification01",
+        "existed": true,
+        "logical_bytes": 1338692,
+        "allocated_bytes": 1368064,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/smoke01",
+        "existed": true,
+        "logical_bytes": 836868,
+        "allocated_bytes": 868352,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/smoke02",
+        "existed": true,
+        "logical_bytes": 34080,
+        "allocated_bytes": 65536,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/smoke03",
+        "existed": true,
+        "logical_bytes": 23637,
+        "allocated_bytes": 45056,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/smoke04",
+        "existed": true,
+        "logical_bytes": 2752853,
+        "allocated_bytes": 2793472,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/smoke05",
+        "existed": true,
+        "logical_bytes": 610648,
+        "allocated_bytes": 651264,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/ros_logs",
+        "existed": true,
+        "logical_bytes": 192310,
+        "allocated_bytes": 360448,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v856_nav2_foundation/cloud",
+        "existed": true,
+        "logical_bytes": 0,
+        "allocated_bytes": 0,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      },
+      {
+        "path": "runs/v858_restore_qualification",
+        "existed": true,
+        "logical_bytes": 0,
+        "allocated_bytes": 0,
+        "reason": "Closed newly SHA-verified evidence/cache or previously SHA-verified V856 restore dependency"
+      }
+    ],
+    "logical_bytes": 428742300,
+    "allocated_bytes": 447451136,
+    "public_release": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v858-v860-20261107",
+    "source_commit": "4719ce28b1d25ec41e459431fbef9c355b4c9209",
+    "models": 0,
+    "integrations": 0,
+    "stage_accessed": false,
+    "completed_unix": 1794046290.2428875,
+    "all_targets_removed": true,
+    "local_phase_allocated_bytes": 546308096,
+    "free_disk_bytes": 245865021440
+  },
+  "closure_audit": {
+    "passed": true,
+    "audit_scope": "Zero-model closure consistency and complete failed evidence, NOT dynamic acceptance",
+    "checks": {
+      "v858_source_manifest": true,
+      "v858_nav2_verified_entry_source_manifest": true,
+      "v859_nav2_steering_source_manifest": true,
+      "v860_nav2_prediction_source_manifest": true,
+      "v858_component_independent": true,
+      "v858_nav_evidence_pass_function_fail": true,
+      "v859_failed_qualification_evidence_consistent": true,
+      "v860_physical_gates_passed": true,
+      "v860_missing_command_gate_not_overridden": true,
+      "v860_original_replay_exact": true,
+      "all_windows_closed": true,
+      "v859_stopped": true,
+      "guard_original_bytes_restored": true,
+      "new24_never_executed": true,
+      "no_dynamic_navigation_started": true
+    },
+    "outcome": "NOT_PASSED_V858_STATIC_TRACKING_V859_RESPONSE_QUALIFICATION_V860_LIFECYCLE_ENTRY_FAILURE",
+    "scientific_acceptance_passed": false,
+    "navigation_attempts": 2,
+    "navigation_with_nav2_commands": 1,
+    "actual_new_native": 14975,
+    "new_replay_native": 14975,
+    "old_replay_native": 1100,
+    "total_native_integrations": 31050,
+    "private_native": 0,
+    "training": 0,
+    "real_robot": 0,
+    "dynamic_navigation": 0,
+    "new24_executed": 0,
+    "guard_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
+    "closed_unix": 1794045752.1553082,
+    "model_integrations_in_this_audit": 0
+  },
+  "all_ctrl_columns": {
+    "passed": true,
+    "checks": {
+      "runs/v858_nav2_verified/component01/old_replay/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      },
+      "runs/v858_nav2_verified/component01/same_control_actual/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      },
+      "runs/v858_nav2_verified/component01/same_control_replay/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      },
+      "runs/v858_nav2_verified/component01/closed_loop_replay/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      },
+      "runs/v858_nav2_verified/component01/closed_loop_actual/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      },
+      "runs/v858_nav2_verified/entry02/static_main_01/physics/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      },
+      "runs/v858_nav2_verified/v859_steering/fixed11/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      },
+      "runs/v858_nav2_verified/v859_steering/saved_response/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      },
+      "runs/v858_nav2_verified/v860_prediction/static_main_01/physics/NATIVE_TRACE.npz": {
+        "non_driving_actuators_constant_zero": true,
+        "all_actuator_columns_saved": true
+      }
+    },
+    "models": 0,
+    "integrations": 0
+  },
+  "transport_log_note": {
+    "archive_immutable": true,
+    "original_package_stdout_member_is_empty_snapshot": true,
+    "final_stdout_asset": "package.final.console",
+    "scientific_evidence_unaffected": true,
+    "reason": "Archiving captured own stdout before encoder completion; no existing archive overwritten"
+  }
+}
