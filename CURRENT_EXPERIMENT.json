@@ -1,5 +1,5 @@
 {
-  "status": "REVIEW_PENDING",
+  "status": "PREPARATION_ONLY_NO_PHYSICS_AUTHORIZED",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": "experiments/v858_nav2_verified/component_start.py",
@@ -6018,5 +6018,22 @@
     "actual_native": 1600,
     "replay_native": 1600,
     "report": "docs/NAV2_STARTUP_CURVE_V861_REPORT.md"
+  },
+  "v862_ready_static": {
+    "status": "SOURCE_AND_ZERO_MODEL_QUALIFIED",
+    "user_instruction": "先只完成源码与零模型资格，暂不启动物理实验",
+    "models_authorized": false,
+    "model_window": null,
+    "zero_model_tests": 22,
+    "source_files_verified": 315,
+    "vehicle_models": 0,
+    "native_integrations": 0,
+    "prediction_integrations": 0,
+    "replay_integrations": 0,
+    "ros_servers": 0,
+    "navigation_actions": 0,
+    "new24": 0,
+    "report": "docs/NAV2_READY_STATIC_V862_PREPARATION.md",
+    "next_physical_scope": "ONE_STATIC_WEST_EAST_PENDING_SEPARATE_AUTHORIZATION"
   }
 }

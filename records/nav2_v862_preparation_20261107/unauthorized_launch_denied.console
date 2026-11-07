@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/launch.py", line 46, in <module>
+    if __name__=='__main__':sys.exit(main())
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/launch.py", line 14, in main
+    receipt=json.loads(receipt_path.read_text());deadline=authorized(task,receipt,time.time(),file_sha(C/'SOURCE_FREEZE.json'))
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py", line 19, in authorized
+    require(receipt.get('models_authorized') is True,'MODELS_NOT_AUTHORIZED')
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py", line 10, in require
+    if not condition:raise ProtocolError(message)
+handshake.ProtocolError: MODELS_NOT_AUTHORIZED
