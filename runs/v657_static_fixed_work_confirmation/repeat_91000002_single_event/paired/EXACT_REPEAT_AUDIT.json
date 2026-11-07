@@ -1,0 +1,55 @@
+{
+  "name": "repeat_91000002_single_event",
+  "seed": 91000002,
+  "scene": "single_event",
+  "matched": true,
+  "checks": {
+    "physical_audit": true,
+    "full_state_and_control": true,
+    "same_model": true,
+    "same_normalized_initial_state": true,
+    "exact_contact_events_except_verified_xml_provenance": true,
+    "same_strict_goal": true
+  },
+  "full_public_maximum_errors": {
+    "qpos_full": 0.0,
+    "qvel_full": 0.0,
+    "ctrl": 0.0
+  },
+  "original_public_steps": 770,
+  "repeat_public_steps": 770,
+  "contact_comparison": {
+    "passed": true,
+    "checks": {
+      "same_xml_bytes": true,
+      "both_raw_content_digests_verified": true,
+      "record_counts_verified": true,
+      "same_number_of_contacts": true,
+      "all_contact_fields_equal_after_verified_path_rewrite": true,
+      "canonical_digest_equal": true
+    },
+    "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v656_static_deterministic_work/dev30_seed91000002_single_event/paired",
+    "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v657_static_fixed_work_confirmation/repeat_91000002_single_event/paired",
+    "raw_content_sha256": [
+      "e1b498db167a6016dabc86332158e15d8ab8013c27102a225848ad352cbc6c38",
+      "22417920e45de4bb29730cc2ede67351761c5d51a82eafd3b68fc255d617683f"
+    ],
+    "raw_content_hashes_identical": false,
+    "canonical_content_sha256": [
+      "53a04527d6bd04a39973bea8425b38b36bad8c7b3237bac72abdc2025f29fd88",
+      "53a04527d6bd04a39973bea8425b38b36bad8c7b3237bac72abdc2025f29fd88"
+    ],
+    "xml_bytes_sha256": [
+      "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5",
+      "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5"
+    ],
+    "contact_records": [
+      70396,
+      70396
+    ],
+    "raw_json_different_rows": 49276,
+    "first_non_path_difference_rows": [],
+    "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+    "simulation_steps": 0
+  }
+}

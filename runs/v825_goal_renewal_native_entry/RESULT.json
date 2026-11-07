@@ -1,0 +1,171 @@
+{
+  "status": "GOAL_REFERENCE_COMPONENTS_EVALUATED",
+  "records": [
+    {
+      "step": 282,
+      "old_nominal_forecasts": 25,
+      "old_nominal_maximum_pose_error": 0.0,
+      "old_first_command_and_score_match": true,
+      "new_reference": "runs/v823_global_continuation_diagnosis/renewal_probe/ORIGINAL_SEARCH_0282.json",
+      "joint_summary": {
+        "status": "BRAKE_ONLY_TAIL_RESERVED",
+        "recovery_kind": "BRAKE_ONLY",
+        "safe_reserve_candidates": 1,
+        "reserve_minimum_clearance_m": 0.22398450273588155,
+        "reserve_signed_longitudinal_displacement_m": 0.07882283937574797,
+        "reserve_signed_reverse_displacement_m": 0.07882283937574797,
+        "reserve_target": [
+          0.06826755995793865,
+          0.05202703779461554,
+          0.0,
+          0.0
+        ],
+        "reserve_total_native_ticks": 328,
+        "reserve_braking_after_native_ticks": 168,
+        "causal_forecast_horizon_s": 3.28
+      },
+      "new_gate": {
+        "status": "MODEL_SAFE_COMMAND",
+        "predicted_minimum_clearance_m": 0.22255753056613847,
+        "predicted_self_domain_margin_m": 0.009405137748548786,
+        "self_configuration_rejections": 0,
+        "predicted_end_pose": [
+          -0.8483310497642035,
+          0.4712605233767782,
+          -0.8523251044524649
+        ],
+        "predicted_next_pose": [
+          -0.9924591001448914,
+          0.6230411734529642,
+          -0.7899654200568237
+        ],
+        "score": 1.1473429824341503,
+        "candidate_count_safe": 24,
+        "prediction_steps_total": 12000,
+        "hidden_world_geometry_used": false,
+        "nominal_spatial_proposal_only": true,
+        "execution_requires_complete_causal_prefix_tail": true,
+        "active_gear": 1,
+        "segment_end_index": 96,
+        "scoring_target": [
+          -0.7304285644981092,
+          0.23988853019421047
+        ],
+        "target_wheel_sign_matches_plan": true,
+        "backup_margin_recovery": false,
+        "alignment_error_rad": 0.2992144599708051,
+        "progress_weight": 8.0,
+        "progress_metric": "single_gear_projected_arclength",
+        "current_projected_arc_m": 0.0,
+        "terminal_projected_arc_m": 0.22182943429161625,
+        "heading_reference": "terminal_projection_interpolated_heading",
+        "dynamic_time_gate": true,
+        "prediction_horizon_steps": 240,
+        "braking_tail_after_physics_steps": 80,
+        "terminal_speed_threshold_m_s": 0.025,
+        "joint_admission_distinct_command_rank": 0,
+        "joint_admission_maximum_commands": 6,
+        "ordinary_maximum_score": 1.1473429824341503
+      },
+      "qualified": true,
+      "component_executed": true,
+      "prefix8_target_progress_m": 0.009128111960931662,
+      "complete328_target_progress_m": 0.05807274922459005,
+      "recovery_kind": "BRAKE_ONLY",
+      "minimum_causal_clearance_m": 0.22398450273588155,
+      "full_integration_repeat_error": 0.0,
+      "actual_and_repeat_packets_exact": true
+    },
+    {
+      "step": 500,
+      "old_nominal_forecasts": 25,
+      "old_nominal_maximum_pose_error": 0.0,
+      "old_first_command_and_score_match": true,
+      "new_reference": "runs/v823_global_continuation_diagnosis/renewal_probe/ORIGINAL_SEARCH_0500.json",
+      "joint_summary": {
+        "status": "BRAKE_ONLY_TAIL_RESERVED",
+        "recovery_kind": "BRAKE_ONLY",
+        "safe_reserve_candidates": 1,
+        "reserve_minimum_clearance_m": 0.254363569633938,
+        "reserve_signed_longitudinal_displacement_m": 0.0574649878600087,
+        "reserve_signed_reverse_displacement_m": 0.0574649878600087,
+        "reserve_target": [
+          -0.18304524199890063,
+          -0.1917649689169591,
+          0.0,
+          0.0
+        ],
+        "reserve_total_native_ticks": 328,
+        "reserve_braking_after_native_ticks": 168,
+        "causal_forecast_horizon_s": 3.28
+      },
+      "new_gate": {
+        "status": "MODEL_SAFE_COMMAND",
+        "predicted_minimum_clearance_m": 0.2563531901127004,
+        "predicted_self_domain_margin_m": 0.009688320898832758,
+        "self_configuration_rejections": 0,
+        "predicted_end_pose": [
+          0.7228999377375408,
+          -1.6664691050607998,
+          -1.5966564578804556
+        ],
+        "predicted_next_pose": [
+          0.7232917516155138,
+          -1.6370397465634023,
+          -1.5617646680169568
+        ],
+        "score": -0.3599689655584484,
+        "candidate_count_safe": 25,
+        "prediction_steps_total": 24328,
+        "hidden_world_geometry_used": false,
+        "nominal_spatial_proposal_only": true,
+        "execution_requires_complete_causal_prefix_tail": true,
+        "active_gear": -1,
+        "segment_end_index": 42,
+        "scoring_target": [
+          0.6964702175657667,
+          -1.1450873258122276
+        ],
+        "target_wheel_sign_matches_plan": true,
+        "backup_margin_recovery": false,
+        "alignment_error_rad": 0.1821048923841131,
+        "progress_weight": 8.0,
+        "progress_metric": "single_gear_projected_arclength",
+        "current_projected_arc_m": 0.0,
+        "terminal_projected_arc_m": 0.0,
+        "heading_reference": "terminal_projection_interpolated_heading",
+        "dynamic_time_gate": true,
+        "prediction_horizon_steps": 240,
+        "braking_tail_after_physics_steps": 80,
+        "terminal_speed_threshold_m_s": 0.025,
+        "joint_admission_distinct_command_rank": 0,
+        "joint_admission_maximum_commands": 7,
+        "ordinary_maximum_score": -0.3599689655584484
+      },
+      "qualified": true,
+      "component_executed": true,
+      "prefix8_target_progress_m": 0.0075847658768286585,
+      "complete328_target_progress_m": 0.04021890162738462,
+      "recovery_kind": "BRAKE_ONLY",
+      "minimum_causal_clearance_m": 0.254363569633938,
+      "full_integration_repeat_error": 0.0,
+      "actual_and_repeat_packets_exact": true
+    }
+  ],
+  "counts": {
+    "old_replay_native": 4000,
+    "private_native": 24656,
+    "component_native": 656,
+    "component_repeat_native": 656,
+    "new_navigation": 0,
+    "new_confirmation": 0
+  },
+  "primary282_passed": true,
+  "minimum_actual_clearance_m": 0.24881521379059476,
+  "minimum_self_margin_m": 0.009253896397947436,
+  "maximum_native_state_ctrl_error": 0.0,
+  "bad_contacts": 0,
+  "model_initialization_count": null,
+  "new_global_navigation": 0,
+  "full_global_dynamic_passed": false
+}

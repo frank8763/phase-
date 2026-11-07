@@ -1,0 +1,139 @@
+{
+  "status": "SAVED_PROGRESS_POLICY_QUALIFICATION_PASS",
+  "saved_returns": [
+    {
+      "step": 573,
+      "nominal_gain_m": 0.17928679584575358,
+      "old_remaining_gain_m": 0.2362008918584413,
+      "rejected_full_gain_m": -0.150072519835714,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 580,
+      "nominal_gain_m": 0.19136869783068367,
+      "old_remaining_gain_m": -0.2689403021159025,
+      "rejected_full_gain_m": -0.4216650343469799,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 588,
+      "nominal_gain_m": 0.06607702657999193,
+      "old_remaining_gain_m": -0.33805025654839893,
+      "rejected_full_gain_m": -0.4692530425724766,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 597,
+      "nominal_gain_m": 0.03291969427439745,
+      "old_remaining_gain_m": -0.4806435256022117,
+      "rejected_full_gain_m": -0.5753330097838094,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 631,
+      "nominal_gain_m": 0.023557597574934697,
+      "old_remaining_gain_m": -0.021481643132208905,
+      "rejected_full_gain_m": -0.6154214539319454,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 841,
+      "nominal_gain_m": 0.2579310577694329,
+      "old_remaining_gain_m": -0.26812930390874756,
+      "rejected_full_gain_m": -0.3582691218547962,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 850,
+      "nominal_gain_m": 0.08576285782867954,
+      "old_remaining_gain_m": -0.3281468394331719,
+      "rejected_full_gain_m": -0.5124407670829962,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 861,
+      "nominal_gain_m": 0.19490866811380303,
+      "old_remaining_gain_m": -0.455615304750153,
+      "rejected_full_gain_m": -0.5541948063763322,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 870,
+      "nominal_gain_m": 0.07510692225270277,
+      "old_remaining_gain_m": -0.5589547086256865,
+      "rejected_full_gain_m": -0.6393838598687844,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 877,
+      "nominal_gain_m": 0.0314169272699123,
+      "old_remaining_gain_m": -0.5728942417633816,
+      "rejected_full_gain_m": -0.6577431150000987,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 913,
+      "nominal_gain_m": 0.02435398896180585,
+      "old_remaining_gain_m": -0.022046147399039873,
+      "rejected_full_gain_m": -0.6521110084400432,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 1085,
+      "nominal_gain_m": 0.25438706432431535,
+      "old_remaining_gain_m": -0.2778512505395401,
+      "rejected_full_gain_m": -0.40169354133961477,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 1125,
+      "nominal_gain_m": 0.10324749348842288,
+      "old_remaining_gain_m": -0.0049354273932580295,
+      "rejected_full_gain_m": -0.6164979187981583,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    },
+    {
+      "step": 1163,
+      "nominal_gain_m": 0.024150999974700493,
+      "old_remaining_gain_m": -0.022050822252444036,
+      "rejected_full_gain_m": -0.022102969198151357,
+      "new_policy_accepts_saved_switch": false,
+      "old_preserved": true
+    }
+  ],
+  "negative_cases": [
+    "bad_old_state",
+    "bad_old_time",
+    "bad_old_cursor",
+    "nan_terminal",
+    "nan_public_goal",
+    "below_original_progress_floor",
+    "forged_full_progress_certificate",
+    "recovery_disguised_as_progress",
+    "forged_retained_endpoint"
+  ],
+  "original_progress_floor_m": 0.02,
+  "positive_and_boundary_checks_passed": true,
+  "predetection_and_planned_reverse_preserved": true,
+  "recovery_entry_metadata_only": true,
+  "physics_revalidated": false,
+  "new_models": 0,
+  "new_integrations": 0,
+  "new_navigation": 0,
+  "training": 0,
+  "new_full_candidate_search": false,
+  "limitations": "Only saved selected certificates and synthetic policy cases; no new physical trajectory or navigation outcome established."
+}

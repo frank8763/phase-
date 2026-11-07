@@ -1,0 +1,18 @@
+{
+  "status": "MATCHED_RECORDED_PUBLIC_STATES",
+  "error": null,
+  "condition": "geometry_memory",
+  "replay_integration_steps": 152,
+  "new_navigation_trials": 0,
+  "maximum_full_public_qpos_error": 0.0,
+  "maximum_full_public_qvel_error": 0.0,
+  "minimum_reconstructed_native_actual_axis_AABB_clearance_m": 0.6010907454760981,
+  "reconstructed_native_states_below_015": 0,
+  "minimum_reconstructed_self_domain_margin_m": 0.009201283565856144,
+  "replay_obstacle_contact_records": 0,
+  "scene_model_sha256": "0d5ba9a098e79ab8f5ad96287bb71746ee1554bba6ac51c30e9ecb39481119f4",
+  "recorded_state_log_sha256": "4e196d0dee3df0a4f5c7b40e9d1a1c339ba1ff4f77fb825df455aa9231626699",
+  "elapsed_s": 0.08232188699912513,
+  "scope": "Offline control-log replay for native-state clearance reconstruction.\nThis performs physics integration and is charged as replay, never as a new trial.\nIt certifies no replay metric unless every recorded full public qpos/qvel matches.\nWorld truth is evaluator-only, never an input to an online decision.\n",
+  "limits": "reconstruction from recorded constant-per-public-step controls and t0 state; public-state match is an empirical replay validation, not independent trial or continuous-time safety proof"
+}

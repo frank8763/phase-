@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "error": null,
+  "elapsed_s": 4.015094065995072,
+  "replay_native_steps": 4672,
+  "private_prediction_integrations": 12528,
+  "old_prefix_qpos_qvel_mocap_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "private_native_schedule_max_qpos_qvel_error": 0.0,
+  "minimum_old_prefix_clearance_m": 0.2527128748399221,
+  "minimum_old_prefix_self_margin_m": 0.009193052990576545,
+  "bad_contacts": 0,
+  "mapping_math_cases": 10000,
+  "unit": {
+    "complete_328tick_qpos_qvel_ctrl_match": true,
+    "summary": {
+      "status": "BRAKE_ONLY_TAIL_RESERVED",
+      "recovery_kind": "BRAKE_ONLY",
+      "safe_reserve_candidates": 1,
+      "reserve_minimum_clearance_m": 0.3917166024569042,
+      "reserve_signed_reverse_displacement_m": 0.00045053903460268944,
+      "reserve_target": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reserve_total_native_ticks": 328,
+      "reserve_braking_after_native_ticks": 168,
+      "causal_forecast_horizon_s": 3.28
+    }
+  },
+  "records": [
+    {
+      "dataset": "v674_dynamic_renewable_backup",
+      "checkpoint": 272,
+      "old_raw_first_command": [
+        0.5708150870300126,
+        0.4358554603648127,
+        -0.7000000000000002,
+        4.099999999999998
+      ],
+      "actual_previous_command": [
+        0.4708150870300126,
+        0.33585546036481273,
+        -2.220446049250313e-16,
+        3.3999999999999977
+      ],
+      "new_canonical_first_command": [
+        0.52,
+        0.4358554603648127,
+        -0.7000000000000002,
+        4.099999999999998
+      ],
+      "native_240tick_qpos_qvel_ctrl_max_error": 0.0,
+      "nominal_clearance_m": 0.16215990720005072,
+      "nominal_self_margin_m": 0.009579036741721003,
+      "nominal_terminal_speed_m_s": 0.0006182864895845567,
+      "appendable": true,
+      "reserve": {
+        "status": "REVERSE_BRAKE_TAIL_RESERVED",
+        "recovery_kind": "REVERSE_BRAKE",
+        "safe_reserve_candidates": 15,
+        "reserve_minimum_clearance_m": 0.3924892188581811,
+        "reserve_signed_reverse_displacement_m": -0.4615019006239226,
+        "reserve_target": [
+          0.23590902047242188,
+          0.19511447256354925,
+          -12.0,
+          -12.0
+        ],
+        "reserve_total_native_ticks": 328,
+        "reserve_braking_after_native_ticks": 168,
+        "causal_forecast_horizon_s": 3.28
+      },
+      "scope": "control consistency check, not navigation or a universally feasible input"
+    },
+    {
+      "dataset": "v675_dynamic_joint_admission",
+      "checkpoint": 294,
+      "old_raw_first_command": [
+        0.5414044136229347,
+        0.4642556862714863,
+        -1.7532923545845704,
+        8.445863485992255
+      ],
+      "actual_previous_command": [
+        0.4414044136229347,
+        0.3642556862714863,
+        -1.0532923545845705,
+        7.745863485992256
+      ],
+      "new_canonical_first_command": [
+        0.52,
+        0.4642556862714863,
+        -1.7532923545845704,
+        8.445863485992255
+      ],
+      "native_240tick_qpos_qvel_ctrl_max_error": 0.0,
+      "nominal_clearance_m": 0.17652067930552254,
+      "nominal_self_margin_m": 0.009682538149284381,
+      "nominal_terminal_speed_m_s": 0.010839605152230473,
+      "appendable": true,
+      "reserve": {
+        "status": "REVERSE_BRAKE_TAIL_RESERVED",
+        "recovery_kind": "REVERSE_BRAKE",
+        "safe_reserve_candidates": 15,
+        "reserve_minimum_clearance_m": 0.34273582245478607,
+        "reserve_signed_reverse_displacement_m": -0.2536944415739484,
+        "reserve_target": [
+          -0.19511447256354925,
+          -0.23590902047242188,
+          -12.0,
+          -12.0
+        ],
+        "reserve_total_native_ticks": 328,
+        "reserve_braking_after_native_ticks": 168,
+        "causal_forecast_horizon_s": 3.28
+      },
+      "scope": "control consistency check, not navigation or a universally feasible input"
+    }
+  ],
+  "source_sha256": {
+    "instrumentation.py": "83e5a90b56ff5a37bcb243788a42f6fb46546cf57e4b65cc5a998f122a776dad",
+    "reserved_recovery.py": "3a8f12aa5b6f2e1d1988f096390116eb21be82e1e21a5674a34c09171c907f28",
+    "union_belief.py": "2892c2bf82618e6b70c2161eafc48a1aeb8c4c2858fddb0019487a35a132fc05",
+    "bounded_execution.py": "8a59e93b4c0db1030bde69760e9c35a5240d3d0e5e6ccd9c8a4b41cb4b5dcfd1",
+    "recovery_supervisor.py": "7447c7c08b013941f40b2e7a3d5b370c79259a3d53944a8856f12bcb998c42cb",
+    "motion_evaluator.py": "e024d9072e45fc732aaf22e5b7e47575ec42cb477be50475ffa774aa0c559d24",
+    "dynamic_contact.py": "90d97fd29938742c057672f4935f7dad6e75f564401bbdabde945501b4cc0d01",
+    "tracking.py": "15d6097a6199e6ca4d92774c617a7f1e79f55a0a992d36cadb79c65aac781ab3",
+    "planner.py": "48038fd7af9bf5166197a099ae9c0443261d9e8525d2f50456c6c10cd186ce30",
+    "exact_footprint.py": "c6f991d15546372ec3b3c2bae7b8b844f0f613c59c1403c0831002e337c9ce93",
+    "evaluate_trace.py": "512a673cface02735513fd01c4fb5d59957c77b859bd8723d800521b6a71c764",
+    "range_circle_memory.py": "9c55b2dda66c569270042bbfaf4fbf523a7a56eccf7b76fa50f03cc00a900442",
+    "empty_sample_contract.py": "c81d82887eee5b770e4ce6217bee7b8c603725b5d477fae70d91907d3c3d9f4f",
+    "self_geometry.py": "97cb87c3f2989e4a78765a241e85544ff23f07a5f58608e9045ad4ed58f59f42",
+    "task_preflight.py": "93b090040d1c1826d16ae8314c6d1ec2aed531a498d1949f67fb0e0704fe24c9",
+    "evaluate_range.py": "97962bd3045a4a415214d62e01cddc9c4cce3f47a7954ae73b19280e200f322a",
+    "dynamic_scene.py": "5be290753c286875f8a5edce92e1a88813b53cff264407018a1b00f71d6d790c",
+    "run_static.py": "63b3371297a966ed7d7f860fba0bc319defbbab5e5f4ffd7a4a5a62428e93803",
+    "factory.py": "d7839f616e9ae0c1dba0a403bcca504b4ed6ec3d8b3402e64a8374393a3732c5",
+    "scene_sensors.py": "24cf6857f8f7c36132994fbca39691e2fb891d15c33a95927f43efefa8a28c57",
+    "geometry_predictor.py": "8fea7d0b78635cc6562b0861dfcda3191f39aadaf61335ee490c0267bedff6f8",
+    "multi_circle_memory.py": "c19eedc1045d7c6f1bbe293f89b979920616b69910f4505805f16d86c558cbfc",
+    "serial_predictor.py": "0332dc1bfa7899eae3167d8fb55840dc1843104f3d1f0043c3537080ab3e4174",
+    "audit_articulation.py": "dc40d6ce395142dc8830761468fbf088cf47e5d27899766f3bf176de839d8039",
+    "robot_predictor.py": "6b5b45c6e96e2d4edb96697e8c6493cf3a934a9039356f0e147e863e6664b895",
+    "actuator_commands.py": "946aeb9cf1073da1d58e89e2570acd6b6599ef229c14a3c5116a75fb207fb26b",
+    "circle_memory.py": "fc578845d7a92ac53e5400eec23a9830ab60398e44ca48b089ea11f0a86987da",
+    "motion_tracker.py": "53417164f92f1279eda99fbde68023a58e69326598abca21dd4e4ed7b446e1f7",
+    "control_contract.py": "6a091a13245fe91ed02344ec29f1cdc023befbf7da05e9d43e846fd3d0284eb4",
+    "contact_fingerprint.py": "b32df676233afac9e1750f53f899fcebd05736fdfa291dc070aa21992d9bcea0",
+    "perception.py": "2141b8daa06cbc3e7a7cfc93b98ba89cfe3dec070e29bba013aad268cd2f27b6",
+    "replay_native_audit.py": "a282f5846f5ad2dfca87c4b85e251893b28f449904062f955c8724a2c411865f",
+    "joint_admission.py": "007bd3b41bd2f2392f9b4caa6d14b71100a5f76c9c0cc03bd2e408e36c8e0a32",
+    "self_envelope.py": "c4c736e433f51246178f36fde3555c932141da9876dc6834a6b774de2b2aa9d4",
+    "task_planner.py": "19ef8d839a229187ae61c66353d936a7603c99d3b8abedccebea793f2a951da4",
+    "validate_commands.py": "4e97e625c75f996d816fadebe2d908a21edd40dc2257e9280a160d40f8f85c31"
+  },
+  "input_sha256": {
+    "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/scene_model.mjb": "40308ed2c1519c6816b4dd6563ca4fb10eb06e8df0d16b365ce5f0b63efec02e",
+    "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/v648_execution.jsonl": "d654fa6365a63011fa0eba9bcdb4695baa3aef23f74504c46acf8bb6b6ef2a8c",
+    "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/motion_estimate.jsonl": "cc200490e682a08fa4cd21e17e9908d89d881de933c7de1b46fefdcf46b0cbc5",
+    "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/control_decisions.jsonl": "580b90956ef1d3d31cc0af3b83a684505bba7ce27fe8280e836bed6bd87ac47b",
+    "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/scene_model.mjb": "40308ed2c1519c6816b4dd6563ca4fb10eb06e8df0d16b365ce5f0b63efec02e",
+    "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/v648_execution.jsonl": "5b6825a305ab1b52c5210ac6f269461bdf59ef16b9e387bc6c978e4a37c77df2",
+    "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/motion_estimate.jsonl": "ac72f4c0f6e0b28381460b07a39831ebc7e435d50cd67e1fc897ed5ca8e6f77c",
+    "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/control_decisions.jsonl": "0f4e6bd43c8106a360b7fbc44fd2bd268dce2611a3e6799621be6b9f818de497"
+  },
+  "new_navigation_tasks": 0,
+  "old_failures_reclassified": false,
+  "previous_failed_private_integrations": 896,
+  "previous_failed_replay_native_steps": 2176
+}

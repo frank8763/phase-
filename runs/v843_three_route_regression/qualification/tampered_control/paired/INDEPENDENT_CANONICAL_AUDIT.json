@@ -1,0 +1,108 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "registered_no_initial_stationary_hold": true,
+    "forward_tail_extension_provenance": true,
+    "complete_records": true,
+    "frozen_sources": true,
+    "model": true,
+    "full_native_replay": true,
+    "native_safety": true,
+    "zero_obstacle_contacts": true,
+    "contact_digest": true,
+    "self_geometry": true,
+    "native_only_static_unchanged": true,
+    "actuator_metadata": true,
+    "actuator_bounds_and_slew": false,
+    "all_native_expected_ctrl": true,
+    "raw_admission_ctrl": false,
+    "public_full_state_ctrl": true,
+    "joint_selection": true,
+    "all_retained_certificates": true,
+    "all_handover_certificates": true,
+    "causal_admission": true,
+    "finite_union_coverage": true,
+    "actor_unchanged_nonblocking": true,
+    "actual_actor_speed_bound": true,
+    "declared_course_norm_speed": true,
+    "strict_goal_consistent": true
+  },
+  "forward_admission_checks": [],
+  "raw_ctrl_mismatches": [
+    {
+      "step": 0,
+      "raw_difference": 0.050000000000000044
+    }
+  ],
+  "selection_failed_steps": [],
+  "reserved_certificates": [
+    {
+      "file": "runs/v843_three_route_regression/qualification/tampered_control/paired/geometry_memory/recovery_contracts/contract_0514.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 40
+    },
+    {
+      "file": "runs/v843_three_route_regression/qualification/tampered_control/paired/geometry_memory/recovery_contracts/contract_0781.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 40
+    },
+    {
+      "file": "runs/v843_three_route_regression/qualification/tampered_control/paired/geometry_memory/recovery_contracts/contract_0507.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 4
+    }
+  ],
+  "handover_certificates": [
+    {
+      "step": 511,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    }
+  ],
+  "outcome": "GOAL",
+  "strict_arrival": true,
+  "public_steps": 965,
+  "native_steps": 7720,
+  "verification_simulation_steps": 0,
+  "scope": "finite same-task development evidence; not dynamic acceptance, infinite safety or statistical guarantee"
+}

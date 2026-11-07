@@ -1,0 +1,1388 @@
+{
+  "status": "PASS",
+  "error": null,
+  "elapsed_s": 3.2940039429959143,
+  "replay_native_steps": 1808,
+  "private_prediction_integrations": 25968,
+  "maximum_qpos_qvel_mocap_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "minimum_replay_clearance_m": 0.28087537201390667,
+  "minimum_self_domain_margin_m": 0.009193052990576545,
+  "bad_contacts": 0,
+  "records": [
+    {
+      "checkpoint": 217,
+      "ordinary_safe_candidates": 15,
+      "distinct_safe_commands": 6,
+      "tested": [
+        {
+          "distinct_command_rank": 0,
+          "score": 1.222684789911396,
+          "first_command": [
+            -0.17905833302729132,
+            -0.21294022006863547,
+            9.32646238105904,
+            1.5857300082972945
+          ],
+          "appendable": false,
+          "summary": null,
+          "backup_attempt": {
+            "step": 217,
+            "status": "NO_APPENDABLE_BACKUP",
+            "prefix_self_domain_margin_m": 0.00994279287250649,
+            "candidates": [
+              {
+                "kind": "BRAKE_ONLY",
+                "target_command": [
+                  -0.17905833302729132,
+                  -0.21294022006863547,
+                  0.0,
+                  0.0
+                ],
+                "minimum_clearance_m": 0.06745341215835107,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009781443077062413,
+                "terminal_speed_m_s": 1.6691736006479798e-06,
+                "signed_displacement_m": 0.07654014880734174,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.1388765272145188,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009629921920533746,
+                "terminal_speed_m_s": 0.0007037422233457146,
+                "signed_displacement_m": -0.15790761639542758,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.1352399997634506,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009629921920533746,
+                "terminal_speed_m_s": 0.0002976370908996021,
+                "signed_displacement_m": -0.11660661659140861,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.0888947596332412,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009626213022232044,
+                "terminal_speed_m_s": 0.000589300533549491,
+                "signed_displacement_m": -0.04657306894104367,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.14506586433621912,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00959928253491199,
+                "terminal_speed_m_s": 0.0006101813584139364,
+                "signed_displacement_m": -0.17970388010879532,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.1337540476841022,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00959928253491199,
+                "terminal_speed_m_s": 0.00021744450932674296,
+                "signed_displacement_m": -0.13238751497422072,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.08943143629313954,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00959918079333999,
+                "terminal_speed_m_s": 5.7537362582658865e-05,
+                "signed_displacement_m": -0.051954044452469025,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.11973214358085002,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009374058160798227,
+                "terminal_speed_m_s": 0.0004534784128111009,
+                "signed_displacement_m": -0.14161157115892575,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.11769914123167247,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009374058160798227,
+                "terminal_speed_m_s": 0.0002699219670301506,
+                "signed_displacement_m": -0.1041577420151179,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.07835841317178016,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009374058160798227,
+                "terminal_speed_m_s": 5.156331796093035e-05,
+                "signed_displacement_m": -0.038977491014501014,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.1486747481260445,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009549691703871266,
+                "terminal_speed_m_s": 0.0007125348649239938,
+                "signed_displacement_m": -0.20009817666466378,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.1185916892477843,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009549691703871266,
+                "terminal_speed_m_s": 0.00023839065203064814,
+                "signed_displacement_m": -0.14834994805680154,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.08959513011328563,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009552257483614046,
+                "terminal_speed_m_s": 4.309363556750496e-05,
+                "signed_displacement_m": -0.06075125253975203,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.12863407740558472,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009578389574327661,
+                "terminal_speed_m_s": 0.0006103227325697299,
+                "signed_displacement_m": -0.1735160327851737,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.10539304047788872,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009578389574327661,
+                "terminal_speed_m_s": 0.00014370658127269053,
+                "signed_displacement_m": -0.1282058349414919,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.08233608279287286,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009611530927857659,
+                "terminal_speed_m_s": 0.00011528757956377824,
+                "signed_displacement_m": -0.05146965463465966,
+                "reason": "TIME_CLEARANCE"
+              }
+            ]
+          },
+          "private_prefix_and_tail_full_state_match": false
+        },
+        {
+          "distinct_command_rank": 1,
+          "score": 0.6833151378762926,
+          "first_command": [
+            -0.2794883395124775,
+            -0.3135459205979553,
+            8.567213747461826,
+            0.8636467330787068
+          ],
+          "appendable": true,
+          "summary": {
+            "status": "REVERSE_BRAKE_TAIL_RESERVED",
+            "recovery_kind": "REVERSE_BRAKE",
+            "safe_reserve_candidates": 2,
+            "reserve_minimum_clearance_m": 0.17478061495049205,
+            "reserve_signed_reverse_displacement_m": -0.23878422382847206,
+            "reserve_target": [
+              0.23590902047242188,
+              0.19511447256354925,
+              -12.0,
+              -12.0
+            ],
+            "reserve_total_native_ticks": 328,
+            "reserve_braking_after_native_ticks": 168,
+            "causal_forecast_horizon_s": 3.28
+          },
+          "backup_attempt": {
+            "step": 217,
+            "status": "APPENDABLE_BACKUP_FOUND",
+            "prefix_self_domain_margin_m": 0.009908253906355469,
+            "candidates": [
+              {
+                "kind": "BRAKE_ONLY",
+                "target_command": [
+                  -0.2794883395124775,
+                  -0.3135459205979553,
+                  0.0,
+                  0.0
+                ],
+                "minimum_clearance_m": 0.07586082609350794,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009715009198740132,
+                "terminal_speed_m_s": 9.75770633985099e-06,
+                "signed_displacement_m": 0.056978919024608124,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.15376024373656758,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009634486810570164,
+                "terminal_speed_m_s": 0.00021513844264883924,
+                "signed_displacement_m": -0.19140821892508353,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.14707145640317007,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009634486810570164,
+                "terminal_speed_m_s": 0.00011856506388976627,
+                "signed_displacement_m": -0.14931368189971467,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.10114292831312269,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009660640219963601,
+                "terminal_speed_m_s": 7.761497249925573e-05,
+                "signed_displacement_m": -0.06733532681056908,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.17528031085483617,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009577528212633135,
+                "terminal_speed_m_s": 0.0006127717825109652,
+                "signed_displacement_m": -0.23084729044152158,
+                "reason": null
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.15214234147072261,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009577528212633135,
+                "terminal_speed_m_s": 0.00016950709832362084,
+                "signed_displacement_m": -0.17956057507462048,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.10776407183160447,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009607557242720333,
+                "terminal_speed_m_s": 6.264195939630713e-05,
+                "signed_displacement_m": -0.07976866354497468,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.13289274083540514,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009482455780453813,
+                "terminal_speed_m_s": 0.000411253403684125,
+                "signed_displacement_m": -0.1712732075121652,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.12522410165965953,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009482455780453813,
+                "terminal_speed_m_s": 0.00019383704254208987,
+                "signed_displacement_m": -0.13258110741180745,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.08944530554991606,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009482455780453813,
+                "terminal_speed_m_s": 0.00012122776065322363,
+                "signed_displacement_m": -0.05749405465768249,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.17478061495049205,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009552880919047546,
+                "terminal_speed_m_s": 0.0006175264249148016,
+                "signed_displacement_m": -0.23878422382847206,
+                "reason": null
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.13650077778492392,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009552880919047546,
+                "terminal_speed_m_s": 0.0001650210852957051,
+                "signed_displacement_m": -0.1851626248975746,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.10579385106093173,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009600537041074997,
+                "terminal_speed_m_s": 4.5879529436846264e-05,
+                "signed_displacement_m": -0.08395676850686103,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.15165315620787387,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00956225152206247,
+                "terminal_speed_m_s": 0.0006544229385978239,
+                "signed_displacement_m": -0.20928866703823498,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.12075720677452859,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00956225152206247,
+                "terminal_speed_m_s": 0.0002464732752367971,
+                "signed_displacement_m": -0.16293451499592523,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.0944350261573699,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009668771672372789,
+                "terminal_speed_m_s": 5.0700400344958864e-05,
+                "signed_displacement_m": -0.0686669580676893,
+                "reason": "TIME_CLEARANCE"
+              }
+            ]
+          },
+          "private_prefix_and_tail_full_state_match": true
+        },
+        {
+          "distinct_command_rank": 2,
+          "score": 0.57027668964344,
+          "first_command": [
+            -0.07948833951247747,
+            -0.11354592059795524,
+            8.567213747461826,
+            2.2636467330787067
+          ],
+          "appendable": false,
+          "summary": null,
+          "backup_attempt": {
+            "step": 217,
+            "status": "NO_APPENDABLE_BACKUP",
+            "prefix_self_domain_margin_m": 0.00975201745189025,
+            "candidates": [
+              {
+                "kind": "BRAKE_ONLY",
+                "target_command": [
+                  -0.07948833951247747,
+                  -0.11354592059795524,
+                  0.0,
+                  0.0
+                ],
+                "minimum_clearance_m": 0.07184992075768135,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009618900289663723,
+                "terminal_speed_m_s": 8.6835161634887e-06,
+                "signed_displacement_m": 0.07108951776813863,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.14668289757026393,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00963719622117254,
+                "terminal_speed_m_s": 0.00033449386518982267,
+                "signed_displacement_m": -0.16851909352794386,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.14133026648143318,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00963719622117254,
+                "terminal_speed_m_s": 0.00038841914055976997,
+                "signed_displacement_m": -0.12865859462354362,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.09388030969663827,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009667109794251616,
+                "terminal_speed_m_s": 0.00013310963248339532,
+                "signed_displacement_m": -0.05106025219826043,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.15180349180070188,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00956672482297316,
+                "terminal_speed_m_s": 7.518576236920112e-06,
+                "signed_displacement_m": -0.19282010959582613,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.143722547647114,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00956672482297316,
+                "terminal_speed_m_s": 0.00016344272687895066,
+                "signed_displacement_m": -0.14731278843786433,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.09445680368019488,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00956672482297316,
+                "terminal_speed_m_s": 5.032618636532096e-05,
+                "signed_displacement_m": -0.058551682284441096,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.12646747252354668,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009261068007766715,
+                "terminal_speed_m_s": 0.00014158694634158297,
+                "signed_displacement_m": -0.15364262111075747,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.1267461149243847,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009261068007766715,
+                "terminal_speed_m_s": 0.00019447750696086804,
+                "signed_displacement_m": -0.11727873579922446,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.08342163884119239,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009261068007766715,
+                "terminal_speed_m_s": 5.499542157283359e-05,
+                "signed_displacement_m": -0.04618563568247379,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.1517763562442704,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009524927413792128,
+                "terminal_speed_m_s": 5.1480571140852584e-05,
+                "signed_displacement_m": -0.21330321596391072,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.12598420354562548,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009524927413792128,
+                "terminal_speed_m_s": 0.00016317551774075855,
+                "signed_displacement_m": -0.16323775134436544,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.09266508850396077,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009524927413792128,
+                "terminal_speed_m_s": 4.7094530975028e-05,
+                "signed_displacement_m": -0.06784886265750392,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.1319143355858428,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009575050557062814,
+                "terminal_speed_m_s": 0.00015740422545683315,
+                "signed_displacement_m": -0.18643898119780805,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.11236373572541292,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009575050557062814,
+                "terminal_speed_m_s": 0.00011748738290203223,
+                "signed_displacement_m": -0.14237845559263504,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.0846970993632356,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009648073110567146,
+                "terminal_speed_m_s": 0.00020591320612298593,
+                "signed_displacement_m": -0.058045258349991496,
+                "reason": "TIME_CLEARANCE"
+              }
+            ]
+          },
+          "private_prefix_and_tail_full_state_match": false
+        }
+      ],
+      "untested_distinct_commands": 3
+    },
+    {
+      "checkpoint": 225,
+      "ordinary_safe_candidates": 14,
+      "distinct_safe_commands": 7,
+      "tested": [
+        {
+          "distinct_command_rank": 0,
+          "score": 1.1729151959791,
+          "first_command": [
+            -0.14268940625961796,
+            -0.16352675468358616,
+            8.797825796201032,
+            2.2636467330787067
+          ],
+          "appendable": false,
+          "summary": null,
+          "backup_attempt": {
+            "step": 225,
+            "status": "NO_APPENDABLE_BACKUP",
+            "prefix_self_domain_margin_m": 0.009441605214252191,
+            "candidates": [
+              {
+                "kind": "BRAKE_ONLY",
+                "target_command": [
+                  -0.14268940625961796,
+                  -0.16352675468358616,
+                  0.0,
+                  0.0
+                ],
+                "minimum_clearance_m": 0.08726916979582242,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009438496247607897,
+                "terminal_speed_m_s": 1.60529224355302e-05,
+                "signed_displacement_m": 0.07080071817186803,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.1370332557554358,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 4.7095468845581765e-05,
+                "signed_displacement_m": -0.16058641693630019,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.11097487600490114,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 4.691283967112857e-05,
+                "signed_displacement_m": -0.1213122420574029,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.08872525225890462,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 0.00014088215117489286,
+                "signed_displacement_m": -0.046759779608865924,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.13706092708734416,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 9.385949784346731e-05,
+                "signed_displacement_m": -0.1708749329343478,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.11389361149174021,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 0.00017718866744023765,
+                "signed_displacement_m": -0.1289600553477674,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.08376744115122683,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 4.6991311421362904e-05,
+                "signed_displacement_m": -0.05084251857432131,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.12071657486495466,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00918635415521224,
+                "terminal_speed_m_s": 4.6230025429584704e-05,
+                "signed_displacement_m": -0.14621223904028355,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.09829404854790452,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00918635415521224,
+                "terminal_speed_m_s": 2.583173173471144e-05,
+                "signed_displacement_m": -0.10993543913919512,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.07399225388942893,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00918635415521224,
+                "terminal_speed_m_s": 5.3029686720835155e-05,
+                "signed_displacement_m": -0.041466595493728726,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.12689156528955395,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 6.93182161592797e-05,
+                "signed_displacement_m": -0.20441258701716641,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.1163784873910979,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 0.0001882605403526018,
+                "signed_displacement_m": -0.15481037570047654,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.07188652420676644,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 4.4251446317517016e-05,
+                "signed_displacement_m": -0.06311545970696059,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.1099260573279579,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 3.7598658538220376e-05,
+                "signed_displacement_m": -0.1775881461018895,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.10563978100390928,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 0.00012108930763922711,
+                "signed_displacement_m": -0.1342216315015007,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.06285143190896297,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009441605214252191,
+                "terminal_speed_m_s": 1.272160785018483e-05,
+                "signed_displacement_m": -0.05320021342585868,
+                "reason": "TIME_CLEARANCE"
+              }
+            ]
+          },
+          "private_prefix_and_tail_full_state_match": false
+        },
+        {
+          "distinct_command_rank": 1,
+          "score": 1.1399485713775188,
+          "first_command": [
+            -0.23572385397155252,
+            -0.25445987391666147,
+            9.886693040928535,
+            0.8636467330787068
+          ],
+          "appendable": false,
+          "summary": null,
+          "backup_attempt": {
+            "step": 225,
+            "status": "NO_APPENDABLE_BACKUP",
+            "prefix_self_domain_margin_m": 0.009456811432714374,
+            "candidates": [
+              {
+                "kind": "BRAKE_ONLY",
+                "target_command": [
+                  -0.23572385397155252,
+                  -0.25445987391666147,
+                  0.0,
+                  0.0
+                ],
+                "minimum_clearance_m": 0.08059276323439488,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 2.1274186014713215e-05,
+                "signed_displacement_m": 0.07815369773621343,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.1300735616444771,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 0.000736928600790604,
+                "signed_displacement_m": -0.15005667803762998,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.10349101575784098,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 0.0003598844145019272,
+                "signed_displacement_m": -0.10944287260185188,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.36126903023692364,
+                  -0.52,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.07843241667268885,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 0.00012000096295107549,
+                "signed_displacement_m": -0.04290745899828191,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.12594473589555585,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009453880677668947,
+                "terminal_speed_m_s": 0.0007597553428980273,
+                "signed_displacement_m": -0.1581251604637399,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.10697083850606903,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009453880677668947,
+                "terminal_speed_m_s": 0.00023353745058328376,
+                "signed_displacement_m": -0.1148804003945558,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  -0.19511447256354925,
+                  -0.23590902047242188,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.07376861652355207,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009453880677668947,
+                "terminal_speed_m_s": 5.5273158094810115e-05,
+                "signed_displacement_m": -0.044646047040698314,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.1100376086086863,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00938983682977479,
+                "terminal_speed_m_s": 0.0005937528427419991,
+                "signed_displacement_m": -0.13539169486681882,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.09335853102690544,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00938983682977479,
+                "terminal_speed_m_s": 0.0002921236582428583,
+                "signed_displacement_m": -0.0980183068028499,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.0,
+                  0.0,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.06481486708256265,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.00938983682977479,
+                "terminal_speed_m_s": 5.1235888989207626e-05,
+                "signed_displacement_m": -0.036405755094650515,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.12393968739212632,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 0.0007499728412294366,
+                "signed_displacement_m": -0.1910347323687371,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.10596864428816,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 0.00026161669938501463,
+                "signed_displacement_m": -0.14005399356540554,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.23590902047242188,
+                  0.19511447256354925,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.06631400876638552,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 4.259011349957851e-05,
+                "signed_displacement_m": -0.056987417681703796,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -12.0,
+                  -12.0
+                ],
+                "minimum_clearance_m": 0.10677192133359986,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 0.000672633757209311,
+                "signed_displacement_m": -0.1663710732357514,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -8.0,
+                  -8.0
+                ],
+                "minimum_clearance_m": 0.09545884779852945,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 0.00042707453707568384,
+                "signed_displacement_m": -0.12169863482039593,
+                "reason": "TIME_CLEARANCE"
+              },
+              {
+                "kind": "REVERSE_BRAKE",
+                "target_command": [
+                  0.52,
+                  0.36126903023692364,
+                  -4.0,
+                  -4.0
+                ],
+                "minimum_clearance_m": 0.05843632940588375,
+                "minimum_clearance_native_tick": 328,
+                "self_domain_margin_m": 0.009456811432714374,
+                "terminal_speed_m_s": 3.561774300455776e-05,
+                "signed_displacement_m": -0.04852999894682138,
+                "reason": "TIME_CLEARANCE"
+              }
+            ]
+          },
+          "private_prefix_and_tail_full_state_match": false
+        }
+      ],
+      "untested_distinct_commands": 5
+    }
+  ],
+  "concrete_missed_appendable_commands": 1,
+  "new_navigation_tasks": 0,
+  "source_sha256": {
+    "audit_articulation.py": "dc40d6ce395142dc8830761468fbf088cf47e5d27899766f3bf176de839d8039",
+    "bounded_execution.py": "8a59e93b4c0db1030bde69760e9c35a5240d3d0e5e6ccd9c8a4b41cb4b5dcfd1",
+    "circle_memory.py": "fc578845d7a92ac53e5400eec23a9830ab60398e44ca48b089ea11f0a86987da",
+    "contact_fingerprint.py": "b32df676233afac9e1750f53f899fcebd05736fdfa291dc070aa21992d9bcea0",
+    "control_contract.py": "6a091a13245fe91ed02344ec29f1cdc023befbf7da05e9d43e846fd3d0284eb4",
+    "dynamic_contact.py": "90d97fd29938742c057672f4935f7dad6e75f564401bbdabde945501b4cc0d01",
+    "dynamic_scene.py": "5be290753c286875f8a5edce92e1a88813b53cff264407018a1b00f71d6d790c",
+    "empty_sample_contract.py": "c81d82887eee5b770e4ce6217bee7b8c603725b5d477fae70d91907d3c3d9f4f",
+    "evaluate_range.py": "97962bd3045a4a415214d62e01cddc9c4cce3f47a7954ae73b19280e200f322a",
+    "evaluate_trace.py": "512a673cface02735513fd01c4fb5d59957c77b859bd8723d800521b6a71c764",
+    "exact_footprint.py": "c6f991d15546372ec3b3c2bae7b8b844f0f613c59c1403c0831002e337c9ce93",
+    "execute_development.py": "73af8442a4209d7dc147ff1ffe1d512c8e587242ef9dee22e87dd66953ea2f3e",
+    "factory.py": "d7839f616e9ae0c1dba0a403bcca504b4ed6ec3d8b3402e64a8374393a3732c5",
+    "geometry_predictor.py": "16e12b9505e2ad97bd4118a0bfe972913178eb02d35f5ceed30bf92b56f9979b",
+    "instrumentation.py": "83e5a90b56ff5a37bcb243788a42f6fb46546cf57e4b65cc5a998f122a776dad",
+    "motion_evaluator.py": "e024d9072e45fc732aaf22e5b7e47575ec42cb477be50475ffa774aa0c559d24",
+    "motion_tracker.py": "53417164f92f1279eda99fbde68023a58e69326598abca21dd4e4ed7b446e1f7",
+    "multi_circle_memory.py": "c19eedc1045d7c6f1bbe293f89b979920616b69910f4505805f16d86c558cbfc",
+    "perception.py": "2141b8daa06cbc3e7a7cfc93b98ba89cfe3dec070e29bba013aad268cd2f27b6",
+    "planner.py": "48038fd7af9bf5166197a099ae9c0443261d9e8525d2f50456c6c10cd186ce30",
+    "range_circle_memory.py": "9c55b2dda66c569270042bbfaf4fbf523a7a56eccf7b76fa50f03cc00a900442",
+    "recovery_supervisor.py": "7447c7c08b013941f40b2e7a3d5b370c79259a3d53944a8856f12bcb998c42cb",
+    "replay_native_audit.py": "a282f5846f5ad2dfca87c4b85e251893b28f449904062f955c8724a2c411865f",
+    "reserved_recovery.py": "8a7e9b15155e929182ff85d95b4dbb0ddae4b29563e549452dbddaf4a2bf8653",
+    "robot_predictor.py": "50b2905e8fcce7452e87162a68fb101a7cc51b463fd4a49a1a47e4d1bc0072ad",
+    "run_static.py": "7e69e5046a173aff07b05c2e87b61726bc7d0343eb290913fc531f46c4b13de3",
+    "scene_sensors.py": "24cf6857f8f7c36132994fbca39691e2fb891d15c33a95927f43efefa8a28c57",
+    "self_envelope.py": "c4c736e433f51246178f36fde3555c932141da9876dc6834a6b774de2b2aa9d4",
+    "self_geometry.py": "97cb87c3f2989e4a78765a241e85544ff23f07a5f58608e9045ad4ed58f59f42",
+    "serial_predictor.py": "3f9943f093dbc3be58fe6ee97f4ad6164299d1f80d2344a4fd13a4fb2e947360",
+    "task_planner.py": "19ef8d839a229187ae61c66353d936a7603c99d3b8abedccebea793f2a951da4",
+    "task_preflight.py": "93b090040d1c1826d16ae8314c6d1ec2aed531a498d1949f67fb0e0704fe24c9",
+    "tracking.py": "15d6097a6199e6ca4d92774c617a7f1e79f55a0a992d36cadb79c65aac781ab3",
+    "union_belief.py": "2892c2bf82618e6b70c2161eafc48a1aeb8c4c2858fddb0019487a35a132fc05",
+    "validate_handover.py": "31931d5ed6470d1c547636b422af1348c4a03e63aba7190732f365583355b42b"
+  },
+  "helper_sha256": "6f572c9162f2f8ec433dd09c42e079bf66abd246696c5685c3ca6355a74cebda"
+}

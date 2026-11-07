@@ -1,0 +1,303 @@
+[
+  {
+    "name": "dev43_95000011_canonical",
+    "seed": 95000011,
+    "scene": "single_event",
+    "feasibility_only": false,
+    "returncode": 0,
+    "wall_s": 781.0784008280025,
+    "completion": {
+      "status": "COMPLETE",
+      "seed": 95000011,
+      "results": [
+        {
+          "condition": "geometry_memory",
+          "seed": 95000011,
+          "outcome": "BOUNDED_WALL_STOP",
+          "strict_safe_arrival": false,
+          "goal_distance_m": 5.926372535657426,
+          "public_steps": 881,
+          "physics_steps": 7048,
+          "contacts": {
+            "physics_steps": 7048,
+            "all_contact_records": 76167,
+            "contact_type_counts": {
+              "ground_support": 56384,
+              "robot_self_contact": 19783
+            },
+            "negative_distance_counts_all_types": {
+              "ground_support": 56384,
+              "robot_self_contact": 19783
+            },
+            "robot_obstacle_contact_records": 0,
+            "robot_obstacle_penetration_records": 0,
+            "robot_obstacle_contact_steps": 0,
+            "robot_obstacle_penetration_steps": 0,
+            "maximum_obstacle_penetration_depth_m": 0.0,
+            "minimum_obstacle_distance_m": null,
+            "first_anomaly": null,
+            "unknown_contact_records": 0,
+            "robot_obstacle_geom_pairs": [],
+            "contact_log_content_sha256": "f70ca1cb754cdb8ed1eaa0e7bfd8ad5f8f0295b171f638f10cc19618159c3de3"
+          },
+          "backup_attempts": 8,
+          "backup_steps": 120,
+          "planning_attempts": 19,
+          "planning_wall_s": 202.12552312797925,
+          "command_overrides": 881,
+          "elapsed_s": 777.7926506039948,
+          "initial_state_hash": "18cf61c18fe9c1d7e71c2c006c9b57dab8fc2b749373658f15b771ed876453c0",
+          "normalized_initial_state_hash": "3ccde72bedabaa55dd2e737d6bd9d2eb4cff2327e0fa34edcc21a2badaed7732",
+          "minimum_actual_self_domain_margin_m": 0.009123321769077819,
+          "self_geometry_checked_native_ticks": 7048,
+          "static_obstacle_pose_unchanged": true,
+          "root_mutations_outside_mjstep": 0,
+          "source_revision": "dynamic_43_canonical_commands",
+          "prediction_steps": 4978872,
+          "native_applied_ctrl_checks": 7048,
+          "reserved_recovery_activations": 8,
+          "reserved_recovery_public_steps": 120,
+          "certified_handover_attempts": 30,
+          "certified_handover_successes": 8,
+          "initial_observation_steps": 0,
+          "dynamic_mode": "predictive",
+          "minimum_dynamic_native_clearance_m": 0.2527128748399221,
+          "actor_maximum_native_displacement_m": 0.000799999658580271,
+          "actor_motion_ticks": 7048,
+          "actor_position_at_end": [
+            -1.6761673674729292,
+            1.3690359632316462
+          ]
+        }
+      ],
+      "error": null,
+      "elapsed_s": 780.5445824560011,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 95000011,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.3750000596046449,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -1.2777841091156006,
+        -2.9586408138275146
+      ],
+      "start_pose": [
+        -1.600000023841858,
+        4.0,
+        -1.5707963267948963
+      ],
+      "unknown_count": 1
+    },
+    "feasibility": null,
+    "protocol": {
+      "full_model_snapshot": "scene_model.mjb",
+      "full_model_sha256": "40308ed2c1519c6816b4dd6563ca4fb10eb06e8df0d16b365ce5f0b63efec02e",
+      "seed": 95000011,
+      "scene": "single_event",
+      "physical_unknown_obstacles": [
+        {
+          "name": "real_circle_obs_10",
+          "xy": [
+            -1.5476415440893287,
+            1.4044493420864133
+          ],
+          "radius": 0.1
+        }
+      ],
+      "removed_at_scene_construction": [
+        {
+          "name": "real_circle_obs_9",
+          "xy": [
+            -1.5862531661987305,
+            1.2205675840377808
+          ],
+          "radius": 0.16
+        }
+      ],
+      "goal_xy": [
+        -1.2777841091156006,
+        -2.9586408138275146
+      ],
+      "start_qpos": [
+        -1.600000023841858,
+        4.0,
+        0.24,
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "event_xy": [
+        -1.5924999713897705,
+        1.7956249713897705
+      ],
+      "event_radius": 0.1,
+      "obstacle_present_from_initial_time": true,
+      "obstacle_in_planning_prior": false,
+      "known_rectangles": [
+        [
+          0.0,
+          3.25,
+          0.07999999821186066,
+          1.75
+        ],
+        [
+          0.0,
+          -3.25,
+          0.07999999821186066,
+          1.75
+        ],
+        [
+          -3.1500000953674316,
+          0.0,
+          1.850000023841858,
+          0.07999999821186066
+        ],
+        [
+          3.3517911434173584,
+          0.06623069196939468,
+          1.850000023841858,
+          0.07999999821186066
+        ],
+        [
+          -2.9000000953674316,
+          2.950000047683716,
+          0.550000011920929,
+          0.3499999940395355
+        ],
+        [
+          2.9740986824035645,
+          2.1782658100128174,
+          0.550000011920929,
+          0.3499999940395355
+        ],
+        [
+          -5.258255481719971,
+          1.3551397323608398,
+          0.30000001192092896,
+          0.949999988079071
+        ],
+        [
+          5.638000011444092,
+          -4.315000057220459,
+          0.3499999940395355,
+          1.100000023841858
+        ],
+        [
+          -2.2019999027252197,
+          -4.531000137329102,
+          0.8500000238418579,
+          0.2800000011920929
+        ],
+        [
+          3.200000047683716,
+          -2.8499999046325684,
+          0.75,
+          0.30000001192092896
+        ]
+      ],
+      "known_circles": [
+        [
+          -3.200000047683716,
+          3.3499999046325684,
+          0.2199999988079071
+        ],
+        [
+          -2.549999952316284,
+          3.3499999046325684,
+          0.2199999988079071
+        ],
+        [
+          -3.200000047683716,
+          2.549999952316284,
+          0.2199999988079071
+        ],
+        [
+          -2.549999952316284,
+          2.549999952316284,
+          0.2199999988079071
+        ],
+        [
+          2.549999952316284,
+          2.8499999046325684,
+          0.2199999988079071
+        ],
+        [
+          3.3853867053985596,
+          2.8596649169921875,
+          0.2199999988079071
+        ],
+        [
+          2.549999952316284,
+          2.200000047683716,
+          0.2199999988079071
+        ],
+        [
+          3.1500000953674316,
+          2.200000047683716,
+          0.2199999988079071
+        ],
+        [
+          -3.5999999046325684,
+          -2.9000000953674316,
+          0.2800000011920929
+        ]
+      ],
+      "footprint_bounds": [
+        -0.44,
+        -0.375,
+        0.44,
+        0.375
+      ],
+      "physics_contract": [
+        [
+          "<class 'envs.phase22.mkmini_phase22_v1_continuous_corridor_env.MkMiniPhase22V1ContinuousCorridorEnv'>",
+          "_h3_kinematic_yaw_sync"
+        ],
+        [
+          "<class 'envs.phase22.mkmini_phase22_v1_continuous_corridor_env.MkMiniPhase22V1ContinuousCorridorEnv'>",
+          "_h3_velocity_direction_sync"
+        ],
+        [
+          "<class 'envs.phase22.mkmini_phase22_v1_continuous_corridor_env.MkMiniPhase22V1ContinuousCorridorEnv'>",
+          "_phase14_apply_bicycle_yaw_sync"
+        ],
+        [
+          "<class 'envs.phase22.mkmini_phase22_v1_continuous_corridor_env.MkMiniPhase22V1ContinuousCorridorEnv'>",
+          "_sync_mujoco:read_physics_only"
+        ],
+        [
+          "<class 'training.phase7_camera_depth.envs.mkmini_phase7_depth_camera_aux_env.MkMiniPhase7DepthCameraAuxEnv'>",
+          "_sync_mujoco:read_physics_only"
+        ]
+      ],
+      "conditions": [
+        "geometry_memory"
+      ],
+      "model_sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f",
+      "comparison_scope": "new pure-physics contract; not comparable to legacy pose-assisted success rates",
+      "planning_hard_floor_m": 0.15,
+      "goal_tolerance_m": 0.45
+    },
+    "interrupted": null,
+    "run_root": "runs/v676_dynamic_canonical_commands",
+    "initial_observation_steps": 0
+  }
+]

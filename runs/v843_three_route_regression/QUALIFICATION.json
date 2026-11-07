@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "actual_saved17_auditors": [
+    {
+      "script": "audit_run.py",
+      "exit": 0,
+      "elapsed_s": 19.717251300811768
+    },
+    {
+      "script": "audit_forward_controller.py",
+      "exit": 0,
+      "elapsed_s": 1.26961088180542
+    },
+    {
+      "script": "audit_route_commitment.py",
+      "exit": 0,
+      "elapsed_s": 1.3201587200164795
+    },
+    {
+      "script": "audit_projection_learning.py",
+      "exit": 0,
+      "elapsed_s": 2.473864793777466
+    },
+    {
+      "script": "audit_all_tail_geometry.py",
+      "exit": 0,
+      "elapsed_s": 0.16631698608398438
+    },
+    {
+      "script": "audit_shadow_mode.py",
+      "exit": 0,
+      "elapsed_s": 0.21653103828430176
+    },
+    {
+      "script": "audit_reentry.py",
+      "exit": 0,
+      "elapsed_s": 29.849562883377075
+    },
+    {
+      "script": "audit_complete_joint.py",
+      "exit": 0,
+      "elapsed_s": 9.587207317352295
+    },
+    {
+      "script": "audit_nominal_layers.py",
+      "exit": 0,
+      "elapsed_s": 125.13740396499634
+    },
+    {
+      "script": "audit_reactive.py",
+      "exit": 0,
+      "elapsed_s": 20.810474395751953
+    },
+    {
+      "script": "audit_proposal_separation.py",
+      "exit": 0,
+      "elapsed_s": 0.5661411285400391
+    },
+    {
+      "script": "audit_tracked_norm.py",
+      "exit": 0,
+      "elapsed_s": 5.125498294830322
+    },
+    {
+      "script": "audit_goal_renewal.py",
+      "exit": 0,
+      "elapsed_s": 1.0194039344787598
+    },
+    {
+      "script": "audit_ranked_return.py",
+      "exit": 0,
+      "elapsed_s": 1.4184744358062744
+    },
+    {
+      "script": "audit_forward_escape.py",
+      "exit": 0,
+      "elapsed_s": 1.118870496749878
+    },
+    {
+      "script": "audit_reference_recovery.py",
+      "exit": 0,
+      "elapsed_s": 6.579516410827637
+    },
+    {
+      "script": "audit_early_joint.py",
+      "exit": 0,
+      "elapsed_s": 173.66365122795105
+    }
+  ],
+  "expected_audit_statuses": {
+    "audit_run.py": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+    "audit_forward_controller.py": "FORWARD_GUIDANCE_BANK_PASS",
+    "audit_route_commitment.py": "PASS",
+    "audit_projection_learning.py": "PASS",
+    "audit_all_tail_geometry.py": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+    "audit_shadow_mode.py": "PASS",
+    "audit_reentry.py": "GLOBAL_REENTRY_SAVED_EVIDENCE_VERIFIED",
+    "audit_complete_joint.py": "COMPLETE_FINITE_JOINT_SELECTION_VERIFIED",
+    "audit_nominal_layers.py": "SPATIAL_NOMINAL_AND_COMPLETE_CAUSAL_TAIL_VERIFIED",
+    "audit_reactive.py": "REACTIVE_SCOPE_AND_CAUSAL_FORMULAS_PASS",
+    "audit_proposal_separation.py": "SPATIAL_PROPOSAL_SEPARATION_AUDIT_PASS",
+    "audit_tracked_norm.py": "TRACKED_NORM_COMPLETE_INDEPENDENT_GEOMETRY_PASS",
+    "audit_goal_renewal.py": "GOAL_REFERENCE_RENEWAL_INDEPENDENT_PASS",
+    "audit_ranked_return.py": "RANKED_RETURN_INDEPENDENT_PASS",
+    "audit_forward_escape.py": "FORWARD_ESCAPE_PROVENANCE_PASS",
+    "audit_reference_recovery.py": "REFERENCE_RECOVERY_AND_SUCCESSOR_PASS",
+    "audit_early_joint.py": "EARLY_JOINT_INDEPENDENT_PASS"
+  },
+  "three_real_t0_interface_passed": true,
+  "route_raw_discovery_interfaces": [
+    {
+      "seed": 10010002,
+      "raw_packet_chain_interface": true,
+      "prefix_anchor": "runs/v827_goal_route_validation/repeat_slot02/paired/geometry_memory",
+      "is_new_V842_navigation": false
+    },
+    {
+      "seed": 10010001,
+      "raw_packet_chain_interface": true,
+      "prefix_anchor": "runs/v827_goal_route_validation/main_slot01/paired/geometry_memory",
+      "is_new_V842_navigation": false
+    },
+    {
+      "seed": 10010003,
+      "raw_packet_chain_interface": true,
+      "prefix_anchor": "runs/v827_goal_route_validation/main_slot03/paired/geometry_memory",
+      "is_new_V842_navigation": false
+    }
+  ],
+  "negative_cases": 8,
+  "prior_complete9601_witness10_mutation_negatives": true,
+  "os_identity_cases": [
+    {
+      "case": "correct",
+      "expected": true,
+      "exit": 0
+    },
+    {
+      "case": "wrong",
+      "expected": false,
+      "exit": 1
+    },
+    {
+      "case": "expired",
+      "expected": false,
+      "exit": 1
+    }
+  ],
+  "model_constructions": 0,
+  "integrations": 0,
+  "canonical_metadata_proxy_is_only_import_exercise": true,
+  "actual_MJB_metadata_required_in_new_stage": true,
+  "new24": 0
+}

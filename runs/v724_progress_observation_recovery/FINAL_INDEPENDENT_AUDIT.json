@@ -1,0 +1,58 @@
+{
+  "status": "PROGRESS_OBSERVATION_PILOT_NOT_PASSED",
+  "checks": {
+    "all_frozen_inputs": true,
+    "closed": true,
+    "fixed_window": true,
+    "exact_schedule": false,
+    "driver_completed": false,
+    "no_training_or_extra_navigation": true,
+    "v705_closed_prerequisite": true,
+    "causal_renewal_prerequisites": true,
+    "new_recovery_selection_prerequisite": true,
+    "all_two_full_physical_causal_evidence": false,
+    "one_fixed_preflight": true
+  },
+  "records": [
+    {
+      "name": "main01",
+      "role": "DEVELOPMENT_MAIN",
+      "case_id": "WEST_EAST",
+      "seed": 10010001,
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "RECOVERY_SELECTION_AUDIT.json": false,
+        "ROUTE_COMMITMENT_AUDIT.json": false,
+        "PROJECTION_LEARNING_AUDIT.json": false,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": false,
+        "SHADOW_MODE_AUDIT.json": false,
+        "v699_discovery_audit/DISCOVERY_CHAIN_AUDIT_V699.json": false,
+        "strict_full_chain": false,
+        "complete_replay": true
+      },
+      "passed": false,
+      "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+      "public_steps": 133,
+      "goal_distance_m": 6.754882780036459,
+      "minimum_native_clearance_m": 0.31181304893907813,
+      "native_steps": 1064,
+      "private_integrations": 580824,
+      "replay_steps": 1064,
+      "wall_seconds": 84.34015255697886
+    }
+  ],
+  "navigation_native_steps": 1064,
+  "replay_native_steps": 1064,
+  "private_integrations": 580824,
+  "native_account_exact": true,
+  "replay_account_exact": true,
+  "private_account_exact": true,
+  "unique_development_tasks_executed": 1,
+  "confirmed_new_tasks": 0,
+  "unexecuted": [
+    "repeat01"
+  ],
+  "training_updates": 0,
+  "new_integrations_in_audit": 0,
+  "scope": "One original WEST_EAST development task and conditional exact repeat. Other original routes and24 confirmation remain unexecuted; no global superiority."
+}

@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "expected_audit_statuses": {
+    "audit_run.py": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+    "audit_forward_controller.py": "FORWARD_GUIDANCE_BANK_PASS",
+    "audit_route_commitment.py": "PASS",
+    "audit_projection_learning.py": "PASS",
+    "audit_all_tail_geometry.py": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+    "audit_shadow_mode.py": "PASS",
+    "audit_reentry.py": "GLOBAL_REENTRY_SAVED_EVIDENCE_VERIFIED",
+    "audit_complete_joint.py": "COMPLETE_FINITE_JOINT_SELECTION_VERIFIED",
+    "audit_nominal_layers.py": "SPATIAL_NOMINAL_AND_COMPLETE_CAUSAL_TAIL_VERIFIED",
+    "audit_reactive.py": "REACTIVE_SCOPE_AND_CAUSAL_FORMULAS_PASS",
+    "audit_proposal_separation.py": "SPATIAL_PROPOSAL_SEPARATION_AUDIT_PASS",
+    "audit_tracked_norm.py": "TRACKED_NORM_COMPLETE_INDEPENDENT_GEOMETRY_PASS",
+    "audit_goal_renewal.py": "GOAL_REFERENCE_RENEWAL_INDEPENDENT_PASS",
+    "audit_ranked_return.py": "RANKED_RETURN_INDEPENDENT_PASS",
+    "audit_forward_escape.py": "FORWARD_ESCAPE_PROVENANCE_PASS",
+    "audit_reference_recovery.py": "REFERENCE_RECOVERY_AND_SUCCESSOR_PASS",
+    "audit_early_joint.py": "EARLY_JOINT_INDEPENDENT_PASS",
+    "audit_candidate_policy.py": "GOAL_FIRST_CERTIFIED_POLICY_PASS",
+    "audit_progress.py": "PROGRESS_CONTRACT_SELECTION_PASS"
+  },
+  "actual_saved_original_auditors": 18,
+  "new_progress_auditor_entry_cases": [
+    {
+      "case": "actual_entry_positive",
+      "expected_pass": true,
+      "exit": 0
+    },
+    {
+      "case": "forged_active_progress",
+      "expected_pass": false,
+      "exit": 1
+    },
+    {
+      "case": "actual_control_tamper",
+      "expected_pass": false,
+      "exit": 1
+    },
+    {
+      "case": "restored_fixture",
+      "expected_pass": true,
+      "exit": 0
+    }
+  ],
+  "saved14_return_and9negative_checks": true,
+  "actual_component_to_first_MJB_boundary": true,
+  "actual_engine_to_first_t0_Popen_boundary": true,
+  "models": 0,
+  "integrations": 0,
+  "metadata_proxy_is_import_only": true
+}

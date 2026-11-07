@@ -1,0 +1,31 @@
+{
+  "status": "GATE_FAILED_REPEAT",
+  "elapsed_from_original_origin_s": 11594.988738721335,
+  "limit_s": 14400,
+  "completed_confirmation_attempts": 24,
+  "strict_arrivals": 23,
+  "class_successes": {
+    "single_event": 12,
+    "legacy_two": 11
+  },
+  "original_interrupted_non_successes": 1,
+  "remaining_selected_unattempted": [],
+  "repeats_attempted": 1,
+  "static_engineering_acceptance_passed": false,
+  "checks": {
+    "same_24_locked_tasks": true,
+    "all_24_attempt_records": true,
+    "at_least_23_strict_arrivals": true,
+    "single_at_least_11": true,
+    "two_at_least_11": true,
+    "all_27_executed_prefix_or_full_physical_audits": false,
+    "three_matching_full_state_repeats": false,
+    "original_budget_respected": true,
+    "frozen_continuation_source": true,
+    "decision_equivalence_proved": true,
+    "original_interruption_not_relabelled": true
+  },
+  "dynamic_started": false,
+  "training_updates": 0,
+  "scope": "same locked finite static benchmark and equivalent frozen decisions; original logging interruption is permanently one failure, later runner differs only by proven diagnostic dictionary copies"
+}

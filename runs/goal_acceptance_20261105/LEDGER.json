@@ -1,0 +1,66 @@
+{
+  "status": "STOPPED_STAGE_NOT_PASSED",
+  "closed": true,
+  "absolute_deadline_unix": 1793920480.869028,
+  "development_batches_started": 1,
+  "confirmation_batches_started": 1,
+  "scientific_revisions": 0,
+  "active_simulation": false,
+  "automation_id": null,
+  "zero_model_qualification_passed": true,
+  "source_algorithm": "V826",
+  "no_post_freeze_repairs": true,
+  "current_stage": null,
+  "no_more_models_or_integrations": true,
+  "stage_results": [
+    {
+      "stage": "v827_goal_route_validation",
+      "final": {
+        "status": "ALL_THREE_KNOWN_ROUTES_DEVELOPMENT_VERIFIED",
+        "development_passed": true,
+        "confirmation_passed": false,
+        "combined_three_route_development_passed": true,
+        "archive": "evidence/rpccr_v827_goal_route_validation_20261105",
+        "transport": "evidence/rpccr_v827_goal_route_validation_20261105_transport",
+        "source_and_decompressed_sha_verified": true,
+        "raw_files": 133777,
+        "raw_bytes": 6625133962,
+        "raw_deleted": false,
+        "report": "docs/RPCCR_GOAL_ROUTE_VALIDATION_V827_REPORT.md",
+        "new_models_finalizer": 0,
+        "new_integrations_finalizer": 0
+      },
+      "final_audit": "runs/v827_goal_route_validation/FINAL_INDEPENDENT_AUDIT.json"
+    },
+    {
+      "stage": "v828_goal_dynamic_confirmation",
+      "final": {
+        "status": "NOT_PASSED",
+        "development_passed": false,
+        "confirmation_passed": false,
+        "combined_three_route_development_passed": false,
+        "archive": "evidence/rpccr_v828_goal_dynamic_confirmation_20261105",
+        "transport": "evidence/rpccr_v828_goal_dynamic_confirmation_20261105_transport",
+        "source_and_decompressed_sha_verified": true,
+        "raw_files": 151997,
+        "raw_bytes": 8370515548,
+        "raw_deleted": false,
+        "report": "docs/RPCCR_GOAL_CONFIRMATION_V828_REPORT.md",
+        "new_models_finalizer": 0,
+        "new_integrations_finalizer": 0
+      },
+      "final_audit": "runs/v828_goal_dynamic_confirmation/FINAL_INDEPENDENT_AUDIT.json"
+    }
+  ],
+  "needs_review_commit_and_single_bounded_sync": false,
+  "monitor_deleted": true,
+  "monitor_deleted_at_user_request": true,
+  "stop_reason": "V828 second functional failure; original frozen confirmation rule",
+  "inspection": "runs/goal_acceptance_20261105/INSPECTION_20261105.json",
+  "reviewed_and_locally_committed": true,
+  "scientific_commit": "7d7346d570b456a1d3d2e796224f8a789fcdfcc5",
+  "git_sync_record": "runs/goal_acceptance_20261105/GIT_SYNC_RESULT.json",
+  "remote_scientific_commit_verified": false,
+  "final_sync_attempt_consumed": true,
+  "no_network_retries": true
+}

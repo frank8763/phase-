@@ -1,0 +1,37 @@
+{
+  "status": "TEMPORAL_INTERVAL_NOT_CERTIFIED",
+  "checkpoints": [
+    {
+      "step": 64,
+      "status": "INTERVAL_CERTIFICATE_UNRESOLVED",
+      "processed_nodes": 16384,
+      "pending_nodes": 10049,
+      "unresolved_leaf_count": 0,
+      "split_checks": 8191
+    },
+    {
+      "step": 104,
+      "status": "INTERVAL_CERTIFICATE_UNRESOLVED",
+      "processed_nodes": 16384,
+      "pending_nodes": 8973,
+      "unresolved_leaf_count": 0,
+      "split_checks": 8191
+    },
+    {
+      "step": 145,
+      "status": "INTERVAL_CERTIFICATE_UNRESOLVED",
+      "processed_nodes": 16384,
+      "pending_nodes": 9709,
+      "unresolved_leaf_count": 0,
+      "split_checks": 8191
+    }
+  ],
+  "velocity_acceleration_bound_test_cases": 4000,
+  "maximum_bound_violation_m": 0.0,
+  "missing_observations_rejected": true,
+  "physical_candidate_admissible": false,
+  "new_initializations": 0,
+  "new_integrations": 0,
+  "training_updates": 0,
+  "scope": "Fixed finite pose interpolation certificate under conditional sensor/motion assumptions; not a MuJoCo control or dynamic navigation success."
+}

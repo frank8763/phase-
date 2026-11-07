@@ -1,0 +1,464 @@
+{
+  "status": "SAVED_ROUTE_TRIGGER_DIAGNOSIS_COMPLETE",
+  "new_models": 0,
+  "new_integrations": 0,
+  "new_predictions": 0,
+  "source_hashes": {
+    "runs/v790_persistent_body_global/main_slot01/paired/geometry_memory/route_revalidation.jsonl": "5ff8b65c7d35999d8273a320cd9ae8afb4b7804b5d7b0b0271499bb2da54c041",
+    "runs/v790_persistent_body_global/main_slot01/paired/geometry_memory/gear_transitions.jsonl": "fd552c487e8aac2dcebe3bfeedabad38e2d9ef805905201943b3261a7d919d19",
+    "runs/v790_persistent_body_global/main_slot01/paired/geometry_memory/model_admission.jsonl": "93b59706fe0706eb3b49c13c729501bcff43676a531d87f7791474f46fe5fe8e"
+  },
+  "route_revalidation_rows": 398,
+  "flag_true_counts": {
+    "current_route_invalid": 146,
+    "old_net_motion_stagnant": 0,
+    "stagnated_without_route_progress": 0
+  },
+  "path_index_zero_rows": 169,
+  "plans": 148,
+  "plans_immediately_after_invalid_old_route": 146,
+  "first_reverse_plan_step": 217,
+  "first_reverse_window": [
+    {
+      "step": 210,
+      "old_reference": {
+        "step": 210,
+        "index": 0,
+        "last_plan": 209,
+        "current_route_minimum_m": 0.13344752002158833,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 0,
+        "first_gear": 1.0,
+        "points": 151,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 211,
+      "old_reference": {
+        "step": 211,
+        "index": 0,
+        "last_plan": 210,
+        "current_route_minimum_m": 0.11223983371606372,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 0,
+        "first_gear": 1.0,
+        "points": 151,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 212,
+      "old_reference": {
+        "step": 212,
+        "index": 0,
+        "last_plan": 211,
+        "current_route_minimum_m": 0.11282906451048944,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 0,
+        "first_gear": 1.0,
+        "points": 151,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 213,
+      "old_reference": {
+        "step": 213,
+        "index": 0,
+        "last_plan": 212,
+        "current_route_minimum_m": 0.11794200957335715,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 0,
+        "first_gear": 1.0,
+        "points": 145,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 214,
+      "old_reference": {
+        "step": 214,
+        "index": 0,
+        "last_plan": 213,
+        "current_route_minimum_m": 0.11668714734482927,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 0,
+        "first_gear": 1.0,
+        "points": 145,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 215,
+      "old_reference": {
+        "step": 215,
+        "index": 0,
+        "last_plan": 214,
+        "current_route_minimum_m": 0.08687504665214846,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 0,
+        "first_gear": 1.0,
+        "points": 145,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 216,
+      "old_reference": {
+        "step": 216,
+        "index": 0,
+        "last_plan": 215,
+        "current_route_minimum_m": 0.08920508665182703,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 0,
+        "first_gear": 1.0,
+        "points": 145,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 217,
+      "old_reference": {
+        "step": 217,
+        "index": 0,
+        "last_plan": 216,
+        "current_route_minimum_m": 0.09120057124070557,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 6,
+        "first_gear": 1.0,
+        "points": 157,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 218,
+      "old_reference": {
+        "step": 218,
+        "index": 0,
+        "last_plan": 217,
+        "current_route_minimum_m": 0.10749991124806818,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 6,
+        "first_gear": 1.0,
+        "points": 157,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 219,
+      "old_reference": {
+        "step": 219,
+        "index": 0,
+        "last_plan": 218,
+        "current_route_minimum_m": 0.06038870617797035,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 6,
+        "first_gear": 1.0,
+        "points": 157,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 220,
+      "old_reference": {
+        "step": 220,
+        "index": 0,
+        "last_plan": 219,
+        "current_route_minimum_m": 0.0918449867785277,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 6,
+        "first_gear": 1.0,
+        "points": 163,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 221,
+      "old_reference": {
+        "step": 221,
+        "index": 0,
+        "last_plan": 220,
+        "current_route_minimum_m": 0.06593385272595217,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 6,
+        "first_gear": 1.0,
+        "points": 163,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 222,
+      "old_reference": {
+        "step": 222,
+        "index": 0,
+        "last_plan": 221,
+        "current_route_minimum_m": 0.07282554975079097,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 6,
+        "first_gear": 1.0,
+        "points": 157,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 223,
+      "old_reference": {
+        "step": 223,
+        "index": 0,
+        "last_plan": 222,
+        "current_route_minimum_m": 0.07239629472597417,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 6,
+        "first_gear": 1.0,
+        "points": 157,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    },
+    {
+      "step": 224,
+      "old_reference": {
+        "step": 224,
+        "index": 0,
+        "last_plan": 223,
+        "current_route_minimum_m": 0.06715596168500923,
+        "current_route_invalid": true,
+        "old_net_motion_stagnant": false,
+        "route_arc_progress_last30_m": null,
+        "stagnated_without_route_progress": false,
+        "source": "current causal joint occupancy and executed same-reference progress",
+        "authorizes_control": false,
+        "future_native_gate_unchanged": true
+      },
+      "new_plan": {
+        "status": "GLOBAL_GOAL_PATH",
+        "reverse_nodes": 6,
+        "first_gear": 1.0,
+        "points": 157,
+        "projection_horizon_s": 6.56
+      },
+      "actual_admission": {
+        "status": "MODEL_SAFE_COMMAND",
+        "active_gear": 1,
+        "certified_backup_handover": null,
+        "hidden_world_geometry_used": false
+      }
+    }
+  ],
+  "gear_transition_count": 18,
+  "gear_transition_status_counts": {
+    "RESERVED_RECOVERY_START": 8,
+    "CERTIFIED_BACKUP_HANDOVER": 10
+  },
+  "interpretation": "Stored route validation repeatedly rejects the old projected reference and resets path progress through replanning. First reverse plan follows this invalidation, not an absence of GLOBAL_GOAL_PATH. These logs do not prove a new controller will pass or that horizon shortening is safe."
+}

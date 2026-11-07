@@ -1,0 +1,19 @@
+{
+  "label": "v840_reference_differential_confirmation",
+  "output": "runs/v840_reference_differential_confirmation",
+  "window": "confirmation01",
+  "confirmation": true,
+  "absolute_deadline_unix": 1793977200.0,
+  "batch_cap_s": 36000,
+  "minimum_start_budget_s": 36000,
+  "repeat_slots": [
+    1,
+    9,
+    17
+  ],
+  "reference_pair": null,
+  "reference_view": "runs/reference_differential_20261106/qualification/reference/paired",
+  "report": "docs/RPCCR_REFERENCE_DIFFERENTIAL_V840_REPORT.md",
+  "archive": "evidence/rpccr_reference_differential_v840_20261106",
+  "dependency": "runs/v839_reference_differential_development"
+}

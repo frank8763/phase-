@@ -1,0 +1,27 @@
+{
+  "started_unix": 1793677779.542945,
+  "absolute_deadline_unix": 1793678079.542945,
+  "limit_s": 300,
+  "round_closed": true,
+  "new_initializations": 0,
+  "new_integrations": 0,
+  "status": "REMAINING_PHYSICAL_CAUSAL_SAVED_CHECKS_COMPLETE_FUNCTIONAL_FAIL_RETAINED",
+  "records": [
+    {
+      "script": "audit_shadow_mode.py",
+      "status": "PASS",
+      "failed_checks": []
+    },
+    {
+      "script": "audit_field_discovery.py",
+      "status": "FAIL",
+      "failed_checks": [
+        "moving_before_discovery",
+        "new_causal_route_after_stop",
+        "actually_continued_after_replanning",
+        "strict_arrival"
+      ]
+    }
+  ],
+  "elapsed_s": 12.651753664016724
+}

@@ -1,0 +1,171 @@
+{
+  "status": "CLOSED_DEPENDENCY_NON_ARRIVAL",
+  "results": [
+    {
+      "name": "teacher6m",
+      "distance_m": 6,
+      "phase": 0.0,
+      "model": null,
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 95000011,
+        "outcome": "GOAL",
+        "strict_safe_arrival": true,
+        "goal_distance_m": 0.4483258986773098,
+        "public_steps": 884,
+        "physics_steps": 7072,
+        "contacts": {
+          "physics_steps": 7072,
+          "all_contact_records": 78322,
+          "contact_type_counts": {
+            "ground_support": 56576,
+            "robot_self_contact": 21746
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 56576,
+            "robot_self_contact": 21746
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "1807341b9fb47bc6e6e5c31e0756fa9879f7d095099c9295d257bf6c9d145e11"
+        },
+        "backup_attempts": 0,
+        "backup_steps": 0,
+        "planning_attempts": 8,
+        "planning_wall_s": 2.3577684489864623,
+        "command_overrides": 884,
+        "elapsed_s": 453.2411713420006,
+        "initial_state_hash": "5744a495e0b20156e8633498bfcc0269132bd1dc817a5242c3d361c4df62cec0",
+        "normalized_initial_state_hash": "d71909854f432a0f417220a2e714d51d6a9d3aa9789ebbaba89ad3ac2f804611",
+        "minimum_actual_self_domain_margin_m": 0.00919027004190448,
+        "self_geometry_checked_native_ticks": 7072,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "dynamic_52_future_distance",
+        "prediction_steps": 3983856,
+        "native_applied_ctrl_checks": 7072,
+        "reserved_recovery_activations": 0,
+        "reserved_recovery_public_steps": 0,
+        "certified_handover_attempts": 0,
+        "certified_handover_successes": 0,
+        "proposal_model_sha256": null,
+        "course_distance_m": 6.0,
+        "course_phase": 0.0,
+        "initial_observation_steps": 32,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 1.1105634359025558,
+        "actor_maximum_native_displacement_m": 0.0007999996585803526,
+        "actor_motion_ticks": 7072,
+        "actor_position_at_end": [
+          -1.0,
+          -2.1491487112898975
+        ]
+      },
+      "runner_exit": 0,
+      "run": "runs/v688_dynamic_distance_curriculum/teacher6m/paired",
+      "evidence_audits_pass": true
+    },
+    {
+      "name": "learned6m_train_task",
+      "distance_m": 6,
+      "phase": 0.0,
+      "model": "runs/v688_dynamic_distance_curriculum/training_6m/proposer.json",
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 95000011,
+        "outcome": "HORIZON",
+        "strict_safe_arrival": false,
+        "goal_distance_m": 1.0744962033524588,
+        "public_steps": 900,
+        "physics_steps": 7200,
+        "contacts": {
+          "physics_steps": 7200,
+          "all_contact_records": 78373,
+          "contact_type_counts": {
+            "ground_support": 57600,
+            "robot_self_contact": 20773
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 57600,
+            "robot_self_contact": 20773
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "42d64171072b8e3ebe0150e7e0dab5c3f42ed14f8f9707a2e2cec48c4cca32a6"
+        },
+        "backup_attempts": 0,
+        "backup_steps": 0,
+        "planning_attempts": 9,
+        "planning_wall_s": 3.197506081996835,
+        "command_overrides": 900,
+        "elapsed_s": 452.47220799200295,
+        "initial_state_hash": "2156c09e62c539c01680a3a1c52acbb543e7d510fc27a4fb2b94f39f258b9b69",
+        "normalized_initial_state_hash": "d71909854f432a0f417220a2e714d51d6a9d3aa9789ebbaba89ad3ac2f804611",
+        "minimum_actual_self_domain_margin_m": 0.009206614260928558,
+        "self_geometry_checked_native_ticks": 7200,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "dynamic_52_future_distance",
+        "prediction_steps": 4269904,
+        "native_applied_ctrl_checks": 7200,
+        "reserved_recovery_activations": 0,
+        "reserved_recovery_public_steps": 0,
+        "certified_handover_attempts": 0,
+        "certified_handover_successes": 0,
+        "proposal_model_sha256": "c77b5f833fe77d3cadbab9fb41835426a058249728eee94a0cf8e92aa88796c0",
+        "course_distance_m": 6.0,
+        "course_phase": 0.0,
+        "initial_observation_steps": 32,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 0.5132285635995082,
+        "actor_maximum_native_displacement_m": 0.0007999996585803526,
+        "actor_motion_ticks": 7200,
+        "actor_position_at_end": [
+          -1.0,
+          -2.2167127889565754
+        ]
+      },
+      "runner_exit": 0,
+      "run": "runs/v688_dynamic_distance_curriculum/learned6m_train_task/paired",
+      "evidence_audits_pass": true
+    }
+  ],
+  "training": [
+    {
+      "status": "FINITE_BC_TRAINED",
+      "gradient_updates": 512,
+      "samples": 852,
+      "initial_mse": 0.12344330050403604,
+      "final_mse": 0.016181862901918597,
+      "numpy_torch_max_difference": 5.329070518200751e-15,
+      "model_sha256": "c77b5f833fe77d3cadbab9fb41835426a058249728eee94a0cf8e92aa88796c0",
+      "teacher": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v688_dynamic_distance_curriculum/teacher6m/paired",
+      "teacher_distance_m": 6.0,
+      "source_sample_sha256": "c26ba08c1e15c23ffb3d6f3dca00908897416e1d072222c652515894d48d6acc",
+      "integrations": 0,
+      "sac_updates": 0,
+      "elapsed_s": 0.253582239151001,
+      "evaluation_split": "separate post-freeze episodes; no within-episode random split used as generalization"
+    }
+  ],
+  "round_closed": true,
+  "elapsed_s": 463.24039793014526,
+  "six_meter_gate_passed": false,
+  "eight_meter_started": false,
+  "automatic_additional_simulation": false,
+  "no_independent_dynamic_stability_claim": true
+}

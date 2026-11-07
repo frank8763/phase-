@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "checks": {
+    "causal_projection_sources": true,
+    "all_registered_plans_recomputed": true,
+    "projection_contains_original_joint_cells": true,
+    "model_sha_matches": true,
+    "learned_inference_matches": true,
+    "teacher_samples_executed_only": true,
+    "course_distance_matches": true
+  },
+  "planning_records": [
+    {
+      "step": 265,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 282,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 373,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 375,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 376,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 377,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 436,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 455,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 467,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    }
+  ],
+  "all_recomputed_plan_steps": [
+    0,
+    265,
+    282,
+    373,
+    375,
+    376,
+    377,
+    436,
+    455,
+    467
+  ],
+  "tracked_projection_count": 9,
+  "learned_candidates_total": 582,
+  "learned_candidates_safe": 582,
+  "maximum_learned_target_error": 0.0,
+  "learned_actual_ordinary_steps": 182,
+  "ordinary_teacher_sample_count": 582,
+  "verification_integrations": 0,
+  "scope": "causal geometric proposal containment and actual finite learned-target participation, not learned model superiority"
+}

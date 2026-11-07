@@ -1,0 +1,79 @@
+{
+  "condition": "frozen_sac",
+  "seed": 73105157,
+  "outcome": "CONTACT_OR_UNKNOWN",
+  "strict_safe_arrival": false,
+  "goal_distance_m": 5.424790134945434,
+  "public_steps": 87,
+  "physics_steps": 696,
+  "contacts": {
+    "physics_steps": 696,
+    "all_contact_records": 7198,
+    "contact_type_counts": {
+      "ground_support": 5564,
+      "robot_self_contact": 1625,
+      "robot_obstacle_penetration": 9
+    },
+    "negative_distance_counts_all_types": {
+      "ground_support": 5564,
+      "robot_self_contact": 1625,
+      "robot_obstacle_penetration": 9
+    },
+    "robot_obstacle_contact_records": 9,
+    "robot_obstacle_penetration_records": 9,
+    "robot_obstacle_contact_steps": 3,
+    "robot_obstacle_penetration_steps": 3,
+    "maximum_obstacle_penetration_depth_m": 0.00022946352166135144,
+    "minimum_obstacle_distance_m": -0.00022946352166135144,
+    "first_anomaly": {
+      "physics_step": 694,
+      "public_step": 86,
+      "sim_time": 6.9399999999998965,
+      "geom1_id": 21,
+      "geom2_id": 23,
+      "body1_id": 0,
+      "body2_id": 1,
+      "geom1_name": "real_circle_obs_10",
+      "geom2_name": "chassis_collision",
+      "contact_distance": -0.00022946352166135144,
+      "negative_distance_penetration": true,
+      "contact_type": "robot_obstacle_penetration",
+      "position": [
+        -0.8860478203410618,
+        2.8971684864043743,
+        0.10188377926207368
+      ],
+      "classification_basis": {
+        "geom1": {
+          "xml": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v648_static_unknown/static_pilot_02/paired/assets/isolated_indoor.xml",
+          "xml_attachment": "worldbody/direct_geom",
+          "declared_type": "cylinder",
+          "actual_body_id": 0,
+          "reason": "environment generator declaration + compiled world attachment/type",
+          "construction": "training/envs/mkmini_real_indoor_astar_sac_env.py::_make_real_indoor_xml",
+          "activation": "Phase19::_phase19_activate_geom (evaluation-only, hidden included)"
+        },
+        "geom2": {
+          "reason": "geom_bodyid in verified free-root body subtree",
+          "root_body_id": 1,
+          "body_id": 1
+        }
+      }
+    },
+    "unknown_contact_records": 0,
+    "robot_obstacle_geom_pairs": [
+      [
+        21,
+        23
+      ]
+    ],
+    "contact_log_content_sha256": "d73bc8dc6e1d4895ee5961efd1187db7e4dbd18e4e05beee31917de630ab2562"
+  },
+  "planning_attempts": 0,
+  "planning_wall_s": 0.0,
+  "command_overrides": 0,
+  "elapsed_s": 8.418017636984587,
+  "initial_state_hash": "557293926161050f5b742d36da4009533baccbb83c151909e645717dd7142744",
+  "static_obstacle_pose_unchanged": true,
+  "root_mutations_outside_mjstep": 0
+}

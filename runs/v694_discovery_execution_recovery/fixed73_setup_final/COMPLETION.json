@@ -1,0 +1,24 @@
+{
+  "status": "FAILED",
+  "error": {
+    "type": "TypeError",
+    "message": "list indices must be integers or slices, not tuple",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v694_discovery_execution_recovery/probe_initial.py\", line 33, in <module>\n    actual=SimpleNamespace(half=(b[2:]-b[:2])/2,center_local=(b[2:]+b[:2])/2,rectangles=[],circles=[[*motion.xy(d.time),.1]],sensor_points=[],sensor_extra=0.,config=SimpleNamespace(lower=-5.,upper=5.));minimum=min(minimum,float(pose_values(actual,[[q[0],q[1],yaw]])[0]))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v694_discovery_execution_recovery/exact_footprint.py\", line 27, in pose_values\n    d=points[None,:,:2]-center[:,None,:]\nTypeError: list indices must be integers or slices, not tuple\n"
+  },
+  "replay_native_steps": 1,
+  "private_prediction_integrations": 0,
+  "forecast_integrations": 0,
+  "private_execute_integrations": 0,
+  "maximum_old_public_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "private_full_state_ctrl_matching": false,
+  "minimum_replay_native_clearance_m": 1000000000.0,
+  "minimum_replay_self_margin_m": 0.00996227212991696,
+  "bad_contacts": 0,
+  "elapsed_s": 0.0008750459965085611,
+  "summary": null,
+  "new_navigation_tasks": 0
+}

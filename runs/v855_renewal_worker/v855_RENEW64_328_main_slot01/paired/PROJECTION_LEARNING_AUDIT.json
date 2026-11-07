@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": {
+    "causal_projection_sources": true,
+    "all_registered_plans_recomputed": true,
+    "projection_contains_original_joint_cells": true,
+    "model_sha_matches": true,
+    "learned_inference_matches": true,
+    "teacher_samples_executed_only": true,
+    "course_distance_matches": true
+  },
+  "planning_records": [
+    {
+      "step": 303,
+      "maximum_containment_excess": -9.499999999107445e-06,
+      "source_hidden_world_geometry_used": false
+    }
+  ],
+  "all_recomputed_plan_steps": [
+    0,
+    303
+  ],
+  "tracked_projection_count": 1,
+  "learned_candidates_total": 301,
+  "learned_candidates_safe": 301,
+  "maximum_learned_target_error": 0.0,
+  "learned_actual_ordinary_steps": 145,
+  "ordinary_teacher_sample_count": 264,
+  "verification_integrations": 0,
+  "scope": "causal geometric proposal containment and actual finite learned-target participation, not learned model superiority"
+}

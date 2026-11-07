@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checks": {
+    "initial_raw_sensor_filter_exact": true,
+    "initial_prior_reconstructed": true,
+    "initial_unobserved_real_actor": true,
+    "registered_geometry": true,
+    "all_raw_packets_reconstructed": true,
+    "all_causal_states_reconstructed": true,
+    "all329_future_coverage": true,
+    "first_detection_from_actual_sensor": true,
+    "moving_before_discovery": true,
+    "discovery_state_exact": true,
+    "no_initial_stationary_observation": true,
+    "complete328_stop": true,
+    "stop_canonical_commands": true,
+    "stop_geometry_recomputed": true,
+    "stop_full_state_ctrl": true,
+    "actual_deceleration": true,
+    "new_causal_route_after_stop": true,
+    "actually_continued_after_replanning": true,
+    "strict_arrival": true
+  },
+  "details": {
+    "first_detection_step": 27,
+    "first_detection_sim_time_s": 2.159999999999998,
+    "speed_before_discovery_m_s": 0.21309736559046866,
+    "forward_progress_before_discovery_m": 0.3923399616587182,
+    "minimum_last10_speed_m_s": 0.21273187623588824,
+    "terminal_stop_speed_m_s": 0.00010268399842574039,
+    "stop_public_steps": 41,
+    "stop_minimum_causal_clearance_m": 0.9538365610740618,
+    "maximum_stop_state_control_error": 0.0,
+    "first_post_stop_replan_step": 68,
+    "new_reference_current_causal_clearance_m": 0.18056661937831553,
+    "post_stop_actual_displacement_m": 7.571525872368241,
+    "preserves_task_assumption": "startup3m exclusion is a declared prior, not inferred from nondetections"
+  },
+  "verification_integrations": 0,
+  "gradient_updates": 0,
+  "scope": "finite range-entry moving discovery under registered startup clearing, not arbitrary occlusion/spawning"
+}

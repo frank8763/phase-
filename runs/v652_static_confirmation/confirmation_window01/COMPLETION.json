@@ -1,0 +1,106 @@
+{
+  "status": "GATE_FAILED_PHYSICAL_SOURCE_OR_SCENE_AUDIT",
+  "elapsed_s": 3577.315396283,
+  "limit_s": 14400,
+  "selected_tasks": 24,
+  "completed_confirmation_attempts": 5,
+  "strict_arrivals": 4,
+  "class_successes": {
+    "single_event": 1,
+    "legacy_two": 3
+  },
+  "repeats_attempted": 0,
+  "remaining_selected_unattempted": [
+    {
+      "seed": 94000052,
+      "scene": "legacy_two"
+    },
+    {
+      "seed": 94000054,
+      "scene": "legacy_two"
+    },
+    {
+      "seed": 94000058,
+      "scene": "legacy_two"
+    },
+    {
+      "seed": 94000069,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000081,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000097,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000103,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000120,
+      "scene": "legacy_two"
+    },
+    {
+      "seed": 94000127,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000129,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000136,
+      "scene": "legacy_two"
+    },
+    {
+      "seed": 94000141,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000146,
+      "scene": "legacy_two"
+    },
+    {
+      "seed": 94000163,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000173,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000177,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000189,
+      "scene": "single_event"
+    },
+    {
+      "seed": 94000252,
+      "scene": "legacy_two"
+    },
+    {
+      "seed": 94000286,
+      "scene": "legacy_two"
+    }
+  ],
+  "static_engineering_acceptance_passed": false,
+  "checks": {
+    "24_fixed_distinct_tasks": true,
+    "all_24_completed": false,
+    "at_least_23_strict_arrivals": false,
+    "single_at_least_11": false,
+    "two_at_least_11": false,
+    "all_27_physical_audits": false,
+    "three_matching_cross_scene_repeats": false,
+    "bounded_window_respected": true,
+    "source_and_protocol_unchanged": true
+  },
+  "dynamic_started": false,
+  "training_updates": 0,
+  "scope": "finite geometric-reference-eligible static cylinder benchmark; user review required before dynamics"
+}

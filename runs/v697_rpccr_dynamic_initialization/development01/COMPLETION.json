@@ -1,0 +1,547 @@
+{
+  "status": "PROVISIONAL_INITIALIZATION_AND_ORIGINAL_SLOT12_DEVELOPMENT_PASS",
+  "results": [
+    {
+      "name": "anchor_phase0",
+      "run": "runs/v697_rpccr_dynamic_initialization/anchor_phase0/paired",
+      "runner_exit": 0,
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 95000011,
+        "outcome": "GOAL",
+        "strict_safe_arrival": true,
+        "goal_distance_m": 0.44134163040850716,
+        "public_steps": 765,
+        "physics_steps": 6120,
+        "contacts": {
+          "physics_steps": 6120,
+          "all_contact_records": 67883,
+          "contact_type_counts": {
+            "ground_support": 48960,
+            "robot_self_contact": 18923
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 48960,
+            "robot_self_contact": 18923
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "ebb0434f03629f242711ae690b905e00a9a6771d9e6540c0826000f28c2a4527"
+        },
+        "backup_attempts": 0,
+        "backup_steps": 0,
+        "planning_attempts": 2,
+        "planning_wall_s": 0.5308056020003278,
+        "command_overrides": 765,
+        "elapsed_s": 324.6692259160045,
+        "initial_state_hash": "99efb2494cd64287061374b7d981f5eb7ba0b0f10651d4172b25adc098baf88c",
+        "normalized_initial_state_hash": "75a7dccff91791eba3d77f5c7ad2a1db7eb7b2bb1caa8887c9806223fc4b91f7",
+        "minimum_actual_self_domain_margin_m": 0.009187881173919943,
+        "self_geometry_checked_native_ticks": 6120,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "dynamic_56_renewal_preview_verified_fixture",
+        "prediction_steps": 3507560,
+        "first_discovery_step": 32,
+        "discovery_brake_finished_step": 72,
+        "discovery_terminal_speed_m_s": 5.640839839661003e-05,
+        "initial_unknown_mode": "UNSEEN_PRIOR",
+        "native_applied_ctrl_checks": 6120,
+        "reserved_recovery_activations": 0,
+        "reserved_recovery_public_steps": 0,
+        "certified_handover_attempts": 0,
+        "certified_handover_successes": 0,
+        "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+        "course_distance_m": 8.0,
+        "course_phase": 0.0,
+        "initial_observation_steps": 0,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 0.44925492026888136,
+        "actor_maximum_native_displacement_m": 0.0007999996585803526,
+        "actor_motion_ticks": 6120,
+        "actor_position_at_end": [
+          -0.6000000000000001,
+          -1.8324563369144258
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "physical_audits_passed": true,
+      "discovery_chain_audit_passed": true
+    },
+    {
+      "name": "original_slot12",
+      "run": "runs/v697_rpccr_dynamic_initialization/original_slot12/paired",
+      "runner_exit": 0,
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 97010012,
+        "outcome": "GOAL",
+        "strict_safe_arrival": true,
+        "goal_distance_m": 0.44543294000865274,
+        "public_steps": 788,
+        "physics_steps": 6304,
+        "contacts": {
+          "physics_steps": 6304,
+          "all_contact_records": 68920,
+          "contact_type_counts": {
+            "ground_support": 50432,
+            "robot_self_contact": 18488
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 50432,
+            "robot_self_contact": 18488
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "37f31c4177508062af2d3358bf0f25b53afa39110370ded837cdac7b1240a93b"
+        },
+        "backup_attempts": 0,
+        "backup_steps": 0,
+        "planning_attempts": 2,
+        "planning_wall_s": 1.2730994719895534,
+        "command_overrides": 788,
+        "elapsed_s": 452.9089513649815,
+        "initial_state_hash": "cd938a2aceba0477f38bd297345a8ab59d22f75c0519595d90098fd8908d1e75",
+        "normalized_initial_state_hash": "0752976682a2abe0826065ff626be5ad22470e2c81b0c4c0f9277dd574fbd074",
+        "minimum_actual_self_domain_margin_m": 0.009157196162935755,
+        "self_geometry_checked_native_ticks": 6304,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "dynamic_56_renewal_preview_verified_fixture",
+        "prediction_steps": 3966304,
+        "first_discovery_step": 31,
+        "discovery_brake_finished_step": 71,
+        "discovery_terminal_speed_m_s": 1.3434961414413522e-05,
+        "initial_unknown_mode": "UNSEEN_PRIOR",
+        "native_applied_ctrl_checks": 6304,
+        "reserved_recovery_activations": 0,
+        "reserved_recovery_public_steps": 0,
+        "certified_handover_attempts": 0,
+        "certified_handover_successes": 0,
+        "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+        "course_distance_m": 8.0,
+        "course_phase": 1.0726209215571556,
+        "initial_observation_steps": 0,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 0.2931453049981023,
+        "actor_maximum_native_displacement_m": 0.0007999996505616558,
+        "actor_motion_ticks": 6304,
+        "actor_position_at_end": [
+          -0.6000000000000001,
+          -1.8303733699348128
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "physical_audits_passed": true,
+      "discovery_chain_audit_passed": true
+    },
+    {
+      "name": "original_slot12_repeat",
+      "run": "runs/v697_rpccr_dynamic_initialization/original_slot12_repeat/paired",
+      "runner_exit": 0,
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 97010012,
+        "outcome": "GOAL",
+        "strict_safe_arrival": true,
+        "goal_distance_m": 0.44543294000865274,
+        "public_steps": 788,
+        "physics_steps": 6304,
+        "contacts": {
+          "physics_steps": 6304,
+          "all_contact_records": 68920,
+          "contact_type_counts": {
+            "ground_support": 50432,
+            "robot_self_contact": 18488
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 50432,
+            "robot_self_contact": 18488
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "81987678761272b21d101535dafdc5c0d823c7d3dae81579c6964ff456530412"
+        },
+        "backup_attempts": 0,
+        "backup_steps": 0,
+        "planning_attempts": 2,
+        "planning_wall_s": 1.160789512010524,
+        "command_overrides": 788,
+        "elapsed_s": 465.5101640950015,
+        "initial_state_hash": "2e40e559152bc9ba7c2afb928a2e64b264f94a5e24b1f60b976851562a0bea58",
+        "normalized_initial_state_hash": "0752976682a2abe0826065ff626be5ad22470e2c81b0c4c0f9277dd574fbd074",
+        "minimum_actual_self_domain_margin_m": 0.009157196162935755,
+        "self_geometry_checked_native_ticks": 6304,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "dynamic_56_renewal_preview_verified_fixture",
+        "prediction_steps": 3966304,
+        "first_discovery_step": 31,
+        "discovery_brake_finished_step": 71,
+        "discovery_terminal_speed_m_s": 1.3434961414413522e-05,
+        "initial_unknown_mode": "UNSEEN_PRIOR",
+        "native_applied_ctrl_checks": 6304,
+        "reserved_recovery_activations": 0,
+        "reserved_recovery_public_steps": 0,
+        "certified_handover_attempts": 0,
+        "certified_handover_successes": 0,
+        "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+        "course_distance_m": 8.0,
+        "course_phase": 1.0726209215571556,
+        "initial_observation_steps": 0,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 0.2931453049981023,
+        "actor_maximum_native_displacement_m": 0.0007999996505616558,
+        "actor_motion_ticks": 6304,
+        "actor_position_at_end": [
+          -0.6000000000000001,
+          -1.8303733699348128
+        ]
+      },
+      "completion_status": "COMPLETE",
+      "physical_audits_passed": true,
+      "discovery_chain_audit_passed": true
+    }
+  ],
+  "preflights": [
+    {
+      "task": {
+        "slot": 1,
+        "seed": 97010001,
+        "phase": 0.9458740668058504,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot01/paired"
+    },
+    {
+      "task": {
+        "slot": 2,
+        "seed": 97010002,
+        "phase": 0.866008556219212,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot02/paired"
+    },
+    {
+      "task": {
+        "slot": 3,
+        "seed": 97010003,
+        "phase": 0.7594248321210966,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot03/paired"
+    },
+    {
+      "task": {
+        "slot": 4,
+        "seed": 97010004,
+        "phase": 1.0820730626774269,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot04/paired"
+    },
+    {
+      "task": {
+        "slot": 5,
+        "seed": 97010005,
+        "phase": 1.3869493519003624,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot05/paired"
+    },
+    {
+      "task": {
+        "slot": 6,
+        "seed": 97010006,
+        "phase": 1.1780128604994606,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot06/paired"
+    },
+    {
+      "task": {
+        "slot": 7,
+        "seed": 97010007,
+        "phase": 1.4377202667939255,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot07/paired"
+    },
+    {
+      "task": {
+        "slot": 8,
+        "seed": 97010008,
+        "phase": 1.4533524657054244,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot08/paired"
+    },
+    {
+      "task": {
+        "slot": 9,
+        "seed": 97010009,
+        "phase": 0.37833436780098795,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot09/paired"
+    },
+    {
+      "task": {
+        "slot": 10,
+        "seed": 97010010,
+        "phase": 1.4478200440266533,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot10/paired"
+    },
+    {
+      "task": {
+        "slot": 11,
+        "seed": 97010011,
+        "phase": 0.3206635482920738,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot11/paired"
+    },
+    {
+      "task": {
+        "slot": 12,
+        "seed": 97010012,
+        "phase": 1.0726209215571556,
+        "initial_motion_direction": "POSITIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot12/paired"
+    },
+    {
+      "task": {
+        "slot": 13,
+        "seed": 97010013,
+        "phase": 3.2540466288854017,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot13/paired"
+    },
+    {
+      "task": {
+        "slot": 14,
+        "seed": 97010014,
+        "phase": 3.251512464991316,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot14/paired"
+    },
+    {
+      "task": {
+        "slot": 15,
+        "seed": 97010015,
+        "phase": 3.534162475123834,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot15/paired"
+    },
+    {
+      "task": {
+        "slot": 16,
+        "seed": 97010016,
+        "phase": 3.74415009346241,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot16/paired"
+    },
+    {
+      "task": {
+        "slot": 17,
+        "seed": 97010017,
+        "phase": 4.600090700984541,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot17/paired"
+    },
+    {
+      "task": {
+        "slot": 18,
+        "seed": 97010018,
+        "phase": 3.6908869936811617,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot18/paired"
+    },
+    {
+      "task": {
+        "slot": 19,
+        "seed": 97010019,
+        "phase": 3.5606434419185993,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot19/paired"
+    },
+    {
+      "task": {
+        "slot": 20,
+        "seed": 97010020,
+        "phase": 3.480407154295867,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot20/paired"
+    },
+    {
+      "task": {
+        "slot": 21,
+        "seed": 97010021,
+        "phase": 4.075981138611324,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot21/paired"
+    },
+    {
+      "task": {
+        "slot": 22,
+        "seed": 97010022,
+        "phase": 3.2894827262565305,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot22/paired"
+    },
+    {
+      "task": {
+        "slot": 23,
+        "seed": 97010023,
+        "phase": 4.533766338838149,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot23/paired"
+    },
+    {
+      "task": {
+        "slot": 24,
+        "seed": 97010024,
+        "phase": 4.083204308000829,
+        "initial_motion_direction": "NEGATIVE_Y",
+        "course_distance_m": 8.0,
+        "initial_actor_anchor_distance_m": 3.4,
+        "initial_clear_center_prior_m": 3.0,
+        "role": "FRESH_CONFIRMATION"
+      },
+      "run": "runs/v697_rpccr_dynamic_initialization/t0_slot24/paired"
+    }
+  ],
+  "round_closed": true,
+  "elapsed_s": 1446.3234024047852,
+  "moving_discovery_gate_passed": true,
+  "automatic_additional_simulation": false,
+  "fresh_confirmation": false,
+  "old_overnight_records_changed": false
+}

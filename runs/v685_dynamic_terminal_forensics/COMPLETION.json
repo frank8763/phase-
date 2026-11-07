@@ -1,0 +1,26 @@
+{
+  "status": "FAILED",
+  "error": {
+    "type": "AttributeError",
+    "message": "'CommandMap' object has no attribute 'limits'",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v685_dynamic_terminal_forensics/reproduce_components.py\", line 27, in <module>\n    field=SimpleNamespace(**vars(static));field.pose_values=MethodType(pose_values,field);install_time_gate(field,states[753],'predictive',protocol['known_circles'],protocol['known_rectangles']);t=np.arange(1,241)*.01;limits=predictor.command_map.limits;rate=predictor.command_map.rate;current=d.ctrl[ids].copy()\nAttributeError: 'CommandMap' object has no attribute 'limits'\n"
+  },
+  "elapsed_s": 2.7378322889999254,
+  "replay_native_steps": 6024,
+  "private_prediction_integrations": 0,
+  "cumulative_round_fixed_private_integrations": 20344,
+  "maximum_public_qpos_qvel_mocap_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "minimum_actual_replay_clearance_m": 0.21339147085486265,
+  "minimum_replay_self_margin_m": 0.009103002749196454,
+  "bad_contacts": 0,
+  "new_navigation_tasks": 0,
+  "new_algorithm_candidates": 0,
+  "original_absolute_deadline_unix": 1793527512.016538,
+  "records": [],
+  "source_sha256": "ee746666f039a72ee6ea8c072b998eef80721922c7c70c2cd5be65a74a026a2c",
+  "scope": "same18already-recorded targets at original unexecuted final decision; actual future evaluator-only; no new control search or success claim"
+}

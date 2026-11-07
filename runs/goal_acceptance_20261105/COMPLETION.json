@@ -1,0 +1,46 @@
+{
+  "status": "STOPPED_STAGE_NOT_PASSED",
+  "stages": [
+    {
+      "stage": "v827_goal_route_validation",
+      "final": {
+        "status": "ALL_THREE_KNOWN_ROUTES_DEVELOPMENT_VERIFIED",
+        "development_passed": true,
+        "confirmation_passed": false,
+        "combined_three_route_development_passed": true,
+        "archive": "evidence/rpccr_v827_goal_route_validation_20261105",
+        "transport": "evidence/rpccr_v827_goal_route_validation_20261105_transport",
+        "source_and_decompressed_sha_verified": true,
+        "raw_files": 133777,
+        "raw_bytes": 6625133962,
+        "raw_deleted": false,
+        "report": "docs/RPCCR_GOAL_ROUTE_VALIDATION_V827_REPORT.md",
+        "new_models_finalizer": 0,
+        "new_integrations_finalizer": 0
+      },
+      "final_audit": "runs/v827_goal_route_validation/FINAL_INDEPENDENT_AUDIT.json"
+    },
+    {
+      "stage": "v828_goal_dynamic_confirmation",
+      "final": {
+        "status": "NOT_PASSED",
+        "development_passed": false,
+        "confirmation_passed": false,
+        "combined_three_route_development_passed": false,
+        "archive": "evidence/rpccr_v828_goal_dynamic_confirmation_20261105",
+        "transport": "evidence/rpccr_v828_goal_dynamic_confirmation_20261105_transport",
+        "source_and_decompressed_sha_verified": true,
+        "raw_files": 151997,
+        "raw_bytes": 8370515548,
+        "raw_deleted": false,
+        "report": "docs/RPCCR_GOAL_CONFIRMATION_V828_REPORT.md",
+        "new_models_finalizer": 0,
+        "new_integrations_finalizer": 0
+      },
+      "final_audit": "runs/v828_goal_dynamic_confirmation/FINAL_INDEPENDENT_AUDIT.json"
+    }
+  ],
+  "no_automatic_new_experiments": true,
+  "confirmation_started": true,
+  "confirmation_unexecuted_main_if_not_started": null
+}

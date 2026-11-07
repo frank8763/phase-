@@ -1,0 +1,30 @@
+{
+  "run": "dev28_seed93000074_legacy_two",
+  "source_revision": "progress_28_path_projection",
+  "strict_safe_arrival": true,
+  "checks": {
+    "source_snapshot_verified": true,
+    "source_matches_registered_candidate": true,
+    "same_initial_state_as_reference": true,
+    "same_physical_scene_model_as_reference": true,
+    "contact_digest_matches": true,
+    "actual_native_steps_match": true,
+    "all_contacts_zero": true,
+    "native_replay_matched": true,
+    "native_clearance_floor_met": true,
+    "self_domain_all_ticks": true,
+    "static_and_integrated_only": true,
+    "no_unchecked_same_plan_cusp_switch": false
+  },
+  "unchecked_cusp_switch_steps": [
+    198
+  ],
+  "reference_kind": "V650 same confirmation task, before repair",
+  "checks_passed": false,
+  "public_steps": 1104,
+  "goal_distance_m": 0.4483763039779309,
+  "minimum_native_reconstructed_clearance_m": 0.1927867356233937,
+  "simulation_steps_in_auditor": 0,
+  "static_acceptance_passed": false,
+  "scope": "development only; original confirmation failures remain failures"
+}

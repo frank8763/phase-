@@ -1,0 +1,30 @@
+{
+  "status": "EXACT_FROZEN_WRITE_SCOPE_FAILURE_REPRODUCED_ZERO_MODEL",
+  "cause": "New explicit operation-profile final flush targets outer run directory while frozen physical runner write guard permits only paired subtree",
+  "rejected_path": "runs/v850_progress_consistent_worker/v850_t0_slot01/OPERATION_PROFILE.json",
+  "actual_exception": "Write outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v850_progress_consistent_worker/v850_t0_slot01/OPERATION_PROFILE.json",
+  "proposed_path_scope_allowed": "runs/v850_progress_consistent_worker/v850_t0_slot01/paired/OPERATION_PROFILE.json",
+  "proposed_fix_not_applied": true,
+  "real_write_guard_source": "runtime/mk-mini/experiments/phase_rpccr_p0b3_v1/pilot.py",
+  "real_write_guard_sha256": "0e21b9c39f5424772a76a70a9707cc6ad0ec2d41e1f2ceb7d4afd229b7e97469",
+  "t0_geometric_eligible": true,
+  "t0_bootstrap_and_feasibility_integrations": 0,
+  "t0_navigation_branch_iterator_empty": true,
+  "actual_new_navigation": 0,
+  "planned_navigation_unexecuted": 6,
+  "physical_component_passed": true,
+  "component_counts": {
+    "old_replay_native": 4584,
+    "private_native": 7056,
+    "actual_branch_native": 288,
+    "repeat_branch_native": 288,
+    "new_navigation": 0,
+    "new24": 0
+  },
+  "original_frozen_sources_exact": true,
+  "new_models": 0,
+  "new_integrations": 0,
+  "new_model_reads": 0,
+  "restart_executed": false,
+  "limitation": "Pure guard proof of proposed output scope; not a patched runner, new t0, navigation result, or relaxation of failed frozen batch"
+}

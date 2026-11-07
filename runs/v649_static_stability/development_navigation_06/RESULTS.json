@@ -1,0 +1,248 @@
+[
+  {
+    "case": {
+      "name": "dev27b_seed91000002_single_event",
+      "seed": 91000002,
+      "scene": "single_event",
+      "conditions": "geometry_memory"
+    },
+    "returncode": 0,
+    "wall_s": 389.01879833499993,
+    "completion": {
+      "status": "COMPLETE",
+      "seed": 91000002,
+      "results": [
+        {
+          "condition": "geometry_memory",
+          "seed": 91000002,
+          "outcome": "GOAL",
+          "strict_safe_arrival": true,
+          "goal_distance_m": 0.44647946429416313,
+          "public_steps": 773,
+          "physics_steps": 6184,
+          "contacts": {
+            "physics_steps": 6184,
+            "all_contact_records": 70299,
+            "contact_type_counts": {
+              "ground_support": 49468,
+              "robot_self_contact": 20831
+            },
+            "negative_distance_counts_all_types": {
+              "ground_support": 49468,
+              "robot_self_contact": 20831
+            },
+            "robot_obstacle_contact_records": 0,
+            "robot_obstacle_penetration_records": 0,
+            "robot_obstacle_contact_steps": 0,
+            "robot_obstacle_penetration_steps": 0,
+            "maximum_obstacle_penetration_depth_m": 0.0,
+            "minimum_obstacle_distance_m": null,
+            "first_anomaly": null,
+            "unknown_contact_records": 0,
+            "robot_obstacle_geom_pairs": [],
+            "contact_log_content_sha256": "805887b1457e613cac013cb377aa4cb90b4347f705866d54a90c5f7d05898b63"
+          },
+          "backup_attempts": 0,
+          "backup_steps": 0,
+          "planning_attempts": 3,
+          "planning_wall_s": 0.8442306940000321,
+          "command_overrides": 773,
+          "elapsed_s": 385.5336884860001,
+          "initial_state_hash": "984478e454ce755fcfed47fbd02e403e0e5378e2b7b9e9501a5ec819db0b3ee1",
+          "normalized_initial_state_hash": "8c5cc9173ffac62ad4cbb3c8f8384f15bb16245f1fcd625fa39f5b54da012d10",
+          "minimum_actual_self_domain_margin_m": 0.009087383446838404,
+          "self_geometry_checked_native_ticks": 6184,
+          "static_obstacle_pose_unchanged": true,
+          "root_mutations_outside_mjstep": 0,
+          "source_revision": "stability_27_consistent_admission",
+          "prediction_steps": 3301920
+        }
+      ],
+      "error": null,
+      "elapsed_s": 388.52810330600005,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 91000002,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.22369976129797653,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -3.597662925720215,
+        -1.428176999092102
+      ],
+      "start_pose": [
+        1.0,
+        4.199999809265137,
+        -2.356011460001249
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "dev27b_seed91000004_single_event",
+      "seed": 91000004,
+      "scene": "single_event",
+      "conditions": "geometry_memory"
+    },
+    "returncode": 0,
+    "wall_s": 321.2192927179999,
+    "completion": {
+      "status": "COMPLETE",
+      "seed": 91000004,
+      "results": [
+        {
+          "condition": "geometry_memory",
+          "seed": 91000004,
+          "outcome": "GOAL",
+          "strict_safe_arrival": true,
+          "goal_distance_m": 0.4485857429011759,
+          "public_steps": 621,
+          "physics_steps": 4968,
+          "contacts": {
+            "physics_steps": 4968,
+            "all_contact_records": 54388,
+            "contact_type_counts": {
+              "ground_support": 39740,
+              "robot_self_contact": 14648
+            },
+            "negative_distance_counts_all_types": {
+              "ground_support": 39740,
+              "robot_self_contact": 14648
+            },
+            "robot_obstacle_contact_records": 0,
+            "robot_obstacle_penetration_records": 0,
+            "robot_obstacle_contact_steps": 0,
+            "robot_obstacle_penetration_steps": 0,
+            "maximum_obstacle_penetration_depth_m": 0.0,
+            "minimum_obstacle_distance_m": null,
+            "first_anomaly": null,
+            "unknown_contact_records": 0,
+            "robot_obstacle_geom_pairs": [],
+            "contact_log_content_sha256": "06505e956384ccd2dd9d7dd2af77f51c48191d84d53a2a8b281691e19178e357"
+          },
+          "backup_attempts": 0,
+          "backup_steps": 0,
+          "planning_attempts": 1,
+          "planning_wall_s": 0.3023466140000437,
+          "command_overrides": 621,
+          "elapsed_s": 318.793099451,
+          "initial_state_hash": "8c8a4d8b0a12d2228ea9a10021cffdac03a39faf5ec574679e7aee9c8d9d7087",
+          "normalized_initial_state_hash": "13e73425acef42730b34050814cd7c1cb464e0b58d420ae31ac71c86ce9f9672",
+          "minimum_actual_self_domain_margin_m": 0.009034374691665792,
+          "self_geometry_checked_native_ticks": 4968,
+          "static_obstacle_pose_unchanged": true,
+          "root_mutations_outside_mjstep": 0,
+          "source_revision": "stability_27_consistent_admission",
+          "prediction_steps": 2682720
+        }
+      ],
+      "error": null,
+      "elapsed_s": 320.71455713,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 91000004,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.3450000137090682,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -0.6947001218795776,
+        -3.264890432357788
+      ],
+      "start_pose": [
+        0.800000011920929,
+        3.799999952316284,
+        -1.5707963267948963
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "dev27b_seed92000005_legacy_two",
+      "seed": 92000005,
+      "scene": "legacy_two",
+      "conditions": "geometry_memory"
+    },
+    "returncode": 0,
+    "wall_s": 334.767195247,
+    "completion": {
+      "status": "COMPLETE",
+      "seed": 92000005,
+      "results": [
+        {
+          "condition": "geometry_memory",
+          "seed": 92000005,
+          "outcome": "GOAL",
+          "strict_safe_arrival": true,
+          "goal_distance_m": 0.44012046391842086,
+          "public_steps": 650,
+          "physics_steps": 5200,
+          "contacts": {
+            "physics_steps": 5200,
+            "all_contact_records": 55153,
+            "contact_type_counts": {
+              "ground_support": 41596,
+              "robot_self_contact": 13557
+            },
+            "negative_distance_counts_all_types": {
+              "ground_support": 41596,
+              "robot_self_contact": 13557
+            },
+            "robot_obstacle_contact_records": 0,
+            "robot_obstacle_penetration_records": 0,
+            "robot_obstacle_contact_steps": 0,
+            "robot_obstacle_penetration_steps": 0,
+            "maximum_obstacle_penetration_depth_m": 0.0,
+            "minimum_obstacle_distance_m": null,
+            "first_anomaly": null,
+            "unknown_contact_records": 0,
+            "robot_obstacle_geom_pairs": [],
+            "contact_log_content_sha256": "451fc7ff4c517db185d385f641d9ad613c409515ff7de616b4d4039bac002c97"
+          },
+          "backup_attempts": 0,
+          "backup_steps": 0,
+          "planning_attempts": 2,
+          "planning_wall_s": 0.21142037000004166,
+          "command_overrides": 650,
+          "elapsed_s": 331.9544222100001,
+          "initial_state_hash": "2d74f09c6ea76c2621405e5f504e84d5215617b4049a3b638d4c87fd869b9e22",
+          "normalized_initial_state_hash": "7a5e544f44eb8e1aca65f16a5f486527e43d3d48db8ed2facbbdfb6f13de4ae4",
+          "minimum_actual_self_domain_margin_m": 0.009007970174942148,
+          "self_geometry_checked_native_ticks": 5200,
+          "static_obstacle_pose_unchanged": true,
+          "root_mutations_outside_mjstep": 0,
+          "source_revision": "stability_27_consistent_admission",
+          "prediction_steps": 2795760
+        }
+      ],
+      "error": null,
+      "elapsed_s": 333.92494654899997,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000005,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.22371658614348977,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -0.891089916229248,
+        -1.5276116132736206
+      ],
+      "start_pose": [
+        3.4000000953674316,
+        4.199999809265137,
+        -2.3563775203834405
+      ],
+      "unknown_count": 2
+    }
+  }
+]

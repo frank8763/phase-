@@ -1,0 +1,65 @@
+{
+  "status": "FIXED_SAVED_CAUSAL_DIAGNOSIS_AUDIT_PASS",
+  "records": [
+    {
+      "step": 303,
+      "checks": {
+        "source_sha": true,
+        "independent_current_geometry": true,
+        "current_floor": true,
+        "forward_only": true,
+        "rejected_future_not_mislabelled": true
+      },
+      "passed": true,
+      "maximum_geometry_error": 0.0
+    },
+    {
+      "step": 363,
+      "checks": {
+        "source_sha": true,
+        "independent_current_geometry": true,
+        "current_floor": true,
+        "forward_only": true,
+        "rejected_future_not_mislabelled": true
+      },
+      "passed": true,
+      "maximum_geometry_error": 0.0
+    },
+    {
+      "step": 649,
+      "checks": {
+        "source_sha": true,
+        "independent_current_geometry": true,
+        "current_floor": true,
+        "forward_only": true,
+        "rejected_future_not_mislabelled": true
+      },
+      "passed": true,
+      "maximum_geometry_error": 0.0
+    },
+    {
+      "step": 1183,
+      "checks": {
+        "source_sha": true,
+        "independent_current_geometry": true,
+        "current_floor": true,
+        "forward_only": true,
+        "rejected_future_not_mislabelled": true
+      },
+      "passed": true,
+      "maximum_geometry_error": 0.0
+    }
+  ],
+  "tracking": {
+    "samples": 897,
+    "maximum_contour_m": 0.041971743272515245,
+    "p95_contour_m": 0.028479281845953018,
+    "mean_contour_m": 0.00785366152303352,
+    "samples_above_005_m": 0,
+    "maximum_nearest_heading_error_rad": 0.6699514774017121,
+    "scope": "Nearest segment of contemporaneous saved full reference; not proof of commanded cusp or vehicle dynamics."
+  },
+  "new_models": 0,
+  "integrations": 0,
+  "scope": "Causal contrast and independent current geometry, not a physical execution certificate."
+}

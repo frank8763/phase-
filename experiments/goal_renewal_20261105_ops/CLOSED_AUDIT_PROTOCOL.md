@@ -1,0 +1,7 @@
+# V826闭批后的零模型补核
+
+原V826主导航623公开/4984原生已GOAL/距目标.439949754m，原12审核和完整重放通过。新增审核在导入原footprint依赖时缺p0b68搜索目录，尚未执行其检查逻辑即ModuleNotFoundError。驱动已STOPPED_EXCEPTION、原FINALIZED=GOAL_RENEWAL_DEVELOPMENT_NOT_PASSED、完整重复未执行，全部保持，不追认原批通过。
+
+闭批仅一次固定保存证据补核：新namespace通过只读symlink视图读取原paired数据，在MuJoCo导入封死的独立进程补原已冻结p0b68模块搜索路径，调用完全未编辑的audit_goal_renewal.py；再调用未执行的原audit_field_discovery.py检查同一保存主轨迹完整发现链。各最多180秒、顺序单CPU，无任何模型/导航/私有预测/重放/训练，已有原归档只核验不覆盖，所有补充输出仅新namespace。
+
+即使补核全过，也只是补足已保存主轨迹证据，原驱动错误、原NOT_PASSED和0完整重复仍保持，不能称同版本完整重复或新24验收。不得依赖此补核恢复导航、补做重复、新候选或延长截止。随后补充报告/归档、仅本轮一次30秒push+5秒只读核验、关闭台账和删除phase-v826监控。失败也保存，不第二次补核循环。

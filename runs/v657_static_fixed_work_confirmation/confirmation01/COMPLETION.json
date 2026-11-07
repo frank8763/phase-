@@ -1,0 +1,30 @@
+{
+  "status": "ALL_TASKS_AND_REPEATS_AUDITED",
+  "static_engineering_acceptance_passed": true,
+  "elapsed_s": 12562.581766312003,
+  "limit_s": 18000,
+  "checks": {
+    "24_locked_distinct_tasks": true,
+    "all_24_attempts": true,
+    "at_least23_strict_arrivals": true,
+    "single_at_least11": true,
+    "two_at_least11": true,
+    "all27_physical_audits": true,
+    "three_full_state_contact_repeats": true,
+    "budget_respected": true,
+    "all_source_and_protocol_frozen": true
+  },
+  "selected_tasks": 24,
+  "completed_confirmation_attempts": 24,
+  "strict_arrivals": 23,
+  "class_successes": {
+    "single_event": 12,
+    "legacy_two": 11
+  },
+  "remaining_selected_unattempted": [],
+  "repeats_attempted": 3,
+  "dynamic_started": false,
+  "training_updates": 0,
+  "contact_comparison_scope": "all raw digests verified; all events exact after only preregistered XML path+verified bytes normalization",
+  "scope": "fresh selected finite static cylinder benchmark; independent audit and user review required before dynamics"
+}

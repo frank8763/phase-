@@ -1,0 +1,5 @@
+{
+  "type": "AssertionError",
+  "message": "CAUSAL_STATE_SAFETY_OR_STOP_CHAIN_ANOMALY:['all_raw_packets_reconstructed']",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v698_rpccr_dynamic_confirmation/execute.py\", line 111, in <module>\n    baselines[task['slot']]=run(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v698_rpccr_dynamic_confirmation/execute.py\", line 92, in run\n    failed={k for k,v in chain['checks'].items() if not v};assert not (failed-functional_keys),'CAUSAL_STATE_SAFETY_OR_STOP_CHAIN_ANOMALY:'+str(sorted(failed-functional_keys))\nAssertionError: CAUSAL_STATE_SAFETY_OR_STOP_CHAIN_ANOMALY:['all_raw_packets_reconstructed']\n"
+}

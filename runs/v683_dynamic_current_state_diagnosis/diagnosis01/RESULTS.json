@@ -1,0 +1,77 @@
+[
+  {
+    "name": "diagnosis49_95000011_currentstate",
+    "result": {
+      "condition": "geometry_memory",
+      "seed": 95000011,
+      "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+      "strict_safe_arrival": false,
+      "goal_distance_m": 4.412587361808102,
+      "public_steps": 753,
+      "physics_steps": 6024,
+      "contacts": {
+        "physics_steps": 6024,
+        "all_contact_records": 69735,
+        "contact_type_counts": {
+          "ground_support": 48192,
+          "robot_self_contact": 21543
+        },
+        "negative_distance_counts_all_types": {
+          "ground_support": 48192,
+          "robot_self_contact": 21543
+        },
+        "robot_obstacle_contact_records": 0,
+        "robot_obstacle_penetration_records": 0,
+        "robot_obstacle_contact_steps": 0,
+        "robot_obstacle_penetration_steps": 0,
+        "maximum_obstacle_penetration_depth_m": 0.0,
+        "minimum_obstacle_distance_m": null,
+        "first_anomaly": null,
+        "unknown_contact_records": 0,
+        "robot_obstacle_geom_pairs": [],
+        "contact_log_content_sha256": "46f33dc30649aa6ba4a72b43c69bf1454c25f47c7d6ee3e30fba9e3dbe97190f"
+      },
+      "backup_attempts": 5,
+      "backup_steps": 84,
+      "planning_attempts": 8,
+      "planning_wall_s": 15.508266641976661,
+      "command_overrides": 753,
+      "elapsed_s": 593.3320796220069,
+      "initial_state_hash": "a5607a385489e87433483592fa18eed4c9c1d9debb2960cc635f533d3b4aa69c",
+      "normalized_initial_state_hash": "3ccde72bedabaa55dd2e737d6bd9d2eb4cff2327e0fa34edcc21a2badaed7732",
+      "minimum_actual_self_domain_margin_m": 0.009103002749196454,
+      "self_geometry_checked_native_ticks": 6024,
+      "static_obstacle_pose_unchanged": true,
+      "root_mutations_outside_mjstep": 0,
+      "source_revision": "diagnosis49_current_state_only",
+      "prediction_steps": 3690624,
+      "native_applied_ctrl_checks": 6024,
+      "reserved_recovery_activations": 5,
+      "reserved_recovery_public_steps": 84,
+      "certified_handover_attempts": 20,
+      "certified_handover_successes": 4,
+      "information_role": "ORACLE_CURRENT_STATE_ONLY",
+      "causal_algorithm_success": false,
+      "initial_observation_steps": 0,
+      "dynamic_mode": "predictive",
+      "minimum_dynamic_native_clearance_m": 0.21339147085486265,
+      "actor_maximum_native_displacement_m": 0.000799999658580271,
+      "actor_motion_ticks": 6024,
+      "actor_position_at_end": [
+        -1.4477721746199872,
+        1.4319668613202623
+      ]
+    },
+    "checks": {
+      "physical_audit": true,
+      "same_saved_model": true,
+      "same_initial_state": true,
+      "INDEPENDENT_CANONICAL_AUDIT.json": true,
+      "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+      "CURRENT_STATE_INFORMATION_AUDIT.json": false
+    },
+    "passed_evidence": false,
+    "information_role": "ORACLE_CURRENT_STATE_ONLY",
+    "counts_as_unknown_dynamic_success": false
+  }
+]

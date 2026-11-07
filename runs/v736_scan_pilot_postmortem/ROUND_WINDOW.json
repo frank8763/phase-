@@ -1,0 +1,47 @@
+{
+  "started_unix": 1793682043.5842855,
+  "absolute_deadline_unix": 1793682643.5842855,
+  "limit_s": 600,
+  "round_closed": true,
+  "new_initializations": 0,
+  "new_integrations": 0,
+  "status": "SAVED_EVIDENCE_COMPLETE_ORIGINAL_FUNCTIONAL_AND_AUDIT_FAILURES_RETAINED",
+  "elapsed_s": 23.953325748443604,
+  "records": [
+    {
+      "script": "audit_early_scan.py",
+      "status": "EARLY_SCAN_CONTRACT_AND_BANK_PASS",
+      "failed_checks": []
+    },
+    {
+      "script": "audit_route_commitment.py",
+      "status": "PASS",
+      "failed_checks": []
+    },
+    {
+      "script": "audit_projection_learning.py",
+      "status": "PASS",
+      "failed_checks": []
+    },
+    {
+      "script": "audit_all_tail_geometry.py",
+      "status": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+      "failed_checks": []
+    },
+    {
+      "script": "audit_shadow_mode.py",
+      "status": "PASS",
+      "failed_checks": []
+    },
+    {
+      "script": "audit_field_discovery.py",
+      "status": "FAIL",
+      "failed_checks": [
+        "moving_before_discovery",
+        "new_causal_route_after_stop",
+        "actually_continued_after_replanning",
+        "strict_arrival"
+      ]
+    }
+  ]
+}

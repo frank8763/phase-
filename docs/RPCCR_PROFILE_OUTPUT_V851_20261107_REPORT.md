@@ -1,0 +1,234 @@
+# V851计时目录操作修复接续原90分钟轮实际结果
+
+{
+  "status": "NOT_PASSED",
+  "development_passed": false,
+  "combined_three_route_development_passed": false,
+  "independent_audit_passed": false,
+  "source_unchanged": true,
+  "preflight_passed": true,
+  "complete_chain_passed": false,
+  "native_replay_exact": true,
+  "planned_main": 3,
+  "planned_repeats": 3,
+  "new_navigation_attempts": 1,
+  "main_attempts": 1,
+  "main_successes": 0,
+  "complete_repeats": 0,
+  "repeats_passed": true,
+  "unexecuted_navigation": 5,
+  "records": [
+    {
+      "name": "v851_main_slot01",
+      "role": "MAIN",
+      "task": {
+        "slot": 1,
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "case_id": "WEST_EAST",
+        "initial_axis_motion_direction": "POSITIVE_AXIS",
+        "course_distance_m": 8.0,
+        "role": "DEVELOPMENT_KNOWN_TASK",
+        "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route"
+      },
+      "run": "runs/v851_profile_output_worker/v851_main_slot01/paired",
+      "navigation_started": true,
+      "physical_passed": true,
+      "functional_passed": false,
+      "repeat_passed": null,
+      "repeat": null,
+      "audit_statuses": {
+        "audit_run.py": true,
+        "audit_forward_controller.py": true,
+        "audit_route_commitment.py": true,
+        "audit_projection_learning.py": true,
+        "audit_all_tail_geometry.py": true,
+        "audit_shadow_mode.py": true,
+        "audit_reentry.py": true,
+        "audit_complete_joint.py": true,
+        "audit_nominal_layers.py": true,
+        "audit_reactive.py": true,
+        "audit_proposal_separation.py": true,
+        "audit_tracked_norm.py": true,
+        "audit_goal_renewal.py": true,
+        "audit_ranked_return.py": true,
+        "audit_forward_escape.py": true,
+        "audit_reference_recovery.py": true,
+        "audit_early_joint.py": true,
+        "audit_candidate_policy.py": true,
+        "audit_progress.py": true
+      },
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 10010001,
+        "outcome": "HORIZON",
+        "strict_safe_arrival": false,
+        "goal_distance_m": 1.8254109539883276,
+        "public_steps": 1200,
+        "physics_steps": 9600,
+        "contacts": {
+          "physics_steps": 9600,
+          "all_contact_records": 105107,
+          "contact_type_counts": {
+            "ground_support": 76800,
+            "robot_self_contact": 28307
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 76800,
+            "robot_self_contact": 28307
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "b146b607c6d21333779bb7e176335ad5bf9f7bd59a1d41292da3b4eaf0f9fe4b"
+        },
+        "backup_attempts": 64,
+        "backup_steps": 532,
+        "planning_attempts": 18,
+        "planning_wall_s": 275.21245222492144,
+        "command_overrides": 1200,
+        "elapsed_s": 2546.1370529740234,
+        "initial_state_hash": "9afc62c01a745ea3f4573a4401c0786f4afe939f87a9f6ec31e61aebff6e825a",
+        "normalized_initial_state_hash": "fcd26304e4b0dc879085c5da4b23fd54dfb7718d1b242b5eda537c1ead2b437c",
+        "minimum_actual_self_domain_margin_m": 0.00886761830627647,
+        "self_geometry_checked_native_ticks": 9600,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "V850_PROGRESS_CONSISTENT_RETURN_AND_COMMITMENT",
+        "prediction_steps": 11083432,
+        "retained_reentry_attempts": 0,
+        "retained_reentry_successes": 0,
+        "retained_reentry_private_native": 0,
+        "conditional_nonpenetrating_map_motion_class": true,
+        "declared_euclidean_speed_cap_m_s": 0.08,
+        "first_discovery_step": 262,
+        "discovery_brake_finished_step": 302,
+        "discovery_terminal_speed_m_s": 3.533936996404537e-06,
+        "initial_unknown_mode": "UNSEEN_PRIOR",
+        "early_scan_started_step": null,
+        "early_scan_finished_step": null,
+        "differential_candidate_bank_enabled": true,
+        "native_applied_ctrl_checks": 9600,
+        "reserved_recovery_activations": 64,
+        "reserved_recovery_public_steps": 532,
+        "certified_handover_attempts": 127,
+        "certified_handover_successes": 58,
+        "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+        "course_distance_m": 8.0,
+        "course_phase": 0.6573753567727383,
+        "initial_observation_steps": 0,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 0.17187891987819987,
+        "actor_maximum_native_displacement_m": 0.0007999996476611368,
+        "actor_motion_ticks": 9600,
+        "actor_position_at_end": [
+          2.996291165398282,
+          -1.0088930100181384
+        ]
+      },
+      "functional_failed_checks": [
+        "strict_arrival"
+      ],
+      "discovery_details": {
+        "first_detection_step": 262,
+        "first_detection_sim_time_s": 20.960000000000477,
+        "speed_before_discovery_m_s": 0.21896090714091207,
+        "forward_progress_before_discovery_m": 4.350554005899583,
+        "minimum_last10_speed_m_s": 0.21439850347918316,
+        "terminal_stop_speed_m_s": 3.533936996404537e-06,
+        "stop_public_steps": 41,
+        "stop_minimum_causal_clearance_m": 0.26609161202455167,
+        "maximum_stop_state_control_error": 0.0,
+        "first_post_stop_replan_step": 303,
+        "new_reference_current_causal_clearance_m": 0.1802473746915303,
+        "post_stop_actual_displacement_m": 2.2780237603874642,
+        "preserves_task_assumption": "startup3m exclusion is a declared prior, not inferred from nondetections"
+      }
+    }
+  ],
+  "new24": 0,
+  "old_remaining16": 0,
+  "not_independent_confirmation": true,
+  "model_initializations": null,
+  "models_finalizer": 0,
+  "integrations_finalizer": 0,
+  "navigation_native": 9600,
+  "known_navigation_native": 9600,
+  "private_native": 11083432,
+  "known_private_native": 11083432,
+  "replay_native": 9600,
+  "known_replay_native": 9600,
+  "accounts_exact": {
+    "navigation_native": true,
+    "private_native": true,
+    "replay_native": true
+  },
+  "fixed_component": {
+    "status": "FIXED_PROGRESS_COMPONENT_INDEPENDENT_PASS",
+    "passed": true,
+    "mode": "RETAIN_OLD_BETTER_CERTIFICATE",
+    "counts": {
+      "old_replay_native": 4584,
+      "private_native": 7056,
+      "actual_branch_native": 288,
+      "repeat_branch_native": 288,
+      "new_navigation": 0,
+      "new24": 0
+    },
+    "checks": {
+      "original4584replay": true,
+      "complete_selected_tail": true,
+      "controls_legal_slew": true,
+      "causal_full328geometry": true,
+      "execution329_planning657coverage": true,
+      "actual_safety": true,
+      "full_integration_repeat": true,
+      "complete_goal_progress": true,
+      "source_exact": true
+    },
+    "minimum_actual_clearance_m": 0.22411221428641648,
+    "maximum_recorded_error": 0.0,
+    "full_repeat_error": 0.0,
+    "new_models": 0,
+    "new_integrations": 0,
+    "new_navigation": 0,
+    "full_dynamic_or_realtime_passed": false
+  },
+  "component_completion": {
+    "status": "FIXED_NATIVE_PROGRESS_COMPONENT_PASS",
+    "counts": {
+      "old_replay_native": 4584,
+      "private_native": 7056,
+      "actual_branch_native": 288,
+      "repeat_branch_native": 288,
+      "new_navigation": 0,
+      "new24": 0
+    },
+    "records": [
+      {
+        "role": "ACTUAL",
+        "native": 288,
+        "terminal_speed": 0.0015583313863944558,
+        "goal_gain_m": 0.2362008918584413
+      },
+      {
+        "role": "REPEAT",
+        "native": 288,
+        "terminal_speed": 0.0015583313863944558,
+        "goal_gain_m": 0.2362008918584413
+      }
+    ],
+    "private_count_exact": true,
+    "closed": true
+  },
+  "component_error": null,
+  "component_passed": true
+}
+
+用户限定本轮只三路线回归，新24确认另议。原两旧失败开发及本轮主/重复/未执行分账，不混新确认。本候选是在V848基础上的完整获证进展/旧剩余合同终点比较与明确有限恢复提交；不是旧决策等价。原全部阈值/物理模型/名义评分/证书内控制库/328+8/因果完整发现链和每原生重放均保持。旧失败原样保留；模型初始化未知不填0。

@@ -1,0 +1,203 @@
+{
+  "full_model_snapshot": "scene_model.mjb",
+  "full_model_sha256": "b0cf4e0d8dd697d2b4b7aa92efe708b118f8b42d91c54228140053d944ece660",
+  "seed": 94000029,
+  "scene": "single_event",
+  "physical_unknown_obstacles": [
+    {
+      "name": "real_circle_obs_10",
+      "xy": [
+        -0.7549999952316284,
+        0.9550000429153442
+      ],
+      "radius": 0.25
+    }
+  ],
+  "removed_at_scene_construction": [
+    {
+      "name": "real_circle_obs_9",
+      "xy": [
+        -1.632774829864502,
+        1.2670894861221313
+      ],
+      "radius": 0.16
+    }
+  ],
+  "goal_xy": [
+    -4.1158342361450195,
+    4.318436622619629
+  ],
+  "start_qpos": [
+    0.800000011920929,
+    -0.6000000238418579,
+    0.24,
+    0.3826834839908784,
+    0.0,
+    0.0,
+    0.9238795111271833,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "event_xy": [
+    -0.7549999952316284,
+    0.9550000429153442
+  ],
+  "event_radius": 0.25,
+  "obstacle_present_from_initial_time": true,
+  "obstacle_in_planning_prior": false,
+  "known_rectangles": [
+    [
+      0.0,
+      3.25,
+      0.07999999821186066,
+      1.75
+    ],
+    [
+      0.0,
+      -3.25,
+      0.07999999821186066,
+      1.75
+    ],
+    [
+      -3.1500000953674316,
+      0.0,
+      1.850000023841858,
+      0.07999999821186066
+    ],
+    [
+      3.1500000953674316,
+      0.0,
+      1.850000023841858,
+      0.07999999821186066
+    ],
+    [
+      -2.9000000953674316,
+      2.950000047683716,
+      0.550000011920929,
+      0.3499999940395355
+    ],
+    [
+      2.7238810062408447,
+      2.591905117034912,
+      0.550000011920929,
+      0.3499999940395355
+    ],
+    [
+      -5.083000183105469,
+      1.6119999885559082,
+      0.30000001192092896,
+      0.949999988079071
+    ],
+    [
+      5.638000011444092,
+      -4.315000057220459,
+      0.3499999940395355,
+      1.100000023841858
+    ],
+    [
+      -2.2019999027252197,
+      -4.531000137329102,
+      0.8500000238418579,
+      0.2800000011920929
+    ],
+    [
+      3.200000047683716,
+      -2.8499999046325684,
+      0.75,
+      0.30000001192092896
+    ]
+  ],
+  "known_circles": [
+    [
+      -3.200000047683716,
+      3.3499999046325684,
+      0.2199999988079071
+    ],
+    [
+      -2.5461161136627197,
+      3.332848310470581,
+      0.2199999988079071
+    ],
+    [
+      -3.200000047683716,
+      2.549999952316284,
+      0.2199999988079071
+    ],
+    [
+      -2.549999952316284,
+      2.549999952316284,
+      0.2199999988079071
+    ],
+    [
+      2.549999952316284,
+      2.8499999046325684,
+      0.2199999988079071
+    ],
+    [
+      3.1500000953674316,
+      2.8499999046325684,
+      0.2199999988079071
+    ],
+    [
+      2.688417673110962,
+      2.2186880111694336,
+      0.2199999988079071
+    ],
+    [
+      3.200209856033325,
+      2.071164846420288,
+      0.2199999988079071
+    ],
+    [
+      -3.5999999046325684,
+      -2.9000000953674316,
+      0.2800000011920929
+    ]
+  ],
+  "footprint_bounds": [
+    -0.44,
+    -0.375,
+    0.44,
+    0.375
+  ],
+  "physics_contract": [
+    [
+      "<class 'envs.phase22.mkmini_phase22_v1_continuous_corridor_env.MkMiniPhase22V1ContinuousCorridorEnv'>",
+      "_h3_kinematic_yaw_sync"
+    ],
+    [
+      "<class 'envs.phase22.mkmini_phase22_v1_continuous_corridor_env.MkMiniPhase22V1ContinuousCorridorEnv'>",
+      "_h3_velocity_direction_sync"
+    ],
+    [
+      "<class 'envs.phase22.mkmini_phase22_v1_continuous_corridor_env.MkMiniPhase22V1ContinuousCorridorEnv'>",
+      "_phase14_apply_bicycle_yaw_sync"
+    ],
+    [
+      "<class 'envs.phase22.mkmini_phase22_v1_continuous_corridor_env.MkMiniPhase22V1ContinuousCorridorEnv'>",
+      "_sync_mujoco:read_physics_only"
+    ],
+    [
+      "<class 'training.phase7_camera_depth.envs.mkmini_phase7_depth_camera_aux_env.MkMiniPhase7DepthCameraAuxEnv'>",
+      "_sync_mujoco:read_physics_only"
+    ]
+  ],
+  "conditions": [
+    "geometry_memory"
+  ],
+  "model_sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f",
+  "comparison_scope": "new pure-physics contract; not comparable to legacy pose-assisted success rates",
+  "planning_hard_floor_m": 0.15,
+  "goal_tolerance_m": 0.45
+}

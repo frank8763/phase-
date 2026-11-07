@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "same_model": true,
+    "same_initial": true,
+    "exact_full_state_ctrl": true,
+    "contacts": true
+  },
+  "errors": {
+    "qpos_full": 0.0,
+    "qvel_full": 0.0,
+    "ctrl": 0.0,
+    "mocap_pos": 0.0
+  },
+  "contacts": {
+    "passed": true,
+    "checks": {
+      "same_xml_bytes": true,
+      "both_raw_content_digests_verified": true,
+      "record_counts_verified": true,
+      "same_number_of_contacts": true,
+      "all_contact_fields_equal_after_verified_path_rewrite": true,
+      "canonical_digest_equal": true
+    },
+    "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v690_visible_eight_meter/learned8m_phase_holdout/paired",
+    "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v690_visible_eight_meter/learned8m_phase_holdout_repeat/paired",
+    "raw_content_sha256": [
+      "c99868aa53a37db9ae0eb0633c76d3d6675b316ce1ab2b8cdabe74a17ab68aa1",
+      "cfd5b70d860eea1dd87a8583a669ef400e957614e6e6e87bbe7e70e5da7a2645"
+    ],
+    "raw_content_hashes_identical": false,
+    "canonical_content_sha256": [
+      "d02767ecf494705ca75723f932f477e6b6f25a47cb34a27eb43e28d377cba3d2",
+      "d02767ecf494705ca75723f932f477e6b6f25a47cb34a27eb43e28d377cba3d2"
+    ],
+    "xml_bytes_sha256": [
+      "facd70ca7b15d84c53c4e6420a2a6db28089f070e09720df9eda836624901a28",
+      "facd70ca7b15d84c53c4e6420a2a6db28089f070e09720df9eda836624901a28"
+    ],
+    "contact_records": [
+      65141,
+      65141
+    ],
+    "raw_json_different_rows": 46208,
+    "first_non_path_difference_rows": [],
+    "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+    "simulation_steps": 0
+  },
+  "passed": true
+}

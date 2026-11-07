@@ -1,0 +1,62 @@
+# V848 11月6日通宵实际结果
+
+{
+  "supervisor": {
+    "status": "STOPPED_THREE_ROUTE_REGRESSION_NOT_PASSED",
+    "closed": true,
+    "closed_unix": 1793981369.8132107,
+    "failure": null,
+    "original_guard_restored_and_execution_lock_idle": true,
+    "absolute_model_deadline_unix": 1794009600.0,
+    "automatic_model_restart": false,
+    "new24": 0,
+    "training": 0,
+    "network_required": false,
+    "campaign_completion": "runs/v848_goal_first_certified/COMPLETION.json",
+    "finalized": true
+  },
+  "stage_final": {
+    "status": "NOT_PASSED",
+    "development_passed": false,
+    "combined_three_route_development_passed": false,
+    "independent_audit_passed": false,
+    "source_unchanged": true,
+    "preflight_passed": true,
+    "complete_chain_passed": false,
+    "native_replay_exact": true,
+    "planned_main": 3,
+    "planned_repeats": 3,
+    "new_navigation_attempts": 3,
+    "main_attempts": 2,
+    "main_successes": 1,
+    "complete_repeats": 1,
+    "repeats_passed": true,
+    "unexecuted_navigation": 3,
+    "new24": 0,
+    "old_remaining16": 0,
+    "not_independent_confirmation": true,
+    "model_initializations": null,
+    "models_finalizer": 0,
+    "integrations_finalizer": 0,
+    "navigation_native": 20240,
+    "known_navigation_native": 20240,
+    "private_native": 31111088,
+    "known_private_native": 31111088,
+    "replay_native": 20240,
+    "known_replay_native": 20240,
+    "accounts_exact": {
+      "navigation_native": true,
+      "private_native": true,
+      "replay_native": true
+    },
+    "archive": "evidence/rpccr_three_route_v848_20261106",
+    "transport": "evidence/rpccr_three_route_v848_20261106_transport",
+    "source_and_decompressed_sha_verified": true,
+    "raw_files": 262493,
+    "raw_bytes": 20653994837,
+    "raw_deleted": false,
+    "report": "docs/RPCCR_THREE_ROUTE_V848_20261106_REPORT.md"
+  }
+}
+
+固定原三路线开发；新24/训练/算法对照均未授权启动。已执行、成功、失败、未执行及精确或未知积分分账以阶段独立终审为准。失败不继续依赖路线、不修补重启；原失败与截止保持。FINALIZED缺失即不能声称全证据完成。

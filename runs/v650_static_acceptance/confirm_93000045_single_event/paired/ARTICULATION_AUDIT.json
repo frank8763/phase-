@@ -1,0 +1,24 @@
+{
+  "scope": "offline full-qpos robot geometry at public samples; actual_axis uses exact axis-dependent primitive support AABB; legacy_sphere uses the older rotation-invariant cylinder sphere proxy and may be overconservative; no integration or planner truth access, not continuous-time clearance certification",
+  "rows": [
+    {
+      "condition": "geometry_memory",
+      "public_samples": 1200,
+      "legacy_sphere_envelope_escape_from_planning_domain_m": 0.02045017262139437,
+      "legacy_sphere_samples_exceed_planning_domain_1e_5m": 1200,
+      "minimum_legacy_rotation_sphere_envelope_clearance_m": 0.13614771911962126,
+      "legacy_sphere_public_samples_below_015": 287,
+      "minimum_actual_axis_projected_self_AABB_clearance_m": 0.18147813746323443,
+      "actual_axis_public_samples_below_015": 0,
+      "maximum_root_xy_speed_m_s": 0.2590781544457767,
+      "legacy_sphere_observed_union_bounds_xy": [
+        -0.4308811889516977,
+        -0.395387288134336,
+        0.4308811889516977,
+        0.39545017262139437
+      ]
+    }
+  ],
+  "elapsed_s": 0.7134056029999556,
+  "navigation_steps": 0
+}

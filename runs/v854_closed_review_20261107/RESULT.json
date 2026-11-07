@@ -1,0 +1,95 @@
+{
+  "status": "CLOSED_REVIEW_COMPLETE_NO_NEW_MODEL_WORK",
+  "stop_local": "2026-11-07T13:24:52.192457+08:00",
+  "running": false,
+  "runs": [
+    {
+      "variant": "A32",
+      "outcome": "NATIVE_TERMINATION",
+      "public_steps": 1800,
+      "native_steps": 14400,
+      "elapsed_minutes": 26.21137706221683,
+      "final_goal_m": 3.053718287694074,
+      "closest_goal_m": 3.053718287694074,
+      "closest_goal_step": 1799,
+      "backup_public_steps": 1460,
+      "backup_fraction": 0.8111111111111111,
+      "minimum_actual_clearance_m": 0.179961667620896,
+      "native_replay_error": 0,
+      "all_audits_completed": true,
+      "canonical_failed_checks": [],
+      "decision_p50_s": 0.10161850397707894,
+      "decision_p95_s": 1.8909339962134253
+    },
+    {
+      "variant": "B64",
+      "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+      "public_steps": 1105,
+      "native_steps": 8840,
+      "elapsed_minutes": 25.923238209099996,
+      "final_goal_m": 1.7032226673472426,
+      "closest_goal_m": 1.7028323617532306,
+      "closest_goal_step": 1099,
+      "backup_public_steps": 745,
+      "backup_fraction": 0.6742081447963801,
+      "minimum_actual_clearance_m": 0.18620353208955032,
+      "native_replay_error": 0,
+      "all_audits_completed": false,
+      "canonical_failed_checks": [
+        "forward_tail_extension_provenance"
+      ],
+      "decision_p50_s": 0.05028294600197114,
+      "decision_p95_s": 7.252964580000844
+    }
+  ],
+  "stop_cause": {
+    "step": 936,
+    "failed_audit": "forward_tail_extension_provenance.registered_five_low_speed",
+    "actually_examined_forward_candidates": 1,
+    "old_auditor_requires_examined_forward_candidates": 5,
+    "first_registered_candidate_passed": true,
+    "independent_saved_maneuver_proof": {
+      "gear": 1,
+      "normal_allowed": true,
+      "short_gain": 0.03317042551111608,
+      "full_gain": 0.1836981885948965,
+      "commit_native": 64
+    },
+    "physical_thresholds_satisfied": true,
+    "explanation": "V853 changed complete maneuver selection to first feasible; old canonical forward-library audit still requires all five recorded trials. This audit applicability was not adapted before freeze. Does not change B64 actual NO_RESERVED_RECOVERY_COMMAND non-arrival or qualify unexecuted audits."
+  },
+  "backend": {
+    "status": "CPU_BATCH_EQUIVALENCE_PASS",
+    "passed": true,
+    "errors": {
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "poses": 0.0,
+      "self_bounds": 0.0,
+      "minimum_self_margin": 0.0,
+      "terminal_speed": 0.0
+    },
+    "serial_wall_s": 0.5409864490211476,
+    "batch_wall_s": 0.3641554949863348,
+    "measured_ratio": 1.4855918871729463,
+    "old_replay_native": 3192,
+    "private_native": 4320,
+    "actual_branches": 0,
+    "new_navigation": 0,
+    "training_updates": 0,
+    "automatically_adopted_in_navigation": false,
+    "scope": "Only fixed original CPU predictor nine controls, full array equivalence. Single CPU sequential batch; not real-time or GPU validation."
+  },
+  "original_freeze_files_verified": 4262,
+  "original_archive_source_and_decompressed_sha_verified": true,
+  "original_finalized_unchanged": true,
+  "unexecuted_variant": "C328",
+  "unexecuted_total_navigation": 16,
+  "new_models": 0,
+  "new_integrations": 0,
+  "new_navigation": 0,
+  "training_updates": 0,
+  "review_pending_restored": true,
+  "execution_lock_idle": true,
+  "no_restart": true
+}

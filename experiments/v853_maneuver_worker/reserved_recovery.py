@@ -1,0 +1,226 @@
+"""Finite native-certified recovery tail, retained across one nominal action."""
+import gzip,json,math,itertools,time,hashlib,os
+from rejection_witness import evaluate as evaluate_rejection
+_witness_counter=itertools.count()
+from pathlib import Path
+import numpy as np
+from self_geometry import containment_margin
+from progress_contract import context as progress_context,assess as assess_progress,summarize as summarize_progress
+from maneuver_policy import assess_offer,decorate,commit_ticks
+
+class ReservedRecovery:
+    def __init__(self,predictor,mj,ids,cell):
+        self.predictor=predictor;self.mj=mj;self.ids=list(ids);self.cell=Path(cell)
+        self.scratch=mj.MjData(predictor.model);self.cache=None;self.cursor=0;self.executing=False
+        self.expected=None;self.finish_pending=False;self.activations=0;self.executed_steps=0
+        self.last_attempt=None;self.handovers=0;self.expected_ctrl=None;self.allow_forward_escape=False;self.escape_goal_xy=None;self.progress_pending=False
+    @staticmethod
+    def poses(q):
+        q=np.asarray(q);yaw=np.arctan2(2*(q[:,3]*q[:,6]+q[:,4]*q[:,5]),1-2*(q[:,5]**2+q[:,6]**2))
+        return np.c_[q[:,:2],yaw]
+    @staticmethod
+    def target(steer,wheel):
+        if abs(steer)<1e-9:return np.array([0.,0.,wheel,wheel])
+        r=.60/math.tan(abs(steer));inner=math.atan2(.60,r-.27);outer=math.atan2(.60,r+.27)
+        return np.array([inner,outer,wheel,wheel]if steer>0 else[-outer,-inner,wheel,wheel])
+    def controls(self,target,last,brake_after=160):
+        return self.predictor.command_map.sequence(target,last,320,brake_after)
+    def set_reference(self,path,index,goal,wheel_base=.60):
+        self.reference=None
+        if path is not None and len(path)>=2 and int(path[min(index+1,len(path)-1),3])in[-1,1]:
+            self.reference={'path':np.asarray(path,float).tolist(),'index':int(index),'goal_xy':np.asarray(goal,float).tolist(),'wheel_base':float(wheel_base)}
+    def admit_nominal(self,real,proposal,field,state,step):
+        from reference_recovery import LOOKAHEADS,WHEELS,DRIVE_TICKS,predict_follow
+        self.predictor.command_map.assert_first(proposal,real.ctrl[self.ids])
+        reference=getattr(self,'reference',None)
+        proactive=bool(reference is not None and state['center']is not None)
+        active=proactive and reference is not None and state['center']is not None
+        assert not proactive or active,'PROACTIVE_REQUIRES_TRACKED_FORWARD_REFERENCE'
+        progress=getattr(self,'progress_context_override',None)
+        if progress is None:progress=progress_context(real,state,reference,self.cache,self.cursor,step)
+        self.last_attempt={'step':int(step),'status':'CHECKING','prefix_self_domain_margin_m':None,'candidates':[],'reference_successor_active':active,'reference':reference,'progress_context':progress}
+        m=self.predictor.model;d=self.scratch;self.mj.mj_resetData(m,d)
+        for name in ['qpos','qvel','act','qacc_warmstart']:getattr(d,name)[:]=getattr(real,name)
+        d.time=float(real.time);d.ctrl[:]=0.;d.ctrl[self.ids]=proposal
+        self.mj.mj_forward(m,d);d.qacc_warmstart[:]=real.qacc_warmstart
+        prefix=[];prefix_native_q=[];prefix_native_v=[];margin=float('inf')
+        for _ in range(8):
+            self.predictor.native(m,d);self.predictor.prediction_steps+=1
+            self.mj.mj_kinematics(m,d);prefix.append(d.qpos.copy());prefix_native_q.append(d.qpos.copy());prefix_native_v.append(d.qvel.copy())
+            margin=min(margin,float(containment_margin(self.predictor.self_geometry.actual(m,d),self.predictor.domain)))
+        self.last_attempt['prefix_self_domain_margin_m']=float(margin)
+        if margin<.002:
+            self.last_attempt['status']='PREFIX_SELF_DOMAIN_REJECTED';return None
+        prefix=self.poses(prefix);initial_q=d.qpos.copy();initial_v=d.qvel.copy();self.last_prefix_qpos=initial_q.copy();self.last_prefix_qvel=initial_v.copy();yaw=float(prefix[-1,2]);best=None;best_recovery=None;recovery_detail=None;safe_count=0
+        original=[(None,0.)]+[(steer,wheel)for steer in [-.42722137342572125,-.2136106867128606,0.,.2136106867128606,.42722137342572125]for wheel in [-12.,-8.,-4.]]
+        forward=[(steer,wheel)for steer in [-.42722137342572125,-.2136106867128606,0.,.2136106867128606,.42722137342572125]for wheel in [4.]]
+        groups=[('ORIGINAL',original),('FORWARD_EXTENSION',forward)]
+        if active and int(reference['path'][min(reference['index']+1,len(reference['path'])-1)][3])==1:
+            groups=[('REFERENCE_FOLLOW',[(look,(wheel,brake))for look in LOOKAHEADS for wheel in WHEELS for brake in DRIVE_TICKS]),*groups]
+        for library,choices in groups:
+            if best is not None and best.get('maneuver_contract',{}).get('normal_allowed'):break
+            if not proactive and library!='ORIGINAL'and best is not None:break
+            for steer,wheel in choices:
+                following=library=='REFERENCE_FOLLOW'
+                if following:
+                    lookahead=steer;wheel,brake_after=wheel;kind='REFERENCE_FOLLOW_BRAKE'
+                    trajectory=predict_follow(self.predictor,d,self.ids,np.asarray(proposal),reference,lookahead,wheel,brake_after)
+                    target=self.predictor.reference_prediction['targets'][0].copy()
+                else:
+                    brake_only=steer is None;kind='BRAKE_ONLY'if brake_only else'FORWARD_BRAKE'if wheel>0 else'REVERSE_BRAKE'
+                    target=np.r_[proposal[:2],0.,0.]if brake_only else self.target(steer,wheel)
+                    brake_after=240 if kind=='FORWARD_BRAKE'else 160
+                    self.predictor.recovery_successor_mode=active
+                    try:trajectory=self.predictor.predict(d,target,self.ids,np.asarray(proposal),horizon=320,brake_after=brake_after)
+                    finally:self.predictor.recovery_successor_mode=False
+                extended=self.predictor.reference_prediction if active else None
+                signed=float((trajectory[-1,:2]-initial_q[:2])@np.array([math.cos(yaw),math.sin(yaw)]))
+                complete=np.vstack((prefix,trajectory));geometry_start=time.perf_counter();proof=evaluate_rejection(field,complete);geometry_seconds=time.perf_counter()-geometry_start
+                values=proof['full_values'];minimum=None if values is None else float(np.min(values))
+                successor_min=None
+                if active and not proof['rejected']:
+                    extra_values=field.causal_values_at_times(extended['poses'][320:],np.arange(329,337)*.01)
+                    successor_min=min(minimum,float(extra_values.min()))
+                witness_file=None
+                if proof['full_minimum_not_evaluated']:
+                    directory=self.cell/'rejection_witnesses';directory.mkdir(exist_ok=True);file=directory/f'witness_{next(_witness_counter):07d}.npz'
+                    assert not file.exists();np.savez(file,poses=complete,step=int(step),witness_native_tick=proof['witness_native_tick'],witness_value=proof['witness_value_m'],state_sha256=hashlib.sha256(json.dumps(state,sort_keys=True).encode()).hexdigest(),target=target,prefix_command=proposal)
+                    witness_file=str(file.relative_to(self.cell))
+                bodymargin=min(margin,self.predictor.prediction_self_margin)
+                goal_gain=None if not(following or proactive)else float(np.linalg.norm(real.qpos[:2]-reference['goal_xy'])-np.linalg.norm(trajectory[-1,:2]-reference['goal_xy']))
+                reason='TIME_CLEARANCE'if proof['rejected']else'SELF_DOMAIN'if bodymargin<.002 else'TERMINAL_SPEED'if self.predictor.terminal_speed>.025 else'SUCCESSOR_CLEARANCE'if active and successor_min<.155 else'SUCCESSOR_SELF'if active and extended['self_margin']<.002 else'SUCCESSOR_TERMINAL_SPEED'if active and extended['terminal_speed']>.025 else'INSUFFICIENT_REVERSE'if kind=='REVERSE_BRAKE'and signed>-.02 else'INSUFFICIENT_FORWARD'if kind in('FORWARD_BRAKE','REFERENCE_FOLLOW_BRAKE')and signed<.02 else None
+                safety_reason=reason;decision=assess_progress(progress,trajectory[-1,:2])if reason is None else None
+                recovery_only=bool(decision is not None and decision['recovery_only']and not proactive and progress['role']!='BACKUP_RETURN')
+                if decision is not None and not decision['normal_allowed']:reason='RECOVERY_ONLY'if recovery_only else decision['reason']
+                detail={'kind':kind,'library':library,'brake_after_native_ticks':brake_after,'target_command':target.tolist(),'minimum_clearance_m':minimum,'minimum_clearance_native_tick':None if values is None else int(np.argmin(values))+1,'full_minimum_not_evaluated':proof['full_minimum_not_evaluated'],'early_rejection_witness_native_tick':proof['witness_native_tick'],'early_rejection_witness_value_m':proof['witness_value_m'],'early_rejection_witness_file':witness_file,'geometry_checked_native_ticks':proof['checked_native_samples'],'geometry_wall_s':geometry_seconds,'self_domain_margin_m':float(bodymargin),'terminal_speed_m_s':float(self.predictor.terminal_speed),'signed_displacement_m':signed,'complete_goal_progress_m':goal_gain,'reason':reason,'successor_minimum_m':successor_min,'successor_required':active,'minimum_static_m':float(__import__('exact_footprint').pose_values(getattr(field,'nominal_static_geometry',field),complete).min()),'safety_reason':safety_reason,'progress_assessment':decision}
+                if following:detail.update(lookahead_m=lookahead,wheel_speed=wheel)
+                if active and (following or not proof['rejected']or os.environ.get('PHASE_SAVE_ALL_REFERENCE_CANDIDATES')=='1'):
+                    folder=self.cell/'full_predictions';folder.mkdir(exist_ok=True);saved=folder/f'prediction_{next(_witness_counter):07d}.npz'
+                    assert not saved.exists();np.savez_compressed(saved,poses=np.vstack((prefix,extended['poses'])),controls=np.vstack((np.repeat([proposal],8,axis=0),extended['controls'])),self_bounds=extended['self_bounds'],qpos=extended['qpos'],qvel=extended['qvel'],tail_initial_qpos=initial_q,tail_targets=extended['targets'])
+                    detail['full_forecast_file']=str(saved.relative_to(self.cell))
+                self.last_attempt['candidates'].append(detail)
+                if proactive:detail['joint_goal_gain_m']=goal_gain
+                if reason is not None and not recovery_only:continue
+                safe_count+=int(not recovery_only)
+                score=minimum+.1*(goal_gain if following else signed if kind=='FORWARD_BRAKE'else-signed)-.02*abs(0. if following else(steer or 0.))
+                if proactive:score=minimum+.5*goal_gain
+                detail['selection_score']=float(score)
+                # Selection is evaluated after the complete common maneuver proof.
+                # A failed maneuver cannot replace a still valid old tail.
+                controls=extended['controls'][:320].copy()if active else self.controls(target,proposal,brake_after)
+                offer={'proactive_joint':proactive,'score':score,'recovery_kind':kind,'created_step':int(step),'created_time':float(real.time),'start_time':float(d.time),'prefix_initial_qpos':real.qpos.copy(),'initial_qpos':initial_q.copy(),'initial_qvel':initial_v.copy(),'prefix_command':np.asarray(proposal).copy(),'qpos':self.predictor.last_forecast_qpos.copy(),'qvel':self.predictor.last_forecast_qvel.copy(),'poses':trajectory.copy(),'controls':controls,'brake_after_native_ticks':brake_after,'forecast_state':json.loads(json.dumps(state)),'minimum_causal_predicted_clearance_m':minimum,'minimum_predicted_self_domain_margin_m':bodymargin,'terminal_speed_m_s':self.predictor.terminal_speed,'signed_reverse_displacement_m':signed,'signed_longitudinal_displacement_m':signed,'target':target.copy(),'prefix_poses':prefix.copy(),'prefix_native_qpos':np.asarray(prefix_native_q),'prefix_native_qvel':np.asarray(prefix_native_v)}
+                if active:
+                    offer['one_cycle_continuation']={'minimum_clearance_m':successor_min,'minimum_self_margin_m':min(margin,extended['self_margin']),'terminal_speed_m_s':extended['terminal_speed'],'extra_controls':extended['controls'][320:].tolist(),'extra_qpos':extended['qpos'][320:].tolist(),'extra_qvel':extended['qvel'][320:].tolist(),'extra_poses':extended['poses'][320:].tolist(),'extra_self_bounds':extended['self_bounds'][320:].tolist(),'no_future_observations_assumed':True,'absolute_end_time':float(real.time)+3.36}
+                if following:offer['reference_following']={**reference,'lookahead_m':lookahead,'wheel_speed':wheel,'drive_ticks':brake_after,'targets':extended['targets'].tolist()}
+                maneuver=assess_offer(self,reference,real,offer,state,step)
+                if maneuver is not None:
+                    detail['maneuver_contract']=maneuver;offer['maneuver_contract']=maneuver
+                    if not maneuver['normal_allowed']:
+                        if maneuver['old_created_step'] is not None or getattr(self,'maneuver_return',False):
+                            detail['reason']=maneuver['reason'];continue
+                        recovery_only=True;detail['reason']='RECOVERY_ONLY'
+                        decision=dict(decision,active=True,normal_allowed=False,recovery_only=True,reason=maneuver['reason'])
+                    else:
+                        score=float(maneuver['route_merit_gain_commit_m']+.1*maneuver['route_merit_gain328_m']+.15*min(minimum,.30));offer['score']=score;detail['selection_score']=score
+                mode='RECOVERY_ENTRY'if recovery_only else'PROGRESS'if progress['active']else'LEGACY_PHASE'
+                summarize_progress(offer,progress,decision,mode);offer['recovery_library']=library
+                if recovery_only:
+                    best_recovery=offer;recovery_detail=detail;continue
+                best=offer
+                if maneuver is not None or(not following and brake_only):break
+        if best is None and best_recovery is not None:
+            best=best_recovery;recovery_detail['reason']=None;recovery_detail['accepted_mode']='RECOVERY_ENTRY';safe_count=1
+        self.last_attempt['status']='APPENDABLE_BACKUP_FOUND'if best is not None else'NO_APPENDABLE_BACKUP'
+        self.last_attempt['progress_mode']=None if best is None else best['progress_contract']['mode']
+        if best is None:return None
+        decorate(best,reference,state,step)
+        self.cache=best;self.cursor=0;self.expected=(initial_q,initial_v);self.expected_ctrl=np.asarray(proposal).copy();self.finish_pending=False
+        self.maneuver_commit_until=step+commit_ticks(best)//8
+        self.progress_pending=best['progress_contract']['mode']=='RECOVERY_ENTRY'
+        return {'status':best['recovery_kind']+'_TAIL_RESERVED','recovery_kind':best['recovery_kind'],'safe_reserve_candidates':safe_count,'reserve_minimum_clearance_m':best['minimum_causal_predicted_clearance_m'],'reserve_signed_longitudinal_displacement_m':best['signed_longitudinal_displacement_m'],'reserve_signed_reverse_displacement_m':best['signed_longitudinal_displacement_m'],'reserve_target':best['target'].tolist(),'reserve_total_native_ticks':328,'reserve_braking_after_native_ticks':8+best['brake_after_native_ticks'],'causal_forecast_horizon_s':3.28,'successor_certificate':best.get('one_cycle_continuation'),'progress_contract':best['progress_contract']}
+    def check_current_contract(self,real):
+        assert self.executing and self.cache is not None,'NO_ACTIVE_CONTRACT'
+        c=self.cache;i=self.cursor
+        q=c['initial_qpos']if i==0 else c['qpos'][i-1];v=c['initial_qvel']if i==0 else c['qvel'][i-1]
+        qe=float(np.max(abs(real.qpos-q)));ve=float(np.max(abs(real.qvel-v)))
+        assert max(qe,ve)<=1e-8,'HANDOVER_OLD_STATE_MISMATCH'
+        assert abs(real.time-c['start_time']-i*.01)<=1e-8,'HANDOVER_OLD_TIME_MISMATCH'
+        return qe,ve
+    def try_handover(self,real,proposal,field,state,step,metadata,commit=True):
+        assert type(commit) is bool
+        old=self.cache;old_cursor=self.cursor;old_expected=self.expected
+        qe,ve=self.check_current_contract(real)
+        candidate=ReservedRecovery(self.predictor,self.mj,self.ids,self.cell)
+        candidate.allow_forward_escape=False;candidate.escape_goal_xy=np.asarray(metadata['public_goal_xy'],float);candidate.reference=getattr(self,'reference',None)
+        candidate.progress_context_override=progress_context(real,state,candidate.reference,old,old_cursor,step,role='BACKUP_RETURN')
+        candidate.maneuver_old=(old,old_cursor);candidate.maneuver_return=True
+        summary=candidate.admit_nominal(real,proposal,field,state,step)
+        self.last_handover_attempt=candidate.last_attempt
+        if summary is None:
+            assert self.cache is old and self.cursor==old_cursor and self.expected is old_expected and self.executing,'FAILED_HANDOVER_MUTATED_OLD_CONTRACT'
+            return None
+        if not commit:
+            before=(self.cache,self.cursor,self.expected,self.expected_ctrl,self.finish_pending,self.executing,self.handovers)
+            value={k:(v.tolist()if isinstance(v,np.ndarray)else v)for k,v in candidate.cache.items()}
+            value.update(handover_step=int(step),old_created_step=int(old['created_step']),old_native_cursor=int(old_cursor),old_state_qpos_error=qe,old_state_qvel_error=ve,real_entry_qpos=real.qpos.tolist(),real_entry_qvel=real.qvel.tolist(),real_entry_time=float(real.time),first_command=np.asarray(proposal).tolist(),metadata=metadata,hidden_world_geometry_used=False,shadow_only=True,executed=False)
+            directory=self.cell/'shadow_handover_certificates';directory.mkdir(parents=True,exist_ok=True)
+            file=directory/f'shadow_{step:04d}.json.gz'
+            with gzip.open(file,'wt')as stream:json.dump(value,stream)
+            assert self.cache is before[0] and self.cursor==before[1] and self.expected is before[2] and self.expected_ctrl is before[3] and self.finish_pending==before[4] and self.executing==before[5] and self.handovers==before[6],'SHADOW_MUTATED_RETAINED_CONTRACT'
+            return {**summary,'shadow_only':True,'shadow_certificate':file.name,'old_created_step':int(old['created_step']),'old_native_cursor':int(old_cursor)}
+        directory=self.cell/'handover_certificates';directory.mkdir(parents=True,exist_ok=True)
+        value={k:(v.tolist()if isinstance(v,np.ndarray)else v)for k,v in candidate.cache.items()}
+        value.update(handover_step=int(step),old_created_step=int(old['created_step']),old_native_cursor=int(old_cursor),
+                     old_state_qpos_error=qe,old_state_qvel_error=ve,real_entry_qpos=real.qpos.tolist(),real_entry_qvel=real.qvel.tolist(),
+                     real_entry_time=float(real.time),first_command=np.asarray(proposal).tolist(),metadata=metadata,
+                     hidden_world_geometry_used=False,scope='new complete prefix and backup certificate; old backup partially executed')
+        file=directory/f'handover_{step:04d}.json.gz'
+        with gzip.open(file,'wt')as stream:json.dump(value,stream)
+        self.cache=candidate.cache;self.cursor=0;self.expected=candidate.expected;self.finish_pending=False;self.executing=False
+        self.expected_ctrl=candidate.expected_ctrl
+        self.last_prefix_qpos=candidate.last_prefix_qpos;self.last_prefix_qvel=candidate.last_prefix_qvel;self.progress_pending=False
+        self.maneuver_commit_until=candidate.maneuver_commit_until
+        self.handovers+=1
+        return {**summary,'handover_certificate':str(file.name),'old_created_step':int(old['created_step']),'old_native_cursor':int(old_cursor)}
+    def _begin_contract(self,real,step):
+        assert self.cache is not None and not self.executing,'NO_RETAINED_RECOVERY_CONTRACT'
+        self.executing=True;self.activations+=1
+        directory=self.cell/'recovery_contracts';directory.mkdir(parents=True,exist_ok=True)
+        value={k:(v.tolist()if isinstance(v,np.ndarray)else v)for k,v in self.cache.items()}
+        value.update(activation_step=int(step),actual_initial_time=float(real.time),hidden_world_geometry_used=False,
+                     scope='finite retained causal recovery tail; no infinite parking or liveness guarantee')
+        with gzip.open(directory/f'contract_{step:04d}.json.gz','wt')as f:json.dump(value,f)
+    def start(self,real,step):
+        self._begin_contract(real,step)
+        return self.command(real)
+    def begin_pending_recovery(self,real,step):
+        assert self.progress_pending and not self.executing
+        assert self.cache['progress_contract']['mode']=='RECOVERY_ENTRY'
+        assert self.cursor==0 and self.expected is None and self.expected_ctrl is None
+        assert max(np.max(abs(real.qpos-self.cache['initial_qpos'])),np.max(abs(real.qvel-self.cache['initial_qvel'])))<=1e-8,'PROGRESS_ENTRY_PREFIX_STATE_MISMATCH'
+        assert abs(real.time-self.cache['start_time'])<=1e-8,'PROGRESS_ENTRY_PREFIX_TIME_MISMATCH'
+        assert np.max(abs(real.ctrl[self.ids]-self.cache['prefix_command']))<=1e-12,'PROGRESS_ENTRY_PREFIX_CTRL_MISMATCH'
+        self.progress_pending=False;self._begin_contract(real,step)
+    def command(self,real):
+        assert self.executing and self.cache is not None
+        c=self.cache;i=self.cursor
+        q=c['initial_qpos']if i==0 else c['qpos'][i-1];v=c['initial_qvel']if i==0 else c['qvel'][i-1]
+        assert max(np.max(abs(real.qpos-q)),np.max(abs(real.qvel-v)))<=1e-8,'RETAINED_CONTRACT_INITIAL_STATE_MISMATCH'
+        assert abs(real.time-c['start_time']-i*.01)<=1e-8,'RETAINED_CONTRACT_TIME_MISMATCH'
+        end=min(i+8,320);command=c['controls'][i].copy();self.cursor=end;self.expected=(c['qpos'][end-1],c['qvel'][end-1]);self.finish_pending=end==320;self.executed_steps+=1;self.expected_ctrl=command.copy()
+        gate={'status':'RETAINED_REVERSE_BRAKE_CONTRACT','hidden_world_geometry_used':False,'dynamic_time_gate':True,'active_gear':None,
+            'backup_margin_recovery':True,'recovery_kind':c['recovery_kind'],'prediction_horizon_steps':320-i,'braking_tail_after_physics_steps':max(0,c['brake_after_native_ticks']-i),
+            'predicted_minimum_clearance_m':c['minimum_causal_predicted_clearance_m'],'predicted_self_domain_margin_m':c['minimum_predicted_self_domain_margin_m'],
+            'predicted_next_pose':c['poses'][end-1].tolist(),'predicted_end_pose':c['poses'][-1].tolist(),'terminal_speed_threshold_m_s':.025,
+            'candidate_count_safe':1,'prediction_steps_total':self.predictor.prediction_steps,'retained_from_step':c['created_step'],
+            'retained_forecast_age_s':float(real.time-c['created_time']),'contract_native_cursor':i,'finite_contract_complete_after_public':bool(self.finish_pending)}
+        return command,gate
+    def after_public(self,real):
+        if self.expected is None:return False
+        q,v=self.expected
+        assert max(np.max(abs(real.qpos-q)),np.max(abs(real.qvel-v)))<=1e-8,'RETAINED_OR_NOMINAL_PREFIX_STATE_MISMATCH'
+        assert self.expected_ctrl is not None and np.max(abs(real.ctrl[self.ids]-self.expected_ctrl))<=1e-12,'CERTIFIED_APPLIED_CTRL_MISMATCH'
+        self.expected=None;self.expected_ctrl=None
+        if self.finish_pending:
+            self.finish_pending=False;self.executing=False;self.cache=None;return True
+        return False

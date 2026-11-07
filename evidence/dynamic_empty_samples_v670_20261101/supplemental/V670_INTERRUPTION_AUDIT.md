@@ -1,5 +1,0 @@
-# V670中断后有界前缀重放
-
-原900秒任务在私有预测rollout中触发TimeoutError；原completion/interrupted/源码和截止不改。导航已停止且永计一次未成功，条件重复不执行。Window.result无完整result，因此原Window.audit未启动物理重放，driver保留STOPPED_EVIDENCE_ANOMALY，不能将此标签误称实际接触异常。
-
-本次执行唯一一次<=35秒的原控制日志重放，仍在原ROUND_WINDOW2400秒截止内、run_phase.sh隔离单CPU，无新导航/私有控制候选/训练。replay_interrupted_v670.py逐字继承冻结V670 replay_native_audit，仅改导入目录、读取原interrupted计数与输出独立PARTIAL_NATIVE_REPLAY_AUDIT.json。所有完整qpos/qvel/mocap、每原生接触/净空/自体检查及计数门槛不变；仅核验已执行前缀，不回填完整导航通过或原COMPLETION。原未成功、全部原始证据不删除。

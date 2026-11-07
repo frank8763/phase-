@@ -1,0 +1,100 @@
+[
+  {
+    "name": "main01",
+    "role": "MAIN_DEVELOPMENT",
+    "run": "runs/v786_global_forward_curve/main01/paired",
+    "physical_passed": true,
+    "functional_passed": false,
+    "audits": {
+      "audit_run.py": 0,
+      "audit_forward_controller.py": 0,
+      "audit_route_commitment.py": 0,
+      "audit_projection_learning.py": 0,
+      "audit_all_tail_geometry.py": 0,
+      "audit_shadow_mode.py": 0,
+      "audit_reentry.py": 0
+    },
+    "runner_exit": 0,
+    "result": {
+      "condition": "geometry_memory",
+      "seed": 10010001,
+      "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+      "strict_safe_arrival": false,
+      "goal_distance_m": 7.991337943471419,
+      "public_steps": 165,
+      "physics_steps": 1320,
+      "contacts": {
+        "physics_steps": 1320,
+        "all_contact_records": 13586,
+        "contact_type_counts": {
+          "ground_support": 10560,
+          "robot_self_contact": 3026
+        },
+        "negative_distance_counts_all_types": {
+          "ground_support": 10560,
+          "robot_self_contact": 3026
+        },
+        "robot_obstacle_contact_records": 0,
+        "robot_obstacle_penetration_records": 0,
+        "robot_obstacle_contact_steps": 0,
+        "robot_obstacle_penetration_steps": 0,
+        "maximum_obstacle_penetration_depth_m": 0.0,
+        "minimum_obstacle_distance_m": null,
+        "first_anomaly": null,
+        "unknown_contact_records": 0,
+        "robot_obstacle_geom_pairs": [],
+        "contact_log_content_sha256": "58459c01bb4dc846fc23e1bb840c6329d21b51b45ca746220d573e1e9931e486"
+      },
+      "backup_attempts": 2,
+      "backup_steps": 75,
+      "planning_attempts": 2,
+      "planning_wall_s": 0.7199648460373282,
+      "command_overrides": 165,
+      "elapsed_s": 130.36945286398986,
+      "initial_state_hash": "6892387dde6cc5cf9096aa4f7787e8b51dd2edaaac22461e35de05e63d6f74b6",
+      "normalized_initial_state_hash": "fcd26304e4b0dc879085c5da4b23fd54dfb7718d1b242b5eda537c1ead2b437c",
+      "minimum_actual_self_domain_margin_m": 0.009236990135712941,
+      "self_geometry_checked_native_ticks": 1320,
+      "static_obstacle_pose_unchanged": true,
+      "root_mutations_outside_mjstep": 0,
+      "source_revision": "V786_CAUSAL_FORWARD_CURVE_REFINED_RECTANGLE",
+      "prediction_steps": 918664,
+      "retained_reentry_attempts": 18,
+      "retained_reentry_successes": 1,
+      "retained_reentry_private_native": 88560,
+      "conditional_nonpenetrating_map_motion_class": true,
+      "first_discovery_step": null,
+      "discovery_brake_finished_step": null,
+      "discovery_terminal_speed_m_s": null,
+      "initial_unknown_mode": "UNSEEN_PRIOR",
+      "early_scan_started_step": null,
+      "early_scan_finished_step": null,
+      "differential_candidate_bank_enabled": true,
+      "native_applied_ctrl_checks": 1320,
+      "reserved_recovery_activations": 2,
+      "reserved_recovery_public_steps": 75,
+      "certified_handover_attempts": 18,
+      "certified_handover_successes": 1,
+      "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+      "course_distance_m": 8.0,
+      "course_phase": 0.6573753567727383,
+      "initial_observation_steps": 0,
+      "dynamic_mode": "predictive",
+      "minimum_dynamic_native_clearance_m": 0.28316571207679786,
+      "actor_maximum_native_displacement_m": 0.0007999995228495846,
+      "actor_motion_ticks": 1320,
+      "actor_position_at_end": [
+        2.90514140280311,
+        -1.2274510852513387
+      ]
+    },
+    "interrupted": null,
+    "replay_exit": 0,
+    "functional_failed_checks": [
+      "moving_before_discovery",
+      "new_causal_route_after_stop",
+      "actually_continued_after_replanning",
+      "strict_arrival"
+    ]
+  }
+]

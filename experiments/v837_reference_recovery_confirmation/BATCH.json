@@ -1,0 +1,19 @@
+{
+  "label": "v837_reference_recovery_confirmation",
+  "output": "runs/v837_reference_recovery_confirmation",
+  "window": "confirmation01",
+  "confirmation": true,
+  "absolute_deadline_unix": 1793977200.0,
+  "batch_cap_s": 36000,
+  "minimum_start_budget_s": 36000,
+  "repeat_slots": [
+    1,
+    9,
+    17
+  ],
+  "reference_pair": null,
+  "reference_view": "runs/reference_recovery_20261106/qualification/reference/paired",
+  "report": "docs/RPCCR_REFERENCE_RECOVERY_V837_REPORT.md",
+  "archive": "evidence/rpccr_reference_recovery_v837_20261106",
+  "dependency": "runs/v836_reference_recovery_development"
+}

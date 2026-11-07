@@ -1,0 +1,74 @@
+{
+  "status": "ALL_FINAL_ACCOUNT_CHECKS_PASS",
+  "checks": {
+    "source_and_result_audits": true,
+    "attempt_cap": true,
+    "registered_update_cap": true,
+    "six_meter_gate_matches_actual": true,
+    "eight_meter_requires_actual_six_gate": true,
+    "original_seven_thousand_two_hundred_deadline": true,
+    "actual_elapsed_within_deadline": true,
+    "old_six_meter_checkpoint_unchanged": true,
+    "sac_updates_zero": true
+  },
+  "tasks": [
+    {
+      "name": "learned6m_train_task",
+      "checks": {
+        "recorded_result_matches": true,
+        "full_physical_audit": true,
+        "causal_projection_and_learning": true,
+        "route_triggers": true,
+        "full_tail_geometry": true,
+        "full_replay": true,
+        "unchanged_sources": true,
+        "unchanged_documents": true,
+        "raw_snapshot_sources": true
+      },
+      "passed": true
+    },
+    {
+      "name": "learned6m_phase_holdout",
+      "checks": {
+        "recorded_result_matches": true,
+        "full_physical_audit": true,
+        "causal_projection_and_learning": true,
+        "route_triggers": true,
+        "full_tail_geometry": true,
+        "full_replay": true,
+        "unchanged_sources": true,
+        "unchanged_documents": true,
+        "raw_snapshot_sources": true
+      },
+      "passed": true
+    },
+    {
+      "name": "learned6m_phase_holdout_repeat",
+      "checks": {
+        "recorded_result_matches": true,
+        "full_physical_audit": true,
+        "causal_projection_and_learning": true,
+        "route_triggers": true,
+        "full_tail_geometry": true,
+        "full_replay": true,
+        "unchanged_sources": true,
+        "unchanged_documents": true,
+        "raw_snapshot_sources": true,
+        "exact_repeat_pass": true
+      },
+      "passed": true
+    },
+    {
+      "name": "teacher8m",
+      "checks": {
+        "recorded_result_matches": true,
+        "original_zero_step_failure_retained": true,
+        "zero_step_failure_not_counted_arrival": true
+      },
+      "passed": true
+    }
+  ],
+  "verification_integrations": 0,
+  "verification_gradient_updates": 0,
+  "scope": "finite two-phase development gate and repeats, not original-field or statistical dynamic acceptance"
+}

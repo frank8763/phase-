@@ -1,0 +1,46 @@
+{
+  "status": "SPATIAL_PROPOSAL_SEPARATION_AUDIT_PASS",
+  "records": [
+    {
+      "step": 291,
+      "checks": {
+        "current_only_hard_map": true,
+        "no_truth": true,
+        "no_reference_control_certificate": true,
+        "parameters": true,
+        "hard_current_floor": true,
+        "soft_values_exact": true,
+        "soft_cost_bounded": true,
+        "selected_forward_or_fallback": true,
+        "no_virtual_arrival_clock": true,
+        "fallback_account": true,
+        "fixed_search_work": true
+      },
+      "passed": true,
+      "minimum_current_reference_m": 0.15557266339021725,
+      "maximum_soft_heat_error": 8.326672684688674e-17
+    },
+    {
+      "step": 499,
+      "checks": {
+        "current_only_hard_map": true,
+        "no_truth": true,
+        "no_reference_control_certificate": true,
+        "parameters": true,
+        "hard_current_floor": true,
+        "soft_values_exact": true,
+        "soft_cost_bounded": true,
+        "selected_forward_or_fallback": true,
+        "no_virtual_arrival_clock": true,
+        "fallback_account": true,
+        "fixed_search_work": true
+      },
+      "passed": true,
+      "minimum_current_reference_m": 0.15649218911991847,
+      "maximum_soft_heat_error": 1.3877787807814457e-17
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "scope": "Current hard reference geometry and soft forecast reconstruction only. Original native dynamic control and complete tail audited separately; future reference paths are not execution guarantees."
+}

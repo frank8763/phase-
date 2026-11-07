@@ -1,0 +1,217 @@
+{
+  "passed": true,
+  "status": "SAVED_AUDITORS_REAL_OUTPUT_GUARD_AND_MANEUVERS_QUALIFIED",
+  "expected_audit_statuses": {
+    "audit_run.py": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+    "audit_forward_controller.py": "FORWARD_GUIDANCE_BANK_PASS",
+    "audit_route_commitment.py": "PASS",
+    "audit_projection_learning.py": "PASS",
+    "audit_all_tail_geometry.py": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+    "audit_shadow_mode.py": "PASS",
+    "audit_reentry.py": "GLOBAL_REENTRY_SAVED_EVIDENCE_VERIFIED",
+    "audit_complete_joint.py": "COMPLETE_FINITE_JOINT_SELECTION_VERIFIED",
+    "audit_nominal_layers.py": "SPATIAL_NOMINAL_AND_COMPLETE_CAUSAL_TAIL_VERIFIED",
+    "audit_reactive.py": "REACTIVE_SCOPE_AND_CAUSAL_FORMULAS_PASS",
+    "audit_proposal_separation.py": "SPATIAL_PROPOSAL_SEPARATION_AUDIT_PASS",
+    "audit_tracked_norm.py": "TRACKED_NORM_COMPLETE_INDEPENDENT_GEOMETRY_PASS",
+    "audit_goal_renewal.py": "GOAL_REFERENCE_RENEWAL_INDEPENDENT_PASS",
+    "audit_ranked_return.py": "RANKED_RETURN_INDEPENDENT_PASS",
+    "audit_forward_escape.py": "FORWARD_ESCAPE_PROVENANCE_PASS",
+    "audit_reference_recovery.py": "REFERENCE_RECOVERY_AND_SUCCESSOR_PASS",
+    "audit_early_joint.py": "EARLY_JOINT_INDEPENDENT_PASS",
+    "audit_candidate_policy.py": "GOAL_FIRST_CERTIFIED_POLICY_PASS",
+    "audit_maneuver.py": "COMMON_MANEUVER_AND_ACTUAL_COMMITMENT_PASS"
+  },
+  "records": [
+    {
+      "script": "audit_run.py",
+      "passed": true,
+      "status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+      "reused_completed_preparation": true
+    },
+    {
+      "script": "audit_forward_controller.py",
+      "passed": true,
+      "status": "FORWARD_GUIDANCE_BANK_PASS",
+      "reused_completed_preparation": true
+    },
+    {
+      "script": "audit_route_commitment.py",
+      "passed": true,
+      "status": "PASS",
+      "reused_completed_preparation": true
+    },
+    {
+      "script": "audit_projection_learning.py",
+      "passed": true,
+      "status": "PASS",
+      "reused_completed_preparation": true
+    },
+    {
+      "script": "audit_all_tail_geometry.py",
+      "passed": true,
+      "status": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+      "reused_completed_preparation": true
+    },
+    {
+      "script": "audit_shadow_mode.py",
+      "passed": true,
+      "status": "PASS",
+      "reused_completed_preparation": true
+    },
+    {
+      "script": "audit_reentry.py",
+      "passed": true,
+      "status": "GLOBAL_REENTRY_SAVED_EVIDENCE_VERIFIED",
+      "reused_completed_preparation": true
+    },
+    {
+      "script": "audit_complete_joint.py",
+      "passed": true,
+      "status": "COMPLETE_FINITE_JOINT_SELECTION_VERIFIED",
+      "reused_completed_preparation": true
+    },
+    {
+      "script": "audit_nominal_layers.py",
+      "passed": true,
+      "status": "SPATIAL_NOMINAL_AND_COMPLETE_CAUSAL_TAIL_VERIFIED"
+    },
+    {
+      "script": "audit_reactive.py",
+      "passed": true,
+      "status": "REACTIVE_SCOPE_AND_CAUSAL_FORMULAS_PASS"
+    },
+    {
+      "script": "audit_proposal_separation.py",
+      "passed": true,
+      "status": "SPATIAL_PROPOSAL_SEPARATION_AUDIT_PASS"
+    },
+    {
+      "script": "audit_tracked_norm.py",
+      "passed": true,
+      "status": "TRACKED_NORM_COMPLETE_INDEPENDENT_GEOMETRY_PASS"
+    },
+    {
+      "script": "audit_goal_renewal.py",
+      "passed": true,
+      "status": "GOAL_REFERENCE_RENEWAL_INDEPENDENT_PASS"
+    },
+    {
+      "script": "audit_ranked_return.py",
+      "passed": true,
+      "status": "RANKED_RETURN_INDEPENDENT_PASS"
+    },
+    {
+      "script": "audit_forward_escape.py",
+      "passed": true,
+      "status": "FORWARD_ESCAPE_PROVENANCE_PASS"
+    },
+    {
+      "script": "audit_reference_recovery.py",
+      "passed": true,
+      "status": "REFERENCE_RECOVERY_AND_SUCCESSOR_PASS"
+    },
+    {
+      "script": "audit_early_joint.py",
+      "passed": true,
+      "status": "EARLY_JOINT_INDEPENDENT_PASS"
+    },
+    {
+      "script": "audit_candidate_policy.py",
+      "passed": true,
+      "status": "GOAL_FIRST_CERTIFIED_POLICY_PASS"
+    }
+  ],
+  "fixed_classifications": [
+    {
+      "step": 374,
+      "gear": -1,
+      "normal_allowed": false,
+      "short_gain": -0.015532332535270388,
+      "full_gain": -0.01731744840617952,
+      "commit_native": 328
+    },
+    {
+      "step": 399,
+      "gear": -1,
+      "normal_allowed": true,
+      "short_gain": 0.045433224647577264,
+      "full_gain": 0.08033002492102065,
+      "commit_native": 32
+    },
+    {
+      "step": 619,
+      "gear": -1,
+      "normal_allowed": true,
+      "short_gain": 0.04461658564272212,
+      "full_gain": 0.059249625083709935,
+      "commit_native": 32
+    },
+    {
+      "step": 734,
+      "gear": -1,
+      "normal_allowed": true,
+      "short_gain": 0.028525487195686528,
+      "full_gain": 0.029203283633548866,
+      "commit_native": 32
+    },
+    {
+      "step": 865,
+      "gear": -1,
+      "normal_allowed": true,
+      "short_gain": 0.04690235101596587,
+      "full_gain": 0.08083922041520768,
+      "commit_native": 32
+    },
+    {
+      "step": 932,
+      "gear": -1,
+      "normal_allowed": false,
+      "short_gain": 0.0014235339088805345,
+      "full_gain": 0.0012022816600762189,
+      "commit_native": 328
+    },
+    {
+      "step": 982,
+      "gear": -1,
+      "normal_allowed": true,
+      "short_gain": 0.0392549507169615,
+      "full_gain": 0.09311834583433187,
+      "commit_native": 32
+    },
+    {
+      "step": 1073,
+      "gear": 1,
+      "normal_allowed": false,
+      "short_gain": 0.042204110617454604,
+      "full_gain": 0.42739027275353475,
+      "commit_native": 328
+    },
+    {
+      "step": 1120,
+      "gear": 1,
+      "normal_allowed": true,
+      "short_gain": 0.039363033643489365,
+      "full_gain": 0.20993158085478458,
+      "commit_native": 32
+    },
+    {
+      "step": 1148,
+      "gear": 1,
+      "normal_allowed": true,
+      "short_gain": 0.03076616192815204,
+      "full_gain": 0.2101980099098307,
+      "commit_native": 32
+    }
+  ],
+  "negative_forged_merits": 10,
+  "os_identity_cases": [
+    "correct",
+    "wrong"
+  ],
+  "review_pending_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
+  "models": 0,
+  "integrations": 0,
+  "canonical_metadata_proxy_import_only": true,
+  "new_native_dynamics_qualified": false
+}

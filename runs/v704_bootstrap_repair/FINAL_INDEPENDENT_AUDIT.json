@@ -1,0 +1,252 @@
+{
+  "status": "BOOTSTRAP_REPAIR_AND_ANCHOR_EQUIVALENCE_VALIDATED",
+  "checks": {
+    "frozen_all_inputs": true,
+    "closed": true,
+    "registered_window": true,
+    "no_extra_tasks_or_training": true,
+    "exact_fixed_schedule": true,
+    "locked_plan": true,
+    "driver_completed": true,
+    "locked_tasks": true,
+    "all2_anchor_physical_evidence": true,
+    "two_old_anchor_references_exact": true,
+    "anchor_compute_and_commit_isolation": true,
+    "four_preflights_noise": true
+  },
+  "records": [
+    {
+      "name": "anchor_full",
+      "slot": 0,
+      "mode": "FULL",
+      "role": "ANCHOR_REFERENCE",
+      "run": "runs/v704_bootstrap_repair/anchor_full/paired",
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "ROUTE_COMMITMENT_AUDIT.json": true,
+        "PROJECTION_LEARNING_AUDIT.json": true,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+        "SHADOW_MODE_AUDIT.json": true,
+        "full_replay": true,
+        "model": true,
+        "bootstrap_repair_verified": true,
+        "raw_safety": true,
+        "task_and_mode": true,
+        "causal_chain_except_function": true,
+        "functional_flag": true
+      },
+      "all_physical_evidence": true,
+      "metrics": {
+        "full_chain_arrival": true,
+        "outcome": "GOAL",
+        "public_steps": 811,
+        "simulated_time_s": 64.88,
+        "goal_distance_m": 0.44843246474501147,
+        "path_length_m": 9.860587804013536,
+        "accumulated_goal_regression_m": 0.18382020407389277,
+        "low_speed_public_steps": 50,
+        "reverse_public_steps": 25,
+        "backup_steps": 12,
+        "backup_attempts": 1,
+        "certified_returns": 1,
+        "suppressed_return_attempts": 0,
+        "planning_attempts": 2,
+        "private_integrations": 3750512,
+        "wall_seconds": 347.7360166220169,
+        "minimum_clearance_m": 0.4068522551174377,
+        "ordinary_learned_steps": 282,
+        "ordinary_steps": 757
+      },
+      "native_steps": 6488,
+      "replay_steps": 6488,
+      "private_integrations": 3750512
+    },
+    {
+      "name": "anchor_shadow",
+      "slot": 0,
+      "mode": "SHADOW_COMPLETE_TAIL",
+      "role": "ANCHOR_SHADOW",
+      "run": "runs/v704_bootstrap_repair/anchor_shadow/paired",
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "ROUTE_COMMITMENT_AUDIT.json": true,
+        "PROJECTION_LEARNING_AUDIT.json": true,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+        "SHADOW_MODE_AUDIT.json": true,
+        "full_replay": true,
+        "model": true,
+        "bootstrap_repair_verified": true,
+        "raw_safety": true,
+        "task_and_mode": true,
+        "causal_chain_except_function": true,
+        "functional_flag": true
+      },
+      "all_physical_evidence": true,
+      "metrics": {
+        "full_chain_arrival": false,
+        "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+        "public_steps": 335,
+        "simulated_time_s": 26.8,
+        "goal_distance_m": 5.762106717983765,
+        "path_length_m": 3.4095961170926623,
+        "accumulated_goal_regression_m": 0.18423348196106204,
+        "low_speed_public_steps": 57,
+        "reverse_public_steps": 25,
+        "backup_steps": 40,
+        "backup_attempts": 1,
+        "certified_returns": 0,
+        "suppressed_return_attempts": 6,
+        "planning_attempts": 3,
+        "private_integrations": 1320128,
+        "wall_seconds": 125.2055958439887,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 95,
+        "ordinary_steps": 254
+      },
+      "native_steps": 2680,
+      "replay_steps": 2680,
+      "private_integrations": 1320128
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "anchor_full",
+      "passed": true,
+      "errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0
+      },
+      "contacts": {
+        "passed": true,
+        "checks": {
+          "same_xml_bytes": true,
+          "both_raw_content_digests_verified": true,
+          "record_counts_verified": true,
+          "same_number_of_contacts": true,
+          "all_contact_fields_equal_after_verified_path_rewrite": true,
+          "canonical_digest_equal": true
+        },
+        "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v701_rpccr_recovery_ablation/full14/paired",
+        "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v704_bootstrap_repair/anchor_full/paired",
+        "raw_content_sha256": [
+          "01c0cbd13d032f63e7d436a7243d31e00525d0865628d36e18c310957becad03",
+          "c8dcdfb5e5510b7e3c43fd5fcefef670bb0a7c71c319f36457ea337055af422b"
+        ],
+        "raw_content_hashes_identical": false,
+        "canonical_content_sha256": [
+          "6eb4b036e2fa6482a937edbc73dc4bc8c235ce7ab18b56813e715847c2a427f2",
+          "6eb4b036e2fa6482a937edbc73dc4bc8c235ce7ab18b56813e715847c2a427f2"
+        ],
+        "xml_bytes_sha256": [
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d",
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d"
+        ],
+        "contact_records": [
+          75163,
+          75163
+        ],
+        "raw_json_different_rows": 51904,
+        "first_non_path_difference_rows": [],
+        "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+        "simulation_steps": 0
+      }
+    },
+    {
+      "name": "anchor_shadow",
+      "passed": true,
+      "errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0
+      },
+      "contacts": {
+        "passed": true,
+        "checks": {
+          "same_xml_bytes": true,
+          "both_raw_content_digests_verified": true,
+          "record_counts_verified": true,
+          "same_number_of_contacts": true,
+          "all_contact_fields_equal_after_verified_path_rewrite": true,
+          "canonical_digest_equal": true
+        },
+        "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v701_rpccr_recovery_ablation/tail14/paired",
+        "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v704_bootstrap_repair/anchor_shadow/paired",
+        "raw_content_sha256": [
+          "91f73bf6e669940b3f0b71e080f18ddb4ca6de72525438b4be3774a495441037",
+          "2e76e1cfe95af87e0ccb575b22b0aaab02697bd252c812db4d00f7f88dc79fbe"
+        ],
+        "raw_content_hashes_identical": false,
+        "canonical_content_sha256": [
+          "2c93bbff1c08fa16a34a1d74fbbbff602711729bc69561aa416e186fa6e06c0d",
+          "2c93bbff1c08fa16a34a1d74fbbbff602711729bc69561aa416e186fa6e06c0d"
+        ],
+        "xml_bytes_sha256": [
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d",
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d"
+        ],
+        "contact_records": [
+          31008,
+          31008
+        ],
+        "raw_json_different_rows": 21440,
+        "first_non_path_difference_rows": [],
+        "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+        "simulation_steps": 0
+      }
+    }
+  ],
+  "paired_effects": [],
+  "anchor_compute_audit": {
+    "status": "PASS",
+    "checks": {
+      "registered_modes": true,
+      "same_task_phase": true,
+      "same_model_and_initial": true,
+      "identical_physical_prefix": true,
+      "equal_prediction_work_on_common_decisions": true,
+      "same_first_proposed_full_certificate": true,
+      "physical_divergence_not_before_commit_choice": true
+    },
+    "mechanism_triggered": true,
+    "first_full_commit_step": 307,
+    "first_physical_difference_step": 307,
+    "same_first_candidate_certificate": true,
+    "matched_return_decisions": 12,
+    "common_prefix_prediction_steps": 1297608,
+    "full_arrival": true,
+    "shadow_arrival": false,
+    "full_public_steps": 811,
+    "shadow_public_steps": 335,
+    "full_private_integrations": 3750512,
+    "shadow_private_integrations": 1320128,
+    "verification_integrations": 0,
+    "scope": "Equal work on matching pre-commit decisions only; divergent total work and unequal endpoints must be reported separately."
+  },
+  "main_arrivals_by_condition": {
+    "FULL": 0,
+    "SHADOW_COMPLETE_TAIL": 0
+  },
+  "new_task_denominator": 4,
+  "full_condition_success_rates": null,
+  "mechanism_triggered_pairs": 0,
+  "navigation_native_steps": 9168,
+  "replay_native_steps": 9168,
+  "private_integrations": 5070640,
+  "native_account_exact": true,
+  "replay_account_exact": true,
+  "private_account_exact": true,
+  "new_unique_prospective_tasks": 0,
+  "reserved_unexecuted_tasks": 4,
+  "old_calibration_executions": 2,
+  "fixed_repeat_executions": 0,
+  "verification_integrations": 0,
+  "training_updates": 0,
+  "algorithm_development_revisions": 0,
+  "initialization_engineering_revisions": 1,
+  "unexecuted_registered_executions": [],
+  "mechanism_superiority_established": false,
+  "scope": "Initialization engineering repair and two exact old anchors only; original prospective four main pairs unexecuted. Not new algorithm, sample success rate or superiority."
+}

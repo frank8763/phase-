@@ -1,0 +1,598 @@
+{
+  "status": "MECHANISM_DIAGNOSTIC_EVIDENCE_COMPLETE",
+  "checks": {
+    "frozen_all_inputs": true,
+    "closed": true,
+    "registered_window": true,
+    "no_extra_tasks_or_training": true,
+    "exact_fixed_schedule": true,
+    "locked_plan": true,
+    "driver_completed": true,
+    "all_six_physical_evidence": true,
+    "two_old_references_and_two_repeats_exact": true,
+    "paired_prefix_causal_isolation": true
+  },
+  "records": [
+    {
+      "name": "full14",
+      "slot": 14,
+      "mode": "FULL",
+      "role": "MATCHED_REFERENCE",
+      "run": "runs/v701_rpccr_recovery_ablation/full14/paired",
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "ROUTE_COMMITMENT_AUDIT.json": true,
+        "PROJECTION_LEARNING_AUDIT.json": true,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+        "MECHANISM_AUDIT.json": true,
+        "full_replay": true,
+        "model": true,
+        "raw_safety": true,
+        "task_and_mode": true,
+        "causal_chain_except_function": true,
+        "functional_flag": true
+      },
+      "all_physical_evidence": true,
+      "metrics": {
+        "full_chain_arrival": true,
+        "outcome": "GOAL",
+        "public_steps": 811,
+        "simulated_time_s": 64.88,
+        "goal_distance_m": 0.44843246474501147,
+        "path_length_m": 9.860587804013536,
+        "accumulated_goal_regression_m": 0.18382020407389277,
+        "low_speed_public_steps": 50,
+        "reverse_public_steps": 25,
+        "backup_steps": 12,
+        "backup_attempts": 1,
+        "certified_returns": 1,
+        "suppressed_return_attempts": 0,
+        "planning_attempts": 2,
+        "private_integrations": 3750512,
+        "wall_seconds": 342.79018930898746,
+        "minimum_clearance_m": 0.4068522551174377,
+        "ordinary_learned_steps": 282,
+        "ordinary_steps": 757
+      },
+      "native_steps": 6488,
+      "replay_steps": 6488,
+      "private_integrations": 3750512
+    },
+    {
+      "name": "tail14",
+      "slot": 14,
+      "mode": "COMPLETE_TAIL",
+      "role": "ABLATION",
+      "run": "runs/v701_rpccr_recovery_ablation/tail14/paired",
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "ROUTE_COMMITMENT_AUDIT.json": true,
+        "PROJECTION_LEARNING_AUDIT.json": true,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+        "MECHANISM_AUDIT.json": true,
+        "full_replay": true,
+        "model": true,
+        "raw_safety": true,
+        "task_and_mode": true,
+        "causal_chain_except_function": true,
+        "functional_flag": true
+      },
+      "all_physical_evidence": true,
+      "metrics": {
+        "full_chain_arrival": false,
+        "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+        "public_steps": 335,
+        "simulated_time_s": 26.8,
+        "goal_distance_m": 5.762106717983765,
+        "path_length_m": 3.4095961170926623,
+        "accumulated_goal_regression_m": 0.18423348196106204,
+        "low_speed_public_steps": 57,
+        "reverse_public_steps": 25,
+        "backup_steps": 40,
+        "backup_attempts": 1,
+        "certified_returns": 0,
+        "suppressed_return_attempts": 9,
+        "planning_attempts": 3,
+        "private_integrations": 1270144,
+        "wall_seconds": 118.83745832397835,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 95,
+        "ordinary_steps": 254
+      },
+      "native_steps": 2680,
+      "replay_steps": 2680,
+      "private_integrations": 1270144
+    },
+    {
+      "name": "full20",
+      "slot": 20,
+      "mode": "FULL",
+      "role": "MATCHED_REFERENCE",
+      "run": "runs/v701_rpccr_recovery_ablation/full20/paired",
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "ROUTE_COMMITMENT_AUDIT.json": true,
+        "PROJECTION_LEARNING_AUDIT.json": true,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+        "MECHANISM_AUDIT.json": true,
+        "full_replay": true,
+        "model": true,
+        "raw_safety": true,
+        "task_and_mode": true,
+        "causal_chain_except_function": true,
+        "functional_flag": true
+      },
+      "all_physical_evidence": true,
+      "metrics": {
+        "full_chain_arrival": true,
+        "outcome": "GOAL",
+        "public_steps": 809,
+        "simulated_time_s": 64.72,
+        "goal_distance_m": 0.4458310894244691,
+        "path_length_m": 9.838803767901808,
+        "accumulated_goal_regression_m": 0.13690231562742117,
+        "low_speed_public_steps": 51,
+        "reverse_public_steps": 28,
+        "backup_steps": 24,
+        "backup_attempts": 1,
+        "certified_returns": 1,
+        "suppressed_return_attempts": 0,
+        "planning_attempts": 2,
+        "private_integrations": 3663616,
+        "wall_seconds": 335.2394252290251,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 361,
+        "ordinary_steps": 743
+      },
+      "native_steps": 6472,
+      "replay_steps": 6472,
+      "private_integrations": 3663616
+    },
+    {
+      "name": "tail20",
+      "slot": 20,
+      "mode": "COMPLETE_TAIL",
+      "role": "ABLATION",
+      "run": "runs/v701_rpccr_recovery_ablation/tail20/paired",
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "ROUTE_COMMITMENT_AUDIT.json": true,
+        "PROJECTION_LEARNING_AUDIT.json": true,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+        "MECHANISM_AUDIT.json": true,
+        "full_replay": true,
+        "model": true,
+        "raw_safety": true,
+        "task_and_mode": true,
+        "causal_chain_except_function": true,
+        "functional_flag": true
+      },
+      "all_physical_evidence": true,
+      "metrics": {
+        "full_chain_arrival": false,
+        "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+        "public_steps": 355,
+        "simulated_time_s": 28.400000000000002,
+        "goal_distance_m": 5.727791939599743,
+        "path_length_m": 3.5919920132617076,
+        "accumulated_goal_regression_m": 0.13730138711897055,
+        "low_speed_public_steps": 56,
+        "reverse_public_steps": 28,
+        "backup_steps": 40,
+        "backup_attempts": 1,
+        "certified_returns": 0,
+        "suppressed_return_attempts": 9,
+        "planning_attempts": 3,
+        "private_integrations": 1343680,
+        "wall_seconds": 126.3743327090051,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 129,
+        "ordinary_steps": 274
+      },
+      "native_steps": 2840,
+      "replay_steps": 2840,
+      "private_integrations": 1343680
+    },
+    {
+      "name": "tail14_repeat",
+      "slot": 14,
+      "mode": "COMPLETE_TAIL",
+      "role": "FULL_REPEAT",
+      "run": "runs/v701_rpccr_recovery_ablation/tail14_repeat/paired",
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "ROUTE_COMMITMENT_AUDIT.json": true,
+        "PROJECTION_LEARNING_AUDIT.json": true,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+        "MECHANISM_AUDIT.json": true,
+        "full_replay": true,
+        "model": true,
+        "raw_safety": true,
+        "task_and_mode": true,
+        "causal_chain_except_function": true,
+        "functional_flag": true
+      },
+      "all_physical_evidence": true,
+      "metrics": {
+        "full_chain_arrival": false,
+        "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+        "public_steps": 335,
+        "simulated_time_s": 26.8,
+        "goal_distance_m": 5.762106717983765,
+        "path_length_m": 3.4095961170926623,
+        "accumulated_goal_regression_m": 0.18423348196106204,
+        "low_speed_public_steps": 57,
+        "reverse_public_steps": 25,
+        "backup_steps": 40,
+        "backup_attempts": 1,
+        "certified_returns": 0,
+        "suppressed_return_attempts": 9,
+        "planning_attempts": 3,
+        "private_integrations": 1270144,
+        "wall_seconds": 119.09435075399233,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 95,
+        "ordinary_steps": 254
+      },
+      "native_steps": 2680,
+      "replay_steps": 2680,
+      "private_integrations": 1270144
+    },
+    {
+      "name": "tail20_repeat",
+      "slot": 20,
+      "mode": "COMPLETE_TAIL",
+      "role": "FULL_REPEAT",
+      "run": "runs/v701_rpccr_recovery_ablation/tail20_repeat/paired",
+      "checks": {
+        "INDEPENDENT_CANONICAL_AUDIT.json": true,
+        "ROUTE_COMMITMENT_AUDIT.json": true,
+        "PROJECTION_LEARNING_AUDIT.json": true,
+        "SAVED_TAIL_GEOMETRY_AUDIT.json": true,
+        "MECHANISM_AUDIT.json": true,
+        "full_replay": true,
+        "model": true,
+        "raw_safety": true,
+        "task_and_mode": true,
+        "causal_chain_except_function": true,
+        "functional_flag": true
+      },
+      "all_physical_evidence": true,
+      "metrics": {
+        "full_chain_arrival": false,
+        "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+        "public_steps": 355,
+        "simulated_time_s": 28.400000000000002,
+        "goal_distance_m": 5.727791939599743,
+        "path_length_m": 3.5919920132617076,
+        "accumulated_goal_regression_m": 0.13730138711897055,
+        "low_speed_public_steps": 56,
+        "reverse_public_steps": 28,
+        "backup_steps": 40,
+        "backup_attempts": 1,
+        "certified_returns": 0,
+        "suppressed_return_attempts": 9,
+        "planning_attempts": 3,
+        "private_integrations": 1343680,
+        "wall_seconds": 126.46618428398506,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 129,
+        "ordinary_steps": 274
+      },
+      "native_steps": 2840,
+      "replay_steps": 2840,
+      "private_integrations": 1343680
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "full14",
+      "passed": true,
+      "errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0
+      },
+      "contacts": {
+        "passed": true,
+        "checks": {
+          "same_xml_bytes": true,
+          "both_raw_content_digests_verified": true,
+          "record_counts_verified": true,
+          "same_number_of_contacts": true,
+          "all_contact_fields_equal_after_verified_path_rewrite": true,
+          "canonical_digest_equal": true
+        },
+        "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v697_rpccr_dynamic_initialization/v700_slot14/paired",
+        "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v701_rpccr_recovery_ablation/full14/paired",
+        "raw_content_sha256": [
+          "79b5a965520d35a12d036262dc27bf39e00237607dbb79807b1c13e71362f8b5",
+          "01c0cbd13d032f63e7d436a7243d31e00525d0865628d36e18c310957becad03"
+        ],
+        "raw_content_hashes_identical": false,
+        "canonical_content_sha256": [
+          "6eb4b036e2fa6482a937edbc73dc4bc8c235ce7ab18b56813e715847c2a427f2",
+          "6eb4b036e2fa6482a937edbc73dc4bc8c235ce7ab18b56813e715847c2a427f2"
+        ],
+        "xml_bytes_sha256": [
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d",
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d"
+        ],
+        "contact_records": [
+          75163,
+          75163
+        ],
+        "raw_json_different_rows": 51904,
+        "first_non_path_difference_rows": [],
+        "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+        "simulation_steps": 0
+      }
+    },
+    {
+      "name": "full20",
+      "passed": true,
+      "errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0
+      },
+      "contacts": {
+        "passed": true,
+        "checks": {
+          "same_xml_bytes": true,
+          "both_raw_content_digests_verified": true,
+          "record_counts_verified": true,
+          "same_number_of_contacts": true,
+          "all_contact_fields_equal_after_verified_path_rewrite": true,
+          "canonical_digest_equal": true
+        },
+        "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v697_rpccr_dynamic_initialization/v700_slot20/paired",
+        "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v701_rpccr_recovery_ablation/full20/paired",
+        "raw_content_sha256": [
+          "c18854bb895d02eeb2f4322b341601b365ad4f9524158809373f32a476117d4b",
+          "dad9131521070f28cc30c1699e2f30198e9522caa1dbcf72d3dd1eb9cfeaa6af"
+        ],
+        "raw_content_hashes_identical": false,
+        "canonical_content_sha256": [
+          "311886c31c6dee7946f59e465f417c3a31aafb9983176674bc6783545dde4f92",
+          "311886c31c6dee7946f59e465f417c3a31aafb9983176674bc6783545dde4f92"
+        ],
+        "xml_bytes_sha256": [
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d",
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d"
+        ],
+        "contact_records": [
+          74010,
+          74010
+        ],
+        "raw_json_different_rows": 51776,
+        "first_non_path_difference_rows": [],
+        "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+        "simulation_steps": 0
+      }
+    },
+    {
+      "name": "tail14_repeat",
+      "passed": true,
+      "errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0
+      },
+      "contacts": {
+        "passed": true,
+        "checks": {
+          "same_xml_bytes": true,
+          "both_raw_content_digests_verified": true,
+          "record_counts_verified": true,
+          "same_number_of_contacts": true,
+          "all_contact_fields_equal_after_verified_path_rewrite": true,
+          "canonical_digest_equal": true
+        },
+        "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v701_rpccr_recovery_ablation/tail14/paired",
+        "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v701_rpccr_recovery_ablation/tail14_repeat/paired",
+        "raw_content_sha256": [
+          "91f73bf6e669940b3f0b71e080f18ddb4ca6de72525438b4be3774a495441037",
+          "cc56925aa20cf87d04b5f085331c5fd23a6739c5a25fb06eab14b1ff96d05360"
+        ],
+        "raw_content_hashes_identical": false,
+        "canonical_content_sha256": [
+          "2c93bbff1c08fa16a34a1d74fbbbff602711729bc69561aa416e186fa6e06c0d",
+          "2c93bbff1c08fa16a34a1d74fbbbff602711729bc69561aa416e186fa6e06c0d"
+        ],
+        "xml_bytes_sha256": [
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d",
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d"
+        ],
+        "contact_records": [
+          31008,
+          31008
+        ],
+        "raw_json_different_rows": 21440,
+        "first_non_path_difference_rows": [],
+        "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+        "simulation_steps": 0
+      }
+    },
+    {
+      "name": "tail20_repeat",
+      "passed": true,
+      "errors": {
+        "qpos_full": 0.0,
+        "qvel_full": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0
+      },
+      "contacts": {
+        "passed": true,
+        "checks": {
+          "same_xml_bytes": true,
+          "both_raw_content_digests_verified": true,
+          "record_counts_verified": true,
+          "same_number_of_contacts": true,
+          "all_contact_fields_equal_after_verified_path_rewrite": true,
+          "canonical_digest_equal": true
+        },
+        "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v701_rpccr_recovery_ablation/tail20/paired",
+        "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v701_rpccr_recovery_ablation/tail20_repeat/paired",
+        "raw_content_sha256": [
+          "c1de15e4f551210c5d95bda549c366b52ee76fabd48c80e1ac80f237b7e6263a",
+          "d34c7f4c4f14ec76606677a12f7364c3724d9e38fd11b9cbea179e907d23eeef"
+        ],
+        "raw_content_hashes_identical": false,
+        "canonical_content_sha256": [
+          "61206504cca5f6e10d1d515a03471ce773d48312db331d9da94ff8e768a9f727",
+          "61206504cca5f6e10d1d515a03471ce773d48312db331d9da94ff8e768a9f727"
+        ],
+        "xml_bytes_sha256": [
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d",
+          "cbd9c4d18511573ed0ab57dcca2fc5b7304760e12e075c3a880b34db7b9a829d"
+        ],
+        "contact_records": [
+          32011,
+          32011
+        ],
+        "raw_json_different_rows": 22720,
+        "first_non_path_difference_rows": [],
+        "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+        "simulation_steps": 0
+      }
+    }
+  ],
+  "paired_effects": [
+    {
+      "slot": 14,
+      "full": {
+        "full_chain_arrival": true,
+        "outcome": "GOAL",
+        "public_steps": 811,
+        "simulated_time_s": 64.88,
+        "goal_distance_m": 0.44843246474501147,
+        "path_length_m": 9.860587804013536,
+        "accumulated_goal_regression_m": 0.18382020407389277,
+        "low_speed_public_steps": 50,
+        "reverse_public_steps": 25,
+        "backup_steps": 12,
+        "backup_attempts": 1,
+        "certified_returns": 1,
+        "suppressed_return_attempts": 0,
+        "planning_attempts": 2,
+        "private_integrations": 3750512,
+        "wall_seconds": 342.79018930898746,
+        "minimum_clearance_m": 0.4068522551174377,
+        "ordinary_learned_steps": 282,
+        "ordinary_steps": 757
+      },
+      "complete_tail": {
+        "full_chain_arrival": false,
+        "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+        "public_steps": 335,
+        "simulated_time_s": 26.8,
+        "goal_distance_m": 5.762106717983765,
+        "path_length_m": 3.4095961170926623,
+        "accumulated_goal_regression_m": 0.18423348196106204,
+        "low_speed_public_steps": 57,
+        "reverse_public_steps": 25,
+        "backup_steps": 40,
+        "backup_attempts": 1,
+        "certified_returns": 0,
+        "suppressed_return_attempts": 9,
+        "planning_attempts": 3,
+        "private_integrations": 1270144,
+        "wall_seconds": 118.83745832397835,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 95,
+        "ordinary_steps": 254
+      },
+      "complete_tail_minus_full": {
+        "public_steps": -476,
+        "path_length_m": -6.450991686920873,
+        "accumulated_goal_regression_m": 0.00041327788716927216,
+        "low_speed_public_steps": 7,
+        "reverse_public_steps": 0,
+        "backup_steps": 28,
+        "private_integrations": -2480368,
+        "wall_seconds": -223.9527309850091
+      },
+      "first_full_certified_return_step": 307,
+      "first_physical_state_or_command_difference_step": 307,
+      "identical_prefix_before_disabled_decision": true,
+      "interpretation_scope": "Selected known mechanism-active diagnostic case; actual prediction work differs, not independent confirmation or isolated equal-actual-compute superiority."
+    },
+    {
+      "slot": 20,
+      "full": {
+        "full_chain_arrival": true,
+        "outcome": "GOAL",
+        "public_steps": 809,
+        "simulated_time_s": 64.72,
+        "goal_distance_m": 0.4458310894244691,
+        "path_length_m": 9.838803767901808,
+        "accumulated_goal_regression_m": 0.13690231562742117,
+        "low_speed_public_steps": 51,
+        "reverse_public_steps": 28,
+        "backup_steps": 24,
+        "backup_attempts": 1,
+        "certified_returns": 1,
+        "suppressed_return_attempts": 0,
+        "planning_attempts": 2,
+        "private_integrations": 3663616,
+        "wall_seconds": 335.2394252290251,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 361,
+        "ordinary_steps": 743
+      },
+      "complete_tail": {
+        "full_chain_arrival": false,
+        "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+        "public_steps": 355,
+        "simulated_time_s": 28.400000000000002,
+        "goal_distance_m": 5.727791939599743,
+        "path_length_m": 3.5919920132617076,
+        "accumulated_goal_regression_m": 0.13730138711897055,
+        "low_speed_public_steps": 56,
+        "reverse_public_steps": 28,
+        "backup_steps": 40,
+        "backup_attempts": 1,
+        "certified_returns": 0,
+        "suppressed_return_attempts": 9,
+        "planning_attempts": 3,
+        "private_integrations": 1343680,
+        "wall_seconds": 126.3743327090051,
+        "minimum_clearance_m": 0.5699845543631135,
+        "ordinary_learned_steps": 129,
+        "ordinary_steps": 274
+      },
+      "complete_tail_minus_full": {
+        "public_steps": -454,
+        "path_length_m": -6.246811754640101,
+        "accumulated_goal_regression_m": 0.00039907149154938537,
+        "low_speed_public_steps": 5,
+        "reverse_public_steps": 0,
+        "backup_steps": 16,
+        "private_integrations": -2319936,
+        "wall_seconds": -208.86509252001997
+      },
+      "first_full_certified_return_step": 339,
+      "first_physical_state_or_command_difference_step": 339,
+      "identical_prefix_before_disabled_decision": true,
+      "interpretation_scope": "Selected known mechanism-active diagnostic case; actual prediction work differs, not independent confirmation or isolated equal-actual-compute superiority."
+    }
+  ],
+  "navigation_native_steps": 24000,
+  "replay_native_steps": 24000,
+  "private_integrations": 12641776,
+  "native_account_exact": true,
+  "replay_account_exact": true,
+  "private_account_exact": true,
+  "new_unique_confirmation_tasks": 0,
+  "verification_integrations": 0,
+  "training_updates": 0,
+  "algorithm_development_revisions": 0,
+  "unexecuted_registered_executions": [],
+  "mechanism_superiority_established": false,
+  "scope": "Two selected old mechanism-active tasks; descriptive matched ablation, not independent statistical advantage or full RP-CCR novelty."
+}

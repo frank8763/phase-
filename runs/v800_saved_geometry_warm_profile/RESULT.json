@@ -1,0 +1,59 @@
+{
+  "status": "EXISTING_DECODER_CACHE_REUSE_VERIFIED",
+  "queries": [
+    {
+      "step": 0,
+      "seconds": [
+        0.044473732999904314,
+        0.004213263997371541,
+        0.00415509199956432
+      ],
+      "existing_cache_hits": 2,
+      "existing_cache_misses": 1
+    },
+    {
+      "step": 50,
+      "seconds": [
+        0.036291763000917854,
+        0.004174087000137661,
+        0.004109980000066571
+      ],
+      "existing_cache_hits": 2,
+      "existing_cache_misses": 1
+    },
+    {
+      "step": 100,
+      "seconds": [
+        0.05206211900076596,
+        0.02188546500110533,
+        0.021877155002584914
+      ],
+      "existing_cache_hits": 2,
+      "existing_cache_misses": 1
+    },
+    {
+      "step": 150,
+      "seconds": [
+        0.07203624099929584,
+        0.041471381999144796,
+        0.04195456000161357
+      ],
+      "existing_cache_hits": 2,
+      "existing_cache_misses": 1
+    },
+    {
+      "step": 199,
+      "seconds": [
+        0.04989909600044484,
+        0.01920483700087061,
+        0.019640528000309132
+      ],
+      "existing_cache_hits": 2,
+      "existing_cache_misses": 1
+    }
+  ],
+  "new_models": 0,
+  "new_integrations": 0,
+  "new_actions": 0,
+  "interpretation": "The original LRU decoder already reuses each current-state domain. Cold five-state profile must not be extrapolated as a decode miss for every online candidate. Warm timings still include geometric body queries; these are fixed-query timings, not a whole-run attribution."
+}

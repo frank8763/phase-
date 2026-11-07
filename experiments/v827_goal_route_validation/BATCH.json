@@ -1,0 +1,19 @@
+{
+  "label": "v827_goal_route_validation",
+  "output": "runs/v827_goal_route_validation",
+  "window": "development01",
+  "confirmation": false,
+  "absolute_deadline_unix": 1793920480.869028,
+  "batch_cap_s": 10800,
+  "minimum_start_budget_s": 10000,
+  "repeat_slots": [
+    2,
+    1,
+    3
+  ],
+  "dependency": "runs/goal_acceptance_20261105",
+  "reference_pair": "runs/v826_goal_reference_renewal/main_slot02/paired",
+  "reference_view": "runs/goal_acceptance_20261105/qualification/reference/paired",
+  "report": "docs/RPCCR_GOAL_ROUTE_VALIDATION_V827_REPORT.md",
+  "archive": "evidence/rpccr_v827_goal_route_validation_20261105"
+}

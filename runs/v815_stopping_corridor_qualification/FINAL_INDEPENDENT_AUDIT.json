@@ -1,0 +1,100 @@
+{
+  "status": "STOPPING_CORRIDOR_QUALIFICATION_NOT_PASSED",
+  "checks": {
+    "exact_initial_astar": true,
+    "fixed_inputs": true,
+    "all_registered_gates": false
+  },
+  "records": [
+    {
+      "label": "OLD303",
+      "checks": {
+        "input_sha": true,
+        "no_truth": true,
+        "original_current_hard_geometry_retained": true,
+        "continuous_hull_sampled_containment": true,
+        "original_329_execution_coverage": true,
+        "metadata_horizon": true,
+        "separated_execution": true,
+        "geometry_exact": true,
+        "soft_cost_exact": true,
+        "entire_dense_stopping_corridor_floor": true,
+        "registered_gear_scope": true,
+        "registered_functional_qualification": false,
+        "original_657_joint_cells_retained": true
+      },
+      "passed": false,
+      "maximum_corridor_error": 0.0,
+      "maximum_soft_error": 1.3877787807814457e-17,
+      "containment_excess_m": 8.881784197001252e-16
+    },
+    {
+      "label": "OLD375",
+      "checks": {
+        "input_sha": true,
+        "no_truth": true,
+        "original_current_hard_geometry_retained": true,
+        "continuous_hull_sampled_containment": true,
+        "original_329_execution_coverage": true,
+        "metadata_horizon": true,
+        "separated_execution": true,
+        "geometry_exact": true,
+        "soft_cost_exact": true,
+        "entire_dense_stopping_corridor_floor": true,
+        "registered_gear_scope": false,
+        "registered_functional_qualification": true,
+        "original_657_joint_cells_retained": true
+      },
+      "passed": false,
+      "maximum_corridor_error": 0.0,
+      "maximum_soft_error": 1.3877787807814457e-17,
+      "containment_excess_m": 8.881784197001252e-16
+    },
+    {
+      "label": "STOP442",
+      "checks": {
+        "input_sha": true,
+        "no_truth": true,
+        "original_current_hard_geometry_retained": true,
+        "continuous_hull_sampled_containment": true,
+        "original_329_execution_coverage": true,
+        "metadata_horizon": true,
+        "separated_execution": true,
+        "geometry_exact": true,
+        "soft_cost_exact": true,
+        "entire_dense_stopping_corridor_floor": true,
+        "registered_gear_scope": true,
+        "registered_functional_qualification": true,
+        "original_657_joint_cells_retained": true
+      },
+      "passed": true,
+      "maximum_corridor_error": 0.0,
+      "maximum_soft_error": 1.249000902703301e-16,
+      "containment_excess_m": 8.881784197001252e-16
+    },
+    {
+      "label": "STOP626",
+      "checks": {
+        "input_sha": true,
+        "no_truth": true,
+        "original_current_hard_geometry_retained": true,
+        "continuous_hull_sampled_containment": true,
+        "original_329_execution_coverage": true,
+        "metadata_horizon": true,
+        "separated_execution": true,
+        "registered_functional_qualification": true,
+        "original_657_joint_cells_retained": true
+      },
+      "passed": true,
+      "maximum_corridor_error": null,
+      "maximum_soft_error": null,
+      "containment_excess_m": 8.881784197001252e-16
+    }
+  ],
+  "sampled_joint_cell_times": 94536,
+  "original_execution_coverage_queries": 1316,
+  "original_planning_coverage_queries": 2628,
+  "models": 0,
+  "integrations": 0,
+  "scope": "Causal geometric stopping-room proposal qualification only; actual approach, braking, complete arrival and repeats remain untested."
+}

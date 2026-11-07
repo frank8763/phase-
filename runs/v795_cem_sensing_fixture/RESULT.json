@@ -1,0 +1,109 @@
+{
+  "status": "FIXED_CEM_CAUSAL_SENSING_COMPONENT_COMPLETE",
+  "records": [
+    {
+      "step": 125,
+      "selected": {
+        "label": "S125_MANEUVER_I3_N06",
+        "parameters": [
+          -0.18670495266995224,
+          0.5430642446352538,
+          -6.0,
+          0.3821036028145896,
+          1.284002616683922,
+          -5.292148326758546
+        ],
+        "admissible": true,
+        "clearance_m": 0.15530389967448757,
+        "static_minimum_m": 0.9311123092911178,
+        "self_margin_m": 0.00943763883416876,
+        "terminal_speed_m_s": 4.771895475119078e-05,
+        "terminal_angular_rad_s": 0.0012753735273817247,
+        "progress_m": 0.05036136757004872,
+        "heading_rad": 0.1796671461372914,
+        "observation_opportunity": 0.0,
+        "score": 0.04137801026318415,
+        "iteration": 3,
+        "index": 6
+      },
+      "actual_executed": true,
+      "component_qualified": false,
+      "forward_continuation": null,
+      "repeat_executed": true,
+      "actual_progress_m": 0.05036136757004872,
+      "repeat_error": 0.0
+    },
+    {
+      "step": 200,
+      "selected": {
+        "label": "S200_MANEUVER_I1_N33",
+        "parameters": [
+          -0.14836178261621558,
+          4.58944319554153,
+          -0.9734607184740824,
+          0.16702718958789026,
+          6.0,
+          -1.8576920158722245
+        ],
+        "admissible": true,
+        "clearance_m": 0.5126071784991841,
+        "static_minimum_m": 0.8506520528705275,
+        "self_margin_m": 0.009367539293634042,
+        "terminal_speed_m_s": 1.619484550481461e-05,
+        "terminal_angular_rad_s": 0.00012354054935478071,
+        "progress_m": 0.3597480207135142,
+        "heading_rad": 0.0029818639891279197,
+        "observation_opportunity": 0.0,
+        "score": 0.3595989275140578,
+        "iteration": 1,
+        "index": 33
+      },
+      "actual_executed": true,
+      "component_qualified": true,
+      "forward_continuation": {
+        "label": "S200_CONTINUATION_I3_N17",
+        "parameters": [
+          0.1148301322871762,
+          5.62701235026209,
+          0.05643352985758282,
+          0.12440775657276626,
+          5.736275543214149,
+          -1.0661048852943642
+        ],
+        "admissible": true,
+        "clearance_m": 0.35141771066105987,
+        "static_minimum_m": 0.5234906514090176,
+        "self_margin_m": 0.009417071594514492,
+        "terminal_speed_m_s": 8.15253522659597e-05,
+        "terminal_angular_rad_s": 0.00032278758513278017,
+        "progress_m": 0.31892842012839573,
+        "heading_rad": 0.020418166868126253,
+        "observation_opportunity": 0.0,
+        "score": 0.31790751178498944,
+        "iteration": 3,
+        "index": 17
+      },
+      "repeat_executed": true,
+      "actual_progress_m": 0.3597480207135142,
+      "renewed_minus_aged_clearance_m": 0.22336760752755574,
+      "aged_same_continuation_min_m": 0.12805010313350412,
+      "actual_total_progress_m": 0.6786764408419099,
+      "repeat_error": 0.0
+    }
+  ],
+  "component_qualified": true,
+  "original_replay_native": 1600,
+  "private_integrations": 211232,
+  "actual_validation_native": 984,
+  "branch_replay_native": 984,
+  "actual_packets": 246,
+  "maximum_native_error": 0.0,
+  "minimum_actual_clearance_m": 0.305892278021587,
+  "minimum_actual_self_margin_m": 0.009336598616182967,
+  "bad_contacts": 0,
+  "new_complete_navigation": 0,
+  "new_confirmation": 0,
+  "training_updates": 0,
+  "real_robot": 0,
+  "stage_access": 0
+}

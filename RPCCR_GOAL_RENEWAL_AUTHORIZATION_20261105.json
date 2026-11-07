@@ -1,0 +1,37 @@
+{
+  "status": "AUTHORIZED_NEW_BOUNDED_GOAL_RENEWAL_ROUND",
+  "user_instruction": "下一步开始",
+  "authorized_at_unix": 1793858446.9762895,
+  "absolute_deadline_unix": 1793869246.9762895,
+  "absolute_deadline_beijing": "2026-11-05T17:00:46.976290+08:00",
+  "max_algorithm_candidates": 1,
+  "qualification": {
+    "id": "V824",
+    "fixed_steps": [
+      282,
+      500
+    ],
+    "cap_s": 1200,
+    "old_prefix_replay_native_max": 4000,
+    "private_native_max": 360400,
+    "component_native_max": 656,
+    "component_repeat_native_max": 656,
+    "primary_dependency_step": 282,
+    "secondary500_failure_does_not_replace_primary": true
+  },
+  "conditional_navigation": {
+    "prepared": false,
+    "max_distinct_tasks": 1,
+    "task": "NORTH_SOUTH/10010002/original_phase",
+    "main_max": 1,
+    "full_repeat_max": 1,
+    "only_if_primary282_native_evidence_passes": true
+  },
+  "fresh_confirmation_authorized_this_round": false,
+  "automatic_additional_algorithm_repair_or_seed_retries": false,
+  "old_batches_reopened": false,
+  "training_updates": 0,
+  "stage_access": 0,
+  "real_robot": 0,
+  "scope": "One targeted RP-CCR goal-reference renewal candidate; original planner/controls/safety unchanged. Qualification first, then one conditional NS main and complete repeat within the same fixed deadline."
+}

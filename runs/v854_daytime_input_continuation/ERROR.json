@@ -1,0 +1,6 @@
+{
+  "type": "AssertionError",
+  "message": "('audit_run.py', 'FAILED')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v854_daytime_input_continuation/start.py\", line 48, in main\n    row['status']=current_stage.routes(pre);row['records']=current_stage.rows;ledger();current_stage=None\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v854_daytime_input_continuation/engine.py\", line 89, in routes\n    first=self.unit(t,'MAIN');self.unit(t,'REPEAT',first)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v854_daytime_input_continuation/engine.py\", line 76, in unit\n    row['audits'][script]=self.execute(script,args,pair/(script+'.console'),cap,script=='audit_run.py');self.save();assert row['audits'][script]==0,(script,'FAILED')\nAssertionError: ('audit_run.py', 'FAILED')\n",
+  "no_model_retry": true
+}

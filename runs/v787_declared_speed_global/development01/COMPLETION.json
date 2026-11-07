@@ -1,0 +1,105 @@
+{
+  "status": "GLOBAL_DEVELOPMENT_FUNCTIONAL_NOT_PASSED",
+  "records": [
+    {
+      "name": "main01",
+      "role": "MAIN_DEVELOPMENT",
+      "run": "runs/v787_declared_speed_global/main01/paired",
+      "physical_passed": true,
+      "functional_passed": false,
+      "audits": {
+        "audit_run.py": 0,
+        "audit_forward_controller.py": 0,
+        "audit_route_commitment.py": 0,
+        "audit_projection_learning.py": 0,
+        "audit_all_tail_geometry.py": 0,
+        "audit_shadow_mode.py": 0,
+        "audit_reentry.py": 0
+      },
+      "runner_exit": 0,
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 10010001,
+        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "strict_safe_arrival": false,
+        "goal_distance_m": 7.1118806253474425,
+        "public_steps": 270,
+        "physics_steps": 2160,
+        "contacts": {
+          "physics_steps": 2160,
+          "all_contact_records": 25364,
+          "contact_type_counts": {
+            "ground_support": 17280,
+            "robot_self_contact": 8084
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 17280,
+            "robot_self_contact": 8084
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "78fe0f58020cee48b7d9bd43fed69e83f13ffb534b484684f520cb0f4cf83c0f"
+        },
+        "backup_attempts": 4,
+        "backup_steps": 84,
+        "planning_attempts": 28,
+        "planning_wall_s": 6.580370078678243,
+        "command_overrides": 270,
+        "elapsed_s": 272.6463613510132,
+        "initial_state_hash": "c601da8a8bdd51ae6af9ef4b62c100e810a0813e596b6662e0e28235f8668e89",
+        "normalized_initial_state_hash": "fcd26304e4b0dc879085c5da4b23fd54dfb7718d1b242b5eda537c1ead2b437c",
+        "minimum_actual_self_domain_margin_m": 0.009327618208837929,
+        "self_geometry_checked_native_ticks": 2160,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "V787_DECLARED_NORM_SPEED_FORWARD_CURVE",
+        "prediction_steps": 1880600,
+        "retained_reentry_attempts": 19,
+        "retained_reentry_successes": 0,
+        "retained_reentry_private_native": 93480,
+        "conditional_nonpenetrating_map_motion_class": true,
+        "declared_euclidean_speed_cap_m_s": 0.08,
+        "first_discovery_step": null,
+        "discovery_brake_finished_step": null,
+        "discovery_terminal_speed_m_s": null,
+        "initial_unknown_mode": "UNSEEN_PRIOR",
+        "early_scan_started_step": null,
+        "early_scan_finished_step": null,
+        "differential_candidate_bank_enabled": true,
+        "native_applied_ctrl_checks": 2160,
+        "reserved_recovery_activations": 4,
+        "reserved_recovery_public_steps": 84,
+        "certified_handover_attempts": 20,
+        "certified_handover_successes": 3,
+        "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+        "course_distance_m": 8.0,
+        "course_phase": 0.6573753567727383,
+        "initial_observation_steps": 0,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 0.1861797255115903,
+        "actor_maximum_native_displacement_m": 0.0007999995228495846,
+        "actor_motion_ticks": 2160,
+        "actor_position_at_end": [
+          3.0923582256241917,
+          -0.7785442830605223
+        ]
+      },
+      "interrupted": null,
+      "replay_exit": 0,
+      "functional_failed_checks": [
+        "moving_before_discovery",
+        "new_causal_route_after_stop",
+        "actually_continued_after_replanning",
+        "strict_arrival"
+      ]
+    }
+  ],
+  "automatic_additional_navigation": false
+}

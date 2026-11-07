@@ -1,0 +1,5 @@
+{
+  "type": "AssertionError",
+  "message": "COURSE_RUNNER_FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v687_control_curriculum/execute.py\", line 43, in <module>\n    for course,steps in [('straight',400),('turn',500),('bypass',600)]:run(course,course+'01',steps)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v687_control_curriculum/execute.py\", line 32, in run\n    assert code==0 and completion['status']=='COMPLETE','COURSE_RUNNER_FAILED'\nAssertionError: COURSE_RUNNER_FAILED\n"
+}

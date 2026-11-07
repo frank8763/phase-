@@ -1,0 +1,72 @@
+{
+  "status": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+  "records": [
+    {
+      "file": "runs/v843_three_route_regression/qualification/actual_v842_goal/paired/geometry_memory/recovery_contracts/contract_0507.json.gz",
+      "kind": "BRAKE_ONLY",
+      "brake_after": 160,
+      "minimum_recomputed_clearance_m": 0.21026508868689847,
+      "checks": {
+        "all_328_native_geometry": true,
+        "exact_canonical_commands": true,
+        "direction_and_braking": true,
+        "signed_displacement": true,
+        "terminal_speed": true,
+        "self_domain_saved": true,
+        "causal_input": true
+      },
+      "passed": true
+    },
+    {
+      "file": "runs/v843_three_route_regression/qualification/actual_v842_goal/paired/geometry_memory/recovery_contracts/contract_0514.json.gz",
+      "kind": "REVERSE_BRAKE",
+      "brake_after": 160,
+      "minimum_recomputed_clearance_m": 0.19475493275528494,
+      "checks": {
+        "all_328_native_geometry": true,
+        "exact_canonical_commands": true,
+        "direction_and_braking": true,
+        "signed_displacement": true,
+        "terminal_speed": true,
+        "self_domain_saved": true,
+        "causal_input": true
+      },
+      "passed": true
+    },
+    {
+      "file": "runs/v843_three_route_regression/qualification/actual_v842_goal/paired/geometry_memory/recovery_contracts/contract_0781.json.gz",
+      "kind": "REVERSE_BRAKE",
+      "brake_after": 160,
+      "minimum_recomputed_clearance_m": 0.19478074264160006,
+      "checks": {
+        "all_328_native_geometry": true,
+        "exact_canonical_commands": true,
+        "direction_and_braking": true,
+        "signed_displacement": true,
+        "terminal_speed": true,
+        "self_domain_saved": true,
+        "causal_input": true
+      },
+      "passed": true
+    },
+    {
+      "file": "runs/v843_three_route_regression/qualification/actual_v842_goal/paired/geometry_memory/handover_certificates/handover_0511.json.gz",
+      "kind": "REVERSE_BRAKE",
+      "brake_after": 160,
+      "minimum_recomputed_clearance_m": 0.16662767395070183,
+      "checks": {
+        "all_328_native_geometry": true,
+        "exact_canonical_commands": true,
+        "direction_and_braking": true,
+        "signed_displacement": true,
+        "terminal_speed": true,
+        "self_domain_saved": true,
+        "causal_input": true
+      },
+      "passed": true
+    }
+  ],
+  "simulation_integrations": 0,
+  "scope": "recomputes persisted complete328 native poses and canonical controls including handovers; no new physical rollout or population guarantee",
+  "helper_sha256": "6c240d451458be4091c96c1856669252a68fd157773333f642d9b0e49e5c867d"
+}

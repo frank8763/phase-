@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "tasks": 4,
+  "details": [
+    {
+      "slot": 1,
+      "task_seed": 99010001,
+      "maximum_packet_errors": {
+        "lidar": 0.0,
+        "depth": 0.0
+      },
+      "passed": true,
+      "reset_repair_verified": true,
+      "old_first3_t0_equal": true
+    },
+    {
+      "slot": 2,
+      "task_seed": 99010002,
+      "maximum_packet_errors": {
+        "lidar": 0.0,
+        "depth": 0.0
+      },
+      "passed": true,
+      "reset_repair_verified": true,
+      "old_first3_t0_equal": true
+    },
+    {
+      "slot": 3,
+      "task_seed": 99010003,
+      "maximum_packet_errors": {
+        "lidar": 0.0,
+        "depth": 0.0
+      },
+      "passed": true,
+      "reset_repair_verified": true,
+      "old_first3_t0_equal": true
+    },
+    {
+      "slot": 4,
+      "task_seed": 99010004,
+      "maximum_packet_errors": {
+        "lidar": 0.0,
+        "depth": 0.0
+      },
+      "passed": true,
+      "reset_repair_verified": true,
+      "old_first3_t0_equal": null
+    }
+  ],
+  "frozen_sensor_constants": {
+    "LIDAR_SIGMA_M": 0.02,
+    "LIDAR_CLIP_M": 0.06,
+    "LIDAR_DROPOUT": 0.05,
+    "DEPTH_SIGMA_M": 0.03,
+    "DEPTH_CLIP_M": 0.09,
+    "DEPTH_DROPOUT": 0.05
+  },
+  "source_sha256": {
+    "corruption": "ff849b08ec1db9346b95ea758ac5e88d8579536436e2b357ef69dd2205c0644c",
+    "raycast": "253afa968e364fc92493a1a3061ebefbcd875ffc8281657bfbaf995d6053aa5b",
+    "this_auditor": "c2501ae99cc4d76926ea78dc097c752d48a937ff9cb303a24d1b2475616a454f"
+  },
+  "simulation_steps": 0,
+  "scope": "Exact t0 packets confirm original per-task noise keys and frozen corruption parameters after fixed bootstrap; no navigation or general stochastic coverage claim."
+}

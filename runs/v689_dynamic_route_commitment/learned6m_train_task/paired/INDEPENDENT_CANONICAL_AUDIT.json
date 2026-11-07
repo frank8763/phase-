@@ -1,0 +1,137 @@
+{
+  "status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+  "checks": {
+    "observation_hold_actual_displacement": true,
+    "forward_tail_extension_provenance": true,
+    "complete_records": true,
+    "frozen_sources": true,
+    "model": true,
+    "full_native_replay": true,
+    "native_safety": true,
+    "zero_obstacle_contacts": true,
+    "contact_digest": true,
+    "self_geometry": true,
+    "native_only_static_unchanged": true,
+    "actuator_metadata": true,
+    "actuator_bounds_and_slew": true,
+    "all_native_expected_ctrl": true,
+    "raw_admission_ctrl": true,
+    "public_full_state_ctrl": true,
+    "joint_selection": true,
+    "all_retained_certificates": true,
+    "all_handover_certificates": true,
+    "causal_admission": true,
+    "finite_union_coverage": true,
+    "actor_unchanged_nonblocking": true,
+    "actual_actor_speed_bound": true,
+    "strict_goal_consistent": true
+  },
+  "forward_admission_checks": [
+    {
+      "step": 271,
+      "checks": {
+        "original16_all_rejected": true,
+        "registered_five_low_speed": true,
+        "selected_was_valid": true,
+        "unchanged_horizon": true
+      },
+      "passed": true
+    }
+  ],
+  "raw_ctrl_mismatches": [],
+  "selection_failed_steps": [],
+  "reserved_certificates": [
+    {
+      "file": "runs/v689_dynamic_route_commitment/learned6m_train_task/paired/geometry_memory/recovery_contracts/contract_0212.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 28
+    },
+    {
+      "file": "runs/v689_dynamic_route_commitment/learned6m_train_task/paired/geometry_memory/recovery_contracts/contract_0252.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 4
+    },
+    {
+      "file": "runs/v689_dynamic_route_commitment/learned6m_train_task/paired/geometry_memory/recovery_contracts/contract_0272.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 8
+    }
+  ],
+  "handover_certificates": [
+    {
+      "step": 240,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 256,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 280,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    }
+  ],
+  "outcome": "GOAL",
+  "strict_arrival": true,
+  "public_steps": 629,
+  "native_steps": 5032,
+  "verification_simulation_steps": 0,
+  "scope": "finite same-task development evidence; not dynamic acceptance, infinite safety or statistical guarantee"
+}

@@ -1,0 +1,111 @@
+[
+  {
+    "name": "v853_B64_main_slot01",
+    "task": {
+      "slot": 1,
+      "seed": 10010001,
+      "phase": 0.6573753567727383,
+      "case_id": "WEST_EAST",
+      "initial_axis_motion_direction": "POSITIVE_AXIS",
+      "course_distance_m": 8.0,
+      "role": "DEVELOPMENT_KNOWN_TASK",
+      "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route"
+    },
+    "role": "MAIN",
+    "variant": "B64",
+    "run": "runs/v853_maneuver_worker/v853_B64_main_slot01/paired",
+    "base": null,
+    "navigation_started": true,
+    "limits": {
+      "public_steps": 2400,
+      "soft": 5400,
+      "hard": 5430,
+      "outer": 5435,
+      "private_native": 100000000
+    },
+    "audits": {
+      "audit_run.py": 1
+    },
+    "physical_passed": false,
+    "functional_passed": false,
+    "navigation_pid": 481667,
+    "navigation_started_unix": 1794027506.6916697,
+    "runner_exit": 0,
+    "result": {
+      "condition": "geometry_memory",
+      "seed": 10010001,
+      "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+      "strict_safe_arrival": false,
+      "goal_distance_m": 1.7032226673472426,
+      "public_steps": 1105,
+      "physics_steps": 8840,
+      "contacts": {
+        "physics_steps": 8840,
+        "all_contact_records": 102721,
+        "contact_type_counts": {
+          "ground_support": 70720,
+          "robot_self_contact": 32001
+        },
+        "negative_distance_counts_all_types": {
+          "ground_support": 70720,
+          "robot_self_contact": 32001
+        },
+        "robot_obstacle_contact_records": 0,
+        "robot_obstacle_penetration_records": 0,
+        "robot_obstacle_contact_steps": 0,
+        "robot_obstacle_penetration_steps": 0,
+        "maximum_obstacle_penetration_depth_m": 0.0,
+        "minimum_obstacle_distance_m": null,
+        "first_anomaly": null,
+        "unknown_contact_records": 0,
+        "robot_obstacle_geom_pairs": [],
+        "contact_log_content_sha256": "310ed2ce7190ea9bd6d87053724a5a578f043257a1d900d4c5b75085ea3eee40"
+      },
+      "backup_attempts": 57,
+      "backup_steps": 745,
+      "planning_attempts": 8,
+      "planning_wall_s": 26.41315072897123,
+      "command_overrides": 1105,
+      "elapsed_s": 1555.3942925459996,
+      "initial_state_hash": "cd32aae8a66ba3de1e832dcee4388c59f4337ae370181b07806cbc1fe78d817a",
+      "normalized_initial_state_hash": "fcd26304e4b0dc879085c5da4b23fd54dfb7718d1b242b5eda537c1ead2b437c",
+      "minimum_actual_self_domain_margin_m": 0.009196564944815522,
+      "self_geometry_checked_native_ticks": 8840,
+      "static_obstacle_pose_unchanged": true,
+      "root_mutations_outside_mjstep": 0,
+      "source_revision": "V853_COMMON_SEGMENT_COMMITMENT",
+      "prediction_steps": 10503184,
+      "retained_reentry_attempts": 0,
+      "retained_reentry_successes": 0,
+      "retained_reentry_private_native": 0,
+      "conditional_nonpenetrating_map_motion_class": true,
+      "declared_euclidean_speed_cap_m_s": 0.08,
+      "first_discovery_step": 262,
+      "discovery_brake_finished_step": 302,
+      "discovery_terminal_speed_m_s": 3.533936996404537e-06,
+      "initial_unknown_mode": "UNSEEN_PRIOR",
+      "early_scan_started_step": null,
+      "early_scan_finished_step": null,
+      "differential_candidate_bank_enabled": true,
+      "native_applied_ctrl_checks": 8840,
+      "reserved_recovery_activations": 57,
+      "reserved_recovery_public_steps": 745,
+      "certified_handover_attempts": 123,
+      "certified_handover_successes": 47,
+      "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+      "course_distance_m": 8.0,
+      "course_phase": 0.6573753567727383,
+      "initial_observation_steps": 0,
+      "dynamic_mode": "predictive",
+      "minimum_dynamic_native_clearance_m": 0.18620353208955032,
+      "actor_maximum_native_displacement_m": 0.0007999996476611368,
+      "actor_motion_ticks": 8840,
+      "actor_position_at_end": [
+        2.9401644233643647,
+        -1.1434732037431088
+      ]
+    },
+    "interrupted": null,
+    "replay_exit": 0
+  }
+]

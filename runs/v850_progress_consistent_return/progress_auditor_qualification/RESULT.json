@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "actual_entry_positive",
+      "expected_pass": true,
+      "exit": 0
+    },
+    {
+      "case": "forged_active_progress",
+      "expected_pass": false,
+      "exit": 1
+    },
+    {
+      "case": "actual_control_tamper",
+      "expected_pass": false,
+      "exit": 1
+    },
+    {
+      "case": "restored_fixture",
+      "expected_pass": true,
+      "exit": 0
+    }
+  ],
+  "fixture_source": "runs/v848_goal_first_worker/v848_main_slot02/paired",
+  "fixture_scope": "32 saved predetection records with derived metadata and synthetic timing, not new navigation or performance",
+  "model_constructions": 0,
+  "integrations": 0
+}

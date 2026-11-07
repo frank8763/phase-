@@ -1,0 +1,43 @@
+{
+  "status": "COMPONENTS_CLOSED_GPU_MATH_PASS_NATIVE_DEVELOPMENT_NOT_PASSED",
+  "report": "docs/RPCCR_GPU_COMPONENTS_V844_V845_20261106_REPORT.md",
+  "archive": "evidence/rpccr_gpu_components_v844_v845_20261106",
+  "all_source_and_decompressed_sha_verified": true,
+  "files": 182,
+  "gpu_proposal_component_passed": true,
+  "gpu_p95_ms": [
+    9.210713708307594,
+    8.826328789291438,
+    8.815810859960038,
+    8.819766447413713
+  ],
+  "maximum_numpy_formula_error": 4.831690603168681e-12,
+  "gpu_peak_allocator_bytes": 119516672,
+  "native_fixed_states": 4,
+  "native_candidate_sequences": 16,
+  "original_safety_gate_passed_sequences": 8,
+  "candidates_meeting_added_first8_progress_gate": 0,
+  "all_states_native_development_passed": false,
+  "native_compute_ms": [
+    171.5284350211732,
+    161.2348740163725,
+    151.12652195966803,
+    150.52220498910174
+  ],
+  "maximum_ideal_native_xy_error_m": 0.6771644767388417,
+  "counts": {
+    "old_replay_native": 9584,
+    "private_native": 5376,
+    "actual_branch_native": 0,
+    "repeat_branch_native": 0,
+    "new_navigation": 0,
+    "new24": 0
+  },
+  "model_initializations": null,
+  "approximate_gpu_counted_steps": 11096064,
+  "approximate_setup_work": "3 eager warmups and CUDA graph capture; capture execution count not asserted",
+  "full_closed_loop_realtime_passed": false,
+  "dynamic_acceptance_passed": false,
+  "new_policy_trained": false,
+  "source_unchanged": true
+}

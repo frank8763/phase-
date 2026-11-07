@@ -1,0 +1,6 @@
+{
+  "type": "ModelBoundary",
+  "message": "FIRST_REAL_MJB_READ_BOUNDARY_REACHED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v850_progress_consistent_return/component.py\", line 62, in main\n    model=mujoco.MjModel.from_binary_path(str(PAIR/'scene_model.mjb'));data=mujoco.MjData(model);data.qpos[:]=protocol['start_qpos'];motion.apply(model,data);mujoco.mj_forward(model,data)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v850_progress_consistent_return/qualify_operations.py\", line 21, in denied\n    def denied(*args,**kwargs):raise ModelBoundary('FIRST_REAL_MJB_READ_BOUNDARY_REACHED')\nModelBoundary: FIRST_REAL_MJB_READ_BOUNDARY_REACHED\n",
+  "private_count_may_be_lower_bound": false
+}

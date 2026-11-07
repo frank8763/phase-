@@ -1,0 +1,2 @@
+# 零模型资格结果写出接口记录
+原qualify_prior.py完成全部数学/包含/域核验后，末RESULT写出因NumPy int64不能JSON序列化失败，0模型/积分；原console/ROUND_WINDOW/已写域文件保留。新qualify_serialization_recovery.py只规范NumPy标量为Python标量，独立输出新namespace，沿用原资格300秒截止不重置；原数学/域/候选字节逻辑不变。166包/54614未来包含与独立域精确全过，所有实际0积分。真正物理入口execute_after_qualification.py仅引用已完成新namespace结果；原execute_global.py未启动且保持。全部入口/修复/源在首次实际初始化前冻结，无第二物理实例。

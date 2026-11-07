@@ -1,0 +1,738 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "joint_admission_rank_and_safety": false,
+    "certified_handover_checks": true,
+    "retained_recovery_certificates": false,
+    "all_native_records": true,
+    "finite_prediction_coverage": true,
+    "frozen_source_protocol": true,
+    "deadline_unchanged": true,
+    "within_deadline": true,
+    "within_registered_attempt_caps": true,
+    "old_task_model_initial_unchanged": true,
+    "first_public_predicted_pose_matches": true,
+    "all_registered_repeats_match": true
+  },
+  "branches": [
+    {
+      "run": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired",
+      "passed": true,
+      "checks": {
+        "all_public_and_native_records": true,
+        "source_snapshot": true,
+        "saved_model": true,
+        "causal_admission": true,
+        "actor_motion_formula": true,
+        "actor_mocap_at_all_native_ticks": true,
+        "native_time_steps": true,
+        "motion_bounds": true,
+        "smaller_actor": true,
+        "not_at_junction": true,
+        "swept_known_geometry_clearance": true,
+        "full_sweep_bypass": true,
+        "online_native_clearance": true,
+        "full_replay": true,
+        "replay_safety": true,
+        "zero_contact": true,
+        "raw_contact_digest": true,
+        "self_coverage": true,
+        "native_root_only": true,
+        "strict_outcome_consistent": true
+      },
+      "outcome": "BOUNDED_WALL_STOP",
+      "strict_arrival": false,
+      "public_steps": 928,
+      "native_steps": 7424,
+      "minimum_native_clearance_m": 0.2527128748399221,
+      "actor_displacement_span_m": 0.49999996476132635,
+      "actor_max_native_displacement_m": 0.000799999658580271,
+      "raw_contact_records": 80560
+    }
+  ],
+  "coverage": [
+    {
+      "run": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired",
+      "frames": 928,
+      "forecast_times_per_frame": 329,
+      "maximum_center_union_excess_m": -1.0802521842823154e-05,
+      "maximum_joint_current_state_excess": -1.0802521842823154e-05,
+      "saved_rows_pass": true,
+      "passed": true
+    }
+  ],
+  "prediction_first_public_pose_checks": [
+    {
+      "run": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired",
+      "maximum_first_public_xy_yaw_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "public_steps": 928
+    }
+  ],
+  "reserved_recovery_checks": [
+    {
+      "run": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired",
+      "public_state_matches": 928,
+      "maximum_full_qpos_qvel_error": 0.0,
+      "contracts": [
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0227.json.gz",
+          "activation_step": 227,
+          "created_step": 226,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.3283245558969554,
+          "terminal_speed_m_s": 0.00017538511597991804,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.004424398050132838,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0245.json.gz",
+          "activation_step": 245,
+          "created_step": 244,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.5543806038712952,
+          "terminal_speed_m_s": 0.0010802526415825938,
+          "executed_public_steps": 36,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.006644897621212786,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0415.json.gz",
+          "activation_step": 415,
+          "created_step": 414,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.22887243604834326,
+          "terminal_speed_m_s": 0.0005910367862728205,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.0003936533653274843,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0420.json.gz",
+          "activation_step": 420,
+          "created_step": 419,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.4042300004084944,
+          "terminal_speed_m_s": 0.0017136482858130981,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.008393588364563609,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0425.json.gz",
+          "activation_step": 425,
+          "created_step": 424,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.5600449820937101,
+          "terminal_speed_m_s": 0.0010637007686362387,
+          "executed_public_steps": 32,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.005062668175320084,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0489.json.gz",
+          "activation_step": 489,
+          "created_step": 488,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.27858811848076337,
+          "terminal_speed_m_s": 2.5346394453610337e-05,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.00850878285016643,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0497.json.gz",
+          "activation_step": 497,
+          "created_step": 496,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.3454649727926088,
+          "terminal_speed_m_s": 0.0007297471960423635,
+          "executed_public_steps": 32,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.01590902047242182,
+          "past_forecast_maximum_center_excess_m": -0.006240031681696845,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": false,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": false
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0554.json.gz",
+          "activation_step": 554,
+          "created_step": 553,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.5555130113994992,
+          "terminal_speed_m_s": 0.0011213056343625108,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.001372955169357093,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0922.json.gz",
+          "activation_step": 922,
+          "created_step": 921,
+          "recovery_kind": "BRAKE_ONLY",
+          "signed_displacement_m": 0.09525507248473045,
+          "terminal_speed_m_s": 2.4394132953671846e-05,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.003827483055000025,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/recovery_contracts/contract_0927.json.gz",
+          "activation_step": 927,
+          "created_step": 926,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.2819757357512497,
+          "terminal_speed_m_s": 0.0005435420556235717,
+          "executed_public_steps": 1,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.004191768597535672,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "certified_handover_checks": [
+    {
+      "run": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired",
+      "attempts": 31,
+      "successes": 9,
+      "certificates": [
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0231.json.gz",
+          "step": 231,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0281.json.gz",
+          "step": 281,
+          "old_native_cursor": 288,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0419.json.gz",
+          "step": 419,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0424.json.gz",
+          "step": 424,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0457.json.gz",
+          "step": 457,
+          "old_native_cursor": 256,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0493.json.gz",
+          "step": 493,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0529.json.gz",
+          "step": 529,
+          "old_native_cursor": 256,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0558.json.gz",
+          "step": 558,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired/geometry_memory/handover_certificates/handover_0926.json.gz",
+          "step": 926,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "checks": {
+        "every_attempt_recorded": true,
+        "every_success_certified": true,
+        "all_certificates_valid": true
+      },
+      "passed": true
+    }
+  ],
+  "joint_admission_checks": [
+    {
+      "run": "runs/v675_dynamic_joint_admission/dev42_95000011_jointadmission/paired",
+      "ordinary_admissions": 794,
+      "alternative_admissions": 9,
+      "checks_all_passed": false,
+      "failed_rows": [
+        {
+          "step": 294,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        },
+        {
+          "step": 295,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        },
+        {
+          "step": 296,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        },
+        {
+          "step": 300,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        },
+        {
+          "step": 301,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        },
+        {
+          "step": 302,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        },
+        {
+          "step": 303,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        },
+        {
+          "step": 495,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        },
+        {
+          "step": 496,
+          "rank": 0,
+          "checks": {
+            "registered_top_three_rank": true,
+            "all_prior_ranks_tested_and_rejected": true,
+            "actual_input_equals_ranked_input": false,
+            "original_score_and_geometry_gate": true,
+            "original_maximum_score_preserved": true,
+            "has_unchanged_full_reserve": true
+          },
+          "passed": false
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "distinct_development_tasks": 1,
+  "navigation_branches_including_repeats": 1,
+  "independent_confirmation_tasks": 0,
+  "strict_arrivals_including_repeats": 0,
+  "verification_simulation_steps": 0,
+  "dynamic_stability_acceptance_passed": false,
+  "scope": "finite development, no population, continuous-time or real-time guarantee"
+}

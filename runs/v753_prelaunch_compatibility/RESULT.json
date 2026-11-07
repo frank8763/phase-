@@ -1,0 +1,41 @@
+{
+  "status": "INSTANTIATED_REPAIR_CALIBRATION_PREFLIGHT_PASSED",
+  "all_old_public_sensor_poses_exact": 176,
+  "canonical_math_pose_errors": 0,
+  "numpy_yaw_mismatches": [
+    {
+      "step": 68,
+      "numpy_minus_canonical_yaw": 2.7755575615628914e-17
+    },
+    {
+      "step": 176,
+      "numpy_minus_canonical_yaw": -2.7755575615628914e-17
+    }
+  ],
+  "all41_old_calibration_raw_packets_and_domains_exact": true,
+  "all41_independent_observer_rehearsal_passed": true,
+  "saved_state_retained_command_replay": 40,
+  "negative_cache_join_cases_rejected": [
+    "qpos",
+    "qvel",
+    "time",
+    "ctrl",
+    "schedule"
+  ],
+  "retained_command_replay_not_new_physics": true,
+  "old_coverage_checks": 13489,
+  "maximum_actual_coverage_excess_m": 0.0,
+  "algorithm_functions_AST_unchanged": {
+    "forecast": true,
+    "perform": true,
+    "branch": true,
+    "make_proof": true
+  },
+  "new_initializations": 0,
+  "new_integrations": 0,
+  "new_predictions": 0,
+  "new_raw_measurements": 0,
+  "source_states": "Old V735 actually executed public33..73, not newly predicted or executed states",
+  "instantiated_source_checked_without_execution": true,
+  "three_profiles_still_unexecuted": true
+}

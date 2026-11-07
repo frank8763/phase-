@@ -1,0 +1,64 @@
+{
+  "status": "COMPLETE_JOINT_SAVED_QUALIFICATION_PASS",
+  "cases": [
+    {
+      "mode": "ACTUAL_RECORDS",
+      "expected_rank": 3,
+      "checked_ranks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "mode": "ALL_REJECT",
+      "expected_rank": null,
+      "checked_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "passed": true
+    },
+    {
+      "mode": "LAST_ACTUAL_ACCEPT_ONLY",
+      "expected_rank": 12,
+      "checked_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "passed": true
+    }
+  ],
+  "wrong_top_rejected": true,
+  "no_nominal_skip_passed": true,
+  "physical_cores_identical": 15,
+  "actual_record_first_joint_rank": 3,
+  "new_models": 0,
+  "new_predictions": 0,
+  "new_integrations": 0,
+  "elapsed_s": 2.7985963821411133
+}

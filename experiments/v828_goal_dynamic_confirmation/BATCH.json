@@ -1,0 +1,19 @@
+{
+  "label": "v828_goal_dynamic_confirmation",
+  "output": "runs/v828_goal_dynamic_confirmation",
+  "window": "confirmation01",
+  "confirmation": true,
+  "absolute_deadline_unix": 1793920480.869028,
+  "batch_cap_s": 43200,
+  "minimum_start_budget_s": 43200,
+  "repeat_slots": [
+    1,
+    9,
+    17
+  ],
+  "dependency": "runs/v827_goal_route_validation",
+  "reference_pair": "runs/v826_goal_reference_renewal/main_slot02/paired",
+  "reference_view": "runs/goal_acceptance_20261105/qualification/reference/paired",
+  "report": "docs/RPCCR_GOAL_CONFIRMATION_V828_REPORT.md",
+  "archive": "evidence/rpccr_v828_goal_dynamic_confirmation_20261105"
+}

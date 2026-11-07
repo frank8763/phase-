@@ -1,0 +1,49 @@
+{
+  "status": "CLOSED_CONTROL_CONTRACT_AUDIT_FAILURE_NO_ARRIVAL",
+  "started_unix": 1793510341.924395,
+  "absolute_deadline_unix": 1793515741.924395,
+  "limit_s": 5400,
+  "maximum_candidates": 2,
+  "maximum_navigation_attempts": 4,
+  "candidates_started": 2,
+  "navigation_attempts": 2,
+  "round_closed": true,
+  "training_updates": 0,
+  "real_robot_runs": 0,
+  "stage_access": 0,
+  "last_completion": {
+    "status": "CLOSED_MAIN_NON_SUCCESS",
+    "elapsed_s": 786.308825458007,
+    "round_elapsed_s": 2392.668761730194,
+    "absolute_deadline_unix": 1793515741.924395,
+    "executed_branches": 1,
+    "strict_arrivals_including_repeats": 0,
+    "distinct_executed_development_tasks": 1,
+    "conditional_repeat_attempted": false,
+    "independent_confirmation_tasks": 0,
+    "dynamic_stability_acceptance_passed": false,
+    "training_updates": 0,
+    "automatic_next_revision_started": false
+  },
+  "candidate01_summary": {
+    "status": "BOUNDED_WALL_STOP",
+    "public_steps": 860,
+    "nav_native": 6880,
+    "replay_native": 6880,
+    "private_integrations": 3993040,
+    "strict_arrival": false,
+    "handover_successes": 14,
+    "independent_evidence_audit_passed": true
+  },
+  "closed_at_unix": 1793512934.9544055,
+  "automatic_next_revision_started": false,
+  "post_navigation_control_anomaly": {
+    "first_v675_raw_mismatch_step": 294,
+    "v675_mismatch_steps": 10,
+    "v674_retrospective_mismatch_steps": 10,
+    "state_replays_exact": true,
+    "raw_contract_passed": false,
+    "original_completions_and_audits_retained": true,
+    "diagnostic": "CONTROL_PIPELINE_DIAGNOSIS.json"
+  }
+}

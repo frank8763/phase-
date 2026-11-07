@@ -1,0 +1,50 @@
+[
+  {
+    "task": {
+      "slot": 1,
+      "seed": 10010001,
+      "phase": 0.6573753567727383,
+      "case_id": "WEST_EAST",
+      "initial_axis_motion_direction": "POSITIVE_AXIS",
+      "course_distance_m": 8.0,
+      "role": "DEVELOPMENT_KNOWN_TASK",
+      "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route"
+    },
+    "run": "runs/v710_joint_field_development/t0_slot01/paired",
+    "runner_exit": 0,
+    "source_runner": "V710",
+    "causal_audit": "runs/v711_field_audit_entry/original_t0_01/INITIAL_UNSEEN_AUDIT_V699.json"
+  },
+  {
+    "task": {
+      "slot": 2,
+      "seed": 10010002,
+      "phase": 3.673083947600074,
+      "case_id": "NORTH_SOUTH",
+      "initial_axis_motion_direction": "NEGATIVE_AXIS",
+      "course_distance_m": 6.9660968319116074,
+      "role": "DEVELOPMENT_KNOWN_TASK",
+      "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route"
+    },
+    "run": "runs/v712_joint_field_continuation/t0_slot02/paired",
+    "runner_exit": 0,
+    "source_runner": "V712",
+    "causal_audit": "runs/v712_joint_field_continuation/t0_slot02/paired/field_preflight/INITIAL_UNSEEN_AUDIT_V699.json"
+  },
+  {
+    "task": {
+      "slot": 3,
+      "seed": 10010003,
+      "phase": 0.9511239917756753,
+      "case_id": "EAST_WEST",
+      "initial_axis_motion_direction": "POSITIVE_AXIS",
+      "course_distance_m": 8.0,
+      "role": "DEVELOPMENT_KNOWN_TASK",
+      "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route"
+    },
+    "run": "runs/v712_joint_field_continuation/t0_slot03/paired",
+    "runner_exit": 0,
+    "source_runner": "V712",
+    "causal_audit": "runs/v712_joint_field_continuation/t0_slot03/paired/field_preflight/INITIAL_UNSEEN_AUDIT_V699.json"
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "status": "AUDIT_REPAIR_VALIDATED_ONLY",
+  "error": null,
+  "chain_comparisons": [
+    {
+      "slot": 1,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 2,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 3,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 4,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 5,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 6,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 7,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 8,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 9,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 10,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 11,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 12,
+      "original_status": "PASS",
+      "new_offline_status": "PASS",
+      "changed_checks": [],
+      "all_original_physical_causal_metrics_exact": true
+    },
+    {
+      "slot": 13,
+      "original_status": "FAIL",
+      "new_offline_status": "PASS",
+      "changed_checks": [
+        "all_raw_packets_reconstructed"
+      ],
+      "all_original_physical_causal_metrics_exact": true
+    }
+  ],
+  "negative_full_audit_cases": [
+    {
+      "case": "one_ulp_in_saved_range",
+      "packet_step": 0,
+      "column": 4,
+      "before": 2.642552375793457,
+      "after": 2.6425523757934575,
+      "auditor_exit": 1,
+      "status": "FAIL",
+      "passed": true
+    },
+    {
+      "case": "empty_row_instead_of_empty_list",
+      "packet_step": 350,
+      "auditor_exit": 1,
+      "status": "SCHEMA_ERROR_NOT_PASS",
+      "passed": true
+    }
+  ],
+  "old_confirmation_status": "NOT_PASSED",
+  "new_simulation_integrations": 0,
+  "new_navigation_trials": 0,
+  "new_training_updates": 0,
+  "review_guard_retained": true,
+  "elapsed_s": 84.22466397285461
+}

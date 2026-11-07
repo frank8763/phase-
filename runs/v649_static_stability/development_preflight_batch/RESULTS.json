@@ -1,0 +1,816 @@
+[
+  {
+    "case": {
+      "name": "preflight_dev_92000001_single_event",
+      "seed": 92000001,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 1,
+    "wall_s": 2.5188107740250416,
+    "completion": {
+      "status": "FAILED",
+      "seed": 92000001,
+      "results": [],
+      "error": {
+        "type": "RuntimeError",
+        "message": "SCENE_INVALID_NO_STATIC_OBSTACLE_PLACEMENT",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v649_static_stability/run_static.py\", line 46, in <module>\n    if not candidates:raise RuntimeError('SCENE_INVALID_NO_STATIC_OBSTACLE_PLACEMENT')\nRuntimeError: SCENE_INVALID_NO_STATIC_OBSTACLE_PLACEMENT\n"
+      },
+      "elapsed_s": 1.9321329899830744,
+      "sac_training_updates": 0
+    },
+    "preflight": null
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000001_legacy_two",
+      "seed": 92000001,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 1,
+    "wall_s": 2.321300840994809,
+    "completion": {
+      "status": "FAILED",
+      "seed": 92000001,
+      "results": [],
+      "error": {
+        "type": "RuntimeError",
+        "message": "SCENE_INVALID_NO_STATIC_OBSTACLE_PLACEMENT",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v649_static_stability/run_static.py\", line 46, in <module>\n    if not candidates:raise RuntimeError('SCENE_INVALID_NO_STATIC_OBSTACLE_PLACEMENT')\nRuntimeError: SCENE_INVALID_NO_STATIC_OBSTACLE_PLACEMENT\n"
+      },
+      "elapsed_s": 1.8653588049928658,
+      "sac_training_updates": 0
+    },
+    "preflight": null
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000002_single_event",
+      "seed": 92000002,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.268217269971501,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000002,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.818852796975989,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000002,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.1083577410398241,
+      "eligible_initial_task": false,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        0.9015849232673645,
+        1.5041847229003906
+      ],
+      "start_pose": [
+        -3.799999952316284,
+        -3.799999952316284,
+        2.3563775203834405
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000002_legacy_two",
+      "seed": 92000002,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.3686713079805486,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000002,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8744285560096614,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000002,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.1083577410398241,
+      "eligible_initial_task": false,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        0.9015849232673645,
+        1.5041847229003906
+      ],
+      "start_pose": [
+        -3.799999952316284,
+        -3.799999952316284,
+        2.3563775203834405
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000003_single_event",
+      "seed": 92000003,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.4185540360049345,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000003,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.9343331700074486,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000003,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.4252723336569081,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -3.3820602893829346,
+        0.6701418161392212
+      ],
+      "start_pose": [
+        3.5999999046325684,
+        1.2000000476837158,
+        3.141592653589793
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000003_legacy_two",
+      "seed": 92000003,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.41879747598432,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000003,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.9312593159847893,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000003,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.4252723336569081,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -3.3820602893829346,
+        0.6701418161392212
+      ],
+      "start_pose": [
+        3.5999999046325684,
+        1.2000000476837158,
+        3.141592653589793
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000004_single_event",
+      "seed": 92000004,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.4185695580090396,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000004,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.9250723969889805,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000004,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.25125479660863537,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -4.131678104400635,
+        -4.364272117614746
+      ],
+      "start_pose": [
+        0.4000000059604645,
+        0.800000011920929,
+        -2.356194601951048
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000004_legacy_two",
+      "seed": 92000004,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.368232178967446,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000004,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.919084940047469,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000004,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.25125479660863537,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -4.131678104400635,
+        -4.364272117614746
+      ],
+      "start_pose": [
+        0.4000000059604645,
+        0.800000011920929,
+        -2.356194601951048
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000005_single_event",
+      "seed": 92000005,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.368242905999068,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000005,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8686466310173273,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000005,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.21664163579340778,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -0.891089916229248,
+        -1.5276116132736206
+      ],
+      "start_pose": [
+        3.4000000953674316,
+        4.199999809265137,
+        -2.3563775203834405
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000005_legacy_two",
+      "seed": 92000005,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.36812777799787,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000005,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.9065543750184588,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000005,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.21664163579340778,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -0.891089916229248,
+        -1.5276116132736206
+      ],
+      "start_pose": [
+        3.4000000953674316,
+        4.199999809265137,
+        -2.3563775203834405
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000006_single_event",
+      "seed": 92000006,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.317760712991003,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000006,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8265051170019433,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000006,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.2210002315044406,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -1.7823035717010498,
+        3.5435125827789307
+      ],
+      "start_pose": [
+        -0.800000011920929,
+        -3.5999999046325684,
+        1.5707963267948963
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000006_legacy_two",
+      "seed": 92000006,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.3686182080418803,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000006,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8719830039772205,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000006,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.2210002315044406,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -1.7823035717010498,
+        3.5435125827789307
+      ],
+      "start_pose": [
+        -0.800000011920929,
+        -3.5999999046325684,
+        1.5707963267948963
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000007_single_event",
+      "seed": 92000007,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.3178688320331275,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000007,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8502141200006008,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000007,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.6250000703334808,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        3.216730833053589,
+        1.006635069847107
+      ],
+      "start_pose": [
+        -3.5999999046325684,
+        -1.600000023841858,
+        0.0
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000007_legacy_two",
+      "seed": 92000007,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.318132449989207,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000007,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8492203910136595,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000007,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.6250000703334808,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        3.216730833053589,
+        1.006635069847107
+      ],
+      "start_pose": [
+        -3.5999999046325684,
+        -1.600000023841858,
+        0.0
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000008_single_event",
+      "seed": 92000008,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.268135811027605,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000008,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8143117940053344,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000008,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.32500001370906806,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        1.3859636783599854,
+        3.4671084880828857
+      ],
+      "start_pose": [
+        -0.800000011920929,
+        -3.200000047683716,
+        1.5707963267948963
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000008_legacy_two",
+      "seed": 92000008,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.3181348990183324,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000008,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8404701419640332,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000008,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.32500001370906806,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        1.3859636783599854,
+        3.4671084880828857
+      ],
+      "start_pose": [
+        -0.800000011920929,
+        -3.200000047683716,
+        1.5707963267948963
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000009_single_event",
+      "seed": 92000009,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 1,
+    "wall_s": 2.268166753987316,
+    "completion": null,
+    "preflight": null
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000009_legacy_two",
+      "seed": 92000009,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 1,
+    "wall_s": 2.2678414729889482,
+    "completion": null,
+    "preflight": null
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000010_single_event",
+      "seed": 92000010,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.3184068980044685,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000010,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.8497607549652457,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000010,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.13664144814038104,
+      "eligible_initial_task": false,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -4.007190227508545,
+        4.062736511230469
+      ],
+      "start_pose": [
+        0.800000011920929,
+        -1.7999999523162842,
+        2.3560118875637848
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000010_legacy_two",
+      "seed": 92000010,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.31847935897531,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000010,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.860075939039234,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000010,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.13664144814038104,
+      "eligible_initial_task": false,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -4.007190227508545,
+        4.062736511230469
+      ],
+      "start_pose": [
+        0.800000011920929,
+        -1.7999999523162842,
+        2.3560118875637848
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000011_single_event",
+      "seed": 92000011,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.418459697975777,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000011,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.9644373609917238,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000011,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.33664144684668384,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -2.6240503787994385,
+        -2.973529577255249
+      ],
+      "start_pose": [
+        3.200000047683716,
+        1.0,
+        -2.3563775203834405
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000011_legacy_two",
+      "seed": 92000011,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.4188396689714864,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000011,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.9557310129748657,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000011,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.33664144684668384,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -2.6240503787994385,
+        -2.973529577255249
+      ],
+      "start_pose": [
+        3.200000047683716,
+        1.0,
+        -2.3563775203834405
+      ],
+      "unknown_count": 2
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000012_single_event",
+      "seed": 92000012,
+      "scene": "single_event",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.418628372019157,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000012,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.9371369340224192,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000012,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.8380005493567995,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        3.8416683673858643,
+        1.4567294120788574
+      ],
+      "start_pose": [
+        -3.0,
+        -1.399999976158142,
+        0.0
+      ],
+      "unknown_count": 1
+    }
+  },
+  {
+    "case": {
+      "name": "preflight_dev_92000012_legacy_two",
+      "seed": 92000012,
+      "scene": "legacy_two",
+      "preflight_only": true,
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 2.4186212880304083,
+    "completion": {
+      "status": "PREFLIGHT_COMPLETE",
+      "seed": 92000012,
+      "results": [],
+      "error": null,
+      "elapsed_s": 1.950553314993158,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 92000012,
+      "scene": "legacy_two",
+      "initial_physical_envelope_clearance_m": 0.8380005493567995,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        3.8416683673858643,
+        1.4567294120788574
+      ],
+      "start_pose": [
+        -3.0,
+        -1.399999976158142,
+        0.0
+      ],
+      "unknown_count": 2
+    }
+  }
+]

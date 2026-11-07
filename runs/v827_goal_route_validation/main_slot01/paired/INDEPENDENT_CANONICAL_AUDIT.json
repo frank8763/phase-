@@ -1,0 +1,268 @@
+{
+  "status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+  "checks": {
+    "registered_no_initial_stationary_hold": true,
+    "forward_tail_extension_provenance": true,
+    "complete_records": true,
+    "frozen_sources": true,
+    "model": true,
+    "full_native_replay": true,
+    "native_safety": true,
+    "zero_obstacle_contacts": true,
+    "contact_digest": true,
+    "self_geometry": true,
+    "native_only_static_unchanged": true,
+    "actuator_metadata": true,
+    "actuator_bounds_and_slew": true,
+    "all_native_expected_ctrl": true,
+    "raw_admission_ctrl": true,
+    "public_full_state_ctrl": true,
+    "joint_selection": true,
+    "all_retained_certificates": true,
+    "all_handover_certificates": true,
+    "causal_admission": true,
+    "finite_union_coverage": true,
+    "actor_unchanged_nonblocking": true,
+    "actual_actor_speed_bound": true,
+    "declared_course_norm_speed": true,
+    "strict_goal_consistent": true
+  },
+  "forward_admission_checks": [
+    {
+      "step": 578,
+      "checks": {
+        "original16_all_rejected": true,
+        "registered_five_low_speed": true,
+        "selected_was_valid": true,
+        "unchanged_horizon": true
+      },
+      "passed": true
+    },
+    {
+      "step": 579,
+      "checks": {
+        "original16_all_rejected": true,
+        "registered_five_low_speed": true,
+        "selected_was_valid": true,
+        "unchanged_horizon": true
+      },
+      "passed": true
+    },
+    {
+      "step": 836,
+      "checks": {
+        "original16_all_rejected": true,
+        "registered_five_low_speed": true,
+        "selected_was_valid": true,
+        "unchanged_horizon": true
+      },
+      "passed": true
+    },
+    {
+      "step": 837,
+      "checks": {
+        "original16_all_rejected": true,
+        "registered_five_low_speed": true,
+        "selected_was_valid": true,
+        "unchanged_horizon": true
+      },
+      "passed": true
+    }
+  ],
+  "raw_ctrl_mismatches": [],
+  "selection_failed_steps": [],
+  "reserved_certificates": [
+    {
+      "file": "runs/v827_goal_route_validation/main_slot01/paired/geometry_memory/recovery_contracts/contract_0580.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 4
+    },
+    {
+      "file": "runs/v827_goal_route_validation/main_slot01/paired/geometry_memory/recovery_contracts/contract_0847.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 8
+    },
+    {
+      "file": "runs/v827_goal_route_validation/main_slot01/paired/geometry_memory/recovery_contracts/contract_0602.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 4
+    },
+    {
+      "file": "runs/v827_goal_route_validation/main_slot01/paired/geometry_memory/recovery_contracts/contract_0840.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 4
+    },
+    {
+      "file": "runs/v827_goal_route_validation/main_slot01/paired/geometry_memory/recovery_contracts/contract_0873.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 36
+    },
+    {
+      "file": "runs/v827_goal_route_validation/main_slot01/paired/geometry_memory/recovery_contracts/contract_0610.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 40
+    },
+    {
+      "file": "runs/v827_goal_route_validation/main_slot01/paired/geometry_memory/recovery_contracts/contract_0828.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 4
+    }
+  ],
+  "handover_certificates": [
+    {
+      "step": 584,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 606,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 832,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 844,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 855,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 909,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "forward_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    }
+  ],
+  "outcome": "GOAL",
+  "strict_arrival": true,
+  "public_steps": 1080,
+  "native_steps": 8640,
+  "verification_simulation_steps": 0,
+  "scope": "finite same-task development evidence; not dynamic acceptance, infinite safety or statistical guarantee"
+}

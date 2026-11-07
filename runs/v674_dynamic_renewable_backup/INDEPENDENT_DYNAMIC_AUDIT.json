@@ -1,0 +1,848 @@
+{
+  "status": "EVIDENCE_AND_EXECUTED_NATIVE_CHECKS_PASS",
+  "checks": {
+    "certified_handover_checks": true,
+    "retained_recovery_certificates": true,
+    "all_native_records": true,
+    "finite_prediction_coverage": true,
+    "frozen_source_protocol": true,
+    "deadline_unchanged": true,
+    "within_deadline": true,
+    "within_registered_attempt_caps": true,
+    "old_task_model_initial_unchanged": true,
+    "first_public_predicted_pose_matches": true,
+    "all_registered_repeats_match": true
+  },
+  "branches": [
+    {
+      "run": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired",
+      "passed": true,
+      "checks": {
+        "all_public_and_native_records": true,
+        "source_snapshot": true,
+        "saved_model": true,
+        "causal_admission": true,
+        "actor_motion_formula": true,
+        "actor_mocap_at_all_native_ticks": true,
+        "native_time_steps": true,
+        "motion_bounds": true,
+        "smaller_actor": true,
+        "not_at_junction": true,
+        "swept_known_geometry_clearance": true,
+        "full_sweep_bypass": true,
+        "online_native_clearance": true,
+        "full_replay": true,
+        "replay_safety": true,
+        "zero_contact": true,
+        "raw_contact_digest": true,
+        "self_coverage": true,
+        "native_root_only": true,
+        "strict_outcome_consistent": true
+      },
+      "outcome": "BOUNDED_WALL_STOP",
+      "strict_arrival": false,
+      "public_steps": 860,
+      "native_steps": 6880,
+      "minimum_native_clearance_m": 0.25881438435838966,
+      "actor_displacement_span_m": 0.49999996211959585,
+      "actor_max_native_displacement_m": 0.000799999658580271,
+      "raw_contact_records": 76222
+    }
+  ],
+  "coverage": [
+    {
+      "run": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired",
+      "frames": 860,
+      "forecast_times_per_frame": 329,
+      "maximum_center_union_excess_m": -4.481372231524006e-06,
+      "maximum_joint_current_state_excess": -4.481372231524006e-06,
+      "saved_rows_pass": true,
+      "passed": true
+    }
+  ],
+  "prediction_first_public_pose_checks": [
+    {
+      "run": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired",
+      "maximum_first_public_xy_yaw_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "public_steps": 860
+    }
+  ],
+  "reserved_recovery_checks": [
+    {
+      "run": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired",
+      "public_state_matches": 860,
+      "maximum_full_qpos_qvel_error": 0.0,
+      "contracts": [
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0217.json.gz",
+          "activation_step": 217,
+          "created_step": 216,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.2023438477498926,
+          "terminal_speed_m_s": 0.0006950670686465149,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.005151824022571416,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0225.json.gz",
+          "activation_step": 225,
+          "created_step": 224,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.17050521176389108,
+          "terminal_speed_m_s": 0.0006520085095481627,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.0018639395284107962,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0230.json.gz",
+          "activation_step": 230,
+          "created_step": 229,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.3181139074333276,
+          "terminal_speed_m_s": 0.0005788197508055355,
+          "executed_public_steps": 32,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.002424796367304305,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0283.json.gz",
+          "activation_step": 283,
+          "created_step": 282,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.4515192051910786,
+          "terminal_speed_m_s": 0.00023302442922136513,
+          "executed_public_steps": 32,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.001729191392010776,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0621.json.gz",
+          "activation_step": 621,
+          "created_step": 620,
+          "recovery_kind": "BRAKE_ONLY",
+          "signed_displacement_m": 0.06775028977184219,
+          "terminal_speed_m_s": 5.864863668114935e-05,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -3.693056274256534e-05,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0635.json.gz",
+          "activation_step": 635,
+          "created_step": 634,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.18722748722428897,
+          "terminal_speed_m_s": 0.0003598441853409507,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.0016966655415853182,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0642.json.gz",
+          "activation_step": 642,
+          "created_step": 641,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.28186944150056337,
+          "terminal_speed_m_s": 0.0005519534885153688,
+          "executed_public_steps": 32,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.007549207636492028,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0695.json.gz",
+          "activation_step": 695,
+          "created_step": 694,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.1257728320273664,
+          "terminal_speed_m_s": 0.0007248161024182053,
+          "executed_public_steps": 8,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.0044539002604748745,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0707.json.gz",
+          "activation_step": 707,
+          "created_step": 706,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.3136896446661554,
+          "terminal_speed_m_s": 0.0006294351947875261,
+          "executed_public_steps": 8,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.006551868967867414,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0720.json.gz",
+          "activation_step": 720,
+          "created_step": 719,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.4254621259891552,
+          "terminal_speed_m_s": 0.0008284661129563327,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.0036992430623195016,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0732.json.gz",
+          "activation_step": 732,
+          "created_step": 731,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.3770164844719362,
+          "terminal_speed_m_s": 0.0009849342600213294,
+          "executed_public_steps": 32,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.004029130201623765,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0777.json.gz",
+          "activation_step": 777,
+          "created_step": 776,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.33991304094700814,
+          "terminal_speed_m_s": 0.0005330138126135313,
+          "executed_public_steps": 4,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.0057500349479115975,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0792.json.gz",
+          "activation_step": 792,
+          "created_step": 791,
+          "recovery_kind": "REVERSE_BRAKE",
+          "signed_displacement_m": -0.32470552413439213,
+          "terminal_speed_m_s": 0.0003007676531749421,
+          "executed_public_steps": 28,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.003509164402085929,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/recovery_contracts/contract_0829.json.gz",
+          "activation_step": 829,
+          "created_step": 828,
+          "recovery_kind": "BRAKE_ONLY",
+          "signed_displacement_m": 0.012959518763448077,
+          "terminal_speed_m_s": 5.337879386193861e-05,
+          "executed_public_steps": 8,
+          "maximum_executed_qpos_error": 0.0,
+          "maximum_executed_qvel_error": 0.0,
+          "maximum_executed_command_error": 0.0,
+          "past_forecast_maximum_center_excess_m": -0.001486472447241649,
+          "checks": {
+            "finite_forecast_coverage": true,
+            "recorded_gate_threshold": true,
+            "predicted_self_domain": true,
+            "terminal_braked": true,
+            "appropriate_backup_kind": true,
+            "complete_control_and_state_sequence": true,
+            "all_executed_states_match": true,
+            "all_executed_controls_match": true,
+            "command_slew_limits": true,
+            "causal_input_flag": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "certified_handover_checks": [
+    {
+      "run": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired",
+      "attempts": 51,
+      "successes": 14,
+      "certificates": [
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0221.json.gz",
+          "step": 221,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0229.json.gz",
+          "step": 229,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0262.json.gz",
+          "step": 262,
+          "old_native_cursor": 256,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0315.json.gz",
+          "step": 315,
+          "old_native_cursor": 256,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0625.json.gz",
+          "step": 625,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0639.json.gz",
+          "step": 639,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0674.json.gz",
+          "step": 674,
+          "old_native_cursor": 256,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0703.json.gz",
+          "step": 703,
+          "old_native_cursor": 64,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0715.json.gz",
+          "step": 715,
+          "old_native_cursor": 64,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0724.json.gz",
+          "step": 724,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0764.json.gz",
+          "step": 764,
+          "old_native_cursor": 256,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0781.json.gz",
+          "step": 781,
+          "old_native_cursor": 32,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0820.json.gz",
+          "step": 820,
+          "old_native_cursor": 224,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        },
+        {
+          "file": "runs/v674_dynamic_renewable_backup/dev41_95000011_renewable/paired/geometry_memory/handover_certificates/handover_0837.json.gz",
+          "step": 837,
+          "old_native_cursor": 64,
+          "checks": {
+            "complete_full_state_handover": true,
+            "old_cursor_and_time": true,
+            "fresh_forecast_timestamp": true,
+            "finite_forecast_coverage": true,
+            "original_gates": true,
+            "new_full_tail": true,
+            "slew_limits": true,
+            "registered_progress_and_forward_gear": true,
+            "admission_matches_certificate": true,
+            "causal_flag": true
+          },
+          "full_state_control_errors": {
+            "entry_qpos": 0.0,
+            "entry_qvel": 0.0,
+            "old_qpos": 0.0,
+            "old_qvel": 0.0,
+            "new_first_qpos": 0.0,
+            "new_first_qvel": 0.0,
+            "new_first_command": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "checks": {
+        "every_attempt_recorded": true,
+        "every_success_certified": true,
+        "all_certificates_valid": true
+      },
+      "passed": true
+    }
+  ],
+  "distinct_development_tasks": 1,
+  "navigation_branches_including_repeats": 1,
+  "independent_confirmation_tasks": 0,
+  "strict_arrivals_including_repeats": 0,
+  "verification_simulation_steps": 0,
+  "dynamic_stability_acceptance_passed": false,
+  "scope": "finite development, no population, continuous-time or real-time guarantee"
+}

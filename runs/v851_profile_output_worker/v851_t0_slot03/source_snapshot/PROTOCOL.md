@@ -1,0 +1,3 @@
+# V851仅输出路径修复
+
+完整协议为experiments/v851_profile_output_continuation/PROTOCOL.md。科学算法精确V850，只有计时写出目录和输出namespace改动。沿原模型绝对截止1794022529.6441045，不新增90分钟，不重跑原组件，首异常即停不再修补。

@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "checks": {
+    "causal_projection_sources": true,
+    "all_registered_plans_recomputed": true,
+    "projection_contains_original_joint_cells": true,
+    "model_sha_matches": true,
+    "learned_inference_matches": true,
+    "teacher_samples_executed_only": true,
+    "course_distance_matches": true
+  },
+  "planning_records": [
+    {
+      "step": 303,
+      "maximum_containment_excess": -9.499999999107445e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 373,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 385,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 397,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 398,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 410,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 659,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 696,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    }
+  ],
+  "all_recomputed_plan_steps": [
+    0,
+    303,
+    373,
+    385,
+    397,
+    398,
+    410,
+    659,
+    696
+  ],
+  "tracked_projection_count": 8,
+  "learned_candidates_total": 746,
+  "learned_candidates_safe": 746,
+  "maximum_learned_target_error": 0.0,
+  "learned_actual_ordinary_steps": 381,
+  "ordinary_teacher_sample_count": 727,
+  "verification_integrations": 0,
+  "scope": "causal geometric proposal containment and actual finite learned-target participation, not learned model superiority"
+}

@@ -1,0 +1,66 @@
+{
+  "name": "dev01_repeat_91000002_single_event",
+  "seed": 91000002,
+  "scene": "single_event",
+  "matched": false,
+  "checks": {
+    "physical_audit": true,
+    "full_state_and_control": false,
+    "same_model": true,
+    "same_normalized_initial_state": true,
+    "exact_contact_events_except_verified_xml_provenance": false,
+    "same_strict_goal": true
+  },
+  "full_public_maximum_errors": {
+    "qpos_full": null,
+    "qvel_full": null,
+    "ctrl": null
+  },
+  "original_public_steps": 789,
+  "repeat_public_steps": 770,
+  "contact_comparison": {
+    "passed": false,
+    "checks": {
+      "same_xml_bytes": true,
+      "both_raw_content_digests_verified": true,
+      "record_counts_verified": true,
+      "same_number_of_contacts": false,
+      "all_contact_fields_equal_after_verified_path_rewrite": false,
+      "canonical_digest_equal": false
+    },
+    "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v651_static_progress/dev29_seed91000002_single_event/paired",
+    "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v654_static_overnight/dev01_repeat_91000002_single_event/paired",
+    "raw_content_sha256": [
+      "75ac6f1e4d1bb9434a5a06394597d6071eea6703fe28d8d74990722ad81acdd4",
+      "19cdea2521e05c4e770d374a30be5e33d12258560246b80d5135a42f2d4e690f"
+    ],
+    "raw_content_hashes_identical": false,
+    "canonical_content_sha256": [
+      "a8c5184eb8ba280b1e4653f7a6537777c023b3338026a6ebe84fbb1351b1bd12",
+      "53a04527d6bd04a39973bea8425b38b36bad8c7b3237bac72abdc2025f29fd88"
+    ],
+    "xml_bytes_sha256": [
+      "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5",
+      "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5"
+    ],
+    "contact_records": [
+      67398,
+      70396
+    ],
+    "raw_json_different_rows": 66962,
+    "first_non_path_difference_rows": [
+      16046,
+      16047,
+      16048,
+      16049,
+      16050,
+      16051,
+      16052,
+      16053,
+      16054,
+      16055
+    ],
+    "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+    "simulation_steps": 0
+  }
+}

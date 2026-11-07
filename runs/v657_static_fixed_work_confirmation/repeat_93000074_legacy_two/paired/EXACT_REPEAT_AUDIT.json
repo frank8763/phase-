@@ -1,0 +1,55 @@
+{
+  "name": "repeat_93000074_legacy_two",
+  "seed": 93000074,
+  "scene": "legacy_two",
+  "matched": true,
+  "checks": {
+    "physical_audit": true,
+    "full_state_and_control": true,
+    "same_model": true,
+    "same_normalized_initial_state": true,
+    "exact_contact_events_except_verified_xml_provenance": true,
+    "same_strict_goal": true
+  },
+  "full_public_maximum_errors": {
+    "qpos_full": 0.0,
+    "qvel_full": 0.0,
+    "ctrl": 0.0
+  },
+  "original_public_steps": 1046,
+  "repeat_public_steps": 1046,
+  "contact_comparison": {
+    "passed": true,
+    "checks": {
+      "same_xml_bytes": true,
+      "both_raw_content_digests_verified": true,
+      "record_counts_verified": true,
+      "same_number_of_contacts": true,
+      "all_contact_fields_equal_after_verified_path_rewrite": true,
+      "canonical_digest_equal": true
+    },
+    "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v656_static_deterministic_work/dev30_seed93000074_legacy_two/paired",
+    "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v657_static_fixed_work_confirmation/repeat_93000074_legacy_two/paired",
+    "raw_content_sha256": [
+      "c4f357f62f35837d63dcf950e39a9e29f56c003e2fe90dfc1a7d37c1f6cabfd8",
+      "49938d4fc7966fd1102aaa7b3e44f66418de359a31b35cad8f5b19c9ed8efc2f"
+    ],
+    "raw_content_hashes_identical": false,
+    "canonical_content_sha256": [
+      "0b3ef651dcfba3aff2c0e20325a7253d0ac195e5bb659569d7b7cdb8f05147e2",
+      "0b3ef651dcfba3aff2c0e20325a7253d0ac195e5bb659569d7b7cdb8f05147e2"
+    ],
+    "xml_bytes_sha256": [
+      "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5",
+      "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5"
+    ],
+    "contact_records": [
+      91819,
+      91819
+    ],
+    "raw_json_different_rows": 66940,
+    "first_non_path_difference_rows": [],
+    "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+    "simulation_steps": 0
+  }
+}

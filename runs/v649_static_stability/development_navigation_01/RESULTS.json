@@ -1,0 +1,81 @@
+[
+  {
+    "case": {
+      "name": "dev23_seed91000002_single",
+      "seed": 91000002,
+      "scene": "single_event",
+      "conditions": "circle_memory"
+    },
+    "returncode": 0,
+    "wall_s": 297.66836531297304,
+    "completion": {
+      "status": "COMPLETE",
+      "seed": 91000002,
+      "results": [
+        {
+          "condition": "circle_memory",
+          "seed": 91000002,
+          "outcome": "NO_SAFE_PROGRESS_PATH",
+          "strict_safe_arrival": false,
+          "goal_distance_m": 5.508438293168611,
+          "public_steps": 581,
+          "physics_steps": 4648,
+          "contacts": {
+            "physics_steps": 4648,
+            "all_contact_records": 51416,
+            "contact_type_counts": {
+              "ground_support": 37180,
+              "robot_self_contact": 14236
+            },
+            "negative_distance_counts_all_types": {
+              "ground_support": 37180,
+              "robot_self_contact": 14236
+            },
+            "robot_obstacle_contact_records": 0,
+            "robot_obstacle_penetration_records": 0,
+            "robot_obstacle_contact_steps": 0,
+            "robot_obstacle_penetration_steps": 0,
+            "maximum_obstacle_penetration_depth_m": 0.0,
+            "minimum_obstacle_distance_m": null,
+            "first_anomaly": null,
+            "unknown_contact_records": 0,
+            "robot_obstacle_geom_pairs": [],
+            "contact_log_content_sha256": "21981dc92a9274abc59a2010ae4af22a9fbd62eb6b7af65212793058eec6dfc5"
+          },
+          "backup_attempts": 0,
+          "backup_steps": 0,
+          "planning_attempts": 8,
+          "planning_wall_s": 32.686584454088006,
+          "command_overrides": 581,
+          "elapsed_s": 295.1081502820016,
+          "initial_state_hash": "533118f58765b7cf4e268d8e7d938df91d45fcb6e192cad151b4b8062699b9f7",
+          "static_obstacle_pose_unchanged": true,
+          "root_mutations_outside_mjstep": 0,
+          "source_revision": "stability_23_cpp_prediction",
+          "prediction_steps": 2452320
+        }
+      ],
+      "error": null,
+      "elapsed_s": 297.0959944659844,
+      "sac_training_updates": 0
+    },
+    "preflight": {
+      "seed": 91000002,
+      "scene": "single_event",
+      "initial_physical_envelope_clearance_m": 0.21663257626120858,
+      "eligible_initial_task": true,
+      "actual_navigation_steps": 0,
+      "scope": "t0 task construction/evaluation only, hidden truth not used by online planner",
+      "goal_xy": [
+        -3.597662925720215,
+        -1.428176999092102
+      ],
+      "start_pose": [
+        1.0,
+        4.199999809265137,
+        -2.356011460001249
+      ],
+      "unknown_count": 1
+    }
+  }
+]

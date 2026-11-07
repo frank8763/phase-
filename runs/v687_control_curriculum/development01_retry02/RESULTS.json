@@ -1,0 +1,83 @@
+[
+  {
+    "course": "straight",
+    "name": "straight01_retry02",
+    "run": "runs/v687_control_curriculum/straight01_retry02/paired",
+    "result": {
+      "course": "straight",
+      "outcome": "GOAL",
+      "strict_safe_arrival": true,
+      "goal_distance_m": 0.44203279736484613,
+      "public_steps": 206,
+      "physics_steps": 1648,
+      "prediction_steps": 956768,
+      "backup_steps": 0,
+      "ordinary_steps": 206,
+      "minimum_native_clearance_m": 1.5700171104365683,
+      "minimum_actual_self_domain_margin_m": 0.009022340666585194,
+      "contacts": {
+        "physics_steps": 1648,
+        "all_contact_records": 25110,
+        "contact_type_counts": {
+          "ground_support": 13180,
+          "robot_self_contact": 11930
+        },
+        "negative_distance_counts_all_types": {
+          "ground_support": 13180,
+          "robot_self_contact": 11930
+        },
+        "robot_obstacle_contact_records": 0,
+        "robot_obstacle_penetration_records": 0,
+        "robot_obstacle_contact_steps": 0,
+        "robot_obstacle_penetration_steps": 0,
+        "maximum_obstacle_penetration_depth_m": 0.0,
+        "minimum_obstacle_distance_m": null,
+        "first_anomaly": null,
+        "unknown_contact_records": 0,
+        "robot_obstacle_geom_pairs": [],
+        "contact_log_content_sha256": "fa6f8a22ebec8ac2b446e53925b5af53280d46e3b09a2994fe6fb88085767c04"
+      },
+      "root_mutations_outside_mjstep": 0,
+      "static_obstacle_pose_unchanged": true,
+      "active_obstacles": 0,
+      "initial_state_hash": "05715e480f667b40aaaf765b0c5cc9544239ff97ec6214d7cbe535eec991efad",
+      "elapsed_s": 85.7486717349966,
+      "training_updates": 0,
+      "dynamic_success": false,
+      "source_revision": "C0_fixed_route_V680_nominal"
+    },
+    "runner_code": 0,
+    "audit": {
+      "status": "ALL_C0_AUDITS_PASS",
+      "checks": {
+        "complete_counts": true,
+        "all_full_state_matches": true,
+        "native_clearance": true,
+        "complete_self_geometry": true,
+        "zero_contacts": true,
+        "contact_digest": true,
+        "source_frozen": true,
+        "model_hash": true,
+        "no_actor": true,
+        "unchanged_vehicle": true,
+        "all_controls_legal_and_slew": true,
+        "actual_native_controls": true,
+        "raw_admitted_commands": true,
+        "ordinary_selection": true,
+        "all_predicted_first_full_states": true,
+        "no_external_root_mutation": true,
+        "strict_goal": true
+      },
+      "error": null,
+      "replay_native_steps": 1648,
+      "maximum_qpos_error": 0.0,
+      "maximum_qvel_error": 0.0,
+      "minimum_native_clearance_m": 1.5700171104365683,
+      "minimum_self_margin_m": 0.009022340666585194,
+      "median_nearest_route_distance_m": 0.010122165869147048,
+      "maximum_nearest_route_distance_m": 0.01993178465726741,
+      "strict_arrival": true,
+      "scope": "C0 fixed-route ability test, no actor or dynamic navigation claim"
+    }
+  }
+]

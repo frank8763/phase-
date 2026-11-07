@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "checks": {
+    "state_ctrl": true,
+    "model": true,
+    "initial": true,
+    "contacts": true,
+    "discovery": true,
+    "same_outcome": true,
+    "same_length": true,
+    "every_native_state_ctrl_mocap": true
+  },
+  "errors": {
+    "qpos_full": 0.0,
+    "qvel_full": 0.0,
+    "ctrl": 0.0,
+    "mocap_pos": 0.0
+  },
+  "contact_comparison": {
+    "passed": true,
+    "checks": {
+      "same_xml_bytes": true,
+      "both_raw_content_digests_verified": true,
+      "record_counts_verified": true,
+      "same_number_of_contacts": true,
+      "all_contact_fields_equal_after_verified_path_rewrite": true,
+      "canonical_digest_equal": true
+    },
+    "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v848_goal_first_worker/v848_main_slot02/paired",
+    "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v848_goal_first_worker/v848_repeat_slot02/paired",
+    "raw_content_sha256": [
+      "28e7581813f17c9026131c92f847332563290bc665f91656a6006d92b6029987",
+      "d525a1d30dda8a37ed0d1fa7401c07657efc2472aea6402003507546a8b1959d"
+    ],
+    "raw_content_hashes_identical": false,
+    "canonical_content_sha256": [
+      "2ca6b9e6537bfef073fc4217ec0727c5d58037ff318de64d93b9437fb8e0a73e",
+      "2ca6b9e6537bfef073fc4217ec0727c5d58037ff318de64d93b9437fb8e0a73e"
+    ],
+    "xml_bytes_sha256": [
+      "9dc7452ce087e68861f43c16b81632e623e2088403dd0a49fd5952e3ae3e5d0d",
+      "9dc7452ce087e68861f43c16b81632e623e2088403dd0a49fd5952e3ae3e5d0d"
+    ],
+    "contact_records": [
+      60469,
+      60469
+    ],
+    "raw_json_different_rows": 42560,
+    "first_non_path_difference_rows": [],
+    "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+    "simulation_steps": 0
+  },
+  "full_native_errors": {
+    "qpos_full": 0.0,
+    "qvel_full": 0.0,
+    "actual_ctrl": 0.0,
+    "mocap_pos": 0.0
+  },
+  "compared_native_steps": 5320,
+  "new_integrations": 0
+}

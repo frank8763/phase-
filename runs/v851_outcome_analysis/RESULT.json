@@ -1,0 +1,210 @@
+{
+  "status": "SAVED_WALL_TIME_AND_ACTUAL_MODE_DECOMPOSITION_VERIFIED",
+  "comparison": {
+    "V848": {
+      "elapsed_s": 1961.2270453239908,
+      "public_steps": 1200,
+      "physics_steps": 9600,
+      "prediction_steps": 15942432,
+      "backup_attempts": 14,
+      "backup_steps": 168,
+      "planning_attempts": 12,
+      "planning_wall_s": 63.23965210301685,
+      "goal_distance_m": 1.748783501546025,
+      "closest_goal_m": 1.2243228684503948,
+      "closest_step": 1097,
+      "actual_walk_m": 15.382992598369212
+    },
+    "V851": {
+      "elapsed_s": 2546.1370529740234,
+      "public_steps": 1200,
+      "physics_steps": 9600,
+      "prediction_steps": 11083432,
+      "backup_attempts": 64,
+      "backup_steps": 532,
+      "planning_attempts": 18,
+      "planning_wall_s": 275.21245222492144,
+      "goal_distance_m": 1.8254109539883276,
+      "closest_goal_m": 1.8052543796275402,
+      "closest_step": 1189,
+      "actual_walk_m": 12.867522913844542
+    }
+  },
+  "changes": {
+    "wall_time_change_percent": 29.82367640934742,
+    "private_native_change_percent": -30.478411323943543,
+    "new_planning_wall_fraction": 0.10809019565677294
+  },
+  "details": {
+    "actual_mode_groups": {
+      "303:1200": {
+        "ORDINARY_GEAR_1": {
+          "steps": 38,
+          "net_goal_gain_m": 0.3850942694388655,
+          "walk_m": 0.43181678226205605,
+          "negative_goal_steps": 0
+        },
+        "BACKUP_REFERENCE_FOLLOW_BRAKE": {
+          "steps": 132,
+          "net_goal_gain_m": 1.379199749676098,
+          "walk_m": 1.5139657356414276,
+          "negative_goal_steps": 6
+        },
+        "RETURN_GEAR_1": {
+          "steps": 58,
+          "net_goal_gain_m": 0.6003434763858007,
+          "walk_m": 0.6681381510161954,
+          "negative_goal_steps": 1
+        },
+        "BACKUP_FORWARD_BRAKE": {
+          "steps": 264,
+          "net_goal_gain_m": 2.424427200090637,
+          "walk_m": 2.7453512387113337,
+          "negative_goal_steps": 8
+        },
+        "ORDINARY_GEAR_-1": {
+          "steps": 269,
+          "net_goal_gain_m": -2.6534333854058034,
+          "walk_m": 2.8338461459153437,
+          "negative_goal_steps": 259
+        },
+        "BACKUP_BRAKE_ONLY": {
+          "steps": 136,
+          "net_goal_gain_m": -0.007875420006356215,
+          "walk_m": 0.21742542788464733,
+          "negative_goal_steps": 77
+        }
+      },
+      "600:900": {
+        "BACKUP_BRAKE_ONLY": {
+          "steps": 96,
+          "net_goal_gain_m": 0.059358706954703244,
+          "walk_m": 0.1468409337891124,
+          "negative_goal_steps": 47
+        },
+        "ORDINARY_GEAR_-1": {
+          "steps": 117,
+          "net_goal_gain_m": -1.2922289002876415,
+          "walk_m": 1.2983097077951038,
+          "negative_goal_steps": 117
+        },
+        "RETURN_GEAR_1": {
+          "steps": 4,
+          "net_goal_gain_m": 0.029025679012918637,
+          "walk_m": 0.03681181605246823,
+          "negative_goal_steps": 1
+        },
+        "BACKUP_FORWARD_BRAKE": {
+          "steps": 4,
+          "net_goal_gain_m": 0.003311601485099125,
+          "walk_m": 0.00744495578411165,
+          "negative_goal_steps": 2
+        },
+        "ORDINARY_GEAR_1": {
+          "steps": 7,
+          "net_goal_gain_m": 0.0492375628701458,
+          "walk_m": 0.04952135726413144,
+          "negative_goal_steps": 0
+        },
+        "BACKUP_REFERENCE_FOLLOW_BRAKE": {
+          "steps": 72,
+          "net_goal_gain_m": 0.5791702795601656,
+          "walk_m": 0.5841020359452328,
+          "negative_goal_steps": 6
+        }
+      },
+      "900:1200": {
+        "ORDINARY_GEAR_-1": {
+          "steps": 84,
+          "net_goal_gain_m": -0.7548488237803086,
+          "walk_m": 0.8254265227482493,
+          "negative_goal_steps": 79
+        },
+        "BACKUP_BRAKE_ONLY": {
+          "steps": 8,
+          "net_goal_gain_m": -0.0062647885105411305,
+          "walk_m": 0.007091728226738607,
+          "negative_goal_steps": 6
+        },
+        "RETURN_GEAR_1": {
+          "steps": 26,
+          "net_goal_gain_m": 0.26626940244618735,
+          "walk_m": 0.3010964962198508,
+          "negative_goal_steps": 0
+        },
+        "ORDINARY_GEAR_1": {
+          "steps": 18,
+          "net_goal_gain_m": 0.19200366287564075,
+          "walk_m": 0.21743012799827474,
+          "negative_goal_steps": 0
+        },
+        "BACKUP_FORWARD_BRAKE": {
+          "steps": 136,
+          "net_goal_gain_m": 1.1756441853408959,
+          "walk_m": 1.4214457587447398,
+          "negative_goal_steps": 3
+        },
+        "BACKUP_REFERENCE_FOLLOW_BRAKE": {
+          "steps": 28,
+          "net_goal_gain_m": 0.39853533466705215,
+          "walk_m": 0.4684638821863677,
+          "negative_goal_steps": 0
+        }
+      }
+    },
+    "windows": [
+      {
+        "start": 303,
+        "end_exclusive": 600,
+        "goal_before_m": 3.9531668441675696,
+        "goal_after_m": 2.524624856622645,
+        "net_goal_gain_m": 1.4285419875449246,
+        "walk_m": 3.0465581586766244
+      },
+      {
+        "start": 600,
+        "end_exclusive": 900,
+        "goal_before_m": 2.524624856622645,
+        "goal_after_m": 3.096749927027254,
+        "net_goal_gain_m": -0.572125070404609,
+        "walk_m": 2.12303080663016
+      },
+      {
+        "start": 900,
+        "end_exclusive": 1200,
+        "goal_before_m": 3.096749927027254,
+        "goal_after_m": 1.8254109539883276,
+        "net_goal_gain_m": 1.2713389730389264,
+        "walk_m": 3.240954516124221
+      },
+      {
+        "start": 1100,
+        "end_exclusive": 1200,
+        "goal_before_m": 2.649251466928584,
+        "goal_after_m": 1.8254109539883276,
+        "net_goal_gain_m": 0.8238405129402562,
+        "walk_m": 1.158432183954366
+      }
+    ],
+    "first_within2m_public_step": 1160,
+    "remaining_public_after_first_within2m": 39,
+    "complete_goal_references": 16,
+    "total_reference_plans": 18,
+    "latency": {
+      "period_s": 0.08,
+      "over_period_count": 977,
+      "p50_s": 0.8023702564969426,
+      "p95_s": 8.099531399995609,
+      "p99_s": 15.213208061397593,
+      "maximum_s": 173.8570743270102,
+      "includes_online_planning_prediction_and_logging": true,
+      "simulator_pauses_during_computation": true,
+      "real_time_deployment_validated": false
+    }
+  },
+  "new_models": 0,
+  "new_integrations": 0,
+  "training_updates": 0,
+  "new_control_or_counterfactual_search": false,
+  "limitations": "Actual logged-mode contribution is descriptive; no counterfactual claim that deleting reverse or increasing horizon would succeed. World clock pauses during computation; no realtime qualification."
+}

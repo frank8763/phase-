@@ -1,0 +1,94 @@
+{
+  "status": "SAVED_PROFILE_AND_ACTUAL_STOPPED_CUSPS_VERIFIED",
+  "profiling": {
+    "native_predict": {
+      "calls": 34920,
+      "inclusive_wall_s": 1252.5480900754337,
+      "p50_s": 0.026638041003025137,
+      "p95_s": 0.06868014074716441,
+      "max_s": 0.16472915399936028
+    },
+    "compressed_npz_write": {
+      "calls": 27330,
+      "inclusive_wall_s": 57.10536174834124,
+      "p50_s": 0.0008192100067390129,
+      "p95_s": 0.005823791158036327,
+      "max_s": 0.06984273402485996
+    },
+    "nominal_select": {
+      "calls": 760,
+      "inclusive_wall_s": 678.658877308364,
+      "p50_s": 0.6316931269975612,
+      "p95_s": 1.5549007967172657,
+      "max_s": 1.6919874679879285
+    },
+    "complete_admission": {
+      "calls": 1301,
+      "inclusive_wall_s": 1164.475128379825,
+      "p50_s": 0.6703116999997292,
+      "p95_s": 3.237234521016944,
+      "max_s": 3.704875250987243
+    },
+    "reference_feedback_predict": {
+      "calls": 4014,
+      "inclusive_wall_s": 175.12599128318834,
+      "p50_s": 0.029368353993049823,
+      "p95_s": 0.08744644219696056,
+      "max_s": 0.10194980699452572
+    }
+  },
+  "inclusive_timers_overlap_do_not_add": true,
+  "actual_stopped_cusps": [
+    {
+      "step": 424,
+      "status": "STOPPED_CUSP_SWITCH",
+      "from_gear": -1,
+      "to_gear": 1,
+      "old_index": 11,
+      "new_index": 12,
+      "position_error_m": 0.031969779647981096,
+      "heading_error_rad": 0.011166384871819535,
+      "actual_xy_speed_m_s": 0.04167383467559468,
+      "safety_scope": "bookkeeping only; next command still validated from actual state"
+    },
+    {
+      "step": 754,
+      "status": "STOPPED_CUSP_SWITCH",
+      "from_gear": -1,
+      "to_gear": 1,
+      "old_index": 5,
+      "new_index": 6,
+      "position_error_m": 0.031524521010254054,
+      "heading_error_rad": 0.02199565402145609,
+      "actual_xy_speed_m_s": 0.0473430930465627,
+      "safety_scope": "bookkeeping only; next command still validated from actual state"
+    },
+    {
+      "step": 910,
+      "status": "STOPPED_CUSP_SWITCH",
+      "from_gear": -1,
+      "to_gear": 1,
+      "old_index": 11,
+      "new_index": 12,
+      "position_error_m": 0.023219959625975495,
+      "heading_error_rad": 0.01809094313743964,
+      "actual_xy_speed_m_s": 0.03877511051403237,
+      "safety_scope": "bookkeeping only; next command still validated from actual state"
+    },
+    {
+      "step": 995,
+      "status": "STOPPED_CUSP_SWITCH",
+      "from_gear": -1,
+      "to_gear": 1,
+      "old_index": 17,
+      "new_index": 18,
+      "position_error_m": 0.02765367475153183,
+      "heading_error_rad": 0.03746855020300899,
+      "actual_xy_speed_m_s": 0.03896443827573008,
+      "safety_scope": "bookkeeping only; next command still validated from actual state"
+    }
+  ],
+  "new_models": 0,
+  "new_integrations": 0,
+  "limitations": "Saved actual records only. Native prediction, admission and nominal selection timers overlap; no sum or new backend speedup claim."
+}

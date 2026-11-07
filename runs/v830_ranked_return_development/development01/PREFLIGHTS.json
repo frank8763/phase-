@@ -1,0 +1,77 @@
+[
+  {
+    "task": {
+      "slot": 1,
+      "seed": 10060002,
+      "phase": 3.1853003294397464,
+      "case_id": "WEST_EAST",
+      "initial_axis_motion_direction": "NEGATIVE_AXIS",
+      "course_distance_m": 8.0,
+      "role": "DEVELOPMENT_KNOWN_FAILURE",
+      "phase_rule": "SHA256 RPCCR_NORM_CONFIRMATION_20261105|seed; uniform conditional cos-sign, four each direction per route",
+      "development_role": "previous_confirmation_failure"
+    },
+    "run": "runs/v830_ranked_return_development/t0_slot01/paired",
+    "causal_audit": "runs/v830_ranked_return_development/t0_slot01/paired/field_preflight/INITIAL_UNSEEN_AUDIT_V699.json"
+  },
+  {
+    "task": {
+      "slot": 2,
+      "seed": 10060008,
+      "phase": 3.2509695323644188,
+      "case_id": "WEST_EAST",
+      "initial_axis_motion_direction": "NEGATIVE_AXIS",
+      "course_distance_m": 8.0,
+      "role": "DEVELOPMENT_KNOWN_FAILURE",
+      "phase_rule": "SHA256 RPCCR_NORM_CONFIRMATION_20261105|seed; uniform conditional cos-sign, four each direction per route",
+      "development_role": "previous_confirmation_failure"
+    },
+    "run": "runs/v830_ranked_return_development/t0_slot02/paired",
+    "causal_audit": "runs/v830_ranked_return_development/t0_slot02/paired/field_preflight/INITIAL_UNSEEN_AUDIT_V699.json"
+  },
+  {
+    "task": {
+      "slot": 3,
+      "seed": 10010002,
+      "phase": 3.673083947600074,
+      "case_id": "NORTH_SOUTH",
+      "initial_axis_motion_direction": "NEGATIVE_AXIS",
+      "course_distance_m": 6.9660968319116074,
+      "role": "DEVELOPMENT_KNOWN_TASK",
+      "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route",
+      "development_role": "original_three_route"
+    },
+    "run": "runs/v830_ranked_return_development/t0_slot03/paired",
+    "causal_audit": "runs/v830_ranked_return_development/t0_slot03/paired/field_preflight/INITIAL_UNSEEN_AUDIT_V699.json"
+  },
+  {
+    "task": {
+      "slot": 4,
+      "seed": 10010001,
+      "phase": 0.6573753567727383,
+      "case_id": "WEST_EAST",
+      "initial_axis_motion_direction": "POSITIVE_AXIS",
+      "course_distance_m": 8.0,
+      "role": "DEVELOPMENT_KNOWN_TASK",
+      "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route",
+      "development_role": "original_three_route"
+    },
+    "run": "runs/v830_ranked_return_development/t0_slot04/paired",
+    "causal_audit": "runs/v830_ranked_return_development/t0_slot04/paired/field_preflight/INITIAL_UNSEEN_AUDIT_V699.json"
+  },
+  {
+    "task": {
+      "slot": 5,
+      "seed": 10010003,
+      "phase": 0.9511239917756753,
+      "case_id": "EAST_WEST",
+      "initial_axis_motion_direction": "POSITIVE_AXIS",
+      "course_distance_m": 8.0,
+      "role": "DEVELOPMENT_KNOWN_TASK",
+      "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route",
+      "development_role": "original_three_route"
+    },
+    "run": "runs/v830_ranked_return_development/t0_slot05/paired",
+    "causal_audit": "runs/v830_ranked_return_development/t0_slot05/paired/field_preflight/INITIAL_UNSEEN_AUDIT_V699.json"
+  }
+]

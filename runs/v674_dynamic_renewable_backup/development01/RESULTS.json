@@ -1,0 +1,71 @@
+[
+  {
+    "name": "dev41_95000011_renewable",
+    "seed": 95000011,
+    "result": {
+      "condition": "geometry_memory",
+      "seed": 95000011,
+      "outcome": "BOUNDED_WALL_STOP",
+      "strict_safe_arrival": false,
+      "goal_distance_m": 5.683998277731883,
+      "public_steps": 860,
+      "physics_steps": 6880,
+      "contacts": {
+        "physics_steps": 6880,
+        "all_contact_records": 76222,
+        "contact_type_counts": {
+          "ground_support": 55040,
+          "robot_self_contact": 21182
+        },
+        "negative_distance_counts_all_types": {
+          "ground_support": 55040,
+          "robot_self_contact": 21182
+        },
+        "robot_obstacle_contact_records": 0,
+        "robot_obstacle_penetration_records": 0,
+        "robot_obstacle_contact_steps": 0,
+        "robot_obstacle_penetration_steps": 0,
+        "maximum_obstacle_penetration_depth_m": 0.0,
+        "minimum_obstacle_distance_m": null,
+        "first_anomaly": null,
+        "unknown_contact_records": 0,
+        "robot_obstacle_geom_pairs": [],
+        "contact_log_content_sha256": "4c0efea543d2636fea076e26adc8f5550a5ea71188c6cfdd6d5e2316fe319733"
+      },
+      "backup_attempts": 14,
+      "backup_steps": 204,
+      "planning_attempts": 15,
+      "planning_wall_s": 253.93773043098918,
+      "command_overrides": 860,
+      "elapsed_s": 777.1715184869972,
+      "initial_state_hash": "6884222a0a627b3bbe20fc7a8702b5f8557991427022a527d66d2b3b7558d248",
+      "normalized_initial_state_hash": "3ccde72bedabaa55dd2e737d6bd9d2eb4cff2327e0fa34edcc21a2badaed7732",
+      "minimum_actual_self_domain_margin_m": 0.009076250912982586,
+      "self_geometry_checked_native_ticks": 6880,
+      "static_obstacle_pose_unchanged": true,
+      "root_mutations_outside_mjstep": 0,
+      "source_revision": "dynamic_41_renewable_backup",
+      "prediction_steps": 3993040,
+      "reserved_recovery_activations": 14,
+      "reserved_recovery_public_steps": 204,
+      "certified_handover_attempts": 51,
+      "certified_handover_successes": 14,
+      "initial_observation_steps": 0,
+      "dynamic_mode": "predictive",
+      "minimum_dynamic_native_clearance_m": 0.25881438435838966,
+      "actor_maximum_native_displacement_m": 0.000799999658580271,
+      "actor_motion_ticks": 6880,
+      "actor_position_at_end": [
+        -1.5536305768473804,
+        1.4027991531947888
+      ]
+    },
+    "checks": {
+      "physical_audit": true,
+      "finite_forecast_coverage": true,
+      "same_saved_model": true,
+      "same_initial_state": true
+    },
+    "passed_evidence": true
+  }
+]

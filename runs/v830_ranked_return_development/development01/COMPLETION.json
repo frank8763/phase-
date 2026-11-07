@@ -1,0 +1,120 @@
+{
+  "status": "FUNCTIONAL_NOT_PASSED_STOP",
+  "records": [
+    {
+      "name": "main_slot01",
+      "task": {
+        "slot": 1,
+        "seed": 10060002,
+        "phase": 3.1853003294397464,
+        "case_id": "WEST_EAST",
+        "initial_axis_motion_direction": "NEGATIVE_AXIS",
+        "course_distance_m": 8.0,
+        "role": "DEVELOPMENT_KNOWN_FAILURE",
+        "phase_rule": "SHA256 RPCCR_NORM_CONFIRMATION_20261105|seed; uniform conditional cos-sign, four each direction per route",
+        "development_role": "previous_confirmation_failure"
+      },
+      "role": "MAIN",
+      "run": "runs/v830_ranked_return_development/main_slot01/paired",
+      "physical_passed": true,
+      "functional_passed": false,
+      "audits": {
+        "audit_run.py": 0,
+        "audit_forward_controller.py": 0,
+        "audit_route_commitment.py": 0,
+        "audit_projection_learning.py": 0,
+        "audit_all_tail_geometry.py": 0,
+        "audit_shadow_mode.py": 0,
+        "audit_reentry.py": 0,
+        "audit_complete_joint.py": 0,
+        "audit_nominal_layers.py": 0,
+        "audit_reactive.py": 0,
+        "audit_proposal_separation.py": 0,
+        "audit_tracked_norm.py": 0,
+        "audit_goal_renewal.py": 0,
+        "audit_ranked_return.py": 0
+      },
+      "runner_exit": 0,
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 10060002,
+        "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+        "strict_safe_arrival": false,
+        "goal_distance_m": 1.660238770782713,
+        "public_steps": 531,
+        "physics_steps": 4248,
+        "contacts": {
+          "physics_steps": 4248,
+          "all_contact_records": 49184,
+          "contact_type_counts": {
+            "ground_support": 33984,
+            "robot_self_contact": 15200
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 33984,
+            "robot_self_contact": 15200
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "d096342701810a46e426b221ddc1b1e391a40e6355fe098202c157c4bb0fc067"
+        },
+        "backup_attempts": 1,
+        "backup_steps": 40,
+        "planning_attempts": 4,
+        "planning_wall_s": 95.52936444798252,
+        "command_overrides": 531,
+        "elapsed_s": 764.5255032730056,
+        "initial_state_hash": "2f4462f0fd84e5507af3f0da3622407404d61f0875af987ba12ba46a14252199",
+        "normalized_initial_state_hash": "4d95080eff0b44b5038c6532543d4ed58a8f9bbdc9fead1fe74628d2035218ea",
+        "minimum_actual_self_domain_margin_m": 0.009386498300760326,
+        "self_geometry_checked_native_ticks": 4248,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "V820_DECLARED_NORM_REFINED_COMPLETE_CAUSAL_PREFIX_TAIL",
+        "prediction_steps": 3701744,
+        "retained_reentry_attempts": 0,
+        "retained_reentry_successes": 0,
+        "retained_reentry_private_native": 0,
+        "conditional_nonpenetrating_map_motion_class": true,
+        "declared_euclidean_speed_cap_m_s": 0.08,
+        "first_discovery_step": 253,
+        "discovery_brake_finished_step": 293,
+        "discovery_terminal_speed_m_s": 7.756615427667374e-08,
+        "initial_unknown_mode": "UNSEEN_PRIOR",
+        "early_scan_started_step": null,
+        "early_scan_finished_step": null,
+        "differential_candidate_bank_enabled": true,
+        "native_applied_ctrl_checks": 4248,
+        "reserved_recovery_activations": 1,
+        "reserved_recovery_public_steps": 40,
+        "certified_handover_attempts": 9,
+        "certified_handover_successes": 0,
+        "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+        "course_distance_m": 8.0,
+        "course_phase": 3.1853003294397464,
+        "initial_observation_steps": 0,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 0.2552300487870447,
+        "actor_maximum_native_displacement_m": 0.000799999629444938,
+        "actor_motion_ticks": 4248,
+        "actor_position_at_end": [
+          2.9155443421066987,
+          -1.2025070116056589
+        ]
+      },
+      "interrupted": null,
+      "replay_exit": 0,
+      "functional_failed_checks": [
+        "strict_arrival"
+      ]
+    }
+  ],
+  "automatic_additional_navigation": false
+}

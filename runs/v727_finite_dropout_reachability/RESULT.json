@@ -1,0 +1,805 @@
+{
+  "status": "NOT_QUALIFIED",
+  "checks": {
+    "1000_float32_sampled_whole_cell_hits": true,
+    "finite_enumeration_probability_dp_union_bound": true,
+    "1000_moving_path_minimum_counter_inequalities": true,
+    "nonconsecutive_dropouts_do_not_accumulate": true,
+    "correlated_outage_explicitly_breaks_model_guarantee": true,
+    "fixed_finite_conditional_budget": true,
+    "all_saved_trajectories_actual_329_coverage": true,
+    "duplicate_and_out_of_budget_packets_rejected": true,
+    "fixed_saved_full_forward_tail_eligible": false
+  },
+  "saved_packet_count": 455,
+  "actual_forecast_coverage_samples": 149695,
+  "maximum_actual_coverage_excess_m": 0.0,
+  "conditional_task_error_upper": 5.512402343750003e-09,
+  "full_forward_safe_count": 0,
+  "saved_tail_results": [
+    {
+      "checkpoint": 92,
+      "index": 0,
+      "kind": "BRAKE_ONLY",
+      "old_minimum_causal_m": 0.006263704757855995,
+      "new_minimum_causal_m": 0.006263704757855995,
+      "new_admissible": false,
+      "target_command": [
+        -0.42000000000000004,
+        -0.42000000000000004,
+        0.0,
+        0.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 1,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.24640942412071665,
+      "new_minimum_causal_m": 0.24640942412071665,
+      "new_admissible": true,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 2,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.2929410404004462,
+      "new_minimum_causal_m": 0.2929410404004462,
+      "new_admissible": true,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 3,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.15209069584667093,
+      "new_minimum_causal_m": 0.15209069584667093,
+      "new_admissible": false,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 4,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.20867034488345926,
+      "new_minimum_causal_m": -0.20867034488345926,
+      "new_admissible": false,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 5,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.3412981124674146,
+      "new_minimum_causal_m": -0.3412981124674146,
+      "new_admissible": false,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 6,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.26112363564169283,
+      "new_minimum_causal_m": 0.26112363564169283,
+      "new_admissible": true,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 7,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.2936654142811158,
+      "new_minimum_causal_m": 0.2936654142811158,
+      "new_admissible": true,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 8,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.16121557971193026,
+      "new_minimum_causal_m": 0.16121557971193026,
+      "new_admissible": true,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 9,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.2028851740291745,
+      "new_minimum_causal_m": -0.2028851740291745,
+      "new_admissible": false,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 10,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.31365148836134393,
+      "new_minimum_causal_m": -0.31365148836134393,
+      "new_admissible": false,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 11,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.3011230863193697,
+      "new_minimum_causal_m": 0.3011230863193697,
+      "new_admissible": true,
+      "target_command": [
+        0.0,
+        0.0,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 12,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.26712934773014363,
+      "new_minimum_causal_m": 0.26712934773014363,
+      "new_admissible": true,
+      "target_command": [
+        0.0,
+        0.0,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 13,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.1361199883214406,
+      "new_minimum_causal_m": 0.1361199883214406,
+      "new_admissible": false,
+      "target_command": [
+        0.0,
+        0.0,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 14,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.1614948922512397,
+      "new_minimum_causal_m": -0.1614948922512397,
+      "new_admissible": false,
+      "target_command": [
+        0.0,
+        0.0,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 15,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.24944587193120285,
+      "new_minimum_causal_m": -0.24944587193120285,
+      "new_admissible": false,
+      "target_command": [
+        0.0,
+        0.0,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 16,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.31607259174713576,
+      "new_minimum_causal_m": 0.31607259174713576,
+      "new_admissible": true,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 17,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.3207953912200546,
+      "new_minimum_causal_m": 0.3207953912200546,
+      "new_admissible": true,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 18,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.16130150771801646,
+      "new_minimum_causal_m": 0.16130150771801646,
+      "new_admissible": true,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 19,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.1851565068559935,
+      "new_minimum_causal_m": -0.1851565068559935,
+      "new_admissible": false,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 20,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.23955963162976915,
+      "new_minimum_causal_m": -0.23955963162976915,
+      "new_admissible": false,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 21,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.33048145268462037,
+      "new_minimum_causal_m": 0.33048145268462037,
+      "new_admissible": true,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 22,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.298811810764707,
+      "new_minimum_causal_m": 0.298811810764707,
+      "new_admissible": true,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 23,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.15147997951373507,
+      "new_minimum_causal_m": 0.15147997951373507,
+      "new_admissible": false,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 24,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.1750524523175787,
+      "new_minimum_causal_m": -0.1750524523175787,
+      "new_admissible": false,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 92,
+      "index": 25,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.24291171711728313,
+      "new_minimum_causal_m": -0.24291171711728313,
+      "new_admissible": false,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 0,
+      "kind": "BRAKE_ONLY",
+      "old_minimum_causal_m": 0.031015695501364543,
+      "new_minimum_causal_m": 0.031015695501364543,
+      "new_admissible": false,
+      "target_command": [
+        0.42000000000000004,
+        0.40259564281884774,
+        0.0,
+        0.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 1,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.12171012619968782,
+      "new_minimum_causal_m": 0.12171012619968782,
+      "new_admissible": false,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 2,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.11772764015200701,
+      "new_minimum_causal_m": 0.11772764015200701,
+      "new_admissible": false,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 3,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.1372838626146228,
+      "new_minimum_causal_m": 0.1372838626146228,
+      "new_admissible": false,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 4,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.1851804964112609,
+      "new_minimum_causal_m": -0.1851804964112609,
+      "new_admissible": false,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 5,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.28948734487495764,
+      "new_minimum_causal_m": -0.28948734487495764,
+      "new_admissible": false,
+      "target_command": [
+        -0.36126903023692364,
+        -0.52,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 6,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.0991156567568974,
+      "new_minimum_causal_m": 0.0991156567568974,
+      "new_admissible": false,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 7,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.12884882036398662,
+      "new_minimum_causal_m": 0.12884882036398662,
+      "new_admissible": false,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 8,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.13627635649867956,
+      "new_minimum_causal_m": 0.13627635649867956,
+      "new_admissible": false,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 9,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.1958891342767083,
+      "new_minimum_causal_m": -0.1958891342767083,
+      "new_admissible": false,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 10,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.2972398902024995,
+      "new_minimum_causal_m": -0.2972398902024995,
+      "new_admissible": false,
+      "target_command": [
+        -0.19511447256354925,
+        -0.23590902047242188,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 11,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.13945147037660635,
+      "new_minimum_causal_m": 0.13945147037660635,
+      "new_admissible": false,
+      "target_command": [
+        0.0,
+        0.0,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 12,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.14658703973018186,
+      "new_minimum_causal_m": 0.14658703973018186,
+      "new_admissible": false,
+      "target_command": [
+        0.0,
+        0.0,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 13,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.15173371410839145,
+      "new_minimum_causal_m": 0.15173371410839145,
+      "new_admissible": false,
+      "target_command": [
+        0.0,
+        0.0,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 14,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.1708409850982774,
+      "new_minimum_causal_m": -0.1708409850982774,
+      "new_admissible": false,
+      "target_command": [
+        0.0,
+        0.0,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 15,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.3293816998217901,
+      "new_minimum_causal_m": -0.3293816998217901,
+      "new_admissible": false,
+      "target_command": [
+        0.0,
+        0.0,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 16,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.07093030274608972,
+      "new_minimum_causal_m": 0.07093030274608972,
+      "new_admissible": false,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 17,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.13966522367991777,
+      "new_minimum_causal_m": 0.13966522367991777,
+      "new_admissible": false,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 18,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.15727560203464544,
+      "new_minimum_causal_m": 0.15727560203464544,
+      "new_admissible": true,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 19,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.22623378992617463,
+      "new_minimum_causal_m": -0.22623378992617463,
+      "new_admissible": false,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 20,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.39441178353037376,
+      "new_minimum_causal_m": -0.39441178353037376,
+      "new_admissible": false,
+      "target_command": [
+        0.23590902047242188,
+        0.19511447256354925,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 21,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.08823599748532432,
+      "new_minimum_causal_m": 0.08823599748532432,
+      "new_admissible": false,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        -12.0,
+        -12.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 22,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.1488122329387285,
+      "new_minimum_causal_m": 0.1488122329387285,
+      "new_admissible": false,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        -8.0,
+        -8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 23,
+      "kind": "REVERSE_BRAKE",
+      "old_minimum_causal_m": 0.15554524527923322,
+      "new_minimum_causal_m": 0.15554524527923322,
+      "new_admissible": true,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        -4.0,
+        -4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 24,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.2118706267535208,
+      "new_minimum_causal_m": -0.2118706267535208,
+      "new_admissible": false,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        4.0,
+        4.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    },
+    {
+      "checkpoint": 133,
+      "index": 25,
+      "kind": "FORWARD_BRAKE",
+      "old_minimum_causal_m": -0.4278319706384467,
+      "new_minimum_causal_m": -0.4278319706384467,
+      "new_admissible": false,
+      "target_command": [
+        0.52,
+        0.36126903023692364,
+        8.0,
+        8.0
+      ],
+      "new_prediction_or_scene_integrations": 0
+    }
+  ],
+  "new_initializations": 0,
+  "new_integrations": 0,
+  "training_updates": 0,
+  "finite_conditional_model_only": true
+}

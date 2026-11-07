@@ -1,0 +1,92 @@
+{
+  "status": "USER_ROUTE_INTENT_AND_GLOBAL_CONTROL_DISCREPANCY_VERIFIED",
+  "user_image_sha256": "544069ab7528873b924be9b591f8d7700f6a56d2880846a9591f8411486bb643",
+  "user_intent": "sustained forward travel through central opening then continue to goal; online dynamic avoidance",
+  "user_drawn_line_not_metric_or_dynamic_safety_certificate": true,
+  "all_global_plans_forward": true,
+  "global_plans": [
+    {
+      "step": 0,
+      "path_points": 229,
+      "status": "GLOBAL_GOAL_PATH",
+      "all_forward": true,
+      "reverse_points": 0,
+      "central_opening_pose": [
+        -0.008028735896531428,
+        -0.8007688089836963,
+        0.3825243263557994,
+        1.0
+      ],
+      "path_sha256": "088b81306d2cefdd26d250f1c75b12ad3887a90bf22f2c01a8f0d2347dd7f3bc"
+    },
+    {
+      "step": 73,
+      "path_points": 217,
+      "status": "GLOBAL_GOAL_PATH",
+      "all_forward": true,
+      "reverse_points": 0,
+      "central_opening_pose": [
+        0.015002980785997197,
+        -0.7723387138541813,
+        0.35228042574841634,
+        1.0
+      ],
+      "path_sha256": "2213bb3d94899660f44477524787821777c07355b405f693984ced9e683f3ea5"
+    },
+    {
+      "step": 132,
+      "path_points": 217,
+      "status": "GLOBAL_GOAL_PATH",
+      "all_forward": true,
+      "reverse_points": 0,
+      "central_opening_pose": [
+        -0.013277745520099526,
+        -0.7649793184530859,
+        0.43075039590654984,
+        1.0
+      ],
+      "path_sha256": "9545d7d01f10896e4f964affdce288bd2085c51af8b1fad73d9077adb28788c6"
+    },
+    {
+      "step": 193,
+      "path_points": 217,
+      "status": "GLOBAL_GOAL_PATH",
+      "all_forward": true,
+      "reverse_points": 0,
+      "central_opening_pose": [
+        0.001994557529957114,
+        -0.7889802912099427,
+        0.41038020887006454,
+        1.0
+      ],
+      "path_sha256": "660698d832e39dcea9bc6f9e4ac8ea51ac14373a5d1ef497f9d342cf73d2f531"
+    }
+  ],
+  "controller_reverse_starts": [
+    {
+      "step": 98,
+      "time_before_action_s": 7.84,
+      "nominal_candidates": 25,
+      "time_clearance_rejected": 25,
+      "backup_target": "REVERSE_BRAKE",
+      "old_certificate_step": 97,
+      "predicted_reverse_goal_loss_m": 0.5022696206408046
+    },
+    {
+      "step": 153,
+      "time_before_action_s": 12.24,
+      "nominal_candidates": 25,
+      "time_clearance_rejected": 25,
+      "backup_target": "REVERSE_BRAKE",
+      "old_certificate_step": 152,
+      "predicted_reverse_goal_loss_m": 0.44722446814662487
+    }
+  ],
+  "original_outcome": "NO_RESERVED_RECOVERY_COMMAND",
+  "new_model_initializations": 0,
+  "new_integrations": 0,
+  "new_predictions": 0,
+  "new_navigation": 0,
+  "route_controller_changed": false,
+  "unknown_actor_truth_not_added_to_online_inputs": true
+}

@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "checks": {
+    "causal_projection_sources": true,
+    "all_registered_plans_recomputed": true,
+    "projection_contains_original_joint_cells": true,
+    "model_sha_matches": true,
+    "learned_inference_matches": true,
+    "teacher_samples_executed_only": true,
+    "course_distance_matches": true
+  },
+  "planning_records": [
+    {
+      "step": 303,
+      "maximum_containment_excess": -9.499999999107445e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 631,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 754,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 1041,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 1164,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 1369,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 1574,
+      "maximum_containment_excess": -9.499999999551534e-06,
+      "source_hidden_world_geometry_used": false
+    },
+    {
+      "step": 1738,
+      "maximum_containment_excess": -9.499999999107445e-06,
+      "source_hidden_world_geometry_used": false
+    }
+  ],
+  "all_recomputed_plan_steps": [
+    0,
+    303,
+    631,
+    754,
+    1041,
+    1164,
+    1369,
+    1574,
+    1738
+  ],
+  "tracked_projection_count": 8,
+  "learned_candidates_total": 299,
+  "learned_candidates_safe": 290,
+  "maximum_learned_target_error": 0.0,
+  "learned_actual_ordinary_steps": 160,
+  "ordinary_teacher_sample_count": 299,
+  "verification_integrations": 0,
+  "scope": "causal geometric proposal containment and actual finite learned-target participation, not learned model superiority"
+}

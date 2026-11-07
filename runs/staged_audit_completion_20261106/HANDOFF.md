@@ -1,0 +1,11 @@
+# V842已到达先导补充核验 → 条件12小时开发
+
+唯一仓库Phase，完全隔离Stage，禁子代理/新聊天/外部消息/网络/训练。用户“下一步开始”继续已授权90分钟通过后12小时。原先导主10060002/相位3.1853003294397464实际725公开5800原生GOAL/.442468331m，全重放误差0。旧批120秒canonical超时/NOT_PASSED与新补充60秒joint超时、reactive只数1929而漏7672的原FAIL全部原字节保留。
+
+补充17范围与完整发现链、9601见证逐点独立复算0误差/10负例、V8413112原生前缀误差0、真实MJB元数据一次于原截止前完成0积分、57427来源/4.956646822GB原字节及解压SHA/大blob32MiB无损重组核验后SUPPLEMENT_FINALIZED通过。不重跑先导主，不新增独立样本或新24。
+
+当前新条件阶段由experiments/staged_audit_completion_20261106/campaign12.py唯一启动，先读同目录DEVELOPMENT_PROTOCOL.md和DEVELOPMENT_FREEZE.json。仅预算/审核操作接续，无科学修改，原W科学源全部原字节。先10060002整轨迹重复全门后，才10060008原相位3.2509695323644188的t0+主，全过才完整重复；最多3新导航。ROOT/DEVELOPMENT12_WINDOW_CLAIM.json首次模型前一次锁定started+43200绝对模型截止，禁止延长重置，旧先导截止不改。
+
+只监控ROOT ROUND_WINDOW/LEDGER与runs/v842_staged_long_navigation/development12 ACTIVE/PREFLIGHTS/RESULTS/COMPLETION/ERROR/FINALIZED以及当前long_repeat02/long_main08/long_repeat08 partial_progress。运行期间不得再launch或改冻结源/协议/任务/阈值，首次失败/异常即停，禁冻后任何修补/重试/新池。实际模型仅run_phase隔离单CPU单实例执行锁；soft5400/hard5700/outer5705/public1200/private100M，重放60/MJB元数据600秒均不越根截止，其他审计零模型600、发现链240。原.155/.15/完整自体ctrl/328+8/329执行657规划和完整全状态ctrl重放与同版本重复均必需。
+
+后台独立防休眠，不依赖助手在线或网络。finally恢复REVIEW_PENDING，独立终审/全来源SHA与32MiB块回读才FINALIZED；异常消失只诊断，不重启或延期。原件保留，大blob不直接Git提交。报告原V842各阶段和docs/RPCCR_V842_CONDITIONAL12H_SUPPLEMENT_20261106_REPORT.md，准确或未知私有/重放分账。开发非动态验收，不自动新24/剩16/三路线/对照/训练。健康未变保持安静；仅完成/失败诊断/异常/需操作通知。

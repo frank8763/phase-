@@ -1,0 +1,93 @@
+{
+  "previous_closed_run": {
+    "path": "runs/v853_daytime_20261107",
+    "status": "NOT_PASSED_OR_INCOMPLETE",
+    "counts": {
+      "navigation_native": 0,
+      "navigation_private_native": 0,
+      "navigation_replay_native": 0,
+      "component_old_replay_native": 3192,
+      "component_private_native": 0,
+      "component_actual_native": 0,
+      "component_repeat_native": 0,
+      "backend_old_replay_native": 0,
+      "backend_private_native": 0
+    },
+    "source_and_decompressed_sha_verified": true
+  },
+  "status": "NOT_PASSED_OR_INCOMPLETE",
+  "root_stop": "FATAL_ANOMALY_ALL_MODEL_BRANCHES_STOPPED",
+  "source_unchanged": true,
+  "backend": {
+    "status": "CPU_BATCH_EQUIVALENCE_PASS",
+    "passed": true,
+    "errors": {
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "poses": 0.0,
+      "self_bounds": 0.0,
+      "minimum_self_margin": 0.0,
+      "terminal_speed": 0.0
+    },
+    "serial_wall_s": 0.5409864490211476,
+    "batch_wall_s": 0.3641554949863348,
+    "measured_ratio": 1.4855918871729463,
+    "old_replay_native": 3192,
+    "private_native": 4320,
+    "actual_branches": 0,
+    "new_navigation": 0,
+    "training_updates": 0,
+    "automatically_adopted_in_navigation": false,
+    "scope": "Only fixed original CPU predictor nine controls, full array equivalence. Single CPU sequential batch; not real-time or GPU validation."
+  },
+  "known_counts": {
+    "navigation_native": 23240,
+    "navigation_private_native": 12817016,
+    "navigation_replay_native": 23240,
+    "component_old_replay_native": 24752,
+    "component_private_native": 1344,
+    "component_actual_native": 1312,
+    "component_repeat_native": 1312,
+    "backend_old_replay_native": 3192,
+    "backend_private_native": 4320
+  },
+  "accounts_exact": {
+    "navigation_native": true,
+    "navigation_private_native": true,
+    "navigation_replay_native": true,
+    "component_old_replay_native": true,
+    "component_private_native": true,
+    "component_actual_native": true,
+    "component_repeat_native": true,
+    "backend_old_replay_native": true,
+    "backend_private_native": true
+  },
+  "counts": {
+    "navigation_native": 23240,
+    "navigation_private_native": 12817016,
+    "navigation_replay_native": 23240,
+    "component_old_replay_native": 24752,
+    "component_private_native": 1344,
+    "component_actual_native": 1312,
+    "component_repeat_native": 1312,
+    "backend_old_replay_native": 3192,
+    "backend_private_native": 4320
+  },
+  "new24": 0,
+  "training_updates": 0,
+  "real_robot": 0,
+  "no_statistical_confirmation": true,
+  "no_realtime_claim": true,
+  "model_initializations": null,
+  "review_pending_restored": true,
+  "execution_lock_idle": true,
+  "models_finalizer": 0,
+  "integrations_finalizer": 0,
+  "archive": "evidence/rpccr_v854_daytime_input_continuation_20261107",
+  "source_and_decompressed_sha_verified": true,
+  "raw_files": 57996,
+  "raw_bytes": 4870869563,
+  "large_blobs": 3,
+  "originals_retained": true,
+  "report": "docs/RPCCR_DAYTIME_V854_INPUT_CONTINUATION_20261107_REPORT.md"
+}

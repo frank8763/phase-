@@ -1,0 +1,33 @@
+{
+  "status": "FAIL",
+  "tasks": 1,
+  "details": [
+    {
+      "slot": 1,
+      "case_id": "WEST_EAST",
+      "passed": true,
+      "checks": {
+        "raw_noise_exact": true,
+        "task_noise": true,
+        "fixed_bootstrap": true,
+        "zero_time": true,
+        "all_initial_gates": true,
+        "registered_start": true,
+        "registered_goal": true,
+        "known_map": true,
+        "all19_known_geoms": true,
+        "dynamic_phase": true,
+        "sweep_nonblocking": true,
+        "actual_t0_feasible": true,
+        "early_reset_repair": true,
+        "causal_audit": true
+      },
+      "maximum_packet_errors": {
+        "lidar": 0.0,
+        "depth": 0.0
+      }
+    }
+  ],
+  "simulation_integrations": 0,
+  "scope": "One preregistered original NORTH_SOUTH development route before navigation; no task rejection/replacement by navigation result"
+}

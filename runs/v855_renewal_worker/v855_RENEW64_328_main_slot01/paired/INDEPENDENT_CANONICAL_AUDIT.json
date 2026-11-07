@@ -1,0 +1,635 @@
+{
+  "status": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+  "checks": {
+    "registered_no_initial_stationary_hold": true,
+    "forward_tail_extension_provenance": true,
+    "complete_records": true,
+    "frozen_sources": true,
+    "model": true,
+    "full_native_replay": true,
+    "native_safety": true,
+    "zero_obstacle_contacts": true,
+    "contact_digest": true,
+    "self_geometry": true,
+    "native_only_static_unchanged": true,
+    "actuator_metadata": true,
+    "actuator_bounds_and_slew": true,
+    "all_native_expected_ctrl": true,
+    "raw_admission_ctrl": true,
+    "public_full_state_ctrl": true,
+    "joint_selection": true,
+    "all_retained_certificates": true,
+    "all_handover_certificates": true,
+    "causal_admission": true,
+    "finite_union_coverage": true,
+    "actor_unchanged_nonblocking": true,
+    "actual_actor_speed_bound": true,
+    "declared_course_norm_speed": true,
+    "strict_goal_consistent": true
+  },
+  "forward_admission_checks": [],
+  "raw_ctrl_mismatches": [],
+  "selection_failed_steps": [],
+  "reserved_certificates": [
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0525.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0304.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 40
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0517.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0345.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0501.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0393.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0493.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0409.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0425.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 15
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0361.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0369.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0441.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 27
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0353.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0533.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 40
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0417.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0485.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0385.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0477.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0469.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0377.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0509.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    },
+    {
+      "file": "runs/v855_renewal_worker/v855_RENEW64_328_main_slot01/paired/geometry_memory/recovery_contracts/contract_0401.json.gz",
+      "checks": {
+        "tail_direction_brake_contract": true,
+        "stored_signed_displacement": true,
+        "exact_canonical_control_sequence": true,
+        "states_and_ctrl": true,
+        "all_controls_legal": true,
+        "slew": true,
+        "complete_tail": true,
+        "original_gates": true,
+        "finite_forecast_coverage": true
+      },
+      "passed": true,
+      "executed_public_steps": 7
+    }
+  ],
+  "handover_certificates": [
+    {
+      "step": 352,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 360,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 368,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 376,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 384,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 392,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 400,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 408,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 416,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 424,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 440,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 468,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 476,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 484,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 492,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 500,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 508,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 516,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 524,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    },
+    {
+      "step": 532,
+      "checks": {
+        "full_state_join": true,
+        "old_time_cursor": true,
+        "fresh_forecast": true,
+        "common_maneuver_progress": true,
+        "gates": true,
+        "finite_forecast": true
+      },
+      "passed": true
+    }
+  ],
+  "outcome": "NO_RESERVED_RECOVERY_COMMAND",
+  "strict_arrival": false,
+  "public_steps": 573,
+  "native_steps": 4584,
+  "verification_simulation_steps": 0,
+  "scope": "finite same-task development evidence; not dynamic acceptance, infinite safety or statistical guarantee"
+}

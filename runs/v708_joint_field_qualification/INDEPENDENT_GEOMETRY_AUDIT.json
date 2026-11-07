@@ -1,0 +1,74 @@
+{
+  "status": "JOINT_GEOMETRY_AUDIT_NOT_PASSED",
+  "checks": {
+    "all_three": false,
+    "frozen_inputs": true,
+    "offline_closed": true,
+    "zero_integration": true
+  },
+  "details": [
+    {
+      "case_id": "WEST_EAST",
+      "checks": {
+        "fixed_motion_envelope": true,
+        "known_point_clearance": true,
+        "swept_known_clearance": true,
+        "start_distance": true,
+        "initial_full_sweep_outside_range": true,
+        "away_from_goal": true,
+        "protected_junction": true,
+        "near_reference": true,
+        "reference_arc": true,
+        "registered_first_eligible": true,
+        "selected_grid_point": true,
+        "continuous_full_body_reference": true,
+        "recorded_bound_matches": true,
+        "goal_distance": true,
+        "exact_start": true,
+        "no_simulator": true
+      },
+      "negative_controls": {
+        "anchor_at_start_rejected": true,
+        "shrunken_envelope_rejected": true
+      },
+      "continuous_lower_bound_m": 0.1643426560984393,
+      "passed": true
+    },
+    {
+      "case_id": "NORTH_SOUTH",
+      "passed": false,
+      "checks": {
+        "constructor_eligible": false
+      }
+    },
+    {
+      "case_id": "EAST_WEST",
+      "checks": {
+        "fixed_motion_envelope": true,
+        "known_point_clearance": true,
+        "swept_known_clearance": true,
+        "start_distance": true,
+        "initial_full_sweep_outside_range": true,
+        "away_from_goal": true,
+        "protected_junction": true,
+        "near_reference": true,
+        "reference_arc": true,
+        "registered_first_eligible": true,
+        "selected_grid_point": true,
+        "continuous_full_body_reference": true,
+        "recorded_bound_matches": true,
+        "goal_distance": true,
+        "exact_start": true,
+        "no_simulator": true
+      },
+      "negative_controls": {
+        "anchor_at_start_rejected": true,
+        "shrunken_envelope_rejected": true
+      },
+      "continuous_lower_bound_m": 0.16675799838484637,
+      "passed": true
+    }
+  ],
+  "verification_integrations": 0,
+  "scope": "Geometric full-sweep references only; actual sensing, Ackermann dynamics and arrival remain untested in the field."
+}

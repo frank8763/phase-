@@ -1,0 +1,75 @@
+{
+  "scope": "Offline sufficient infeasibility certificate for the central quadrant doorway.\nAudit truth never enters online control. The center-space crosscut joins the\nnorth partition tip to an unknown circle and the east partition. For this scene\nit connects top/right workspace boundaries; start and goal lie on opposite sides.\nIf EVERY pose on BOTH connector segments has clearance below the hard floor,\na continuous rectangular-envelope path respecting that floor cannot cross.\nA Lipschitz sampling remainder provides a conservative upper bound, not a mere\nnegative grid-connectivity result. Applies to the specified fixed self envelope.\n",
+  "seed": 92000003,
+  "separating_polygon": [
+    [
+      0.0,
+      5.0
+    ],
+    [
+      0.07999999821186066,
+      1.5
+    ],
+    [
+      1.3937499523162842,
+      1.2000000476837158
+    ],
+    [
+      1.3937499523162842,
+      0.07999999821186066
+    ],
+    [
+      5.0,
+      0.07999999821186066
+    ],
+    [
+      5.0,
+      5.0
+    ]
+  ],
+  "start_and_goal_opposite_sides": true,
+  "segments": [
+    {
+      "start": [
+        0.07999999821186066,
+        1.5
+      ],
+      "end": [
+        1.3937499523162842,
+        1.2000000476837158
+      ],
+      "maximum_sampled_clearance_m": 0.15282272666246527,
+      "maximizing_sample_pose": [
+        0.614076389049564,
+        1.378041562411481,
+        1.3439035240356338
+      ],
+      "sampling_remainder_m": 0.003547370641053575,
+      "continuous_clearance_upper_bound_m": 0.15637009730351883,
+      "certified_below_015": false
+    },
+    {
+      "start": [
+        1.3937499523162842,
+        1.2000000476837158
+      ],
+      "end": [
+        1.3937499523162842,
+        0.07999999821186066
+      ],
+      "maximum_sampled_clearance_m": 0.039777213848210924,
+      "maximizing_sample_pose": [
+        1.3937499523162842,
+        0.5152228338355048,
+        0.0
+      ],
+      "sampling_remainder_m": 0.0035459087942447676,
+      "continuous_clearance_upper_bound_m": 0.04332312264245569,
+      "certified_below_015": true
+    }
+  ],
+  "both_connectors_certified_blocked": false,
+  "elapsed_s": 2.452193150005769,
+  "simulation_steps": 0,
+  "caveat": "certificate is for the prescribed rectangular self envelope and this crosscut geometry, not arbitrary actual-body geometry or all scene families"
+}

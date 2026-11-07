@@ -1,0 +1,60 @@
+{
+  "status": "FIVE_FIXED_SAVED_GEOMETRY_QUERIES_PROFILED",
+  "queries": [
+    {
+      "step": 0,
+      "saved_file": "call0001_candidate00.npz",
+      "poses": 240,
+      "field_setup_s": 0.001099319000786636,
+      "causal_geometry_s": 0.10974429800262442,
+      "static_geometry_s": 0.0022378139983629808,
+      "minimum_causal_m": 0.19454591520739128,
+      "minimum_static_m": 0.19454591520739128
+    },
+    {
+      "step": 50,
+      "saved_file": "call0051_candidate00.npz",
+      "poses": 240,
+      "field_setup_s": 3.680300142150372e-05,
+      "causal_geometry_s": 0.037734174002252985,
+      "static_geometry_s": 0.0021523379982681945,
+      "minimum_causal_m": 0.24806371137391015,
+      "minimum_static_m": 0.24806371137391015
+    },
+    {
+      "step": 100,
+      "saved_file": "call0101_candidate00.npz",
+      "poses": 240,
+      "field_setup_s": 3.9176997233880684e-05,
+      "causal_geometry_s": 0.05482110099910642,
+      "static_geometry_s": 0.0022674940009892453,
+      "minimum_causal_m": 0.15087020120360092,
+      "minimum_static_m": 0.8403480129953682
+    },
+    {
+      "step": 150,
+      "saved_file": "call0151_candidate00.npz",
+      "poses": 240,
+      "field_setup_s": 3.6801997339352965e-05,
+      "causal_geometry_s": 0.07220482000047923,
+      "static_geometry_s": 0.0022306909995677415,
+      "minimum_causal_m": 0.03405018235239546,
+      "minimum_static_m": 0.7916394402267319
+    },
+    {
+      "step": 199,
+      "saved_file": "call0200_candidate00.npz",
+      "poses": 240,
+      "field_setup_s": 3.561500125215389e-05,
+      "causal_geometry_s": 0.05109932500272407,
+      "static_geometry_s": 0.002119097000104375,
+      "minimum_causal_m": 0.11382615496893692,
+      "minimum_static_m": 0.2826247707358604
+    }
+  ],
+  "model_initializations": 0,
+  "integrations": 0,
+  "new_predictions": 0,
+  "new_actions": 0,
+  "limits": "cProfile adds overhead and does not time native rollout/whole online run; these fixed saved geometry timings are not a whole-runtime causal decomposition or a real-time claim."
+}

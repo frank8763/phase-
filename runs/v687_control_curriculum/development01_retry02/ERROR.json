@@ -1,0 +1,5 @@
+{
+  "type": "AssertionError",
+  "message": "TAIL_GEOMETRY_FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v687_control_curriculum/execute_retry02.py\", line 43, in <module>\n    for course,steps in [('straight',400),('turn',500),('bypass',600)]:run(course,course+'01_retry02',steps)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v687_control_curriculum/execute_retry02.py\", line 39, in run\n    assert execute([str(helper.relative_to(repo)),str(pair)],pair/'tail_audit.console',35)==0,'TAIL_GEOMETRY_FAILED'\nAssertionError: TAIL_GEOMETRY_FAILED\n"
+}

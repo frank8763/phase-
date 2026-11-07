@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "actual_saved17_auditors": [
+    {
+      "script": "audit_run.py",
+      "exit": 0,
+      "elapsed_s": 18.158257007598877
+    },
+    {
+      "script": "audit_forward_controller.py",
+      "exit": 0,
+      "elapsed_s": 1.1681358814239502
+    },
+    {
+      "script": "audit_route_commitment.py",
+      "exit": 0,
+      "elapsed_s": 1.2691898345947266
+    },
+    {
+      "script": "audit_projection_learning.py",
+      "exit": 0,
+      "elapsed_s": 2.2727108001708984
+    },
+    {
+      "script": "audit_all_tail_geometry.py",
+      "exit": 0,
+      "elapsed_s": 0.16627097129821777
+    },
+    {
+      "script": "audit_shadow_mode.py",
+      "exit": 0,
+      "elapsed_s": 0.16611099243164062
+    },
+    {
+      "script": "audit_reentry.py",
+      "exit": 0,
+      "elapsed_s": 27.887623071670532
+    },
+    {
+      "script": "audit_complete_joint.py",
+      "exit": 0,
+      "elapsed_s": 9.889430284500122
+    },
+    {
+      "script": "audit_nominal_layers.py",
+      "exit": 0,
+      "elapsed_s": 123.12442326545715
+    },
+    {
+      "script": "audit_reactive.py",
+      "exit": 0,
+      "elapsed_s": 33.23793029785156
+    },
+    {
+      "script": "audit_proposal_separation.py",
+      "exit": 0,
+      "elapsed_s": 1.2676115036010742
+    },
+    {
+      "script": "audit_tracked_norm.py",
+      "exit": 0,
+      "elapsed_s": 14.03966498374939
+    },
+    {
+      "script": "audit_goal_renewal.py",
+      "exit": 0,
+      "elapsed_s": 2.324868679046631
+    },
+    {
+      "script": "audit_ranked_return.py",
+      "exit": 0,
+      "elapsed_s": 3.68660306930542
+    },
+    {
+      "script": "audit_forward_escape.py",
+      "exit": 0,
+      "elapsed_s": 2.4207253456115723
+    },
+    {
+      "script": "audit_reference_recovery.py",
+      "exit": 0,
+      "elapsed_s": 18.04115104675293
+    },
+    {
+      "script": "audit_early_joint.py",
+      "exit": 0,
+      "elapsed_s": 405.0247001647949
+    },
+    {
+      "script": "audit_candidate_policy.py",
+      "exit": 0,
+      "elapsed_s": 3.3422296047210693
+    }
+  ],
+  "actual_saved_auditors": 18,
+  "expected_audit_statuses": {
+    "audit_run.py": "ALL_PHYSICAL_STATE_COMMAND_CHECKS_PASS",
+    "audit_forward_controller.py": "FORWARD_GUIDANCE_BANK_PASS",
+    "audit_route_commitment.py": "PASS",
+    "audit_projection_learning.py": "PASS",
+    "audit_all_tail_geometry.py": "ALL_SAVED_TAIL_GEOMETRY_DIRECTION_SCHEDULE_PASS",
+    "audit_shadow_mode.py": "PASS",
+    "audit_reentry.py": "GLOBAL_REENTRY_SAVED_EVIDENCE_VERIFIED",
+    "audit_complete_joint.py": "COMPLETE_FINITE_JOINT_SELECTION_VERIFIED",
+    "audit_nominal_layers.py": "SPATIAL_NOMINAL_AND_COMPLETE_CAUSAL_TAIL_VERIFIED",
+    "audit_reactive.py": "REACTIVE_SCOPE_AND_CAUSAL_FORMULAS_PASS",
+    "audit_proposal_separation.py": "SPATIAL_PROPOSAL_SEPARATION_AUDIT_PASS",
+    "audit_tracked_norm.py": "TRACKED_NORM_COMPLETE_INDEPENDENT_GEOMETRY_PASS",
+    "audit_goal_renewal.py": "GOAL_REFERENCE_RENEWAL_INDEPENDENT_PASS",
+    "audit_ranked_return.py": "RANKED_RETURN_INDEPENDENT_PASS",
+    "audit_forward_escape.py": "FORWARD_ESCAPE_PROVENANCE_PASS",
+    "audit_reference_recovery.py": "REFERENCE_RECOVERY_AND_SUCCESSOR_PASS",
+    "audit_early_joint.py": "EARLY_JOINT_INDEPENDENT_PASS",
+    "audit_candidate_policy.py": "GOAL_FIRST_CERTIFIED_POLICY_PASS"
+  },
+  "three_real_t0_interface_passed": true,
+  "three_actual_saved_discovery_chains_passed": true,
+  "negative_cases": 10,
+  "policy_negative_cases": 16,
+  "os_identity_cases": [
+    {
+      "case": "absolute",
+      "expected": true,
+      "returncode": 0
+    },
+    {
+      "case": "wrong",
+      "expected": false,
+      "returncode": 1
+    },
+    {
+      "case": "expired",
+      "expected": false,
+      "returncode": 1
+    }
+  ],
+  "model_constructions": 0,
+  "integrations": 0,
+  "canonical_metadata_proxy_is_only_import_exercise": true,
+  "actual_MJB_metadata_required_in_new_stage": true,
+  "original_qualification_failure_preserved": true,
+  "original_error": "qualification/ERROR.json",
+  "operational_correction": "Absolute process-entry invocation only; all 18 positive audits and all three discovery chains reused by unchanged source SHA.",
+  "absolute_model_deadline_unix": 1794009600.0,
+  "scientific_changes_from_preparation": 0,
+  "new24": 0
+}

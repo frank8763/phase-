@@ -1,0 +1,117 @@
+{
+  "status": "FUNCTIONAL_NOT_PASSED_STOP",
+  "records": [
+    {
+      "name": "main_slot02",
+      "task": {
+        "slot": 2,
+        "seed": 10010002,
+        "phase": 3.673083947600074,
+        "case_id": "NORTH_SOUTH",
+        "initial_axis_motion_direction": "NEGATIVE_AXIS",
+        "course_distance_m": 6.9660968319116074,
+        "role": "DEVELOPMENT_KNOWN_TASK",
+        "phase_rule": "SHA256 RPCCR_FIELD_20261102_PHASE|seed; alternating cos-sign within each route"
+      },
+      "role": "MAIN",
+      "run": "runs/v821_norm_route_development/main_slot02/paired",
+      "physical_passed": true,
+      "functional_passed": false,
+      "audits": {
+        "audit_run.py": 0,
+        "audit_forward_controller.py": 0,
+        "audit_route_commitment.py": 0,
+        "audit_projection_learning.py": 0,
+        "audit_all_tail_geometry.py": 0,
+        "audit_shadow_mode.py": 0,
+        "audit_reentry.py": 0,
+        "audit_complete_joint.py": 0,
+        "audit_nominal_layers.py": 0,
+        "audit_reactive.py": 0,
+        "audit_proposal_separation.py": 0,
+        "audit_tracked_norm.py": 0
+      },
+      "runner_exit": 0,
+      "result": {
+        "condition": "geometry_memory",
+        "seed": 10010002,
+        "outcome": "NO_SAFE_PROGRESS_PATH_WITHOUT_RETAINED_RECOVERY",
+        "strict_safe_arrival": false,
+        "goal_distance_m": 1.9565210742294101,
+        "public_steps": 604,
+        "physics_steps": 4832,
+        "contacts": {
+          "physics_steps": 4832,
+          "all_contact_records": 58769,
+          "contact_type_counts": {
+            "ground_support": 38656,
+            "robot_self_contact": 20113
+          },
+          "negative_distance_counts_all_types": {
+            "ground_support": 38656,
+            "robot_self_contact": 20113
+          },
+          "robot_obstacle_contact_records": 0,
+          "robot_obstacle_penetration_records": 0,
+          "robot_obstacle_contact_steps": 0,
+          "robot_obstacle_penetration_steps": 0,
+          "maximum_obstacle_penetration_depth_m": 0.0,
+          "minimum_obstacle_distance_m": null,
+          "first_anomaly": null,
+          "unknown_contact_records": 0,
+          "robot_obstacle_geom_pairs": [],
+          "contact_log_content_sha256": "4cd2485355295e3d577728ac9ff36354ca5626b202882075e80832d1903c54ea"
+        },
+        "backup_attempts": 1,
+        "backup_steps": 40,
+        "planning_attempts": 4,
+        "planning_wall_s": 234.58895551199384,
+        "command_overrides": 604,
+        "elapsed_s": 768.471113394,
+        "initial_state_hash": "1780fa6e2d4defe9a96d68e61a9043261717b39cfed14626658d320dec4c8452",
+        "normalized_initial_state_hash": "518eeb22165381c7d6ea96010408bb14b9b345abf668f0379463955ea24f092b",
+        "minimum_actual_self_domain_margin_m": 0.009253896397947436,
+        "self_geometry_checked_native_ticks": 4832,
+        "static_obstacle_pose_unchanged": true,
+        "root_mutations_outside_mjstep": 0,
+        "source_revision": "V820_DECLARED_NORM_REFINED_COMPLETE_CAUSAL_PREFIX_TAIL",
+        "prediction_steps": 3363872,
+        "retained_reentry_attempts": 0,
+        "retained_reentry_successes": 0,
+        "retained_reentry_private_native": 0,
+        "conditional_nonpenetrating_map_motion_class": true,
+        "declared_euclidean_speed_cap_m_s": 0.08,
+        "first_discovery_step": 224,
+        "discovery_brake_finished_step": 264,
+        "discovery_terminal_speed_m_s": 1.4045004267206895e-05,
+        "initial_unknown_mode": "UNSEEN_PRIOR",
+        "early_scan_started_step": null,
+        "early_scan_finished_step": null,
+        "differential_candidate_bank_enabled": true,
+        "native_applied_ctrl_checks": 4832,
+        "reserved_recovery_activations": 1,
+        "reserved_recovery_public_steps": 40,
+        "certified_handover_attempts": 9,
+        "certified_handover_successes": 0,
+        "proposal_model_sha256": "fc9d3132c912033e2ec04cd8ae1ce236c818c484d5b96961c6f3dc1b0548b527",
+        "course_distance_m": 6.9660968319116074,
+        "course_phase": 3.673083947600074,
+        "initial_observation_steps": 0,
+        "dynamic_mode": "predictive",
+        "minimum_dynamic_native_clearance_m": 0.2459422938707364,
+        "actor_maximum_native_displacement_m": 0.0007999996212158818,
+        "actor_motion_ticks": 4832,
+        "actor_position_at_end": [
+          -1.4306539581889954,
+          -1.2127697238870052
+        ]
+      },
+      "interrupted": null,
+      "replay_exit": 0,
+      "functional_failed_checks": [
+        "strict_arrival"
+      ]
+    }
+  ],
+  "automatic_additional_navigation": false
+}

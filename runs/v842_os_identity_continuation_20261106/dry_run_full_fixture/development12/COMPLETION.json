@@ -1,0 +1,31 @@
+{
+  "status": "STOPPED_EXCEPTION",
+  "records": [
+    {
+      "name": "long_repeat02",
+      "role": "REPEAT",
+      "task": {
+        "slot": 2,
+        "seed": 10060002,
+        "phase": 3.1853003294397464,
+        "case_id": "WEST_EAST",
+        "initial_axis_motion_direction": "NEGATIVE_AXIS",
+        "course_distance_m": 8.0,
+        "role": "KNOWN_FAILURE_DEVELOPMENT",
+        "phase_rule": "SHA256 RPCCR_NORM_CONFIRMATION_20261105|seed; uniform conditional cos-sign, four each direction per route"
+      },
+      "run": "runs/v842_os_identity_continuation_20261106/dry_run_full_fixture/long_repeat02/paired",
+      "audits": {},
+      "physical_passed": false,
+      "functional_passed": false,
+      "base": "runs/v842_staged_long_navigation/pilot_main02/paired",
+      "limits": {
+        "soft": 5400,
+        "hard": 5700,
+        "outer": 5705
+      }
+    }
+  ],
+  "new_confirmation": 0,
+  "retries": 0
+}

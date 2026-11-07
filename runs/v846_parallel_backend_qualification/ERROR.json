@@ -1,0 +1,13 @@
+{
+  "type": "AssertionError",
+  "message": "PARALLEL_WORLD_IDENTITY_OR_ISOLATION_FAILURE",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v846_parallel_backend_qualification/benchmark.py\", line 123, in main\n    assert same<=1e-6 and different>1e-6,'PARALLEL_WORLD_IDENTITY_OR_ISOLATION_FAILURE'\nAssertionError: PARALLEL_WORLD_IDENTITY_OR_ISOLATION_FAILURE\n",
+  "completed_counts": {
+    "cpu_reference_native": 522,
+    "gpu_completed_world_steps": 33280,
+    "training_updates": 0,
+    "navigation": 0,
+    "confirmation": 0
+  },
+  "uncounted_in_flight_gpu_world_steps_possible": true
+}

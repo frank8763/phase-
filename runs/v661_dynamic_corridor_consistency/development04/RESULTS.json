@@ -1,0 +1,61 @@
+[
+  {
+    "seed": 95000011,
+    "mode": "predictive",
+    "name": "dev32_95000011_predictive",
+    "result": {
+      "condition": "geometry_memory",
+      "seed": 95000011,
+      "outcome": "NO_SAFE_PROGRESS_PATH",
+      "strict_safe_arrival": false,
+      "goal_distance_m": 7.443994655589251,
+      "public_steps": 471,
+      "physics_steps": 3768,
+      "contacts": {
+        "physics_steps": 3768,
+        "all_contact_records": 40104,
+        "contact_type_counts": {
+          "ground_support": 30144,
+          "robot_self_contact": 9960
+        },
+        "negative_distance_counts_all_types": {
+          "ground_support": 30144,
+          "robot_self_contact": 9960
+        },
+        "robot_obstacle_contact_records": 0,
+        "robot_obstacle_penetration_records": 0,
+        "robot_obstacle_contact_steps": 0,
+        "robot_obstacle_penetration_steps": 0,
+        "maximum_obstacle_penetration_depth_m": 0.0,
+        "minimum_obstacle_distance_m": null,
+        "first_anomaly": null,
+        "unknown_contact_records": 0,
+        "robot_obstacle_geom_pairs": [],
+        "contact_log_content_sha256": "870d3881f7e1a4aef79b4a5df53e831a3549c4106c6aec48d08bc979ec3f81a2"
+      },
+      "backup_attempts": 0,
+      "backup_steps": 0,
+      "planning_attempts": 11,
+      "planning_wall_s": 132.29811663198052,
+      "command_overrides": 471,
+      "elapsed_s": 387.3314296430035,
+      "initial_state_hash": "1cab2556cee772d63858fff54b9ff9b3444964c858cb4997094b8202ca1f5ade",
+      "normalized_initial_state_hash": "3ccde72bedabaa55dd2e737d6bd9d2eb4cff2327e0fa34edcc21a2badaed7732",
+      "minimum_actual_self_domain_margin_m": 0.009326200098506654,
+      "self_geometry_checked_native_ticks": 3768,
+      "static_obstacle_pose_unchanged": true,
+      "root_mutations_outside_mjstep": 0,
+      "source_revision": "dynamic_32_consistent_forecast_corridor",
+      "prediction_steps": 2034000,
+      "dynamic_mode": "predictive",
+      "minimum_dynamic_native_clearance_m": 0.23671778517437336,
+      "actor_maximum_native_displacement_m": 0.000799999658580271,
+      "actor_motion_ticks": 3768,
+      "actor_position_at_end": [
+        -1.6650425287147337,
+        1.3721012470732157
+      ]
+    },
+    "physical_audit_passed": true
+  }
+]

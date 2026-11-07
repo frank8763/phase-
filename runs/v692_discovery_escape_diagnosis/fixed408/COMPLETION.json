@@ -1,0 +1,2223 @@
+{
+  "status": "FINITE_REGISTERED_SET_NO_CERTIFICATE",
+  "error": null,
+  "elapsed_s": 4.122469596986775,
+  "replay_native_steps": 3264,
+  "forecast_integrations": 32472,
+  "private_execution_integrations": 0,
+  "private_prediction_integrations": 32472,
+  "maximum_old_qpos_qvel_mocap_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "minimum_replay_native_clearance_m": 0.4778161143599079,
+  "minimum_replay_self_margin_m": 0.009051655421852822,
+  "bad_contacts": 0,
+  "records": [
+    {
+      "index": 0,
+      "family": "STOP",
+      "steer": null,
+      "wheel": 0.0,
+      "brake_after": 0,
+      "straight_after": null,
+      "minimum_clearance_m": -0.08528958253777022,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.0099488103665058,
+      "terminal_speed_m_s": 5.718043847299894e-06,
+      "signed_displacement_m": 9.61309342333961e-05,
+      "terminal_pose": [
+        -0.45871096933364963,
+        -3.1631922312625753,
+        -0.20061537381300257
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 1,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.10211375732120806,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00941537929412839,
+      "terminal_speed_m_s": 4.240642265583426e-05,
+      "signed_displacement_m": -0.16669483306629607,
+      "terminal_pose": [
+        -0.6212654877794126,
+        -3.1255737858945816,
+        -0.16759204754023366
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 2,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.12206914273742378,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009374456245096252,
+      "terminal_speed_m_s": 0.0009793875200512384,
+      "signed_displacement_m": -0.49068387498630117,
+      "terminal_pose": [
+        -0.9382978640853747,
+        -3.058756352231586,
+        -0.14983336355767252
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 3,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.12908576442378353,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009374456245096252,
+      "terminal_speed_m_s": 0.12108315126154541,
+      "signed_displacement_m": -0.6546398961893205,
+      "terminal_pose": [
+        -1.0992200811013388,
+        -3.027335422775838,
+        -0.14181411755504894
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 4,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.10211375732120806,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00941537929412839,
+      "terminal_speed_m_s": 4.240642265583426e-05,
+      "signed_displacement_m": -0.16669483306629607,
+      "terminal_pose": [
+        -0.6212654877794126,
+        -3.1255737858945816,
+        -0.16759204754023366
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 5,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.11811230420527283,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009374456245096252,
+      "terminal_speed_m_s": 0.00026309137240299773,
+      "signed_displacement_m": -0.3816872816703688,
+      "terminal_pose": [
+        -0.8315175031540427,
+        -3.0806248841069044,
+        -0.15602404832505826
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 6,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.12553654316179455,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009374456245096252,
+      "terminal_speed_m_s": 0.007956137464350754,
+      "signed_displacement_m": -0.5736372471752016,
+      "terminal_pose": [
+        -1.0196503156650818,
+        -3.0425346600067984,
+        -0.1448068446214968
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 7,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.08897895938896874,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009568750700528927,
+      "terminal_speed_m_s": 0.00019085963730423934,
+      "signed_displacement_m": -0.09586347976049579,
+      "terminal_pose": [
+        -0.5521610210588734,
+        -3.141194281512131,
+        -0.17431396663867224
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 8,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.10495757953617071,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009568750700528927,
+      "terminal_speed_m_s": 0.0002850774542952134,
+      "signed_displacement_m": -0.1902617282468983,
+      "terminal_pose": [
+        -0.6443494883828766,
+        -3.1208272140790267,
+        -0.16248279476245672
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 9,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": -4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.11063344302625175,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009568750700528927,
+      "terminal_speed_m_s": 0.0012845193442973116,
+      "signed_displacement_m": -0.284561757537229,
+      "terminal_pose": [
+        -0.736656338779022,
+        -3.1015348359996326,
+        -0.1518691160250714
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 10,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.061303690463345856,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00940856358005554,
+      "terminal_speed_m_s": 1.4754305742700773e-05,
+      "signed_displacement_m": 0.09709292690810997,
+      "terminal_pose": [
+        -0.3645263804255995,
+        -3.1867823997087013,
+        -0.19950597408952342
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 11,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.04174406519985943,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00940856358005554,
+      "terminal_speed_m_s": 9.143868220426712e-05,
+      "signed_displacement_m": 0.19326481252165761,
+      "terminal_pose": [
+        -0.27138239623949434,
+        -3.211349854296374,
+        -0.21366350381206622
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 12,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.020765719488630957,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00940856358005554,
+      "terminal_speed_m_s": 0.000857745275486636,
+      "signed_displacement_m": 0.28950616040743926,
+      "terminal_pose": [
+        -0.17845134054230405,
+        -3.237312514372947,
+        -0.22802062723767397
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 13,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.04609564975608085,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009178085012589321,
+      "terminal_speed_m_s": 9.726913311644093e-05,
+      "signed_displacement_m": 0.17220745764716403,
+      "terminal_pose": [
+        -0.291638589197118,
+        -3.2052913624861685,
+        -0.20880873298046793
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 14,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": 0.005444412432947882,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009103269354865329,
+      "terminal_speed_m_s": 0.00021909225737887475,
+      "signed_displacement_m": 0.40018206033980624,
+      "terminal_pose": [
+        -0.07064575802939141,
+        -3.2625655512268144,
+        -0.22524231074511367
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 15,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.0557287702753094,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009103269354865329,
+      "terminal_speed_m_s": 0.007792103868335245,
+      "signed_displacement_m": 0.6042399804287936,
+      "terminal_pose": [
+        0.12644853696248864,
+        -3.3173426193086204,
+        -0.23837594911938556
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 16,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.04609564975608085,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009178085012589321,
+      "terminal_speed_m_s": 9.726913311644093e-05,
+      "signed_displacement_m": 0.17220745764716403,
+      "terminal_pose": [
+        -0.291638589197118,
+        -3.2052913624861685,
+        -0.20880873298046793
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 17,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": 0.03337948808368804,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009103269354865329,
+      "terminal_speed_m_s": 0.0016872129205657512,
+      "signed_displacement_m": 0.5156086997379977,
+      "terminal_pose": [
+        0.04095982296459393,
+        -3.292970661368533,
+        -0.23243390224146093
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 18,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.07724374653009689,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009103269354865329,
+      "terminal_speed_m_s": 0.12557571291698064,
+      "signed_displacement_m": 0.6899835295767713,
+      "terminal_pose": [
+        0.20932009038750637,
+        -3.3400937356835247,
+        -0.24203149729471932
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 19,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.11663958856905296,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00942438265515294,
+      "terminal_speed_m_s": 5.459388217298995e-06,
+      "signed_displacement_m": -0.1925126237314655,
+      "terminal_pose": [
+        -0.6461437322456657,
+        -3.1183557299938545,
+        -0.1875127201537247
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 20,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.13759591356396936,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009301480835151643,
+      "terminal_speed_m_s": 0.0014426709995951884,
+      "signed_displacement_m": -0.58259506911746,
+      "terminal_pose": [
+        -1.0266240308306274,
+        -3.0318790709843335,
+        -0.17584169511215622
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 21,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.14577261428610486,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009301480835151643,
+      "terminal_speed_m_s": 0.13476911162573804,
+      "signed_displacement_m": -0.7818809431378814,
+      "terminal_pose": [
+        -1.2213753936187275,
+        -2.9895237929661205,
+        -0.1710486396502758
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 22,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.11663958856905296,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00942438265515294,
+      "terminal_speed_m_s": 5.459388217298995e-06,
+      "signed_displacement_m": -0.1925126237314655,
+      "terminal_pose": [
+        -0.6461437322456657,
+        -3.1183557299938545,
+        -0.1875127201537247
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 23,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.1325588884062098,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009301480835151643,
+      "terminal_speed_m_s": 5.868532287749255e-05,
+      "signed_displacement_m": -0.44737197995605044,
+      "terminal_pose": [
+        -0.8946206920277132,
+        -3.0613212874101996,
+        -0.17970582754416678
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 24,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.14135696729643585,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009301480835151643,
+      "terminal_speed_m_s": 0.008496047320951472,
+      "signed_displacement_m": -0.6748993667339582,
+      "terminal_pose": [
+        -1.1167865148630909,
+        -3.012056944581751,
+        -0.1730476605384356
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 25,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.099612691606533,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009497778332646534,
+      "terminal_speed_m_s": 3.746446200310985e-06,
+      "signed_displacement_m": -0.11039403243329161,
+      "terminal_pose": [
+        -0.5661931479228378,
+        -3.1372811316850897,
+        -0.19276888506606876
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 26,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.12185397544728196,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009497778332646534,
+      "terminal_speed_m_s": 3.7454351253349565e-05,
+      "signed_displacement_m": -0.22079090734379656,
+      "terminal_pose": [
+        -0.6737563121949246,
+        -3.112236143092719,
+        -0.1850186620723518
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 27,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": -4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.12566299403572487,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009497778332646534,
+      "terminal_speed_m_s": 0.0012434254021338929,
+      "signed_displacement_m": -0.3312700713883029,
+      "terminal_pose": [
+        -0.7815702337517029,
+        -3.088011046648378,
+        -0.1772167016487388
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 28,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.061299686751234234,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009429532541649466,
+      "terminal_speed_m_s": 4.978958027881872e-05,
+      "signed_displacement_m": 0.11207140020270363,
+      "terminal_pose": [
+        -0.3499954149715199,
+        -3.19049033689422,
+        -0.20995220583742208
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 29,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.03625035924964251,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009429532541649466,
+      "terminal_speed_m_s": 3.999664790595877e-05,
+      "signed_displacement_m": 0.2240401839318039,
+      "terminal_pose": [
+        -0.24149477706977998,
+        -3.2188124205452406,
+        -0.21930201212843664
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 30,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.010141397541756053,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009429532541649466,
+      "terminal_speed_m_s": 0.0012353165815860712,
+      "signed_displacement_m": 0.33598815172924007,
+      "terminal_pose": [
+        -0.13322377907106744,
+        -3.248158971648585,
+        -0.22866694810808677
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 31,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.04241360172911671,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009194627686130885,
+      "terminal_speed_m_s": 1.156330814999504e-05,
+      "signed_displacement_m": 0.19737410157477844,
+      "terminal_pose": [
+        -0.26725682826857583,
+        -3.211683548566639,
+        -0.2165313576253274
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 32,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": 0.017031720053943683,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009039563557048658,
+      "terminal_speed_m_s": 4.669270814268378e-05,
+      "signed_displacement_m": 0.4551024624451278,
+      "terminal_pose": [
+        -0.017163754994919206,
+        -3.2751659606150283,
+        -0.22818353004600803
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 33,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.0729973272701819,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009039563557048658,
+      "terminal_speed_m_s": 0.008516729175963512,
+      "signed_displacement_m": 0.6859135649696347,
+      "terminal_pose": [
+        0.20641005842948165,
+        -3.3339818315752843,
+        -0.2365219094186713
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 34,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.04241360172911671,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009194627686130885,
+      "terminal_speed_m_s": 1.156330814999504e-05,
+      "signed_displacement_m": 0.19737410157477844,
+      "terminal_pose": [
+        -0.26725682826857583,
+        -3.211683548566639,
+        -0.2165313576253274
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 35,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": 0.05071817873844639,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00900082606775543,
+      "terminal_speed_m_s": 0.0015577677159724032,
+      "signed_displacement_m": 0.5955675159334828,
+      "terminal_pose": [
+        0.11900062362277927,
+        -3.3104496790735127,
+        -0.23284458504751127
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 36,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.12347077509751164,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00900082606775543,
+      "terminal_speed_m_s": 0.14383408044608634,
+      "signed_displacement_m": 0.8008602146232325,
+      "terminal_pose": [
+        0.31780807818661266,
+        -3.3629993783218786,
+        -0.2377033519697607
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 37,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.11699392463836608,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00942090949937835,
+      "terminal_speed_m_s": 0.0001377732952672292,
+      "signed_displacement_m": -0.15692455311559578,
+      "terminal_pose": [
+        -0.6119957682333343,
+        -3.1290181684503415,
+        -0.2185161009855494
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 38,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.14732451371734737,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009417822789967334,
+      "terminal_speed_m_s": 0.0015741316674592301,
+      "signed_displacement_m": -0.4457854261574662,
+      "terminal_pose": [
+        -0.8930148507352098,
+        -3.0613862045972673,
+        -0.24159441475109408
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 39,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.15088500518882472,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009417822789967334,
+      "terminal_speed_m_s": 0.11140677578241998,
+      "signed_displacement_m": -0.5894085974253832,
+      "terminal_pose": [
+        -1.0321741550017434,
+        -3.024982288709384,
+        -0.2561200630926379
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 40,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.11699392463836608,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00942090949937835,
+      "terminal_speed_m_s": 0.0001377732952672292,
+      "signed_displacement_m": -0.15692455311559578,
+      "terminal_pose": [
+        -0.6119957682333343,
+        -3.1290181684503415,
+        -0.2185161009855494
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 41,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.14435772688613066,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009417822789967334,
+      "terminal_speed_m_s": 1.9321137866336396e-05,
+      "signed_displacement_m": -0.3497939636848992,
+      "terminal_pose": [
+        -0.7997892118621175,
+        -3.084647139112558,
+        -0.23369649814540905
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 42,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.14915942939349672,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009417822789967334,
+      "terminal_speed_m_s": 0.0065069407080901405,
+      "signed_displacement_m": -0.5189761583253197,
+      "terminal_pose": [
+        -0.9639908364274423,
+        -3.04312988532904,
+        -0.247893668405008
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 43,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.10150126411821889,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009523134369754993,
+      "terminal_speed_m_s": 0.00010495315166356575,
+      "signed_displacement_m": -0.09045771450620343,
+      "terminal_pose": [
+        -0.5471518910441548,
+        -3.143688359492756,
+        -0.21615802038052184
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 44,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.12007880467694224,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009523134369754993,
+      "terminal_speed_m_s": 4.217536101023284e-05,
+      "signed_displacement_m": -0.177071863783684,
+      "terminal_pose": [
+        -0.631761076808767,
+        -3.125111857894941,
+        -0.21616099452987345
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 45,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": -4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.1349674626953781,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009523134369754993,
+      "terminal_speed_m_s": 0.0009217988150886779,
+      "signed_displacement_m": -0.26379088704000037,
+      "terminal_pose": [
+        -0.7164732577749461,
+        -3.1065155617314386,
+        -0.21613374161795185
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 46,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.07112661523335553,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009393954306316732,
+      "terminal_speed_m_s": 4.917676358919338e-05,
+      "signed_displacement_m": 0.09087136197700589,
+      "terminal_pose": [
+        -0.37004976592049527,
+        -3.182723818662533,
+        -0.21582508510044535
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 47,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.052506689564980086,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009393954306316732,
+      "terminal_speed_m_s": 0.00014726992715907383,
+      "signed_displacement_m": 0.17762569613788956,
+      "terminal_pose": [
+        -0.2852967186121315,
+        -3.2012963597820674,
+        -0.2156895130778607
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 48,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.0339483234696735,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009393954306316732,
+      "terminal_speed_m_s": 0.0010387636038464469,
+      "signed_displacement_m": 0.26442481234790505,
+      "terminal_pose": [
+        -0.20050028966304867,
+        -3.219880293829743,
+        -0.21576266258680632
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 49,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.05613926319133414,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009163385601258345,
+      "terminal_speed_m_s": 4.714789497137929e-05,
+      "signed_displacement_m": 0.15968050435698228,
+      "terminal_pose": [
+        -0.3027264329060657,
+        -3.196955601792284,
+        -0.21366620151642632
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 50,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.011172138679491322,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009163385601258345,
+      "terminal_speed_m_s": 3.2627533716108123e-06,
+      "signed_displacement_m": 0.3618564604039253,
+      "terminal_pose": [
+        -0.10455254182438363,
+        -3.2369843847264717,
+        -0.19970331684573767
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 51,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.026498184403517783,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009163385601258345,
+      "terminal_speed_m_s": 0.006561847826532378,
+      "signed_displacement_m": 0.5417104645155858,
+      "terminal_pose": [
+        0.0722000888329728,
+        -3.270338077023688,
+        -0.1876988263084355
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 52,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.05613926319133414,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009163385601258345,
+      "terminal_speed_m_s": 4.714789497137929e-05,
+      "signed_displacement_m": 0.15968050435698228,
+      "terminal_pose": [
+        -0.3027264329060657,
+        -3.196955601792284,
+        -0.21366620151642632
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 53,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": 0.010567789220082474,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009163385601258345,
+      "terminal_speed_m_s": 0.0013853741886860793,
+      "signed_displacement_m": 0.4641143585661221,
+      "terminal_pose": [
+        -0.004108745529238931,
+        -3.2561976258312066,
+        -0.19265465392780362
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 54,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.0,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.04257310221277896,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009163385601258345,
+      "terminal_speed_m_s": 0.11157164693712833,
+      "signed_displacement_m": 0.6188361608918624,
+      "terminal_pose": [
+        0.14815959509457935,
+        -3.2838359401671697,
+        -0.18061685965142277
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 55,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.13137772148717466,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009476897170193621,
+      "terminal_speed_m_s": 1.1416484198186746e-05,
+      "signed_displacement_m": -0.18874984732590794,
+      "terminal_pose": [
+        -0.6436085936018527,
+        -3.1247695399398485,
+        -0.24820819643495692
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 56,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.15443372412028203,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009248131991775432,
+      "terminal_speed_m_s": 0.0014396982539960866,
+      "signed_displacement_m": -0.5766823337189357,
+      "terminal_pose": [
+        -1.0203652033278547,
+        -3.0307729977071163,
+        -0.3046420476173728
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 57,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.15076505100040652,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009248131991775432,
+      "terminal_speed_m_s": 0.147363378005526,
+      "signed_displacement_m": -0.7695561529422065,
+      "terminal_pose": [
+        -1.2057327810973972,
+        -2.974454474902059,
+        -0.33811335551051885
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 58,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.13137772148717466,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009476897170193621,
+      "terminal_speed_m_s": 1.1416484198186746e-05,
+      "signed_displacement_m": -0.18874984732590794,
+      "terminal_pose": [
+        -0.6436085936018527,
+        -3.1247695399398485,
+        -0.24820819643495692
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 59,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.15328953125924558,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009248729692727276,
+      "terminal_speed_m_s": 4.873736636384516e-05,
+      "signed_displacement_m": -0.4449960905492251,
+      "terminal_pose": [
+        -0.8931167336554159,
+        -3.0658468386445614,
+        -0.2823958746008837
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 60,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.1518144686499532,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009248729692727276,
+      "terminal_speed_m_s": 0.009297237880809777,
+      "signed_displacement_m": -0.6699249841887793,
+      "terminal_pose": [
+        -1.1104206415014997,
+        -3.005717295939626,
+        -0.31601489536441163
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 61,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.11137050805878376,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009597592351198059,
+      "terminal_speed_m_s": 2.027205494063736e-05,
+      "signed_displacement_m": -0.11009688402332714,
+      "terminal_pose": [
+        -0.5667247431262054,
+        -3.1413850906261596,
+        -0.23813673436481086
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 62,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.13707606329885516,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00959971807862553,
+      "terminal_speed_m_s": 1.8281835472402422e-05,
+      "signed_displacement_m": -0.22123659134432458,
+      "terminal_pose": [
+        -0.6755850474252316,
+        -3.118990249418559,
+        -0.24796615939022185
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 63,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": -4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.1458973010147965,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009601043424906752,
+      "terminal_speed_m_s": 0.0012734612249342807,
+      "signed_displacement_m": -0.3327711306975475,
+      "terminal_pose": [
+        -0.7846287176751412,
+        -3.095516105207671,
+        -0.2575904635253552
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 64,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.07160828356747176,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009199033567059256,
+      "terminal_speed_m_s": 2.09436118303191e-05,
+      "signed_displacement_m": 0.10972257153744626,
+      "terminal_pose": [
+        -0.35113338028062957,
+        -3.1843013439117795,
+        -0.2217402617377808
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 65,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.04824758847900515,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009199033567059256,
+      "terminal_speed_m_s": 6.552301747383584e-05,
+      "signed_displacement_m": 0.2165334937289912,
+      "terminal_pose": [
+        -0.2460312705983762,
+        -3.203455385466678,
+        -0.20970507384234183
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 66,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.026415584406653064,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009199033567059256,
+      "terminal_speed_m_s": 0.0011645833393967003,
+      "signed_displacement_m": 0.3264668173477115,
+      "terminal_pose": [
+        -0.13753768523861917,
+        -3.221601039023675,
+        -0.19931138787807023
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 67,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.05363964500226462,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009199033567059256,
+      "terminal_speed_m_s": 3.972055071705631e-06,
+      "signed_displacement_m": 0.1915668772172926,
+      "terminal_pose": [
+        -0.2705967568718238,
+        -3.1989698381656813,
+        -0.212282542589139
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 68,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.001367524723949437,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009006842601360032,
+      "terminal_speed_m_s": 0.00010611121197862668,
+      "signed_displacement_m": 0.4461966952305211,
+      "terminal_pose": [
+        -0.018883757369296147,
+        -3.238944646434187,
+        -0.1780198360694744
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 69,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.03870279875909008,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009006842601360032,
+      "terminal_speed_m_s": 0.008611513854068822,
+      "signed_displacement_m": 0.6759271882372686,
+      "terminal_pose": [
+        0.20966477717859647,
+        -3.267884165226346,
+        -0.14819860527129763
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 70,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.05363964500226462,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009199033567059256,
+      "terminal_speed_m_s": 3.972055071705631e-06,
+      "signed_displacement_m": 0.1915668772172926,
+      "terminal_pose": [
+        -0.2705967568718238,
+        -3.1989698381656813,
+        -0.212282542589139
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 71,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": 0.023453437914827763,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009006616991783178,
+      "terminal_speed_m_s": 0.001595809448775979,
+      "signed_displacement_m": 0.5835837524146346,
+      "terminal_pose": [
+        0.1178450615884126,
+        -3.2560125255556374,
+        -0.15713786205193528
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 72,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.2136106867128606,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.06319825345080823,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009006616991783178,
+      "terminal_speed_m_s": 0.1369549906393813,
+      "signed_displacement_m": 0.7842510386909131,
+      "terminal_pose": [
+        0.31828563951192673,
+        -3.277330043079178,
+        -0.12732477129011358
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 73,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.13251506651554087,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009408276233649038,
+      "terminal_speed_m_s": 0.0001499950115769469,
+      "signed_displacement_m": -0.17420958594060595,
+      "terminal_pose": [
+        -0.6294768583573849,
+        -3.128241727119883,
+        -0.2621301971277249
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 74,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.1656385117531793,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009356345448570613,
+      "terminal_speed_m_s": 0.001419061329011751,
+      "signed_displacement_m": -0.497181435847589,
+      "terminal_pose": [
+        -0.94272492640279,
+        -3.047923764968324,
+        -0.32434979494828575
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 75,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.16429898230946835,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009356345448570613,
+      "terminal_speed_m_s": 0.12482486084678257,
+      "signed_displacement_m": -0.6559081045916213,
+      "terminal_pose": [
+        -1.0950573551734974,
+        -3.0005096693336744,
+        -0.35869567205942005
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 76,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.13251506651554087,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009408276233649038,
+      "terminal_speed_m_s": 0.0001499950115769469,
+      "signed_displacement_m": -0.17420958594060595,
+      "terminal_pose": [
+        -0.6294768583573849,
+        -3.128241727119883,
+        -0.2621301971277249
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 77,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.1642796902562708,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009356345448570613,
+      "terminal_speed_m_s": 0.0002079132868026478,
+      "signed_displacement_m": -0.3897533623573012,
+      "terminal_pose": [
+        -0.8390065945969788,
+        -3.0769763605734517,
+        -0.30315802269333547
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 78,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.16528583523034737,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009356345448570613,
+      "terminal_speed_m_s": 0.007627707836387132,
+      "signed_displacement_m": -0.5779253161039368,
+      "terminal_pose": [
+        -1.0203741631430858,
+        -3.024581491541901,
+        -0.3403736599402727
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 79,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.1143206155776458,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009628583738754304,
+      "terminal_speed_m_s": 3.1026463590293004e-06,
+      "signed_displacement_m": -0.10130149485726878,
+      "terminal_pose": [
+        -0.5581307957379766,
+        -3.1432608768614516,
+        -0.25251035101527375
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 80,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.13727055206132735,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009628583738754304,
+      "terminal_speed_m_s": 4.9186104929274484e-05,
+      "signed_displacement_m": -0.19733625445965639,
+      "terminal_pose": [
+        -0.6521779226201243,
+        -3.123821111979875,
+        -0.26315254853440717
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 81,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": -4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.15469358173108086,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009628583738754304,
+      "terminal_speed_m_s": 0.0010449717593237178,
+      "signed_displacement_m": -0.29331702843171864,
+      "terminal_pose": [
+        -0.7459686796935845,
+        -3.1033918766927386,
+        -0.27375669719251733
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 82,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 4.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.07803044276174789,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 0.00016627193436594926,
+      "signed_displacement_m": 0.10157728180921069,
+      "terminal_pose": [
+        -0.35904636949823493,
+        -3.182339309967648,
+        -0.23471541622358524
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 83,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 4.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.05756711033539888,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 4.960804741034615e-05,
+      "signed_displacement_m": 0.1974657907103774,
+      "terminal_pose": [
+        -0.2646145275313582,
+        -3.1991541619359984,
+        -0.2240846214010325
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 84,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 4.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": -0.03808814996189561,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 0.0010492966390073162,
+      "signed_displacement_m": 0.2935954028361067,
+      "terminal_pose": [
+        -0.16973117943113422,
+        -3.214958962876544,
+        -0.21352996502068186
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 85,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 8.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.06177397459013459,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 0.00012638622115497859,
+      "signed_displacement_m": 0.17598245333545404,
+      "terminal_pose": [
+        -0.28576031039035615,
+        -3.195331842183065,
+        -0.22519791742002224
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 86,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 8.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": -0.01401892487392345,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 0.0001892620546841614,
+      "signed_displacement_m": 0.4019197896940223,
+      "terminal_pose": [
+        -0.06208148728757948,
+        -3.2291817324204577,
+        -0.18593636307750905
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 87,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.0218439589889122,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 0.007467801433984256,
+      "signed_displacement_m": 0.6014497029017203,
+      "terminal_pose": [
+        0.13677135984262212,
+        -3.252598665290197,
+        -0.1523509963288474
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 88,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 12.0,
+      "brake_after": 80,
+      "straight_after": null,
+      "minimum_clearance_m": -0.06177397459013459,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 0.00012638622115497859,
+      "signed_displacement_m": 0.17598245333545404,
+      "terminal_pose": [
+        -0.28576031039035615,
+        -3.195331842183065,
+        -0.22519791742002224
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 89,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 12.0,
+      "brake_after": 160,
+      "straight_after": null,
+      "minimum_clearance_m": 0.007136069482168356,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 0.0013912940808584288,
+      "signed_displacement_m": 0.5151207324943703,
+      "terminal_pose": [
+        0.05056402819325174,
+        -3.243309160376019,
+        -0.16680704789030978
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 90,
+      "family": "CONSTANT_THEN_STOP",
+      "steer": 0.42722137342572125,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": null,
+      "minimum_clearance_m": 0.03596052097428734,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009168083551072459,
+      "terminal_speed_m_s": 0.12300792262463446,
+      "signed_displacement_m": 0.6883861329565619,
+      "terminal_pose": [
+        0.22381470156508645,
+        -3.260825791824746,
+        -0.13690756028772172
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 91,
+      "family": "TURN_STRAIGHT_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": 80,
+      "minimum_clearance_m": 0.040493571107507925,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.008913753561884674,
+      "terminal_speed_m_s": 0.006690429300044983,
+      "signed_displacement_m": 0.5774389393577879,
+      "terminal_pose": [
+        0.10440622675636414,
+        -3.291250741369225,
+        -0.2070250611706385
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 92,
+      "family": "TURN_STRAIGHT_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": 160,
+      "minimum_clearance_m": 0.04839724688464239,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.008902561474631143,
+      "terminal_speed_m_s": 0.007416649507970246,
+      "signed_displacement_m": 0.6011260446530351,
+      "terminal_pose": [
+        0.1250142065533859,
+        -3.308772294874968,
+        -0.23473095763257276
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 93,
+      "family": "TURN_STRAIGHT_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": 80,
+      "minimum_clearance_m": 0.0591843574943772,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.008791625567664718,
+      "terminal_speed_m_s": 0.11178729513565833,
+      "signed_displacement_m": 0.6591046714607224,
+      "terminal_pose": [
+        0.1844383403227318,
+        -3.3075035355197064,
+        -0.20015923909588648
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 94,
+      "family": "TURN_STRAIGHT_STOP",
+      "steer": -0.42722137342572125,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": 160,
+      "minimum_clearance_m": 0.06851667063627018,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.008775091069936958,
+      "terminal_speed_m_s": 0.1125141928821626,
+      "signed_displacement_m": 0.6803452032209584,
+      "terminal_pose": [
+        0.2022991849866274,
+        -3.326256308353564,
+        -0.22703653884315236
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 95,
+      "family": "TURN_STRAIGHT_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": 80,
+      "minimum_clearance_m": 0.04032186168546778,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.008932305609652746,
+      "terminal_speed_m_s": 0.006458362077461404,
+      "signed_displacement_m": 0.5817267415769566,
+      "terminal_pose": [
+        0.1093365254397641,
+        -3.288523969112004,
+        -0.19983106250628938
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 96,
+      "family": "TURN_STRAIGHT_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 8.0,
+      "brake_after": 240,
+      "straight_after": 160,
+      "minimum_clearance_m": 0.056245703473370184,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.009039563557048658,
+      "terminal_speed_m_s": 0.006405948452260586,
+      "signed_displacement_m": 0.6342039947994703,
+      "terminal_pose": [
+        0.15809985094307238,
+        -3.312064734442964,
+        -0.22147903719118384
+      ],
+      "reasons": [
+        "TIME_CLEARANCE"
+      ],
+      "passed": false
+    },
+    {
+      "index": 97,
+      "family": "TURN_STRAIGHT_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": 80,
+      "minimum_clearance_m": 0.05818186363928288,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.008815772248833731,
+      "terminal_speed_m_s": 0.11244532798244661,
+      "signed_displacement_m": 0.6627804145764374,
+      "terminal_pose": [
+        0.1889488861141546,
+        -3.3037697784980433,
+        -0.1925382326401771
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    },
+    {
+      "index": 98,
+      "family": "TURN_STRAIGHT_STOP",
+      "steer": -0.2136106867128606,
+      "wheel": 12.0,
+      "brake_after": 240,
+      "straight_after": 160,
+      "minimum_clearance_m": 0.07747019507082295,
+      "minimum_clearance_native_tick": 328,
+      "minimum_self_margin_m": 0.00900082606775543,
+      "terminal_speed_m_s": 0.11189488922507447,
+      "signed_displacement_m": 0.7213283318962804,
+      "terminal_pose": [
+        0.24329619295492816,
+        -3.3303142302842885,
+        -0.21389459830714722
+      ],
+      "reasons": [
+        "TIME_CLEARANCE",
+        "TERMINAL_SPEED"
+      ],
+      "passed": false
+    }
+  ],
+  "qualified_candidates": 0,
+  "verified_families": {},
+  "new_navigation_tasks": 0,
+  "gradient_updates": 0,
+  "input_sha256": {
+    "runs/v691_discovery_in_motion/moving_discovery01/paired/geometry_memory/v648_execution.jsonl": "fb2f3ed3dd3ab3e08da9bdd0174158dfa32b687f132abd0148b61c8328aee131",
+    "runs/v691_discovery_in_motion/moving_discovery01/paired/geometry_memory/motion_estimate.jsonl": "037b5ce5711753d96531d0274e500f646eb2253cacd8bebc32dd1361005b457a",
+    "runs/v691_discovery_in_motion/moving_discovery01/paired/scene_model.mjb": "3f40d979b086c304d4c826fd9b9110d68faad7798f84c5e3ffaa6532eb95e000",
+    "runs/v691_discovery_in_motion/moving_discovery01/paired/STATIC_PROTOCOL.json": "44eac56123e70f3512ff20f9eb685e711731f7227fb581c4c6f743fe02672958",
+    "runs/v691_discovery_in_motion/moving_discovery01/paired/DYNAMIC_PROTOCOL.json": "2e5a2ab9c636aff0043b69ef6589d246943f2f482e4ce496cbbf54eb9b9a5755"
+  },
+  "scope": "fixed saved state finite causal command feasibility only; not arrival or global impossibility"
+}

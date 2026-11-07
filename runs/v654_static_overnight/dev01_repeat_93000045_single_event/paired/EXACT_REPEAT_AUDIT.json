@@ -1,0 +1,55 @@
+{
+  "name": "dev01_repeat_93000045_single_event",
+  "seed": 93000045,
+  "scene": "single_event",
+  "matched": true,
+  "checks": {
+    "physical_audit": true,
+    "full_state_and_control": true,
+    "same_model": true,
+    "same_normalized_initial_state": true,
+    "exact_contact_events_except_verified_xml_provenance": true,
+    "same_strict_goal": true
+  },
+  "full_public_maximum_errors": {
+    "qpos_full": 0.0,
+    "qvel_full": 0.0,
+    "ctrl": 0.0
+  },
+  "original_public_steps": 1027,
+  "repeat_public_steps": 1027,
+  "contact_comparison": {
+    "passed": true,
+    "checks": {
+      "same_xml_bytes": true,
+      "both_raw_content_digests_verified": true,
+      "record_counts_verified": true,
+      "same_number_of_contacts": true,
+      "all_contact_fields_equal_after_verified_path_rewrite": true,
+      "canonical_digest_equal": true
+    },
+    "base_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v651_static_progress/dev29_seed93000045_single_event/paired",
+    "repeat_pair": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v654_static_overnight/dev01_repeat_93000045_single_event/paired",
+    "raw_content_sha256": [
+      "1decb7bad2a60db3ee817e1d1d50869f199c0824910b589f8a830095b41bda29",
+      "85c0135f2f04a877c9c11c59c5ae20cda4a12c23b170d535201a8a5a5e742b64"
+    ],
+    "raw_content_hashes_identical": false,
+    "canonical_content_sha256": [
+      "e187e171e059e1e25e9bb85e14d6d065b8e6ddc070f3796de66bcd9e35f0d529",
+      "e187e171e059e1e25e9bb85e14d6d065b8e6ddc070f3796de66bcd9e35f0d529"
+    ],
+    "xml_bytes_sha256": [
+      "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5",
+      "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5"
+    ],
+    "contact_records": [
+      94524,
+      94524
+    ],
+    "raw_json_different_rows": 65724,
+    "first_non_path_difference_rows": [],
+    "only_permitted_rewrite": "classification_basis.geom1/geom2.xml: exact own pair/assets/isolated_indoor.xml -> relative path and verified byte SHA256; no numeric tolerance or field deletion",
+    "simulation_steps": 0
+  }
+}

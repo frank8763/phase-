@@ -1,0 +1,19 @@
+{
+  "status": "ONE_OPERATIONAL_ENTRY_CONTINUATION_NO_SCIENTIFIC_OR_MODEL_RETRY",
+  "at": "2026-11-06T09:48:44.814720+08:00",
+  "basis": "User requested dynamic completion; necessary reversible operational repair by assistant judgment, not a new explicit user instruction.",
+  "original_failure": "runs/reference_recovery_20261106/ERROR.json",
+  "cause": "hold_awake expected campaign.py while launched frozen orchestrator was run_campaign.py",
+  "models_before_failure": 0,
+  "integrations_before_failure": 0,
+  "original_scientific_freezes_unchanged": true,
+  "absolute_deadline_unix": 1793977200.0,
+  "max_entry_continuations": 1,
+  "no_further_repairs": true,
+  "old_evidence_retained": true,
+  "source_files": {
+    "experiments/reference_recovery_entry_20261106/entry_close_ops.py": "5696a8e811c7ca4d05dc2e27b488007c9ce2af70532039fba6ecc76d7199de4c",
+    "experiments/reference_recovery_entry_20261106/campaign.py": "97d2f74c2f0992bc4c837646b56fd6800297fb115cf4d55cae860f4b1a709c3c",
+    "experiments/reference_recovery_entry_20261106/hold_awake.py": "73f6a9f3347088bb604674888d814d7999036cd5ea16c215c7a0987613a5ab7c"
+  }
+}

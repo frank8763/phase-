@@ -1,0 +1,5 @@
+{
+  "type": "AssertionError",
+  "message": "T0_FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v850_progress_consistent_return/engine.py\", line 88, in run\n    unchanged();(R/'REVIEW_PENDING').unlink();self.run_steps();assert complete_gate(self.rows);status='FROZEN_STAGE_COMPLETED'\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v850_progress_consistent_return/engine.py\", line 80, in run_steps\n    for t in tasks():self.t0(t)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v850_progress_consistent_return/engine.py\", line 50, in t0\n    assert self.execute('run_static.py',['--name',name,'--seed',t['seed'],'--wall-seconds',120,'--max-steps',1200,'--initial-observation-steps',0,'--feasibility-only'],self.phase/(name+'.console'),125,True)==0,'T0_FAILED'\nAssertionError: T0_FAILED\n"
+}

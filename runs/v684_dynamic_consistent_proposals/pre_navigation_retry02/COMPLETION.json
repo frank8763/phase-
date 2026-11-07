@@ -1,0 +1,1675 @@
+{
+  "status": "COMPLETE_NO_REGISTERED_INCREMENT",
+  "error": null,
+  "elapsed_s": 2.758133188006468,
+  "replay_native_steps": 1968,
+  "private_prediction_integrations": 20344,
+  "forecast_integrations": 20016,
+  "private_execution_integrations": 328,
+  "maximum_old_qpos_qvel_mocap_errors": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "minimum_replay_native_clearance_m": 0.2527128748399221,
+  "minimum_replay_self_margin_m": 0.009193052990576545,
+  "bad_contacts": 0,
+  "records": [
+    {
+      "checkpoint": 49,
+      "path_source_step": 49,
+      "reference_index": 0,
+      "maximum_reference_context_error": 0.0,
+      "original_nominal_status": "MODEL_SAFE_COMMAND",
+      "original_highest_score_appendable": true,
+      "new_nominal_gate": {
+        "status": "MODEL_SAFE_COMMAND",
+        "predicted_minimum_clearance_m": 0.3551839283070164,
+        "predicted_self_domain_margin_m": 0.009647384090722244,
+        "self_configuration_rejections": 0,
+        "predicted_end_pose": [
+          -1.5815782671049243,
+          3.075865727696487,
+          -1.5106408442384693
+        ],
+        "predicted_next_pose": [
+          -1.5948243319940727,
+          3.2757515359220735,
+          -1.5326416684414317
+        ],
+        "score": 1.3546037955428831,
+        "candidate_count_safe": 18,
+        "prediction_steps_total": 4320,
+        "hidden_world_geometry_used": false,
+        "active_gear": 1,
+        "segment_end_index": 6,
+        "scoring_target": [
+          -1.5738646834471037,
+          3.0508735818157615
+        ],
+        "target_wheel_sign_matches_plan": true,
+        "backup_margin_recovery": false,
+        "alignment_error_rad": 0.11710956758669155,
+        "progress_weight": 8.0,
+        "progress_metric": "single_gear_projected_arclength",
+        "current_projected_arc_m": 0.0,
+        "terminal_projected_arc_m": 0.21417430319767644,
+        "heading_reference": "terminal_projection_interpolated_heading",
+        "dynamic_time_gate": true,
+        "prediction_horizon_steps": 240,
+        "braking_tail_after_physics_steps": 80,
+        "terminal_speed_threshold_m_s": 0.025
+      },
+      "new_candidate_diagnostics": [
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            6.827370547383609,
+            4.5056062187057115
+          ],
+          "first_command": [
+            0.05134797811691691,
+            0.033311055486160784,
+            3.3526843554709185,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.00012563911014316874,
+          "self_domain_margin_m": 0.009265141388084208,
+          "reason": null,
+          "minimum_clearance_m": 0.3491640093856915,
+          "minimum_clearance_native_tick": 69,
+          "score": 1.0585815929922204
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            3.072316746322624,
+            2.0275227984175705
+          ],
+          "first_command": [
+            0.05134797811691691,
+            0.033311055486160784,
+            3.072316746322624,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.0001261784625572132,
+          "self_domain_margin_m": 0.009688202085263609,
+          "reason": null,
+          "minimum_clearance_m": 0.34684595942145036,
+          "minimum_clearance_native_tick": 74,
+          "score": 0.8565288670680568
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.05134797811691691,
+            0.033311055486160784,
+            1.9526843554709183,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 9.948470871416675e-05,
+          "self_domain_margin_m": 0.009642122492356908,
+          "reason": null,
+          "minimum_clearance_m": 0.342002697530152,
+          "minimum_clearance_native_tick": 209,
+          "score": 0.29808951803723494
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            5.66648838304466,
+            5.66648838304466
+          ],
+          "first_command": [
+            0.05134797811691691,
+            0.033311055486160784,
+            3.3526843554709185,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.00021870979829539914,
+          "self_domain_margin_m": 0.009579598010224788,
+          "reason": null,
+          "minimum_clearance_m": 0.35462478468779934,
+          "minimum_clearance_native_tick": 48,
+          "score": 1.1041335206277254
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            2.5499197723700973,
+            2.5499197723700973
+          ],
+          "first_command": [
+            0.05134797811691691,
+            0.033311055486160784,
+            2.5499197723700973,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 9.077204486115108e-05,
+          "self_domain_margin_m": 0.009573649065576728,
+          "reason": null,
+          "minimum_clearance_m": 0.35277605648978205,
+          "minimum_clearance_native_tick": 57,
+          "score": 0.7196613155373703
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.05134797811691691,
+            0.033311055486160784,
+            1.9526843554709183,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.00011736827645827441,
+          "self_domain_margin_m": 0.009339650744471795,
+          "reason": null,
+          "minimum_clearance_m": 0.34902877767228935,
+          "minimum_clearance_native_tick": 108,
+          "score": 0.3903965954780871
+        },
+        {
+          "target_command": [
+            0.109981793055749,
+            0.10010896038473398,
+            5.398237399503776,
+            5.9347393665855455
+          ],
+          "first_command": [
+            0.109981793055749,
+            0.10010896038473398,
+            3.3526843554709185,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.00017150763963269826,
+          "self_domain_margin_m": 0.009647384090722244,
+          "reason": null,
+          "minimum_clearance_m": 0.3551839283070164,
+          "minimum_clearance_native_tick": 144,
+          "score": 1.3546037955428831
+        },
+        {
+          "target_command": [
+            0.109981793055749,
+            0.10010896038473398,
+            2.429206829776699,
+            2.670632714963496
+          ],
+          "first_command": [
+            0.109981793055749,
+            0.10010896038473398,
+            2.429206829776699,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 1.890900579745795e-05,
+          "self_domain_margin_m": 0.009591642624655783,
+          "reason": null,
+          "minimum_clearance_m": 0.35406649280757796,
+          "minimum_clearance_native_tick": 56,
+          "score": 0.8019893988337818
+        },
+        {
+          "target_command": [
+            0.109981793055749,
+            0.10010896038473398,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.109981793055749,
+            0.10010896038473398,
+            1.9526843554709183,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 2.5521010326629917e-05,
+          "self_domain_margin_m": 0.009581296916222448,
+          "reason": null,
+          "minimum_clearance_m": 0.3501813071185288,
+          "minimum_clearance_native_tick": 102,
+          "score": 0.49683152406911596
+        },
+        {
+          "target_command": [
+            0.32522592235554215,
+            0.25314224000891744,
+            4.919938378237102,
+            6.413038387852218
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            3.3526843554709185,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.00012243506074339255,
+          "self_domain_margin_m": 0.00968215714014764,
+          "reason": null,
+          "minimum_clearance_m": 0.35427632030654066,
+          "minimum_clearance_native_tick": 163,
+          "score": 1.3365713384984617
+        },
+        {
+          "target_command": [
+            0.32522592235554215,
+            0.25314224000891744,
+            2.213972270206696,
+            2.8858672745334983
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            2.213972270206696,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.00010636540049721458,
+          "self_domain_margin_m": 0.00962483559105326,
+          "reason": null,
+          "minimum_clearance_m": 0.3559842188172061,
+          "minimum_clearance_native_tick": 134,
+          "score": 0.7209995190791059
+        },
+        {
+          "target_command": [
+            0.32522592235554215,
+            0.25314224000891744,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            1.9526843554709183,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 1.5614046841076916e-05,
+          "self_domain_margin_m": 0.009586757013744673,
+          "reason": null,
+          "minimum_clearance_m": 0.35297246431862705,
+          "minimum_clearance_native_tick": 112,
+          "score": 0.5099749775257394
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            4.5056062187057115,
+            6.827370547383609
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            3.3526843554709185,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 5.585896203857026e-05,
+          "self_domain_margin_m": 0.009498351561887386,
+          "reason": null,
+          "minimum_clearance_m": 0.35450370154693756,
+          "minimum_clearance_native_tick": 172,
+          "score": 1.3214546766017998
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            2.0275227984175705,
+            3.072316746322624
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            2.0275227984175705,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 1.0967840607752855e-05,
+          "self_domain_margin_m": 0.009644029295383216,
+          "reason": null,
+          "minimum_clearance_m": 0.3570001914491655,
+          "minimum_clearance_native_tick": 1,
+          "score": 0.6644252376798196
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            1.9526843554709183,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.00013015448678249485,
+          "self_domain_margin_m": 0.00961876583176019,
+          "reason": null,
+          "minimum_clearance_m": 0.3550693346561553,
+          "minimum_clearance_native_tick": 211,
+          "score": 0.5270802077957282
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            4.5056062187057115,
+            6.827370547383609
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            3.3526843554709185,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 5.585896203857026e-05,
+          "self_domain_margin_m": 0.009498351561887386,
+          "reason": null,
+          "minimum_clearance_m": 0.35450370154693756,
+          "minimum_clearance_native_tick": 172,
+          "score": 1.3214546766017998
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            2.0275227984175705,
+            3.072316746322624
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            2.0275227984175705,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 1.0967840607752855e-05,
+          "self_domain_margin_m": 0.009644029295383216,
+          "reason": null,
+          "minimum_clearance_m": 0.3570001914491655,
+          "minimum_clearance_native_tick": 1,
+          "score": 0.6644252376798196
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.2513479781169169,
+            0.2333110554861608,
+            1.9526843554709183,
+            7.5589810354063784
+          ],
+          "terminal_speed_m_s": 0.00013015448678249485,
+          "self_domain_margin_m": 0.00961876583176019,
+          "reason": null,
+          "minimum_clearance_m": 0.3550693346561553,
+          "minimum_clearance_native_tick": 211,
+          "score": 0.5270802077957282
+        }
+      ],
+      "new_appendable": true,
+      "new_reserve_summary": {
+        "status": "BRAKE_ONLY_TAIL_RESERVED",
+        "recovery_kind": "BRAKE_ONLY",
+        "safe_reserve_candidates": 1,
+        "reserve_minimum_clearance_m": 0.35104676538804735,
+        "reserve_signed_longitudinal_displacement_m": 0.06297379644142147,
+        "reserve_signed_reverse_displacement_m": 0.06297379644142147,
+        "reserve_target": [
+          0.109981793055749,
+          0.10010896038473398,
+          0.0,
+          0.0
+        ],
+        "reserve_total_native_ticks": 328,
+        "reserve_braking_after_native_ticks": 168,
+        "causal_forecast_horizon_s": 3.28
+      },
+      "new_backup_attempt": {
+        "step": 49,
+        "status": "APPENDABLE_BACKUP_FOUND",
+        "prefix_self_domain_margin_m": 0.009843298839783299,
+        "candidates": [
+          {
+            "kind": "BRAKE_ONLY",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.109981793055749,
+              0.10010896038473398,
+              0.0,
+              0.0
+            ],
+            "minimum_clearance_m": 0.35104676538804735,
+            "minimum_clearance_native_tick": 88,
+            "self_domain_margin_m": 0.009607227523448059,
+            "terminal_speed_m_s": 1.4123832577273331e-05,
+            "signed_displacement_m": 0.06297379644142147,
+            "reason": null
+          }
+        ]
+      },
+      "full_private_execute": {
+        "full_prefix_and320_tail_qpos_qvel_ctrl_match": true,
+        "native_ticks": 328
+      },
+      "predicted_goal_progress_m": 0.21431966808604397,
+      "old_reference_terminal_error": 0.0038847517154626406,
+      "new_reference_terminal_error": 0.01946280320838737,
+      "registered_increment": false,
+      "private_prediction_integrations_for_checkpoint": 4648
+    },
+    {
+      "checkpoint": 227,
+      "path_source_step": 49,
+      "reference_index": 53,
+      "maximum_reference_context_error": 0.0,
+      "original_nominal_status": "MODEL_SAFE_COMMAND",
+      "original_highest_score_appendable": false,
+      "new_nominal_gate": {
+        "status": "MODEL_SAFE_COMMAND",
+        "predicted_minimum_clearance_m": 0.15545751175019362,
+        "predicted_self_domain_margin_m": 0.009479133228395609,
+        "self_configuration_rejections": 0,
+        "predicted_end_pose": [
+          -0.7659541035774592,
+          2.2487136422569676,
+          -1.1152879692499316
+        ],
+        "predicted_next_pose": [
+          -0.8472125660522264,
+          2.4201904067327424,
+          -1.081408610041798
+        ],
+        "score": 0.8281494923995169,
+        "candidate_count_safe": 17,
+        "prediction_steps_total": 8968,
+        "hidden_world_geometry_used": false,
+        "active_gear": 1,
+        "segment_end_index": 192,
+        "scoring_target": [
+          -0.6906478685027563,
+          1.9724269662279699
+        ],
+        "target_wheel_sign_matches_plan": true,
+        "backup_margin_recovery": false,
+        "alignment_error_rad": 0.3185780272070562,
+        "progress_weight": 8.0,
+        "progress_metric": "single_gear_projected_arclength",
+        "current_projected_arc_m": 0.0,
+        "terminal_projected_arc_m": 0.19298209466785587,
+        "heading_reference": "terminal_projection_interpolated_heading",
+        "dynamic_time_gate": true,
+        "prediction_horizon_steps": 240,
+        "braking_tail_after_physics_steps": 80,
+        "terminal_speed_threshold_m_s": 0.025
+      },
+      "new_candidate_diagnostics": [
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            6.666628586478435,
+            4.399527315614851
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            6.619694217124282,
+            3.0182174448207997
+          ],
+          "terminal_speed_m_s": 0.00014418422728640647,
+          "self_domain_margin_m": 0.00936837883799202,
+          "reason": null,
+          "minimum_clearance_m": 0.16698235942922857,
+          "minimum_clearance_native_tick": 153,
+          "score": 0.7813310366704267
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            2.999982863915296,
+            1.979787292026683
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            5.219694217124282,
+            1.979787292026683
+          ],
+          "terminal_speed_m_s": 0.00015002077800804262,
+          "self_domain_margin_m": 0.009651010628277779,
+          "reason": null,
+          "minimum_clearance_m": 0.20183158337498175,
+          "minimum_clearance_native_tick": 109,
+          "score": -0.04372413787860013
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            5.219694217124282,
+            1.6182174448207995
+          ],
+          "terminal_speed_m_s": 0.00015103326078214278,
+          "self_domain_margin_m": 0.009658901266855646,
+          "reason": null,
+          "minimum_clearance_m": 0.20652384039684799,
+          "minimum_clearance_native_tick": 240,
+          "score": -0.30545857515660424
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            6.666628586478435,
+            4.399527315614851
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            6.619694217124282,
+            3.0182174448207997
+          ],
+          "terminal_speed_m_s": 0.00014418422728640647,
+          "self_domain_margin_m": 0.00936837883799202,
+          "reason": null,
+          "minimum_clearance_m": 0.16698235942922857,
+          "minimum_clearance_native_tick": 153,
+          "score": 0.7813310366704267
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            2.999982863915296,
+            1.979787292026683
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            5.219694217124282,
+            1.979787292026683
+          ],
+          "terminal_speed_m_s": 0.00015002077800804262,
+          "self_domain_margin_m": 0.009651010628277779,
+          "reason": null,
+          "minimum_clearance_m": 0.20183158337498175,
+          "minimum_clearance_native_tick": 109,
+          "score": -0.04372413787860013
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            5.219694217124282,
+            1.6182174448207995
+          ],
+          "terminal_speed_m_s": 0.00015103326078214278,
+          "self_domain_margin_m": 0.009658901266855646,
+          "reason": null,
+          "minimum_clearance_m": 0.20652384039684799,
+          "minimum_clearance_native_tick": 240,
+          "score": -0.30545857515660424
+        },
+        {
+          "target_command": [
+            -0.31195723761207067,
+            -0.4264732893345792,
+            6.472337928481617,
+            4.593817973611668
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            6.472337928481617,
+            3.0182174448207997
+          ],
+          "terminal_speed_m_s": 0.00011855893372343022,
+          "self_domain_margin_m": 0.009387621760270692,
+          "reason": null,
+          "minimum_clearance_m": 0.16480535952934017,
+          "minimum_clearance_native_tick": 153,
+          "score": 0.7617408271178769
+        },
+        {
+          "target_command": [
+            -0.31195723761207067,
+            -0.4264732893345792,
+            2.9125520678167276,
+            2.0672180881252507
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            5.219694217124282,
+            2.0672180881252507
+          ],
+          "terminal_speed_m_s": 0.00012192001523437309,
+          "self_domain_margin_m": 0.00963958048849567,
+          "reason": null,
+          "minimum_clearance_m": 0.20143455793168674,
+          "minimum_clearance_native_tick": 106,
+          "score": -0.026378545313466527
+        },
+        {
+          "target_command": [
+            -0.31195723761207067,
+            -0.4264732893345792,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            -0.1784734501812669,
+            -0.2121171878320088,
+            5.219694217124282,
+            1.6182174448207995
+          ],
+          "terminal_speed_m_s": 1.2450298143937955e-05,
+          "self_domain_margin_m": 0.009620142596950876,
+          "reason": null,
+          "minimum_clearance_m": 0.2047658589137483,
+          "minimum_clearance_native_tick": 240,
+          "score": -0.28222150988141564
+        },
+        {
+          "target_command": [
+            -0.16725855749201243,
+            -0.19651826282643206,
+            5.98802513200415,
+            5.078130770089135
+          ],
+          "first_command": [
+            -0.16725855749201243,
+            -0.19651826282643206,
+            5.98802513200415,
+            3.0182174448207997
+          ],
+          "terminal_speed_m_s": 0.00016096350539824007,
+          "self_domain_margin_m": 0.009479133228395609,
+          "reason": null,
+          "minimum_clearance_m": 0.15545751175019362,
+          "minimum_clearance_native_tick": 146,
+          "score": 0.8281494923995169
+        },
+        {
+          "target_command": [
+            -0.16725855749201243,
+            -0.19651826282643206,
+            2.6946113094018678,
+            2.285158846540111
+          ],
+          "first_command": [
+            -0.16725855749201243,
+            -0.19651826282643206,
+            5.219694217124282,
+            2.285158846540111
+          ],
+          "terminal_speed_m_s": 2.4824535310855537e-05,
+          "self_domain_margin_m": 0.00957656109008076,
+          "reason": null,
+          "minimum_clearance_m": 0.19870693195409705,
+          "minimum_clearance_native_tick": 107,
+          "score": 0.049770965617223564
+        },
+        {
+          "target_command": [
+            -0.16725855749201243,
+            -0.19651826282643206,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            -0.16725855749201243,
+            -0.19651826282643206,
+            5.219694217124282,
+            1.6182174448207995
+          ],
+          "terminal_speed_m_s": 9.219494316884174e-06,
+          "self_domain_margin_m": 0.009603852918525668,
+          "reason": null,
+          "minimum_clearance_m": 0.19981407052814446,
+          "minimum_clearance_native_tick": 240,
+          "score": -0.2113433905694524
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            5.533077951046643,
+            5.533077951046643
+          ],
+          "first_command": [
+            0.0,
+            -0.012117187832008797,
+            5.533077951046643,
+            3.0182174448207997
+          ],
+          "terminal_speed_m_s": 0.0001218418839979339,
+          "self_domain_margin_m": 0.00948599241676712,
+          "reason": null,
+          "minimum_clearance_m": 0.1622989143111434,
+          "minimum_clearance_native_tick": 143,
+          "score": 0.5250584652181116
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            2.4898850779709893,
+            2.4898850779709893
+          ],
+          "first_command": [
+            0.0,
+            -0.012117187832008797,
+            5.219694217124282,
+            2.4898850779709893
+          ],
+          "terminal_speed_m_s": 3.912666193824903e-05,
+          "self_domain_margin_m": 0.009599261822261784,
+          "reason": null,
+          "minimum_clearance_m": 0.2023691296454688,
+          "minimum_clearance_native_tick": 240,
+          "score": -0.011594898411432825
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.0,
+            -0.012117187832008797,
+            5.219694217124282,
+            1.6182174448207995
+          ],
+          "terminal_speed_m_s": 0.00012245978485543978,
+          "self_domain_margin_m": 0.009464284556635838,
+          "reason": null,
+          "minimum_clearance_m": 0.196384414873478,
+          "minimum_clearance_native_tick": 240,
+          "score": -0.17668195822828223
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            4.399527315614851,
+            6.666628586478435
+          ],
+          "first_command": [
+            0.021526549818733115,
+            -0.012117187832008797,
+            5.219694217124282,
+            3.0182174448207997
+          ],
+          "terminal_speed_m_s": 1.755148627127189e-05,
+          "self_domain_margin_m": 0.009257032892054928,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.1444574333449381,
+          "minimum_clearance_native_tick": 155
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            1.979787292026683,
+            2.999982863915296
+          ],
+          "first_command": [
+            0.021526549818733115,
+            -0.012117187832008797,
+            5.219694217124282,
+            2.999982863915296
+          ],
+          "terminal_speed_m_s": 8.685245276391456e-05,
+          "self_domain_margin_m": 0.009533239474285582,
+          "reason": null,
+          "minimum_clearance_m": 0.1983571553351211,
+          "minimum_clearance_native_tick": 112,
+          "score": 0.1179453292429247
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.021526549818733115,
+            -0.012117187832008797,
+            5.219694217124282,
+            1.6182174448207995
+          ],
+          "terminal_speed_m_s": 0.0002717430332153263,
+          "self_domain_margin_m": 0.009706902775497295,
+          "reason": null,
+          "minimum_clearance_m": 0.1848291249570657,
+          "minimum_clearance_native_tick": 240,
+          "score": -0.02777951705777293
+        }
+      ],
+      "new_appendable": false,
+      "new_reserve_summary": null,
+      "new_backup_attempt": {
+        "step": 227,
+        "status": "NO_APPENDABLE_BACKUP",
+        "prefix_self_domain_margin_m": 0.009533522813830575,
+        "candidates": [
+          {
+            "kind": "BRAKE_ONLY",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              -0.16725855749201243,
+              -0.19651826282643206,
+              0.0,
+              0.0
+            ],
+            "minimum_clearance_m": 0.05666953189711019,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.00953065421271454,
+            "terminal_speed_m_s": 1.3459713507710842e-05,
+            "signed_displacement_m": 0.04209710668703322,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              -0.36126903023692364,
+              -0.52,
+              -12.0,
+              -12.0
+            ],
+            "minimum_clearance_m": 0.1397012200415529,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009533522813830575,
+            "terminal_speed_m_s": 0.00018023492286363006,
+            "signed_displacement_m": -0.2444496156658328,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              -0.36126903023692364,
+              -0.52,
+              -8.0,
+              -8.0
+            ],
+            "minimum_clearance_m": 0.12865474606363783,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009533522813830575,
+            "terminal_speed_m_s": 0.0006182083352754759,
+            "signed_displacement_m": -0.20982311452148977,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              -0.36126903023692364,
+              -0.52,
+              -4.0,
+              -4.0
+            ],
+            "minimum_clearance_m": 0.07070315127042337,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009533522813830575,
+            "terminal_speed_m_s": 0.0002127873303587987,
+            "signed_displacement_m": -0.09023975716790862,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              -0.19511447256354925,
+              -0.23590902047242188,
+              -12.0,
+              -12.0
+            ],
+            "minimum_clearance_m": 0.13828997141595017,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009428888277907999,
+            "terminal_speed_m_s": 0.0006646920314943501,
+            "signed_displacement_m": -0.27018648810368273,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              -0.19511447256354925,
+              -0.23590902047242188,
+              -8.0,
+              -8.0
+            ],
+            "minimum_clearance_m": 0.14134437303911568,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009428888277907999,
+            "terminal_speed_m_s": 0.00041953996397770167,
+            "signed_displacement_m": -0.22956850413148816,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              -0.19511447256354925,
+              -0.23590902047242188,
+              -4.0,
+              -4.0
+            ],
+            "minimum_clearance_m": 0.06669989170795579,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.00950736648301731,
+            "terminal_speed_m_s": 4.787116337660032e-05,
+            "signed_displacement_m": -0.09755865146836483,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.0,
+              0.0,
+              -12.0,
+              -12.0
+            ],
+            "minimum_clearance_m": 0.1135376332335053,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009447013771393065,
+            "terminal_speed_m_s": 0.000623797772549336,
+            "signed_displacement_m": -0.22249379298828337,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.0,
+              0.0,
+              -8.0,
+              -8.0
+            ],
+            "minimum_clearance_m": 0.11077230449257752,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009447013771393065,
+            "terminal_speed_m_s": 0.0004986742209775109,
+            "signed_displacement_m": -0.19086734174389178,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.0,
+              0.0,
+              -4.0,
+              -4.0
+            ],
+            "minimum_clearance_m": 0.05203773358568384,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009447013771393065,
+            "terminal_speed_m_s": 5.6461699081055895e-05,
+            "signed_displacement_m": -0.07945632216497032,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.23590902047242188,
+              0.19511447256354925,
+              -12.0,
+              -12.0
+            ],
+            "minimum_clearance_m": 0.13042320231210996,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.00948125510990211,
+            "terminal_speed_m_s": 0.000734426862869808,
+            "signed_displacement_m": -0.30190318636931274,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.23590902047242188,
+              0.19511447256354925,
+              -8.0,
+              -8.0
+            ],
+            "minimum_clearance_m": 0.11433481277242918,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.00948125510990211,
+            "terminal_speed_m_s": 0.00044324507398412627,
+            "signed_displacement_m": -0.25737945469571755,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.23590902047242188,
+              0.19511447256354925,
+              -4.0,
+              -4.0
+            ],
+            "minimum_clearance_m": 0.05493202313094911,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009533522813830575,
+            "terminal_speed_m_s": 4.7931097975592326e-05,
+            "signed_displacement_m": -0.11070422434455354,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.52,
+              0.36126903023692364,
+              -12.0,
+              -12.0
+            ],
+            "minimum_clearance_m": 0.10410538003239192,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009533522813830575,
+            "terminal_speed_m_s": 0.0007955905888634793,
+            "signed_displacement_m": -0.25592808012416535,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.52,
+              0.36126903023692364,
+              -8.0,
+              -8.0
+            ],
+            "minimum_clearance_m": 0.0998106870253555,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009533522813830575,
+            "terminal_speed_m_s": 0.0004066142199568283,
+            "signed_displacement_m": -0.21783740356432135,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "REVERSE_BRAKE",
+            "library": "ORIGINAL",
+            "brake_after_native_ticks": 160,
+            "target_command": [
+              0.52,
+              0.36126903023692364,
+              -4.0,
+              -4.0
+            ],
+            "minimum_clearance_m": 0.04288172637898385,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009533522813830575,
+            "terminal_speed_m_s": 9.617590793704038e-05,
+            "signed_displacement_m": -0.09112459598948176,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "FORWARD_BRAKE",
+            "library": "FORWARD_EXTENSION",
+            "brake_after_native_ticks": 240,
+            "target_command": [
+              -0.36126903023692364,
+              -0.52,
+              4.0,
+              4.0
+            ],
+            "minimum_clearance_m": 0.04609408127083722,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.00952113427741147,
+            "terminal_speed_m_s": 0.001508444497275564,
+            "signed_displacement_m": 0.3183474806886266,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "FORWARD_BRAKE",
+            "library": "FORWARD_EXTENSION",
+            "brake_after_native_ticks": 240,
+            "target_command": [
+              -0.19511447256354925,
+              -0.23590902047242188,
+              4.0,
+              4.0
+            ],
+            "minimum_clearance_m": 0.04608976138227669,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009532368975284755,
+            "terminal_speed_m_s": 0.0016162510587630799,
+            "signed_displacement_m": 0.3336175301420341,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "FORWARD_BRAKE",
+            "library": "FORWARD_EXTENSION",
+            "brake_after_native_ticks": 240,
+            "target_command": [
+              0.0,
+              0.0,
+              4.0,
+              4.0
+            ],
+            "minimum_clearance_m": 0.05990515574573016,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009530658424716454,
+            "terminal_speed_m_s": 0.0013408881677965672,
+            "signed_displacement_m": 0.2941411822969832,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "FORWARD_BRAKE",
+            "library": "FORWARD_EXTENSION",
+            "brake_after_native_ticks": 240,
+            "target_command": [
+              0.23590902047242188,
+              0.19511447256354925,
+              4.0,
+              4.0
+            ],
+            "minimum_clearance_m": 0.05574243160353598,
+            "minimum_clearance_native_tick": 293,
+            "self_domain_margin_m": 0.009530658424716454,
+            "terminal_speed_m_s": 0.0017411759857416172,
+            "signed_displacement_m": 0.3555890177757254,
+            "reason": "TIME_CLEARANCE"
+          },
+          {
+            "kind": "FORWARD_BRAKE",
+            "library": "FORWARD_EXTENSION",
+            "brake_after_native_ticks": 240,
+            "target_command": [
+              0.52,
+              0.36126903023692364,
+              4.0,
+              4.0
+            ],
+            "minimum_clearance_m": 0.07127860642638015,
+            "minimum_clearance_native_tick": 328,
+            "self_domain_margin_m": 0.009530658424716454,
+            "terminal_speed_m_s": 0.001527437741180314,
+            "signed_displacement_m": 0.32450958406979663,
+            "reason": "TIME_CLEARANCE"
+          }
+        ]
+      },
+      "full_private_execute": null,
+      "predicted_goal_progress_m": 0.17382634598003754,
+      "old_reference_terminal_error": 0.020548154289741057,
+      "new_reference_terminal_error": 0.034572127527568344,
+      "registered_increment": false,
+      "private_prediction_integrations_for_checkpoint": 11048
+    },
+    {
+      "checkpoint": 245,
+      "path_source_step": 49,
+      "reference_index": 56,
+      "maximum_reference_context_error": 0.0,
+      "original_nominal_status": "NO_MODEL_SAFE_COMMAND",
+      "original_highest_score_appendable": false,
+      "new_nominal_gate": {
+        "status": "NO_MODEL_SAFE_COMMAND",
+        "candidate_prediction_steps": 20016,
+        "best_rejected_min_clearance_m": 0.12187914500975158,
+        "self_configuration_rejections": 0,
+        "required_clearance_m": 0.155
+      },
+      "new_candidate_diagnostics": [
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            8.093123354551393,
+            5.3409180975233745
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 0.0003451485632963989,
+          "self_domain_margin_m": 0.009230312603140112,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.09967915662316615,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            3.641905509548127,
+            2.4034131438855186
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 0.0001564386908971439,
+          "self_domain_margin_m": 0.00928424571070885,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.11002691066000655,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            0.005774451869599906,
+            0.0
+          ],
+          "terminal_speed_m_s": 0.0002481792580538902,
+          "self_domain_margin_m": 0.009749435965847708,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.12187914500975158,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            8.093123354551393,
+            5.3409180975233745
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 0.0003451485632963989,
+          "self_domain_margin_m": 0.009230312603140112,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.09967915662316615,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            3.641905509548127,
+            2.4034131438855186
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 0.0001564386908971439,
+          "self_domain_margin_m": 0.00928424571070885,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.11002691066000655,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.36126903023692364,
+            -0.52,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            0.005774451869599906,
+            0.0
+          ],
+          "terminal_speed_m_s": 0.0002481792580538902,
+          "self_domain_margin_m": 0.009749435965847708,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.12187914500975158,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.3263749394781846,
+            -0.4530019023341573,
+            7.923965738084076,
+            5.510075713990692
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 6.342340353570826e-05,
+          "self_domain_margin_m": 0.009253360942999,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.10250765860402208,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.3263749394781846,
+            -0.4530019023341573,
+            3.5657845821378342,
+            2.4795340712958116
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 1.5348373315205422e-05,
+          "self_domain_margin_m": 0.009289292333017007,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.11074663090411882,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.3263749394781846,
+            -0.4530019023341573,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            -0.2,
+            -0.2,
+            0.005774451869599906,
+            0.0
+          ],
+          "terminal_speed_m_s": 4.455537153393575e-06,
+          "self_domain_margin_m": 0.009815635503578612,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.12096270378817539,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.18358817791368445,
+            -0.21934678029385993,
+            7.329435618090775,
+            6.104605833983992
+          ],
+          "first_command": [
+            -0.18358817791368445,
+            -0.2,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 5.585215189161865e-05,
+          "self_domain_margin_m": 0.00933566445155698,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.1016536828548201,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.18358817791368445,
+            -0.21934678029385993,
+            3.298246028140849,
+            2.747072625292797
+          ],
+          "first_command": [
+            -0.18358817791368445,
+            -0.2,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 1.4311149077687544e-05,
+          "self_domain_margin_m": 0.009340682835517866,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.1088763815467387,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            -0.18358817791368445,
+            -0.21934678029385993,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            -0.18358817791368445,
+            -0.2,
+            0.005774451869599906,
+            0.0
+          ],
+          "terminal_speed_m_s": 4.592583538785289e-06,
+          "self_domain_margin_m": 0.009816929498795257,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.11651733408293205,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            6.717020726037384,
+            6.717020726037384
+          ],
+          "first_command": [
+            0.0,
+            0.0,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 0.00024324741891810638,
+          "self_domain_margin_m": 0.00933071267823965,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.110478543525075,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            3.022659326716823,
+            3.022659326716823
+          ],
+          "first_command": [
+            0.0,
+            0.0,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 0.00012700997816318538,
+          "self_domain_margin_m": 0.009373614585179879,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.11165578727400224,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.0,
+            0.0,
+            0.005774451869599906,
+            0.0
+          ],
+          "terminal_speed_m_s": 3.621427974357607e-05,
+          "self_domain_margin_m": 0.009846337898145985,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.11175778524997002,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            5.3409180975233745,
+            8.093123354551393
+          ],
+          "first_command": [
+            0.0,
+            0.0,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 0.00023705884039833898,
+          "self_domain_margin_m": 0.009042641930202377,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.11498882891352569,
+          "minimum_clearance_native_tick": 165
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            2.4034131438855186,
+            3.641905509548127
+          ],
+          "first_command": [
+            0.0,
+            0.0,
+            1.4057744518695998,
+            1.4
+          ],
+          "terminal_speed_m_s": 1.9995023390377987e-05,
+          "self_domain_margin_m": 0.009188721498646413,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.11279934868249628,
+          "minimum_clearance_native_tick": 240
+        },
+        {
+          "target_command": [
+            0.52,
+            0.36126903023692364,
+            0.0,
+            0.0
+          ],
+          "first_command": [
+            0.0,
+            0.0,
+            0.005774451869599906,
+            0.0
+          ],
+          "terminal_speed_m_s": 2.2257689735449135e-05,
+          "self_domain_margin_m": 0.009676679824023204,
+          "reason": "TIME_CLEARANCE",
+          "minimum_clearance_m": 0.1014961649373006,
+          "minimum_clearance_native_tick": 240
+        }
+      ],
+      "new_appendable": false,
+      "new_reserve_summary": null,
+      "new_backup_attempt": null,
+      "full_private_execute": null,
+      "predicted_goal_progress_m": null,
+      "old_reference_terminal_error": null,
+      "new_reference_terminal_error": null,
+      "registered_increment": false,
+      "private_prediction_integrations_for_checkpoint": 4320
+    }
+  ],
+  "registered_increments": 0,
+  "new_navigation_tasks": 0,
+  "source_sha256": {
+    "validate_fixed_states.py": "064e36bb4d4a7e593c256e01b1b4c8f7acb3e4632050983c9838e20bd18d2b2e",
+    "instrumentation.py": "83e5a90b56ff5a37bcb243788a42f6fb46546cf57e4b65cc5a998f122a776dad",
+    "reserved_recovery.py": "f849e15f2cdc4726d367762a698a81863a0fc34ea0c5431d9f96f4e61a5d38dc",
+    "union_belief.py": "2892c2bf82618e6b70c2161eafc48a1aeb8c4c2858fddb0019487a35a132fc05",
+    "consistent_targets.py": "8180396171ab3c2a254b200bdd4508f2a7125be3b944cfd09ecb86f191394eb0",
+    "bounded_execution.py": "8a59e93b4c0db1030bde69760e9c35a5240d3d0e5e6ccd9c8a4b41cb4b5dcfd1",
+    "recovery_supervisor.py": "7447c7c08b013941f40b2e7a3d5b370c79259a3d53944a8856f12bcb998c42cb",
+    "motion_evaluator.py": "e024d9072e45fc732aaf22e5b7e47575ec42cb477be50475ffa774aa0c559d24",
+    "dynamic_contact.py": "90d97fd29938742c057672f4935f7dad6e75f564401bbdabde945501b4cc0d01",
+    "tracking.py": "15d6097a6199e6ca4d92774c617a7f1e79f55a0a992d36cadb79c65aac781ab3",
+    "planner.py": "48038fd7af9bf5166197a099ae9c0443261d9e8525d2f50456c6c10cd186ce30",
+    "exact_footprint.py": "c6f991d15546372ec3b3c2bae7b8b844f0f613c59c1403c0831002e337c9ce93",
+    "evaluate_trace.py": "512a673cface02735513fd01c4fb5d59957c77b859bd8723d800521b6a71c764",
+    "range_circle_memory.py": "9c55b2dda66c569270042bbfaf4fbf523a7a56eccf7b76fa50f03cc00a900442",
+    "empty_sample_contract.py": "c81d82887eee5b770e4ce6217bee7b8c603725b5d477fae70d91907d3c3d9f4f",
+    "self_geometry.py": "97cb87c3f2989e4a78765a241e85544ff23f07a5f58608e9045ad4ed58f59f42",
+    "task_preflight.py": "93b090040d1c1826d16ae8314c6d1ec2aed531a498d1949f67fb0e0704fe24c9",
+    "evaluate_range.py": "97962bd3045a4a415214d62e01cddc9c4cce3f47a7954ae73b19280e200f322a",
+    "dynamic_scene.py": "5be290753c286875f8a5edce92e1a88813b53cff264407018a1b00f71d6d790c",
+    "run_static.py": "70f95aad88d8be96754696dbf8bdc06050288b6fbe9c1d683a3fab98bd01a56a",
+    "factory.py": "d7839f616e9ae0c1dba0a403bcca504b4ed6ec3d8b3402e64a8374393a3732c5",
+    "validate_geometry.py": "eabc40ddee1a5ac99538ca526292e7b3fece037ac36e278f3f93a7f335de9e8a",
+    "scene_sensors.py": "24cf6857f8f7c36132994fbca39691e2fb891d15c33a95927f43efefa8a28c57",
+    "geometry_predictor.py": "8fea7d0b78635cc6562b0861dfcda3191f39aadaf61335ee490c0267bedff6f8",
+    "multi_circle_memory.py": "c19eedc1045d7c6f1bbe293f89b979920616b69910f4505805f16d86c558cbfc",
+    "serial_predictor.py": "4bc8163ae7d7d4b2dc0b309fbc84acf5adaaa1b77ee0ac43f81354eb78ff9640",
+    "audit_articulation.py": "dc40d6ce395142dc8830761468fbf088cf47e5d27899766f3bf176de839d8039",
+    "validate_fixed_states_retry02.py": "b432c6b064baf91613b01168d320fb94f898f921920f1bc2ee0f13fec7ebfea2",
+    "robot_predictor.py": "6b5b45c6e96e2d4edb96697e8c6493cf3a934a9039356f0e147e863e6664b895",
+    "actuator_commands.py": "946aeb9cf1073da1d58e89e2570acd6b6599ef229c14a3c5116a75fb207fb26b",
+    "circle_memory.py": "fc578845d7a92ac53e5400eec23a9830ab60398e44ca48b089ea11f0a86987da",
+    "motion_tracker.py": "53417164f92f1279eda99fbde68023a58e69326598abca21dd4e4ed7b446e1f7",
+    "control_contract.py": "6a091a13245fe91ed02344ec29f1cdc023befbf7da05e9d43e846fd3d0284eb4",
+    "contact_fingerprint.py": "b32df676233afac9e1750f53f899fcebd05736fdfa291dc070aa21992d9bcea0",
+    "perception.py": "2141b8daa06cbc3e7a7cfc93b98ba89cfe3dec070e29bba013aad268cd2f27b6",
+    "replay_native_audit.py": "a282f5846f5ad2dfca87c4b85e251893b28f449904062f955c8724a2c411865f",
+    "joint_admission.py": "007bd3b41bd2f2392f9b4caa6d14b71100a5f76c9c0cc03bd2e408e36c8e0a32",
+    "self_envelope.py": "c4c736e433f51246178f36fde3555c932141da9876dc6834a6b774de2b2aa9d4",
+    "task_planner.py": "19ef8d839a229187ae61c66353d936a7603c99d3b8abedccebea793f2a951da4"
+  },
+  "input_sha256": {
+    "runs/v680_dynamic_later_stop_reserve/dev47_95000011_laterstop/paired/geometry_memory/v648_execution.jsonl": "8ee06072adbebb3f28ab1d677483399b73dbf31b802ed9e357043c378f52adb8",
+    "runs/v680_dynamic_later_stop_reserve/dev47_95000011_laterstop/paired/geometry_memory/motion_estimate.jsonl": "b64e0e0aa2c6064541ed558cc85e447cb7e04332cacb0acadd91b83469f8b0d7",
+    "runs/v680_dynamic_later_stop_reserve/dev47_95000011_laterstop/paired/geometry_memory/control_decisions.jsonl": "97555c6e20677246c94b4f37bfb0017bd3b9712cd662f8aa32d82457eec69c4b",
+    "runs/v680_dynamic_later_stop_reserve/dev47_95000011_laterstop/paired/scene_model.mjb": "40308ed2c1519c6816b4dd6563ca4fb10eb06e8df0d16b365ce5f0b63efec02e"
+  },
+  "scope": "three locked old states; target consistency and native appendability; no navigation success"
+}

@@ -1,0 +1,58 @@
+"""Prepare the fixed conditional schedule, protocols and new confirmation pool."""
+from pathlib import Path
+from datetime import datetime
+import hashlib
+import json
+import math
+import shutil
+
+repo=Path(__file__).resolve().parents[2];common=Path(__file__).parent
+root=repo/'runs/reference_recovery_20261106'
+dev=repo/'experiments/v836_reference_recovery_development'
+qual=repo/'experiments/v835_reference_recovery_qualification'
+confirm=repo/'experiments/v837_reference_recovery_confirmation'
+auth=json.loads((repo/'RPCCR_REFERENCE_RECOVERY_AUTHORIZATION_20261106.json').read_text())
+assert not(dev/'CANDIDATE_FREEZE.json').exists()
+protocol='''# RP-CCR reference-following recovery with finite successor qualification
+
+User2026-11-06 explicitly said “抓紧时间将动态跑出来”. This NEW bounded round is separate from every closed old deadline and failure. One scientific candidate only; no post-freeze source/interface repair or rerun. Unique absolute MODEL cutoff2026-11-06 23:00+0800 /1793977200, never extend/reset. All models/init/navigation/prediction/replay onlyrun_phase.sh, singleCPU/sequential execution lock. Stage fully isolated, no subagents/chats/external messages, training/SAC/realrobot0. Current/runtime/networks immutable, raw evidence retained. Zero-model closure may follow cutoff, no model work after it.
+
+Diagnosis: original490 complete328 reserve min.158557758 leaves3.56mm;491 no next certificate. V833 new2610 tails split2392 static-gate failures and218 static-passed time failures. TIME_CLEARANCE is mixed geometry, not future-only. Late grids do not establish general infeasibility. V830/V831/V833 failures and all old data/windows remain immutable.
+
+Scientific candidate: after tracking and with a causal forward reference, every ordinary or retained-return complete8+320 reserve additionally predicts8 native ticks of stopped continuation. Original328 .155/self.002/terminal.025 gates remain; extra8 must meet same gates with original absolute future times329–336 and NO future observation assumption. This is a finite next-public-cycle witness, not recursive feasibility or infinite waiting safety. Original16 and forward5 priorities/order remain, but are rejected if successor fails. If all21 reject,18 reference-following tails =lookahead[.35,.55] xwheel[4,8,12] xdrive_ticks[160,208,240]. At every8 native ticks, robot-only predicted fullstate determines pure-pursuit standardAckermann steer with wheelbase.60/track.54/steer cap.42722137342572125 and original legal ctrl/rates. At drive end, hold last steer and command zero wheel until complete. Entire native controls/states persisted. Full tail signedforward>=.02 and public-goal gain>=.02. Original ranked first commands and scores unchanged; first command must itself remain legal. No new learned weights, truth inputs or actor future. Pretracking/scanner/reentry/discovery328 stop are unchanged. Existing spatial reference is causal guidance, not a safety certificate. Updating a remembered reference is NOT newly implemented here.
+
+V835 fixed states490/495 from originalV830 seed10060002. Original3960 native replay and496 actual sensor packets must reproduce exactly, original21 trajectories/old490 accepted trajectory match<=1e-8. State490 uses original top eligible distinct input only; state495 uses first4 eligible distinct commands in original order, all locked before models. Reference is existing plan306, index computed from real snapshot. No replacement states or extra pool. Component model window<=1800s, private<=500000native; at most one selected REFERENCE_FOLLOW_BRAKE per state actually executes336native plus exact fullrepeat336. Max672 actual+672repeat, no navigation here. Full physical/static/control/contact/self audit, extra336 proof, complete source SHA, source/decompressed SHA archive+largeblob lossless32MiB readback must pass; at least one actual positive complete branch+repeat required. First safety/state/source/model/truth/control/coverage/evidence anomaly stops. If no qualifying branch, dependent navigation never starts; no patch/retry/newstates.
+
+V836 only after FINALIZED component_passed and full source/decompressed SHA. Five actualt0preflights then fixed original10060002 failure main/repeat,10060008 failure main/repeat, originalNS10010002/WE10010001/EW10010003 main/repeat in original order. Max5main+5success-only repeats. All are observed development, not fresh tests. First functional or any safety/evidence failure stops. Each nav1200public/1200soft1500hard1505outer;t0120/125. Root deadline caps every subprocess; never start unless full cap fits. All original15audits plus new independent reference/successor audit, complete statectrl replay, actual discovery chain and exact repeats required. Persist every accepted ordinary successor cache as well as retained/handover contracts; validate reference came from an earlier actual causal plan. New reference control independently reconstructed from saved fullstates.
+
+Only V836 all5main+5repeats+all original gates+FINAL_INDEPENDENT_AUDIT+archiveSHA/32MiB FINALIZED with combined_three_route_development_passed, and >=36000s root time remains, may automaticV837 start. If not enough full time, no confirmation start. V837 once-locked new10070001–24, three routes8each/along-axis positive12negative12, phases SHA256('RPCCR_REFERENCE_CONFIRMATION_20261106|seed') mapped continuously within preregistered sign half-circle. All24 actualt0 before any main; original slot1–24 order. >=23/24 complete chains, eachroute>=7/8, direction>=11/12, stop second functional failure/first safety/evidence anomaly. No replacements/newpool. If main gate passes fixed1/9/17 each fullrepeat must pass; failed baseline slot never substituted. No full24 success rate before all24 attempted; development/repeats/old pools never mixed. V837 model cap36000s not beyond root23:00.
+
+Original19static entities, single diameter.20/amplitude.25/Euclideanspeed.08actor, original3m sensor5%dropout, models/network/low-level controller unchanged. Truth only physical sensing and offline evaluation. Pre-detection weaker static-reactive contract and public3m starting exclusion declared, broader.12axis/arbitraryocclusion/multiactor/maps/realtime/recursive/RAS guarantees not claimed. Nativeclearance>=.15; obstacle/penetration/unknown contact0; complete selfgeometry/legalctrl/slew; staticgeom unchanged/no root writes outside integration; allnative state/ctrl/mocap replay<=1e-8; original329execution657planning plus extra336 check; moving first real detection—328actual stop—new causalroute—actual continued>=1m—goal<=.45 all required. Component success isn't fullfield acceptance.
+
+Drivers automatically stop/restore originalREVIEW_PENDING, independently audit/archive/readback all sources and lossless blocks before FINALIZED. Activefinalize/transport logs excluded from own archives, included in closed supplementary operations snapshot. Existing archives never overwritten. Abnormal disappearance: preserve exact/unknown counts, no restart/delay. Canonical auditor zero-model callsite proxy is interface-only; actual MJB audit required in physical stage. Fullstate repeat includes model, normalizedinitial, contacts, discovery, lengths,qpos/qvel/ctrl/mocap<=1e-8. No automated algorithm comparison, training, network push or raw cleanup. Final report must separate qualification/private/replay/newactual/repeats/development/newconfirmation/unexecuted. All model accounting exact or nullunknown, never impute0.
+'''
+for folder in [qual,dev]:
+    (folder/'PROTOCOL.md').write_text(protocol+('\nThis directory is fixed native component V835 only.\n'if folder==qual else'\nThis directory is fullfield development V836 only.\n'))
+for p in dev.iterdir():
+    if p.is_file()and p.suffix in['.py','.md','.json']and p.name!='CANDIDATE_FREEZE.json':
+        text=p.read_text()
+        if p.name=='run_static.py':text=text.replace("/'v836_reference_recovery_development'/a.name", "/'v837_reference_recovery_confirmation'/a.name")
+        (confirm/p.name).write_text(text)
+tasks=[]
+for slot in range(1,25):
+    seed=10070000+slot;route=['WEST_EAST','NORTH_SOUTH','EAST_WEST'][(slot-1)//8]
+    positive=(slot-1)%8<4
+    digest=hashlib.sha256(f'RPCCR_REFERENCE_CONFIRMATION_20261106|{seed}'.encode()).digest()
+    u=int.from_bytes(digest[:8],'big')/2**64
+    phase=(-math.pi/2+u*math.pi)if positive else(math.pi/2+u*math.pi)
+    tasks.append(dict(slot=slot,seed=seed,phase=phase,case_id=route,initial_axis_motion_direction='POSITIVE_AXIS'if positive else'NEGATIVE_AXIS',course_distance_m=6.9660968319116074 if route=='NORTH_SOUTH'else 8.,role='PREREGISTERED_NEW_CONFIRMATION',phase_rule='SHA256 RPCCR_REFERENCE_CONFIRMATION_20261106|seed; continuous conditional cos-sign, four each direction per route'))
+dump=lambda p,d:p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+dump(confirm/'TASK_LIST.json',tasks)
+cfg=json.loads((dev/'BATCH.json').read_text());cfg.update(label=confirm.name,output='runs/'+confirm.name,window='confirmation01',confirmation=True,batch_cap_s=36000,minimum_start_budget_s=36000,repeat_slots=[1,9,17],dependency='runs/'+dev.name,report='docs/RPCCR_REFERENCE_RECOVERY_V837_REPORT.md',archive='evidence/rpccr_reference_recovery_v837_20261106')
+dump(confirm/'BATCH.json',cfg);(repo/cfg['output']).mkdir(exist_ok=True)
+(confirm/'PROTOCOL.md').write_text(protocol+'\nThis directory is conditional fresh confirmation V837 only. Algorithm modules identical V836, except output namespace.\n')
+(repo/'docs/RPCCR_REFERENCE_RECOVERY_20261106_PLAN.md').write_text(protocol)
+(root/'HANDOFF.md').write_text('# LATEST OVERRIDE — 2026-11-06 independent bounded reference recovery\n\nUser: 抓紧时间将动态跑出来。\n\n'+protocol+'\nMonitoring compact ROUND_WINDOW/ACTIVE/RESULTS/COMPLETION/FINALIZED only once running. Do not relaunch or modify frozen sources.\n')
+assert len({x['seed']for x in tasks})==24
+assert sum(x['initial_axis_motion_direction']=='POSITIVE_AXIS'for x in tasks)==12
+print('FIXED_V835_THEN_V836_THEN_CONDITIONAL_NEW_V837_SCHEDULE_PREPARED')

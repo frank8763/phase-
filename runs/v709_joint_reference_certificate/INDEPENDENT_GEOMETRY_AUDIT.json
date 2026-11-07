@@ -1,0 +1,95 @@
+{
+  "status": "ALL_THREE_JOINT_GEOMETRY_INDEPENDENTLY_VERIFIED",
+  "checks": {
+    "all_three": true,
+    "frozen_inputs": true,
+    "zero_integration": true
+  },
+  "details": [
+    {
+      "case_id": "WEST_EAST",
+      "checks": {
+        "fixed_motion_envelope": true,
+        "known_point_clearance": true,
+        "swept_known_clearance": true,
+        "start_distance": true,
+        "initial_full_sweep_outside_range": true,
+        "away_from_goal": true,
+        "protected_junction": true,
+        "continuous_reference": true,
+        "recorded_bound_matches": true,
+        "exact_start": true,
+        "goal_distance": true,
+        "reused_certified_geometry_exact": true
+      },
+      "negative_controls": {
+        "start_anchor_rejected": true,
+        "shrunken_sweep_rejected": true
+      },
+      "anchor_xy": [
+        3.0,
+        -1.0
+      ],
+      "continuous_lower_bound_m": 0.1643426560984393,
+      "passed": true
+    },
+    {
+      "case_id": "NORTH_SOUTH",
+      "checks": {
+        "fixed_motion_envelope": true,
+        "known_point_clearance": true,
+        "swept_known_clearance": true,
+        "start_distance": true,
+        "initial_full_sweep_outside_range": true,
+        "away_from_goal": true,
+        "protected_junction": true,
+        "continuous_reference": true,
+        "recorded_bound_matches": true,
+        "exact_start": true,
+        "goal_distance": true,
+        "first_geometric_certificate": true,
+        "nearby_course_scope": true,
+        "unmodified_known_reference": true
+      },
+      "negative_controls": {
+        "start_anchor_rejected": true,
+        "shrunken_sweep_rejected": true
+      },
+      "anchor_xy": [
+        -1.5,
+        -1.2
+      ],
+      "continuous_lower_bound_m": 0.16273230981169795,
+      "passed": true
+    },
+    {
+      "case_id": "EAST_WEST",
+      "checks": {
+        "fixed_motion_envelope": true,
+        "known_point_clearance": true,
+        "swept_known_clearance": true,
+        "start_distance": true,
+        "initial_full_sweep_outside_range": true,
+        "away_from_goal": true,
+        "protected_junction": true,
+        "continuous_reference": true,
+        "recorded_bound_matches": true,
+        "exact_start": true,
+        "goal_distance": true,
+        "reused_certified_geometry_exact": true
+      },
+      "negative_controls": {
+        "start_anchor_rejected": true,
+        "shrunken_sweep_rejected": true
+      },
+      "anchor_xy": [
+        -3.0,
+        -1.0
+      ],
+      "continuous_lower_bound_m": 0.16675799838484637,
+      "passed": true
+    }
+  ],
+  "verification_integrations": 0,
+  "scope": "Two V708 swept-detour witnesses and a nearby nonblocking north-south actor; physical discovery, braking and arrival untested. The north-south actor does not necessarily obstruct the known reference."
+}
