@@ -1,0 +1,197 @@
+{
+  "passed": false,
+  "actual_native": 18202,
+  "replay_native": 18202,
+  "private_native": 0,
+  "environment_initialization_attempted": true,
+  "environment_initialization_completed": true,
+  "fully_recorded_native": 18202,
+  "minimum_actual_clearance_m": 0.20677271808020825,
+  "minimum_self_margin_m": 0.00950972168372577,
+  "bad_contacts": 0,
+  "final_body": [
+    -1.7594148122035054,
+    -1.6092593941553732,
+    0.44138833875549155,
+    2.2749580095486633e-06,
+    -2.8897580505298305e-06
+  ],
+  "final_translation_speed_m_s": 2.275044923968631e-06,
+  "root_guard_native_count": 18202,
+  "goal_distance_m": 5.7726542595313095,
+  "first_actor_detection": null,
+  "actual_travel_after_detection_m": 0.0,
+  "maximum_wall_lag_s": 0.09937463601818308,
+  "stale_command_ticks": 230,
+  "stop_reason": "AUTHORIZED_NAVIGATION_OR_ROOT_DEADLINE",
+  "replay": {
+    "replay_native": 18202,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "ros_action": {
+    "passed": false,
+    "navigation_action_sent": true,
+    "active_states": {
+      "map_server": 3,
+      "planner_server": 3,
+      "controller_server": 3,
+      "behavior_server": 3,
+      "velocity_smoother": 3,
+      "collision_monitor": 3,
+      "bt_navigator": 3
+    },
+    "active_checked_at": {
+      "map_server": 283626.799304805,
+      "planner_server": 283626.799623004,
+      "controller_server": 283626.799922207,
+      "behavior_server": 283626.800224971,
+      "velocity_smoother": 283626.800517049,
+      "collision_monitor": 283626.800800817,
+      "bt_navigator": 283626.801092895
+    },
+    "arm_issued_at": 283626.801098832,
+    "goal_sent_at": 283626.824211022,
+    "error": "ProtocolError('NAVIGATION_DEADLINE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/ros_bridge.py\", line 102, in run\n    require(time.monotonic()<goal_until and time.time()<deadline-25,'NAVIGATION_DEADLINE')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py\", line 10, in require\n    if not condition:raise ProtocolError(message)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhandshake.ProtocolError: NAVIGATION_DEADLINE\n",
+    "reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+    "wall_s": 187.72148780099815,
+    "readiness_probes": [
+      [
+        {
+          "map_server": 1,
+          "planner_server": 1,
+          "controller_server": 1,
+          "behavior_server": 1,
+          "velocity_smoother": 1,
+          "collision_monitor": 1,
+          "bt_navigator": 1
+        },
+        {
+          "map_server": 283622.819491436,
+          "planner_server": 283622.819973485,
+          "controller_server": 283622.820440098,
+          "behavior_server": 283622.820879403,
+          "velocity_smoother": 283622.821328206,
+          "collision_monitor": 283622.821758013,
+          "bt_navigator": 283622.822211565
+        }
+      ],
+      [
+        {
+          "map_server": 1,
+          "planner_server": 1,
+          "controller_server": 1,
+          "behavior_server": 1,
+          "velocity_smoother": 1,
+          "collision_monitor": 1,
+          "bt_navigator": 1
+        },
+        {
+          "map_server": 283622.82249652,
+          "planner_server": 283622.822775538,
+          "controller_server": 283622.823065242,
+          "behavior_server": 283622.823341885,
+          "velocity_smoother": 283622.823676707,
+          "collision_monitor": 283622.823958099,
+          "bt_navigator": 283622.824269175
+        }
+      ]
+    ],
+    "odometry_messages": 15192,
+    "cmd_vel_messages": 3595,
+    "plan_messages": 159,
+    "maximum_observation_age_s": 0.008384788001421839,
+    "maximum_scan_age_s": 0.011736567015759647,
+    "last_observation": {
+      "kind": "observation",
+      "run_id": "v862-west-east-static-01",
+      "phase": "STOPPING",
+      "native_tick": 18003,
+      "sim_time": 180.02999999998124,
+      "sent_at": 283806.822796915,
+      "body_measured_at": 283806.822796915,
+      "scan_measured_at": 283806.814019127,
+      "initial_snapshot": false,
+      "body": [
+        -1.7560772340878819,
+        -1.607691977910582,
+        0.4408357128737331,
+        -0.059294031178431426,
+        0.005357841105803456
+      ],
+      "scan": {
+        "native_tick": 18001,
+        "time": 180.00999999998126,
+        "ranges": [
+          2.98868989944458,
+          3.0,
+          3.0,
+          2.9784958362579346,
+          3.0,
+          1.5860755443572998,
+          1.5936353206634521,
+          1.6370770931243896,
+          1.7432587146759033,
+          1.9138364791870117,
+          2.3501312732696533,
+          2.9989986419677734,
+          3.0,
+          2.985785722732544,
+          3.0,
+          3.0,
+          3.0,
+          2.0034842491149902,
+          3.0,
+          3.0,
+          2.896406412124634,
+          2.741508722305298,
+          2.7202348709106445,
+          2.9892568588256836,
+          3.0,
+          2.8669228553771973,
+          2.3448574542999268,
+          2.0084989070892334,
+          1.8433423042297363,
+          1.7959282398223877,
+          1.6734037399291992,
+          3.0
+        ]
+      }
+    }
+  },
+  "status": "NATIVE_COMPLETE",
+  "closed": true,
+  "startup_events": [
+    {
+      "event": "ARMED_AT_T0",
+      "at": 283626.80220778,
+      "native_tick": 0,
+      "states": {
+        "map_server": 3,
+        "planner_server": 3,
+        "controller_server": 3,
+        "behavior_server": 3,
+        "velocity_smoother": 3,
+        "collision_monitor": 3,
+        "bt_navigator": 3
+      },
+      "checked_at": {
+        "map_server": 283626.799304805,
+        "planner_server": 283626.799623004,
+        "controller_server": 283626.799922207,
+        "behavior_server": 283626.800224971,
+        "velocity_smoother": 283626.800517049,
+        "collision_monitor": 283626.800800817,
+        "bt_navigator": 283626.801092895
+      },
+      "issued_at": 283626.801098832
+    },
+    {
+      "event": "STOP",
+      "at": 283806.832898555
+    }
+  ],
+  "armed_at": 283626.80220778
+}

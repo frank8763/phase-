@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "actual_native": 4569,
+  "replay_native": 4569,
+  "private_native": 0,
+  "environment_initialization_attempted": true,
+  "environment_initialization_completed": true,
+  "fully_recorded_native": 4569,
+  "minimum_actual_clearance_m": 0.27205022000186274,
+  "minimum_self_margin_m": 0.009004309870445593,
+  "bad_contacts": 0,
+  "final_body": [
+    3.8111785684838964,
+    -1.8501645654809284,
+    -0.25731094176264224,
+    -5.275743231524714e-06,
+    -3.9709812309645836e-07
+  ],
+  "final_translation_speed_m_s": 5.29359877307932e-06,
+  "root_guard_native_count": 4569,
+  "goal_distance_m": 0.24104810813883107,
+  "first_actor_detection": null,
+  "actual_travel_after_detection_m": 0.0,
+  "maximum_wall_lag_s": 0.01680969900917262,
+  "stale_command_ticks": 223,
+  "stop_reason": "ROS_STOP",
+  "replay": {
+    "replay_native": 4569,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "ros_action": {
+    "passed": true,
+    "navigation_action_sent": true,
+    "active_states": {
+      "map_server": 3,
+      "planner_server": 3,
+      "controller_server": 3,
+      "behavior_server": 3,
+      "velocity_smoother": 3,
+      "collision_monitor": 3,
+      "bt_navigator": 3
+    },
+    "active_checked_at": {
+      "map_server": 284490.439344928,
+      "planner_server": 284490.439714182,
+      "controller_server": 284490.44005494,
+      "behavior_server": 284490.440344644,
+      "velocity_smoother": 284490.440661656,
+      "collision_monitor": 284490.441127082,
+      "bt_navigator": 284490.441702927
+    },
+    "arm_issued_at": 284490.441713613,
+    "goal_sent_at": 284490.461599881,
+    "action_status": 4,
+    "action_error_code": 0,
+    "reason": "NAV2_SUCCEEDED",
+    "wall_s": 51.40612647897797,
+    "readiness_probes": [
+      [
+        {
+          "map_server": 1,
+          "planner_server": 1,
+          "controller_server": 1,
+          "behavior_server": 1,
+          "velocity_smoother": 1,
+          "collision_monitor": 1,
+          "bt_navigator": 1
+        },
+        {
+          "map_server": 284486.457066704,
+          "planner_server": 284486.457560625,
+          "controller_server": 284486.457998743,
+          "behavior_server": 284486.458677885,
+          "velocity_smoother": 284486.459323782,
+          "collision_monitor": 284486.459791582,
+          "bt_navigator": 284486.460255821
+        }
+      ],
+      [
+        {
+          "map_server": 1,
+          "planner_server": 1,
+          "controller_server": 1,
+          "behavior_server": 1,
+          "velocity_smoother": 1,
+          "collision_monitor": 1,
+          "bt_navigator": 1
+        },
+        {
+          "map_server": 284486.460546712,
+          "planner_server": 284486.460841165,
+          "controller_server": 284486.461132056,
+          "behavior_server": 284486.461464503,
+          "velocity_smoother": 284486.461781515,
+          "collision_monitor": 284486.462389418,
+          "bt_navigator": 284486.46271949
+        }
+      ]
+    ],
+    "odometry_messages": 3757,
+    "cmd_vel_messages": 870,
+    "plan_messages": 40,
+    "maximum_observation_age_s": 0.005056756024714559,
+    "maximum_scan_age_s": 0.005074565997347236,
+    "last_observation": {
+      "kind": "observation",
+      "run_id": "v863-rpp-west-east-static-01",
+      "phase": "RUNNING",
+      "native_tick": 4368,
+      "sim_time": 43.67999999999988,
+      "sent_at": 284534.113401088,
+      "body_measured_at": 284534.113401088,
+      "scan_measured_at": 284534.10171795,
+      "initial_snapshot": false,
+      "body": [
+        3.779874905883114,
+        -1.8421395298583123,
+        -0.26597569028745666,
+        0.20140314791027494,
+        0.09501770563337084
+      ],
+      "scan": {
+        "native_tick": 4366,
+        "time": 43.65999999999988,
+        "ranges": [
+          1.2600959539413452,
+          1.2716310024261475,
+          1.2752654552459717,
+          1.3746402263641357,
+          1.4245245456695557,
+          1.6767516136169434,
+          1.9763327836990356,
+          2.0533621311187744,
+          1.880796194076538,
+          1.8699045181274414,
+          3.0,
+          2.008277177810669,
+          2.1451570987701416,
+          2.4976680278778076,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          2.9886343479156494,
+          1.421805739402771,
+          1.1202126741409302,
+          0.9802064895629883,
+          0.7798467874526978,
+          0.7854585647583008,
+          0.7143701314926147,
+          3.0,
+          3.0,
+          2.5399999618530273,
+          1.9596459865570068,
+          1.577009677886963,
+          1.4400233030319214
+        ]
+      }
+    }
+  },
+  "status": "NATIVE_COMPLETE",
+  "closed": true,
+  "startup_events": [
+    {
+      "event": "ARMED_AT_T0",
+      "at": 284490.442436685,
+      "native_tick": 0,
+      "states": {
+        "map_server": 3,
+        "planner_server": 3,
+        "controller_server": 3,
+        "behavior_server": 3,
+        "velocity_smoother": 3,
+        "collision_monitor": 3,
+        "bt_navigator": 3
+      },
+      "checked_at": {
+        "map_server": 284490.439344928,
+        "planner_server": 284490.439714182,
+        "controller_server": 284490.44005494,
+        "behavior_server": 284490.440344644,
+        "velocity_smoother": 284490.440661656,
+        "collision_monitor": 284490.441127082,
+        "bt_navigator": 284490.441702927
+      },
+      "issued_at": 284490.441713613
+    },
+    {
+      "event": "STOP",
+      "at": 284534.123469483
+    }
+  ],
+  "armed_at": 284490.442436685
+}

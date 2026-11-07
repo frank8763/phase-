@@ -7,13 +7,16 @@
     {
       "id": "MODEL_VALIDITY",
       "intended_claim": "The vehicle plant and actuator mapping are qualified before navigation comparison.",
-      "status": "NOT_ESTABLISHED",
+      "status": "SUPPORTED_FINITE_SIMULATOR_QUALIFICATION",
       "evidence": [
         "docs/NAV2_FOUNDATION_V856_REPORT.md",
-        "docs/ASSEMBLY_CONTACT_V857_REPORT.md"
+        "docs/ASSEMBLY_CONTACT_V857_REPORT.md",
+        "docs/NAV2_VERIFIED_V858_REPORT.md",
+        "docs/NAV2_STARTUP_CURVE_V861_REPORT.md",
+        "docs/NAV2_RPP_STATIC_V863_REPORT.md"
       ],
-      "missing": "Full causal same-control model test, body-command qualification, physical geometry/actuator measurements.",
-      "may_appear_as_final_positive_result": false
+      "missing": "Real CAD/assembly clearance, measured actuation/friction and localization uncertainty remain unvalidated.",
+      "may_appear_as_final_positive_result": true
     },
     {
       "id": "GENUINE_NAV2_INTERFACE",
@@ -23,7 +26,7 @@
         "records/nav2_v856_20261107/SOFTWARE_RESULT.json",
         "records/nav2_v856_20261107/SOFTWARE_METRICS.json"
       ],
-      "missing": "Qualified native vehicle field navigation; this is not a physical or dynamic acceptance result.",
+      "missing": "One genuine native static RPP development route now passed; multi-route, dynamic and held-out tests remain.",
       "may_appear_as_final_positive_result": true
     },
     {
@@ -90,7 +93,10 @@
     "rounds": [
       "V858",
       "V859",
-      "V860"
+      "V860",
+      "V861",
+      "V862",
+      "V863"
     ],
     "assembly_and_fixed_controller_qualified": true,
     "nav2_field_static_failed": true,
@@ -100,9 +106,12 @@
     "source_reports": [
       "docs/NAV2_VERIFIED_V858_REPORT.md",
       "docs/NAV2_STEERING_V859_REPORT.md",
-      "docs/NAV2_PREDICTION_V860_REPORT.md"
+      "docs/NAV2_PREDICTION_V860_REPORT.md",
+      "docs/NAV2_RPP_STATIC_V863_REPORT.md"
     ],
-    "may_appear_as_final_positive_navigation_result": false
+    "may_appear_as_final_positive_navigation_result": "ONLY_ONE_DEVELOPMENT_STATIC_ROUTE",
+    "one_rpp_native_static_route_passed": true,
+    "final_dynamic_confirmation": "NOT_STARTED"
   },
   "nav2_prerequisites_v861": {
     "status": "LIMITED_SOFTWARE_AND_FIXED_BODY_CURVE_QUALIFIED",
@@ -129,5 +138,21 @@
     "dynamic_acceptance_passed": false,
     "new24_executed": 0,
     "report": "docs/NAV2_READY_STATIC_V862_PREPARATION.md"
+  },
+  "v862_physical_execution": {
+    "status": "FAILED_SINGLE_STATIC_180S",
+    "actual_native": 18202,
+    "replay_native": 18202,
+    "report": "docs/NAV2_READY_STATIC_V862_EXECUTION_REPORT.md"
+  },
+  "v863_physical_execution": {
+    "scope": "ONE_DEVELOPMENT_STATIC_WEST_EAST_ONLY",
+    "actual_native": 4569,
+    "replay_native": 4569,
+    "new_dynamic_navigation": 0,
+    "new24": 0,
+    "full_navigation_repeats": 0,
+    "goal_distance_m": 0.24104810813883107,
+    "minimum_clearance_m": 0.27205022000186274
   }
 }

@@ -1,12 +1,12 @@
 {
-  "status": "PREPARATION_ONLY_NO_PHYSICS_AUTHORIZED",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v858_nav2_verified/component_start.py",
-  "decision_freeze": "experiments/v855_renewal_progress/CANDIDATE_FREEZE.json",
-  "source_revision": "V848_GOAL_REFERENCE_AND_FIRST_CERTIFIED_NOMINAL",
-  "protocol": "experiments/v855_renewal_progress/PROTOCOL.md",
-  "report": "docs/RPCCR_RENEWAL_PROGRESS_V855_20261107_REPORT.md",
+  "active_entrypoint": null,
+  "decision_freeze": "experiments/v863_rpp_preparation/SOURCE_FREEZE.json",
+  "source_revision": "V863_OFFICIAL_RPP_SINGLE_STATIC_DEVELOPMENT",
+  "protocol": "experiments/v863_rpp_preparation/PROTOCOL.md",
+  "report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -33,7 +33,7 @@
     "V672 brake-first backup did not change the original843public controls; actual fallback still reverse",
     "V673 joint cover keeps position-velocity association but940steps failed after finite brake tail completed; recursive continuation not established",
     "Fixed64frame linear temporal constraints only slightly narrowed some y velocity intervals; no information-theoretic impossibility proof",
-    "Previous V674/V675 raw-command mismatch failures preserved; canonical actuator mapping verified V676–V678. Privileged scene witness is not causal unknown dynamic success."
+    "Previous V674/V675 raw-command mismatch failures preserved; canonical actuator mapping verified V676\u2013V678. Privileged scene witness is not causal unknown dynamic success."
   ],
   "previous_candidate": {
     "decision_freeze": "experiments/v648_static_unknown/DECISION_FREEZE.json",
@@ -43,7 +43,7 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "GOAL_ACCEPTANCE_PUSH_TIMED_OUT_REMOTE_OLD_HEAD_CONFIRMED",
   "raw_run_cleanup_executed": false,
-  "active_run": "runs/v858_nav2_verified",
+  "active_run": null,
   "previous_development_window_closed": true,
   "active_window": null,
   "previous_confirmation_trials": 24,
@@ -1494,7 +1494,7 @@
   "research_algorithm": "RP-CCR",
   "research_contract": "docs/RPCCR_RESEARCH_CONTRACT.md",
   "research_objective": "Develop and validate RP-CCR risk/progress constrained continuous corridor recovery for a RAS methods paper.",
-  "implementation_scope": "Current V648–V696 geometry/dynamics/uncertainty/backup/BC work is implementation and component evidence; no independent full RP-CCR superiority claim.",
+  "implementation_scope": "Current V648\u2013V696 geometry/dynamics/uncertainty/backup/BC work is implementation and component evidence; no independent full RP-CCR superiority claim.",
   "historical_configuration_not_active": [
     "--seed",
     "95000011",
@@ -2254,7 +2254,7 @@
   "v701_final_remote_verified_at": "2026-11-02T18:06:01.032424+08:00",
   "v702_v703_remote_verified": false,
   "v704_authorization": {
-    "user_instruction": "下一步？",
+    "user_instruction": "\u4e0b\u4e00\u6b65\uff1f",
     "date": "2026-11-02",
     "scope": "Implement proposed initialization repair, four original zero-integration preflights and two exact old anchors only",
     "protocol": "experiments/v704_bootstrap_repair/PROTOCOL.md",
@@ -2594,7 +2594,7 @@
     "elapsed_s": 11.016564912017202
   },
   "v705_authorization": {
-    "user_instruction": "好，先回答我现在这个动态的成功多少了？然后继续推进实验",
+    "user_instruction": "\u597d\uff0c\u5148\u56de\u7b54\u6211\u73b0\u5728\u8fd9\u4e2a\u52a8\u6001\u7684\u6210\u529f\u591a\u5c11\u4e86\uff1f\u7136\u540e\u7ee7\u7eed\u63a8\u8fdb\u5b9e\u9a8c",
     "date": "2026-11-02",
     "scope": "After V704 validated closure continue the original four prespecified V702 tasks, paired FULL/SHADOW, plus original two fixed repeats",
     "protocol": "experiments/v705_rpccr_prospective_pairs/PROTOCOL.md",
@@ -3025,7 +3025,7 @@
     "private_integrations": 0,
     "replay_integrations": 0,
     "account_scope": "Two completed zero-integration field initializations/preflights both stopped before actor construction; no navigation/predictor/replay or training reached. All actual integration counts exact0.",
-    "reserved_confirmation_pool": "10020001–10020024",
+    "reserved_confirmation_pool": "10020001\u201310020024",
     "confirmation_pool_used": false,
     "training_updates": 0,
     "stage_access": 0,
@@ -4815,7 +4815,7 @@
   "user_green_corridor_review": {
     "report": "docs/RPCCR_GREEN_CORRIDOR_REVIEW_V784.md",
     "result": "runs/v784_green_corridor_review/RESULT.json",
-    "user_intent": "持续向前通过中央开口并到达右侧目标；修复执行中的前进/倒车振荡",
+    "user_intent": "\u6301\u7eed\u5411\u524d\u901a\u8fc7\u4e2d\u592e\u5f00\u53e3\u5e76\u5230\u8fbe\u53f3\u4fa7\u76ee\u6807\uff1b\u4fee\u590d\u6267\u884c\u4e2d\u7684\u524d\u8fdb/\u5012\u8f66\u632f\u8361",
     "all_saved_global_plans_forward": true,
     "control_backup_trigger_steps": [
       98,
@@ -5216,7 +5216,7 @@
     "no_retry": true,
     "raw_retained": true
   },
-  "current_experiment": "v862_ready_static",
+  "current_experiment": "v863_rpp_static_closed",
   "exact_acceleration_authorization": "RPCCR_EXACT_ACCELERATION_AUTHORIZATION_20261104.json",
   "exact_acceleration_ledger": "RPCCR_EXACT_ACCELERATION_LEDGER_20261104.json",
   "exact_acceleration_active": "runs/v802_exact_rejection_global",
@@ -5953,7 +5953,7 @@
     "interface_status": "NOT_CONNECTED_USER_CONFIRMED_20261107",
     "sequence": "SIMULATION_MODEL_CONTROL_STATIC_DYNAMIC_COMPARISON_CONFIRMATION_FIRST_THEN_HARDWARE",
     "hardware_work_started": false,
-    "user_order": "现在先在仿真里面进行，一切都跑通之后才开始实体机"
+    "user_order": "\u73b0\u5728\u5148\u5728\u4eff\u771f\u91cc\u9762\u8fdb\u884c\uff0c\u4e00\u5207\u90fd\u8dd1\u901a\u4e4b\u540e\u624d\u5f00\u59cb\u5b9e\u4f53\u673a"
   },
   "v858_nav2_verified": {
     "status": "CLOSED_NOT_PASSED_STATIC01",
@@ -5993,17 +5993,13 @@
     "stop_reason": "bt_navigator/get_state async_send_request failed, bringup aborted, 35s readiness timeout"
   },
   "latest_nav2_simulation": {
-    "status": "NOT_PASSED",
-    "rounds": [
-      "V858",
-      "V859",
-      "V860"
-    ],
-    "models_stopped": true,
-    "original_guard_restored": true,
-    "report": "docs/NAV2_PREDICTION_V860_REPORT.md",
+    "status": "ONE_STATIC_RPP_ROUTE_PASSED_NOT_DYNAMIC",
+    "report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
+    "static_routes_passed": 1,
     "new_dynamic_navigation": 0,
-    "new24": 0
+    "new24": 0,
+    "models_stopped": true,
+    "original_guard_restored": true
   },
   "v861_startup_gate": {
     "status": "QUALIFICATION_PASSED_NOT_DYNAMIC_ACCEPTANCE",
@@ -6020,10 +6016,13 @@
     "report": "docs/NAV2_STARTUP_CURVE_V861_REPORT.md"
   },
   "v862_ready_static": {
-    "status": "SOURCE_AND_ZERO_MODEL_QUALIFIED",
-    "user_instruction": "先只完成源码与零模型资格，暂不启动物理实验",
+    "status": "CLOSED_STATIC_FUNCTIONAL_FAILED",
+    "user_instruction": "\u5148\u53ea\u5b8c\u6210\u6e90\u7801\u4e0e\u96f6\u6a21\u578b\u8d44\u683c\uff0c\u6682\u4e0d\u542f\u52a8\u7269\u7406\u5b9e\u9a8c",
     "models_authorized": false,
-    "model_window": null,
+    "model_window": {
+      "started_unix": 1794056638.6753576,
+      "deadline_unix": 1794062038.6753576
+    },
     "zero_model_tests": 22,
     "source_files_verified": 315,
     "vehicle_models": 0,
@@ -6037,6 +6036,29 @@
     "next_physical_scope": "ONE_STATIC_WEST_EAST_PENDING_SEPARATE_AUTHORIZATION",
     "additional_zero_model_backend_cases": 10,
     "additional_backend_qualification_passed": true,
-    "physical_execution_still_not_authorized": true
+    "physical_execution_still_not_authorized": false,
+    "source_unchanged": true,
+    "closed": true,
+    "actual_native": 18202,
+    "replay_native": 18202,
+    "goal_distance_m": 5.7726542595313095,
+    "zero_model_preparation_fields_scope": "vehicle_models/native_integrations/ros_servers/navigation_actions refer to original preparation only; actual execution counts are separately stated",
+    "execution_report": "docs/NAV2_READY_STATIC_V862_EXECUTION_REPORT.md"
+  },
+  "v863_rpp_static": {
+    "status": "CLOSED_ONE_STATIC_ROUTE_PASSED",
+    "models_authorized": false,
+    "user_explicitly_approved_one_candidate": true,
+    "started_unix": 1794057502.2807012,
+    "deadline_unix": 1794062038.6753576,
+    "original_v862_failure_preserved": true,
+    "new24": 0,
+    "dynamic": 0,
+    "closed": true,
+    "actual_native": 4569,
+    "replay_native": 4569,
+    "goal_distance_m": 0.24104810813883107,
+    "report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
+    "no_automatic_dynamic": true
   }
 }

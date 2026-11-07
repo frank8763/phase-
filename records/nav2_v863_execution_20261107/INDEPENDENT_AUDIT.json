@@ -1,0 +1,49 @@
+{
+  "evidence_passed": true,
+  "functional_passed": true,
+  "passed": true,
+  "checks": {
+    "native_count": true,
+    "full_native_timing": true,
+    "finite_arrays": true,
+    "all_native_clearance": true,
+    "all_native_self": true,
+    "contact_coverage": true,
+    "no_bad_contacts": true,
+    "ctrl_amplitude": true,
+    "ctrl_slew": true,
+    "model_sha": true,
+    "full_control_state_replay": true,
+    "no_root_rewrite_record": true,
+    "closed_native": true,
+    "wall_pacing": true,
+    "genuine_ros_observations": true,
+    "model_semantics": true
+  },
+  "functional_checks": {
+    "action_success": true,
+    "strict_arrival": true,
+    "actual_stopped": true,
+    "dynamic_discovery_and_continuation": true
+  },
+  "native_count": 4569,
+  "replay_native": 4569,
+  "private_native": 0,
+  "goal_distance_m": 0.24104810813883107,
+  "final_translation_speed_m_s": 5.29359877307932e-06,
+  "minimum_clearance_m": 0.27205022000186274,
+  "minimum_self_margin_m": 0.009004309870445593,
+  "bad_contacts": 0,
+  "discovery": null,
+  "independently_recomputed_postdiscovery_travel_m": 0.0,
+  "maximum_state_error": 0.0,
+  "startup_checks": {
+    "one_arm_exactly_at_zero": true,
+    "all_nodes_active": true,
+    "fresh_proof": true,
+    "navigation_action_after_arm": true,
+    "command_stream_present": true,
+    "original_physical_evidence": true
+  },
+  "scope": "One static WE Nav2 nominal baseline only; not dynamic confirmation or RP-CCR acceptance"
+}
