@@ -1,0 +1,72 @@
+{
+  "updated_local_date": "2026-11-07",
+  "submission_ready": false,
+  "research_subject": "RP-CCR risk/progress-constrained continuous corridor recovery",
+  "infrastructure": "Genuine Nav2, not claimed as a new algorithm",
+  "claims": [
+    {
+      "id": "MODEL_VALIDITY",
+      "intended_claim": "The vehicle plant and actuator mapping are qualified before navigation comparison.",
+      "status": "NOT_ESTABLISHED",
+      "evidence": ["docs/NAV2_FOUNDATION_V856_REPORT.md", "docs/ASSEMBLY_CONTACT_V857_REPORT.md"],
+      "missing": "Full causal same-control model test, body-command qualification, physical geometry/actuator measurements.",
+      "may_appear_as_final_positive_result": false
+    },
+    {
+      "id": "GENUINE_NAV2_INTERFACE",
+      "intended_claim": "The project ran genuine Nav2 servers through a nonphysical analytic navigation task.",
+      "status": "SUPPORTED_WITH_NARROW_SCOPE",
+      "evidence": ["records/nav2_v856_20261107/SOFTWARE_RESULT.json", "records/nav2_v856_20261107/SOFTWARE_METRICS.json"],
+      "missing": "Qualified native vehicle field navigation; this is not a physical or dynamic acceptance result.",
+      "may_appear_as_final_positive_result": true
+    },
+    {
+      "id": "RECOVERY_NET_BENEFIT",
+      "intended_claim": "RP-CCR reduces safe deadlocks without increasing physical contact under equal budget.",
+      "status": "HYPOTHESIS_ONLY",
+      "evidence": ["docs/RPCCR_RESEARCH_CONTRACT.md", "docs/RPCCR_FAILURE_CAUSE_AND_PAPER_GAPS_20261106.md"],
+      "missing": "Final-model paired baselines and single-mechanism ablations on held-out tasks.",
+      "may_appear_as_final_positive_result": false
+    },
+    {
+      "id": "FINAL_DYNAMIC_ACCEPTANCE",
+      "intended_claim": "A frozen final method passes a complete independent dynamic benchmark.",
+      "status": "NOT_ESTABLISHED",
+      "evidence": ["docs/RPCCR_GOAL_CONFIRMATION_V828_REPORT.md"],
+      "missing": "New preregistered confirmation after model and algorithm qualification; V828 remains failed/incomplete.",
+      "may_appear_as_final_positive_result": false
+    },
+    {
+      "id": "FINITE_SAFETY",
+      "intended_claim": "Finite separation follows under explicit occupancy and execution-error coverage assumptions.",
+      "status": "CONDITIONAL_DRAFT_NOT_FULL_SYSTEM_PROOF",
+      "evidence": ["docs/paper_ras/MANUSCRIPT_WORKING.md"],
+      "missing": "Final implementation correspondence, error bounds and inter-sample coverage. No invariant terminal set or liveness proof.",
+      "may_appear_as_final_positive_result": false
+    },
+    {
+      "id": "REALTIME",
+      "intended_claim": "The complete deployed controller meets its declared wall-clock deadlines.",
+      "status": "NOT_ESTABLISHED",
+      "evidence": ["records/nav2_v856_20261107/SOFTWARE_METRICS.json", "records/nav2_v856_20261107/NATIVE_QUALIFICATION_RESULT.json"],
+      "missing": "End-to-end physical navigation timing, state/sensing age, injected delays and expiry behavior; publication spacing is not computation latency.",
+      "may_appear_as_final_positive_result": false
+    },
+    {
+      "id": "REAL_ROBOT",
+      "intended_claim": "The final method transfers to the physical vehicle with measured localization and actuation uncertainty.",
+      "status": "NOT_RUN",
+      "evidence": [],
+      "missing": "Separately authorized low-speed hardware qualification and controlled dynamic runs.",
+      "may_appear_as_final_positive_result": false
+    }
+  ],
+  "forbidden_shortcuts": [
+    "Count same-route exact repeats as independent maps or held-out trials.",
+    "Report a full-24 rate when not all 24 were executed.",
+    "Use corrected physics only for RP-CCR and legacy faulty physics for baselines.",
+    "Attribute model repairs or extra compute to algorithm novelty.",
+    "Describe a finite stopping suffix as indefinite or recursively invariant safety.",
+    "Treat frozen SAC or GPU use as proven contributions without isolated comparisons."
+  ]
+}

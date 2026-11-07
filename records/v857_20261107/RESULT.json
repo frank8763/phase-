@@ -1,0 +1,21 @@
+{
+  "passed": false,
+  "error": "AssertionError('REPLAY_CONTACT_MISMATCH')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_assembly_contact/component.py\", line 80, in main\n    oldarr,oldcc,s=branch(actual,initial,SelfGeometry(actual,mj),oldcatalog,known,'old_replay',source['ctrl'],source,original_contacts);branches.append(s);dump(OUT/'RESULT_PARTIAL.json',dict(branches=branches,counts=COUNTS))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v857_assembly_contact/component.py\", line 55, in branch\n    if reference_contacts is not None:assert contact_equal(contact,reference_contacts[k]),'REPLAY_CONTACT_MISMATCH'\nAssertionError: REPLAY_CONTACT_MISMATCH\n",
+  "status": "STOPPED_MODEL_SAFETY_OR_EVIDENCE_ANOMALY",
+  "counts": {
+    "model_loads": 1,
+    "model_compiles": 1,
+    "old_replay_native": 1,
+    "same_control_actual_native": 0,
+    "same_control_replay_native": 0,
+    "closed_loop_actual_native": 0,
+    "closed_loop_replay_native": 0,
+    "private_native": 0
+  },
+  "branches": [],
+  "closed": true,
+  "old_failures_preserved": true,
+  "new_navigation": 0,
+  "new24": 0
+}

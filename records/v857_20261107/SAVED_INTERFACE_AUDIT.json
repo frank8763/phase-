@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "scope": "ZERO_MODEL_SAVED_DATA_AND_SERIALIZATION_SEAM_ONLY",
+  "checks": {
+    "original_comparator_rejects_equal_list_tuple": true,
+    "stored_values_match_semantically": true,
+    "json_roundtrip_matches": true,
+    "geom_tamper_rejected": true,
+    "type_tamper_rejected": true,
+    "distance_tamper_rejected": true,
+    "nonfinite_rejected": true,
+    "missing_contact_rejected": true,
+    "extra_contact_rejected": true,
+    "one_recorded_native_state_exact": true,
+    "only_one_old_replay_native": true,
+    "round_closed": true,
+    "guard_original_bytes_restored": true,
+    "lock_idle": true,
+    "frozen_inputs_unchanged": true
+  },
+  "first_native_state_error": {
+    "qpos": 0.0,
+    "qvel": 0.0,
+    "ctrl": 0.0,
+    "mocap_pos": 0.0,
+    "mocap_quat": 0.0
+  },
+  "original_frozen_batch_passed": false,
+  "first_failure_preserved": true,
+  "full_1100_replay_unexecuted": true,
+  "new_model_variant_executed_native": 0,
+  "new_model_initializations": 0,
+  "new_integrations": 0,
+  "scientific_hypothesis_outcome": "NOT_YET_TESTED",
+  "cause": "Original comparator compared tuple[:3] with JSON list[:3] directly; representation inequality, not different physical contact."
+}
