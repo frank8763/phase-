@@ -1,0 +1,42 @@
+{
+  "evidence_passed": true,
+  "functional_passed": true,
+  "passed": true,
+  "checks": {
+    "full_count": true,
+    "every_native_time": true,
+    "all_arrays_finite": true,
+    "same_fixed_commands": true,
+    "actual_clearance": true,
+    "actual_self": true,
+    "contact_coverage": true,
+    "no_bad_contacts": true,
+    "actuator_amplitude": true,
+    "actuator_slew": true,
+    "other_actuators_unchanged": true,
+    "replay_exact": true,
+    "model_sha": true,
+    "no_root_mutation": true,
+    "online_reference_rebuilt": true
+  },
+  "functional_checks": {
+    "maximum_position": true,
+    "rms_position": true,
+    "maximum_heading": true,
+    "along_axis_progress": true,
+    "actual_stop": true
+  },
+  "maximum_position_error_m": 0.09385683034542015,
+  "rms_position_error_m": 0.06967314986586358,
+  "maximum_heading_error_rad": 0.06996349442602101,
+  "along_axis_progress_m": 1.7213097381743885,
+  "final_translation_speed_m_s": 6.050849810350424e-06,
+  "minimum_clearance_m": 0.2849907499343378,
+  "minimum_self_margin_m": 0.008966854592717177,
+  "actual_native": 1600,
+  "replay_native": 1600,
+  "private_native": 0,
+  "model_initializations_in_audit": 0,
+  "native_integrations_in_audit": 0,
+  "not_nav2_navigation_or_dynamic_acceptance": true
+}

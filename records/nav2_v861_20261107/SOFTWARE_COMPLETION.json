@@ -1,0 +1,547 @@
+{
+  "closed": true,
+  "rows": [
+    {
+      "mode": "automatic",
+      "slot": "01",
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "physical_vehicle_models": 0,
+        "native_integrations": 0,
+        "navigation_actions": 0,
+        "synthetic_stationary_messages_only": true,
+        "mode": "automatic",
+        "slot": "01",
+        "all_managed_nodes": {
+          "map_server": {
+            "state": 3,
+            "response_s": 0.0018676120089367032
+          },
+          "planner_server": {
+            "state": 3,
+            "response_s": 0.00019827799405902624
+          },
+          "controller_server": {
+            "state": 3,
+            "response_s": 0.00018046802142634988
+          },
+          "behavior_server": {
+            "state": 3,
+            "response_s": 0.0001864050282165408
+          },
+          "velocity_smoother": {
+            "state": 3,
+            "response_s": 0.00017690600361675024
+          },
+          "collision_monitor": {
+            "state": 3,
+            "response_s": 0.00028020195895805955
+          },
+          "bt_navigator": {
+            "state": 3,
+            "response_s": 0.0004048669943585992
+          }
+        },
+        "readiness_probes": [],
+        "wall_s": 4.275388381967787,
+        "inactive_node_negative_gate_rejected": true
+      }
+    },
+    {
+      "mode": "automatic",
+      "slot": "02",
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "physical_vehicle_models": 0,
+        "native_integrations": 0,
+        "navigation_actions": 0,
+        "synthetic_stationary_messages_only": true,
+        "mode": "automatic",
+        "slot": "02",
+        "all_managed_nodes": {
+          "map_server": {
+            "state": 3,
+            "response_s": 0.0005164729664102197
+          },
+          "planner_server": {
+            "state": 3,
+            "response_s": 0.0012051030062139034
+          },
+          "controller_server": {
+            "state": 3,
+            "response_s": 0.0003918060101568699
+          },
+          "behavior_server": {
+            "state": 3,
+            "response_s": 0.000222023983951658
+          },
+          "velocity_smoother": {
+            "state": 3,
+            "response_s": 0.00018996698781847954
+          },
+          "collision_monitor": {
+            "state": 3,
+            "response_s": 0.00024458300322294235
+          },
+          "bt_navigator": {
+            "state": 3,
+            "response_s": 0.00019115401664748788
+          }
+        },
+        "readiness_probes": [],
+        "wall_s": 4.123761534981895,
+        "inactive_node_negative_gate_rejected": true
+      }
+    },
+    {
+      "mode": "automatic",
+      "slot": "03",
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "physical_vehicle_models": 0,
+        "native_integrations": 0,
+        "navigation_actions": 0,
+        "synthetic_stationary_messages_only": true,
+        "mode": "automatic",
+        "slot": "03",
+        "all_managed_nodes": {
+          "map_server": {
+            "state": 3,
+            "response_s": 0.00035381398629397154
+          },
+          "planner_server": {
+            "state": 3,
+            "response_s": 0.00026714103296399117
+          },
+          "controller_server": {
+            "state": 3,
+            "response_s": 0.0003146320232190192
+          },
+          "behavior_server": {
+            "state": 3,
+            "response_s": 0.0002540809800848365
+          },
+          "velocity_smoother": {
+            "state": 3,
+            "response_s": 0.00021015101810917258
+          },
+          "collision_monitor": {
+            "state": 3,
+            "response_s": 0.0002825749688781798
+          },
+          "bt_navigator": {
+            "state": 3,
+            "response_s": 0.00019709102343767881
+          }
+        },
+        "readiness_probes": [],
+        "wall_s": 4.175545330042951,
+        "inactive_node_negative_gate_rejected": true
+      }
+    },
+    {
+      "mode": "gated",
+      "slot": "01",
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "physical_vehicle_models": 0,
+        "native_integrations": 0,
+        "navigation_actions": 0,
+        "synthetic_stationary_messages_only": true,
+        "mode": "gated",
+        "slot": "01",
+        "all_managed_nodes": {
+          "map_server": {
+            "state": 3,
+            "response_s": 0.0002576429978944361
+          },
+          "planner_server": {
+            "state": 3,
+            "response_s": 0.0002243989729322493
+          },
+          "controller_server": {
+            "state": 3,
+            "response_s": 0.00020421500084921718
+          },
+          "behavior_server": {
+            "state": 3,
+            "response_s": 0.0002778259804472327
+          },
+          "velocity_smoother": {
+            "state": 3,
+            "response_s": 0.00029682304011657834
+          },
+          "collision_monitor": {
+            "state": 3,
+            "response_s": 0.0003098829765804112
+          },
+          "bt_navigator": {
+            "state": 3,
+            "response_s": 0.000200651993509382
+          }
+        },
+        "readiness_probes": [
+          {
+            "name": "map_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.14377290097763762
+          },
+          {
+            "name": "planner_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.00038824399234727025
+          },
+          {
+            "name": "controller_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0002968229819089174
+          },
+          {
+            "name": "behavior_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0003526270156726241
+          },
+          {
+            "name": "velocity_smoother",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.00029444898245856166
+          },
+          {
+            "name": "collision_monitor",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0002873250050470233
+          },
+          {
+            "name": "bt_navigator",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.00046660599764436483
+          },
+          {
+            "name": "map_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0001887800171971321
+          },
+          {
+            "name": "planner_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0004357369616627693
+          },
+          {
+            "name": "controller_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0007871760171838105
+          },
+          {
+            "name": "behavior_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0003039470175281167
+          },
+          {
+            "name": "velocity_smoother",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00019234203500673175
+          },
+          {
+            "name": "collision_monitor",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00016859598690643907
+          },
+          {
+            "name": "bt_navigator",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0002659530146047473
+          }
+        ],
+        "wall_s": 4.319781275989953,
+        "inactive_node_negative_gate_rejected": true
+      }
+    },
+    {
+      "mode": "gated",
+      "slot": "02",
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "physical_vehicle_models": 0,
+        "native_integrations": 0,
+        "navigation_actions": 0,
+        "synthetic_stationary_messages_only": true,
+        "mode": "gated",
+        "slot": "02",
+        "all_managed_nodes": {
+          "map_server": {
+            "state": 3,
+            "response_s": 0.0003348159953020513
+          },
+          "planner_server": {
+            "state": 3,
+            "response_s": 0.00019471603445708752
+          },
+          "controller_server": {
+            "state": 3,
+            "response_s": 0.0001864049700088799
+          },
+          "behavior_server": {
+            "state": 3,
+            "response_s": 0.00017215701518580317
+          },
+          "velocity_smoother": {
+            "state": 3,
+            "response_s": 0.0003253180184401572
+          },
+          "collision_monitor": {
+            "state": 3,
+            "response_s": 0.00031107099493965507
+          },
+          "bt_navigator": {
+            "state": 3,
+            "response_s": 0.0002137129777111113
+          }
+        },
+        "readiness_probes": [
+          {
+            "name": "map_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0004036789759993553
+          },
+          {
+            "name": "planner_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.00029563601128757
+          },
+          {
+            "name": "controller_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.00034906400833278894
+          },
+          {
+            "name": "behavior_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.12198250804794952
+          },
+          {
+            "name": "velocity_smoother",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0003621240030042827
+          },
+          {
+            "name": "collision_monitor",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0004986629937775433
+          },
+          {
+            "name": "bt_navigator",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0003146330127492547
+          },
+          {
+            "name": "map_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00022083602380007505
+          },
+          {
+            "name": "planner_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0002196489949710667
+          },
+          {
+            "name": "controller_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00031344499439001083
+          },
+          {
+            "name": "behavior_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00017096998635679483
+          },
+          {
+            "name": "velocity_smoother",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00022558600176125765
+          },
+          {
+            "name": "collision_monitor",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00022439903113991022
+          },
+          {
+            "name": "bt_navigator",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00019471603445708752
+          }
+        ],
+        "wall_s": 4.369400636001956,
+        "inactive_node_negative_gate_rejected": true
+      }
+    },
+    {
+      "mode": "gated",
+      "slot": "03",
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "physical_vehicle_models": 0,
+        "native_integrations": 0,
+        "navigation_actions": 0,
+        "synthetic_stationary_messages_only": true,
+        "mode": "gated",
+        "slot": "03",
+        "all_managed_nodes": {
+          "map_server": {
+            "state": 3,
+            "response_s": 0.00033837801311165094
+          },
+          "planner_server": {
+            "state": 3,
+            "response_s": 0.00028020201716572046
+          },
+          "controller_server": {
+            "state": 3,
+            "response_s": 0.00018521700985729694
+          },
+          "behavior_server": {
+            "state": 3,
+            "response_s": 0.00018284301040694118
+          },
+          "velocity_smoother": {
+            "state": 3,
+            "response_s": 0.00027426501037552953
+          },
+          "collision_monitor": {
+            "state": 3,
+            "response_s": 0.00016859598690643907
+          },
+          "bt_navigator": {
+            "state": 3,
+            "response_s": 0.00017928204033523798
+          }
+        },
+        "readiness_probes": [
+          {
+            "name": "map_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.1659372920403257
+          },
+          {
+            "name": "planner_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0003561879857443273
+          },
+          {
+            "name": "controller_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0003098829765804112
+          },
+          {
+            "name": "behavior_server",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0002873250050470233
+          },
+          {
+            "name": "velocity_smoother",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.00028257601661607623
+          },
+          {
+            "name": "collision_monitor",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0002766399993561208
+          },
+          {
+            "name": "bt_navigator",
+            "round": 0,
+            "state": 1,
+            "response_s": 0.0002730779815465212
+          },
+          {
+            "name": "map_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00027307705022394657
+          },
+          {
+            "name": "planner_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00016503396909683943
+          },
+          {
+            "name": "controller_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0001697830157354474
+          },
+          {
+            "name": "behavior_server",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0003003859892487526
+          },
+          {
+            "name": "velocity_smoother",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00018284301040694118
+          },
+          {
+            "name": "collision_monitor",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.0001650329795666039
+          },
+          {
+            "name": "bt_navigator",
+            "round": 1,
+            "state": 1,
+            "response_s": 0.00034906400833278894
+          }
+        ],
+        "wall_s": 4.330932333949022,
+        "inactive_node_negative_gate_rejected": true
+      }
+    }
+  ],
+  "gated_all_three_passed": true,
+  "automatic_passed": 3,
+  "physical_vehicle_models": 0,
+  "native_integrations": 0,
+  "closed_unix": 1794052154.025529
+}
