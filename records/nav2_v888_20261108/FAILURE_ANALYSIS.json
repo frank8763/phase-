@@ -1,0 +1,56 @@
+{
+  "status": "DYNAMIC_CLEARANCE_GATE_FAILED_NOT_TIMING",
+  "actual_native": 6888,
+  "fully_recorded_native": 6887,
+  "failed_final_native_snapshot_saved": true,
+  "full_replay_status": "INCOMPLETE_NATIVE_RECORD_NO_FULL_REPLAY_CLAIM",
+  "replay_native": null,
+  "replay_not_executed_because_final_accepted_trace_record_absent": true,
+  "last2s_scan_frames": 40,
+  "last2s_frames_with_surviving_actor_return": 40,
+  "last_surviving_actor_return": {
+    "native_tick": 6886,
+    "sim_s": 68.85999999999832,
+    "valid_actor_rays": [
+      3
+    ],
+    "corrupted_ranges_m": [
+      0.7267645597457886
+    ]
+  },
+  "last100_native_commanded_linear_minmax": 0.0,
+  "last100_native_commanded_linear_max": 0.1,
+  "last100_native_actual_speed_minmax": [
+    0.0016079217322368718,
+    0.07768332495021922
+  ],
+  "decomposition": {
+    "known_static_clearance_lower_bound_at_failure_m": 0.7217400541069825,
+    "conservative_body_bounds": [
+      -0.44,
+      -0.375,
+      0.44,
+      0.375
+    ],
+    "actual_full_body_contained_by_bound": true,
+    "total_minimum_actual_clearance_m": 0.14999687778342366,
+    "actor_xy_at_failure": [
+      2.9374332269914962,
+      -1.1500220416703026
+    ],
+    "actor_speed_m_s": 0.060782132893357196,
+    "violation_source": "DECLARED_DYNAMIC_ACTOR",
+    "models": 0,
+    "integrations": 0
+  },
+  "observed_pre_failure_collision_monitor_approach_messages": true,
+  "causal_limits": [
+    "Static clearance lower bound proves the dynamic actor is the actual clearance minimum source here",
+    "Current reactive footprint approach generated late deceleration, while the actor kept moving; this is not a proof of a unique internal Nav2 bug",
+    "Local costmap states were not archived; do not claim an exact costmap reconstruction or isolate sparse returns versus actuator lag",
+    "Stopping alone does not guarantee a stationary safe gap against a moving obstacle",
+    "Original .15m gate remains unchanged; no rounding waiver or new physical replay is authorized in this closed batch"
+  ],
+  "models": 0,
+  "integrations": 0
+}

@@ -5991,14 +5991,14 @@
     "stop_reason": "bt_navigator/get_state async_send_request failed, bringup aborted, 35s readiness timeout"
   },
   "latest_nav2_simulation": {
-    "status": "V886_DYNAMIC_STOPPED_100MS_TIMING_GATE_STATIC_THREE_ROUTE_PASSED",
+    "status": "V888_DYNAMIC_CLEARANCE_FAILURE_TIMING_GATE_PASSED",
     "report": "docs/NAV2_RUNTIME_V885_REPORT.md",
     "static_routes_passed": 3,
     "new_dynamic_navigation": 1,
     "new24": 0,
     "models_stopped": true,
     "original_guard_restored": true,
-    "latest_report": "docs/NAV2_DYNAMIC_V886_REPORT.md",
+    "latest_report": "docs/NAV2_DYNAMIC_V888_REPORT.md",
     "dynamic_passed": false,
     "static_three_route_passed": true,
     "previous_static_report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
@@ -6413,5 +6413,71 @@
     "report": "docs/NAV2_DYNAMIC_TIMING_V886_V887_PREPARATION.md",
     "storage_status": "REMOTE_SOFTWARE_SOURCE_AND_QUALIFICATION_VERIFIED",
     "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v886-20261108"
+  },
+  "v888_exact_lidar_dynamic": {
+    "status": "NOT_PASSED",
+    "closed": true,
+    "models_authorized": false,
+    "deadline_unix": 1794140470.4013782,
+    "completion": "runs/v888_exact_lidar_dynamic/COMPLETION.json",
+    "rows": [
+      {
+        "task_id": "main_we",
+        "returncode": 1,
+        "passed": false,
+        "actual_native": 6888,
+        "replay_native": null,
+        "private_native": 0,
+        "goal_m": 1.9474881146594991,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v888/main_we"
+      }
+    ],
+    "dynamic_navigation": 1,
+    "new24_executed": 0,
+    "stop_reason": "DYNAMIC_ACTOR_ACTUAL_CLEARANCE_BELOW_0_15M",
+    "actual_native": 6888,
+    "fully_recorded_successful_native": 6887,
+    "failed_final_native_snapshot_saved": true,
+    "replay_native": null,
+    "replay_status": "INCOMPLETE_NATIVE_RECORD_NO_FULL_REPLAY_CLAIM",
+    "private_native": 0,
+    "simulation_s": 68.88,
+    "maximum_wall_lag_s": 0.002702190999116283,
+    "original100ms_timing_gate_passed": true,
+    "minimum_actual_clearance_m": 0.14999687778342366,
+    "bad_contacts": 0,
+    "goal_distance_m": 1.9474881146594991,
+    "final_translation_speed_m_s": 0.0009391337479188672,
+    "first_actor_detection": {
+      "native_tick": 5201,
+      "sim_time": 52.00999999999822,
+      "xy": [
+        0.6482545155796027,
+        -0.7667086150229315
+      ],
+      "rays": [
+        0
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 1.6337225861863716,
+    "postdetection_successful_periodic_routes": 13,
+    "attempted_dynamic_navigation": 1,
+    "unexecuted_success_repeat": 1,
+    "actual_environment_initializations_completed": 2,
+    "preflight_integrations": 0,
+    "internal_factory_compile_or_load_count": "NOT_SEPARATELY_INSTRUMENTED",
+    "actual_scan_calls": 1379,
+    "actual_scan_p50_s": 0.0006886129995109513,
+    "actual_scan_p95_s": 0.0008488940002280287,
+    "actual_scan_maximum_s": 0.001193199997942429,
+    "all1381_actual_packets_and_detection_exact_original": true,
+    "last2s_surviving_actor_frames": 40,
+    "last2s_scan_frames": 40,
+    "known_static_clearance_lower_bound_at_failed_pose_m": 0.7217400541069825,
+    "models_stopped": true,
+    "report": "docs/NAV2_DYNAMIC_V888_REPORT.md",
+    "analysis_report": "docs/NAV2_DYNAMIC_GAP_V888_ANALYSIS.md",
+    "storage_status": "LOCAL_FINALIZED_REMOTE_PENDING"
   }
 }

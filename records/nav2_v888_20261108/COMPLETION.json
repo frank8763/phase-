@@ -1,0 +1,29 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "error": {
+    "error": "ProtocolError('FIRST_FUNCTIONAL_RUNTIME_OR_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v888_exact_lidar_dynamic/run_validation.py\", line 52, in main\n    require(code==0 and a.get('passed')is True,'FIRST_FUNCTIONAL_RUNTIME_OR_EVIDENCE_FAILURE')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py\", line 10, in require\n    if not condition:raise ProtocolError(message)\nhandshake.ProtocolError: FIRST_FUNCTIONAL_RUNTIME_OR_EVIDENCE_FAILURE\n"
+  },
+  "started_unix": 1794138963.886754,
+  "deadline_unix": 1794140470.4013782,
+  "closed_unix": 1794139051.4052114,
+  "rows": [
+    {
+      "task_id": "main_we",
+      "returncode": 1,
+      "passed": false,
+      "actual_native": 6888,
+      "replay_native": null,
+      "private_native": 0,
+      "goal_m": 1.9474881146594991,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v888/main_we"
+    }
+  ],
+  "attempted_navigation": 1,
+  "unexecuted_navigation": 1,
+  "dynamic_navigation": 1,
+  "new24_executed": 0,
+  "guard_restored": true,
+  "models_authorized": false
+}
