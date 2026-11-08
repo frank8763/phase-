@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "checks": {
+    "all260_original_saved_packets_exact": true,
+    "all260_new_packets_exact_original": true,
+    "first_detection_exact": true,
+    "saved_prefix_really_has_no_detection": true,
+    "software_component_scan_p95_below5ms": true,
+    "synthetic_positive_actor_attribution_exact": true,
+    "all28_fixed_boundary_frames_bitwise_exact": true
+  },
+  "models": 0,
+  "environment_initializations": 0,
+  "native_integrations": 0,
+  "navigation_attempts": 0,
+  "real_ros_servers": 0,
+  "saved_frames": 260,
+  "synthetic_positive_frames": 8,
+  "synthetic_boundary_frames": 28,
+  "original_component_timing": {
+    "wall_s": 5.154243923992908,
+    "thread_cpu_s": 5.125078738999999,
+    "p50_s": 0.019515259496984072,
+    "p95_s": 0.021160538247204385,
+    "maximum_s": 0.03541418100212468
+  },
+  "new_component_timing": {
+    "wall_s": 0.1620618600063608,
+    "thread_cpu_s": 0.16206460399999933,
+    "p50_s": 0.0006185530000948347,
+    "p95_s": 0.0006387944002199219,
+    "maximum_s": 0.0008002000031410716
+  },
+  "component_wall_speed_ratio": 31.80417603371088,
+  "component_thread_cpu_speed_ratio": 31.623677302170314,
+  "original_scan_source_sha256": "bc1d52585fef8fee8885ae0ec70ae5db9e6a128e41af84238a3b93492c853add",
+  "new_lidar_source_sha256": "993005b429b6c0cda0715aa0d383fb26c507ef0718e74f127387ea8bb31380ad",
+  "model_window_started": false,
+  "limitations": [
+    "Source-exact genuine scan method with saved body/actor inputs; no new physical rollout",
+    "5ms is a software preparation target, not a replacement for original100ms gate",
+    "No proof of repaired physical timing or dynamic arrival",
+    "New physical integration requires a separate bounded protocol; V886 not restarted"
+  ]
+}
