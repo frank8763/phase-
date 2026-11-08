@@ -1,0 +1,91 @@
+{
+  "status": "SAFE_STOP_BUT_DYNAMIC_GOAL_NOT_REACHED",
+  "last_causal_state": {
+    "time": 57.1599999999972,
+    "native_tick": 5716,
+    "information_mode": "TRACKED",
+    "certified_unknown_rays": [],
+    "position_lower": [
+      2.5403366275584585,
+      -1.5652249801717473
+    ],
+    "position_upper": [
+      3.258588297149192,
+      -0.9030707155089772
+    ],
+    "last_hit_time": 54.059999999997814,
+    "geometry_truth_used": false
+  },
+  "last_published_envelope": {
+    "at": 38912.548882573,
+    "source_scan_sim_time": 57.00999999999723,
+    "source_native_tick": 5701,
+    "source_age_s": 0.046721981998416595,
+    "forecast_sim_time": 57.05672198199564,
+    "rectangle": [
+      2.2486003689985825,
+      -1.856961238731623,
+      3.550324555709068,
+      -0.6113344569491015
+    ],
+    "horizon_s": 1.5,
+    "latency_reserve_s": 1.0,
+    "map_sha256": "7b3d515cb74f647638ac016cff76ac0f9a8e260440993bfab24e09ce17c7714f",
+    "occupied_cells": 16500,
+    "publish_wall_s": 0.001957239997864235
+  },
+  "last_router_request": {
+    "started_monotonic": 38912.262545941,
+    "passed": false,
+    "actual_vehicle_models": 0,
+    "terminal_region_choice": {
+      "displacement_m": 0.08,
+      "selected_xy": [
+        4.0,
+        -1.92
+      ],
+      "public_static_clearance_m": 0.2549998927116395,
+      "original_xy": [
+        4.0,
+        -2.0
+      ],
+      "candidate_count": 17
+    },
+    "reverse_search": true,
+    "endpoint_full_bound_clearances_m": [
+      0.4784839058434758,
+      0.1749998927116394
+    ],
+    "original_start": [
+      0.8397346553922349,
+      -0.8196438457424218,
+      -0.21558848123255042
+    ],
+    "original_goal": [
+      4.0,
+      -2.0,
+      0.0
+    ],
+    "smac_action_status": 6,
+    "smac_error_code": 205,
+    "smac_wall_s": 0.40260239700000966,
+    "wall_s": 0.4033672410005238
+  },
+  "last_reliable_unknown_return_age_s": 3.0999999999993832,
+  "actual_goal_distance_m": 3.373499715873062,
+  "actual_min_clearance_m": 0.2691485598494445,
+  "reverse_search_root_is_original_goal": true,
+  "error205_is_virtual_search_start_occupied": true,
+  "actual_vehicle_start_not_claimed_occupied": true,
+  "actor_distance_m_evaluator_only": 2.1754878744315427,
+  "actor_angular_width_degrees_evaluator_only": 5.269252608872738,
+  "original_ray_spacing_degrees": 11.25,
+  "distance_for_diameter0_20_full_angular_spacing_cover_m": 1.0202297237378328,
+  "motion_state_reconstruction_passed": true,
+  "full_actual_sensor_original_recompute": true,
+  "global_postdetection_full_snapshot_count": 0,
+  "global_exact_online_map_reconstruction_claim": false,
+  "global_snapshot_limitation": "Only initial global full-map snapshot was published/captured; subsequent updates were incremental and not subscribed. Configuration/real software dual-layer ingestion and live forecast-message SHA verified, but no exact postdetection global master replay claim.",
+  "models": 0,
+  "integrations": 0
+}

@@ -5991,18 +5991,19 @@
     "stop_reason": "bt_navigator/get_state async_send_request failed, bringup aborted, 35s readiness timeout"
   },
   "latest_nav2_simulation": {
-    "status": "V888_DYNAMIC_CLEARANCE_FAILURE_TIMING_GATE_PASSED",
+    "status": "NOT_PASSED",
     "report": "docs/NAV2_RUNTIME_V885_REPORT.md",
     "static_routes_passed": 3,
     "new_dynamic_navigation": 1,
     "new24": 0,
     "models_stopped": true,
     "original_guard_restored": true,
-    "latest_report": "docs/NAV2_DYNAMIC_V888_REPORT.md",
+    "latest_report": "docs/NAV2_MOTION_ENVELOPE_V890_REPORT.md",
     "dynamic_passed": false,
     "static_three_route_passed": true,
     "previous_static_report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
-    "independent_confirmation_samples": 0
+    "independent_confirmation_samples": 0,
+    "dynamic_development_WE_passed": false
   },
   "v861_startup_gate": {
     "status": "QUALIFICATION_PASSED_NOT_DYNAMIC_ACCEPTANCE",
@@ -6484,5 +6485,79 @@
     "raw_temporary_removed_bytes": 57745245,
     "delivery_receipt": "records/nav2_v888_20261108/DELIVERY_RESULT.json",
     "receipts_remote_verified": true
+  },
+  "v890_motion_envelope_dynamic": {
+    "status": "NOT_PASSED",
+    "closed": true,
+    "models_authorized": false,
+    "deadline_unix": 1794146730.9082232,
+    "completion": "runs/v890_motion_envelope_dynamic/COMPLETION.json",
+    "rows": [
+      {
+        "task_id": "main_we",
+        "passed": false,
+        "actual_native": 5921,
+        "fully_recorded_native": 5921,
+        "replay_native": 5921,
+        "private_native": 0,
+        "replay_status": "COMPLETED",
+        "sim_s": 59.21,
+        "minimum_clearance_m": 0.2691485598494445,
+        "bad_contacts": 0,
+        "goal_m": 3.373499715873062,
+        "final_speed_m_s": 1.0691569208044844e-06,
+        "first_actor_detection": {
+          "native_tick": 5151,
+          "sim_time": 51.50999999999832,
+          "xy": [
+            0.6147128715008277,
+            -0.7590874132247373
+          ],
+          "rays": [
+            0
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_postdetection_path_m": 0.2370704840897481,
+        "successful_periodic_routes_after_detection": 0,
+        "maximum_physics_lag_s": 0.0023257549983100034,
+        "maximum_own_state_error": 0.0,
+        "contact_replay_mismatched_ticks": 0,
+        "motion_audit": {
+          "passed": true,
+          "original_observations_verified": 1145,
+          "tracked_states_with_offline_true_center_covered": 114,
+          "forecast_publications_rebuilt": 304,
+          "tracked_forecast_publications": 28,
+          "actual_costmap_snapshot_kinds": [
+            "global_costmap",
+            "local_costmap"
+          ],
+          "models": 0,
+          "integrations": 0,
+          "scope": "Causal dataflow/finite enclosure and actual map snapshots only; physical navigation and recursive safety separate"
+        },
+        "error": null,
+        "ros_error": null
+      }
+    ],
+    "dynamic_navigation": 1,
+    "new24_executed": 0,
+    "passed": false,
+    "total_actual_native": 5921,
+    "total_replay_native": 5921,
+    "total_private_native": 0,
+    "attempted_navigation": 1,
+    "unexecuted_navigation": 1,
+    "complete_same_version_rerun": false,
+    "independent_confirmation_denominator": 0,
+    "static_NS_EW_same_new_mechanism_unexecuted": true,
+    "models_this_summary": 0,
+    "integrations_this_summary": 0,
+    "models_stopped": true,
+    "internal_factory_model_compile_load_count": "NOT_SEPARATELY_INSTRUMENTED",
+    "source": "New independent user-approved90min, original WE/seed/phase only; old V888 failure unchanged",
+    "report": "docs/NAV2_MOTION_ENVELOPE_V890_REPORT.md",
+    "storage_status": "LOCAL_FINALIZED_REMOTE_PENDING"
   }
 }

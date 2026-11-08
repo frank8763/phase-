@@ -1,0 +1,29 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "vehicle_initializations": 0,
+  "all_before_candidate_freeze": true,
+  "incidents": [
+    {
+      "output": "runs/v889_motion_envelope_software/qualification.console",
+      "error": "NumPy bool JSON serialization",
+      "fix": "Canonical bool conversion, no change in enclosure mathematics"
+    },
+    {
+      "output": "runs/v889_motion_envelope_software/ros_layer/RESULT.json",
+      "error": "Software fixture omitted required compute_path proxy at BT activation",
+      "fix": "Instantiate the original PlannerProxy in software fixture"
+    },
+    {
+      "output": "runs/v889_motion_envelope_software/planner_ready03/RESULT.json",
+      "error": "START_OCCUPIED for hand-entered .5,-1.5 software pose",
+      "fix": "Use saved original physical scan pose at60.01s, not a new vehicle task"
+    },
+    {
+      "output": "runs/v889_motion_envelope_software/planner_ready04/RESULT.json",
+      "error": "MANAGER_ACTIVATE response timeout",
+      "fix": "Use production two unconfigured GetState probe rounds before single lifecycle activation"
+    }
+  ],
+  "passed_final_software_result": "records/nav2_v889_20261108/SAVED_FORECAST_PLAN_QUALIFICATION.json"
+}

@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "scope": "Closed source/record consistency only; navigation result separate",
+  "scientific_status": "NOT_PASSED",
+  "rows": [
+    {
+      "task_id": "main_we",
+      "audit": {
+        "evidence_passed": true,
+        "functional_passed": false,
+        "passed": false,
+        "checks": {
+          "native_count": true,
+          "full_native_timing": true,
+          "finite_arrays": true,
+          "all_native_clearance": true,
+          "all_native_self": true,
+          "contact_coverage": true,
+          "no_bad_contacts": true,
+          "ctrl_amplitude": true,
+          "ctrl_slew": true,
+          "model_sha": true,
+          "full_control_state_replay": true,
+          "no_root_rewrite_record": true,
+          "closed_native": true,
+          "wall_pacing": true,
+          "genuine_ros_observations": true,
+          "model_semantics": true
+        },
+        "functional_checks": {
+          "action_success": false,
+          "strict_arrival": false,
+          "actual_stopped": true,
+          "dynamic_discovery_and_continuation": false
+        },
+        "native_count": 5921,
+        "replay_native": 5921,
+        "private_native": 0,
+        "goal_distance_m": 3.373499715873062,
+        "final_translation_speed_m_s": 1.0691569208044844e-06,
+        "minimum_clearance_m": 0.2691485598494445,
+        "minimum_self_margin_m": 0.00925672915635456,
+        "bad_contacts": 0,
+        "discovery": {
+          "native_tick": 5151,
+          "sim_time": 51.50999999999832,
+          "xy": [
+            0.6147128715008277,
+            -0.7590874132247373
+          ],
+          "rays": [
+            0
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "independently_recomputed_postdiscovery_travel_m": 0.23707048408974815,
+        "maximum_state_error": 0.0,
+        "startup_checks": {
+          "one_arm_exactly_at_zero": true,
+          "all_nodes_active": true,
+          "fresh_proof": true,
+          "navigation_action_after_arm": true,
+          "command_stream_present": true,
+          "original_physical_evidence": true
+        },
+        "scope": "V890 single-actor dynamic Nav2 development; not new24 confirmation or RP-CCR328",
+        "timing_profile_integrity": true,
+        "original100ms_gate_passed": true,
+        "failed_prefix_record_integrity_passed": false,
+        "exact_sensor_binding_and_true_t0_equivalence": true,
+        "same_actual_dynamic_preflight_physical_setup_and_initial_state": true,
+        "original_dynamic_actor_configuration": true,
+        "independent_recorded_actor_motion": true,
+        "reference_updates_after_detection": 0,
+        "successful_routes_after_detection": 0,
+        "postdetection_update_is_periodic_not_claimed_detection_triggered": true,
+        "motion_enclosure_independent_audit": {
+          "passed": true,
+          "original_observations_verified": 1145,
+          "tracked_states_with_offline_true_center_covered": 114,
+          "forecast_publications_rebuilt": 304,
+          "tracked_forecast_publications": 28,
+          "actual_costmap_snapshot_kinds": [
+            "global_costmap",
+            "local_costmap"
+          ],
+          "models": 0,
+          "integrations": 0,
+          "scope": "Causal dataflow/finite enclosure and actual map snapshots only; physical navigation and recursive safety separate"
+        }
+      }
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "source_sha_verified": true,
+  "guard_restored": true,
+  "lock_idle": true
+}

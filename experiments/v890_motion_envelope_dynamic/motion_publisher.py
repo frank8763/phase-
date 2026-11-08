@@ -1,0 +1,41 @@
+"""Same causal forecast map for genuine global/local Nav2 StaticLayers."""
+import array,hashlib,json,sys,threading,time
+from pathlib import Path
+import numpy as np
+R=Path(__file__).resolve().parents[2]
+sys.path[:0]=[str(R/'experiments/v889_motion_envelope_software'),str(R/'experiments/v887_exact_lidar_software')]
+from envelope import Envelope,raster,HORIZON,MAP_LATENCY_RESERVE
+from exact_lidar import get_lidar_features
+class MotionPublisher:
+    def __init__(self,node,out):
+        from nav_msgs.msg import OccupancyGrid
+        from rclpy.qos import QoSProfile,DurabilityPolicy,ReliabilityPolicy
+        from rclpy.callback_groups import ReentrantCallbackGroup
+        self.node=node;self.out=Path(out);self.msg_type=OccupancyGrid;self.lock=threading.RLock();self.tracker=Envelope(json.loads((R/'experiments/v855_renewal_worker/KNOWN_FIELD.json').read_text()),get_lidar_features)
+        self.scan_monotonic=None;self.running=False;self.publications=[];self.observations=[];self.known_packets=0
+        qos=QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL,reliability=ReliabilityPolicy.RELIABLE)
+        self.publisher=node.create_publisher(OccupancyGrid,'phase_dynamic_envelope',qos)
+        self.timer=node.create_timer(.2,self.publish,callback_group=ReentrantCallbackGroup())
+    def observe(self,packet):
+        with self.lock:
+            self.running=packet['phase']!='WAITING'
+            self.scan_monotonic=packet['scan_measured_at']if self.running else time.monotonic()
+            scan=packet['scan']
+            if self.tracker.when is not None and scan['time']==self.tracker.when:return
+            clean={k:scan[k]for k in ['native_tick','time','xy','yaw','ranges']};self.tracker.update(clean);self.observations.append(clean);self.known_packets+=1
+    def publish(self):
+        now=time.monotonic()
+        with self.lock:
+            if self.tracker.when is None:return
+            age=max(0.,now-self.scan_monotonic)
+            if self.running and age>.25:raise RuntimeError('MOTION_ENVELOPE_SOURCE_STALE')
+            sim=self.tracker.when+(age if self.running else 0.)
+            rect=self.tracker.rectangle(sim);state=dict(self.tracker.latest)
+        begun=time.monotonic();grid=raster(rect);payload=grid.tobytes()
+        msg=self.msg_type();msg.header.stamp=self.node.get_clock().now().to_msg();msg.header.frame_id='map';msg.info.resolution=.01;msg.info.width=1000;msg.info.height=1000;msg.info.origin.position.x=-5.;msg.info.origin.position.y=-5.;msg.info.origin.orientation.w=1.;msg.data=array.array('b',payload)
+        self.publisher.publish(msg)
+        self.publications.append(dict(at=time.monotonic(),source_scan_sim_time=state['time'],source_native_tick=state['native_tick'],source_age_s=age,forecast_sim_time=sim,rectangle=rect,horizon_s=HORIZON,latency_reserve_s=MAP_LATENCY_RESERVE,map_sha256=hashlib.sha256(payload).hexdigest(),occupied_cells=int(np.count_nonzero(grid)),publish_wall_s=time.monotonic()-begun))
+    def save(self):
+        import gzip
+        with self.lock:states=list(self.tracker.rows)
+        with gzip.open(self.out/'MOTION_ENVELOPE.json.gz','wt')as f:json.dump(dict(states=states,observations=self.observations,publications=self.publications,truth_used=False,scope='Causal return enclosure and finite motion forecast only, not full dynamics or recursive safety certificate'),f)

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "actual_navigation_goals": 0,
+  "actuator_execution": 0,
+  "checks": {
+    "global_costmap_forecast_box_lethal": true,
+    "global_costmap_known_static_preserved": true,
+    "global_costmap_resolution_stays_original": true,
+    "local_costmap_forecast_box_lethal": true,
+    "local_costmap_known_static_preserved": true,
+    "local_costmap_resolution_stays_original": true,
+    "global_costmap_old_dynamic_lethal_cleared": true,
+    "global_costmap_new_dynamic_lethal_present": true,
+    "global_costmap_static_not_erased_by_free_update": true,
+    "local_costmap_old_dynamic_lethal_cleared": true,
+    "local_costmap_new_dynamic_lethal_present": true,
+    "local_costmap_static_not_erased_by_free_update": true
+  },
+  "active_states": {
+    "map_server": 3,
+    "planner_server": 3,
+    "controller_server": 3,
+    "behavior_server": 3,
+    "velocity_smoother": 3,
+    "collision_monitor": 3,
+    "bt_navigator": 3
+  },
+  "map_publications": 35,
+  "scope": "Real installed Nav2 global/local motion-map layer ingestion and replacement; zero vehicle models, no action goal or command execution"
+}
