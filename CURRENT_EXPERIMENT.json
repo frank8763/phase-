@@ -2,10 +2,10 @@
   "status": "REVIEW_PENDING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": null,
-  "decision_freeze": "experiments/v864_rpp_static_regression/SOURCE_FREEZE.json",
-  "source_revision": "V864_EXACT_V863_RPP_STATIC_REGRESSION_CLOSED",
-  "protocol": "experiments/v864_rpp_static_regression/PROTOCOL.md",
+  "active_entrypoint": "experiments/v875_euclidean_daytime/guardian.py",
+  "decision_freeze": "experiments/v867_margin_navigation/SOURCE_FREEZE.json",
+  "source_revision": "V867_V865_GLOBAL_PADDING_ONLY",
+  "protocol": "experiments/v867_margin_navigation/PROTOCOL.md",
   "report": "docs/NAV2_RPP_STATIC_V864_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
@@ -566,7 +566,7 @@
     "no_further_simulation_this_round": true,
     "scope": "one original development scene; privileged information ablation and one rejected causal design, no unknown dynamic success/generalization proof"
   },
-  "active_protocol": null,
+  "active_protocol": "experiments/v875_euclidean_daytime/PROTOCOL.md",
   "control_pipeline_diagnosis": "runs/v674_dynamic_renewable_backup/CONTROL_PIPELINE_DIAGNOSIS.json",
   "automatic_additional_simulation": false,
   "previous_dynamic_evidence_commit": "86b6aa818ae185c68b2a1f2a650220c32aac96c2",
@@ -1324,10 +1324,7 @@
   "night_handoff": "runs/dynamic_overnight_20261101/OVERNIGHT_HANDOFF.md",
   "automation_id": null,
   "automation_status": "DELETED",
-  "current_active": {
-    "status": "STOPPED_EXCEPTION",
-    "completed": true
-  },
+  "current_active": false,
   "observed_at": "2026-11-01T21:37:20.531104+08:00",
   "prepared_confirmation": {
     "name": "V696",
@@ -1506,7 +1503,7 @@
   ],
   "report_materials_rpccr_v2": "evidence/rpccr_presentation_alignment_20261102/RPCCR_PPT_Materials_20261102_v2.zip",
   "active_pid": null,
-  "absolute_deadline_unix": 1793719722.3499568,
+  "absolute_deadline_unix": 1794128400.0,
   "dynamic_independent_confirmation_trials": 24,
   "v697_development": {
     "status": "V697_DEVELOPMENT_PASSED_CLOSED",
@@ -4036,7 +4033,7 @@
     "no_automatic_retry": true
   },
   "current_protocol": "experiments/v793_complete_joint_navigation/PROTOCOL.md",
-  "current_report": "docs/GLOBAL_DYNAMIC_OVERNIGHT_20261103_REPORT.md",
+  "current_report": "docs/NAV2_MARGIN_STATIC_DYNAMIC_V867_REPORT.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
     "status": "CLOSED_OBSERVATION_INTERFACE_VERIFIED_CONTINUATION_NOT_QUALIFIED",
@@ -5216,7 +5213,7 @@
     "no_retry": true,
     "raw_retained": true
   },
-  "current_experiment": "V864_CLOSED_STATIC_FAILED_V865_CONFIG_PREPARED",
+  "current_experiment": "v875_euclidean_daytime",
   "exact_acceleration_authorization": "RPCCR_EXACT_ACCELERATION_AUTHORIZATION_20261104.json",
   "exact_acceleration_ledger": "RPCCR_EXACT_ACCELERATION_LEDGER_20261104.json",
   "exact_acceleration_active": "runs/v802_exact_rejection_global",
@@ -5807,12 +5804,13 @@
     "status": "STOPPED_THREE_ROUTE_REGRESSION_NOT_PASSED"
   },
   "latest_saved_failure_diagnosis": {
-    "status": "ANALYSIS_COMPLETE_NO_MODEL_OR_FIX",
-    "report": "docs/RPCCR_V848_CYCLE_CAUSE_20261107.md",
-    "evidence": "runs/v849_saved_cycle_diagnosis/ANALYSIS.json",
-    "new_models": 0,
-    "new_integrations": 0,
-    "algorithm_changed": false
+    "scope": "V867 physical failure plus V868-V873 zero-model software diagnosis",
+    "endpoints_global_padding_mismatch": true,
+    "inflation_only_fix_sufficient": false,
+    "search_direction_proxy_bounded_fixed_inputs": true,
+    "unsmoothed_reference_passed_but_conservative_ideal_arc_screen_failed": true,
+    "actual_additional_models": 0,
+    "next": "Unify local command arc and reference qualification; no new physical authorization"
   },
   "latest_v850_preparation": {
     "status": "FROZEN_PREPARED_FOR_ONE_90MIN_LAUNCH",
@@ -6094,5 +6092,63 @@
     "new_configuration_ros_test": false,
     "models": 0,
     "integrations": 0
+  },
+  "v866_margin_qualification": {
+    "passed": true,
+    "scope": "Source/configuration and genuine Nav2 software initial-reference qualification only",
+    "original_initial_reference_also_passes": true,
+    "causal_navigation_fix_proven": false,
+    "models": 0,
+    "integrations": 0,
+    "genuine_software_original_captures": 1,
+    "genuine_software_margin_passed": 1,
+    "margin_first_lifecycle_timeout_preserved": true,
+    "software_retry_same_source_and_config": true,
+    "original_padded_arc_min_separation_m": 0.17355447180504746,
+    "margin_padded_arc_min_separation_m": 0.1653787812254718,
+    "next": "User separately authorized new90min static then conditional dynamic physical development",
+    "at": 1794104287.603811
+  },
+  "v867_margin_navigation": {
+    "status": "STOPPED_FIRST_FAILURE_OR_DEADLINE",
+    "models_authorized": false,
+    "started_unix": 1794104288.2504144,
+    "deadline_unix": 1794109688.2504144,
+    "max_navigation": 12,
+    "old_v864_preserved": true,
+    "new24": 0,
+    "training": 0,
+    "real_robot": 0,
+    "closed": true,
+    "actual_native": 5183,
+    "replay_native": 5183,
+    "attempted_navigation": 2,
+    "unexecuted_navigation": 10,
+    "static_north_south_passed": true,
+    "static_west_east_failed": true,
+    "static_three_route_passed": false,
+    "complete_navigation_repeats": 0,
+    "dynamic_navigation": 0,
+    "private_native": 0,
+    "environment_initializations_completed": 5,
+    "explicit_xml_compiles": 5,
+    "internal_factory_compile_or_load_count": "NOT_SEPARATELY_INSTRUMENTED",
+    "stop_reason": "FIRST_WE_NO_PATH_ACTION208_NO_COMMANDS",
+    "software_diagnosis_report": "docs/NAV2_GEOMETRY_SEARCH_20261108_ANALYSIS.md",
+    "software_final_candidate_passed": false
+  },
+  "v874_daytime_20261108": {
+    "status": "NO_PREREGISTERED_CANDIDATE_PASSED",
+    "models_authorized": false,
+    "closed": true,
+    "deadline_unix": 1794128400.0,
+    "completion": "runs/v874_daytime_20261108/COMPLETION.json"
+  },
+  "v875_euclidean_daytime": {
+    "status": "NO_PREREGISTERED_CANDIDATE_PASSED",
+    "models_authorized": false,
+    "closed": true,
+    "deadline_unix": 1794128400.0,
+    "completion": "runs/v875_euclidean_daytime/COMPLETION.json"
   }
 }

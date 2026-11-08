@@ -1,0 +1,131 @@
+{
+  "passed": false,
+  "navigation_action_sent": true,
+  "active_states": {
+    "map_server": 3,
+    "planner_server": 3,
+    "controller_server": 3,
+    "behavior_server": 3,
+    "velocity_smoother": 3,
+    "collision_monitor": 3,
+    "bt_navigator": 3
+  },
+  "active_checked_at": {
+    "map_server": 1914.152588786,
+    "planner_server": 1914.15324779,
+    "controller_server": 1914.153728685,
+    "behavior_server": 1914.155153559,
+    "velocity_smoother": 1914.156050042,
+    "collision_monitor": 1914.15974759,
+    "bt_navigator": 1914.164149263
+  },
+  "arm_issued_at": 1914.164163512,
+  "goal_sent_at": 1914.193173945,
+  "action_status": 6,
+  "action_error_code": 208,
+  "reason": "NAV2_FUNCTIONAL_FAILURE",
+  "wall_s": 24.203725639999902,
+  "readiness_probes": [
+    [
+      {
+        "map_server": 1,
+        "planner_server": 1,
+        "controller_server": 1,
+        "behavior_server": 1,
+        "velocity_smoother": 1,
+        "collision_monitor": 1,
+        "bt_navigator": 1
+      },
+      {
+        "map_server": 1907.951354167,
+        "planner_server": 1907.951822,
+        "controller_server": 1907.95227796,
+        "behavior_server": 1907.952707797,
+        "velocity_smoother": 1907.953147133,
+        "collision_monitor": 1907.953586469,
+        "bt_navigator": 1907.95401868
+      }
+    ],
+    [
+      {
+        "map_server": 1,
+        "planner_server": 1,
+        "controller_server": 1,
+        "behavior_server": 1,
+        "velocity_smoother": 1,
+        "collision_monitor": 1,
+        "bt_navigator": 1
+      },
+      {
+        "map_server": 1907.954300093,
+        "planner_server": 1907.954572006,
+        "controller_server": 1907.954845107,
+        "behavior_server": 1907.955119395,
+        "velocity_smoother": 1907.955394871,
+        "collision_monitor": 1907.955719029,
+        "bt_navigator": 1907.955989755
+      }
+    ]
+  ],
+  "odometry_messages": 1006,
+  "cmd_vel_messages": 0,
+  "plan_messages": 0,
+  "maximum_observation_age_s": 0.008430504999978439,
+  "maximum_scan_age_s": 0.009679643999788823,
+  "last_observation": {
+    "kind": "observation",
+    "run_id": "v867-static_main_1",
+    "phase": "RUNNING",
+    "native_tick": 975,
+    "sim_time": 9.749999999999837,
+    "sent_at": 1923.906746136,
+    "body_measured_at": 1923.906746136,
+    "scan_measured_at": 1923.885678178,
+    "initial_snapshot": false,
+    "body": [
+      -4.0001446960181,
+      -1.9999544604269701,
+      -9.867496836620628e-08,
+      -1.0536815379511352e-05,
+      -3.399905533849805e-09
+    ],
+    "scan": {
+      "native_tick": 971,
+      "time": 9.709999999999837,
+      "ranges": [
+        2.9885032176971436,
+        3.0,
+        3.0,
+        3.0,
+        2.7398297786712646,
+        2.3011155128479004,
+        2.119194746017456,
+        2.0112383365631104,
+        1.9509592056274414,
+        2.0199286937713623,
+        2.103649854660034,
+        1.8457748889923096,
+        1.4372326135635376,
+        1.2453609704971313,
+        1.0913186073303223,
+        1.053835153579712,
+        1.0526304244995117,
+        1.0666418075561523,
+        1.1035500764846802,
+        1.2492969036102295,
+        1.4250003099441528,
+        1.8257091045379639,
+        2.6657216548919678,
+        2.974696159362793,
+        3.0,
+        3.0,
+        0.706207275390625,
+        0.8175870180130005,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    }
+  }
+}

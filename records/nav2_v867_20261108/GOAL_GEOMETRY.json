@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "original_task_goal_unmodified": true,
+  "rows": [
+    {
+      "case": "WEST_EAST",
+      "original_goal": [
+        4.0,
+        -2.0,
+        0.0
+      ],
+      "0.15": {
+        "start_padded_geometric_separation_m": 0.09500009417533872,
+        "goal_padded_geometric_separation_m": 0.024999892711639382,
+        "start_raster_cost": 0,
+        "goal_raster_cost": 254
+      },
+      "0.2": {
+        "start_padded_geometric_separation_m": 0.04500009417533879,
+        "goal_padded_geometric_separation_m": -0.02500010728836055,
+        "start_raster_cost": 0,
+        "goal_raster_cost": 254
+      }
+    },
+    {
+      "case": "NORTH_SOUTH",
+      "original_goal": [
+        -1.2777841091156006,
+        -2.9586408138275146,
+        -1.5707963267948966
+      ],
+      "0.15": {
+        "start_padded_geometric_separation_m": 0.20921434234039177,
+        "goal_padded_geometric_separation_m": 0.6727841109037399,
+        "start_raster_cost": 0,
+        "goal_raster_cost": 0
+      },
+      "0.2": {
+        "start_padded_geometric_separation_m": 0.1551332418722312,
+        "goal_padded_geometric_separation_m": 0.62278411090374,
+        "start_raster_cost": 0,
+        "goal_raster_cost": 0
+      }
+    },
+    {
+      "case": "EAST_WEST",
+      "original_goal": [
+        -4.0,
+        -2.0,
+        3.141592653589793
+      ],
+      "0.15": {
+        "start_padded_geometric_separation_m": 0.024999892711639382,
+        "goal_padded_geometric_separation_m": 0.09500009417533872,
+        "start_raster_cost": 254,
+        "goal_raster_cost": 0
+      },
+      "0.2": {
+        "start_padded_geometric_separation_m": -0.02500010728836055,
+        "goal_padded_geometric_separation_m": 0.04500009417533879,
+        "start_raster_cost": 254,
+        "goal_raster_cost": 0
+      }
+    }
+  ],
+  "terminal_region_witness": {
+    "pose": [
+      4.0,
+      -1.8,
+      0.0
+    ],
+    "original_goal_distance_m": 0.19999999999999996,
+    "padded20_geometric_separation_m": 0.1749998927116394,
+    "padded20_raster_cost": 0,
+    "scope": "Existence witness inside original.45 terminal region only; not an executable path or authorized target change"
+  },
+  "interpretation": "Global rectangular padding can make the exact WE nominal goal footprint invalid while the registered physical terminal region remains nonempty. This is stronger evidence of goal/footprint mismatch than treating an inflation optimization warning as the sole cause. No proof that planning time alone or inflation radius fixes it."
+}

@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "positive_authorization_tasks": [
+    "static_main_2",
+    "static_main_1",
+    "static_main_3",
+    "static_repeat_2",
+    "static_repeat_1",
+    "static_repeat_3",
+    "dynamic_main_2",
+    "dynamic_main_1",
+    "dynamic_main_3",
+    "dynamic_repeat_2",
+    "dynamic_repeat_1",
+    "dynamic_repeat_3"
+  ],
+  "negative_authority_cases": [
+    "false",
+    "scope",
+    "freeze",
+    "run",
+    "digest",
+    "duration",
+    "goal",
+    "seed",
+    "actor",
+    "budget",
+    "dynamic_without_static_gate"
+  ],
+  "replay_interface_cases": [
+    {
+      "dynamic": false,
+      "corrupt": false,
+      "result": {
+        "replay_native": 3,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "real_model_integrations": 0
+    },
+    {
+      "dynamic": true,
+      "corrupt": false,
+      "result": {
+        "replay_native": 3,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "real_model_integrations": 0
+    },
+    {
+      "dynamic": true,
+      "corrupt": true,
+      "result": {
+        "replay_native": 3,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.1,
+        "contact_mismatched_ticks": 0,
+        "passed": false
+      },
+      "real_model_integrations": 0
+    }
+  ],
+  "original_backend_loop_cases": 10,
+  "static_dependency_cannot_be_bypassed": true,
+  "model_initializations": 0,
+  "model_integrations": 0,
+  "ros_servers": 0,
+  "scope": "Interface and original loop qualification; synthetic replay cases do not prove real dynamic model replay",
+  "at": 1794104239.7256324
+}

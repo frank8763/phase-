@@ -1,0 +1,160 @@
+{
+  "status": "STOPPED_FIRST_FAILURE_OR_DEADLINE",
+  "passed": false,
+  "closed": true,
+  "error": {
+    "error": "ProtocolError('FIRST_NAVIGATION_FUNCTIONAL_OR_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v867_margin_navigation/campaign.py\", line 49, in main\n    for task in [t for t in tasks if t['dynamic']==dynamic]:launch(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v867_margin_navigation/campaign.py\", line 41, in launch\n    row.update(closed_unix=time.time(),passed=child.returncode==0 and audit.get('passed')is True,actual_native=result.get('actual_native'),replay_native=result.get('replay_native'),mujoco_private_native=result.get('private_native'),goal_distance_m=result.get('goal_distance_m'),minimum_clearance_m=result.get('minimum_actual_clearance_m'),bad_contacts=result.get('bad_contacts'),first_actor_detection=result.get('first_actor_detection'),postdiscovery_travel_m=audit.get('independently_recomputed_postdiscovery_travel_m'),model_initialization_attempted=result.get('environment_initialization_attempted'),model_initialization_completed=result.get('environment_initialization_completed'));dump(O/'RESULTS.json',rows);require(row['passed'],'FIRST_NAVIGATION_FUNCTIONAL_OR_EVIDENCE_FAILURE')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py\", line 10, in require\n    if not condition:raise ProtocolError(message)\nhandshake.ProtocolError: FIRST_NAVIGATION_FUNCTIONAL_OR_EVIDENCE_FAILURE\n"
+  },
+  "attempted_navigation": 2,
+  "unexecuted_navigation": 10,
+  "rows": [
+    {
+      "task_id": "static_main_2",
+      "run_id": "v867-static_main_2",
+      "stage": "static_main",
+      "case_id": "NORTH_SOUTH",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v867/static_main_2",
+      "attempted": true,
+      "started_unix": 1794104329.976582,
+      "returncode": 0,
+      "closed_unix": 1794104388.803874,
+      "passed": true,
+      "actual_native": 4006,
+      "replay_native": 4006,
+      "mujoco_private_native": 0,
+      "goal_distance_m": 0.3244689221667987,
+      "minimum_clearance_m": 0.35481535106160944,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "postdiscovery_travel_m": 0.0,
+      "model_initialization_attempted": true,
+      "model_initialization_completed": true
+    },
+    {
+      "task_id": "static_main_1",
+      "run_id": "v867-static_main_1",
+      "stage": "static_main",
+      "case_id": "WEST_EAST",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v867/static_main_1",
+      "attempted": true,
+      "started_unix": 1794104390.2727635,
+      "returncode": 1,
+      "closed_unix": 1794104420.2455122,
+      "passed": false,
+      "actual_native": 1177,
+      "replay_native": 1177,
+      "mujoco_private_native": 0,
+      "goal_distance_m": 8.000165981122406,
+      "minimum_clearance_m": 0.31498918194116166,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "postdiscovery_travel_m": 0.0,
+      "model_initialization_attempted": true,
+      "model_initialization_completed": true
+    }
+  ],
+  "preflights": [
+    {
+      "task_id": "static_main_2",
+      "dynamic": false,
+      "attempted": true,
+      "initialization_attempted": true,
+      "native_integrations": 0,
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          -1.600000023841858,
+          4.0,
+          -1.5707963267948963,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.4614868910698229,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794104305.2530112
+      },
+      "passed": true,
+      "initialization_completed": true
+    },
+    {
+      "task_id": "static_main_1",
+      "dynamic": false,
+      "attempted": true,
+      "initialization_attempted": true,
+      "native_integrations": 0,
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          -4.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.3149996533892525,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794104316.7058892
+      },
+      "passed": true,
+      "initialization_completed": true
+    },
+    {
+      "task_id": "static_main_3",
+      "dynamic": false,
+      "attempted": true,
+      "initialization_attempted": true,
+      "native_integrations": 0,
+      "returncode": 0,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          4.0,
+          -2.0,
+          3.141592653589793,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.24499945192555295,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794104327.7837245
+      },
+      "passed": true,
+      "initialization_completed": true
+    }
+  ],
+  "repeats": [],
+  "actual_native": 5183,
+  "replay_native": 5183,
+  "dynamic_navigation": 0,
+  "static_navigation": 2,
+  "new24": 0,
+  "training": 0,
+  "real_robot": 0,
+  "guard_restored": true,
+  "root_deadline_unix": 1794109688.2504144,
+  "closed_unix": 1794104420.246018
+}
