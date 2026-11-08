@@ -1,0 +1,146 @@
+{
+  "status": "FATAL_SAFETY_SOURCE_INTERFACE_OR_EVIDENCE_STOP",
+  "closed": true,
+  "error": {
+    "error": "FatalStop('SAFETY_STATE_SENSOR_MODEL_INTERFACE_OR_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v881_timing_accounting_continuation/campaign.py\", line 106, in main\n    for t in group:launch(t)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v881_timing_accounting_continuation/campaign.py\", line 92, in launch\n    independent_classify(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v881_timing_accounting_continuation/campaign.py\", line 36, in independent_classify\n    if not healthy:raise FatalStop('SAFETY_STATE_SENSOR_MODEL_INTERFACE_OR_EVIDENCE_FAILURE')\nFatalStop: SAFETY_STATE_SENSOR_MODEL_INTERFACE_OR_EVIDENCE_FAILURE\n"
+  },
+  "selected": null,
+  "branches": [
+    {
+      "variant": "A",
+      "status": "SOFTWARE_QUALIFYING"
+    }
+  ],
+  "software": [],
+  "attempted_navigation": 1,
+  "unexecuted_registered_navigation": 86,
+  "actual_native": 10692,
+  "replay_native": null,
+  "private_native": 0,
+  "rows": [
+    {
+      "task_id": "A_static_main_2",
+      "role": "development",
+      "variant": "A",
+      "case_id": "NORTH_SOUTH",
+      "stage": "static_main",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v881/A_static_main_2",
+      "started_unix": 1794109107.418956,
+      "actual_native": 10692,
+      "replay_native": null,
+      "private_native": 0,
+      "returncode": 1,
+      "passed": false,
+      "goal_m": 2.7179484156573848,
+      "minimum_clearance_m": 0.42184147448154985,
+      "model_initialization_completed": true,
+      "closed_unix": 1794109232.9761715
+    }
+  ],
+  "preflights": [
+    {
+      "task_id": "A_static_main_2",
+      "attempted_new_model": false,
+      "reused_true_t0": true,
+      "source": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v878/preflights/A_static_main_2",
+      "source_result_sha256": "50b2b306f8e0e920d294576c032f6be75832c317861d12ef87b8d292b7c1d773",
+      "source_scan_sha256": "e401ce7df9210628e254a18206ad9c3f0ddf69e966a2a5c5123f7746ac6d651b",
+      "model_initialization_attempted": false,
+      "model_initialization_completed": false,
+      "native_integrations": 0,
+      "passed": true,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          -1.600000023841858,
+          4.0,
+          -1.5707963267948963,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.4614868910698229,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794108073.3928437
+      }
+    },
+    {
+      "task_id": "A_static_main_1",
+      "attempted_new_model": false,
+      "reused_true_t0": true,
+      "source": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v878/preflights/A_static_main_1",
+      "source_result_sha256": "03cb2e1b190cbbbcdfa877eaea67070dc3fad6b6316014139b8dbc35b9070dd8",
+      "source_scan_sha256": "918297631201c858ea26e86be73d5f0fdcd33cb0965c5cedff803e01aa061f81",
+      "model_initialization_attempted": false,
+      "model_initialization_completed": false,
+      "native_integrations": 0,
+      "passed": true,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          -4.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.3149996533892525,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794108079.4217973
+      }
+    },
+    {
+      "task_id": "A_static_main_3",
+      "attempted_new_model": false,
+      "reused_true_t0": true,
+      "source": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v878/preflights/A_static_main_3",
+      "source_result_sha256": "6499d903fd594b7ec18127f74d7039a69b80e3e396b885f8a9e6b45e43c16725",
+      "source_scan_sha256": "e85f63f3963eabe903b184f29947a92cf8f41adb3e5164b8b38c9b826bc08a1a",
+      "model_initialization_attempted": false,
+      "model_initialization_completed": false,
+      "native_integrations": 0,
+      "passed": true,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          4.0,
+          -2.0,
+          3.141592653589793,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.24499945192555295,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794108085.363078
+      }
+    }
+  ],
+  "new24_attempted": 0,
+  "dynamic_acceptance_passed": false,
+  "training": 0,
+  "real_robot": 0,
+  "guard_restored": true,
+  "deadline_unix": 1794128400.0,
+  "closed_unix": 1794109233.554262
+}
