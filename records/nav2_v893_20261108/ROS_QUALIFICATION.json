@@ -1,0 +1,337 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "navigate_goals": 0,
+  "actuator_execution": 0,
+  "source_sha256": {
+    "dynamic_proxy.py": "cc4aa8833eaf57d647e7053561ae4dd60298bcf3789689f365a857f9e090834d",
+    "reproduce.py": "fc2810f414c76ce67ed5d6e5048ca2b47ebedfa94843ee3646bbe03cf7d1a54a",
+    "ros_qualification.py": "35f65570451c499dd05461358dbbddd0c273568c0bc552e9581ee346a53ee590",
+    "qualify_support.py": "f9ce2badc37f998632f22fd92f609e937fb1b2fa49da24293b9eecde77542824",
+    "support_envelope.py": "9a6a5272d70a9346270e55d72aa13bc46127102d79e4c5dfd89279fa61a30089",
+    "restore_inputs.py": "0cb558f5f7d20053c88f432f607852ec82cb3fb57304a1e7fa5c05d98c7d0581",
+    "terminal_region.py": "e6d419e30c9e1d70dab0051929872b1ea95db75d37f9ff611d6fb6d06c9e9f4f",
+    "restore_reference.py": "b568f0fa728d4f848739b27cefbd6291b5d8885c57f4c162ef1e95bc8bf64cd7",
+    "qualify_terminal.py": "ee65c76a6d66ef94033dd56e03decc53395bbffc00907e201a42433b28014a1d",
+    "qualify_contracts.py": "c42557d70ba20919219701488eea8dd1e18ff355fdaf6f78afcfbe32b8ce0f4b"
+  },
+  "checks": {
+    "clear_can_create_all_unknown": true,
+    "wait_without_reclear_restores_known_static": true,
+    "stable_maps_have_no_unknown": true,
+    "actual_saved_stop_state_has_full_route_after_stable_map": true
+  },
+  "cases": [
+    {
+      "label": "saved_state_60.30999999999657",
+      "master_readiness_replies": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "unknown": 0,
+          "lethal": 77753
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "unknown": 0,
+          "lethal": 77753
+        }
+      ],
+      "stable_plan_status": 4,
+      "stable_plan_error_code": 0,
+      "path_poses": 205,
+      "stable_map": {
+        "passed": true,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 0,
+        "required_static_cells": 72683,
+        "missing_static_cells": 0,
+        "all_unknown": false,
+        "models": 0,
+        "unknown": 0,
+        "lethal": 77753
+      },
+      "immediately_after_clear": {
+        "passed": false,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 1000000,
+        "required_static_cells": 72683,
+        "missing_static_cells": 72683,
+        "all_unknown": true,
+        "models": 0,
+        "unknown": 1000000,
+        "lethal": 0
+      },
+      "after_wait_no_reclear": {
+        "passed": true,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 0,
+        "required_static_cells": 72683,
+        "missing_static_cells": 0,
+        "all_unknown": false,
+        "models": 0,
+        "unknown": 0,
+        "lethal": 77753
+      }
+    },
+    {
+      "label": "saved_state_62.90999999999605",
+      "master_readiness_replies": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "unknown": 0,
+          "lethal": 78108
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "unknown": 0,
+          "lethal": 78108
+        }
+      ],
+      "stable_plan_status": 4,
+      "stable_plan_error_code": 0,
+      "path_poses": 212,
+      "stable_map": {
+        "passed": true,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 0,
+        "required_static_cells": 72683,
+        "missing_static_cells": 0,
+        "all_unknown": false,
+        "models": 0,
+        "unknown": 0,
+        "lethal": 78108
+      },
+      "immediately_after_clear": {
+        "passed": false,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 1000000,
+        "required_static_cells": 72683,
+        "missing_static_cells": 72683,
+        "all_unknown": true,
+        "models": 0,
+        "unknown": 1000000,
+        "lethal": 0
+      },
+      "after_wait_no_reclear": {
+        "passed": true,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 0,
+        "required_static_cells": 72683,
+        "missing_static_cells": 0,
+        "all_unknown": false,
+        "models": 0,
+        "unknown": 0,
+        "lethal": 78108
+      }
+    },
+    {
+      "label": "saved_state_72.00999999999993",
+      "master_readiness_replies": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "unknown": 0,
+          "lethal": 78507
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "unknown": 0,
+          "lethal": 78507
+        }
+      ],
+      "stable_plan_status": 6,
+      "stable_plan_error_code": 208,
+      "path_poses": 0,
+      "stable_map": {
+        "passed": true,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 0,
+        "required_static_cells": 72683,
+        "missing_static_cells": 0,
+        "all_unknown": false,
+        "models": 0,
+        "unknown": 0,
+        "lethal": 78507
+      },
+      "immediately_after_clear": {
+        "passed": true,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 0,
+        "required_static_cells": 72683,
+        "missing_static_cells": 0,
+        "all_unknown": false,
+        "models": 0,
+        "unknown": 0,
+        "lethal": 78507
+      },
+      "after_wait_no_reclear": {
+        "passed": true,
+        "size_x": 1000,
+        "size_y": 1000,
+        "resolution": 0.009999999776482582,
+        "origin": [
+          -5.0,
+          -5.0
+        ],
+        "frame": "map",
+        "cells": 1000000,
+        "unknown_cells": 0,
+        "required_static_cells": 72683,
+        "missing_static_cells": 0,
+        "all_unknown": false,
+        "models": 0,
+        "unknown": 0,
+        "lethal": 78507
+      }
+    }
+  ],
+  "scope": "Installed Nav2 explicit global clear versus wait on three fixed actual V892 saved scan/set states; no actual vehicle models or NavigateToPose"
+}

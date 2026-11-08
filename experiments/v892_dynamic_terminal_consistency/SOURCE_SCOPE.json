@@ -1,0 +1,10 @@
+{
+  "controller_core": "exact V884 feasible RPP and native PI/actuator limits retained",
+  "support_enclosure": "16-normal convex outer position set and Euclidean .08 speed propagation; same observations, .1 radius/.06 noise/1.5s horizon+1s engineering latency",
+  "terminal_admission": "Same dynamic forecast/full padded footprint; fixed49 candidates radius<=.24, original17 before detection; xy controller tolerance narrowed .35 to.20; actual original goal strict<=.45",
+  "recovery": "Original V890 finite BT; map virtual reverse-root205 to208 wait only; actual vehicle root205 unchanged",
+  "costmap_evidence": "always_send_full_costmap true for original two maps; snapshots every2s, no full online update replay claim",
+  "models_before_freeze": 0,
+  "integrations_before_freeze": 0,
+  "original_32ray_sensor_and_actor_and_safety_timing_unchanged": true
+}

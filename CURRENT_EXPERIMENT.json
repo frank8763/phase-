@@ -5998,7 +5998,7 @@
     "new24": 0,
     "models_stopped": true,
     "original_guard_restored": true,
-    "latest_report": "docs/NAV2_MOTION_ENVELOPE_V890_REPORT.md",
+    "latest_report": "docs/NAV2_DYNAMIC_TERMINAL_V892_REPORT.md",
     "dynamic_passed": false,
     "static_three_route_passed": true,
     "previous_static_report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
@@ -6564,5 +6564,92 @@
     "raw_temporary_removed_bytes": 70343866,
     "delivery_receipt": "records/nav2_v890_20261108/DELIVERY_RESULT.json",
     "receipts_remote_verified": true
+  },
+  "v892_dynamic_terminal_consistency": {
+    "status": "NOT_PASSED",
+    "closed": true,
+    "models_authorized": false,
+    "deadline_unix": 1794148640.83449,
+    "completion": "runs/v892_dynamic_terminal_consistency/COMPLETION.json",
+    "rows": [
+      {
+        "task_id": "main_we",
+        "passed": false,
+        "actual_native": 7720,
+        "fully_recorded_native": 7720,
+        "replay_native": 7720,
+        "private_native": 0,
+        "replay_status": "COMPLETED",
+        "sim_s": 77.2,
+        "minimum_clearance_m": 0.26903534531169215,
+        "bad_contacts": 0,
+        "goal_m": 3.5235387408672207,
+        "final_speed_m_s": 7.38305583346119e-06,
+        "first_actor_detection": {
+          "native_tick": 4516,
+          "sim_time": 45.159999999999584,
+          "xy": [
+            0.020499576055951187,
+            -0.6600020895739517
+          ],
+          "rays": [
+            31
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_postdetection_path_m": 0.9260404584975426,
+        "successful_periodic_routes_after_detection": 8,
+        "maximum_physics_lag_s": 0.0033611639955779538,
+        "maximum_own_state_error": 0.0,
+        "contact_replay_mismatched_ticks": 0,
+        "motion_audit": {
+          "passed": true,
+          "original_observations_verified": 1505,
+          "tracked_states_with_offline_true_center_covered": 601,
+          "forecast_publications_rebuilt": 395,
+          "tracked_forecast_publications": 151,
+          "causal_terminal_decisions_rebuilt": 72,
+          "actual_costmap_snapshot_kinds": [
+            "global_costmap",
+            "local_costmap"
+          ],
+          "postdetection_full_snapshots": {
+            "global_costmap": 12,
+            "local_costmap": 13
+          },
+          "models": 0,
+          "integrations": 0,
+          "scope": "Causal input/set/forecast-map/terminal reconstruction and actual complete snapshots; not full online master-map update replay or recursive safety"
+        },
+        "error": null,
+        "ros_error": null
+      }
+    ],
+    "dynamic_navigation": 1,
+    "new24_executed": 0,
+    "passed": false,
+    "total_actual_native": 7720,
+    "total_replay_native": 7720,
+    "total_private_native": 0,
+    "attempted_navigation": 1,
+    "unexecuted_navigation": 1,
+    "complete_same_version_rerun": false,
+    "independent_confirmation_denominator": 0,
+    "static_NS_EW_same_new_mechanism_unexecuted": true,
+    "models_this_summary": 0,
+    "integrations_this_summary": 0,
+    "models_stopped": true,
+    "actual_environment_initializations_completed": 2,
+    "internal_factory_model_compile_load_count": "NOT_SEPARATELY_INSTRUMENTED",
+    "source": "New independent user-approved90min, original WE/seed/phase only; all old V890/V888 failures unchanged",
+    "report": "docs/NAV2_DYNAMIC_TERMINAL_V892_REPORT.md",
+    "storage_status": "LOCAL_FINALIZED_REMOTE_PENDING"
+  },
+  "v894_wait_map_validation": {
+    "status": "SOURCE_AND_ZERO_MODEL_QUALIFIED_USER_APPROVED_NEXT_WINDOW_NOT_STARTED",
+    "models_authorized": false,
+    "models": 0,
+    "integrations": 0,
+    "protocol": "experiments/v894_wait_map_validation/PROTOCOL.md"
   }
 }

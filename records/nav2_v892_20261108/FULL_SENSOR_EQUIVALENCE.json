@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "task_id": "main_we",
+      "passed": true,
+      "sensor_frames": 1547,
+      "all_saved_ranges_raw_and_packet_fields_bitwise_exact_original": true,
+      "original_first_corrupted_actor_detection_exact": true,
+      "mismatched_frames": [],
+      "original_recomputed_first_detection": {
+        "native_tick": 4516,
+        "sim_time": 45.159999999999584,
+        "xy": [
+          0.020499576055951187,
+          -0.6600020895739517
+        ],
+        "rays": [
+          31
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "wall_s": 36.05283701099688
+    }
+  ],
+  "models": 0,
+  "environment_initializations": 0,
+  "native_integrations": 0,
+  "ros_servers": 0,
+  "original_vehicle_scan_source_sha256": "bc1d52585fef8fee8885ae0ec70ae5db9e6a128e41af84238a3b93492c853add",
+  "scope": "Original genuine scan method recomputed on every closed actual scan; not new navigation or a new confirmation denominator"
+}
