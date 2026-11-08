@@ -6743,5 +6743,38 @@
     "physical_models_authorized": false,
     "qualification": "records/nav2_v895_20261108/QUALIFICATION.json",
     "needs": "Braking/drift bounds and continuous executable exit path with timed actor occupancy, not only a stationary certificate"
+  },
+  "v897_overnight": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "models_authorized": false,
+    "deadline_unix": 1794182400.0,
+    "closed_unix": 1794148096.2103326,
+    "rows": [
+      {
+        "task_id": "main_we",
+        "passed": false,
+        "returncode": 1,
+        "actual_native": 11086,
+        "replay_native": 11086,
+        "private_native": 0,
+        "goal_m": 3.6729437242591128,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v897/main_we"
+      }
+    ],
+    "attempted_navigation": 1,
+    "unexecuted_navigation": 5,
+    "preflight_cases": [
+      "WEST_EAST",
+      "NORTH_SOUTH",
+      "EAST_WEST"
+    ],
+    "new24": 0,
+    "error": {
+      "error": "AssertionError('FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v897_refuge_navigation/night.py\", line 60, in main\n    assert rows[-1]['passed'],'FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE\n"
+    },
+    "source_freeze_sha256": "b391adab107115cfb85f1a10e9dfc6683f08db939c4c2253ddfba178573f0330",
+    "guard_restored": true
   }
 }

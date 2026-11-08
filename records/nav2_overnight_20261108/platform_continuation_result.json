@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "actual_native": 1200,
+  "replay_native": 1200,
+  "private_native": 0,
+  "fully_recorded_native": 1200,
+  "minimum_actual_clearance_m": 0.26754987039892153,
+  "minimum_self_margin_m": 0.009204525922287765,
+  "bad_contacts": 0,
+  "final_body": [
+    -4.004180082449193,
+    -2.005516367226105,
+    -0.024138137178046914,
+    -8.552910714236487e-06,
+    -4.272472499068282e-07
+  ],
+  "final_translation_speed_m_s": 8.554787068181273e-06,
+  "root_guard_native_count": 1200,
+  "goal_distance_m": 8.004181983349937,
+  "first_actor_detection": null,
+  "actual_travel_after_detection_m": 0.0,
+  "replay": {
+    "replay_native": 1200,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "checks": {
+    "actual1200_and_full_replay1200": true,
+    "forward_and_reverse_progress": true,
+    "400_brake_displacement_le04": true,
+    "400_speed_by05_le03": true,
+    "1000_brake_displacement_le04": true,
+    "1000_speed_by05_le03": true,
+    "yaw_straight_bound": true,
+    "final_stopped": true,
+    "original_safety": true
+  },
+  "scope": "Fixed platform response qualification; not a complete dynamics bound or navigation",
+  "environment_initializations_completed": 1
+}
