@@ -5998,7 +5998,7 @@
     "new24": 0,
     "models_stopped": true,
     "original_guard_restored": true,
-    "latest_report": "docs/NAV2_DYNAMIC_TERMINAL_V892_REPORT.md",
+    "latest_report": "docs/NAV2_WAIT_MAP_V894_REPORT.md",
     "dynamic_passed": false,
     "static_three_route_passed": true,
     "previous_static_report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
@@ -6643,13 +6643,101 @@
     "internal_factory_model_compile_load_count": "NOT_SEPARATELY_INSTRUMENTED",
     "source": "New independent user-approved90min, original WE/seed/phase only; all old V890/V888 failures unchanged",
     "report": "docs/NAV2_DYNAMIC_TERMINAL_V892_REPORT.md",
-    "storage_status": "LOCAL_FINALIZED_REMOTE_PENDING"
+    "storage_status": "SOURCE_RELEASE_DOWNLOAD_AND_MEMBER_RESTORE_VERIFIED_V892_FUNCTIONAL_FAILURE_AND_V891_PREPARATION_CACHES_CLEANED",
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v892-20261108",
+    "remote_source_commit": "cb68fd91667dfe169e4b5196ec467bcc5056a32f",
+    "raw_temporary_removed_bytes": 84707962
   },
   "v894_wait_map_validation": {
-    "status": "SOURCE_AND_ZERO_MODEL_QUALIFIED_USER_APPROVED_NEXT_WINDOW_NOT_STARTED",
+    "status": "NOT_PASSED",
+    "closed": true,
     "models_authorized": false,
+    "deadline_unix": 1794149936.149035,
+    "completion": "runs/v894_wait_map_validation/COMPLETION.json",
+    "rows": [
+      {
+        "task_id": "main_we",
+        "passed": false,
+        "actual_native": 12996,
+        "fully_recorded_native": 12995,
+        "replay_native": null,
+        "private_native": 0,
+        "replay_status": "INCOMPLETE_NATIVE_RECORD_NO_FULL_REPLAY_CLAIM",
+        "sim_s": 129.96,
+        "minimum_clearance_m": 0.1499586592600218,
+        "bad_contacts": 0,
+        "goal_m": 1.1649887349052996,
+        "final_speed_m_s": 5.208395278782007e-06,
+        "first_actor_detection": {
+          "native_tick": 4636,
+          "sim_time": 46.359999999999346,
+          "xy": [
+            0.09845830632541114,
+            -0.6556093112779539
+          ],
+          "rays": [
+            31
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_postdetection_path_m": 3.2106486647282333,
+        "successful_periodic_routes_after_detection": 29,
+        "maximum_physics_lag_s": 0.0036096599942538887,
+        "maximum_own_state_error": null,
+        "contact_replay_mismatched_ticks": null,
+        "motion_audit": {
+          "passed": true,
+          "original_observations_verified": 2600,
+          "tracked_states_with_offline_true_center_covered": 1672,
+          "forecast_publications_rebuilt": 673,
+          "tracked_forecast_publications": 419,
+          "causal_terminal_decisions_rebuilt": 98,
+          "actual_costmap_snapshot_kinds": [
+            "global_costmap",
+            "local_costmap"
+          ],
+          "postdetection_full_snapshots": {
+            "global_costmap": 30,
+            "local_costmap": 38
+          },
+          "models": 0,
+          "integrations": 0,
+          "scope": "Causal input/set/forecast-map/terminal reconstruction and actual complete snapshots; not full online master-map update replay or recursive safety"
+        },
+        "global_master_ready_before_arm": true,
+        "action_status": null,
+        "action_error_code": null,
+        "error": "AssertionError('NATIVE_SAFETY_ANOMALY')",
+        "ros_error": "ProtocolError('PHYSICS_STOPPED_OR_STALE')",
+        "failed_final_native_snapshot_saved": true
+      }
+    ],
+    "dynamic_navigation": 1,
+    "new24_executed": 0,
+    "passed": false,
+    "total_actual_native": 12996,
+    "total_replay_native": null,
+    "total_private_native": 0,
+    "attempted_navigation": 1,
+    "unexecuted_navigation": 1,
+    "complete_same_version_rerun": false,
+    "independent_confirmation_denominator": 0,
+    "static_NS_EW_same_new_mechanism_unexecuted": true,
+    "models_this_summary": 0,
+    "integrations_this_summary": 0,
+    "models_stopped": true,
+    "actual_environment_initializations_completed": 2,
+    "internal_factory_model_compile_load_count": "NOT_SEPARATELY_INSTRUMENTED",
+    "source": "New independent user-approved90min, original WE/seed/phase only; all old V892/V890/V888 failures unchanged",
+    "report": "docs/NAV2_WAIT_MAP_V894_REPORT.md",
+    "storage_status": "LOCAL_FINALIZED_REMOTE_PENDING"
+  },
+  "v895_wait_viability_software": {
+    "status": "FINITE_FIXED_POSE_COMPONENT_QUALIFIED_NOT_EXECUTABLE_RECOVERY_POLICY",
     "models": 0,
     "integrations": 0,
-    "protocol": "experiments/v894_wait_map_validation/PROTOCOL.md"
+    "physical_models_authorized": false,
+    "qualification": "records/nav2_v895_20261108/QUALIFICATION.json",
+    "needs": "Braking/drift bounds and continuous executable exit path with timed actor occupancy, not only a stationary certificate"
   }
 }

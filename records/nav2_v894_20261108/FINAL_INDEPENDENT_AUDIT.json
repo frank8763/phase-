@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "scope": "Closed source/record consistency only; navigation result separate",
+  "scientific_status": "NOT_PASSED",
+  "rows": [
+    {
+      "task_id": "main_we",
+      "audit": {
+        "passed": false,
+        "evidence_passed": false,
+        "functional_passed": false,
+        "actual_native": 12996,
+        "replay_native": null,
+        "counts_may_be_unknown": false,
+        "reason": "NO_COMPLETE_NATIVE_NAVIGATION_EVIDENCE",
+        "native_status": "PHYSICAL_OR_EVIDENCE_EXCEPTION",
+        "scope": "V894 single-actor dynamic Nav2 development; not new24 confirmation or RP-CCR328",
+        "actual_global_master_ready_before_arm": true,
+        "timing_profile_integrity": true,
+        "original100ms_gate_passed": true,
+        "failed_prefix_record_integrity_passed": false,
+        "exact_sensor_binding_and_true_t0_equivalence": true,
+        "same_actual_dynamic_preflight_physical_setup_and_initial_state": true,
+        "original_dynamic_actor_configuration": true,
+        "independent_recorded_actor_motion": true,
+        "reference_updates_after_detection": 29,
+        "successful_routes_after_detection": 29,
+        "postdetection_update_is_periodic_not_claimed_detection_triggered": true,
+        "motion_enclosure_independent_audit": {
+          "passed": true,
+          "original_observations_verified": 2600,
+          "tracked_states_with_offline_true_center_covered": 1672,
+          "forecast_publications_rebuilt": 673,
+          "tracked_forecast_publications": 419,
+          "causal_terminal_decisions_rebuilt": 98,
+          "actual_costmap_snapshot_kinds": [
+            "global_costmap",
+            "local_costmap"
+          ],
+          "postdetection_full_snapshots": {
+            "global_costmap": 30,
+            "local_costmap": 38
+          },
+          "models": 0,
+          "integrations": 0,
+          "scope": "Causal input/set/forecast-map/terminal reconstruction and actual complete snapshots; not full online master-map update replay or recursive safety"
+        }
+      }
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "source_sha_verified": true,
+  "guard_restored": true,
+  "lock_idle": true
+}

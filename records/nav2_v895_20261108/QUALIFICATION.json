@@ -1,0 +1,191 @@
+{
+  "passed": true,
+  "checks": {
+    "original126s_almost_stopped_wait_rejected": true,
+    "original100s_fixed_pose_finite_geometry_positive": true,
+    "longer_wait_never_revives_failed_fixed_pose": true,
+    "short_wait_clear_long_wait_rejected": true,
+    "forecast_boundary_contact_rejected": true,
+    "reject_negative_wait": true,
+    "reject_nan_age": true,
+    "reject_wrong_support": true
+  },
+  "saved_cases": [
+    {
+      "sim_time": 100.00000000001425,
+      "actual_measured_speed_m_s": 0.09375559106657504,
+      "certificate": {
+        "passed": true,
+        "reason": "FIXED_POSE_DISJOINT_FOR_FINITE_WAIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.040000000000020464,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    },
+    {
+      "sim_time": 110.00000000001937,
+      "actual_measured_speed_m_s": 1.224076240926581e-06,
+      "certificate": {
+        "passed": false,
+        "reason": "WAIT_POSE_FORECAST_INTERSECTION_REQUIRES_DIFFERENT_POSE_OR_VERIFIED_EXIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.040000000000020464,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    },
+    {
+      "sim_time": 115.00000000002193,
+      "actual_measured_speed_m_s": 1.2238883343221585e-06,
+      "certificate": {
+        "passed": false,
+        "reason": "WAIT_POSE_FORECAST_INTERSECTION_REQUIRES_DIFFERENT_POSE_OR_VERIFIED_EXIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.040000000000020464,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    },
+    {
+      "sim_time": 120.00000000002449,
+      "actual_measured_speed_m_s": 0.07040498603833219,
+      "certificate": {
+        "passed": true,
+        "reason": "FIXED_POSE_DISJOINT_FOR_FINITE_WAIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.040000000000020464,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    },
+    {
+      "sim_time": 122.00000000002551,
+      "actual_measured_speed_m_s": 0.06408094426200506,
+      "certificate": {
+        "passed": true,
+        "reason": "FIXED_POSE_DISJOINT_FOR_FINITE_WAIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.040000000000020464,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    },
+    {
+      "sim_time": 124.00000000002653,
+      "actual_measured_speed_m_s": 0.06344325901202656,
+      "certificate": {
+        "passed": true,
+        "reason": "FIXED_POSE_DISJOINT_FOR_FINITE_WAIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.040000000000020464,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    },
+    {
+      "sim_time": 126.00000000002755,
+      "actual_measured_speed_m_s": 5.648871410658414e-06,
+      "certificate": {
+        "passed": false,
+        "reason": "WAIT_POSE_FORECAST_INTERSECTION_REQUIRES_DIFFERENT_POSE_OR_VERIFIED_EXIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.040000000000020464,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    },
+    {
+      "sim_time": 128.00000000002856,
+      "actual_measured_speed_m_s": 5.209130104496441e-06,
+      "certificate": {
+        "passed": false,
+        "reason": "WAIT_POSE_FORECAST_INTERSECTION_REQUIRES_DIFFERENT_POSE_OR_VERIFIED_EXIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.04000000000000625,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    },
+    {
+      "sim_time": 129.9500000000268,
+      "actual_measured_speed_m_s": 5.208397748295718e-06,
+      "certificate": {
+        "passed": false,
+        "reason": "WAIT_POSE_FORECAST_INTERSECTION_REQUIRES_DIFFERENT_POSE_OR_VERIFIED_EXIT",
+        "duration_s": 1.5,
+        "source_age_s": 0.03999999999996362,
+        "latency_s": 1.0,
+        "assumptions": [
+          "Supplied padded body contains all actual vehicle geometry and required clearance",
+          "Pose fixed throughout wait; braking/drift/pose errors must be bounded separately",
+          "Causal center set contains actor and declared Euclidean speed<=.08m/s remains valid",
+          "Finite declared waiting/latency interval only, no indefinite safety"
+        ],
+        "actor_truth_input": false,
+        "executable_vehicle_policy": false
+      }
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "commands": 0,
+  "vehicle_policy_implemented": false,
+  "scope": "Fixed-pose finite geometric component only; executable braking/exit/observation-renewal controller remains unimplemented"
+}
