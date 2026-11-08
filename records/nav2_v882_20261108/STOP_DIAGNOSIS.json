@@ -1,0 +1,52 @@
+{
+  "status": "NOT_PASSED_CLOSED_NO_RETRY",
+  "actual_native": 17981,
+  "replay_native": 17981,
+  "maximum_state_error": 0.0,
+  "minimum_actual_clearance_m": 0.25687404324220753,
+  "bad_contacts": 0,
+  "goal_m": 2.312238299700881,
+  "original100ms_gate_passed": true,
+  "maximum_physics_lag_s": 0.026578708999295486,
+  "ros_stop_error": "ProtocolError('PHYSICS_STOPPED_OR_STALE')",
+  "all150_route_requests_passed": true,
+  "last_router_wall_s": 0.4606301400017401,
+  "cached_observation_age_at_last_router_completion_s": 0.2848485200011055,
+  "native_observation_send_calls_after_cached_and_before_router_completion": 26,
+  "nonzero_command_last_sim_s": 171.98445264100155,
+  "progress": [
+    {
+      "sim_s": 100.00000000001425,
+      "goal_m": 2.861005336463092,
+      "speed_m_s": 0.0775233795571297
+    },
+    {
+      "sim_s": 130.00000000002674,
+      "goal_m": 2.4873627036575607,
+      "speed_m_s": 0.04492077041355068
+    },
+    {
+      "sim_s": 150.00000000000855,
+      "goal_m": 2.4463586792591254,
+      "speed_m_s": 0.061054215318689875
+    },
+    {
+      "sim_s": 164.9999999999949,
+      "goal_m": 2.4457056313667667,
+      "speed_m_s": 0.020729679833043586
+    },
+    {
+      "sim_s": 169.99999999999037,
+      "goal_m": 2.305411961896959,
+      "speed_m_s": 0.028414968492039963
+    },
+    {
+      "sim_s": 174.99999999998582,
+      "goal_m": 2.3122094276432454,
+      "speed_m_s": 6.035346090282888e-06
+    }
+  ],
+  "interpretation": "Physics stayed alive and below100ms while ROS cached observation became older than250ms after a460ms router callback. Consistent with bridge callback/observation-dispatch starvation; full request includes awaited Smac and synchronous work, not a uniquely timed exclusive-cause proof. RPP collision-ahead/patience errors precede terminal watchdog stop; safe planned center reference does not establish feasible local closed-loop tracking.",
+  "models_this_analysis": 0,
+  "integrations_this_analysis": 0
+}

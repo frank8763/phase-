@@ -2,7 +2,7 @@
   "status": "REVIEW_PENDING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v875_euclidean_daytime/guardian.py",
+  "active_entrypoint": "experiments/v881_timing_accounting_continuation/guardian.py",
   "decision_freeze": "experiments/v867_margin_navigation/SOURCE_FREEZE.json",
   "source_revision": "V867_V865_GLOBAL_PADDING_ONLY",
   "protocol": "experiments/v867_margin_navigation/PROTOCOL.md",
@@ -566,7 +566,7 @@
     "no_further_simulation_this_round": true,
     "scope": "one original development scene; privileged information ablation and one rejected causal design, no unknown dynamic success/generalization proof"
   },
-  "active_protocol": "experiments/v875_euclidean_daytime/PROTOCOL.md",
+  "active_protocol": "experiments/v881_timing_accounting_continuation/PROTOCOL.md",
   "control_pipeline_diagnosis": "runs/v674_dynamic_renewable_backup/CONTROL_PIPELINE_DIAGNOSIS.json",
   "automatic_additional_simulation": false,
   "previous_dynamic_evidence_commit": "86b6aa818ae185c68b2a1f2a650220c32aac96c2",
@@ -4033,7 +4033,7 @@
     "no_automatic_retry": true
   },
   "current_protocol": "experiments/v793_complete_joint_navigation/PROTOCOL.md",
-  "current_report": "docs/NAV2_MARGIN_STATIC_DYNAMIC_V867_REPORT.md",
+  "current_report": "docs/NAV2_DAYTIME_V881_REPORT.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
     "status": "CLOSED_OBSERVATION_INTERFACE_VERIFIED_CONTINUATION_NOT_QUALIFIED",
@@ -5213,7 +5213,7 @@
     "no_retry": true,
     "raw_retained": true
   },
-  "current_experiment": "v875_euclidean_daytime",
+  "current_experiment": "v881_timing_accounting_continuation",
   "exact_acceleration_authorization": "RPCCR_EXACT_ACCELERATION_AUTHORIZATION_20261104.json",
   "exact_acceleration_ledger": "RPCCR_EXACT_ACCELERATION_LEDGER_20261104.json",
   "exact_acceleration_active": "runs/v802_exact_rejection_global",
@@ -6150,5 +6150,90 @@
     "closed": true,
     "deadline_unix": 1794128400.0,
     "completion": "runs/v875_euclidean_daytime/COMPLETION.json"
+  },
+  "v876_terminal_region_daytime": {
+    "status": "NO_PREREGISTERED_CANDIDATE_PASSED",
+    "models_authorized": false,
+    "closed": true,
+    "deadline_unix": 1794128400.0,
+    "completion": "runs/v876_terminal_region_daytime/COMPLETION.json"
+  },
+  "v877_controller_daytime": {
+    "status": "NO_PREREGISTERED_CANDIDATE_PASSED",
+    "models_authorized": false,
+    "closed": true,
+    "deadline_unix": 1794128400.0,
+    "completion": "runs/v877_controller_daytime/COMPLETION.json"
+  },
+  "v878_software_scan_continuation": {
+    "status": "ACTUAL_ROS_ENTRY_FAILED_0_NATIVE_STOPPED",
+    "models_authorized": false,
+    "closed": true,
+    "deadline_unix": 1794128400.0,
+    "completion": "runs/v878_software_scan_continuation/COMPLETION.json",
+    "campaign_pid": 51643,
+    "guardian_pid": 51641,
+    "software_gate_passed": true,
+    "true_static_t0_passed": 3,
+    "actual_native": 0,
+    "replay_native": 0
+  },
+  "current_report_pending": false,
+  "v879_ros_entry_continuation": {
+    "status": "NO_PREREGISTERED_CANDIDATE_PASSED",
+    "models_authorized": false,
+    "closed": true,
+    "deadline_unix": 1794128400.0,
+    "completion": "runs/v879_ros_entry_continuation/COMPLETION.json"
+  },
+  "v880_reference_controller_grid": {
+    "status": "NO_PREREGISTERED_CANDIDATE_PASSED",
+    "models_authorized": false,
+    "closed": true,
+    "deadline_unix": 1794128400.0,
+    "completion": "runs/v880_reference_controller_grid/COMPLETION.json"
+  },
+  "v881_timing_accounting_continuation": {
+    "status": "CLOSED_FAILED_RUNTIME_TIMING_GATE",
+    "models_authorized": false,
+    "closed": true,
+    "deadline_unix": 1794128400.0,
+    "completion": "runs/v881_timing_accounting_continuation/COMPLETION.json",
+    "actual_native": 10692,
+    "replay_native": null,
+    "dynamic_acceptance_passed": false,
+    "stop_local": "2026-11-08T11:40:33.554262+08:00",
+    "inspection": "records/nav2_v881_20261108/INSPECTION_20261108_1732.json"
+  },
+  "v882_runtime_evidence_repair": {
+    "status": "NOT_PASSED",
+    "closed": true,
+    "models_authorized": false,
+    "deadline_unix": 1794137578.9578106,
+    "completion": "runs/v882_runtime_evidence_repair/COMPLETION.json",
+    "rows": [
+      {
+        "task_id": "main_ns",
+        "returncode": 1,
+        "passed": false,
+        "actual_native": 17981,
+        "replay_native": 17981,
+        "private_native": 0,
+        "goal_m": 2.312238299700881,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v882/main_ns"
+      }
+    ],
+    "dynamic_navigation": 0,
+    "new24_executed": 0,
+    "actual_native": 17981,
+    "replay_native": 17981,
+    "maximum_own_state_error": 0.0,
+    "minimum_actual_clearance_m": 0.25687404324220753,
+    "bad_contacts": 0,
+    "goal_m": 2.312238299700881,
+    "repeat_executed": false,
+    "stop_reason": "ROS_CACHED_OBSERVATION_STALE_AFTER_LOCAL_CONTROLLER_COLLISION_BLOCK",
+    "report": "docs/NAV2_RUNTIME_V882_REPORT.md",
+    "finalized": "runs/v882_runtime_evidence_repair/FINALIZED.json"
   }
 }
