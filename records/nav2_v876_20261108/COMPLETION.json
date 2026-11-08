@@ -1,0 +1,63 @@
+{
+  "status": "NO_PREREGISTERED_CANDIDATE_PASSED",
+  "closed": true,
+  "error": null,
+  "selected": null,
+  "branches": [
+    {
+      "variant": "A",
+      "status": "SOFTWARE_GATE_FAILED"
+    }
+  ],
+  "software": [
+    {
+      "passed": false,
+      "models": 0,
+      "integrations": 0,
+      "variant": "A",
+      "rows": [
+        {
+          "name": "fine_we",
+          "passed": true,
+          "required_for_gate": true,
+          "ros_passed": true,
+          "error": null,
+          "action_error_code": null
+        },
+        {
+          "name": "fine_ns",
+          "passed": true,
+          "required_for_gate": true,
+          "ros_passed": true,
+          "error": null,
+          "action_error_code": null
+        },
+        {
+          "name": "fine_ew",
+          "passed": false,
+          "required_for_gate": true,
+          "ros_passed": true,
+          "error": null,
+          "action_error_code": null
+        }
+      ],
+      "unexecuted_probes": 1,
+      "source_freeze_sha256": "026d7ab6c727d56fa6d826e9b4ea8f454b6248f380af91617dc6fd7590934503",
+      "at": 1794107507.2384937
+    }
+  ],
+  "attempted_navigation": 0,
+  "unexecuted_registered_navigation": 51,
+  "actual_native": 0,
+  "replay_native": 0,
+  "private_native": 0,
+  "rows": [],
+  "preflights": [],
+  "new24_attempted": 0,
+  "dynamic_acceptance_passed": false,
+  "training": 0,
+  "real_robot": 0,
+  "guard_restored": true,
+  "deadline_unix": 1794128400.0,
+  "closed_unix": 1794107507.2399492
+}
