@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "scope": "Closed source/record consistency only; navigation result separate",
+  "scientific_status": "LIMITED_NS_RUNTIME_VALIDATION_PASSED",
+  "rows": [
+    {
+      "task_id": "main_ns",
+      "audit": {
+        "evidence_passed": true,
+        "functional_passed": true,
+        "passed": true,
+        "checks": {
+          "native_count": true,
+          "full_native_timing": true,
+          "finite_arrays": true,
+          "all_native_clearance": true,
+          "all_native_self": true,
+          "contact_coverage": true,
+          "no_bad_contacts": true,
+          "ctrl_amplitude": true,
+          "ctrl_slew": true,
+          "model_sha": true,
+          "full_control_state_replay": true,
+          "no_root_rewrite_record": true,
+          "closed_native": true,
+          "wall_pacing": true,
+          "genuine_ros_observations": true,
+          "model_semantics": true
+        },
+        "functional_checks": {
+          "action_success": true,
+          "strict_arrival": true,
+          "actual_stopped": true,
+          "dynamic_discovery_and_continuation": true
+        },
+        "native_count": 8515,
+        "replay_native": 8515,
+        "private_native": 0,
+        "goal_distance_m": 0.36096387535758745,
+        "final_translation_speed_m_s": 3.287559890742296e-06,
+        "minimum_clearance_m": 0.25162460359837524,
+        "minimum_self_margin_m": 0.00867986811102578,
+        "bad_contacts": 0,
+        "discovery": null,
+        "independently_recomputed_postdiscovery_travel_m": 0.0,
+        "maximum_state_error": 0.0,
+        "startup_checks": {
+          "one_arm_exactly_at_zero": true,
+          "all_nodes_active": true,
+          "fresh_proof": true,
+          "navigation_action_after_arm": true,
+          "command_stream_present": true,
+          "original_physical_evidence": true
+        },
+        "scope": "V884 same original static NS runtime qualification, not dynamic acceptance",
+        "timing_profile_integrity": true,
+        "original100ms_gate_passed": true,
+        "failed_prefix_record_integrity_passed": false
+      }
+    },
+    {
+      "task_id": "repeat_ns",
+      "audit": {
+        "evidence_passed": true,
+        "functional_passed": true,
+        "passed": true,
+        "checks": {
+          "native_count": true,
+          "full_native_timing": true,
+          "finite_arrays": true,
+          "all_native_clearance": true,
+          "all_native_self": true,
+          "contact_coverage": true,
+          "no_bad_contacts": true,
+          "ctrl_amplitude": true,
+          "ctrl_slew": true,
+          "model_sha": true,
+          "full_control_state_replay": true,
+          "no_root_rewrite_record": true,
+          "closed_native": true,
+          "wall_pacing": true,
+          "genuine_ros_observations": true,
+          "model_semantics": true
+        },
+        "functional_checks": {
+          "action_success": true,
+          "strict_arrival": true,
+          "actual_stopped": true,
+          "dynamic_discovery_and_continuation": true
+        },
+        "native_count": 8820,
+        "replay_native": 8820,
+        "private_native": 0,
+        "goal_distance_m": 0.3589811011953765,
+        "final_translation_speed_m_s": 3.3360031386197e-06,
+        "minimum_clearance_m": 0.23183278923954648,
+        "minimum_self_margin_m": 0.008634458920955046,
+        "bad_contacts": 0,
+        "discovery": null,
+        "independently_recomputed_postdiscovery_travel_m": 0.0,
+        "maximum_state_error": 0.0,
+        "startup_checks": {
+          "one_arm_exactly_at_zero": true,
+          "all_nodes_active": true,
+          "fresh_proof": true,
+          "navigation_action_after_arm": true,
+          "command_stream_present": true,
+          "original_physical_evidence": true
+        },
+        "scope": "V884 same original static NS runtime qualification, not dynamic acceptance",
+        "timing_profile_integrity": true,
+        "original100ms_gate_passed": true,
+        "failed_prefix_record_integrity_passed": false
+      }
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "source_sha_verified": true,
+  "guard_restored": true,
+  "lock_idle": true
+}

@@ -5991,14 +5991,14 @@
     "stop_reason": "bt_navigator/get_state async_send_request failed, bringup aborted, 35s readiness timeout"
   },
   "latest_nav2_simulation": {
-    "status": "ONE_WE_STATIC_PASS_NS_REGRESSION_FAILED",
+    "status": "V884_ORIGINAL_NS_MAIN_AND_COMPLETE_REPEAT_PASSED_OTHER_ROUTES_UNEXECUTED",
     "report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
     "static_routes_passed": 1,
     "new_dynamic_navigation": 0,
     "new24": 0,
     "models_stopped": true,
     "original_guard_restored": true,
-    "latest_report": "docs/NAV2_RPP_STATIC_V864_REPORT.md",
+    "latest_report": "docs/NAV2_RUNTIME_V884_REPORT.md",
     "dynamic_passed": false,
     "static_three_route_passed": false
   },
@@ -6241,16 +6241,43 @@
     "raw_v882_removed_bytes": 60851767
   },
   "v884_feasible_rpp": {
-    "status": "SOURCE_FROZEN_ZERO_MODEL_QUALIFIED_AWAITING_NEW_WINDOW",
+    "status": "LIMITED_NS_RUNTIME_VALIDATION_PASSED",
+    "closed": true,
     "models_authorized": false,
-    "new_window_started": false,
-    "source_freeze_sha256": "a94d078499f1feef29a50d8796f91969cabd5def7cf58370cb49825b640e0d78",
-    "report": "docs/NAV2_FEASIBLE_RPP_V883_V884_PREPARATION.md",
-    "protocol": "experiments/v884_feasible_rpp/PROTOCOL.md",
-    "underlying_loop_and_entry_tests": 34,
-    "cpp_fixed_seed_cases": 100000,
-    "real_saved_checkpoint_qualifications": 2,
-    "scope": "One original NS static main and success-only repeat, pending independent90min authorization",
-    "dynamic_acceptance_passed": false
+    "deadline_unix": 1794140470.4013782,
+    "completion": "runs/v884_feasible_rpp/COMPLETION.json",
+    "rows": [
+      {
+        "task_id": "main_ns",
+        "returncode": 0,
+        "passed": true,
+        "actual_native": 8515,
+        "replay_native": 8515,
+        "private_native": 0,
+        "goal_m": 0.36096387535758745,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v884/main_ns"
+      },
+      {
+        "task_id": "repeat_ns",
+        "returncode": 0,
+        "passed": true,
+        "actual_native": 8820,
+        "replay_native": 8820,
+        "private_native": 0,
+        "goal_m": 0.3589811011953765,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v884/repeat_ns"
+      }
+    ],
+    "dynamic_navigation": 0,
+    "new24_executed": 0,
+    "actual_native": 17335,
+    "replay_native": 17335,
+    "private_native": 0,
+    "main_and_complete_repeat_passed": true,
+    "initial_state_max_error": 0.0,
+    "dynamic_acceptance_passed": false,
+    "static_three_route_passed": false,
+    "report": "docs/NAV2_RUNTIME_V884_REPORT.md",
+    "storage_status": "LOCAL_FINALIZED_REMOTE_PENDING"
   }
 }
