@@ -1,0 +1,8 @@
+{
+  "status": "DELIVERY_INCOMPLETE_NO_RETRY_PRESERVE_NECESSARY_LOCAL_RECORDS",
+  "dynamic_acceptance_passed": false,
+  "models_restarted": 0,
+  "raw_deleted": false,
+  "error": "RuntimeError('GITHUB_COMMAND_FAILED release: asset under the same name already exists: [v874-offline-execution-evidence.INVENTORY.json]\\n')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v878_offline_delivery/deliver.py\", line 72, in main\n    gh(['release','upload',TAG,str(p),'--repo',REPO],150);a=next(a for a in api(f'repos/{REPO}/releases/{release[\"id\"]}/assets?per_page=100')if a['name']==p.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v878_offline_delivery/deliver.py\", line 15, in gh\n    if p.returncode:raise RuntimeError('GITHUB_COMMAND_FAILED '+args[0]+': '+p.stderr[-800:])\nRuntimeError: GITHUB_COMMAND_FAILED release: asset under the same name already exists: [v874-offline-execution-evidence.INVENTORY.json]\n\n"
+}

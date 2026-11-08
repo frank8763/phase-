@@ -1,0 +1,178 @@
+{
+  "status": "FATAL_SAFETY_SOURCE_INTERFACE_OR_EVIDENCE_STOP",
+  "closed": true,
+  "error": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v878_software_scan_continuation/campaign.py\", line 102, in main\n    for t in group:launch(t)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v878_software_scan_continuation/campaign.py\", line 88, in launch\n    independent_classify(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v878_software_scan_continuation/campaign.py\", line 31, in independent_classify\n    p=Path(task['output']);a=read(p/'INDEPENDENT_AUDIT.json');n=read(p/'RESULT.json');ros=read(p/'ROS_RESULT.json');checks=a.get('checks',{});startup=a.get('startup_checks',{})\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v878_software_scan_continuation/campaign.py\", line 9, in read\n    def read(p):return json.loads(p.read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v878/A_static_main_2/ROS_RESULT.json'\n"
+  },
+  "selected": null,
+  "branches": [
+    {
+      "variant": "A",
+      "status": "SOFTWARE_QUALIFYING"
+    }
+  ],
+  "software": [
+    {
+      "passed": true,
+      "models": 0,
+      "integrations": 0,
+      "variant": "A",
+      "rows": [
+        {
+          "name": "fine_we",
+          "passed": true,
+          "required_for_gate": true,
+          "ros_passed": true,
+          "error": null,
+          "action_error_code": null
+        },
+        {
+          "name": "fine_ns",
+          "passed": true,
+          "required_for_gate": true,
+          "ros_passed": true,
+          "error": null,
+          "action_error_code": null
+        },
+        {
+          "name": "fine_ew",
+          "passed": true,
+          "required_for_gate": true,
+          "ros_passed": true,
+          "error": null,
+          "action_error_code": null
+        },
+        {
+          "name": "fine_ns_checkpoint",
+          "passed": true,
+          "required_for_gate": false,
+          "ros_passed": true,
+          "error": null,
+          "action_error_code": null
+        }
+      ],
+      "unexecuted_probes": 0,
+      "source_freeze_sha256": "bb2654a81ecb44e0b7d35545ceea4ce930db6a49650678073bdefc4f38525977",
+      "at": 1794108068.0182567
+    }
+  ],
+  "attempted_navigation": 1,
+  "unexecuted_registered_navigation": 62,
+  "actual_native": 0,
+  "replay_native": 0,
+  "private_native": 0,
+  "rows": [
+    {
+      "task_id": "A_static_main_2",
+      "role": "development",
+      "variant": "A",
+      "case_id": "NORTH_SOUTH",
+      "stage": "static_main",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v878/A_static_main_2",
+      "started_unix": 1794108086.648686,
+      "actual_native": 0,
+      "replay_native": 0,
+      "private_native": 0,
+      "returncode": 1,
+      "passed": false,
+      "goal_m": 6.9660968319116074,
+      "minimum_clearance_m": 0.4614868910698229,
+      "model_initialization_completed": true,
+      "closed_unix": 1794108123.53968
+    }
+  ],
+  "preflights": [
+    {
+      "task_id": "A_static_main_2",
+      "attempted": true,
+      "model_initialization_attempted": true,
+      "native_integrations": 0,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          -1.600000023841858,
+          4.0,
+          -1.5707963267948963,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.4614868910698229,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794108073.3928437
+      },
+      "passed": true,
+      "model_initialization_completed": true
+    },
+    {
+      "task_id": "A_static_main_1",
+      "attempted": true,
+      "model_initialization_attempted": true,
+      "native_integrations": 0,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          -4.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.3149996533892525,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794108079.4217973
+      },
+      "passed": true,
+      "model_initialization_completed": true
+    },
+    {
+      "task_id": "A_static_main_3",
+      "attempted": true,
+      "model_initialization_attempted": true,
+      "native_integrations": 0,
+      "result": {
+        "passed": true,
+        "environment_initialization_attempted": true,
+        "native_integrations": 0,
+        "environment_initialization_completed": true,
+        "initial_body": [
+          4.0,
+          -2.0,
+          3.141592653589793,
+          0.0,
+          0.0
+        ],
+        "minimum_clearance_m": 0.24499945192555295,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "model_sha256": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+        "actor": null,
+        "closed": true,
+        "closed_unix": 1794108085.363078
+      },
+      "passed": true,
+      "model_initialization_completed": true
+    }
+  ],
+  "new24_attempted": 0,
+  "dynamic_acceptance_passed": false,
+  "training": 0,
+  "real_robot": 0,
+  "guard_restored": true,
+  "deadline_unix": 1794128400.0,
+  "closed_unix": 1794108124.097325
+}
