@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v863_rpp_preparation/SOURCE_FREEZE.json",
-  "source_revision": "V863_OFFICIAL_RPP_SINGLE_STATIC_DEVELOPMENT",
-  "protocol": "experiments/v863_rpp_preparation/PROTOCOL.md",
-  "report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
+  "decision_freeze": "experiments/v864_rpp_static_regression/SOURCE_FREEZE.json",
+  "source_revision": "V864_EXACT_V863_RPP_STATIC_REGRESSION_CLOSED",
+  "protocol": "experiments/v864_rpp_static_regression/PROTOCOL.md",
+  "report": "docs/NAV2_RPP_STATIC_V864_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -5216,7 +5216,7 @@
     "no_retry": true,
     "raw_retained": true
   },
-  "current_experiment": "v863_rpp_static_closed",
+  "current_experiment": "V864_CLOSED_STATIC_FAILED_V865_CONFIG_PREPARED",
   "exact_acceleration_authorization": "RPCCR_EXACT_ACCELERATION_AUTHORIZATION_20261104.json",
   "exact_acceleration_ledger": "RPCCR_EXACT_ACCELERATION_LEDGER_20261104.json",
   "exact_acceleration_active": "runs/v802_exact_rejection_global",
@@ -5993,13 +5993,16 @@
     "stop_reason": "bt_navigator/get_state async_send_request failed, bringup aborted, 35s readiness timeout"
   },
   "latest_nav2_simulation": {
-    "status": "ONE_STATIC_RPP_ROUTE_PASSED_NOT_DYNAMIC",
+    "status": "ONE_WE_STATIC_PASS_NS_REGRESSION_FAILED",
     "report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
     "static_routes_passed": 1,
     "new_dynamic_navigation": 0,
     "new24": 0,
     "models_stopped": true,
-    "original_guard_restored": true
+    "original_guard_restored": true,
+    "latest_report": "docs/NAV2_RPP_STATIC_V864_REPORT.md",
+    "dynamic_passed": false,
+    "static_three_route_passed": false
   },
   "v861_startup_gate": {
     "status": "QUALIFICATION_PASSED_NOT_DYNAMIC_ACCEPTANCE",
@@ -6063,5 +6066,30 @@
     "storage_status": "PUBLIC_RELEASE_VERIFIED_RESTORED_AND_TEMP_CLEANED",
     "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-nav2-v862-v863-20261107",
     "finalized": "records/nav2_v863_execution_20261107/FINALIZED.json"
+  },
+  "v864_rpp_static_regression": {
+    "status": "STOPPED_FIRST_FAILURE_OR_DEADLINE",
+    "models_authorized": false,
+    "deadline_unix": 1794062038.6753576,
+    "max_navigation": 5,
+    "scientific_revisions": 0,
+    "dynamic": 0,
+    "new24": 0,
+    "closed": true,
+    "actual_native": 3845,
+    "replay_native": 3845,
+    "report": "docs/NAV2_RPP_STATIC_V864_REPORT.md",
+    "functional_passed": false,
+    "unexecuted_navigation": 4,
+    "no_physical_retry": true
+  },
+  "v865_global_margin_preparation": {
+    "status": "PREPARED_NOT_QUALIFIED_FOR_PHYSICS",
+    "models_authorized": false,
+    "new_model_window": null,
+    "change": "global footprint_padding .15 to .20; local safety unchanged",
+    "new_configuration_ros_test": false,
+    "models": 0,
+    "integrations": 0
   }
 }

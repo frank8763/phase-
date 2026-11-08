@@ -1,0 +1,44 @@
+{
+  "status": "STOPPED_FIRST_FAILURE_OR_DEADLINE",
+  "passed": false,
+  "closed": true,
+  "error": {
+    "error": "ProtocolError('FIRST_STATIC_FUNCTIONAL_OR_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v864_rpp_static_regression/campaign.py\", line 30, in main\n    dump(O/'RESULTS.json',rows);require(row['passed'],'FIRST_STATIC_FUNCTIONAL_OR_EVIDENCE_FAILURE')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py\", line 10, in require\n    if not condition:raise ProtocolError(message)\nhandshake.ProtocolError: FIRST_STATIC_FUNCTIONAL_OR_EVIDENCE_FAILURE\n"
+  },
+  "completed_items": 1,
+  "attempted_items": 1,
+  "unexecuted_items": 4,
+  "rows": [
+    {
+      "slot": 1,
+      "run_id": "v864-01-main_ns",
+      "case_id": "NORTH_SOUTH",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v864_static/main_ns",
+      "attempted": true,
+      "started_unix": 1794058873.3089359,
+      "returncode": 1,
+      "closed_unix": 1794058922.8180013,
+      "passed": false,
+      "actual_native": 3845,
+      "replay_native": 3845,
+      "private_mujoco_native": 0,
+      "goal_distance_m": 2.2811671122224144,
+      "minimum_clearance_m": 0.22723951155220107,
+      "model_initialization_attempted": true,
+      "model_initialization_completed": true
+    }
+  ],
+  "repeats": [],
+  "actual_native": 3845,
+  "replay_native": 3845,
+  "old_v863_actual_native": 4569,
+  "old_v863_replay_native": 4569,
+  "dynamic_navigation": 0,
+  "new24": 0,
+  "training": 0,
+  "real_robot": 0,
+  "guard_restored": true,
+  "root_deadline_unix": 1794062038.6753576,
+  "closed_unix": 1794058922.8184428
+}

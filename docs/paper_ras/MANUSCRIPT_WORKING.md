@@ -79,6 +79,7 @@ Record sensing age, solver start/end, verification time, candidate age at commit
 | V861 native fixed16 s body-command curve | Maximum position error0.0939 m, RMS0.0697 m, minclearance0.2850 m;1600 executed+1600 own replay | Short actuator-level curve only; no Nav2 path following or dynamic acceptance |
 | V862 ready-before-physics MPPI integration | 180 s navigation timeout; 5.773 m remaining; safety and own replay passed | Failed single static development route |
 | V863 official RPP, same static WE | 45.69 s native motion/braking; 0.241 m goal error; minimum clearance0.272 m;4569 executed+4569 own replay, error0 | One static development success; no route repeat, dynamic or held-out confirmation |
+| V864 same RPP static NS regression | 38.45 s native motion/braking; RPP collision rejection, 2.281 m remaining;3845 executed+3845 own replay, error0 | Failed route; four remaining regression runs unexecuted; dynamic gate not reached |
 | Final-model algorithm comparison and held-out confirmation | Pending | No superiority estimate |
 | Real robot | Pending | No sim-to-real or deployment claim |
 

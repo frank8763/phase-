@@ -1,0 +1,131 @@
+{
+  "passed": false,
+  "navigation_action_sent": true,
+  "active_states": {
+    "map_server": 3,
+    "planner_server": 3,
+    "controller_server": 3,
+    "behavior_server": 3,
+    "velocity_smoother": 3,
+    "collision_monitor": 3,
+    "bt_navigator": 3
+  },
+  "active_checked_at": {
+    "map_server": 285862.594697412,
+    "planner_server": 285862.595269696,
+    "controller_server": 285862.595827732,
+    "behavior_server": 285862.596332339,
+    "velocity_smoother": 285862.596789453,
+    "collision_monitor": 285862.597251317,
+    "bt_navigator": 285862.597725054
+  },
+  "arm_issued_at": 285862.597740489,
+  "goal_sent_at": 285862.618749953,
+  "action_status": 6,
+  "action_error_code": 104,
+  "reason": "NAV2_FUNCTIONAL_FAILURE",
+  "wall_s": 43.948220457008574,
+  "readiness_probes": [
+    [
+      {
+        "map_server": 1,
+        "planner_server": 1,
+        "controller_server": 1,
+        "behavior_server": 1,
+        "velocity_smoother": 1,
+        "collision_monitor": 1,
+        "bt_navigator": 1
+      },
+      {
+        "map_server": 285858.659119681,
+        "planner_server": 285858.659591044,
+        "controller_server": 285858.660065968,
+        "behavior_server": 285858.660558702,
+        "velocity_smoother": 285858.660989696,
+        "collision_monitor": 285858.661432563,
+        "bt_navigator": 285858.661858807
+      }
+    ],
+    [
+      {
+        "map_server": 1,
+        "planner_server": 1,
+        "controller_server": 1,
+        "behavior_server": 1,
+        "velocity_smoother": 1,
+        "collision_monitor": 1,
+        "bt_navigator": 1
+      },
+      {
+        "map_server": 285858.662447713,
+        "planner_server": 285858.662738604,
+        "controller_server": 285858.663027121,
+        "behavior_server": 285858.66336313,
+        "velocity_smoother": 285858.663654021,
+        "collision_monitor": 285858.663935414,
+        "bt_navigator": 285858.664227492
+      }
+    ]
+  ],
+  "odometry_messages": 3152,
+  "cmd_vel_messages": 639,
+  "plan_messages": 32,
+  "maximum_observation_age_s": 0.005867689964361489,
+  "maximum_scan_age_s": 0.0050543820252642035,
+  "last_observation": {
+    "kind": "observation",
+    "run_id": "v864-01-main_ns",
+    "phase": "RUNNING",
+    "native_tick": 3643,
+    "sim_time": 36.43000000000132,
+    "sent_at": 285899.020316474,
+    "body_measured_at": 285899.020316474,
+    "scan_measured_at": 285899.012410171,
+    "initial_snapshot": false,
+    "body": [
+      -0.508161842318235,
+      -0.811311432721814,
+      -1.637185234268804,
+      0.00023147475740508872,
+      0.0014337825716469607
+    ],
+    "scan": {
+      "native_tick": 3641,
+      "time": 36.410000000001325,
+      "ranges": [
+        3.0,
+        3.0,
+        1.3572592735290527,
+        0.8678095936775208,
+        2.9816436767578125,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        2.966984748840332,
+        2.5830230712890625,
+        2.9793097972869873,
+        3.0,
+        3.0,
+        3.0,
+        2.9973549842834473,
+        3.0,
+        2.992168426513672,
+        2.9885382652282715,
+        3.0,
+        2.9996166229248047,
+        1.1839935779571533,
+        1.6607458591461182,
+        2.8675971031188965,
+        2.992820978164673,
+        2.9945228099823,
+        3.0,
+        3.0,
+        2.9948062896728516,
+        2.9965858459472656,
+        3.0,
+        2.9983582496643066
+      ]
+    }
+  }
+}
