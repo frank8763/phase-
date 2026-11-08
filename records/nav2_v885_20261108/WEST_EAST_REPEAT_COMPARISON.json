@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "same_complete_setup": true,
+  "initial_state_max_error": 0.0,
+  "both_functional_safe_arrivals": true,
+  "metrics": [
+    {
+      "native": 8706,
+      "sim_s": 87.06000000000763,
+      "path_m": 8.171593950354929,
+      "goal_m": 0.36085205525267405,
+      "min_clearance_m": 0.23541430325401969,
+      "own_control_replay_max_error": 0.0
+    },
+    {
+      "native": 8739,
+      "sim_s": 87.3900000000078,
+      "path_m": 8.17645049924605,
+      "goal_m": 0.36370227838179275,
+      "min_clearance_m": 0.2335757528030129,
+      "own_control_replay_max_error": 0.0
+    }
+  ],
+  "prefix_same_native_time_qpos_max_difference": 0.6639702131903252,
+  "exact_navigation_trajectory_claim": false,
+  "repeat_contract": "Independent same-config full closed-loop rerun; equal initial state/model and both safe arrivals. Async ROS commands may differ; each own executed control replay must remain <=1e-8."
+}

@@ -5991,16 +5991,18 @@
     "stop_reason": "bt_navigator/get_state async_send_request failed, bringup aborted, 35s readiness timeout"
   },
   "latest_nav2_simulation": {
-    "status": "V884_ORIGINAL_NS_MAIN_AND_COMPLETE_REPEAT_PASSED_OTHER_ROUTES_UNEXECUTED",
-    "report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
-    "static_routes_passed": 1,
+    "status": "V884_V885_SAME_VERSION_THREE_STATIC_DEVELOPMENT_ROUTES_PASSED",
+    "report": "docs/NAV2_RUNTIME_V885_REPORT.md",
+    "static_routes_passed": 3,
     "new_dynamic_navigation": 0,
     "new24": 0,
     "models_stopped": true,
     "original_guard_restored": true,
-    "latest_report": "docs/NAV2_RUNTIME_V884_REPORT.md",
+    "latest_report": "docs/NAV2_RUNTIME_V885_REPORT.md",
     "dynamic_passed": false,
-    "static_three_route_passed": false
+    "static_three_route_passed": true,
+    "previous_static_report": "docs/NAV2_RPP_STATIC_V863_REPORT.md",
+    "independent_confirmation_samples": 0
   },
   "v861_startup_gate": {
     "status": "QUALIFICATION_PASSED_NOT_DYNAMIC_ACCEPTANCE",
@@ -6283,5 +6285,64 @@
     "remote_source_commit": "6b2ecc7768fa7b1ad269dc3e37b73ac4852b651b",
     "raw_temporary_removed_bytes": 109862842,
     "delivery_receipt": "records/nav2_v884_20261108/DELIVERY_RESULT.json"
+  },
+  "v885_remaining_static_routes": {
+    "status": "REMAINING_STATIC_TWO_ROUTES_PASSED",
+    "closed": true,
+    "models_authorized": false,
+    "deadline_unix": 1794140470.4013782,
+    "completion": "runs/v885_remaining_static_routes/COMPLETION.json",
+    "rows": [
+      {
+        "task_id": "main_we",
+        "returncode": 0,
+        "passed": true,
+        "actual_native": 8706,
+        "replay_native": 8706,
+        "private_native": 0,
+        "goal_m": 0.36085205525267405,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v885/main_we"
+      },
+      {
+        "task_id": "repeat_we",
+        "returncode": 0,
+        "passed": true,
+        "actual_native": 8739,
+        "replay_native": 8739,
+        "private_native": 0,
+        "goal_m": 0.36370227838179275,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v885/repeat_we"
+      },
+      {
+        "task_id": "main_ew",
+        "returncode": 0,
+        "passed": true,
+        "actual_native": 9499,
+        "replay_native": 9499,
+        "private_native": 0,
+        "goal_m": 0.3623301951960311,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v885/main_ew"
+      },
+      {
+        "task_id": "repeat_ew",
+        "returncode": 0,
+        "passed": true,
+        "actual_native": 9764,
+        "replay_native": 9764,
+        "private_native": 0,
+        "goal_m": 0.36511303468996625,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v885/repeat_ew"
+      }
+    ],
+    "dynamic_navigation": 0,
+    "new24_executed": 0,
+    "combined_three_route_static_development_passed": true,
+    "actual_native": 36708,
+    "replay_native": 36708,
+    "private_native": 0,
+    "same_version_combined_actual_native": 54043,
+    "same_version_combined_replay_native": 54043,
+    "report": "docs/NAV2_RUNTIME_V885_REPORT.md",
+    "storage_status": "LOCAL_FINALIZED_REMOTE_PENDING"
   }
 }
