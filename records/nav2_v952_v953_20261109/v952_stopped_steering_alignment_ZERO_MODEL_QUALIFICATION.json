@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checks": {
+    "failed_adapter_exact_reconstruction": true,
+    "actual_moving_prefix_exact": true,
+    "old_bug_centers_on_first_brake": true,
+    "new_first_brake_holds_steering": true,
+    "all_actual_moving_body_brakes_hold_steering": true,
+    "fixed_grid_original_moving_map_exact": true,
+    "nine_stopped_ticks_do_not_align": true,
+    "tenth_stopped_tick_starts_bounded_alignment": true,
+    "body_motion_immediately_relocks_steering": true,
+    "new_ten_tick_body_stop_required": true,
+    "stable_stop_reenables_alignment": true,
+    "turned_encoder_cannot_resume": true,
+    "moving_encoder_cannot_resume": true,
+    "missing_encoder_cannot_resume": true,
+    "nonfinite_encoder_cannot_resume": true,
+    "measured_neutral_allows_original_forward": true,
+    "original_full_slew": true,
+    "original_limits": true,
+    "source_ast": true
+  },
+  "fixed_moving_cases": 135,
+  "moving_differential_max_error": 0.0,
+  "original_failed_input_rows": 420,
+  "encoder_cases": [
+    {
+      "case": "turned",
+      "rejected": true,
+      "reason": "FORWARD_BEFORE_MEASURED_STEERING_ALIGNMENT"
+    },
+    {
+      "case": "moving",
+      "rejected": true,
+      "reason": "FORWARD_BEFORE_MEASURED_STEERING_ALIGNMENT"
+    },
+    {
+      "case": "missing",
+      "rejected": true,
+      "reason": "MEASURED_STEERING_REQUIRED"
+    },
+    {
+      "case": "nonfinite",
+      "rejected": true,
+      "reason": "INVALID_STEERING_ENCODERS"
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "physical_response_qualified": false,
+  "scope": "New controller outputs on fixed old measurements and explicit boundary fixtures, not a counterfactual vehicle trajectory or physical success."
+}

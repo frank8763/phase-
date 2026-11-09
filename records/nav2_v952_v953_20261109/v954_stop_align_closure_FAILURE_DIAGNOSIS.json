@@ -1,0 +1,259 @@
+{
+  "diagnosis_verified": true,
+  "component_passed": false,
+  "checks": {
+    "real_case_failed_only_final_alignment": true,
+    "nine_alignment_ticks": true,
+    "every_alignment_one_tick": true,
+    "every_next_yaw_breaks_internal_gate": true,
+    "every_entry_satisfies_internal_gate": true,
+    "original_body_settle_gate_still_passes": true,
+    "original_encoder_failure_reproduced": true,
+    "latent_handoff_array_length_failure_reproduced": true
+  },
+  "observed_chain": "Measured stop enters ALIGNING; a steering slew step coincides with body yaw crossing internal .005rad/s gate; next tick re-locks steering and resets ten-tick gate. All nine episodes are one tick. This identifies the interlock liveness failure on the actual trace, not a counterfactual physical guarantee.",
+  "alignment_ticks": [
+    253,
+    272,
+    293,
+    313,
+    333,
+    353,
+    373,
+    393,
+    413
+  ],
+  "events": [
+    {
+      "tick": 253,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.0004892311591527322,
+      "measured_w_before": -0.00020010882503070814,
+      "measured_v_next": 0.0011472278280448335,
+      "measured_w_next": -0.008307303837495976,
+      "steering_command_before": [
+        -0.11126903023692344,
+        -0.26999999999999985
+      ],
+      "steering_command_after": [
+        -0.09876903023692345,
+        -0.25749999999999984
+      ],
+      "steering_encoder_after": [
+        -0.11090443824741134,
+        -0.26964282012589674
+      ]
+    },
+    {
+      "tick": 272,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.0017028226052939095,
+      "measured_w_before": -0.0024290894836262442,
+      "measured_v_next": 0.0017445772076148183,
+      "measured_w_next": -0.010361516861138157,
+      "steering_command_before": [
+        -0.09876903023692345,
+        -0.25749999999999984
+      ],
+      "steering_command_after": [
+        -0.08626903023692345,
+        -0.24499999999999983
+      ],
+      "steering_encoder_after": [
+        -0.09990087192035928,
+        -0.25864693819677365
+      ]
+    },
+    {
+      "tick": 293,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.0001295638789381608,
+      "measured_w_before": -0.002086338851171963,
+      "measured_v_next": 0.0003419675568666244,
+      "measured_w_next": -0.010007633323681705,
+      "steering_command_before": [
+        -0.08626903023692345,
+        -0.24499999999999983
+      ],
+      "steering_command_after": [
+        -0.07376903023692345,
+        -0.23249999999999982
+      ],
+      "steering_encoder_after": [
+        -0.08726984305412437,
+        -0.24601763952529138
+      ]
+    },
+    {
+      "tick": 313,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.0006804610773010691,
+      "measured_w_before": -0.0022510649287677586,
+      "measured_v_next": 0.0008636323861106616,
+      "measured_w_next": -0.010156292967075924,
+      "steering_command_before": [
+        -0.07376903023692345,
+        -0.23249999999999982
+      ],
+      "steering_command_after": [
+        -0.061269030236923455,
+        -0.2199999999999998
+      ],
+      "steering_encoder_after": [
+        -0.07495336748191192,
+        -0.23370202268826376
+      ]
+    },
+    {
+      "tick": 333,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.0005412974356840276,
+      "measured_w_before": -0.0022847865691989883,
+      "measured_v_next": 0.000695220407791142,
+      "measured_w_next": -0.010175405953756461,
+      "steering_command_before": [
+        -0.061269030236923455,
+        -0.2199999999999998
+      ],
+      "steering_command_after": [
+        -0.04876903023692346,
+        -0.2074999999999998
+      ],
+      "steering_encoder_after": [
+        -0.062484522709707634,
+        -0.22123350652740814
+      ]
+    },
+    {
+      "tick": 353,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.00047468297043639854,
+      "measured_w_before": -0.0022678721231759263,
+      "measured_v_next": 0.0006245571071849452,
+      "measured_w_next": -0.010149758588059605,
+      "steering_command_before": [
+        -0.04876903023692346,
+        -0.2074999999999998
+      ],
+      "steering_command_after": [
+        -0.03626903023692346,
+        -0.19499999999999978
+      ],
+      "steering_encoder_after": [
+        -0.04999238846666905,
+        -0.20874146843833713
+      ]
+    },
+    {
+      "tick": 373,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.0004548680195169644,
+      "measured_w_before": -0.002259177268345288,
+      "measured_v_next": 0.0005885801121763459,
+      "measured_w_next": -0.010133289406427864,
+      "steering_command_before": [
+        -0.03626903023692346,
+        -0.19499999999999978
+      ],
+      "steering_command_after": [
+        -0.02376903023692346,
+        -0.18249999999999977
+      ],
+      "steering_encoder_after": [
+        -0.03749552796290965,
+        -0.1962446374517129
+      ]
+    },
+    {
+      "tick": 393,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.0004008298633621642,
+      "measured_w_before": -0.0022487069434022552,
+      "measured_v_next": 0.0005211509179404697,
+      "measured_w_next": -0.010115601604017472,
+      "steering_command_before": [
+        -0.02376903023692346,
+        -0.18249999999999977
+      ],
+      "steering_command_after": [
+        -0.01126903023692346,
+        -0.16999999999999976
+      ],
+      "steering_encoder_after": [
+        -0.02499758900737512,
+        -0.18374671296919756
+      ]
+    },
+    {
+      "tick": 413,
+      "phase_before": "BRAKING",
+      "phase_after": "BRAKING",
+      "measured_v_before": 0.0003574424033041689,
+      "measured_w_before": -0.0022390534857717713,
+      "measured_v_next": 0.00045812155303515443,
+      "measured_w_next": -0.009703076313664596,
+      "steering_command_before": [
+        -0.01126903023692346,
+        -0.16999999999999976
+      ],
+      "steering_command_after": [
+        0.0,
+        -0.15749999999999975
+      ],
+      "steering_encoder_after": [
+        -0.012609644911993463,
+        -0.17125209767680544
+      ]
+    }
+  ],
+  "commanded_right_steering_at_brake_rad": -0.26999999999999985,
+  "final_commanded_steering_rad": [
+    0.0,
+    -0.15749999999999975
+  ],
+  "final_measured_steering_rad": [
+    -0.00745614983864698,
+    -0.16567177329481525
+  ],
+  "final_measured_steering_velocity_rad_s": [
+    0.06847927943842191,
+    0.07429870977535269
+  ],
+  "cumulative_alignment_time_s": 0.09,
+  "body_after_half_second_max_speed_or_yaw": 0.010361516861138157,
+  "maximum_abs_yaw_during_straight_warmup_rad_s": 0.11367110119107815,
+  "moving_controller_warning": "Straight warmup already has nonzero oscillatory steering under the unchanged yaw-feedback adapter. Stop-phase repair alone does not establish a stable moving controller.",
+  "hypotheses": {
+    "encoder_recording_error": "Rejected by exact native joint reconstruction in independent audit.",
+    "missing_steering_actuation": "Rejected: encoder motion follows each recorded steering command change; no claim of calibrated servo dynamics.",
+    "stop_alignment_chattering": "Supported by all nine exact transitions and original controller reconstruction."
+  },
+  "latent_unexecuted_handoff_defect": {
+    "source": "experiments/v953_stop_align_components/worker.py",
+    "source_sha256": "38cfb566c2d2f6b2cf5e8a940afc44aaa2ee2670b1a098063a627d267c9b238d",
+    "source_line": 76,
+    "position_samples": 200,
+    "heading_samples": 1200,
+    "error": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 0, the array at index 0 has size 200 and the array at index 2 has size 1200",
+    "evaluated_actual_slice": "data[400:600]",
+    "required_actual_slice": "data[400:1600]",
+    "physically_executed": false,
+    "old_30_preparation_checks_did_not_cover_composed_array_expression": true
+  },
+  "next_design_requirements": [
+    "Qualify complete moving yaw/steering response rather than stop phase alone.",
+    "Use a bounded continuous alignment phase with explicit body displacement/yaw envelope and encoder completion; validate without relaxing original physical gates.",
+    "Run the exact full 1200-sample handoff evaluation with model imports blocked before any new physical authority."
+  ],
+  "new_models": 0,
+  "new_integrations": 0,
+  "new_physical_authority": false
+}

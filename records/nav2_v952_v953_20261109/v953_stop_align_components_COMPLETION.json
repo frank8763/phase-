@@ -1,0 +1,127 @@
+{
+  "closed": true,
+  "passed": false,
+  "status": "NOT_PASSED",
+  "error": {
+    "error": "AssertionError('FIRST_COMPONENT_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE 1')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v953_stop_align_components/campaign.py\", line 61, in main\n    assert child.returncode==0 and rows[-1]['passed'],'FIRST_COMPONENT_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+str(index)\nAssertionError: FIRST_COMPONENT_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE 1\n",
+    "active_index": 1
+  },
+  "rows": [
+    {
+      "passed": true,
+      "index": 0,
+      "models_attempted": 1,
+      "actual_native": 420,
+      "fully_recorded_native": 420,
+      "replay_native": 420,
+      "private_native": 0,
+      "checks": {
+        "complete_native": true,
+        "all_native_safety": true,
+        "full_control_replay": true,
+        "bounded_position": true,
+        "bounded_rotation": true,
+        "measured_speed_bound": true,
+        "measured_yaw_bound": true,
+        "settled_by_half_second": true,
+        "final_measured_steering_neutral": true
+      },
+      "position_residual_max_m": 0.010649585392798325,
+      "position_bound_m": 0.02,
+      "angle_residual_max_rad": 0.03206512630288947,
+      "native": {
+        "actual_native": 420,
+        "fully_recorded_native": 420,
+        "minimum_actual_clearance_m": 0.2677528624383303,
+        "minimum_self_margin_m": 0.009204525922287765,
+        "bad_contacts": 0,
+        "final_body": [
+          -3.8009347888480853,
+          -2.0056365982267,
+          -0.012972173334836789,
+          2.7823746019611926e-06,
+          0.00028765807068473285
+        ],
+        "final_translation_speed_m_s": 2.8195605349041715e-06,
+        "root_guard_native_count": 420,
+        "goal_distance_m": 7.800936825221692,
+        "first_actor_detection": null,
+        "actual_travel_after_detection_m": 0.0
+      },
+      "replay": {
+        "replay_native": 420,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "closed_unix": 1794228623.1641848,
+      "empirical_only": true
+    },
+    {
+      "passed": false,
+      "index": 1,
+      "models_attempted": 1,
+      "actual_native": 420,
+      "fully_recorded_native": 420,
+      "replay_native": 420,
+      "private_native": 0,
+      "checks": {
+        "complete_native": true,
+        "all_native_safety": true,
+        "full_control_replay": true,
+        "bounded_position": true,
+        "bounded_rotation": true,
+        "measured_speed_bound": true,
+        "measured_yaw_bound": true,
+        "settled_by_half_second": true,
+        "final_measured_steering_neutral": false
+      },
+      "position_residual_max_m": 0.011837148914768825,
+      "position_bound_m": 0.02,
+      "angle_residual_max_rad": 0.02065828449174339,
+      "native": {
+        "actual_native": 420,
+        "fully_recorded_native": 420,
+        "minimum_actual_clearance_m": 0.2677528624383303,
+        "minimum_self_margin_m": 0.009204525922287765,
+        "bad_contacts": 0,
+        "final_body": [
+          -3.8185288452810293,
+          -2.005090998375352,
+          -0.006903805573744916,
+          0.0005421351027114319,
+          -0.006657708686469694
+        ],
+        "final_translation_speed_m_s": 0.0005426986071116398,
+        "root_guard_native_count": 420,
+        "goal_distance_m": 7.818530502770708,
+        "first_actor_detection": null,
+        "actual_travel_after_detection_m": 0.0
+      },
+      "replay": {
+        "replay_native": 420,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "closed_unix": 1794228633.3669212,
+      "empirical_only": true
+    }
+  ],
+  "unexecuted_cases": 17,
+  "attempted_cases": 2,
+  "model_attempts": 2,
+  "actual_native": 840,
+  "replay_native": 840,
+  "private_native": 0,
+  "navigation": 0,
+  "new24": 0,
+  "guard_restored": true,
+  "started_unix": 1794228613.656261,
+  "deadline_unix": 1794234013.656261,
+  "closed_unix": 1794228633.8967073,
+  "next_full_route_authorized": false
+}
