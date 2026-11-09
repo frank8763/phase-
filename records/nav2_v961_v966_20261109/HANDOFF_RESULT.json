@@ -1,0 +1,57 @@
+{
+  "passed": false,
+  "index": 0,
+  "models_attempted": 1,
+  "models_initialized": 1,
+  "actual_native": 1820,
+  "replay_native": 1820,
+  "private_native": 0,
+  "fully_recorded_native": 1820,
+  "checks": {
+    "full1820": true,
+    "exact_original420_prefix": true,
+    "all_native_safety": true,
+    "complete_own_control_replay": true,
+    "original_body_speed": true,
+    "original_body_yaw": true,
+    "full_forward_and_final_stop_position": false,
+    "full_forward_and_final_stop_heading": false,
+    "actual_forward_progress_at_least1m": true,
+    "final_half_second_settled": true,
+    "no_reverse": true,
+    "initial_actual_curvature_preserved": true,
+    "steering_reaches_neutral_during_forward": true
+  },
+  "native": {
+    "actual_native": 1820,
+    "fully_recorded_native": 1820,
+    "minimum_actual_clearance_m": 0.27050921243911474,
+    "minimum_self_margin_m": 0.009156868292142073,
+    "bad_contacts": 0,
+    "final_body": [
+      -2.6651483014682276,
+      -1.8036973922215933,
+      0.13015449071552998,
+      -5.655406118463152e-06,
+      1.233806560054397e-06
+    ],
+    "final_translation_speed_m_s": 5.6554068431662984e-06,
+    "root_guard_native_count": 1820,
+    "goal_distance_m": 6.668038436780745,
+    "first_actor_detection": null,
+    "actual_travel_after_detection_m": 0.0
+  },
+  "replay": {
+    "replay_native": 1820,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "prefix_state_ctrl_max_error": 0.0,
+  "position_max_m": 0.07423239200503741,
+  "heading_max_rad": 0.03500630326236222,
+  "actual_forward_progress_m": 1.1406209123621407,
+  "closed": true,
+  "closed_unix": 1794233766.1773355,
+  "navigation": 0
+}
