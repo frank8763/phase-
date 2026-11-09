@@ -1,0 +1,18 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "errors": [
+    {
+      "stage": "V910_zero_model_dependency",
+      "error": "Two Python entrypoints lacked scipy; no model attempted. Installed private pinned1.15.3 only for independent LP verification."
+    },
+    {
+      "stage": "V911_saved_audit_fixture",
+      "error": "Reconstructed tracker from every native scan instead of original actually delivered ROS observations; saved source equality correctly failed. Corrected fixture to original journal.observations, no online algorithm change."
+    },
+    {
+      "stage": "V911_saved_fixture_exact_equality",
+      "error": "After correcting delivered observations, host/ROS support reconstruction differed by1.33226763e-15. Qualified rebuild<=1e-10 and used original saved support bytes for saved-record fixture; online source equality gate remains exact."
+    }
+  ]
+}

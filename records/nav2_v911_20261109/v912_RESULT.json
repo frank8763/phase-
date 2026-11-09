@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checks": {
+    "missing_dependency_reproduced": true,
+    "all_other_direct_and_lazy_ros_imports_loaded": true,
+    "original_map_module_positive": true,
+    "unknown_master_rejected": true,
+    "missing_static_master_rejected": true,
+    "wrong_dimensions_rejected": true,
+    "v911_frozen_source_unchanged": true
+  },
+  "missing": [
+    {
+      "module": "map_readiness",
+      "error": "ModuleNotFoundError(\"No module named 'map_readiness'\")"
+    },
+    {
+      "module": "refuge_logic",
+      "error": "ModuleNotFoundError(\"No module named 'refuge_logic'\")"
+    }
+  ],
+  "loaded": {
+    "array": null,
+    "authority": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v911_periodic_causal_navigation/authority.py",
+    "command_tube": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v911_periodic_causal_navigation/command_tube.py",
+    "copy": "/usr/lib/python3.12/copy.py",
+    "dynamic_proxy": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v911_periodic_causal_navigation/dynamic_proxy.py",
+    "exact_lidar": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v887_exact_lidar_software/exact_lidar.py",
+    "executor_dispatch": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v883_observation_dispatch/executor_dispatch.py",
+    "geometry_msgs.msg": "/opt/ros/jazzy/lib/python3.12/site-packages/geometry_msgs/msg/__init__.py",
+    "gzip": "/usr/lib/python3.12/gzip.py",
+    "handshake": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py",
+    "hashlib": "/usr/lib/python3.12/hashlib.py",
+    "json": "/usr/lib/python3.12/json/__init__.py",
+    "lifecycle_msgs.srv": "/opt/ros/jazzy/lib/python3.12/site-packages/lifecycle_msgs/srv/__init__.py",
+    "math": null,
+    "motion_publisher": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v911_periodic_causal_navigation/motion_publisher.py",
+    "nav2_msgs.action": "/opt/ros/jazzy/lib/python3.12/site-packages/nav2_msgs/action/__init__.py",
+    "nav2_msgs.msg": "/opt/ros/jazzy/lib/python3.12/site-packages/nav2_msgs/msg/__init__.py",
+    "nav2_msgs.srv": "/opt/ros/jazzy/lib/python3.12/site-packages/nav2_msgs/srv/__init__.py",
+    "nav_msgs.msg": "/opt/ros/jazzy/lib/python3.12/site-packages/nav_msgs/msg/__init__.py",
+    "numpy": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v856_nav2_foundation/rootfs/usr/lib/python3/dist-packages/numpy/__init__.py",
+    "os": "/usr/lib/python3.12/os.py",
+    "pathlib": "/usr/lib/python3.12/pathlib.py",
+    "periodic_support": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v911_periodic_causal_navigation/periodic_support.py",
+    "planner_proxy": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v881_timing_accounting_continuation/planner_proxy.py",
+    "rclpy": "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py",
+    "rclpy.action": "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/action/__init__.py",
+    "rclpy.callback_groups": "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/callback_groups.py",
+    "rclpy.node": "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py",
+    "rclpy.qos": "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/qos.py",
+    "reference_terminal": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v911_periodic_causal_navigation/reference_terminal.py",
+    "routing_stack": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v881_timing_accounting_continuation/routing_stack.py",
+    "sensor_msgs.msg": "/opt/ros/jazzy/lib/python3.12/site-packages/sensor_msgs/msg/__init__.py",
+    "socket": "/usr/lib/python3.12/socket.py",
+    "supervise": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v911_periodic_causal_navigation/supervise.py",
+    "support_envelope": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v891_dynamic_consistency_software/support_envelope.py",
+    "sys": null,
+    "tf2_ros": "/opt/ros/jazzy/lib/python3.12/site-packages/tf2_ros/__init__.py",
+    "threading": "/usr/lib/python3.12/threading.py",
+    "time": null,
+    "traceback": "/usr/lib/python3.12/traceback.py",
+    "twist_contract": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v884_feasible_rpp/twist_contract.py"
+  },
+  "compatibility_module_sha256": "08d28d089fefdd7c0ff2e3f02eedd3edf414a31cb103d54fecc87d0083c29acd",
+  "models": 0,
+  "integrations": 0,
+  "navigation_goals": 0,
+  "scope": "All direct/lazy imports in four actual ROS policy modules and real readiness positive/negative checks. Not full startup lifecycle proof, not physical validation, no resumed authority."
+}
