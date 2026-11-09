@@ -1,0 +1,33 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "models_authorized": false,
+  "deadline_unix": 1794191909.7713351,
+  "closed_unix": 1794189666.0176573,
+  "rows": [
+    {
+      "task_id": "main_we",
+      "passed": false,
+      "returncode": 1,
+      "actual_native": 12080,
+      "replay_native": 12080,
+      "private_native": 0,
+      "goal_m": 2.6342261194429666,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v907/main_we"
+    }
+  ],
+  "attempted_navigation": 1,
+  "unexecuted_navigation": 5,
+  "preflight_cases": [
+    "WEST_EAST",
+    "NORTH_SOUTH",
+    "EAST_WEST"
+  ],
+  "new24": 0,
+  "error": {
+    "error": "AssertionError('FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v907_recovery_corridor_memory/night.py\", line 60, in main\n    assert rows[-1]['passed'],'FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE\n"
+  },
+  "source_freeze_sha256": "21c0b1dd1dba120328ef814aef512a8c3bb0d2146dc8b63c7258e6a1478c2d58",
+  "guard_restored": true
+}

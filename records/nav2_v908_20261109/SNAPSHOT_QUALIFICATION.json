@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_saved_mixed_snapshot_red": true,
+    "reader_blocked_during_writer_transaction": true,
+    "old_two_read_order_is_inconsistent": true,
+    "new_pair_same_native_measurement": true,
+    "exact_original_tracker_values": true,
+    "consumer_mutation_cannot_modify_store": true,
+    "stale_pair_rejected": true
+  },
+  "original_failure_tick": 8985,
+  "source_tick": 8986,
+  "models": 0,
+  "integrations": 0,
+  "scope": "Actual MotionPublisher.observe and actual causal tracker with real saved scans; deterministic concurrency seam; no navigation or repair of old V907 outcome."
+}

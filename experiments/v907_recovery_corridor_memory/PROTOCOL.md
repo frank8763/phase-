@@ -1,0 +1,9 @@
+# V907 causal recovery-corridor memory
+
+2026-11-09 user broad delegation; final physical candidate within the SAME locked 10:38:29.771335+0800 deadline, no reset. V897/V900/V901/V903/V905 failures immutable. V906 zero-vehicle conservative 5cm search and goal-region software diagnostics are separate, not adopted.
+
+Only scientific change: retain previously admitted actual-history recovery corridors through completed reversing maneuvers. At each request revalidate current measured deviation<=.04m, distance .75–1.5m, all-reverse motion, original static swept body margin, fresh causal support and unchanged .08 nominal-time occupancy/terminal hold. No invented route or actor truth. Choose largest finite reserve among current and retained eligible candidates. No stale certificate reuse. Original V905 global-soft/local-hard/target, original .15 native/.45 final/control/model/sensor/timing rules unchanged; recovery cap3 and180s unchanged.
+
+Independent audit reconstructs memory from earlier actual request events and states; legitimate no-candidate failure is recorded as rejected and remains functional failure, not an audit crash. This audit repair applies only to this new candidate; V905 remains NOT_PASSED.
+
+Reuse unchanged-model three V900 genuine t0 records. Original WE main/repeat then NS pair and EW pair, at most6, first function/safety/source/evidence failure stops candidate. Actual models only run_phase.sh on one CPU/execution lock. Freeze after saved second-request red/green, stale/off-path/blocked/memory-tamper tests and production supervisory/authority gates. No new24, training, hardware or Stage. Complete per-run own replay, source/archival SHA before finalization and remote restored evidence before cache cleanup. No additional physical candidate after this batch during this root window.

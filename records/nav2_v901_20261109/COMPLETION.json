@@ -1,0 +1,33 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "models_authorized": false,
+  "deadline_unix": 1794191909.7713351,
+  "closed_unix": 1794186938.9206986,
+  "rows": [
+    {
+      "task_id": "main_we",
+      "passed": false,
+      "returncode": 1,
+      "actual_native": 11666,
+      "replay_native": 11666,
+      "private_native": 0,
+      "goal_m": 2.7938686124606753,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v901/main_we"
+    }
+  ],
+  "attempted_navigation": 1,
+  "unexecuted_navigation": 5,
+  "preflight_cases": [
+    "WEST_EAST",
+    "NORTH_SOUTH",
+    "EAST_WEST"
+  ],
+  "new24": 0,
+  "error": {
+    "error": "AssertionError('FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v901_arm_ack_continuation/night.py\", line 60, in main\n    assert rows[-1]['passed'],'FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE\n"
+  },
+  "source_freeze_sha256": "30b3743a258a487c721a1b4c14c417223161a8e7aa94ace6c94ef2b5fa1d576e",
+  "guard_restored": true
+}

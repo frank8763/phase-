@@ -1,0 +1,33 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "models_authorized": false,
+  "deadline_unix": 1794191909.7713351,
+  "closed_unix": 1794188589.2702649,
+  "rows": [
+    {
+      "task_id": "main_we",
+      "passed": false,
+      "returncode": 1,
+      "actual_native": 8146,
+      "replay_native": 8146,
+      "private_native": 0,
+      "goal_m": 2.6743477529869297,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v905/main_we"
+    }
+  ],
+  "attempted_navigation": 1,
+  "unexecuted_navigation": 5,
+  "preflight_cases": [
+    "WEST_EAST",
+    "NORTH_SOUTH",
+    "EAST_WEST"
+  ],
+  "new24": 0,
+  "error": {
+    "error": "AssertionError('FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v905_reference_execution_separation/night.py\", line 60, in main\n    assert rows[-1]['passed'],'FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE\n"
+  },
+  "source_freeze_sha256": "1d568fa4ee6c064e68b211adfbc2af890335728cc409e13e46f624b90c303c01",
+  "guard_restored": true
+}
