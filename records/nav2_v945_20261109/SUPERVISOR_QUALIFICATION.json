@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_entry_exact_tick": true,
+    "positive_cancels_before_exactly_one_follow": true,
+    "positive_resumes_original_goal": true,
+    "cancel_timeout_does_not_follow": true,
+    "drift_does_not_follow": true,
+    "rpp_rejection_stops": true,
+    "command_safety_fault_stops_before_follow": true,
+    "100ms_live_full_supervisor_completes_synthetic_segment": true,
+    "201ms_stops_with_exact_fault_packet": true,
+    "stale_scan_stops": true,
+    "expired_original_permission_stops": true,
+    "partial_transaction_events_survive_failure": true,
+    "every_failure_is_durable": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "scope": "Complete production-supervisor callback fixture; synthetic endpoint and success callbacks are not physical motion or actual goal arrival.",
+  "full_original_sha256": "0b9f2fa466cb8c330a47319c30b8039eff6a76967695a798cfc1b6d0eb899dc6",
+  "full_qualification_in_release": true,
+  "restore_raw_path": "runs/v945_rpccr_observation_liveness/SUPERVISOR_QUALIFICATION.json"
+}

@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_actual_actuator_control_reconstructed": true,
+    "original_body_stopped_gate_passed": true,
+    "stopped_body_does_not_imply_neutral_steering": true,
+    "longer_zero_twist_wait_never_centers_steering": true,
+    "same_body_twist_different_servo_state_has_different_initial_control": true,
+    "mechanical_slew_limit_preserved": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "exact_reconstructed_native_control_rows": 13517,
+  "maximum_actuator_reconstruction_error": 2.220446049250313e-16,
+  "actual_install_tick": 5021,
+  "actual_install_steering_commands_rad": [
+    -0.36126903023692364,
+    -0.52
+  ],
+  "synthetic_10s_zero_twist_final_steering_commands_rad": [
+    -0.36126903023692364,
+    -0.52
+  ],
+  "synthetic_identical_straight_twist_output_from_actual_servo_state": [
+    -0.3487690302369236,
+    -0.5075000000000001,
+    0.08750000000000001,
+    0.08750000000000001
+  ],
+  "synthetic_identical_straight_twist_output_from_neutral_servo_state": [
+    0.0,
+    0.0,
+    0.08750000000000001,
+    0.08750000000000001
+  ],
+  "optimistic_minimum_servo_neutralization_s": 0.41600000000000004,
+  "large_left_steering_sign_transitions_in_recovery": 15,
+  "steering_saturation_limit_rad": 0.52,
+  "alignment_alone_not_proven_sufficient": true,
+  "persistent_feedback_note": "Actual steering commands repeatedly switch near both limits during the straight recovery. Adapter adds1.5*(wanted_yaw_rate-measured_yaw_rate) before curvature clipping and slew. Feedback/lag causality requires a controlled response qualification, not another tuned full-route retry.",
+  "next_mechanism": "Recovery handoff must include actual steering state and a legal zero-drive servo-alignment phase, or generate a slew-compatible initial reference. Merely waiting with the existing zero Twist cannot align it.",
+  "limits": [
+    "Exact actual command reconstruction, not a new dynamics replay.",
+    "No unobserved future or obstacle truth used online.",
+    "Neutralization timing is an actuator-rate lower bound, not measured settling time.",
+    "New alignment command and full-body safety qualification not yet implemented or physically tested."
+  ]
+}

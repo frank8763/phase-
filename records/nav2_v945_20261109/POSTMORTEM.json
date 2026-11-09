@@ -1,0 +1,140 @@
+{
+  "status": "NOT_PASSED",
+  "models": 0,
+  "integrations": 0,
+  "actual_native": 13517,
+  "own_replay_native": 13517,
+  "private_native": 0,
+  "goal_distance_m": 1.8570102635611518,
+  "minimum_clearance_m": 0.2446910897423971,
+  "bad_contacts": 0,
+  "state_replay_error": 0.0,
+  "postdiscovery_actual_travel_m": 5.823760059681038,
+  "recovered_action_segments": 1,
+  "independently_qualified_complete_segments": 0,
+  "segments": [
+    {
+      "trigger_tick": 4970,
+      "install_tick": 5021,
+      "action_endpoint_tick": 6298,
+      "action_completed": true,
+      "measured_goal_progress_m": 0.9277204623067954,
+      "tracking": {
+        "passed": false,
+        "maximum_reference_position_error_m": 0.01654007303779535,
+        "maximum_reference_heading_error_rad": 0.06570105998406431,
+        "heading_sampling_allowance_rad": 0.00018969259625000002,
+        "actual_native_samples": 1278
+      },
+      "reference_is_straight": true,
+      "first_heading_violation": {
+        "native_tick": 5061,
+        "seconds_from_install": 0.4,
+        "actual_body": [
+          0.26155089545269294,
+          -0.6747406941551319,
+          -0.022777254459752837,
+          0.09870051404267771,
+          -0.10442703717907711
+        ],
+        "reference_yaw": 0.01243716107256536,
+        "heading_error_rad": 0.035214415532318195,
+        "required_max_rad": 0.035
+      }
+    }
+  ],
+  "independent_remaining_evidence": {
+    "motion_audit": {
+      "passed": true,
+      "original_observations_verified": 2655,
+      "tracked_states_with_offline_true_center_covered": 1743,
+      "forecast_publications_rebuilt": 1372,
+      "tracked_forecast_publications": 874,
+      "causal_terminal_decisions_rebuilt": 104,
+      "actual_costmap_snapshot_kinds": [
+        "global_costmap",
+        "local_costmap"
+      ],
+      "postdetection_full_snapshots": {
+        "global_costmap": 33,
+        "local_costmap": 41
+      },
+      "models": 0,
+      "integrations": 0,
+      "periodic_future_support_checks": 6887440,
+      "declared_periodic_class_only": true,
+      "scope": "Causal observation/coefficient-set/forecast/terminal reconstruction and recorded native truth coverage. Known-frequency course only; not arbitrary-speed class or recursive safety"
+    },
+    "tube_audit": {
+      "passed": true,
+      "checks": {
+        "nonempty": true,
+        "causal": true,
+        "body_matches_native": true,
+        "source_matches_tracker": true,
+        "command_limits": true,
+        "finite_horizon": true,
+        "admission_threshold": true,
+        "independent_dense_geometry": true,
+        "wait_renewals_zero_and_causal": true,
+        "terminal_cycle_independently_qualified": true,
+        "retained_proof_chain_and_actual_body": true,
+        "conditional_residual_class": true,
+        "stale_new_proposal_retains_only_old_accepted_proof": true,
+        "only_accepted_proofs_dispatched": true,
+        "actual_runtime_tube_monitor_completed": true,
+        "no_unqualified_command_failure": true
+      },
+      "accepted_commands": 2600,
+      "zero_fallback_commands": 39,
+      "maximum_saved_body_error": 1.1102230246251565e-16,
+      "qualified_zero_wait_renewals": 66,
+      "retained_certificate_decisions": 27,
+      "stale_proposal_deferrals": 1,
+      "empirical_limits_not_formal_reachability": true
+    },
+    "ingress_audit": {
+      "passed": true,
+      "checks": {
+        "journal_present": true,
+        "received_matches_dispatched": true,
+        "original_50ms_admission": true,
+        "late_discards_keep_old_anchor": true,
+        "sequence_order": true,
+        "every_native_step": true,
+        "control_expiry": true,
+        "original_empirical_residual": true,
+        "completed_execution": true,
+        "no_rejected_packet": true,
+        "trailing_packets_no_unchecked_command": true
+      },
+      "received_admissions": 2593,
+      "late_new_discards": 7,
+      "native_execution_records": 13517,
+      "maximum_received_delivery_age_s": 0.1426256690028822
+    },
+    "recovery_audit": {
+      "passed": true,
+      "recovery_decisions": 66,
+      "modes": {
+        "CERTIFIED_PROGRESS_ALTERNATIVE": 11,
+        "CERTIFIED_STOP_ONLY": 11,
+        "NO_NEW_CERTIFIED_CONTROL": 27,
+        "CERTIFIED_CLEARANCE_RECOVERY": 17
+      },
+      "safety_gate_unchanged": true,
+      "ranking_is_not_a_future_certificate": true
+    }
+  },
+  "runtime_error": "RuntimeError('STALE_COHERENT_OBSERVATION')",
+  "fault_stage": "reference_loss_entry",
+  "exact_failed_snapshot_saved": false,
+  "catch_time_since_last_received_body_s": 0.19471174001228064,
+  "catch_time_since_last_received_scan_s": 0.22393666600692086,
+  "snapshot_context_note": "Snapshot producer raised before returning a new packet; saved input is explicitly the previous successful snapshot. Catch-time ages are not the unrecorded internal comparison instant.",
+  "current_nominal_lookahead_m": 0.6,
+  "maximum_native_wall_lag_s": 0.0028942950011696666,
+  "old_v943_50ms_monitor_abort_reappeared": false,
+  "complete_arrival_or_dynamic_acceptance": false,
+  "next_design": "First reproduce complete saved straight-reference heading error and actual ROS callback scheduling under fixed input; qualify compatible corridor tracking and isolate observation I/O from heavy callbacks. No larger freshness bound or new physical retry in this closed batch."
+}

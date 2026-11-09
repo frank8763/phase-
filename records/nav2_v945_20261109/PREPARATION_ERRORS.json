@@ -1,0 +1,20 @@
+{
+  "errors": [
+    {
+      "stage": "pre-final-freeze zero-model startup",
+      "error": "FROZEN_SOURCE_CHANGED PROTOCOL.md",
+      "reason": "Protocol wording corrected after preliminary hash snapshot; no final freeze/authority/model existed",
+      "models": 0,
+      "integrations": 0,
+      "action": "Preserve failed console and preliminary freeze, regenerate complete pre-model snapshot and rerun only zero-model startup"
+    },
+    {
+      "stage": "pre-model repeat contract review",
+      "error": "Protocol wording claimed synchronous identity, unchanged actual checker explicitly does not",
+      "models": 0,
+      "integrations": 0,
+      "authority_created": false,
+      "action": "Preserve superseded hash snapshot and correct registration before models; no algorithm/checker change"
+    }
+  ]
+}

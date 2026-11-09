@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v867_margin_navigation/SOURCE_FREEZE.json",
-  "source_revision": "V867_V865_GLOBAL_PADDING_ONLY",
-  "protocol": "experiments/v867_margin_navigation/PROTOCOL.md",
-  "report": "docs/NAV2_REFUGE_OVERNIGHT_20261108_REPORT.md",
+  "decision_freeze": "experiments/v945_rpccr_observation_liveness/SOURCE_FREEZE.json",
+  "source_revision": "V945_OBSERVATION_LIVENESS_AND_FAULT_EVIDENCE",
+  "protocol": "experiments/v945_rpccr_observation_liveness/PROTOCOL.md",
+  "report": "docs/RPCCR_REGRESSION_RECOVERY_V945_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -5213,7 +5213,7 @@
     "no_retry": true,
     "raw_retained": true
   },
-  "current_experiment": "v924_consistent_polygon_reference",
+  "current_experiment": "v945_rpccr_observation_liveness",
   "exact_acceleration_authorization": "RPCCR_EXACT_ACCELERATION_AUTHORIZATION_20261104.json",
   "exact_acceleration_ledger": "RPCCR_EXACT_ACCELERATION_LEDGER_20261104.json",
   "exact_acceleration_active": "runs/v802_exact_rejection_global",
@@ -6777,7 +6777,7 @@
     "source_freeze_sha256": "b391adab107115cfb85f1a10e9dfc6683f08db939c4c2253ddfba178573f0330",
     "guard_restored": true
   },
-  "last_completed_candidate": "V924_CONSISTENT_POLYGON_REFERENCE",
+  "last_completed_candidate": "V945_OBSERVATION_LIVENESS",
   "last_completed_outcome": "NOT_PASSED",
   "v900_terminal_set": {
     "closed": true,
@@ -6944,7 +6944,7 @@
     "source_freeze_sha256": "21c0b1dd1dba120328ef814aef512a8c3bb0d2146dc8b63c7258e6a1478c2d58",
     "guard_restored": true
   },
-  "latest_review": "docs/DYNAMIC_REVIEW_AND_PAPER_RECOVERY_20261109.md",
+  "latest_review": "docs/RPCCR_REGRESSION_RECOVERY_V945_REPORT.md",
   "latest_review_result": {
     "status": "CLOSED_DYNAMIC_NOT_PASSED",
     "models_authorized": false,
@@ -7400,5 +7400,30 @@
     "new24": 0,
     "report": "docs/RPCCR_REFERENCE_LOSS_V943_REPORT.md",
     "next_models_authorized": false
-  }
+  },
+  "v945_rpccr_observation_liveness": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "rows": [
+      {
+        "task_id": "main_we",
+        "passed": false,
+        "actual_native": 13517,
+        "replay_native": 13517,
+        "private_native": 0,
+        "goal_m": 1.8570102635611518
+      }
+    ],
+    "unexecuted_navigation": 1,
+    "new24": 0,
+    "error": {
+      "error": "AssertionError('FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v945_rpccr_observation_liveness/campaign.py\", line 39, in main\n    launch([sys.executable,'-B',str(C/'launch_one.py'),str(tp),str(ap)],task['task_id'],260)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v945_rpccr_observation_liveness/campaign.py\", line 30, in launch\n    assert rc==0,'FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+label\nAssertionError: FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we\n"
+    },
+    "models_authorized": false,
+    "deadline_unix": 1794226950.9370122,
+    "closed_unix": 1794221706.3575406,
+    "guard_restored": true
+  },
+  "next_physical_authorized": false
 }

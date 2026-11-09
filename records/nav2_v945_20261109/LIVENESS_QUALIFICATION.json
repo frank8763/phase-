@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "checks": {
+    "live_boundary_0.049": true,
+    "no_new_permission_or_input_mutation_0.049": true,
+    "new_permission_still_50ms_0.049": true,
+    "live_boundary_0.05": true,
+    "no_new_permission_or_input_mutation_0.05": true,
+    "new_permission_still_50ms_0.05": true,
+    "live_boundary_0.050001": true,
+    "no_new_permission_or_input_mutation_0.050001": true,
+    "new_permission_still_50ms_0.050001": true,
+    "live_boundary_0.051": true,
+    "no_new_permission_or_input_mutation_0.051": true,
+    "new_permission_still_50ms_0.051": true,
+    "live_boundary_0.1": true,
+    "no_new_permission_or_input_mutation_0.1": true,
+    "new_permission_still_50ms_0.1": true,
+    "live_boundary_0.199": true,
+    "no_new_permission_or_input_mutation_0.199": true,
+    "new_permission_still_50ms_0.199": true,
+    "live_boundary_0.2": true,
+    "no_new_permission_or_input_mutation_0.2": true,
+    "new_permission_still_50ms_0.2": true,
+    "live_boundary_0.200001": true,
+    "no_new_permission_or_input_mutation_0.200001": true,
+    "new_permission_still_50ms_0.200001": true,
+    "live_boundary_0.201": true,
+    "no_new_permission_or_input_mutation_0.201": true,
+    "new_permission_still_50ms_0.201": true,
+    "future_body": true,
+    "stale_scan": true,
+    "future_source": true,
+    "future_prior": true,
+    "changed_prior": true,
+    "nonfinite": true,
+    "path_mutated": true,
+    "segment_timeout": true,
+    "old_valid_certificate_may_defer_stale_new_proposal": true,
+    "expired_finite_certificate_cannot_be_extended": true,
+    "finite_expiry_is_unchanged": true,
+    "old_certificate_bytes_unchanged": true,
+    "other_command_faults_never_defer": true,
+    "install_fresh_function_is_exact_inherited": true
+  },
+  "cases": [
+    {
+      "age_s": 0.049,
+      "monitor_error": null,
+      "new_permission_error": null
+    },
+    {
+      "age_s": 0.05,
+      "monitor_error": null,
+      "new_permission_error": null
+    },
+    {
+      "age_s": 0.050001,
+      "monitor_error": null,
+      "new_permission_error": "STALE_BODY"
+    },
+    {
+      "age_s": 0.051,
+      "monitor_error": null,
+      "new_permission_error": "STALE_BODY"
+    },
+    {
+      "age_s": 0.1,
+      "monitor_error": null,
+      "new_permission_error": "STALE_BODY"
+    },
+    {
+      "age_s": 0.199,
+      "monitor_error": null,
+      "new_permission_error": "STALE_BODY"
+    },
+    {
+      "age_s": 0.2,
+      "monitor_error": null,
+      "new_permission_error": "STALE_BODY"
+    },
+    {
+      "age_s": 0.200001,
+      "monitor_error": "STALE_BODY_LIVENESS",
+      "new_permission_error": "STALE_BODY"
+    },
+    {
+      "age_s": 0.201,
+      "monitor_error": "STALE_BODY_LIVENESS",
+      "new_permission_error": "STALE_BODY"
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "actual_navigation": 0,
+  "scope": "Synthetic timing boundaries through production transaction and unchanged certificate keeper; not counterfactual arrival."
+}
