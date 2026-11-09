@@ -1,0 +1,369 @@
+{
+  "closed": true,
+  "scientific_status": "NOT_PASSED",
+  "all_actual_native": 29717,
+  "all_own_replay_native": 29717,
+  "private_native": 0,
+  "new24": 0,
+  "training": 0,
+  "hardware": 0,
+  "batches": [
+    {
+      "version": "v920_native_ingress",
+      "completion": {
+        "closed": true,
+        "status": "NOT_PASSED",
+        "rows": [
+          {
+            "task_id": "main_we",
+            "passed": false,
+            "actual_native": 14654,
+            "replay_native": 14654,
+            "private_native": 0,
+            "goal_m": 2.1947945783506864
+          }
+        ],
+        "unexecuted_navigation": 1,
+        "new24": 0,
+        "error": {
+          "error": "AssertionError('FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we')",
+          "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v920_native_ingress/campaign.py\", line 39, in main\n    launch([sys.executable,'-B',str(C/'launch_one.py'),str(tp),str(ap)],task['task_id'],260)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v920_native_ingress/campaign.py\", line 30, in launch\n    assert rc==0,'FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+label\nAssertionError: FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we\n"
+        },
+        "models_authorized": false,
+        "deadline_unix": 1794211163.73994,
+        "closed_unix": 1794205938.6565464,
+        "guard_restored": true
+      },
+      "audits": [
+        {
+          "task": "main_we",
+          "native": {
+            "passed": false,
+            "status": "PHYSICAL_OR_EVIDENCE_EXCEPTION",
+            "actual_native": 14654,
+            "replay_native": 14654,
+            "private_native": 0,
+            "goal_distance_m": 2.1947945783506864,
+            "minimum_actual_clearance_m": 0.269149863927883,
+            "bad_contacts": 0,
+            "actual_travel_after_detection_m": 2.028221573871378,
+            "maximum_wall_lag_s": 0.002616989004309289,
+            "replay": {
+              "replay_native": 14654,
+              "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+              "contact_mismatched_ticks": 0,
+              "passed": true
+            },
+            "error": "ProtocolError('COMMAND_BEFORE_ARM')",
+            "final_translation_speed_m_s": 1.67486605913185e-06
+          },
+          "audit": {
+            "passed": false,
+            "evidence_passed": false,
+            "functional_passed": false,
+            "actual_native": 14654,
+            "replay_native": 14654,
+            "counts_may_be_unknown": false,
+            "reason": "NO_COMPLETE_NATIVE_NAVIGATION_EVIDENCE",
+            "native_status": "PHYSICAL_OR_EVIDENCE_EXCEPTION",
+            "scope": "V920 single-actor dynamic Nav2 development; not new24 confirmation or RP-CCR328",
+            "actual_global_master_ready_before_arm": true,
+            "timing_profile_integrity": true,
+            "original100ms_gate_passed": true,
+            "failed_prefix_record_integrity_passed": true,
+            "failed_prefix_checks": {
+              "native_count": true,
+              "full_native_timing": true,
+              "finite_arrays": true,
+              "all_native_clearance": true,
+              "all_native_self": true,
+              "contact_coverage": true,
+              "no_bad_contacts": true,
+              "ctrl_amplitude": true,
+              "ctrl_slew": true,
+              "model_sha": true,
+              "full_control_state_replay": true,
+              "no_root_rewrite_record": true,
+              "closed_native": false,
+              "wall_pacing": true,
+              "genuine_ros_observations": true,
+              "model_semantics": true
+            },
+            "exact_sensor_binding_and_true_t0_equivalence": true,
+            "same_actual_dynamic_preflight_physical_setup_and_initial_state": true,
+            "original_dynamic_actor_configuration": true,
+            "independent_recorded_actor_motion": true,
+            "reference_updates_after_detection": 74,
+            "successful_routes_after_detection": 74,
+            "postdetection_update_is_periodic_not_claimed_detection_triggered": true,
+            "motion_enclosure_independent_audit": {
+              "passed": true,
+              "original_observations_verified": 2919,
+              "tracked_states_with_offline_true_center_covered": 1989,
+              "forecast_publications_rebuilt": 1508,
+              "tracked_forecast_publications": 1000,
+              "causal_terminal_decisions_rebuilt": 113,
+              "actual_costmap_snapshot_kinds": [
+                "global_costmap",
+                "local_costmap"
+              ],
+              "postdetection_full_snapshots": {
+                "global_costmap": 39,
+                "local_costmap": 47
+              },
+              "models": 0,
+              "integrations": 0,
+              "periodic_future_support_checks": 7875376,
+              "declared_periodic_class_only": true,
+              "scope": "Causal observation/coefficient-set/forecast/terminal reconstruction and recorded native truth coverage. Known-frequency course only; not arbitrary-speed class or recursive safety"
+            },
+            "command_tube_independent_audit": {
+              "passed": false,
+              "checks": {
+                "nonempty": true,
+                "causal": true,
+                "body_matches_native": true,
+                "source_matches_tracker": true,
+                "command_limits": true,
+                "finite_horizon": true,
+                "admission_threshold": true,
+                "independent_dense_geometry": true,
+                "wait_renewals_zero_and_causal": true,
+                "terminal_cycle_independently_qualified": true,
+                "retained_proof_chain_and_actual_body": true,
+                "conditional_residual_class": true,
+                "stale_new_proposal_retains_only_old_accepted_proof": true,
+                "only_accepted_proofs_dispatched": true,
+                "actual_runtime_tube_monitor_completed": false,
+                "no_unqualified_command_failure": true
+              },
+              "accepted_commands": 2884,
+              "zero_fallback_commands": 767,
+              "maximum_saved_body_error": 1.1102230246251565e-16,
+              "qualified_zero_wait_renewals": 721,
+              "retained_certificate_decisions": 0,
+              "stale_proposal_deferrals": 5,
+              "empirical_limits_not_formal_reachability": true
+            },
+            "native_ingress_independent_audit": {
+              "passed": false,
+              "checks": {
+                "journal_present": true,
+                "received_matches_dispatched": true,
+                "original_50ms_admission": true,
+                "late_discards_keep_old_anchor": true,
+                "sequence_order": true,
+                "every_native_step": true,
+                "control_expiry": true,
+                "original_empirical_residual": true,
+                "completed_execution": true,
+                "no_rejected_packet": false,
+                "trailing_packets_no_unchecked_command": false
+              },
+              "received_admissions": 2881,
+              "late_new_discards": 2,
+              "native_execution_records": 14654,
+              "maximum_received_delivery_age_s": 0.16353948300820775
+            }
+          }
+        }
+      ]
+    },
+    {
+      "version": "v924_consistent_polygon_reference",
+      "completion": {
+        "closed": true,
+        "status": "NOT_PASSED",
+        "rows": [
+          {
+            "task_id": "main_we",
+            "passed": false,
+            "actual_native": 15063,
+            "replay_native": 15063,
+            "private_native": 0,
+            "goal_m": 1.7972698680409647
+          }
+        ],
+        "unexecuted_navigation": 1,
+        "new24": 0,
+        "error": {
+          "error": "AssertionError('FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we')",
+          "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v924_consistent_polygon_reference/campaign.py\", line 39, in main\n    launch([sys.executable,'-B',str(C/'launch_one.py'),str(tp),str(ap)],task['task_id'],260)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v924_consistent_polygon_reference/campaign.py\", line 30, in launch\n    assert rc==0,'FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+label\nAssertionError: FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we\n"
+        },
+        "models_authorized": false,
+        "deadline_unix": 1794211163.73994,
+        "closed_unix": 1794207004.8901045,
+        "guard_restored": true
+      },
+      "audits": [
+        {
+          "task": "main_we",
+          "native": {
+            "passed": false,
+            "status": "NATIVE_COMPLETE",
+            "actual_native": 15063,
+            "replay_native": 15063,
+            "private_native": 0,
+            "goal_distance_m": 1.7972698680409647,
+            "minimum_actual_clearance_m": 0.2428330738132022,
+            "bad_contacts": 0,
+            "actual_travel_after_detection_m": 3.8576565442667534,
+            "maximum_wall_lag_s": 0.003293116998975165,
+            "replay": {
+              "replay_native": 15063,
+              "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+              "contact_mismatched_ticks": 0,
+              "passed": true
+            },
+            "error": null,
+            "final_translation_speed_m_s": 4.752214074130398e-06
+          },
+          "audit": {
+            "evidence_passed": true,
+            "functional_passed": false,
+            "passed": false,
+            "checks": {
+              "native_count": true,
+              "full_native_timing": true,
+              "finite_arrays": true,
+              "all_native_clearance": true,
+              "all_native_self": true,
+              "contact_coverage": true,
+              "no_bad_contacts": true,
+              "ctrl_amplitude": true,
+              "ctrl_slew": true,
+              "model_sha": true,
+              "full_control_state_replay": true,
+              "no_root_rewrite_record": true,
+              "closed_native": true,
+              "wall_pacing": true,
+              "genuine_ros_observations": true,
+              "model_semantics": true
+            },
+            "functional_checks": {
+              "action_success": false,
+              "strict_arrival": false,
+              "actual_stopped": true,
+              "dynamic_discovery_and_continuation": true
+            },
+            "native_count": 15063,
+            "replay_native": 15063,
+            "private_native": 0,
+            "goal_distance_m": 1.7972698680409647,
+            "final_translation_speed_m_s": 4.752214074130398e-06,
+            "minimum_clearance_m": 0.2428330738132022,
+            "minimum_self_margin_m": 0.008764357865474415,
+            "bad_contacts": 0,
+            "discovery": {
+              "native_tick": 4556,
+              "sim_time": 45.559999999999505,
+              "xy": [
+                0.04575482765196859,
+                -0.645629591172233
+              ],
+              "rays": [
+                31
+              ],
+              "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+            },
+            "independently_recomputed_postdiscovery_travel_m": 3.857656544266738,
+            "maximum_state_error": 0.0,
+            "startup_checks": {
+              "one_arm_exactly_at_zero": true,
+              "all_nodes_active": true,
+              "fresh_proof": true,
+              "navigation_action_after_arm": true,
+              "command_stream_present": true,
+              "original_physical_evidence": true
+            },
+            "scope": "V924 single-actor dynamic Nav2 development; not new24 confirmation or RP-CCR328",
+            "actual_global_master_ready_before_arm": true,
+            "timing_profile_integrity": true,
+            "original100ms_gate_passed": true,
+            "failed_prefix_record_integrity_passed": false,
+            "exact_sensor_binding_and_true_t0_equivalence": true,
+            "same_actual_dynamic_preflight_physical_setup_and_initial_state": true,
+            "original_dynamic_actor_configuration": true,
+            "independent_recorded_actor_motion": true,
+            "reference_updates_after_detection": 82,
+            "successful_routes_after_detection": 82,
+            "postdetection_update_is_periodic_not_claimed_detection_triggered": true,
+            "motion_enclosure_independent_audit": {
+              "passed": true,
+              "original_observations_verified": 2960,
+              "tracked_states_with_offline_true_center_covered": 2048,
+              "forecast_publications_rebuilt": 1526,
+              "tracked_forecast_publications": 1026,
+              "causal_terminal_decisions_rebuilt": 126,
+              "actual_costmap_snapshot_kinds": [
+                "global_costmap",
+                "local_costmap"
+              ],
+              "postdetection_full_snapshots": {
+                "global_costmap": 40,
+                "local_costmap": 48
+              },
+              "models": 0,
+              "integrations": 0,
+              "periodic_future_support_checks": 8011920,
+              "declared_periodic_class_only": true,
+              "scope": "Causal observation/coefficient-set/forecast/terminal reconstruction and recorded native truth coverage. Known-frequency course only; not arbitrary-speed class or recursive safety"
+            },
+            "command_tube_independent_audit": {
+              "passed": true,
+              "checks": {
+                "nonempty": true,
+                "causal": true,
+                "body_matches_native": true,
+                "source_matches_tracker": true,
+                "command_limits": true,
+                "finite_horizon": true,
+                "admission_threshold": true,
+                "independent_dense_geometry": true,
+                "wait_renewals_zero_and_causal": true,
+                "terminal_cycle_independently_qualified": true,
+                "retained_proof_chain_and_actual_body": true,
+                "conditional_residual_class": true,
+                "stale_new_proposal_retains_only_old_accepted_proof": true,
+                "only_accepted_proofs_dispatched": true,
+                "actual_runtime_tube_monitor_completed": true,
+                "no_unqualified_command_failure": true
+              },
+              "accepted_commands": 2526,
+              "zero_fallback_commands": 453,
+              "maximum_saved_body_error": 1.1102230246251565e-16,
+              "qualified_zero_wait_renewals": 230,
+              "retained_certificate_decisions": 380,
+              "stale_proposal_deferrals": 4,
+              "empirical_limits_not_formal_reachability": true
+            },
+            "native_ingress_independent_audit": {
+              "passed": true,
+              "checks": {
+                "journal_present": true,
+                "received_matches_dispatched": true,
+                "original_50ms_admission": true,
+                "late_discards_keep_old_anchor": true,
+                "sequence_order": true,
+                "every_native_step": true,
+                "control_expiry": true,
+                "original_empirical_residual": true,
+                "completed_execution": true,
+                "no_rejected_packet": true,
+                "trailing_packets_no_unchecked_command": true
+              },
+              "received_admissions": 2523,
+              "late_new_discards": 3,
+              "native_execution_records": 15063,
+              "maximum_received_delivery_age_s": 0.14335378800751641
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "original_hard_end": 1794211163.73994,
+  "guard_original": true,
+  "execution_lock_idle": true,
+  "models_in_closure": 0
+}

@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "checks": {
+    "independent_300step_positive": true,
+    "two_delayed_commands_discarded": true,
+    "old_motion_expires_at_200ms": true,
+    "old_anchor_never_reset": true,
+    "late_admitted_negative": true,
+    "expired_motion_replayed_negative": true,
+    "old_anchor_replaced_negative": true,
+    "missing_native_step_negative": true,
+    "unrecorded_accept_negative": true,
+    "future_timestamp_negative": true,
+    "actual_position_tamper_negative": true,
+    "both_real_receive_sites_sample_after_read": true,
+    "previous_sample_before_read_failure": true,
+    "sample_after_read_accepts_timely_packet": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "recording_stub_only": true,
+  "independent_audit_baseline": {
+    "passed": true,
+    "checks": {
+      "journal_present": true,
+      "received_matches_dispatched": true,
+      "original_50ms_admission": true,
+      "late_discards_keep_old_anchor": true,
+      "sequence_order": true,
+      "every_native_step": true,
+      "control_expiry": true,
+      "original_empirical_residual": true,
+      "completed_execution": true,
+      "no_rejected_packet": true,
+      "trailing_packets_no_unchecked_command": true
+    },
+    "received_admissions": 1,
+    "late_new_discards": 2,
+    "native_execution_records": 300,
+    "maximum_received_delivery_age_s": 0.0969999999999942
+  },
+  "historical_failed_packet_unknown": true,
+  "reused_v920_stub_qualification": true
+}

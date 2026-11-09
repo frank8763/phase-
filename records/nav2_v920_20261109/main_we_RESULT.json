@@ -1,0 +1,448 @@
+{
+  "passed": false,
+  "actual_native": 14654,
+  "replay_native": 14654,
+  "private_native": 0,
+  "environment_initialization_attempted": true,
+  "maximum_wall_lag_s": 0.002616989004309289,
+  "environment_initialization_completed": true,
+  "error": "ProtocolError('COMMAND_BEFORE_ARM')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v920_native_ingress/native_loop.py\", line 72, in run\n    session.receive(packet,time.monotonic(),vehicle.count,float(vehicle.d.time))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v920_native_ingress/native_contract.py\", line 17, in receive\n    require(self.phase=='RUNNING','COMMAND_BEFORE_ARM')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py\", line 10, in require\n    if not condition:raise ProtocolError(message)\nhandshake.ProtocolError: COMMAND_BEFORE_ARM\n",
+  "cyclic_gc_originally_enabled": true,
+  "fully_recorded_native": 14654,
+  "minimum_actual_clearance_m": 0.269149863927883,
+  "minimum_self_margin_m": 0.009179833490593092,
+  "bad_contacts": 0,
+  "final_body": [
+    1.938224464919886,
+    -1.247534130938368,
+    -0.4081195621380665,
+    -1.6049487606047222e-06,
+    -7.990138149700939e-07
+  ],
+  "final_translation_speed_m_s": 1.67486605913185e-06,
+  "root_guard_native_count": 14654,
+  "goal_distance_m": 2.1947945783506864,
+  "first_actor_detection": {
+    "native_tick": 4651,
+    "sim_time": 46.509999999999316,
+    "xy": [
+      0.02358076116716915,
+      -0.6651251206019246
+    ],
+    "rays": [
+      31
+    ],
+    "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+  },
+  "actual_travel_after_detection_m": 2.028221573871378,
+  "evidence_save_complete": true,
+  "native_api_calls_completed": 14654,
+  "replay": {
+    "replay_native": 14654,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "replay_status": "COMPLETED",
+  "timing_profile": {
+    "maximum_wall_lag_s": 0.002616989004309289,
+    "overrun": null,
+    "stages": {
+      "factory_initialize": 0,
+      "scan": 1,
+      "prearm_gc_prepare": 2,
+      "receive": 3,
+      "pacing_wait": 4,
+      "vehicle.native": 5,
+      "vehicle.full_geometry": 6,
+      "vehicle.check": 7,
+      "step_and_native_safety": 8,
+      "observation_send": 9,
+      "partial_write": 10,
+      "evidence_save": 11,
+      "own_prefix_replay": 12
+    },
+    "inclusive_stages_do_not_add": true,
+    "wall_minus_thread_cpu_is_not_unique_scheduler_attribution": true,
+    "recorded_rows": 105662,
+    "capacity": 298496,
+    "summaries": {
+      "factory_initialize": {
+        "calls": 1,
+        "inclusive_wall_s": 5.071522594997077,
+        "p50_s": 5.071522594997077,
+        "p95_s": 5.071522594997077,
+        "p99_s": 5.071522594997077,
+        "maximum_s": 5.071522594997077,
+        "maximum_tick_before": 0,
+        "cpu_at_maximum_s": 4.961489541000001
+      },
+      "scan": {
+        "calls": 2932,
+        "inclusive_wall_s": 2.209924670154578,
+        "p50_s": 0.0007444720104103908,
+        "p95_s": 0.0008513302425853908,
+        "p99_s": 0.0009768206521403044,
+        "maximum_s": 0.0014473839983111247,
+        "maximum_tick_before": 5651,
+        "cpu_at_maximum_s": 0.0014479590000000542
+      },
+      "prearm_gc_prepare": {
+        "calls": 1,
+        "inclusive_wall_s": 0.08572364399151411,
+        "p50_s": 0.08572364399151411,
+        "p95_s": 0.08572364399151411,
+        "p99_s": 0.08572364399151411,
+        "maximum_s": 0.08572364399151411,
+        "maximum_tick_before": 0,
+        "cpu_at_maximum_s": 0.08571687299999997
+      },
+      "receive": {
+        "calls": 14655,
+        "inclusive_wall_s": 0.23305821587564424,
+        "p50_s": 7.1250105975195765e-06,
+        "p95_s": 5.5804994190111756e-05,
+        "p99_s": 6.767800368834287e-05,
+        "maximum_s": 0.00022797100245952606,
+        "maximum_tick_before": 5645,
+        "cpu_at_maximum_s": 0.00022846999999970308
+      },
+      "pacing_wait": {
+        "calls": 14654,
+        "inclusive_wall_s": 130.1883550461207,
+        "p50_s": 0.008991795999463648,
+        "p95_s": 0.009260155993251829,
+        "p99_s": 0.009290398157463641,
+        "maximum_s": 0.011761885994928889,
+        "maximum_tick_before": 10979,
+        "cpu_at_maximum_s": 1.2594000001087124e-05
+      },
+      "vehicle.native": {
+        "calls": 14654,
+        "inclusive_wall_s": 1.4239723492210032,
+        "p50_s": 9.854999370872974e-05,
+        "p95_s": 0.00011636099952738732,
+        "p99_s": 0.00015966341699822728,
+        "maximum_s": 0.00043932200060226023,
+        "maximum_tick_before": 1427,
+        "cpu_at_maximum_s": 0.00044041000000039077
+      },
+      "vehicle.full_geometry": {
+        "calls": 14654,
+        "inclusive_wall_s": 2.432921354120481,
+        "p50_s": 0.00017572900105733424,
+        "p95_s": 0.00021609700343105942,
+        "p99_s": 0.00024515289158443844,
+        "maximum_s": 0.0004808789963135496,
+        "maximum_tick_before": 1428,
+        "cpu_at_maximum_s": 0.00048112699999958153
+      },
+      "vehicle.check": {
+        "calls": 14654,
+        "inclusive_wall_s": 7.49733538122382,
+        "p50_s": 0.0004915639947284944,
+        "p95_s": 0.0006720410019624978,
+        "p99_s": 0.0007295934863213908,
+        "maximum_s": 0.0014343259972520173,
+        "maximum_tick_before": 1428,
+        "cpu_at_maximum_s": 0.001432459000000108
+      },
+      "step_and_native_safety": {
+        "calls": 14654,
+        "inclusive_wall_s": 12.677265914782765,
+        "p50_s": 0.0008596400002716109,
+        "p95_s": 0.0010852359991986305,
+        "p99_s": 0.00127681867787032,
+        "maximum_s": 0.003300850003142841,
+        "maximum_tick_before": 1427,
+        "cpu_at_maximum_s": 0.0032979049999992682
+      },
+      "observation_send": {
+        "calls": 14654,
+        "inclusive_wall_s": 0.5782807766081532,
+        "p50_s": 3.680800728034228e-05,
+        "p95_s": 5.46180090168491e-05,
+        "p99_s": 7.124099647626281e-05,
+        "maximum_s": 0.0001804779894882813,
+        "maximum_tick_before": 1427,
+        "cpu_at_maximum_s": 0.00018052999999973451
+      },
+      "partial_write": {
+        "calls": 147,
+        "inclusive_wall_s": 0.06333572215226013,
+        "p50_s": 0.00034195699845440686,
+        "p95_s": 0.0006383204949088378,
+        "p99_s": 0.0021434981632046384,
+        "maximum_s": 0.0022915860026841983,
+        "maximum_tick_before": 10201,
+        "cpu_at_maximum_s": 0.0003875799999981666
+      },
+      "evidence_save": {
+        "calls": 1,
+        "inclusive_wall_s": 1.0397863249963848,
+        "p50_s": 1.0397863249963848,
+        "p95_s": 1.0397863249963848,
+        "p99_s": 1.0397863249963848,
+        "maximum_s": 1.0397863249963848,
+        "maximum_tick_before": 14654,
+        "cpu_at_maximum_s": 1.0397612639999991
+      },
+      "own_prefix_replay": {
+        "calls": 1,
+        "inclusive_wall_s": 2.794837652996648,
+        "p50_s": 2.794837652996648,
+        "p95_s": 2.794837652996648,
+        "p99_s": 2.794837652996648,
+        "maximum_s": 2.794837652996648,
+        "maximum_tick_before": 14654,
+        "cpu_at_maximum_s": 2.7943574270000013
+      }
+    }
+  },
+  "status": "PHYSICAL_OR_EVIDENCE_EXCEPTION",
+  "closed": true,
+  "startup_events": [
+    {
+      "event": "ARMED_AT_T0",
+      "at": 103283.819433648,
+      "native_tick": 0,
+      "states": {
+        "map_server": 3,
+        "planner_server": 3,
+        "controller_server": 3,
+        "behavior_server": 3,
+        "velocity_smoother": 3,
+        "collision_monitor": 3,
+        "bt_navigator": 3
+      },
+      "checked_at": {
+        "map_server": 103283.802016306,
+        "planner_server": 103283.802517371,
+        "controller_server": 103283.802984002,
+        "behavior_server": 103283.803817527,
+        "velocity_smoother": 103283.809952601,
+        "collision_monitor": 103283.814386193,
+        "bt_navigator": 103283.818058688
+      },
+      "issued_at": 103283.818065812
+    },
+    {
+      "event": "LATE_NEW_COMMAND_DISCARDED",
+      "at": 103344.160615668,
+      "native_tick": 6035,
+      "new_sequence": 1199,
+      "delivery_age_s": 0.07293670800572727,
+      "retained_sequence": 1198,
+      "retained_anchor_tick": 6022,
+      "retained_issued_at": 103344.039967562
+    },
+    {
+      "event": "LATE_NEW_COMMAND_DISCARDED",
+      "at": 103409.021219806,
+      "native_tick": 12521,
+      "new_sequence": 2471,
+      "delivery_age_s": 0.16353948300820775,
+      "retained_sequence": 2470,
+      "retained_anchor_tick": 12499,
+      "retained_issued_at": 103408.807734496
+    },
+    {
+      "event": "STOP",
+      "at": 103430.350362991
+    }
+  ],
+  "armed_at": 103283.819433648,
+  "ros_action": {
+    "passed": false,
+    "navigation_action_sent": true,
+    "global_master_readiness": {
+      "passed": true,
+      "accepted_replies": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 103283.24763808
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 103283.800409812
+        }
+      ],
+      "all_reads": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 103283.24763808
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 103283.800409812
+        }
+      ],
+      "native_tick": 0
+    },
+    "active_states": {
+      "map_server": 3,
+      "planner_server": 3,
+      "controller_server": 3,
+      "behavior_server": 3,
+      "velocity_smoother": 3,
+      "collision_monitor": 3,
+      "bt_navigator": 3
+    },
+    "active_checked_at": {
+      "map_server": 103283.802016306,
+      "planner_server": 103283.802517371,
+      "controller_server": 103283.802984002,
+      "behavior_server": 103283.803817527,
+      "velocity_smoother": 103283.809952601,
+      "collision_monitor": 103283.814386193,
+      "bt_navigator": 103283.818058688
+    },
+    "arm_issued_at": 103283.818065812,
+    "goal_sent_at": 103283.830605491,
+    "error": "RuntimeError('STALE_COHERENT_OBSERVATION')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v920_native_ingress/ros_bridge.py\", line 178, in run\n    response,events=supervise(node,g,goal_until,deadline,rclpy.spin_once,wait_for,require,check_servers)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v920_native_ingress/supervise.py\", line 13, in supervise\n    node.motion.decision_snapshot()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v920_native_ingress/motion_publisher.py\", line 76, in decision_snapshot\n    if self.running and (now-packet['sent_at']>.2 or age>.2):raise RuntimeError('STALE_COHERENT_OBSERVATION')\n                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: STALE_COHERENT_OBSERVATION\n",
+    "reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+    "wall_s": 155.4169010110054,
+    "readiness_probes": {
+      "passed": true,
+      "size_x": 1000,
+      "size_y": 1000,
+      "resolution": 0.009999999776482582,
+      "origin": [
+        -5.0,
+        -5.0
+      ],
+      "frame": "map",
+      "cells": 1000000,
+      "unknown_cells": 0,
+      "required_static_cells": 72683,
+      "missing_static_cells": 0,
+      "all_unknown": false,
+      "models": 0,
+      "checked_at": 103283.800409812
+    },
+    "odometry_messages": 14655,
+    "cmd_vel_messages": 2884,
+    "plan_messages": 113,
+    "maximum_observation_age_s": 0.06020101299509406,
+    "maximum_scan_age_s": 0.09908553400600795,
+    "last_observation": {
+      "kind": "observation",
+      "run_id": "v920-main_we",
+      "phase": "RUNNING",
+      "native_tick": 14631,
+      "sim_time": 146.3100000000119,
+      "sent_at": 103430.121271411,
+      "body_measured_at": 103430.121271411,
+      "scan_measured_at": 103430.121270223,
+      "initial_snapshot": false,
+      "body": [
+        1.9382247600269513,
+        -1.2475343785370854,
+        -0.4081193783640408,
+        -1.6049424840465616e-06,
+        -7.990214447310954e-07
+      ],
+      "scan": {
+        "native_tick": 14631,
+        "time": 146.3100000000119,
+        "ranges": [
+          3.0,
+          3.0,
+          2.9857704639434814,
+          0.949857234954834,
+          2.978147029876709,
+          2.3230183124542236,
+          1.836609125137329,
+          1.5117557048797607,
+          1.3546849489212036,
+          3.0,
+          1.2791709899902344,
+          1.2850627899169922,
+          2.9849040508270264,
+          2.997202157974243,
+          2.980433940887451,
+          3.0,
+          3.0,
+          2.9754512310028076,
+          3.0,
+          1.9413022994995117,
+          2.0007665157318115,
+          2.2068207263946533,
+          2.667377471923828,
+          3.0,
+          2.9913294315338135,
+          2.9918878078460693,
+          2.9987645149230957,
+          3.0,
+          1.4675331115722656,
+          1.5904252529144287,
+          1.8182032108306885,
+          2.304253101348877
+        ],
+        "xy": [
+          1.9382247600269513,
+          -1.2475343785370854
+        ],
+        "yaw": -0.4081193804740906
+      }
+    }
+  }
+}

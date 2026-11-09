@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "checks": {
+    "independent_3072_pose_distance": true,
+    "hard_late_two_certified": true,
+    "soft_three_rejected": true,
+    "tampered_path_both_rejected": true,
+    "original_short_time_static_dynamic_preserved": true,
+    "new_terminal_independent": true,
+    "actual_route_return_requires_certificate": true,
+    "hard_global_publisher_and_rebuild": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "independent_max_error": 1.3322676295501878e-15,
+  "cases": [
+    {
+      "mode": "SOFT",
+      "time": 47.009999999999216,
+      "online": {
+        "passed": false,
+        "lower_m": -0.16789260979725731,
+        "sample_lower_m": -0.160002,
+        "gap_reserve_m": 0.007890609797257319,
+        "samples": 562,
+        "geometry_only": true
+      },
+      "independent": {
+        "passed": false,
+        "lower_m": -0.16789260979725731
+      },
+      "online_wall_s": 0.0066039030061801895
+    },
+    {
+      "mode": "SOFT",
+      "time": 70.00999999999891,
+      "online": {
+        "passed": false,
+        "lower_m": -0.1471651745600893,
+        "sample_lower_m": -0.13927456476283198,
+        "gap_reserve_m": 0.007890609797257319,
+        "samples": 383,
+        "geometry_only": true
+      },
+      "independent": {
+        "passed": false,
+        "lower_m": -0.14716517456008935
+      },
+      "online_wall_s": 0.0035524770064512268
+    },
+    {
+      "mode": "SOFT",
+      "time": 146.01000000001218,
+      "online": {
+        "passed": false,
+        "lower_m": -0.1454267674818102,
+        "sample_lower_m": -0.13753615768455288,
+        "gap_reserve_m": 0.007890609797257319,
+        "samples": 379,
+        "geometry_only": true
+      },
+      "independent": {
+        "passed": false,
+        "lower_m": -0.14542676748181013
+      },
+      "online_wall_s": 0.004047591995913535
+    },
+    {
+      "mode": "HARD",
+      "time": 70.00999999999891,
+      "online": {
+        "passed": true,
+        "lower_m": 0.15985550909239263,
+        "sample_lower_m": 0.16774611888964994,
+        "gap_reserve_m": 0.007890609797257319,
+        "samples": 580,
+        "geometry_only": true
+      },
+      "independent": {
+        "passed": true,
+        "lower_m": 0.15985550909239274
+      },
+      "online_wall_s": 0.00463650499295909
+    },
+    {
+      "mode": "HARD",
+      "time": 146.01000000001218,
+      "online": {
+        "passed": true,
+        "lower_m": 0.16823969158791732,
+        "sample_lower_m": 0.17613030138517463,
+        "gap_reserve_m": 0.007890609797257319,
+        "samples": 581,
+        "geometry_only": true
+      },
+      "independent": {
+        "passed": true,
+        "lower_m": 0.16823969158791743
+      },
+      "online_wall_s": 0.0040143470105249435
+    }
+  ],
+  "terminal_max_error": 3.3306690738754696e-16,
+  "physical_integration_not_yet_run": true
+}

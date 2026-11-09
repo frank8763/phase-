@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": {
+    "previous_delivery_failure_reproduced": true,
+    "late_packet_discarded_without_new_actuation": true,
+    "old_anchor_and_issue_time_unchanged": true,
+    "timely_packet_uses_original_receiver": true,
+    "foreign_rejected": true,
+    "sequence_replay_rejected": true,
+    "unqualified_rejected": true,
+    "mismatched_command_rejected": true,
+    "future_source_rejected": true,
+    "future_timestamp_rejected": true,
+    "beyond_200ms_rejected": true,
+    "expired_finite_backup_rejected": true,
+    "invalid_backup_rejected": true,
+    "production_entry_uses_local_contract": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "physical_integration_implemented": true,
+  "scope": "Integrated ingress candidate with recorded command fields and constructed69ms delay; exact original failing packet/sequence not captured, no claim of exact historical delay reproduction.",
+  "reused_v920_stub_qualification": true
+}

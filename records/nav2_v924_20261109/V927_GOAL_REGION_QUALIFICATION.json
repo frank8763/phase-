@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": {
+    "all17_fixed_choices_contained": true,
+    "exact_candidate_count": true,
+    "original_goal_not_mutated": true,
+    "deterministic": true,
+    "chosen_endpoint_within_bound": true,
+    "worst_boundary_negative": true,
+    "nan_negative": true,
+    "selected_static_clearance_over_global_margin": true
+  },
+  "selected": {
+    "selected_xy": [
+      4.0,
+      -1.8
+    ],
+    "displacement_m": 0.2,
+    "public_static_clearance_m": 0.37499989271163936,
+    "candidate_count": 17,
+    "endpoint_radius_m": 0.2,
+    "controller_tolerance_m": 0.2,
+    "worst_case_goal_distance_m": 0.4,
+    "original_goal_radius_m": 0.45,
+    "geometry_truth_used": false,
+    "dynamic_execution_certified": false
+  },
+  "models": 0,
+  "integrations": 0
+}

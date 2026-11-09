@@ -1,0 +1,34 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "full_saved_decisions": 2884,
+  "reconstructed_fallbacks": 767,
+  "failure_categories": {
+    "terminal_cycle_lower_m": 767
+  },
+  "all_original_requests_refused": true,
+  "geometry_recompute_wall_s": {
+    "median": 0.0007693950028624386,
+    "p99": 0.0010856787342345344,
+    "maximum": 0.0023283709888346493
+  },
+  "recompute_not_historical_latency_attribution": true,
+  "original_runtime_sequence": {
+    "last_observation_sent_at": 103430.121271411,
+    "stop_issued_at": 103430.341747597,
+    "stop_received_at": 103430.350362991,
+    "stop_reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+    "late_command_issue": 103430.127744829,
+    "late_command_receive": 103430.350399799,
+    "late_command_age": 0.2226549699989846,
+    "late_sequence": 2884,
+    "old_sequence_retained": 2883,
+    "native_error": "ProtocolError('COMMAND_BEFORE_ARM')",
+    "original_stale_observation_error": "RuntimeError('STALE_COHERENT_OBSERVATION')"
+  },
+  "full_series_storage": "Verified Release operations archive",
+  "full_series_original_member": "runs/v922_reference_consistency_diagnosis/SAVED_DIAGNOSIS.json",
+  "full_series_counts": {
+    "reconstructed_requests": 767
+  }
+}

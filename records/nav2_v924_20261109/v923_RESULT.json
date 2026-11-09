@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "checks": {
+    "axis_known_distance": true,
+    "diagonal_known_distance": true,
+    "overlap": true,
+    "touch": true,
+    "symmetry": true,
+    "nan_rejected": true,
+    "degenerate_rejected": true,
+    "independent_256_dual_direction_bounds": true
+  },
+  "independent_max_distance_error": 7.518148105445377e-05,
+  "constructed_dual_cases": 256,
+  "independent_angular_checks": 4194304,
+  "actual_saved_requests_examined": 767,
+  "terminal_refusals_geometry_representationally_recovered": 0,
+  "path_cases": [
+    {
+      "mode": "SOFT",
+      "time": 47.009999999999216,
+      "planner_status": 4,
+      "registered_path_count": 194,
+      "dense_samples": 562,
+      "polygon_distance_sample_lower_m": -0.160002,
+      "continuous_gap_reserve_m": 0.007890609797257319,
+      "continuous_lower_m": -0.16789260979725731,
+      "qualified_continuous_geometry": false
+    },
+    {
+      "mode": "SOFT",
+      "time": 70.00999999999891,
+      "planner_status": 4,
+      "registered_path_count": 161,
+      "dense_samples": 383,
+      "polygon_distance_sample_lower_m": -0.139274564762832,
+      "continuous_gap_reserve_m": 0.007890609797257319,
+      "continuous_lower_m": -0.14716517456008932,
+      "qualified_continuous_geometry": false
+    },
+    {
+      "mode": "SOFT",
+      "time": 146.01000000001218,
+      "planner_status": 4,
+      "registered_path_count": 159,
+      "dense_samples": 379,
+      "polygon_distance_sample_lower_m": -0.13753615768455288,
+      "continuous_gap_reserve_m": 0.007890609797257319,
+      "continuous_lower_m": -0.1454267674818102,
+      "qualified_continuous_geometry": false
+    },
+    {
+      "mode": "HARD",
+      "time": 47.009999999999216,
+      "planner_status": 6,
+      "registered_path_count": 0
+    },
+    {
+      "mode": "HARD",
+      "time": 70.00999999999891,
+      "planner_status": 4,
+      "registered_path_count": 125,
+      "dense_samples": 580,
+      "polygon_distance_sample_lower_m": 0.16774611888965005,
+      "continuous_gap_reserve_m": 0.007890609797257319,
+      "continuous_lower_m": 0.15985550909239274,
+      "qualified_continuous_geometry": true
+    },
+    {
+      "mode": "HARD",
+      "time": 146.01000000001218,
+      "planner_status": 4,
+      "registered_path_count": 118,
+      "dense_samples": 581,
+      "polygon_distance_sample_lower_m": 0.1761303013851747,
+      "continuous_gap_reserve_m": 0.007890609797257319,
+      "continuous_lower_m": 0.16823969158791738,
+      "qualified_continuous_geometry": true
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "elapsed_s": 2.7572590409981785,
+  "physical_entrypoint": false,
+  "scope": "Component distance correctness and fixed saved path geometry only; old V920 NOT_PASSED unchanged; no physical tracking or general safety claim"
+}

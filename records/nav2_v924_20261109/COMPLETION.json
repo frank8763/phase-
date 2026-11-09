@@ -1,0 +1,24 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "rows": [
+    {
+      "task_id": "main_we",
+      "passed": false,
+      "actual_native": 15063,
+      "replay_native": 15063,
+      "private_native": 0,
+      "goal_m": 1.7972698680409647
+    }
+  ],
+  "unexecuted_navigation": 1,
+  "new24": 0,
+  "error": {
+    "error": "AssertionError('FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v924_consistent_polygon_reference/campaign.py\", line 39, in main\n    launch([sys.executable,'-B',str(C/'launch_one.py'),str(tp),str(ap)],task['task_id'],260)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v924_consistent_polygon_reference/campaign.py\", line 30, in launch\n    assert rc==0,'FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+label\nAssertionError: FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we\n"
+  },
+  "models_authorized": false,
+  "deadline_unix": 1794211163.73994,
+  "closed_unix": 1794207004.8901045,
+  "guard_restored": true
+}

@@ -1,0 +1,5 @@
+# V925 saved control and timing diagnosis — zero model
+
+V924 remains closed NOT_PASSED. Fixed actualV924 native checkpoints9000/11000/13000/14800, choose last original non-renewal command row at/before each, no search for favorable state. Evaluate unchanged admit for exact original desired/zero and13declared controls:zero plus speed[-.1,-.05,.05,.1] x curvature[-.758770385,0,.758770385]. No physics/private predictions/future observations, control not executed. Separate finite/terminal rejection and original measured-velocity residual class. No claimed sustained continuation from one-step geometry.
+
+Replay the original causal scan/tracker/periodic update functions on the complete V924 saved observation sequence, measure CPU/wall stages separately at each observed stamp. No synthetic sensor updates, no model imports. Observed compute costs do not identify historical OS/IO/GC scheduling without historical probes. Software analysis<=180s. Full original source and failure remains unchanged. Zero-/near-zero residual classification may be diagnosed; no relaxed residual is executed or called qualified.

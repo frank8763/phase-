@@ -1,0 +1,3 @@
+# V922 fixed saved-state diagnosis, zero vehicle models
+
+V920 remains closed NOT_PASSED. Only actual47.01,70.01,146.01 saved sensor/body states, same original installed production Smac proxy and static task. Compare global full-cycle reference cost50 vs hard100 with original finite local map. Two fresh separate ROS stacks,3same paired input queries each. No controller navigation goal, vehicle model, future sensing, integration or source change in V920. At most105s per stack; missing paths remain failures, no alternative seeds/parameters. Query full master map and preserve outputs. Geometry path existence is not an executed safe continuation. Whole-cycle lower bound sampled at path poses is not continuous-tube validation. All old failures preserved.
