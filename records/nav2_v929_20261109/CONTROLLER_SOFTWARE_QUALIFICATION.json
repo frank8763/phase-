@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "diagnostics": [
+    {
+      "received_at": 107951.726395235,
+      "gear": 1,
+      "projected_samples": 44325,
+      "v": 0.008994858711957932,
+      "w": 0.0003735324426088482,
+      "compute_s": 0.03240074,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107951.775128731,
+      "gear": 1,
+      "projected_samples": 38474,
+      "v": 0.012059135362505913,
+      "w": 0.000678813667036593,
+      "compute_s": 0.030920153,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107951.824528313,
+      "gear": 1,
+      "projected_samples": 34647,
+      "v": 0.013825911097228527,
+      "w": 0.00025383662432432175,
+      "compute_s": 0.030775301,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107951.874642661,
+      "gear": 1,
+      "projected_samples": 32269,
+      "v": 0.013527540490031242,
+      "w": 0.0003621877986006439,
+      "compute_s": 0.03086435,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107951.924365193,
+      "gear": 1,
+      "projected_samples": 30114,
+      "v": 0.013467248529195786,
+      "w": 0.0007211486808955669,
+      "compute_s": 0.030466598,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107951.974137593,
+      "gear": 1,
+      "projected_samples": 28479,
+      "v": 0.012820319272577763,
+      "w": 0.0003820118436124176,
+      "compute_s": 0.030415543,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107952.024541647,
+      "gear": 1,
+      "projected_samples": 27163,
+      "v": 0.012852868996560574,
+      "w": 0.00039536890108138323,
+      "compute_s": 0.030626886,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107952.073809436,
+      "gear": 1,
+      "projected_samples": 26817,
+      "v": 0.012922806665301323,
+      "w": 0.000721719057764858,
+      "compute_s": 0.03006291,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107952.124642112,
+      "gear": 1,
+      "projected_samples": 26100,
+      "v": 0.013007895089685917,
+      "w": 0.0006900824373587966,
+      "compute_s": 0.030891658,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 107952.174711341,
+      "gear": 1,
+      "projected_samples": 26078,
+      "v": 0.012356212362647057,
+      "w": 0.0004236082313582301,
+      "compute_s": 0.030823981,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    }
+  ],
+  "checks": {
+    "reached_exact_pre_navigation_boundary": true,
+    "expected_software_stop": true,
+    "synthetic_navigation_action": true,
+    "two_real_master_readbacks": true,
+    "all_real_lifecycle_nodes_active": true,
+    "arm_exchange": true,
+    "ten_nominal_commands_not_executed": true,
+    "synthetic_peer_never_integrates": true,
+    "nonzero_final_controls": true,
+    "custom_controller_and_projection_active": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "synthetic_navigation_goals": 1,
+  "synthetic_peer": true,
+  "scope": "Actual installed customMPPI ten-control computation on fixed synthetic observations with zero physical execution. Not a navigation success or model qualification.",
+  "events": [
+    {
+      "kind": "arm",
+      "native_tick": 0,
+      "sim_time": 0.0,
+      "states": {
+        "map_server": 3,
+        "planner_server": 3,
+        "controller_server": 3,
+        "behavior_server": 3,
+        "velocity_smoother": 3,
+        "collision_monitor": 3,
+        "bt_navigator": 3
+      },
+      "checked_at": {
+        "map_server": 107951.432467367,
+        "planner_server": 107951.433241498,
+        "controller_server": 107951.437153713,
+        "behavior_server": 107951.437560964,
+        "velocity_smoother": 107951.43796109,
+        "collision_monitor": 107951.43874472,
+        "bt_navigator": 107951.442461028
+      },
+      "issued_at": 107951.442474089,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 1,
+      "issued_at": 107951.737152342,
+      "v": 0.008994858711957932,
+      "w": 0.0003735324426088482,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 2,
+      "issued_at": 107951.785431095,
+      "v": 0.012059135362505913,
+      "w": 0.000678813667036593,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 3,
+      "issued_at": 107951.834733317,
+      "v": 0.013825911097228527,
+      "w": 0.00025383662432432175,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 4,
+      "issued_at": 107951.884842916,
+      "v": 0.013527540490031242,
+      "w": 0.0003621877986006439,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 5,
+      "issued_at": 107951.934401598,
+      "v": 0.013467248529195786,
+      "w": 0.0007211486808955669,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 6,
+      "issued_at": 107951.990044102,
+      "v": 0.012820319272577763,
+      "w": 0.0003820118436124176,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 7,
+      "issued_at": 107952.03464098,
+      "v": 0.012852868996560574,
+      "w": 0.00039536890108138323,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 8,
+      "issued_at": 107952.084238844,
+      "v": 0.012922806665301323,
+      "w": 0.000721719057764858,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 9,
+      "issued_at": 107952.134892234,
+      "v": 0.013007895089685917,
+      "w": 0.0006900824373587966,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 10,
+      "issued_at": 107952.185566996,
+      "v": 0.012356212362647057,
+      "w": 0.0004236082313582301,
+      "run_id": "v929-zero-model-startup-fixture"
+    },
+    {
+      "kind": "stop",
+      "issued_at": 107952.186184402,
+      "reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+      "run_id": "v929-zero-model-startup-fixture"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "at": 1794209874.2114713,
+    "models": 0,
+    "integrations": 0,
+    "error": "First real Nav2 startup plugin lookup failed: missing std_msgs C++ type-support link for diagnostic topic",
+    "retained": "runs/v929_startup_fixture02",
+    "fix": "Explicit link against pinned installed std_msgs__rosidl_typesupport_cpp; same candidate not yet physically frozen"
+  },
+  {
+    "models": 0,
+    "error": "Pre-model source review found foreign-run check bypassed for postSTOP ignored commands",
+    "fix": "Validate run_id and finite body command before ignoring postSTOP"
+  },
+  {
+    "models": 0,
+    "integrations": 0,
+    "error": "Controller fixture1 reached first command then delayed twist_contract import missing",
+    "fix": "Bundle same unchanged representability contract before candidate freeze",
+    "retained": "runs/v929_controller_fixture"
+  },
+  {
+    "models": 0,
+    "error": "Pre-model footprint review: cost253 is inflated inscribed cost, not raw obstacle",
+    "fix": "Padded complete footprint checks reject lethal254 and unknown255 per Nav2 checker semantics; unchanged native .15 safety gate",
+    "before_threshold": 253,
+    "after_threshold": 254
+  },
+  {
+    "models": 0,
+    "error": "Fixedbody controller fixture used constant scan tick; production correctly suppressed duplicate scan, collision monitor stopped final commands",
+    "fix": "Synthetic RUNNING observation/scan tick advances to exercise live scan stream, still no physical model or vehicle movement; require nonzero final command",
+    "retained": "runs/v929_controller_fixture02"
+  },
+  {
+    "models": 0,
+    "integrations": 0,
+    "error": "Final preparation console print reused report file-handle name after all freeze/authority writes; print TypeError",
+    "action": "Verified completed authority/freeze, no source mutation or physical launch; continue same registered start/end"
+  }
+]
