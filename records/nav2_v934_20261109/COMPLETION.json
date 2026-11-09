@@ -1,0 +1,24 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "rows": [
+    {
+      "task_id": "main_we",
+      "passed": false,
+      "actual_native": 18202,
+      "replay_native": 18202,
+      "private_native": 0,
+      "goal_m": 4.018338260805572
+    }
+  ],
+  "unexecuted_navigation": 1,
+  "new24": 0,
+  "error": {
+    "error": "AssertionError('FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v934_rpccr_certified_recovery/campaign.py\", line 39, in main\n    launch([sys.executable,'-B',str(C/'launch_one.py'),str(tp),str(ap)],task['task_id'],260)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v934_rpccr_certified_recovery/campaign.py\", line 30, in launch\n    assert rc==0,'FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+label\nAssertionError: FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we\n"
+  },
+  "models_authorized": false,
+  "deadline_unix": 1794217221.0305147,
+  "closed_unix": 1794214094.9223056,
+  "guard_restored": true
+}

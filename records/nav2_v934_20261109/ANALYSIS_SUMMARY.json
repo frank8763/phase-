@@ -1,0 +1,63 @@
+{
+  "status": "NOT_PASSED",
+  "models_in_analysis": 0,
+  "integrations_in_analysis": 0,
+  "actual_native": 18202,
+  "own_replay_native": 18202,
+  "private_native": 0,
+  "minimum_clearance_m": 0.26911353511423786,
+  "bad_contacts": 0,
+  "goal_m": 4.018338260805572,
+  "final_speed_m_s": 3.0174846819042794e-06,
+  "first_actor_detection": {
+    "native_tick": 4556,
+    "sim_time": 45.559999999999505,
+    "xy": [
+      0.00792387950933737,
+      -0.6649834863360342
+    ],
+    "rays": [
+      31
+    ],
+    "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+  },
+  "postdiscovery_actual_travel_m": 0.2025874448213109,
+  "total_travel_m": 4.476638443869186,
+  "original_full_independent_audit_passed": false,
+  "full_evidence_audit_passed": true,
+  "functional_checks": {
+    "action_success": false,
+    "strict_arrival": false,
+    "actual_stopped": true,
+    "dynamic_discovery_and_continuation": false
+  },
+  "runtime_error": "ProtocolError('NAVIGATION_DEADLINE')",
+  "maximum_native_lag_s": 0.0033302580122835934,
+  "routes": 116,
+  "passed_routes": 38,
+  "route_error_codes": {
+    "205": 4,
+    "208": 73,
+    "None": 1
+  },
+  "virtual_terminal_root_205": 4,
+  "dispatched_decisions": 3581,
+  "after_detection_decisions": 2672,
+  "after_detection_nonzero_nominal": 37,
+  "after_detection_zero_nominal": 2635,
+  "new_recovery_decisions": 0,
+  "new_recovery_physical_benefit_established": false,
+  "old_saved_refusals": 781,
+  "old_saved_component_modes": {
+    "CERTIFIED_PROGRESS_ALTERNATIVE": 31,
+    "CERTIFIED_STOP_ONLY": 30,
+    "CERTIFIED_CLEARANCE_RECOVERY": 392,
+    "NO_NEW_CERTIFIED_CONTROL": 328
+  },
+  "component_counterfactual_is_not_online_success": true,
+  "new24": "UNEXECUTED",
+  "repeat": "UNEXECUTED",
+  "mainline": "Fixed passed FeasibleRPP nominal controller plus RP-CCR causal risk/admission/corridor/recovery. MPPI excluded.",
+  "closed_reason": "180-second dynamic goal deadline; discovery-continuation>=1m and arrival both failed. New arbitration never triggered because no rejected nonzero proposal reached it in this realized run.",
+  "next_design_finding": "Recovery must handle a missing/blocked nominal reference before ordinary motion disappears. Do not override collision-monitor zero blindly; restore time-consistent executable recovery corridor through a separately validated control handoff. Spatial full-cycle occupancy and planner/execution semantics need joint diagnosis; 208 is not proof of no feasible physical trajectory."
+}
