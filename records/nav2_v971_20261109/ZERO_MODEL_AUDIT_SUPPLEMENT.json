@@ -1,0 +1,181 @@
+{
+  "passed": false,
+  "models": 0,
+  "integrations": 0,
+  "original_evidence_sha_all_unchanged": true,
+  "original_failed_audit_preserved": true,
+  "original_audit_sha256": "915b81a286e3f36cec795bf108310e39292b8b3c3634a45f242a2e8ef2a60e2e",
+  "view_only_extra_file": "ROUTER_REQUESTS.json = []",
+  "reason": "Direct FollowPath has no global proxy invocation. Original proxy writes this journal lazily; old saved physical trace/function unchanged.",
+  "result": {
+    "evidence_passed": false,
+    "functional_passed": false,
+    "passed": false,
+    "checks": {
+      "native_count": true,
+      "full_native_timing": true,
+      "finite_arrays": true,
+      "all_native_clearance": true,
+      "all_native_self": true,
+      "contact_coverage": true,
+      "no_bad_contacts": true,
+      "ctrl_amplitude": true,
+      "ctrl_slew": true,
+      "model_sha": true,
+      "full_control_state_replay": true,
+      "no_root_rewrite_record": true,
+      "closed_native": true,
+      "wall_pacing": true,
+      "genuine_ros_observations": true,
+      "model_semantics": true
+    },
+    "functional_checks": {
+      "action_success": true,
+      "strict_arrival": true,
+      "actual_stopped": true,
+      "dynamic_discovery_and_continuation": true
+    },
+    "native_count": 2794,
+    "replay_native": 2794,
+    "private_native": 0,
+    "goal_distance_m": 0.013143313924681384,
+    "final_translation_speed_m_s": 1.4436364233710128e-06,
+    "minimum_clearance_m": 0.2679593096853693,
+    "minimum_self_margin_m": 0.009282291158298595,
+    "bad_contacts": 0,
+    "discovery": null,
+    "independently_recomputed_postdiscovery_travel_m": 0.0,
+    "maximum_state_error": 0.0,
+    "startup_checks": {
+      "one_arm_exactly_at_zero": true,
+      "all_nodes_active": true,
+      "fresh_proof": true,
+      "navigation_action_after_arm": true,
+      "command_stream_present": true,
+      "original_physical_evidence": true
+    },
+    "scope": "One static WE Nav2 nominal baseline only; not dynamic confirmation or RP-CCR acceptance",
+    "component_checks": {
+      "full_stage0_reference_tracking": false,
+      "stage0_actual_stop": true,
+      "stage0_RPP_action_success": true,
+      "full_stage1_reference_tracking": true,
+      "stage1_actual_stop": true,
+      "stage1_RPP_action_success": true,
+      "actual_curve_and_held_wheels_exercised": true,
+      "first_path_exact_causal_arc": true,
+      "second_path_exact_causal_measured_steering": true,
+      "actual_forward_at_least1m": true,
+      "endpoint_within04": true,
+      "full_final_half_second_settled": true,
+      "original_body_limits": true,
+      "actual_full_map_before_arm": true,
+      "original_sensor_and_actor": true,
+      "all_original_causal_command_and_native_audits": false
+    },
+    "tracking": [
+      {
+        "passed": false,
+        "maximum_path_distance_m": 0.012079974551324958,
+        "maximum_heading_error_rad": 0.09379912966356643,
+        "samples": 564
+      },
+      {
+        "passed": true,
+        "maximum_path_distance_m": 0.004213085826178788,
+        "maximum_heading_error_rad": 0.02930974199524517,
+        "samples": 1975
+      }
+    ],
+    "subaudits": {
+      "motion": {
+        "passed": false,
+        "original_observations_verified": 520,
+        "tracked_states_with_offline_true_center_covered": 0,
+        "forecast_publications_rebuilt": 296,
+        "tracked_forecast_publications": 0,
+        "causal_terminal_decisions_rebuilt": 0,
+        "actual_costmap_snapshot_kinds": [
+          "global_costmap",
+          "local_costmap"
+        ],
+        "postdetection_full_snapshots": {
+          "global_costmap": 0,
+          "local_costmap": 0
+        },
+        "models": 0,
+        "integrations": 0,
+        "periodic_future_support_checks": 0,
+        "declared_periodic_class_only": true,
+        "scope": "Causal observation/coefficient-set/forecast/terminal reconstruction and recorded native truth coverage. Known-frequency course only; not arbitrary-speed class or recursive safety"
+      },
+      "tube": {
+        "passed": true,
+        "checks": {
+          "nonempty": true,
+          "causal": true,
+          "body_matches_native": true,
+          "source_matches_tracker": true,
+          "command_limits": true,
+          "finite_horizon": true,
+          "admission_threshold": true,
+          "independent_dense_geometry": true,
+          "wait_renewals_zero_and_causal": true,
+          "terminal_cycle_independently_qualified": true,
+          "retained_proof_chain_and_actual_body": true,
+          "conditional_residual_class": true,
+          "stale_new_proposal_retains_only_old_accepted_proof": true,
+          "only_accepted_proofs_dispatched": true,
+          "actual_runtime_tube_monitor_completed": true,
+          "no_unqualified_command_failure": true
+        },
+        "accepted_commands": 507,
+        "zero_fallback_commands": 0,
+        "maximum_saved_body_error": 1.3877787807814457e-17,
+        "qualified_zero_wait_renewals": 35,
+        "retained_certificate_decisions": 0,
+        "stale_proposal_deferrals": 1,
+        "empirical_limits_not_formal_reachability": true
+      },
+      "ingress": {
+        "passed": true,
+        "checks": {
+          "journal_present": true,
+          "received_matches_dispatched": true,
+          "original_50ms_admission": true,
+          "late_discards_keep_old_anchor": true,
+          "sequence_order": true,
+          "every_native_step": true,
+          "control_expiry": true,
+          "original_empirical_residual": true,
+          "completed_execution": true,
+          "no_rejected_packet": true,
+          "trailing_packets_no_unchecked_command": true
+        },
+        "received_admissions": 507,
+        "late_new_discards": 0,
+        "native_execution_records": 2794,
+        "maximum_received_delivery_age_s": 0.012773135007591918
+      },
+      "recovery": {
+        "passed": true,
+        "recovery_decisions": 0,
+        "modes": {},
+        "forward_alternatives": 7,
+        "models": 0,
+        "integrations": 0
+      },
+      "shaping": {
+        "passed": true,
+        "decisions": 507,
+        "committed_new_certificates": 507,
+        "measured_steering_restarts": 3,
+        "post_certificate_modifications": 0,
+        "models": 0,
+        "integrations": 0
+      }
+    },
+    "actual_forward_progress_m": 1.1866800758137548,
+    "component_scope": "Actual installed RPP curve-stop and1.2m steering-continuous forward handoff; no full-route/dynamic denominator"
+  }
+}
