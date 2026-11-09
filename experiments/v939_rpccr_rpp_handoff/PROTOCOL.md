@@ -1,0 +1,9 @@
+# V939: real installed RPP handoff, zero vehicle models
+
+Depends on frozen V938 four saved-state corridor and transaction qualification. No vehicle model/init/integration/replay, no actual actuator or new physical authorization. REVIEW_PENDING and all physical windows remain unchanged. Isolated Phase ROS namespace only; no Stage or agents.
+
+Fixed fixture is the actual V934 first reference-loss trigger4947 and the first V938 independently audited recovery segment. Publish its fixed saved pose/scan as an explicitly synthetic software peer; it never integrates or moves. Start the installed original Nav2 stack with V934 A_motion.yaml, asserting its FollowPath controller block equals V884 A_feasible.yaml. Keep the same compiled FeasibleRPP plugin. No replacement controller or fake positive action server.
+
+Exercise actual NavigateToPose acceptance/cancellation, acknowledge the terminal result, revalidate the segment in the transaction, and send its exact poses once through the production FollowPath binding. Require at least20 nonzero actual controller outputs, original curvature/rate representation and unchanged command_tube.admit on the explicitly synthetic frozen-pose fixture. Cancel FollowPath and require cancellation acknowledgement. No action success or actual movement is expected from this fixed-pose fixture. Maximum100s software wall time, no retries after a recorded interface failure; retain it and diagnose separately if necessary.
+
+Record path SHA, real action results, actual output Twists, safety-admission results, source/config/plugin SHA, and bounded teardown of only child ROS processes. Even PASS is software handoff qualification, not actual segment tracking, successful dynamic navigation or 24-item confirmation. A future physical protocol still needs native full-body, source, control, contact and full-state replay audits and its own authorized window.

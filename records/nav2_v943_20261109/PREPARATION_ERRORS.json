@@ -1,0 +1,17 @@
+[
+  {
+    "stage": "PRE_MODEL_BASE_FREEZE_CHECK",
+    "models": 0,
+    "integrations": 0,
+    "changed": [
+      {
+        "path": "experiments/v934_rpccr_certified_recovery/__pycache__/cycle_backup.cpython-310.pyc",
+        "expected": "a535ff66b47a29512d3f6bcdb64eff0745ea3c2c15ba472ae77eae03cd103b43",
+        "actual": "86ee4aba7efb3117d9efda6ddc5b6e5920429c85d6fd7f2739bcae5615606b26"
+      }
+    ],
+    "cause": "Derived CPython cache bytes changed; all frozen source/model/native binaries remain exact",
+    "changed_cache_compiles_to_exact_current_source": true,
+    "operation_resolution": "Exclude all __pycache__/.pyc entries from new freeze; original V934 source/freeze untouched"
+  }
+]

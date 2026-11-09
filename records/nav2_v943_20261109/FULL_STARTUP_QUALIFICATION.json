@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": {
+    "reached_exact_pre_navigation_boundary": true,
+    "expected_software_stop": true,
+    "no_navigation_action": true,
+    "two_real_master_readbacks": true,
+    "all_real_lifecycle_nodes_active": true,
+    "arm_exchange": true,
+    "no_actuator_command": true,
+    "synthetic_peer_never_integrates": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "navigation_goals": 0,
+  "synthetic_peer": true,
+  "scope": "Actual installed ROS lifecycle, complete static map, preARM and ARM exchange through production bridge. Synthetic observation fixture only, not physical qualification.",
+  "events": [
+    {
+      "kind": "arm",
+      "native_tick": 0,
+      "sim_time": 0.0,
+      "states": {
+        "map_server": 3,
+        "planner_server": 3,
+        "controller_server": 3,
+        "behavior_server": 3,
+        "velocity_smoother": 3,
+        "collision_monitor": 3,
+        "bt_navigator": 3
+      },
+      "checked_at": {
+        "map_server": 117161.937012415,
+        "planner_server": 117161.939959838,
+        "controller_server": 117161.94246212,
+        "behavior_server": 117161.946591836,
+        "velocity_smoother": 117161.947256579,
+        "collision_monitor": 117161.947932005,
+        "bt_navigator": 117161.948999155
+      },
+      "issued_at": 117161.949012213,
+      "run_id": "v943-zero-model-startup-fixture"
+    },
+    {
+      "kind": "stop",
+      "issued_at": 117161.951820752,
+      "reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+      "run_id": "v943-zero-model-startup-fixture"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+--- V939_preserved
++++ V940_entry_continuation
+@@ -12,7 +12,7 @@
+ 
+ ROOT = Path(__file__).resolve().parents[2]
+ CODE = Path(__file__).parent
+-OUT = ROOT/'runs/v939_rpccr_rpp_handoff'
++OUT = ROOT/'runs/v940_rpccr_handoff_entry'
+ 
+ 
+ class NoModel(importlib.abc.MetaPathFinder):
+@@ -22,7 +22,7 @@
+ 
+ 
+ sys.meta_path.insert(0, NoModel())
+-sys.path[:0] = [str(CODE), str(ROOT/'experiments/v938_rpccr_recovery_segments'),
++sys.path[:0] = [str(CODE), str(ROOT/'experiments/v939_rpccr_rpp_handoff'), str(ROOT/'experiments/v938_rpccr_recovery_segments'),
+                str(ROOT/'experiments/v934_rpccr_certified_recovery'),
+                str(ROOT/'experiments/v891_dynamic_consistency_software'),
+                str(ROOT/'experiments/v881_timing_accounting_continuation')]
+@@ -124,6 +124,23 @@
+             grid.info.origin.orientation.w = 1.; grid.data = data; publisher.publish(grid)
+ 
+     node.create_timer(.05, publish)
++    # Entry-only continuation: restore the original production planning proxy.
++    from dynamic_proxy import DynamicPlannerProxy
++    from support_envelope import polygon
++    def fixture_packet():
++        p = copy.deepcopy(packet)
++        p['sent_at'] = time.monotonic()
++        p['body_measured_at'] = p['sent_at']
++        return p
++    def fixture_forecast():
++        p = fixture_packet()
++        s = copy.deepcopy(source)
++        s.update(center_support_bounds=s['support_bounds'], reference_support=reference.tolist(),
++                 forecast_support=forecast.tolist(), body_native_tick=p['native_tick'])
++        return polygon(reference), s, p
++    planner_proxy = DynamicPlannerProxy(
++        node, fixture_packet, OUT, time.time()+120., fixture_forecast,
++        json.loads(read(config)['global_costmap']['global_costmap']['ros__parameters']['footprint']))
+ 
+     def command(message):
+         now = time.monotonic()

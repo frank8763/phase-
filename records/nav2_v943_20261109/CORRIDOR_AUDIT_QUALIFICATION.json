@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "checks": {
+    "all_original_admissions_fixed_0": true,
+    "all_original_admissions_fixed_1": true,
+    "all_original_admissions_fixed_2": true,
+    "all_original_admissions_fixed_3": true,
+    "exact_native_body_and_source_positive": true,
+    "body_tamper_rejected": true,
+    "support_tamper_rejected": true,
+    "periodic_tamper_rejected": true,
+    "future_tamper_rejected": true,
+    "reference_tracking_positive": true,
+    "out_of_corridor_actual_pose_rejected": true,
+    "out_of_corridor_actual_heading_rejected": true
+  },
+  "cases": [
+    {
+      "index": 0,
+      "analytical_fixture_commands": 97,
+      "passed": 97,
+      "minimum_lower_m": 0.21882447605987784
+    },
+    {
+      "index": 1,
+      "analytical_fixture_commands": 97,
+      "passed": 97,
+      "minimum_lower_m": 0.21883346127874645
+    },
+    {
+      "index": 2,
+      "analytical_fixture_commands": 97,
+      "passed": 97,
+      "minimum_lower_m": 0.21885099257361293
+    },
+    {
+      "index": 3,
+      "analytical_fixture_commands": 97,
+      "passed": 97,
+      "minimum_lower_m": 0.21887739368530826
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "synthetic_analytic_arrival_fixture": true,
+  "scope": "Original admit function on frozen causal-set/analytic-pose fixtures and independent native-source/tracking negatives, not new actual states or observations."
+}

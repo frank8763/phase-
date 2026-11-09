@@ -1,0 +1,85 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "original_batch_status": "NOT_PASSED",
+  "trigger_tick": 5535,
+  "install_tick": 5600,
+  "actual_new_reference_installed": true,
+  "completed_recovery_segments": 0,
+  "recovered_prefix_actual_native": 856,
+  "partial_recovery_tracking": {
+    "passed": true,
+    "maximum_reference_position_error_m": 0.005507963125948722,
+    "maximum_reference_heading_error_rad": 0.03458205966517756,
+    "heading_sampling_allowance_rad": 0.00018969259625000002,
+    "actual_native_samples": 856
+  },
+  "actual_displacement_after_install_m": 0.5806171296286028,
+  "actual_goal_improvement_from_recovery_entry_m": 0.5413075978539008,
+  "actual_distance_to_segment_endpoint_m": 0.6193909395210259,
+  "final_original_goal_distance_m": 3.537394355618528,
+  "evidence_passed": true,
+  "functional_passed": false,
+  "minimum_actual_clearance_m": 0.2690418715566555,
+  "bad_contacts": 0,
+  "actual_native": 6455,
+  "own_replay_native": 6455,
+  "private_native": 0,
+  "state_replay_max_error": 0.0,
+  "error": "AssertionError('STALE_BODY')",
+  "error_site": "RecoveryTransaction.monitor -> fresh <=50ms body-age guard",
+  "actual_failing_snapshot_or_precise_body_age_saved": false,
+  "exact_failure_age_s": null,
+  "freshness_boundary_fixture": [
+    {
+      "synthetic_body_age_s": 0.049,
+      "monitor_error": null,
+      "original_retained_permission_valid": true,
+      "command_50ms_admission_is_not_relaxed": true
+    },
+    {
+      "synthetic_body_age_s": 0.05,
+      "monitor_error": "STALE_BODY",
+      "original_retained_permission_valid": true,
+      "command_50ms_admission_is_not_relaxed": true
+    },
+    {
+      "synthetic_body_age_s": 0.050001,
+      "monitor_error": "STALE_BODY",
+      "original_retained_permission_valid": true,
+      "command_50ms_admission_is_not_relaxed": true
+    },
+    {
+      "synthetic_body_age_s": 0.051,
+      "monitor_error": "STALE_BODY",
+      "original_retained_permission_valid": true,
+      "command_50ms_admission_is_not_relaxed": true
+    },
+    {
+      "synthetic_body_age_s": 0.1,
+      "monitor_error": "STALE_BODY",
+      "original_retained_permission_valid": true,
+      "command_50ms_admission_is_not_relaxed": true
+    },
+    {
+      "synthetic_body_age_s": 0.199,
+      "monitor_error": "STALE_BODY",
+      "original_retained_permission_valid": true,
+      "command_50ms_admission_is_not_relaxed": true
+    },
+    {
+      "synthetic_body_age_s": 0.201,
+      "monitor_error": "STALE_BODY",
+      "original_retained_permission_valid": true,
+      "command_50ms_admission_is_not_relaxed": true
+    }
+  ],
+  "source_scope": "Original source unchanged; synthetic age fixtures do not prove the unrecorded exact delay or counterfactual arrival.",
+  "next_revision_spec": [
+    "Keep original50ms new-command and installation admission unchanged.",
+    "Separate <=200ms supervisory observation liveness from fresh-command issuance; a short delay only permits retaining an already qualified immutable proof, never a stale new command or clock reset.",
+    "Beyond original source-liveness/permission bounds stop; independently test51/100/199/201ms boundaries and old-proof expiry.",
+    "Persist the exact fault packet/source/time and partial transaction events before raising.",
+    "No patch, model restart or additional candidate in this closed window."
+  ]
+}
