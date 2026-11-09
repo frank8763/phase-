@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_original_reversing_reference_rejected": true,
+    "synthetic_forward_path_accepted": true,
+    "no_reverse_normal_output": true,
+    "original_admissible_forward_exact": true,
+    "no_silent_zero_clamp": true,
+    "negative_twist_rejected": true,
+    "reverse_path_rejected": true,
+    "malformed_path_rejected": true,
+    "only_two_declared_config_changes": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "navigation": 0,
+  "original_last_reference": {
+    "forward_only": false,
+    "reverse_segments": 13,
+    "reverse_length_m": 0.1774585941739676,
+    "total_length_m": 2.291060890173274,
+    "ambiguous_segments": 0
+  },
+  "saved_decisions": 397,
+  "new_mode_counts": {
+    "NOMINAL_UNCHANGED": 205,
+    "FORWARD_REFERENCE_REPLAN_REQUIRED": 159,
+    "CERTIFIED_PROGRESS_ALTERNATIVE": 6,
+    "CERTIFIED_STOP_ONLY": 26,
+    "NO_NEW_CERTIFIED_CONTROL": 1
+  },
+  "original_admissible_forward_preserved": 199,
+  "unchanged_gate_qualified_outputs": 237,
+  "production_integrated": false,
+  "physical_ready": false,
+  "new_forward_plan_qualified": false,
+  "user_direction_contract": "Normal forward route/controller/recovery; reversing reserved for separately qualified trapped escape.",
+  "next_required": [
+    "Actual same-input forward-only Smac/RPP qualification.",
+    "Steering-state handoff and persistent feedback stability.",
+    "Production observation liveness and exact failure timing.",
+    "Full pipeline and independent gates before a new physical window."
+  ]
+}

@@ -272,7 +272,7 @@
     "real_robot_runs": 0,
     "raw_evidence_deleted": false
   },
-  "next_offline_candidate": null,
+  "next_offline_candidate": "experiments/v947_rpccr_forward_commitment",
   "dynamic_recovery_round": {
     "status": "CLOSED_THREE_CANDIDATES_NO_DYNAMIC_ARRIVAL",
     "start_unix": 1793501532.9454718,
@@ -7425,5 +7425,21 @@
     "closed_unix": 1794221706.3575406,
     "guard_restored": true
   },
-  "next_physical_authorized": false
+  "next_physical_authorized": false,
+  "user_direction_contract": "Normal planning/tracking/recovery must stay forward; reverse only in separately qualified difficult trapped/dead-end escape, never implicit local retreat.",
+  "v947_direction_preparation": {
+    "status": "SAVED_STATE_DIRECTION_QUALIFICATION_ONLY",
+    "models": 0,
+    "integrations": 0,
+    "production_integrated": false,
+    "physical_ready": false,
+    "source": "experiments/v947_rpccr_forward_commitment",
+    "qualification": "records/nav2_v947_20261109/QUALIFICATION.json",
+    "remaining": [
+      "actual forward-only planner/controller",
+      "steering stability and handoff",
+      "observation scheduling",
+      "full production readiness"
+    ]
+  }
 }

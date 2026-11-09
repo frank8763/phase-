@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "videos": [
+    {
+      "name": "v945_last2m_with_paths_1x.mp4",
+      "frames": 255,
+      "sha256": "e5fbfd92125e387dfe1c217b3a22bd7e76d5cc7d28cef167762dc523773d96a6",
+      "full_decode_passed": true
+    },
+    {
+      "name": "v945_full_route_with_paths_4x.mp4",
+      "frames": 368,
+      "sha256": "84f4c60e1db2a96fcc411e259a26ae80fddff9aa28b096ea39e82db3f4257193",
+      "full_decode_passed": true
+    }
+  ],
+  "pictures": [
+    {
+      "name": "recovery_handoff.png",
+      "sha256": "a017b44305cb6ba383363b7d776d6d57b0a7f43ae0ff437254e9784efc2bb70b",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "final.png",
+      "sha256": "4deb9fd89664ea501c5b13aedc80e37cf6ebbda616c54b0afca4dd43a1d0ec2b",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "stopping.png",
+      "sha256": "5474e7601f0344457ff5aa3c558ef306ea41e36810a06b4f72b2c073cc27fb92",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "last2m_start.png",
+      "sha256": "70030183a8b448bddc7c4a69cfdb710baf78db28ade5e24180e00f06c9d186f3",
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "new_integrations": 0,
+  "render_model_loads_completed_attempt": 1,
+  "total_render_model_loads_including_canceled_attempt": 2,
+  "actual_physics_or_navigation_restarted": false,
+  "scientific_outcome": "NOT_PASSED",
+  "visual_qa": "Recorded PNGs inspected: paths/goal/car legible, orange actor identified, fixed close view and actual stopping marker; rectangle half extents corrected in 2D chart.",
+  "path_overlay_2d": {
+    "sha256": "2114a94fb405911f08a1d192d89b5cfcd602cd90215497b4db1d5f71bebc4eeb",
+    "rectangle_half_extents_corrected": true,
+    "planned_reverse_segments_marked_red": 13,
+    "visual_qa_passed": true
+  }
+}
