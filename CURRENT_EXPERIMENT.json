@@ -4033,7 +4033,7 @@
     "no_automatic_retry": true
   },
   "current_protocol": "experiments/v793_complete_joint_navigation/PROTOCOL.md",
-  "current_report": "docs/NAV2_DAYTIME_V881_REPORT.md",
+  "current_report": "docs/NAV2_TIMED_COMMAND_V909_ANALYSIS.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
     "status": "CLOSED_OBSERVATION_INTERFACE_VERIFIED_CONTINUATION_NOT_QUALIFIED",
@@ -6777,8 +6777,8 @@
     "source_freeze_sha256": "b391adab107115cfb85f1a10e9dfc6683f08db939c4c2253ddfba178573f0330",
     "guard_restored": true
   },
-  "last_completed_candidate": "V897_REFUGE_OVERNIGHT_DEVELOPMENT",
-  "last_completed_outcome": "NOT_PASSED_REFUGE_EXECUTION25S_LIMIT",
+  "last_completed_candidate": "V909_TIMED_COMMAND_OUTPUT_CONTINUATION",
+  "last_completed_outcome": "NOT_PASSED",
   "v900_terminal_set": {
     "closed": true,
     "status": "NOT_PASSED",
@@ -7010,5 +7010,92 @@
     "execution_lock_idle": true,
     "next_preparation": "V908_ZERO_MODEL_NOT_READY_FOR_NAVIGATION",
     "at": 1794190117.4006326
+  },
+  "v909_timed_command_contract": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "rows": [],
+    "unexecuted_navigation": 2,
+    "new24": 0,
+    "error": {
+      "error": "AssertionError('FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE response_00')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v909_timed_command_contract/campaign.py\", line 37, in main\n    launch([str(R/'run_phase.sh'),str((C/'qualify_response.py').relative_to(R)),str(i)],'response_%02d'%i,65)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v909_timed_command_contract/campaign.py\", line 30, in launch\n    assert rc==0,'FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+label\nAssertionError: FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE response_00\n"
+    },
+    "models_authorized": false,
+    "deadline_unix": 1794197278.8023248,
+    "closed_unix": 1794191890.4370873,
+    "guard_restored": true
+  },
+  "v909_output_continuation": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "original_operation_failed": true,
+    "original_case00_actual_native": 420,
+    "original_case00_replay_native": 420,
+    "platform_total_actual_native": 7560,
+    "platform_total_replay_native": 7560,
+    "remaining_platform_unexecuted": 0,
+    "rows": [
+      {
+        "task_id": "main_we",
+        "passed": false,
+        "actual_native": 6664,
+        "replay_native": 6664,
+        "private_native": 0,
+        "goal_m": 2.321603338220854
+      }
+    ],
+    "unexecuted_navigation": 1,
+    "new24": 0,
+    "error": {
+      "error": "AssertionError('CONTINUATION_FIRST_FAILURE main_we')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v909_output_continuation/campaign.py\", line 39, in main\n    launch([sys.executable,'-B',str(OPS/'entry.py'),'launch',str(tp),str(ap)],task['task_id'],260)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v909_output_continuation/campaign.py\", line 25, in launch\n    assert rc==0,'CONTINUATION_FIRST_FAILURE '+label\nAssertionError: CONTINUATION_FIRST_FAILURE main_we\n"
+    },
+    "models_authorized": false,
+    "deadline_unix": 1794197278.8023248,
+    "closed_unix": 1794192668.8545032,
+    "guard_restored": true
+  },
+  "v909_final_outcome": {
+    "status": "CLOSED_NOT_PASSED",
+    "platform_cases_passed": 18,
+    "platform_actual_native_including_original_case": 7560,
+    "platform_own_replay_native": 7560,
+    "main_attempted": 1,
+    "main_passed": false,
+    "main_actual_native": 6664,
+    "main_own_replay_native": 6664,
+    "total_actual_native": 14224,
+    "total_own_replay_native": 14224,
+    "private_native": 0,
+    "conditional_repeat_unexecuted": 1,
+    "new24": 0,
+    "minimum_actual_clearance_m": 0.269149863927883,
+    "bad_contacts": 0,
+    "maximum_state_error": 0.0,
+    "first_detection": {
+      "native_tick": 4631,
+      "sim_time": 46.309999999999356,
+      "xy": [
+        0.09235428155407462,
+        -0.653654272291795
+      ],
+      "rays": [
+        31
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "post_detection_travel_m": 1.8339653598271213,
+    "remaining_goal_m": 2.321603338220854,
+    "native_wall_lag_max_s": 0.002596830003312789,
+    "independent_full_pass": false,
+    "independent_causal_body_source_dense_geometry_checks_passed": true,
+    "terminal_stop_tube_lower_m": 0.15380515049892707,
+    "threshold_m": 0.155,
+    "nominal_controller_stop_reason": "RPP detected collision ahead on local costmap; patience exceeded",
+    "original_operational_error_preserved": true,
+    "one_output_continuation_same_deadline": true,
+    "absolute_deadline_unix": 1794197278.8023248,
+    "all_model_work_closed": true
   }
 }

@@ -1,0 +1,30 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "original_operation_failed": true,
+  "original_case00_actual_native": 420,
+  "original_case00_replay_native": 420,
+  "platform_total_actual_native": 7560,
+  "platform_total_replay_native": 7560,
+  "remaining_platform_unexecuted": 0,
+  "rows": [
+    {
+      "task_id": "main_we",
+      "passed": false,
+      "actual_native": 6664,
+      "replay_native": 6664,
+      "private_native": 0,
+      "goal_m": 2.321603338220854
+    }
+  ],
+  "unexecuted_navigation": 1,
+  "new24": 0,
+  "error": {
+    "error": "AssertionError('CONTINUATION_FIRST_FAILURE main_we')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v909_output_continuation/campaign.py\", line 39, in main\n    launch([sys.executable,'-B',str(OPS/'entry.py'),'launch',str(tp),str(ap)],task['task_id'],260)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v909_output_continuation/campaign.py\", line 25, in launch\n    assert rc==0,'CONTINUATION_FIRST_FAILURE '+label\nAssertionError: CONTINUATION_FIRST_FAILURE main_we\n"
+  },
+  "models_authorized": false,
+  "deadline_unix": 1794197278.8023248,
+  "closed_unix": 1794192668.8545032,
+  "guard_restored": true
+}

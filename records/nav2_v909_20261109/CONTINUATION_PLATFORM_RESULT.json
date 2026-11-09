@@ -1,0 +1,1216 @@
+{
+  "passed": true,
+  "reused_first_case": 0,
+  "cases": [
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              0.1,
+              0.0
+            ],
+            "command": [
+              0.0,
+              0.0
+            ],
+            "transition": "zero",
+            "output": "runs/v858_nav2_verified/v909/platform_01"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.011582593561275329,
+          "angle_residual_max_rad": 0.011147147939523124,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.2677528624383303,
+            "minimum_self_margin_m": 0.009204525922287765,
+            "bad_contacts": 0,
+            "final_body": [
+              -3.8196968764049415,
+              -2.005066249123717,
+              0.0026090568905697575,
+              5.653158711872482e-06,
+              -1.3589154551504424e-06
+            ],
+            "final_translation_speed_m_s": 5.661088148997154e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 7.819698517573257,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192376.425122,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              0.1,
+              0.0
+            ],
+            "command": [
+              -0.1,
+              -0.0
+            ],
+            "transition": "reverse",
+            "output": "runs/v858_nav2_verified/v909/platform_02"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.02891745909830331,
+          "angle_residual_max_rad": 0.008366628206345181,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.2677528624383303,
+            "minimum_self_margin_m": 0.009006476598742319,
+            "bad_contacts": 0,
+            "final_body": [
+              -3.82680599568627,
+              -2.0044327792036403,
+              0.005396830030935389,
+              6.249326389878557e-06,
+              -1.1137778274764261e-06
+            ],
+            "final_translation_speed_m_s": 6.249398279441857e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 7.826807250957571,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192389.2758415,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              0.1,
+              -0.07587703850000001
+            ],
+            "command": [
+              0.1,
+              -0.07587703850000001
+            ],
+            "transition": "same",
+            "output": "runs/v858_nav2_verified/v909/platform_03"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.010417076138826907,
+          "angle_residual_max_rad": 0.004438616710350146,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.2036089473276146,
+            "minimum_self_margin_m": 0.009206988155558982,
+            "bad_contacts": 0,
+            "final_body": [
+              -3.8077658635220346,
+              -2.0404645367792305,
+              -0.06676839688058708,
+              4.426961989676594e-06,
+              -4.67443688224134e-06
+            ],
+            "final_translation_speed_m_s": 4.91457822712502e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 7.807870718596507,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192402.1097572,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              0.1,
+              -0.07587703850000001
+            ],
+            "command": [
+              0.0,
+              0.0
+            ],
+            "transition": "zero",
+            "output": "runs/v858_nav2_verified/v909/platform_04"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.01028880854475549,
+          "angle_residual_max_rad": 0.005340828901972232,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.21045154065239247,
+            "minimum_self_margin_m": 0.009206988155558982,
+            "bad_contacts": 0,
+            "final_body": [
+              -3.8257260092070307,
+              -2.035406585146025,
+              -0.05599888228199093,
+              5.793953020747824e-06,
+              -3.716073981852413e-06
+            ],
+            "final_translation_speed_m_s": 5.847930261872235e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 7.825806105280855,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192414.9387088,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              0.1,
+              -0.07587703850000001
+            ],
+            "command": [
+              -0.1,
+              0.07587703850000001
+            ],
+            "transition": "reverse",
+            "output": "runs/v858_nav2_verified/v909/platform_05"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.028709439230912456,
+          "angle_residual_max_rad": 0.019813177427717897,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.21105817829072182,
+            "minimum_self_margin_m": 0.0091288121201627,
+            "bad_contacts": 0,
+            "final_body": [
+              -3.830410024442345,
+              -2.0341338943411436,
+              -0.054380523894735425,
+              6.456046484082236e-06,
+              -3.398946681540736e-06
+            ],
+            "final_translation_speed_m_s": 6.457661870700927e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 7.830484421389909,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192427.7145889,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              0.1,
+              0.07587703850000001
+            ],
+            "command": [
+              0.1,
+              0.07587703850000001
+            ],
+            "transition": "same",
+            "output": "runs/v858_nav2_verified/v909/platform_06"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.010422660273902427,
+          "angle_residual_max_rad": 0.004420675841882728,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.27050921243911474,
+            "minimum_self_margin_m": 0.009206608760203183,
+            "bad_contacts": 0,
+            "final_body": [
+              -3.807675997938624,
+              -1.9594027718211928,
+              0.06700076175035168,
+              4.467680073344837e-06,
+              4.698315449565263e-06
+            ],
+            "final_translation_speed_m_s": 4.9576514888633495e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 7.807781543032738,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192440.6758442,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              0.1,
+              0.07587703850000001
+            ],
+            "command": [
+              0.0,
+              0.0
+            ],
+            "transition": "zero",
+            "output": "runs/v858_nav2_verified/v909/platform_07"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.010291511225567308,
+          "angle_residual_max_rad": 0.005351787284580335,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.27050921243911474,
+            "minimum_self_margin_m": 0.009206608760203183,
+            "bad_contacts": 0,
+            "final_body": [
+              -3.825637724788217,
+              -1.9644659481412154,
+              0.05621329609869987,
+              5.832533715332084e-06,
+              3.747464286634006e-06
+            ],
+            "final_translation_speed_m_s": 5.887551054577095e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 7.825718399512597,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192453.4700778,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              0.1,
+              0.07587703850000001
+            ],
+            "command": [
+              -0.1,
+              -0.07587703850000001
+            ],
+            "transition": "reverse",
+            "output": "runs/v858_nav2_verified/v909/platform_08"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.02871033655882998,
+          "angle_residual_max_rad": 0.019820270542606648,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.27050921243911474,
+            "minimum_self_margin_m": 0.009128901943246337,
+            "bad_contacts": 0,
+            "final_body": [
+              -3.8303279647780037,
+              -1.9657412708128483,
+              0.054588606926700034,
+              6.495775700437424e-06,
+              3.4307783343366937e-06
+            ],
+            "final_translation_speed_m_s": 6.497541291028764e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 7.830402907674033,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192466.3041775,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              -0.0
+            ],
+            "command": [
+              -0.1,
+              -0.0
+            ],
+            "transition": "same",
+            "output": "runs/v858_nav2_verified/v909/platform_09"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.008441900970320711,
+          "angle_residual_max_rad": 0.0005973861152309832,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.31469146790223124,
+            "minimum_self_margin_m": 0.009209592477177675,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.200971453836577,
+              -2.00002599467953,
+              0.00013495470660535223,
+              3.894722733222991e-06,
+              -1.8840724025042084e-08
+            ],
+            "final_translation_speed_m_s": 3.89474538811008e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.200971453877774,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192479.1431437,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              -0.0
+            ],
+            "command": [
+              0.0,
+              0.0
+            ],
+            "transition": "zero",
+            "output": "runs/v858_nav2_verified/v909/platform_10"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.009833624485509626,
+          "angle_residual_max_rad": 0.0006351666824853172,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.31469146790223124,
+            "minimum_self_margin_m": 0.009209592477177675,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.182369811671947,
+              -2.000021684158267,
+              0.0001727408655104013,
+              -5.235547384491341e-07,
+              -6.427715271763802e-09
+            ],
+            "final_translation_speed_m_s": 5.235761712616698e-07,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.18236981170068,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192491.911552,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              -0.0
+            ],
+            "command": [
+              0.1,
+              0.0
+            ],
+            "transition": "reverse",
+            "output": "runs/v858_nav2_verified/v909/platform_11"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.028651568977050002,
+          "angle_residual_max_rad": 0.023219670683822347,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.31277571597452036,
+            "minimum_self_margin_m": 0.008988340072589973,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.178933823222839,
+              -2.000072568094927,
+              0.02275591510296483,
+              -2.1453607840952953e-06,
+              -1.421744954762911e-07
+            ],
+            "final_translation_speed_m_s": 2.320103066267379e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.17893382354477,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192504.7792108,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              0.07587703850000001
+            ],
+            "command": [
+              -0.1,
+              0.07587703850000001
+            ],
+            "transition": "same",
+            "output": "runs/v858_nav2_verified/v909/platform_12"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.010057093921661221,
+          "angle_residual_max_rad": 0.004381807564448809,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.29397858246637176,
+            "minimum_self_margin_m": 0.00918779622071303,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.2018904088156654,
+              -1.9774426529723557,
+              0.14484683231157655,
+              5.2350060736941056e-06,
+              -3.406696413348747e-06
+            ],
+            "final_translation_speed_m_s": 5.253962404717438e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.201921428063507,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192517.6007736,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              0.07587703850000001
+            ],
+            "command": [
+              0.0,
+              0.0
+            ],
+            "transition": "zero",
+            "output": "runs/v858_nav2_verified/v909/platform_13"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.010075244276027106,
+          "angle_residual_max_rad": 0.005446590884680497,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.29397858246637176,
+            "minimum_self_margin_m": 0.00918779622071303,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.183540815238317,
+              -1.97891176163347,
+              0.1340175453838571,
+              4.930778131403431e-07,
+              -2.0571607205729634e-06
+            ],
+            "final_translation_speed_m_s": 1.0142024386928254e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.183567986426754,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192530.4299827,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              0.07587703850000001
+            ],
+            "command": [
+              0.1,
+              -0.07587703850000001
+            ],
+            "transition": "reverse",
+            "output": "runs/v858_nav2_verified/v909/platform_14"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.028483791869555807,
+          "angle_residual_max_rad": 0.019866661606219527,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.29397858246637176,
+            "minimum_self_margin_m": 0.00908229939941646,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.178550126656942,
+              -1.979303279515527,
+              0.13234688413992457,
+              -1.1375748954672833e-06,
+              -1.7765638358710777e-06
+            ],
+            "final_translation_speed_m_s": 1.7455484732065158e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.17857631427861,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192543.1947403,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              -0.07587703850000001
+            ],
+            "command": [
+              -0.1,
+              -0.07587703850000001
+            ],
+            "transition": "same",
+            "output": "runs/v858_nav2_verified/v909/platform_15"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.010067336562488169,
+          "angle_residual_max_rad": 0.004362839158759346,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.235369093298197,
+            "minimum_self_margin_m": 0.009188047365282115,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.2019092535418,
+              -2.022443083478518,
+              -0.1450310196700036,
+              5.203282615316529e-06,
+              3.3910149281584606e-06
+            ],
+            "final_translation_speed_m_s": 5.221311753383627e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.201939959261505,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192556.0287447,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              -0.07587703850000001
+            ],
+            "command": [
+              0.0,
+              0.0
+            ],
+            "transition": "zero",
+            "output": "runs/v858_nav2_verified/v909/platform_16"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.010080460672464455,
+          "angle_residual_max_rad": 0.0054570106016993405,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.235369093298197,
+            "minimum_self_margin_m": 0.009188047365282115,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.183553039165182,
+              -2.0209764365707206,
+              -0.13418280329598115,
+              4.627969160341104e-07,
+              2.0323691097460178e-06
+            ],
+            "final_translation_speed_m_s": 9.933897366382556e-07,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.183579922975087,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192569.0791876,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "private_native": 0,
+      "actual_native": 420,
+      "replay_native": 420,
+      "models_attempted": 1,
+      "rows": [
+        {
+          "case": {
+            "case_id": "WEST_EAST",
+            "seed": 10010001,
+            "phase": 0.6573753567727383,
+            "dynamic": true,
+            "warm": [
+              -0.1,
+              -0.07587703850000001
+            ],
+            "command": [
+              0.1,
+              0.07587703850000001
+            ],
+            "transition": "reverse",
+            "output": "runs/v858_nav2_verified/v909/platform_17"
+          },
+          "passed": true,
+          "checks": {
+            "complete420": true,
+            "all_native_safety": true,
+            "full_control_replay": true,
+            "bounded_position": true,
+            "bounded_rotation": true,
+            "measured_speed_bound": true,
+            "measured_yaw_bound": true,
+            "settled_by_half_second": true
+          },
+          "actual_native": 420,
+          "replay_native": 420,
+          "private_native": 0,
+          "position_residual_max_m": 0.02848784944117652,
+          "angle_residual_max_rad": 0.019874095136993817,
+          "native": {
+            "actual_native": 420,
+            "fully_recorded_native": 420,
+            "minimum_actual_clearance_m": 0.235369093298197,
+            "minimum_self_margin_m": 0.009081341296830359,
+            "bad_contacts": 0,
+            "final_body": [
+              -4.178557980500134,
+              -2.0205855444897245,
+              -0.13250684297815213,
+              -1.1680685280869228e-06,
+              1.7484817315386932e-06
+            ],
+            "final_translation_speed_m_s": 1.7623428213989187e-06,
+            "root_guard_native_count": 420,
+            "goal_distance_m": 8.178583887510378,
+            "first_actor_detection": null,
+            "actual_travel_after_detection_m": 0.0
+          },
+          "replay": {
+            "replay_native": 420,
+            "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+            "contact_mismatched_ticks": 0,
+            "passed": true
+          }
+        }
+      ],
+      "unexecuted_cases": 0,
+      "closed_unix": 1794192582.0296621,
+      "empirical_only": true
+    }
+  ],
+  "actual_native": 7560,
+  "replay_native": 7560,
+  "private_native": 0
+}

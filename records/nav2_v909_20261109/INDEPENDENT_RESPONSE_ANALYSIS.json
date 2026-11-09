@@ -1,0 +1,696 @@
+{
+  "all18_qualified": true,
+  "analyzed": 18,
+  "unexecuted_or_no_complete_evidence": 0,
+  "rows": [
+    {
+      "index": 0,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          0.0
+        ],
+        "command": [
+          0.1,
+          0.0
+        ],
+        "transition": "same",
+        "output": "runs/v858_nav2_verified/v909/platform_00"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.010649585392798325,
+      "yaw_error_rad": 0.0321501524522428,
+      "maximum_speed": 0.10265239606284143,
+      "maximum_yaw_rate": 0.11397129411668323,
+      "original_report_agrees": true,
+      "native_trace_sha256": "e1032f050f6ff39d853ff0a3ca277c803ad86f2d4e6d22a5a69e8f47c834f3df"
+    },
+    {
+      "index": 1,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          0.0
+        ],
+        "command": [
+          0.0,
+          0.0
+        ],
+        "transition": "zero",
+        "output": "runs/v858_nav2_verified/v909/platform_01"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.011582593561275329,
+      "yaw_error_rad": 0.011147147939523124,
+      "maximum_speed": 0.1013084409656273,
+      "maximum_yaw_rate": 0.11367110119107815,
+      "original_report_agrees": true,
+      "native_trace_sha256": "a9cdf9fcc012aafa8555634862a8b83393bf6f9996b2f70f8f0b319957e56cfc"
+    },
+    {
+      "index": 2,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          0.0
+        ],
+        "command": [
+          -0.1,
+          -0.0
+        ],
+        "transition": "reverse",
+        "output": "runs/v858_nav2_verified/v909/platform_02"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.02891745909830331,
+      "yaw_error_rad": 0.008366628206345181,
+      "maximum_speed": 0.1013084409656273,
+      "maximum_yaw_rate": 0.11367110119107815,
+      "original_report_agrees": true,
+      "native_trace_sha256": "a58df9e834a1f1c07ba9fd68d7b269e33aca544d8b4c5dc5240a73f8475be7f4"
+    },
+    {
+      "index": 3,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          -0.07587703850000001
+        ],
+        "command": [
+          0.1,
+          -0.07587703850000001
+        ],
+        "transition": "same",
+        "output": "runs/v858_nav2_verified/v909/platform_03"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.010417076138826907,
+      "yaw_error_rad": 0.004438616710350146,
+      "maximum_speed": 0.09108098311320009,
+      "maximum_yaw_rate": 0.08063170183717784,
+      "original_report_agrees": true,
+      "native_trace_sha256": "684139a39aa3223b5854047a8b158cba97c6c323d27732a75dd7914fd07cca4c"
+    },
+    {
+      "index": 4,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          -0.07587703850000001
+        ],
+        "command": [
+          0.0,
+          0.0
+        ],
+        "transition": "zero",
+        "output": "runs/v858_nav2_verified/v909/platform_04"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.01028880854475549,
+      "yaw_error_rad": 0.005340828901972232,
+      "maximum_speed": 0.09070682547267893,
+      "maximum_yaw_rate": 0.08063170183717784,
+      "original_report_agrees": true,
+      "native_trace_sha256": "c2c408ef8faf3539980eacbaefe0e6982fabb0a1db325f4145c51583ebaae0e0"
+    },
+    {
+      "index": 5,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          -0.07587703850000001
+        ],
+        "command": [
+          -0.1,
+          0.07587703850000001
+        ],
+        "transition": "reverse",
+        "output": "runs/v858_nav2_verified/v909/platform_05"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.028709439230912456,
+      "yaw_error_rad": 0.019813177427717897,
+      "maximum_speed": 0.09070682547267893,
+      "maximum_yaw_rate": 0.08063170183717784,
+      "original_report_agrees": true,
+      "native_trace_sha256": "41ecb01ae79e7096e3a29ce690d4410b35a0f16b2970963219f43b445c6adbba"
+    },
+    {
+      "index": 6,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          0.07587703850000001
+        ],
+        "command": [
+          0.1,
+          0.07587703850000001
+        ],
+        "transition": "same",
+        "output": "runs/v858_nav2_verified/v909/platform_06"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.010422660273902427,
+      "yaw_error_rad": 0.004420675841882728,
+      "maximum_speed": 0.09109505964649359,
+      "maximum_yaw_rate": 0.08039934182013149,
+      "original_report_agrees": true,
+      "native_trace_sha256": "3e51fbfd6d35e13492f850aaf45e620785f07806120ad20a48c9f899ac1ebdd0"
+    },
+    {
+      "index": 7,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          0.07587703850000001
+        ],
+        "command": [
+          0.0,
+          0.0
+        ],
+        "transition": "zero",
+        "output": "runs/v858_nav2_verified/v909/platform_07"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.010291511225567308,
+      "yaw_error_rad": 0.005351787284580335,
+      "maximum_speed": 0.09072111646973276,
+      "maximum_yaw_rate": 0.08039934182013149,
+      "original_report_agrees": true,
+      "native_trace_sha256": "58ddd57de19a8b1bda3cfa5b600786be103eb3a2bf10b7ef8e418d427a1c7263"
+    },
+    {
+      "index": 8,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          0.1,
+          0.07587703850000001
+        ],
+        "command": [
+          -0.1,
+          -0.07587703850000001
+        ],
+        "transition": "reverse",
+        "output": "runs/v858_nav2_verified/v909/platform_08"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.02871033655882998,
+      "yaw_error_rad": 0.019820270542606648,
+      "maximum_speed": 0.09072111646973276,
+      "maximum_yaw_rate": 0.08039934182013149,
+      "original_report_agrees": true,
+      "native_trace_sha256": "b0898e8906cbf2d1301490973ae18bc5b79c104d71225c74c6ca16bcc63dfe55"
+    },
+    {
+      "index": 9,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          -0.0
+        ],
+        "command": [
+          -0.1,
+          -0.0
+        ],
+        "transition": "same",
+        "output": "runs/v858_nav2_verified/v909/platform_09"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.008441900970320711,
+      "yaw_error_rad": 0.0005973861152309832,
+      "maximum_speed": 0.09466815047707311,
+      "maximum_yaw_rate": 0.0057156786523200435,
+      "original_report_agrees": true,
+      "native_trace_sha256": "4fe3b1d868cda6c8704e9bd94ee4af7b35693ede2f3804e9732132b515a3036d"
+    },
+    {
+      "index": 10,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          -0.0
+        ],
+        "command": [
+          0.0,
+          0.0
+        ],
+        "transition": "zero",
+        "output": "runs/v858_nav2_verified/v909/platform_10"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.009833624485509626,
+      "yaw_error_rad": 0.0006351666824853172,
+      "maximum_speed": 0.09466815047707311,
+      "maximum_yaw_rate": 0.0057156786523200435,
+      "original_report_agrees": true,
+      "native_trace_sha256": "caf43df012108b539887348b078b7b736b693e974c0b9f6af585020a270e04e4"
+    },
+    {
+      "index": 11,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          -0.0
+        ],
+        "command": [
+          0.1,
+          0.0
+        ],
+        "transition": "reverse",
+        "output": "runs/v858_nav2_verified/v909/platform_11"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.028651568977050002,
+      "yaw_error_rad": 0.023219670683822347,
+      "maximum_speed": 0.09466815047707311,
+      "maximum_yaw_rate": 0.08816481778757598,
+      "original_report_agrees": true,
+      "native_trace_sha256": "c1151dd9b6cc59b73c6974c1ba40fca10a015df11b6ae8674b11686c0a41e2c4"
+    },
+    {
+      "index": 12,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          0.07587703850000001
+        ],
+        "command": [
+          -0.1,
+          0.07587703850000001
+        ],
+        "transition": "same",
+        "output": "runs/v858_nav2_verified/v909/platform_12"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.010057093921661221,
+      "yaw_error_rad": 0.004381807564448809,
+      "maximum_speed": 0.10086401778957187,
+      "maximum_yaw_rate": 0.10263767651291236,
+      "original_report_agrees": true,
+      "native_trace_sha256": "cfd37304a5c0e7e9607212ffe6c20f4d2a1af5545cb626409f93d7324cdb4cee"
+    },
+    {
+      "index": 13,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          0.07587703850000001
+        ],
+        "command": [
+          0.0,
+          0.0
+        ],
+        "transition": "zero",
+        "output": "runs/v858_nav2_verified/v909/platform_13"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.010075244276027106,
+      "yaw_error_rad": 0.005446590884680497,
+      "maximum_speed": 0.10086401778957187,
+      "maximum_yaw_rate": 0.10263767651291236,
+      "original_report_agrees": true,
+      "native_trace_sha256": "5fdfea047f877ea1a0d5597e15a06582f6e3ab6f7e3e8c3b808e7157d895ee74"
+    },
+    {
+      "index": 14,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          0.07587703850000001
+        ],
+        "command": [
+          0.1,
+          -0.07587703850000001
+        ],
+        "transition": "reverse",
+        "output": "runs/v858_nav2_verified/v909/platform_14"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.028483791869555807,
+      "yaw_error_rad": 0.019866661606219527,
+      "maximum_speed": 0.10086401778957187,
+      "maximum_yaw_rate": 0.10263767651291236,
+      "original_report_agrees": true,
+      "native_trace_sha256": "d72b7a9e3e29237d8031c458c115348c401559df8dde487a518fac5cf4534b15"
+    },
+    {
+      "index": 15,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          -0.07587703850000001
+        ],
+        "command": [
+          -0.1,
+          -0.07587703850000001
+        ],
+        "transition": "same",
+        "output": "runs/v858_nav2_verified/v909/platform_15"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.010067336562488169,
+      "yaw_error_rad": 0.004362839158759346,
+      "maximum_speed": 0.1005240788116852,
+      "maximum_yaw_rate": 0.102698384453767,
+      "original_report_agrees": true,
+      "native_trace_sha256": "824be7f2fe31a091c40f23a5c7fc9a8cb2ae698b00816ba4524ad289af7f1337"
+    },
+    {
+      "index": 16,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          -0.07587703850000001
+        ],
+        "command": [
+          0.0,
+          0.0
+        ],
+        "transition": "zero",
+        "output": "runs/v858_nav2_verified/v909/platform_16"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.010080460672464455,
+      "yaw_error_rad": 0.0054570106016993405,
+      "maximum_speed": 0.1005240788116852,
+      "maximum_yaw_rate": 0.102698384453767,
+      "original_report_agrees": true,
+      "native_trace_sha256": "9fa5fc1b5861343d6688304ba2f3ca201b922e992ef28b2b78c95e919b049392"
+    },
+    {
+      "index": 17,
+      "task": {
+        "case_id": "WEST_EAST",
+        "seed": 10010001,
+        "phase": 0.6573753567727383,
+        "dynamic": true,
+        "warm": [
+          -0.1,
+          -0.07587703850000001
+        ],
+        "command": [
+          0.1,
+          0.07587703850000001
+        ],
+        "transition": "reverse",
+        "output": "runs/v858_nav2_verified/v909/platform_17"
+      },
+      "checks": {
+        "exact420steps": true,
+        "original_fixed_warm_commands": true,
+        "original_fixed_committed_commands": true,
+        "original_full200step_stop": true,
+        "full_saved_body_equivalence": true,
+        "position_limit": true,
+        "angle_limit": true,
+        "speed_limit": true,
+        "yaw_rate_limit": true,
+        "stopped_by_half_second": true
+      },
+      "passed": true,
+      "position_error_m": 0.02848784944117652,
+      "yaw_error_rad": 0.019874095136993817,
+      "maximum_speed": 0.1005240788116852,
+      "maximum_yaw_rate": 0.102698384453767,
+      "original_report_agrees": true,
+      "native_trace_sha256": "7a8e06c6b592fd72fd746c6e23bd6365a9498b84d768782718e062143634b5b1"
+    }
+  ],
+  "failure_count": 0,
+  "actual_analyzed_native": 7560,
+  "models_this_audit": 0,
+  "integrations_this_audit": 0,
+  "scope": "Native-state and delivered command reconstruction of fixed engineering response bounds; does not prove a universal dynamics envelope or navigation."
+}

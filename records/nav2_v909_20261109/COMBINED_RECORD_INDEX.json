@@ -1,0 +1,50 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-timed-command-v909-20261109",
+  "archives": [
+    {
+      "group": "phase-v909-20261109",
+      "source_files": 98,
+      "raw_bytes": 18616885,
+      "archive_bytes": 10428360,
+      "archive_sha256": "885f1ab6906ffb33c40981ec93dda7bae56596cc112cb5eb57adb8c7cc6cc42a",
+      "parts": [
+        {
+          "name": "phase-v909-20261109.tar.zst.part000",
+          "bytes": 10428360,
+          "sha256": "885f1ab6906ffb33c40981ec93dda7bae56596cc112cb5eb57adb8c7cc6cc42a"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true,
+      "local_cloud": "runs/v909_timed_command_contract/cloud"
+    },
+    {
+      "group": "phase-v909-continuation-20261109",
+      "source_files": 718,
+      "raw_bytes": 233901813,
+      "archive_bytes": 94969600,
+      "archive_sha256": "76a0534254316ac982c84cd6248d71efe056f4101853856e216828754dc34651",
+      "parts": [
+        {
+          "name": "phase-v909-continuation-20261109.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "d3fddbd74a24c0d2d55e8bea75d62b639a55c123114da5710ab2a53a5ae199f2"
+        },
+        {
+          "name": "phase-v909-continuation-20261109.tar.zst.part001",
+          "bytes": 33554432,
+          "sha256": "44a71523289bf366e428e18e7d76f97a17ade99ac9bd86609ee0c013f5ad65c5"
+        },
+        {
+          "name": "phase-v909-continuation-20261109.tar.zst.part002",
+          "bytes": 27860736,
+          "sha256": "c3bee8ac3e102615f4a15450c3080c0f271fcba5720ae7cd49dd0f991d3a9135"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true,
+      "local_cloud": "runs/v909_output_continuation/cloud"
+    }
+  ]
+}

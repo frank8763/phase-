@@ -1,0 +1,25 @@
+# V909 finite command and stopping-tube development
+
+User instruction 2026-11-09: “下一项开始，抓紧时间，我们继续向RAS前进”; then “继续，认真思考”. This follows explicit delegation of algorithm/scenario changes. One NEW independent 90-minute root, fixed immediately before first vehicle initialization. The closed V900–V907 round and its 10:38:29.771335 deadline are not extended or reopened. No Stage access, agents, training, hardware, additional candidate, new24 or automatic comparison campaign.
+
+## Scientific change and limitation
+
+Replace the sufficient six-second stationary holding predicate applied at every moving pose with a finite, time-aligned body occupancy tube: issued command <=0.2s, followed by the original two-second braking interval. Both the full body and causal obstacle support are compared at the same future times. Constant-twist reference motion has a candidate .04m/.035rad empirical residual envelope; actual observed body speed <=.13m/s and yaw rate <=.16rad/s. Command speed <=.1m/s, physical curvature <=.758770385/m. Receipt latency <=.05s, body observation age <=.05s and scan age <=.2s. Time delay and continuous intersample motion are included in the separating-distance reserve. Nominal lower clearance >=.155; actual original native clearance >=.15, zero bad/unknown/self contacts, static geometry invariance, original actuator slew and full own-control replay <=1e-8 remain required.
+
+This explicitly changes the prior six-second holding contract. It is an empirically qualified, monitored finite permission, **not** formal reachable-set completeness, recursive safety, indefinite stopped safety, or preservation of RP-CCR328. Failure to renew a finite command permits only its bounded stopping response; if no current command or stop tube is admissible the run ends as failure. An actor that can continue approaching a stopped vehicle defeats indefinite safety: no such claim is made.
+
+One atomic transaction supplies measured body and causal support to both the planner and command guard. All future-source, stale-data, missing/mismatched command proof and measured residual violations stop the run. Global Smac and RPP are unchanged nominal guidance (soft future global layer, original hard local layer). A global path is not an execution certificate. This removes the demonstrated contradictory universal stationary objective; it does not prove complete-route reachability or progress in every scene. No further repeated retreat loop is used in this candidate.
+
+## Fixed sequence before any model
+
+1. Zero-model qualification on original V907 saved scans/three retreat poses and actual production transaction/native command-receive seams, positive and negative cases. All preparation import/serialization, task-role, loader-harness and ROS timestamp errors remain recorded in PREPARATION_ERRORS.json, all before freezing and zero vehicle models.
+2. Eighteen fixed response cases (PLATFORM_TASKS.json): speed +/-0.1, curvature 0/+/-maximum; after exactly 200 native warming steps, apply same/zero/opposite command for20 steps, then brake200 steps. New initial model per case, original WE course/seed/actor. Compare every command-plus-stop pose against the declared tube; settle by0.5s and remain settled. Original native safety and full420-step own replay per case. At most7560 platform steps plus7560 replay, private0. First failure ends the whole candidate, no change or retry.
+3. Only all eighteen pass: original WEST_EAST/10010001/phase0.6573753567727383, one180s navigation and2sbrake; complete independent physical, sensor-support, causal command and runtime audit. Only main success: one same-configuration complete repeat (asynchronous trajectory may differ; each own replay must be exact). No new seeds/routes/confirmation. Platform00 initial state/setup is the same-version actual t0 comparison, not a new independent navigation sample.
+
+One CPU per actual model, `run_phase.sh`, execution.lock, guard original bytes restored in finally. Platform <=600s, each navigation worker group<=240s; all model processes bounded by the same immutable root deadline, never restarted after frozen-source/function/safety/evidence failure. Source/protocol/task freezing precedes first model. Deadline only permits zero-model closure afterwards.
+
+## Evidence and storage
+
+Retain source, frozen task list, authorization/window, qualification results, complete native state/control/contact/sensor records, actual online command tubes, replay, independent audit, honest failure/unexecuted counts and report. Temporary cache<=2GiB. Store necessary source/summary in Git and full selected records in same-repository Release; verify source and decompressed member SHA, remote download and digest before cleaning local raw cache. No retry of old push/old closed delivery. No change to current/runtime/network models.
+
+Success is **one original-course dynamic development and one repeat**, not three-route validation, full24 acceptance, algorithm superiority or a RAS-ready paper. Subsequent held-out confirmation, fair baselines, ablations, transfer/generalization and hardware remain separate gates.
