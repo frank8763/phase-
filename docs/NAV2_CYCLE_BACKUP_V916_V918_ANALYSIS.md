@@ -1,0 +1,34 @@
+# V916 / V918 bounded dynamic development, 2026-11-09
+
+Both physical candidates are CLOSED / NOT_PASSED. Neither conditional repeat was executed; fresh24, training and hardware0. Each actual model was initialized once through run_phase on the single execution lock. Old18 platform responses and original t0 metadata were reused as old evidence, never new independent samples. Hard end remained12:58:26.663983+0800; failed candidates were stopped early, not extended or resumed.
+
+| Version | Actual native | Complete own replay | Private | Remaining goal | Minimum actual clearance | Post-discovery travel |
+|---|---:|---:|---:|---:|---:|---:|
+| V916 | 6437 | 6437 | 0 | 3.907444m | 0.269149864m | 0.269738m |
+| V918 | 6975 | 6975 | 0 | 2.226817m | 0.269111928m | 1.842611m |
+
+Both prefixes have zero bad contacts and full qpos/qvel/ctrl/mocap own-control replay maximum error0. These physical-prefix checks do not clear either failed overall evidence/functional gate. Results are development observations on one exposed original route, not independent confirmation rates, a matched performance comparison or RAS superiority.
+
+## What was implemented and tested
+
+V916 added whole-cycle-separated backup endpoints and immutable certificate retention. Original18 native response traces were downloaded, their archived source/decompressed hashes checked and responses independently reconstructed. Same-direction/zero transitions max position error0.011582594m; direction reversals max0.028917460m. The empirical model became .02m for aligned/zero and .04m for reversal, with original .035rad yaw, speed, .05delivery, .155prediction and .15actual thresholds. This is an explicit conditional empirical model revision, not a universal dynamics or stopping-reachability bound. Every actual native step monitors its chosen anchored residual.
+
+Full-cycle hard reference occupancy was too restrictive with initial observations: original raw Smac saved-state probes failed; actual production proxy later produced two mature routes. This is not proof that no path exists. The V916 car reached only0.269738m of post-discovery travel and waited near(0.3197,-0.6872). New-command STALE_COMMAND_BODY triggered at about62.37s, followed by the prescribed2s stop. Its exact failing body age was not saved, so it is unknown beyond the rejected>50ms contract. Overall outcome remains failed. The code lacked retained-backup handling for this new-proposal exception.
+
+V918 preserved the terminal/resource mechanism while separating nominal full-cycle reference cost50 from the original hard2.5s local motion enclosure. Each actual command still required both its finite motion/stop proof and whole-cycle stationary endpoint. A rejected new proposal with body age50–200ms may retain an already-valid old proof without sending a command, resetting time or changing source data. Older/foreign/future/state/integrity faults stop.21 exact rule/production callback checks, six native recording-stub checks, new causal-map audit plus tamper negative, three actual production Smac saved-state paths and eight full lifecycle/map/ARM startup checks all passed with zero model integrations.
+
+The V918 run recorded three stale-proposal deferrals, all independently verified as preserving an accepted original proof and actual saved body. It advanced1.842611m after actual actor discovery. At69.75s the native COMMAND_DELIVERY_BUDGET gate stopped the physical prefix. Later ROS STALE_COHERENT_OBSERVATION followed the physical cessation. Original finite geometry, terminal-cycle, conditional residual, causal provenance and dispatch-count audits pass; the overall tube audit fails because the native execution ended in an exception. Native max paced-loop lag0.003483s does not measure all ROS certificate computation and interprocess delivery delay and is not a general real-time claim.
+
+## Current remaining defect and qualified software next step
+
+Admission, handoff and ingress all consume the same certificate resource. V918 handled a missed new-proposal body deadline but native ingress still treated a late NEW packet as grounds to discard a valid old backup. Saved command issue times and last native receive timing provide a roughly69ms candidate interval, but the failing received packet/sequence was not captured. Exact delay and computation/scheduling/socket attribution remain unknown; no GC or clock-race cause is asserted.
+
+V919 is a zero-model prototype only. It validates envelope/sequence/source and discards a new50–200ms late packet when an old accepted finite tail or all-phase stop remains valid. It never admits late motion, resets proof time or replaces the old command. Beyond200ms, future/foreign/malformed/source/proof errors and expired backup still reject.14 deterministic recording-state checks pass, including a constructed69ms example using saved command fields that reproduces the previous receiver failure. This is not exact historical failing-packet reproduction. It has no physical worker entrypoint; integration into the native loop, per-packet receive timestamping, independent rejection-journal audit and physical validation remain unexecuted. The current continuation's physical quota is closed; no third physical candidate was started.
+
+## Provenance and limits
+
+V916 preparation retains initial .08 reference/direct Smac failures and two zero-model qualification-harness missing-import errors. The first raw qualification console was overwritten by a later attempt before copying; its saved attempt01 text is explicitly a reconstruction from tool output, not an original raw console. The second audit import traceback is preserved verbatim. See PREPARATION_RECORD_ERRATUM.json. Earlier V909 output-path, V911 import, V913 preparation and all historical failures remain unchanged.
+
+All online actor envelopes use causal range observations under an added public known-.32rad/s sinusoidal class, amplitude<=.25; unknown anchor/axis/phase are not read from truth. Truth is used only in physical sensing/offline evaluation. These results cover that narrower class, not arbitrary-direction .08-speed or older .12per-axis motion, arbitrary occlusion, multiple actors or maps. Empirical native monitoring does not establish recursive safety. Full static model/network/control,19 entities, single small actor and original sensor noise/dropout remain fixed.
+
+Dynamic acceptance is still incomplete. After a development configuration actually arrives and repeats, same-version three-route validation, fresh held-out confirmation, fair RPP/MPPI comparisons, ablations, uncertainty/runtime/generalization evaluation and later hardware interface/experiments remain required for the RAS manuscript. This closure uploads necessary source/metadata and all transferable original evidence; cleanup is allowed only after remote download/decompressed member SHA verification. No old Git push is retried.

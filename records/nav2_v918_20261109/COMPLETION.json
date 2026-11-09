@@ -1,0 +1,24 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "rows": [
+    {
+      "task_id": "main_we",
+      "passed": false,
+      "actual_native": 6975,
+      "replay_native": 6975,
+      "private_native": 0,
+      "goal_m": 2.226817040703581
+    }
+  ],
+  "unexecuted_navigation": 1,
+  "new24": 0,
+  "error": {
+    "error": "AssertionError('FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v918_reference_backup_balance/campaign.py\", line 39, in main\n    launch([sys.executable,'-B',str(C/'launch_one.py'),str(tp),str(ap)],task['task_id'],260)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v918_reference_backup_balance/campaign.py\", line 30, in launch\n    assert rc==0,'FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+label\nAssertionError: FIRST_QUALIFICATION_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE main_we\n"
+  },
+  "models_authorized": false,
+  "deadline_unix": 1794200306.6639833,
+  "closed_unix": 1794198669.6744838,
+  "guard_restored": true
+}
