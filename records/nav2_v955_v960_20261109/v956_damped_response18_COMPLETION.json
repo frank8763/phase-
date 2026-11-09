@@ -1,0 +1,219 @@
+{
+  "closed": true,
+  "passed": false,
+  "error": {
+    "error": "AssertionError('FIRST_COMPONENT_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE 3')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v956_damped_response18/campaign.py\", line 56, in main\n    assert child.returncode==0 and item['passed'],'FIRST_COMPONENT_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE '+str(index)\nAssertionError: FIRST_COMPONENT_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE 3\n",
+    "active_index": 3
+  },
+  "rows": [
+    {
+      "passed": true,
+      "index": 0,
+      "models_attempted": 1,
+      "models_initialized": 1,
+      "actual_native": 420,
+      "fully_recorded_native": 420,
+      "replay_native": 420,
+      "private_native": 0,
+      "checks": {
+        "bounded_position": true,
+        "bounded_rotation": true,
+        "measured_speed_bound": true,
+        "measured_yaw_bound": true,
+        "settled_by_half_second": true,
+        "final_measured_steering_neutral": true,
+        "complete_native": true,
+        "all_native_safety": true,
+        "full_control_replay": true
+      },
+      "native": {
+        "actual_native": 420,
+        "fully_recorded_native": 420,
+        "minimum_actual_clearance_m": 0.3149938628661677,
+        "minimum_self_margin_m": 0.009175934569664534,
+        "bad_contacts": 0,
+        "final_body": [
+          -3.799243920768906,
+          -1.9999415907766365,
+          0.0001079668969003389,
+          5.0031563682882435e-06,
+          -2.8949802886119548e-11
+        ],
+        "final_translation_speed_m_s": 5.003156838327603e-06,
+        "root_guard_native_count": 420,
+        "goal_distance_m": 7.799243920987622,
+        "first_actor_detection": null,
+        "actual_travel_after_detection_m": 0.0
+      },
+      "replay": {
+        "replay_native": 420,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "position_residual_max_m": 0.00846349786947683,
+      "position_bound_m": 0.02,
+      "angle_residual_max_rad": 1.4268254161193998e-05,
+      "evaluated_samples": 220,
+      "closed": true,
+      "closed_unix": 1794230174.5969703,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "index": 1,
+      "models_attempted": 1,
+      "models_initialized": 1,
+      "actual_native": 420,
+      "fully_recorded_native": 420,
+      "replay_native": 420,
+      "private_native": 0,
+      "checks": {
+        "bounded_position": true,
+        "bounded_rotation": true,
+        "measured_speed_bound": true,
+        "measured_yaw_bound": true,
+        "settled_by_half_second": true,
+        "final_measured_steering_neutral": true,
+        "complete_native": true,
+        "all_native_safety": true,
+        "full_control_replay": true
+      },
+      "native": {
+        "actual_native": 420,
+        "fully_recorded_native": 420,
+        "minimum_actual_clearance_m": 0.3149938628661677,
+        "minimum_self_margin_m": 0.009175934569664534,
+        "bad_contacts": 0,
+        "final_body": [
+          -3.817841249243826,
+          -1.999943635447454,
+          9.878537259565674e-05,
+          5.71138598026478e-06,
+          1.3277293232722237e-09
+        ],
+        "final_translation_speed_m_s": 5.711386114593456e-06,
+        "root_guard_native_count": 420,
+        "goal_distance_m": 7.817841249447013,
+        "first_actor_detection": null,
+        "actual_travel_after_detection_m": 0.0
+      },
+      "replay": {
+        "replay_native": 420,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "position_residual_max_m": 0.009865216492215535,
+      "position_bound_m": 0.02,
+      "angle_residual_max_rad": 5.08749171040552e-06,
+      "evaluated_samples": 220,
+      "closed": true,
+      "closed_unix": 1794230191.6020558,
+      "empirical_only": true
+    },
+    {
+      "passed": true,
+      "index": 2,
+      "models_attempted": 1,
+      "models_initialized": 1,
+      "actual_native": 420,
+      "fully_recorded_native": 420,
+      "replay_native": 420,
+      "private_native": 0,
+      "checks": {
+        "bounded_position": true,
+        "bounded_rotation": true,
+        "measured_speed_bound": true,
+        "measured_yaw_bound": true,
+        "settled_by_half_second": true,
+        "final_measured_steering_neutral": true,
+        "complete_native": true,
+        "all_native_safety": true,
+        "full_control_replay": true
+      },
+      "native": {
+        "actual_native": 420,
+        "fully_recorded_native": 420,
+        "minimum_actual_clearance_m": 0.3149938628661677,
+        "minimum_self_margin_m": 0.009059369118685268,
+        "bad_contacts": 0,
+        "final_body": [
+          -3.8237882733948716,
+          -1.9999442294870016,
+          9.596319903693552e-05,
+          6.17898914229926e-06,
+          2.10916151623602e-09
+        ],
+        "final_translation_speed_m_s": 6.178989997464319e-06,
+        "root_guard_native_count": 420,
+        "goal_distance_m": 7.823788273593647,
+        "first_actor_detection": null,
+        "actual_travel_after_detection_m": 0.0
+      },
+      "replay": {
+        "replay_native": 420,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "position_residual_max_m": 0.028258356299886444,
+      "position_bound_m": 0.04,
+      "angle_residual_max_rad": 3.581582021337001e-06,
+      "evaluated_samples": 220,
+      "closed": true,
+      "closed_unix": 1794230207.5666046,
+      "empirical_only": true
+    },
+    {
+      "passed": false,
+      "index": 3,
+      "models_attempted": 1,
+      "models_initialized": 1,
+      "actual_native": null,
+      "fully_recorded_native": 285,
+      "replay_native": 0,
+      "private_native": 0,
+      "error": "ValueError('ALIGNMENT_BODY_ENVELOPE_EXCEEDED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v956_damped_response18/worker.py\", line 64, in main\n    item,arrays=execute(vehicle,task,auth['deadline_unix'],lambda v,d:replay(v,d,out/'physics'),progress)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v956_damped_response18/worker.py\", line 29, in execute\n    progress['in_step']=True;vehicle.step(*controls(tick,task));progress['in_step']=False\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 76, in step\n    _,_,_,mv,mw=self.body();ctrl=self.adapter.compute(v,w,mv,mw,stale);self.audit.before_native(self.m,self.d);self.d.ctrl[self.adapter.commands.ids]=ctrl;before=self.d.ctrl.copy();self.native(self.m,self.d);self.count+=1;self.audit.after_native(self.m,self.d)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v955_damped_stopped_alignment/vehicle_control.py\", line 63, in compute\n    raise ValueError('ALIGNMENT_BODY_ENVELOPE_EXCEEDED')\nValueError: ALIGNMENT_BODY_ENVELOPE_EXCEEDED\n",
+      "partial": {
+        "actual_native": 285,
+        "fully_recorded_native": 285,
+        "minimum_actual_clearance_m": 0.2036089473276146,
+        "minimum_self_margin_m": 0.009206988155558982,
+        "bad_contacts": 0,
+        "final_body": [
+          -3.8074882419083895,
+          -2.040542344665697,
+          -0.06897606540553802,
+          0.00783706699433154,
+          -0.0301472199296381
+        ],
+        "final_translation_speed_m_s": 0.008003519358298287,
+        "root_guard_native_count": 285,
+        "goal_distance_m": 7.807593504355151,
+        "first_actor_detection": null,
+        "actual_travel_after_detection_m": 0.0
+      },
+      "closed": true,
+      "closed_unix": 1794230222.680727,
+      "empirical_only": true
+    }
+  ],
+  "status": "NOT_PASSED",
+  "attempted_cases": 4,
+  "unexecuted_cases": 14,
+  "model_attempts": 4,
+  "models_initialized": 4,
+  "actual_native": null,
+  "replay_native": 1260,
+  "private_native": 0,
+  "navigation": 0,
+  "new24": 0,
+  "handoff": 0,
+  "guard_restored": true,
+  "started_unix": 1794230159.109783,
+  "deadline_unix": 1794235559.109783,
+  "closed_unix": 1794230223.762085
+}

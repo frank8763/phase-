@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": {
+    "holds_steering_entire_two_seconds": true,
+    "drive_targets_brake_to_zero": true,
+    "actuator_original_slew": true,
+    "no_hidden_differential_actuation": true,
+    "moving_map_unchanged": true,
+    "turned_stop_accepted_only_prospectively": true,
+    "v956_original_settle_violation_still_fails": true,
+    "turned_wheels_cannot_start_straight": true,
+    "matching_curved_reference_is_only_geometric_compatible": true,
+    "zero_speed_not_forward_handoff": true
+  },
+  "moving_cases": 18,
+  "models": 0,
+  "integrations": 0,
+  "physical_authority": false,
+  "physical_response_qualified": false,
+  "scope": "Prospective stopping definition and necessary geometric handoff seam only. No regrading, new physical response or executable corridor proof."
+}
