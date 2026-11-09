@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_v945_reversing_path_is_red": true,
+    "negative_normal_requests_cancel_replan": true,
+    "zero_request_creates_no_motion": true,
+    "resume_recovers_original_forward_goal": true,
+    "recovery_endpoint_not_success_or_new_target": true,
+    "implicit_reverse_escape_disabled": true,
+    "normal_forward_reference_accepted": true,
+    "nonfinite_request_rejected": true,
+    "fresh_snapshot_identical_to_original": true,
+    "original_stale_snapshot_red": true,
+    "new_stale_is_still_rejected": true,
+    "exact_failed_input_retained": true,
+    "exact_ages_retained": true,
+    "future_timestamp_rejected": true,
+    "source_parse": true,
+    "normal_planner_dubin": true,
+    "rpp_reversing_disabled": true,
+    "selector_exact_qualified_v947": true,
+    "physical_gate_closed": true
+  },
+  "red_reasons": {
+    "old_reference": "NORMAL_REFERENCE_CONTAINS_REVERSE_OR_INVALID_GEAR",
+    "changed_goal": "ORIGINAL_GOAL_CHANGED",
+    "escape": "REVERSE_ESCAPE_NOT_QUALIFIED",
+    "nonfinite": "NONFINITE_CONTROL",
+    "old_stale": "STALE_COHERENT_OBSERVATION",
+    "future": "FUTURE_COHERENT_OBSERVATION"
+  },
+  "models": 0,
+  "integrations": 0,
+  "scope": "Software direction/fault boundaries only; no new path or physical arrival claim."
+}

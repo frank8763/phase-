@@ -7441,5 +7441,37 @@
       "observation scheduling",
       "full production readiness"
     ]
+  },
+  "v950_v951_component": {
+    "scope": "original18response_then1handoff_only",
+    "original_v950_metadata_failure_preserved": true,
+    "one_output_exception_authorized": true,
+    "first_case_not_rerun": true,
+    "whole_route_authorized": false,
+    "new24_authorized": false,
+    "original_deadline_unix": 1794232202.9745042,
+    "closed": true,
+    "status": "NOT_PASSED",
+    "models": 4,
+    "actual_native": 1680,
+    "replay_native": 1680,
+    "private_native": 0,
+    "completed_response_cases": 4,
+    "passed_response_cases": 3,
+    "unexecuted_response_cases": 14,
+    "unexecuted_handoff_cases": 1,
+    "full_route_navigation": 0,
+    "report": "docs/RPCCR_FORWARD_HANDOFF_V948_V951_REPORT.md",
+    "stop_reason": "CASE_03_YAW_AND_HALF_SECOND_STOP_GATES_FAILED"
+  },
+  "v948_v949_preparation": {
+    "normal_forward_source_integrated": true,
+    "software_only": true,
+    "physical_ready": false,
+    "report": "docs/RPCCR_FORWARD_HANDOFF_V948_V951_REPORT.md",
+    "blockers": [
+      "Two-phase brake-then-align composition unqualified",
+      "Complete executable forward corridor not qualified"
+    ]
   }
 }

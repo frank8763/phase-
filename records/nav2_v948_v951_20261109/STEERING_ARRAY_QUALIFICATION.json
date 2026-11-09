@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_old_adapter_reconstruction": true,
+    "old_zero_retains_bad_steering": true,
+    "new_zero_centers_steering": true,
+    "new_zero_drive_target": true,
+    "original_per_second_slew": true,
+    "straight_reference_has_no_inner_yaw_steering_oscillation": true,
+    "actual_neutral_encoder_gate": true,
+    "stopped_body_with_turned_wheels_rejected": true,
+    "moving_steering_rejected": true,
+    "missing_encoder_rejected": true,
+    "stale_encoder_rejected": true,
+    "incoherent_encoder_rejected": true,
+    "nonfinite_encoder_rejected": true
+  },
+  "errors": [
+    {
+      "case": "missing",
+      "reason": "MEASURED_STEERING_REQUIRED"
+    },
+    {
+      "case": "stale",
+      "reason": "STALE_STEERING_ENCODERS"
+    },
+    {
+      "case": "incoherent",
+      "reason": "INCOHERENT_STEERING_ENCODERS"
+    },
+    {
+      "case": "nonfinite",
+      "reason": "INVALID_STEERING_ENCODERS"
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "exact_old_adapter_rows": 13517,
+  "old_control_max_error": 2.220446049250313e-16,
+  "new_command_neutral_after_ticks": 42,
+  "steering_physical_response_qualified": false,
+  "full_route_ready": false,
+  "scope": "Exact recorded old adapter reconstruction and explicit synthetic new-controller outputs. No new vehicle response or improved physical trajectory claim."
+}
