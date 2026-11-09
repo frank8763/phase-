@@ -1,0 +1,2 @@
+# V915 saved-record diagnosis and delivery only
+No model/ROS imports, no physical initialization, prediction rollout or control replay. Read only closed V913/V914 records. Analyze original fixed last10 decisions and every saved tracked V914 state; do not optimize seeds, dynamics, thresholds or a new vehicle trajectory. Preserve original failures. Deliver full evidence to the canonical GitHub repository, verify downloaded decompressed member SHA before removing selected raw/cache copies. One bounded source push only. New physical work is not launched by these scripts.

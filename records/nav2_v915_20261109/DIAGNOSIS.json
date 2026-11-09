@@ -1,0 +1,130 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "rows": [
+    {
+      "tick": 8650,
+      "wanted_dynamic": 0.17194465630455136,
+      "stop_dynamic": 0.18471329852182528,
+      "static": 0.48236798984328677,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.3231514100828533,
+      "reserve": 0.07778753487474042
+    },
+    {
+      "tick": 8654,
+      "wanted_dynamic": 0.1682834883872531,
+      "stop_dynamic": 0.1801055829962393,
+      "static": 0.4782510029568809,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.32035365076810435,
+      "reserve": 0.07820440484555896
+    },
+    {
+      "tick": 8659,
+      "wanted_dynamic": 0.16523541344142398,
+      "stop_dynamic": 0.17441252041400654,
+      "static": 0.4730514519755744,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.31704728040197727,
+      "reserve": 0.0787021126717096
+    },
+    {
+      "tick": 8664,
+      "wanted_dynamic": 0.16409997983206587,
+      "stop_dynamic": 0.1705460376871914,
+      "static": 0.46917503838722113,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.3157343964218852,
+      "reserve": 0.07793124686686319
+    },
+    {
+      "tick": 8670,
+      "wanted_dynamic": 0.16141860127354693,
+      "stop_dynamic": 0.16669798553845974,
+      "static": 0.46396525179457426,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.312730959361908,
+      "reserve": 0.0778229345481539
+    },
+    {
+      "tick": 8674,
+      "wanted_dynamic": 0.1588748895753708,
+      "stop_dynamic": 0.16411830934741758,
+      "static": 0.46027444014752417,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.30986229146541133,
+      "reserve": 0.0781734961058281
+    },
+    {
+      "tick": 8679,
+      "wanted_dynamic": 0.1568599440846808,
+      "stop_dynamic": 0.16213991477555906,
+      "static": 0.45684642047797447,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.30754769609385296,
+      "reserve": 0.07769163891991998
+    },
+    {
+      "tick": 8684,
+      "wanted_dynamic": 0.15401902114350113,
+      "stop_dynamic": 0.15927287345957591,
+      "static": 0.45321305481988566,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.304276819565984,
+      "reserve": 0.07768318505258316
+    },
+    {
+      "tick": 8690,
+      "wanted_dynamic": 0.15012767565203222,
+      "stop_dynamic": 0.15540593436667205,
+      "static": 0.44938850101816474,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.2998666246009898,
+      "reserve": 0.07771726396504408
+    },
+    {
+      "tick": 8694,
+      "wanted_dynamic": 0.147018600634995,
+      "stop_dynamic": 0.15223815582335348,
+      "static": 0.4471313042325266,
+      "stop_min_time": 2.2,
+      "current_dynamic": 0.2962785547376408,
+      "reserve": 0.07811299982118332
+    }
+  ],
+  "one_variable_interventions": {
+    "actual": {
+      "passed": false,
+      "static_lower_m": 0.4471313042325266,
+      "dynamic_lower_m": 0.15223815582335348
+    },
+    "hold_first_stop_body": {
+      "passed": false,
+      "static_lower_m": 0.4527832400512855,
+      "dynamic_lower_m": 0.1531990298635691
+    },
+    "hold_last_accepted_body": {
+      "passed": false,
+      "static_lower_m": 0.4489927651620255,
+      "dynamic_lower_m": 0.1526959329465299
+    }
+  },
+  "retained_original_certificate": {
+    "certificate_tick": 8690,
+    "last_tick": 8895,
+    "remaining_recorded_s": 2.05,
+    "maximum_actual_position_error": 0.006121501775246698,
+    "maximum_actual_angle_error": 0.006255861497679705,
+    "within_original_empirical_residual": true,
+    "within_original_time": true,
+    "original_passed": true,
+    "scope": "Recorded executed brake prefix only. Does not prove any new action, unrecorded future, recursive safety or subsequent arrival."
+  },
+  "first_fault": "fresh zero-command future dynamic bound below .155; static ample; no stale/expiry failure",
+  "source_hashes": {
+    "COMMAND_TUBES.json.gz": "3a22ceace34c97c1940cbf84daa446339aee68c8c75360b9183539448e636d16",
+    "physics/NATIVE_TRACE.npz": "26e56cb6402170ced6cd1533c11afdb70e5f9352c9de7d7570fb9a7d0edf5257",
+    "RESULT.json": "c26673189401618d556a9cb9c430f8a148b61838b07be7aaa97c20a5df0e5754"
+  }
+}

@@ -973,3 +973,9 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - 2026-11-09 V911公开周期课程新开发：用户继续全权推进授权，新增公开omega=.32/幅<=.25周期先验，中心/轴/相位仍由原因果雷达支撑约束；不能声称原任意方向.08速度类保留。23零模型接入/40000集合覆盖/288独立LP/273504保存未来点检查和真实ROS构造通过，7057源冻结。执行管.2+2s/原残差/实际.15/预测.155/模型控制传感门不减，复用旧18平台资格不重跑计样本。独立90分钟2026-11-09T11:28:26.663983+08:00至2026-11-09T12:58:26.663983+08:00，只原WE主与成功条件重复，每条180秒、首失败停/不新24。工作协议experiments/v911_periodic_causal_navigation/PROTOCOL.md，后台pid221789。
 
 - FINAL V911在ARM前因遗漏map_readiness依赖停止：真实模型初始化完成，实际/重放/私有积分0、导航动作0、重复/新24未执行；原23项资格和源码/错误保留，不物理修补接续或延长。V910原限速硬预测4Smac查询无解返回而周期先验后三保存态找到路径，仅软件几何见证。V912全直接/延迟依赖检查发现map_readiness及未执行旧refuge分支缺依赖，7零模型正负检查通过，V911冻源未改。公开周期先验显式缩窄运动类，不代表原动态验收。REVIEW_PENDING恢复/锁空闲；报告docs/NAV2_PERIODIC_COURSE_V910_V912_ANALYSIS.md。
+
+- 2026-11-09用户在V9110积分依赖失败披露后明确继续，V913只完整化启动依赖，科学算法与V911逐模块规范化等价；真实7ROS节点激活/两完整地图/ARM消息交换/发导航前停止的软件演练8门通过（synthetic peer，0车辆模型），原演练长Unix路径错误保留。新独立部署继承不晚于原12:58:26.663983硬截止，只原WE主+成功条件完整重复、180s导航、首任何失败停，旧V911闭批不改；公开周期先验边界不变，非原任意.08类，训练/新24/Stage/实机0。后台pid225835，协议experiments/v913_periodic_startup_complete/PROTOCOL.md。
+
+- V913完整启动通过后原WE5224实际/5224自重放/私有0，最低.269073451/坏接触0/误差0，余3.798916m；原因是Nav2规划恢复停止Twist发布，末4998零命令后观测正常至5221，原许可到5225前到期，随后才观测stale，并非周期计算阻塞。45保存等待状态全允许新零命令。V914本次最后物理候选将20Hz新观测零命令续证独立于Nav2发消息；不续旧运动命令/不重用旧证书/不改模型安全门，原周期先验边界不变。11保存态规则+8生产回调/8真实ROS启动门过，沿原12:58:26.663983最终截止，只原WE主+成功重复，首失败停且不再物理候选；pid226761。
+
+- 2026-11-09 V914 CLOSED NOT_PASSED: 8895 actual/8895 replay/private0, minimum .2690734513, bad0, replay0;107 certified waiting renewals resolved V913 recovery silence, but tick8694 future movement/zero .147019/.152238<.155; goal2.004024. Repeat/new24 unexecuted. V915 zero-model827-state full-cycle analysis locates last conditional wait pose8589, not stopping invariance or arrival. Last physical candidate this continuation closed; no third launch. See docs/NAV2_V913_V915_FAILURE_AND_NEXT_DESIGN.md.
