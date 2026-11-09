@@ -1,0 +1,34 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "error": {
+    "error": "AssertionError('FIRST_FUNCTIONAL_FAILURE v968-closed-handoff')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v968_rpp_closed_loop_night/campaign.py\", line 59, in main\n    component=navigation(tasks[0]);dump(O/'COMPONENT_GATE.json',dict(passed=True,row=component))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v968_rpp_closed_loop_night/campaign.py\", line 47, in navigation\n    if strict:assert row['passed'],'FIRST_FUNCTIONAL_FAILURE '+t['run_id']\nAssertionError: FIRST_FUNCTIONAL_FAILURE v968-closed-handoff\n"
+  },
+  "rows": [
+    {
+      "task_id": "closed_handoff",
+      "run_id": "v968-closed-handoff",
+      "stage": "component",
+      "slot": null,
+      "route": "we",
+      "direction": null,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v968/closed_handoff",
+      "passed": false,
+      "evidence_passed": true,
+      "functional_passed": true,
+      "actual_native": 2794,
+      "replay_native": 2794,
+      "private_native": 0,
+      "goal_m": 0.013143313924681384
+    }
+  ],
+  "models_authorized": false,
+  "started_unix": 1794235271.5741377,
+  "deadline_unix": 1794268800.0,
+  "closed_unix": 1794235317.6080883,
+  "guard_restored": true,
+  "confirmation_executed": 0,
+  "confirmation_unexecuted": 24,
+  "unexecuted_tasks": 33
+}

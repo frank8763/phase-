@@ -1,0 +1,223 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_installed_RPP_both_actions": true,
+    "original_startup_map_proof": true,
+    "actual_production_component_no_exception": true,
+    "actual_forward_requests": true,
+    "all_issued_commands_have_original_certificates": true,
+    "held_steering_exercised": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "synthetic_peer": true,
+  "physical_qualification": false,
+  "result": {
+    "passed": true,
+    "navigation_action_sent": true,
+    "global_master_readiness": {
+      "passed": true,
+      "accepted_replies": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 132228.715871305
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 132229.283016081
+        }
+      ],
+      "all_reads": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 132228.715871305
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 132229.283016081
+        }
+      ],
+      "native_tick": 0
+    },
+    "active_states": {
+      "map_server": 3,
+      "planner_server": 3,
+      "controller_server": 3,
+      "behavior_server": 3,
+      "velocity_smoother": 3,
+      "collision_monitor": 3,
+      "bt_navigator": 3
+    },
+    "active_checked_at": {
+      "map_server": 132229.28574928,
+      "planner_server": 132229.289367029,
+      "controller_server": 132229.289767154,
+      "behavior_server": 132229.290232582,
+      "velocity_smoother": 132229.290680199,
+      "collision_monitor": 132229.291132566,
+      "bt_navigator": 132229.291627677
+    },
+    "arm_issued_at": 132229.291632426,
+    "goal_sent_at": 132229.303940134,
+    "action_status": 4,
+    "action_error_code": 0,
+    "refuge_events": 2,
+    "reason": "NAV2_SUCCEEDED",
+    "wall_s": 26.619548625021707,
+    "readiness_probes": {
+      "passed": true,
+      "size_x": 1000,
+      "size_y": 1000,
+      "resolution": 0.009999999776482582,
+      "origin": [
+        -5.0,
+        -5.0
+      ],
+      "frame": "map",
+      "cells": 1000000,
+      "unknown_cells": 0,
+      "required_static_cells": 72683,
+      "missing_static_cells": 0,
+      "all_unknown": false,
+      "models": 0,
+      "checked_at": 132229.283016081
+    },
+    "odometry_messages": 2234,
+    "cmd_vel_messages": 463,
+    "plan_messages": 0,
+    "maximum_observation_age_s": 0.011082398996222764,
+    "maximum_scan_age_s": 0.011082398996222764,
+    "last_observation": {
+      "kind": "observation",
+      "run_id": "v968-component-software-fixture",
+      "phase": "RUNNING",
+      "native_tick": 2337,
+      "sim_time": 23.37,
+      "sent_at": 132252.656694717,
+      "body_measured_at": 132252.656694717,
+      "scan_measured_at": 132252.656694717,
+      "initial_snapshot": false,
+      "body": [
+        -2.6459268395294417,
+        -1.8346544258775157,
+        0.1327750863478419,
+        0.0,
+        0.0
+      ],
+      "steering": {
+        "native_tick": 2337,
+        "measured_at": 132252.656694717,
+        "position": [
+          0.0,
+          0.0
+        ],
+        "velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      "scan": {
+        "native_tick": 2337,
+        "time": 23.37,
+        "xy": [
+          -2.6459268395294417,
+          -1.8346544258775157
+        ],
+        "yaw": 0.1327750863478419,
+        "ranges": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ]
+      }
+    }
+  },
+  "peer_errors": [],
+  "commands": 463,
+  "scope": "Real installed Nav2/RPP two-action and actual bridge-shaping/admission software; kinematic peer states are NOT physical evidence."
+}

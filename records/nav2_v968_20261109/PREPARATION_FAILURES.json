@@ -1,0 +1,16 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "failures": [
+    {
+      "stage": "full_RPP_software_fixture01",
+      "error": "Synthetic UNIX peer send timeout killed peer thread; only one initial observation, then TF tree missing and lifecycle deadline.",
+      "resolution": "Match actual native20ms preARM/10ms running publication cadence; bounded send timeout drops fixture telemetry without killing peer. No physical/scientific run occurred."
+    },
+    {
+      "stage": "saved_open_loop_negative_regression",
+      "error": "The independent spatial sampler rejected repeated stationary end-of-brake reference points before reaching the intended drift assertion.",
+      "resolution": "Drop zero-length reference chords; all actual samples including stop remain evaluated. Gate values unchanged; no model execution."
+    }
+  ]
+}

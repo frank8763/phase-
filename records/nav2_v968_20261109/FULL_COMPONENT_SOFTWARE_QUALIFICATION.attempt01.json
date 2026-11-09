@@ -1,0 +1,148 @@
+{
+  "passed": false,
+  "checks": {
+    "actual_installed_RPP_both_actions": false,
+    "original_startup_map_proof": false,
+    "actual_production_component_no_exception": false,
+    "actual_forward_requests": false,
+    "all_issued_commands_have_original_certificates": true,
+    "held_steering_exercised": false
+  },
+  "models": 0,
+  "integrations": 0,
+  "synthetic_peer": true,
+  "physical_qualification": false,
+  "result": {
+    "passed": false,
+    "navigation_action_sent": false,
+    "error": "TimeoutError('MANAGER_STARTUP_TIMEOUT')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v968_rpp_closed_loop_night/ros_bridge.py\", line 189, in run\n    wait_for(node,future.done,until,'MANAGER_STARTUP_TIMEOUT');require(future.result().success,'MANAGER_STARTUP_REJECTED')\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v968_rpp_closed_loop_night/ros_bridge.py\", line 170, in wait_for\n    raise TimeoutError(message)\nTimeoutError: MANAGER_STARTUP_TIMEOUT\n",
+    "reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+    "wall_s": 35.00305666500935,
+    "readiness_probes": [
+      [
+        {
+          "map_server": 1,
+          "planner_server": 1,
+          "controller_server": 1,
+          "behavior_server": 1,
+          "velocity_smoother": 1,
+          "collision_monitor": 1,
+          "bt_navigator": 1
+        },
+        {
+          "map_server": 132132.211478149,
+          "planner_server": 132132.2123532,
+          "controller_server": 132132.215631377,
+          "behavior_server": 132132.216577667,
+          "velocity_smoother": 132132.21721763,
+          "collision_monitor": 132132.32424102,
+          "bt_navigator": 132132.325189685
+        }
+      ],
+      [
+        {
+          "map_server": 1,
+          "planner_server": 1,
+          "controller_server": 1,
+          "behavior_server": 1,
+          "velocity_smoother": 1,
+          "collision_monitor": 1,
+          "bt_navigator": 1
+        },
+        {
+          "map_server": 132132.325830835,
+          "planner_server": 132132.326295075,
+          "controller_server": 132132.326917228,
+          "behavior_server": 132132.327343474,
+          "velocity_smoother": 132132.327880141,
+          "collision_monitor": 132132.328402559,
+          "bt_navigator": 132132.32884899
+        }
+      ]
+    ],
+    "odometry_messages": 1,
+    "cmd_vel_messages": 0,
+    "plan_messages": 0,
+    "maximum_observation_age_s": null,
+    "maximum_scan_age_s": null,
+    "last_observation": {
+      "kind": "observation",
+      "run_id": "v968-component-software-fixture",
+      "phase": "WAITING",
+      "native_tick": 0,
+      "sim_time": 0.0,
+      "sent_at": 132131.972831387,
+      "body_measured_at": 132131.972831387,
+      "scan_measured_at": 132131.972831387,
+      "initial_snapshot": true,
+      "body": [
+        -4.0,
+        -2.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "steering": {
+        "native_tick": 0,
+        "measured_at": 132131.972831387,
+        "position": [
+          0.0,
+          0.0
+        ],
+        "velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      "scan": {
+        "native_tick": 0,
+        "time": 0.0,
+        "xy": [
+          -4.0,
+          -2.0
+        ],
+        "yaw": 0.0,
+        "ranges": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ]
+      }
+    }
+  },
+  "peer_errors": [
+    "TimeoutError('timed out')"
+  ],
+  "commands": 0,
+  "scope": "Real installed Nav2/RPP two-action and actual bridge-shaping/admission software; kinematic peer states are NOT physical evidence."
+}

@@ -1,0 +1,39 @@
+{
+  "user_instruction": "继续开启通宵的",
+  "deadline_iso": "2026-11-10T08:00:00+08:00",
+  "deadline_unix": 1794268800.0,
+  "maximum_s": 43200,
+  "science": "identical V963 frozen science",
+  "no_overnight_repairs": true,
+  "original_current90min_not_extended": true,
+  "regression": [
+    "reuse_current_WE_main_repeat",
+    "new_NS_main_repeat",
+    "new_EW_main_repeat"
+  ],
+  "confirmation_main_count": 24,
+  "confirmation_seeds": [
+    10110001,
+    10110024
+  ],
+  "phase_generator": "Python Random(202611092217), each route four continuous phases in cos-positive half-circle and four in cos-negative half-circle, shuffled once before any new models",
+  "thresholds": {
+    "overall": 23,
+    "per_route": 7,
+    "per_direction": 11,
+    "second_functional_failure_stops": true,
+    "first_safety_source_evidence_failure_stops": true
+  },
+  "repeat_slots": [
+    1,
+    9,
+    17
+  ],
+  "all24_true_t0_before_main": true,
+  "minimum_confirmation_remaining_s": 9000,
+  "other_maps_training_hardware": 0,
+  "scope": "new independent closed-loop RPP handoff and original conditional route/24 chain",
+  "current90min_window_closed_unchanged": true,
+  "new_component": "actual RPP FollowPath curve-stop then measured-steering continuous1.2m path with full pose feedback",
+  "models_before_freeze": 0
+}
