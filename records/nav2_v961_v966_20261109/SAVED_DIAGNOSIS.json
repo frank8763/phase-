@@ -1,0 +1,44 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "new_controls": 0,
+  "new_navigation": 0,
+  "old_failure_regraded": false,
+  "source_sha256": {
+    "runs/v858_nav2_verified/v962/handoff_left/HANDOFF_ARRAYS.npz": "68310897f2eb40b2831204136e23b52d9d2f8b604e01f196bab9f85cf6c3b2c6",
+    "runs/v858_nav2_verified/v962/handoff_left/SHAPING.json": "66eafdd28596c38e8c1b2ff6b145f89dd06fa712c58b6e0d4333405709c08d3b",
+    "runs/v858_nav2_verified/v962/handoff_left/QUALIFICATION.json": "93135d44607ec774f369eb4f956502576a739e621071300ea8d313e85a23f608"
+  },
+  "prefix420_state_control_error": 0.0,
+  "actual_native": 1820,
+  "own_replay_native": 1820,
+  "private_native": 0,
+  "first_time_position_exceeds04_native": 787,
+  "first_heading_exceeds035_native": 1624,
+  "first_spatial_error_exceeds04_native": 1423,
+  "maximum_time_position_error_m": 0.07423239200503741,
+  "maximum_geometric_path_distance_m": 0.047180199229248015,
+  "maximum_heading_error_rad": 0.03500630326236222,
+  "end_forward_request_tick1619": {
+    "forward_position_error_m": -0.058917275195059404,
+    "lateral_position_error_m": 0.0451575321112567,
+    "heading_error_rad": 0.03499819668508926,
+    "actual_forward_speed_m_s": 0.09905608897130282
+  },
+  "first_command_steering_neutral_native": 495,
+  "actual_heading_error_after_neutral_settles_rad": 0.03452156631071389,
+  "actual_forward_speed_mean_after_first02s_m_s": 0.09607060500763231,
+  "actual_forward_progress_m": 1.1406209123621407,
+  "observations": [
+    "Actual steering continuity, forward motion and braking were exercised; original420prefix exact.",
+    "Worker requests fixed.1m/s then stop; steering rate limiter anchors measured steering but has no path-position/heading feedback during continuation.",
+    "By tick619 steering is almost neutral, while body heading already differs by.03452rad. This heading offset persists and lateral error grows during straight driving.",
+    "Actual mean forward speed.09607m/s is below fixed nominal.1; time-aligned along-track lag accumulates as well.",
+    "Geometric path distance also exceeds.04, so time-alignment alone does not explain away failure.",
+    "Observed mismatch is in execution/reference tracking of this component; no global planner or online obstacle replan was called, so this test cannot attribute failure to A* or dynamic replanning.",
+    "Mechanical cause of yaw transient is not uniquely identified by this one trace. No causal claim of inertia, tire slip or servo delay alone.",
+    "Next gate should exercise actual closed-loop path tracking from the held-steering stopped state, using existing RPP pose feedback and unchanged command safety gates. Pure steering smoothing is not sufficient."
+  ],
+  "physical_authority": false,
+  "night_dependency_chain_stopped": true
+}
