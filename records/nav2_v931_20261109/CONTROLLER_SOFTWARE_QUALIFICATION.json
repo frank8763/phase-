@@ -1,0 +1,237 @@
+{
+  "passed": true,
+  "scenario": "forward",
+  "diagnostics": [
+    {
+      "received_at": 108865.839246786,
+      "gear": 1,
+      "projected_samples": 44590,
+      "v": 0.008909289725124836,
+      "w": 0.0003740657994057983,
+      "compute_s": 0.035297353,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108865.883829105,
+      "gear": 1,
+      "projected_samples": 38863,
+      "v": 0.011931931599974632,
+      "w": 0.0006777654634788632,
+      "compute_s": 0.032211863,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108865.9355001,
+      "gear": 1,
+      "projected_samples": 35057,
+      "v": 0.013680091127753258,
+      "w": 0.0002451025357004255,
+      "compute_s": 0.030478574,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108865.984676822,
+      "gear": 1,
+      "projected_samples": 32696,
+      "v": 0.013359657488763332,
+      "w": 0.00036400018143467605,
+      "compute_s": 0.033476215,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108866.031603839,
+      "gear": 1,
+      "projected_samples": 30565,
+      "v": 0.013293856754899025,
+      "w": 0.0007196167134679854,
+      "compute_s": 0.030723139,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108866.081693514,
+      "gear": 1,
+      "projected_samples": 28893,
+      "v": 0.012661474756896496,
+      "w": 0.00038207974284887314,
+      "compute_s": 0.030623415,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108866.131647849,
+      "gear": 1,
+      "projected_samples": 27611,
+      "v": 0.012704221531748772,
+      "w": 0.0003995225124526769,
+      "compute_s": 0.030738572,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108866.181756519,
+      "gear": 1,
+      "projected_samples": 27216,
+      "v": 0.012795347720384598,
+      "w": 0.0007292393711395562,
+      "compute_s": 0.030731449,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108866.239467917,
+      "gear": 1,
+      "projected_samples": 26524,
+      "v": 0.012877224013209343,
+      "w": 0.0006983394268900156,
+      "compute_s": 0.03108523,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    },
+    {
+      "received_at": 108866.282030844,
+      "gear": 1,
+      "projected_samples": 26477,
+      "v": 0.012215111404657364,
+      "w": 0.00041416415479034185,
+      "compute_s": 0.030947518,
+      "final_full_trajectory_collision_checked": true,
+      "samples": 56
+    }
+  ],
+  "checks": {
+    "reached_exact_pre_navigation_boundary": true,
+    "expected_software_stop": true,
+    "synthetic_navigation_action": true,
+    "two_real_master_readbacks": true,
+    "all_real_lifecycle_nodes_active": true,
+    "arm_exchange": true,
+    "ten_nominal_commands_not_executed": true,
+    "synthetic_peer_never_integrates": true,
+    "nonzero_final_controls": true,
+    "custom_controller_and_projection_active": true,
+    "deadband_all_controller_outputs": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "synthetic_navigation_goals": 1,
+  "synthetic_peer": true,
+  "scope": "Actual installed customMPPI ten-control computation on fixed synthetic observations with zero physical execution. Not a navigation success or model qualification.",
+  "events": [
+    {
+      "kind": "arm",
+      "native_tick": 0,
+      "sim_time": 0.0,
+      "states": {
+        "map_server": 3,
+        "planner_server": 3,
+        "controller_server": 3,
+        "behavior_server": 3,
+        "velocity_smoother": 3,
+        "collision_monitor": 3,
+        "bt_navigator": 3
+      },
+      "checked_at": {
+        "map_server": 108865.537817219,
+        "planner_server": 108865.539300012,
+        "controller_server": 108865.54007643,
+        "behavior_server": 108865.54085641,
+        "velocity_smoother": 108865.541409637,
+        "collision_monitor": 108865.541890447,
+        "bt_navigator": 108865.542428241
+      },
+      "issued_at": 108865.542435364,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 1,
+      "issued_at": 108865.847437168,
+      "v": 0.008909289725124836,
+      "w": 0.0003740657994057983,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 2,
+      "issued_at": 108865.894409289,
+      "v": 0.011931931599974632,
+      "w": 0.0006777654634788632,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 3,
+      "issued_at": 108865.945600661,
+      "v": 0.013680091127753258,
+      "w": 0.0002451025357004255,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 4,
+      "issued_at": 108865.994911537,
+      "v": 0.013359657488763332,
+      "w": 0.00036400018143467605,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 5,
+      "issued_at": 108866.045619735,
+      "v": 0.013293856754899025,
+      "w": 0.0007196167134679854,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 6,
+      "issued_at": 108866.092046947,
+      "v": 0.012661474756896496,
+      "w": 0.00038207974284887314,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 7,
+      "issued_at": 108866.144210632,
+      "v": 0.012704221531748772,
+      "w": 0.0003995225124526769,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 8,
+      "issued_at": 108866.192112327,
+      "v": 0.012795347720384598,
+      "w": 0.0007292393711395562,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 9,
+      "issued_at": 108866.242421631,
+      "v": 0.012877224013209343,
+      "w": 0.0006983394268900156,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "command",
+      "sequence": 10,
+      "issued_at": 108866.292398523,
+      "v": 0.012215111404657364,
+      "w": 0.00041416415479034185,
+      "run_id": "v931-zero-model-startup-fixture"
+    },
+    {
+      "kind": "stop",
+      "issued_at": 108866.293830267,
+      "reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+      "run_id": "v931-zero-model-startup-fixture"
+    }
+  ]
+}
