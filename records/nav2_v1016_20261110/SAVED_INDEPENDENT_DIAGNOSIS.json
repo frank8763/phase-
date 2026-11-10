@@ -1,0 +1,167 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "original_total_failure_not_upgraded": true,
+  "original_shaping_red": {
+    "index": 897,
+    "old_previous": {
+      "at": 216234.115142896,
+      "delta": -0.30656419345403096
+    },
+    "recorded_prior": {
+      "at": 216234.115142896,
+      "delta": -0.30656419345403085
+    }
+  },
+  "prior_1e9_tamper_rejected": true,
+  "new_full_saved_audit": {
+    "evidence_passed": true,
+    "functional_passed": false,
+    "passed": false,
+    "checks": {
+      "native_count": true,
+      "full_native_timing": true,
+      "finite_arrays": true,
+      "all_native_clearance": true,
+      "all_native_self": true,
+      "contact_coverage": true,
+      "no_bad_contacts": true,
+      "ctrl_amplitude": true,
+      "ctrl_slew": true,
+      "model_sha": true,
+      "full_control_state_replay": true,
+      "no_root_rewrite_record": true,
+      "closed_native": true,
+      "wall_pacing": true,
+      "genuine_ros_observations": true,
+      "model_semantics": true
+    },
+    "functional_checks": {
+      "action_success": false,
+      "strict_arrival": false,
+      "actual_stopped": true,
+      "dynamic_discovery_and_continuation": false
+    },
+    "native_count": 8108,
+    "replay_native": 8108,
+    "private_native": 0,
+    "goal_distance_m": 3.2537012835778554,
+    "final_translation_speed_m_s": 3.895226213090259e-06,
+    "minimum_clearance_m": 0.2730064363989596,
+    "minimum_self_margin_m": 0.009037493357237969,
+    "bad_contacts": 0,
+    "discovery": {
+      "native_tick": 4881,
+      "sim_time": 48.80999999999886,
+      "xy": [
+        0.261678985381689,
+        -0.7088238911269068
+      ],
+      "rays": [
+        31
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "independently_recomputed_postdiscovery_travel_m": 0.7244854983357343,
+    "maximum_state_error": 0.0,
+    "atomic_handoff": {
+      "passed": true,
+      "rows": [
+        {
+          "profile_id": 1,
+          "passed": true,
+          "sequence": 1046,
+          "release_native_tick": 7556,
+          "zero_accepted_same_native_tick": true
+        }
+      ],
+      "models": 0,
+      "new_integrations": 0
+    },
+    "input_consistent_recovery": {
+      "passed": true,
+      "profiles": [
+        {
+          "profile_id": 1,
+          "passed": true,
+          "start": 5351,
+          "end": 7555,
+          "independent_lower_m": 0.3023374913925675,
+          "actual_progress_m": 0.5754176012822616,
+          "maximum_position_error_m": 0.002486295112890088,
+          "maximum_heading_error_rad": 0.001850440421043098
+        }
+      ],
+      "maximum_actuator_reconstruction_error": 8.500145032286355e-17,
+      "maximum_actual_feedback_error": 2.7755575615628914e-17,
+      "all_native_inputs_checked": 8108
+    },
+    "startup": {
+      "one_arm_exactly_at_zero": true,
+      "all_nodes_active": true,
+      "fresh_proof": true,
+      "navigation_action_after_arm": true,
+      "command_stream_present": true
+    },
+    "motion": {
+      "passed": true,
+      "original_observations_verified": 1583,
+      "tracked_states_with_offline_true_center_covered": 606,
+      "forecast_publications_rebuilt": 820,
+      "tracked_forecast_publications": 302,
+      "causal_terminal_decisions_rebuilt": 7,
+      "actual_costmap_snapshot_kinds": [
+        "global_costmap",
+        "local_costmap"
+      ],
+      "postdetection_full_snapshots": {
+        "global_costmap": 12,
+        "local_costmap": 14
+      },
+      "models": 0,
+      "integrations": 0,
+      "periodic_future_support_checks": 594368,
+      "declared_periodic_class_only": true,
+      "scope": "Causal observation/coefficient-set/forecast/terminal reconstruction and recorded native truth coverage. Known-frequency course only; not arbitrary-speed class or recursive safety"
+    },
+    "tubes": {
+      "passed": true,
+      "checks": {
+        "nonempty": true,
+        "causal": true,
+        "body_matches_native": true,
+        "source_matches_tracker": true,
+        "command_limits": true,
+        "finite_horizon": true,
+        "admission_threshold": true,
+        "independent_dense_geometry": true,
+        "wait_renewals_zero_and_causal": true,
+        "terminal_cycle_independently_qualified": true,
+        "retained_proof_chain_and_actual_body": true,
+        "conditional_residual_class": true,
+        "stale_new_proposal_retains_only_old_accepted_proof": true,
+        "only_accepted_proofs_dispatched": true,
+        "actual_runtime_tube_monitor_completed": true,
+        "no_unqualified_command_failure": true
+      },
+      "accepted_commands": 1115,
+      "zero_fallback_commands": 0,
+      "maximum_saved_body_error": 5.551115123125783e-17,
+      "qualified_zero_wait_renewals": 121,
+      "retained_certificate_decisions": 0,
+      "stale_proposal_deferrals": 1,
+      "empirical_limits_not_formal_reachability": true
+    },
+    "shaping": {
+      "passed": true,
+      "decisions": 1115,
+      "committed_new_certificates": 1115,
+      "measured_steering_restarts": 4,
+      "post_certificate_modifications": 0,
+      "models": 0,
+      "integrations": 0
+    },
+    "complete_stop": true,
+    "scope": "V1014 empirical finite single-actor Nav2 navigation with atomic stopped handoff; no328-step/global/RAS safety claim"
+  }
+}
