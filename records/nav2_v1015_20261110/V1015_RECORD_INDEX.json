@@ -1,0 +1,65 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-rpccr-exact-entry-night-v1015-20261110",
+  "summary": {
+    "status": "NOT_PASSED",
+    "stop_reason": {
+      "error": "AssertionError('STOP_ALL_SAFETY_OR_EVIDENCE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1015_atomic_entry_continuation/campaign.py\", line 70, in main\n    if action.startswith('STOP_'):raise AssertionError(action)\nAssertionError: STOP_ALL_SAFETY_OR_EVIDENCE\n"
+    },
+    "known_counts": {
+      "navigation_models": 1,
+      "navigation_native": 8108,
+      "own_replay_native": 8108,
+      "private_native": 0,
+      "preflight_models": 0,
+      "reused_original_preflight_models": 3
+    },
+    "unknown_counts": [],
+    "route_branch_rows": [
+      {
+        "task_id": "main_we",
+        "slot": 0,
+        "stage": "we_development",
+        "route": "we",
+        "initial_axis_direction": null,
+        "passed": false,
+        "executed": true,
+        "evidence_passed": false,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1015/main_we",
+        "actual_native": 8108,
+        "replay_native": 8108,
+        "private_native": 0,
+        "goal_m": 3.2537012835778554,
+        "minimum_clearance_m": null,
+        "error": "AssertionError()"
+      }
+    ],
+    "confirmation_executed": 0,
+    "confirmation_unexecuted": 24,
+    "confirmation_successes": 0,
+    "full24_rate": null,
+    "models_during_closure": 0,
+    "old_failures_preserved": true,
+    "guard_original": true,
+    "execution_lock_idle": true
+  },
+  "archives": [
+    {
+      "group": "v1015-entry-full-night-evidence",
+      "source_files": 291,
+      "raw_bytes": 65006896,
+      "archive_bytes": 26948206,
+      "archive_sha256": "4ccb4656a5f798267bc6d91f08f0824382b04025afedeeb7e92a3f07eede70de",
+      "parts": [
+        {
+          "name": "v1015-entry-full-night-evidence.tar.zst.part000",
+          "bytes": 26948206,
+          "sha256": "4ccb4656a5f798267bc6d91f08f0824382b04025afedeeb7e92a3f07eede70de"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ]
+}
