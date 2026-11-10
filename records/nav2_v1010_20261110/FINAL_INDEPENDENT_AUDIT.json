@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "scope": "Complete installed Nav2 normal-action software qualification with nonphysical proprioception/scans; not MuJoCo or dynamic acceptance",
+  "rows": [
+    {
+      "label": "original_empty_checker",
+      "action_status": null,
+      "result_error": "ProtocolError('NAVIGATION_DEADLINE')",
+      "goal_distance_m": 8.0,
+      "software_travel_m": 0.0,
+      "minimum_analytical_software_footprint_clearance_m": 0.24500009417533875,
+      "commands": 236,
+      "forward_commands": 0,
+      "successful_global_plans": 10,
+      "unsuccessful_global_plans": 0,
+      "software_wall_motion_s": 12.01504492101958,
+      "checks": {
+        "finite": true,
+        "commands_nonreverse": true,
+        "commands_match_original_accepted_tube": true,
+        "sequence_increasing": true,
+        "peer_closed_without_errors": true,
+        "dispatcher_closed_without_errors": true,
+        "software_body_static_geometry": true
+      },
+      "models": 0,
+      "physical_integrations": 0
+    },
+    {
+      "label": "explicit_checker_only",
+      "action_status": null,
+      "result_error": "ProtocolError('NAVIGATION_DEADLINE')",
+      "goal_distance_m": 0.6029242734616196,
+      "software_travel_m": 7.923209812255712,
+      "minimum_analytical_software_footprint_clearance_m": 0.24500009417533875,
+      "commands": 3567,
+      "forward_commands": 1622,
+      "successful_global_plans": 72,
+      "unsuccessful_global_plans": 78,
+      "software_wall_motion_s": 180.00500021598418,
+      "checks": {
+        "finite": true,
+        "commands_nonreverse": true,
+        "commands_match_original_accepted_tube": true,
+        "sequence_increasing": true,
+        "peer_closed_without_errors": true,
+        "dispatcher_closed_without_errors": true,
+        "software_body_static_geometry": true
+      },
+      "models": 0,
+      "physical_integrations": 0
+    },
+    {
+      "label": "explicit_checker_valid_path",
+      "action_status": 4,
+      "result_error": null,
+      "goal_distance_m": 0.22602983858374426,
+      "software_travel_m": 8.285577202254917,
+      "minimum_analytical_software_footprint_clearance_m": 0.22375266341037242,
+      "commands": 1780,
+      "forward_commands": 1743,
+      "successful_global_plans": 1,
+      "unsuccessful_global_plans": 0,
+      "software_wall_motion_s": 91.63317269599065,
+      "checks": {
+        "finite": true,
+        "commands_nonreverse": true,
+        "commands_match_original_accepted_tube": true,
+        "sequence_increasing": true,
+        "peer_closed_without_errors": true,
+        "dispatcher_closed_without_errors": true,
+        "software_body_static_geometry": true
+      },
+      "models": 0,
+      "physical_integrations": 0
+    }
+  ],
+  "models": 0,
+  "physical_integrations": 0,
+  "physical_replays": 0,
+  "full_dynamic_navigation_passed": false,
+  "physical_authority": false
+}

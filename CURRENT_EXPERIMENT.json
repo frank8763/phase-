@@ -9061,5 +9061,34 @@
     "physics_authorized": false,
     "source": "experiments/v1007_goal_checker_software_gate",
     "report": "docs/RPCCR_NAV2_GOAL_CHECKER_V1006_V1007_DIAGNOSIS.md"
+  },
+  "v1010_complete_nav2_software": {
+    "passed": true,
+    "action_status": "SUCCEEDED",
+    "goal_distance_m": 0.22602983858374426,
+    "motion_wall_s": 91.63317269599065,
+    "forward_commands": 1743,
+    "models": 0,
+    "physical_integrations": 0,
+    "dynamic_acceptance": false
+  },
+  "v1009_preparation": {
+    "user_instruction": "继续下一步的实验",
+    "stage": "FROZEN_READY_FOR_NEW_BOUNDED_APPROVAL",
+    "models_authorized": false,
+    "models_started": 0,
+    "scientific_fix": [
+      "Explicit normal FollowPath general_goal_checker",
+      "Reuse current goal path only while official IsPathValid succeeds; otherwise original planner"
+    ],
+    "old_windows_not_reopened": true,
+    "new_physical_deadline_not_locked": true,
+    "complete_installed_nav2_software_passed": true,
+    "software_vehicle_model_qualification": false,
+    "source_freeze_sha256": "ee8d7fb0167bf1e25e58964065f644e086162514bd835d2c1ed9f575f3c22856",
+    "readiness_tasks": 33,
+    "authority_cases": 11,
+    "installed_ros_imports": true,
+    "fatal_stop_production_parent_qualified": true
   }
 }
