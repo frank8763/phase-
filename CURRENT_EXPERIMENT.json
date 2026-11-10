@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v977_state_consistent_recovery/SOURCE_FREEZE.json",
-  "source_revision": "V977_STATE_CONSISTENT_RECOVERY_SOURCE_ONLY",
-  "protocol": "experiments/v977_state_consistent_recovery/PROTOCOL.md",
-  "report": "docs/RPCCR_STATE_CONSISTENT_RECOVERY_V977_REPORT.md",
+  "decision_freeze": "experiments/v979_state_recovery_physical/SOURCE_FREEZE.json",
+  "source_revision": "V979_CLOSED_NOT_PASSED",
+  "protocol": "experiments/v979_state_recovery_physical/PROTOCOL.md",
+  "report": "docs/RPCCR_STATE_RECOVERY_PHYSICAL_V979_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -7756,5 +7756,30 @@
     "guard_restored": true,
     "new24": 0,
     "automatic_followup": false
+  },
+  "v979_saved_postmortem": {
+    "models_initialized_confirmed": 1,
+    "historical_restore_native": 6083,
+    "historical_state_control_error": 0.0,
+    "new_branch_native_exact": null,
+    "new_branch_native_observed_lower_bound": 116,
+    "own_full_trace_replay_native_exact": null,
+    "private_native": 0,
+    "first_failure": "ONLINE_RECOVERY_HEADING_ENVELOPE_FAILED",
+    "online_bound_rad": 0.03509744888425636,
+    "original_heading_limit_rad": 0.035,
+    "refined_captured_pose_upper_rad": 0.03162878868735568,
+    "refined_captured_pose_within_original_heading_limit": true,
+    "full_trajectory_or_collision_claim": false,
+    "native_evidence_incomplete": true,
+    "remaining_physical_tasks_unexecuted": [
+      "component_1",
+      "main_we",
+      "repeat_we"
+    ],
+    "parent_termination_issue": "Parent FIRST_WORKER_FAILURE terminated the native process group, including isolate/bwrap die-with-parent, before full native finally records were saved. Exact new/replay counts and full contact/safety verdict unavailable; no inferred zeros.",
+    "old_not_passed_unchanged": true,
+    "postmortem_models": 0,
+    "postmortem_integrations": 0
   }
 }

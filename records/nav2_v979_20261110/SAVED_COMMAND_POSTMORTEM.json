@@ -1,0 +1,1010 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "new_predictions": 0,
+  "old_outcome_unchanged": "V979_NOT_PASSED",
+  "historical_restore_native": 6083,
+  "historical_all_state_control_error": 0.0,
+  "new_branch_native_exact": null,
+  "new_branch_native_observed_lower_bound": 116,
+  "complete_native_trace_saved": false,
+  "own_control_replay_saved": false,
+  "first_reported_error": "ProtocolError('COMMAND_CONTRACT_FAILURE ONLINE_RECOVERY_HEADING_ENVELOPE_FAILED')",
+  "captured_fault_tick": 6199,
+  "captured_body": [
+    0.34515338555539987,
+    -0.687024386884122,
+    0.015268490253725378,
+    0.02606642563750234,
+    -0.0558632721374563
+  ],
+  "nearest_reference_pose": [
+    0.3482189006617661,
+    -0.6842991971354662,
+    0.04562362423173173
+  ],
+  "captured_position_error_m": 0.004101712085646496,
+  "captured_heading_error_rad": 0.030355133978006356,
+  "original_heading_limit_rad": 0.035,
+  "online_sampling_allowance_rad": 0.0047423149062500005,
+  "measured_steering_at_fault": {
+    "native_tick": 6199,
+    "measured_at": 178446.862738864,
+    "position": [
+      0.13820086703352674,
+      0.12150441913724483
+    ],
+    "velocity": [
+      0.7102846348139493,
+      0.6167150535662825
+    ]
+  },
+  "admitted_decisions": 25,
+  "alternative_motion_decisions": 0,
+  "first_commands": [
+    {
+      "native_tick": 6084,
+      "body": [
+        0.3107707131517071,
+        -0.6862642187533338,
+        0.059591353132888464,
+        1.2353061693765863e-06,
+        -6.345124562486874e-09
+      ],
+      "measured_curvatures": [
+        -0.49423392336463556,
+        -0.4942339650136572
+      ],
+      "raw_nominal": [
+        0.0,
+        0.0
+      ],
+      "shaped": [
+        0.0,
+        0.0
+      ],
+      "dispatched": [
+        0.0,
+        0.0
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "STOP_NO_MOTION_OVERRIDE"
+    },
+    {
+      "native_tick": 6086,
+      "body": [
+        0.3107707430881451,
+        -0.6862642130424167,
+        0.05959135317558178,
+        1.6026665861294421e-06,
+        2.9433895606218916e-09
+      ],
+      "measured_curvatures": [
+        -0.49423393710503294,
+        -0.4942339734148091
+      ],
+      "raw_nominal": [
+        0.0,
+        0.0
+      ],
+      "shaped": [
+        0.0,
+        0.0
+      ],
+      "dispatched": [
+        0.0,
+        0.0
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "STOP_NO_MOTION_OVERRIDE"
+    },
+    {
+      "native_tick": 6091,
+      "body": [
+        0.3107708472897579,
+        -0.6862641904478195,
+        0.059591352041009425,
+        2.412476993984273e-06,
+        -5.1183704581935314e-08
+      ],
+      "measured_curvatures": [
+        -0.49423396086042704,
+        -0.4942339879526524
+      ],
+      "raw_nominal": [
+        0.0,
+        0.0
+      ],
+      "shaped": [
+        0.0,
+        0.0
+      ],
+      "dispatched": [
+        0.0,
+        0.0
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "STOP_NO_MOTION_OVERRIDE"
+    },
+    {
+      "native_tick": 6096,
+      "body": [
+        0.3107709833622207,
+        -0.6862641678709788,
+        0.05959134622228941,
+        2.917396132856853e-06,
+        -1.6190528849807825e-07
+      ],
+      "measured_curvatures": [
+        -0.4942339690047879,
+        -0.4942339929549052
+      ],
+      "raw_nominal": [
+        0.0,
+        0.0
+      ],
+      "shaped": [
+        0.0,
+        0.0
+      ],
+      "dispatched": [
+        0.0,
+        0.0
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "STOP_NO_MOTION_OVERRIDE"
+    },
+    {
+      "native_tick": 6101,
+      "body": [
+        0.3107711349651672,
+        -0.6862641552619563,
+        0.059591334685562374,
+        3.0829801346176434e-06,
+        -2.725238838975478e-07
+      ],
+      "measured_curvatures": [
+        -0.49423396529814706,
+        -0.49423399071030344
+      ],
+      "raw_nominal": [
+        0.0,
+        0.0
+      ],
+      "shaped": [
+        0.0,
+        0.0
+      ],
+      "dispatched": [
+        0.0,
+        0.0
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "STOP_NO_MOTION_OVERRIDE"
+    },
+    {
+      "native_tick": 6106,
+      "body": [
+        0.3107712875077826,
+        -0.6862641558314968,
+        0.059591318559105856,
+        2.9936173421534545e-06,
+        -3.493386353809349e-07
+      ],
+      "measured_curvatures": [
+        -0.4942339556180132,
+        -0.4942339848065026
+      ],
+      "raw_nominal": [
+        0.0,
+        0.0
+      ],
+      "shaped": [
+        0.0,
+        0.0
+      ],
+      "dispatched": [
+        0.0,
+        0.0
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "STOP_NO_MOTION_OVERRIDE"
+    },
+    {
+      "native_tick": 6111,
+      "body": [
+        0.310771431918383,
+        -0.6862641673501908,
+        0.05959129992094506,
+        2.778334507962881e-06,
+        -3.8236491381010414e-07
+      ],
+      "measured_curvatures": [
+        -0.494233945312838,
+        -0.4942339785120842
+      ],
+      "raw_nominal": [
+        0.0,
+        0.0
+      ],
+      "shaped": [
+        0.0,
+        0.0
+      ],
+      "dispatched": [
+        0.0,
+        0.0
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "STOP_NO_MOTION_OVERRIDE"
+    },
+    {
+      "native_tick": 6112,
+      "body": [
+        0.3107714594682625,
+        -0.6862641705425161,
+        0.05959129607905917,
+        2.731085525643505e-06,
+        -3.841444759453482e-07
+      ],
+      "measured_curvatures": [
+        -0.4942339435174185,
+        -0.49423397741469083
+      ],
+      "raw_nominal": [
+        0.04977785633694216,
+        -0.018599608592018323
+      ],
+      "shaped": [
+        0.04977785633694216,
+        -0.024601907080917213
+      ],
+      "dispatched": [
+        0.04977785633694216,
+        -0.024601907080917213
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "ANCHORED_TO_MEASURED_STOPPED_STEERING"
+    },
+    {
+      "native_tick": 6115,
+      "body": [
+        0.3108375901694748,
+        -0.686265406617807,
+        0.059561583800787354,
+        0.004533312101746685,
+        -0.0021239814252946984
+      ],
+      "measured_curvatures": [
+        -0.4941753871622427,
+        -0.4941982506039627
+      ],
+      "raw_nominal": [
+        0.04977785633694216,
+        -0.018575861519255794
+      ],
+      "shaped": [
+        0.04977785633694216,
+        -0.022568163094565868
+      ],
+      "dispatched": [
+        0.04977785633694216,
+        -0.022568163094565868
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6120,
+      "body": [
+        0.31167928156256375,
+        -0.6863003746001907,
+        0.05877089037197562,
+        0.02662906202553853,
+        -0.02852501175510168
+      ],
+      "measured_curvatures": [
+        -0.4844793993920772,
+        -0.4862621015134234
+      ],
+      "raw_nominal": [
+        0.04977785633694216,
+        -0.01727166139254789
+      ],
+      "shaped": [
+        0.04977785633694216,
+        -0.01991594460145889
+      ],
+      "dispatched": [
+        0.04977785633694216,
+        -0.01991594460145889
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6125,
+      "body": [
+        0.3134413565000576,
+        -0.6864112449564126,
+        0.056842237203771316,
+        0.039398546479475306,
+        -0.048055390541482404
+      ],
+      "measured_curvatures": [
+        -0.4605607957075736,
+        -0.4653215920699607
+      ],
+      "raw_nominal": [
+        0.04977785633694216,
+        -0.012865494347903236
+      ],
+      "shaped": [
+        0.04977785633694216,
+        -0.017327556199093295
+      ],
+      "dispatched": [
+        0.04977785633694216,
+        -0.017327556199093295
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6130,
+      "body": [
+        0.31564640673111316,
+        -0.6865789625282002,
+        0.054333918407739254,
+        0.046688386267896176,
+        -0.05643136697315079
+      ],
+      "measured_curvatures": [
+        -0.42606379903123953,
+        -0.43329384392780906
+      ],
+      "raw_nominal": [
+        0.04977785633694216,
+        -0.006392872116250607
+      ],
+      "shaped": [
+        0.04977785633694216,
+        -0.014756217133315506
+      ],
+      "dispatched": [
+        0.04977785633694216,
+        -0.014756217133315506
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    }
+  ],
+  "last_commands": [
+    {
+      "native_tick": 6140,
+      "body": [
+        0.32075326185695696,
+        -0.6869700126774357,
+        0.048507869807193134,
+        0.05273271553166101,
+        -0.06451594893958124
+      ],
+      "measured_curvatures": [
+        -0.34088831144536996,
+        -0.35126438472342153
+      ],
+      "raw_nominal": [
+        0.0499894554171201,
+        0.009066291572608055
+      ],
+      "shaped": [
+        0.0499894554171201,
+        -0.009716847524817161
+      ],
+      "dispatched": [
+        0.0499894554171201,
+        -0.009716847524817161
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6147,
+      "body": [
+        0.324427094011981,
+        -0.6871987851975536,
+        0.04419342731184461,
+        0.05151587573124091,
+        -0.05799148608156571
+      ],
+      "measured_curvatures": [
+        -0.277121909012016,
+        -0.2877693892750503
+      ],
+      "raw_nominal": [
+        0.0499894554171201,
+        0.016751525920585843
+      ],
+      "shaped": [
+        0.0499894554171201,
+        -0.00719145560464355
+      ],
+      "dispatched": [
+        0.0499894554171201,
+        -0.00719145560464355
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6150,
+      "body": [
+        0.32595092372708334,
+        -0.6872729714778947,
+        0.04244580331086851,
+        0.050320219046697395,
+        -0.06281596479710645
+      ],
+      "measured_curvatures": [
+        -0.25047486264474506,
+        -0.26156084154232656
+      ],
+      "raw_nominal": [
+        0.0499894554171201,
+        0.02369037504347529
+      ],
+      "shaped": [
+        0.0499894554171201,
+        -0.005327150406131564
+      ],
+      "dispatched": [
+        0.0499894554171201,
+        -0.005327150406131564
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6155,
+      "body": [
+        0.32841461269802813,
+        -0.6873628633695339,
+        0.039321978910978585,
+        0.048370664296672264,
+        -0.061685667567892094
+      ],
+      "measured_curvatures": [
+        -0.2024656918355393,
+        -0.2130130310309232
+      ],
+      "raw_nominal": [
+        0.0499894554171201,
+        0.03012456514026327
+      ],
+      "shaped": [
+        0.0499894554171201,
+        -0.002825545106671654
+      ],
+      "dispatched": [
+        0.0499894554171201,
+        -0.002825545106671654
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6160,
+      "body": [
+        0.3307745428855587,
+        -0.6874131504342702,
+        0.036419086017242266,
+        0.04651753279331786,
+        -0.061205424873346195
+      ],
+      "measured_curvatures": [
+        -0.15701192253545018,
+        -0.16710066786807617
+      ],
+      "raw_nominal": [
+        0.05,
+        0.035607951078404226
+      ],
+      "shaped": [
+        0.05,
+        -0.00032506002732322003
+      ],
+      "dispatched": [
+        0.05,
+        -0.00032506002732322003
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6165,
+      "body": [
+        0.3330635204264943,
+        -0.6874291315703515,
+        0.033528455927893226,
+        0.04539855979311826,
+        -0.060754694632511715
+      ],
+      "measured_curvatures": [
+        -0.11025805321239612,
+        -0.1198033299410572
+      ],
+      "raw_nominal": [
+        0.0469251688209355,
+        0.03560542840934505
+      ],
+      "shaped": [
+        0.0469251688209355,
+        0.0020175806966845314
+      ],
+      "dispatched": [
+        0.0469251688209355,
+        0.0020175806966845314
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6170,
+      "body": [
+        0.33527282227837674,
+        -0.687416638837059,
+        0.03068180723868256,
+        0.04314899480935023,
+        -0.05946922249743093
+      ],
+      "measured_curvatures": [
+        -0.06273925547601335,
+        -0.07162523976825473
+      ],
+      "raw_nominal": [
+        0.042518594945675066,
+        0.03226185065377444
+      ],
+      "shaped": [
+        0.042518594945675066,
+        0.003957300265376326
+      ],
+      "dispatched": [
+        0.042518594945675066,
+        0.003957300265376326
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6175,
+      "body": [
+        0.33734656669212926,
+        -0.6873815339432926,
+        0.027899565133007065,
+        0.039956915521178145,
+        -0.05839279277319444
+      ],
+      "measured_curvatures": [
+        -0.014809789535487812,
+        -0.0229259087074065
+      ],
+      "raw_nominal": [
+        0.03926863659421646,
+        0.02979587850441936
+      ],
+      "shaped": [
+        0.03926863659421646,
+        0.005628272354310362
+      ],
+      "dispatched": [
+        0.03926863659421646,
+        0.005628272354310362
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6180,
+      "body": [
+        0.33925879974364126,
+        -0.687329179378421,
+        0.02516609651528652,
+        0.036802799689839724,
+        -0.05752232983049492
+      ],
+      "measured_curvatures": [
+        0.033579726225687036,
+        0.02631509901590462
+      ],
+      "raw_nominal": [
+        0.03676382019488882,
+        0.027895298000913015
+      ],
+      "shaped": [
+        0.03676382019488882,
+        0.007122776335730157
+      ],
+      "dispatched": [
+        0.03676382019488882,
+        0.007122776335730157
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6185,
+      "body": [
+        0.3410110921785846,
+        -0.6872634579399582,
+        0.02247517834515866,
+        0.03364738253602615,
+        -0.05670947494949787
+      ],
+      "measured_curvatures": [
+        0.08234584232907616,
+        0.07600647890414854
+      ],
+      "raw_nominal": [
+        0.034765742230257295,
+        0.026379215614561795
+      ],
+      "shaped": [
+        0.034765742230257295,
+        0.008504135318820253
+      ],
+      "dispatched": [
+        0.034765742230257295,
+        0.008504135318820253
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6190,
+      "body": [
+        0.3426214347499508,
+        -0.6871861876234813,
+        0.02002466563558602,
+        0.031034000723111174,
+        -0.05254958781999628
+      ],
+      "measured_curvatures": [
+        0.12738380684777534,
+        0.12253826780522938
+      ],
+      "raw_nominal": [
+        0.033257459193640655,
+        0.02523477511427906
+      ],
+      "shaped": [
+        0.033257459193640655,
+        0.00983649916696457
+      ],
+      "dispatched": [
+        0.033257459193640655,
+        0.00983649916696457
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6195,
+      "body": [
+        0.3440794320268083,
+        -0.6870997222459707,
+        0.017347033567828865,
+        0.027943739062908823,
+        -0.056674579619143045
+      ],
+      "measured_curvatures": [
+        0.178419806204166,
+        0.17425772535711279
+      ],
+      "raw_nominal": [
+        0.03190265074782805,
+        0.024206786588338254
+      ],
+      "shaped": [
+        0.03190265074782805,
+        0.011085686495973001
+      ],
+      "dispatched": [
+        0.03190265074782805,
+        0.011085686495973001
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    }
+  ],
+  "missing_full_native_evidence": [
+    "runs/v858_nav2_verified/v979/component_0/physics/NATIVE_TRACE.npz",
+    "runs/v858_nav2_verified/v979/component_0/physics/BODY_COMMANDS.json",
+    "runs/v858_nav2_verified/v979/component_0/physics/CONTACTS.json.gz",
+    "runs/v858_nav2_verified/v979/component_0/physics/REPLAY.json"
+  ],
+  "evidence_stop_issue": "Parent FIRST_WORKER_FAILURE terminated the native process group, including isolate/bwrap die-with-parent, before full native finally records were saved. Exact new/replay counts and full contact/safety verdict unavailable; no inferred zeros.",
+  "limits": "Body/steering/command witnesses distinguish physical tracking from software-peer result, but do not isolate unique actuator/transmission cause; no fresh model or rerun.",
+  "restored": [
+    {
+      "path": "PARTIAL.json",
+      "sha256": "3952fe0295fe7f0c1ef40f27a9862b3bd0528b22802aa6fdd167472486f7d1ae"
+    },
+    {
+      "path": "COMMAND_TUBES.json.gz",
+      "sha256": "865e76db6cc91cb5a01600812c74b749f1671b72e689dc551833f0cf82c5e745"
+    },
+    {
+      "path": "ROS_RESULT.json",
+      "sha256": "18e5dc9c5f699574dba6a067343bdfab8d56edb4c52494509c84f5b5b4179513"
+    },
+    {
+      "path": "physics/PREFIX_RESTORE.json",
+      "sha256": "8a61d632f2a0b6e79a031059c50e712908cb42959e4d5f1968ac6fba3dcc7b90"
+    },
+    {
+      "path": "COMPONENT_REFERENCE.json",
+      "sha256": "3f15a80701270c1ba3258a0b41e7ed8bda78914b46386546b25468b814d99b94"
+    },
+    {
+      "path": "NATIVE_READY.json",
+      "sha256": "1942199971404c6d8f36514a07cb94928c71a2785ad3e23425375e5a5aadd87e"
+    },
+    {
+      "path": "COMPLETION.json",
+      "sha256": "b532d76637b0570832340a0f6ef5fec51f953e47d46e6f7c4e13997a26e5aa31"
+    },
+    {
+      "path": "COMMANDS.json",
+      "sha256": "73b2dde2e4bcccabd52fd3fd89d694ab1148679694f043857306f61bc0c98e2a"
+    },
+    {
+      "path": "physics/SETUP.json",
+      "sha256": "7bd38a517a65773ea98ad5c8b627eff346f4bbcd7e98c01c2dad7876b57ca7ca"
+    },
+    {
+      "path": "ONLINE_TRACKING_FAULT.json",
+      "sha256": "77b0b2cd27a52965abf0397d2195d0511230527bcb1d9c03276621b96668fcc6"
+    }
+  ],
+  "refined_captured_pose_check": {
+    "reference_step_m": 0.0005,
+    "heading_error_rad": 0.03143909609110568,
+    "sampling_allowance_rad": 0.00018969259625000002,
+    "conservative_upper_rad": 0.03162878868735568,
+    "original_limit_rad": 0.035,
+    "captured_pose_within_original_heading_envelope": true,
+    "not_full_native_trajectory": true
+  },
+  "online_conservative_upper_rad": 0.03509744888425636,
+  "positive_turn_request_with_negative_measured_body_yaw": [
+    {
+      "native_tick": 6165,
+      "body": [
+        0.3330635204264943,
+        -0.6874291315703515,
+        0.033528455927893226,
+        0.04539855979311826,
+        -0.060754694632511715
+      ],
+      "measured_curvatures": [
+        -0.11025805321239612,
+        -0.1198033299410572
+      ],
+      "raw_nominal": [
+        0.0469251688209355,
+        0.03560542840934505
+      ],
+      "shaped": [
+        0.0469251688209355,
+        0.0020175806966845314
+      ],
+      "dispatched": [
+        0.0469251688209355,
+        0.0020175806966845314
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6170,
+      "body": [
+        0.33527282227837674,
+        -0.687416638837059,
+        0.03068180723868256,
+        0.04314899480935023,
+        -0.05946922249743093
+      ],
+      "measured_curvatures": [
+        -0.06273925547601335,
+        -0.07162523976825473
+      ],
+      "raw_nominal": [
+        0.042518594945675066,
+        0.03226185065377444
+      ],
+      "shaped": [
+        0.042518594945675066,
+        0.003957300265376326
+      ],
+      "dispatched": [
+        0.042518594945675066,
+        0.003957300265376326
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6175,
+      "body": [
+        0.33734656669212926,
+        -0.6873815339432926,
+        0.027899565133007065,
+        0.039956915521178145,
+        -0.05839279277319444
+      ],
+      "measured_curvatures": [
+        -0.014809789535487812,
+        -0.0229259087074065
+      ],
+      "raw_nominal": [
+        0.03926863659421646,
+        0.02979587850441936
+      ],
+      "shaped": [
+        0.03926863659421646,
+        0.005628272354310362
+      ],
+      "dispatched": [
+        0.03926863659421646,
+        0.005628272354310362
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6180,
+      "body": [
+        0.33925879974364126,
+        -0.687329179378421,
+        0.02516609651528652,
+        0.036802799689839724,
+        -0.05752232983049492
+      ],
+      "measured_curvatures": [
+        0.033579726225687036,
+        0.02631509901590462
+      ],
+      "raw_nominal": [
+        0.03676382019488882,
+        0.027895298000913015
+      ],
+      "shaped": [
+        0.03676382019488882,
+        0.007122776335730157
+      ],
+      "dispatched": [
+        0.03676382019488882,
+        0.007122776335730157
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6185,
+      "body": [
+        0.3410110921785846,
+        -0.6872634579399582,
+        0.02247517834515866,
+        0.03364738253602615,
+        -0.05670947494949787
+      ],
+      "measured_curvatures": [
+        0.08234584232907616,
+        0.07600647890414854
+      ],
+      "raw_nominal": [
+        0.034765742230257295,
+        0.026379215614561795
+      ],
+      "shaped": [
+        0.034765742230257295,
+        0.008504135318820253
+      ],
+      "dispatched": [
+        0.034765742230257295,
+        0.008504135318820253
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6190,
+      "body": [
+        0.3426214347499508,
+        -0.6871861876234813,
+        0.02002466563558602,
+        0.031034000723111174,
+        -0.05254958781999628
+      ],
+      "measured_curvatures": [
+        0.12738380684777534,
+        0.12253826780522938
+      ],
+      "raw_nominal": [
+        0.033257459193640655,
+        0.02523477511427906
+      ],
+      "shaped": [
+        0.033257459193640655,
+        0.00983649916696457
+      ],
+      "dispatched": [
+        0.033257459193640655,
+        0.00983649916696457
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    },
+    {
+      "native_tick": 6195,
+      "body": [
+        0.3440794320268083,
+        -0.6870997222459707,
+        0.017347033567828865,
+        0.027943739062908823,
+        -0.056674579619143045
+      ],
+      "measured_curvatures": [
+        0.178419806204166,
+        0.17425772535711279
+      ],
+      "raw_nominal": [
+        0.03190265074782805,
+        0.024206786588338254
+      ],
+      "shaped": [
+        0.03190265074782805,
+        0.011085686495973001
+      ],
+      "dispatched": [
+        0.03190265074782805,
+        0.011085686495973001
+      ],
+      "admitted": true,
+      "alternative_motion_selected": false,
+      "shaping_mode": "RATE_LIMITED_FORWARD_CONTINUATION"
+    }
+  ],
+  "no_unique_cause_claim": "Coarse-reference sampling allowance explains this observed guard rejection without proving actual2degree violation. Measured yaw lag also exists; future full-path success cannot be inferred from one refined saved pose."
+}
