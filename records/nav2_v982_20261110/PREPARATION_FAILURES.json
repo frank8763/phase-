@@ -1,0 +1,35 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "frozen": false,
+  "failures": [
+    {
+      "at_unix": 1794283298.586531,
+      "stage": "qualify_entry_before_software_launch",
+      "error": "ImportError root_authorized from legacy v881 authority after MotionPublisher import mutated sys.path",
+      "physical_model_started": false,
+      "installed_RPP_started": false,
+      "secondary": "run_software refused absent ZERO_MODEL_ENTRY_QUALIFICATION.json; no retry occurred inside a physical window",
+      "repair": "Bind candidate authority before importing legacy modules, and assert production worker authority path explicitly."
+    },
+    {
+      "at_unix": 1794283400.9666183,
+      "stage": "real_installed_RPP_software_attempt1",
+      "models": 0,
+      "integrations": 0,
+      "actual_peer_motion": 0,
+      "original_error": "GET_STATE_SERVICE collision_monitor timed out at legacy per-node2s discovery; node process was launched and no physical model/ARM occurred",
+      "secondary": "Empty software peer trace raised INVALID_ACTUAL_TRACE while composing the qualification report; original ROS_RESULT retained",
+      "repair": "Use unchanged global35s preARM readiness bound for service discovery; retain2s response and fresh active proof; write explicit empty-peer failure report without obscuring ROS error."
+    },
+    {
+      "at_unix": 1794283630.8574314,
+      "stage": "software_attempt2_case1",
+      "models": 0,
+      "integrations": 0,
+      "error": "STALE_COHERENT_OBSERVATION at .202808s > original .2s; case0 passed; case1 action stopped before endpoint",
+      "outcome": "Not passed; physical window never started",
+      "repair": "Controlled GIL-stall fixture reproduced .253s gaps in same-interpreter producer versus .0051s separate interpreter. Switch only the explicit software peer to independent process, mirroring native backend architecture; .2s guard/controller/physics unchanged. Original unique scheduling cause remains unproven."
+    }
+  ]
+}
