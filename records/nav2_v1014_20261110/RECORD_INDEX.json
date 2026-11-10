@@ -1,0 +1,45 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-rpccr-atomic-handoff-night-v1014-20261110",
+  "summary": {
+    "status": "NOT_PASSED",
+    "stop_reason": {
+      "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1014_atomic_handoff_navigation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+    },
+    "known_counts": {
+      "navigation_models": 1,
+      "navigation_native": 7930,
+      "own_replay_native": 7930,
+      "private_native": 0,
+      "preflight_models": 3
+    },
+    "unknown_counts": [],
+    "confirmation_executed": 0,
+    "confirmation_unexecuted": 24,
+    "confirmation_successes": 0,
+    "full24_rate": null,
+    "models_during_closure": 0,
+    "old_failures_preserved": true,
+    "guard_original": true,
+    "execution_lock_idle": true
+  },
+  "archives": [
+    {
+      "group": "v1014-full-night-evidence",
+      "source_files": 295,
+      "raw_bytes": 60696549,
+      "archive_bytes": 26146850,
+      "archive_sha256": "977124b01a702abc53b206d75153c02f52adb685018b1ce981fefadb2cdd6dc6",
+      "parts": [
+        {
+          "name": "v1014-full-night-evidence.tar.zst.part000",
+          "bytes": 26146850,
+          "sha256": "977124b01a702abc53b206d75153c02f52adb685018b1ce981fefadb2cdd6dc6"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ]
+}

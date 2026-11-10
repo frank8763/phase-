@@ -1,0 +1,23 @@
+{
+  "status": "NOT_PASSED",
+  "stop_reason": {
+    "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1014_atomic_handoff_navigation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+  },
+  "known_counts": {
+    "navigation_models": 1,
+    "navigation_native": 7930,
+    "own_replay_native": 7930,
+    "private_native": 0,
+    "preflight_models": 3
+  },
+  "unknown_counts": [],
+  "confirmation_executed": 0,
+  "confirmation_unexecuted": 24,
+  "confirmation_successes": 0,
+  "full24_rate": null,
+  "models_during_closure": 0,
+  "old_failures_preserved": true,
+  "guard_original": true,
+  "execution_lock_idle": true
+}

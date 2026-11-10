@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1009_CLOSED",
+  "source_revision": "V1014_CLOSED",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -9096,7 +9096,7 @@
     "status": "NOT_PASSED",
     "error": {
       "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
-      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1009_explicit_checker_navigation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1014_atomic_handoff_navigation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
     },
     "rows": [
       {
@@ -9107,11 +9107,11 @@
         "initial_axis_direction": null,
         "passed": false,
         "evidence_passed": false,
-        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1009/main_we",
-        "actual_native": 10076,
-        "replay_native": 10076,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1014/main_we",
+        "actual_native": 7930,
+        "replay_native": 7930,
         "private_native": 0,
-        "goal_m": 2.649343059576086,
+        "goal_m": 3.2221995776850036,
         "minimum_clearance_m": null,
         "error": "AssertionError()"
       }
@@ -9170,12 +9170,43 @@
       }
     ],
     "unexecuted_tasks": [
-      "repeat_we"
+      "repeat_we",
+      "main_ns",
+      "repeat_ns",
+      "main_ew",
+      "repeat_ew",
+      "slot01",
+      "slot02",
+      "slot03",
+      "slot04",
+      "slot05",
+      "slot06",
+      "slot07",
+      "slot08",
+      "slot09",
+      "slot10",
+      "slot11",
+      "slot12",
+      "slot13",
+      "slot14",
+      "slot15",
+      "slot16",
+      "slot17",
+      "slot18",
+      "slot19",
+      "slot20",
+      "slot21",
+      "slot22",
+      "slot23",
+      "slot24",
+      "repeat01",
+      "repeat09",
+      "repeat17"
     ],
     "models_authorized": false,
-    "closed_unix": 1794312618.258211,
+    "closed_unix": 1794315816.5587876,
     "absolute_deadline_unix": 1794355200.0,
-    "prerequisite_deadline_unchanged": 1794317883.8084831,
+    "prerequisite_deadline_unchanged": 1794321105.7833214,
     "new24_executed": 0
   },
   "v1009_final_diagnosis": {
