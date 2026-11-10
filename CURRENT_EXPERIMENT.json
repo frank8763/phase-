@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v984_decoupled_yaw_servo/SOURCE_FREEZE.json",
-  "source_revision": "V984_SOURCE_AND_CONTROL_MAP_ONLY",
-  "protocol": "experiments/v984_decoupled_yaw_servo/PROTOCOL.md",
-  "report": "docs/RPCCR_DECOUPLED_YAW_V984_REPORT.md",
+  "decision_freeze": "experiments/v985_rear_yaw_components/SOURCE_FREEZE.json",
+  "source_revision": "V985_PREPARED_AWAITING_PHYSICAL_APPROVAL",
+  "protocol": "experiments/v985_rear_yaw_components/PROTOCOL.md",
+  "report": "docs/RPCCR_REAR_YAW_COMPONENTS_V985_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -7964,6 +7964,97 @@
       "git_push_attempts": 1,
       "deleted_cache_bytes": 8328648,
       "no_second_push": true
+    }
+  },
+  "v985_preparation": {
+    "status": "PREPARED_AWAITING_NEW_BOUNDED_PHYSICAL_APPROVAL",
+    "source_qualification_passed": true,
+    "models": 0,
+    "actual_native": 0,
+    "private_native": 0,
+    "replay_native": 0,
+    "new_navigation_samples": 0,
+    "new24": 0,
+    "training": 0,
+    "hardware": 0,
+    "models_authorized": false,
+    "physical_ready": false,
+    "no_model_window_opened": true,
+    "fixed_components": 2,
+    "proposed_root_s": 5400,
+    "component_wall_s": 40,
+    "component_stop_s": 2,
+    "frozen_files": 1727,
+    "source_freeze_sha256": "9296f778a3d8a028fd101c34455a4aae45a6a2b060170054e4dc7d58a6ad9768",
+    "old_v982_frozen_files_unchanged": 1637,
+    "old_v982_status": "NOT_PASSED",
+    "servo_exact_V984": true,
+    "actual_worker_switch_and_audit_bound": true,
+    "entry_checks": 13,
+    "binding_checks": 18,
+    "binding_negative_cases": 5,
+    "complete_stop_contract_checks": 10,
+    "installed_RPP_software_cases": 2,
+    "metadata_proxy_is_not_model_audit": true,
+    "physical_response_qualified": false,
+    "review_pending_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
+    "execution_lock_idle": true,
+    "report": "docs/RPCCR_REAR_YAW_COMPONENTS_V985_REPORT.md",
+    "storage": {
+      "passed": true,
+      "remote_verified": true,
+      "all_asset_and_member_sha_verified": true,
+      "models": 0,
+      "integrations": 0,
+      "physical_ready": false,
+      "models_authorized": false,
+      "git_pushes": 0,
+      "final_batch_push_reserved": true,
+      "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-rpccr-rear-yaw-v985-preparation-20261110",
+      "source_in_release_archive": true,
+      "removed": [
+        {
+          "path": "runs/v985_rear_yaw_components/software_case1_attempt1_ros_logs",
+          "bytes": 20254
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/case0_attempt1",
+          "bytes": 2796075
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/advanced_origin_fixture",
+          "bytes": 212
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/case1_attempt1",
+          "bytes": 2336170
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/software_case0_attempt1_ros_logs",
+          "bytes": 21182
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/binding_fixture",
+          "bytes": 216770
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/binding_fixture_attempt2",
+          "bytes": 216770
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/advanced_origin_fixture_attempt2",
+          "bytes": 212
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/preparation_cloud",
+          "bytes": 5057197
+        },
+        {
+          "path": "runs/v985_rear_yaw_components/preparation_readback",
+          "bytes": 10064707
+        }
+      ],
+      "deleted_cache_bytes": 20729549
     }
   }
 }

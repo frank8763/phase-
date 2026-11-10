@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_old_compute_class": true,
+    "actual_selected_new_class": true,
+    "constructor_reads_metadata_only": true,
+    "command_map_class_unchanged": true,
+    "complete_mixed_old_new_map_reconstruction": true,
+    "advanced_origin_rejected_before_switch": true,
+    "negative_evidence_rejected": true,
+    "independent_history_positive": true,
+    "independent_history_qpos_tamper_rejected": true,
+    "independent_history_qvel_tamper_rejected": true,
+    "independent_history_ctrl_tamper_rejected": true,
+    "independent_history_mocap_pos_tamper_rejected": true,
+    "independent_history_mocap_quat_tamper_rejected": true,
+    "actual_ros_source_selected": true,
+    "actual_native_source_selected": true,
+    "actual_dense_audit_selected": true,
+    "actual_actuation_audit_imports_declared_source": true,
+    "precise_online_guard_source": true
+  },
+  "negative_cases": [
+    {
+      "case": "false_measured_yaw",
+      "rejected": true
+    },
+    {
+      "case": "wrong_tick",
+      "rejected": true
+    },
+    {
+      "case": "wrong_actual_motor",
+      "rejected": true
+    },
+    {
+      "case": "missing_step",
+      "rejected": true
+    },
+    {
+      "case": "false_stale",
+      "rejected": true
+    }
+  ],
+  "positive_mixed_array_control_audit": {
+    "passed": true,
+    "models": 0,
+    "integrations": 0,
+    "historical_control_rows": 6083,
+    "new_control_rows": 24,
+    "feedback_rows": 12,
+    "maximum_motor_control_reconstruction_error": 6.938893903907228e-17,
+    "physical_response_accepted_by_this_check": false
+  },
+  "models": 0,
+  "integrations": 0,
+  "explicit_metadata_and_array_fixture": true,
+  "canonical_model_audit_performed": false,
+  "physical_tracking_qualified": false,
+  "physical_ready": false
+}
