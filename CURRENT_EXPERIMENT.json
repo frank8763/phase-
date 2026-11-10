@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1018_PREPARED_NOT_STARTED",
+  "source_revision": "V1018_CLOSED",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -9358,5 +9358,164 @@
     "old_v1015_not_passed": true,
     "source": "experiments/v1017_input_validated_progress",
     "protocol": "experiments/v1018_input_progress_night/PROTOCOL.md"
+  },
+  "v1018_summary": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "error": {
+      "error": "AssertionError('STOP_ALL_SAFETY_OR_EVIDENCE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1018_input_progress_night/campaign.py\", line 70, in main\n    if action.startswith('STOP_'):raise AssertionError(action)\nAssertionError: STOP_ALL_SAFETY_OR_EVIDENCE\n"
+    },
+    "rows": [
+      {
+        "task_id": "main_we",
+        "slot": 0,
+        "stage": "we_development",
+        "route": "we",
+        "initial_axis_direction": null,
+        "passed": false,
+        "executed": true,
+        "evidence_passed": true,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1018/main_we",
+        "actual_native": 12362,
+        "replay_native": 12362,
+        "private_native": 0,
+        "goal_m": 2.269688667479738,
+        "minimum_clearance_m": 0.27481106915655573,
+        "error": null
+      },
+      {
+        "task_id": "repeat_we",
+        "slot": 1,
+        "stage": "we_development",
+        "route": "we",
+        "passed": false,
+        "executed": false,
+        "reason": "MAIN_FUNCTION_FAILED_REPEAT_UNEXECUTED",
+        "actual_native": 0,
+        "replay_native": 0,
+        "private_native": 0
+      },
+      {
+        "task_id": "main_ns",
+        "slot": 2,
+        "stage": "regression",
+        "route": "ns",
+        "initial_axis_direction": null,
+        "passed": false,
+        "executed": true,
+        "evidence_passed": true,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1018/main_ns",
+        "actual_native": 14161,
+        "replay_native": 14161,
+        "private_native": 0,
+        "goal_m": 2.371366376330775,
+        "minimum_clearance_m": 0.32967681356106504,
+        "error": null
+      },
+      {
+        "task_id": "repeat_ns",
+        "slot": 3,
+        "stage": "regression",
+        "route": "ns",
+        "passed": false,
+        "executed": false,
+        "reason": "MAIN_FUNCTION_FAILED_REPEAT_UNEXECUTED",
+        "actual_native": 0,
+        "replay_native": 0,
+        "private_native": 0
+      },
+      {
+        "task_id": "main_ew",
+        "slot": 4,
+        "stage": "regression",
+        "route": "ew",
+        "initial_axis_direction": null,
+        "passed": false,
+        "executed": true,
+        "evidence_passed": false,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1018/main_ew",
+        "actual_native": 207,
+        "replay_native": 207,
+        "private_native": 0,
+        "goal_m": 8.000063789864182,
+        "minimum_clearance_m": null,
+        "error": "AssertionError()"
+      }
+    ],
+    "preflight_summaries": [
+      {
+        "reused_original_true_t0": true,
+        "new_model_initializations": 0,
+        "original_saved_audit": {
+          "passed": true,
+          "rows": [
+            {
+              "task_id": "main_we",
+              "passed": true,
+              "actual_native": 0,
+              "replay_native": 0,
+              "models_initialized": 1
+            },
+            {
+              "task_id": "main_ns",
+              "passed": true,
+              "actual_native": 0,
+              "replay_native": 0,
+              "models_initialized": 1
+            },
+            {
+              "task_id": "main_ew",
+              "passed": true,
+              "actual_native": 0,
+              "replay_native": 0,
+              "models_initialized": 1
+            }
+          ],
+          "models_initialized": 3,
+          "actual_native": 0,
+          "replay_native": 0,
+          "private_native": 0,
+          "models_during_audit": 0
+        }
+      }
+    ],
+    "unexecuted_tasks": [
+      "repeat_we",
+      "repeat_ns",
+      "repeat_ew",
+      "slot01",
+      "slot02",
+      "slot03",
+      "slot04",
+      "slot05",
+      "slot06",
+      "slot07",
+      "slot08",
+      "slot09",
+      "slot10",
+      "slot11",
+      "slot12",
+      "slot13",
+      "slot14",
+      "slot15",
+      "slot16",
+      "slot17",
+      "slot18",
+      "slot19",
+      "slot20",
+      "slot21",
+      "slot22",
+      "slot23",
+      "slot24",
+      "repeat01",
+      "repeat09",
+      "repeat17"
+    ],
+    "models_authorized": false,
+    "closed_unix": 1794319826.1121705,
+    "absolute_deadline_unix": 1794358800.0,
+    "prerequisite_deadline_unchanged": 1794358800.0,
+    "new24_executed": 0
   }
 }
