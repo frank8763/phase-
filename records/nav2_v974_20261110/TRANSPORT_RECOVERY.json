@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "original_failure": "Shared verifier reused combined.tar.zst with exclusive create for two archive groups; first group verified then second raised FileExistsError. Original code/archive/error retained.",
+  "resolution": "Each unchanged downloaded archive independently verified in a fresh temporary directory. No archive or inventory overwritten.",
+  "groups": [
+    {
+      "group": "historical-v971-zero-motion-failure",
+      "archive_sha256": "856dc2a9a1d2b52842cc04d9855e3b3991153f29d71afb27e1c86161b30c08c6",
+      "source_files": 332,
+      "all_part_and_decompressed_member_sha_verified": true
+    },
+    {
+      "group": "v974-single-day-dynamic-gate",
+      "archive_sha256": "4bb0dd7df3d797f67106f57ae9fd536d68ef57f4049afe81e717b7dfd39f3289",
+      "source_files": 264,
+      "all_part_and_decompressed_member_sha_verified": true
+    }
+  ],
+  "git_push_attempts": 1,
+  "no_push_or_model_retry": true
+}
