@@ -1,0 +1,502 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "original_status": "V991_NOT_PASSED",
+  "exact_counts": {
+    "vehicle_tasks_initialized": 1,
+    "historical_native_restore": 6083,
+    "new_actual_native": 390,
+    "complete_own_trace_replay_native": 6473,
+    "private_native": 0,
+    "second_component_unexecuted": true,
+    "new_navigation": 0,
+    "new24": 0
+  },
+  "original_online_guard_reproduced": true,
+  "online_fault_native_tick": 6271,
+  "online_fault_new_native_tick": 188,
+  "online_guard": {
+    "reference_index": 96,
+    "reference_pose": [
+      0.35870887242598853,
+      -0.6838402226935575,
+      0.041827522683607454
+    ],
+    "position_error_m": 0.006322547189401042,
+    "heading_error_rad": 0.03505358426389613,
+    "position_upper_m": 0.006582547189401042,
+    "heading_upper_rad": 0.035253276860146135,
+    "position_limit_m": 0.04,
+    "heading_limit_rad": 0.035,
+    "maximum_arc_grid_m": 0.0005,
+    "reference_unchanged": true
+  },
+  "full_stop_independent_tracking": {
+    "passed": false,
+    "maximum_position_error_m": 0.006326081043028556,
+    "maximum_heading_error_rad": 0.04159525990998667,
+    "maximum_position_upper_m": 0.006586081043028556,
+    "maximum_heading_upper_rad": 0.041794952506236674,
+    "unchanged_position_limit_m": 0.04,
+    "unchanged_heading_limit_rad": 0.035,
+    "independent_method": "separate .5mm midpoint reconstruction",
+    "samples": 390,
+    "models": 0,
+    "integrations": 0
+  },
+  "actuation": {
+    "passed": true,
+    "models": 0,
+    "integrations": 0,
+    "historical_control_rows": 6083,
+    "new_control_rows": 390,
+    "maximum_control_reconstruction_error": 8.326672684688674e-17,
+    "maximum_independent_rear_residual_rad_s": 1.1102230246251565e-16,
+    "physical_tracking_qualified_by_this_check": false,
+    "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true,
+    "independent_full_historical_restore": {
+      "passed": true,
+      "full_state_control_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0,
+        "mocap_quat": 0.0
+      },
+      "historical_native_rows": 6083,
+      "integrations": 0
+    }
+  },
+  "whole_replay": {
+    "replay_native": 6473,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "minimum_actual_clearance_m": 0.2730365667394967,
+  "bad_contacts": 0,
+  "maximum_wall_lag_s": 0.003758463979465887,
+  "maximum_observation_age_s": 0.022212704992853105,
+  "actual_new_branch_travel_m": 0.05081044840482408,
+  "moving_interval": {
+    "samples": 132,
+    "first_native_tick": 6141,
+    "last_native_tick": 6272
+  },
+  "first_fault_seconds_from_first_moving_command": 1.3,
+  "actual_response": {
+    "actual_front_positive_body_yaw_negative": {
+      "samples": 17,
+      "first_native_tick": 6256,
+      "last_native_tick": 6272
+    },
+    "rear_velocity_target_error_rms_rad_s": [
+      0.16354979017279903,
+      0.07492540539540814
+    ],
+    "body_yaw_minus_measured_steering_kinematic_rms_rad_s": 0.046304812908072666,
+    "body_yaw_minus_measured_rear_wheels_kinematic_rms_rad_s": 0.012429256556032301,
+    "body_yaw_minus_joint_targets_kinematic_rms_rad_s": 0.055154541240865135,
+    "body_center_lateral_velocity_rms_m_s": 0.005912605515810918,
+    "rear_axle_lateral_velocity_rms_m_s": 0.013444302064575822,
+    "steering_velocity_body_yaw_correlation": -0.972239363676474,
+    "steering_torque_sum_body_yaw_correlation": -0.9675952998596069,
+    "maximum_abs_recorded_front_actuator_force": [
+      105.0763858164085,
+      119.40854519024253
+    ],
+    "interpretation": "Recorded targets are coordinated, actual wheel rates and chassis yaw still diverge during steering changes. Correlations are not unique proof of steering reaction torque, slip, friction or servo-load causality."
+  },
+  "outcome": "Final four-target coordination is actually achieved and independently reconstructs, but does not repair the fixed-state physical heading envelope. No extra gain/threshold change or physical retry follows this closed batch.",
+  "secondary_audit_error": "Missing CLOSED_HANDOFF after real online abort remains original overall-audit FAIL; it is not the primary heading failure and is not regraded.",
+  "next_design_requirement": "Before another whole route or controller-gain revision, identify/qualify the steering-rate-to-chassis-yaw and rear-wheel-load transient on a fixed bounded component, with complete stop-tail budget. No new physical test is authorized by this analysis.",
+  "witnesses": [
+    {
+      "native_tick": 6141,
+      "requested_v_w": [
+        0.04977785633694216,
+        -0.02460190694726953
+      ],
+      "actual_body": [
+        0.31078863128924694,
+        -0.686264325634062,
+        0.05962197759725612,
+        0.0016457311095944773,
+        0.003076138321174089
+      ],
+      "actual_steering": [
+        -0.25633117153729307,
+        -0.3304155213732378,
+        -0.04388882754592757,
+        -0.07015127781839964
+      ],
+      "selected_curvature": -0.5051329165279392,
+      "actual_rear_velocity_rad_s": [
+        0.05809242080317148,
+        0.06380053601963251
+      ],
+      "rear_target_rad_s": [
+        0.0875,
+        0.06649698459012071
+      ],
+      "actuator_force": [
+        -7.830663245180176,
+        -12.871794903408386,
+        3.0614965262318803,
+        2.3263621676118356
+      ],
+      "diagnostic_root_constraint_force": [
+        38.044628719324635,
+        -0.19680948771829776,
+        2292.2767427090866,
+        -0.6142224229054056,
+        -5.611935355245155,
+        5.440232620027381
+      ]
+    },
+    {
+      "native_tick": 6150,
+      "requested_v_w": [
+        0.04977785633694216,
+        -0.020643266383675956
+      ],
+      "actual_body": [
+        0.3122393825985611,
+        -0.6863315418103102,
+        0.06067564299825746,
+        0.02855285257948894,
+        0.015792926905859758
+      ],
+      "actual_steering": [
+        -0.2728242061136072,
+        -0.3578360739124684,
+        -0.2674888434023349,
+        -0.4537105097026301
+      ],
+      "selected_curvature": -0.6051339440265638,
+      "actual_rear_velocity_rad_s": [
+        0.4432873471802103,
+        0.4380493989730223
+      ],
+      "rear_target_rad_s": [
+        0.7153774840831049,
+        0.514441995766879
+      ],
+      "actuator_force": [
+        -44.14435348391521,
+        -77.04995190451689,
+        8.82530157405688,
+        2.3226519543790083
+      ],
+      "diagnostic_root_constraint_force": [
+        44.54445516506985,
+        -7.178431367307866,
+        2292.1451238640407,
+        0.4556319826942712,
+        10.461379110136875,
+        2.76522540105549
+      ]
+    },
+    {
+      "native_tick": 6175,
+      "requested_v_w": [
+        0.04977785633694216,
+        -0.011048297212913085
+      ],
+      "actual_body": [
+        0.32158807342259255,
+        -0.6872582394009442,
+        0.06520340677127079,
+        0.041185105238582397,
+        -0.01689578094416603
+      ],
+      "actual_steering": [
+        -0.343321884821169,
+        -0.48541218397911096,
+        -0.02934619295898397,
+        -0.06777237323341438
+      ],
+      "selected_curvature": -0.7256227532730553,
+      "actual_rear_velocity_rad_s": [
+        0.5065283165342389,
+        0.37468660310649543
+      ],
+      "rear_target_rad_s": [
+        0.6176069254078801,
+        0.41525126614095964
+      ],
+      "actuator_force": [
+        -7.320683013392568,
+        -13.437909560245544,
+        4.554476290058215,
+        1.307472300060141
+      ],
+      "diagnostic_root_constraint_force": [
+        12.069104690951832,
+        -3.51541897742635,
+        2292.241524564822,
+        -0.6917272322947712,
+        -3.805905228806063,
+        -11.874190242550041
+      ]
+    },
+    {
+      "native_tick": 6200,
+      "requested_v_w": [
+        0.04977785633694216,
+        -0.009963991300364091
+      ],
+      "actual_body": [
+        0.33370624599021687,
+        -0.6889574109304146,
+        0.050639317465788335,
+        0.05244392912069286,
+        -0.07253483786957414
+      ],
+      "actual_steering": [
+        -0.27495737368716594,
+        -0.3681493165871681,
+        0.4144770048862392,
+        0.6897394700413849
+      ],
+      "selected_curvature": -0.44448357427646856,
+      "actual_rear_velocity_rad_s": [
+        0.6265409659618311,
+        0.3309946887805974
+      ],
+      "rear_target_rad_s": [
+        0.47665003931529903,
+        0.3745027161804364
+      ],
+      "actuator_force": [
+        59.69955453820279,
+        108.00322602551131,
+        -5.273137942507301,
+        1.505912740147874
+      ],
+      "diagnostic_root_constraint_force": [
+        4.119589108421195,
+        2.8237264894410146,
+        2292.4449510593327,
+        -0.2412799013402207,
+        3.271688783833495,
+        -0.3494639513684206
+      ]
+    },
+    {
+      "native_tick": 6225,
+      "requested_v_w": [
+        0.03,
+        -0.003522761273948844
+      ],
+      "actual_body": [
+        0.34569888085136147,
+        -0.6901329381115795,
+        0.03326914799750099,
+        0.03497920418314035,
+        -0.06336012175526913
+      ],
+      "actual_steering": [
+        -0.15821625946068787,
+        -0.1914782888723827,
+        0.5046494512991685,
+        0.6910324341541313
+      ],
+      "selected_curvature": -0.18512965763015451,
+      "actual_rear_velocity_rad_s": [
+        0.4158780837167651,
+        0.17979343604996875
+      ],
+      "rear_target_rad_s": [
+        0.2395515510366625,
+        0.21674363282183906
+      ],
+      "actuator_force": [
+        76.92176533144774,
+        109.63903770123375,
+        -6.086778205512841,
+        1.405382449575587
+      ],
+      "diagnostic_root_constraint_force": [
+        -18.422174568763324,
+        4.218111758905991,
+        2292.243635065053,
+        -0.6228234500648053,
+        -4.46182994498392,
+        0.2917220990647393
+      ]
+    },
+    {
+      "native_tick": 6250,
+      "requested_v_w": [
+        0.03,
+        0.004581470473971706
+      ],
+      "actual_body": [
+        0.3531339722447081,
+        -0.6903084000155121,
+        0.018249164522240475,
+        0.02797643351831962,
+        -0.05686312511020452
+      ],
+      "actual_steering": [
+        -0.02232608818374048,
+        -0.02818112790732247,
+        0.5800862176777429,
+        0.615588760685282
+      ],
+      "selected_curvature": 0.06566008625709004,
+      "actual_rear_velocity_rad_s": [
+        0.3830658403366689,
+        0.18070927372269427
+      ],
+      "rear_target_rad_s": [
+        0.285004034991414,
+        0.2952916464050941
+      ],
+      "actuator_force": [
+        91.20540725153016,
+        97.60220848170746,
+        -3.513301855959872,
+        3.9761753490374288
+      ],
+      "diagnostic_root_constraint_force": [
+        -0.09294510004588119,
+        1.1714582666212436,
+        2292.3312045790976,
+        -0.11987151783501293,
+        3.7016959028022196,
+        0.4350249614757437
+      ]
+    },
+    {
+      "native_tick": 6271,
+      "requested_v_w": [
+        0.03,
+        0.010002105805645482
+      ],
+      "actual_body": [
+        0.3588202136742863,
+        -0.6901617894367494,
+        0.006773938419711324,
+        0.0255441686202764,
+        -0.052814612220876966
+      ],
+      "actual_steering": [
+        0.1072324374070609,
+        0.094095850061502,
+        0.6518704970153796,
+        0.5532596194788993
+      ],
+      "selected_curvature": 0.27816665524445644,
+      "actual_rear_velocity_rad_s": [
+        0.35540764869334723,
+        0.1793291286645386
+      ],
+      "rear_target_rad_s": [
+        0.2871450595855602,
+        0.333779604572199
+      ],
+      "actuator_force": [
+        104.41401459099768,
+        87.41618109212362,
+        -2.41820590065649,
+        5.420521192269287
+      ],
+      "diagnostic_root_constraint_force": [
+        -4.962404332296671,
+        1.2381006707261122,
+        2292.232788290946,
+        -0.21005916268768487,
+        1.0907996340946955,
+        0.31747125742064974
+      ]
+    },
+    {
+      "native_tick": 6274,
+      "requested_v_w": [
+        0.0,
+        0.0
+      ],
+      "actual_body": [
+        0.3595116370149167,
+        -0.6901239223694475,
+        0.005302757392528943,
+        0.020654151406999676,
+        -0.045482689079451674
+      ],
+      "actual_steering": [
+        0.12520583097585503,
+        0.10919105832288,
+        0.5468374118373724,
+        0.45905313271318726
+      ],
+      "selected_curvature": 0.2884556381767569,
+      "actual_rear_velocity_rad_s": [
+        0.2312355393395053,
+        0.07582727576833966
+      ],
+      "rear_target_rad_s": [
+        0.1382697254284934,
+        0.161626554053384
+      ],
+      "actuator_force": [
+        86.54737173379155,
+        71.60552743720379,
+        -4.955090787691009,
+        1.5564242798415355
+      ],
+      "diagnostic_root_constraint_force": [
+        -58.25446508582931,
+        -1.0683598808844863,
+        2292.225016813755,
+        -0.5075744349986753,
+        10.274873893827685,
+        6.289804099291676
+      ]
+    },
+    {
+      "native_tick": 6473,
+      "requested_v_w": [
+        0.0,
+        0.0
+      ],
+      "actual_body": [
+        0.35973848416716947,
+        -0.6900921667068598,
+        2.419295463330279e-05,
+        6.204438631876799e-06,
+        1.4178508921680087e-06
+      ],
+      "actual_steering": [
+        0.18553264621630083,
+        0.15920875971547047,
+        7.845782370564627e-08,
+        7.015367439777661e-08
+      ],
+      "selected_curvature": 0.2884556381767569,
+      "actual_rear_velocity_rad_s": [
+        5.4312797834796484e-05,
+        5.942029690701058e-05
+      ],
+      "rear_target_rad_s": [
+        0.0,
+        0.0
+      ],
+      "actuator_force": [
+        0.000247807579057735,
+        0.00024663681534775606,
+        -0.0019003289470356742,
+        -0.0020790205995993307
+      ],
+      "diagnostic_root_constraint_force": [
+        0.0015862297723572283,
+        -0.00026441794139486774,
+        2292.276980862484,
+        -0.17599363253322586,
+        1.8481776150415676,
+        0.0004462717391213139
+      ]
+    }
+  ]
+}
