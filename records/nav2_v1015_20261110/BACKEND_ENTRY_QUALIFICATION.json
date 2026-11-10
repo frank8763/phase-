@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "original_actual_entry_red": {
+    "passed": false,
+    "receiver": "experiments/v1004_planned_input_navigation/native_contract.py",
+    "wire_ack": null,
+    "decisions": [
+      "PROFILE_RELEASED"
+    ],
+    "negative_cases": [],
+    "models": 0,
+    "integrations": 0
+  },
+  "fixed_actual_entry_green": {
+    "passed": true,
+    "receiver": "experiments/v1013_atomic_handoff_software/native_contract.py",
+    "wire_ack": 101,
+    "decisions": [
+      "PROFILE_RELEASED",
+      "ACCEPTED"
+    ],
+    "negative_cases": [
+      "missing",
+      "moving",
+      "foreign",
+      "late_body"
+    ],
+    "models": 0,
+    "integrations": 0
+  },
+  "models": 0,
+  "integrations": 0
+}

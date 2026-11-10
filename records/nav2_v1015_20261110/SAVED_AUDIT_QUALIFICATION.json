@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "physical_replays": 0,
+  "saved_full_input_audit": {
+    "passed": true,
+    "profiles": [
+      {
+        "profile_id": 1,
+        "passed": true,
+        "start": 5429,
+        "end": 7633,
+        "independent_lower_m": 0.3068817444272023,
+        "actual_progress_m": 0.579007204013338,
+        "maximum_position_error_m": 0.002490015906627663,
+        "maximum_heading_error_rad": 0.0019153982092084687
+      },
+      {
+        "profile_id": 2,
+        "passed": true,
+        "start": 7996,
+        "end": 9866,
+        "independent_lower_m": 0.4352174886370358,
+        "actual_progress_m": 0.4859462695901451,
+        "maximum_position_error_m": 0.0024523745650616106,
+        "maximum_heading_error_rad": 0.001746002721480566
+      }
+    ],
+    "maximum_actuator_reconstruction_error": 8.326672684688674e-17,
+    "maximum_actual_feedback_error": 1.3877787807814457e-17,
+    "all_native_inputs_checked": 10076
+  },
+  "old_total_failure_not_upgraded": true,
+  "missing_atomic_handoff_rejected": true,
+  "analytical_state_rebuild_tolerance_only": 1e-12,
+  "one_nanometer_state_tamper_rejected": true,
+  "physical_state_control_mocap_replay_tolerance_unchanged": 1e-08,
+  "actuator_controls_and_body_requests_still_exact": true,
+  "reused_saved_qualification": true,
+  "original_source_sha256": "b7bc36ff7ede0dd0d67c29800fc994e2e5892977ea284ad935bbbc50ad1a21ee"
+}
