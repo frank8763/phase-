@@ -7861,5 +7861,36 @@
       "deleted_cache_bytes": 39159225
     },
     "awaiting_explicit_new_90_minute_answer": true
+  },
+  "v982_physical_gate": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "error": {
+      "error": "AssertionError('FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE component_0')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v982_precise_recovery_gate/campaign.py\", line 33, in main\n    assert row['passed'],'FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE '+task['task_id']\nAssertionError: FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE component_0\n"
+    },
+    "rows": [
+      {
+        "task_id": "component_0",
+        "stage": "component",
+        "passed": false,
+        "historical_restore_native": 6083,
+        "new_branch_native": 332,
+        "own_full_trace_replay_native": 6415,
+        "private_native": 0,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v982/component_0",
+        "goal_m": 3.8812900263157686,
+        "audit_error": "FileNotFoundError(2, 'No such file or directory')"
+      }
+    ],
+    "unexecuted_tasks": [
+      "component_1"
+    ],
+    "models_authorized": false,
+    "deadline_unix": 1794289512.4091246,
+    "closed_unix": 1794284199.3035572,
+    "guard_restored": true,
+    "new24": 0,
+    "automatic_followup": false
   }
 }
