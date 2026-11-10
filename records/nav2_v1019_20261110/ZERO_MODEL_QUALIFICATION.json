@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "cases": [
+    {
+      "case": "original_profile",
+      "passed": true,
+      "progress_branch_exact": true
+    },
+    {
+      "case": "last_failed_input",
+      "passed": true,
+      "progress_branch_exact": true
+    },
+    {
+      "case": "bad_upper",
+      "rejected": true
+    },
+    {
+      "case": "wrong_goal",
+      "rejected": true
+    },
+    {
+      "case": "missing_capture",
+      "rejected": true
+    },
+    {
+      "case": "near_goal_capture",
+      "passed": true,
+      "goal_distance_before_m": 0.46,
+      "goal_upper_m": 0.4476291847127946,
+      "progress_lower_m": 0.012370815287205364,
+      "unchanged_progress_threshold_for_nonterminal": 0.4,
+      "independent_raw_clearance_m": 0.49339630411244995
+    },
+    {
+      "case": "success_not_abort",
+      "rejected": true
+    },
+    {
+      "case": "external_cancel",
+      "rejected": true
+    },
+    {
+      "case": "no_causal_forecast",
+      "rejected": true
+    },
+    {
+      "case": "future_observation",
+      "rejected": true
+    }
+  ],
+  "goal_unit_fixture_not_new_physical_task": true,
+  "original_failed_180s_tasks_not_upgraded": true
+}
