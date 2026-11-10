@@ -1,0 +1,123 @@
+{
+  "closed": true,
+  "status": "TWO_ROUTE_DEVELOPMENT_NOT_PASSED",
+  "error": null,
+  "rows": [
+    {
+      "task_id": "main_we",
+      "slot": 0,
+      "stage": "we_development",
+      "route": "we",
+      "initial_axis_direction": null,
+      "passed": false,
+      "executed": true,
+      "evidence_passed": true,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1020/main_we",
+      "actual_native": 11825,
+      "replay_native": 11825,
+      "private_native": 0,
+      "goal_m": 2.7835477350184505,
+      "minimum_clearance_m": 0.2751827833741254,
+      "error": null
+    },
+    {
+      "task_id": "repeat_we",
+      "slot": 1,
+      "stage": "we_development",
+      "route": "we",
+      "passed": false,
+      "executed": false,
+      "reason": "MAIN_FUNCTION_FAILED_REPEAT_UNEXECUTED",
+      "actual_native": 0,
+      "replay_native": 0,
+      "private_native": 0
+    },
+    {
+      "task_id": "main_ns",
+      "slot": 2,
+      "stage": "regression",
+      "route": "ns",
+      "initial_axis_direction": null,
+      "passed": false,
+      "executed": true,
+      "evidence_passed": true,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1020/main_ns",
+      "actual_native": 11296,
+      "replay_native": 11296,
+      "private_native": 0,
+      "goal_m": 2.755575262138231,
+      "minimum_clearance_m": 0.40395404428774295,
+      "error": null
+    },
+    {
+      "task_id": "repeat_ns",
+      "slot": 3,
+      "stage": "regression",
+      "route": "ns",
+      "passed": false,
+      "executed": false,
+      "reason": "MAIN_FUNCTION_FAILED_REPEAT_UNEXECUTED",
+      "actual_native": 0,
+      "replay_native": 0,
+      "private_native": 0
+    }
+  ],
+  "preflight_summaries": [
+    {
+      "reused_original_true_t0": true,
+      "new_model_initializations": 0,
+      "original_saved_audit": {
+        "passed": true,
+        "rows": [
+          {
+            "task_id": "main_we",
+            "passed": true,
+            "actual_native": 0,
+            "replay_native": 0,
+            "models_initialized": 1
+          },
+          {
+            "task_id": "main_ns",
+            "passed": true,
+            "actual_native": 0,
+            "replay_native": 0,
+            "models_initialized": 1
+          }
+        ],
+        "models_initialized": 2,
+        "actual_native": 0,
+        "replay_native": 0,
+        "private_native": 0,
+        "models_during_audit": 0
+      }
+    }
+  ],
+  "unexecuted_tasks": [
+    "repeat_we",
+    "repeat_ns",
+    "dev01",
+    "dev02",
+    "dev03",
+    "dev04",
+    "dev05",
+    "dev06",
+    "dev07",
+    "dev08",
+    "dev09",
+    "dev10",
+    "dev11",
+    "dev12",
+    "dev13",
+    "dev14",
+    "dev15",
+    "dev16",
+    "repeat_dev01",
+    "repeat_dev09"
+  ],
+  "models_authorized": false,
+  "closed_unix": 1794321823.9563134,
+  "absolute_deadline_unix": 1794358800.0,
+  "prerequisite_deadline_unchanged": 1794358800.0,
+  "new16_development_executed": 0,
+  "model_authority": false
+}

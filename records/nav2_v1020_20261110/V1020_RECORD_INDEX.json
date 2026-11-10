@@ -1,0 +1,112 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-rpccr-exact-entry-night-v1020-20261110",
+  "summary": {
+    "status": "TWO_ROUTE_DEVELOPMENT_NOT_PASSED",
+    "stop_reason": null,
+    "known_counts": {
+      "navigation_models": 2,
+      "navigation_native": 23121,
+      "own_replay_native": 23121,
+      "private_native": 0,
+      "preflight_models": 0,
+      "reused_original_preflight_models": 2
+    },
+    "unknown_counts": [],
+    "route_branch_rows": [
+      {
+        "task_id": "main_we",
+        "slot": 0,
+        "stage": "we_development",
+        "route": "we",
+        "initial_axis_direction": null,
+        "passed": false,
+        "executed": true,
+        "evidence_passed": true,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1020/main_we",
+        "actual_native": 11825,
+        "replay_native": 11825,
+        "private_native": 0,
+        "goal_m": 2.7835477350184505,
+        "minimum_clearance_m": 0.2751827833741254,
+        "error": null
+      },
+      {
+        "task_id": "repeat_we",
+        "slot": 1,
+        "stage": "we_development",
+        "route": "we",
+        "passed": false,
+        "executed": false,
+        "reason": "MAIN_FUNCTION_FAILED_REPEAT_UNEXECUTED",
+        "actual_native": 0,
+        "replay_native": 0,
+        "private_native": 0
+      },
+      {
+        "task_id": "main_ns",
+        "slot": 2,
+        "stage": "regression",
+        "route": "ns",
+        "initial_axis_direction": null,
+        "passed": false,
+        "executed": true,
+        "evidence_passed": true,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1020/main_ns",
+        "actual_native": 11296,
+        "replay_native": 11296,
+        "private_native": 0,
+        "goal_m": 2.755575262138231,
+        "minimum_clearance_m": 0.40395404428774295,
+        "error": null
+      },
+      {
+        "task_id": "repeat_ns",
+        "slot": 3,
+        "stage": "regression",
+        "route": "ns",
+        "passed": false,
+        "executed": false,
+        "reason": "MAIN_FUNCTION_FAILED_REPEAT_UNEXECUTED",
+        "actual_native": 0,
+        "replay_native": 0,
+        "private_native": 0
+      }
+    ],
+    "development16_executed": 0,
+    "development16_unexecuted": 16,
+    "development16_successes": 0,
+    "complete_development16_descriptive_rate": null,
+    "original_three_route24_acceptance_passed": false,
+    "original_EW_initial_zero_gate_unqualified": true,
+    "navigation_budget_s": 300,
+    "old_180s_failures_not_upgraded": true,
+    "models_during_closure": 0,
+    "old_failures_preserved": true,
+    "guard_original": true,
+    "execution_lock_idle": true
+  },
+  "archives": [
+    {
+      "group": "v1020-entry-full-night-evidence",
+      "source_files": 481,
+      "raw_bytes": 100778468,
+      "archive_bytes": 44289592,
+      "archive_sha256": "11bf0aff43c1cbfd30ae1c80a31327e60853006a1962090a17057337448996cc",
+      "parts": [
+        {
+          "name": "v1020-entry-full-night-evidence.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "a2036476e6a552699cdc1a1ea568182171ca1fa8582736670c970de7669f684e"
+        },
+        {
+          "name": "v1020-entry-full-night-evidence.tar.zst.part001",
+          "bytes": 10735160,
+          "sha256": "08e4113ee53e84238db844a01418b8bd3a5688b2e82c731f321deb4f0673483a"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ]
+}
