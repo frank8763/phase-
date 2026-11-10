@@ -8307,7 +8307,8 @@
         }
       ],
       "deleted_cache_bytes": 21279016
-    }
+    },
+    "physical_gate_status": "CLOSED_NOT_PASSED"
   },
   "v987_physical_gate": {
     "closed": true,
@@ -8346,5 +8347,136 @@
     "guard_restored": true,
     "new24": 0,
     "automatic_followup": false
+  },
+  "v987_response_diagnosis": {
+    "models": 0,
+    "integrations": 0,
+    "original_outcome": "V987_NOT_PASSED",
+    "primary_failure": "ProtocolError('COMMAND_CONTRACT_FAILURE ONLINE_RECOVERY_HEADING_ENVELOPE_FAILED')",
+    "exact_counts": {
+      "vehicle_tasks_initialized": 1,
+      "historical_restore_native": 6083,
+      "new_branch_native": 348,
+      "whole_own_trace_replay_native": 6431,
+      "private_native": 0,
+      "second_component_unexecuted": true,
+      "new_navigation_trials": 0,
+      "new24": 0
+    },
+    "startup_factory_and_restore_wall_s": 61.03196993100573,
+    "new_map_independently_reconstructed": {
+      "passed": true,
+      "models": 0,
+      "integrations": 0,
+      "historical_control_rows": 6083,
+      "new_control_rows": 348,
+      "feedback_rows": 117,
+      "maximum_motor_control_reconstruction_error": 2.220446049250313e-16,
+      "physical_response_accepted_by_this_check": false,
+      "independent_full_historical_restore": {
+        "passed": true,
+        "full_state_control_errors": {
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "ctrl": 0.0,
+          "mocap_pos": 0.0,
+          "mocap_quat": 0.0
+        },
+        "historical_native_rows": 6083,
+        "integrations": 0
+      }
+    },
+    "full_new_branch_tracking": {
+      "passed": false,
+      "maximum_position_error_m": 0.0026578722612470586,
+      "maximum_heading_error_rad": 0.04117237717896623,
+      "maximum_position_upper_m": 0.0029178722612470584,
+      "maximum_heading_upper_rad": 0.04137206977521623,
+      "unchanged_position_limit_m": 0.04,
+      "unchanged_heading_limit_rad": 0.035,
+      "independent_method": "separate .5mm midpoint reconstruction",
+      "samples": 348,
+      "models": 0,
+      "integrations": 0
+    },
+    "fault_tracking": {
+      "passed": false,
+      "maximum_position_error_m": 0.0020624970270387935,
+      "maximum_heading_error_rad": 0.03493376120824926,
+      "maximum_position_upper_m": 0.0023224970270387933,
+      "maximum_heading_upper_rad": 0.03513345380449926,
+      "unchanged_position_limit_m": 0.04,
+      "unchanged_heading_limit_rad": 0.035,
+      "independent_method": "separate .5mm midpoint reconstruction",
+      "samples": 1,
+      "models": 0,
+      "integrations": 0
+    },
+    "before_fault_tracking": {
+      "passed": true,
+      "maximum_position_error_m": 0.0026578722612470586,
+      "maximum_heading_error_rad": 0.034584389297053944,
+      "maximum_position_upper_m": 0.0029178722612470584,
+      "maximum_heading_upper_rad": 0.034784081893303946,
+      "unchanged_position_limit_m": 0.04,
+      "unchanged_heading_limit_rad": 0.035,
+      "independent_method": "separate .5mm midpoint reconstruction",
+      "samples": 145,
+      "models": 0,
+      "integrations": 0
+    },
+    "from_fault_through_complete_stop_tracking": {
+      "passed": false,
+      "maximum_position_error_m": 0.0020634944602728462,
+      "maximum_heading_error_rad": 0.04117237717896623,
+      "maximum_position_upper_m": 0.002323494460272846,
+      "maximum_heading_upper_rad": 0.04137206977521623,
+      "unchanged_position_limit_m": 0.04,
+      "unchanged_heading_limit_rad": 0.035,
+      "independent_method": "separate .5mm midpoint reconstruction",
+      "samples": 203,
+      "models": 0,
+      "integrations": 0
+    },
+    "fault_native_tick": 6229,
+    "fault_new_branch_tick": 146,
+    "fault_body": [
+      0.35552849072932197,
+      -0.68602688462884,
+      0.008158490350123926,
+      0.025717506275948147,
+      -0.03493738258633333
+    ],
+    "fault_steering": {
+      "native_tick": 6229,
+      "measured_at": 186496.986871257,
+      "position": [
+        0.33216150458034727,
+        0.2578614299292732
+      ],
+      "velocity": [
+        0.6786532630190002,
+        0.4552203142105246
+      ]
+    },
+    "actual_new_branch_travel_m": 0.04786571970022639,
+    "minimum_actual_clearance_m": 0.2730365667394967,
+    "bad_contacts": 0,
+    "whole_replay": {
+      "replay_native": 6431,
+      "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+      "contact_mismatched_ticks": 0,
+      "passed": true
+    },
+    "maximum_wall_lag_s": 0.0032940749952103943,
+    "maximum_observation_age_s": 0.03850378099014051,
+    "alternate_motion_selections": 0,
+    "measured_new_step_p99_s": 0.0018411773903062548,
+    "original_limits": {
+      "heading_rad": 0.035,
+      "position_m": 0.04,
+      "actual_clearance_m": 0.15
+    },
+    "conclusion": "Startup completed and V984 feedback was actually applied, with motor-map reconstruction and whole executed-state replay passing. Heading envelope still fails, including the complete stop tail. Rear-only yaw feedback alone is insufficient in this fixed state; unique plant/reference cause remains unproven. No new model, repair or repeat follows this closure."
   }
 }
