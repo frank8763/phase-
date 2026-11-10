@@ -1,0 +1,522 @@
+{
+  "passed": true,
+  "checks": {
+    "original_saved_member_sha": true,
+    "existing_model_axes_and_axle_positions_decoded_no_model_load": true,
+    "three_real_saved_input_sequences_and_two_origins": true,
+    "saved_startup_curved_motion_has_nonzero_allocated_differential": true,
+    "saved_original_motor_history_reconstructs": true,
+    "fixed_boundary_map_cases": true,
+    "continuous_twenty_thousand_calls_with_stop_and_restart": true,
+    "coordinated_steering_hold_full_stop_21_curvatures": true,
+    "independent_mutation_and_invalid_memory_negatives": true,
+    "deterministic_final_control_and_memory": true,
+    "no_physics_module_imported": true
+  },
+  "models": 0,
+  "actual_native": 0,
+  "private_native": 0,
+  "replay_native": 0,
+  "physical_tracking_qualified": false,
+  "physical_ready": false,
+  "models_authorized": false,
+  "saved_cases": [
+    {
+      "label": "V982",
+      "origin_native": 6083,
+      "history_rows": 6083,
+      "history_control_error": 6.938893903907228e-17,
+      "saved_response_rows": 332,
+      "all_final_targets_independently_coordinated": true,
+      "new_physical_response": false,
+      "complete_stop_inputs_included": true
+    },
+    {
+      "label": "V987",
+      "origin_native": 6083,
+      "history_rows": 6083,
+      "history_control_error": 6.938893903907228e-17,
+      "saved_response_rows": 348,
+      "all_final_targets_independently_coordinated": true,
+      "new_physical_response": false,
+      "complete_stop_inputs_included": true
+    },
+    {
+      "label": "V974_second_origin",
+      "origin_native": 7814,
+      "history_rows": 7814,
+      "history_control_error": 6.938893903907228e-17,
+      "saved_response_rows": 224,
+      "all_final_targets_independently_coordinated": true,
+      "new_physical_response": false,
+      "complete_stop_inputs_included": true
+    }
+  ],
+  "fixed_boundary_cases": 1080,
+  "continuous_sequence_inputs": 20000,
+  "continuous_stale_inputs": 489,
+  "continuous_deadband_inputs": 5762,
+  "maximum_independent_rear_compatibility_residual_rad_s": 8.881784197001252e-16,
+  "runtime_saved_map_s": {
+    "p99": 9.495041653281081e-05,
+    "maximum": 0.00015079102013260126,
+    "samples": 904
+  },
+  "negatives": [
+    {
+      "case": "left_front",
+      "rejected": true
+    },
+    {
+      "case": "right_front",
+      "rejected": true
+    },
+    {
+      "case": "left_rear",
+      "rejected": true
+    },
+    {
+      "case": "right_rear",
+      "rejected": true
+    },
+    {
+      "case": "front_sign",
+      "rejected": true
+    },
+    {
+      "case": "rear_reverse",
+      "rejected": true
+    },
+    {
+      "case": "rate",
+      "rejected": true
+    },
+    {
+      "case": "nonfinite_0",
+      "rejected": true
+    },
+    {
+      "case": "nonfinite_1",
+      "rejected": true
+    },
+    {
+      "case": "nonfinite_2",
+      "rejected": true
+    },
+    {
+      "case": "nonfinite_3",
+      "rejected": true
+    },
+    {
+      "case": "inconsistent_front",
+      "rejected": true
+    },
+    {
+      "case": "inconsistent_rear",
+      "rejected": true
+    },
+    {
+      "case": "negative_rear",
+      "rejected": true
+    }
+  ],
+  "witnesses": [
+    {
+      "native_tick": 6114,
+      "old_actual_body_input": [
+        0.04977785633694216,
+        -0.024601907080917213,
+        2.6843701190002132e-06,
+        -3.8454719417993656e-07,
+        false
+      ],
+      "new_counterfactual_control": [
+        -0.26063814018992926,
+        -0.3375150968313898,
+        0.08750000000000001,
+        0.06649698459012073
+      ],
+      "allocation": {
+        "mode": "FORWARD_COORDINATED_ALLOCATION",
+        "requested": [
+          0.04977785633694216,
+          -0.024601907080917213
+        ],
+        "measured": [
+          2.6843701190002132e-06,
+          -3.8454719417993656e-07
+        ],
+        "stale": false,
+        "previous": [
+          -0.2558923229082252,
+          -0.3297140485586488,
+          0.0,
+          0.0
+        ],
+        "previous_integral": 0.0,
+        "next_integral": 0.0004977517196682315,
+        "lower": [
+          -0.26839232290822523,
+          -0.3422140485586488,
+          0.0,
+          0.0
+        ],
+        "upper": [
+          -0.2433923229082252,
+          -0.31721404855864876,
+          0.08750000000000001,
+          0.08750000000000001
+        ],
+        "curvature_interval": [
+          -0.5051329165279392,
+          -0.4833738621322853
+        ],
+        "wanted_curvature": -0.7587703849338058,
+        "selected_curvature": -0.5051329165279392,
+        "common_interval": [
+          0.0,
+          0.07699849229506037
+        ],
+        "wanted_common": 0.8150078520877762,
+        "selected_common": 0.07699849229506037,
+        "equivalent_yaw_target": -0.06150419088150176,
+        "curvature_limited": true,
+        "common_limited": true,
+        "selected": [
+          -0.26063814018992926,
+          -0.3375150968313898,
+          0.08750000000000001,
+          0.06649698459012073
+        ],
+        "original_body_command_unchanged": true,
+        "physical_tracking_qualified": false
+      },
+      "independent": {
+        "passed": true,
+        "common_curvature_m_inv": -0.5051329165279392,
+        "mean_rear_velocity_rad_s": 0.07699849229506037,
+        "rear_compatibility_residual_rad_s": 0.0,
+        "models": 0,
+        "integrations": 0
+      }
+    },
+    {
+      "native_tick": 6124,
+      "old_actual_body_input": [
+        0.04977785633694216,
+        -0.019492973410757248,
+        0.03505333137431372,
+        -0.03307279712847047,
+        false
+      ],
+      "new_counterfactual_control": [
+        -0.26273063322026524,
+        -0.3409772411294944,
+        0.6223373078493434,
+        0.4716988243567094
+      ],
+      "allocation": {
+        "mode": "FORWARD_COORDINATED_ALLOCATION",
+        "requested": [
+          0.04977785633694216,
+          -0.019492973410757248
+        ],
+        "measured": [
+          0.03505333137431372,
+          -0.03307279712847047
+        ],
+        "stale": false,
+        "previous": [
+          -0.2674486758664327,
+          -0.34883436556370756,
+          0.6426833330833339,
+          0.4841899157325987
+        ],
+        "previous_integral": 0.0034543539822439327,
+        "next_integral": 0.003601599231870217,
+        "lower": [
+          -0.2799486758664327,
+          -0.36133436556370757,
+          0.5551833330833339,
+          0.39668991573259865
+        ],
+        "upper": [
+          -0.25494867586643266,
+          -0.33633436556370755,
+          0.7301833330833339,
+          0.5716899157325986
+        ],
+        "curvature_interval": [
+          -0.5319192861847616,
+          -0.5099651581954313
+        ],
+        "wanted_curvature": 0.01761349785490672,
+        "selected_curvature": -0.5099651581954313,
+        "common_interval": [
+          0.48799149491034016,
+          0.6418118755313325
+        ],
+        "wanted_common": 0.5470180661030264,
+        "selected_common": 0.5470180661030264,
+        "equivalent_yaw_target": 0.0008767621658125856,
+        "curvature_limited": true,
+        "common_limited": false,
+        "selected": [
+          -0.26273063322026524,
+          -0.3409772411294944,
+          0.6223373078493434,
+          0.4716988243567094
+        ],
+        "original_body_command_unchanged": true,
+        "physical_tracking_qualified": false
+      },
+      "independent": {
+        "passed": true,
+        "common_curvature_m_inv": -0.5099651581954313,
+        "mean_rear_velocity_rad_s": 0.5470180661030264,
+        "rear_compatibility_residual_rad_s": 0.0,
+        "models": 0,
+        "integrations": 0
+      }
+    },
+    {
+      "native_tick": 6144,
+      "old_actual_body_input": [
+        0.0499894554171201,
+        -0.010282260747352797,
+        0.05384389469243758,
+        -0.059591656541928,
+        false
+      ],
+      "new_counterfactual_control": [
+        -0.16400118953227244,
+        -0.19205186926682916,
+        0.43356592212562756,
+        0.368991144282234
+      ],
+      "allocation": {
+        "mode": "FORWARD_COORDINATED_ALLOCATION",
+        "requested": [
+          0.0499894554171201,
+          -0.010282260747352797
+        ],
+        "measured": [
+          0.05384389469243758,
+          -0.059591656541928
+        ],
+        "stale": false,
+        "previous": [
+          -0.16915162416029592,
+          -0.19912719069335763,
+          0.4354150312582966,
+          0.368489469178248
+        ],
+        "previous_integral": 0.00392235745870398,
+        "next_integral": 0.003883813065950805,
+        "lower": [
+          -0.18165162416029593,
+          -0.21162719069335764,
+          0.3479150312582966,
+          0.28098946917824796
+        ],
+        "upper": [
+          -0.1566516241602959,
+          -0.18662719069335762,
+          0.5229150312582966,
+          0.455989469178248
+        ],
+        "curvature_interval": [
+          -0.318689566494107,
+          -0.2980047823077492
+        ],
+        "wanted_curvature": 0.7587703849338058,
+        "selected_curvature": -0.2980047823077492,
+        "common_interval": [
+          0.32200601176970767,
+          0.48397386885221216
+        ],
+        "wanted_common": 0.4012785332039308,
+        "selected_common": 0.4012785332039308,
+        "equivalent_yaw_target": 0.06368183294451,
+        "curvature_limited": true,
+        "common_limited": false,
+        "selected": [
+          -0.16400118953227244,
+          -0.19205186926682916,
+          0.43356592212562756,
+          0.368991144282234
+        ],
+        "original_body_command_unchanged": true,
+        "physical_tracking_qualified": false
+      },
+      "independent": {
+        "passed": true,
+        "common_curvature_m_inv": -0.2980047823077492,
+        "mean_rear_velocity_rad_s": 0.4012785332039308,
+        "rear_compatibility_residual_rad_s": 0.0,
+        "models": 0,
+        "integrations": 0
+      }
+    },
+    {
+      "native_tick": 6184,
+      "old_actual_body_input": [
+        0.03973650035957356,
+        0.007419136785072999,
+        0.04049334386254874,
+        -0.04064312924938289,
+        false
+      ],
+      "new_counterfactual_control": [
+        0.06490640154153933,
+        0.061328595990761604,
+        0.33475035770818706,
+        0.3543325613579588
+      ],
+      "allocation": {
+        "mode": "FORWARD_COORDINATED_ALLOCATION",
+        "requested": [
+          0.03973650035957356,
+          0.007419136785072999
+        ],
+        "measured": [
+          0.04049334386254874,
+          -0.04064312924938289
+        ],
+        "stale": false,
+        "previous": [
+          0.05856925282300071,
+          0.055639547269152996,
+          0.3732455363358436,
+          0.39294270522891234
+        ],
+        "previous_integral": 0.00487224457513677,
+        "next_integral": 0.004864676140107018,
+        "lower": [
+          0.046069252823000714,
+          0.04313954726915299,
+          0.2857455363358436,
+          0.3054427052289123
+        ],
+        "upper": [
+          0.07106925282300071,
+          0.068139547269153,
+          0.46074553633584364,
+          0.48044270522891236
+        ],
+        "curvature_interval": [
+          0.08518550277401704,
+          0.10525102012777918
+        ],
+        "wanted_curvature": 0.7587703849338058,
+        "selected_curvature": 0.10525102012777918,
+        "common_interval": [
+          0.2970025533639426,
+          0.46716686224713316
+        ],
+        "wanted_common": 0.34454145953307297,
+        "selected_common": 0.34454145953307297,
+        "equivalent_yaw_target": 0.07951253583675683,
+        "curvature_limited": true,
+        "common_limited": false,
+        "selected": [
+          0.06490640154153933,
+          0.061328595990761604,
+          0.33475035770818706,
+          0.3543325613579588
+        ],
+        "original_body_command_unchanged": true,
+        "physical_tracking_qualified": false
+      },
+      "independent": {
+        "passed": true,
+        "common_curvature_m_inv": 0.10525102012777918,
+        "mean_rear_velocity_rad_s": 0.3445414595330729,
+        "rear_compatibility_residual_rad_s": 5.551115123125783e-17,
+        "models": 0,
+        "integrations": 0
+      }
+    },
+    {
+      "native_tick": 6229,
+      "old_actual_body_input": [
+        0.0328762788547411,
+        0.021113074740089513,
+        0.02591953853685172,
+        -0.03063574261743554,
+        false
+      ],
+      "new_counterfactual_control": [
+        0.38887808606880797,
+        0.2908622680039552,
+        0.2988139371674474,
+        0.40900744393717203
+      ],
+      "allocation": {
+        "mode": "FORWARD_COORDINATED_ALLOCATION",
+        "requested": [
+          0.0328762788547411,
+          0.021113074740089513
+        ],
+        "measured": [
+          0.02591953853685172,
+          -0.03063574261743554
+        ],
+        "stale": false,
+        "previous": [
+          0.38082787656732425,
+          0.2862369885678615,
+          0.3023092148009465,
+          0.4112420138900065
+        ],
+        "previous_integral": 0.0060023769850758284,
+        "next_integral": 0.006071944388254722,
+        "lower": [
+          0.36832787656732424,
+          0.2737369885678615,
+          0.2148092148009465,
+          0.32374201389000645
+        ],
+        "upper": [
+          0.39332787656732426,
+          0.2987369885678615,
+          0.38980921480094655,
+          0.4987420138900065
+        ],
+        "curvature_interval": [
+          0.5542897508149986,
+          0.5765919341263944
+        ],
+        "wanted_curvature": 0.7587703849338058,
+        "selected_curvature": 0.5765919341263944,
+        "common_interval": [
+          0.2801312332941493,
+          0.4315572568659061
+        ],
+        "wanted_common": 0.3539106905523097,
+        "selected_common": 0.3539106905523097,
+        "equivalent_yaw_target": 0.09873630077637709,
+        "curvature_limited": true,
+        "common_limited": false,
+        "selected": [
+          0.38887808606880797,
+          0.2908622680039552,
+          0.2988139371674474,
+          0.40900744393717203
+        ],
+        "original_body_command_unchanged": true,
+        "physical_tracking_qualified": false
+      },
+      "independent": {
+        "passed": true,
+        "common_curvature_m_inv": 0.5765919341263944,
+        "mean_rear_velocity_rad_s": 0.3539106905523097,
+        "rear_compatibility_residual_rad_s": 0.0,
+        "models": 0,
+        "integrations": 0
+      }
+    }
+  ],
+  "model_axes_source_sha256": "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5",
+  "limitations": "Only algebraic control-map compatibility on old observations/metadata. No predicted or actual new trajectory, friction identification, physical tracking or dynamic acceptance."
+}
