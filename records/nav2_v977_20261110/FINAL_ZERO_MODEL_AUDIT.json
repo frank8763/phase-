@@ -1,0 +1,723 @@
+{
+  "passed": true,
+  "checks": {
+    "original_actual_tracking_failure_red": true,
+    "ZERO_MODEL_QUALIFICATION.json": true,
+    "CONTRACT_QUALIFICATION.json": true,
+    "SUPERVISOR_QUALIFICATION.json": true,
+    "NATIVE_AUTHORITY_QUALIFICATION.json": true,
+    "INDEPENDENT_AUDITOR_QUALIFICATION.json": true,
+    "real_installed_RPP_and_new_production_bridge_two_cases": true,
+    "independent_saved_peer_tracking_and_shutdown": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "private_dynamics_predictions": 0,
+  "training": 0,
+  "hardware": 0,
+  "new_navigation_trials": 0,
+  "original_actual_failure": {
+    "passed": false,
+    "maximum_position_error_m": 0.030709229995515303,
+    "maximum_heading_error_rad": 0.08960252360905543,
+    "conservative_reference_sampling_heading_allowance_rad": 0.00018969259625000002,
+    "unchanged_position_limit_m": 0.04,
+    "unchanged_heading_limit_rad": 0.035,
+    "native_or_peer_samples": 1352,
+    "models": 0,
+    "integrations": 0
+  },
+  "same_fixed_two_causal_states": true,
+  "qualified_analytical_references": 2,
+  "real_RPP_software_peer_cases": 2,
+  "physical_tracking_qualified": false,
+  "physical_ready": false,
+  "model_authority": false,
+  "scope": "Source and zero-model qualification only; no new physical success or full dynamic acceptance",
+  "software": [
+    {
+      "index": 0,
+      "report": {
+        "passed": true,
+        "checks": {
+          "real_installed_recovery_RPP_action": true,
+          "original_map_startup_proof": true,
+          "unchanged_complete_position_envelope": true,
+          "unchanged_complete_heading_envelope": true,
+          "tighter_endpoint_reached": true,
+          "unchanged_actual_progress_gate": true,
+          "no_reverse": true,
+          "one_ordered_command_channel": true,
+          "all_issued_commands_have_original_static_admission": true,
+          "no_native_model_or_peer_failure": true,
+          "nonempty_peer_motion": true
+        },
+        "models": 0,
+        "integrations": 0,
+        "synthetic_peer": true,
+        "static_admission_only_in_this_fixture": true,
+        "causal_dynamic_geometry_qualified_separately": true,
+        "physical_tracking_qualified": false,
+        "index": 0,
+        "maximum_position_error_m": 0.0062176910348929765,
+        "maximum_heading_error_rad": 0.004210434965297383,
+        "conservative_reference_sampling_heading_allowance_rad": 0.0047423149062500005,
+        "endpoint_distance_m": 0.01868779245046063,
+        "actual_peer_goal_improvement_m": 1.0433587123394128,
+        "commands": 446,
+        "component": [
+          {
+            "controller_id": "RecoveryFollowPath",
+            "goal_checker": "recovery_goal_checker",
+            "status": 4,
+            "normal_navigation_action_sent": false,
+            "follow_actions_sent": 1,
+            "end_packet": {
+              "kind": "observation",
+              "run_id": "v977-software-0",
+              "phase": "RUNNING",
+              "native_tick": 2242,
+              "sim_time": 22.42,
+              "sent_at": 174709.026697901,
+              "body_measured_at": 174709.026697901,
+              "scan_measured_at": 174709.026697901,
+              "initial_snapshot": false,
+              "body": [
+                1.3752499741481798,
+                -0.8322335495063593,
+                -0.32977609328450397,
+                0.0,
+                0.0
+              ],
+              "steering": {
+                "native_tick": 2242,
+                "measured_at": 174709.026697901,
+                "position": [
+                  -0.06108661597317663,
+                  -0.06463546733628743
+                ],
+                "velocity": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "scan": {
+                "native_tick": 2242,
+                "time": 22.42,
+                "xy": [
+                  1.3752499741481798,
+                  -0.8322335495063593
+                ],
+                "yaw": -0.32977609328450397,
+                "ranges": [
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0
+                ]
+              }
+            },
+            "production_bridge_source": "experiments/v977_state_consistent_recovery/ros_bridge.py",
+            "production_binding_source": "experiments/v977_state_consistent_recovery/binding.py"
+          }
+        ],
+        "result": {
+          "passed": true,
+          "navigation_action_sent": true,
+          "global_master_readiness": {
+            "passed": true,
+            "accepted_replies": [
+              {
+                "passed": true,
+                "size_x": 1000,
+                "size_y": 1000,
+                "resolution": 0.009999999776482582,
+                "origin": [
+                  -5.0,
+                  -5.0
+                ],
+                "frame": "map",
+                "cells": 1000000,
+                "unknown_cells": 0,
+                "required_static_cells": 72683,
+                "missing_static_cells": 0,
+                "all_unknown": false,
+                "models": 0,
+                "checked_at": 174686.047807479
+              },
+              {
+                "passed": true,
+                "size_x": 1000,
+                "size_y": 1000,
+                "resolution": 0.009999999776482582,
+                "origin": [
+                  -5.0,
+                  -5.0
+                ],
+                "frame": "map",
+                "cells": 1000000,
+                "unknown_cells": 0,
+                "required_static_cells": 72683,
+                "missing_static_cells": 0,
+                "all_unknown": false,
+                "models": 0,
+                "checked_at": 174686.600691414
+              }
+            ],
+            "all_reads": [
+              {
+                "passed": true,
+                "size_x": 1000,
+                "size_y": 1000,
+                "resolution": 0.009999999776482582,
+                "origin": [
+                  -5.0,
+                  -5.0
+                ],
+                "frame": "map",
+                "cells": 1000000,
+                "unknown_cells": 0,
+                "required_static_cells": 72683,
+                "missing_static_cells": 0,
+                "all_unknown": false,
+                "models": 0,
+                "checked_at": 174686.047807479
+              },
+              {
+                "passed": true,
+                "size_x": 1000,
+                "size_y": 1000,
+                "resolution": 0.009999999776482582,
+                "origin": [
+                  -5.0,
+                  -5.0
+                ],
+                "frame": "map",
+                "cells": 1000000,
+                "unknown_cells": 0,
+                "required_static_cells": 72683,
+                "missing_static_cells": 0,
+                "all_unknown": false,
+                "models": 0,
+                "checked_at": 174686.600691414
+              }
+            ],
+            "native_tick": 0
+          },
+          "active_states": {
+            "map_server": 3,
+            "planner_server": 3,
+            "controller_server": 3,
+            "behavior_server": 3,
+            "velocity_smoother": 3,
+            "collision_monitor": 3,
+            "bt_navigator": 3
+          },
+          "active_checked_at": {
+            "map_server": 174686.602377401,
+            "planner_server": 174686.602906944,
+            "controller_server": 174686.603520786,
+            "behavior_server": 174686.603981464,
+            "velocity_smoother": 174686.604424332,
+            "collision_monitor": 174686.605200836,
+            "bt_navigator": 174686.608906447
+          },
+          "arm_issued_at": 174686.608912383,
+          "goal_sent_at": 174686.623629153,
+          "action_status": 4,
+          "action_error_code": 0,
+          "refuge_events": 1,
+          "reason": "NAV2_SUCCEEDED",
+          "wall_s": 25.626975780003704,
+          "readiness_probes": {
+            "passed": true,
+            "size_x": 1000,
+            "size_y": 1000,
+            "resolution": 0.009999999776482582,
+            "origin": [
+              -5.0,
+              -5.0
+            ],
+            "frame": "map",
+            "cells": 1000000,
+            "unknown_cells": 0,
+            "required_static_cells": 72683,
+            "missing_static_cells": 0,
+            "all_unknown": false,
+            "models": 0,
+            "checked_at": 174686.600691414
+          },
+          "odometry_messages": 2131,
+          "cmd_vel_messages": 446,
+          "plan_messages": 0,
+          "maximum_observation_age_s": 0.01034151401836425,
+          "maximum_scan_age_s": 0.01034151401836425,
+          "last_observation": {
+            "kind": "observation",
+            "run_id": "v977-software-0",
+            "phase": "RUNNING",
+            "native_tick": 2243,
+            "sim_time": 22.43,
+            "sent_at": 174709.037800484,
+            "body_measured_at": 174709.037800484,
+            "scan_measured_at": 174709.037800484,
+            "initial_snapshot": false,
+            "body": [
+              1.3752499741481798,
+              -0.8322335495063593,
+              -0.32977609328450397,
+              0.0,
+              0.0
+            ],
+            "steering": {
+              "native_tick": 2243,
+              "measured_at": 174709.037800484,
+              "position": [
+                -0.06108661597317663,
+                -0.06463546733628743
+              ],
+              "velocity": [
+                0.0,
+                0.0
+              ]
+            },
+            "scan": {
+              "native_tick": 2243,
+              "time": 22.43,
+              "xy": [
+                1.3752499741481798,
+                -0.8322335495063593
+              ],
+              "yaw": -0.32977609328450397,
+              "ranges": [
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0
+              ]
+            }
+          }
+        },
+        "peer_errors": [],
+        "shutdown": {
+          "passed": true,
+          "submitted_handlers_drained_before_guard": true,
+          "completed_futures_checked": 1,
+          "callback_errors": [],
+          "models": 0,
+          "integrations": 0
+        }
+      },
+      "independent_tracking": {
+        "passed": true,
+        "maximum_position_error_m": 0.0062176910348929765,
+        "maximum_heading_error_rad": 0.004210434965297383,
+        "conservative_reference_sampling_heading_allowance_rad": 0.0047423149062500005,
+        "unchanged_position_limit_m": 0.04,
+        "unchanged_heading_limit_rad": 0.035,
+        "native_or_peer_samples": 1988,
+        "models": 0,
+        "integrations": 0
+      }
+    },
+    {
+      "index": 1,
+      "report": {
+        "passed": true,
+        "checks": {
+          "real_installed_recovery_RPP_action": true,
+          "original_map_startup_proof": true,
+          "unchanged_complete_position_envelope": true,
+          "unchanged_complete_heading_envelope": true,
+          "tighter_endpoint_reached": true,
+          "unchanged_actual_progress_gate": true,
+          "no_reverse": true,
+          "one_ordered_command_channel": true,
+          "all_issued_commands_have_original_static_admission": true,
+          "no_native_model_or_peer_failure": true,
+          "nonempty_peer_motion": true
+        },
+        "models": 0,
+        "integrations": 0,
+        "synthetic_peer": true,
+        "static_admission_only_in_this_fixture": true,
+        "causal_dynamic_geometry_qualified_separately": true,
+        "physical_tracking_qualified": false,
+        "index": 1,
+        "maximum_position_error_m": 0.006241098647666599,
+        "maximum_heading_error_rad": 1.579451348247829e-05,
+        "conservative_reference_sampling_heading_allowance_rad": 0.0047423149062500005,
+        "endpoint_distance_m": 0.017720082097519754,
+        "actual_peer_goal_improvement_m": 0.5148833033280691,
+        "commands": 299,
+        "component": [
+          {
+            "controller_id": "RecoveryFollowPath",
+            "goal_checker": "recovery_goal_checker",
+            "status": 4,
+            "normal_navigation_action_sent": false,
+            "follow_actions_sent": 1,
+            "end_packet": {
+              "kind": "observation",
+              "run_id": "v977-software-1",
+              "phase": "RUNNING",
+              "native_tick": 1513,
+              "sim_time": 15.13,
+              "sent_at": 174729.05331404,
+              "body_measured_at": 174729.05331404,
+              "scan_measured_at": 174729.05331404,
+              "initial_snapshot": false,
+              "body": [
+                1.895357782037159,
+                -0.6967971229903305,
+                -0.01616365100512545,
+                0.0,
+                0.0
+              ],
+              "steering": {
+                "native_tick": 1513,
+                "measured_at": 174729.05331404,
+                "position": [
+                  0.0,
+                  0.0
+                ],
+                "velocity": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "scan": {
+                "native_tick": 1513,
+                "time": 15.13,
+                "xy": [
+                  1.895357782037159,
+                  -0.6967971229903305
+                ],
+                "yaw": -0.01616365100512545,
+                "ranges": [
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0,
+                  3.0
+                ]
+              }
+            },
+            "production_bridge_source": "experiments/v977_state_consistent_recovery/ros_bridge.py",
+            "production_binding_source": "experiments/v977_state_consistent_recovery/binding.py"
+          }
+        ],
+        "result": {
+          "passed": true,
+          "navigation_action_sent": true,
+          "global_master_readiness": {
+            "passed": true,
+            "accepted_replies": [
+              {
+                "passed": true,
+                "size_x": 1000,
+                "size_y": 1000,
+                "resolution": 0.009999999776482582,
+                "origin": [
+                  -5.0,
+                  -5.0
+                ],
+                "frame": "map",
+                "cells": 1000000,
+                "unknown_cells": 0,
+                "required_static_cells": 72683,
+                "missing_static_cells": 0,
+                "all_unknown": false,
+                "models": 0,
+                "checked_at": 174713.352747929
+              },
+              {
+                "passed": true,
+                "size_x": 1000,
+                "size_y": 1000,
+                "resolution": 0.009999999776482582,
+                "origin": [
+                  -5.0,
+                  -5.0
+                ],
+                "frame": "map",
+                "cells": 1000000,
+                "unknown_cells": 0,
+                "required_static_cells": 72683,
+                "missing_static_cells": 0,
+                "all_unknown": false,
+                "models": 0,
+                "checked_at": 174713.911408151
+              }
+            ],
+            "all_reads": [
+              {
+                "passed": true,
+                "size_x": 1000,
+                "size_y": 1000,
+                "resolution": 0.009999999776482582,
+                "origin": [
+                  -5.0,
+                  -5.0
+                ],
+                "frame": "map",
+                "cells": 1000000,
+                "unknown_cells": 0,
+                "required_static_cells": 72683,
+                "missing_static_cells": 0,
+                "all_unknown": false,
+                "models": 0,
+                "checked_at": 174713.352747929
+              },
+              {
+                "passed": true,
+                "size_x": 1000,
+                "size_y": 1000,
+                "resolution": 0.009999999776482582,
+                "origin": [
+                  -5.0,
+                  -5.0
+                ],
+                "frame": "map",
+                "cells": 1000000,
+                "unknown_cells": 0,
+                "required_static_cells": 72683,
+                "missing_static_cells": 0,
+                "all_unknown": false,
+                "models": 0,
+                "checked_at": 174713.911408151
+              }
+            ],
+            "native_tick": 0
+          },
+          "active_states": {
+            "map_server": 3,
+            "planner_server": 3,
+            "controller_server": 3,
+            "behavior_server": 3,
+            "velocity_smoother": 3,
+            "collision_monitor": 3,
+            "bt_navigator": 3
+          },
+          "active_checked_at": {
+            "map_server": 174713.913703231,
+            "planner_server": 174713.914241085,
+            "controller_server": 174713.914698201,
+            "behavior_server": 174713.915423651,
+            "velocity_smoother": 174713.916208466,
+            "collision_monitor": 174713.917361349,
+            "bt_navigator": 174713.922369444
+          },
+          "arm_issued_at": 174713.922374193,
+          "goal_sent_at": 174713.946615604,
+          "action_status": 4,
+          "action_error_code": 0,
+          "refuge_events": 1,
+          "reason": "NAV2_SUCCEEDED",
+          "wall_s": 18.394328665017383,
+          "readiness_probes": {
+            "passed": true,
+            "size_x": 1000,
+            "size_y": 1000,
+            "resolution": 0.009999999776482582,
+            "origin": [
+              -5.0,
+              -5.0
+            ],
+            "frame": "map",
+            "cells": 1000000,
+            "unknown_cells": 0,
+            "required_static_cells": 72683,
+            "missing_static_cells": 0,
+            "all_unknown": false,
+            "models": 0,
+            "checked_at": 174713.911408151
+          },
+          "odometry_messages": 1490,
+          "cmd_vel_messages": 299,
+          "plan_messages": 0,
+          "maximum_observation_age_s": 0.02094423698144965,
+          "maximum_scan_age_s": 0.02094423698144965,
+          "last_observation": {
+            "kind": "observation",
+            "run_id": "v977-software-1",
+            "phase": "RUNNING",
+            "native_tick": 1515,
+            "sim_time": 15.15,
+            "sent_at": 174729.064410686,
+            "body_measured_at": 174729.064410686,
+            "scan_measured_at": 174729.064410686,
+            "initial_snapshot": false,
+            "body": [
+              1.895357782037159,
+              -0.6967971229903305,
+              -0.01616365100512545,
+              0.0,
+              0.0
+            ],
+            "steering": {
+              "native_tick": 1515,
+              "measured_at": 174729.064410686,
+              "position": [
+                0.0,
+                0.0
+              ],
+              "velocity": [
+                0.0,
+                0.0
+              ]
+            },
+            "scan": {
+              "native_tick": 1515,
+              "time": 15.15,
+              "xy": [
+                1.895357782037159,
+                -0.6967971229903305
+              ],
+              "yaw": -0.01616365100512545,
+              "ranges": [
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0,
+                3.0
+              ]
+            }
+          }
+        },
+        "peer_errors": [],
+        "shutdown": {
+          "passed": true,
+          "submitted_handlers_drained_before_guard": true,
+          "completed_futures_checked": 1,
+          "callback_errors": [],
+          "models": 0,
+          "integrations": 0
+        }
+      },
+      "independent_tracking": {
+        "passed": true,
+        "maximum_position_error_m": 0.006241098647666599,
+        "maximum_heading_error_rad": 1.579451348247829e-05,
+        "conservative_reference_sampling_heading_allowance_rad": 0.0047423149062500005,
+        "unchanged_position_limit_m": 0.04,
+        "unchanged_heading_limit_rad": 0.035,
+        "native_or_peer_samples": 1344,
+        "models": 0,
+        "integrations": 0
+      }
+    }
+  ],
+  "guard_restored": true,
+  "execution_lock_idle_before_finalization": true
+}

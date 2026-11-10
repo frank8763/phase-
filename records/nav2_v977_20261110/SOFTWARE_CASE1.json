@@ -1,0 +1,327 @@
+{
+  "passed": true,
+  "checks": {
+    "real_installed_recovery_RPP_action": true,
+    "original_map_startup_proof": true,
+    "unchanged_complete_position_envelope": true,
+    "unchanged_complete_heading_envelope": true,
+    "tighter_endpoint_reached": true,
+    "unchanged_actual_progress_gate": true,
+    "no_reverse": true,
+    "one_ordered_command_channel": true,
+    "all_issued_commands_have_original_static_admission": true,
+    "no_native_model_or_peer_failure": true,
+    "nonempty_peer_motion": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "synthetic_peer": true,
+  "static_admission_only_in_this_fixture": true,
+  "causal_dynamic_geometry_qualified_separately": true,
+  "physical_tracking_qualified": false,
+  "index": 1,
+  "maximum_position_error_m": 0.006241098647666599,
+  "maximum_heading_error_rad": 1.579451348247829e-05,
+  "conservative_reference_sampling_heading_allowance_rad": 0.0047423149062500005,
+  "endpoint_distance_m": 0.017720082097519754,
+  "actual_peer_goal_improvement_m": 0.5148833033280691,
+  "commands": 299,
+  "component": [
+    {
+      "controller_id": "RecoveryFollowPath",
+      "goal_checker": "recovery_goal_checker",
+      "status": 4,
+      "normal_navigation_action_sent": false,
+      "follow_actions_sent": 1,
+      "end_packet": {
+        "kind": "observation",
+        "run_id": "v977-software-1",
+        "phase": "RUNNING",
+        "native_tick": 1513,
+        "sim_time": 15.13,
+        "sent_at": 174729.05331404,
+        "body_measured_at": 174729.05331404,
+        "scan_measured_at": 174729.05331404,
+        "initial_snapshot": false,
+        "body": [
+          1.895357782037159,
+          -0.6967971229903305,
+          -0.01616365100512545,
+          0.0,
+          0.0
+        ],
+        "steering": {
+          "native_tick": 1513,
+          "measured_at": 174729.05331404,
+          "position": [
+            0.0,
+            0.0
+          ],
+          "velocity": [
+            0.0,
+            0.0
+          ]
+        },
+        "scan": {
+          "native_tick": 1513,
+          "time": 15.13,
+          "xy": [
+            1.895357782037159,
+            -0.6967971229903305
+          ],
+          "yaw": -0.01616365100512545,
+          "ranges": [
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0,
+            3.0
+          ]
+        }
+      },
+      "production_bridge_source": "experiments/v977_state_consistent_recovery/ros_bridge.py",
+      "production_binding_source": "experiments/v977_state_consistent_recovery/binding.py"
+    }
+  ],
+  "result": {
+    "passed": true,
+    "navigation_action_sent": true,
+    "global_master_readiness": {
+      "passed": true,
+      "accepted_replies": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 174713.352747929
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 174713.911408151
+        }
+      ],
+      "all_reads": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 174713.352747929
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 174713.911408151
+        }
+      ],
+      "native_tick": 0
+    },
+    "active_states": {
+      "map_server": 3,
+      "planner_server": 3,
+      "controller_server": 3,
+      "behavior_server": 3,
+      "velocity_smoother": 3,
+      "collision_monitor": 3,
+      "bt_navigator": 3
+    },
+    "active_checked_at": {
+      "map_server": 174713.913703231,
+      "planner_server": 174713.914241085,
+      "controller_server": 174713.914698201,
+      "behavior_server": 174713.915423651,
+      "velocity_smoother": 174713.916208466,
+      "collision_monitor": 174713.917361349,
+      "bt_navigator": 174713.922369444
+    },
+    "arm_issued_at": 174713.922374193,
+    "goal_sent_at": 174713.946615604,
+    "action_status": 4,
+    "action_error_code": 0,
+    "refuge_events": 1,
+    "reason": "NAV2_SUCCEEDED",
+    "wall_s": 18.394328665017383,
+    "readiness_probes": {
+      "passed": true,
+      "size_x": 1000,
+      "size_y": 1000,
+      "resolution": 0.009999999776482582,
+      "origin": [
+        -5.0,
+        -5.0
+      ],
+      "frame": "map",
+      "cells": 1000000,
+      "unknown_cells": 0,
+      "required_static_cells": 72683,
+      "missing_static_cells": 0,
+      "all_unknown": false,
+      "models": 0,
+      "checked_at": 174713.911408151
+    },
+    "odometry_messages": 1490,
+    "cmd_vel_messages": 299,
+    "plan_messages": 0,
+    "maximum_observation_age_s": 0.02094423698144965,
+    "maximum_scan_age_s": 0.02094423698144965,
+    "last_observation": {
+      "kind": "observation",
+      "run_id": "v977-software-1",
+      "phase": "RUNNING",
+      "native_tick": 1515,
+      "sim_time": 15.15,
+      "sent_at": 174729.064410686,
+      "body_measured_at": 174729.064410686,
+      "scan_measured_at": 174729.064410686,
+      "initial_snapshot": false,
+      "body": [
+        1.895357782037159,
+        -0.6967971229903305,
+        -0.01616365100512545,
+        0.0,
+        0.0
+      ],
+      "steering": {
+        "native_tick": 1515,
+        "measured_at": 174729.064410686,
+        "position": [
+          0.0,
+          0.0
+        ],
+        "velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      "scan": {
+        "native_tick": 1515,
+        "time": 15.15,
+        "xy": [
+          1.895357782037159,
+          -0.6967971229903305
+        ],
+        "yaw": -0.01616365100512545,
+        "ranges": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ]
+      }
+    }
+  },
+  "peer_errors": [],
+  "shutdown": {
+    "passed": true,
+    "submitted_handlers_drained_before_guard": true,
+    "completed_futures_checked": 1,
+    "callback_errors": [],
+    "models": 0,
+    "integrations": 0
+  }
+}

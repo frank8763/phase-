@@ -1,0 +1,249 @@
+"""Future real Nav2 bridge; module import stays model-free and ROS-free."""
+import json,math,os,socket,sys,time,traceback
+from pathlib import Path
+from handshake import NODES,file_sha,require,verify_sources,require_goal_allowed
+from authority import authorized
+R=Path(__file__).resolve().parents[2];C=Path(__file__).parent
+def require_candidate_ready():
+    from authority import ready_for_navigation
+    ready_for_navigation()
+def run(task,receipt,freeze_sha):
+    require_candidate_ready()
+    deadline=authorized(task,receipt,time.time(),freeze_sha);verify_sources(R,C/'SOURCE_FREEZE.json')
+    import rclpy
+    from rclpy.node import Node
+    from rclpy.action import ActionClient
+    from rclpy.qos import qos_profile_sensor_data
+    from geometry_msgs.msg import Twist,TransformStamped
+    from sensor_msgs.msg import LaserScan
+    from nav_msgs.msg import Odometry,Path as NavPath
+    from nav2_msgs.action import NavigateToPose
+    from nav2_msgs.srv import ManageLifecycleNodes
+    from lifecycle_msgs.srv import GetState
+    from tf2_ros import TransformBroadcaster,StaticTransformBroadcaster
+    sys.path.insert(0,str(R/'experiments/v856_nav2_foundation'))
+    from routing_stack import Stack
+    class Bridge(Node):
+        def __init__(self):
+            super().__init__('phase_ready_static_bridge');self.latest=None;self.command_sequence=0
+            sys.path.insert(0,str(C))
+            from motion_publisher import MotionPublisher
+            sys.path.insert(0,str(C))
+            from dynamic_proxy import DynamicPlannerProxy
+            self.motion=MotionPublisher(self,task['output'])
+            config=json.loads(Path(task['nav2_params']).read_text())
+            full_footprint=json.loads(config['global_costmap']['global_costmap']['ros__parameters']['footprint'])
+            self.planner_proxy=DynamicPlannerProxy(self,lambda:self.latest,Path(task['output']),deadline,self.motion.planning_snapshot,full_footprint)
+            self.planner_proxy.force_forward=True
+            from navigation_policy import ForwardNavigation
+            from callback_layout import CallbackLayout
+            self.forward=ForwardNavigation(task['goal_xy']);self.callbacks=CallbackLayout()
+            from steering_continuity import SteeringContinuity
+            self.steering_continuity=SteeringContinuity();self.committed_recovery=None
+            self.costmap_snapshots=[];self.last_costmap_snapshot={}
+            self.last_nominal_at=None;self.retained_proof=None;self.admission_deferrals=[];self.guard_failure=None;self.tube_decisions=[];self.breadcrumbs=[];self.supervision_events=[];self.commands=[];self.nav_commands=[];self.plans=[];self.ages=[];self.scan_ages=[];self.lastscan=-1;self.odometry_messages=0
+            self.sock=socket.socket(socket.AF_UNIX,socket.SOCK_DGRAM)
+            self.address=str(Path(task['socket_dir'])/'ros.sock');require(not Path(self.address).exists(),'STALE_ROS_SOCKET')
+            self.sock.bind(self.address);self.sock.setblocking(False)
+            self.tf=TransformBroadcaster(self);self.static=StaticTransformBroadcaster(self);transforms=[]
+            for parent,child in [('map','odom'),('base_link','base_scan')]:
+                t=TransformStamped();t.header.stamp=self.get_clock().now().to_msg();t.header.frame_id=parent;t.child_frame_id=child;t.transform.rotation.w=1.;transforms.append(t)
+            self.static.sendTransform(transforms)
+            self.odom=self.create_publisher(Odometry,'odom',10);self.scan=self.create_publisher(LaserScan,'scan',qos_profile_sensor_data)
+            self.create_subscription(Twist,'cmd_vel',self.command,10,callback_group=self.callbacks.command)
+            self.create_timer(.05,self.renew_wait,callback_group=self.callbacks.command)
+            self.create_subscription(Twist,'cmd_vel_nav',lambda m:self.nav_commands.append([time.monotonic(),m.linear.x,m.angular.z]),10,callback_group=self.callbacks.telemetry)
+            self.create_subscription(NavPath,'plan',lambda m:self.plans.append(dict(at=time.monotonic(),path=[[p.pose.position.x,p.pose.position.y,2*math.atan2(p.pose.orientation.z,p.pose.orientation.w)]for p in m.poses])),10,callback_group=self.callbacks.telemetry)
+            from nav2_msgs.msg import Costmap
+            import numpy as np
+            from rclpy.qos import QoSProfile,DurabilityPolicy,ReliabilityPolicy
+            def save_costmap(kind,message):
+                now=time.monotonic()
+                if now-self.last_costmap_snapshot.get(kind,0)<2.:return
+                self.last_costmap_snapshot[kind]=now
+                folder=Path(task['output'])/'COSTMAP_SNAPSHOTS';folder.mkdir(exist_ok=True)
+                data=np.asarray(message.data,dtype=np.uint8);path=folder/(kind+'_'+str(len(self.costmap_snapshots))+'.npz')
+                np.savez_compressed(path,data=data)
+                self.costmap_snapshots.append(dict(at=now,kind=kind,resolution=message.metadata.resolution,width=message.metadata.size_x,height=message.metadata.size_y,origin=[message.metadata.origin.position.x,message.metadata.origin.position.y],frame=message.header.frame_id,path=str(path.relative_to(Path(task['output'])))))
+            cost_qos=QoSProfile(depth=1,durability=DurabilityPolicy.TRANSIENT_LOCAL,reliability=ReliabilityPolicy.RELIABLE)
+            for topic in ['local_costmap','global_costmap']:self.create_subscription(Costmap,topic+'/costmap_raw',lambda m,k=topic:save_costmap(k,m),cost_qos,callback_group=self.callbacks.telemetry)
+            self.action=ActionClient(self,NavigateToPose,'navigate_to_pose');self.manager=self.create_client(ManageLifecycleNodes,'lifecycle_manager_navigation/manage_nodes')
+            self.states={name:self.create_client(GetState,name+'/get_state')for name in NODES};self.create_timer(.005,self.read,callback_group=self.callbacks.observation)
+        def send(self,data):
+            packet=dict(data,run_id=task['run_id'])
+            try:self.sock.sendto(json.dumps(packet).encode(),str(Path(task['socket_dir'])/'physics.sock'))
+            except (FileNotFoundError,ConnectionRefusedError,BlockingIOError):pass
+        def command(self,m):
+            self.last_nominal_at=time.monotonic()
+            self.dispatch_command(m)
+        def renew_wait(self):
+            from renewal_policy import due
+            if self.guard_failure is not None or self.latest is None:return
+            if not due(self.latest['phase'],time.monotonic(),self.last_nominal_at):return
+            # A new zero Twist is admitted against a NEW atomic body/scan snapshot.
+            # Never replay the last moving command or reuse its finite permission.
+            self.dispatch_command(Twist(),renewal=True)
+        def dispatch_command(self,m,renewal=False):
+            # Nav2 may publish zero during activation; never forward before native ARM ACK.
+            if not self.latest or self.latest['phase']!='RUNNING':return
+            from twist_contract import require_representable
+            require_representable(m.linear.x,m.angular.z)
+            if not self.forward.request(m.linear.x,m.angular.z):
+                # Stop remains separately admitted below; supervisor cancels/replans.
+                m=Twist()
+            from command_tube import admit
+            try:
+                packet,source=self.motion.decision_snapshot();now=time.monotonic()
+                # Preserve the original stale-new-proposal deferral path. No new
+                # steering permission is calculated from a stale body/encoder.
+                require(0<=now-packet['body_measured_at']<=.05,'STALE_COMMAND_BODY')
+                raw_wanted=[m.linear.x,m.angular.z]
+                nominal_shaping=self.steering_continuity.preview(packet,*raw_wanted,now)
+                wanted=nominal_shaping['selected'];selected_shaping=nominal_shaping
+                proof=admit(packet,source,*wanted,self.planner_proxy.known,now)
+                recovery=None
+                if not proof['passed']and not renewal and wanted!=[0.,0.]and source.get('support_bounds')is not None and not(self.committed_recovery is not None and self.committed_recovery.mode in {'FOLLOW_ACCEPT_PENDING','FOLLOW_RECOVERY','STOPPED_REPLAN'}):
+                    from rpccr_recovery import select
+                    from snapshot_geometry import field
+                    from exact_footprint import pose_values
+                    static=lambda known,poses:pose_values(field(known),poses)
+                    recovery=select(packet,source,wanted,self.planner_proxy.known,now,task['goal_xy'],admit,static,
+                        shape=lambda v,w:self.steering_continuity.preview(packet,v,w,now))
+                    if recovery.proof is not None:proof=recovery.proof;selected_shaping=recovery.shaping
+                if not proof['passed']:
+                    proof=admit(packet,source,0.,0.,self.planner_proxy.known,now)
+                    selected_shaping=self.steering_continuity.preview(packet,0.,0.,now)
+                retained=False
+                if not proof['passed'] and self.retained_proof is not None:
+                    from cycle_backup import retained_allowed
+                    elapsed=(packet['native_tick']-self.retained_proof['body_native_tick'])*.01
+                    retained=retained_allowed(self.retained_proof,elapsed)
+                self.tube_decisions.append(dict(packet=packet,source=source,raw_wanted=raw_wanted,wanted=wanted,
+                    nominal_shaping=nominal_shaping,selected_shaping=selected_shaping,proof=proof,wait_renewal=renewal,last_nominal_at=self.last_nominal_at,
+                    retained_previous=retained,retained_anchor_tick=None if self.retained_proof is None else self.retained_proof['body_native_tick'],
+                    recovery=None if recovery is None else dict(mode=recovery.mode,selected=recovery.selected,nominal_proof=recovery.nominal_proof,alternatives=recovery.alternatives)))
+                if retained:return
+                require(proof['passed'],'NO_FINITE_COMMAND_OR_STOP_TUBE')
+                require(selected_shaping is not None and selected_shaping['selected']==[proof['v'],proof['w']],'STEERING_SHAPE_PROOF_MISMATCH')
+                self.steering_continuity.commit(selected_shaping)
+                self.retained_proof=proof
+                self.command_sequence+=1;self.commands.append([now,proof['v'],proof['w']])
+                self.send(dict(kind='command',sequence=self.command_sequence,issued_at=now,v=proof['v'],w=proof['w'],tube=proof))
+            except Exception as e:
+                from cycle_backup import stale_proposal_may_defer
+                if stale_proposal_may_defer(e,self.retained_proof,locals().get('packet'),locals().get('now',time.monotonic())):
+                    self.admission_deferrals.append(dict(reason=str(e),packet=packet,source=source,at=now,retained_proof=self.retained_proof))
+                    return
+                self.guard_failure=repr(e)
+                evidence=getattr(e,'evidence',None) or dict(error=repr(e),packet=locals().get('packet'),source=locals().get('source'),checked_at=locals().get('now'),raw_wanted=locals().get('raw_wanted'),nominal_shaping=locals().get('nominal_shaping'),selected_shaping=locals().get('selected_shaping'))
+                if evidence is not None:(self.motion.out/'COMMAND_OBSERVATION_FAULT.json').write_text(json.dumps(evidence,indent=2)+'\n')
+                self.send(dict(kind='stop',issued_at=time.monotonic(),reason=self.guard_failure))
+        def read(self):
+            packet=None
+            for _ in range(128):
+                try:packet=json.loads(self.sock.recv(65536))
+                except BlockingIOError:break
+            if packet is None:return
+            require(packet.get('run_id')==task['run_id'],'FOREIGN_NATIVE_OBSERVATION');require(packet['kind']=='observation','WRONG_NATIVE_PACKET')
+            self.motion.observe(packet)
+            if self.committed_recovery is not None:
+                try:self.committed_recovery.monitor_body(packet)
+                except AssertionError as error:
+                    self.guard_failure=str(error)
+                    (self.motion.out/'ONLINE_TRACKING_FAULT.json').write_text(json.dumps(dict(error=str(error),packet=packet,path_sha256=self.committed_recovery.path_sha256),indent=2)+'\n')
+                    self.send(dict(kind='stop',issued_at=time.monotonic(),reason=self.guard_failure))
+                    return
+            if not self.breadcrumbs or math.hypot(packet['body'][0]-self.breadcrumbs[-1]['body'][0],packet['body'][1]-self.breadcrumbs[-1]['body'][1])>=.05:
+                self.breadcrumbs.append(dict(native_tick=packet['native_tick'],sim_time=packet['sim_time'],body=list(packet['body'])))
+            now=time.monotonic();age=now-packet['sent_at'];require(-.05<=age<=.2,'NATIVE_HEARTBEAT_AGE');self.latest=packet
+            self.odometry_messages+=1
+            if packet['phase']!='WAITING':
+                self.ages.append(now-packet['body_measured_at'])
+                require(now-packet['body_measured_at']<=.2,'NATIVE_ODOMETRY_AGE')
+            x,y,yaw,v,w=packet['body'];stamp=self.get_clock().now().to_msg();t=TransformStamped();t.header.stamp=stamp;t.header.frame_id='odom';t.child_frame_id='base_link';t.transform.translation.x=x;t.transform.translation.y=y;t.transform.rotation.z=math.sin(yaw/2);t.transform.rotation.w=math.cos(yaw/2);self.tf.sendTransform(t)
+            od=Odometry();od.header.stamp=stamp;od.header.frame_id='odom';od.child_frame_id='base_link';od.pose.pose.position.x=x;od.pose.pose.position.y=y;od.pose.pose.orientation=t.transform.rotation;od.twist.twist.linear.x=v;od.twist.twist.angular.z=w;self.odom.publish(od)
+            # Repeated pre-ARM publications are explicitly the same initial snapshot.
+            s=packet['scan']
+            if s['native_tick']!=self.lastscan or packet['phase']=='WAITING':
+                self.lastscan=s['native_tick'];scan=LaserScan();scan.header.stamp=stamp;scan.header.frame_id='base_scan';scan.angle_min=0.;scan.angle_max=2*math.pi*31/32;scan.angle_increment=2*math.pi/32;scan.range_min=.05;scan.range_max=3.;scan.scan_time=.05;scan.ranges=[max(.05,float(r))if r<2.999 else float('inf')for r in s['ranges']];self.scan.publish(scan)
+                if packet['phase']!='WAITING':
+                    self.scan_ages.append(now-packet['scan_measured_at'])
+                    require(now-packet['scan_measured_at']<=.2,'NATIVE_SCAN_AGE')
+    def wait_for(node,predicate,until,message):
+        while time.monotonic()<until and time.time()<deadline-25:
+            rclpy.spin_once(node,timeout_sec=.005)
+            require(not stack.failed(),'NAV2_SERVER_EXIT')
+            if predicate():return
+        raise TimeoutError(message)
+    def query_states(node,startup_until,required_state):
+        values={};at={}
+        for name in NODES:
+            client=node.states[name];wait_for(node,client.service_is_ready,min(startup_until,time.monotonic()+2.),'GET_STATE_SERVICE '+name)
+            future=client.call_async(GetState.Request());wait_for(node,future.done,min(startup_until,time.monotonic()+2.),'GET_STATE_RESPONSE '+name)
+            values[name]=future.result().current_state.id;at[name]=time.monotonic()
+            require(values[name]==required_state,'UNEXPECTED_LIFECYCLE_STATE '+name)
+        return values,at
+    os.chdir(R);os.sched_setaffinity(0,set(sorted(os.sched_getaffinity(0))[:3]));out=Path(task['output']);rosout=out/'ros';rosout.mkdir(exist_ok=False)
+    rclpy.init();node=None;stack=Stack(rosout,task['nav2_params']);start=time.monotonic();result=dict(passed=False,navigation_action_sent=False);reason='STARTUP';proof=[]
+    from executor_dispatch import ConcurrentSpin
+    dispatch=ConcurrentSpin(rclpy);dispatch.__enter__()
+    try:
+        node=Bridge();stack.start();until=start+35.
+        wait_for(node,lambda:node.latest is not None,until,'REAL_T0_NOT_RECEIVED')
+        require(node.latest['native_tick']==0 and node.latest['sim_time']==0.,'NATIVE_ADVANCED_DURING_STARTUP')
+        for _ in range(2):proof.append(query_states(node,until,1))
+        wait_for(node,node.manager.service_is_ready,until,'MANAGER_SERVICE_UNAVAILABLE');request=ManageLifecycleNodes.Request();request.command=0;future=node.manager.call_async(request)
+        wait_for(node,future.done,until,'MANAGER_STARTUP_TIMEOUT');require(future.result().success,'MANAGER_STARTUP_REJECTED')
+        from nav2_msgs.srv import GetCostmap
+        from map_readiness import inspect_map
+        client=node.create_client(GetCostmap,'global_costmap/get_costmap')
+        wait_for(node,client.service_is_ready,until,'GLOBAL_MASTER_SERVICE_NOT_READY')
+        master_proofs=[];all_master_reads=[]
+        while len(master_proofs)<2:
+            future=client.call_async(GetCostmap.Request());wait_for(node,future.done,until,'GLOBAL_MASTER_REPLY_TIMEOUT')
+            proof=inspect_map(future.result().map);proof['checked_at']=time.monotonic();all_master_reads.append(proof)
+            master_proofs=master_proofs+[proof]if proof['passed']else []
+            if len(master_proofs)<2:
+                pause=time.monotonic();wait_for(node,lambda:time.monotonic()-pause>=.55,until,'GLOBAL_MASTER_STABILITY_WAIT')
+        node.destroy_client(client)
+        result['global_master_readiness']=dict(passed=True,accepted_replies=master_proofs,all_reads=all_master_reads,native_tick=node.latest['native_tick'])
+        require(node.latest['native_tick']==0,'MASTER_READY_WAIT_ADVANCED_NATIVE')
+        states,checked=query_states(node,until,3);require(time.monotonic()-min(checked.values())<=1.,'ACTIVE_PROOF_TOO_OLD')
+        arm=dict(kind='arm',native_tick=0,sim_time=0.,states=states,checked_at=checked,issued_at=time.monotonic());node.send(arm)
+        result.update(active_states=states,active_checked_at=checked,arm_issued_at=arm['issued_at'])
+        wait_for(node,lambda:node.latest['phase']=='RUNNING',until,'NATIVE_ARM_ACK_MISSING')
+        require_goal_allowed(node.latest,task['run_id'],time.monotonic())
+        g=NavigateToPose.Goal();g.pose.header.stamp=node.get_clock().now().to_msg();g.pose.header.frame_id='map';g.pose.pose.position.x=task['goal_xy'][0];g.pose.pose.position.y=task['goal_xy'][1];g.pose.pose.orientation.z=math.sin(task['goal_yaw']/2);g.pose.pose.orientation.w=math.cos(task['goal_yaw']/2)
+        wait_for(node,node.action.server_is_ready,until,'NAVIGATION_ACTION_NOT_READY')
+        result['navigation_action_sent']=True;result['goal_sent_at']=time.monotonic();goal_until=result['goal_sent_at']+task['wall_limit_s']
+        sys.path.insert(0,str(C))
+        def check_servers():require(not stack.failed(),'NAV2_SERVER_EXIT')
+        if task['stage']=='component':
+            (out/'RECOVERY_CORRIDORS.json').write_text('[]\n')
+            from closed_handoff import run as component_run
+            response,events=component_run(node,goal_until,deadline,rclpy.spin_once,wait_for,require,check_servers)
+        else:
+            from supervise import supervise
+            response,events=supervise(node,g,goal_until,deadline,rclpy.spin_once,wait_for,require,check_servers)
+        result.update(action_status=response.status,action_error_code=response.result.error_code,passed=response.status==4,refuge_events=len(events));reason='NAV2_SUCCEEDED'if result['passed']else'NAV2_FUNCTIONAL_FAILURE'
+    except BaseException as e:reason='ROS_INTERFACE_OR_FUNCTIONAL_STOP';result.update(error=repr(e),traceback=traceback.format_exc())
+    finally:
+        if node:node.send(dict(kind='stop',issued_at=time.monotonic(),reason=reason))
+        dispatch.close()
+        result.update(reason=reason,wall_s=time.monotonic()-start,readiness_probes=proof)
+        if node:
+            (out/'FORWARD_LIFECYCLE.json').write_text(json.dumps(node.forward.events,indent=2)+'\n')
+            (out/'REFUGE_SUPERVISION.json').write_text(json.dumps(dict(events=node.supervision_events,breadcrumbs=node.breadcrumbs,actor_truth_used=False),indent=2)+'\n')
+            (out/'ADMISSION_DEFERRALS.json').write_text(json.dumps(node.admission_deferrals)+'\n')
+            import gzip
+            with gzip.open(out/'COMMAND_TUBES.json.gz','wt')as tube_file:json.dump(node.tube_decisions,tube_file)
+            node.motion.save();(out/'COSTMAP_SNAPSHOT_INDEX.json').write_text(json.dumps(node.costmap_snapshots,indent=2)+'\n')
+            node.send(dict(kind='stop',issued_at=time.monotonic(),reason=reason));result.update(odometry_messages=node.odometry_messages,cmd_vel_messages=len(node.commands),plan_messages=len(node.plans),maximum_observation_age_s=max(node.ages,default=None),maximum_scan_age_s=max(node.scan_ages,default=None),last_observation=node.latest)
+            (out/'COMMANDS.json').write_text(json.dumps(dict(cmd_vel=node.commands,cmd_vel_nav=node.nav_commands))+'\n');(out/'PLANS.json').write_text(json.dumps(node.plans)+'\n');node.sock.close();Path(node.address).unlink(missing_ok=True)
+        (out/'ROS_RESULT.json').write_text(json.dumps(result,indent=2)+'\n');stack.close()
+        if node:node.destroy_node()
+        rclpy.shutdown()
+    return result
+def main():
+    task=json.loads(Path(sys.argv[1]).read_text());receipt=json.loads(Path(sys.argv[2]).read_text());result=run(task,receipt,file_sha(C/'SOURCE_FREEZE.json'));return 0 if result['passed']else 1
+if __name__=='__main__':sys.exit(main())

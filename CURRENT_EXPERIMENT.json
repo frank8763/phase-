@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v974_daytime_binding_gate/SOURCE_FREEZE.json",
-  "source_revision": "V968_INTENDED_SCIENCE_EXPLICIT_BINDINGS_AND_T0_GUARD",
-  "protocol": "experiments/v974_daytime_binding_gate/PROTOCOL.md",
-  "report": "docs/RPCCR_DAYTIME_BINDING_V974_REPORT.md",
+  "decision_freeze": "experiments/v977_state_consistent_recovery/SOURCE_FREEZE.json",
+  "source_revision": "V977_STATE_CONSISTENT_RECOVERY_SOURCE_ONLY",
+  "protocol": "experiments/v977_state_consistent_recovery/PROTOCOL.md",
+  "report": "docs/RPCCR_STATE_CONSISTENT_RECOVERY_V977_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -7359,12 +7359,12 @@
   "rpccr_mainline": {
     "nominal_controller": "V884/V885_FeasibleRPP_frozen",
     "mppi_branches": "V929/V931_CLOSED_FAILED_BASELINES_EXCLUDED_FROM_MAINLINE",
-    "latest_candidate": "V943_RPCCR_REFERENCE_LOSS_SEGMENT_NAVIGATION",
+    "latest_candidate": "V977_STATE_CONSISTENT_RECOVERY_SOURCE_ONLY",
     "dynamic_acceptance_passed": false,
-    "latest_candidate_status": "NOT_PASSED",
+    "latest_candidate_status": "SOURCE_AND_ZERO_MODEL_QUALIFIED_ONLY",
     "next_physical_authorized": false,
-    "scientific_blocker": "Actual reference-loss recovery triggered and advanced .580617m; new supervisory50ms body freshness guard aborted before segment/goal completion. Exact failing snapshot unsaved.",
-    "decision_doc": "docs/RPCCR_REFERENCE_LOSS_V943_REPORT.md"
+    "scientific_blocker": "New steering-state references and exact production software gates pass two saved states; physical dynamics/control/contact and full-route renewed-corridor chain still untested.",
+    "decision_doc": "docs/RPCCR_STATE_CONSISTENT_RECOVERY_V977_REPORT.md"
   },
   "v943_rpccr_segment_navigation": {
     "closed": true,
@@ -7691,5 +7691,28 @@
     "deleted_cache_bytes": 183978089,
     "guard_restored": true,
     "execution_lock_idle_at_closure": true
+  },
+  "v977_source_preparation": {
+    "closed": true,
+    "status": "SOURCE_AND_ZERO_MODEL_QUALIFIED_ONLY",
+    "source_frozen": true,
+    "fixed_saved_states": 2,
+    "actual_RPP_software_peer_cases": 2,
+    "production_supervisor_case_qualifications": 2,
+    "contract_checks": 16,
+    "models": 0,
+    "actual_native": 0,
+    "private_native": 0,
+    "replay_native": 0,
+    "new_navigation_samples": 0,
+    "training": 0,
+    "hardware": 0,
+    "physical_tracking_qualified": false,
+    "physical_ready": false,
+    "models_authorized": false,
+    "automatic_overnight": false,
+    "all_old_outcomes_preserved": true,
+    "report": "docs/RPCCR_STATE_CONSISTENT_RECOVERY_V977_REPORT.md",
+    "evidence": "records/nav2_v977_20261110/FINAL_ZERO_MODEL_AUDIT.json"
   }
 }

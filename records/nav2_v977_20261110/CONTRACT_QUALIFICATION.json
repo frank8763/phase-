@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": {
+    "no_install_before_normal_quiescence": true,
+    "normal_running_result_cannot_grant_recovery": true,
+    "one_controller_and_tighter_goal_checker": true,
+    "duplicate_follow_accept_rejected": true,
+    "overlap_recovery_request_rejected": true,
+    "normal_periodic_plan_cannot_overwrite": true,
+    "online_heading_violation_stops": true,
+    "online_position_violation_stops": true,
+    "steering_drift_requires_new_reference": true,
+    "changed_reference_not_installed": true,
+    "committed_path_mutation_stops": true,
+    "tracking_envelope_retained_through_stopping": true,
+    "nonfinite_native_pose_rejected": true,
+    "model_authority_denied": true,
+    "actual_recovery_dispatch_never_selects_other_motion": true,
+    "dispatch_probe_red_capable_in_normal_mode": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "physical_authority": false,
+  "actual_dispatch_AST_exercised": true,
+  "qualified_reference_threshold": 0.2525358465882065
+}

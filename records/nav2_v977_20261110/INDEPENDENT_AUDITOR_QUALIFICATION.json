@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "checks": {
+    "state0_independent_full_cycle_reference": true,
+    "state1_independent_full_cycle_reference": true,
+    "reference_tampering_rejected": true,
+    "old_actual_heading_failure_still_rejected": true
+  },
+  "proofs": [
+    {
+      "passed": true,
+      "full_cycle_clearance_lower_m": 0.2132631827977123,
+      "actual_progress_lower_m": 0.9819817264539604,
+      "maximum_curvature": 0.49423393806488275,
+      "maximum_virtual_steering_rate": 0.6000000000000005,
+      "independent_dense_samples": 2201,
+      "models": 0,
+      "integrations": 0,
+      "physical_tracking_claim": false
+    },
+    {
+      "passed": true,
+      "full_cycle_clearance_lower_m": 0.19413212676807803,
+      "actual_progress_lower_m": 0.4500812365561782,
+      "maximum_curvature": 0.006399628255629232,
+      "maximum_virtual_steering_rate": 0.3839758082465242,
+      "independent_dense_samples": 1201,
+      "models": 0,
+      "integrations": 0,
+      "physical_tracking_claim": false
+    }
+  ],
+  "original_actual_tracking": {
+    "passed": false,
+    "maximum_position_error_m": 0.030709229995515303,
+    "maximum_heading_error_rad": 0.08960252360905543,
+    "conservative_reference_sampling_heading_allowance_rad": 0.00018969259625000002,
+    "unchanged_position_limit_m": 0.04,
+    "unchanged_heading_limit_rad": 0.035,
+    "native_or_peer_samples": 1352,
+    "models": 0,
+    "integrations": 0
+  },
+  "models": 0,
+  "integrations": 0,
+  "physical_authority": false
+}

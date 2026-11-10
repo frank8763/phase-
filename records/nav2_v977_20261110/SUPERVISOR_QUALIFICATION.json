@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "checks": {
+    "case0": true,
+    "case1": true,
+    "actual_new_modules_selected": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "action_peers_only": true,
+  "physical_authority": false,
+  "rows": [
+    {
+      "index": 0,
+      "checks": {
+        "completed": true,
+        "actual_watchdog_triggered_once": true,
+        "cancel_precedes_follow": true,
+        "original_goal_resumed": true,
+        "one_follow": true,
+        "ownership_released_only_after_finish": true,
+        "updated_constructor_source": true,
+        "full_cycle_revalidation": true
+      },
+      "events": [
+        "FORWARD_RESUME",
+        "NORMAL_GOAL_1",
+        "NORMAL_CANCEL_ACK",
+        "REFERENCE_INSTALLED",
+        "ONE_RECOVERY_FOLLOW_SENT",
+        "FORWARD_RESUME",
+        "NORMAL_GOAL_2"
+      ],
+      "models": 0,
+      "integrations": 0
+    },
+    {
+      "index": 1,
+      "checks": {
+        "completed": true,
+        "actual_watchdog_triggered_once": true,
+        "cancel_precedes_follow": true,
+        "original_goal_resumed": true,
+        "one_follow": true,
+        "ownership_released_only_after_finish": true,
+        "updated_constructor_source": true,
+        "full_cycle_revalidation": true
+      },
+      "events": [
+        "FORWARD_RESUME",
+        "NORMAL_GOAL_1",
+        "NORMAL_CANCEL_ACK",
+        "REFERENCE_INSTALLED",
+        "ONE_RECOVERY_FOLLOW_SENT",
+        "FORWARD_RESUME",
+        "NORMAL_GOAL_2"
+      ],
+      "models": 0,
+      "integrations": 0
+    }
+  ]
+}
