@@ -1,0 +1,100 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "error": {
+    "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1006_navigation_entry_continuation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+  },
+  "rows": [
+    {
+      "task_id": "main_we",
+      "slot": 0,
+      "stage": "we_development",
+      "route": "we",
+      "initial_axis_direction": null,
+      "passed": false,
+      "evidence_passed": false,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1006/main_we",
+      "actual_native": 10266,
+      "replay_native": 10266,
+      "private_native": 0,
+      "goal_m": 8.001124935030383,
+      "minimum_clearance_m": null,
+      "error": "AssertionError('CAUSAL_SENSOR_FORECAST_MAP_OR_PLANNER_AUDIT')"
+    }
+  ],
+  "preflight_summaries": [
+    {
+      "reused_original_three_true_t0": true,
+      "passed": true,
+      "rows": [
+        {
+          "task_id": "main_we",
+          "passed": true,
+          "actual_native": 0,
+          "replay_native": 0,
+          "models_initialized": 1
+        },
+        {
+          "task_id": "main_ns",
+          "passed": true,
+          "actual_native": 0,
+          "replay_native": 0,
+          "models_initialized": 1
+        },
+        {
+          "task_id": "main_ew",
+          "passed": true,
+          "actual_native": 0,
+          "replay_native": 0,
+          "models_initialized": 1
+        }
+      ],
+      "models_initialized": 3,
+      "actual_native": 0,
+      "replay_native": 0,
+      "private_native": 0,
+      "models_during_audit": 0
+    }
+  ],
+  "unexecuted_tasks": [
+    "repeat_we",
+    "main_ns",
+    "repeat_ns",
+    "main_ew",
+    "repeat_ew",
+    "slot01",
+    "slot02",
+    "slot03",
+    "slot04",
+    "slot05",
+    "slot06",
+    "slot07",
+    "slot08",
+    "slot09",
+    "slot10",
+    "slot11",
+    "slot12",
+    "slot13",
+    "slot14",
+    "slot15",
+    "slot16",
+    "slot17",
+    "slot18",
+    "slot19",
+    "slot20",
+    "slot21",
+    "slot22",
+    "slot23",
+    "slot24",
+    "repeat01",
+    "repeat09",
+    "repeat17"
+  ],
+  "models_authorized": false,
+  "closed_unix": 1794310320.0749,
+  "absolute_deadline_unix": 1794355200.0,
+  "prerequisite_deadline_unchanged": 1794312893.8843997,
+  "new24_executed": 0,
+  "model_authority": false
+}

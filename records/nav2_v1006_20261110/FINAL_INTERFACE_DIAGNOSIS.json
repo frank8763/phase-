@@ -1,0 +1,46 @@
+{
+  "primary": {
+    "reason": "ACTUAL_INSTALLED_NAV2_FOLLOWPATH_EMPTY_GOAL_CHECKER_NAME",
+    "first_log_lines": [
+      "[ERROR] [1794310212.460922242] [controller_server]: FollowPath called with goal_checker name  in parameter 'current_goal_checker', which does not exist. Available goal checkers are: general_goal_checker recovery_goal_checker .",
+      "[ERROR] [1794310212.460959048] [controller_server]: Failed to find goal checker name: ",
+      "[ERROR] [1794310213.500734086] [controller_server]: FollowPath called with goal_checker name  in parameter 'current_goal_checker', which does not exist. Available goal checkers are: general_goal_checker recovery_goal_checker .",
+      "[ERROR] [1794310213.500763769] [controller_server]: Failed to find goal checker name: "
+    ],
+    "matching_errors": 160,
+    "source_path": "runs/v858_nav2_verified/v1006/main_we/ros/controller_server.console",
+    "source_sha256_at_detection": "57c568962462984922510acc07278a6a4bb426f2eeb68ff89133d9f45d1557a1",
+    "observed_at_unix": 1794310312.971978,
+    "actual_partial": {
+      "status": "RUNNING",
+      "actual_native": 10001,
+      "sim_time": 100.01000000001426,
+      "body": [
+        -4.001096941742601,
+        -1.9999544602273998,
+        -4.0577157155308043e-07,
+        -1.0563076438988806e-05,
+        -3.404819143201877e-09
+      ],
+      "armed_at": 207719.257050087,
+      "maximum_wall_lag_s": 0.0044055359903723
+    },
+    "scientific_recovery_not_reached": true,
+    "stop_without_source_repair": true
+  },
+  "consequences": [
+    "Vehicle remained at start; no committed recovery profile reached",
+    "Subsequent stale coherent observation arose after native stop",
+    "Dynamic motion audit cannot pass without actual actor discovery; it is not the primary interface cause"
+  ],
+  "full_route_native_exact": 10266,
+  "full_route_replay_exact": 10266,
+  "private_native_exact": 0,
+  "minimum_actual_clearance_m": 0.31498918194116166,
+  "bad_contacts": 0,
+  "old_failures_and_windows_unchanged": true,
+  "model_authority_closed": true,
+  "driver_exited": true,
+  "phase_execution_lock_idle": true,
+  "models_during_diagnosis": 0
+}

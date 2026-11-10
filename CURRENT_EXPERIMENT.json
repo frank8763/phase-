@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1004_CLOSED",
+  "source_revision": "V1006_CLOSED_NAV2_EMPTY_GOAL_CHECKER_INTERFACE",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -8939,7 +8939,7 @@
     "status": "NOT_PASSED",
     "error": {
       "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
-      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1004_planned_input_navigation/campaign.py\", line 62, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1006_navigation_entry_continuation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
     },
     "rows": [
       {
@@ -8950,17 +8950,18 @@
         "initial_axis_direction": null,
         "passed": false,
         "evidence_passed": false,
-        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1004/main_we",
-        "actual_native": 0,
-        "replay_native": 0,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1006/main_we",
+        "actual_native": 10266,
+        "replay_native": 10266,
         "private_native": 0,
-        "goal_m": 8.0,
+        "goal_m": 8.001124935030383,
         "minimum_clearance_m": null,
-        "error": "FileNotFoundError(2, 'No such file or directory')"
+        "error": "AssertionError('CAUSAL_SENSOR_FORECAST_MAP_OR_PLANNER_AUDIT')"
       }
     ],
     "preflight_summaries": [
       {
+        "reused_original_three_true_t0": true,
         "passed": true,
         "rows": [
           {
@@ -8969,34 +8970,14 @@
             "actual_native": 0,
             "replay_native": 0,
             "models_initialized": 1
-          }
-        ],
-        "models_initialized": 1,
-        "actual_native": 0,
-        "replay_native": 0,
-        "private_native": 0,
-        "models_during_audit": 0
-      },
-      {
-        "passed": true,
-        "rows": [
+          },
           {
             "task_id": "main_ns",
             "passed": true,
             "actual_native": 0,
             "replay_native": 0,
             "models_initialized": 1
-          }
-        ],
-        "models_initialized": 1,
-        "actual_native": 0,
-        "replay_native": 0,
-        "private_native": 0,
-        "models_during_audit": 0
-      },
-      {
-        "passed": true,
-        "rows": [
+          },
           {
             "task_id": "main_ew",
             "passed": true,
@@ -9005,7 +8986,7 @@
             "models_initialized": 1
           }
         ],
-        "models_initialized": 1,
+        "models_initialized": 3,
         "actual_native": 0,
         "replay_native": 0,
         "private_native": 0,
@@ -9047,9 +9028,38 @@
       "repeat17"
     ],
     "models_authorized": false,
-    "closed_unix": 1794309019.4845774,
+    "closed_unix": 1794310320.0749,
     "absolute_deadline_unix": 1794355200.0,
     "prerequisite_deadline_unchanged": 1794312893.8843997,
     "new24_executed": 0
+  },
+  "v1006_final_diagnosis": {
+    "closed": true,
+    "component6083_passed": true,
+    "component7814_passed": true,
+    "original_V1004_prearm_abort_native": 0,
+    "same_version_WEST_EAST_passed": false,
+    "V1006_new_native": 10266,
+    "V1006_own_replay_native": 10266,
+    "V1006_private_native": 0,
+    "raw_evidence_remote_sha_verified": true,
+    "full_route_failure": "Normal Nav2 BT FollowPath has empty goal_checker_id with two goal checker plugins, no forward control dispatched",
+    "recovery_profiles_executed": 0,
+    "confirmation_executed": 0,
+    "confirmation_unexecuted": 24,
+    "frozen_source_changed": false,
+    "second_exception_not_authorized": true,
+    "models_authorized": false
+  },
+  "v1007_goal_checker_source_diagnosis": {
+    "models": 0,
+    "physical_integrations": 0,
+    "static_binding_qualified": true,
+    "installed_end_to_end_software_qualified": false,
+    "software_probe_failed_before_FollowPath": true,
+    "green_action_probe_unexecuted": true,
+    "physics_authorized": false,
+    "source": "experiments/v1007_goal_checker_software_gate",
+    "report": "docs/RPCCR_NAV2_GOAL_CHECKER_V1006_V1007_DIAGNOSIS.md"
   }
 }

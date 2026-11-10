@@ -1,0 +1,22 @@
+{
+  "status": "NOT_PASSED",
+  "error": {
+    "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1006_navigation_entry_continuation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+  },
+  "known_counts": {
+    "initialized_known": 1,
+    "navigation_known": 10266,
+    "replay_known": 10266,
+    "private_known": 0
+  },
+  "unknown_counts": [],
+  "complete24_rate": null,
+  "confirmation_executed": 0,
+  "confirmation_unexecuted": 24,
+  "old_v1004_prearm_abort_preserved": true,
+  "original_precondition_deadline_unchanged": 1794312893.8843997,
+  "absolute_deadline_unix": 1794355200.0,
+  "models_during_closure": 0,
+  "no_second_push": true
+}

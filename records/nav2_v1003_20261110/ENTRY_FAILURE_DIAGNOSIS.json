@@ -1,0 +1,32 @@
+{
+  "primary_failure": {
+    "error": "KeyError('origin_native_tick')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1004_planned_input_navigation/launch_one.py\", line 30, in main\n    wait_ready(jobs[0],out,task_clock,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1004_planned_input_navigation/budget.py\", line 49, in wait_ready\n    assert ready['origin_validated']is True and ready['native_tick']==task['origin_native_tick'],'WRONG_CANONICAL_READY_ORIGIN'\nKeyError: 'origin_native_tick'\n"
+  },
+  "secondary_audit_error": "FileNotFoundError(2, 'No such file or directory')",
+  "models_loaded_for_aborted_main": 1,
+  "navigation_native": 0,
+  "private_native": 0,
+  "replay_native": 0,
+  "arm_not_sent": true,
+  "exact_accounting": {
+    "status": "PREARM_ABORT",
+    "final": true,
+    "environment_initialization_attempted": true,
+    "environment_initialization_completed": true,
+    "historical_restore_native": 0,
+    "actual_native_exact": 0,
+    "native_calls_completed": 0,
+    "new_branch_native_exact": 0,
+    "new_branch_native_observed_lower_bound": 0,
+    "count_status": "COMPLETED_RETURN_COUNT",
+    "own_full_trace_replay_native_exact": 0,
+    "replay_status": "NO_EXECUTED_NATIVE_PREFIX",
+    "full_safety_verdict": false,
+    "navigation_passed": false,
+    "evidence_save_complete": true
+  },
+  "original_failure_preserved": true,
+  "source_not_changed": true,
+  "models": 0
+}

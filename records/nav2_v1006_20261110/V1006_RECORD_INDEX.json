@@ -1,0 +1,51 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-rpccr-input-consistent-v1003-20261110",
+  "source_commit": "643aa3e10cd8d90860a5ce1223251b3d06abfc16",
+  "source_increment_in_release": true,
+  "summary": {
+    "status": "NOT_PASSED",
+    "error": {
+      "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1006_navigation_entry_continuation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+    },
+    "known_counts": {
+      "initialized_known": 1,
+      "navigation_known": 10266,
+      "replay_known": 10266,
+      "private_known": 0
+    },
+    "unknown_counts": [],
+    "complete24_rate": null,
+    "confirmation_executed": 0,
+    "confirmation_unexecuted": 24,
+    "old_v1004_prearm_abort_preserved": true,
+    "original_precondition_deadline_unchanged": 1794312893.8843997,
+    "absolute_deadline_unix": 1794355200.0,
+    "models_during_closure": 0,
+    "no_second_push": true
+  },
+  "archives": [
+    {
+      "group": "v1006-single-entry-continuation",
+      "source_files": 233,
+      "raw_bytes": 65520568,
+      "archive_bytes": 52729391,
+      "archive_sha256": "9e3b6e38aca2b35c0adbd8804494bd4c0b41e4528fadfac5586da32f520562e3",
+      "parts": [
+        {
+          "name": "v1006-single-entry-continuation.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "55614fe94b320a4325d3d4283ffe9e12da5f77621ce86868d12ce4cc1d94bad4"
+        },
+        {
+          "name": "v1006-single-entry-continuation.tar.zst.part001",
+          "bytes": 19174959,
+          "sha256": "90456a8ec61b55d04ef06b97f43f3f00b8b73de7072b2a42f893ce00d04dea93"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ]
+}
