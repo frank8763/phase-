@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "checks": {
+    "saved_fault_accepts_FOLLOW_RECOVERY": true,
+    "saved_fault_accepts_STOPPED_REPLAN": true,
+    "independent_curve_within_explicit_numerical_reserves": true,
+    "reference_and_controller_path_unchanged": true,
+    "original_position_heading_limits": true,
+    "all_26_available_saved_poses_online_and_independent": true,
+    "both_fixed_saved_state_references_qualify": true,
+    "on_reference_and_angle_wrap_all_coarse_samples": true,
+    "altered_proposal_rejected": true,
+    "all_violation_negatives": true,
+    "independent_real_heading_violation_stays_red": true,
+    "production_transaction_dispatch_bound": true,
+    "component_call_uses_same_guard_API": true
+  },
+  "negatives": [
+    {
+      "name": "true_heading_violation_-1.0",
+      "passed": true
+    },
+    {
+      "name": "true_heading_violation_1.0",
+      "passed": true
+    },
+    {
+      "name": "position_violation",
+      "passed": true
+    },
+    {
+      "name": "nonfinite",
+      "passed": true
+    },
+    {
+      "name": "committed_path_mutation",
+      "passed": true
+    },
+    {
+      "name": "dense_certificate_mutation",
+      "passed": true
+    }
+  ],
+  "saved_fault": {
+    "reference_index": 69,
+    "reference_pose": [
+      0.345222097179764,
+      -0.6844376457107255,
+      0.04670822466766908
+    ],
+    "position_error_m": 0.0025876536061589803,
+    "heading_error_rad": 0.0314397344139437,
+    "position_upper_m": 0.00284765360615898,
+    "heading_upper_rad": 0.031639427010193705,
+    "position_limit_m": 0.04,
+    "heading_limit_rad": 0.035,
+    "maximum_arc_grid_m": 0.0005,
+    "reference_unchanged": true
+  },
+  "saved_pose_independent": {
+    "passed": true,
+    "maximum_position_error_m": 0.0026327046275037265,
+    "maximum_heading_error_rad": 0.03143909609110568,
+    "maximum_position_upper_m": 0.0028927046275037268,
+    "maximum_heading_upper_rad": 0.03163878868735568,
+    "unchanged_position_limit_m": 0.04,
+    "unchanged_heading_limit_rad": 0.035,
+    "independent_method": "separate .5mm midpoint reconstruction",
+    "samples": 26,
+    "models": 0,
+    "integrations": 0
+  },
+  "both_fixed_state_independent": [
+    {
+      "passed": true,
+      "maximum_position_error_m": 6.908920858950319e-07,
+      "maximum_heading_error_rad": 6.383226768824635e-07,
+      "maximum_position_upper_m": 0.00026069089208589506,
+      "maximum_heading_upper_rad": 0.00020033091892688248,
+      "unchanged_position_limit_m": 0.04,
+      "unchanged_heading_limit_rad": 0.035,
+      "independent_method": "separate .5mm midpoint reconstruction",
+      "samples": 89,
+      "models": 0,
+      "integrations": 0
+    },
+    {
+      "passed": true,
+      "maximum_position_error_m": 3.453257683660902e-07,
+      "maximum_heading_error_rad": 5.76027669407092e-07,
+      "maximum_position_upper_m": 0.0002603453257683661,
+      "maximum_heading_upper_rad": 0.0002002686239194071,
+      "unchanged_position_limit_m": 0.04,
+      "unchanged_heading_limit_rad": 0.035,
+      "independent_method": "separate .5mm midpoint reconstruction",
+      "samples": 49,
+      "models": 0,
+      "integrations": 0
+    }
+  ],
+  "independent_dense_maximum_xyz_error": [
+    9.602021844301589e-08,
+    6.841872836060858e-07,
+    6.383228393774809e-07
+  ],
+  "dense_samples": 2201,
+  "grid_m": 0.0005,
+  "monitoring_measured_s": {
+    "median": 0.00013770500663667917,
+    "p99": 0.0001590730098541826,
+    "maximum": 0.000910519011085853
+  },
+  "timing_scope": "1000 local saved-pose calls; no real-time guarantee",
+  "models": 0,
+  "actual_native": 0,
+  "private_native": 0,
+  "replay_native": 0,
+  "physical_ready": false,
+  "old_outcome_unchanged": "V979_NOT_PASSED"
+}
