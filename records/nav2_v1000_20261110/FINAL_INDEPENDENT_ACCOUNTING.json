@@ -1,0 +1,57 @@
+{
+  "closed": true,
+  "status": "TWO_CAUSAL_FINITE_PROGRESS_REFERENCES_SOURCE_QUALIFIED",
+  "models": 0,
+  "integrations": 0,
+  "private_dynamics_predictions": 0,
+  "physical_replay": 0,
+  "new_navigation_trials": 0,
+  "new24_executed": 0,
+  "reference_ready": true,
+  "controller_ready": false,
+  "causal_planned_input_predictor_ready": false,
+  "physical_ready": false,
+  "models_authorized": false,
+  "original_failures_unchanged": true,
+  "reference_qualification_states": [
+    {
+      "index": 0,
+      "expanded": 7,
+      "length_m": 0.6000000000000001,
+      "proof": {
+        "passed": true,
+        "independent_full_cycle_lower_m": 0.3018082876469879,
+        "actual_progress_lower_m": 0.4863251068072563,
+        "reconstruction_error": 5.14501539414236e-07,
+        "models": 0,
+        "integrations": 0,
+        "physical_tracking_qualified": false
+      }
+    },
+    {
+      "index": 1,
+      "expanded": 7,
+      "length_m": 0.6000000000000001,
+      "proof": {
+        "passed": true,
+        "independent_full_cycle_lower_m": 0.19411421844280952,
+        "actual_progress_lower_m": 0.4501925864115704,
+        "reconstruction_error": 4.6429044957968513e-07,
+        "models": 0,
+        "integrations": 0,
+        "physical_tracking_qualified": false
+      }
+    }
+  ],
+  "negative_cases": 8,
+  "source_only_closed_unix": 1794305942.3996487,
+  "guard_original": true,
+  "execution_lock_idle": true,
+  "actual_counts": {
+    "vehicle_tasks_initialized": 0,
+    "historical_native": 0,
+    "new_actual_native": 0,
+    "replay_native": 0,
+    "private_native": 0
+  }
+}

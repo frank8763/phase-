@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v995_sim_time_response/SOURCE_FREEZE.json",
-  "source_revision": "V995_DIAGNOSTICS_PASS_V997_ZERO_MODEL_REJECTED",
-  "protocol": "experiments/v995_sim_time_response/PROTOCOL.md",
-  "report": "docs/RPCCR_SIM_TIME_RECOVERY_V995_V998_REPORT.md",
+  "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
+  "source_revision": "V1000_FINITE_PROGRESS_REFERENCE_SOURCE_QUALIFIED",
+  "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
+  "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -8875,5 +8875,55 @@
     "storage_finalized": true,
     "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-rpccr-sim-time-response-v995-20261110",
     "cache_deleted_bytes": 200373853
+  },
+  "v1000_source_qualification": {
+    "closed": true,
+    "status": "TWO_CAUSAL_FINITE_PROGRESS_REFERENCES_SOURCE_QUALIFIED",
+    "models": 0,
+    "integrations": 0,
+    "private_dynamics_predictions": 0,
+    "physical_replay": 0,
+    "new_navigation_trials": 0,
+    "new24_executed": 0,
+    "reference_ready": true,
+    "controller_ready": false,
+    "causal_planned_input_predictor_ready": false,
+    "physical_ready": false,
+    "models_authorized": false,
+    "original_failures_unchanged": true,
+    "reference_qualification_states": [
+      {
+        "index": 0,
+        "expanded": 7,
+        "length_m": 0.6000000000000001,
+        "proof": {
+          "passed": true,
+          "independent_full_cycle_lower_m": 0.3018082876469879,
+          "actual_progress_lower_m": 0.4863251068072563,
+          "reconstruction_error": 5.14501539414236e-07,
+          "models": 0,
+          "integrations": 0,
+          "physical_tracking_qualified": false
+        }
+      },
+      {
+        "index": 1,
+        "expanded": 7,
+        "length_m": 0.6000000000000001,
+        "proof": {
+          "passed": true,
+          "independent_full_cycle_lower_m": 0.19411421844280952,
+          "actual_progress_lower_m": 0.4501925864115704,
+          "reconstruction_error": 4.6429044957968513e-07,
+          "models": 0,
+          "integrations": 0,
+          "physical_tracking_qualified": false
+        }
+      }
+    ],
+    "negative_cases": 8,
+    "source_only_closed_unix": 1794305942.3996487,
+    "guard_original": true,
+    "execution_lock_idle": true
   }
 }

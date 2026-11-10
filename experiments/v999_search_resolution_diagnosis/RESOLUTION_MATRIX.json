@@ -1,0 +1,36 @@
+{
+  "variants": [
+    {
+      "name": "original",
+      "xy_res": 0.05,
+      "yaw_bins": 72,
+      "steering_bins": 2
+    },
+    {
+      "name": "yaw_only",
+      "xy_res": 0.05,
+      "yaw_bins": 144,
+      "steering_bins": 2
+    },
+    {
+      "name": "xy_only",
+      "xy_res": 0.025,
+      "yaw_bins": 72,
+      "steering_bins": 2
+    },
+    {
+      "name": "xy_and_yaw",
+      "xy_res": 0.025,
+      "yaw_bins": 144,
+      "steering_bins": 2
+    }
+  ],
+  "states": [
+    0,
+    1
+  ],
+  "fixed_max_expansions": 5000,
+  "tests": 8,
+  "model_parameters": "unchanged frozen V997",
+  "max_wall_per_search_s": 60
+}
