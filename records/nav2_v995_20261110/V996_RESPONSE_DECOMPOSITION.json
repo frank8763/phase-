@@ -1,0 +1,145 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "private_predictions": 0,
+  "physics_replay": 0,
+  "root_deadline_unix": 1794309368.6527624,
+  "candidate_preparation_deadline_unix": 1794305724.2398782,
+  "four_fixed_diagnostics_complete": true,
+  "coefficient_gain_a": 0.806021089333047,
+  "coefficient_steer_rate_b": -0.09385557773873891,
+  "held_steady_samples": 400,
+  "fast_active_samples": 81,
+  "descriptive_transient_hypothesis_supported": true,
+  "teacher_forced_future_actual_inputs": true,
+  "open_loop_predictor_qualified": false,
+  "controller_qualified": false,
+  "physical_safety_bound_proven": false,
+  "unique_mechanical_cause_proven": false,
+  "tasks": [
+    {
+      "slot": 0,
+      "name": "held_original_steering",
+      "fit_partition": "gain_calibration",
+      "target_kinematics": {
+        "yaw_rate_rms_rad_s": 0.0024237492791302963,
+        "maximum_heading_residual_rad": 0.01644271355608276,
+        "final_heading_residual_rad": 0.01627771262325656,
+        "movement_heading_residual_rad": 0.015911639213513653,
+        "stop_heading_increment_rad": 0.00036607340974290775
+      },
+      "encoder_kinematics": {
+        "yaw_rate_rms_rad_s": 0.002374278882692922,
+        "maximum_heading_residual_rad": 0.016091875126082015,
+        "final_heading_residual_rad": 0.01592699403592865,
+        "movement_heading_residual_rad": 0.015564698785779967,
+        "stop_heading_increment_rad": 0.0003622952501486816
+      },
+      "teacher_forced_two_coefficient": {
+        "yaw_rate_rms_rad_s": 0.0004828617921781412,
+        "maximum_heading_residual_rad": 0.00026748247852649185,
+        "final_heading_residual_rad": 1.7130974025358345e-05,
+        "movement_heading_residual_rad": -5.7592089944694495e-05,
+        "stop_heading_increment_rad": 7.472306397005284e-05
+      },
+      "target_to_encoder_rate_rms": 5.081107495225537e-05,
+      "encoder_to_body_rate_rms": 0.002374278882692922,
+      "body_rate_log_vs_quaternion_difference_rms": 0.00010167551409035936,
+      "net_actual_virtual_steering_change_rad": 3.359930810797884e-07,
+      "maximum_actual_virtual_steering_rate_rad_s": 0.006986427281691077
+    },
+    {
+      "slot": 1,
+      "name": "ramp_to_straight_fast",
+      "fit_partition": "steer_rate_calibration",
+      "target_kinematics": {
+        "yaw_rate_rms_rad_s": 0.012436084144244946,
+        "maximum_heading_residual_rad": 0.027965430730672102,
+        "final_heading_residual_rad": -0.027904064489830543,
+        "movement_heading_residual_rad": -0.02790491434176019,
+        "stop_heading_increment_rad": 8.498519296455675e-07
+      },
+      "encoder_kinematics": {
+        "yaw_rate_rms_rad_s": 0.011698985693170568,
+        "maximum_heading_residual_rad": 0.026362939424847968,
+        "final_heading_residual_rad": -0.026302517997368026,
+        "movement_heading_residual_rad": -0.026303355055189163,
+        "stop_heading_increment_rad": 8.370578211368274e-07
+      },
+      "teacher_forced_two_coefficient": {
+        "yaw_rate_rms_rad_s": 0.00031482922771721296,
+        "maximum_heading_residual_rad": 0.0001817116004314915,
+        "final_heading_residual_rad": -9.870712909496168e-05,
+        "movement_heading_residual_rad": -9.90914447262029e-05,
+        "stop_heading_increment_rad": 3.843156312412243e-07
+      },
+      "target_to_encoder_rate_rms": 0.0007445970095871231,
+      "encoder_to_body_rate_rms": 0.011698985693170568,
+      "body_rate_log_vs_quaternion_difference_rms": 0.0003414412431606215,
+      "net_actual_virtual_steering_change_rad": 0.2882798180407955,
+      "maximum_actual_virtual_steering_rate_rad_s": 0.5888915239779885
+    },
+    {
+      "slot": 2,
+      "name": "ramp_to_straight_slow",
+      "fit_partition": "held_out_schedule",
+      "target_kinematics": {
+        "yaw_rate_rms_rad_s": 0.006417197448813547,
+        "maximum_heading_residual_rad": 0.025985114544130484,
+        "final_heading_residual_rad": -0.025940807097118834,
+        "movement_heading_residual_rad": -0.02594171688575827,
+        "stop_heading_increment_rad": 9.097886394353327e-07
+      },
+      "encoder_kinematics": {
+        "yaw_rate_rms_rad_s": 0.006051173739533798,
+        "maximum_heading_residual_rad": 0.02450322051347072,
+        "final_heading_residual_rad": -0.02445958494973216,
+        "movement_heading_residual_rad": -0.024460481953117678,
+        "stop_heading_increment_rad": 8.970033855172643e-07
+      },
+      "teacher_forced_two_coefficient": {
+        "yaw_rate_rms_rad_s": 0.00033846066289126104,
+        "maximum_heading_residual_rad": 0.00024908467337839954,
+        "final_heading_residual_rad": -7.043446202471281e-05,
+        "movement_heading_residual_rad": -7.087869085066325e-05,
+        "stop_heading_increment_rad": 4.4422882595044103e-07
+      },
+      "target_to_encoder_rate_rms": 0.00036879252128432127,
+      "encoder_to_body_rate_rms": 0.006051173739533798,
+      "body_rate_log_vs_quaternion_difference_rms": 0.00013252980187951455,
+      "net_actual_virtual_steering_change_rad": 0.28827981490117166,
+      "maximum_actual_virtual_steering_rate_rad_s": 0.14942351513616212
+    },
+    {
+      "slot": 3,
+      "name": "slow_out_and_back",
+      "fit_partition": "held_out_schedule",
+      "target_kinematics": {
+        "yaw_rate_rms_rad_s": 0.010064871134692678,
+        "maximum_heading_residual_rad": 0.020043494123950675,
+        "final_heading_residual_rad": 0.010656480894397634,
+        "movement_heading_residual_rad": 0.009507004361503413,
+        "stop_heading_increment_rad": 0.00114947653289422
+      },
+      "encoder_kinematics": {
+        "yaw_rate_rms_rad_s": 0.009526311554272129,
+        "maximum_heading_residual_rad": 0.01864288890263804,
+        "final_heading_residual_rad": 0.010525075650422652,
+        "movement_heading_residual_rad": 0.00939741441818343,
+        "stop_heading_increment_rad": 0.0011276612322392212
+      },
+      "teacher_forced_two_coefficient": {
+        "yaw_rate_rms_rad_s": 0.0004979504154090715,
+        "maximum_heading_residual_rad": 0.00026748247852649185,
+        "final_heading_residual_rad": 8.612994406701784e-05,
+        "movement_heading_residual_rad": -2.974546682484322e-05,
+        "stop_heading_increment_rad": 0.00011587541089186106
+      },
+      "target_to_encoder_rate_rms": 0.0005446380804896337,
+      "encoder_to_body_rate_rms": 0.009526311554272129,
+      "body_rate_log_vs_quaternion_difference_rms": 0.00014443283423407502,
+      "net_actual_virtual_steering_change_rad": 3.4759990752419867e-07,
+      "maximum_actual_virtual_steering_rate_rad_s": 0.14944879921812426
+    }
+  ]
+}

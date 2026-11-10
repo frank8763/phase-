@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v993_steering_transient_diagnosis/SOURCE_FREEZE.json",
-  "source_revision": "V993_CLOSED_TIMING_INTERRUPTION",
-  "protocol": "experiments/v993_steering_transient_diagnosis/PROTOCOL.md",
-  "report": "docs/RPCCR_STEERING_DIAGNOSTICS_V993_V994_REPORT.md",
+  "decision_freeze": "experiments/v995_sim_time_response/SOURCE_FREEZE.json",
+  "source_revision": "V995_DIAGNOSTICS_PASS_V997_ZERO_MODEL_REJECTED",
+  "protocol": "experiments/v995_sim_time_response/PROTOCOL.md",
+  "report": "docs/RPCCR_SIM_TIME_RECOVERY_V995_V998_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -8827,5 +8827,50 @@
     "storage_finalized": true,
     "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-rpccr-steering-diagnostics-v993-20261110",
     "cache_deleted_bytes": 101154063
+  },
+  "v995_summary": {
+    "passed": true,
+    "rows": 4,
+    "error": null,
+    "real_time_qualified": false
+  },
+  "v995_v997_round_summary": {
+    "closed": true,
+    "status": "DIAGNOSTICS_PASSED_CANDIDATE_REJECTED_ZERO_MODEL",
+    "root_window": {
+      "started_unix": 1794303968.6527624,
+      "deadline_unix": 1794309368.6527624,
+      "started_iso": "2026-11-10T17:46:08.652762+08:00",
+      "deadline_iso": "2026-11-10T19:16:08.652762+08:00",
+      "source_freeze_sha256": "3df6a022215b0ac0a69faa100d21beaf1f1bcf2c9a73694f7c0ca5097979c441",
+      "user_authorization_sha256": "6a13404d57469b3e0ba4439a56d9acdcd3bd664ecc32ef722853b0aa8b044dc2"
+    },
+    "diagnostic_evidence_passed": true,
+    "clock_bridge_passed": true,
+    "candidate_qualification_passed": false,
+    "candidate_physical_tasks_started": 0,
+    "actual_counts": {
+      "vehicle_tasks_initialized": 4,
+      "historical_native": 24332,
+      "new_actual_native": 3200,
+      "replay_native": 27532,
+      "private_native": 0
+    },
+    "models_during_analysis": 0,
+    "unexecuted": [
+      "recovery6083",
+      "recovery7814",
+      "WEST_EAST_main",
+      "WEST_EAST_full_repeat"
+    ],
+    "new_navigation_trials": 0,
+    "new24_executed": 0,
+    "model_authority": false,
+    "closed_unix": 1794305235.9935017,
+    "stop_reason": "Single candidate failed second saved-state reference qualification before model admission",
+    "original_windows_unchanged": true,
+    "guard_original_restored": true,
+    "execution_lock_idle": true,
+    "models_not_running_until_deadline": true
   }
 }

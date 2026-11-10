@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "checks": {
+    "all_four_registered_stimuli_and_both_rate_bounds": true,
+    "no_body_yaw_feedback_or_forged_measurement": true,
+    "same_full_200_tick_stop_no_alignment_after_stop": true,
+    "original_saved_member_sha": true,
+    "four_tasks_one_original_state_same_scene_no_seed_search": true,
+    "new_90min_user_authority": true,
+    "source_parse": true,
+    "declared_probe_adapter_source_selected": true
+  },
+  "cases": [
+    {
+      "slot": 0,
+      "passed": true,
+      "software_map_calls": 800,
+      "maximum_target_virtual_rate_rad_s": 5.551115123125783e-15
+    },
+    {
+      "slot": 1,
+      "passed": true,
+      "software_map_calls": 800,
+      "maximum_target_virtual_rate_rad_s": 0.6000000000000061
+    },
+    {
+      "slot": 2,
+      "passed": true,
+      "software_map_calls": 800,
+      "maximum_target_virtual_rate_rad_s": 0.15000000000000568
+    },
+    {
+      "slot": 3,
+      "passed": true,
+      "software_map_calls": 800,
+      "maximum_target_virtual_rate_rad_s": 0.15000000000001124
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "physical_response_tested": false,
+  "diagnostic_only": true,
+  "navigation_qualified": false,
+  "no_controller_fitted_from_new_responses": true
+}

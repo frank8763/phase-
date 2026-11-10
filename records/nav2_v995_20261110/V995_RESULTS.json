@@ -1,0 +1,826 @@
+[
+  {
+    "slot": 0,
+    "name": "held_original_steering",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v995/held_original_steering",
+    "passed": true,
+    "result": {
+      "passed": true,
+      "status": "FIXED_RESPONSE_RECORDED",
+      "vehicle_tasks_initialized": 1,
+      "historical_native": 6083,
+      "new_actual_native": 800,
+      "replay_native": 6883,
+      "private_native": 0,
+      "stage_deadline_unix": 1794305168.6527624,
+      "task_hard_deadline_unix": 1794304269.055435,
+      "diagnostic_only": true,
+      "execution_mode": "SIMULATION_TIME_FIXED_INPUT_NOT_REALTIME",
+      "real_time_qualified": false,
+      "environment_initialization_attempted": true,
+      "execution": {
+        "passed": true,
+        "error": null,
+        "new_native_count": 800,
+        "completed_new_native_lower_bound": 800,
+        "execution_mode": "SIMULATION_TIME_FIXED_INPUT_NOT_REALTIME",
+        "real_time_qualified": false,
+        "wall_lag_is_not_a_gate_for_offline_fixed_input": true,
+        "gc_prior_flag_restored": true,
+        "timing": {
+          "maximum_wall_lag_s": 0.0,
+          "overrun": null,
+          "stages": {
+            "native_and_record": 0,
+            "body_read": 1,
+            "scan": 2,
+            "partial_write": 3
+          },
+          "inclusive_stages_do_not_add": true,
+          "wall_minus_thread_cpu_is_not_unique_scheduler_attribution": true,
+          "recorded_rows": 1768,
+          "capacity": 16896,
+          "summaries": {
+            "native_and_record": {
+              "calls": 800,
+              "inclusive_wall_s": 0.537878936767811,
+              "p50_s": 0.0006654715107288212,
+              "p95_s": 0.0007183059948147275,
+              "p99_s": 0.0008027098470483906,
+              "maximum_s": 0.0014520449913106859,
+              "maximum_tick_before": 6514,
+              "cpu_at_maximum_s": 0.0007121920000017212
+            },
+            "body_read": {
+              "calls": 800,
+              "inclusive_wall_s": 0.003551166271790862,
+              "p50_s": 4.748988430947065e-06,
+              "p95_s": 4.750007065013051e-06,
+              "p99_s": 5.948866601102043e-06,
+              "maximum_s": 1.3059994671493769e-05,
+              "maximum_tick_before": 6584,
+              "cpu_at_maximum_s": 1.406800000580688e-05
+            },
+            "scan": {
+              "calls": 160,
+              "inclusive_wall_s": 0.10859709090436809,
+              "p50_s": 0.0006696265045320615,
+              "p95_s": 0.0007528557165642269,
+              "p99_s": 0.0007824184122728184,
+              "maximum_s": 0.0007978529902175069,
+              "maximum_tick_before": 6409,
+              "cpu_at_maximum_s": 0.0007972519999981387
+            },
+            "partial_write": {
+              "calls": 8,
+              "inclusive_wall_s": 0.0018592829874251038,
+              "p50_s": 0.00021905350149609149,
+              "p95_s": 0.00034935749717988066,
+              "p99_s": 0.0003909122908953577,
+              "maximum_s": 0.000401300989324227,
+              "maximum_tick_before": 6384,
+              "cpu_at_maximum_s": 0.000402023999996004
+            }
+          }
+        }
+      },
+      "native": {
+        "actual_native": 6883,
+        "fully_recorded_native": 6883,
+        "minimum_actual_clearance_m": 0.2730365667394967,
+        "minimum_self_margin_m": 0.009023768612320182,
+        "bad_contacts": 0,
+        "final_body": [
+          0.4779741106665873,
+          -0.7058935599797926,
+          -0.006500334813385252,
+          7.633464743271064e-06,
+          -3.400332590401171e-06
+        ],
+        "final_translation_speed_m_s": 7.760214422877173e-06,
+        "root_guard_native_count": 6883,
+        "goal_distance_m": 3.752249704275635,
+        "first_actor_detection": {
+          "native_tick": 5711,
+          "sim_time": 57.10999999999721,
+          "xy": [
+            0.1480987249478697,
+            -0.6774297331582477
+          ],
+          "rays": [
+            31
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 0.3353283631653448
+      },
+      "replay": {
+        "replay_native": 6883,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "closed_unix": 1794304032.177015,
+      "wall_s": 63.121580084989546
+    },
+    "audit": {
+      "passed": true,
+      "checks": {
+        "complete_recorded_native": true,
+        "complete_new_diagnostic": true,
+        "every_control_is_registered_stimulus": true,
+        "exact_history": true,
+        "finite_arrays": true,
+        "full_native_clearance": true,
+        "full_native_self": true,
+        "contacts_and_commands_complete": true,
+        "no_bad_contacts": true,
+        "no_root_mutation": true,
+        "unchanged_sensor": true,
+        "canonical_true_t0": true,
+        "original_actor": true,
+        "native_body_caps": true,
+        "complete_stop_tail": true,
+        "complete_own_replay": true,
+        "fixed_simulation_time_step": true,
+        "offline_execution_complete": true,
+        "diagnostic_not_navigation": true,
+        "actual_ctrl_reconstructed": true
+      },
+      "actuation": {
+        "passed": true,
+        "models": 0,
+        "integrations": 0,
+        "historical_control_rows": 6083,
+        "new_control_rows": 800,
+        "maximum_control_reconstruction_error": 1.1275702593849246e-16,
+        "maximum_independent_rear_residual_rad_s": 0.0,
+        "physical_tracking_qualified_by_this_check": false,
+        "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+      },
+      "counts": {
+        "vehicle_tasks_initialized": 1,
+        "historical_native": 6083,
+        "new_actual_native": 800,
+        "own_trace_replay_native": 6883,
+        "private_native": 0
+      },
+      "original_history_max_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0,
+        "mocap_quat": 0.0
+      },
+      "minimum_actual_clearance_m": 0.2730365667394967,
+      "bad_contacts": 0,
+      "independent_navigation_sample": false,
+      "navigation_passed": false,
+      "diagnostic_evidence_only": true,
+      "metrics": {
+        "maximum_abs_kinematic_heading_residual_rad": 0.016448249495878933,
+        "final_kinematic_heading_residual_rad": 0.016277728885585024,
+        "movement_yaw_residual_rms_rad_s": 0.002725646778097863,
+        "final_moving_window_yaw_residual_rms_rad_s": 0.0027979821899962215,
+        "measured_steering_rate_body_yaw_correlation": 0.40079940579935747,
+        "active_steering_samples": 0,
+        "maximum_steering_rate_rad_s": 0.0068778614863744016,
+        "final_actual_steering_rad": [
+          -0.25589194177752517,
+          -0.32971366662753404
+        ],
+        "actual_translation_m": 0.169401378006108
+      },
+      "reference_heading_residual_is_diagnostic_not_a_navigation_gate": true,
+      "real_time_qualified": false,
+      "models_during_audit": 0,
+      "bridge": {
+        "passed": true,
+        "checks": {
+          "equal_trace_lengths": true,
+          "all_trace_arrays_exact": true,
+          "same_complete_physical_setup": true,
+          "same_initial_state": true,
+          "same_control_inputs_and_feedback": true,
+          "same_contacts": true,
+          "same_sensor_packets": true,
+          "same_discovery": true,
+          "both_own_replays_passed": true
+        },
+        "trace_errors": {
+          "time": 0.0,
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "ctrl": 0.0,
+          "mocap_pos": 0.0,
+          "mocap_quat": 0.0,
+          "clearance": 0.0,
+          "self_margin": 0.0
+        },
+        "initial_error": 0.0,
+        "models": 0,
+        "ignored_construction_clocks_only": [
+          "actor.swept_envelope_reference.elapsed_s",
+          "actor.swept_envelope_reference.search.wall_s"
+        ],
+        "wall_clock_timestamps_in_body_commands_ignored": true,
+        "real_time_qualified": false
+      }
+    }
+  },
+  {
+    "slot": 1,
+    "name": "ramp_to_straight_fast",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v995/ramp_to_straight_fast",
+    "passed": true,
+    "result": {
+      "passed": true,
+      "status": "FIXED_RESPONSE_RECORDED",
+      "vehicle_tasks_initialized": 1,
+      "historical_native": 6083,
+      "new_actual_native": 800,
+      "replay_native": 6883,
+      "private_native": 0,
+      "stage_deadline_unix": 1794305168.6527624,
+      "task_hard_deadline_unix": 1794304333.5337634,
+      "diagnostic_only": true,
+      "execution_mode": "SIMULATION_TIME_FIXED_INPUT_NOT_REALTIME",
+      "real_time_qualified": false,
+      "environment_initialization_attempted": true,
+      "execution": {
+        "passed": true,
+        "error": null,
+        "new_native_count": 800,
+        "completed_new_native_lower_bound": 800,
+        "execution_mode": "SIMULATION_TIME_FIXED_INPUT_NOT_REALTIME",
+        "real_time_qualified": false,
+        "wall_lag_is_not_a_gate_for_offline_fixed_input": true,
+        "gc_prior_flag_restored": true,
+        "timing": {
+          "maximum_wall_lag_s": 0.0,
+          "overrun": null,
+          "stages": {
+            "native_and_record": 0,
+            "body_read": 1,
+            "scan": 2,
+            "partial_write": 3
+          },
+          "inclusive_stages_do_not_add": true,
+          "wall_minus_thread_cpu_is_not_unique_scheduler_attribution": true,
+          "recorded_rows": 1768,
+          "capacity": 16896,
+          "summaries": {
+            "native_and_record": {
+              "calls": 800,
+              "inclusive_wall_s": 0.5326822001952678,
+              "p50_s": 0.0006625030073337257,
+              "p95_s": 0.0006945600034669042,
+              "p99_s": 0.0007088069978635758,
+              "maximum_s": 0.001967324991710484,
+              "maximum_tick_before": 6083,
+              "cpu_at_maximum_s": 0.0019657940000001872
+            },
+            "body_read": {
+              "calls": 800,
+              "inclusive_wall_s": 0.0036686966486740857,
+              "p50_s": 4.748988430947065e-06,
+              "p95_s": 4.750007065013051e-06,
+              "p99_s": 5.937006790190935e-06,
+              "maximum_s": 1.4248013030737638e-05,
+              "maximum_tick_before": 6551,
+              "cpu_at_maximum_s": 4.709000002378616e-06
+            },
+            "scan": {
+              "calls": 160,
+              "inclusive_wall_s": 0.10683040355797857,
+              "p50_s": 0.0006636900070589036,
+              "p95_s": 0.0006886229966767132,
+              "p99_s": 0.0007443780926405449,
+              "maximum_s": 0.0011789699783548713,
+              "maximum_tick_before": 6389,
+              "cpu_at_maximum_s": 0.0006768029999975056
+            },
+            "partial_write": {
+              "calls": 8,
+              "inclusive_wall_s": 0.001651509926887229,
+              "p50_s": 0.00020361898350529373,
+              "p95_s": 0.0002445209422148764,
+              "p99_s": 0.00024551858427003027,
+              "maximum_s": 0.0002457679947838187,
+              "maximum_tick_before": 6284,
+              "cpu_at_maximum_s": 0.0002464840000016011
+            }
+          }
+        }
+      },
+      "native": {
+        "actual_native": 6883,
+        "fully_recorded_native": 6883,
+        "minimum_actual_clearance_m": 0.2730365667394967,
+        "minimum_self_margin_m": 0.009023768612320182,
+        "bad_contacts": 0,
+        "final_body": [
+          0.4793794869967297,
+          -0.6825257208442886,
+          0.028892181963529526,
+          7.821873265101009e-06,
+          -7.53932669448523e-08
+        ],
+        "final_translation_speed_m_s": 7.821873266174952e-06,
+        "root_guard_native_count": 6883,
+        "goal_distance_m": 3.7590566998671715,
+        "first_actor_detection": {
+          "native_tick": 5711,
+          "sim_time": 57.10999999999721,
+          "xy": [
+            0.1480987249478697,
+            -0.6774297331582477
+          ],
+          "rays": [
+            31
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 0.33559223827653617
+      },
+      "replay": {
+        "replay_native": 6883,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "closed_unix": 1794304095.8786693,
+      "wall_s": 62.344906015991
+    },
+    "audit": {
+      "passed": true,
+      "checks": {
+        "complete_recorded_native": true,
+        "complete_new_diagnostic": true,
+        "every_control_is_registered_stimulus": true,
+        "exact_history": true,
+        "finite_arrays": true,
+        "full_native_clearance": true,
+        "full_native_self": true,
+        "contacts_and_commands_complete": true,
+        "no_bad_contacts": true,
+        "no_root_mutation": true,
+        "unchanged_sensor": true,
+        "canonical_true_t0": true,
+        "original_actor": true,
+        "native_body_caps": true,
+        "complete_stop_tail": true,
+        "complete_own_replay": true,
+        "fixed_simulation_time_step": true,
+        "offline_execution_complete": true,
+        "diagnostic_not_navigation": true,
+        "actual_ctrl_reconstructed": true
+      },
+      "actuation": {
+        "passed": true,
+        "models": 0,
+        "integrations": 0,
+        "historical_control_rows": 6083,
+        "new_control_rows": 800,
+        "maximum_control_reconstruction_error": 1.1102230246251565e-16,
+        "maximum_independent_rear_residual_rad_s": 5.551115123125783e-17,
+        "physical_tracking_qualified_by_this_check": false,
+        "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+      },
+      "counts": {
+        "vehicle_tasks_initialized": 1,
+        "historical_native": 6083,
+        "new_actual_native": 800,
+        "own_trace_replay_native": 6883,
+        "private_native": 0
+      },
+      "original_history_max_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0,
+        "mocap_quat": 0.0
+      },
+      "minimum_actual_clearance_m": 0.2730365667394967,
+      "bad_contacts": 0,
+      "independent_navigation_sample": false,
+      "navigation_passed": false,
+      "diagnostic_evidence_only": true,
+      "metrics": {
+        "maximum_abs_kinematic_heading_residual_rad": 0.027898582087825363,
+        "final_kinematic_heading_residual_rad": -0.027837215846983777,
+        "movement_yaw_residual_rms_rad_s": 0.014341783869004933,
+        "final_moving_window_yaw_residual_rms_rad_s": 1.376551061791237e-05,
+        "measured_steering_rate_body_yaw_correlation": -0.9983189247925446,
+        "active_steering_samples": 81,
+        "maximum_steering_rate_rad_s": 0.6484221635065293,
+        "final_actual_steering_rad": [
+          1.7030955060743798e-08,
+          1.7057784266334644e-08
+        ],
+        "actual_translation_m": 0.16966525311729935
+      },
+      "reference_heading_residual_is_diagnostic_not_a_navigation_gate": true,
+      "real_time_qualified": false,
+      "models_during_audit": 0
+    }
+  },
+  {
+    "slot": 2,
+    "name": "ramp_to_straight_slow",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v995/ramp_to_straight_slow",
+    "passed": true,
+    "result": {
+      "passed": true,
+      "status": "FIXED_RESPONSE_RECORDED",
+      "vehicle_tasks_initialized": 1,
+      "historical_native": 6083,
+      "new_actual_native": 800,
+      "replay_native": 6883,
+      "private_native": 0,
+      "stage_deadline_unix": 1794305168.6527624,
+      "task_hard_deadline_unix": 1794304397.0025072,
+      "diagnostic_only": true,
+      "execution_mode": "SIMULATION_TIME_FIXED_INPUT_NOT_REALTIME",
+      "real_time_qualified": false,
+      "environment_initialization_attempted": true,
+      "execution": {
+        "passed": true,
+        "error": null,
+        "new_native_count": 800,
+        "completed_new_native_lower_bound": 800,
+        "execution_mode": "SIMULATION_TIME_FIXED_INPUT_NOT_REALTIME",
+        "real_time_qualified": false,
+        "wall_lag_is_not_a_gate_for_offline_fixed_input": true,
+        "gc_prior_flag_restored": true,
+        "timing": {
+          "maximum_wall_lag_s": 0.0,
+          "overrun": null,
+          "stages": {
+            "native_and_record": 0,
+            "body_read": 1,
+            "scan": 2,
+            "partial_write": 3
+          },
+          "inclusive_stages_do_not_add": true,
+          "wall_minus_thread_cpu_is_not_unique_scheduler_attribution": true,
+          "recorded_rows": 1768,
+          "capacity": 16896,
+          "summaries": {
+            "native_and_record": {
+              "calls": 800,
+              "inclusive_wall_s": 0.5318047938926611,
+              "p50_s": 0.0006613160076085478,
+              "p95_s": 0.0006945590634131804,
+              "p99_s": 0.0007088663577451371,
+              "maximum_s": 0.0015280309889931232,
+              "maximum_tick_before": 6083,
+              "cpu_at_maximum_s": 0.0015272709999933909
+            },
+            "body_read": {
+              "calls": 800,
+              "inclusive_wall_s": 0.003601020958740264,
+              "p50_s": 4.748988430947065e-06,
+              "p95_s": 4.750007065013051e-06,
+              "p99_s": 5.937006790190935e-06,
+              "maximum_s": 1.3059994671493769e-05,
+              "maximum_tick_before": 6452,
+              "cpu_at_maximum_s": 1.4401000001385e-05
+            },
+            "scan": {
+              "calls": 160,
+              "inclusive_wall_s": 0.10671404705499299,
+              "p50_s": 0.000666658510453999,
+              "p95_s": 0.0006874953469377942,
+              "p99_s": 0.000707405754365027,
+              "maximum_s": 0.0007646089943591505,
+              "maximum_tick_before": 6084,
+              "cpu_at_maximum_s": 0.0007659759999967264
+            },
+            "partial_write": {
+              "calls": 8,
+              "inclusive_wall_s": 0.002000567998038605,
+              "p50_s": 0.0001959014916792512,
+              "p95_s": 0.00048708164686104264,
+              "p99_s": 0.0005884755283477715,
+              "maximum_s": 0.0006138239987194538,
+              "maximum_tick_before": 6084,
+              "cpu_at_maximum_s": 0.0006144550000044546
+            }
+          }
+        }
+      },
+      "native": {
+        "actual_native": 6883,
+        "fully_recorded_native": 6883,
+        "minimum_actual_clearance_m": 0.2730365667394967,
+        "minimum_self_margin_m": 0.009023768612320182,
+        "bad_contacts": 0,
+        "final_body": [
+          0.479508455333064,
+          -0.6858381829307002,
+          0.021380180087286076,
+          7.829176023001893e-06,
+          -4.5602994947722605e-08
+        ],
+        "final_translation_speed_m_s": 7.829176024225168e-06,
+        "root_guard_native_count": 6883,
+        "goal_distance_m": 3.757776203755922,
+        "first_actor_detection": {
+          "native_tick": 5711,
+          "sim_time": 57.10999999999721,
+          "xy": [
+            0.1480987249478697,
+            -0.6774297331582477
+          ],
+          "rays": [
+            31
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 0.335725172216054
+      },
+      "replay": {
+        "replay_native": 6883,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "closed_unix": 1794304159.1291287,
+      "wall_s": 62.12662008899497
+    },
+    "audit": {
+      "passed": true,
+      "checks": {
+        "complete_recorded_native": true,
+        "complete_new_diagnostic": true,
+        "every_control_is_registered_stimulus": true,
+        "exact_history": true,
+        "finite_arrays": true,
+        "full_native_clearance": true,
+        "full_native_self": true,
+        "contacts_and_commands_complete": true,
+        "no_bad_contacts": true,
+        "no_root_mutation": true,
+        "unchanged_sensor": true,
+        "canonical_true_t0": true,
+        "original_actor": true,
+        "native_body_caps": true,
+        "complete_stop_tail": true,
+        "complete_own_replay": true,
+        "fixed_simulation_time_step": true,
+        "offline_execution_complete": true,
+        "diagnostic_not_navigation": true,
+        "actual_ctrl_reconstructed": true
+      },
+      "actuation": {
+        "passed": true,
+        "models": 0,
+        "integrations": 0,
+        "historical_control_rows": 6083,
+        "new_control_rows": 800,
+        "maximum_control_reconstruction_error": 6.938893903907228e-17,
+        "maximum_independent_rear_residual_rad_s": 5.551115123125783e-17,
+        "physical_tracking_qualified_by_this_check": false,
+        "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+      },
+      "counts": {
+        "vehicle_tasks_initialized": 1,
+        "historical_native": 6083,
+        "new_actual_native": 800,
+        "own_trace_replay_native": 6883,
+        "private_native": 0
+      },
+      "original_history_max_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0,
+        "mocap_quat": 0.0
+      },
+      "minimum_actual_clearance_m": 0.2730365667394967,
+      "bad_contacts": 0,
+      "independent_navigation_sample": false,
+      "navigation_passed": false,
+      "diagnostic_evidence_only": true,
+      "metrics": {
+        "maximum_abs_kinematic_heading_residual_rad": 0.025918625045356313,
+        "final_kinematic_heading_residual_rad": -0.025874317598344704,
+        "movement_yaw_residual_rms_rad_s": 0.007400355287985646,
+        "final_moving_window_yaw_residual_rms_rad_s": 1.3780283931578068e-05,
+        "measured_steering_rate_body_yaw_correlation": -0.9799575803324652,
+        "active_steering_samples": 208,
+        "maximum_steering_rate_rad_s": 0.18247375476775582,
+        "final_actual_steering_rad": [
+          1.3895747695894264e-08,
+          1.3913743909304218e-08
+        ],
+        "actual_translation_m": 0.1697981870568167
+      },
+      "reference_heading_residual_is_diagnostic_not_a_navigation_gate": true,
+      "real_time_qualified": false,
+      "models_during_audit": 0
+    }
+  },
+  {
+    "slot": 3,
+    "name": "slow_out_and_back",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v995/slow_out_and_back",
+    "passed": true,
+    "result": {
+      "passed": true,
+      "status": "FIXED_RESPONSE_RECORDED",
+      "vehicle_tasks_initialized": 1,
+      "historical_native": 6083,
+      "new_actual_native": 800,
+      "replay_native": 6883,
+      "private_native": 0,
+      "stage_deadline_unix": 1794305168.6527624,
+      "task_hard_deadline_unix": 1794304460.2055454,
+      "diagnostic_only": true,
+      "execution_mode": "SIMULATION_TIME_FIXED_INPUT_NOT_REALTIME",
+      "real_time_qualified": false,
+      "environment_initialization_attempted": true,
+      "execution": {
+        "passed": true,
+        "error": null,
+        "new_native_count": 800,
+        "completed_new_native_lower_bound": 800,
+        "execution_mode": "SIMULATION_TIME_FIXED_INPUT_NOT_REALTIME",
+        "real_time_qualified": false,
+        "wall_lag_is_not_a_gate_for_offline_fixed_input": true,
+        "gc_prior_flag_restored": true,
+        "timing": {
+          "maximum_wall_lag_s": 0.0,
+          "overrun": null,
+          "stages": {
+            "native_and_record": 0,
+            "body_read": 1,
+            "scan": 2,
+            "partial_write": 3
+          },
+          "inclusive_stages_do_not_add": true,
+          "wall_minus_thread_cpu_is_not_unique_scheduler_attribution": true,
+          "recorded_rows": 1768,
+          "capacity": 16896,
+          "summaries": {
+            "native_and_record": {
+              "calls": 800,
+              "inclusive_wall_s": 0.530427554360358,
+              "p50_s": 0.0006601290078833699,
+              "p95_s": 0.0006933719851076603,
+              "p99_s": 0.0007147905151941813,
+              "maximum_s": 0.0011694720014929771,
+              "maximum_tick_before": 6083,
+              "cpu_at_maximum_s": 0.001169466999996871
+            },
+            "body_read": {
+              "calls": 800,
+              "inclusive_wall_s": 0.003634262044215575,
+              "p50_s": 4.748988430947065e-06,
+              "p95_s": 4.750007065013051e-06,
+              "p99_s": 5.936017259955406e-06,
+              "maximum_s": 1.4248013030737638e-05,
+              "maximum_tick_before": 6331,
+              "cpu_at_maximum_s": 1.315700000503739e-05
+            },
+            "scan": {
+              "calls": 160,
+              "inclusive_wall_s": 0.10565143515123054,
+              "p50_s": 0.000658942008158192,
+              "p95_s": 0.0006851212965557352,
+              "p99_s": 0.0006919717430719175,
+              "maximum_s": 0.0007337399874813855,
+              "maximum_tick_before": 6084,
+              "cpu_at_maximum_s": 0.0007350149999965083
+            },
+            "partial_write": {
+              "calls": 8,
+              "inclusive_wall_s": 0.0019364559557288885,
+              "p50_s": 0.0002333009906578809,
+              "p95_s": 0.0003538687888067215,
+              "p99_s": 0.00039276414900086816,
+              "maximum_s": 0.00040248798904940486,
+              "maximum_tick_before": 6484,
+              "cpu_at_maximum_s": 0.0004031589999939911
+            }
+          }
+        }
+      },
+      "native": {
+        "actual_native": 6883,
+        "fully_recorded_native": 6883,
+        "minimum_actual_clearance_m": 0.2730365667394967,
+        "minimum_self_margin_m": 0.009023768612320182,
+        "bad_contacts": 0,
+        "final_body": [
+          0.47782877067890556,
+          -0.6979216609122999,
+          0.01630141207261557,
+          7.683084544659079e-06,
+          -3.507663670559714e-06
+        ],
+        "final_translation_speed_m_s": 7.808811874578644e-06,
+        "root_guard_native_count": 6883,
+        "goal_distance_m": 3.7551428960531785,
+        "first_actor_detection": {
+          "native_tick": 5711,
+          "sim_time": 57.10999999999721,
+          "xy": [
+            0.1480987249478697,
+            -0.6774297331582477
+          ],
+          "rays": [
+            31
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 0.3345863711734022
+      },
+      "replay": {
+        "replay_native": 6883,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "closed_unix": 1794304223.3004808,
+      "wall_s": 63.09493550399202
+    },
+    "audit": {
+      "passed": true,
+      "checks": {
+        "complete_recorded_native": true,
+        "complete_new_diagnostic": true,
+        "every_control_is_registered_stimulus": true,
+        "exact_history": true,
+        "finite_arrays": true,
+        "full_native_clearance": true,
+        "full_native_self": true,
+        "contacts_and_commands_complete": true,
+        "no_bad_contacts": true,
+        "no_root_mutation": true,
+        "unchanged_sensor": true,
+        "canonical_true_t0": true,
+        "original_actor": true,
+        "native_body_caps": true,
+        "complete_stop_tail": true,
+        "complete_own_replay": true,
+        "fixed_simulation_time_step": true,
+        "offline_execution_complete": true,
+        "diagnostic_not_navigation": true,
+        "actual_ctrl_reconstructed": true
+      },
+      "actuation": {
+        "passed": true,
+        "models": 0,
+        "integrations": 0,
+        "historical_control_rows": 6083,
+        "new_control_rows": 800,
+        "maximum_control_reconstruction_error": 1.6653345369377348e-16,
+        "maximum_independent_rear_residual_rad_s": 5.551115123125783e-17,
+        "physical_tracking_qualified_by_this_check": false,
+        "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+      },
+      "counts": {
+        "vehicle_tasks_initialized": 1,
+        "historical_native": 6083,
+        "new_actual_native": 800,
+        "own_trace_replay_native": 6883,
+        "private_native": 0
+      },
+      "original_history_max_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0,
+        "mocap_quat": 0.0
+      },
+      "minimum_actual_clearance_m": 0.2730365667394967,
+      "bad_contacts": 0,
+      "independent_navigation_sample": false,
+      "navigation_passed": false,
+      "diagnostic_evidence_only": true,
+      "metrics": {
+        "maximum_abs_kinematic_heading_residual_rad": 0.0199722708362225,
+        "final_kinematic_heading_residual_rad": 0.010659336501863615,
+        "movement_yaw_residual_rms_rad_s": 0.011554416214553977,
+        "final_moving_window_yaw_residual_rms_rad_s": 0.0162491344876018,
+        "measured_steering_rate_body_yaw_correlation": -0.9517076072676789,
+        "active_steering_samples": 393,
+        "maximum_steering_rate_rad_s": 0.19091778346739263,
+        "final_actual_steering_rad": [
+          -0.2558919305484507,
+          -0.32971365489535936
+        ],
+        "actual_translation_m": 0.16865938601416514
+      },
+      "reference_heading_residual_is_diagnostic_not_a_navigation_gate": true,
+      "real_time_qualified": false,
+      "models_during_audit": 0
+    }
+  }
+]

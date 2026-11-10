@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "physics_replay": 0,
+  "cases": [
+    {
+      "mode": "healthy",
+      "initial_gc_enabled": true,
+      "passed": true,
+      "new_mock_count": 800
+    },
+    {
+      "mode": "stall",
+      "initial_gc_enabled": true,
+      "passed": true,
+      "new_mock_count": 800
+    },
+    {
+      "mode": "deadline",
+      "initial_gc_enabled": true,
+      "passed": true,
+      "new_mock_count": 200
+    },
+    {
+      "mode": "native_error",
+      "initial_gc_enabled": true,
+      "passed": true,
+      "new_mock_count": null
+    },
+    {
+      "mode": "scan_error",
+      "initial_gc_enabled": true,
+      "passed": true,
+      "new_mock_count": 301
+    },
+    {
+      "mode": "healthy",
+      "initial_gc_enabled": false,
+      "passed": true,
+      "new_mock_count": 800
+    },
+    {
+      "mode": "stall",
+      "initial_gc_enabled": false,
+      "passed": true,
+      "new_mock_count": 800
+    },
+    {
+      "mode": "deadline",
+      "initial_gc_enabled": false,
+      "passed": true,
+      "new_mock_count": 200
+    },
+    {
+      "mode": "native_error",
+      "initial_gc_enabled": false,
+      "passed": true,
+      "new_mock_count": null
+    },
+    {
+      "mode": "scan_error",
+      "initial_gc_enabled": false,
+      "passed": true,
+      "new_mock_count": 301
+    }
+  ],
+  "wall_stall_preserves_registered_inputs": true,
+  "offline_sleep_forbidden": true,
+  "online_100ms_gate_not_changed": true,
+  "physical_equivalence_still_unproven": true
+}
