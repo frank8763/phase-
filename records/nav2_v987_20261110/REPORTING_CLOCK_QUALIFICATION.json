@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": {
+    "prearm_not_misreported_as_actuation_pass": true,
+    "actual_authority_accepts_exact_clock": true,
+    "actual_authority_rejects_extended_task_clock": true,
+    "actual_authority_rejects_false_clock_sha": true
+  },
+  "cases": [
+    {
+      "case": "prearm_zero",
+      "passed": true,
+      "original_failure_retained": true
+    },
+    {
+      "case": "prearm_unknown",
+      "passed": true,
+      "original_failure_retained": true
+    },
+    {
+      "case": "armed_missing_evidence",
+      "passed": true,
+      "original_failure_retained": true
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "actual_audit_and_authority_seams": true,
+  "clock_fixture_not_physical_authority": true
+}

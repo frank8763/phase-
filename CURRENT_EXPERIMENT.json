@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v985_rear_yaw_components/SOURCE_FREEZE.json",
-  "source_revision": "V985_CLOSED_NOT_PASSED",
-  "protocol": "experiments/v985_rear_yaw_components/PROTOCOL.md",
-  "report": "docs/RPCCR_REAR_YAW_COMPONENTS_V985_REPORT.md",
+  "decision_freeze": "experiments/v987_bounded_startup_components/SOURCE_FREEZE.json",
+  "source_revision": "V987_PREPARED_AWAITING_PHYSICAL_APPROVAL",
+  "protocol": "experiments/v987_bounded_startup_components/PROTOCOL.md",
+  "report": "docs/RPCCR_BOUNDED_STARTUP_V987_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -8139,5 +8139,174 @@
     "next_scope": "Operational startup/restore budgeting, progress and pre-ARM failure reporting only; freeze V984/reference/model/safety limits. Same two fixed components only after new entry qualifications and a new explicit bounded window.",
     "no_new_physical_authority": true,
     "next_plan": "docs/RPCCR_V985_DIAGNOSIS_AND_NEXT_PLAN.md"
+  },
+  "v987_preparation": {
+    "status": "PREPARED_AWAITING_NEW_BOUNDED_PHYSICAL_APPROVAL",
+    "source_qualification_passed": true,
+    "models": 0,
+    "actual_native": 0,
+    "private_native": 0,
+    "replay_native": 0,
+    "new_navigation_samples": 0,
+    "new24": 0,
+    "training": 0,
+    "hardware": 0,
+    "models_authorized": false,
+    "physical_ready": false,
+    "no_model_window_opened": true,
+    "fixed_components": 2,
+    "proposed_root_s": 5400,
+    "component_wall_s": 40,
+    "component_stop_s": 2,
+    "frozen_files": 1819,
+    "source_freeze_sha256": "a1082f8dd304676c66a9d5ac908cde87669b9426f27a1259a9f5325564a5b356",
+    "old_v985_frozen_files_unchanged": 1727,
+    "old_v985_status": "NOT_PASSED",
+    "servo_exact_V984": true,
+    "actual_worker_switch_and_audit_bound": true,
+    "entry_checks": 13,
+    "binding_checks": 18,
+    "binding_negative_cases": 5,
+    "complete_stop_contract_checks": 10,
+    "installed_RPP_software_cases": 2,
+    "qualification_groups": 9,
+    "new_operational_qualification_groups": 5,
+    "restore_cap_s": 180,
+    "task_hard_s": 350,
+    "campaign_wait_s": 360,
+    "root_launch_reserve_s": 375,
+    "metadata_proxy_is_not_model_audit": true,
+    "physical_response_qualified": false,
+    "review_pending_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
+    "execution_lock_idle": true,
+    "report": "docs/RPCCR_BOUNDED_STARTUP_V987_REPORT.md",
+    "storage": {
+      "passed": true,
+      "remote_verified": true,
+      "all_asset_and_member_sha_verified": true,
+      "models": 0,
+      "integrations": 0,
+      "physical_ready": false,
+      "models_authorized": false,
+      "git_pushes": 0,
+      "final_batch_push_reserved": true,
+      "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-rpccr-bounded-startup-v987-preparation-20261110",
+      "source_in_release_archive": true,
+      "removed": [
+        {
+          "path": "runs/v987_bounded_startup_components/budget_old_observed_129",
+          "bytes": 66
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/software_case1_attempt1_ros_logs",
+          "bytes": 23934
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/budget_wrong_origin",
+          "bytes": 66
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/parent_exception_preserves_native",
+          "bytes": 485
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/foreign_stop",
+          "bytes": 88
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/case0_attempt1",
+          "bytes": 2847205
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/hung_worker_bounded",
+          "bytes": 689
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/armed_missing_evidence",
+          "bytes": 3179
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/prearm_zero",
+          "bytes": 783
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/prearm_unknown",
+          "bytes": 795
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/restore_complete",
+          "bytes": 457
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/budget_hung",
+          "bytes": 0
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/budget_near_cap",
+          "bytes": 66
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/restore_stop",
+          "bytes": 493
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/restore_mismatched_state",
+          "bytes": 474
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/budget_failed_worker",
+          "bytes": 0
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/case1_attempt1",
+          "bytes": 2447783
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/advanced_origin_fixture_attempt1",
+          "bytes": 212
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/restore_deadline",
+          "bytes": 453
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/budget_parent_stop",
+          "bytes": 54
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/software_case0_attempt1_ros_logs",
+          "bytes": 22414
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/clock_receipt",
+          "bytes": 475
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/root_deadline_not_extended",
+          "bytes": 572
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/ros_failure_preserves_native",
+          "bytes": 713
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/binding_fixture_attempt1",
+          "bytes": 216770
+        },
+        {
+          "path": "runs/v858_nav2_verified/v987_software",
+          "bytes": 113343
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/preparation_cloud",
+          "bytes": 5224420
+        },
+        {
+          "path": "runs/v987_bounded_startup_components/preparation_readback",
+          "bytes": 10373027
+        }
+      ],
+      "deleted_cache_bytes": 21279016
+    }
   }
 }

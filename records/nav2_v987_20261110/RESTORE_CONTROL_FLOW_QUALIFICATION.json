@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "complete",
+      "passed": true,
+      "counter_steps": 601,
+      "error": null,
+      "models": 0,
+      "integrations": 0,
+      "arrays_are_not_a_vehicle": true
+    },
+    {
+      "case": "stop",
+      "passed": true,
+      "counter_steps": 8,
+      "error": "PARENT_STOP_DURING_CANONICAL_RESTORE",
+      "models": 0,
+      "integrations": 0,
+      "arrays_are_not_a_vehicle": true
+    },
+    {
+      "case": "mismatched_state",
+      "passed": true,
+      "counter_steps": 4,
+      "error": "HISTORICAL_PREFIX_STATE_OR_CONTROL_MISMATCH",
+      "models": 0,
+      "integrations": 0,
+      "arrays_are_not_a_vehicle": true
+    },
+    {
+      "case": "deadline",
+      "passed": true,
+      "counter_steps": 360,
+      "error": "CANONICAL_STATE_RESTORE_TIMEOUT",
+      "models": 0,
+      "integrations": 0,
+      "arrays_are_not_a_vehicle": true
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "actual_restore_function_executed": true,
+  "physical_history_not_executed": true
+}
