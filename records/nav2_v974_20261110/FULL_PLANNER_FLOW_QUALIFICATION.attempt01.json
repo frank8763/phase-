@@ -1,0 +1,151 @@
+{
+  "passed": false,
+  "checks": {
+    "real_global_path_passed": false,
+    "intended_planner_source": false,
+    "original_full_map_ready": false,
+    "real_NavigateToPose_action": false,
+    "nonzero_control_stream": false,
+    "all_actual_commands_exact_certificates": false,
+    "forward_only": true,
+    "known_bounded_software_end": false,
+    "peer_alive": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "synthetic_peer": true,
+  "physical_validation": false,
+  "real_planning_requests": 0,
+  "qualified_plans": 0,
+  "nonzero_commands": 0,
+  "result": {
+    "passed": false,
+    "navigation_action_sent": false,
+    "error": "TimeoutError('MANAGER_STARTUP_TIMEOUT')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v974_daytime_binding_gate/ros_bridge.py\", line 189, in run\n    wait_for(node,future.done,until,'MANAGER_STARTUP_TIMEOUT');require(future.result().success,'MANAGER_STARTUP_REJECTED')\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v974_daytime_binding_gate/ros_bridge.py\", line 170, in wait_for\n    raise TimeoutError(message)\nTimeoutError: MANAGER_STARTUP_TIMEOUT\n",
+    "reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+    "wall_s": 35.004457647009986,
+    "readiness_probes": [
+      [
+        {
+          "map_server": 1,
+          "planner_server": 1,
+          "controller_server": 1,
+          "behavior_server": 1,
+          "velocity_smoother": 1,
+          "collision_monitor": 1,
+          "bt_navigator": 1
+        },
+        {
+          "map_server": 169997.645837698,
+          "planner_server": 169997.658746187,
+          "controller_server": 169997.659268606,
+          "behavior_server": 169997.66561243,
+          "velocity_smoother": 169997.666331943,
+          "collision_monitor": 169997.666973093,
+          "bt_navigator": 169997.667478889
+        }
+      ],
+      [
+        {
+          "map_server": 1,
+          "planner_server": 1,
+          "controller_server": 1,
+          "behavior_server": 1,
+          "velocity_smoother": 1,
+          "collision_monitor": 1,
+          "bt_navigator": 1
+        },
+        {
+          "map_server": 169997.667937193,
+          "planner_server": 169997.668745754,
+          "controller_server": 169997.670272642,
+          "behavior_server": 169997.670709574,
+          "velocity_smoother": 169997.671129883,
+          "collision_monitor": 169997.671818526,
+          "bt_navigator": 169997.676652085
+        }
+      ]
+    ],
+    "odometry_messages": 1618,
+    "cmd_vel_messages": 0,
+    "plan_messages": 0,
+    "maximum_observation_age_s": null,
+    "maximum_scan_age_s": null,
+    "last_observation": {
+      "kind": "observation",
+      "run_id": "v974-planner-flow-software-fixture",
+      "phase": "WAITING",
+      "native_tick": 0,
+      "sim_time": 0.0,
+      "sent_at": 170032.363840157,
+      "body_measured_at": 170032.363840157,
+      "scan_measured_at": 170032.363840157,
+      "initial_snapshot": true,
+      "body": [
+        -4.0,
+        -2.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "steering": {
+        "native_tick": 0,
+        "measured_at": 170032.363840157,
+        "position": [
+          0.0,
+          0.0
+        ],
+        "velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      "scan": {
+        "native_tick": 0,
+        "time": 0.0,
+        "xy": [
+          -4.0,
+          -2.0
+        ],
+        "yaw": 0.0,
+        "ranges": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ]
+      }
+    }
+  },
+  "peer_errors": [],
+  "scope": "Actual installed Nav2 NavigateToPose -> real Smac global plan -> RPP nonzero output -> original admission; kinematic software peer only."
+}

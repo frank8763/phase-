@@ -1,0 +1,16 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "failures": [
+    {
+      "stage": "full_planner_flow01",
+      "error": "MANAGER_STARTUP_TIMEOUT; all7inactive state replies received,1618fresh observations, manager did not log activation request. No vehicle/model or goal was started.",
+      "resolution": "Bounded second zero-model software attempt adds actual service request/future diagnostics; no startup deadline or science changed."
+    },
+    {
+      "stage": "pure_planner_mock",
+      "error": "New intended planner reached fields absent in old two-field mock: configured_footprint/node.",
+      "resolution": "Mock supplied actual constructor fields. Both exact original failures and fixed seams then passed."
+    }
+  ]
+}

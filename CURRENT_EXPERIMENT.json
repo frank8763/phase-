@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v971_night_entry_continuation/SOURCE_FREEZE.json",
-  "source_revision": "V963_SAME_RUNTIME_PLUS_ACTUAL_RPP_CLOSED_LOOP_HANDOFF_PROTOCOL",
-  "protocol": "experiments/v971_night_entry_continuation/PROTOCOL.md",
-  "report": "docs/RPCCR_NIGHT_ENTRY_V971_REPORT.md",
+  "decision_freeze": "experiments/v974_daytime_binding_gate/SOURCE_FREEZE.json",
+  "source_revision": "V968_INTENDED_SCIENCE_EXPLICIT_BINDINGS_AND_T0_GUARD",
+  "protocol": "experiments/v974_daytime_binding_gate/PROTOCOL.md",
+  "report": "docs/RPCCR_DAYTIME_BINDING_V974_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -566,9 +566,9 @@
     "no_further_simulation_this_round": true,
     "scope": "one original development scene; privileged information ablation and one rejected causal design, no unknown dynamic success/generalization proof"
   },
-  "active_protocol": "experiments/v968_rpp_closed_loop_night/PROTOCOL.md",
+  "active_protocol": "experiments/v974_daytime_binding_gate/PROTOCOL.md",
   "control_pipeline_diagnosis": "runs/v674_dynamic_renewable_backup/CONTROL_PIPELINE_DIAGNOSIS.json",
-  "automatic_additional_simulation": "Only fixed new V96808:00 bounded chain",
+  "automatic_additional_simulation": false,
   "previous_dynamic_evidence_commit": "86b6aa818ae185c68b2a1f2a650220c32aac96c2",
   "candidate02_prerequisite": "runs/v681_dynamic_prefix_guidance/PRE_NAV_VALIDATION.json",
   "latest_evidence_verification": {
@@ -4033,7 +4033,7 @@
     "no_automatic_retry": true
   },
   "current_protocol": "experiments/v793_complete_joint_navigation/PROTOCOL.md",
-  "current_report": "docs/RPCCR_NIGHT_ENTRY_V971_REPORT.md",
+  "current_report": "docs/RPCCR_DAYTIME_BINDING_V974_REPORT.md",
   "early_handover_authorization": "RPCCR_EARLY_HANDOVER_AUTHORIZATION_20261103.json",
   "early_handover_closure": {
     "status": "CLOSED_OBSERVATION_INTERFACE_VERIFIED_CONTINUATION_NOT_QUALIFIED",
@@ -5213,7 +5213,7 @@
     "no_retry": true,
     "raw_retained": true
   },
-  "current_experiment": "v971_night_entry_continuation",
+  "current_experiment": "v974_daytime_binding_gate",
   "exact_acceleration_authorization": "RPCCR_EXACT_ACCELERATION_AUTHORIZATION_20261104.json",
   "exact_acceleration_ledger": "RPCCR_EXACT_ACCELERATION_LEDGER_20261104.json",
   "exact_acceleration_active": "runs/v802_exact_rejection_global",
@@ -7641,5 +7641,24 @@
     "confirmation_executed": 0,
     "confirmation_unexecuted": 24,
     "unexecuted_tasks": 32
+  },
+  "v974_single_route": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "error": {
+      "error": "AssertionError('SINGLE_ROUTE_FUNCTION_SAFETY_OR_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v974_daytime_binding_gate/campaign.py\", line 20, in main\n    assert rc==0,'SINGLE_ROUTE_FUNCTION_SAFETY_OR_EVIDENCE_FAILURE'\nAssertionError: SINGLE_ROUTE_FUNCTION_SAFETY_OR_EVIDENCE_FAILURE\n"
+    },
+    "task_id": "main_we",
+    "actual_native": 8038,
+    "replay_native": 8038,
+    "private_native": 0,
+    "goal_m": 2.9903467000926223,
+    "independent_passed": false,
+    "models_authorized": false,
+    "deadline_unix": 1794278552.1031067,
+    "closed_unix": 1794273246.8350868,
+    "guard_restored": true,
+    "automatic_followup": false
   }
 }

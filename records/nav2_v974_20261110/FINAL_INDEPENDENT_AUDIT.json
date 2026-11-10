@@ -1,0 +1,111 @@
+{
+  "closed": true,
+  "passed": false,
+  "source_sha_all_verified": true,
+  "source_count": 1426,
+  "new_day": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "error": {
+      "error": "AssertionError('SINGLE_ROUTE_FUNCTION_SAFETY_OR_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v974_daytime_binding_gate/campaign.py\", line 20, in main\n    assert rc==0,'SINGLE_ROUTE_FUNCTION_SAFETY_OR_EVIDENCE_FAILURE'\nAssertionError: SINGLE_ROUTE_FUNCTION_SAFETY_OR_EVIDENCE_FAILURE\n"
+    },
+    "task_id": "main_we",
+    "actual_native": 8038,
+    "replay_native": 8038,
+    "private_native": 0,
+    "goal_m": 2.9903467000926223,
+    "independent_passed": false,
+    "models_authorized": false,
+    "deadline_unix": 1794278552.1031067,
+    "closed_unix": 1794273246.8350868,
+    "guard_restored": true,
+    "automatic_followup": false
+  },
+  "independent_audit": {
+    "evidence_passed": false,
+    "functional_passed": false,
+    "passed": false,
+    "checks": {
+      "native_count": true,
+      "full_native_timing": true,
+      "finite_arrays": true,
+      "all_native_clearance": true,
+      "all_native_self": true,
+      "contact_coverage": true,
+      "no_bad_contacts": true,
+      "ctrl_amplitude": true,
+      "ctrl_slew": true,
+      "model_sha": true,
+      "full_control_state_replay": true,
+      "no_root_rewrite_record": true,
+      "closed_native": true,
+      "wall_pacing": true,
+      "genuine_ros_observations": true,
+      "model_semantics": true
+    },
+    "functional_checks": {
+      "action_success": false,
+      "strict_arrival": false,
+      "actual_stopped": true,
+      "dynamic_discovery_and_continuation": true
+    },
+    "native_count": 8038,
+    "replay_native": 8038,
+    "private_native": 0,
+    "goal_distance_m": 2.9903467000926223,
+    "final_translation_speed_m_s": 6.209881368226242e-06,
+    "minimum_clearance_m": 0.2730365667394967,
+    "minimum_self_margin_m": 0.009023768612320182,
+    "bad_contacts": 0,
+    "discovery": {
+      "native_tick": 5711,
+      "sim_time": 57.10999999999721,
+      "xy": [
+        0.1480987249478697,
+        -0.6774297331582477
+      ],
+      "rays": [
+        31
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "independently_recomputed_postdiscovery_travel_m": 1.1708147878732582,
+    "maximum_state_error": 0.0,
+    "startup_checks": {
+      "one_arm_exactly_at_zero": true,
+      "all_nodes_active": true,
+      "fresh_proof": true,
+      "navigation_action_after_arm": true,
+      "command_stream_present": true,
+      "original_physical_evidence": true
+    },
+    "scope": "V963 single-actor dynamic Nav2 development; not new24 confirmation or RP-CCR328",
+    "actual_global_master_ready_before_arm": true,
+    "timing_profile_integrity": true,
+    "original100ms_gate_passed": true,
+    "failed_prefix_record_integrity_passed": false,
+    "exact_sensor_binding_and_true_t0_equivalence": true,
+    "same_actual_dynamic_preflight_physical_setup_and_initial_state": true,
+    "original_dynamic_actor_configuration": true,
+    "independent_recorded_actor_motion": true,
+    "reference_updates_after_detection": 0,
+    "successful_routes_after_detection": 0,
+    "postdetection_update_is_periodic_not_claimed_detection_triggered": true,
+    "timing_audit_error": "AssertionError('ACTUAL_REFERENCE_TRACKING_ENVELOPE_FAILED')",
+    "timing_audit_traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v968_rpp_closed_loop_night/audit.py\", line 43, in audit_route\n    corridor=audit_corridors(out);result['reference_loss_corridor_independent_audit']=corridor\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v974_daytime_binding_gate/corridor_audit.py\", line 117, in audit\n    assert actual['passed'],'ACTUAL_REFERENCE_TRACKING_ENVELOPE_FAILED'\nAssertionError: ACTUAL_REFERENCE_TRACKING_ENVELOPE_FAILED\n",
+    "selected_true_t0_native_binding": true
+  },
+  "carried_night": {
+    "status": "V971_NOT_PASSED",
+    "actual_native": 18201,
+    "replay_native": 18201,
+    "private_native": 0,
+    "algorithm_motion_exercised": false,
+    "not_in_new_denominator": true
+  },
+  "models_during_closure": 0,
+  "integrations": 0,
+  "review_pending_original_restored": true,
+  "execution_lock_idle": true
+}

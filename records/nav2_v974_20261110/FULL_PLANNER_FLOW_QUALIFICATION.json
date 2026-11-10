@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "checks": {
+    "real_global_path_passed": true,
+    "intended_planner_source": true,
+    "original_full_map_ready": true,
+    "real_NavigateToPose_action": true,
+    "nonzero_control_stream": true,
+    "all_actual_commands_exact_certificates": true,
+    "forward_only": true,
+    "known_bounded_software_end": true,
+    "peer_alive": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "synthetic_peer": true,
+  "physical_validation": false,
+  "real_planning_requests": 3,
+  "qualified_plans": 3,
+  "nonzero_commands": 59,
+  "result": {
+    "passed": false,
+    "navigation_action_sent": true,
+    "global_master_readiness": {
+      "passed": true,
+      "accepted_replies": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 170319.139791464
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 170319.695260184
+        }
+      ],
+      "all_reads": [
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 170319.139791464
+        },
+        {
+          "passed": true,
+          "size_x": 1000,
+          "size_y": 1000,
+          "resolution": 0.009999999776482582,
+          "origin": [
+            -5.0,
+            -5.0
+          ],
+          "frame": "map",
+          "cells": 1000000,
+          "unknown_cells": 0,
+          "required_static_cells": 72683,
+          "missing_static_cells": 0,
+          "all_unknown": false,
+          "models": 0,
+          "checked_at": 170319.695260184
+        }
+      ],
+      "native_tick": 0
+    },
+    "active_states": {
+      "map_server": 3,
+      "planner_server": 3,
+      "controller_server": 3,
+      "behavior_server": 3,
+      "velocity_smoother": 3,
+      "collision_monitor": 3,
+      "bt_navigator": 3
+    },
+    "active_checked_at": {
+      "map_server": 170319.736188121,
+      "planner_server": 170319.738045081,
+      "controller_server": 170319.738812087,
+      "behavior_server": 170319.739751253,
+      "velocity_smoother": 170319.740767595,
+      "collision_monitor": 170319.742074829,
+      "bt_navigator": 170319.742730226
+    },
+    "arm_issued_at": 170319.742738538,
+    "goal_sent_at": 170319.751650524,
+    "error": "ProtocolError('NAVIGATION_DEADLINE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v974_daytime_binding_gate/ros_bridge.py\", line 220, in run\n    response,events=supervise(node,g,goal_until,deadline,rclpy.spin_once,wait_for,require,check_servers)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v974_daytime_binding_gate/supervise.py\", line 86, in supervise\n    tick()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v974_daytime_binding_gate/supervise.py\", line 52, in tick\n    require(time.monotonic()<goal_until and time.time()<deadline-25, 'NAVIGATION_DEADLINE')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v862_ready_static/handshake.py\", line 10, in require\n    if not condition:raise ProtocolError(message)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nhandshake.ProtocolError: NAVIGATION_DEADLINE\n",
+    "reason": "ROS_INTERFACE_OR_FUNCTIONAL_STOP",
+    "wall_s": 6.472811792977154,
+    "readiness_probes": {
+      "passed": true,
+      "size_x": 1000,
+      "size_y": 1000,
+      "resolution": 0.009999999776482582,
+      "origin": [
+        -5.0,
+        -5.0
+      ],
+      "frame": "map",
+      "cells": 1000000,
+      "unknown_cells": 0,
+      "required_static_cells": 72683,
+      "missing_static_cells": 0,
+      "all_unknown": false,
+      "models": 0,
+      "checked_at": 170319.695260184
+    },
+    "odometry_messages": 416,
+    "cmd_vel_messages": 61,
+    "plan_messages": 3,
+    "maximum_observation_age_s": 0.01250242700916715,
+    "maximum_scan_age_s": 0.01250242700916715,
+    "last_observation": {
+      "kind": "observation",
+      "run_id": "v974-planner-flow-software-fixture",
+      "phase": "RUNNING",
+      "native_tick": 301,
+      "sim_time": 3.0100000000000002,
+      "sent_at": 170322.744665149,
+      "body_measured_at": 170322.744665149,
+      "scan_measured_at": 170322.744665149,
+      "initial_snapshot": false,
+      "body": [
+        -3.7720092474161504,
+        -1.988595314090951,
+        0.10645439027165882,
+        0.07636579031022932,
+        0.03575268770842869
+      ],
+      "steering": {
+        "native_tick": 301,
+        "measured_at": 170322.744665149,
+        "position": [
+          0.31111088128580855,
+          0.24439713269585284
+        ],
+        "velocity": [
+          0.0,
+          0.0
+        ]
+      },
+      "scan": {
+        "native_tick": 301,
+        "time": 3.0100000000000002,
+        "xy": [
+          -3.7720092474161504,
+          -1.988595314090951
+        ],
+        "yaw": 0.10645439027165882,
+        "ranges": [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ]
+      }
+    }
+  },
+  "peer_errors": [],
+  "scope": "Actual installed Nav2 NavigateToPose -> real Smac global plan -> RPP nonzero output -> original admission; kinematic software peer only."
+}
