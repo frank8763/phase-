@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checks": {
+    "original_recorded_bug_reproduced": true,
+    "original_fast_start_positive": true,
+    "original_failed_worker_rejected": true,
+    "proposed_actual_latency_admitted": true,
+    "proposed_near_cap_admitted": true,
+    "proposed_hang_stops": true,
+    "proposed_root_reserve_kept": true,
+    "proposed_failed_worker_stops": true,
+    "task_budget_arithmetic": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "actual_frozen_parent_ast_executed": true,
+  "source": "experiments/v985_rear_yaw_components/launch_one.py",
+  "source_sha256": "dd0486a9ef4320c6a1a9236090425e965385c2578187c3a3a2a7321c2b9de948",
+  "recorded_factory_restore_wall_s": 129.17609003401594,
+  "original_parent_reproduction": {
+    "passed": false,
+    "error": "CANONICAL_STATE_RESTORE_TIMEOUT",
+    "wait_s": 120.04999999999532
+  },
+  "original_boundary_case": {
+    "passed": true,
+    "wait_s": 119.94999999999533
+  },
+  "proposed_budget_cases": {
+    "actual_saved_latency": {
+      "passed": true,
+      "wait_s": 129.19999999999513
+    },
+    "near_cap_success": {
+      "passed": true,
+      "wait_s": 179.90000000000666
+    },
+    "startup_hang_rejected": {
+      "passed": false,
+      "error": "CANONICAL_STATE_RESTORE_TIMEOUT",
+      "wait_s": 180.00000000000668
+    },
+    "root_reserve_rejected": {
+      "passed": false,
+      "error": "CANONICAL_STATE_RESTORE_TIMEOUT",
+      "wait_s": 90.04999999999703
+    },
+    "worker_failure_rejected": {
+      "passed": false,
+      "error": "NATIVE_FAILED_BEFORE_CANONICAL_READY",
+      "wait_s": 20.00000000000015
+    }
+  },
+  "proposed_phase_budget": {
+    "restore_cap_s": 180.0,
+    "ros_startup_s": 35.0,
+    "driving_s": 40.0,
+    "brake_s": 2.0,
+    "save_replay_s": 40.0,
+    "failure_closure_s": 40.0,
+    "margin_s": 13.0
+  },
+  "proposed_task_hard_s": 350.0,
+  "proposed_campaign_wait_s": 360.0,
+  "proposed_root_launch_reserve_s": 375.0,
+  "no_live_source_modified": true,
+  "no_new_physical_entry_prepared": true,
+  "no_model_authority": true,
+  "scope": "Parent wait-loop and wall-budget arithmetic only. Does not qualify actual cold start, vehicle response or dynamic navigation."
+}

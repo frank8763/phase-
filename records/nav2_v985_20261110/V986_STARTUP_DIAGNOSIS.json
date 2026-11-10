@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "checks": {
+    "first_parent_error_restore_timeout": true,
+    "actual_parent_wait_bug_reproduced": true,
+    "factory_restore_exceeded_parent120": true,
+    "native_completed_original_origin": true,
+    "exact_historical_state_control": true,
+    "active_adapter_switch_reached": true,
+    "parent_stop_preceded_native_ready": true,
+    "new_branch_exactly_zero": true,
+    "no_new_controller_proofs": true,
+    "no_arm_or_ros_action": true,
+    "replay_of_history_exact": true,
+    "graceful_stop_not_forced": true,
+    "original_guard_restored": true
+  },
+  "models_during_diagnosis": 0,
+  "integrations_during_diagnosis": 0,
+  "original_outcome": "V985_NOT_PASSED",
+  "failure_class": "PARENT_CANONICAL_RESTORE_WAIT_TIMEOUT_BEFORE_ARM",
+  "exact_counts": {
+    "vehicle_tasks_initialized": 1,
+    "historical_restore_native": 6083,
+    "new_branch_native": 0,
+    "whole_own_trace_replay_native": 6083,
+    "private_native": 0,
+    "second_component_unexecuted": true,
+    "new_navigation_trials": 0,
+    "new24": 0
+  },
+  "primary_error": "AssertionError('CANONICAL_STATE_RESTORE_TIMEOUT')",
+  "secondary_errors": [
+    "ROS_RESULT.json absent because ROS was never launched",
+    "Actuation audit requires new rows but this prefix has exactly zero new rows"
+  ],
+  "source": "experiments/v985_rear_yaw_components/launch_one.py:24-28",
+  "parent_wait_cap_s": 120.0,
+  "observed_factory_and_restore_wall_s": 129.17609003401594,
+  "observed_factory_and_restore_thread_cpu_s": 65.254478514,
+  "ready_after_parent_stop_s": 9.546996830991702,
+  "warmup_vs_history_vs_scheduler_separately_identified": false,
+  "historical_prefix_minimum_clearance_m": 0.2730365667394967,
+  "historical_bad_contacts": 0,
+  "new_feedback_effect_measured": false,
+  "new_controller_tracking_passed": false,
+  "conclusion": "Parent readiness budget expired before a successfully restored original origin became ready. Frozen V984 was bound but never drove. This run cannot judge its physical benefit or failure. Source preparation missed this slow-restoration startup case.",
+  "next_scope": "Operational startup/restore budgeting, progress and pre-ARM failure reporting only; freeze V984/reference/model/safety limits. Same two fixed components only after new entry qualifications and a new explicit bounded window.",
+  "no_new_physical_authority": true
+}
