@@ -64,3 +64,5 @@ V997只准备一个响应一致的解析参考候选：保留原转角状态、�
 REVIEW_PENDING原字节恢复，执行锁空闲，训练/SAC/实体机0，Stage完全隔离；current/runtime/冻结网络不改。原完整动态328预测合同没有被此诊断或经验关系自动证明，亦无实时、任意遮挡、多actor、任意地图或RAS保证。
 
 本轮必要证据、候选失败与图/源码按存储规则上传同仓库GitHub，所有资产及解压成员SHA回读后清理本机缓存；同一新根最多一次30秒push/5秒HEAD核验，原批同步不重试。存储实际回执见records/nav2_v995_20261110。
+
+存储FINALIZED：源码唯一push/远端HEAD提交`c4d27f7d06662af8b69530d4b70f343c6a712158`核验成功；276来源/71,368,788原始字节、41,800,201压缩字节/两块及全部解压成员SHA远端回读通过。仅清理本轮原始/按需恢复/传输缓存200,373,853字节，输出资源链接只unlink、不访问目标。闭批回执仅Release增量及本地补交，无第二push。归档：https://github.com/frank8763/phase-/releases/tag/phase-rpccr-sim-time-response-v995-20261110。
