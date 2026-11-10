@@ -1,0 +1,189 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "physical_replay": 0,
+  "cases": [
+    {
+      "mode": "healthy",
+      "prior_gc_enabled": true,
+      "expected_verdict_observed": true,
+      "count": 800,
+      "error": null,
+      "actual_lag_recorded": null
+    },
+    {
+      "mode": "native",
+      "prior_gc_enabled": true,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "AssertionError('NATIVE_WALL_LAG')",
+      "actual_lag_recorded": {
+        "native_tick_completed": 6384,
+        "target_monotonic_s": 103.01,
+        "observed_monotonic_s": 103.175,
+        "lag_s": 0.16499999999999204,
+        "limit_s": 0.1
+      }
+    },
+    {
+      "mode": "scan",
+      "prior_gc_enabled": true,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "AssertionError('NATIVE_WALL_LAG')",
+      "actual_lag_recorded": {
+        "native_tick_completed": 6384,
+        "target_monotonic_s": 103.01,
+        "observed_monotonic_s": 103.176,
+        "lag_s": 0.16599999999999682,
+        "limit_s": 0.1
+      }
+    },
+    {
+      "mode": "partial",
+      "prior_gc_enabled": true,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "AssertionError('NATIVE_WALL_LAG')",
+      "actual_lag_recorded": {
+        "native_tick_completed": 6384,
+        "target_monotonic_s": 103.01,
+        "observed_monotonic_s": 103.176,
+        "lag_s": 0.16599999999999682,
+        "limit_s": 0.1
+      }
+    },
+    {
+      "mode": "scheduler",
+      "prior_gc_enabled": true,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "AssertionError('NATIVE_WALL_LAG')",
+      "actual_lag_recorded": {
+        "native_tick_completed": 6384,
+        "target_monotonic_s": 103.01,
+        "observed_monotonic_s": 103.185,
+        "lag_s": 0.17499999999999716,
+        "limit_s": 0.1
+      }
+    },
+    {
+      "mode": "deadline",
+      "prior_gc_enabled": true,
+      "expected_verdict_observed": true,
+      "count": 200,
+      "error": "AssertionError('ROOT_OR_TASK_MODEL_RESERVE')",
+      "actual_lag_recorded": null
+    },
+    {
+      "mode": "partial_exception",
+      "prior_gc_enabled": true,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "OSError('INJECTED_PARTIAL_WRITE_ERROR')",
+      "actual_lag_recorded": null
+    },
+    {
+      "mode": "native_exception",
+      "prior_gc_enabled": true,
+      "expected_verdict_observed": true,
+      "count": null,
+      "error": "RuntimeError('INJECTED_NATIVE_EXCEPTION')",
+      "actual_lag_recorded": null
+    },
+    {
+      "mode": "healthy",
+      "prior_gc_enabled": false,
+      "expected_verdict_observed": true,
+      "count": 800,
+      "error": null,
+      "actual_lag_recorded": null
+    },
+    {
+      "mode": "native",
+      "prior_gc_enabled": false,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "AssertionError('NATIVE_WALL_LAG')",
+      "actual_lag_recorded": {
+        "native_tick_completed": 6384,
+        "target_monotonic_s": 103.01,
+        "observed_monotonic_s": 103.175,
+        "lag_s": 0.16499999999999204,
+        "limit_s": 0.1
+      }
+    },
+    {
+      "mode": "scan",
+      "prior_gc_enabled": false,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "AssertionError('NATIVE_WALL_LAG')",
+      "actual_lag_recorded": {
+        "native_tick_completed": 6384,
+        "target_monotonic_s": 103.01,
+        "observed_monotonic_s": 103.176,
+        "lag_s": 0.16599999999999682,
+        "limit_s": 0.1
+      }
+    },
+    {
+      "mode": "partial",
+      "prior_gc_enabled": false,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "AssertionError('NATIVE_WALL_LAG')",
+      "actual_lag_recorded": {
+        "native_tick_completed": 6384,
+        "target_monotonic_s": 103.01,
+        "observed_monotonic_s": 103.176,
+        "lag_s": 0.16599999999999682,
+        "limit_s": 0.1
+      }
+    },
+    {
+      "mode": "scheduler",
+      "prior_gc_enabled": false,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "AssertionError('NATIVE_WALL_LAG')",
+      "actual_lag_recorded": {
+        "native_tick_completed": 6384,
+        "target_monotonic_s": 103.01,
+        "observed_monotonic_s": 103.185,
+        "lag_s": 0.17499999999999716,
+        "limit_s": 0.1
+      }
+    },
+    {
+      "mode": "deadline",
+      "prior_gc_enabled": false,
+      "expected_verdict_observed": true,
+      "count": 200,
+      "error": "AssertionError('ROOT_OR_TASK_MODEL_RESERVE')",
+      "actual_lag_recorded": null
+    },
+    {
+      "mode": "partial_exception",
+      "prior_gc_enabled": false,
+      "expected_verdict_observed": true,
+      "count": 301,
+      "error": "OSError('INJECTED_PARTIAL_WRITE_ERROR')",
+      "actual_lag_recorded": null
+    },
+    {
+      "mode": "native_exception",
+      "prior_gc_enabled": false,
+      "expected_verdict_observed": true,
+      "count": null,
+      "error": "RuntimeError('INJECTED_NATIVE_EXCEPTION')",
+      "actual_lag_recorded": null
+    }
+  ],
+  "gc_flag_restored": true,
+  "original_100ms_gate_unchanged": true,
+  "actual_frozen_worker_unchanged": true,
+  "physical_cause_unresolved": true,
+  "physical_authority": false
+}

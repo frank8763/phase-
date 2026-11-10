@@ -3,10 +3,10 @@
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
-  "decision_freeze": "experiments/v991_coordinated_components/SOURCE_FREEZE.json",
-  "source_revision": "V991_CLOSED_NOT_PASSED",
-  "protocol": "experiments/v991_coordinated_components/PROTOCOL.md",
-  "report": "docs/RPCCR_COORDINATED_COMPONENTS_V991_REPORT.md",
+  "decision_freeze": "experiments/v993_steering_transient_diagnosis/SOURCE_FREEZE.json",
+  "source_revision": "V993_CLOSED_TIMING_INTERRUPTION",
+  "protocol": "experiments/v993_steering_transient_diagnosis/PROTOCOL.md",
+  "report": "docs/RPCCR_STEERING_DIAGNOSTICS_V993_V994_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -8801,5 +8801,28 @@
     "no_physical_retry_or_new_window": true,
     "unique_mechanical_cause_proven": false,
     "report": "docs/RPCCR_COORDINATED_COMPONENTS_V991_REPORT.md"
+  },
+  "v993_diagnostic_summary": {
+    "passed": false,
+    "rows": 2,
+    "error": {
+      "error": "AssertionError('FIRST_DIAGNOSTIC_SAFETY_STATE_CONTROL_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v993_steering_transient_diagnosis/campaign.py\", line 33, in main\n    assert row['passed'],'FIRST_DIAGNOSTIC_SAFETY_STATE_CONTROL_EVIDENCE_FAILURE'\nAssertionError: FIRST_DIAGNOSTIC_SAFETY_STATE_CONTROL_EVIDENCE_FAILURE\n"
+    },
+    "deadline_unix": 1794312000.0
+  },
+  "v994_zero_model_diagnosis": {
+    "models": 0,
+    "integrations": 0,
+    "original_counts": {
+      "models": 2,
+      "historical_native": 12166,
+      "new_actual_native": 1101,
+      "own_trace_replay_native": 6883,
+      "private_native": 0
+    },
+    "execution_loop_fault_cases": 16,
+    "physical_cause_unresolved": true,
+    "physical_ready": false
   }
 }

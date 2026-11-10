@@ -1,0 +1,204 @@
+{
+  "closed": true,
+  "diagnostic_evidence_passed": false,
+  "navigation_passed": false,
+  "rows": [
+    {
+      "slot": 0,
+      "name": "held_original_steering",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v993/held_original_steering",
+      "passed": true,
+      "result": {
+        "passed": true,
+        "status": "DIAGNOSTIC_RESPONSE_RECORDED",
+        "vehicle_tasks_initialized": 1,
+        "historical_native": 6083,
+        "new_actual_native": 800,
+        "replay_native": 6883,
+        "private_native": 0,
+        "root_deadline_unix": 1794312000.0,
+        "task_hard_deadline_unix": 1794294642.9808915,
+        "diagnostic_only": true,
+        "native": {
+          "actual_native": 6883,
+          "fully_recorded_native": 6883,
+          "minimum_actual_clearance_m": 0.2730365667394967,
+          "minimum_self_margin_m": 0.009023768612320182,
+          "bad_contacts": 0,
+          "final_body": [
+            0.4779741106665873,
+            -0.7058935599797926,
+            -0.006500334813385252,
+            7.633464743271064e-06,
+            -3.400332590401171e-06
+          ],
+          "final_translation_speed_m_s": 7.760214422877173e-06,
+          "root_guard_native_count": 6883,
+          "goal_distance_m": 3.752249704275635,
+          "first_actor_detection": {
+            "native_tick": 5711,
+            "sim_time": 57.10999999999721,
+            "xy": [
+              0.1480987249478697,
+              -0.6774297331582477
+            ],
+            "rays": [
+              31
+            ],
+            "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+          },
+          "actual_travel_after_detection_m": 0.3353283631653448
+        },
+        "maximum_wall_lag_s": 0.07757828899775632,
+        "replay": {
+          "replay_native": 6883,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "closed_unix": 1794294412.9167347,
+        "wall_s": 69.93584561799071
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "complete_recorded_native": true,
+          "complete_new_diagnostic": true,
+          "every_control_is_registered_stimulus": true,
+          "exact_history": true,
+          "finite_arrays": true,
+          "full_native_clearance": true,
+          "full_native_self": true,
+          "contacts_and_commands_complete": true,
+          "no_bad_contacts": true,
+          "no_root_mutation": true,
+          "unchanged_sensor": true,
+          "canonical_true_t0": true,
+          "original_actor": true,
+          "native_body_caps": true,
+          "complete_stop_tail": true,
+          "complete_own_replay": true,
+          "pacing": true,
+          "diagnostic_not_navigation": true,
+          "actual_ctrl_reconstructed": true
+        },
+        "actuation": {
+          "passed": true,
+          "models": 0,
+          "integrations": 0,
+          "historical_control_rows": 6083,
+          "new_control_rows": 800,
+          "maximum_control_reconstruction_error": 1.1275702593849246e-16,
+          "maximum_independent_rear_residual_rad_s": 0.0,
+          "physical_tracking_qualified_by_this_check": false,
+          "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+        },
+        "counts": {
+          "vehicle_tasks_initialized": 1,
+          "historical_native": 6083,
+          "new_actual_native": 800,
+          "own_trace_replay_native": 6883,
+          "private_native": 0
+        },
+        "original_history_max_errors": {
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "ctrl": 0.0,
+          "mocap_pos": 0.0,
+          "mocap_quat": 0.0
+        },
+        "minimum_actual_clearance_m": 0.2730365667394967,
+        "bad_contacts": 0,
+        "independent_navigation_sample": false,
+        "navigation_passed": false,
+        "diagnostic_evidence_only": true,
+        "metrics": {
+          "maximum_abs_kinematic_heading_residual_rad": 0.016448249495878933,
+          "final_kinematic_heading_residual_rad": 0.016277728885585024,
+          "movement_yaw_residual_rms_rad_s": 0.002725646778097863,
+          "final_moving_window_yaw_residual_rms_rad_s": 0.0027979821899962215,
+          "measured_steering_rate_body_yaw_correlation": 0.40079940579935747,
+          "active_steering_samples": 0,
+          "maximum_steering_rate_rad_s": 0.0068778614863744016,
+          "final_actual_steering_rad": [
+            -0.25589194177752517,
+            -0.32971366662753404
+          ],
+          "actual_translation_m": 0.169401378006108
+        },
+        "reference_heading_residual_is_diagnostic_not_a_navigation_gate": true,
+        "models_during_audit": 0
+      }
+    },
+    {
+      "slot": 1,
+      "name": "ramp_to_straight_fast",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v993/ramp_to_straight_fast",
+      "passed": false,
+      "result": {
+        "passed": false,
+        "status": "FAILED",
+        "vehicle_tasks_initialized": 1,
+        "historical_native": 6083,
+        "new_actual_native": 301,
+        "replay_native": 0,
+        "private_native": 0,
+        "root_deadline_unix": 1794312000.0,
+        "task_hard_deadline_unix": 1794294714.0576544,
+        "diagnostic_only": true,
+        "error": "AssertionError('NATIVE_WALL_LAG')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v993_steering_transient_diagnosis/worker.py\", line 34, in main\n    assert lag<=.1,'NATIVE_WALL_LAG'\nAssertionError: NATIVE_WALL_LAG\n",
+        "actual_native_completed_lower_bound": 6384,
+        "partial_native": {
+          "actual_native": 6384,
+          "fully_recorded_native": 6384,
+          "minimum_actual_clearance_m": 0.2730365667394967,
+          "minimum_self_margin_m": 0.009023768612320182,
+          "bad_contacts": 0,
+          "final_body": [
+            0.39287038291918525,
+            -0.6850242407832614,
+            0.02885039345378684,
+            0.027838736497254532,
+            1.3508885006585658e-05
+          ],
+          "final_translation_speed_m_s": 0.027838736497326128,
+          "root_guard_native_count": 6384,
+          "goal_distance_m": 3.8393417823566094,
+          "first_actor_detection": {
+            "native_tick": 5711,
+            "sim_time": 57.10999999999721,
+            "xy": [
+              0.1480987249478697,
+              -0.6774297331582477
+            ],
+            "rays": [
+              31
+            ],
+            "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+          },
+          "actual_travel_after_detection_m": 0.24807605049882694
+        },
+        "closed": true,
+        "closed_unix": 1794294477.8390257,
+        "wall_s": 63.781376081024064
+      },
+      "audit": {
+        "passed": false,
+        "error": "AssertionError('NATIVE_WALL_LAG')"
+      }
+    }
+  ],
+  "error": {
+    "error": "AssertionError('FIRST_DIAGNOSTIC_SAFETY_STATE_CONTROL_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v993_steering_transient_diagnosis/campaign.py\", line 33, in main\n    assert row['passed'],'FIRST_DIAGNOSTIC_SAFETY_STATE_CONTROL_EVIDENCE_FAILURE'\nAssertionError: FIRST_DIAGNOSTIC_SAFETY_STATE_CONTROL_EVIDENCE_FAILURE\n"
+  },
+  "closed_unix": 1794294478.4631946,
+  "absolute_deadline_unix": 1794312000.0,
+  "models_authorized": false,
+  "unexecuted_slots": [
+    2,
+    3
+  ]
+}

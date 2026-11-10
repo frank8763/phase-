@@ -1,0 +1,135 @@
+{
+  "status": "V993_NOT_PASSED_TIMING_INTERRUPTION",
+  "models_during_analysis": 0,
+  "integrations_during_analysis": 0,
+  "original_source_files_verified": 1965,
+  "original_failure_unchanged": true,
+  "counts": {
+    "models": 2,
+    "historical_native": 12166,
+    "new_actual_native": 1101,
+    "own_trace_replay_native": 6883,
+    "private_native": 0
+  },
+  "tasks": [
+    {
+      "slot": 0,
+      "name": "held_original_steering",
+      "original_passed": true,
+      "models": 1,
+      "historical_native": 6083,
+      "new_actual_native": 800,
+      "own_trace_replay_native": 6883,
+      "private_native": 0,
+      "saved_prefix_checks": {
+        "finite": true,
+        "clearance": true,
+        "self_margin": true,
+        "contacts": true,
+        "native_body_caps": true,
+        "control_map": true,
+        "history": true,
+        "no_root_mutation": true
+      },
+      "original_history_max_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0,
+        "mocap_quat": 0.0
+      },
+      "full_stop_recorded": true,
+      "full_own_replay_recorded": true,
+      "maximum_abs_kinematic_heading_residual_rad": 0.016448249495878933,
+      "steering_rate_body_yaw_correlation": -0.25556692508498713,
+      "maximum_actual_steering_rate_rad_s": 0.0068778614863744016,
+      "maximum_body_command_timestamp_gap_s": 0.09506535599939525,
+      "gap_between_new_completed_steps": [
+        300,
+        301
+      ],
+      "final_translation_speed_m_s": 7.760214422877173e-06,
+      "minimum_clearance_m": 0.2730365667394967,
+      "bad_contacts": 0,
+      "actuator_reconstruction": {
+        "passed": true,
+        "models": 0,
+        "integrations": 0,
+        "historical_control_rows": 6083,
+        "new_control_rows": 800,
+        "maximum_control_reconstruction_error": 1.1275702593849246e-16,
+        "maximum_independent_rear_residual_rad_s": 0.0,
+        "physical_tracking_qualified_by_this_check": false,
+        "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+      },
+      "exact_failing_lag_s": 0.07757828899775632,
+      "timing_attribution": "Unknown: timestamps are post-step; no per-stage wall/thread/GC timings were saved",
+      "physical_navigation_passed": false
+    },
+    {
+      "slot": 1,
+      "name": "ramp_to_straight_fast",
+      "original_passed": false,
+      "models": 1,
+      "historical_native": 6083,
+      "new_actual_native": 301,
+      "own_trace_replay_native": 0,
+      "private_native": 0,
+      "saved_prefix_checks": {
+        "finite": true,
+        "clearance": true,
+        "self_margin": true,
+        "contacts": true,
+        "native_body_caps": true,
+        "control_map": true,
+        "history": true,
+        "no_root_mutation": true
+      },
+      "original_history_max_errors": {
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "ctrl": 0.0,
+        "mocap_pos": 0.0,
+        "mocap_quat": 0.0
+      },
+      "full_stop_recorded": false,
+      "full_own_replay_recorded": false,
+      "maximum_abs_kinematic_heading_residual_rad": 0.027898582087825363,
+      "steering_rate_body_yaw_correlation": -0.998098281425181,
+      "maximum_actual_steering_rate_rad_s": 0.6484221635065293,
+      "maximum_body_command_timestamp_gap_s": 0.17551458900561556,
+      "gap_between_new_completed_steps": [
+        300,
+        301
+      ],
+      "final_translation_speed_m_s": 0.027838736497326128,
+      "minimum_clearance_m": 0.2730365667394967,
+      "bad_contacts": 0,
+      "actuator_reconstruction": {
+        "passed": true,
+        "models": 0,
+        "integrations": 0,
+        "historical_control_rows": 6083,
+        "new_control_rows": 301,
+        "maximum_control_reconstruction_error": 1.1102230246251565e-16,
+        "maximum_independent_rear_residual_rad_s": 5.551115123125783e-17,
+        "physical_tracking_qualified_by_this_check": false,
+        "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+      },
+      "exact_failing_lag_s": null,
+      "timing_attribution": "Unknown: timestamps are post-step; no per-stage wall/thread/GC timings were saved",
+      "physical_navigation_passed": false
+    }
+  ],
+  "unexecuted_slots": [
+    2,
+    3
+  ],
+  "new_navigation_trials": 0,
+  "unexecuted_scientific_candidates": 1,
+  "registered_physical_chain_closed": true,
+  "deadline_unix": 1794312000.0,
+  "unique_gc_disk_or_scheduler_cause_proven": false,
+  "missing_fault_time_log_is_instrumentation_defect": true,
+  "physical_conclusion": "Held-angle diagnostic complete; fast straightening only 3.01s, no full stop or own replay. No recovery/navigation qualification."
+}
