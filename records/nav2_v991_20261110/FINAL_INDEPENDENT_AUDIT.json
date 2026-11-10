@@ -1,0 +1,94 @@
+{
+  "closed": true,
+  "passed": false,
+  "status": "NOT_PASSED",
+  "completion": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "error": {
+      "error": "AssertionError('FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE component_0')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v991_coordinated_components/campaign.py\", line 38, in main\n    assert row['passed'],'FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE '+task['task_id']\nAssertionError: FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE component_0\n"
+    },
+    "rows": [
+      {
+        "task_id": "component_0",
+        "stage": "component",
+        "passed": false,
+        "historical_restore_native": 6083,
+        "new_branch_native": 390,
+        "own_full_trace_replay_native": 6473,
+        "private_native": 0,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v991/component_0",
+        "goal_m": 3.868767560267257,
+        "audit_error": "FileNotFoundError(2, 'No such file or directory')",
+        "primary_failure": {
+          "error": "AssertionError('FIRST_WORKER_FAILURE_OR_DEADLINE')",
+          "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v991_coordinated_components/launch_one.py\", line 38, in main\n    assert closure['passed'],'FIRST_WORKER_FAILURE_OR_DEADLINE'\nAssertionError: FIRST_WORKER_FAILURE_OR_DEADLINE\n"
+        },
+        "execution_status": "NATIVE_COMPLETE",
+        "new_control_tested": true,
+        "actuation_status": null
+      }
+    ],
+    "unexecuted_tasks": [
+      "component_1"
+    ],
+    "models_authorized": false,
+    "deadline_unix": 1794298293.6992629,
+    "closed_unix": 1794293041.0193808,
+    "guard_restored": true,
+    "new24": 0,
+    "automatic_followup": false
+  },
+  "integrations": [
+    {
+      "task_id": "component_0",
+      "stage": "component",
+      "attempted": true,
+      "passed": false,
+      "historical_restore_native": 6083,
+      "new_branch_native": 390,
+      "new_branch_completed_lower_bound": 390,
+      "own_full_trace_replay_native": 6473,
+      "initialization_completed": true,
+      "private_native": 0,
+      "unexecuted": false,
+      "error": {
+        "error": "AssertionError('FIRST_WORKER_FAILURE_OR_DEADLINE')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v991_coordinated_components/launch_one.py\", line 38, in main\n    assert closure['passed'],'FIRST_WORKER_FAILURE_OR_DEADLINE'\nAssertionError: FIRST_WORKER_FAILURE_OR_DEADLINE\n"
+      },
+      "execution_status": "NATIVE_COMPLETE",
+      "new_control_tested": true,
+      "actuation_status": null,
+      "minimum_actual_clearance_m": null,
+      "goal_m": 3.868767560267257,
+      "tracking": null
+    },
+    {
+      "task_id": "component_1",
+      "stage": "component",
+      "attempted": false,
+      "passed": false,
+      "historical_restore_native": 0,
+      "new_branch_native": 0,
+      "new_branch_completed_lower_bound": null,
+      "own_full_trace_replay_native": 0,
+      "initialization_completed": false,
+      "private_native": 0,
+      "unexecuted": true,
+      "error": null,
+      "execution_status": null,
+      "new_control_tested": false,
+      "actuation_status": null,
+      "minimum_actual_clearance_m": null,
+      "goal_m": null,
+      "tracking": null
+    }
+  ],
+  "source_sha_all_verified": true,
+  "new24_executed": 0,
+  "independent_navigation_tasks": 0,
+  "models_during_finalization": 0,
+  "old_failure_preserved": true,
+  "review_pending_original_restored": true
+}
