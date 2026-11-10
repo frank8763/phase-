@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "checks": {
+    "real_owned_wrapper_child_tests": true,
+    "known_historical_and_new_counts_separate": true,
+    "interrupted_integration_total_unknown": true,
+    "mismatched_return_and_recorded_count_unknown": true,
+    "replay_not_inferred_zero": true,
+    "foreign_run_stop_rejected": true
+  },
+  "cases": [
+    {
+      "name": "ros_failure_preserves_native",
+      "passed": true,
+      "saved_native_fixture": true,
+      "elapsed_s": 0.20773999800439924,
+      "proof": {
+        "passed": false,
+        "failure": {
+          "reason": "FIRST_WORKER_FAILURE",
+          "failed": [
+            {
+              "pid": 467693,
+              "returncode": 7
+            }
+          ],
+          "detected_monotonic": 189675.318576034
+        },
+        "forced_process_groups": [],
+        "hard_stop_monotonic": 189680.298361626,
+        "closed_monotonic": 189675.497266651,
+        "navigation_restart": false,
+        "root_deadline_unchanged": true
+      }
+    },
+    {
+      "name": "parent_exception_preserves_native",
+      "passed": true,
+      "saved_native_fixture": true,
+      "elapsed_s": 0.18623139199917205,
+      "proof": {
+        "passed": false,
+        "failure": {
+          "reason": "FIXTURE_PARENT_EXCEPTION"
+        },
+        "forced_process_groups": [],
+        "hard_stop_monotonic": 189680.537116047,
+        "closed_monotonic": 189675.714291622,
+        "navigation_restart": false,
+        "root_deadline_unchanged": true
+      }
+    },
+    {
+      "name": "hung_worker_bounded",
+      "passed": true,
+      "saved_native_fixture": false,
+      "elapsed_s": 0.33869611599948257,
+      "proof": {
+        "passed": false,
+        "failure": {
+          "reason": "FIRST_WORKER_FAILURE",
+          "failed": [
+            {
+              "pid": 467698,
+              "returncode": 7
+            }
+          ],
+          "detected_monotonic": 189675.774642761
+        },
+        "forced_process_groups": [
+          467696
+        ],
+        "hard_stop_monotonic": 189680.7544521,
+        "closed_monotonic": 189676.084167201,
+        "navigation_restart": false,
+        "root_deadline_unchanged": true
+      }
+    },
+    {
+      "name": "root_deadline_not_extended",
+      "passed": true,
+      "saved_native_fixture": false,
+      "elapsed_s": 0.37876160800806247,
+      "proof": {
+        "passed": false,
+        "failure": {
+          "reason": "TASK_OR_ROOT_DEADLINE",
+          "failed": [],
+          "detected_monotonic": 189676.476764844
+        },
+        "forced_process_groups": [
+          467699
+        ],
+        "hard_stop_monotonic": 189676.47402834607,
+        "closed_monotonic": 189676.49512107,
+        "navigation_restart": false,
+        "root_deadline_unchanged": true
+      }
+    }
+  ],
+  "known_accounting": {
+    "status": "FAILED",
+    "final": false,
+    "environment_initialization_attempted": false,
+    "environment_initialization_completed": true,
+    "historical_restore_native": 6083,
+    "actual_native_exact": 6199,
+    "native_calls_completed": 116,
+    "new_branch_native_exact": 116,
+    "new_branch_native_observed_lower_bound": 116,
+    "count_status": "COMPLETED_RETURN_COUNT",
+    "own_full_trace_replay_native_exact": null,
+    "replay_status": "NOT_STARTED_AT_ACCOUNTING_CHECKPOINT",
+    "full_safety_verdict": false,
+    "navigation_passed": false
+  },
+  "interrupted_accounting": {
+    "status": "FAILED",
+    "final": false,
+    "environment_initialization_attempted": false,
+    "environment_initialization_completed": false,
+    "historical_restore_native": null,
+    "actual_native_exact": null,
+    "native_calls_completed": 116,
+    "new_branch_native_exact": null,
+    "new_branch_native_observed_lower_bound": 116,
+    "count_status": "UNKNOWN_INTERRUPTED_NATIVE_CALL",
+    "own_full_trace_replay_native_exact": null,
+    "replay_status": "NOT_STARTED_AT_ACCOUNTING_CHECKPOINT",
+    "full_safety_verdict": false,
+    "navigation_passed": false
+  },
+  "mismatch_accounting": {
+    "status": "FAILED",
+    "final": false,
+    "environment_initialization_attempted": false,
+    "environment_initialization_completed": false,
+    "historical_restore_native": null,
+    "actual_native_exact": null,
+    "native_calls_completed": 116,
+    "new_branch_native_exact": null,
+    "new_branch_native_observed_lower_bound": 117,
+    "count_status": "RETURN_AND_RECORDED_COUNT_MISMATCH",
+    "own_full_trace_replay_native_exact": null,
+    "replay_status": "NOT_STARTED_AT_ACCOUNTING_CHECKPOINT",
+    "full_safety_verdict": false,
+    "navigation_passed": false
+  },
+  "models": 0,
+  "integrations": 0,
+  "fixtures_not_physical_evidence": true
+}

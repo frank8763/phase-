@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_constructor_original_command_map": true,
+    "actual_selected_class_source": true,
+    "memory_switch_does_not_advance_state": true,
+    "actual_dispatch_recording_and_independent_mixed_audit": true,
+    "diagnostic_force_arrays_and_encoder_records_written": true,
+    "ten_final_control_evidence_mutations_rejected": true,
+    "advanced_origin_denied_before_switch": true,
+    "wrong_clock_denied_before_switch": true,
+    "wrong_scope_denied_before_switch": true,
+    "moving_origin_denied_before_switch": true,
+    "lateral_moving_origin_denied_before_switch": true,
+    "metadata_proxy_not_model_initialization": true,
+    "actual_native_engine_selected": true,
+    "actual_ros_engine_selected": true,
+    "actual_precise_guard_selected": true,
+    "actual_dense_audit_selected": true,
+    "actual_actuation_audit_selected": true,
+    "actual_engine_denies_before_model_import": true
+  },
+  "negative_cases": [
+    {
+      "case": "proof_curvature",
+      "rejected": true
+    },
+    {
+      "case": "false_common",
+      "rejected": true
+    },
+    {
+      "case": "wrong_tick",
+      "rejected": true
+    },
+    {
+      "case": "wrong_actual_ctrl",
+      "rejected": true
+    },
+    {
+      "case": "missing_row",
+      "rejected": true
+    },
+    {
+      "case": "false_stale",
+      "rejected": true
+    },
+    {
+      "case": "false_pre_body",
+      "rejected": true
+    },
+    {
+      "case": "false_post_body",
+      "rejected": true
+    },
+    {
+      "case": "false_encoder",
+      "rejected": true
+    },
+    {
+      "case": "false_measured_feedback",
+      "rejected": true
+    }
+  ],
+  "mixed_audit": {
+    "passed": true,
+    "models": 0,
+    "integrations": 0,
+    "historical_control_rows": 6083,
+    "new_control_rows": 350,
+    "maximum_control_reconstruction_error": 5.551115123125783e-17,
+    "maximum_independent_rear_residual_rad_s": 2.220446049250313e-16,
+    "physical_tracking_qualified_by_this_check": false,
+    "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+  },
+  "models": 0,
+  "integrations": 0,
+  "explicit_metadata_array_fixture": true,
+  "canonical_model_audit_performed": false,
+  "factory_engine_module_binding_qualified": true,
+  "physical_tracking_qualified": false,
+  "physical_ready": false,
+  "models_authorized": false
+}

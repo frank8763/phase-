@@ -1,0 +1,27 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "failures": [
+    {
+      "stage": "real_installed_RPP_software_case0_attempt1",
+      "error": "MANAGER_STARTUP_TIMEOUT",
+      "new_model": false,
+      "science_changed_after_failure": false,
+      "new_diagnostics": "LIFECYCLE_REQUEST.json",
+      "diagnosis": "Manager produced no bringup log before timeout; one repeat with only request metadata then passed both cases. Unique communication cause remains unknown;35s original limit retained.",
+      "original_report": "SOFTWARE_RESULTS_attempt1.json"
+    },
+    {
+      "stage": "campaign_file_fixture_attempt1",
+      "error": "C.relative_to(fixture_R) invalid",
+      "new_model": false,
+      "fix": "Fixture C moved under its own fake root"
+    },
+    {
+      "stage": "campaign_file_fixture_attempt2",
+      "error": "Fake subprocess namespace missing DEVNULL/STDOUT",
+      "new_model": false,
+      "fix": "Fixture namespace includes required subprocess constants"
+    }
+  ]
+}

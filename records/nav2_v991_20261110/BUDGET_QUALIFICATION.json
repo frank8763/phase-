@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_wait_cases": true,
+    "all_clocks_coherent": true,
+    "changed_clock_rejected": true,
+    "insufficient_root_reserve_rejected": true,
+    "backward_wall_clock_cannot_extend_alarm": true,
+    "monotonic_restore_cap_even_after_wall_backstep": true,
+    "old_actual_parent_still_red": true
+  },
+  "cases": [
+    {
+      "case": "old_observed_129",
+      "passed": true,
+      "accepted": true,
+      "wait_s": 129.20000000025175,
+      "error": null
+    },
+    {
+      "case": "near_cap",
+      "passed": true,
+      "accepted": true,
+      "wait_s": 179.9000000004362,
+      "error": null
+    },
+    {
+      "case": "hung",
+      "passed": true,
+      "accepted": false,
+      "wait_s": 180.00000000043656,
+      "error": "CANONICAL_STATE_RESTORE_TIMEOUT"
+    },
+    {
+      "case": "failed_worker",
+      "passed": true,
+      "accepted": false,
+      "wait_s": 20.049999999981765,
+      "error": "NATIVE_FAILED_BEFORE_CANONICAL_READY"
+    },
+    {
+      "case": "parent_stop",
+      "passed": true,
+      "accepted": false,
+      "wait_s": 10.04999999999086,
+      "error": "PARENT_STOP_DURING_CANONICAL_RESTORE"
+    },
+    {
+      "case": "wrong_origin",
+      "passed": true,
+      "accepted": false,
+      "wait_s": 1.049999999999045,
+      "error": "WRONG_CANONICAL_READY_ORIGIN"
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "original_red_source_sha256": "dd0486a9ef4320c6a1a9236090425e965385c2578187c3a3a2a7321c2b9de948",
+  "actual_candidate_budget_functions": true,
+  "nonphysical_clock_fixture": true,
+  "task_hard_s": 350.0,
+  "drive_s": 40.0,
+  "brake_s": 2.0
+}
