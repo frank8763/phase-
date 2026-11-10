@@ -8478,5 +8478,27 @@
       "actual_clearance_m": 0.15
     },
     "conclusion": "Startup completed and V984 feedback was actually applied, with motor-map reconstruction and whole executed-state replay passing. Heading envelope still fails, including the complete stop tail. Rear-only yaw feedback alone is insufficient in this fixed state; unique plant/reference cause remains unproven. No new model, repair or repeat follows this closure."
+  },
+  "v989_saved_actuation_diagnosis": {
+    "status": "SAVED_DIAGNOSIS_AND_NEXT_DESIGN_ONLY",
+    "models": 0,
+    "integrations": 0,
+    "physical_authorized": false,
+    "original_outcome": "V987_NOT_PASSED",
+    "report": "docs/RPCCR_V989_ACTUATION_DIAGNOSIS_AND_NEXT_PLAN.md",
+    "design": "experiments/v989_actuation_reference_diagnosis/NEXT_EXPERIMENT.md",
+    "analysis": "records/nav2_v987_20261110/V989_ACTUATION_ANALYSIS.json",
+    "findings": {
+      "feedback_steps": 117,
+      "zero_allocated_correction_steps": 6,
+      "opposite_front_rear_target_rolling_curvature_steps": 45,
+      "actual_front_positive_body_yaw_negative_steps": 51,
+      "complete_stop_independent_maximum_heading_rad": 0.04117237717896623,
+      "heading_limit_rad": 0.035,
+      "unique_physical_cause_proven": false
+    },
+    "next_candidate_implemented": false,
+    "next_candidate_physical_ready": false,
+    "no_old_window_reopened": true
   }
 }

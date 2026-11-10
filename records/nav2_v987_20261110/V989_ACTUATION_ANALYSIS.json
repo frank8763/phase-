@@ -1,0 +1,421 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "physical_revision": null,
+  "physics_authorized": false,
+  "original_outcome": "V987_NOT_PASSED",
+  "input_archive_sha256": "268f20841325f658ff8761ae11dc4bc9a4574cfc820a95017beafa4a07066d36",
+  "xml_address_source": {
+    "path": "runtime/mk-mini/training/assets/mkmini_real/mkmini_mobile_manipulator_indoor_v1.xml",
+    "sha256": "fa9e987306b95cf51b4618cae88bcf04e5485e780b1121534e37c625c500bda5",
+    "purpose": "Only joint-address decoding; no XML model loaded"
+  },
+  "counts": {
+    "new_actual": 348,
+    "feedback_applied": 117,
+    "first_drive_native_tick": 6114,
+    "first_stop_native_tick": 6231,
+    "online_fault_native_tick": 6229,
+    "full_tail_included": true
+  },
+  "allocation": {
+    "projection_limited": {
+      "samples": 7,
+      "first_native_tick": 6114,
+      "last_native_tick": 6120
+    },
+    "nonzero_requested_zero_allocated": {
+      "samples": 6,
+      "first_native_tick": 6114,
+      "last_native_tick": 6119
+    },
+    "first_step_witness": {
+      "original_targets": [
+        0.0875,
+        0.0875
+      ],
+      "original_common_rad_s": 0.0875,
+      "original_requested_differential_rad_s": -0.13838442948337898,
+      "original_feasible_differential": [
+        0.0,
+        0.0
+      ],
+      "alternate_targets_same_rate_and_sign_bounds": [
+        0.08750000000000001,
+        0.0
+      ],
+      "alternate_common_rad_s": 0.043750000000000004,
+      "alternate_differential_rad_s": -0.043750000000000004,
+      "original_common_equality_intentionally_released": true,
+      "physical_improvement_inferred": false
+    },
+    "conclusion": "The fixed post-slew common equality removes all differential authority in six startup ticks; 110/117 feedback ticks are not projection-limited. This alone does not establish the full tracking cause."
+  },
+  "coordination": {
+    "opposite_front_rear_target_rolling_curvatures": {
+      "samples": 45,
+      "first_native_tick": 6124,
+      "last_native_tick": 6168
+    },
+    "maximum_abs_rear_target_rolling_curvature_m_inv": 2.3660621450983217,
+    "original_body_curvature_cap_m_inv": 0.758770385,
+    "rms_target_differential_minus_front_rolling_compatible_differential_rad_s": 0.15782693438985976,
+    "actual_front_positive_body_yaw_negative": {
+      "samples": 51,
+      "first_native_tick": 6180,
+      "last_native_tick": 6230
+    },
+    "interpretation": "Nominal body curvature legality and motor bounds do not establish common rolling compatibility of the final four actuator targets. Contact slip/inertia can also cause transient mismatch; unique cause not identified."
+  },
+  "error_budget": {
+    "at_online_fault_rad": 0.03493439953108734,
+    "immediately_before_first_stop_rad": 0.03513645960996437,
+    "complete_tail_max_rad": 0.04117301550180431,
+    "peak_native_tick": 6341,
+    "stop_tail_peak_increase_rad": 0.006036555891839934,
+    "limit_rad": 0.035,
+    "quantization_reserve_rad": 0.00019969259625000001,
+    "interpretation": "The driving phase nearly exhausts the heading budget; the complete stop tail adds error. Removing the tail or raising the gate would hide this failure."
+  },
+  "exclusions": {
+    "actuator_map_mismatch": false,
+    "alternate_controller_takeovers": 0,
+    "old_state_replay_error": 0.0,
+    "startup_blocked_this_response": false,
+    "evidence_of_compute_or_observation_deadline_failure": false,
+    "source": "Original independently verified V987/V988 counts and ingress audits"
+  },
+  "witnesses": [
+    {
+      "native_tick": 6114,
+      "seconds_from_first_drive": 0.0,
+      "requested_v_w": [
+        0.04977785633694216,
+        -0.024601907080917213
+      ],
+      "actual_v_w": [
+        0.0020579859287342883,
+        -0.0008516059477652441
+      ],
+      "reference_yaw_rad": 0.059591353132888464,
+      "actual_yaw_rad": 0.05958279107893224,
+      "signed_heading_error_rad": -8.562053956225057e-06,
+      "front_target_rad": [
+        -0.2558922917354585,
+        -0.32971399755035147
+      ],
+      "measured_steering_rad": [
+        -0.25588453350728835,
+        -0.32970627540441116
+      ],
+      "rear_velocity_target_rad_s": [
+        0.0875,
+        0.0875
+      ],
+      "measured_rear_velocity_rad_s": [
+        0.07443256643327806,
+        0.07005658941973819
+      ],
+      "front_target_rolling_curvature_m_inv": -0.49423396046605456,
+      "rear_target_rolling_curvature_m_inv": 0.0
+    },
+    {
+      "native_tick": 6124,
+      "seconds_from_first_drive": 0.1,
+      "requested_v_w": [
+        0.04977785633694216,
+        -0.019492973410757248
+      ],
+      "actual_v_w": [
+        0.03709807775781442,
+        -0.03935885237515567
+      ],
+      "reference_yaw_rad": 0.05864620144421378,
+      "actual_yaw_rad": 0.057517006951287565,
+      "signed_heading_error_rad": -0.0011291944929262138,
+      "front_target_rad": [
+        -0.2213815635233405,
+        -0.2819515373707645
+      ],
+      "measured_steering_rad": [
+        -0.24532670681499816,
+        -0.3152756122013307
+      ],
+      "rear_velocity_target_rad_s": [
+        0.5450453512299481,
+        0.5489907809761047
+      ],
+      "measured_rear_velocity_rad_s": [
+        0.5482359524850126,
+        0.40244854494553706
+      ],
+      "front_target_rolling_curvature_m_inv": -0.4222493285409308,
+      "rear_target_rolling_curvature_m_inv": 0.013356691185397252
+    },
+    {
+      "native_tick": 6144,
+      "seconds_from_first_drive": 0.3,
+      "requested_v_w": [
+        0.0499894554171201,
+        -0.010282260747352797
+      ],
+      "actual_v_w": [
+        0.05385644975599552,
+        -0.06218222222387767
+      ],
+      "reference_yaw_rad": 0.05484272793719917,
+      "actual_yaw_rad": 0.047197227516380974,
+      "signed_heading_error_rad": -0.007645500420818199,
+      "front_target_rad": [
+        -0.11639145387167558,
+        -0.13142860788669034
+      ],
+      "measured_steering_rad": [
+        -0.17055325774656308,
+        -0.20824772379225617
+      ],
+      "rear_velocity_target_rad_s": [
+        0.2960225590081501,
+        0.5825908072584451
+      ],
+      "measured_rear_velocity_rad_s": [
+        0.5322176753757765,
+        0.40152104237577174
+      ],
+      "front_target_rolling_curvature_m_inv": -0.20681817642813735,
+      "rear_target_rolling_curvature_m_inv": 1.2079987889536081
+    },
+    {
+      "native_tick": 6164,
+      "seconds_from_first_drive": 0.5,
+      "requested_v_w": [
+        0.05,
+        -0.00046353040962330617
+      ],
+      "actual_v_w": [
+        0.0440703758342063,
+        -0.050919775311209475
+      ],
+      "reference_yaw_rad": 0.05122739315074136,
+      "actual_yaw_rad": 0.036512405586794576,
+      "signed_heading_error_rad": -0.014714987563946784,
+      "front_target_rad": [
+        -0.0207938706919692,
+        -0.02182191755253712
+      ],
+      "measured_steering_rad": [
+        -0.07570968972133929,
+        -0.08724924094581878
+      ],
+      "rear_velocity_target_rad_s": [
+        0.2838024739093339,
+        0.5948108923572611
+      ],
+      "measured_rear_velocity_rad_s": [
+        0.49182291113787,
+        0.4010847134082137
+      ],
+      "front_target_rolling_curvature_m_inv": -0.0355053723412324,
+      "rear_target_rolling_curvature_m_inv": 1.3110237967164127
+    },
+    {
+      "native_tick": 6184,
+      "seconds_from_first_drive": 0.7000000000000001,
+      "requested_v_w": [
+        0.03973650035957356,
+        0.007419136785072999
+      ],
+      "actual_v_w": [
+        0.040170441270011126,
+        -0.04486402509113539
+      ],
+      "reference_yaw_rad": 0.0483351253215751,
+      "actual_yaw_rad": 0.02679376233955412,
+      "signed_heading_error_rad": -0.021541362982020983,
+      "front_target_rad": [
+        0.09715992919848576,
+        0.09117840996997423
+      ],
+      "measured_steering_rad": [
+        0.03492606419164754,
+        0.030054206626547196
+      ],
+      "rear_velocity_target_rad_s": [
+        0.2520742386192959,
+        0.6098806498847017
+      ],
+      "measured_rear_velocity_rad_s": [
+        0.4290374633446537,
+        0.37398825662776225
+      ],
+      "front_target_rolling_curvature_m_inv": 0.15727232730513882,
+      "rear_target_rolling_curvature_m_inv": 1.5374458086926528
+    },
+    {
+      "native_tick": 6204,
+      "seconds_from_first_drive": 0.9,
+      "requested_v_w": [
+        0.034517795039215114,
+        0.013293379888842435
+      ],
+      "actual_v_w": [
+        0.03292625870916459,
+        -0.041235633538128126
+      ],
+      "reference_yaw_rad": 0.04562362423173174,
+      "actual_yaw_rad": 0.018135721171704016,
+      "signed_heading_error_rad": -0.027487903060027723,
+      "front_target_rad": [
+        0.22846796167376054,
+        0.19370418677830412
+      ],
+      "measured_steering_rad": [
+        0.157796488587645,
+        0.13673600638267117
+      ],
+      "rear_velocity_target_rad_s": [
+        0.20324094245673838,
+        0.602862912171393
+      ],
+      "measured_rear_velocity_rad_s": [
+        0.36330840808404863,
+        0.3341795613519143
+      ],
+      "front_target_rolling_curvature_m_inv": 0.35471498849771854,
+      "rear_target_rolling_curvature_m_inv": 1.836092658304333
+    },
+    {
+      "native_tick": 6229,
+      "seconds_from_first_drive": 1.1500000000000001,
+      "requested_v_w": [
+        0.0328762788547411,
+        0.021113074740089513
+      ],
+      "actual_v_w": [
+        0.025717506275948147,
+        -0.03493738258633333
+      ],
+      "reference_yaw_rad": 0.043092889881211266,
+      "actual_yaw_rad": 0.008158490350123926,
+      "signed_heading_error_rad": -0.03493439953108734,
+      "front_target_rad": [
+        0.40773690717372124,
+        0.30698795619218644
+      ],
+      "measured_steering_rad": [
+        0.33216150458034727,
+        0.2578614299292732
+      ],
+      "rear_velocity_target_rad_s": [
+        0.18065886151819832,
+        0.6249722150118953
+      ],
+      "measured_rear_velocity_rad_s": [
+        0.29808746262108693,
+        0.3056484773909639
+      ],
+      "front_target_rolling_curvature_m_inv": 0.6095042608358885,
+      "rear_target_rolling_curvature_m_inv": 2.042628519281242
+    },
+    {
+      "native_tick": 6231,
+      "seconds_from_first_drive": 1.17,
+      "requested_v_w": [
+        0.0,
+        0.0
+      ],
+      "actual_v_w": [
+        0.023144160640547664,
+        -0.035735459257019764
+      ],
+      "reference_yaw_rad": 0.04291212314188837,
+      "actual_yaw_rad": 0.00741829901630365,
+      "signed_heading_error_rad": -0.03549382412558472,
+      "front_target_rad": [
+        0.42023690717372125,
+        0.3172857692836782
+      ],
+      "measured_steering_rad": [
+        0.34594455092969767,
+        0.26733776654010627
+      ],
+      "rear_velocity_target_rad_s": [
+        0.07864082662316826,
+        0.5519902499069252
+      ],
+      "measured_rear_velocity_rad_s": [
+        0.214017592303913,
+        0.23812645483712408
+      ],
+      "front_target_rolling_curvature_m_inv": 0.631135623732675,
+      "rear_target_rolling_curvature_m_inv": 2.7799867107855776
+    },
+    {
+      "native_tick": 6341,
+      "seconds_from_first_drive": 2.27,
+      "requested_v_w": [
+        0.0,
+        0.0
+      ],
+      "actual_v_w": [
+        7.064954697421188e-05,
+        -6.161127238933618e-07
+      ],
+      "reference_yaw_rad": 0.04291212314188837,
+      "actual_yaw_rad": 0.0017391076400840686,
+      "signed_heading_error_rad": -0.04117301550180431,
+      "front_target_rad": [
+        0.42023690717372125,
+        0.3172857692836782
+      ],
+      "measured_steering_rad": [
+        0.42023275588080056,
+        0.3172849327699306
+      ],
+      "rear_velocity_target_rad_s": [
+        0.0,
+        0.0
+      ],
+      "measured_rear_velocity_rad_s": [
+        6.236600841708295e-05,
+        6.274624962430321e-05
+      ],
+      "front_target_rolling_curvature_m_inv": 0.631135623732675,
+      "rear_target_rolling_curvature_m_inv": 0.0
+    },
+    {
+      "native_tick": 6431,
+      "seconds_from_first_drive": 3.17,
+      "requested_v_w": [
+        0.0,
+        0.0
+      ],
+      "actual_v_w": [
+        5.479309660748905e-06,
+        2.748151577952661e-06
+      ],
+      "reference_yaw_rad": 0.04291212314188837,
+      "actual_yaw_rad": 0.0017427863066221067,
+      "signed_heading_error_rad": -0.041169336835266274,
+      "front_target_rad": [
+        0.42023690717372125,
+        0.3172857692836782
+      ],
+      "measured_steering_rad": [
+        0.4202365995492321,
+        0.31728546417394765
+      ],
+      "rear_velocity_target_rad_s": [
+        0.0,
+        0.0
+      ],
+      "measured_rear_velocity_rad_s": [
+        4.70844290361453e-05,
+        5.721528872240889e-05
+      ],
+      "front_target_rolling_curvature_m_inv": 0.631135623732675,
+      "rear_target_rolling_curvature_m_inv": 0.0
+    }
+  ],
+  "scope": "All metrics observe the original closed trace. No fitted trajectory, counterfactual rollout, stability proof, new model or successful component is asserted."
+}
