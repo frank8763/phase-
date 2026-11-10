@@ -1,0 +1,187 @@
+{
+  "passed": false,
+  "status": "NOT_PASSED",
+  "stop_reason": {
+    "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1004_planned_input_navigation/campaign.py\", line 62, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+  },
+  "component_passed": true,
+  "component_rows": [
+    {
+      "name": "recovery_6083",
+      "passed": true,
+      "audit": {
+        "passed": true,
+        "checks": {
+          "complete_native": true,
+          "complete_records": true,
+          "only_committed_inputs": true,
+          "exact_original_history": true,
+          "finite": true,
+          "native_clearance": true,
+          "native_self": true,
+          "no_bad_contacts": true,
+          "no_root_mutation": true,
+          "canonical_t0": true,
+          "sensor_unchanged": true,
+          "actor_unchanged": true,
+          "full_stop_tail": true,
+          "complete_own_replay": true,
+          "all_native_position_tracking": true,
+          "all_native_heading_tracking": true,
+          "actual_goal_progress": true,
+          "complete_execution": true,
+          "native_dt": true,
+          "actual_ctrl_reconstructed": true
+        },
+        "actuation": {
+          "passed": true,
+          "models": 0,
+          "integrations": 0,
+          "historical_control_rows": 6083,
+          "new_control_rows": 2204,
+          "maximum_control_reconstruction_error": 1.1102230246251565e-16,
+          "maximum_independent_rear_residual_rad_s": 5.551115123125783e-17,
+          "physical_tracking_qualified_by_this_check": false,
+          "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+        },
+        "models_during_audit": 0,
+        "counts": {
+          "vehicle_tasks_initialized": 1,
+          "historical_native": 6083,
+          "new_actual_native": 2204,
+          "own_trace_replay_native": 8287,
+          "private_native": 0
+        },
+        "original_history_max_errors": {
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "ctrl": 0.0,
+          "mocap_pos": 0.0,
+          "mocap_quat": 0.0
+        },
+        "minimum_actual_clearance_m": 0.2730365667394967,
+        "bad_contacts": 0,
+        "actual_goal_progress_m": 0.5719965098030446,
+        "maximum_position_error_m": 0.0024780150063011055,
+        "maximum_heading_error_rad": 0.0017818837864299053,
+        "component_only": true,
+        "navigation_passed": false,
+        "real_time_qualified": false
+      }
+    },
+    {
+      "name": "recovery_7814",
+      "passed": true,
+      "audit": {
+        "passed": true,
+        "checks": {
+          "complete_native": true,
+          "complete_records": true,
+          "only_committed_inputs": true,
+          "exact_original_history": true,
+          "finite": true,
+          "native_clearance": true,
+          "native_self": true,
+          "no_bad_contacts": true,
+          "no_root_mutation": true,
+          "canonical_t0": true,
+          "sensor_unchanged": true,
+          "actor_unchanged": true,
+          "full_stop_tail": true,
+          "complete_own_replay": true,
+          "all_native_position_tracking": true,
+          "all_native_heading_tracking": true,
+          "actual_goal_progress": true,
+          "complete_execution": true,
+          "native_dt": true,
+          "actual_ctrl_reconstructed": true
+        },
+        "actuation": {
+          "passed": true,
+          "models": 0,
+          "integrations": 0,
+          "historical_control_rows": 7814,
+          "new_control_rows": 2204,
+          "maximum_control_reconstruction_error": 6.938893903907228e-17,
+          "maximum_independent_rear_residual_rad_s": 0.0,
+          "physical_tracking_qualified_by_this_check": false,
+          "force_arrays_are_logged_for_diagnosis_not_independently_replayed": true
+        },
+        "models_during_audit": 0,
+        "counts": {
+          "vehicle_tasks_initialized": 1,
+          "historical_native": 7814,
+          "new_actual_native": 2204,
+          "own_trace_replay_native": 10018,
+          "private_native": 0
+        },
+        "original_history_max_errors": {
+          "qpos": 0.0,
+          "qvel": 0.0,
+          "ctrl": 0.0,
+          "mocap_pos": 0.0,
+          "mocap_quat": 0.0
+        },
+        "minimum_actual_clearance_m": 0.2730365667394967,
+        "bad_contacts": 0,
+        "actual_goal_progress_m": 0.5170868969213926,
+        "maximum_position_error_m": 0.0012821891891533948,
+        "maximum_heading_error_rad": 0.0002797777690676864,
+        "component_only": true,
+        "navigation_passed": false,
+        "real_time_qualified": false
+      }
+    }
+  ],
+  "exact_known_counts": {
+    "component_models": 2,
+    "historical_native": 13897,
+    "component_new_native": 4408,
+    "component_own_replay_native": 18305,
+    "navigation_models": 1,
+    "navigation_native": 0,
+    "navigation_own_replay_native": 0,
+    "private_mujoco_native": 0,
+    "passed_true_t0_initializations": 3
+  },
+  "unknown_counts": [],
+  "known_totals_are_lower_bounds_if_unknown": false,
+  "navigation_receipts": [
+    {
+      "task_id": "main_we",
+      "actual_native": 0,
+      "replay_native": 0,
+      "status": "PREARM_ABORT"
+    }
+  ],
+  "navigation_rows": [
+    {
+      "task_id": "main_we",
+      "slot": 0,
+      "stage": "we_development",
+      "route": "we",
+      "initial_axis_direction": null,
+      "passed": false,
+      "evidence_passed": false,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1004/main_we",
+      "actual_native": 0,
+      "replay_native": 0,
+      "private_native": 0,
+      "goal_m": 8.0,
+      "minimum_clearance_m": null,
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    }
+  ],
+  "confirmation_executed": 0,
+  "confirmation_successes": 0,
+  "confirmation_unexecuted": 24,
+  "complete24_rate": null,
+  "confirmation_repeats_executed": 0,
+  "actual_training_SAC_hardware": 0,
+  "models_during_closure": 0,
+  "old_failures_and_windows_unchanged": true,
+  "guard_restored": true,
+  "absolute_deadline_unix": 1794355200.0,
+  "prerequisite_deadline_unchanged": 1794312893.8843997
+}
