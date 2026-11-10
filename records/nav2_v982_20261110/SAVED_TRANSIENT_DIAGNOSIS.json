@@ -1,0 +1,524 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "private_predictions": 0,
+  "physical_outcome_unchanged": "V982_NOT_PASSED",
+  "exact_accounting": {
+    "models_initialized": 1,
+    "historical_restore_native": 6083,
+    "new_branch_native": 332,
+    "whole_own_control_replay_native": 6415,
+    "private_native": 0,
+    "unexecuted_components": 1,
+    "full_navigation_tasks": 0,
+    "new24": 0
+  },
+  "saved_prefix_native_checks": {
+    "historical_complete_state_control_exact": true,
+    "historical_executed_v_w_stale_exact": true,
+    "complete_native": true,
+    "exact_separate_accounting": true,
+    "fully_recorded_commands_contacts": true,
+    "finite_native": true,
+    "native_clock": true,
+    "actual_clearance": true,
+    "no_bad_contacts": true,
+    "self_margin": true,
+    "ctrl_limits": true,
+    "ctrl_slew": true,
+    "own_replay_exact": true,
+    "maximum_native_wall_lag": true,
+    "actual_fault_packet_matches_native": true,
+    "actual_reference_start_packet_matches_native": true,
+    "original_sensor_actor": true,
+    "full_final_half_second_stopped": true
+  },
+  "all_saved_prefix_native_checks_passed": true,
+  "scope": "Available complete prefix safety/state/control/stop checks only; original full component audit failed before completion evidence. Not functional acceptance.",
+  "old_full_component_audit_error": "CLOSED_HANDOFF.json absent because FollowPath did not finish; original failed audit retained",
+  "initial_actual_body": [
+    0.3107707131517071,
+    -0.6862642187533338,
+    0.059591353132888464,
+    1.2353061693765863e-06,
+    -6.345124562486874e-09
+  ],
+  "actual_stopped_at_reference_install": true,
+  "fault_tick": 6213,
+  "fault_new_branch_tick": 130,
+  "original_heading_limit_rad": 0.035,
+  "fault_online": {
+    "reference_index": 72,
+    "reference_pose": [
+      0.3467204801505914,
+      -0.6843680151312904,
+      0.046165924449700406
+    ],
+    "position_error_m": 0.002540564100437956,
+    "heading_error_rad": 0.03480278079786884,
+    "position_upper_m": 0.002800564100437956,
+    "heading_upper_rad": 0.03500247339411884,
+    "position_limit_m": 0.04,
+    "heading_limit_rad": 0.035,
+    "maximum_arc_grid_m": 0.0005,
+    "reference_unchanged": true
+  },
+  "fault_independent": {
+    "passed": false,
+    "maximum_position_error_m": 0.002540547949004231,
+    "maximum_heading_error_rad": 0.0348021424750308,
+    "maximum_position_upper_m": 0.002800547949004231,
+    "maximum_heading_upper_rad": 0.0350018350712808,
+    "unchanged_position_limit_m": 0.04,
+    "unchanged_heading_limit_rad": 0.035,
+    "independent_method": "separate .5mm midpoint reconstruction",
+    "samples": 1,
+    "models": 0,
+    "integrations": 0
+  },
+  "full_new_branch_tracking": {
+    "passed": false,
+    "maximum_position_error_m": 0.002655975727811171,
+    "maximum_heading_error_rad": 0.04058614609896732,
+    "maximum_position_upper_m": 0.0029159757278111706,
+    "maximum_heading_upper_rad": 0.04078583869521732,
+    "unchanged_position_limit_m": 0.04,
+    "unchanged_heading_limit_rad": 0.035,
+    "independent_method": "separate .5mm midpoint reconstruction",
+    "samples": 332,
+    "models": 0,
+    "integrations": 0
+  },
+  "first_saved_sample_exceeding_nominal_heading_limit": 6214,
+  "maximum_saved_heading_error_rad": 0.04058678442180535,
+  "maximum_heading_tick": 6272,
+  "actual_branch_travel_m": 0.03863557481124078,
+  "actual_reference_progress_m": 0.034870659899958856,
+  "final_actual_body": [
+    0.3476049829011957,
+    -0.6868271601003609,
+    0.005375251119489727,
+    5.292016726438607e-06,
+    1.6664080298647838e-06
+  ],
+  "true_initial_nonzero_residual_yaw_cause_not_supported": true,
+  "alternate_motion_selections": 0,
+  "command_decisions": 27,
+  "positive_steering_requests_with_negative_actual_body_yaw": [
+    {
+      "native_tick": 6168,
+      "body_v_w": [
+        0.04609813248793184,
+        -0.058865923024551556
+      ],
+      "dispatched_v_w": [
+        0.05,
+        0.00019268604594860724
+      ],
+      "measured_steering": [
+        -0.08143578736267493,
+        -0.09445977552110528
+      ]
+    },
+    {
+      "native_tick": 6172,
+      "body_v_w": [
+        0.04536799822481617,
+        -0.061771435125388886
+      ],
+      "dispatched_v_w": [
+        0.04569768535836219,
+        0.002272507494788923
+      ],
+      "measured_steering": [
+        -0.05965961406717682,
+        -0.06927571187468151
+      ]
+    },
+    {
+      "native_tick": 6177,
+      "body_v_w": [
+        0.042474379247834274,
+        -0.05854039317410381
+      ],
+      "dispatched_v_w": [
+        0.041516206683490924,
+        0.004134231951835431
+      ],
+      "measured_steering": [
+        -0.0321052105249176,
+        -0.03866282879722106
+      ]
+    },
+    {
+      "native_tick": 6182,
+      "body_v_w": [
+        0.03919819323980421,
+        -0.057487084472296016
+      ],
+      "dispatched_v_w": [
+        0.03850439246793912,
+        0.005770455821059539
+      ],
+      "measured_steering": [
+        -0.004240988829965698,
+        -0.009156037841473015
+      ]
+    },
+    {
+      "native_tick": 6187,
+      "body_v_w": [
+        0.036024835315462446,
+        -0.05691794433643834
+      ],
+      "dispatched_v_w": [
+        0.03661928025103341,
+        0.007193117479106622
+      ],
+      "measured_steering": [
+        0.024755809951250186,
+        0.020001561335577213
+      ]
+    },
+    {
+      "native_tick": 6192,
+      "body_v_w": [
+        0.033147119678670095,
+        -0.05474716921031828
+      ],
+      "dispatched_v_w": [
+        0.0342708586111145,
+        0.00847585206202427
+      ],
+      "measured_steering": [
+        0.05460221058787607,
+        0.04852571905897537
+      ]
+    },
+    {
+      "native_tick": 6197,
+      "body_v_w": [
+        0.030011758802572872,
+        -0.054552314130522986
+      ],
+      "dispatched_v_w": [
+        0.03276962386892989,
+        0.009762598981931953
+      ],
+      "measured_steering": [
+        0.08487392044875322,
+        0.07604161764407699
+      ]
+    },
+    {
+      "native_tick": 6202,
+      "body_v_w": [
+        0.02735498031770834,
+        -0.05418018467512127
+      ],
+      "dispatched_v_w": [
+        0.03152457699768494,
+        0.011027534134719555
+      ],
+      "measured_steering": [
+        0.11636851050911427,
+        0.10321187033093804
+      ]
+    },
+    {
+      "native_tick": 6207,
+      "body_v_w": [
+        0.025097318098103286,
+        -0.0540878369907664
+      ],
+      "dispatched_v_w": [
+        0.03049089460947393,
+        0.012255812121722597
+      ],
+      "measured_steering": [
+        0.14890769784429783,
+        0.12987654396344397
+      ]
+    },
+    {
+      "native_tick": 6212,
+      "body_v_w": [
+        0.023231898183584274,
+        -0.05386721865582284
+      ],
+      "dispatched_v_w": [
+        0.03,
+        0.013657792368225901
+      ],
+      "measured_steering": [
+        0.18256898697785925,
+        0.1560704658322584
+      ]
+    }
+  ],
+  "minimum_actual_clearance_m": 0.2730365667394967,
+  "bad_contacts": 0,
+  "maximum_observation_age_s": 0.01533161400584504,
+  "maximum_scan_age_s": 0.025428042019484565,
+  "maximum_native_wall_lag_s": 0.003908260987373069,
+  "history_state_control_errors": {
+    "qpos": 0.0,
+    "qvel": 0.0,
+    "ctrl": 0.0,
+    "mocap_pos": 0.0,
+    "mocap_quat": 0.0
+  },
+  "historical_command_wall_timestamps_identical": false,
+  "historical_wall_timestamp_scope": "Different wall execution times are metadata, not a physical state or body-control identity requirement",
+  "selected_native_tracking_witnesses": [
+    {
+      "native_tick": 6084,
+      "body": [
+        0.3107707131517071,
+        -0.6862642187533338,
+        0.059591353132888464,
+        1.2353061693765863e-06,
+        -6.345124562486874e-09
+      ],
+      "tracking": {
+        "reference_index": 0,
+        "reference_pose": [
+          0.3107707131517071,
+          -0.6862642187533338,
+          0.059591353132888464
+        ],
+        "position_error_m": 0.0,
+        "heading_error_rad": 0.0,
+        "position_upper_m": 0.00026000000000000003,
+        "heading_upper_rad": 0.00019969259625000001,
+        "position_limit_m": 0.04,
+        "heading_limit_rad": 0.035,
+        "maximum_arc_grid_m": 0.0005,
+        "reference_unchanged": true
+      },
+      "measured_steering": [
+        -0.2558922755177903,
+        -0.32971400080306534
+      ]
+    },
+    {
+      "native_tick": 6108,
+      "body": [
+        0.31077134654158717,
+        -0.6862641593749876,
+        0.059591311282278236,
+        2.915349273349007e-06,
+        -3.6769260799149247e-07
+      ],
+      "tracking": {
+        "reference_index": 0,
+        "reference_pose": [
+          0.3107707131517071,
+          -0.6862642187533338,
+          0.059591353132888464
+        ],
+        "position_error_m": 6.361670599238604e-07,
+        "heading_error_rad": 4.185061022732306e-08,
+        "position_upper_m": 0.0002606361670599239,
+        "heading_upper_rad": 0.00019973444686022734,
+        "position_limit_m": 0.04,
+        "heading_limit_rad": 0.035,
+        "maximum_arc_grid_m": 0.0005,
+        "reference_unchanged": true
+      },
+      "measured_steering": [
+        -0.2558922877414917,
+        -0.3297140130869096
+      ]
+    },
+    {
+      "native_tick": 6133,
+      "body": [
+        0.3142651731615492,
+        -0.6864723118049658,
+        0.056005762123481795,
+        0.042510373804479376,
+        -0.04817106509984987
+      ],
+      "tracking": {
+        "reference_index": 7,
+        "reference_pose": [
+          0.3142646700484245,
+          -0.6860586400639807,
+          0.05799374860079976
+        ],
+        "position_error_m": 0.00041367204693152146,
+        "heading_error_rad": 0.001987986477317967,
+        "position_upper_m": 0.0006736720469315215,
+        "heading_upper_rad": 0.002187679073567967,
+        "position_limit_m": 0.04,
+        "heading_limit_rad": 0.035,
+        "maximum_arc_grid_m": 0.0005,
+        "reference_unchanged": true
+      },
+      "measured_steering": [
+        -0.2364171625637758,
+        -0.302324448870559
+      ]
+    },
+    {
+      "native_tick": 6158,
+      "body": [
+        0.3269224546505416,
+        -0.6873236068066917,
+        0.04139650097448957,
+        0.04963193887953978,
+        -0.05996630748972891
+      ],
+      "tracking": {
+        "reference_index": 32,
+        "reference_pose": [
+          0.32674530028575377,
+          -0.6853632269769147,
+          0.05339659402261605
+        ],
+        "position_error_m": 0.001968368041287,
+        "heading_error_rad": 0.012000093048126477,
+        "position_upper_m": 0.0022283680412870004,
+        "heading_upper_rad": 0.012199785644376477,
+        "position_limit_m": 0.04,
+        "heading_limit_rad": 0.035,
+        "maximum_arc_grid_m": 0.0005,
+        "reference_unchanged": true
+      },
+      "measured_steering": [
+        -0.13224979763220046,
+        -0.15725812907527856
+      ]
+    },
+    {
+      "native_tick": 6183,
+      "body": [
+        0.338124184381198,
+        -0.6873834078524247,
+        0.026863445586873973,
+        0.038967459462598185,
+        -0.05342290784672621
+      ],
+      "tracking": {
+        "reference_index": 55,
+        "reference_pose": [
+          0.3382301526301628,
+          -0.6847733319677053,
+          0.04923895901818955
+        ],
+        "position_error_m": 0.0026122261375658914,
+        "heading_error_rad": 0.02237551343131558,
+        "position_upper_m": 0.0028722261375658913,
+        "heading_upper_rad": 0.02257520602756558,
+        "position_limit_m": 0.04,
+        "heading_limit_rad": 0.035,
+        "maximum_arc_grid_m": 0.0005,
+        "reference_unchanged": true
+      },
+      "measured_steering": [
+        0.0012674682396726497,
+        -0.003525461521064777
+      ]
+    },
+    {
+      "native_tick": 6208,
+      "body": [
+        0.34587369843936794,
+        -0.6869899266021843,
+        0.013890043166777735,
+        0.024868481525089327,
+        -0.05000757340545405
+      ],
+      "tracking": {
+        "reference_index": 70,
+        "reference_pose": [
+          0.3457215539716887,
+          -0.6844143452317719,
+          0.04652745792834619
+        ],
+        "position_error_m": 0.0025800711879056006,
+        "heading_error_rad": 0.03263741476156846,
+        "position_upper_m": 0.0028400711879056004,
+        "heading_upper_rad": 0.03283710735781846,
+        "position_limit_m": 0.04,
+        "heading_limit_rad": 0.035,
+        "maximum_arc_grid_m": 0.0005,
+        "reference_unchanged": true
+      },
+      "measured_steering": [
+        0.15541265228238385,
+        0.13488913640731945
+      ]
+    },
+    {
+      "native_tick": 6213,
+      "body": [
+        0.3470588231901961,
+        -0.686885948795227,
+        0.011363143651831569,
+        0.023062469816926404,
+        -0.049765354049339974
+      ],
+      "tracking": {
+        "reference_index": 72,
+        "reference_pose": [
+          0.3467204801505914,
+          -0.6843680151312904,
+          0.046165924449700406
+        ],
+        "position_error_m": 0.002540564100437956,
+        "heading_error_rad": 0.03480278079786884,
+        "position_upper_m": 0.002800564100437956,
+        "heading_upper_rad": 0.03500247339411884,
+        "position_limit_m": 0.04,
+        "heading_limit_rad": 0.035,
+        "maximum_arc_grid_m": 0.0005,
+        "reference_unchanged": true
+      },
+      "measured_steering": [
+        0.1892873833112602,
+        0.1609698222744461
+      ]
+    },
+    {
+      "native_tick": 6415,
+      "body": [
+        0.3476049829011957,
+        -0.6868271601003609,
+        0.005375251119489727,
+        5.292016726438607e-06,
+        1.6664080298647838e-06
+      ],
+      "tracking": {
+        "reference_index": 74,
+        "reference_pose": [
+          0.34771942301409314,
+          -0.6843220461790854,
+          0.045804390971054626
+        ],
+        "position_error_m": 0.0025077265197800806,
+        "heading_error_rad": 0.0404291398515649,
+        "position_upper_m": 0.002767726519780081,
+        "heading_upper_rad": 0.0406288324478149,
+        "position_limit_m": 0.04,
+        "heading_limit_rad": 0.035,
+        "maximum_arc_grid_m": 0.0005,
+        "reference_unchanged": true
+      },
+      "measured_steering": [
+        0.2642051668191575,
+        0.21422065332621343
+      ]
+    }
+  ],
+  "geometry_budget_diagnostic_only": {
+    "raw_saved_reference_clearance_m": 0.3021573944449761,
+    "original_heading_budget_rad": 0.035,
+    "illustrative_lipschitz_budget_capacity_rad": 0.12084961537157526,
+    "original_prediction_clearance_m": 0.155,
+    "no_new_budget_adopted": true,
+    "not_a_control_or_stop_feasibility_proof": true
+  },
+  "conclusion": "First precision guard upper barely crosses .035, while the complete actual stop tail reaches >.0405 rad, so the remaining failure is physical closed-loop/reference transient mismatch rather than only coarse sampling. No alternate-motion controller takeover is recorded. Exact internal mechanical cause is not identified from these states/commands alone."
+}

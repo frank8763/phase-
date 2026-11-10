@@ -1,0 +1,29 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-rpccr-precise-recovery-v982-20261110",
+  "models": 0,
+  "integrations": 0,
+  "no_git_push": true,
+  "original_raw_trace_index": "records/nav2_v982_20261110/RECORD_INDEX.json",
+  "raw_trace_not_duplicated": true,
+  "restore_command": "python3 -B experiments/v983_saved_transient_diagnosis/restore.py",
+  "analyze_command": "python3 -B experiments/v983_saved_transient_diagnosis/analyze.py",
+  "archives": [
+    {
+      "group": "v983-saved-transient-postmortem",
+      "source_files": 20,
+      "raw_bytes": 868271,
+      "archive_bytes": 368711,
+      "archive_sha256": "dd49c1e7eeb1c1bf21dbe31392db790346999dad45c4d307899f487951918553",
+      "parts": [
+        {
+          "name": "v983-saved-transient-postmortem.tar.zst.part000",
+          "bytes": 368711,
+          "sha256": "dd49c1e7eeb1c1bf21dbe31392db790346999dad45c4d307899f487951918553"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ]
+}

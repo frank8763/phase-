@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v982_precise_recovery_gate/SOURCE_FREEZE.json",
-  "source_revision": "V982_PREPARED_AWAITING_PHYSICAL_APPROVAL",
+  "source_revision": "V982_CLOSED_NOT_PASSED",
   "protocol": "experiments/v982_precise_recovery_gate/PROTOCOL.md",
   "report": "docs/RPCCR_PRECISE_RECOVERY_V982_REPORT.md",
   "execution_window_closed": true,
@@ -7860,7 +7860,8 @@
       "raw_bytes": 17935529,
       "deleted_cache_bytes": 39159225
     },
-    "awaiting_explicit_new_90_minute_answer": true
+    "awaiting_explicit_new_90_minute_answer": false,
+    "physical_gate_status": "CLOSED_NOT_PASSED"
   },
   "v982_physical_gate": {
     "closed": true,
@@ -7892,5 +7893,41 @@
     "guard_restored": true,
     "new24": 0,
     "automatic_followup": false
+  },
+  "v982_saved_transient_diagnosis": {
+    "models_initialized": 1,
+    "historical_restore_native": 6083,
+    "historical_all_state_control_error": 0.0,
+    "new_branch_native": 332,
+    "whole_own_control_replay_native": 6415,
+    "private_native": 0,
+    "replay_maximum_error": 0.0,
+    "bad_contacts": 0,
+    "minimum_actual_clearance_m": 0.2730365667394967,
+    "actual_branch_travel_m": 0.03863557481124078,
+    "first_tracking_upper_rad": 0.03500247339411884,
+    "full_tail_actual_heading_error_rad": 0.04058614609896732,
+    "position_error_m": 0.002655975727811171,
+    "alternate_motion_selections": 0,
+    "available_saved_prefix_checks_passed": true,
+    "full_component_audit_passed": false,
+    "remaining_component_unexecuted": true,
+    "new_navigation_and24": 0,
+    "postmortem_models": 0,
+    "postmortem_integrations": 0,
+    "models_authorized": false,
+    "storage": {
+      "physical_remote_verified": true,
+      "source_commit": "2baf1993f0ed184b5c238db69c69214621105fa9",
+      "physical_release_url": "https://github.com/frank8763/phase-/releases/tag/phase-rpccr-precise-recovery-v982-20261110",
+      "physical_archive_source_files": 219,
+      "physical_archive_bytes": 14272664,
+      "physical_cleanup_bytes": 65538619,
+      "postmortem_remote_verified": true,
+      "postmortem_cleanup_bytes": 8895594,
+      "raw_trace_not_duplicated": true,
+      "git_push_attempts": 1,
+      "no_second_push": true
+    }
   }
 }
