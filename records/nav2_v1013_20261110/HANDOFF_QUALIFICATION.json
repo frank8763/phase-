@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "scope": "Production callback and native release ingress with nonphysical metadata vehicle; original body/geometry/stale guards unchanged",
+  "rows": [
+    {
+      "case": "profile_1_atomic_native_release",
+      "passed": true,
+      "zero_static_lower": 0.46722769117789476,
+      "zero_dynamic_lower": 1.141451508331768
+    },
+    {
+      "case": "actual_supervisor_helper_1",
+      "passed": true
+    },
+    {
+      "case": "same53.44ms_callback_preserves_only_accepted_stationary_tube",
+      "passed": true
+    },
+    {
+      "case": "profile_2_atomic_native_release",
+      "passed": true,
+      "zero_static_lower": 0.5120365724387047,
+      "zero_dynamic_lower": 0.7535432593359696
+    },
+    {
+      "case": "actual_supervisor_helper_2",
+      "passed": true
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "missing_zero",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "moving_zero",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "foreign_run",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "future_body",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "old_body",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "old_sequence",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "unqualified_tube",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "negative_age",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "age_over50ms",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "wrong_proof_time",
+      "rejected_before_owner_release": true
+    },
+    {
+      "case": "late_delivery",
+      "rejected_before_owner_release": true
+    }
+  ],
+  "old_fault_reproduced": true
+}
