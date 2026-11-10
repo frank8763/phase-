@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v985_rear_yaw_components/SOURCE_FREEZE.json",
-  "source_revision": "V985_PREPARED_AWAITING_PHYSICAL_APPROVAL",
+  "source_revision": "V985_CLOSED_NOT_PASSED",
   "protocol": "experiments/v985_rear_yaw_components/PROTOCOL.md",
   "report": "docs/RPCCR_REAR_YAW_COMPONENTS_V985_REPORT.md",
   "execution_window_closed": true,
@@ -8056,5 +8056,36 @@
       ],
       "deleted_cache_bytes": 20729549
     }
+  },
+  "v985_physical_gate": {
+    "closed": true,
+    "status": "NOT_PASSED",
+    "error": {
+      "error": "AssertionError('FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE component_0')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v985_rear_yaw_components/campaign.py\", line 33, in main\n    assert row['passed'],'FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE '+task['task_id']\nAssertionError: FIRST_FUNCTION_SAFETY_SOURCE_STATE_CONTROL_OR_EVIDENCE_FAILURE component_0\n"
+    },
+    "rows": [
+      {
+        "task_id": "component_0",
+        "stage": "component",
+        "passed": false,
+        "historical_restore_native": 6083,
+        "new_branch_native": 0,
+        "own_full_trace_replay_native": 6083,
+        "private_native": 0,
+        "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v985/component_0",
+        "goal_m": 3.9161606862157274,
+        "audit_error": "FileNotFoundError(2, 'No such file or directory')"
+      }
+    ],
+    "unexecuted_tasks": [
+      "component_1"
+    ],
+    "models_authorized": false,
+    "deadline_unix": 1794292542.137206,
+    "closed_unix": 1794287276.2832963,
+    "guard_restored": true,
+    "new24": 0,
+    "automatic_followup": false
   }
 }
