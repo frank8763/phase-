@@ -1,0 +1,94 @@
+{
+  "models": 0,
+  "new_integrations": 0,
+  "new_physical_replays": 0,
+  "original_navigation_status": "NOT_PASSED",
+  "original_independent_audit_NOT_PASSED_preserved": true,
+  "physical_summary": {
+    "native": 10076,
+    "own_full_replay": 10076,
+    "private": 0,
+    "minimum_actual_clearance_m": 0.27294932913294756,
+    "bad_contacts": 0,
+    "goal_remaining_m": 2.649343059576086,
+    "travel_after_actual_detection_m": 1.243952051964625,
+    "full_replay": {
+      "replay_native": 10076,
+      "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+      "contact_mismatched_ticks": 0,
+      "passed": true
+    }
+  },
+  "recovered_profiles": [
+    {
+      "profile_id": 1,
+      "measured_tracking_and_progress_gates": true,
+      "complete_native_inputs_exact": true,
+      "actual_progress_m": 0.579007204013338,
+      "maximum_position_error_m": 0.002490015906627663,
+      "maximum_heading_error_rad": 0.0019153982092084687,
+      "frozen_bitwise_predictor_reconstruction_passed": false,
+      "maximum_predictor_state_reconstruction_error": 6.938893903907228e-17,
+      "maximum_predictor_control_reconstruction_error": 0.0
+    },
+    {
+      "profile_id": 2,
+      "measured_tracking_and_progress_gates": true,
+      "complete_native_inputs_exact": true,
+      "actual_progress_m": 0.4859462695901451,
+      "maximum_position_error_m": 0.0024523745650616106,
+      "maximum_heading_error_rad": 0.001746002721480566,
+      "frozen_bitwise_predictor_reconstruction_passed": true,
+      "maximum_predictor_state_reconstruction_error": 0.0,
+      "maximum_predictor_control_reconstruction_error": 0.0
+    }
+  ],
+  "strict_frozen_additional_input_audit_not_passed": true,
+  "original_diagnostic_attempt_error": "Frozen own_inputs bitwise state reconstruction assertion failed on first profile; numerical difference6.938893903907228e-17, controls0. Preserved without changing acceptance.",
+  "command_tube_audit": {
+    "passed": false,
+    "checks": {
+      "nonempty": true,
+      "causal": true,
+      "body_matches_native": true,
+      "source_matches_tracker": true,
+      "command_limits": true,
+      "finite_horizon": true,
+      "admission_threshold": true,
+      "independent_dense_geometry": true,
+      "wait_renewals_zero_and_causal": true,
+      "terminal_cycle_independently_qualified": true,
+      "retained_proof_chain_and_actual_body": true,
+      "conditional_residual_class": true,
+      "stale_new_proposal_retains_only_old_accepted_proof": true,
+      "only_accepted_proofs_dispatched": true,
+      "actual_runtime_tube_monitor_completed": true,
+      "no_unqualified_command_failure": false
+    },
+    "accepted_commands": 1138,
+    "zero_fallback_commands": 0,
+    "maximum_saved_body_error": 5.551115123125783e-17,
+    "qualified_zero_wait_renewals": 118,
+    "retained_certificate_decisions": 0,
+    "stale_proposal_deferrals": 2,
+    "empirical_limits_not_formal_reachability": true
+  },
+  "first_fault": {
+    "error": "ProtocolError('STALE_COMMAND_BODY')",
+    "body_age_s": 0.053441660973476246,
+    "body_age_gate_s": 0.05,
+    "body_tick": 9868,
+    "released_profile": {
+      "active": false,
+      "profile_id": 2,
+      "completed_id": 2,
+      "released_id": 2,
+      "end_native_tick": 9866
+    },
+    "last_accepted_normal_body_tick": 7976,
+    "raw_wanted_not_reached": true
+  },
+  "source_finding": "supervise clears retained_proof and profile_owner before restarting normal action; first post-second-profile callback had 53.44ms body age and no newly accepted normal proof. Stale-proposal deferral requires an old accepted proof, so the gate correctly stopped.",
+  "unresolved": "Exact callback scheduling/serialization cause of this 53.44ms gap was not separately instrumented; not attributed uniquely to vehicle tracking or planner.",
+  "proposed_next_source_work": "Atomic stopped handoff: stay under completed-profile stop ownership until fresh measured state and a newly admitted zero-speed tube are acknowledged; then release normal control. Preserve50ms body gate and original stopping/clearance/ownership contracts; saved red/green software proof required before any new physical approval."
+}
