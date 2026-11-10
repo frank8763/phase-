@@ -1,0 +1,88 @@
+{
+  "closed": true,
+  "status": "NOT_PASSED",
+  "error": {
+    "error": "AssertionError('FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1009_explicit_checker_navigation/campaign.py\", line 63, in main\n    assert task['stage']=='confirmation'and row['evidence_passed'],'FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE'\nAssertionError: FIRST_DEVELOPMENT_FUNCTION_OR_SAFETY_EVIDENCE_FAILURE\n"
+  },
+  "rows": [
+    {
+      "task_id": "main_we",
+      "slot": 0,
+      "stage": "we_development",
+      "route": "we",
+      "initial_axis_direction": null,
+      "passed": false,
+      "evidence_passed": false,
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1009/main_we",
+      "actual_native": 10076,
+      "replay_native": 10076,
+      "private_native": 0,
+      "goal_m": 2.649343059576086,
+      "minimum_clearance_m": null,
+      "error": "AssertionError()"
+    }
+  ],
+  "preflight_summaries": [
+    {
+      "passed": true,
+      "rows": [
+        {
+          "task_id": "main_we",
+          "passed": true,
+          "actual_native": 0,
+          "replay_native": 0,
+          "models_initialized": 1
+        }
+      ],
+      "models_initialized": 1,
+      "actual_native": 0,
+      "replay_native": 0,
+      "private_native": 0,
+      "models_during_audit": 0
+    },
+    {
+      "passed": true,
+      "rows": [
+        {
+          "task_id": "main_ns",
+          "passed": true,
+          "actual_native": 0,
+          "replay_native": 0,
+          "models_initialized": 1
+        }
+      ],
+      "models_initialized": 1,
+      "actual_native": 0,
+      "replay_native": 0,
+      "private_native": 0,
+      "models_during_audit": 0
+    },
+    {
+      "passed": true,
+      "rows": [
+        {
+          "task_id": "main_ew",
+          "passed": true,
+          "actual_native": 0,
+          "replay_native": 0,
+          "models_initialized": 1
+        }
+      ],
+      "models_initialized": 1,
+      "actual_native": 0,
+      "replay_native": 0,
+      "private_native": 0,
+      "models_during_audit": 0
+    }
+  ],
+  "unexecuted_tasks": [
+    "repeat_we"
+  ],
+  "models_authorized": false,
+  "closed_unix": 1794312618.258211,
+  "absolute_deadline_unix": 1794355200.0,
+  "prerequisite_deadline_unchanged": 1794317883.8084831,
+  "new24_executed": 0,
+  "model_authority": false
+}
