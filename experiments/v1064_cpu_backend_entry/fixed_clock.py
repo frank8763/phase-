@@ -1,0 +1,19 @@
+"""Generic long input: certify the ONE future publication clock in full.
+
+The owner already holds zero for exactly800 native ticks. Provisional phase
+bounds propose a wait only; the final original-Python forecast includes that
+hold and the selected wait. Only the checked native/time clock can publish.
+No physical state or controller memory is reset or written.
+"""
+import math,time
+import numpy as np
+from kernel import predict,checks,Geometry,ref,REQUIRED
+HOLD_NATIVE=800
+PREFIX=[dict(kind='wait',gear=0,target=0.,ticks=200)]
+def prepare_generic(setup,packet,source,goal,actions,elapsed,base):
+ started=time.monotonic();base.hold_permission(setup,packet,source);remaining=base.refresh_module.remainder(actions,elapsed);hold=[dict(kind='wait',gear=0,target=0.,ticks=HOLD_NATIVE)];provisional,pu,pr,pm=predict(setup,packet,hold+PREFIX+remaining,tail=False);prefix_n=200;cross=provisional[HOLD_NATIVE+prefix_n:];upper=float(np.linalg.norm(cross[-1,:2]-goal))+.08;assert upper<=.45,'COMPLETE_INPUT_ENDPOINT_OR_CONTROL_REJECTED'
+ static=ref._old.Geometry(setup['known'],None).clearances(cross[:,:3])[0];slots=math.ceil(base.PERIOD/base.SLOT);times=np.arange(slots+len(cross))*base.SLOT;support=base.interval.interval_support(source['periodic']['vertices'],times-.055,times+base.SLOT+.055);theta=cross[:,2];front=np.c_[np.cos(theta),np.sin(theta)];left=np.c_[-np.sin(theta),np.cos(theta)];body=cross[:,:2]@base.N.T-.44*abs(front@base.N.T)-.375*abs(left@base.N.T);bounds=np.array([float(np.minimum(static,(body-support[j:j+len(cross)]-.1).max(axis=1)).min())for j in range(slots)])
+ expected_native=packet['native_tick']+HOLD_NATIVE;expected_time=packet['sim_time']+.01*HOLD_NATIVE;waits=np.arange(1,slots+1);phase=(expected_time+(prefix_n+waits)*.01)%base.PERIOD;indices=np.minimum((phase/base.SLOT).astype(int),slots-1);selected=int(np.argmax(bounds[indices]));wait=int(waits[selected]);assert bounds[indices[selected]]>=REQUIRED+1e-7,'NO_ABSOLUTE_LAUNCH_INTERVAL'
+ joined=hold+PREFIX+[dict(kind='wait',gear=0,target=0.,ticks=wait)]+remaining;full_s,full_u,full_r,full_m=predict(setup,packet,joined,tail=False);ss=full_s[HOLD_NATIVE:];uu=full_u[HOLD_NATIVE:];rr=full_r[HOLD_NATIVE:];assert len(rr)+HOLD_NATIVE<=40000,'GENERIC_EPOCH_NATIVE_LIMIT';minimum=Geometry(setup['known'],source['periodic'],expected_time).complete(ss);memory=dict(last_ctrl=full_m[HOLD_NATIVE,:4].tolist(),integral=float(full_m[HOLD_NATIVE,4]));cc,upper=checks(ss,uu,rr,dict(controller_memory=memory),setup,np.asarray(goal),minimum,REQUIRED);assert all(cc.values())and minimum>=REQUIRED+1e-7,'COMPLETE_INPUT_ENDPOINT_OR_CONTROL_REJECTED'
+ full=ref._old.Geometry(setup['known'],source['periodic']);a,b=full.clearances(ss[:prefix_n+1,:3]);prefix_lower=float(np.minimum(a,b).min());assert prefix_lower>=REQUIRED+1e-7,'PREFIX_NOT_PHASE_INDEPENDENT';a,b=full.clearances(ss[-1:,:3]);assert min(a[0],b[0])>=REQUIRED+1e-7,'TERMINAL_HOLD';q=prefix_n+wait
+ return dict(passed=True,packet=packet,source=source,source_planes=base.planes(source['periodic']['vertices']),goal=goal,prefix=PREFIX,suffix=remaining,prefix_states=ss[:prefix_n+1].tolist(),prefix_controls=uu[:prefix_n].tolist(),prefix_requests=rr[:prefix_n].tolist(),wait_states=ss[prefix_n:q+1].tolist(),wait_controls=uu[prefix_n:q].tolist(),cross_states=ss[q:].tolist(),cross_controls=uu[q:].tolist(),cross_requests=rr[q:].tolist(),launch_bounds=[minimum],candidate_launch_bounds=bounds.tolist(),minimum_prefix_raw_m=prefix_lower,complete_profile_checks=cc,terminal_goal_upper_m=upper,generic_complete_profile_checked=True,publication_clock_kind='FIXED_ZERO_HOLD_NATIVE',expected_publication_native=expected_native,expected_publication_sim_time=expected_time,fixed_launch_wait=wait,pre_adoption_hold_native=HOLD_NATIVE,nominal_controller_at_publication=memory,nominal_state_at_publication=ss[0].tolist(),wait_equivalence_proof='FULL_ORIGINAL_PYTHON_COMPOSITION_AT_THE_ONLY_ALLOWED_PUBLICATION_CLOCK',wall_s=time.monotonic()-started,models=0)

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "legacy_label_false_positive_reproduced": true,
+  "real_CPU_renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "positive_actual_backend": {
+    "passed": true,
+    "actual_context_module": "mujoco.osmesa",
+    "actual_OpenGL_dispatch_module": "OpenGL.platform.osmesa",
+    "hardware_GPU_used": false,
+    "legacy_environment_label_restored": true
+  },
+  "negative_cases": [
+    "actual_EGL_backend",
+    "wrong_OpenGL_dispatch",
+    "CUDA_visible"
+  ],
+  "models": 0,
+  "integrations": 0,
+  "hardware_GPU_used": false,
+  "resource_policy": {
+    "cpu_affinity": [
+      2
+    ],
+    "nice": 19,
+    "scheduler": 5,
+    "gpu_visible": "",
+    "mujoco_gl": "osmesa",
+    "io_class": 3,
+    "stage_process_access": false
+  }
+}

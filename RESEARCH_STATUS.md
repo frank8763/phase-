@@ -1240,3 +1240,6 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 
 
 - FINAL V1062通宵固定2026-11-12 09:00截止，新EW北移0.10m课程；同候选三路线通过=False，新24确认通过=False，准确或未知分账={"model_initializations": null, "historical_replay_native": 0, "navigation_native": 0, "own_replay_native": 0, "private_mujoco_native": 0}，未知=[{"task_id": "t0_dev_north_south", "field": "model_initializations"}]。四固定信息接近支线、功能安全分层接力；实际与未执行分母见docs/RPCCR_THREE_ROUTE_NIGHT_V1063_ENTRY_REPORT.md；CPU2最低优先级/GPU禁用/Stage完全隔离，guard恢复，无模型重启。
+
+
+- V1063首NS真t0在factory的GPU_BACKEND_REENABLED断言停机，完整失败日志保留；导航/历史/自身重放/私有MuJoCo明确0，初始化次数未知保持。0模型复现确认旧search_worker会重写MUJOCO_GL标签，而已绑定的mujoco.osmesa/OpenGL.osmesa仍CPU llvmpipe；原环境字符串检查为误拒绝，不是路线/跟踪失败，也未以标签变化断言实际用了GPU。用户明确允许V1064只改实际后端资格检查后接续、原09:00与started/monotonic不变，再异常即停。实际CPU上下文正例及真实EGL/错误OpenGL分派/CUDA可见三负例全过；四支线/原78科学任务/算法与原安全门均不改，只输出命名空间与资源检查变更。旧两入口失败及未知初始化保持，不混三路线功能分母；CPU2最低优先级/私有CPU渲染，不访问Stage或修改系统共享库。
