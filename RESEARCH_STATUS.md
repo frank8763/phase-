@@ -1246,3 +1246,6 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 
 
 - FINAL V1062通宵固定2026-11-12 09:00截止，新EW北移0.10m课程；同候选三路线通过=False，新24确认通过=False，准确或未知分账={"model_initializations": 1, "historical_replay_native": 0, "navigation_native": 0, "own_replay_native": 0, "private_mujoco_native": 0}，未知=[]。四固定信息接近支线、功能安全分层接力；实际与未执行分母见docs/RPCCR_THREE_ROUTE_NIGHT_V1064_ENTRY_REPORT.md；CPU2最低优先级/GPU禁用/Stage完全隔离，guard恢复，无模型重启。
+
+
+- 用户明确“允许复用NS初态，接续未执行任务”。V1064 NS实际初始化成功、原生净空.461486891/自体余量.010/坏接触0，导航/历史/自身重放/私有0；原KeyError(actuator_ids)预检失败不升级。V1065仅修公开metadata三字段与私有执行器字段读取接口，保存真t0/CPU后端独立零模型补核和5篡改负例通过，复用该NS初态审计，不重复初始化；只接剩余EW/WE t0、原四支线与条件固定新24。所有控制/风险/几何/候选/相位与V1064字节相同；原started1794405396.9513881/monotonic342705.13276958466/明早09:00截止保留，再异常停。此前两次部分初始化未知/V1064已知1初始化独立分账，旧错误不删。CPU2 SCHED_IDLE/nice19/ionice3与私有OSMesa CPU渲染，GPU不用/Stage不访问，8GiB原临时上限。当前新接续冻结前模型/积分0，复用现有t0不算新样本。
