@@ -1234,3 +1234,6 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 
 
 - FINAL V1062通宵固定2026-11-12 09:00截止，新EW北移0.10m课程；同候选三路线通过=False，新24确认通过=False，准确或未知分账={"model_initializations": null, "historical_replay_native": null, "navigation_native": null, "own_replay_native": null, "private_mujoco_native": null}，未知=[{"task_id": "t0_dev_north_south", "field": "model_initializations"}, {"task_id": "t0_dev_north_south", "field": "historical_replay_native"}, {"task_id": "t0_dev_north_south", "field": "navigation_native"}, {"task_id": "t0_dev_north_south", "field": "own_replay_native"}, {"task_id": "t0_dev_north_south", "field": "private_mujoco_native"}]。四固定信息接近支线、功能安全分层接力；实际与未执行分母见docs/RPCCR_THREE_ROUTE_NIGHT_V1062_REPORT.md；CPU2最低优先级/GPU禁用/Stage完全隔离，guard恢复，无模型重启。
+
+
+- V1062首个NS真t0在旧写入白名单外保存RESULT被拒绝，导航未启动，原驱动COMPLETION初始化/积分账目未知原样保留，原始引发启动异常未能被外层日志保存，不猜测具体模型初始化次数。原冻结/原错误/唯一同步已完成不重试。用户随后明确批准唯一V1063入口接续、原明早09:00与原started/monotonic不变，再异常停。所有科学模块/四支线/78原登记任务（仅输出命名空间）不变；私有OSMesa25.1.7包SHA核验、真实CPU llvmpipe上下文0模型资格、旧真实写入guard下内层失败记录资格均过，未安装/改系统共享库，GPU不使用/CPU2 SCHED_IDLE nice19。原始三路线与条件新24门不减，不抹掉V1062未知账目，不新增候选。接续协议/授权见experiments/v1063_night_entry_continuation及runs/v1063_night_entry_continuation_20261111。
