@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1050",
+  "source_revision": "V1051",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -10038,6 +10038,21 @@
       "historical_replay_native": 0,
       "new_navigation_suffix_native": 0,
       "own_replay_native": 0,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": []
+  },
+  "v1051_retained_corridor_closed": {
+    "goal_passed": false,
+    "error": {
+      "error": "AssertionError('FUNCTIONAL_FAILURE_STOP')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1051_retained_corridor_entry/driver.py\", line 24, in main\n    result=json.loads((Path(task['output'])/'RESULT.json').read_text());proof=audit_native(task,True);rows.append(dict(task=task,result=result,audit=proof,passed=code==0 and result['passed']and proof['passed']));dump(O/'MODEL_RESULTS.json',rows);assert proof['safety_passed'],'SAFETY_OR_EVIDENCE_FAILURE';assert rows[-1]['passed'],'FUNCTIONAL_FAILURE_STOP'\nAssertionError: FUNCTIONAL_FAILURE_STOP\n"
+    },
+    "counts": {
+      "model_initializations": 1,
+      "historical_replay_native": 23640,
+      "new_navigation_suffix_native": 14144,
+      "own_replay_native": 37784,
       "private_mujoco_native": 0
     },
     "unknown_counts": []
