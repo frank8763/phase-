@@ -1,0 +1,30 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-atomic-publish-v1054-20261111",
+  "archives": [
+    {
+      "group": "v1054-atomic-publish-evidence",
+      "source_files": 85,
+      "raw_bytes": 138119235,
+      "archive_bytes": 34777599,
+      "archive_sha256": "1d94e15e262ab795a18727db2ea89e38ab2982aa889a965eb17cb4506e7c593b",
+      "parts": [
+        {
+          "name": "v1054-atomic-publish-evidence.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "10ba9f01b17ded68bd7fd5686b67754367e0629fdedee328a1387dda588b495b"
+        },
+        {
+          "name": "v1054-atomic-publish-evidence.tar.zst.part001",
+          "bytes": 1223167,
+          "sha256": "4cd0a15eef25782769bcb8fd99358ee6bd3874689940380df13fb56e6324ff50"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ],
+  "restoration": "tools/phase_storage_20261107/restore.py",
+  "selected_input_dependency_archive": true,
+  "not_retry_of_old_release": true
+}
