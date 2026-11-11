@@ -1216,3 +1216,9 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 
 
 - FINAL V1056离线日间接力，固定20:30/1794400200截止；原WE真实起点主及完整重复通过=False，原底层反向资格保持=True，准确分账={"model_initializations": 1, "historical_replay_native": 0, "navigation_native": 50728, "own_replay_native": 50728, "private_mujoco_native": 0}，未知=[]，原24未执行，旧失败不升级。来源/归档/同步以records/nav2_v1056_20261111为准；闭批恢复REVIEW_PENDING，不自动延时/重启。
+
+
+- V1056原WE真t0主实际到达停稳，50728新导航/50728完整自身重放/历史0/私有0，末目标.121696139/最低.276858935/坏0；父审计误读工厂三同t0包NONCAUSAL_OR_DUPLICATE_SCAN后按首异常封账，原错误/源/批结论保持、重复未执行。147来源66954818字节全远端来源/解压SHA回读后清理；V1057只零模型按需恢复主70来源，严格去除恰两份工厂binding同包，其余重复/逆序/篡改4负例拒绝，原主完整因果重建/所有原生和发现328链独立补审核PASS，未追认原批PASS。按当前用户开始第一步/继续的原主+完整重复范围，V1058只接续该原未执行重复，worker/fresh/handoff/atomic/execute/source_job/控制库与V1056字节同，kernel仅输出命名空间改变；原主不重跑，原总2车辆已用1，本接续最多1，原started/monotonic/20:30根截止全保持，再异常不再接续。NS/EW未物理资格/新24未执行/三路线总门仍false，训练实机0。见experiments/v1058_fresh_repeat_entry/PROTOCOL.md。
+
+
+- FINAL V1058离线日间接力，固定20:30/1794400200截止；原WE真实起点主及完整重复通过=False，原底层反向资格保持=True，准确分账={"model_initializations": 1, "historical_replay_native": 0, "navigation_native": 38929, "own_replay_native": 38929, "private_mujoco_native": 0}，未知=[]，原24未执行，旧失败不升级。来源/归档/同步以records/nav2_v1058_20261111为准；闭批恢复REVIEW_PENDING，不自动延时/重启。

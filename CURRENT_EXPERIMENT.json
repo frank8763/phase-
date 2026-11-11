@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1056",
+  "source_revision": "V1058",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -10148,6 +10148,39 @@
     ],
     "hard_deadline_unix": 1794400200.0,
     "closed_unix": 1794397596.7812998,
+    "guard_original": true,
+    "new24_executed": 0,
+    "training_updates": 0,
+    "hardware_steps": 0
+  },
+  "v1058_fresh_start_closed": {
+    "combined_original_main_and_repeat_counts": {
+      "model_initializations": 2,
+      "historical_replay_native": 0,
+      "navigation_native": 89657,
+      "own_replay_native": 89657,
+      "private_mujoco_native": 0
+    },
+    "closed": true,
+    "fresh_west_east_main_and_repeat_passed": false,
+    "original_v1056_batch_error_kept": true,
+    "main_reexecuted": false,
+    "combined_three_route_development_passed": false,
+    "error": {
+      "error": "AssertionError('FIRST_FUNCTIONAL_FAILURE_STOP')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1058_fresh_repeat_entry/driver.py\", line 24, in main\n    result=json.loads((Path(task['output'])/'RESULT.json').read_text());proof=audit_native(task);row=dict(task=task,result=result,audit=proof,passed=code==0 and result['passed']and proof['passed']);rows.append(row);dump(O/'RESULTS.json',rows);assert proof['safety_passed'],'SAFETY_OR_EVIDENCE_FAILURE';assert row['passed'],'FIRST_FUNCTIONAL_FAILURE_STOP'\nAssertionError: FIRST_FUNCTIONAL_FAILURE_STOP\n"
+    },
+    "counts": {
+      "model_initializations": 1,
+      "historical_replay_native": 0,
+      "navigation_native": 38929,
+      "own_replay_native": 38929,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "unexecuted_task_ids": [],
+    "hard_deadline_unix": 1794400200.0,
+    "closed_unix": 1794398172.8275652,
     "guard_original": true,
     "new24_executed": 0,
     "training_updates": 0,
