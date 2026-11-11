@@ -1,0 +1,62 @@
+{
+  "preparation_checks_passed": true,
+  "route_admission_passed": true,
+  "static_and_software_admission_only": true,
+  "ready_for_physics": false,
+  "models_authorized": false,
+  "rows": [
+    {
+      "case_id": "WEST_EAST",
+      "static_complete_source_passed": true,
+      "saved_real_measurement_producer_math_qualified": true,
+      "requires_online_dynamic_source_certification_after_actual_discovery": true,
+      "actual_route_dynamic_source_qualified": false,
+      "new_version_physical_full_chain_passed": false,
+      "reason": null
+    },
+    {
+      "case_id": "NORTH_SOUTH",
+      "static_complete_source_passed": true,
+      "saved_real_measurement_producer_math_qualified": false,
+      "requires_online_dynamic_source_certification_after_actual_discovery": true,
+      "actual_route_dynamic_source_qualified": false,
+      "new_version_physical_full_chain_passed": false,
+      "reason": null
+    },
+    {
+      "case_id": "EAST_WEST",
+      "static_complete_source_passed": true,
+      "saved_real_measurement_producer_math_qualified": false,
+      "requires_online_dynamic_source_certification_after_actual_discovery": true,
+      "actual_route_dynamic_source_qualified": false,
+      "new_version_physical_full_chain_passed": false,
+      "reason": null
+    }
+  ],
+  "new_physical_tasks_executed": 0,
+  "new24_executed": 0,
+  "models": 0,
+  "integrations": 0,
+  "model_disabled_negative_cases": [
+    "missing_task",
+    "changed_start",
+    "changed_goal",
+    "changed_goal_yaw",
+    "changed_phase",
+    "changed_seed",
+    "changed_order",
+    "shared_output",
+    "explicit_model_launcher",
+    "implicit_old_window",
+    "mujoco_import_before_loading_blocked"
+  ],
+  "course_id": "V1061_EW_START_NORTH_010",
+  "only_EW_start_north_010_user_selected": true,
+  "original_EW_task_still_rejected": true,
+  "scene_array_binding_passed": true,
+  "new_MJB_initialization_qualified": false,
+  "publication_hold_functions_ast_unchanged": true,
+  "correct_analytical_producer_namespace": true,
+  "user_selected_no_models": true,
+  "old_failures_and_windows_unchanged": true
+}

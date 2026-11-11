@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "ns_synthetic_contract_fixed_clock",
+      "passed": true,
+      "maximum_differences": {
+        "states": 0.0,
+        "controls": 0.0,
+        "requests": 0.0
+      },
+      "checks": {
+        "finite": true,
+        "full_states": true,
+        "full_raw_geometry": true,
+        "full_200_stop": true,
+        "goal_upper": true,
+        "speed_yaw": true,
+        "legal_ctrl": true,
+        "legal_slew": true
+      },
+      "minimum_raw_m": 0.24611808331323992,
+      "goal_upper_m": 0.3911108850275269,
+      "producer_wall_s": 5.947566371993162,
+      "synthetic_source_only": true,
+      "not_actual_NS_dynamic_qualification": true
+    },
+    {
+      "case": "ns_synthetic_contract_fixed_clock_transient",
+      "passed": true,
+      "maximum_differences": {
+        "states": 0.0,
+        "controls": 0.0,
+        "requests": 0.0
+      },
+      "checks": {
+        "finite": true,
+        "full_states": true,
+        "full_raw_geometry": true,
+        "full_200_stop": true,
+        "goal_upper": true,
+        "speed_yaw": true,
+        "legal_ctrl": true,
+        "legal_slew": true
+      },
+      "minimum_raw_m": 0.24611808331324037,
+      "goal_upper_m": 0.3911108430764019,
+      "producer_wall_s": 6.022893490968272,
+      "synthetic_source_only": true,
+      "not_actual_NS_dynamic_qualification": true
+    },
+    {
+      "case": "WE_CLASSIC_PRODUCER_UNCHANGED",
+      "passed": true,
+      "maximum_differences": {
+        "prefix_states": 0.0,
+        "prefix_controls": 0.0,
+        "prefix_requests": 0.0,
+        "wait_states": 0.0,
+        "wait_controls": 0.0,
+        "cross_states": 0.0,
+        "cross_controls": 0.0,
+        "cross_requests": 0.0,
+        "launch_bounds": 0.0
+      }
+    },
+    {
+      "case": "CURRENT_FIXED_CLOCK_PUBLICATION_AND_NEGATIVES",
+      "passed": true,
+      "audit": "FIXED_CLOCK_PUBLICATION_AUDIT.json"
+    }
+  ],
+  "models": 0,
+  "mujoco_integrations": 0,
+  "software_only": true,
+  "original_canonical_NS_dynamic_qualified": false
+}
