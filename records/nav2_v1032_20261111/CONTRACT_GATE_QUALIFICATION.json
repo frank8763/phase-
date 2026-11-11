@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_saved_causal_cut_found": true,
+    "public_inputs_only": true,
+    "no_actor_is_unknown": true,
+    "unrelated_synthetic_translated_actor_is_unknown": true,
+    "goal_outside_cut_is_unknown": true,
+    "smaller_margin_breaks_witness": true,
+    "start_inside_same_pocket_is_unknown": true,
+    "reversed_convex_vertex_order_same_witness": true,
+    "nonconvex_polygon_not_used": true,
+    "no_hardcoded_map_indices": true
+  },
+  "selection": {
+    "status": "TIME_ALIGNED_OCCUPANCY_REQUIRED",
+    "obstruction_proved": true,
+    "models": 0,
+    "integrations": 0,
+    "actuation_authority": false,
+    "physical_ready": false,
+    "full_cycle_route_ruled_out": true,
+    "real_moving_task_impossible": false,
+    "curve": [
+      [
+        5.0,
+        0.06623069196939468
+      ],
+      [
+        2.994757687694639,
+        0.06623069196939468
+      ],
+      [
+        2.994757687694639,
+        -0.5748847235226944
+      ],
+      [
+        2.765055736081296,
+        -1.3821007761987922
+      ],
+      [
+        2.765055736081296,
+        -2.5499998927116394
+      ],
+      [
+        3.950000047683716,
+        -2.5499998927116394
+      ],
+      [
+        5.0,
+        -2.5499998927116394
+      ]
+    ],
+    "upper_rectangle_index": 3,
+    "lower_rectangle_index": 9,
+    "static_forbidden_radius_m": 0.6185342002022692,
+    "actor_forbidden_radius_m": 0.7185342002022692,
+    "goal_disk_distance_to_cut_m": 0.5499998927116394,
+    "goal_radius_m": 0.45,
+    "start_winding": 0,
+    "goal_winding": 1,
+    "continuous_witness": true,
+    "safety_threshold_unchanged": true
+  },
+  "saved_input_query_s": 0.00031226099235937,
+  "models": 0,
+  "integrations": 0,
+  "independent_continuous_proof": "FULL_CYCLE_SEPARATION_PROOF.json",
+  "physical_integration_not_done": true
+}

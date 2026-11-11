@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "checks": {
+    "inscribed_disk_positive": true,
+    "upper_static_segment": true,
+    "upper_bridge": true,
+    "convex_actor_segment": true,
+    "lower_bridge": true,
+    "lower_static_segment": true,
+    "boundary_bridge": true,
+    "right_boundary": true,
+    "simple_monotone_vertical_chain": true,
+    "start_outside": true,
+    "goal_inside": true,
+    "entire_original_goal_disk_inside": true
+  },
+  "curve": [
+    [
+      5.0,
+      0.06623069196939468
+    ],
+    [
+      2.994757687694639,
+      0.06623069196939468
+    ],
+    [
+      2.994757687694639,
+      -0.5748847235226944
+    ],
+    [
+      2.765055736081296,
+      -1.3821007761987922
+    ],
+    [
+      2.765055736081296,
+      -2.5499998927116394
+    ],
+    [
+      3.950000047683716,
+      -2.5499998927116394
+    ],
+    [
+      5.0,
+      -2.5499998927116394
+    ]
+  ],
+  "required_raw_clearance_m": 0.24353421020226934,
+  "inscribed_vehicle_radius_m": 0.375,
+  "static_forbidden_ball_radius_m": 0.6185342002022692,
+  "actor_forbidden_ball_radius_m": 0.7185342002022692,
+  "upper_overlap_slack_m": 0.6959529849124493,
+  "lower_overlap_slack_m": 0.16916928389169117,
+  "boundary_overlap_slack_m": 0.1870684480882543,
+  "distance_goal_to_curve_m": 0.5499998927116394,
+  "start_winding": 0,
+  "goal_winding": 1,
+  "models": 0,
+  "integrations": 0,
+  "source_native_tick": 16740,
+  "continuous_witness": true,
+  "proof": "A closed simple curve lies strictly inside the forbidden center set. The body rectangle contains a .375m disk at every yaw. Static/convex actor subsegments stay in convex obstacles; bridge subsegments are covered by endpoint forbidden balls with strict overlap. Start has winding0 and all original .45 goal disk winding1. Every continuous center path must cross this forbidden curve.",
+  "full_cycle_certificate_route_impossible": true,
+  "real_moving_task_impossible": false,
+  "reverse_or_more_expansions_cannot_fix_this_spatial_union": true,
+  "maximum_sampled_curve_raw_clearance_m": 0.1499999761581421,
+  "all_3927_sampled_orientations_rejected": true,
+  "negative_cases": [
+    "reduce_clearance_invalidates_overlap",
+    "swap_start_goal_invalidates_winding"
+  ],
+  "next_required_change": "time-aligned reachable occupancy and qualified input dynamics, or separately declared nonblocking course; never lower safety margins"
+}

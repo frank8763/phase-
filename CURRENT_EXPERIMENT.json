@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1030_CLOSED",
+  "source_revision": "V1032_CLOSED",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -9811,5 +9811,118 @@
     "sole_HEAD_check_timed_out_no_retry": true,
     "old_unverified_raw_retained": true,
     "new_required_cache_cleaned": true
+  },
+  "v1032_speed_response_summary": {
+    "passed": false,
+    "closed": true,
+    "counts": {
+      "model_initializations": 2,
+      "navigation_native": 843,
+      "own_replay_native": 843,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "rows": [
+      {
+        "task_id": "straight",
+        "passed": true,
+        "executed_native": 500,
+        "error": null,
+        "prefix_audit": {
+          "passed": true,
+          "scope": "executed prefix evidence only; not full response qualification",
+          "checks": {
+            "all_executed_native_accounted": true,
+            "entire_executed_prefix_replayed": true,
+            "full_actual_clearance": true,
+            "full_self": true,
+            "zero_bad_contact": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "compiled_model_sha": true,
+            "all_native_controller_reconstructed": true,
+            "exact_registered_request_prefix": true,
+            "body_speed_cap": true,
+            "body_yaw_cap": true
+          },
+          "executed_native": 500,
+          "position_error_max": 0.0023694909531143614,
+          "heading_error_max": 0.00011609275580526379,
+          "full_500_executed": true,
+          "all_200_stop_executed": true,
+          "component_passed": true,
+          "models": 0,
+          "integrations": 0,
+          "maximum_actual_controller_reconstruction_error": 5.551115123125783e-17,
+          "failed_functional_gate_preserved": false
+        },
+        "response": {
+          "passed": true,
+          "native_steps": 500,
+          "maximum_position_m": 0.002369490953114361,
+          "maximum_heading_rad": 0.00011609275580526379,
+          "maximum_virtual_steering_rad": 1.5131557739965257e-05,
+          "actual_displacement_m": 0.2201879480277783,
+          "complete_200_native_stop": true
+        },
+        "minimum_clearance_m": 0.4250568438792064
+      },
+      {
+        "task_id": "left",
+        "passed": false,
+        "executed_native": 343,
+        "error": "AssertionError('HELDOUT_NATIVE_RESPONSE_ERROR')",
+        "prefix_audit": {
+          "passed": true,
+          "scope": "executed prefix evidence only; not full response qualification",
+          "checks": {
+            "all_executed_native_accounted": true,
+            "entire_executed_prefix_replayed": true,
+            "full_actual_clearance": true,
+            "full_self": true,
+            "zero_bad_contact": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "compiled_model_sha": true,
+            "all_native_controller_reconstructed": true,
+            "exact_registered_request_prefix": true,
+            "body_speed_cap": true,
+            "body_yaw_cap": true
+          },
+          "executed_native": 343,
+          "position_error_max": 0.010021934915495431,
+          "heading_error_max": 0.006217983325123021,
+          "full_500_executed": false,
+          "all_200_stop_executed": false,
+          "component_passed": false,
+          "models": 0,
+          "integrations": 0,
+          "maximum_actual_controller_reconstruction_error": 6.938893903907228e-17,
+          "failed_functional_gate_preserved": true
+        },
+        "response": null,
+        "minimum_clearance_m": 0.4060795564571018
+      }
+    ],
+    "unexecuted": [
+      "right"
+    ],
+    "models_authorized": false,
+    "guard_original": true,
+    "execution_lock_idle": true,
+    "original_dynamic_acceptance": false,
+    "new24_executed": 0,
+    "training_updates": 0,
+    "hardware_steps": 0,
+    "stop_reason": "left response position error 0.01002193491549543 > preregistered 0.01m at native343; right unexecuted; old thresholds and failure preserved"
+  },
+  "v1033_contract_diagnosis": {
+    "models": 0,
+    "integrations": 0,
+    "full_cycle_original_task_cut_proved": true,
+    "time_aligned_occupancy_required": true,
+    "real_moving_task_impossible": false,
+    "production_actuation_qualified": false,
+    "report": "docs/RPCCR_FULL_CYCLE_OBSTRUCTION_V1033_REPORT.md"
   }
 }

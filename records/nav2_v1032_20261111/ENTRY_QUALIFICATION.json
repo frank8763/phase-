@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": {
+    "production_executor_straight": true,
+    "independent_saved_schema_straight": true,
+    "production_executor_left": true,
+    "independent_saved_schema_left": true,
+    "production_executor_right": true,
+    "independent_saved_schema_right": true,
+    "exact_production_command_pause_guard": true,
+    "actual_first_failure_policy": true,
+    "all_output_roots_new": true,
+    "all_source_parses": true
+  },
+  "rejected_negative_cases": [
+    "straight_position",
+    "straight_heading",
+    "straight_steering",
+    "straight_missing_tail",
+    "straight_saved_pose_tamper",
+    "left_position",
+    "left_heading",
+    "left_steering",
+    "left_missing_tail",
+    "left_saved_pose_tamper",
+    "right_position",
+    "right_heading",
+    "right_steering",
+    "right_missing_tail",
+    "right_saved_pose_tamper"
+  ],
+  "models": 0,
+  "integrations": 0,
+  "navigation_started": false
+}

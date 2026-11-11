@@ -1,0 +1,13 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "errors": [
+    {
+      "stage": "software_schema_qualification",
+      "error": "KeyError('origin_native_tick')",
+      "cause": "shared predictor import prepends old source path; generic audit import selected V1003 instead of own audit",
+      "remedy": "absolute own-file import and code-filename binding assertion before freeze",
+      "old_sources_unchanged": true
+    }
+  ]
+}

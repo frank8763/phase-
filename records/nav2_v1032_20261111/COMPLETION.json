@@ -1,0 +1,142 @@
+{
+  "closed": true,
+  "passed": false,
+  "rows": [
+    {
+      "task_id": "straight",
+      "passed": true,
+      "result": {
+        "passed": true,
+        "model_initializations": 1,
+        "navigation_native": 500,
+        "own_replay_native": 500,
+        "private_mujoco_native": 0,
+        "response": {
+          "passed": true,
+          "native_steps": 500,
+          "maximum_position_m": 0.002369490953114361,
+          "maximum_heading_rad": 0.00011609275580526379,
+          "maximum_virtual_steering_rad": 1.5131557739965257e-05,
+          "actual_displacement_m": 0.2201879480277783,
+          "complete_200_native_stop": true
+        },
+        "status": "FIXED_RESPONSE_AND_COMPLETE_STOP",
+        "physical": {
+          "actual_native": 500,
+          "fully_recorded_native": 500,
+          "minimum_actual_clearance_m": 0.4250568438792064,
+          "minimum_self_margin_m": 0.009305732174912984,
+          "bad_contacts": 0,
+          "final_body": [
+            -1.5999397584694446,
+            3.7798120602195286,
+            -1.5706802500659007,
+            6.926320400142223e-06,
+            9.363836194741735e-10
+          ],
+          "final_translation_speed_m_s": 6.926320538091308e-06,
+          "root_guard_native_count": 500,
+          "goal_distance_m": 6.746149375618914,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "replay": {
+          "replay_native": 500,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "closed_unix": 1794370039.4981742
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "all_500_native_accounted": true,
+          "fixed_input_schedule": true,
+          "all_inputs_reconstructed": true,
+          "position_heldout": true,
+          "heading_heldout": true,
+          "steering_heldout": true,
+          "original_actual_clearance": true,
+          "full_self": true,
+          "legal_ctrl": true,
+          "legal_slew": true,
+          "no_bad_contacts": true,
+          "complete_200_tail": true,
+          "exact_full_replay": true,
+          "actual_component_passed": true
+        },
+        "metrics": {
+          "maximum_controller_error": 5.551115123125783e-17,
+          "maximum_position_m": 0.0023694909531143614,
+          "maximum_heading_rad": 0.00011609275580526379,
+          "maximum_virtual_steering_rad": 1.5131557739965257e-05,
+          "minimum_actual_clearance_m": 0.4250568438792064
+        },
+        "models": 0,
+        "integrations": 0,
+        "navigation_acceptance": false,
+        "global_prediction_bound": false
+      }
+    },
+    {
+      "task_id": "left",
+      "passed": false,
+      "result": {
+        "passed": false,
+        "model_initializations": 1,
+        "navigation_native": 343,
+        "own_replay_native": 343,
+        "private_mujoco_native": 0,
+        "status": "FAILED",
+        "error": "AssertionError('HELDOUT_NATIVE_RESPONSE_ERROR')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1032_speed008_qualification/worker.py\", line 48, in main\n    v.native=counted;result['response']=execute(v,plan,end);result.update(passed=True,status='FIXED_RESPONSE_AND_COMPLETE_STOP')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1032_speed008_qualification/execute.py\", line 21, in execute\n    maximum=np.maximum(maximum,errors);assert np.all(errors<=[.01,.008,.015]),'HELDOUT_NATIVE_RESPONSE_ERROR'\nAssertionError: HELDOUT_NATIVE_RESPONSE_ERROR\n",
+        "physical": {
+          "actual_native": 343,
+          "fully_recorded_native": 343,
+          "minimum_actual_clearance_m": 0.4060795564571018,
+          "minimum_self_margin_m": 0.009312411140246779,
+          "bad_contacts": 0,
+          "final_body": [
+            -1.5563938716669945,
+            3.7874637928668307,
+            -1.4970544756188746,
+            -0.004358747503908518,
+            -0.0016847187020068433
+          ],
+          "final_translation_speed_m_s": 0.004441037150946913,
+          "root_guard_native_count": 343,
+          "goal_distance_m": 6.751855357177878,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "replay": {
+          "replay_native": 343,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "closed_unix": 1794370050.1370382
+      },
+      "audit": {
+        "passed": false,
+        "error": "INCOMPLETE_RESPONSE"
+      }
+    }
+  ],
+  "error": {
+    "error": "AssertionError('FIRST_FAILURE_STOP left')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1032_speed008_qualification/campaign.py\", line 26, in main\n    assert rows[-1]['passed'],'FIRST_FAILURE_STOP '+task['task_id']\nAssertionError: FIRST_FAILURE_STOP left\n"
+  },
+  "unexecuted": [
+    "right"
+  ],
+  "guard_original": true,
+  "closed_unix": 1794370051.274852,
+  "absolute_deadline_unix": 1794375429.4210603,
+  "navigation_acceptance": false
+}
