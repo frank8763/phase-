@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "safety_passed": true,
+  "safety": {
+    "all_native_recorded": true,
+    "actual_clearance": true,
+    "self_margin": true,
+    "no_bad_contacts": true,
+    "legal_ctrl": true,
+    "legal_slew": true,
+    "controller_reconstruction": true,
+    "full_own_replay": true,
+    "fresh_native_zero": true,
+    "all_used_domains_reconstructed_from_actual_sensor_packets": true,
+    "canonical_model_sha": true,
+    "actual_body_caps": true,
+    "actual_domain_offline_coverage": true
+  },
+  "all_native_covered_once": true,
+  "prediction": {
+    "position_m": 0.01131973427284126,
+    "heading_rad": 0.006586592135822911,
+    "steering_rad": 0.010670627917390596,
+    "passed": true
+  },
+  "full_remainder_adoptions": [
+    {
+      "start_native": 24440,
+      "native": 18410,
+      "minimum_raw_m": 0.2527377071453961,
+      "goal_upper_m": 0.22428657429978383
+    },
+    {
+      "start_native": 27677,
+      "native": 15189,
+      "minimum_raw_m": 0.25363545836233903,
+      "goal_upper_m": 0.22035422149573253
+    },
+    {
+      "start_native": 29114,
+      "native": 15775,
+      "minimum_raw_m": 0.25879892430045504,
+      "goal_upper_m": 0.22453240398482904
+    },
+    {
+      "start_native": 30724,
+      "native": 14171,
+      "minimum_raw_m": 0.2589185544064324,
+      "goal_upper_m": 0.22295737507434193
+    },
+    {
+      "start_native": 33789,
+      "native": 11128,
+      "minimum_raw_m": 0.259555580446977,
+      "goal_upper_m": 0.22323557653929094
+    },
+    {
+      "start_native": 35807,
+      "native": 11074,
+      "minimum_raw_m": 0.26021676110458636,
+      "goal_upper_m": 0.2226835675042581
+    },
+    {
+      "start_native": 37374,
+      "native": 9466,
+      "minimum_raw_m": 0.2571983520563921,
+      "goal_upper_m": 0.2098289197891145
+    },
+    {
+      "start_native": 38929,
+      "native": 9879,
+      "minimum_raw_m": 0.25736610979059205,
+      "goal_upper_m": 0.2104505535190262
+    },
+    {
+      "start_native": 40112,
+      "native": 8674,
+      "minimum_raw_m": 0.2548998914229823,
+      "goal_upper_m": 0.2064045078866567
+    },
+    {
+      "start_native": 44440,
+      "native": 4312,
+      "minimum_raw_m": 0.24895217413387563,
+      "goal_upper_m": 0.19874724791184925
+    },
+    {
+      "start_native": 46943,
+      "native": 3785,
+      "minimum_raw_m": 0.24972096540057828,
+      "goal_upper_m": 0.19885623514241918
+    }
+  ],
+  "maximum_controller_error": 2.0816681711721685e-16,
+  "minimum_actual_clearance_m": 0.2768589353628584,
+  "maximum_actor_domain_violation_m": -0.0028687908560183217,
+  "models": 0,
+  "integrations": 0,
+  "original_batch_error_kept": true,
+  "original_batch_not_upgraded": true,
+  "model_initializations": 0
+}

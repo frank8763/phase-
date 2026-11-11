@@ -1,0 +1,99 @@
+{
+  "original_main_actual_passed": true,
+  "main_original_batch_parent_audit_exception_kept": true,
+  "main_supplemental_audit_passed": true,
+  "full_repeat_passed": false,
+  "repeat_error": "AssertionError('STALE_MEASURED_BODY')",
+  "repeat_stop_native": 38929,
+  "repeat_parked_goal_distance_m": 2.30802048630644,
+  "executed_repeat_prefix_exact": {
+    "passed": true,
+    "compared_native": 38929,
+    "maximum_errors": {
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "ctrl": 0.0,
+      "mocap_pos": 0.0,
+      "mocap_quat": 0.0
+    },
+    "models": 0,
+    "integrations": 0,
+    "scope": "executed repeat prefix only; complete repeat failed wall-age gate; original outcome unchanged"
+  },
+  "full_three_route_passed": false,
+  "independent24_executed": 0,
+  "new_physical_counts": {
+    "model_initializations": 2,
+    "historical_replay_native": 0,
+    "navigation_native": 89657,
+    "own_replay_native": 89657,
+    "private_mujoco_native": 0
+  },
+  "qualification": {
+    "passed": true,
+    "rows": [
+      {
+        "case": "same_numeric_path",
+        "passed": true,
+        "software_native": 27064,
+        "epochs": 11,
+        "numeric_maximum_difference": 0.0,
+        "age_rejected_packets": 0,
+        "max_publish_to_control_s": 0.003823106992058456
+      },
+      {
+        "case": "70ms_snapshot_before_packet",
+        "passed": true,
+        "software_native": 27064,
+        "epochs": 11,
+        "numeric_maximum_difference": 0.0,
+        "age_rejected_packets": 0,
+        "max_publish_to_control_s": 0.0025360730360262096
+      },
+      {
+        "case": "one_stale_packet_per_epoch",
+        "passed": true,
+        "software_native": 27064,
+        "epochs": 11,
+        "numeric_maximum_difference": 0.0,
+        "age_rejected_packets": 11,
+        "max_publish_to_control_s": 0.0034609800204634666
+      }
+    ],
+    "old_70ms_delay_failure_reproduced": true,
+    "negative_cases": [
+      {
+        "case": "always_stale",
+        "rejected": true,
+        "packet_reads": 2
+      },
+      {
+        "case": "future_time",
+        "rejected": true,
+        "packet_reads": 1
+      },
+      {
+        "case": "pose_changed",
+        "rejected": true,
+        "packet_reads": 1
+      },
+      {
+        "case": "expanded_source",
+        "rejected": true,
+        "packet_reads": 1
+      }
+    ],
+    "models": 0,
+    "integrations": 0,
+    "original_50ms_gate_unchanged": true,
+    "no_native_steps_in_reacquisition": true,
+    "physical_ready": false,
+    "no_physical_entrypoint": true,
+    "not_a_real_time_guarantee": true
+  },
+  "models_authorized": false,
+  "guard_original": true,
+  "execution_lock_idle": true,
+  "old_deadline_unix": 1794400200,
+  "physical_entrypoint_created": false
+}

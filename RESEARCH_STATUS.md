@@ -1222,3 +1222,6 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 
 
 - FINAL V1058离线日间接力，固定20:30/1794400200截止；原WE真实起点主及完整重复通过=False，原底层反向资格保持=True，准确分账={"model_initializations": 1, "historical_replay_native": 0, "navigation_native": 38929, "own_replay_native": 38929, "private_mujoco_native": 0}，未知=[]，原24未执行，旧失败不升级。来源/归档/同步以records/nav2_v1058_20261111为准；闭批恢复REVIEW_PENDING，不自动延时/重启。
+
+
+- V1058原定完整重复在38929原生STALE_MEASURED_BODY停止，末距目标2.30802m/已停稳/最低.276858935/坏0，自身38929重放误差0；原主50728真实t0到达保持，但主+完整重复与三路线门仍false，24未执行。已执行重复38929的qpos/qvel/ctrl/mocap与成功主前缀全部误差0，不能把此停止归为跟踪失败或冒称完整重复通过。128来源新Release全部远端SHA/解压回读后清理，新唯一push+HEAD c70429830f459684cc44d853e602e8458901f5ad通过，旧同步未重试。V1060只零模型将源复制移到fresh测量前、停车原hold内最多一次年龄拒绝重新采集，原50ms和所有安全/源/状态门不变；3×11软件交接27064解析步均全数值同一、70ms复制延迟旧版拒绝/新版通过、单次过期11拒绝后资格通过、持续过期/未来时钟/姿态/域4负例拒绝。模型积分0/无物理入口/physical_ready=false，未启动第三车；原失败与20:30截止保持，REVIEW_PENDING/锁空闲。见docs/RPCCR_FRESH_START_V1056_V1060_REPORT.md。
