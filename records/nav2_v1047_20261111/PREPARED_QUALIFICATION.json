@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "executor_reverse_straight": true,
+    "saved_audit_reverse_straight": true,
+    "executor_reverse_left": true,
+    "saved_audit_reverse_left": true,
+    "executor_reverse_right": true,
+    "saved_audit_reverse_right": true,
+    "initial_complete_stop_positive": true,
+    "real_dead_end_now_not_admitted": true,
+    "production_search_small_work_cap": true,
+    "all_production_modules_import_without_models": true,
+    "actual_native_entry_pause_gate": true,
+    "fixed_deadline_and_config_table": true,
+    "all_sources_parse": true,
+    "all_registered_outputs_new": true
+  },
+  "rejected_negative_cases": [
+    "reverse_straight_position",
+    "reverse_straight_heading",
+    "reverse_straight_steering",
+    "reverse_straight_saved_pose_tamper",
+    "reverse_left_position",
+    "reverse_left_heading",
+    "reverse_left_steering",
+    "reverse_left_saved_pose_tamper",
+    "reverse_right_position",
+    "reverse_right_heading",
+    "reverse_right_steering",
+    "reverse_right_saved_pose_tamper",
+    "real_nearest_dead_end_full_stop"
+  ],
+  "models": 0,
+  "integrations": 0,
+  "actual_goal_not_yet_passed": true
+}
