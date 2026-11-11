@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1032_CLOSED",
+  "source_revision": "V1039_COMPONENT_CLOSED",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -9924,5 +9924,78 @@
     "real_moving_task_impossible": false,
     "production_actuation_qualified": false,
     "report": "docs/RPCCR_FULL_CYCLE_OBSTRUCTION_V1033_REPORT.md"
+  },
+  "v1039_component_summary": {
+    "passed": true,
+    "counts": {
+      "model_initializations": 1,
+      "historical_replay_native": 16740,
+      "new_component_native": 6900,
+      "navigation_native": 0,
+      "own_replay_native": 23640,
+      "private_mujoco_native": 0
+    },
+    "actual_displacement_m": 1.3304814876624833,
+    "audit_metrics": {
+      "historical_maximum_error": 0.0,
+      "controller_maximum_error": 1.1102230246251565e-16,
+      "minimum_actual_clearance_m": 0.2768589353628584,
+      "maximum_position_m": 0.008002078120141648,
+      "maximum_heading_rad": 0.0030423364662867936,
+      "actual_displacement_m": 1.3304814876624833
+    },
+    "original_goal_arrival_claim": false,
+    "closed": true
+  },
+  "v1040_information_audit": {
+    "passed": true,
+    "metrics": {
+      "before_box": {
+        "mean_phase_center_area_m2": 0.3125524885933066,
+        "minimum_phase_center_area_m2": 0.04880082904220373,
+        "maximum_phase_center_area_m2": 0.5777087667594465,
+        "full_cycle_center_area_m2": 0.5779122044217111
+      },
+      "after_box": {
+        "mean_phase_center_area_m2": 0.0026867408606412813,
+        "minimum_phase_center_area_m2": 0.001600158889308645,
+        "maximum_phase_center_area_m2": 0.004175698556444729,
+        "full_cycle_center_area_m2": 0.0745384235386215
+      },
+      "before_norm": {
+        "mean_phase_center_area_m2": 0.2642439864562586,
+        "minimum_phase_center_area_m2": 0.04873989800362821,
+        "maximum_phase_center_area_m2": 0.4703746602475327,
+        "full_cycle_center_area_m2": 0.4706148081026704
+      },
+      "after_norm": {
+        "mean_phase_center_area_m2": 0.002380393189711438,
+        "minimum_phase_center_area_m2": 0.001376164009625036,
+        "maximum_phase_center_area_m2": 0.003223347413365829,
+        "full_cycle_center_area_m2": 0.07279749699001492
+      }
+    },
+    "causal_observation_updates_before": 89,
+    "causal_observation_updates_after": 365,
+    "maximum_added_data_support_expansion": -2.0515898224715556e-06,
+    "maximum_norm_support_expansion": 2.597033699203166e-12,
+    "maximum_offline_true_coefficient_violation": -0.00011228605666474545,
+    "actual_new_component_native": 6900,
+    "new_information_only_reduction_percent": 99.14038730814994,
+    "combined_reduction_percent": 99.23840209994015,
+    "models": 0,
+    "integrations": 0,
+    "full_dynamic_arrival": false
+  },
+  "v1041_causal_phase_alignment": {
+    "status": "NOT_QUALIFIED_ZERO_MODEL",
+    "candidate_count": 200,
+    "original_control_full_cycle_search_status": "NO_COMPLETE_INPUT_ROUTE",
+    "fresh_full_cycle_obstruction": true,
+    "wait_only_suffix_passed": false,
+    "minimum_selected_timed_raw_m": -0.471834380342265,
+    "goal_upper_m": 0.45662947039047636,
+    "models": 0,
+    "physical_ready": false
   }
 }

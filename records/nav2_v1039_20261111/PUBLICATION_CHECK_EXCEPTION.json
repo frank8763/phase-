@@ -1,0 +1,14 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "stage": "local git diff --cached --check after successful immutable local archive verification",
+  "source_push_attempts_before": 0,
+  "error": "two frozen source files have one extra blank line at EOF",
+  "paths": [
+    "experiments/v1038_staged_timed_source/phase_geometry.py:20",
+    "experiments/v1039_causal_approach/component_plan.py:17"
+  ],
+  "frozen_source_unchanged": true,
+  "archive_not_overwritten": true,
+  "resolution": "retain exact frozen bytes and explicitly accept only these EOF blank findings; continue first source delivery once"
+}
