@@ -1,0 +1,143 @@
+{
+  "closed": true,
+  "deadline_unix": 1794445200.0,
+  "closed_at": 1794405400.5380857,
+  "selected_branch_id": null,
+  "combined_three_route_development_passed": false,
+  "confirmation_passed": false,
+  "confirmation_main_executed": 0,
+  "confirmation_main_successes": 0,
+  "confirmation_full24_executed": false,
+  "fixed_confirmation_complete_repeats": 0,
+  "candidate_results": [],
+  "counts": {
+    "model_initializations": null,
+    "historical_replay_native": null,
+    "navigation_native": null,
+    "own_replay_native": null,
+    "private_mujoco_native": null
+  },
+  "unknown_counts": [
+    {
+      "task_id": "t0_dev_north_south",
+      "field": "model_initializations"
+    },
+    {
+      "task_id": "t0_dev_north_south",
+      "field": "historical_replay_native"
+    },
+    {
+      "task_id": "t0_dev_north_south",
+      "field": "navigation_native"
+    },
+    {
+      "task_id": "t0_dev_north_south",
+      "field": "own_replay_native"
+    },
+    {
+      "task_id": "t0_dev_north_south",
+      "field": "private_mujoco_native"
+    }
+  ],
+  "attempted_task_ids": [
+    "t0_dev_north_south"
+  ],
+  "unexecuted_task_ids": [
+    "t0_dev_east_west",
+    "t0_dev_west_east",
+    "A_main_north_south",
+    "A_repeat_north_south",
+    "A_main_east_west",
+    "A_repeat_east_west",
+    "A_main_west_east",
+    "A_repeat_west_east",
+    "B_main_north_south",
+    "B_repeat_north_south",
+    "B_main_east_west",
+    "B_repeat_east_west",
+    "B_main_west_east",
+    "B_repeat_west_east",
+    "C_main_north_south",
+    "C_repeat_north_south",
+    "C_main_east_west",
+    "C_repeat_east_west",
+    "C_main_west_east",
+    "C_repeat_west_east",
+    "D_main_north_south",
+    "D_repeat_north_south",
+    "D_main_east_west",
+    "D_repeat_east_west",
+    "D_main_west_east",
+    "D_repeat_west_east",
+    "t0_confirm_01",
+    "t0_confirm_02",
+    "t0_confirm_03",
+    "t0_confirm_04",
+    "t0_confirm_05",
+    "t0_confirm_06",
+    "t0_confirm_07",
+    "t0_confirm_08",
+    "t0_confirm_09",
+    "t0_confirm_10",
+    "t0_confirm_11",
+    "t0_confirm_12",
+    "t0_confirm_13",
+    "t0_confirm_14",
+    "t0_confirm_15",
+    "t0_confirm_16",
+    "t0_confirm_17",
+    "t0_confirm_18",
+    "t0_confirm_19",
+    "t0_confirm_20",
+    "t0_confirm_21",
+    "t0_confirm_22",
+    "t0_confirm_23",
+    "t0_confirm_24",
+    "confirm_main_01",
+    "confirm_main_02",
+    "confirm_main_03",
+    "confirm_main_04",
+    "confirm_main_05",
+    "confirm_main_06",
+    "confirm_main_07",
+    "confirm_main_08",
+    "confirm_main_09",
+    "confirm_main_10",
+    "confirm_main_11",
+    "confirm_main_12",
+    "confirm_main_13",
+    "confirm_main_14",
+    "confirm_main_15",
+    "confirm_main_16",
+    "confirm_main_17",
+    "confirm_main_18",
+    "confirm_main_19",
+    "confirm_main_20",
+    "confirm_main_21",
+    "confirm_main_22",
+    "confirm_main_23",
+    "confirm_main_24",
+    "confirm_repeat_01",
+    "confirm_repeat_09",
+    "confirm_repeat_17"
+  ],
+  "error": {
+    "error": "AssertionError('DRIVER_CHILD_RESULT_MISSING')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1062_three_route_night/driver.py\", line 47, in main\n    if task['task_id'].startswith('t0_dev_'):run(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1062_three_route_night/driver.py\", line 37, in run\n    path=Path(task['output'])/'RESULT.json';assert path.exists(),'DRIVER_CHILD_RESULT_MISSING';result=json.loads(path.read_text())\nAssertionError: DRIVER_CHILD_RESULT_MISSING\n"
+  },
+  "temporary_bytes": 48609715,
+  "guard_original": true,
+  "resource_policy": {
+    "cpu_affinity": [
+      2
+    ],
+    "nice": 19,
+    "scheduler": 5,
+    "gpu_visible": "",
+    "mujoco_gl": "disable",
+    "io_class": 3,
+    "stage_process_access": false
+  },
+  "training_updates": 0,
+  "hardware_steps": 0
+}
