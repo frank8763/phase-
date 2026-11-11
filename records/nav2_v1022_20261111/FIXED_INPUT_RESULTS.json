@@ -1,0 +1,171 @@
+[
+  {
+    "input": "ns_first.input_route.json",
+    "passed": false,
+    "models": 0,
+    "integrations": 0,
+    "certificate_scope": "post_detection_full_cycle",
+    "original_goal": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "original_goal_radius_m": 0.45,
+    "full_goal_route_required": true,
+    "partial_progress_never_success": true,
+    "required_raw_clearance_m": 0.2593183429016776,
+    "search_sample_reserve_m": 0.0075624878378058565,
+    "source_native_tick": 3301,
+    "body_native_tick": 3305,
+    "physical_ready": false,
+    "actuation_authority": false,
+    "expanded": 28879,
+    "generated": 36122,
+    "rejected_edges": 20400,
+    "complete_candidates_rejected": 0,
+    "best_goal_distance_m": 2.4914481631240903,
+    "wall_s": 90.00028095999733,
+    "max_expansions": 30000,
+    "max_edges": 100,
+    "input_candidate_checks": [],
+    "heuristic": {
+      "center_map_cells": 40000,
+      "center_free_cells": 13905,
+      "reachable_center_cells": 2159,
+      "heuristic_only_not_admission": true
+    },
+    "status": "WALL_CAP"
+  },
+  {
+    "input": "ns_initial.input_route.json",
+    "passed": true,
+    "models": 0,
+    "integrations": 0,
+    "certificate_scope": "pre_detection_static",
+    "original_goal": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "original_goal_radius_m": 0.45,
+    "full_goal_route_required": true,
+    "partial_progress_never_success": true,
+    "required_raw_clearance_m": 0.2593183429016776,
+    "search_sample_reserve_m": 0.0075624878378058565,
+    "source_native_tick": null,
+    "body_native_tick": 0,
+    "physical_ready": false,
+    "actuation_authority": false,
+    "expanded": 96,
+    "generated": 419,
+    "rejected_edges": 23,
+    "complete_candidates_rejected": 0,
+    "best_goal_distance_m": 0.3258999062310643,
+    "wall_s": 1.9522518680023495,
+    "max_expansions": 30000,
+    "max_edges": 100,
+    "input_candidate_checks": [
+      {
+        "checks": {
+          "full_trajectory_and_tail": true,
+          "finite": true,
+          "full_raw_geometry": true,
+          "goal_upper": true,
+          "complete_stop": true,
+          "exact_200_stop_inputs": true,
+          "speed_yaw": true,
+          "legal_ctrl": true,
+          "legal_slew": true,
+          "fast_proposal_agrees_with_original": true
+        },
+        "goal_upper_m": 0.4036301366489437,
+        "minimum_full_raw_m": 0.26839799414163745,
+        "edges": 71,
+        "maximum_endpoint_prediction_error": 0.0
+      }
+    ],
+    "heuristic": {
+      "center_map_cells": 40000,
+      "center_free_cells": 15359,
+      "reachable_center_cells": 15128,
+      "heuristic_only_not_admission": true
+    },
+    "checks": {
+      "full_trajectory_and_tail": true,
+      "finite": true,
+      "full_raw_geometry": true,
+      "goal_upper": true,
+      "complete_stop": true,
+      "exact_200_stop_inputs": true,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "fast_proposal_agrees_with_original": true
+    },
+    "terminal_goal_distance_upper_m": 0.4036301366489437,
+    "minimum_raw_full_cycle_clearance_m": 0.26839799414163745,
+    "analytical_prediction_steps": 23914,
+    "movement_ticks": 23714,
+    "brake_ticks": 200,
+    "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+    "analytical_only": true,
+    "global_safety_bound": false,
+    "snapshot_binding_sha256": "d76fdaa3583541d545e2e5e690abff42f125a83cca8ceddd72ab92593ffaf3c3"
+  },
+  {
+    "input": "we_first.input_route.json",
+    "passed": false,
+    "models": 0,
+    "integrations": 0,
+    "certificate_scope": "post_detection_full_cycle",
+    "original_goal": [
+      4.0,
+      -2.0
+    ],
+    "original_goal_radius_m": 0.45,
+    "full_goal_route_required": true,
+    "partial_progress_never_success": true,
+    "required_raw_clearance_m": 0.2593183429016776,
+    "search_sample_reserve_m": 0.0075624878378058565,
+    "source_native_tick": 6421,
+    "body_native_tick": 6425,
+    "physical_ready": false,
+    "actuation_authority": false,
+    "expanded": 5476,
+    "generated": 5546,
+    "rejected_edges": 10375,
+    "complete_candidates_rejected": 0,
+    "best_goal_distance_m": 2.0338125551751145,
+    "wall_s": 16.71810136901331,
+    "max_expansions": 30000,
+    "max_edges": 100,
+    "input_candidate_checks": [],
+    "heuristic": {
+      "center_map_cells": 40000,
+      "center_free_cells": 13974,
+      "reachable_center_cells": 51,
+      "heuristic_only_not_admission": true
+    },
+    "status": "NO_COMPLETE_INPUT_ROUTE"
+  },
+  {
+    "input": "we_initial.input_route.json",
+    "passed": false,
+    "models": 0,
+    "integrations": 0,
+    "certificate_scope": "pre_detection_static",
+    "original_goal": [
+      4.0,
+      -2.0
+    ],
+    "original_goal_radius_m": 0.45,
+    "full_goal_route_required": true,
+    "partial_progress_never_success": true,
+    "required_raw_clearance_m": 0.2593183429016776,
+    "search_sample_reserve_m": 0.0075624878378058565,
+    "source_native_tick": null,
+    "body_native_tick": 0,
+    "physical_ready": false,
+    "actuation_authority": false,
+    "status": "INITIAL_GEOMETRY_REJECTED",
+    "expanded": 0
+  }
+]

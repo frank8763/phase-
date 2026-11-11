@@ -1,0 +1,38 @@
+{
+  "unused_truth_metadata_not_accessed": true,
+  "passed": true,
+  "actual_public_api": true,
+  "same_complete_result_and_input_schedule": true,
+  "full_reconstruction_passed": true,
+  "negative_cases": [
+    {
+      "name": "changed_memory",
+      "passed": true,
+      "reason": "INITIAL_CONTROL_MEMORY_MISMATCH"
+    },
+    {
+      "name": "discovered_without_forecast",
+      "passed": true,
+      "reason": "STATIC_SCOPE_NOT_UNDISCOVERED"
+    },
+    {
+      "name": "nonfinite_state",
+      "passed": true,
+      "reason": "INVALID_INITIAL_STATE"
+    },
+    {
+      "name": "incoherent_encoders",
+      "passed": true,
+      "reason": "INCOHERENT_INITIAL_ENCODERS"
+    },
+    {
+      "name": "expired_deadline",
+      "passed": true,
+      "reason": "SOURCE_SEARCH_DEADLINE_EXPIRED"
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "physical_ready": false,
+  "wall_s": 3.7988818189769518
+}

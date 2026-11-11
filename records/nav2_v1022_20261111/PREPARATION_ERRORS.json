@@ -1,0 +1,16 @@
+{
+  "models": 0,
+  "integrations": 0,
+  "errors": [
+    {
+      "stage": "initial whole input probe",
+      "error": "reference max steering exceeded frozen allocator cap by 3.29e-11 rad; rejected before first predictor step",
+      "correction": "new reference primitives use exact frozen allocator cap; no tolerance relaxation"
+    }
+  ],
+  "source_review": {
+    "models": 0,
+    "prior_provisional_manifest_sha256": "79c8cc961e82946a7b10507c544edb9672415251b0d39214e75d84299e43f5c8",
+    "change": "Bind and pass only known/limits/slew_per_second; remove unused actor and evaluator metadata from online snapshot hashing; no mathematics or controls changed"
+  }
+}

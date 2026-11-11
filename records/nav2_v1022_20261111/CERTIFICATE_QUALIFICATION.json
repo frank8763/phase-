@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "positive": {
+    "passed": true,
+    "checks": {
+      "causal_scope_goal_and_snapshot": true,
+      "entire_original_predictor_reconstructed": true,
+      "entire_path_matches_prediction": true,
+      "full_trajectory_and_tail": true,
+      "finite": true,
+      "full_raw_geometry": true,
+      "goal_upper": true,
+      "complete_stop": true,
+      "exact_200_stop_inputs": true,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "no_safety_threshold_reduction": true,
+      "goal_upper_recomputed": true,
+      "minimum_recomputed": true
+    },
+    "metrics": {
+      "minimum_full_raw_m": 0.26839799414163745,
+      "required_raw_m": 0.2593183429016776,
+      "terminal_goal_upper_m": 0.4036301366489437,
+      "original_predictor_state_error": 0.0,
+      "original_predictor_ctrl_error": 0.0,
+      "complete_native_predicted_steps": 23914
+    },
+    "models": 0,
+    "integrations": 0,
+    "physical_ready": false,
+    "actuation_authority": false
+  },
+  "negative_cases": [
+    {
+      "name": "safe_prefix_instead_of_complete_route",
+      "passed": true,
+      "rejection": "TRUNCATED_PROFILE"
+    },
+    {
+      "name": "all_200_stop_inputs_removed",
+      "passed": true,
+      "rejection": "TRUNCATED_PROFILE"
+    },
+    {
+      "name": "middle_state_collision",
+      "passed": true,
+      "rejection": [
+        "entire_original_predictor_reconstructed",
+        "entire_path_matches_prediction"
+      ]
+    },
+    {
+      "name": "middle_request_changed",
+      "passed": true,
+      "rejection": [
+        "entire_original_predictor_reconstructed"
+      ]
+    },
+    {
+      "name": "illegal_middle_control",
+      "passed": true,
+      "rejection": [
+        "entire_original_predictor_reconstructed"
+      ]
+    },
+    {
+      "name": "goal_changed_to_current_point",
+      "passed": true,
+      "rejection": "ORIGINAL_GOAL_CHANGED"
+    },
+    {
+      "name": "goal_upper_fabricated",
+      "passed": true,
+      "rejection": [
+        "goal_upper_recomputed"
+      ]
+    },
+    {
+      "name": "clearance_fabricated",
+      "passed": true,
+      "rejection": [
+        "minimum_recomputed"
+      ]
+    },
+    {
+      "name": "margin_reduced",
+      "passed": true,
+      "rejection": [
+        "no_safety_threshold_reduction"
+      ]
+    },
+    {
+      "name": "physical_authority_claimed",
+      "passed": true,
+      "rejection": "UNQUALIFIED_PHYSICAL_AUTHORITY"
+    },
+    {
+      "name": "static_certificate_after_discovery",
+      "passed": true,
+      "rejection": "SNAPSHOT_BINDING_CHANGED"
+    },
+    {
+      "name": "different_causal_setup",
+      "passed": true,
+      "rejection": "SNAPSHOT_BINDING_CHANGED"
+    },
+    {
+      "name": "truncated_edges_relabelled_complete",
+      "passed": true,
+      "rejection": "INCOMPLETE_TAIL_OR_DURATION"
+    },
+    {
+      "name": "nonfinite_mid_profile",
+      "passed": true,
+      "rejection": "NONFINITE_PROFILE"
+    }
+  ],
+  "models": 0,
+  "integrations": 0,
+  "physical_ready": false
+}
