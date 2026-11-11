@@ -1,0 +1,30 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-measured-refresh-v1052-20261111",
+  "archives": [
+    {
+      "group": "v1052-measured-refresh-evidence",
+      "source_files": 108,
+      "raw_bytes": 72701223,
+      "archive_bytes": 36118894,
+      "archive_sha256": "cac51eb8fd1e653c0b3dc654d07735d6dc35d3d707467397fcb82e797e55b5cf",
+      "parts": [
+        {
+          "name": "v1052-measured-refresh-evidence.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "07e4e8369a2cc987323743a378842d3871723aab622890c58fdfbdd441ca1180"
+        },
+        {
+          "name": "v1052-measured-refresh-evidence.tar.zst.part001",
+          "bytes": 2564462,
+          "sha256": "4fc2595af1cdf7c1a353a524d8369f0960096e16c14d0f785309c02f11b52304"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ],
+  "restoration": "tools/phase_storage_20261107/restore.py",
+  "selected_input_dependency_archive": true,
+  "not_retry_of_old_release": true
+}
