@@ -1,0 +1,194 @@
+{
+  "closed": true,
+  "passed": false,
+  "rows": [
+    {
+      "task_id": "static_we",
+      "passed": true,
+      "result": {
+        "passed": true,
+        "model_initializations": 1,
+        "navigation_native": 28924,
+        "own_replay_native": 28924,
+        "private_mujoco_native": 0,
+        "training_updates": 0,
+        "simulation_time_only": true,
+        "real_time_qualified": false,
+        "source_searches": [
+          {
+            "stage": "static_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 2688
+          }
+        ],
+        "status": "GOAL_AND_COMPLETE_STOP",
+        "actual_goal_distance_m": 0.34950650566674296,
+        "completed_native_lower_bound": 28924,
+        "unknown_actual_count": false,
+        "physical": {
+          "actual_native": 28924,
+          "fully_recorded_native": 28924,
+          "minimum_actual_clearance_m": 0.2768589353628584,
+          "minimum_self_margin_m": 0.009711866480264952,
+          "bad_contacts": 0,
+          "final_body": [
+            3.9978818760485346,
+            -1.6504999126547988,
+            -0.6960854365579999,
+            2.6764303986649686e-06,
+            -2.3503533355297024e-06
+          ],
+          "final_translation_speed_m_s": 2.6907080889387785e-06,
+          "root_guard_native_count": 28924,
+          "goal_distance_m": 0.34950650566674296,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "replay": {
+          "replay_native": 28924,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "closed_unix": 1794363760.4029133,
+        "task_hard_deadline_unix": 1794364869.0657368
+      },
+      "independent_audit": {
+        "passed": true,
+        "checks": {
+          "all_native_and_commands_accounted": true,
+          "native_controller_reconstruction": true,
+          "full_native_clearance": true,
+          "full_self_containment": true,
+          "legal_actual_ctrl": true,
+          "legal_slew": true,
+          "no_bad_contacts": true,
+          "actual_own_replay": true,
+          "actual_arrival_and_stop": true,
+          "complete_static_route": true
+        },
+        "metrics": {
+          "native_steps": 28924,
+          "maximum_actual_controller_reconstruction_error": 1.1275702593849246e-16,
+          "minimum_native_clearance_m": 0.2768589353628584,
+          "goal_distance_m": 0.34950650566674296
+        },
+        "models": 0,
+        "integrations": 0,
+        "qualification_scope": "actual full route only; no statistical confirmation"
+      }
+    },
+    {
+      "task_id": "dynamic_we",
+      "passed": false,
+      "result": {
+        "passed": false,
+        "model_initializations": 1,
+        "navigation_native": 16740,
+        "own_replay_native": 16740,
+        "private_mujoco_native": 0,
+        "training_updates": 0,
+        "simulation_time_only": true,
+        "real_time_qualified": false,
+        "source_searches": [
+          {
+            "stage": "static_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 2688
+          },
+          {
+            "stage": "dynamic_complete",
+            "status": "WALL_CAP",
+            "passed": false,
+            "expanded": 13449
+          }
+        ],
+        "status": "FAILED",
+        "error": "AssertionError('NO_COMPLETE_DYNAMIC_INPUT_ROUTE')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1024_full_route_execution/worker.py\", line 70, in main\n    result['source_searches'].append(dict(stage='dynamic_complete',status=plan['status'],passed=plan['passed'],expanded=plan.get('expanded')));dump(out/'DYNAMIC_COMPLETE_PLAN.json',dict(packet=p,source=source,plan=plan));assert plan['passed'],'NO_COMPLETE_DYNAMIC_INPUT_ROUTE'\nAssertionError: NO_COMPLETE_DYNAMIC_INPUT_ROUTE\n",
+        "completed_native_lower_bound": 16740,
+        "unknown_actual_count": false,
+        "physical": {
+          "actual_native": 16740,
+          "fully_recorded_native": 16740,
+          "minimum_actual_clearance_m": 0.2768589353628584,
+          "minimum_self_margin_m": 0.009711866480264952,
+          "bad_contacts": 0,
+          "final_body": [
+            -0.04321912420917482,
+            -0.7327344499328158,
+            0.5052062663646485,
+            -2.821170781992556e-06,
+            3.7110751501905458e-06
+          ],
+          "final_translation_speed_m_s": 2.9282508456764954e-06,
+          "root_guard_native_count": 16740,
+          "goal_distance_m": 4.237166843630056,
+          "first_actor_detection": {
+            "native_tick": 14540,
+            "sim_time": 145.40000000001274,
+            "xy": [
+              -0.04491193422092569,
+              -0.7331777008300523
+            ],
+            "rays": [
+              29
+            ],
+            "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+          },
+          "actual_travel_after_detection_m": 0.0030024568468708436
+        },
+        "evidence_saved": true,
+        "replay": {
+          "replay_native": 16740,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "closed_unix": 1794363936.7038312,
+        "task_hard_deadline_unix": 1794364963.7433596
+      },
+      "independent_audit": {
+        "passed": false,
+        "checks": {
+          "all_native_and_commands_accounted": true,
+          "native_controller_reconstruction": true,
+          "full_native_clearance": true,
+          "full_self_containment": true,
+          "legal_actual_ctrl": true,
+          "legal_slew": true,
+          "no_bad_contacts": true,
+          "actual_own_replay": true,
+          "actual_arrival_and_stop": false,
+          "complete_discovery_stop_full_dynamic_route": false,
+          "causal_first_discovery_present": true,
+          "actual_dynamic_goal_after_detection": false
+        },
+        "metrics": {
+          "native_steps": 16740,
+          "maximum_actual_controller_reconstruction_error": 9.71445146547012e-17,
+          "minimum_native_clearance_m": 0.2768589353628584,
+          "goal_distance_m": 4.237166843630056
+        },
+        "models": 0,
+        "integrations": 0,
+        "qualification_scope": "actual full route only; no statistical confirmation"
+      }
+    }
+  ],
+  "error": {
+    "error": "AssertionError('FIRST_FAILURE_STOP dynamic_we')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1025_full_route_entry/campaign.py\", line 54, in main\n    if not row['passed']:raise AssertionError('FIRST_FAILURE_STOP '+task['task_id'])\nAssertionError: FIRST_FAILURE_STOP dynamic_we\n"
+  },
+  "unexecuted": [
+    "repeat_dynamic_we"
+  ],
+  "guard_original": true,
+  "absolute_deadline_unix": 1794368934.3683414,
+  "closed_unix": 1794363939.092792
+}

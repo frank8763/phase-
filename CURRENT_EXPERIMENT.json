@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1020_CLOSED",
+  "source_revision": "V1025_CLOSED",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -9657,5 +9657,74 @@
     "full_route_required": true,
     "partial_prefix_success_disabled": true,
     "dynamic_acceptance_passed": false
+  },
+  "v1024_summary": {
+    "passed": false,
+    "closed": true,
+    "counts": {
+      "model_initializations": 0,
+      "navigation_native": 0,
+      "own_replay_native": 0,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "tasks": [],
+    "unexecuted": [
+      "static_we",
+      "dynamic_we",
+      "repeat_dynamic_we"
+    ],
+    "stop_reason": {
+      "error": "TypeError(\"unsupported operand type(s) for +: 'PosixPath' and 'str'\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1024_full_route_execution/campaign.py\", line 37, in main\n    child=subprocess.Popen([str(R/'run_phase.sh'),str((C/'worker.py').relative_to(R)),str(C/'TASKS_'+task['task_id']+'.json'),str(rp)],cwd=R,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)\nTypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'\n"
+    },
+    "new24_executed": 0,
+    "training_updates": 0,
+    "hardware_steps": 0,
+    "models_authorized": false,
+    "guard_original": true,
+    "execution_lock_idle": true
+  },
+  "v1025_summary": {
+    "passed": false,
+    "closed": true,
+    "counts": {
+      "model_initializations": 2,
+      "navigation_native": 45664,
+      "own_replay_native": 45664,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "tasks": [
+      {
+        "task_id": "static_we",
+        "passed": true,
+        "status": "GOAL_AND_COMPLETE_STOP",
+        "error": null,
+        "goal": 0.34950650566674296,
+        "maximum_position_m": 0.013833615023211267
+      },
+      {
+        "task_id": "dynamic_we",
+        "passed": false,
+        "status": "FAILED",
+        "error": "AssertionError('NO_COMPLETE_DYNAMIC_INPUT_ROUTE')",
+        "goal": 4.237166843630056,
+        "maximum_position_m": 0.005907647233441446
+      }
+    ],
+    "unexecuted": [
+      "repeat_dynamic_we"
+    ],
+    "stop_reason": {
+      "error": "AssertionError('FIRST_FAILURE_STOP dynamic_we')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1025_full_route_entry/campaign.py\", line 54, in main\n    if not row['passed']:raise AssertionError('FIRST_FAILURE_STOP '+task['task_id'])\nAssertionError: FIRST_FAILURE_STOP dynamic_we\n"
+    },
+    "new24_executed": 0,
+    "training_updates": 0,
+    "hardware_steps": 0,
+    "models_authorized": false,
+    "guard_original": true,
+    "execution_lock_idle": true
   }
 }

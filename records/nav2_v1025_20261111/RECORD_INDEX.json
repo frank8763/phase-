@@ -1,0 +1,69 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-full-input-route-v1025-entry-20261111",
+  "summary": {
+    "passed": false,
+    "closed": true,
+    "counts": {
+      "model_initializations": 2,
+      "navigation_native": 45664,
+      "own_replay_native": 45664,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "tasks": [
+      {
+        "task_id": "static_we",
+        "passed": true,
+        "status": "GOAL_AND_COMPLETE_STOP",
+        "error": null,
+        "goal": 0.34950650566674296,
+        "maximum_position_m": 0.013833615023211267
+      },
+      {
+        "task_id": "dynamic_we",
+        "passed": false,
+        "status": "FAILED",
+        "error": "AssertionError('NO_COMPLETE_DYNAMIC_INPUT_ROUTE')",
+        "goal": 4.237166843630056,
+        "maximum_position_m": 0.005907647233441446
+      }
+    ],
+    "unexecuted": [
+      "repeat_dynamic_we"
+    ],
+    "stop_reason": {
+      "error": "AssertionError('FIRST_FAILURE_STOP dynamic_we')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1025_full_route_entry/campaign.py\", line 54, in main\n    if not row['passed']:raise AssertionError('FIRST_FAILURE_STOP '+task['task_id'])\nAssertionError: FIRST_FAILURE_STOP dynamic_we\n"
+    },
+    "new24_executed": 0,
+    "training_updates": 0,
+    "hardware_steps": 0,
+    "models_authorized": false,
+    "guard_original": true,
+    "execution_lock_idle": true
+  },
+  "archives": [
+    {
+      "group": "v1024-full-input-route-evidence",
+      "source_files": 151,
+      "raw_bytes": 91958119,
+      "archive_bytes": 35605204,
+      "archive_sha256": "d4752db17309a7a8997a588eeded437e8393e6a8650eddc1c7ebd2244063807f",
+      "parts": [
+        {
+          "name": "v1024-full-input-route-evidence.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "277a8ddd2ae49e9ba83805c8166bdc23a95a4d6df87ef7f85c424bb2627fb6b4"
+        },
+        {
+          "name": "v1024-full-input-route-evidence.tar.zst.part001",
+          "bytes": 2050772,
+          "sha256": "a615738da37c0171802e61a77ae881ada58c1af1bf4fb8bab13763cda5dae2ba"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ]
+}

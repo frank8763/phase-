@@ -1131,3 +1131,12 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 
 
 - 2026-11-11用户要求完整路径安全，V1022新完整目标输入规划核心零模型资格：直接搜索原V993控制器/V1002低阶预测器的8维状态与记忆，只有原目标距离+.08<=.45且整条原输入预测/200停车尾/全几何/ctrl速率门全过才返回成功，不以短段.4进展代替整路。固定NS真实t0完整71边/23914解析步，96扩展约1.95s、净空.268397994>=.259318343、目标上界.403630137；独立4784几何点及插值下界.262831232通过。C++扩展20040解析步与原Python状态/ctrl/记忆最大2.22e-16，完整准入14负例和公开API5负例全拒绝。仅发现前静态源资格，不是实际到达或动态证书；WE t0原始净空.245000094不足新整路统一余量，WE/NS首次动态保存态尚无合格整路，不能宣称解决。原几何路径输入预测净空.232088326拒绝及轮角3.29e-11接口准备错误均保留。旧receiver4208步/4MiB与发现中断/全路原生接收/实际审核未接入，physical_ready=false，无新物理授权，原09:00/旧失败保持；模型导航私有MuJoCo重放训练实机全0，REVIEW_PENDING原字节/锁空闲。见docs/RPCCR_FULL_ROUTE_PLANNER_V1022_REPORT.md。
+
+
+- FINAL V1024新完整输入路线开发：NOT_PASSED；精确已知分账{"model_initializations": 0, "navigation_native": 0, "own_replay_native": 0, "private_mujoco_native": 0}；未知[]；未执行["static_we", "dynamic_we", "repeat_dynamic_we"]。首次失败/旧窗不变，REVIEW_PENDING原字节/锁空闲，训练实机/新24为0；详见docs/RPCCR_FULL_ROUTE_EXECUTION_V1024_REPORT.md。
+
+
+- 2026-11-11用户“改好了就开始”。V1024新90分钟根至11:48:54.368341+0800；原Popen Path+str在模型前失败0积分保留，V1025唯一入口括号接续，旧源/算法/任务/窗口字节不改；生产实际命令红绿与run_phase暂停门零模型检查通过。原WE无actor完整输入路线实际28924原生+28924自身完整重放，通过实际到达停车/独立控制重建误差1.13e-16、末距.349506506/最低.276858935；已条件启动原WE动态主，成功才一次精确重复，不自动三路线/24。动态当前未通过，首次再异常即停，全模只run_phase单CPU/锁，训练实机0；后台campaign PID 618616，见runs/v1025_full_route_entry。
+
+
+- FINAL V1024新完整输入路线开发：NOT_PASSED；精确已知分账{"model_initializations": 2, "navigation_native": 45664, "own_replay_native": 45664, "private_mujoco_native": 0}；未知[]；未执行["repeat_dynamic_we"]。首次失败/旧窗不变，REVIEW_PENDING原字节/锁空闲，训练实机/新24为0；详见docs/RPCCR_FULL_ROUTE_EXECUTION_V1024_REPORT.md。

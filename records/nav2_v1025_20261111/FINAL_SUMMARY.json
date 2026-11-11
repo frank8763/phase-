@@ -1,0 +1,42 @@
+{
+  "passed": false,
+  "closed": true,
+  "counts": {
+    "model_initializations": 2,
+    "navigation_native": 45664,
+    "own_replay_native": 45664,
+    "private_mujoco_native": 0
+  },
+  "unknown_counts": [],
+  "tasks": [
+    {
+      "task_id": "static_we",
+      "passed": true,
+      "status": "GOAL_AND_COMPLETE_STOP",
+      "error": null,
+      "goal": 0.34950650566674296,
+      "maximum_position_m": 0.013833615023211267
+    },
+    {
+      "task_id": "dynamic_we",
+      "passed": false,
+      "status": "FAILED",
+      "error": "AssertionError('NO_COMPLETE_DYNAMIC_INPUT_ROUTE')",
+      "goal": 4.237166843630056,
+      "maximum_position_m": 0.005907647233441446
+    }
+  ],
+  "unexecuted": [
+    "repeat_dynamic_we"
+  ],
+  "stop_reason": {
+    "error": "AssertionError('FIRST_FAILURE_STOP dynamic_we')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1025_full_route_entry/campaign.py\", line 54, in main\n    if not row['passed']:raise AssertionError('FIRST_FAILURE_STOP '+task['task_id'])\nAssertionError: FIRST_FAILURE_STOP dynamic_we\n"
+  },
+  "new24_executed": 0,
+  "training_updates": 0,
+  "hardware_steps": 0,
+  "models_authorized": false,
+  "guard_original": true,
+  "execution_lock_idle": true
+}
