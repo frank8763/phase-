@@ -1,0 +1,494 @@
+{
+  "component_passed": true,
+  "new_models": 3,
+  "new_response_native": 1500,
+  "own_replay_native": 1500,
+  "private_mujoco_native": 0,
+  "new_whole_navigation_native": 0,
+  "new_24": 0,
+  "old_failures_preserved": true,
+  "rows": [
+    {
+      "task_id": "straight",
+      "passed": true,
+      "result": {
+        "passed": true,
+        "model_initializations": 1,
+        "navigation_native": 500,
+        "own_replay_native": 500,
+        "private_mujoco_native": 0,
+        "response": {
+          "passed": true,
+          "native_steps": 500,
+          "maximum_position_m": 0.002369490953114361,
+          "maximum_heading_rad": 0.00011609275580526379,
+          "maximum_virtual_steering_rad": 1.5131557739965257e-05,
+          "actual_displacement_m": 0.2201879480277783,
+          "complete_200_native_stop": true
+        },
+        "status": "FIXED_RESPONSE_AND_COMPLETE_STOP",
+        "physical": {
+          "actual_native": 500,
+          "fully_recorded_native": 500,
+          "minimum_actual_clearance_m": 0.4250568438792064,
+          "minimum_self_margin_m": 0.009305732174912984,
+          "bad_contacts": 0,
+          "final_body": [
+            -1.5999397584694446,
+            3.7798120602195286,
+            -1.5706802500659007,
+            6.926320400142223e-06,
+            9.363836194741735e-10
+          ],
+          "final_translation_speed_m_s": 6.926320538091308e-06,
+          "root_guard_native_count": 500,
+          "goal_distance_m": 6.746149375618914,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "replay": {
+          "replay_native": 500,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "closed_unix": 1794375577.895283
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "all_500_native_accounted": true,
+          "fixed_input_schedule": true,
+          "all_inputs_reconstructed": true,
+          "position_heldout": true,
+          "heading_heldout": true,
+          "steering_heldout": true,
+          "original_actual_clearance": true,
+          "full_self": true,
+          "legal_ctrl": true,
+          "legal_slew": true,
+          "no_bad_contacts": true,
+          "complete_200_tail": true,
+          "exact_full_replay": true,
+          "actual_component_passed": true
+        },
+        "metrics": {
+          "maximum_controller_error": 5.551115123125783e-17,
+          "maximum_position_m": 0.0023694909531143614,
+          "maximum_heading_rad": 0.00011609275580526379,
+          "maximum_virtual_steering_rad": 1.5131557739965257e-05,
+          "minimum_actual_clearance_m": 0.4250568438792064
+        },
+        "models": 0,
+        "integrations": 0,
+        "navigation_acceptance": false,
+        "global_prediction_bound": false
+      }
+    },
+    {
+      "task_id": "left",
+      "passed": true,
+      "result": {
+        "passed": true,
+        "model_initializations": 1,
+        "navigation_native": 500,
+        "own_replay_native": 500,
+        "private_mujoco_native": 0,
+        "response": {
+          "passed": true,
+          "native_steps": 500,
+          "maximum_position_m": 0.0026247380931217566,
+          "maximum_heading_rad": 0.0019462315284670684,
+          "maximum_virtual_steering_rad": 0.009195198735884536,
+          "actual_displacement_m": 0.2170361268660176,
+          "complete_200_native_stop": true
+        },
+        "status": "FIXED_RESPONSE_AND_COMPLETE_STOP",
+        "physical": {
+          "actual_native": 500,
+          "fully_recorded_native": 500,
+          "minimum_actual_clearance_m": 0.4060795564571018,
+          "minimum_self_margin_m": 0.009312411140246779,
+          "bad_contacts": 0,
+          "final_body": [
+            -1.556391902654683,
+            3.787389999925858,
+            -1.4971950172006414,
+            6.312545711318428e-06,
+            5.586677554713591e-06
+          ],
+          "final_translation_speed_m_s": 6.749842919351064e-06,
+          "root_guard_native_count": 500,
+          "goal_distance_m": 6.751781545838899,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "replay": {
+          "replay_native": 500,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "closed_unix": 1794375587.975146
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "all_500_native_accounted": true,
+          "fixed_input_schedule": true,
+          "all_inputs_reconstructed": true,
+          "position_heldout": true,
+          "heading_heldout": true,
+          "steering_heldout": true,
+          "original_actual_clearance": true,
+          "full_self": true,
+          "legal_ctrl": true,
+          "legal_slew": true,
+          "no_bad_contacts": true,
+          "complete_200_tail": true,
+          "exact_full_replay": true,
+          "actual_component_passed": true
+        },
+        "metrics": {
+          "maximum_controller_error": 6.938893903907228e-17,
+          "maximum_position_m": 0.0026247380931217566,
+          "maximum_heading_rad": 0.0019462315284670684,
+          "maximum_virtual_steering_rad": 0.009195198735884536,
+          "minimum_actual_clearance_m": 0.4060795564571018
+        },
+        "models": 0,
+        "integrations": 0,
+        "navigation_acceptance": false,
+        "global_prediction_bound": false
+      }
+    },
+    {
+      "task_id": "right",
+      "passed": true,
+      "result": {
+        "passed": true,
+        "model_initializations": 1,
+        "navigation_native": 500,
+        "own_replay_native": 500,
+        "private_mujoco_native": 0,
+        "response": {
+          "passed": true,
+          "native_steps": 500,
+          "maximum_position_m": 0.002776987569758653,
+          "maximum_heading_rad": 0.0021945518852095613,
+          "maximum_virtual_steering_rad": 0.009207313749798607,
+          "actual_displacement_m": 0.21692459192392133,
+          "complete_200_native_stop": true
+        },
+        "status": "FIXED_RESPONSE_AND_COMPLETE_STOP",
+        "physical": {
+          "actual_native": 500,
+          "fully_recorded_native": 500,
+          "minimum_actual_clearance_m": 0.29689154022184616,
+          "minimum_self_margin_m": 0.009312537745316762,
+          "bad_contacts": 0,
+          "final_body": [
+            -1.6434714906356966,
+            3.7874758598272846,
+            -1.6441493372919365,
+            6.290253233964423e-06,
+            -5.5733527187001605e-06
+          ],
+          "final_translation_speed_m_s": 6.725942045919827e-06,
+          "root_guard_native_count": 500,
+          "goal_distance_m": 6.7560208285326,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "replay": {
+          "replay_native": 500,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "closed_unix": 1794375597.9472172
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "all_500_native_accounted": true,
+          "fixed_input_schedule": true,
+          "all_inputs_reconstructed": true,
+          "position_heldout": true,
+          "heading_heldout": true,
+          "steering_heldout": true,
+          "original_actual_clearance": true,
+          "full_self": true,
+          "legal_ctrl": true,
+          "legal_slew": true,
+          "no_bad_contacts": true,
+          "complete_200_tail": true,
+          "exact_full_replay": true,
+          "actual_component_passed": true
+        },
+        "metrics": {
+          "maximum_controller_error": 6.938893903907228e-17,
+          "maximum_position_m": 0.002776987569758653,
+          "maximum_heading_rad": 0.0021945518852095613,
+          "maximum_virtual_steering_rad": 0.009207313749798607,
+          "minimum_actual_clearance_m": 0.29689154022184616
+        },
+        "models": 0,
+        "integrations": 0,
+        "navigation_acceptance": false,
+        "global_prediction_bound": false
+      }
+    }
+  ],
+  "time_route_source": {
+    "passed": false,
+    "models": 0,
+    "integrations": 0,
+    "scope": "V1045_QUALIFIED_CURVATURE_SPEED_TIMED_SOURCE_ONLY",
+    "physical_ready": false,
+    "actuation_authority": false,
+    "original_goal": [
+      4.0,
+      -2.0
+    ],
+    "required_raw_clearance_m": 0.24353421020226934,
+    "planned_motion_start_native_tick": 23640,
+    "start_window_ticks": 5,
+    "initial_full_cycle_hold_lower_m": 0.5032548075006265,
+    "causal_heuristic_anchor_estimate": [
+      2.984184573628,
+      -0.9985631314725001
+    ],
+    "status": "WORK_CAP",
+    "expanded": 120000,
+    "generated": 126704,
+    "rejected_edges": 238031,
+    "best_goal_distance_m": 1.2519598266109626,
+    "wall_s": 222.1773738459451,
+    "input_candidate_checks": []
+  },
+  "retreat_entry_source": {
+    "passed": false,
+    "models": 0,
+    "integrations": 0,
+    "physical_ready": false,
+    "actuation_authority": false,
+    "reverse_physical_response_qualified": false,
+    "scope": "RECOVERY_SEEDED_ORIGINAL_TIMED_FULL_GOAL_SOURCE_ONLY",
+    "original_goal": [
+      4.0,
+      -2.0
+    ],
+    "required_raw_clearance_m": 0.24353421020226934,
+    "planned_start_native_tick": 23640,
+    "start_window_ticks": 5,
+    "initial_hold_lower_m": 0.5032548075006265,
+    "recovery_seed_audits": [
+      {
+        "target": -0.42722137342572125,
+        "passed": true,
+        "minimum_full_cycle_raw_m": 0.3802327157300896,
+        "full_200_stop": true,
+        "native_prediction_steps": 2200
+      },
+      {
+        "target": -0.21361068671286063,
+        "passed": true,
+        "minimum_full_cycle_raw_m": 0.4366030674011675,
+        "full_200_stop": true,
+        "native_prediction_steps": 2200
+      },
+      {
+        "target": 0.0,
+        "passed": true,
+        "minimum_full_cycle_raw_m": 0.5032548075006265,
+        "full_200_stop": true,
+        "native_prediction_steps": 2200
+      },
+      {
+        "target": 0.2136106867128606,
+        "passed": true,
+        "minimum_full_cycle_raw_m": 0.5032548075006265,
+        "full_200_stop": true,
+        "native_prediction_steps": 2200
+      },
+      {
+        "target": 0.42722137342572125,
+        "passed": true,
+        "minimum_full_cycle_raw_m": 0.5032547073165248,
+        "full_200_stop": true,
+        "native_prediction_steps": 2200
+      }
+    ],
+    "fixed_recovery_candidates": 5,
+    "seed_scope": "fixed -.03 2000+200 original-source analytic prefix, reverse physical qualification missing",
+    "status": "WORK_CAP",
+    "expanded": 120000,
+    "generated": 136064,
+    "rejected_edges": 235031,
+    "best_goal_distance_m": 1.5598560896772504,
+    "wall_s": 214.9791343959514,
+    "input_candidate_checks": [],
+    "nearest_candidate_actions": [
+      {
+        "kind": "move",
+        "target": 0.0,
+        "ticks": 2000,
+        "gear": -1
+      },
+      {
+        "kind": "wait",
+        "target": 0.0,
+        "ticks": 200,
+        "gear": 0
+      },
+      {
+        "kind": "move",
+        "target": 0.0,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.0,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.21361068671286063,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.21361068671286063,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.0,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.0,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.0,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.0,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.2136106867128606,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.2136106867128606,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.2136106867128606,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.2136106867128606,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": 0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      },
+      {
+        "kind": "move",
+        "target": -0.42722137342572125,
+        "ticks": 125,
+        "gear": 1
+      }
+    ],
+    "nearest_candidate_state": [
+      2.458134559633673,
+      -1.7637755636959742,
+      -0.4285087421818673,
+      0.08058973418548536,
+      -0.010067509187117797,
+      0.027714131766191533,
+      -0.258267521927926,
+      -0.599999892330642
+    ]
+  },
+  "source_freeze_all_sha_verified": true,
+  "guard_original": true,
+  "execution_lock_idle": true,
+  "models_authorized": false,
+  "original_dynamic_acceptance": false
+}

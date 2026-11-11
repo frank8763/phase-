@@ -1,10 +1,10 @@
 {
-  "status": "REVIEW_PENDING",
+  "status": "RUNNING_FIXED_OFFLINE_RELAY",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": null,
+  "active_entrypoint": "experiments/v1047_day_relay/driver.py",
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1039_COMPONENT_CLOSED",
+  "source_revision": "V1047_RESERVED_STOP_TIME_SEARCH",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -43,9 +43,19 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "V961_V966_SINGLE_ATTEMPT_TLS_FAILED_REQUIRED_RAW_KEPT",
   "raw_run_cleanup_executed": false,
-  "active_run": null,
+  "active_run": "runs/v1047_day_relay_20261111",
   "previous_development_window_closed": true,
-  "active_window": null,
+  "active_window": {
+    "started_unix": 1794385425.8868005,
+    "absolute_deadline_unix": 1794400200.0,
+    "hard_stop_monotonic": 297705.1324880123,
+    "user_authorization": "2026-11-11 这个继续推进；接力实验到今天晚上八点半；自行合理安排跑满时间",
+    "old_windows_unchanged": true,
+    "maximum_models": 5,
+    "software_configurations": 16,
+    "maximum_source_job_s": 2400,
+    "temporary_budget_bytes": 2147483648
+  },
   "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
@@ -9997,5 +10007,18 @@
     "goal_upper_m": 0.45662947039047636,
     "models": 0,
     "physical_ready": false
+  },
+  "v1044_response_development": {
+    "scientific_change": "one curvature-speed predictor coefficient",
+    "source_qualified": true,
+    "physical_qualified": true,
+    "full_dynamic_accepted": false,
+    "models": 3,
+    "new_response_native": 1500,
+    "own_replay_native": 1500,
+    "private_mujoco_native": 0,
+    "maximum_position_error_m": 0.002776987569758653,
+    "minimum_actual_clearance_m": 0.29689154022184616,
+    "repeat_error": 0.0
   }
 }
