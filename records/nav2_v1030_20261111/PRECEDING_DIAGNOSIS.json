@@ -1,0 +1,53 @@
+{
+  "original_V1025_closed_failed": true,
+  "static_full_route_actual_passed": true,
+  "original_dynamic_failure": "NO_COMPLETE_DYNAMIC_INPUT_ROUTE; 100s search wall cap",
+  "original_two_task_native": 45664,
+  "original_two_task_own_replay": 45664,
+  "private_mujoco": 0,
+  "old_repeat_unexecuted": true,
+  "static_counterfactual_source": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+  "full_cycle_fast_search": "WORK_CAP",
+  "timed_higher_speed_source_only": "WORK_CAP",
+  "proposed_higher_speed_response_source_gate": {
+    "passed": false,
+    "rows": [
+      {
+        "task_id": "straight",
+        "passed": true,
+        "minimum_static_raw_m": 0.3549999296665193,
+        "planned_native": 600,
+        "prediction_heldout_not_fitted": true
+      },
+      {
+        "task_id": "left",
+        "passed": true,
+        "minimum_static_raw_m": 0.3735970669355938,
+        "planned_native": 600,
+        "prediction_heldout_not_fitted": true
+      },
+      {
+        "task_id": "right",
+        "passed": false,
+        "minimum_static_raw_m": 0.2318281632822124,
+        "planned_native": 600,
+        "prediction_heldout_not_fitted": true
+      }
+    ],
+    "models": 0,
+    "integrations": 0,
+    "original_controller_and_parameters_unchanged": true,
+    "actual_response_error_gates": {
+      "position_m": 0.01,
+      "heading_rad": 0.008,
+      "steering_rad": 0.015
+    },
+    "no_fitting_on_actual_qualification": true
+  },
+  "all_of_these_new_diagnostics_models": 0,
+  "new_scene_only_actor_anchor": [
+    1.3,
+    -2
+  ],
+  "original_scene_not_upgraded": true
+}

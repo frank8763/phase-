@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1025_CLOSED",
+  "source_revision": "V1030_CLOSED",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -9726,5 +9726,83 @@
     "models_authorized": false,
     "guard_original": true,
     "execution_lock_idle": true
+  },
+  "v1030_scope_notice": {
+    "only_actor_anchor_changed": [
+      [
+        3,
+        -1
+      ],
+      [
+        1.3,
+        -2
+      ]
+    ],
+    "original_task_dynamic_acceptance_passed": false,
+    "new_course_main_and_success_repeat_only": true
+  },
+  "v1030_new_course_summary": {
+    "passed": true,
+    "closed": true,
+    "scene": "V1029_ORIGINAL_MAP_OPEN_RECOVERY_SIDE_ACTOR",
+    "new_easier_course_only": true,
+    "original_dynamic_acceptance_passed": false,
+    "new24_executed": 0,
+    "counts": {
+      "model_initializations": 2,
+      "navigation_native": 63866,
+      "own_replay_native": 63866,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "rows": [
+      {
+        "task_id": "dynamic_we",
+        "passed": true,
+        "error": null,
+        "actual_goal_m": 0.3664880556993814,
+        "source_searches": [
+          {
+            "stage": "static_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 2688
+          },
+          {
+            "stage": "dynamic_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 8480
+          }
+        ]
+      },
+      {
+        "task_id": "repeat_dynamic_we",
+        "passed": true,
+        "error": null,
+        "actual_goal_m": 0.3664880556993814,
+        "source_searches": [
+          {
+            "stage": "static_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 2688
+          },
+          {
+            "stage": "dynamic_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 8480
+          }
+        ]
+      }
+    ],
+    "unexecuted": [],
+    "stop_reason": null,
+    "training_updates": 0,
+    "hardware_steps": 0,
+    "guard_original": true,
+    "execution_lock_idle": true,
+    "models_authorized": false
   }
 }

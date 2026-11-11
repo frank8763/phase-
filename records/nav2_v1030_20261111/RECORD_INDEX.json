@@ -1,0 +1,91 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-new-declared-dynamic-course-v1030-20261111",
+  "archives": [
+    {
+      "group": "v1030-new-declared-course",
+      "source_files": 165,
+      "raw_bytes": 141147131,
+      "archive_bytes": 52393743,
+      "archive_sha256": "01fca23af79cd83df21c1394d6e3f3cba72dccd41858b77c67f071a69d9dae78",
+      "parts": [
+        {
+          "name": "v1030-new-declared-course.tar.zst.part000",
+          "bytes": 33554432,
+          "sha256": "c70a666d3c0b2577e03e91a5b3a5b662de3edff5ddbc5723215fea16ed22a938"
+        },
+        {
+          "name": "v1030-new-declared-course.tar.zst.part001",
+          "bytes": 18839311,
+          "sha256": "c8be5cf92e06fda1a917ef98c0b84d04c609857416ee2d81e7010cf2c0cd14dd"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ],
+  "summary": {
+    "passed": true,
+    "closed": true,
+    "scene": "V1029_ORIGINAL_MAP_OPEN_RECOVERY_SIDE_ACTOR",
+    "new_easier_course_only": true,
+    "original_dynamic_acceptance_passed": false,
+    "new24_executed": 0,
+    "counts": {
+      "model_initializations": 2,
+      "navigation_native": 63866,
+      "own_replay_native": 63866,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "rows": [
+      {
+        "task_id": "dynamic_we",
+        "passed": true,
+        "error": null,
+        "actual_goal_m": 0.3664880556993814,
+        "source_searches": [
+          {
+            "stage": "static_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 2688
+          },
+          {
+            "stage": "dynamic_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 8480
+          }
+        ]
+      },
+      {
+        "task_id": "repeat_dynamic_we",
+        "passed": true,
+        "error": null,
+        "actual_goal_m": 0.3664880556993814,
+        "source_searches": [
+          {
+            "stage": "static_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 2688
+          },
+          {
+            "stage": "dynamic_complete",
+            "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+            "passed": true,
+            "expanded": 8480
+          }
+        ]
+      }
+    ],
+    "unexecuted": [],
+    "stop_reason": null,
+    "training_updates": 0,
+    "hardware_steps": 0,
+    "guard_original": true,
+    "execution_lock_idle": true,
+    "models_authorized": false
+  }
+}

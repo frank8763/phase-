@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "closed": true,
+  "scene": "V1029_ORIGINAL_MAP_OPEN_RECOVERY_SIDE_ACTOR",
+  "new_easier_course_only": true,
+  "original_dynamic_acceptance_passed": false,
+  "new24_executed": 0,
+  "counts": {
+    "model_initializations": 2,
+    "navigation_native": 63866,
+    "own_replay_native": 63866,
+    "private_mujoco_native": 0
+  },
+  "unknown_counts": [],
+  "rows": [
+    {
+      "task_id": "dynamic_we",
+      "passed": true,
+      "error": null,
+      "actual_goal_m": 0.3664880556993814,
+      "source_searches": [
+        {
+          "stage": "static_complete",
+          "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+          "passed": true,
+          "expanded": 2688
+        },
+        {
+          "stage": "dynamic_complete",
+          "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+          "passed": true,
+          "expanded": 8480
+        }
+      ]
+    },
+    {
+      "task_id": "repeat_dynamic_we",
+      "passed": true,
+      "error": null,
+      "actual_goal_m": 0.3664880556993814,
+      "source_searches": [
+        {
+          "stage": "static_complete",
+          "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+          "passed": true,
+          "expanded": 2688
+        },
+        {
+          "stage": "dynamic_complete",
+          "status": "COMPLETE_GOAL_INPUT_ROUTE_SOURCE_QUALIFIED",
+          "passed": true,
+          "expanded": 8480
+        }
+      ]
+    }
+  ],
+  "unexecuted": [],
+  "stop_reason": null,
+  "training_updates": 0,
+  "hardware_steps": 0,
+  "guard_original": true,
+  "execution_lock_idle": true,
+  "models_authorized": false
+}
