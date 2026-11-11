@@ -1,0 +1,17 @@
+{
+  "closed": true,
+  "passed": false,
+  "rows": [],
+  "error": {
+    "error": "TypeError(\"unsupported operand type(s) for +: 'PosixPath' and 'str'\")",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1024_full_route_execution/campaign.py\", line 37, in main\n    child=subprocess.Popen([str(R/'run_phase.sh'),str((C/'worker.py').relative_to(R)),str(C/'TASKS_'+task['task_id']+'.json'),str(rp)],cwd=R,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)\nTypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'\n"
+  },
+  "unexecuted": [
+    "static_we",
+    "dynamic_we",
+    "repeat_dynamic_we"
+  ],
+  "guard_original": true,
+  "absolute_deadline_unix": 1794368934.3683414,
+  "closed_unix": 1794363534.4952095
+}

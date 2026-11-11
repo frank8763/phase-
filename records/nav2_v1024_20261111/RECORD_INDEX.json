@@ -1,0 +1,49 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-full-input-route-v1024-20261111",
+  "summary": {
+    "passed": false,
+    "closed": true,
+    "counts": {
+      "model_initializations": 0,
+      "navigation_native": 0,
+      "own_replay_native": 0,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "tasks": [],
+    "unexecuted": [
+      "static_we",
+      "dynamic_we",
+      "repeat_dynamic_we"
+    ],
+    "stop_reason": {
+      "error": "TypeError(\"unsupported operand type(s) for +: 'PosixPath' and 'str'\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1024_full_route_execution/campaign.py\", line 37, in main\n    child=subprocess.Popen([str(R/'run_phase.sh'),str((C/'worker.py').relative_to(R)),str(C/'TASKS_'+task['task_id']+'.json'),str(rp)],cwd=R,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)\nTypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'\n"
+    },
+    "new24_executed": 0,
+    "training_updates": 0,
+    "hardware_steps": 0,
+    "models_authorized": false,
+    "guard_original": true,
+    "execution_lock_idle": true
+  },
+  "archives": [
+    {
+      "group": "v1024-full-input-route-evidence",
+      "source_files": 66,
+      "raw_bytes": 13974688,
+      "archive_bytes": 2234180,
+      "archive_sha256": "72f1a37da9852bd0488440f47d2b253df9b7d679db5f1dddf316d7877ceb65d7",
+      "parts": [
+        {
+          "name": "v1024-full-input-route-evidence.tar.zst.part000",
+          "bytes": 2234180,
+          "sha256": "72f1a37da9852bd0488440f47d2b253df9b7d679db5f1dddf316d7877ceb65d7"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ]
+}
