@@ -1,8 +1,8 @@
 {
-  "status": "RUNNING_FIXED_OFFLINE_RELAY",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
-  "active_entrypoint": "experiments/v1047_day_relay/driver.py",
+  "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
   "source_revision": "V1047_RESERVED_STOP_TIME_SEARCH",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
@@ -43,19 +43,9 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "V961_V966_SINGLE_ATTEMPT_TLS_FAILED_REQUIRED_RAW_KEPT",
   "raw_run_cleanup_executed": false,
-  "active_run": "runs/v1047_day_relay_20261111",
+  "active_run": null,
   "previous_development_window_closed": true,
-  "active_window": {
-    "started_unix": 1794385425.8868005,
-    "absolute_deadline_unix": 1794400200.0,
-    "hard_stop_monotonic": 297705.1324880123,
-    "user_authorization": "2026-11-11 这个继续推进；接力实验到今天晚上八点半；自行合理安排跑满时间",
-    "old_windows_unchanged": true,
-    "maximum_models": 5,
-    "software_configurations": 16,
-    "maximum_source_job_s": 2400,
-    "temporary_budget_bytes": 2147483648
-  },
+  "active_window": null,
   "previous_confirmation_trials": 24,
   "revision29_development_checks": {
     "distinct_tasks": 3,
@@ -10020,5 +10010,21 @@
     "maximum_position_error_m": 0.002776987569758653,
     "minimum_actual_clearance_m": 0.29689154022184616,
     "repeat_error": 0.0
+  },
+  "v1047_relay_closed": {
+    "goal_passed": false,
+    "error": {
+      "error": "InterruptedError('ROOT_ABSOLUTE_OR_EXTERNAL_STOP')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1047_day_relay/driver.py\", line 49, in main\n    cfg=C/'configs'/(config['id']+'.json');limit=min(HARD_END-30,time.time()+config['wall_s']+10);code=run_job([sys.executable,'-B',C/'source_job.py',cfg,str(limit-10)],O/(config['id']+'.console'),limit,'source',config['id']);result_path=O/'sources'/config['id']/'RESULT.json'\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1047_day_relay/driver.py\", line 14, in run_job\n    try:return child.wait(timeout=max(.001,remaining))\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 1209, in wait\n    return self._wait(timeout=timeout)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 1953, in _wait\n    time.sleep(delay)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1047_day_relay/driver.py\", line 33, in stop\n    def stop(*_):raise InterruptedError('ROOT_ABSOLUTE_OR_EXTERNAL_STOP')\nInterruptedError: ROOT_ABSOLUTE_OR_EXTERNAL_STOP\n"
+    },
+    "counts": {
+      "model_initializations": 3,
+      "new_response_native": 2100,
+      "historical_replay_native": 0,
+      "new_navigation_suffix_native": 0,
+      "own_replay_native": 2100,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": []
   }
 }
