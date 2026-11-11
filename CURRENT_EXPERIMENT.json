@@ -4,7 +4,7 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1000_local_progress_reference/SOURCE_FREEZE.json",
-  "source_revision": "V1047_RESERVED_STOP_TIME_SEARCH",
+  "source_revision": "V1050",
   "protocol": "experiments/v1000_local_progress_reference/PROTOCOL.md",
   "report": "docs/RPCCR_LOCAL_PROGRESS_REFERENCE_V999_V1001_REPORT.md",
   "execution_window_closed": true,
@@ -10023,6 +10023,21 @@
       "historical_replay_native": 0,
       "new_navigation_suffix_native": 0,
       "own_replay_native": 2100,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": []
+  },
+  "v1050_retained_corridor_closed": {
+    "goal_passed": false,
+    "error": {
+      "error": "FileNotFoundError(2, 'No such file or directory')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1050_retained_moving_corridor/driver.py\", line 24, in main\n    result=json.loads((Path(task['output'])/'RESULT.json').read_text());proof=audit_native(task,True);rows.append(dict(task=task,result=result,audit=proof,passed=code==0 and result['passed']and proof['passed']));dump(O/'MODEL_RESULTS.json',rows);assert proof['safety_passed'],'SAFETY_OR_EVIDENCE_FAILURE';assert rows[-1]['passed'],'FUNCTIONAL_FAILURE_STOP'\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1050_retained_moving_corridor/audit.py\", line 4, in audit_native\n    out=Path(task['output']);r=json.loads((out/'RESULT.json').read_text());setup=json.loads((out/'physics/SETUP.json').read_text());z=dict(np.load(out/'physics/NATIVE_TRACE.npz'));commands=json.loads((out/'physics/BODY_COMMANDS.json').read_text());n=len(commands);ctrl=z['ctrl'][:,setup['actuator_ids']];limits=np.asarray(setup['limits']);rate=np.asarray(setup['slew_per_second'])*.01;p=Predictor(setup,dict(state=[0.]*8,last_ctrl=[0.]*4,integral=0.,virtual_rate=.6),PARAMETERS);error=0.\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py\", line 451, in load\n    fid = stack.enter_context(open(os.fspath(file), \"rb\"))\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1050/full_main/physics/NATIVE_TRACE.npz'\n"
+    },
+    "counts": {
+      "model_initializations": 1,
+      "historical_replay_native": 0,
+      "new_navigation_suffix_native": 0,
+      "own_replay_native": 0,
       "private_mujoco_native": 0
     },
     "unknown_counts": []
