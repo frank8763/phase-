@@ -8,8 +8,8 @@ from atomic import allocate
 from capture import capture
 previous=load('v1054_original_job_owner',R/'experiments/v1053_parked_refresh_handoff/execute.py')
 ProcessJob=previous.ProcessJob;HOLD_NATIVE=800;MAX_EPOCHS=16;MAX_NEW_NATIVE=40000
-# ProcessJob uses kernel.C from this process's canonical module. It launches
-# this version's source_job, never a physical entry or another model owner.
+# Software qualification binds the existing V1058 analytical namespace and
+# injects SavedProducer. This preparation provides no physical entry binding.
 def error(v,expected):return previous.error(v,expected)
 def execute(v,setup,original,end,evidence,out,packet_fn,job_class=ProcessJob,pace=True):
  origin=v.count;active=original;cursor=0;segments=[];adoptions=[];maximum=dict(position=0.,heading=0.,steering=0.);moved=0;pending=[];critical=[]
