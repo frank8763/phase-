@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "qualifications": [
+    "OPERATIONS_QUALIFICATION.json",
+    "SCENE_BINDING_QUALIFICATION.json",
+    "PUBLICATION_QUALIFICATION.json",
+    "SAVED_ACTUAL_QUALIFICATION.json",
+    "FIXED_CLOCK_PUBLICATION_AUDIT.json"
+  ],
+  "original_actual_reference_native": 50728,
+  "current_generic_source_wall_s": 5.953304469003342,
+  "synthetic_generic_fixture_not_actual_route": true,
+  "original_factory_only_gpu_binding_and_provenance_changed": true,
+  "resource_policy": {
+    "cpu_affinity": [
+      2
+    ],
+    "nice": 19,
+    "scheduler": 5,
+    "gpu_visible": "",
+    "mujoco_gl": "disable",
+    "io_class": 3,
+    "stage_process_access": false
+  },
+  "preparation_failures_preserved": [
+    {
+      "type": "driver conditional-expression whitespace syntax",
+      "models": 0,
+      "integrations": 0
+    },
+    {
+      "type": "audit numpy boolean JSON serialization",
+      "console": "qualify_saved_actual.console",
+      "models": 0,
+      "integrations": 0
+    }
+  ],
+  "physical_preflights_not_yet_run": true
+}
