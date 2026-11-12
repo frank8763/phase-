@@ -1,56 +1,49 @@
 {
   "schema_version": 2,
-  "status": "READY_FOR_AUTHORIZED_NS_REPEAT",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1087_ns_repeat_after_shutdown",
+  "active_run": null,
   "active_window": null,
-  "active_entrypoint": "experiments/v1087_ns_repeat_after_shutdown/campaign.py",
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_NS_COMPLETE_REPEAT_V1086_REPORT.md",
+  "latest_report": "docs/RPCCR_NS_COMPLETE_REPEAT_V1087_REPORT.md",
   "latest_completed": {
     "closed": true,
-    "passed": false,
-    "status": "INTERRUPTED_INCONCLUSIVE",
-    "version": "v1086",
-    "scope": "One complete NS repeat, interrupted by accidental host shutdown",
+    "passed": true,
+    "version": "v1087",
+    "scope": "One fresh complete NS repeat against saved independently supplementally audited V1085_entry main",
     "attempted": [
       "repeat_fresh_ns"
     ],
     "unexecuted": [],
-    "error": {
-      "error": "HOST_SHUTDOWN_INTERRUPTION",
-      "algorithm_failure_established": false
+    "error": null,
+    "complete_repeat": {
+      "passed": true,
+      "maximum_state_ctrl_mocap_error": 0.0,
+      "complete_length": 21351
     },
-    "complete_repeat": null,
     "counts": {
       "vehicle_initializations": 1,
-      "internal_factory_model_constructions": null,
       "historical_replay_native": 0,
-      "new_actual_native": null,
-      "own_replay_native": null,
-      "replay_state_initializations": null,
+      "new_actual_native": 21351,
+      "own_replay_native": 21351,
+      "replay_state_initializations": 1,
       "private_mujoco_native": 0,
       "training_updates": 0,
-      "analytical_prediction_native": null
+      "analytical_prediction_native": 1422169
     },
-    "navigation_native_lower_bound": 15290,
-    "exact_navigation_and_live_prediction_counts_unknown": true,
-    "full_trace_not_saved": true,
-    "independent_full_audit_passed": false,
-    "guard_original": true,
-    "source_unchanged": true,
-    "baseline_main_unchanged": true,
-    "baseline_main_reexecuted": false,
     "new_main_samples": 0,
-    "whole_route_passed": false,
-    "new24_executed": false,
-    "closed_by_zero_model_recovery": true,
-    "original_root_window_unchanged": true
+    "baseline_main_reexecuted": false,
+    "baseline_original_failed_batch_preserved": true,
+    "source_unchanged": true,
+    "guard_original": true,
+    "whole_route_passed": true,
+    "new24_executed": false
   },
   "latest_diagnosis": {
     "passed": true,
@@ -136,7 +129,7 @@
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
     "latest_raw_remote_delivery_pending": true,
-    "latest_closed_archive": "records/nav2_v1085_entry_20261112/RECORD_INDEX.json",
+    "latest_closed_archive": "records/nav2_v1087_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
     "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-braking-reserve-v1084-20261112",
@@ -156,7 +149,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "One newly authorized fresh NS complete repeat after shutdown, no other routes/24",
+  "next_scope": "NS main plus full repeat verified. Next prepare same-scientific-version remaining two routes; no additional model authorized.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -175,9 +168,12 @@
     "actual_native": 21351,
     "full_own_replay_error": 0,
     "independent_audit_complete": true,
-    "repeat_executed": false,
+    "repeat_executed": true,
     "audit_scope": "Separate full saved-evidence supplemental audit; original batch failure preserved",
-    "audit_report": "runs/v1085_audit_entry_diagnosis/SUPPLEMENTAL_INDEPENDENT_AUDIT.json"
+    "audit_report": "runs/v1085_audit_entry_diagnosis/SUPPLEMENTAL_INDEPENDENT_AUDIT.json",
+    "complete_repeat_passed": true,
+    "repeat_version": "v1087",
+    "repeat_complete_state_error": 0
   },
   "latest_supplemental_audit": {
     "closed": true,
@@ -214,5 +210,17 @@
     "new_model_initializations_for_recovery": 0,
     "new_integrations_for_recovery": 0,
     "model_auto_restart": false
+  },
+  "latest_ns_development_milestone": {
+    "main": "v1085_entry",
+    "main_audit": "separate corrected-entry supplemental full audit, original failed batch preserved",
+    "repeat": "v1087",
+    "passed": true,
+    "independent_checks_per_trajectory": 25,
+    "native_per_trajectory": 21351,
+    "maximum_pair_state_ctrl_mocap_error": 0,
+    "three_route_passed": false,
+    "new24_executed": false,
+    "lockstep_not_realtime": true
   }
 }

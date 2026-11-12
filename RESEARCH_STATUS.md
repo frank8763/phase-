@@ -1311,3 +1311,9 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1086用户报告意外关机，系统monotonic从旧384237秒降至重启后154秒，原父子进程消失/锁空闲，判定INTERRUPTED_INCONCLUSIVE，不归因算法失败。分段回执至少15290实际原生，精确终数/live解析/自身重放未知，完整轨迹未保存，重复未完成；原成功主723文件及3087冻结源SHA不变。0新模型封存现场，恢复原REVIEW_PENDING、撤销残留授权、关闭活动指针；旧90min根不改，跨boot monotonic不可复用，不自动重启。见docs/RPCCR_NS_COMPLETE_REPEAT_V1086_REPORT.md。
 
 - 用户V1086关机中断后明确“好，开始”，V1087新独立90min只重启一次规范t0完整NS重复。科学代码/原任务/安全门字节保持；真实隔离双入口/超差与完整重复拒绝资格通过，3087旧冻源一致；新增当前boot记录/跨boot拒绝正负例通过，旧主与中断现场均保留。尚无额外路线/24授权。
+
+- V1087单完整重复后台已启动2026-11-12T20:43:55.905680+08:00，唯一新绝对截止2026-11-12T22:13:55.905680+08:00，boot_id=65f8d742-949c-49e5-bab2-19583493ff14；0科学改动，旧V1086关机证据保留，不自动三路线/24。
+
+- FINAL V1087 NS完整重复：passed=True；新增分账={"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 21351, "own_replay_native": 21351, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 1422169}；旧主未重跑，三路线/24未执行。见docs/RPCCR_NS_COMPLETE_REPEAT_V1087_REPORT.md。
+
+- V1087最终检查PASS：NS主V1085_entry+本完整重复各21351全状态ctrl/mocap/模型/规范初态/真实发现接触一致，最大误差0；重复25独立门全过，目标.308184610/最低实际.279217369/坏接触0。770来源74028583压缩字节/来源解压SHA/32MiB块重组全回读，本地FINALIZED；远端交付待完成，原件保留。旧主浮点错误与V1086关机中断不改。REVIEW_PENDING恢复/锁空闲，下一仅其余两路线准备，无自动物理/24授权，非实时。
