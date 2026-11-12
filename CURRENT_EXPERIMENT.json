@@ -33,7 +33,9 @@
     "next_speed_upper": 0.12900512095720607,
     "new_internal_limit": 0.129,
     "original_actual_longitudinal_limit": 0.13,
-    "evidence": "runs/navigation_review_20261112/LATEST_REJECTION_REPRODUCED.json"
+    "evidence": "runs/navigation_review_20261112/LATEST_REJECTION_REPRODUCED.json",
+    "rejected_candidate_changes_python_controller_memory": true,
+    "physical_integrations_during_review": 0
   },
   "protected_historical_milestones": {
     "static_unknown_V657": {
@@ -84,10 +86,13 @@
   },
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
-    "latest_raw_remote_delivery_pending": true,
+    "latest_raw_remote_delivery_pending": false,
     "latest_closed_archive": "records/nav2_v1080_v1082_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
-    "unique_evidence_deleted": false
+    "unique_evidence_deleted": false,
+    "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-speed-guard-v1080-v1082-20261112",
+    "all222_source_decompressed_sha_verified": true,
+    "source_commit": "bcf467f471772bf413790e2fe59227445d7c6f5c"
   },
   "preparation_policy": {
     "user_request": "准备时间加快，不再准备一两个小时",
