@@ -1323,3 +1323,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - FINAL v1088 fresh NS navigation: passed=False; counts={"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 0, "own_replay_native": 0, "replay_state_initializations": 0, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 0}; two remaining routes main+repeat only; no new24 executed. See docs/RPCCR_REMAINING_ROUTES_V1088_REPORT.md.
 
 - V1088首WE初始化1/导航预测重放全部0，在NS硬编码MJB SHA门前停批；3剩余任务未执行，自动归档同一SHA假设再次拒绝原错误保留。零模型保存差分：443模型数组合同441同SHA，body_pos/light_poscom0不同；XML仅登记actor锚点不同，原车辆/静态/控制一致不等于整个场景同SHA。首异常停/无冻结后修补，原NS主+重复保持；当前仅零模型诊断归档，REVIEW_PENDING恢复/锁空闲，不重启物理。见V1088报告。
+
+- V1088闭批来源提交12b69fa唯一push/远端HEAD核验成功，新场景MJB在内161来源独立补充归档全远端分块及解压SHA回读通过；只清理已验证重复归档8626074字节，实际0步失败输入留作修复资格。原NS主+完整重复/旧失败保持，无新模型或重跑。
