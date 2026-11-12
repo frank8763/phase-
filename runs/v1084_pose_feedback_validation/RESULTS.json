@@ -1,0 +1,326 @@
+[
+  {
+    "task": {
+      "task_id": "main_saved_ns",
+      "case_id": "NORTH_SOUTH",
+      "seed": 10010002,
+      "phase": 3.673083947600074,
+      "dynamic": true,
+      "goal_xy": [
+        -1.2777841091156006,
+        -2.9586408138275146
+      ],
+      "goal_yaw": -1.5707963267948966,
+      "run_id": "v1061-1-main",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1084/main_saved_ns",
+      "from_actual_native_zero": true,
+      "start_xy": [
+        -1.600000023841858,
+        4.0
+      ],
+      "start_yaw": -1.5707963267948966,
+      "course_id": "V1061_EW_START_NORTH_010",
+      "canonical_parent_case_id": "NORTH_SOUTH",
+      "kind": "measured_pose_continuation",
+      "branch_id": null,
+      "slot": null,
+      "preflight_task_id": "t0_dev_north_south",
+      "target": 0.0,
+      "speed": 0.125,
+      "prefix_native": 125,
+      "stop_native": 2200,
+      "historical_prefix_native": 18074,
+      "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1084_pose_feedback_validation",
+      "new_native_limit": 4400
+    },
+    "result": {
+      "passed": true,
+      "vehicle_initializations": 1,
+      "internal_factory_model_constructions": "unknown",
+      "historical_replay_native": 18074,
+      "new_actual_native": 3617,
+      "own_replay_native": 21691,
+      "replay_state_initializations": 1,
+      "private_mujoco_native": 0,
+      "training_updates": 0,
+      "new_main_samples": 0,
+      "analytical_prediction_native": 535914,
+      "resource_policy": {
+        "cpu_affinity": [
+          2
+        ],
+        "nice": 19,
+        "scheduler": 5,
+        "gpu_visible": "",
+        "mujoco_gl": "osmesa",
+        "io_class": 3,
+        "stage_process_access": false
+      },
+      "actual_goal_distance_m": 0.3104699605326314,
+      "actual_motion_m": 1.340633048566915,
+      "maximum_local_tracking": [
+        0.0009943246338381007,
+        0.0006578332976601154,
+        0.005703703592746967
+      ],
+      "maximum_actual_longitudinal_speed": 0.12958106837042166,
+      "complete_stop_native": 2200,
+      "moving_native": 1417,
+      "certificates": 179,
+      "prediction_wall_s": 144.71035219018813,
+      "maximum_path_cross_track_m": 0.0335591863079671,
+      "physical": {
+        "actual_native": 21691,
+        "fully_recorded_native": 21691,
+        "minimum_actual_clearance_m": 0.2792173687322129,
+        "minimum_self_margin_m": 0.009056893977870517,
+        "bad_contacts": 0,
+        "final_body": [
+          -1.1000011315756535,
+          -2.7041122117212595,
+          -1.9352418536430909,
+          -1.710114294199723e-06,
+          -2.1445901039359028e-06
+        ],
+        "final_translation_speed_m_s": 1.722809848995349e-06,
+        "root_guard_native_count": 21691,
+        "goal_distance_m": 0.3104699605326314,
+        "first_actor_detection": {
+          "native_tick": 9190,
+          "sim_time": 91.90000000001011,
+          "xy": [
+            -0.7703733307437078,
+            1.7146014518210466
+          ],
+          "rays": [
+            30
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 4.507568157205224
+      },
+      "evidence_saved": true,
+      "replay": {
+        "replay_native": 21691,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true
+    },
+    "returncode": 0,
+    "audit": {
+      "passed": true,
+      "checks": {
+        "all_native": true,
+        "exact_history": true,
+        "actual_measured_inputs": true,
+        "complete_prediction": true,
+        "all_executed_prefixes_exact": true,
+        "actual_local_tracking": true,
+        "actual_path_cross_track": true,
+        "actual_clearance": true,
+        "self_margin": true,
+        "contacts_complete": true,
+        "no_bad_contacts": true,
+        "ctrl_amplitude": true,
+        "ctrl_slew": true,
+        "ctrl_owner": true,
+        "body_speed": true,
+        "full2200tail": true,
+        "last328stopped": true,
+        "full_own_replay": true,
+        "normal_discovery": true,
+        "actual328brake": true,
+        "causal_source": true,
+        "offline_actor_domain": true,
+        "goal": true,
+        "actual_over1m": true,
+        "clock": true,
+        "analytical_accounting": true
+      },
+      "actual_goal_distance_m": 0.3104699605326314,
+      "actual_motion_m": 1.340633048566915,
+      "maximum_local_tracking": [
+        0.0009943246338381007,
+        0.0006578332976601154,
+        0.005703703592746967
+      ],
+      "maximum_path_cross_track_m": 0.0335591863079671,
+      "maximum_measured_packet_error": 2.220446049250313e-16,
+      "owner_error": 2.220446049250313e-16,
+      "reserve_activations": 8,
+      "maximum_actual_longitudinal_speed": 0.12958106837042166,
+      "minimum_actual_clearance_m": 0.2792173687322129,
+      "minimum_complete_prediction_raw_m": 0.2700143835197143,
+      "offline_domain_violation": -0.0043023869205773835,
+      "certificates": 179,
+      "analytical_prediction_native": 535914,
+      "models": 0,
+      "integrations": 0,
+      "new_main_samples": 0
+    }
+  },
+  {
+    "task": {
+      "task_id": "repeat_saved_ns",
+      "case_id": "NORTH_SOUTH",
+      "seed": 10010002,
+      "phase": 3.673083947600074,
+      "dynamic": true,
+      "goal_xy": [
+        -1.2777841091156006,
+        -2.9586408138275146
+      ],
+      "goal_yaw": -1.5707963267948966,
+      "run_id": "v1061-1-main",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1084/repeat_saved_ns",
+      "from_actual_native_zero": true,
+      "start_xy": [
+        -1.600000023841858,
+        4.0
+      ],
+      "start_yaw": -1.5707963267948966,
+      "course_id": "V1061_EW_START_NORTH_010",
+      "canonical_parent_case_id": "NORTH_SOUTH",
+      "kind": "measured_pose_continuation",
+      "branch_id": null,
+      "slot": null,
+      "preflight_task_id": "t0_dev_north_south",
+      "target": 0.0,
+      "speed": 0.125,
+      "prefix_native": 125,
+      "stop_native": 2200,
+      "historical_prefix_native": 18074,
+      "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1084_pose_feedback_validation",
+      "new_native_limit": 4400
+    },
+    "result": {
+      "passed": true,
+      "vehicle_initializations": 1,
+      "internal_factory_model_constructions": "unknown",
+      "historical_replay_native": 18074,
+      "new_actual_native": 3617,
+      "own_replay_native": 21691,
+      "replay_state_initializations": 1,
+      "private_mujoco_native": 0,
+      "training_updates": 0,
+      "new_main_samples": 0,
+      "analytical_prediction_native": 535914,
+      "resource_policy": {
+        "cpu_affinity": [
+          2
+        ],
+        "nice": 19,
+        "scheduler": 5,
+        "gpu_visible": "",
+        "mujoco_gl": "osmesa",
+        "io_class": 3,
+        "stage_process_access": false
+      },
+      "actual_goal_distance_m": 0.3104699605326314,
+      "actual_motion_m": 1.340633048566915,
+      "maximum_local_tracking": [
+        0.0009943246338381007,
+        0.0006578332976601154,
+        0.005703703592746967
+      ],
+      "maximum_actual_longitudinal_speed": 0.12958106837042166,
+      "complete_stop_native": 2200,
+      "moving_native": 1417,
+      "certificates": 179,
+      "prediction_wall_s": 144.12580503121717,
+      "maximum_path_cross_track_m": 0.0335591863079671,
+      "physical": {
+        "actual_native": 21691,
+        "fully_recorded_native": 21691,
+        "minimum_actual_clearance_m": 0.2792173687322129,
+        "minimum_self_margin_m": 0.009056893977870517,
+        "bad_contacts": 0,
+        "final_body": [
+          -1.1000011315756535,
+          -2.7041122117212595,
+          -1.9352418536430909,
+          -1.710114294199723e-06,
+          -2.1445901039359028e-06
+        ],
+        "final_translation_speed_m_s": 1.722809848995349e-06,
+        "root_guard_native_count": 21691,
+        "goal_distance_m": 0.3104699605326314,
+        "first_actor_detection": {
+          "native_tick": 9190,
+          "sim_time": 91.90000000001011,
+          "xy": [
+            -0.7703733307437078,
+            1.7146014518210466
+          ],
+          "rays": [
+            30
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 4.507568157205224
+      },
+      "evidence_saved": true,
+      "replay": {
+        "replay_native": 21691,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true
+    },
+    "returncode": 0,
+    "audit": {
+      "passed": true,
+      "checks": {
+        "all_native": true,
+        "exact_history": true,
+        "actual_measured_inputs": true,
+        "complete_prediction": true,
+        "all_executed_prefixes_exact": true,
+        "actual_local_tracking": true,
+        "actual_path_cross_track": true,
+        "actual_clearance": true,
+        "self_margin": true,
+        "contacts_complete": true,
+        "no_bad_contacts": true,
+        "ctrl_amplitude": true,
+        "ctrl_slew": true,
+        "ctrl_owner": true,
+        "body_speed": true,
+        "full2200tail": true,
+        "last328stopped": true,
+        "full_own_replay": true,
+        "normal_discovery": true,
+        "actual328brake": true,
+        "causal_source": true,
+        "offline_actor_domain": true,
+        "goal": true,
+        "actual_over1m": true,
+        "clock": true,
+        "analytical_accounting": true
+      },
+      "actual_goal_distance_m": 0.3104699605326314,
+      "actual_motion_m": 1.340633048566915,
+      "maximum_local_tracking": [
+        0.0009943246338381007,
+        0.0006578332976601154,
+        0.005703703592746967
+      ],
+      "maximum_path_cross_track_m": 0.0335591863079671,
+      "maximum_measured_packet_error": 2.220446049250313e-16,
+      "owner_error": 2.220446049250313e-16,
+      "reserve_activations": 8,
+      "maximum_actual_longitudinal_speed": 0.12958106837042166,
+      "minimum_actual_clearance_m": 0.2792173687322129,
+      "minimum_complete_prediction_raw_m": 0.2700143835197143,
+      "offline_domain_violation": -0.0043023869205773835,
+      "certificates": 179,
+      "analytical_prediction_native": 535914,
+      "models": 0,
+      "integrations": 0,
+      "new_main_samples": 0
+    }
+  }
+]

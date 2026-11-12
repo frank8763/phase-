@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "status": "READY_V1084",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1084_pose_feedback_validation",
-  "active_window": "independent 5400s from campaign start; not yet launched",
-  "active_entrypoint": "experiments/rpccr_execution_core/configured_campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
@@ -14,28 +14,29 @@
   "latest_report": "docs/RPCCR_POSE_FEEDBACK_V1084_REPORT.md",
   "latest_completed": {
     "closed": true,
-    "passed": false,
-    "version": "v1083",
+    "passed": true,
+    "version": "v1084",
     "scope": "same observed NS saved continuation main and conditional full repeat, not fresh navigation acceptance",
     "attempted": [
-      "main_saved_ns"
-    ],
-    "unexecuted": [
+      "main_saved_ns",
       "repeat_saved_ns"
     ],
-    "error": {
-      "error": "AssertionError('FIRST_FUNCTIONAL_OR_SAFETY_FAILURE')",
-      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/campaign.py\", line 43, in main\n    out=Path(task['output']);rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_OR_SAFETY_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_OR_SAFETY_FAILURE\n"
+    "unexecuted": [],
+    "error": null,
+    "complete_repeat": {
+      "passed": true,
+      "maximum_state_ctrl_mocap_error": 0.0,
+      "complete_length": 21691
     },
-    "complete_repeat": null,
     "counts": {
-      "vehicle_initializations": 1,
-      "historical_replay_native": 18074,
-      "new_actual_native": 357,
-      "own_replay_native": 18431,
-      "replay_state_initializations": 1,
+      "vehicle_initializations": 2,
+      "historical_replay_native": 36148,
+      "new_actual_native": 7234,
+      "own_replay_native": 43382,
+      "replay_state_initializations": 2,
       "private_mujoco_native": 0,
-      "training_updates": 0
+      "training_updates": 0,
+      "analytical_prediction_native": 1071828
     },
     "guard_original": true,
     "source_unchanged": true,
@@ -43,36 +44,19 @@
     "new24_executed": false
   },
   "latest_diagnosis": {
-    "models": 0,
-    "integrations": 0,
-    "first_bad_local_native": 357,
-    "executed_new_native": 357,
-    "remaining_unexecuted": 3198,
-    "maximum_position_error_m": 0.04007370273160788,
-    "maximum_heading_error_rad": 0.007816423795225402,
-    "maximum_steering_error_rad": 0.010071804005339524,
-    "actual_final_xy": [
-      -0.8412800201727365,
-      -1.8081290240252574
+    "version": "v1084",
+    "saved_continuation_main_and_repeat_passed": true,
+    "final_goal_distance_m": 0.3104699605326314,
+    "maximum_local_tracking": [
+      0.0009943246338381007,
+      0.0006578332976601154,
+      0.005703703592746967
     ],
-    "predicted_at_failure_xy": [
-      -0.8522071613190088,
-      -1.8466841694275344
-    ],
-    "final_actual_forward_speed": 0.1167888422661402,
-    "predicted_at_failure_speed": 0.1266756751072114,
-    "maximum_actual_longitudinal_speed": 0.12958106837042166,
-    "old_speed_cap_held": true,
-    "actual_goal_distance_m": 1.2305337045923745,
-    "actual_new_displacement_m": 0.408415815122204,
-    "brake_backup_activations": 1,
-    "speed_limiting_steps": 7,
-    "maximum_selected_braking_speed_upper": 0.12999999992830677,
-    "full_actual_terminal_stop_executed": false,
-    "closed_batch_wall_s": 26.875309705734253,
-    "new_controller_reconstruction_error": 0.0,
-    "terminal_error_along_body_m": -0.03994526437379128,
-    "terminal_error_across_body_m": 0.003205854757969944
+    "maximum_path_cross_track_m": 0.0335591863079671,
+    "minimum_actual_clearance_m": 0.2792173687322129,
+    "maximum_repeat_error": 0,
+    "whole_route_passed": false,
+    "new24_executed": false
   },
   "protected_historical_milestones": {
     "static_unknown_V657": {
@@ -109,8 +93,8 @@
     "measured_body_and_steering_feedback": true,
     "nominal_request_speed": 0.125,
     "periodic_motion_prior_omega": 0.32,
-    "body_request_profile": "Fixed saved3555; not a fresh Nav2 or SAC navigation run",
-    "rl_status": "Frozen SAC true-observation and short native component qualified; not active in V1082 goal continuation",
+    "body_request_profile": "Measured-pose path phase, fixed causal corridor selection, complete future recertified every8 native; full2200stop",
+    "rl_status": "Frozen SAC sensor/native short component qualified, not active in V1084 saved continuation",
     "training_updates": 0,
     "hardware_steps": 0,
     "stage_isolated": true,
@@ -126,14 +110,14 @@
   },
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
-    "latest_raw_remote_delivery_pending": false,
-    "latest_closed_archive": "records/nav2_v1083_20261112/RECORD_INDEX.json",
+    "latest_raw_remote_delivery_pending": true,
+    "latest_closed_archive": "records/nav2_v1084_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
     "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-braking-reserve-v1083-20261112",
     "all222_source_decompressed_sha_verified": true,
     "source_commit": "412dfecf101556ba3f66577d9e279ddd4054bab2",
-    "source_members_verified": 70
+    "source_members_verified": 830
   },
   "preparation_policy": {
     "user_request": "准备时间加快，不再准备一两个小时",
@@ -146,5 +130,5 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "one observed NS saved continuation + conditional full repeat; no fresh route/three-route/24"
+  "next_scope": "Prepare fresh complete NS integration, then same-version three routes; no physical auto-start"
 }
