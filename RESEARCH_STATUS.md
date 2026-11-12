@@ -1297,3 +1297,11 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - FINAL v1085 fresh NS navigation: passed=False; counts={"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 0, "own_replay_native": 0, "replay_state_initializations": 0, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 0}; single NS main+repeat gate only; three-route/24 not executed. See docs/RPCCR_FRESH_NS_V1085_REPORT.md.
 
 - V1085入口实际初始化1/导航预测重放0，在新增精确浮点t0航向比较拒绝；实际差2.220446e-16、完整规范初态误差0、MJB不变，原FAILED/源/78来源2.44MB本地归档保留。不可避免算法失败的说法不成立，这是可避免实现错误。唯一入口接续仅改为原1e-8一致性门，单assert差分/保存真实t0及3负例/隔离NoModel与两任务契约通过，仍未授权模型，原21:10:35.095667截止不变；见experiments/v1085_pose_entry_relay/PROTOCOL.md。
+
+- 用户明确“允许唯一入口接续，原截止不变”。V1085一处t0浮点比较接续已启动，父源与worker均显式单点包装，旧3060冻结路径不改；只执行原未执行NS主与条件重复，原V1085根wall/monotonic及21:10:35.095667截止逐字段同一。原初始化1/导航0失败保留，新初始化与新导航另记；再异常停止，不第二接续、三路线或24。后台不实时监督，Stage隔离/CPU2低优先/GPU空。
+
+- FINAL v1085_entry fresh NS navigation: passed=False; counts={"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 21351, "own_replay_native": 21351, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 1422169}; single NS main+repeat gate only; three-route/24 not executed. See docs/RPCCR_FRESH_NS_V1085_ENTRY_REPORT.md.
+
+- V1085_entry补充保存证据终审已于20:18通过25/25门，0新模型/积分；从规范t0全新NS实际21351步到原目标.308184610m、最低实际.279217369m、坏接触0、完整自身重放误差0。全阶段ctrl独立重建最大2.22e-16、完整参考横向.0282413m、全部来源/未来证书/实际发现刹停续行停车均过。仅审核t0浮点比较按原1e-8更正，原冻结源及FAILED批次不改；完整重复未执行。当前锁空闲/REVIEW_PENDING原SHA恢复；下一步仅计划补同科学版本完整NS重复，之后才三路线与新24，尚未授权新物理。见docs/RPCCR_FRESH_NS_V1085_INSPECTION_AND_NEXT.md。
+
+- 用户检查主整路成功后明确“很好，下一步开始，加油”。V1086仅一条同科学版本NS完整重复，旧主不重跑；实际保存t0执行/审核双入口及六超差负例、完整重复六拒绝例、真实隔离NoModel工厂/规划/旧日志拒绝资格通过，旧3073冻结来源字节一致。新独立90min、首异常即停，不自动三路线/24；0科学改动，原批失败保留。

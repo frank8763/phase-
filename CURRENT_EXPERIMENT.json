@@ -1,21 +1,21 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "READY_FOR_AUTHORIZED_NS_REPEAT",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
+  "active_run": "runs/v1086_ns_complete_repeat",
   "active_window": null,
-  "active_entrypoint": null,
+  "active_entrypoint": "experiments/v1086_ns_complete_repeat/campaign.py",
   "automatic_additional_simulation": false,
-  "next_physical_authorized": false,
+  "next_physical_authorized": true,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_FRESH_NS_V1085_REPORT.md",
+  "latest_report": "docs/RPCCR_FRESH_NS_V1085_INSPECTION_AND_NEXT.md",
   "latest_completed": {
     "closed": true,
     "passed": false,
-    "version": "v1085",
+    "version": "v1085_entry",
     "scope": "Fresh canonical t0 NS navigation main plus conditional same-version full repeat, observed development route",
     "attempted": [
       "main_fresh_ns"
@@ -24,19 +24,19 @@
       "repeat_fresh_ns"
     ],
     "error": {
-      "error": "AssertionError('FIRST_FUNCTIONAL_OR_SAFETY_FAILURE')",
-      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_campaign.py\", line 43, in main\n    out=Path(task['output']);rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_OR_SAFETY_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_OR_SAFETY_FAILURE\n"
+      "error": "AssertionError('FIRST_INDEPENDENT_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_campaign.py\", line 44, in main\n    a=subprocess.run([sys.executable,'-B',str(CORE/cfg['audit']),str(path)],cwd=R,capture_output=True,text=True,timeout=cfg['audit_timeout_s']);(O/(task['task_id']+'.audit.console')).write_text(a.stdout+a.stderr);assert a.returncode==0,'FIRST_INDEPENDENT_EVIDENCE_FAILURE';row['audit']=json.loads((out/'FINAL_INDEPENDENT_AUDIT.json').read_text());dump(O/'RESULTS.json',rows)\nAssertionError: FIRST_INDEPENDENT_EVIDENCE_FAILURE\n"
     },
     "complete_repeat": null,
     "counts": {
       "vehicle_initializations": 1,
       "historical_replay_native": 0,
-      "new_actual_native": 0,
-      "own_replay_native": 0,
-      "replay_state_initializations": 0,
+      "new_actual_native": 21351,
+      "own_replay_native": 21351,
+      "replay_state_initializations": 1,
       "private_mujoco_native": 0,
       "training_updates": 0,
-      "analytical_prediction_native": 0
+      "analytical_prediction_native": 1422169
     },
     "guard_original": true,
     "source_unchanged": true,
@@ -127,7 +127,7 @@
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
     "latest_raw_remote_delivery_pending": true,
-    "latest_closed_archive": "records/nav2_v1085_20261112/RECORD_INDEX.json",
+    "latest_closed_archive": "records/nav2_v1085_entry_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
     "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-braking-reserve-v1084-20261112",
@@ -147,12 +147,36 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Unique V1085 pose-entry continuation prepared, awaiting explicit approval, original21:10:35 deadline only",
+  "next_scope": "One fresh NS complete repeat only; no baseline rerun or automatic other routes/24",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
     "models_authorized": false,
     "models": 0,
-    "integrations": 0
+    "integrations": 0,
+    "approved": true,
+    "exhausted": true
+  },
+  "active_zero_model_diagnostic": null,
+  "latest_functional_main": {
+    "version": "v1085_entry",
+    "fresh_start": true,
+    "passed": true,
+    "goal_distance_m": 0.30818461026038557,
+    "actual_native": 21351,
+    "full_own_replay_error": 0,
+    "independent_audit_complete": true,
+    "repeat_executed": false,
+    "audit_scope": "Separate full saved-evidence supplemental audit; original batch failure preserved",
+    "audit_report": "runs/v1085_audit_entry_diagnosis/SUPPLEMENTAL_INDEPENDENT_AUDIT.json"
+  },
+  "latest_supplemental_audit": {
+    "closed": true,
+    "passed": true,
+    "checks_passed": 25,
+    "models": 0,
+    "integrations": 0,
+    "original_batch_failed_unchanged": true,
+    "repeat_not_executed": true
   }
 }

@@ -1,0 +1,37 @@
+# Fresh canonical NS measured-pose navigation validation
+
+```json
+{
+  "closed": true,
+  "passed": false,
+  "version": "v1085_entry",
+  "scope": "Fresh canonical t0 NS navigation main plus conditional same-version full repeat, observed development route",
+  "attempted": [
+    "main_fresh_ns"
+  ],
+  "unexecuted": [
+    "repeat_fresh_ns"
+  ],
+  "error": {
+    "error": "AssertionError('FIRST_INDEPENDENT_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_campaign.py\", line 44, in main\n    a=subprocess.run([sys.executable,'-B',str(CORE/cfg['audit']),str(path)],cwd=R,capture_output=True,text=True,timeout=cfg['audit_timeout_s']);(O/(task['task_id']+'.audit.console')).write_text(a.stdout+a.stderr);assert a.returncode==0,'FIRST_INDEPENDENT_EVIDENCE_FAILURE';row['audit']=json.loads((out/'FINAL_INDEPENDENT_AUDIT.json').read_text());dump(O/'RESULTS.json',rows)\nAssertionError: FIRST_INDEPENDENT_EVIDENCE_FAILURE\n"
+  },
+  "complete_repeat": null,
+  "counts": {
+    "vehicle_initializations": 1,
+    "historical_replay_native": 0,
+    "new_actual_native": 21351,
+    "own_replay_native": 21351,
+    "replay_state_initializations": 1,
+    "private_mujoco_native": 0,
+    "training_updates": 0,
+    "analytical_prediction_native": 1422169
+  },
+  "guard_original": true,
+  "source_unchanged": true,
+  "whole_route_passed": false,
+  "new24_executed": false
+}
+```
+
+This is one observed NS developmental route from canonical t0, not three-route or24 confirmation. Empirical speed envelope is conditional, not global recursive safety.
