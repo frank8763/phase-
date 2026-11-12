@@ -1258,3 +1258,6 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 
 
 - FINAL V1067新独立90分钟三路线开发，三路线全部主+重复=False；新24没有授权/未执行。准确或未知新分账={"model_initializations": 6, "historical_replay_native": 0, "navigation_native": 116261, "own_replay_native": 116261, "private_mujoco_native": 0}，未知=[]。有限观察/安全推进不计成功，旧V1065/所有旧失败不改，guard恢复、无模型重启。报告docs/RPCCR_CAUSAL_RECOVERY_V1067_REPORT.md。
+
+
+- V1068纯零模型诊断闭批：原NS SOURCE_PRODUCER_FAILED已在同输入复现；静态无效时间相位维度移除后3325扩展得到完整静态输入，但动态仍未资格通过，所有探索未进入物理。V1067三主0/3、三重复未执行、全部安全跟踪自身重放PASS保持。用户明确加快准备，登记15分钟检查点、单失败状态单候选、按哈希复用未改动资格；不自动新物理窗。见docs/RPCCR_RECOVERY_DIAGNOSIS_V1068_REPORT.md。
