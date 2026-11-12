@@ -1,10 +1,10 @@
 {
-  "status": "PREPARING_V1067_NO_MODELS",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase",
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1067_causal_replan_brake_reserve/SOURCE_FREEZE.json",
-  "source_revision": "V1067_PREPARATION",
+  "source_revision": "V1067_CAUSAL_REPLAN_BRAKE_RESERVE",
   "protocol": "experiments/v1067_causal_replan_brake_reserve/PROTOCOL.md",
   "report": "docs/RPCCR_CAUSAL_RECOVERY_V1067_REPORT.md",
   "execution_window_closed": true,
@@ -43,7 +43,7 @@
   "legacy_current_directory_role": "immutable V647 handoff and environment dependency",
   "github_sync_status": "V961_V966_SINGLE_ATTEMPT_TLS_FAILED_REQUIRED_RAW_KEPT",
   "raw_run_cleanup_executed": false,
-  "active_run": "runs/v1067_causal_replan_brake_reserve_preparation",
+  "active_run": null,
   "previous_development_window_closed": true,
   "active_window": null,
   "previous_confirmation_trials": 24,
@@ -10725,6 +10725,58 @@
       "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1065_preflight_metadata_continuation/driver.py\", line 58, in main\n    task=next(t for t in tasks if t['branch_id']==branch['id']and t['case_id']==case and t['kind']=='main');main_row=run(task,branch['id']);br.append(main_row)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1065_preflight_metadata_continuation/driver.py\", line 45, in run\n    if not row['passed']:assert can_continue_after_failure(result,proof),'UNCLASSIFIED_OR_EVIDENCE_FAILURE'\nAssertionError: UNCLASSIFIED_OR_EVIDENCE_FAILURE\n"
     },
     "temporary_bytes": 125138238,
+    "guard_original": true,
+    "resource_policy": {
+      "cpu_affinity": [
+        2
+      ],
+      "nice": 19,
+      "scheduler": 5,
+      "gpu_visible": "",
+      "mujoco_gl": "osmesa",
+      "io_class": 3,
+      "stage_process_access": false
+    },
+    "training_updates": 0,
+    "hardware_steps": 0
+  },
+  "v1067_closed": {
+    "main_attempted": 3,
+    "repeat_attempted": 0,
+    "main_navigation_known_started": 3,
+    "main_navigation_unknown": 0,
+    "closed": true,
+    "deadline_unix": 1794459154.2281792,
+    "closed_at": 1794454195.5989609,
+    "combined_three_route_development_passed": false,
+    "confirmation24_authorized": false,
+    "confirmation24_executed": false,
+    "main_executed": 3,
+    "main_successes": 0,
+    "repeat_executed": 0,
+    "complete_repeat_comparisons": [],
+    "counts": {
+      "model_initializations": 6,
+      "historical_replay_native": 0,
+      "navigation_native": 116261,
+      "own_replay_native": 116261,
+      "private_mujoco_native": 0
+    },
+    "unknown_counts": [],
+    "attempted_task_ids": [
+      "t0_dev_north_south",
+      "t0_dev_east_west",
+      "t0_dev_west_east",
+      "A_main_north_south",
+      "A_main_east_west",
+      "A_main_west_east"
+    ],
+    "unexecuted_task_ids": [
+      "A_repeat_north_south",
+      "A_repeat_east_west",
+      "A_repeat_west_east"
+    ],
+    "error": null,
     "guard_original": true,
     "resource_policy": {
       "cpu_affinity": [
