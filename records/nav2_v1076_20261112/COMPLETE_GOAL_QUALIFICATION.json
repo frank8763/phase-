@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "Saved original NS failed entry, complete analytical root-to-goal only",
+  "checks": {
+    "finite": true,
+    "full_states": true,
+    "full_raw_geometry": true,
+    "full_200_stop": true,
+    "goal_upper": true,
+    "speed_yaw": true,
+    "legal_ctrl": true,
+    "legal_slew": true,
+    "initial_hold_full_cycle": true,
+    "terminal_hold_full_cycle": true,
+    "complete2200_stop": true
+  },
+  "negative_cases": {
+    "truncated_before_goal_rejected": true,
+    "under_clearance_gate_rejected": true
+  },
+  "original_symptom_red": true,
+  "new_complete_goal_green": true,
+  "original_packet_native": 15290,
+  "wait_native": 1141,
+  "full_native_prediction": 6336,
+  "minimum_raw_m": 0.256033044855249,
+  "required_raw_m": 0.24353421020226934,
+  "terminal_goal_upper_m": 0.36661573686402227,
+  "maximum_predicted_body_speed": 0.1249495555482752,
+  "hard_body_cap": 0.13,
+  "new_command_speed": 0.125,
+  "complete_stop_native": 2200,
+  "models": 0,
+  "mujoco_integrations": 0,
+  "training_updates": 0,
+  "physical_response_qualified": false,
+  "physical_ready": false,
+  "new_navigation_started": false,
+  "scientific_change": "Uniform retiming of the existing whole-goal requests at .125 plus a fixed-source finite launch wait; all original predictor gates retained",
+  "learned_policy_changed": false,
+  "source_sha": "d9b77222830631ece22fa3ba73e0262a8a67faa3734ed87e9660dae2461d8855"
+}

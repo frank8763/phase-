@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "analytical_complete_goal_passed": true,
+  "checks": {
+    "finite": true,
+    "full_states": true,
+    "full_raw_geometry": true,
+    "full_200_stop": true,
+    "goal_upper": true,
+    "speed_yaw": true,
+    "legal_ctrl": true,
+    "legal_slew": true,
+    "initial_hold_full_cycle": true,
+    "terminal_hold_full_cycle": true,
+    "complete2200_stop": true
+  },
+  "source_native_tick": 15290,
+  "root_native_tick": 15290,
+  "wait_native": 1141,
+  "minimum_raw_m": 0.256033044855249,
+  "terminal_goal_upper_m": 0.36661573686402227,
+  "maximum_predicted_body_speed": 0.1249495555482752,
+  "new_command_speed": 0.125,
+  "physical_ready": false,
+  "physical_response_qualified": false,
+  "learned_policy_changed": false,
+  "models": 0,
+  "mujoco_integrations": 0,
+  "original_python_parity": {
+    "states": 0.0,
+    "controls": 0.0,
+    "requests": 0.0
+  },
+  "negative_cases": [
+    "truncated_tail",
+    "reverse_input"
+  ],
+  "no_saved_path_access_in_generic_function": true
+}
