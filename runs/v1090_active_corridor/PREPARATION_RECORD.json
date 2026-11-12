@@ -1,0 +1,692 @@
+{
+  "original_search_budget_probes": {
+    "closed": true,
+    "rows": [
+      {
+        "cap": 20000,
+        "wall": 7.534015844999885,
+        "result": {
+          "passed": true,
+          "models": 0,
+          "integrations": 0,
+          "status": "ORIGINAL_PYTHON_FINITE_PROGRESS_SOURCE_NOT_ARRIVAL",
+          "terminated_by_wall": false,
+          "expanded": 20000,
+          "search_wall_s": 7.378773946,
+          "best_goal_distance_m": 3.5459232843819426,
+          "generated": 27995,
+          "rejected": 35542,
+          "proposal_only": true,
+          "original_goal": [
+            4.0,
+            -2.0
+          ],
+          "required_raw_m": 0.24353421020226934,
+          "source_native_tick": null,
+          "root_native_tick": 20160,
+          "functional_goal_source": false,
+          "finite_progress_never_counts_as_arrival": true,
+          "actions": [
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.2136106867128606,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.42722137342572125,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": -0.21361068671286063,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.42722137342572125,
+              "speed": 0.08,
+              "ticks": 625
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.0,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.2136106867128606,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            }
+          ],
+          "checks": {
+            "finite": true,
+            "full_states": true,
+            "full_raw_geometry": true,
+            "full_200_stop": true,
+            "speed_yaw": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "terminal_full_cycle_hold": true,
+            "all_gear_switches_stopped": true,
+            "terminal_additional_observation_reserve": true
+          },
+          "original_goal_profile_checks": {
+            "finite": true,
+            "full_states": true,
+            "full_raw_geometry": true,
+            "full_200_stop": true,
+            "goal_upper": false,
+            "speed_yaw": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "terminal_full_cycle_hold": true,
+            "all_gear_switches_stopped": true
+          },
+          "minimum_raw_m": 0.247112862130001,
+          "terminal_goal_upper_m": 3.7004326382686163,
+          "analytical_native": 1850,
+          "wall_s": 7.5339980359995025
+        }
+      },
+      {
+        "cap": 80000,
+        "wall": 29.968931663999683,
+        "result": {
+          "passed": true,
+          "models": 0,
+          "integrations": 0,
+          "status": "ORIGINAL_PYTHON_FINITE_PROGRESS_SOURCE_NOT_ARRIVAL",
+          "terminated_by_wall": false,
+          "expanded": 80000,
+          "search_wall_s": 29.745447444,
+          "best_goal_distance_m": 3.4857267168415316,
+          "generated": 109203,
+          "rejected": 117445,
+          "proposal_only": true,
+          "original_goal": [
+            4.0,
+            -2.0
+          ],
+          "required_raw_m": 0.24353421020226934,
+          "source_native_tick": null,
+          "root_native_tick": 20160,
+          "functional_goal_source": false,
+          "finite_progress_never_counts_as_arrival": true,
+          "actions": [
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.0,
+              "speed": -0.03,
+              "ticks": 500
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.2136106867128606,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.42722137342572125,
+              "speed": -0.03,
+              "ticks": 375
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.0,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.42722137342572125,
+              "speed": 0.08,
+              "ticks": 625
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": 0.42722137342572125,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.42722137342572125,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.2136106867128606,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            }
+          ],
+          "checks": {
+            "finite": true,
+            "full_states": true,
+            "full_raw_geometry": true,
+            "full_200_stop": true,
+            "speed_yaw": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "terminal_full_cycle_hold": true,
+            "all_gear_switches_stopped": true,
+            "terminal_additional_observation_reserve": true
+          },
+          "original_goal_profile_checks": {
+            "finite": true,
+            "full_states": true,
+            "full_raw_geometry": true,
+            "full_200_stop": true,
+            "goal_upper": false,
+            "speed_yaw": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "terminal_full_cycle_hold": true,
+            "all_gear_switches_stopped": true
+          },
+          "minimum_raw_m": 0.24835249524000153,
+          "terminal_goal_upper_m": 3.614329752690024,
+          "analytical_native": 2725,
+          "wall_s": 29.968764252000256
+        }
+      }
+    ],
+    "models": 0,
+    "integrations": 0
+  },
+  "coarse_search": {
+    "closed": true,
+    "rows": [
+      {
+        "cap": 20000,
+        "wall": 6.452333026000815,
+        "result": {
+          "passed": true,
+          "models": 0,
+          "integrations": 0,
+          "status": "ORIGINAL_PYTHON_COMPLETE_GOAL_SOURCE_PASS",
+          "terminated_by_wall": false,
+          "expanded": 13151,
+          "search_wall_s": 4.855391959,
+          "best_goal_distance_m": 0.35352635458823173,
+          "generated": 16520,
+          "rejected": 15150,
+          "proposal_only": true,
+          "original_goal": [
+            4.0,
+            -2.0
+          ],
+          "required_raw_m": 0.24353421020226934,
+          "source_native_tick": null,
+          "root_native_tick": 20160,
+          "functional_goal_source": true,
+          "finite_progress_never_counts_as_arrival": false,
+          "actions": [
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.0,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.2136106867128606,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.42722137342572125,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.2136106867128606,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.42722137342572125,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": -0.42722137342572125,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.42722137342572125,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": -0.21361068671286063,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.42722137342572125,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": -0.21361068671286063,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.42722137342572125,
+              "speed": -0.03,
+              "ticks": 375
+            },
+            {
+              "kind": "move",
+              "gear": -1,
+              "target": 0.2136106867128606,
+              "speed": -0.03,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.42722137342572125,
+              "speed": 0.08,
+              "ticks": 1125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": 0.0,
+              "speed": 0.08,
+              "ticks": 500
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.21361068671286063,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": 0.0,
+              "speed": 0.08,
+              "ticks": 250
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.21361068671286063,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": 0.0,
+              "speed": 0.08,
+              "ticks": 1000
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.21361068671286063,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": 0.0,
+              "speed": 0.08,
+              "ticks": 500
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.21361068671286063,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": 0.0,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.21361068671286063,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.42722137342572125,
+              "speed": 0.08,
+              "ticks": 375
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": 0.0,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.21361068671286063,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.42722137342572125,
+              "speed": 0.08,
+              "ticks": 625
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.21361068671286063,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            }
+          ],
+          "checks": {
+            "finite": true,
+            "full_states": true,
+            "full_raw_geometry": true,
+            "full_200_stop": true,
+            "goal_upper": true,
+            "speed_yaw": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "terminal_full_cycle_hold": true,
+            "all_gear_switches_stopped": true
+          },
+          "original_goal_profile_checks": {
+            "finite": true,
+            "full_states": true,
+            "full_raw_geometry": true,
+            "full_200_stop": true,
+            "goal_upper": true,
+            "speed_yaw": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "terminal_full_cycle_hold": true,
+            "all_gear_switches_stopped": true
+          },
+          "minimum_raw_m": 0.25435738939814473,
+          "terminal_goal_upper_m": 0.428721586660875,
+          "analytical_native": 7850,
+          "wall_s": 6.45226772299975
+        }
+      }
+    ],
+    "models": 0,
+    "integrations": 0
+  },
+  "forward_only_rejected": {
+    "closed": true,
+    "rows": [
+      {
+        "cap": 20000,
+        "wall": 1.0198520120002286,
+        "result": {
+          "passed": true,
+          "models": 0,
+          "integrations": 0,
+          "status": "ORIGINAL_PYTHON_FINITE_PROGRESS_SOURCE_NOT_ARRIVAL",
+          "terminated_by_wall": false,
+          "expanded": 219,
+          "search_wall_s": 0.065488928,
+          "best_goal_distance_m": 3.637193641425078,
+          "generated": 221,
+          "rejected": 771,
+          "proposal_only": true,
+          "original_goal": [
+            4.0,
+            -2.0
+          ],
+          "required_raw_m": 0.24353421020226934,
+          "source_native_tick": null,
+          "root_native_tick": 20160,
+          "functional_goal_source": false,
+          "finite_progress_never_counts_as_arrival": true,
+          "actions": [
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": -0.42722137342572125,
+              "speed": 0.08,
+              "ticks": 250
+            },
+            {
+              "kind": "move",
+              "gear": 1,
+              "target": 0.2136106867128606,
+              "speed": 0.08,
+              "ticks": 125
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            },
+            {
+              "kind": "wait",
+              "gear": 0,
+              "target": 0.0,
+              "ticks": 200
+            }
+          ],
+          "checks": {
+            "finite": true,
+            "full_states": true,
+            "full_raw_geometry": true,
+            "full_200_stop": true,
+            "speed_yaw": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "terminal_full_cycle_hold": true,
+            "all_gear_switches_stopped": true,
+            "terminal_additional_observation_reserve": true
+          },
+          "original_goal_profile_checks": {
+            "finite": true,
+            "full_states": true,
+            "full_raw_geometry": true,
+            "full_200_stop": true,
+            "goal_upper": false,
+            "speed_yaw": true,
+            "legal_ctrl": true,
+            "legal_slew": true,
+            "terminal_full_cycle_hold": true,
+            "all_gear_switches_stopped": true
+          },
+          "minimum_raw_m": 0.3328829954227788,
+          "terminal_goal_upper_m": 3.771513944921319,
+          "analytical_native": 775,
+          "wall_s": 1.0198365770002056
+        }
+      }
+    ],
+    "models": 0,
+    "integrations": 0
+  },
+  "discarded_direct_reverse_reference": {
+    "passed": false,
+    "error": "AssertionError(('NO_LIVE_COMPLETE_DYNAMIC_REFERENCE', [{'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4880746661770939, 'active_native': 7626, 'offset_m': -0.1, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4882583171606121, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.48702967160863103, 'cross_m': 0.08747259610861559}], 'scenario_minimum_raw_m': -0.1}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4873654351216463, 'active_native': 7632, 'offset_m': -0.05, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4881541081978307, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.48661287254973745, 'cross_m': 0.08204050613169608}], 'scenario_minimum_raw_m': -0.1}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4875910207067632, 'active_native': 7637, 'offset_m': 0.0, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.48792515431355465, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4878569444118977, 'cross_m': 0.07632079495630836}], 'scenario_minimum_raw_m': -0.1}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4896145307895391, 'active_native': 7643, 'offset_m': 0.05, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.48866382102660005, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.49105407049500166, 'cross_m': 0.07035335716229305}], 'scenario_minimum_raw_m': -0.1}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4975750497916922, 'active_native': 7651, 'offset_m': 0.1, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4976498983511543, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.49881092169068947, 'cross_m': 0.0641934349192957}], 'scenario_minimum_raw_m': -0.1}]))",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1090_gear_prefix_reference/qualify_saved.py\", line 25, in main\n    q=live.produce(setup,packet,source,O,x['goal']);answer=dict(passed=q['proof']['passed'],proof=q['proof'],candidates=q['candidates'],reference_prefix_native=len(q['reference'].prefix),analytical_prediction_native=live.PREDICTION_NATIVE,wall_s=time.monotonic()-start,models=0,integrations=0);import numpy as np;np.savez_compressed(O/'QUALIFIED_REFERENCE.npz',nominal_states=q['nominal_states'],nominal_requests=q['nominal_requests']);(O/'QUALIFICATION.json').write_text(json.dumps(answer,indent=2)+'\\n');print(json.dumps(answer),flush=True)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/live_reference.py\", line 123, in produce\n    proof,reference,waits,prefix,pu=best\nAssertionError: ('NO_LIVE_COMPLETE_DYNAMIC_REFERENCE', [{'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4880746661770939, 'active_native': 7626, 'offset_m': -0.1, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4882583171606121, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.48702967160863103, 'cross_m': 0.08747259610861559}], 'scenario_minimum_raw_m': -0.1}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4873654351216463, 'active_native': 7632, 'offset_m': -0.05, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4881541081978307, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.48661287254973745, 'cross_m': 0.08204050613169608}], 'scenario_minimum_raw_m': -0.1}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4875910207067632, 'active_native': 7637, 'offset_m': 0.0, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.48792515431355465, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4878569444118977, 'cross_m': 0.07632079495630836}], 'scenario_minimum_raw_m': -0.1}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4896145307895391, 'active_native': 7643, 'offset_m': 0.05, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.48866382102660005, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.49105407049500166, 'cross_m': 0.07035335716229305}], 'scenario_minimum_raw_m': -0.1}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': False, 'speed_yaw': False, 'legal_ctrl': True, 'legal_slew': True, 'terminal_full_cycle_hold': True, 'complete2200stop': True}, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4975750497916922, 'active_native': 7651, 'offset_m': 0.1, 'initial_full_cycle_hold_m': 0.5749735755925538, 'wait_native': 2951, 'scenario_checks': [{'bias': -0.0012, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.4976498983511543, 'cross_m': 0.05181256787135281}, {'bias': 0.002, 'passed': False, 'minimum_raw_m': -0.1, 'goal_upper_m': 0.49881092169068947, 'cross_m': 0.0641934349192957}], 'scenario_minimum_raw_m': -0.1}])\n",
+    "models": 0,
+    "integrations": 0,
+    "wall_s": 136.45738033999987
+  },
+  "saved_corridor_positive": {
+    "passed": true,
+    "proof": {
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "full_states": true,
+        "full_raw_geometry": true,
+        "full_200_stop": true,
+        "goal_upper": true,
+        "speed_yaw": true,
+        "legal_ctrl": true,
+        "legal_slew": true,
+        "complete2200stop": true,
+        "terminal_full_cycle_hold": true
+      },
+      "minimum_full_cycle_raw_m": 0.25435738939826624,
+      "native": 8350,
+      "finite_corridor_not_original_goal": true,
+      "endpoint_xy": [
+        1.627469953722318,
+        -0.6827375916952089
+      ],
+      "forward_native": 2000,
+      "static_complete_goal_not_executed": true,
+      "predicted_motion_m": 1.186438126396415
+    },
+    "candidates": [
+      {
+        "passed": true,
+        "checks": {
+          "finite": true,
+          "full_states": true,
+          "full_raw_geometry": true,
+          "full_200_stop": true,
+          "goal_upper": true,
+          "speed_yaw": true,
+          "legal_ctrl": true,
+          "legal_slew": true,
+          "complete2200stop": true,
+          "terminal_full_cycle_hold": true
+        },
+        "minimum_full_cycle_raw_m": 0.25435738939826624,
+        "native": 8350,
+        "finite_corridor_not_original_goal": true,
+        "endpoint_xy": [
+          1.627469953722318,
+          -0.6827375916952089
+        ],
+        "forward_native": 2000,
+        "static_complete_goal_not_executed": true,
+        "predicted_motion_m": 1.186438126396415
+      }
+    ],
+    "wall_s": 6.407364518000577,
+    "models": 0,
+    "integrations": 0,
+    "actual_saved_root": 20160,
+    "source_from_actual_ranges": true
+  },
+  "entry_initial_error": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1090_active_corridor/check_entry.py\", line 25, in <module>\n    packet=corridor.live.forecast(x['packet'],engine,i);proof,z,controls=corridor.proof(x['setup'],packet,x['source'],rr[i:]);assert proof['passed']and np.max(abs(z-ss[i:]))<=1e-8 and np.max(abs(controls-uu[i:]))<=1e-8;checkpoints.append(i)\nAssertionError\n",
+  "entry_measurement_projection_diagnosis": "{\"checkpoint\": 125, \"proof\": {\"passed\": false, \"checks\": {\"finite\": true, \"full_states\": true, \"full_raw_geometry\": true, \"full_200_stop\": true, \"goal_upper\": true, \"speed_yaw\": false, \"legal_ctrl\": true, \"legal_slew\": true, \"complete2200stop\": true, \"terminal_full_cycle_hold\": true}, \"minimum_full_cycle_raw_m\": 0.2831502408329311, \"native\": 8225, \"finite_corridor_not_original_goal\": true, \"endpoint_xy\": [1.6134043341731692, -0.7266255991558029]}, \"state_error\": 2.72536079418722, \"ctrl_error\": 0.0}\nTraceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1090_active_corridor/diagnose_recert.py\", line 25, in <module>\n    packet=corridor.live.forecast(x['packet'],engine,i);proof,z,controls=corridor.proof(x['setup'],packet,x['source'],rr[i:]);print(json.dumps(dict(checkpoint=i,proof=proof,state_error=float(np.max(abs(z-ss[i:]))),ctrl_error=float(np.max(abs(controls-uu[i:]))))),flush=True);assert proof['passed'];checkpoints.append(i)\nAssertionError\n",
+  "no_preparation_model_initializations": true
+}

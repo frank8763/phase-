@@ -1,0 +1,2052 @@
+[
+  {
+    "task_id": "main_west_east",
+    "case_id": "WEST_EAST",
+    "seed": 10010001,
+    "phase": 0.6573753567727383,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/main_west_east",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "target": 0.0,
+    "speed": 0.125,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "historical_prefix_native": 0,
+    "native_limit": 85000,
+    "stage": "development"
+  },
+  {
+    "task_id": "repeat_west_east",
+    "case_id": "WEST_EAST",
+    "seed": 10010001,
+    "phase": 0.6573753567727383,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/repeat_west_east",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "repeat",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "target": 0.0,
+    "speed": 0.125,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "historical_prefix_native": 0,
+    "native_limit": 85000,
+    "stage": "development",
+    "repeat_of": "main_west_east"
+  },
+  {
+    "task_id": "main_east_west",
+    "case_id": "EAST_WEST",
+    "seed": 10010003,
+    "phase": 0.9511239917756753,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/main_east_west",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "target": 0.0,
+    "speed": 0.125,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "historical_prefix_native": 0,
+    "native_limit": 85000,
+    "stage": "development"
+  },
+  {
+    "task_id": "repeat_east_west",
+    "case_id": "EAST_WEST",
+    "seed": 10010003,
+    "phase": 0.9511239917756753,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/repeat_east_west",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "repeat",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "target": 0.0,
+    "speed": 0.125,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "historical_prefix_native": 0,
+    "native_limit": 85000,
+    "stage": "development",
+    "repeat_of": "main_east_west"
+  },
+  {
+    "task_id": "repeat_ns_regression",
+    "case_id": "NORTH_SOUTH",
+    "seed": 10010002,
+    "phase": 3.673083947600074,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/repeat_ns_regression",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "repeat",
+    "branch_id": null,
+    "slot": null,
+    "preflight_task_id": "t0_dev_north_south",
+    "target": 0.0,
+    "speed": 0.125,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "historical_prefix_native": 0,
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "native_limit": 85000,
+    "repeat_of": "NS_AUDITED_MAIN",
+    "stage": "development"
+  },
+  {
+    "task_id": "t0_confirm_01",
+    "case_id": "WEST_EAST",
+    "seed": 1011062001,
+    "phase": 1.3103958043979969,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_01",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 1,
+    "preflight_task_id": "t0_confirm_01",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_02",
+    "case_id": "WEST_EAST",
+    "seed": 1011062002,
+    "phase": 3.4123295019305937,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_02",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 2,
+    "preflight_task_id": "t0_confirm_02",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_03",
+    "case_id": "WEST_EAST",
+    "seed": 1011062003,
+    "phase": 5.6461583995389715,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_03",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 3,
+    "preflight_task_id": "t0_confirm_03",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_04",
+    "case_id": "WEST_EAST",
+    "seed": 1011062004,
+    "phase": 3.5096889931928583,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_04",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 4,
+    "preflight_task_id": "t0_confirm_04",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_05",
+    "case_id": "WEST_EAST",
+    "seed": 1011062005,
+    "phase": 5.026341957059371,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_05",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 5,
+    "preflight_task_id": "t0_confirm_05",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_06",
+    "case_id": "WEST_EAST",
+    "seed": 1011062006,
+    "phase": 3.9316673924841545,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_06",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 6,
+    "preflight_task_id": "t0_confirm_06",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_07",
+    "case_id": "WEST_EAST",
+    "seed": 1011062007,
+    "phase": 4.843213483764839,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_07",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 7,
+    "preflight_task_id": "t0_confirm_07",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_08",
+    "case_id": "WEST_EAST",
+    "seed": 1011062008,
+    "phase": 4.566923571726433,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_08",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 8,
+    "preflight_task_id": "t0_confirm_08",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_09",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062009,
+    "phase": 5.3808196333119165,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_09",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 9,
+    "preflight_task_id": "t0_confirm_09",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_10",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062010,
+    "phase": 2.7035581463615674,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_10",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 10,
+    "preflight_task_id": "t0_confirm_10",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_11",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062011,
+    "phase": 0.8667047474964202,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_11",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 11,
+    "preflight_task_id": "t0_confirm_11",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_12",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062012,
+    "phase": 3.951262379432297,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_12",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 12,
+    "preflight_task_id": "t0_confirm_12",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_13",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062013,
+    "phase": 0.5388364316096341,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_13",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 13,
+    "preflight_task_id": "t0_confirm_13",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_14",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062014,
+    "phase": 1.919200579898309,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_14",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 14,
+    "preflight_task_id": "t0_confirm_14",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_15",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062015,
+    "phase": 1.4447588845174795,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_15",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 15,
+    "preflight_task_id": "t0_confirm_15",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_16",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062016,
+    "phase": 2.4330485247163742,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_16",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 16,
+    "preflight_task_id": "t0_confirm_16",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_17",
+    "case_id": "EAST_WEST",
+    "seed": 1011062017,
+    "phase": 0.08794482000278481,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_17",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 17,
+    "preflight_task_id": "t0_confirm_17",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_18",
+    "case_id": "EAST_WEST",
+    "seed": 1011062018,
+    "phase": 3.553572393149416,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_18",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 18,
+    "preflight_task_id": "t0_confirm_18",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_19",
+    "case_id": "EAST_WEST",
+    "seed": 1011062019,
+    "phase": 5.90444065903181,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_19",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 19,
+    "preflight_task_id": "t0_confirm_19",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_20",
+    "case_id": "EAST_WEST",
+    "seed": 1011062020,
+    "phase": 2.905025022156531,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_20",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 20,
+    "preflight_task_id": "t0_confirm_20",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_21",
+    "case_id": "EAST_WEST",
+    "seed": 1011062021,
+    "phase": 1.0926535261155745,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_21",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 21,
+    "preflight_task_id": "t0_confirm_21",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_22",
+    "case_id": "EAST_WEST",
+    "seed": 1011062022,
+    "phase": 1.910731236064796,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_22",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 22,
+    "preflight_task_id": "t0_confirm_22",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_23",
+    "case_id": "EAST_WEST",
+    "seed": 1011062023,
+    "phase": 1.2275267396456635,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_23",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 23,
+    "preflight_task_id": "t0_confirm_23",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "t0_confirm_24",
+    "case_id": "EAST_WEST",
+    "seed": 1011062024,
+    "phase": 3.8266419885952168,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/t0_confirm_24",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "t0",
+    "branch_id": null,
+    "slot": 24,
+    "preflight_task_id": "t0_confirm_24",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_01",
+    "case_id": "WEST_EAST",
+    "seed": 1011062001,
+    "phase": 1.3103958043979969,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_01",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 1,
+    "preflight_task_id": "t0_confirm_01",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_02",
+    "case_id": "WEST_EAST",
+    "seed": 1011062002,
+    "phase": 3.4123295019305937,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_02",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 2,
+    "preflight_task_id": "t0_confirm_02",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_03",
+    "case_id": "WEST_EAST",
+    "seed": 1011062003,
+    "phase": 5.6461583995389715,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_03",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 3,
+    "preflight_task_id": "t0_confirm_03",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_04",
+    "case_id": "WEST_EAST",
+    "seed": 1011062004,
+    "phase": 3.5096889931928583,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_04",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 4,
+    "preflight_task_id": "t0_confirm_04",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_05",
+    "case_id": "WEST_EAST",
+    "seed": 1011062005,
+    "phase": 5.026341957059371,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_05",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 5,
+    "preflight_task_id": "t0_confirm_05",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_06",
+    "case_id": "WEST_EAST",
+    "seed": 1011062006,
+    "phase": 3.9316673924841545,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_06",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 6,
+    "preflight_task_id": "t0_confirm_06",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_07",
+    "case_id": "WEST_EAST",
+    "seed": 1011062007,
+    "phase": 4.843213483764839,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_07",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 7,
+    "preflight_task_id": "t0_confirm_07",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_08",
+    "case_id": "WEST_EAST",
+    "seed": 1011062008,
+    "phase": 4.566923571726433,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_08",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 8,
+    "preflight_task_id": "t0_confirm_08",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_09",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062009,
+    "phase": 5.3808196333119165,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_09",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 9,
+    "preflight_task_id": "t0_confirm_09",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_10",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062010,
+    "phase": 2.7035581463615674,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_10",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 10,
+    "preflight_task_id": "t0_confirm_10",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_11",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062011,
+    "phase": 0.8667047474964202,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_11",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 11,
+    "preflight_task_id": "t0_confirm_11",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_12",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062012,
+    "phase": 3.951262379432297,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_12",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 12,
+    "preflight_task_id": "t0_confirm_12",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_13",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062013,
+    "phase": 0.5388364316096341,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_13",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 13,
+    "preflight_task_id": "t0_confirm_13",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_14",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062014,
+    "phase": 1.919200579898309,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_14",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 14,
+    "preflight_task_id": "t0_confirm_14",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_15",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062015,
+    "phase": 1.4447588845174795,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_15",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 15,
+    "preflight_task_id": "t0_confirm_15",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_16",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062016,
+    "phase": 2.4330485247163742,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_16",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "main",
+    "branch_id": null,
+    "slot": 16,
+    "preflight_task_id": "t0_confirm_16",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_17",
+    "case_id": "EAST_WEST",
+    "seed": 1011062017,
+    "phase": 0.08794482000278481,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_17",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "branch_id": null,
+    "slot": 17,
+    "preflight_task_id": "t0_confirm_17",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_18",
+    "case_id": "EAST_WEST",
+    "seed": 1011062018,
+    "phase": 3.553572393149416,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_18",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "branch_id": null,
+    "slot": 18,
+    "preflight_task_id": "t0_confirm_18",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_19",
+    "case_id": "EAST_WEST",
+    "seed": 1011062019,
+    "phase": 5.90444065903181,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_19",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "branch_id": null,
+    "slot": 19,
+    "preflight_task_id": "t0_confirm_19",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_20",
+    "case_id": "EAST_WEST",
+    "seed": 1011062020,
+    "phase": 2.905025022156531,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_20",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "branch_id": null,
+    "slot": 20,
+    "preflight_task_id": "t0_confirm_20",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_21",
+    "case_id": "EAST_WEST",
+    "seed": 1011062021,
+    "phase": 1.0926535261155745,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_21",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "branch_id": null,
+    "slot": 21,
+    "preflight_task_id": "t0_confirm_21",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_22",
+    "case_id": "EAST_WEST",
+    "seed": 1011062022,
+    "phase": 1.910731236064796,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_22",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "branch_id": null,
+    "slot": 22,
+    "preflight_task_id": "t0_confirm_22",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_23",
+    "case_id": "EAST_WEST",
+    "seed": 1011062023,
+    "phase": 1.2275267396456635,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_23",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "branch_id": null,
+    "slot": 23,
+    "preflight_task_id": "t0_confirm_23",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_main_24",
+    "case_id": "EAST_WEST",
+    "seed": 1011062024,
+    "phase": 3.8266419885952168,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_main_24",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "main",
+    "branch_id": null,
+    "slot": 24,
+    "preflight_task_id": "t0_confirm_24",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000
+  },
+  {
+    "task_id": "confirm_repeat_01",
+    "case_id": "WEST_EAST",
+    "seed": 1011062001,
+    "phase": 1.3103958043979969,
+    "dynamic": true,
+    "goal_xy": [
+      4.0,
+      -2.0
+    ],
+    "goal_yaw": 0.0,
+    "run_id": "v1061-0-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_repeat_01",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -4.0,
+      -2.0
+    ],
+    "start_yaw": 0.0,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "WEST_EAST",
+    "kind": "repeat",
+    "branch_id": null,
+    "slot": 1,
+    "preflight_task_id": "t0_confirm_01",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000,
+    "repeat_of": "confirm_main_01"
+  },
+  {
+    "task_id": "confirm_repeat_09",
+    "case_id": "NORTH_SOUTH",
+    "seed": 1011062009,
+    "phase": 5.3808196333119165,
+    "dynamic": true,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "goal_yaw": -1.5707963267948966,
+    "run_id": "v1061-1-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_repeat_09",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      -1.600000023841858,
+      4.0
+    ],
+    "start_yaw": -1.5707963267948966,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "NORTH_SOUTH",
+    "kind": "repeat",
+    "branch_id": null,
+    "slot": 9,
+    "preflight_task_id": "t0_confirm_09",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000,
+    "repeat_of": "confirm_main_09"
+  },
+  {
+    "task_id": "confirm_repeat_17",
+    "case_id": "EAST_WEST",
+    "seed": 1011062017,
+    "phase": 0.08794482000278481,
+    "dynamic": true,
+    "goal_xy": [
+      -4.0,
+      -2.0
+    ],
+    "goal_yaw": 3.141592653589793,
+    "run_id": "v1061-2-main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1090/confirm_repeat_17",
+    "from_actual_native_zero": true,
+    "start_xy": [
+      4.0,
+      -1.9
+    ],
+    "start_yaw": 3.141592653589793,
+    "course_id": "V1061_EW_START_NORTH_010",
+    "canonical_parent_case_id": "EAST_WEST",
+    "original_start_xy": [
+      4.0,
+      -2.0
+    ],
+    "declared_start_delta_xy": [
+      0.0,
+      0.1
+    ],
+    "kind": "repeat",
+    "branch_id": null,
+    "slot": 17,
+    "preflight_task_id": "t0_confirm_17",
+    "stage": "confirmation",
+    "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1090_active_corridor",
+    "speed": 0.125,
+    "target": 0.0,
+    "historical_prefix_native": 0,
+    "prefix_native": 125,
+    "stop_native": 2200,
+    "native_limit": 85000,
+    "repeat_of": "confirm_main_17"
+  }
+]
