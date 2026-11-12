@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "policy_parity": [
+    {
+      "dimension": 107,
+      "max_action_error": 1.8849968910217285e-06,
+      "policy_sha256": "75f6ad4e6c522fd5caa881fb2672754499616f4b0550d109d55c560ba481665a"
+    },
+    {
+      "dimension": 186,
+      "max_action_error": 1.2367963790893555e-06,
+      "policy_sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f"
+    }
+  ],
+  "negative_cases": [
+    "missing_depth",
+    "stale_measurement",
+    "privileged_actor_input",
+    "wrong_dimensions",
+    "raw32_as186",
+    "finite_stop_is_not_original_goal",
+    "truncated_complete_stop"
+  ],
+  "observation_assembly": "Exact layout on synthetic feature blocks only; not actual186-channel sensing",
+  "actual_saved_vehicle_state_used": true,
+  "synthetic_policy_observation": true,
+  "safety_gate_admitted": true,
+  "safety_gate_checks": {
+    "full_geometry": true,
+    "complete_200_stop": true,
+    "legal_ctrl": true,
+    "legal_slew": true,
+    "body_caps": true
+  },
+  "counts": {
+    "proposed": 1,
+    "admitted": 1,
+    "rejected": 0,
+    "executed": 0
+  },
+  "vehicle_model_initializations": 0,
+  "vehicle_integrations": 0,
+  "training_updates": 0,
+  "policy_networks": 2,
+  "physical_ready": false,
+  "live_observation_backend_qualified": false,
+  "wall_s": 0.9177453520242125
+}
