@@ -1,78 +1,24 @@
 # MK-mini Phase · RP-CCR
 
-**核心研究算法：RP-CCR。** Phase以风险与进展约束的连续走廊恢复为研究主线，目标期刊为RAS。感知、规划、动力学准入、有限后备和学习提案服务于RP-CCR的实现与验证；[研究定位与实验约束](docs/RPCCR_RESEARCH_CONTRACT.md)明确当前实现、证据和未完成主张。
+本仓库是Phase导航研究的唯一工作区，目标期刊为Robotics and Autonomous Systems；与Stage完全隔离。
 
-Phase 导航研究的唯一整理版，独立于 Stage，目标期刊为RAS。**V657预注册有限静态基准工程验收已通过**：新冻结24项23严格到达（单12/12、双11/12），三场景完整重复误差0，27项物理审计与独立重算通过。1项HORIZON失败明确保留，旧失败不改写。用户已审阅并授权动态开发；动态仍未稳定验收，SAC训练更新0。
+**当前：V1082已失败封账，物理后台关闭，完整动态验收未完成。**
 
-[迁移完成报告](MIGRATION_REPORT.md)列出了保留内容、实际清理量、校验结果和未清理的环境文件。
+- [当前控制链与下一工作面](docs/PHASE_NAVIGATION_CURRENT.md)
+- [从静态成功到当前失败的完整复盘](docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md)
+- [精简机器状态](CURRENT_EXPERIMENT.json)
+- [逐版本历史状态](RESEARCH_STATUS.md)
 
-本仓库将最完整的历史基线证据、冻结控制器和当前研究接力状态合成一份可检查的成果包。没有证据支持把 V647 或某个单场景成功版本认定为通用最优算法。
+旧静态V657确认23/24、旧动态V827三路线开发、V828已执行8项中6成功、Nav2 V884–885同版本三路线静态、V1056原西东单主成功分别保留各自合同，不能拼接成当前版本的动态验收率。
 
-| 入口 | 内容 |
-|---|---|
-| [途中发现开发通过](docs/DYNAMIC_DISCOVERY_V695_REPORT.md) | 两相位765/770步及各完整重复，最低净空.399m、重复误差0；独立24项确认另记 |
-| [夜间最终报告](docs/DYNAMIC_OVERNIGHT_20261101_REPORT.md) | 两相位开发通过；新确认在旧初始化slot12停止，24导航未执行，自动任务已删除 |
-| [当前动态夜间计划](docs/DYNAMIC_OVERNIGHT_20261101_PLAN.md) | 硬截止11月2日08:00，已按预检失败提前停止；开发通过、独立确认未完成 |
-| [固定状态99动作验证](docs/DYNAMIC_ESCAPE_V692_REPORT.md) | 99项均无法获完整证书，有限动作集结论与原重放/账目保留 |
-| [V691：行驶中首次发现](docs/DYNAMIC_DISCOVERY_V691_REPORT.md) | 真实行驶后检测、完整制动、重新规划和继续移动已验证；408步未到达，完整门未通过 |
-| [V690：8米动态学习课程通过](docs/DYNAMIC_VISIBLE_EIGHT_METER_V690_REPORT.md) | 可比初始观测新任务，学习两相位827/722步与完整重复误差0；原不可见8米失败、V1精度审计失败保留，V2核验通过 |
-| [动态信息诊断：V683–V685](docs/DYNAMIC_INFO_VALIDATION_V683_REPORT.md) | 准确当前信息仍未到达；候选修正未过前置；末端18拒绝全部来自动态外覆盖 |
-| [动态根因彻底复核：V682](docs/DYNAMIC_ROOT_CAUSE_V682.md) | 804帧零积分重查：运动假设、估计保守性、局部倒车进展和墙钟停止 |
-| [动态恢复实验：V679–V681](docs/DYNAMIC_FORWARD_RESERVE_V679_REPORT.md) | 前进有限尾有局部增量，804步仍未到达；短时空间提案前置失败未导航 |
-| [下一时序内核规格](docs/DYNAMIC_TEMPORAL_KERNEL_DESIGN.md) | 完整状态、绝对时间、合法命令与保留尾段；尚未实现/运行 |
-| [V676–V678命令与场景分解](docs/DYNAMIC_COMMAND_SCENE_V676_REPORT.md) | 命令修复、两因果未到达、同场景特权474步到达见证，分母明确 |
-| [算法还是场景：原文核对](docs/DYNAMIC_ALGORITHM_VS_SCENE_V676.md) | 有限观测与时序规划、SIPP-IP/不确定性学习原文及适用边界 |
-| [V674–V675续接实验与审计](docs/DYNAMIC_RENEWABLE_BACKUP_V674_REPORT.md) | V674/V675两未到达、次优漏选实证、实际命令契约失败与全账目 |
-| [后备相关工作与创新边界](docs/DYNAMIC_BACKUP_RELATED_WORK_V674.md) | gatekeeper直接重叠、适用假设及尚缺的论文增量 |
-| [下一阶段规格](docs/DYNAMIC_TEMPORAL_EXECUTION_NEXT.md) | 先统一执行器命令并在线核验，再研究时序/真实动力学一致性；未执行 |
-| [V671–V673动态结构实验报告](docs/DYNAMIC_STRUCTURE_V673_REPORT.md) | V671原因分解、V672/V673两未到达、有限后备末端缺口与真实积分审计 |
-| [扩展原论文核对](docs/DYNAMIC_LITERATURE_FAILURE_ANALYSIS_V671.md) | 部分闭环观测、时序等待、路线一致性与预测安全策略；读取范围明确 |
-| [V670动态开发报告](docs/DYNAMIC_EMPTY_SAMPLES_V670_REPORT.md) | V670未命中连续约束、843步超时未到达、完整前缀核验与信息表示诊断 |
-| [公平验证设计](docs/DYNAMIC_EVALUATION_DESIGN.md) | 未执行的强基线、机制消融、新池与计算预算要求 |
-| [V669动态恢复报告](docs/DYNAMIC_RECOVERY_V669_REPORT.md) | 三候选未到达、首次命中消融、实际有限倒车制动与信息退化 |
-| [动态相关工作与设计](docs/DYNAMIC_LITERATURE_DESIGN.md) | 原始文献、增量边界、下一研究问题 |
-| [方法草稿](docs/PHASE_DYNAMIC_METHOD_DRAFT.md) | 实际实现、条件性分析及尚未证明的活性 |
-| [动态测距集合与规划诊断](docs/DYNAMIC_INTERVAL_DEVELOPMENT_REPORT.md) | V662精确测距回放、V663观测消融与V664有界开发 |
-| [RAS当前创新评估](docs/RAS_READINESS_ASSESSMENT.md) | 投稿目标、现有不足与需要验证的方法贡献 |
-| [动态首轮开发报告](docs/DYNAMIC_UNKNOWN_DEVELOPMENT_REPORT.md) | 三条未到达分支、预测漏覆盖与完整失败证据 |
-| [最新静态稳定验收报告](docs/STATIC_ACCEPTANCE_V657_REPORT.md) | V657新池23/24、三次完整重复、全部物理审计与原失败 |
-| [固定清单完整记录](docs/STATIC_SAME_LIST_ACCEPTANCE_REPORT.md) | 23/24导航、原复现未通过、完整证据与目录诊断 |
-| [静态修复报告](docs/STATIC_REPAIR_REPORT.md) | 原因分析、两个失败配对救回、困难回归与修订29边界 |
-| [V650静态确认报告](docs/STATIC_ACCEPTANCE_REPORT.md) | 11到达2失败、完整物理审计与预定提前停止 |
-| [静态稳定化报告](docs/STATIC_STABILITY_REPORT.md) | 当前多开发场景结果、几何审计与未通过的稳定门槛 |
-| [上一轮静态未知障碍报告](docs/STATIC_UNKNOWN_REPORT.md) | 单场景成功、同状态地图消融与限制 |
-| [RAS论文路线](docs/PAPER_PLAN_RAS.md) | 相关工作、主张边界与后续验证 |
-| [研究状态](RESEARCH_STATUS.md) | 已完成、未通过与待验证的内容 |
-| [迁移说明](MIGRATION.md) | 本地唯一目录、依赖隔离、清理边界和验证方法 |
-| [精选证据](evidence/README.md) | Final300、必要对照、已复现救援、V647 实际结果 |
-| [当前实验指针](CURRENT_EXPERIMENT.json) | 选定的开发候选与证据边界 |
-| `current/` | 字节不变的V647历史接力与环境依赖，新实验使用上面的独立入口 |
-| `runtime/` | 必需的冻结环境、控制器、模型、状态与资源 |
-| `manifests/` | 原始来源、逐文件 SHA256、清理明细与验证结果 |
-| [静态确认冻结协议](experiments/v657_static_fixed_work_confirmation/PROTOCOL.md) | 冻结开发配置与有界协议；实际输出仅在 `runs/` |
+当前最近的3555步续行使用保存的完整输入请求和单一轮控执行者；没有运行Nav2 ROS动作，也没有用SAC决定该完整路线。最新失败为新增单步速度限幅和执行器速率约束失去可行交集；原超速失败和全部历史证据保留。
 
-只读准备检查：
+## 使用与记录
 
-```bash
-./run_phase.sh
-```
+唯一仓库：`/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-`；远端：[frank8763/phase-](https://github.com/frank8763/phase-.git)。
 
-上述入口核对文件、导入依赖及加载冻结模型，不创建环境实例、不 reset、不执行 MuJoCo step、不训练。静态验收已通过，用户已审阅并继续授权动态开发；具体运行以当前指针和独立有界协议为准，不能自动追加无界实验。
+`./run_phase.sh`无参数只执行离线只读准备检查，0仿真/0训练。实际模型入口受冻结协议、独立窗口、单实例锁和REVIEW_PENDING保护；当前不自动启动物理。
 
-聊天接力来源：[phase继续推进10.30](https://chatgpt.com/share/6ae54f9f-2730-83e8-8ae6-10b45198db16)。仓库保留核对后的研究摘要，不复制冗长聊天和附件占位内容。
+必要源码/报告/索引存Git，必要原生证据存同仓Release，远端SHA与解压回读通过后才清理；[记录存储规则](docs/STORAGE_POLICY.md)。旧源码的硬编码依赖仍保留用于复现，不作为并行活动分支。
 
-
-
-最新动态分层验证：[V686空白场地报告](docs/DYNAMIC_OPEN_CURRICULUM_V686_REPORT.md)：能检测运动障碍并规划绕行，600步仍未通行；训练更新0。下一步依据[能力课程策略](docs/DYNAMIC_CURRICULUM_STRATEGY.md)定位执行与时序决策。
-
-
-[C0基础控制课程V687](docs/CONTROL_CURRICULUM_V687_REPORT.md)：直线、转弯、原绕行三项到达，绕行完整重复误差0。基础功能通过，动态未知障碍通行仍待解决，训练更新0。
-
-
-[6米动态学习V688](docs/DYNAMIC_DISTANCE_V688_REPORT.md)：参考控制一次到达，完成512次真实监督训练；学习版900步未到达，8米未启动，完整安全/状态重放通过。独立提案学习与冻结SAC分开，当前动态稳定未验收。
-
-
-[V689：6米动态学习课程通过](docs/DYNAMIC_ROUTE_COMMITMENT_V689_REPORT.md)：两相位629/631步到达，完整重复误差0。8米已尝试但在起步前因有效回波不足停止，0实际步；8米训练未执行，原失败与全部证据保留。
-
-
-[V690八米有限动态课程](docs/DYNAMIC_VISIBLE_EIGHT_METER_V690_REPORT.md)：两相位及完整重复通过，最低实际净空0.291524m；完成512次监督微调，冻结SAC0。初始观测为明确新几何，原复杂场地动态稳定仍待验收，全部旧失败和本轮V1精度审计失败保留。
+完整旧首页无损保存在[历史首页](docs/history/README_BEFORE_NAVIGATION_REVIEW_20261112.md)；原433KB机器状态无损保存在[历史状态](records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json)。

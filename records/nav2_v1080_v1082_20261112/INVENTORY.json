@@ -1,0 +1,969 @@
+{
+  "files": [
+    {
+      "path": "docs/RPCCR_SPEED_GUARD_V1082_REPORT.md",
+      "bytes": 1462,
+      "sha256": "674a2add930e6c9e8a610207ef19bc9c506eb2e8993afd7cc97d2c5150904218"
+    },
+    {
+      "path": "docs/RPCCR_TURN_RETURN_V1080_REPORT.md",
+      "bytes": 3157,
+      "sha256": "c67af4056f86026c0781701c50a64625eab6b641880520b21a6676d0e374fc7c"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/PROTOCOL.md",
+      "bytes": 2465,
+      "sha256": "96d5b0f73d3d0f033ac6eb3e76b9594ccc82870a163a924d936f22caf8474584"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/SOURCE_FREEZE.json",
+      "bytes": 397573,
+      "sha256": "ca4451317a08cdb5ab556eb5bf98bea92af413a54420b675791ee7f42fc65d04"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/TASKS.json",
+      "bytes": 2600,
+      "sha256": "cec327cd06a8501fdd6ebced825a5265e749895269693d65e732831e749c706b"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/audit_one.py",
+      "bytes": 5816,
+      "sha256": "ba5aca96564f0eb512c4f75d5582c1a69da7a99e53a5ba2eef9d017cc648b632"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/common.py",
+      "bytes": 1040,
+      "sha256": "41d82fffcaee35096ec1b590a74ce843f7299117e88a673d7bba199ace545c67"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/driver.py",
+      "bytes": 5826,
+      "sha256": "9c65a07d1bf7c192ddfa799a6b39205b09d27115f921ee3a9b8b890a3576ecda"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/entry_check.py",
+      "bytes": 820,
+      "sha256": "9769f208dad5627bd59043f7bc9b44bc47bcb97bf22daa65f65fd4e37c9d8dab"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/qualify.py",
+      "bytes": 2267,
+      "sha256": "8d191efa50412c90fa2408e511efa3be8fc1b6caaaf2af175c60d75feafab1a6"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/science.py",
+      "bytes": 2192,
+      "sha256": "cc04bc68cb63120431fd7e816d1338f0fc78846d3189905818e5b87e4deee5eb"
+    },
+    {
+      "path": "experiments/v1080_turn_return_remaining/worker.py",
+      "bytes": 8390,
+      "sha256": "b5b8e814eb8066572c5c683a8e92def6ea4de93d9870408079bf6a9cdbc354eb"
+    },
+    {
+      "path": "experiments/v1081_transient_speed_guard/PARAMETERS.json",
+      "bytes": 592,
+      "sha256": "c2817427df7064ed233f167384e1c277ac2a932136b752fa7e5eb3f50dd80aaa"
+    },
+    {
+      "path": "experiments/v1081_transient_speed_guard/PROTOCOL.md",
+      "bytes": 2309,
+      "sha256": "c5d842f1b5c593e8fa858f54a3883d9721c2d90a37c1cbedbddee9357d68eb78"
+    },
+    {
+      "path": "experiments/v1081_transient_speed_guard/check_saved.py",
+      "bytes": 3253,
+      "sha256": "4ac537a1137b109ad315673911cef8a9397911259d37d629a650ec4d72e73545"
+    },
+    {
+      "path": "experiments/v1081_transient_speed_guard/diagnose.py",
+      "bytes": 2751,
+      "sha256": "bd92e9303818290d06005deca8bc7a9d68bf4dbf12db7c0d34346dff29c97720"
+    },
+    {
+      "path": "experiments/v1081_transient_speed_guard/governor.py",
+      "bytes": 3118,
+      "sha256": "8aeaa496b96975db0d01a433d98195458748ff1b554b158141596bbcaa585953"
+    },
+    {
+      "path": "experiments/v1081_transient_speed_guard/qualify.py",
+      "bytes": 4359,
+      "sha256": "3a8bfd9a6c790b36c0a212a12d148dc63cc35af0877aac3c56815dbdd4b7b24d"
+    },
+    {
+      "path": "experiments/v1081_transient_speed_guard/transient_model.py",
+      "bytes": 2825,
+      "sha256": "788dd5fb3880c793431d6d65072b53810c9701c33c72306b00b58e1ea0f149b9"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/PROTOCOL.md",
+      "bytes": 2061,
+      "sha256": "8fc59ca8378aa41767c0cfd2fd6926a5befcce92fe584555604f5b328cee2188"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/SOURCE_FREEZE.json",
+      "bytes": 400190,
+      "sha256": "acf588f92a397c5ce97463c61626b70fae86b0236f5955dc6b75ce938990210f"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/TASKS.json",
+      "bytes": 903,
+      "sha256": "b1af7445806a82d33a5183d85cf1f09906af555d24e931835214a2ab157d9249"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/audit_one.py",
+      "bytes": 6762,
+      "sha256": "0cb103fbbed7b2d9fde683fdd5302023d86f75178ae021a5d165f797fd260d53"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/close_local.py",
+      "bytes": 2973,
+      "sha256": "f9a91c1c7fb526a542c73877434782acdd0cfe49d7bc10ec16543597e5e5adaf"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/common.py",
+      "bytes": 1094,
+      "sha256": "6b12e0e0e8d9395db4080c0ceb42e8fdb4340105e848d38e3ebe3b7f9993e1b0"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/driver.py",
+      "bytes": 5979,
+      "sha256": "b103d1042e920885cd8f0111c9da5411ae37493393840cf3dd837b60c6149e8e"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/entry_check.py",
+      "bytes": 820,
+      "sha256": "9769f208dad5627bd59043f7bc9b44bc47bcb97bf22daa65f65fd4e37c9d8dab"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/qualify.py",
+      "bytes": 1858,
+      "sha256": "0ba7d6d949fefa845ef924f598cc2b067ba757fdf4d3f10f38b6bcc189922cbc"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/science.py",
+      "bytes": 2014,
+      "sha256": "2a6f0326ccef927cd5370dbefd75058808d4a7e8c64070a07dd384939070af19"
+    },
+    {
+      "path": "experiments/v1082_guarded_saved_continuation/worker.py",
+      "bytes": 9279,
+      "sha256": "235fcbfca9ca839c8b8a43c06aadadafc0bae2de64c696135febaa1fe09a7014"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/ACTIVE.json",
+      "bytes": 21,
+      "sha256": "a54ac5bb1f80f63e97d0fdea2ed11b5d547130e28378703d643019b310611f98"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/APPROVAL.json",
+      "bytes": 57,
+      "sha256": "9f6ec221a3c9ebcbff59fc2b8708e389d2da924593f0463ebbfdebb7b22fbd54"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/ATTEMPTS.json",
+      "bytes": 53,
+      "sha256": "cf712cf802a45311ad7e5b7f49986d4ef3ae696c1c2646453c210a532061602e"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/AUTHORIZATION.json",
+      "bytes": 510,
+      "sha256": "7b8249f2fd381b3bb2b4e81f7c9cf6c931c19118d46f2e6e453759fc852fb7f2"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/COMPLETION.json",
+      "bytes": 1271,
+      "sha256": "dfbfb7b07f7349c6d504edc6acf068edd3dee30e9c7926500b5274bc8b766dd4"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/ERROR.json",
+      "bytes": 680,
+      "sha256": "d3db4d31110e52dc529d5a955e3fa57da76e2df7bcb35ce3f420a360c3685e3f"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/GUARD.bin",
+      "bytes": 351,
+      "sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/LAUNCH.json",
+      "bytes": 101,
+      "sha256": "596629a1945bb91f4877c3627e13c12b1cc66d45afbb50d13fbcc3a21ceb8ba0"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/QUALIFICATION.json",
+      "bytes": 2115,
+      "sha256": "df166de67528795ccf724e2d2126d7570feeca05c223be24e89c0f1f8db165a7"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/RESTORE.console",
+      "bytes": 71,
+      "sha256": "7ab6b330a28e3c8540c0335d8ae843bbbeba82d727eb908cbb559ea825d152ce"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/RESULTS.json",
+      "bytes": 9368,
+      "sha256": "40f0667686137853c817cf4a5f3d59ccf19961dc1fac37a14b3d08b9a26382b2"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/ROUND_WINDOW.json",
+      "bytes": 350,
+      "sha256": "5400bbd97990bbb0aeadb67451e3bacce53ea43fb64cd44837ee5c7c6d030bee"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/SAVED_FAILURE_DIAGNOSIS.json",
+      "bytes": 5485,
+      "sha256": "7175d8980275ed362d1a76d020e3ab07be89258ff01a703439ba9721e1778f74"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/TWO_COMPONENT_GATE.json",
+      "bytes": 170,
+      "sha256": "8e95a74c7dec2ee7d797ddc87b99e264f918f82925d0d2071cc1c98e89403f55"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/driver.console",
+      "bytes": 1185,
+      "sha256": "90a6ac1dce04f82fa268d75ebcdbaa5ff4d857b6d54994dac088c1644c79e5d4"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/driver.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/qualification.console",
+      "bytes": 1603,
+      "sha256": "14faa13394c0d0f5b26f5e05cded1bedc1bf5690f47789234d4af64ca27eb6fd"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/remaining3555.console",
+      "bytes": 2482,
+      "sha256": "10bdfcf7fcc3eaa24ad984699fe9f6941d186d502e83e9bafd9d80bfbf7e2240"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/remaining3555.entry.console",
+      "bytes": 200,
+      "sha256": "4bf38334251584466464cd6b28bb1dac4e75757e47152695c646f05965db5bbe"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/remaining3555.json",
+      "bytes": 835,
+      "sha256": "3dadec79ed9675a1ab10bd3b212d3deee20610ea1b5196731be1db9e62752d22"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/turn_left.audit.console",
+      "bytes": 860,
+      "sha256": "333bfe308e077bd4681cb4c8fb71cfb790bd8aae7dc72f824c4a6d70846ca265"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/turn_left.console",
+      "bytes": 2478,
+      "sha256": "5e51d77b2b6fe4fd642ed494de8b25ff14e935ed1862e4815fc966aafeefdc85"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/turn_left.entry.console",
+      "bytes": 200,
+      "sha256": "4bf38334251584466464cd6b28bb1dac4e75757e47152695c646f05965db5bbe"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/turn_left.json",
+      "bytes": 787,
+      "sha256": "d76c5aa9cc001e314b0ebbdd18dd25aa58aced3e2a88d9eecf56ceb48636c2d0"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/turn_right.audit.console",
+      "bytes": 858,
+      "sha256": "8a45bd9597708583abaed3497444c58804280aa1c3e0d3721236d73c7cbe0cee"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/turn_right.console",
+      "bytes": 2479,
+      "sha256": "1fe5e25f226549cdf9908b612e8af9826b4f3aa57b35600ab9c57341a889e01d"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/turn_right.entry.console",
+      "bytes": 200,
+      "sha256": "4bf38334251584466464cd6b28bb1dac4e75757e47152695c646f05965db5bbe"
+    },
+    {
+      "path": "runs/v1080_turn_return_remaining/turn_right.json",
+      "bytes": 788,
+      "sha256": "1fcebf2c33ffbad318e2badfadb7fae4573988eac51a592e00f98e5a5c16f7aa"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/DIAGNOSIS.json",
+      "bytes": 642,
+      "sha256": "6265b105ba37e0f1c33fd1d8b29d9c5a440cf2ccff6a57284e58eca48b087608"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/QUALIFICATION.json",
+      "bytes": 4421,
+      "sha256": "42f84b1c51cd2b631aca8d92bcac20ddc38e29eadeae8ad89a97cef1c038ea56"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/REMAINING_CANDIDATE.npz",
+      "bytes": 245778,
+      "sha256": "b416e74c2b4615b013f450e9e9a99f9f41760998b8517779d207b26daa0fc729"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/SAVED_REGRESSION.json",
+      "bytes": 992,
+      "sha256": "2abb6782f43f3eada4b001a3b4aa224bc3aa1fd3f9ddb2821aeb79b16cbf817c"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/pre_freeze_import_failure.console",
+      "bytes": 417,
+      "sha256": "72ad8175bb5c71fed4bf43839bc1e2b2be4e4c54b236a71bd44cc79526c0bb04"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/pre_freeze_parameter_path_failure.console",
+      "bytes": 578,
+      "sha256": "0328a1eddefbd8a133dfdfa5e8141441d9e3edca51215de6a134e3467f14c3d0"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/qualification.console",
+      "bytes": 4421,
+      "sha256": "42f84b1c51cd2b631aca8d92bcac20ddc38e29eadeae8ad89a97cef1c038ea56"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/saved_regression.console",
+      "bytes": 5413,
+      "sha256": "b05b285091a4b87690c18afbbaacebcea4cd1298e94d2620d0405d9396f4bcfb"
+    },
+    {
+      "path": "runs/v1081_transient_speed_guard/saved_unguarded_state_projection_rejection.console",
+      "bytes": 1188,
+      "sha256": "6fb7431df3c48724ab095cd0f51ba8a0bc7967e8c4e5c973ae5adfee5f0e750e"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/ACTIVE.json",
+      "bytes": 21,
+      "sha256": "a54ac5bb1f80f63e97d0fdea2ed11b5d547130e28378703d643019b310611f98"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/APPROVAL.json",
+      "bytes": 57,
+      "sha256": "9f6ec221a3c9ebcbff59fc2b8708e389d2da924593f0463ebbfdebb7b22fbd54"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/ATTEMPTS.json",
+      "bytes": 22,
+      "sha256": "905a917348e2e3baef6eae077811f5c0b08472f6d983833b7092b33a5cd2fd4d"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/AUTHORIZATION.json",
+      "bytes": 495,
+      "sha256": "3da27f5c5db4f20b61dcca1475501d10fcc1bb208294aa895225ad314dee1514"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/COMPLETION.json",
+      "bytes": 1246,
+      "sha256": "d8a8bb09d04021ed6080fd195161b614d564603b74cc4d001b4a926386a40b44"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/ERROR.json",
+      "bytes": 685,
+      "sha256": "3558694420ac685a25ab43c102a0daa8a4934a5ee50782daba01c3600a8b84a8"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/GUARD.bin",
+      "bytes": 351,
+      "sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/LAUNCH.json",
+      "bytes": 106,
+      "sha256": "c760cc4b1db1ef3d0d467147235e8fbb72fe3ab46a3ff001a21d1d29f5682f99"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/QUALIFICATION.json",
+      "bytes": 794,
+      "sha256": "329dd78885c2cf8a70f47da2f5a265f3c85deb62cc991953fe45cdbc4aae6b73"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/RESULTS.json",
+      "bytes": 3299,
+      "sha256": "c315eb4caf2ff3b4456e05abbfc3510e1c021d86d68fab8c4205e0827c559da2"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/ROUND_WINDOW.json",
+      "bytes": 361,
+      "sha256": "5218f3b5dbaa6a2c5cae75fb8d3556fc4302a9e8bed9f9d2aa36d3a3b8f5c6c7"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/driver.console",
+      "bytes": 1168,
+      "sha256": "8853524a8ea86c47cd1e197cb0f0e427216cda9c9feecfe21ef94326d422416a"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/driver.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/entry.console",
+      "bytes": 200,
+      "sha256": "4bf38334251584466464cd6b28bb1dac4e75757e47152695c646f05965db5bbe"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/qualification.console",
+      "bytes": 698,
+      "sha256": "6e0735ad20846561fcd95721dfb70f8248e3a30bb12e28f6dc436882374f76a1"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/remaining3555.console",
+      "bytes": 2482,
+      "sha256": "e555e07c1418ca55264ea763e0e75e429b4d3a15ec626f00d5036facd35c425b"
+    },
+    {
+      "path": "runs/v1082_guarded_saved_continuation/remaining3555.json",
+      "bytes": 835,
+      "sha256": "aeef36fc188194519b774c2287fc08601a99e58286406f5494f1e58b0fc5b3f8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/ACTUAL_INPUT.json",
+      "bytes": 53773,
+      "sha256": "e446094a54637c7c4ab8b20c00a5bba9522d9eb9c0afc79917c5482221f34bc5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/HISTORICAL_REPLAY_PROOF.json",
+      "bytes": 173,
+      "sha256": "170e1a8b589104e3b8543f9064f6257f2db09a6e9f383748cb26a080052b36cc"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/PARTIAL.json",
+      "bytes": 54,
+      "sha256": "b2f68aa187b3d43df1b6da304f3cbeb499106600bbf93f2f46aec3256c58bbe7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/PLAN.npz",
+      "bytes": 247232,
+      "sha256": "457ac4363e97c68e9f1d6b221cb14172f25990739b2ba9767261c5aee9155b79"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/PLAN_PROOF.json",
+      "bytes": 380,
+      "sha256": "7cb20ba02bf59096098fc1a2be01fa900434ab5a2252dcb551b6f3ff6e4341c1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/RESULT.json",
+      "bytes": 1982,
+      "sha256": "af7453719a0853df6a6a52684a846b71b7aa900f5f2437736b280994490a9208"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/BODY_COMMANDS.json",
+      "bytes": 2112911,
+      "sha256": "48bc6b66fa2a35ff30daf7f23e6fb84c8be247ce94171781436f29a0a46ef36a"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/CONTACTS.json.gz",
+      "bytes": 984842,
+      "sha256": "aa9c94fcafc7b9f5ea73a86b8762db1935c30ac1acf1c106f035fb66b560fa07"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/DECLARED_COURSE_BINDING.json",
+      "bytes": 553,
+      "sha256": "101cf34320c1e7a95943e790af92f986e256f5ef8237a6e22014303a51b08d38"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/EXACT_SENSOR_BINDING.json",
+      "bytes": 366,
+      "sha256": "18f0c820658783b162be835fdb7e5fb3399273dd0aef3cc4458707595b053319"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/INITIAL_STATE.npz",
+      "bytes": 280,
+      "sha256": "d0ed011b4284d12930a9c3a50fb9f77f56b78b1a9289e8c3b91c333be1718fbb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/MODEL_BUILD_CONTRACT.json",
+      "bytes": 91508,
+      "sha256": "01f33c95e6ec935744565e9d22a91faddb2e93cfae88a3dee1c9910f6ecca4c1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/NATIVE_TRACE.npz",
+      "bytes": 5387935,
+      "sha256": "9538c114bd190253282cc7459915278918a09e56b967415f9faeb3ed5d4ceff6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/PATCHED_ASSEMBLY.xml",
+      "bytes": 13721,
+      "sha256": "24fec7ac17d1b0650aed8e7ca61e25e4cec12f7b151d7bcca5880cb8b4f2a013"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/REPLAY.json",
+      "bytes": 125,
+      "sha256": "a3e81b6bb28c5124382798465b7669b2c4994e9a150877984658577fd8a64abe"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/REPLAY_PROGRESS.json",
+      "bytes": 34,
+      "sha256": "979464d6d173658b23fb09e5f062bba7fae37740bf26fd3ffb8a81e69213269d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/SELECTED_NATIVE_BINDING.json",
+      "bytes": 405,
+      "sha256": "5e413a2fbbe4d5959edefc183c07b50184794a96ea1823e2dfe693873efb2a75"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/SENSORS.json.gz",
+      "bytes": 914236,
+      "sha256": "c27f57e2a3ba68b035b75f5545a37fa936ff39a9243aaaf2e19632441829e7e8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/SETUP.json",
+      "bytes": 29184,
+      "sha256": "b7d9552aaad32409363c6b816fee91569d905553b70f0ee423176e6a296a2527"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/paired/ACTOR_PATCH_SELECTION.json",
+      "bytes": 25317,
+      "sha256": "d6a10edea311f4a63a4b3a321f1d1fb6c7ae352a16c6f76d3ee092ebdf00efba"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/paired/ARENA_CONSTRUCTION.json",
+      "bytes": 8161,
+      "sha256": "5ca146c0440b457e93965b320d700bf74bdb3cf6e6812c5bab0f7f6d9a20bf00"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/paired/INITIALIZATION_PROVENANCE.json",
+      "bytes": 1179,
+      "sha256": "1e6ef328be935d03b2a676a06b4e63f2ab0e7fa67addcb2098a524657e547e91"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/paired/KNOWN_PRIOR_REFERENCE.json",
+      "bytes": 22339,
+      "sha256": "1d39e2681e117cee994f71cd257a87c6a34037e483dd6774fd6eb181593db9b6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/paired/MOTION_ENVELOPE_CHECK.json",
+      "bytes": 44600,
+      "sha256": "8cd169df539491e90f54b6ee7f7ccb0b09f0fa2bbda776e415532cf3c184a7e6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/paired/assets/isolated_indoor.xml",
+      "bytes": 13489,
+      "sha256": "9dc7452ce087e68861f43c16b81632e623e2088403dd0a49fd5952e3ae3e5d0d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/paired/paired_reset.json",
+      "bytes": 365,
+      "sha256": "c7dc77899b06838d4a1a9839158b4be6a463ef1191506089c07a49eac7ccd571"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/remaining3555/physics/v648_environment.json",
+      "bytes": 1912,
+      "sha256": "454a0c019ce9f6139b199bae8d4da15d7876fabde9dc001ad69e0ee066975e10"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/ACTUAL_INPUT.json",
+      "bytes": 33418,
+      "sha256": "11876ef58bfd1a632a3176ebbce53c5aa3821d51245278250f74ce6329487446"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/FINAL_INDEPENDENT_AUDIT.json",
+      "bytes": 1014,
+      "sha256": "ed12c046536175f9616f358ef4c640ad94da286fa073d4f2b18d36bce1c7f8f0"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/PARTIAL.json",
+      "bytes": 181,
+      "sha256": "560185ee63d5a0d70d4154c7ab8a43a361106f1a9bdb3c98ffc9913f7dd02707"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/PLAN.npz",
+      "bytes": 154012,
+      "sha256": "fcbcb60b5aed97df833e211e59c60b4c1e49d311c4469fc0edff8be856553b50"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/PLAN_PROOF.json",
+      "bytes": 353,
+      "sha256": "22718db19cc12e6e81f523a67cdfca306861a180edb338bcfda7da4a04b2d73a"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/RESULT.json",
+      "bytes": 1607,
+      "sha256": "f6f10dc6817e128c483df5ba370ef8ea7bab287db1e175bb427ebc7aa446b622"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/BODY_COMMANDS.json",
+      "bytes": 292983,
+      "sha256": "a873b007a6ccc3effcbc42138516f948ea309f9f4009e24fcafd6497922598a4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/CONTACTS.json.gz",
+      "bytes": 128498,
+      "sha256": "5d94543cf7b03e47ae25154c378e5051846690d5c0ed8d826c02ef4aa745ccb3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/DECLARED_COURSE_BINDING.json",
+      "bytes": 553,
+      "sha256": "101cf34320c1e7a95943e790af92f986e256f5ef8237a6e22014303a51b08d38"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/EXACT_SENSOR_BINDING.json",
+      "bytes": 366,
+      "sha256": "18f0c820658783b162be835fdb7e5fb3399273dd0aef3cc4458707595b053319"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/INITIAL_STATE.npz",
+      "bytes": 280,
+      "sha256": "d0ed011b4284d12930a9c3a50fb9f77f56b78b1a9289e8c3b91c333be1718fbb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/MODEL_BUILD_CONTRACT.json",
+      "bytes": 91508,
+      "sha256": "01f33c95e6ec935744565e9d22a91faddb2e93cfae88a3dee1c9910f6ecca4c1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/NATIVE_TRACE.npz",
+      "bytes": 731405,
+      "sha256": "7198d664e06a8ec184d2b0e9bdbe829e927782a938bf3a4e9731aa486981529a"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/PATCHED_ASSEMBLY.xml",
+      "bytes": 13721,
+      "sha256": "24fec7ac17d1b0650aed8e7ca61e25e4cec12f7b151d7bcca5880cb8b4f2a013"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/REPLAY.json",
+      "bytes": 124,
+      "sha256": "85e43b2e19c9514661e447bee95669cd19a9b041f0532e268800d2620d6125e1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/REPLAY_PROGRESS.json",
+      "bytes": 33,
+      "sha256": "6b0f8de66577082cff562c3a9dec8b338ef654f2c8ab589617c526320bec67fe"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/SELECTED_NATIVE_BINDING.json",
+      "bytes": 405,
+      "sha256": "5e413a2fbbe4d5959edefc183c07b50184794a96ea1823e2dfe693873efb2a75"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/SENSORS.json.gz",
+      "bytes": 146578,
+      "sha256": "fead59423af245b8dad103d74b0e518bfb33cf40059ef87a70643630ae1f096f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/SETUP.json",
+      "bytes": 29184,
+      "sha256": "064f5165e88500fd08dfc33235874d024c685e5a91e5c6220e59c5bf31b03e2c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/paired/ACTOR_PATCH_SELECTION.json",
+      "bytes": 25317,
+      "sha256": "d6a10edea311f4a63a4b3a321f1d1fb6c7ae352a16c6f76d3ee092ebdf00efba"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/paired/ARENA_CONSTRUCTION.json",
+      "bytes": 8161,
+      "sha256": "5ca146c0440b457e93965b320d700bf74bdb3cf6e6812c5bab0f7f6d9a20bf00"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/paired/INITIALIZATION_PROVENANCE.json",
+      "bytes": 1179,
+      "sha256": "1e6ef328be935d03b2a676a06b4e63f2ab0e7fa67addcb2098a524657e547e91"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/paired/KNOWN_PRIOR_REFERENCE.json",
+      "bytes": 22339,
+      "sha256": "1d39e2681e117cee994f71cd257a87c6a34037e483dd6774fd6eb181593db9b6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/paired/MOTION_ENVELOPE_CHECK.json",
+      "bytes": 44600,
+      "sha256": "f3ae827ed2bdf47152f75a57657776bc4f93832d2bfc6f3f26e8af1c7234872e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/paired/assets/isolated_indoor.xml",
+      "bytes": 13489,
+      "sha256": "9dc7452ce087e68861f43c16b81632e623e2088403dd0a49fd5952e3ae3e5d0d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/paired/paired_reset.json",
+      "bytes": 365,
+      "sha256": "c7dc77899b06838d4a1a9839158b4be6a463ef1191506089c07a49eac7ccd571"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_left/physics/v648_environment.json",
+      "bytes": 1912,
+      "sha256": "454a0c019ce9f6139b199bae8d4da15d7876fabde9dc001ad69e0ee066975e10"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/ACTUAL_INPUT.json",
+      "bytes": 33419,
+      "sha256": "dbc60c212a5607a9bb262d8417dcf9ebacd272dc648ca474c54a4d1e431c3135"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/FINAL_INDEPENDENT_AUDIT.json",
+      "bytes": 1012,
+      "sha256": "6ae08a46e67b6c9db664d67969c80c8baf0caf1cdac27bc04f78200b7beca51b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/PARTIAL.json",
+      "bytes": 179,
+      "sha256": "38be335e0bac525aeaf4d11b7440679e171260206b25db8bb2798ec281e5fbd6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/PLAN.npz",
+      "bytes": 153732,
+      "sha256": "f6472e9b7e42ee2f7e11131bad5b949f0dcff170f5614314f0f6ef88e4c223b7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/PLAN_PROOF.json",
+      "bytes": 354,
+      "sha256": "3caf9a0b4323bec66337a564e0258ba3047bf7a16e02ae3de312f52ef32d1da4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/RESULT.json",
+      "bytes": 1606,
+      "sha256": "3f205ac7f3b0701deffb00a328b242a120216982964dc6bef07302a143b7d172"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/BODY_COMMANDS.json",
+      "bytes": 294915,
+      "sha256": "f471e3730d364236f426eac2ff53959f208378edb49335f467f2d224e7b3324d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/CONTACTS.json.gz",
+      "bytes": 128215,
+      "sha256": "d40e772ad878f76fc0178dd82af15f4371e2fe9f92d850b1da40c028ecccdcf2"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/DECLARED_COURSE_BINDING.json",
+      "bytes": 553,
+      "sha256": "101cf34320c1e7a95943e790af92f986e256f5ef8237a6e22014303a51b08d38"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/EXACT_SENSOR_BINDING.json",
+      "bytes": 366,
+      "sha256": "18f0c820658783b162be835fdb7e5fb3399273dd0aef3cc4458707595b053319"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/INITIAL_STATE.npz",
+      "bytes": 280,
+      "sha256": "d0ed011b4284d12930a9c3a50fb9f77f56b78b1a9289e8c3b91c333be1718fbb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/MODEL_BUILD_CONTRACT.json",
+      "bytes": 91508,
+      "sha256": "01f33c95e6ec935744565e9d22a91faddb2e93cfae88a3dee1c9910f6ecca4c1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/NATIVE_TRACE.npz",
+      "bytes": 726933,
+      "sha256": "28497c1647a70ee61919e3936073a90214826b483b640c112ae712ecd3b025bf"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/PATCHED_ASSEMBLY.xml",
+      "bytes": 13721,
+      "sha256": "24fec7ac17d1b0650aed8e7ca61e25e4cec12f7b151d7bcca5880cb8b4f2a013"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/REPLAY.json",
+      "bytes": 124,
+      "sha256": "85e43b2e19c9514661e447bee95669cd19a9b041f0532e268800d2620d6125e1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/REPLAY_PROGRESS.json",
+      "bytes": 33,
+      "sha256": "6b0f8de66577082cff562c3a9dec8b338ef654f2c8ab589617c526320bec67fe"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/SELECTED_NATIVE_BINDING.json",
+      "bytes": 405,
+      "sha256": "5e413a2fbbe4d5959edefc183c07b50184794a96ea1823e2dfe693873efb2a75"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/SENSORS.json.gz",
+      "bytes": 146473,
+      "sha256": "e1a0ab8a897415ee0e52e46dcc720fc122b763b72132f6fc3344dd4a67ebb277"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/SETUP.json",
+      "bytes": 29184,
+      "sha256": "9d016664c800c0b20381cb919ceffa381550f215f69e0d46e1b763626630a550"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/paired/ACTOR_PATCH_SELECTION.json",
+      "bytes": 25317,
+      "sha256": "d6a10edea311f4a63a4b3a321f1d1fb6c7ae352a16c6f76d3ee092ebdf00efba"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/paired/ARENA_CONSTRUCTION.json",
+      "bytes": 8161,
+      "sha256": "5ca146c0440b457e93965b320d700bf74bdb3cf6e6812c5bab0f7f6d9a20bf00"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/paired/INITIALIZATION_PROVENANCE.json",
+      "bytes": 1179,
+      "sha256": "1e6ef328be935d03b2a676a06b4e63f2ab0e7fa67addcb2098a524657e547e91"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/paired/KNOWN_PRIOR_REFERENCE.json",
+      "bytes": 22339,
+      "sha256": "1d39e2681e117cee994f71cd257a87c6a34037e483dd6774fd6eb181593db9b6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/paired/MOTION_ENVELOPE_CHECK.json",
+      "bytes": 44600,
+      "sha256": "059e26cd2adc6fafb9ba9f4f45a58f9dec45e0748dc5a0561ff30630a547859b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/paired/assets/isolated_indoor.xml",
+      "bytes": 13489,
+      "sha256": "9dc7452ce087e68861f43c16b81632e623e2088403dd0a49fd5952e3ae3e5d0d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/paired/paired_reset.json",
+      "bytes": 365,
+      "sha256": "c7dc77899b06838d4a1a9839158b4be6a463ef1191506089c07a49eac7ccd571"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1080/turn_right/physics/v648_environment.json",
+      "bytes": 1912,
+      "sha256": "454a0c019ce9f6139b199bae8d4da15d7876fabde9dc001ad69e0ee066975e10"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/ACTUAL_INPUT.json",
+      "bytes": 53769,
+      "sha256": "a1de6cafd1f8bc286631feea70bcf55826e48630a162c2ca2bf3a3ec5d31b188"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/GUARDED_CONTROLLER_BINDING.json",
+      "bytes": 323,
+      "sha256": "2c8b5b8727c42e3dbdc3e60cbe75bf1210947a82892bb3e4eb841d4032803e1e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/HISTORICAL_REPLAY_PROOF.json",
+      "bytes": 173,
+      "sha256": "170e1a8b589104e3b8543f9064f6257f2db09a6e9f383748cb26a080052b36cc"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/PARTIAL.json",
+      "bytes": 54,
+      "sha256": "b2f68aa187b3d43df1b6da304f3cbeb499106600bbf93f2f46aec3256c58bbe7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/PLAN.npz",
+      "bytes": 245778,
+      "sha256": "94889ea67a5b9955839b54599ee798aa7fd89168bc0f159a2db269e3639985b0"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/PLAN_PROOF.json",
+      "bytes": 378,
+      "sha256": "6ad954eebbe1521bbd51d6046d423b3df1e8de012f2a4db283757bfb133a2f50"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/RESULT.json",
+      "bytes": 2699,
+      "sha256": "96bffb4830118aed704114e5e1a27417ec08972fd3b8f230dccdc0c71e9347bd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/BODY_COMMANDS.json",
+      "bytes": 2112813,
+      "sha256": "997e8b6d544fe6b608cf77da40c27bf0955cc1c74dfd5497ac23b500df554687"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/CONTACTS.json.gz",
+      "bytes": 984696,
+      "sha256": "9471e98925d8188630ab7f6f9ecac2dd53cc0e0e06589074defdcc550facedae"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/DECLARED_COURSE_BINDING.json",
+      "bytes": 553,
+      "sha256": "101cf34320c1e7a95943e790af92f986e256f5ef8237a6e22014303a51b08d38"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/EXACT_SENSOR_BINDING.json",
+      "bytes": 366,
+      "sha256": "18f0c820658783b162be835fdb7e5fb3399273dd0aef3cc4458707595b053319"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/INITIAL_STATE.npz",
+      "bytes": 280,
+      "sha256": "d0ed011b4284d12930a9c3a50fb9f77f56b78b1a9289e8c3b91c333be1718fbb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/MODEL_BUILD_CONTRACT.json",
+      "bytes": 91508,
+      "sha256": "01f33c95e6ec935744565e9d22a91faddb2e93cfae88a3dee1c9910f6ecca4c1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/NATIVE_TRACE.npz",
+      "bytes": 5387214,
+      "sha256": "5dee944ed2342b26b9079d853f561b10fd0c01c6994ba2221d533680cba44383"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/PATCHED_ASSEMBLY.xml",
+      "bytes": 13721,
+      "sha256": "24fec7ac17d1b0650aed8e7ca61e25e4cec12f7b151d7bcca5880cb8b4f2a013"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/REPLAY.json",
+      "bytes": 125,
+      "sha256": "40e1aec69da9e3fe7f97bb4408a2438d66c97c63f7dec62a85d90d3bfb6487bf"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/REPLAY_PROGRESS.json",
+      "bytes": 34,
+      "sha256": "979464d6d173658b23fb09e5f062bba7fae37740bf26fd3ffb8a81e69213269d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/SELECTED_NATIVE_BINDING.json",
+      "bytes": 405,
+      "sha256": "5e413a2fbbe4d5959edefc183c07b50184794a96ea1823e2dfe693873efb2a75"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/SENSORS.json.gz",
+      "bytes": 914233,
+      "sha256": "a33244b6c3b92e42f31d2aa31217321df2c7042147919ff1e1255d551168b903"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/SETUP.json",
+      "bytes": 29183,
+      "sha256": "5caf7602a9ca4b62519c87dda8c6d6b2f6135065ecdd725eed08eb511fca054a"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/paired/ACTOR_PATCH_SELECTION.json",
+      "bytes": 25317,
+      "sha256": "d6a10edea311f4a63a4b3a321f1d1fb6c7ae352a16c6f76d3ee092ebdf00efba"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/paired/ARENA_CONSTRUCTION.json",
+      "bytes": 8161,
+      "sha256": "5ca146c0440b457e93965b320d700bf74bdb3cf6e6812c5bab0f7f6d9a20bf00"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/paired/INITIALIZATION_PROVENANCE.json",
+      "bytes": 1179,
+      "sha256": "1e6ef328be935d03b2a676a06b4e63f2ab0e7fa67addcb2098a524657e547e91"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/paired/KNOWN_PRIOR_REFERENCE.json",
+      "bytes": 22339,
+      "sha256": "1d39e2681e117cee994f71cd257a87c6a34037e483dd6774fd6eb181593db9b6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/paired/MOTION_ENVELOPE_CHECK.json",
+      "bytes": 44599,
+      "sha256": "57ca3a9bc3998d94400b8ee0695dff8a9d8b85e5331e159f620a453f2d138d20"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/paired/assets/isolated_indoor.xml",
+      "bytes": 13489,
+      "sha256": "9dc7452ce087e68861f43c16b81632e623e2088403dd0a49fd5952e3ae3e5d0d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/paired/paired_reset.json",
+      "bytes": 365,
+      "sha256": "c7dc77899b06838d4a1a9839158b4be6a463ef1191506089c07a49eac7ccd571"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1082/remaining3555/physics/v648_environment.json",
+      "bytes": 1912,
+      "sha256": "454a0c019ce9f6139b199bae8d4da15d7876fabde9dc001ad69e0ee066975e10"
+    }
+  ]
+}
