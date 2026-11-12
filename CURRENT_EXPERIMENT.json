@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "READY_V1084",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
-  "active_window": null,
-  "active_entrypoint": null,
+  "active_run": "runs/v1084_pose_feedback_validation",
+  "active_window": "independent 5400s from campaign start; not yet launched",
+  "active_entrypoint": "experiments/rpccr_execution_core/configured_campaign.py",
   "automatic_additional_simulation": false,
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_BRAKING_RESERVE_V1083_REPORT.md",
+  "latest_report": "docs/RPCCR_POSE_FEEDBACK_V1084_REPORT.md",
   "latest_completed": {
     "closed": true,
     "passed": false,
@@ -145,5 +145,6 @@
     "checkpoint_requires_explicit_ready_or_blocker": true,
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
-  }
+  },
+  "next_scope": "one observed NS saved continuation + conditional full repeat; no fresh route/three-route/24"
 }

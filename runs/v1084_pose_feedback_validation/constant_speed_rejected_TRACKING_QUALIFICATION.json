@@ -1,0 +1,70 @@
+{
+  "passed": false,
+  "latest_actual_failure_replanned": {
+    "passed": false,
+    "checks": {
+      "finite": true,
+      "full_states": true,
+      "full_raw_geometry": false,
+      "full_200_stop": true,
+      "goal_upper": true,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "terminal_hold_full_cycle": true,
+      "complete2200stop": true
+    },
+    "minimum_raw_m": 0.229757532248087,
+    "goal_upper_m": 0.3747985694961507,
+    "active_native": 766,
+    "reference_progress_start": 325,
+    "reference_progress_end": 1355
+  },
+  "latest_actual_control_reconstruction_error": 0.0,
+  "saved_progress": 1355,
+  "feedback_proxy_cases": [
+    {
+      "name": "nominal",
+      "passed": true,
+      "moving_native": 1064,
+      "goal_distance_m": 0.2945538118889495,
+      "maximum_block_tracking": [
+        0.000133689297652187,
+        0.0,
+        0.0
+      ],
+      "maximum_speed": 0.12778291319034912
+    },
+    {
+      "name": "persistent_lag",
+      "passed": true,
+      "moving_native": 1087,
+      "goal_distance_m": 0.2955030308214909,
+      "maximum_block_tracking": [
+        0.00027549885164728064,
+        0.0001637301709447314,
+        0.0
+      ],
+      "maximum_speed": 0.12508777582203784
+    },
+    {
+      "name": "persistent_boost",
+      "passed": true,
+      "moving_native": 1032,
+      "goal_distance_m": 0.29301501016167386,
+      "maximum_block_tracking": [
+        0.0005050289231864534,
+        0.00026775189720296133,
+        0.0
+      ],
+      "maximum_speed": 0.1299999999995419
+    }
+  ],
+  "negative_cases": [
+    true,
+    true
+  ],
+  "models": 0,
+  "integrations": 0,
+  "scope": "Software proxy qualification, not new physical or global uncertainty guarantee"
+}

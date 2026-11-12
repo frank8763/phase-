@@ -1283,3 +1283,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - FINAL v1083 shared-core saved continuation: passed=False; counts={"vehicle_initializations": 1, "historical_replay_native": 18074, "new_actual_native": 357, "own_replay_native": 18431, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0}; no new full-route/24 acceptance. See docs/RPCCR_BRAKING_RESERVE_V1083_REPORT.md.
 
 - 用户全线复盘后明确继续，V1083共享事务化分配/128步刹停速度余量资格和两生产隔离入口已过，主+成功条件完整重复16:41:58启动，独立根至18:11:58+08不延长；原18074历史精确恢复＋3555原请求/2200尾。旧单步后备模式误用在正扰动零模型检查中修复并保留原失败。实际仍待结果，非整路/三路线/24。共享核位于experiments/rpccr_execution_core，协议见experiments/v1083_braking_reserve_validation/PROTOCOL.md；后台执行/首失败停/Stage隔离/训练0。
+
+- V1084保存态位姿闭环已冻源：每8原生实测更新并重检完整目标/2200尾，固定五平滑侧移参考按完整因果净空选择；原未偏移/停车等待/前视诊断拒绝保留。旧357实际失败输入与三误差代理/滚动检查/两隔离入口通过，3020旧冻结路径字节同一，0新模型。用户明确继续，新独立90min仅NS18074保存段主及成功条件完整重复，非新整路/三路线/24。
