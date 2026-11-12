@@ -1289,3 +1289,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - FINAL v1084 shared-core saved continuation: passed=True; counts={"vehicle_initializations": 2, "historical_replay_native": 36148, "new_actual_native": 7234, "own_replay_native": 43382, "replay_state_initializations": 2, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 1071828}; no new full-route/24 acceptance. See docs/RPCCR_POSE_FEEDBACK_V1084_REPORT.md.
 
 - V1084闭批独立回核确认：保存NS主+完整重复全部通过，各21691全状态ctrl/mocap/实际接触/发现一致、最大误差0；每次新增3617(1417运动+2200停车)，目标.310470/实际位移1.340633/最低实际.279217/坏接触0。各27审核和179完整未来证书通过，局部位置最大.994mm/完整参考横向3.356cm。解析预测墙钟144.71s对应14.17s运动仿真，未达实时。830来源/56.38MB无损分块来源解压SHA本地回读通过；guard恢复/锁空闲，远端同步待完成，无新模型。新完整整路、三路线和24未执行，不冒称整体验收。
+
+- V1084本轮唯一push成功且远端HEAD=67b8572fdb413a154ad8ff44e84d81d51153954e；同仓Release原始830来源+闭批补充9来源全部839文件远端下载/分块/解压SHA回读通过。Release草稿按tag404操作错误保留，列表定位同一草稿后只接续传输，未再次创建或push。按清理清单移除本V1084已验证备份缓存/重复分块107730536字节，源码/小摘要/恢复索引保留；没有新增模型或积分。
