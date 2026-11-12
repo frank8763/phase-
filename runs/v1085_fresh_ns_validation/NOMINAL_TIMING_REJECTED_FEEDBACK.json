@@ -1,0 +1,41 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "name": "lag",
+      "passed": false,
+      "active_native": 2732,
+      "goal_m": 0.30178046112743057,
+      "minimum_raw_m": 0.24182691687622862,
+      "maximum_local_tracking": [
+        0.0003058678037629001,
+        0.00010784520718365442,
+        0.0
+      ],
+      "maximum_reference_cross_m": 0.025607849754130593,
+      "checkpoints": 7
+    },
+    {
+      "name": "boost",
+      "passed": true,
+      "active_native": 2659,
+      "goal_m": 0.3002949892044949,
+      "minimum_raw_m": 0.2439958862949749,
+      "maximum_local_tracking": [
+        0.0005097796729379091,
+        0.00018223470322142887,
+        0.0
+      ],
+      "maximum_reference_cross_m": 0.02564468738153177,
+      "checkpoints": 7
+    }
+  ],
+  "negative_cases": [
+    true,
+    true,
+    true
+  ],
+  "models": 0,
+  "integrations": 0,
+  "scope": "Proxy feedback on observed input, no new physical navigation or global uncertainty guarantee"
+}

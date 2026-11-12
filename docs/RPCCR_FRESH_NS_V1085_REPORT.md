@@ -1,0 +1,5 @@
+# V1085 fresh NS integration prepared
+
+User explicitly started the next step after V1084 saved component main+repeat passed. V1085 uses live canonical t0 navigation, actual range-based discovery and stop, newly generated complete dynamic reference, measured-pose feedback and full2200native stop. Historical physical trace/control/causal-entry reads forbidden in production. Two isolated no-model production entries and history-read negative tests passed. Unchanged controller/predictor qualifications reused by exact SHA. Initial nominal timing failed lag feedback clearance (.241826917<.243534210); retained. Finite nominal/lag/boost scenario launch screening and independent feedback/checkpoint tests now passed, worst predicted raw.245412999. No new physical model has started at preparation.
+
+This lockstep simulation does not enforce the old .05s real-time publication gate and does not establish real-time or deployment readiness; original per-native physical/control/clearance gates remain. No automatic three-route/24/training. Actual result pending.

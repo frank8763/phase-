@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "READY_V1085",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
-  "active_window": null,
-  "active_entrypoint": null,
+  "active_run": "runs/v1085_fresh_ns_validation",
+  "active_window": "independent5400s, not started",
+  "active_entrypoint": "experiments/rpccr_execution_core/fresh_campaign.py",
   "automatic_additional_simulation": false,
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_POSE_FEEDBACK_V1084_REPORT.md",
+  "latest_report": "docs/RPCCR_FRESH_NS_V1085_REPORT.md",
   "latest_completed": {
     "closed": true,
     "passed": true,
@@ -131,5 +131,5 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Prepare fresh complete NS integration, then same-version three routes; no physical auto-start"
+  "next_scope": "Fresh canonical NS main + conditional exact full repeat; no three-route or24 automatic start"
 }
