@@ -1,0 +1,68 @@
+{
+  "passed": false,
+  "vehicle_initializations": 1,
+  "internal_factory_model_constructions": "unknown",
+  "historical_replay_native": 15290,
+  "recovery_native": 2784,
+  "own_replay_native": 18074,
+  "private_mujoco_native": 0,
+  "replay_state_initializations": 1,
+  "training_updates": 0,
+  "new_main_samples": 0,
+  "scope": "Saved original NS15290 continuation, not a new navigation main",
+  "resource_policy": {
+    "cpu_affinity": [
+      2
+    ],
+    "nice": 19,
+    "scheduler": 5,
+    "gpu_visible": "",
+    "mujoco_gl": "osmesa",
+    "io_class": 3,
+    "stage_process_access": false
+  },
+  "error": "AssertionError('COMPLETE_GOAL_ACTUAL_TRACKING')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1078_saved_ns_retimed/worker.py\", line 47, in main\n    v.step(*request);b=np.asarray(v.body());angle=b[2]-ss[i+1,2];err=np.array([np.linalg.norm(b[:2]-ss[i+1,:2]),abs(math.atan2(math.sin(angle),math.cos(angle))),abs(virtual(v.steering_sample()[:2])-ss[i+1,6])]);maximum=np.maximum(maximum,err);assert np.all(maximum<=[.04,.035,.015]),'COMPLETE_GOAL_ACTUAL_TRACKING';assert abs(b[3])<=.13 and abs(b[4])<=.16,'ACTUAL_BODY_CAP'\nAssertionError: COMPLETE_GOAL_ACTUAL_TRACKING\n",
+  "physical": {
+    "actual_native": 18074,
+    "fully_recorded_native": 18074,
+    "minimum_actual_clearance_m": 0.2792173687322129,
+    "minimum_self_margin_m": 0.009056893977870517,
+    "bad_contacts": 0,
+    "final_body": [
+      -0.7481963909641415,
+      -1.4104621835478408,
+      -1.6491722315630284,
+      0.11904765075325324,
+      -0.07107032929138185
+    ],
+    "final_translation_speed_m_s": 0.1213935533586743,
+    "root_guard_native_count": 18074,
+    "goal_distance_m": 1.6362518823431544,
+    "first_actor_detection": {
+      "native_tick": 9190,
+      "sim_time": 91.90000000001011,
+      "xy": [
+        -0.7703733307437078,
+        1.7146014518210466
+      ],
+      "rays": [
+        30
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 3.1474498840801965
+  },
+  "evidence_saved": true,
+  "replay": {
+    "replay_native": 18074,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "closed": true,
+  "parent_returncode": 1,
+  "guard_original": true,
+  "source_unchanged": true,
+  "same_absolute_and_monotonic_root": true
+}

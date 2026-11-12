@@ -10945,7 +10945,7 @@
     "guard_original": true,
     "execution_lock_idle": true
   },
-  "latest_report": "docs/RPCCR_COMPLETE_GOAL_RETIMING_V1076_REPORT.md",
+  "latest_report": "docs/RPCCR_SPEED125_V1077_V1079_REPORT.md",
   "v1076_complete_goal_qualification": {
     "closed": true,
     "analytical_complete_goal_passed": true,
@@ -10965,5 +10965,59 @@
     "guard_original": true,
     "execution_lock_idle": true,
     "next": "Actual .125 speed/steering response and full-state replay component before single-route integration"
+  },
+  "v1077_speed_response": {
+    "closed": true,
+    "passed": true,
+    "response_5_passed": true,
+    "attempted": [
+      "response_01",
+      "response_02",
+      "response_03",
+      "response_04",
+      "response_05"
+    ],
+    "unexecuted": [],
+    "error": null,
+    "counts": {
+      "vehicle_initializations": 5,
+      "response_native": 11625,
+      "own_replay_native": 11625,
+      "replay_state_initializations": 5,
+      "private_mujoco_native": 0,
+      "historical_replay_native": 0,
+      "training_updates": 0
+    },
+    "guard_original": true,
+    "source_unchanged": true,
+    "whole_route_passed": false,
+    "new24_executed": false,
+    "eligible_saved_NS_continuation": true
+  },
+  "v1078_saved_continuation": {
+    "closed": true,
+    "passed": false,
+    "reason": "AssertionError('COMPLETE_GOAL_ACTUAL_TRACKING')",
+    "historical_replay_native": 15290,
+    "new_recovery_native": 2784,
+    "own_replay_native": 18074,
+    "actual_goal_distance": 1.6362518823431544,
+    "minimum_actual_clearance": 0.2792173687322129,
+    "replay_error": 0.0,
+    "root_closed": true,
+    "guard_original": true
+  },
+  "v1079_dual_steering": {
+    "zero_model": true,
+    "saved_regression_passed": true,
+    "original_failure_preserved": true,
+    "old_steering_error": 0.015070267673743531,
+    "new_steering_error": 0.006989259743316517,
+    "full_goal_analytical_qualified": true,
+    "next_two_transient_preflights_passed": true,
+    "remaining3555_preflight_passed": true,
+    "new_physical_window_opened": false,
+    "physical_ready": false,
+    "training_updates": 0
   }
 }

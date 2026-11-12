@@ -1,0 +1,52 @@
+{
+  "component_passed": false,
+  "evidence_and_diagnosis_audit_passed": true,
+  "checks": {
+    "all_native_recorded": true,
+    "historical_state_ctrl_mocap": true,
+    "historical_actual_ranges": true,
+    "historical_contacts": true,
+    "clearance": true,
+    "self_margin": true,
+    "no_bad_contacts": true,
+    "contact_coverage": true,
+    "legal_ctrl": true,
+    "legal_rate": true,
+    "actual_ctrl_owner": true,
+    "actual_requests_match": true,
+    "stopped_at_first_tracking_anomaly": true,
+    "all_state_replay": true,
+    "offline_actor_in_original_causal_support": true,
+    "review_pending_restored": true,
+    "frozen_source_unchanged": true
+  },
+  "maximum_local_errors": [
+    0.006332588146355327,
+    0.0029518882942907165,
+    0.015070267673743531
+  ],
+  "last_local_error": [
+    0.0063220598612525585,
+    0.0021718876702143675,
+    0.015070267673743531
+  ],
+  "steering_gate": 0.015,
+  "position_gate": 0.04,
+  "heading_gate": 0.035,
+  "front_control_target_error": 0.0,
+  "controller_reconstruction_error": 2.220446049250313e-16,
+  "history_state_error": 0.0,
+  "actual_goal_distance_m": 1.6362518823431544,
+  "actual_speed_at_stop_of_simulation": 0.1213935533586743,
+  "full2200_tail_completed": false,
+  "minimum_actual_clearance_m": 0.2792173687322129,
+  "causal_domain_offline_max_violation": -0.0043022042016495066,
+  "planned_recovery_native": 6339,
+  "executed_recovery_native": 2784,
+  "unexecuted_recovery_native": 3555,
+  "historical_replay_native": 15290,
+  "own_replay_native": 18074,
+  "models": 0,
+  "integrations": 0,
+  "original_failure_unchanged": true
+}

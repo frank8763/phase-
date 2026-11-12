@@ -1,0 +1,210 @@
+{
+  "response_5_passed": true,
+  "saved_continuation_passed": false,
+  "saved_component_not_new_main": true,
+  "new_fresh_whole_route_passed": false,
+  "new24_executed": false,
+  "response_counts": {
+    "vehicle_initializations": 5,
+    "response_native": 11625,
+    "own_replay_native": 11625,
+    "replay_state_initializations": 5,
+    "private_mujoco_native": 0,
+    "historical_replay_native": 0,
+    "training_updates": 0
+  },
+  "continuation_counts": {
+    "vehicle_initializations": 1,
+    "historical_replay_native": 15290,
+    "recovery_native": 2784,
+    "own_replay_native": 18074,
+    "private_mujoco_native": 0,
+    "replay_state_initializations": 1,
+    "training_updates": 0
+  },
+  "goal_distance": 1.6362518823431544,
+  "continuation_net_m": null,
+  "local_tracking": null,
+  "physical": {
+    "actual_native": 18074,
+    "fully_recorded_native": 18074,
+    "minimum_actual_clearance_m": 0.2792173687322129,
+    "minimum_self_margin_m": 0.009056893977870517,
+    "bad_contacts": 0,
+    "final_body": [
+      -0.7481963909641415,
+      -1.4104621835478408,
+      -1.6491722315630284,
+      0.11904765075325324,
+      -0.07107032929138185
+    ],
+    "final_translation_speed_m_s": 0.1213935533586743,
+    "root_guard_native_count": 18074,
+    "goal_distance_m": 1.6362518823431544,
+    "first_actor_detection": {
+      "native_tick": 9190,
+      "sim_time": 91.90000000001011,
+      "xy": [
+        -0.7703733307437078,
+        1.7146014518210466
+      ],
+      "rays": [
+        30
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 3.1474498840801965
+  },
+  "replay": {
+    "replay_native": 18074,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "error": "AssertionError('COMPLETE_GOAL_ACTUAL_TRACKING')",
+  "guard_original": true,
+  "execution_lock_idle": true,
+  "same_root": true,
+  "high_speed_model_fit_tasks": [
+    "response_01",
+    "response_03"
+  ],
+  "high_speed_held_out_tasks": [
+    "response_02",
+    "response_04",
+    "response_05"
+  ],
+  "calibrated_speed_system_id_coefficients": 2,
+  "dual_steering_zero_model_qualified": true,
+  "dual_steering_actual_not_run": true,
+  "sac_updates": 0,
+  "hardware_steps": 0,
+  "failure_diagnosis": {
+    "component_passed": false,
+    "evidence_and_diagnosis_audit_passed": true,
+    "checks": {
+      "all_native_recorded": true,
+      "historical_state_ctrl_mocap": true,
+      "historical_actual_ranges": true,
+      "historical_contacts": true,
+      "clearance": true,
+      "self_margin": true,
+      "no_bad_contacts": true,
+      "contact_coverage": true,
+      "legal_ctrl": true,
+      "legal_rate": true,
+      "actual_ctrl_owner": true,
+      "actual_requests_match": true,
+      "stopped_at_first_tracking_anomaly": true,
+      "all_state_replay": true,
+      "offline_actor_in_original_causal_support": true,
+      "review_pending_restored": true,
+      "frozen_source_unchanged": true
+    },
+    "maximum_local_errors": [
+      0.006332588146355327,
+      0.0029518882942907165,
+      0.015070267673743531
+    ],
+    "last_local_error": [
+      0.0063220598612525585,
+      0.0021718876702143675,
+      0.015070267673743531
+    ],
+    "steering_gate": 0.015,
+    "position_gate": 0.04,
+    "heading_gate": 0.035,
+    "front_control_target_error": 0.0,
+    "controller_reconstruction_error": 2.220446049250313e-16,
+    "history_state_error": 0.0,
+    "actual_goal_distance_m": 1.6362518823431544,
+    "actual_speed_at_stop_of_simulation": 0.1213935533586743,
+    "full2200_tail_completed": false,
+    "minimum_actual_clearance_m": 0.2792173687322129,
+    "causal_domain_offline_max_violation": -0.0043022042016495066,
+    "planned_recovery_native": 6339,
+    "executed_recovery_native": 2784,
+    "unexecuted_recovery_native": 3555,
+    "historical_replay_native": 15290,
+    "own_replay_native": 18074,
+    "models": 0,
+    "integrations": 0,
+    "original_failure_unchanged": true
+  },
+  "dual_steering_saved_regression": {
+    "passed": true,
+    "scope": "Saved-data predictor qualification only; original V1078 remains failed",
+    "rows": [
+      {
+        "case": "response_01",
+        "held_out": false,
+        "passed": true,
+        "maximum_local_error": [
+          0.005964264237232854,
+          0.004033212020905452,
+          0.0071900002090912185
+        ]
+      },
+      {
+        "case": "response_02",
+        "held_out": true,
+        "passed": true,
+        "maximum_local_error": [
+          0.004054326522667335,
+          0.0016148546092698002,
+          0.004022075742903006
+        ]
+      },
+      {
+        "case": "response_03",
+        "held_out": false,
+        "passed": true,
+        "maximum_local_error": [
+          0.0037548005086435743,
+          8.029105408868809e-05,
+          2.3368272854367278e-05
+        ]
+      },
+      {
+        "case": "response_04",
+        "held_out": true,
+        "passed": true,
+        "maximum_local_error": [
+          0.0039921589187609016,
+          0.001446783747749647,
+          0.004021813463140088
+        ]
+      },
+      {
+        "case": "response_05",
+        "held_out": true,
+        "passed": true,
+        "maximum_local_error": [
+          0.005845440747315249,
+          0.003839895439409435,
+          0.007153898753806898
+        ]
+      },
+      {
+        "case": "unfitted_saved_recovery_2784",
+        "held_out": true,
+        "baseline_failed": true,
+        "baseline_steering_error": 0.015070267673743531,
+        "passed": true,
+        "maximum_local_error": [
+          0.006288348798215618,
+          0.0028154399667970065,
+          0.006989259743316517
+        ]
+      }
+    ],
+    "models": 0,
+    "mujoco_integrations": 0,
+    "sac_updates": 0,
+    "physical_controller_changed": false,
+    "new_physical_window_opened": false,
+    "physical_ready": false
+  },
+  "next_remaining3555_software_qualified": true,
+  "new_root_opened_after_failure": false
+}

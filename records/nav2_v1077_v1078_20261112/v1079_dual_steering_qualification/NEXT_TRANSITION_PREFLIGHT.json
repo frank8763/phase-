@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "target": -0.42722137342572125,
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "full_states": true,
+        "full_raw_geometry": true,
+        "full_200_stop": true,
+        "speed_yaw": true,
+        "legal_ctrl": true,
+        "legal_slew": true
+      },
+      "minimum_raw_m": 0.3194557877372536,
+      "native": 2605,
+      "moving_straight_before_turn": 200,
+      "turn_native": 80,
+      "moving_return_straight_native": 125,
+      "stop_native": 2200
+    },
+    {
+      "target": 0.42722137342572125,
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "full_states": true,
+        "full_raw_geometry": true,
+        "full_200_stop": true,
+        "speed_yaw": true,
+        "legal_ctrl": true,
+        "legal_slew": true
+      },
+      "minimum_raw_m": 0.35159981911747396,
+      "native": 2605,
+      "moving_straight_before_turn": 200,
+      "turn_native": 80,
+      "moving_return_straight_native": 125,
+      "stop_native": 2200
+    }
+  ],
+  "scope": "Next two fixed .125 moving turn-return components software only, original NS t0",
+  "models": 0,
+  "integrations": 0,
+  "physical_window_opened": false,
+  "not_a_whole_route": true
+}
