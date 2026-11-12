@@ -4,9 +4,9 @@
   "target_journal": "Robotics and Autonomous Systems",
   "active_entrypoint": null,
   "decision_freeze": "experiments/v1067_causal_replan_brake_reserve/SOURCE_FREEZE.json",
-  "source_revision": "V1067_CAUSAL_REPLAN_BRAKE_RESERVE",
-  "protocol": "experiments/v1067_causal_replan_brake_reserve/PROTOCOL.md",
-  "report": "docs/RPCCR_CAUSAL_RECOVERY_V1067_REPORT.md",
+  "source_revision": "V1073_ARCHIVED_REAL_SAC_SENSOR_COMPONENT",
+  "protocol": "experiments/v1073_live_sac_dependency_entry/PROTOCOL.md",
+  "report": "docs/RPCCR_REAL_SAC_SENSOR_V1073_REPORT.md",
   "execution_window_closed": true,
   "selected_configuration_arguments": [],
   "output_name_rule": "new --name for each run; read current bounded protocol and budget before actual execution",
@@ -10917,5 +10917,12 @@
     "preparation_seconds": 896.333651304245,
     "models": 0,
     "meaning_of_models": "This summary creation is zero-model; all3 archived model loads are counted above"
+  },
+  "current_sac_status": {
+    "real_observation_component_qualified": true,
+    "policy_proposal_gate_qualified": true,
+    "actual_control_executed": false,
+    "navigation_worker_integrated": false,
+    "training_updates": 0
   }
 }
