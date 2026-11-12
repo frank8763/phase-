@@ -1,0 +1,4 @@
+{
+  "error": "AssertionError('FIRST_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1089_route_scene_contract/campaign.py\", line 61, in main\n    for task in tasks[:4]:run(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1089_route_scene_contract/campaign.py\", line 48, in run\n    rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE\n"
+}

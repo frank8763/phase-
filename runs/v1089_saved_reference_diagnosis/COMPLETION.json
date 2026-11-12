@@ -1,0 +1,131 @@
+{
+  "closed": true,
+  "diagnosis_complete": true,
+  "old_failure_reproduced": true,
+  "original_full_reference_gate_passed": false,
+  "root_native": 20160,
+  "actual_input_and_ctrl_reconstructed": true,
+  "maximum_control_reconstruction_error": 2.220446049250313e-16,
+  "unchanged_original_static_search": {
+    "passed": true,
+    "models": 0,
+    "integrations": 0,
+    "status": "ORIGINAL_PYTHON_FINITE_PROGRESS_SOURCE_NOT_ARRIVAL",
+    "terminated_by_wall": false,
+    "expanded": 5000,
+    "search_wall_s": 1.868592431,
+    "best_goal_distance_m": 3.6028563919367698,
+    "generated": 8119,
+    "rejected": 10225,
+    "proposal_only": true,
+    "original_goal": [
+      4.0,
+      -2.0
+    ],
+    "required_raw_m": 0.24353421020226934,
+    "source_native_tick": null,
+    "root_native_tick": 20160,
+    "functional_goal_source": false,
+    "finite_progress_never_counts_as_arrival": true,
+    "actions": [
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": -0.42722137342572125,
+        "speed": 0.08,
+        "ticks": 375
+      },
+      {
+        "kind": "wait",
+        "gear": 0,
+        "target": 0.0,
+        "ticks": 200
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": -0.42722137342572125,
+        "speed": 0.08,
+        "ticks": 125
+      },
+      {
+        "kind": "wait",
+        "gear": 0,
+        "target": 0.0,
+        "ticks": 200
+      },
+      {
+        "kind": "move",
+        "gear": -1,
+        "target": 0.2136106867128606,
+        "speed": -0.03,
+        "ticks": 125
+      },
+      {
+        "kind": "move",
+        "gear": -1,
+        "target": 0.42722137342572125,
+        "speed": -0.03,
+        "ticks": 125
+      },
+      {
+        "kind": "move",
+        "gear": -1,
+        "target": -0.21361068671286063,
+        "speed": -0.03,
+        "ticks": 125
+      },
+      {
+        "kind": "wait",
+        "gear": 0,
+        "target": 0.0,
+        "ticks": 200
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": -0.42722137342572125,
+        "speed": 0.08,
+        "ticks": 125
+      },
+      {
+        "kind": "wait",
+        "gear": 0,
+        "target": 0.0,
+        "ticks": 200
+      }
+    ],
+    "checks": {
+      "finite": true,
+      "full_states": true,
+      "full_raw_geometry": true,
+      "full_200_stop": true,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "terminal_full_cycle_hold": true,
+      "all_gear_switches_stopped": true,
+      "terminal_additional_observation_reserve": true
+    },
+    "original_goal_profile_checks": {
+      "finite": true,
+      "full_states": true,
+      "full_raw_geometry": true,
+      "full_200_stop": true,
+      "goal_upper": false,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "terminal_full_cycle_hold": true,
+      "all_gear_switches_stopped": true
+    },
+    "minimum_raw_m": 0.2491681500056268,
+    "terminal_goal_upper_m": 3.6828563919367703,
+    "analytical_native": 1800,
+    "wall_s": 2.0151562199998807
+  },
+  "models": 0,
+  "integrations": 0,
+  "no_model_restart": true,
+  "wall_s": 3.4414546829993924
+}

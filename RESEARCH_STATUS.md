@@ -1329,3 +1329,9 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - 用户选定11月13日09:00硬截止与临时8GiB：V1089先WE/EW固定主+重复全门/归档过后条件固定旧未执行24池1011062001–24及1/9/17重复。三处路线模型合同修正，科学导航/控制/预测全同V1085_entry/V1087；真实保存WE正例、8篡改拒绝、55任务隔离绑定、非NS模型归档SHA、boot/PID正负例及操作真实导入资格过。3119旧冻源不改，0新模型冻源，旧失败保持。后台离线顺序父驱动+仅本批PID看护，首功能/安全证据异常停，不自动修补或新池；协议experiments/v1089_route_scene_contract/PROTOCOL.md。
 
 - V1089离线通宵已于2026-11-12T21:37:15.107207+08:00启动，唯一截止2026-11-13 09:00+08/1794531600，master24208/watchdog24210，CPU2最低优先/GPU空/Stage隔离。首WE真实初始化443数组全核及登记actor归一SHA已PASS，突破旧0积分入口；主进行中。三路线全部原门/独立审核/归档回读后才固定24t0/24主/3重复，临时8GiB，首异常停/冻结后不改，不依赖网络，不延时。
+
+- FINAL V1089 overnight: development=False confirmation=False; {"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 20160, "own_replay_native": 20160, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 0}; old failures preserved. See docs/RPCCR_OVERNIGHT_V1089_REPORT.md.
+
+- V1089首WE主20160实际+20160自身重放误差0后功能失败：发现15560→完整2200停车/2400仅观测→20160实际根，原5000展开静态规划未给完整合格目标参考，LIVE_COMPLETE_STATIC_REFERENCE_REQUIRED；目标余3.883386/最低实际.276985/坏接触0。非模型入口拒绝，443数组真实模型门已过；恢复live解析0不含静态规划，3剩余开发导航/24/重复未执行。首次功能失败停，父/watchdog退出、原guard恢复/锁空闲，归档全源解压SHA通过。只后台120s零模型保存根原规划诊断，不重启模型，原NS成功保持。
+
+- V1089保存根零模型原配置复现完成：20160ctrl重建误差2.22e-16，原5000展开/1.868592s非wall终止，局部源全部控制安全停车过但goal_upper=false/末上界3.682856m，故完整目标参考准入拒绝。0模型积分；后台父/watchdog均退出，LEDGER/HANDOFF闭批，无下一物理授权。
