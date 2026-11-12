@@ -10842,5 +10842,80 @@
     "physical_ready": false,
     "live_vehicle_execution": false,
     "training_updates": 0
+  },
+  "v1073_sensor_component": {
+    "passed": true,
+    "scope": "Archived actual sensing -> frozen SAC proposal -> static complete-tail gate only",
+    "component_counts": {
+      "model_initializations": 3,
+      "archived_state_restorations": 3,
+      "navigation_native": 0,
+      "replay_native": 0,
+      "private_mujoco_native": 0,
+      "training_updates": 0,
+      "original_pre_model_GL_failure_initializations": 0
+    },
+    "sensor_success": {
+      "passed": true,
+      "model_initializations": 1,
+      "archived_state_restorations": 1,
+      "navigation_native": 0,
+      "replay_native": 0,
+      "private_mujoco_native": 0,
+      "training_updates": 0,
+      "real_vehicle_steps": 0,
+      "resource_policy": {
+        "cpu_affinity": [
+          2
+        ],
+        "nice": 19,
+        "scheduler": 5,
+        "gpu_visible": "",
+        "mujoco_gl": "osmesa",
+        "io_class": 3,
+        "stage_process_access": false
+      },
+      "status": "ARCHIVED_REAL_SENSOR_TO_SAC_AND_SAFETY_GATE_CONNECTED",
+      "camera_names": [
+        "d435i_depth_camera"
+      ],
+      "legacy_camera_id": -1,
+      "bound_camera_id": 0,
+      "primary32_parity": {
+        "raw_error": 0.0,
+        "corrupted_error": 0.0
+      },
+      "depth_min_m": 0.6931794285774231,
+      "depth_max_m": 520.4293823242188,
+      "depth24_variance": 0.0540316104888916,
+      "policy_observation_dimensions": 186,
+      "sac_admitted": true,
+      "sac_executed": 0,
+      "goal_reached": false,
+      "physical_state_unchanged": true,
+      "policy_sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f",
+      "model_sha256": "af6f0c393382a255afb35ff1ae0db5256100705c85cc264d25bdc3541966db53",
+      "waypoint_scope": "Declared public goal-direction test waypoint, not a navigation run",
+      "richer_observation_contract": true,
+      "current_worker_integration_verified": false,
+      "closed": true,
+      "parent_returncode": 0,
+      "guard_original": true,
+      "old_failures_preserved": true,
+      "root_window_not_extended": true
+    },
+    "first_failures_preserved": true,
+    "source_no_scientific_change_across_entry_fixes": true,
+    "guard_original": true,
+    "execution_lock_idle": true,
+    "sac_executed": 0,
+    "navigation_started": false,
+    "live_worker_integration_verified": false,
+    "physical_ready_for_navigation": false,
+    "preparation_started_unix": 1794457750.0,
+    "sensor_success_unix": 1794458646.3336513,
+    "preparation_seconds": 896.333651304245,
+    "models": 0,
+    "meaning_of_models": "This summary creation is zero-model; all3 archived model loads are counted above"
   }
 }

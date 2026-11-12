@@ -1,0 +1,24 @@
+{
+  "passed": false,
+  "model_initializations": 1,
+  "archived_state_restorations": 1,
+  "navigation_native": 0,
+  "replay_native": 0,
+  "private_mujoco_native": 0,
+  "training_updates": 0,
+  "real_vehicle_steps": 0,
+  "resource_policy": {
+    "cpu_affinity": [
+      2
+    ],
+    "nice": 19,
+    "scheduler": 5,
+    "gpu_visible": "",
+    "mujoco_gl": "osmesa",
+    "io_class": 3,
+    "stage_process_access": false
+  },
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1071_live_sac_observation/worker.py\", line 24, in <module>\n    corruption=load('v1071_original_sensor_corruption',R/'experiments/v858_nav2_verified/sensor_model.py');original_sensor=load('v1071_original_primary_lidar',R/'runtime/mk-mini/training/phase14_lidar_depth_nav/envs/phase14_sensor_utils.py');primary_comparison={}\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1071_live_sac_observation/measurements.py\", line 12, in load\n    s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m\n  File \"<frozen importlib._bootstrap_external>\", line 879, in exec_module\n  File \"<frozen importlib._bootstrap_external>\", line 1016, in get_code\n  File \"<frozen importlib._bootstrap_external>\", line 1073, in get_data\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/sensor_model.py'\n",
+  "closed": true
+}

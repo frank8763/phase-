@@ -1,0 +1,26 @@
+{
+  "passed": false,
+  "model_initializations": 0,
+  "archived_state_restorations": 0,
+  "navigation_native": 0,
+  "replay_native": 0,
+  "private_mujoco_native": 0,
+  "training_updates": 0,
+  "real_vehicle_steps": 0,
+  "resource_policy": {
+    "cpu_affinity": [
+      2
+    ],
+    "nice": 19,
+    "scheduler": 5,
+    "gpu_visible": "",
+    "mujoco_gl": "osmesa",
+    "io_class": 3,
+    "stage_process_access": false
+  },
+  "error": "AttributeError(\"'NoneType' object has no attribute 'glGetError'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1071_live_sac_observation/worker.py\", line 14, in <module>\n    import mujoco as mj\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/__init__.py\", line 68, in <module>\n    from mujoco.rendering.classic.renderer import Renderer  # pytype: disable=import-error\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/rendering/classic/renderer.py\", line 20, in <module>\n    from mujoco.rendering.classic import gl_context\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/rendering/classic/gl_context.py\", line 38, in <module>\n    from mujoco.osmesa import GLContext as _GLContext\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/osmesa/__init__.py\", line 31, in <module>\n    from OpenGL import GL\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/GL/__init__.py\", line 4, in <module>\n    from OpenGL.GL.VERSION.GL_1_1 import *\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/GL/VERSION/GL_1_1.py\", line 14, in <module>\n    from OpenGL.raw.GL.VERSION.GL_1_1 import *\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/raw/GL/VERSION/GL_1_1.py\", line 7, in <module>\n    from OpenGL.raw.GL import _errors\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/raw/GL/_errors.py\", line 4, in <module>\n    _error_checker = _ErrorChecker( _p, _p.GL.glGetError )\nAttributeError: 'NoneType' object has no attribute 'glGetError'\n",
+  "closed": true,
+  "parent_returncode": 1,
+  "guard_original": true
+}
