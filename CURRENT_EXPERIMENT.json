@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "READY_FOR_AUTHORIZED_OVERNIGHT",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
+  "active_run": "runs/v1089_route_scene_contract",
   "active_window": null,
-  "active_entrypoint": null,
+  "active_entrypoint": "experiments/v1089_route_scene_contract/campaign.py",
   "automatic_additional_simulation": false,
-  "next_physical_authorized": false,
+  "next_physical_authorized": true,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_REMAINING_ROUTES_V1088_REPORT.md",
@@ -150,7 +150,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Prepare route-aware scene model contract in worker, audit and archiver; no automatic frozen-batch repair or model restart.",
+  "next_scope": "One fixed offline campaign through09:00: remaining two pairs then conditional locked24; 8GiB temporary, first failure stops",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -259,5 +259,10 @@
       "repeat_east_west"
     ],
     "navigation_restart_authorized": false
+  },
+  "overnight_authorization": {
+    "deadline_unix": 1794531600,
+    "temporary_limit_bytes": 8589934592,
+    "three_routes_gate_before24": true
   }
 }
