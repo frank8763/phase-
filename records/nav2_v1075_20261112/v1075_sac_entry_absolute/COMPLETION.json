@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "vehicle_initializations": 1,
+  "replay_state_initializations": 1,
+  "navigation_native": 2325,
+  "own_replay_native": 2325,
+  "private_mujoco_native": 0,
+  "historical_replay_native": 0,
+  "training_updates": 0,
+  "sac_proposed": 1,
+  "sac_admitted": 1,
+  "sac_executed_native": 125,
+  "scope": "SAC controller component, not a route or goal trial",
+  "resource_policy": {
+    "cpu_affinity": [
+      2
+    ],
+    "nice": 19,
+    "scheduler": 5,
+    "gpu_visible": "",
+    "mujoco_gl": "osmesa",
+    "io_class": 3,
+    "stage_process_access": false
+  },
+  "maximum_local_tracking": [
+    0.0019707442883533863,
+    0.0005844901191067518,
+    0.006021431169334637
+  ],
+  "actual_motion_m": 0.09014966755544236,
+  "complete_stop_native": 2200,
+  "actual_control_owner": "V1035 signed Adapter via vehicle.step only",
+  "policy_sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f",
+  "complete_prefix_source": "SAC combined action, original goal-direction nominal",
+  "initial_model_sha256": "af6f0c393382a255afb35ff1ae0db5256100705c85cc264d25bdc3541966db53",
+  "physical": {
+    "actual_native": 2325,
+    "fully_recorded_native": 2325,
+    "minimum_actual_clearance_m": 0.30925453597911723,
+    "minimum_self_margin_m": 0.009307787422738967,
+    "bad_contacts": 0,
+    "final_body": [
+      -3.909868375389238,
+      -1.9981964464572888,
+      0.0012153524729730037,
+      -4.389798037118885e-06,
+      -2.646779310694811e-07
+    ],
+    "final_translation_speed_m_s": 4.391417881156829e-06,
+    "root_guard_native_count": 2325,
+    "goal_distance_m": 7.909868581006144,
+    "first_actor_detection": null,
+    "actual_travel_after_detection_m": 0.0
+  },
+  "evidence_saved": true,
+  "replay": {
+    "replay_native": 2325,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "closed": true,
+  "parent_returncode": 0,
+  "guard_original": true,
+  "source_unchanged": true
+}

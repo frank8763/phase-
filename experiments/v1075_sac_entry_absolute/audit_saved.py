@@ -1,0 +1,24 @@
+"""Independent saved-data audit: never loads vehicle/model or integrates."""
+import sys,importlib.abc,gzip,math,json
+from pathlib import Path
+R=Path(__file__).resolve().parents[2];sys.path.insert(0,str(R/'experiments/v1074_sac_native_control'));from common import *
+paths()
+class NoPhysics(importlib.abc.MetaPathFinder):
+ def find_spec(self,name,*args):
+  if name.split('.')[0]in {'mujoco','physical','vehicle','rclpy'}:raise AssertionError('ZERO_MODEL_AUDIT '+name)
+sys.meta_path.insert(0,NoPhysics());from resource_policy import apply
+apply()
+import numpy as np
+from kernel import Predictor,PARAMETERS,initial,virtual,ref,REQUIRED
+from integration import ShieldedSAC
+from observation import BLOCKS,assemble
+out=RAW/'sac_prefix125_stop2200';physics=out/'physics';result=json.loads((R/'runs/v1075_sac_entry_absolute/COMPLETION.json').read_text());setup=json.loads((physics/'SETUP.json').read_text());plan=json.loads((out/'PLAN.json').read_text());policy=json.loads((out/'POLICY.json').read_text());z=np.load(physics/'NATIVE_TRACE.npz');commands=np.asarray(json.loads((physics/'BODY_COMMANDS.json').read_text()));n=len(z['qpos']);assert n==2325
+p=Predictor(setup,dict(state=[0.]*8,last_ctrl=[0.]*4,integral=0.,virtual_rate=.6),PARAMETERS);ctrl=z['ctrl'][:,setup['actuator_ids']];cerr=0.
+for c,u in zip(commands,ctrl):cerr=max(cerr,float(abs(u-p.adapter.compute(c[1],c[2],c[3],c[4],c[5])).max()))
+frame=np.load(out/'SAC_OBSERVATION.npz');shield=ShieldedSAC();obs=assemble({k:frame[k]for k in BLOCKS},shield.policy.base,0,0);new=shield.propose(setup,plan['packet'],None,{k:frame[k]for k in BLOCKS},0,[.08,0.,False],prefix_native=125);rr=np.asarray(new['certificate']['planned_body_requests']);ss=np.asarray(new['certificate']['state_path']);predictionerr=float(abs(ss-np.asarray(plan['state_path'])).max());yaw=np.arctan2(2*(z['qpos'][:,3]*z['qpos'][:,6]+z['qpos'][:,4]*z['qpos'][:,5]),1-2*(z['qpos'][:,5]**2+z['qpos'][:,6]**2));angles=yaw-ss[1:,2];maximum=[float(np.linalg.norm(z['qpos'][:,:2]-ss[1:,:2],axis=1).max()),float(abs(np.arctan2(np.sin(angles),np.cos(angles))).max()),float(abs(np.array([virtual(row)for row in z['qpos'][:,setup['steering_qpos_addresses']]])-ss[1:,6]).max())]
+with gzip.open(physics/'CONTACTS.json.gz','rt')as f:contacts=json.load(f)
+with gzip.open(physics/'SENSORS.json.gz','rt')as f:sensors=json.load(f)
+rate=np.asarray(setup['slew_per_second'])*.01;limits=np.asarray(setup['limits']);checks=dict(complete_record=n==len(commands)==result['navigation_native']==result['physical']['root_guard_native_count']==result['physical']['fully_recorded_native'],monotonic_clock=np.max(abs(z['time']-np.arange(1,n+1)*.01))<=1e-7,physical_clearance=float(z['clearance'].min())>=.15-1e-8,full_self_margin=float(z['self_margin'].min())>=-1e-10,no_bad_contacts=not any(c[2]in['robot_obstacle_contact','robot_obstacle_penetration','unknown_contact','robot_self_contact']for rows in contacts for c in rows),contacts_complete=len(contacts)==n+1,legal_ctrl=bool((ctrl>=limits[:,0]-1e-10).all()and(ctrl<=limits[:,1]+1e-10).all()),legal_rate=bool((abs(np.diff(np.vstack([np.zeros(4),ctrl]),axis=0))<=rate+1e-10).all()),actual_ctrl_reconstruction=cerr<=1e-10,policy_observation=np.array_equal(obs,frame['observation']),policy_action=new['proposal']==policy['proposal'],actual_SAC_body_requests=np.array_equal(commands[:,[1,2,5]],rr),plan_reconstruction=predictionerr<=1e-8 and new['admitted'],local_tracking=bool(np.all(np.array(maximum)<=[.04,.035,.015])),full2200zero=np.array_equal(commands[-2200:,[1,2,5]],np.zeros((2200,3))),actual_last328_stopped=float(np.linalg.norm(z['qvel'][-328:,:2],axis=1).max())<=.03 and abs(z['qvel'][-328:,5]).max()<=.03,all_state_replay=result['replay']['passed']and result['own_replay_native']==n and result['replay']['maximum_qpos_qvel_ctrl_mocap_error']<=1e-8,source_unchanged=result['source_unchanged'],review_pending_original=result['guard_original'],sensor_calls=[x['native_tick']for x in sensors]==[0,0,0]+list(range(5,n+1,5)),same_canonical_model=setup['model_sha256']=='af6f0c393382a255afb35ff1ae0db5256100705c85cc264d25bdc3541966db53')
+checks={k:bool(v)for k,v in checks.items()}
+audit=dict(passed=result['passed']and all(checks.values()),checks=checks,zero_model=True,models=0,integrations=0,controller_reconstruction_error=cerr,prediction_reconstruction_error=predictionerr,maximum_local_tracking=maximum,discovery_chain_not_tested=True,whole_route_not_tested=True,minimum_actual_clearance_m=float(z['clearance'].min()),counts=dict(canonical_vehicle_initializations=1,internal_factory_model_constructions='not instrumented; unknown',native_actual=n,own_replay=n,replay_state_initializations=1,private=0,historical_replay=0,training_updates=0),original_entry_failure_kept=True)
+dump(R/'runs/v1075_sac_entry_absolute/FINAL_INDEPENDENT_AUDIT.json',audit);print(json.dumps(audit));assert audit['passed']

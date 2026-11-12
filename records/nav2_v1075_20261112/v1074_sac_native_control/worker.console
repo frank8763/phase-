@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1074_sac_native_control/worker.py", line 48, in <module>
+    if __name__=='__main__':sys.exit(main())
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1074_sac_native_control/worker.py", line 14, in main
+    task=json.loads(Path(sys.argv[1]).read_text());window=json.loads((O/'ROUND_WINDOW.json').read_text());approval=json.loads((O/'APPROVAL.json').read_text());assert approval['models_authorized']and task in json.loads((C/'TASKS.json').read_text())and task['task_id']in approval['allowed_task_ids'];assert time.time()<window['absolute_deadline_unix']and time.monotonic()<window['hard_stop_monotonic'];assert all(sha(R/p)==h for p,h in json.loads((C/'SOURCE_FREEZE.json').read_text())['files'].items());end=min(window['absolute_deadline_unix']-30,time.time()+300);lock=(R/'runs/v648_static_unknown/execution.lock').open('a+');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);out=Path(task['output']);assert out==RAW/task['task_id'];out.mkdir(parents=True,exist_ok=False);v=None;reader=None;creating=False;inside=False;f=factory();result=dict(passed=False,vehicle_initializations=0,replay_state_initializations=0,navigation_native=0,own_replay_native=0,private_mujoco_native=0,historical_replay_native=0,training_updates=0,sac_proposed=0,sac_admitted=0,sac_executed_native=0,scope='SAC controller component, not a route or goal trial',resource_policy=RESOURCE)
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'runs/v1074_sac_native_control/TASK.json'

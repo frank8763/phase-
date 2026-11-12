@@ -10921,8 +10921,29 @@
   "current_sac_status": {
     "real_observation_component_qualified": true,
     "policy_proposal_gate_qualified": true,
-    "actual_control_executed": false,
+    "actual_control_executed": true,
+    "component_only": true,
     "navigation_worker_integrated": false,
     "training_updates": 0
-  }
+  },
+  "v1075_sac_native_component": {
+    "closed": true,
+    "passed": true,
+    "actual_sac_native": 125,
+    "actual_total_native": 2325,
+    "own_replay_native": 2325,
+    "actual_motion_m": 0.09014966755544236,
+    "minimum_actual_clearance_m": 0.30925453597911723,
+    "full_state_replay_error": 0.0,
+    "bad_contacts": 0,
+    "canonical_vehicle_initializations": 1,
+    "internal_factory_model_constructions": "unknown",
+    "entry_failure_before_model_retained": true,
+    "training_updates": 0,
+    "whole_route_passed": false,
+    "dynamic_acceptance_passed": false,
+    "guard_original": true,
+    "execution_lock_idle": true
+  },
+  "latest_report": "docs/RPCCR_SAC_NATIVE_V1075_REPORT.md"
 }

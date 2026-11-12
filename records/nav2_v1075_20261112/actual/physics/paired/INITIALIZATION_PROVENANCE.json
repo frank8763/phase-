@@ -1,0 +1,35 @@
+{
+  "bootstrap_seed": 95000011,
+  "task_noise_seed": 10010001,
+  "legacy_task_gate_unchanged": true,
+  "navigation_algorithm_changed": false,
+  "sensor_implementation_changed": false,
+  "noise_call_state_after_bootstrap": {
+    "lidar_call": 2,
+    "depth_call": 2,
+    "lidar_changed": 2,
+    "depth_changed": 2,
+    "lidar_drop": 4,
+    "depth_drop": 1
+  },
+  "zero_integration_bootstrap": true,
+  "initial_time": 0.0,
+  "parent_factory_sha256": "cc047499014b81fcee022678c74b71b001df137e685129d6fd68e08d0c7c5dec",
+  "legacy_runner_sha256": "af5b9fd7ce9cd1e056fa171da842b962ccaa33d6e5cb7e66c3499aba4e73b1d4",
+  "bootstrap_repair": {
+    "reset_calls": 1,
+    "old_detour_calls": 0,
+    "disabled_before_original_reset": true,
+    "bootstrap_integrations": 0,
+    "old_detour_enabled_before": true
+  },
+  "cpu_render_backend": {
+    "passed": true,
+    "actual_context_module": "mujoco.osmesa",
+    "actual_OpenGL_dispatch_module": "OpenGL.platform.osmesa",
+    "hardware_GPU_used": false,
+    "legacy_environment_label_restored": true
+  },
+  "gpu_rendering_disabled": true,
+  "factory_binding_source_sha256": "19db6a66d74af9913c22b9a3650f4e8d691f86b7190b6897ef47617080096978"
+}

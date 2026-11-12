@@ -1,0 +1,20 @@
+V2_6_STEERING_GRID=9
+V2_9_ESCAPE_DEPTH_CAP=8
+V2_9_ESCAPE_DEPTH_USES_PARENT_CHAIN=TRUE
+V41_START_EDGE_XY_RESOLUTION_FACTOR=0.5
+V2_6_BOUNDED_ESCAPE_PATCH_ACTIVE guard_m=0.05 maximum_initial_deficit_m=0.025 dense_resolution_m=0.01 global_guard_lowered=False source_files_modified=False
+LONG_GOAL_RESET_PATCH_INSTALLED=TRUE
+V2_FULL_RESET_START seed= 95000011 output= /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1074/sac_prefix125_stop2200/physics/paired
+[Phase9-H2 friction touched] ['left_front_wheel', 'left_front_wheel', 'right_front_wheel', 'right_front_wheel', 'left_rear_wheel', 'left_rear_wheel', 'right_rear_wheel', 'right_rear_wheel']
+[Phase9-H2.1 steer-first-yaw-lag-brake] enabled: base=Phase9-A, no G4/G5, rear_sync, steer_first_brake
+[Phase9-H2.2 yaw-rate closed-loop] enabled: based on H2.1 confirmed, yaw-lag adaptive speed limit
+[Phase9-H3.1-plus yaw+velocity sync] enabled: yaw compensation + planar velocity alignment
+[Phase9-I1.5 steer-lag guard] enabled
+LONG_GOAL_RESET_SELECTED {"seed": 95000011, "attempt": 40, "start_xy": [-1.6134095191955566, 4.017680644989014], "goal_xy": [-1.2777841091156006, -2.9586408138275146], "straight_distance_m": 6.984389781951904, "base_astar_path_length_m": 7.497056303327895, "base_astar_path_points": 36}
+[Phase8 exact scene edit] removed: ['real_circle_obs_9', 'real_circle_obs_10']
+[Phase8 exact scene edit] set box xy: [('real_rect_obs_6', -4.15, 1.1, -5.083, 1.612), ('real_rect_obs_7', 4.05, -3.1, 5.638, -4.315), ('real_rect_obs_8', -2.2, -3.8, -2.202, -4.531), ('real_rect_obs_9', 2.2, -1.85, 3.2, -2.85)]
+LONG_GOAL_NATIVE_GATE_METRICS {"seed": 95000011, "start_xy": [-1.600000023841858, 4.0], "goal_xy": [-1.2777841091156006, -2.9586408138275146], "straight_distance_m": 6.9660968319116074, "global_path_length_m": 7.476964965858983, "path_points": 588, "path_start_error_m": 0.0, "path_goal_error_m": 0.08809621157399179}
+LONG_GOAL_START_CLEARANCE = {"global_path_length_m": 7.476964965858983, "goal_xy": [-1.2777841091156006, -2.9586408138275146], "initial_map_collision": false, "initial_min_lidar_m": 0.9583333134651184, "initial_obstacle_contact_count": 0, "initial_obstacle_contacts": [], "known_map_extra_margin_m": 0.6810836791992188, "known_map_free_with_extra_020m": true, "robot_radius_m": 0.28, "start_xy": [-1.600000023841858, 4.0], "straight_distance_m": 6.9660968319116074}
+LONG_GOAL_START_CLEARANCE_GATE = PASS
+LONG_GOAL_NATIVE_GATE = PASS
+LONG_GOAL_PAIRED_ROLLOUT_START = TRUE

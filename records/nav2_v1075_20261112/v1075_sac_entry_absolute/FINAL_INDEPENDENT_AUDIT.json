@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "checks": {
+    "complete_record": true,
+    "monotonic_clock": true,
+    "physical_clearance": true,
+    "full_self_margin": true,
+    "no_bad_contacts": true,
+    "contacts_complete": true,
+    "legal_ctrl": true,
+    "legal_rate": true,
+    "actual_ctrl_reconstruction": true,
+    "policy_observation": true,
+    "policy_action": true,
+    "actual_SAC_body_requests": true,
+    "plan_reconstruction": true,
+    "local_tracking": true,
+    "full2200zero": true,
+    "actual_last328_stopped": true,
+    "all_state_replay": true,
+    "source_unchanged": true,
+    "review_pending_original": true,
+    "sensor_calls": true,
+    "same_canonical_model": true
+  },
+  "zero_model": true,
+  "models": 0,
+  "integrations": 0,
+  "controller_reconstruction_error": 5.898059818321144e-17,
+  "prediction_reconstruction_error": 0.0,
+  "maximum_local_tracking": [
+    0.0019707442883533863,
+    0.0005844901191067518,
+    0.006021431169334637
+  ],
+  "discovery_chain_not_tested": true,
+  "whole_route_not_tested": true,
+  "minimum_actual_clearance_m": 0.30925453597911723,
+  "counts": {
+    "canonical_vehicle_initializations": 1,
+    "internal_factory_model_constructions": "not instrumented; unknown",
+    "native_actual": 2325,
+    "own_replay": 2325,
+    "replay_state_initializations": 1,
+    "private": 0,
+    "historical_replay": 0,
+    "training_updates": 0
+  },
+  "original_entry_failure_kept": true
+}
