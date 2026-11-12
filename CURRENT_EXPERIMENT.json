@@ -1,47 +1,56 @@
 {
   "schema_version": 2,
-  "status": "READY_FOR_AUTHORIZED_NS_REPEAT",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1086_ns_complete_repeat",
+  "active_run": null,
   "active_window": null,
-  "active_entrypoint": "experiments/v1086_ns_complete_repeat/campaign.py",
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_FRESH_NS_V1085_INSPECTION_AND_NEXT.md",
+  "latest_report": "docs/RPCCR_NS_COMPLETE_REPEAT_V1086_REPORT.md",
   "latest_completed": {
     "closed": true,
     "passed": false,
-    "version": "v1085_entry",
-    "scope": "Fresh canonical t0 NS navigation main plus conditional same-version full repeat, observed development route",
+    "status": "INTERRUPTED_INCONCLUSIVE",
+    "version": "v1086",
+    "scope": "One complete NS repeat, interrupted by accidental host shutdown",
     "attempted": [
-      "main_fresh_ns"
-    ],
-    "unexecuted": [
       "repeat_fresh_ns"
     ],
+    "unexecuted": [],
     "error": {
-      "error": "AssertionError('FIRST_INDEPENDENT_EVIDENCE_FAILURE')",
-      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_campaign.py\", line 44, in main\n    a=subprocess.run([sys.executable,'-B',str(CORE/cfg['audit']),str(path)],cwd=R,capture_output=True,text=True,timeout=cfg['audit_timeout_s']);(O/(task['task_id']+'.audit.console')).write_text(a.stdout+a.stderr);assert a.returncode==0,'FIRST_INDEPENDENT_EVIDENCE_FAILURE';row['audit']=json.loads((out/'FINAL_INDEPENDENT_AUDIT.json').read_text());dump(O/'RESULTS.json',rows)\nAssertionError: FIRST_INDEPENDENT_EVIDENCE_FAILURE\n"
+      "error": "HOST_SHUTDOWN_INTERRUPTION",
+      "algorithm_failure_established": false
     },
     "complete_repeat": null,
     "counts": {
       "vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
       "historical_replay_native": 0,
-      "new_actual_native": 21351,
-      "own_replay_native": 21351,
-      "replay_state_initializations": 1,
+      "new_actual_native": null,
+      "own_replay_native": null,
+      "replay_state_initializations": null,
       "private_mujoco_native": 0,
       "training_updates": 0,
-      "analytical_prediction_native": 1422169
+      "analytical_prediction_native": null
     },
+    "navigation_native_lower_bound": 15290,
+    "exact_navigation_and_live_prediction_counts_unknown": true,
+    "full_trace_not_saved": true,
+    "independent_full_audit_passed": false,
     "guard_original": true,
     "source_unchanged": true,
+    "baseline_main_unchanged": true,
+    "baseline_main_reexecuted": false,
+    "new_main_samples": 0,
     "whole_route_passed": false,
-    "new24_executed": false
+    "new24_executed": false,
+    "closed_by_zero_model_recovery": true,
+    "original_root_window_unchanged": true
   },
   "latest_diagnosis": {
     "passed": true,
@@ -147,7 +156,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "One fresh NS complete repeat only; no baseline rerun or automatic other routes/24",
+  "next_scope": "Original successful NS main preserved; repeat interrupted by host shutdown. Review a separately authorized bounded repeat; no automatic model restart or old monotonic deadline reuse.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -178,5 +187,32 @@
     "integrations": 0,
     "original_batch_failed_unchanged": true,
     "repeat_not_executed": true
+  },
+  "latest_interruption": {
+    "observed_at_unix": 1794487092.7786584,
+    "observed_monotonic": 226.772058926,
+    "current_boot_id": "65f8d742-949c-49e5-bab2-19583493ff14",
+    "previous_campaign_started_monotonic": 384237.567925878,
+    "host_reboot_confirmed": true,
+    "reported_cause": "User reports accidental shutdown; machine reboot confirmed, underlying power/hardware cause not diagnosed",
+    "driver_and_recorded_child_absent": true,
+    "phase_execution_lock_idle": true,
+    "guard_was_missing": true,
+    "remaining_stale_authority_revoked": true,
+    "original_root_window_unchanged": true,
+    "previous_boot_monotonic_deadline_not_reusable": true,
+    "last_segment_boundary_native": 15290,
+    "last_periodic_progress_native": 15000,
+    "exact_navigation_native": null,
+    "navigation_native_lower_bound": 15290,
+    "native_trace_saved": false,
+    "complete_result_saved": false,
+    "full_replay_verified": false,
+    "full_audit_available": false,
+    "baseline_main_files_unchanged": 723,
+    "frozen_sources_unchanged": 3087,
+    "new_model_initializations_for_recovery": 0,
+    "new_integrations_for_recovery": 0,
+    "model_auto_restart": false
   }
 }

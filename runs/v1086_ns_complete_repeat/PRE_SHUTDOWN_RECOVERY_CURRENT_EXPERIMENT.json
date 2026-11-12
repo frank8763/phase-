@@ -1,0 +1,189 @@
+{
+  "schema_version": 2,
+  "status": "RUNNING",
+  "research_line": "Phase RP-CCR navigation",
+  "target_journal": "Robotics and Autonomous Systems",
+  "canonical_repository": "phase-",
+  "active_run": "runs/v1086_ns_complete_repeat",
+  "active_window": {
+    "started_unix": 1794486732.4354403,
+    "started_monotonic": 384237.567925878,
+    "absolute_deadline_unix": 1794492132.4354403,
+    "hard_stop_monotonic": 389637.567925878,
+    "duration_s": 5400,
+    "old_windows_unchanged": true
+  },
+  "active_entrypoint": "experiments/v1086_ns_complete_repeat/campaign.py",
+  "automatic_additional_simulation": false,
+  "next_physical_authorized": false,
+  "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
+  "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
+  "latest_report": "docs/RPCCR_FRESH_NS_V1085_INSPECTION_AND_NEXT.md",
+  "latest_completed": {
+    "closed": true,
+    "passed": false,
+    "version": "v1085_entry",
+    "scope": "Fresh canonical t0 NS navigation main plus conditional same-version full repeat, observed development route",
+    "attempted": [
+      "main_fresh_ns"
+    ],
+    "unexecuted": [
+      "repeat_fresh_ns"
+    ],
+    "error": {
+      "error": "AssertionError('FIRST_INDEPENDENT_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_campaign.py\", line 44, in main\n    a=subprocess.run([sys.executable,'-B',str(CORE/cfg['audit']),str(path)],cwd=R,capture_output=True,text=True,timeout=cfg['audit_timeout_s']);(O/(task['task_id']+'.audit.console')).write_text(a.stdout+a.stderr);assert a.returncode==0,'FIRST_INDEPENDENT_EVIDENCE_FAILURE';row['audit']=json.loads((out/'FINAL_INDEPENDENT_AUDIT.json').read_text());dump(O/'RESULTS.json',rows)\nAssertionError: FIRST_INDEPENDENT_EVIDENCE_FAILURE\n"
+    },
+    "complete_repeat": null,
+    "counts": {
+      "vehicle_initializations": 1,
+      "historical_replay_native": 0,
+      "new_actual_native": 21351,
+      "own_replay_native": 21351,
+      "replay_state_initializations": 1,
+      "private_mujoco_native": 0,
+      "training_updates": 0,
+      "analytical_prediction_native": 1422169
+    },
+    "guard_original": true,
+    "source_unchanged": true,
+    "whole_route_passed": false,
+    "new24_executed": false
+  },
+  "latest_diagnosis": {
+    "passed": true,
+    "models": 0,
+    "integrations": 0,
+    "old_failure_preserved": true,
+    "canonical_model_same": true,
+    "actual_initial_pose": [
+      -1.600000023841858,
+      4.0,
+      -1.5707963267948963
+    ],
+    "expected_pose": [
+      -1.600000023841858,
+      4.0,
+      -1.5707963267948966
+    ],
+    "maximum_pose_error": 2.220446049250313e-16,
+    "full_canonical_initial_state_error": 0.0,
+    "original_state_tolerance": 1e-08,
+    "wrong_old_exact_equality_reproduced": true,
+    "corrected_pose_contract_passed": true,
+    "over_tolerance_negative_cases": [
+      true,
+      true,
+      true
+    ],
+    "vehicle_initializations_in_failed_entry": 1,
+    "internal_factory_model_constructions": "unknown",
+    "navigation_native": 0,
+    "root_deadline_not_extended": 1794489035.0956674
+  },
+  "protected_historical_milestones": {
+    "static_unknown_V657": {
+      "selected": 24,
+      "recorded": 24,
+      "strict_arrivals": 23,
+      "non_successes": 1,
+      "class_successes": {
+        "single_event": 12,
+        "legacy_two": 11
+      },
+      "status": "ALL_TASKS_AND_REPEATS_AUDITED",
+      "full_confirmation_gate_passed": true,
+      "failed_task_seed": 95000132
+    },
+    "original_dynamic_V827": "Three known development routes and repeats verified on V826 algorithm; historical model/contract",
+    "original_dynamic_V828": {
+      "attempted": 8,
+      "complete_successes": 6,
+      "failures": 2,
+      "unexecuted": 16,
+      "full_confirmation_passed": false
+    },
+    "nav2_static_V884_V885": {
+      "same_version_three_routes_main_and_repeat": true,
+      "navigation_native": 54043
+    },
+    "easier_dynamic_V1030": "New actor-center course main+repeat passed; original narrow course not passed",
+    "fresh_original_WE_V1056": "Main complete arrival .121696m; V1058 full repeat failed timing; three routes not passed"
+  },
+  "current_method": {
+    "known_static_map": true,
+    "original_single_dynamic_actor": true,
+    "measured_body_and_steering_feedback": true,
+    "nominal_request_speed": 0.125,
+    "periodic_motion_prior_omega": 0.32,
+    "body_request_profile": "Measured-pose path phase, fixed causal corridor selection, complete future recertified every8 native; full2200stop",
+    "rl_status": "Frozen SAC sensor/native short component qualified, not active in V1084 saved continuation",
+    "training_updates": 0,
+    "hardware_steps": 0,
+    "stage_isolated": true,
+    "execution_core": "experiments/rpccr_execution_core",
+    "speed_guard": "Complete slew-legal braking preview; transactionally commit accepted allocations",
+    "extra_129_gate_removed": true
+  },
+  "source_of_all_prior_state": {
+    "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
+    "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36",
+    "bytes": 433582,
+    "lossless": true
+  },
+  "storage": {
+    "policy": "docs/STORAGE_POLICY.md",
+    "latest_raw_remote_delivery_pending": true,
+    "latest_closed_archive": "records/nav2_v1085_entry_20261112/RECORD_INDEX.json",
+    "redundant_bytes_removed_or_coalesced": 415947518,
+    "unique_evidence_deleted": false,
+    "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-braking-reserve-v1084-20261112",
+    "all222_source_decompressed_sha_verified": true,
+    "source_commit": "67b8572fdb413a154ad8ff44e84d81d51153954e",
+    "source_members_verified": 839,
+    "latest_verified_cache_cleanup_bytes": 107730536
+  },
+  "preparation_policy": {
+    "user_request": "准备时间加快，不再准备一两个小时",
+    "preparation_checkpoint_s": 900,
+    "single_failed_state_first": true,
+    "single_candidate_at_a_time": true,
+    "reuse_qualification_for_unchanged_source_hashes": true,
+    "no_repeated_full_qualification_without_changed_dependency_or_failed_check": true,
+    "checkpoint_requires_explicit_ready_or_blocker": true,
+    "does_not_shorten_any_safety_or_physical_evidence_gate": true,
+    "no_new_physical_window": true
+  },
+  "next_scope": "Current one NS full repeat only; first failure stops; no automatic other routes/24",
+  "pending_entry_relay": {
+    "prepared": true,
+    "source": "experiments/v1085_pose_entry_relay",
+    "models_authorized": false,
+    "models": 0,
+    "integrations": 0,
+    "approved": true,
+    "exhausted": true
+  },
+  "active_zero_model_diagnostic": null,
+  "latest_functional_main": {
+    "version": "v1085_entry",
+    "fresh_start": true,
+    "passed": true,
+    "goal_distance_m": 0.30818461026038557,
+    "actual_native": 21351,
+    "full_own_replay_error": 0,
+    "independent_audit_complete": true,
+    "repeat_executed": false,
+    "audit_scope": "Separate full saved-evidence supplemental audit; original batch failure preserved",
+    "audit_report": "runs/v1085_audit_entry_diagnosis/SUPPLEMENTAL_INDEPENDENT_AUDIT.json"
+  },
+  "latest_supplemental_audit": {
+    "closed": true,
+    "passed": true,
+    "checks_passed": 25,
+    "models": 0,
+    "integrations": 0,
+    "original_batch_failed_unchanged": true,
+    "repeat_not_executed": true
+  }
+}
