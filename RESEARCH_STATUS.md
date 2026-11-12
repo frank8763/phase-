@@ -1293,3 +1293,7 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1084本轮唯一push成功且远端HEAD=67b8572fdb413a154ad8ff44e84d81d51153954e；同仓Release原始830来源+闭批补充9来源全部839文件远端下载/分块/解压SHA回读通过。Release草稿按tag404操作错误保留，列表定位同一草稿后只接续传输，未再次创建或push。按清理清单移除本V1084已验证备份缓存/重复分块107730536字节，源码/小摘要/恢复索引保留；没有新增模型或积分。
 
 - 用户V1084通过后明确“下一步开始”。V1085新完整NS整合已冻源，0历史物理控制恢复；真实t0/在线静态预览/实际发现刹停保持，本次原因果状态重新生成完整参考，接实测位姿8原生闭环/2200尾。初始名义时刻在略慢反馈raw.241826917拒绝保留，有限名义/慢/快三情景筛选与独立反馈复核后最低.245412999过原.243534210。两真实隔离NoModel入口及旧日志读取拒绝例通过，3039旧冻结路径SHA同一；未新初始化模型。明确lockstep而非原.05s实时交接合同，不宣称实时或实机。新独立90min仅NS主+条件重复，不自动三路线/24，详见experiments/v1085_fresh_ns_validation/PROTOCOL.md。
+
+- FINAL v1085 fresh NS navigation: passed=False; counts={"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 0, "own_replay_native": 0, "replay_state_initializations": 0, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 0}; single NS main+repeat gate only; three-route/24 not executed. See docs/RPCCR_FRESH_NS_V1085_REPORT.md.
+
+- V1085入口实际初始化1/导航预测重放0，在新增精确浮点t0航向比较拒绝；实际差2.220446e-16、完整规范初态误差0、MJB不变，原FAILED/源/78来源2.44MB本地归档保留。不可避免算法失败的说法不成立，这是可避免实现错误。唯一入口接续仅改为原1e-8一致性门，单assert差分/保存真实t0及3负例/隔离NoModel与两任务契约通过，仍未授权模型，原21:10:35.095667截止不变；见experiments/v1085_pose_entry_relay/PROTOCOL.md。

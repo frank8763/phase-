@@ -1,0 +1,88 @@
+[
+  {
+    "task": {
+      "task_id": "main_fresh_ns",
+      "case_id": "NORTH_SOUTH",
+      "seed": 10010002,
+      "phase": 3.673083947600074,
+      "dynamic": true,
+      "goal_xy": [
+        -1.2777841091156006,
+        -2.9586408138275146
+      ],
+      "goal_yaw": -1.5707963267948966,
+      "run_id": "v1061-1-main",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1085/main_fresh_ns",
+      "from_actual_native_zero": true,
+      "start_xy": [
+        -1.600000023841858,
+        4.0
+      ],
+      "start_yaw": -1.5707963267948966,
+      "course_id": "V1061_EW_START_NORTH_010",
+      "canonical_parent_case_id": "NORTH_SOUTH",
+      "kind": "main",
+      "branch_id": null,
+      "slot": null,
+      "preflight_task_id": "t0_dev_north_south",
+      "target": 0.0,
+      "speed": 0.125,
+      "prefix_native": 125,
+      "stop_native": 2200,
+      "historical_prefix_native": 0,
+      "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1085_fresh_ns_validation",
+      "native_limit": 85000
+    },
+    "result": {
+      "passed": false,
+      "vehicle_initializations": 1,
+      "internal_factory_model_constructions": "unknown",
+      "historical_replay_native": 0,
+      "new_actual_native": 0,
+      "navigation_native": 0,
+      "own_replay_native": 0,
+      "replay_state_initializations": 0,
+      "private_mujoco_native": 0,
+      "training_updates": 0,
+      "fresh_native_zero": true,
+      "analytical_prediction_scope": "Live recovery trajectory forecasts only; original static C++ previews and static predictions not counted in this field",
+      "new_main_samples": 0,
+      "resource_policy": {
+        "cpu_affinity": [
+          2
+        ],
+        "nice": 19,
+        "scheduler": 5,
+        "gpu_visible": "",
+        "mujoco_gl": "osmesa",
+        "io_class": 3,
+        "stage_process_access": false
+      },
+      "error": "AssertionError()",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_worker.py\", line 30, in main\n    setup=json.loads((out/'physics/SETUP.json').read_text());assert setup['model_sha256']=='412f0616d1160dad61bb395919d9442372108ad094e07a5122274df5b29201f8';meta=json.loads((O/'NORTH_SOUTH_T0_METADATA.json').read_text());load('fresh_public_setup_contract',R/'experiments/v1067_causal_replan_brake_reserve/initial_contract.py').check_setup(setup,meta);assert list(v.body()[:3])==meta['packet']['body'][:3]\nAssertionError\n",
+      "analytical_prediction_native": 0,
+      "physical": {
+        "actual_native": 0,
+        "fully_recorded_native": 0,
+        "minimum_actual_clearance_m": 0.4614868910698229,
+        "minimum_self_margin_m": 0.010000000000000009,
+        "bad_contacts": 0,
+        "final_body": [
+          -1.600000023841858,
+          4.0,
+          -1.5707963267948963,
+          0.0,
+          0.0
+        ],
+        "final_translation_speed_m_s": 0.0,
+        "root_guard_native_count": 0,
+        "goal_distance_m": 6.9660968319116074,
+        "first_actor_detection": null,
+        "actual_travel_after_detection_m": 0.0
+      },
+      "evidence_saved": true,
+      "closed": true
+    },
+    "returncode": 1
+  }
+]
