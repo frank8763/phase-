@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "READY_FOR_REMAINING_ROUTES",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
+  "active_run": "runs/v1088_remaining_routes",
   "active_window": null,
-  "active_entrypoint": null,
+  "active_entrypoint": "experiments/v1088_remaining_routes/campaign.py",
   "automatic_additional_simulation": false,
-  "next_physical_authorized": false,
+  "next_physical_authorized": true,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_NS_COMPLETE_REPEAT_V1087_REPORT.md",
@@ -128,15 +128,16 @@
   },
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
-    "latest_raw_remote_delivery_pending": true,
+    "latest_raw_remote_delivery_pending": false,
     "latest_closed_archive": "records/nav2_v1087_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
-    "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-braking-reserve-v1084-20261112",
+    "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-braking-reserve-v1087-20261112",
     "all222_source_decompressed_sha_verified": true,
     "source_commit": "67b8572fdb413a154ad8ff44e84d81d51153954e",
-    "source_members_verified": 839,
-    "latest_verified_cache_cleanup_bytes": 107730536
+    "source_members_verified": 1697,
+    "latest_verified_cache_cleanup_bytes": 335440698,
+    "source_git_push_pending": true
   },
   "preparation_policy": {
     "user_request": "准备时间加快，不再准备一两个小时",
@@ -149,7 +150,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "NS main plus full repeat verified. Next prepare same-scientific-version remaining two routes; no additional model authorized.",
+  "next_scope": "Fixed WE main/repeat then declared EW main/repeat; no NS rerun or24",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
