@@ -1,6 +1,6 @@
 # Phase导航：唯一当前阅读入口 · 2026-11-12
 
-当前状态：**V1089通宵已按首次功能失败停止。首WE通过真实模型合同后20160实际步，发现停车后未获得完整合格到目标参考；目标余3.883m，实际记录无坏接触/重放误差0。后续全部未执行，当前仅有界零模型诊断；不宣称后台导航仍运行，不自动修补重跑。原NS主+重复成功保持。**
+当前状态：**用户重新授权后，V1090有限原因果恢复走廊候选已于22:29:41后台启动，仍沿原11月13日09:00硬截止/8GiB；WE主进行中，父31351/看护31353已确认。固定两路线主重复+NS完整回归全门过才条件原24。原V1089失败保持，不在原冻结批修补；首异常停，不自动新池。**
 
 本次结果及下一步：[V1085检查与下一实验](/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/docs/RPCCR_FRESH_NS_V1085_INSPECTION_AND_NEXT.md)。精简状态：CURRENT_EXPERIMENT.json。历史复盘见PHASE_NAVIGATION_FULL_REVIEW_20261112.md；旧摘要无损保存在records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json。
 

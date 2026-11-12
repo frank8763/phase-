@@ -1,14 +1,21 @@
 {
   "schema_version": 2,
-  "status": "READY_FOR_NEW_OVERNIGHT_REVISION",
+  "status": "RUNNING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
   "active_run": "runs/v1090_active_corridor",
-  "active_window": null,
+  "active_window": {
+    "started_unix": 1794493781.5701377,
+    "started_monotonic": 6915.56357642,
+    "absolute_deadline_unix": 1794531600,
+    "hard_stop_monotonic": 44733.99344110489,
+    "boot_id": "65f8d742-949c-49e5-bab2-19583493ff14",
+    "old_windows_unchanged": true
+  },
   "active_entrypoint": "experiments/v1090_active_corridor/campaign.py",
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_OVERNIGHT_V1089_REPORT.md",
@@ -245,7 +252,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "One bounded active-corridor repaired campaign, fixed original09:00 deadline/8GiB, 5development navigations then conditional original24; first failure stops",
+  "next_scope": "Current one repaired offline campaign only, same original09:00 deadline; first failure stops, no runtime repair",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
