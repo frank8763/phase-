@@ -8,34 +8,71 @@
   "active_window": null,
   "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": false,
+  "next_physical_authorized": true,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_SPEED_GUARD_V1082_REPORT.md",
+  "latest_report": "docs/RPCCR_BRAKING_RESERVE_V1083_REPORT.md",
   "latest_completed": {
-    "version": "V1082",
+    "closed": true,
     "passed": false,
-    "reason": "NO_SLEW_LEGAL_SPEED_PROJECTION",
-    "historical_native": 18074,
-    "new_actual_native": 14,
-    "own_replay_native": 18088,
-    "goal_distance_m": 1.618450102315064,
-    "actual_longitudinal_speed_m_s": 0.12798264746447302,
-    "full_actual_stop_executed": false,
-    "guard_restored": true,
-    "execution_lock_idle": true
+    "version": "v1083",
+    "scope": "same observed NS saved continuation main and conditional full repeat, not fresh navigation acceptance",
+    "attempted": [
+      "main_saved_ns"
+    ],
+    "unexecuted": [
+      "repeat_saved_ns"
+    ],
+    "error": {
+      "error": "AssertionError('FIRST_FUNCTIONAL_OR_SAFETY_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/campaign.py\", line 43, in main\n    out=Path(task['output']);rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_OR_SAFETY_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_OR_SAFETY_FAILURE\n"
+    },
+    "complete_repeat": null,
+    "counts": {
+      "vehicle_initializations": 1,
+      "historical_replay_native": 18074,
+      "new_actual_native": 357,
+      "own_replay_native": 18431,
+      "replay_state_initializations": 1,
+      "private_mujoco_native": 0,
+      "training_updates": 0
+    },
+    "guard_original": true,
+    "source_unchanged": true,
+    "whole_route_passed": false,
+    "new24_executed": false
   },
   "latest_diagnosis": {
-    "saved_command_reproduced": true,
-    "command_local": 15,
-    "legal_common_lower": 1.2307090881582523,
-    "speed_guard_common_upper": 1.2301555096392685,
-    "next_speed_upper": 0.12900512095720607,
-    "new_internal_limit": 0.129,
-    "original_actual_longitudinal_limit": 0.13,
-    "evidence": "runs/navigation_review_20261112/LATEST_REJECTION_REPRODUCED.json",
-    "rejected_candidate_changes_python_controller_memory": true,
-    "physical_integrations_during_review": 0
+    "models": 0,
+    "integrations": 0,
+    "first_bad_local_native": 357,
+    "executed_new_native": 357,
+    "remaining_unexecuted": 3198,
+    "maximum_position_error_m": 0.04007370273160788,
+    "maximum_heading_error_rad": 0.007816423795225402,
+    "maximum_steering_error_rad": 0.010071804005339524,
+    "actual_final_xy": [
+      -0.8412800201727365,
+      -1.8081290240252574
+    ],
+    "predicted_at_failure_xy": [
+      -0.8522071613190088,
+      -1.8466841694275344
+    ],
+    "final_actual_forward_speed": 0.1167888422661402,
+    "predicted_at_failure_speed": 0.1266756751072114,
+    "maximum_actual_longitudinal_speed": 0.12958106837042166,
+    "old_speed_cap_held": true,
+    "actual_goal_distance_m": 1.2305337045923745,
+    "actual_new_displacement_m": 0.408415815122204,
+    "brake_backup_activations": 1,
+    "speed_limiting_steps": 7,
+    "maximum_selected_braking_speed_upper": 0.12999999992830677,
+    "full_actual_terminal_stop_executed": false,
+    "closed_batch_wall_s": 26.875309705734253,
+    "new_controller_reconstruction_error": 0.0,
+    "terminal_error_along_body_m": -0.03994526437379128,
+    "terminal_error_across_body_m": 0.003205854757969944
   },
   "protected_historical_milestones": {
     "static_unknown_V657": {
@@ -76,7 +113,10 @@
     "rl_status": "Frozen SAC true-observation and short native component qualified; not active in V1082 goal continuation",
     "training_updates": 0,
     "hardware_steps": 0,
-    "stage_isolated": true
+    "stage_isolated": true,
+    "execution_core": "experiments/rpccr_execution_core",
+    "speed_guard": "Complete slew-legal braking preview; transactionally commit accepted allocations",
+    "extra_129_gate_removed": true
   },
   "source_of_all_prior_state": {
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
@@ -86,8 +126,8 @@
   },
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
-    "latest_raw_remote_delivery_pending": false,
-    "latest_closed_archive": "records/nav2_v1080_v1082_20261112/RECORD_INDEX.json",
+    "latest_raw_remote_delivery_pending": true,
+    "latest_closed_archive": "records/nav2_v1083_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
     "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-speed-guard-v1080-v1082-20261112",

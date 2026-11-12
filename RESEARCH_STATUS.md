@@ -1279,3 +1279,7 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - FINAL V1082 one guarded saved continuation closed: passed=False; counts={"vehicle_initializations": 1, "new_actual_native": 14, "own_replay_native": 18088, "replay_state_initializations": 1, "private_mujoco_native": 0, "historical_replay_native": 18074, "training_updates": 0}; no new whole-route/24 acceptance; raw evidence retained for verified archival. See docs/RPCCR_SPEED_GUARD_V1082_REPORT.md.
 
 - 2026-11-12全线复盘：原V827三路线/旧V828执行8成功6与Nav2 V884–885静态三路线成果保留，不混当前分母。V1082新增单步.129门和原slew无交集（最低预测上界.129005121），当时实际纵向.127982647<原.13；精确生产函数保存态重建14步ctrl误差0，0新模型积分，新增拒绝提案还会先污染Adapter记忆。后者未改变已执行记录，下一版后备须事务化。已清理/合并415947518字节冗余，独有证据不删/冻结3002路径SHA不变。README和CURRENT_EXPERIMENT精简，完整旧字段/首页无损另存；所有物理关闭。详见docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md与当前控制链docs/PHASE_NAVIGATION_CURRENT.md。
+
+- FINAL v1083 shared-core saved continuation: passed=False; counts={"vehicle_initializations": 1, "historical_replay_native": 18074, "new_actual_native": 357, "own_replay_native": 18431, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0}; no new full-route/24 acceptance. See docs/RPCCR_BRAKING_RESERVE_V1083_REPORT.md.
+
+- 用户全线复盘后明确继续，V1083共享事务化分配/128步刹停速度余量资格和两生产隔离入口已过，主+成功条件完整重复16:41:58启动，独立根至18:11:58+08不延长；原18074历史精确恢复＋3555原请求/2200尾。旧单步后备模式误用在正扰动零模型检查中修复并保留原失败。实际仍待结果，非整路/三路线/24。共享核位于experiments/rpccr_execution_core，协议见experiments/v1083_braking_reserve_validation/PROTOCOL.md；后台执行/首失败停/Stage隔离/训练0。
