@@ -1,14 +1,21 @@
 {
   "schema_version": 2,
-  "status": "READY_FOR_AUTHORIZED_OVERNIGHT",
+  "status": "RUNNING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
   "active_run": "runs/v1089_route_scene_contract",
-  "active_window": null,
+  "active_window": {
+    "started_unix": 1794490635.107207,
+    "started_monotonic": 3769.100644511,
+    "absolute_deadline_unix": 1794531600.0,
+    "hard_stop_monotonic": 44733.9934387207,
+    "boot_id": "65f8d742-949c-49e5-bab2-19583493ff14",
+    "old_windows_unchanged": true
+  },
   "active_entrypoint": "experiments/v1089_route_scene_contract/campaign.py",
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_REMAINING_ROUTES_V1088_REPORT.md",
@@ -150,7 +157,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "One fixed offline campaign through09:00: remaining two pairs then conditional locked24; 8GiB temporary, first failure stops",
+  "next_scope": "Current offline overnight fixed campaign until2026-11-13 09:00 only; no new candidates, first failure stops",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -263,6 +270,7 @@
   "overnight_authorization": {
     "deadline_unix": 1794531600,
     "temporary_limit_bytes": 8589934592,
-    "three_routes_gate_before24": true
+    "three_routes_gate_before24": true,
+    "started": true
   }
 }
