@@ -1,0 +1,33 @@
+{
+  "closed": true,
+  "passed": false,
+  "version": "v1088",
+  "scope": "Remaining fixed WEST_EAST and declared north-shifted EAST_WEST mains and full repeats; NS milestone reused read-only",
+  "attempted": [
+    "main_west_east"
+  ],
+  "unexecuted": [
+    "repeat_west_east",
+    "main_east_west",
+    "repeat_east_west"
+  ],
+  "error": {
+    "error": "AssertionError('FIRST_FUNCTIONAL_OR_SAFETY_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_campaign.py\", line 43, in main\n    out=Path(task['output']);rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_OR_SAFETY_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_OR_SAFETY_FAILURE\n"
+  },
+  "complete_repeat": null,
+  "counts": {
+    "vehicle_initializations": 1,
+    "historical_replay_native": 0,
+    "new_actual_native": 0,
+    "own_replay_native": 0,
+    "replay_state_initializations": 0,
+    "private_mujoco_native": 0,
+    "training_updates": 0,
+    "analytical_prediction_native": 0
+  },
+  "guard_original": true,
+  "source_unchanged": true,
+  "whole_route_passed": false,
+  "new24_executed": false
+}

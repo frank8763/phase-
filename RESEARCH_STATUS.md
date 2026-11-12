@@ -1319,3 +1319,7 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1087最终检查PASS：NS主V1085_entry+本完整重复各21351全状态ctrl/mocap/模型/规范初态/真实发现接触一致，最大误差0；重复25独立门全过，目标.308184610/最低实际.279217369/坏接触0。770来源74028583压缩字节/来源解压SHA/32MiB块重组全回读，本地FINALIZED；远端交付待完成，原件保留。旧主浮点错误与V1086关机中断不改。REVIEW_PENDING恢复/锁空闲，下一仅其余两路线准备，无自动物理/24授权，非实时。
 
 - 用户NS闭合后明确“下一步开始”。V1088固定WE主/重复→登记北移.10m EW主/重复，至多4导航，新90min根/首异常停/不自动24。共享科学精确V1085_entry/V1087，仅公共t0元数据按任务选源；真实隔离四任务/错误路线拒绝/原静态输入/工厂C++/旧日志禁止检查通过，3101旧冻源同字节。先四旧闭批1697来源全远端分块/解压SHA回读通过并按清单清理335440698字节，另合并闭批相同模型快照；原成功/入口错/关机结论保持。
+
+- FINAL v1088 fresh NS navigation: passed=False; counts={"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 0, "own_replay_native": 0, "replay_state_initializations": 0, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 0}; two remaining routes main+repeat only; no new24 executed. See docs/RPCCR_REMAINING_ROUTES_V1088_REPORT.md.
+
+- V1088首WE初始化1/导航预测重放全部0，在NS硬编码MJB SHA门前停批；3剩余任务未执行，自动归档同一SHA假设再次拒绝原错误保留。零模型保存差分：443模型数组合同441同SHA，body_pos/light_poscom0不同；XML仅登记actor锚点不同，原车辆/静态/控制一致不等于整个场景同SHA。首异常停/无冻结后修补，原NS主+重复保持；当前仅零模型诊断归档，REVIEW_PENDING恢复/锁空闲，不重启物理。见V1088报告。

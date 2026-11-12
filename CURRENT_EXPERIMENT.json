@@ -1,48 +1,48 @@
 {
   "schema_version": 2,
-  "status": "READY_FOR_REMAINING_ROUTES",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1088_remaining_routes",
+  "active_run": null,
   "active_window": null,
-  "active_entrypoint": "experiments/v1088_remaining_routes/campaign.py",
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_NS_COMPLETE_REPEAT_V1087_REPORT.md",
+  "latest_report": "docs/RPCCR_REMAINING_ROUTES_V1088_REPORT.md",
   "latest_completed": {
     "closed": true,
-    "passed": true,
-    "version": "v1087",
-    "scope": "One fresh complete NS repeat against saved independently supplementally audited V1085_entry main",
+    "passed": false,
+    "version": "v1088",
+    "scope": "Remaining fixed WEST_EAST and declared north-shifted EAST_WEST mains and full repeats; NS milestone reused read-only",
     "attempted": [
-      "repeat_fresh_ns"
+      "main_west_east"
     ],
-    "unexecuted": [],
-    "error": null,
-    "complete_repeat": {
-      "passed": true,
-      "maximum_state_ctrl_mocap_error": 0.0,
-      "complete_length": 21351
+    "unexecuted": [
+      "repeat_west_east",
+      "main_east_west",
+      "repeat_east_west"
+    ],
+    "error": {
+      "error": "AssertionError('FIRST_FUNCTIONAL_OR_SAFETY_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_campaign.py\", line 43, in main\n    out=Path(task['output']);rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_OR_SAFETY_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_OR_SAFETY_FAILURE\n"
     },
+    "complete_repeat": null,
     "counts": {
       "vehicle_initializations": 1,
       "historical_replay_native": 0,
-      "new_actual_native": 21351,
-      "own_replay_native": 21351,
-      "replay_state_initializations": 1,
+      "new_actual_native": 0,
+      "own_replay_native": 0,
+      "replay_state_initializations": 0,
       "private_mujoco_native": 0,
       "training_updates": 0,
-      "analytical_prediction_native": 1422169
+      "analytical_prediction_native": 0
     },
-    "new_main_samples": 0,
-    "baseline_main_reexecuted": false,
-    "baseline_original_failed_batch_preserved": true,
-    "source_unchanged": true,
     "guard_original": true,
-    "whole_route_passed": true,
+    "source_unchanged": true,
+    "whole_route_passed": false,
     "new24_executed": false
   },
   "latest_diagnosis": {
@@ -128,8 +128,8 @@
   },
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
-    "latest_raw_remote_delivery_pending": false,
-    "latest_closed_archive": "records/nav2_v1087_20261112/RECORD_INDEX.json",
+    "latest_raw_remote_delivery_pending": true,
+    "latest_closed_archive": "records/nav2_v1088_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
     "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-braking-reserve-v1087-20261112",
@@ -150,7 +150,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Fixed WE main/repeat then declared EW main/repeat; no NS rerun or24",
+  "next_scope": "Prepare route-aware scene model contract in worker, audit and archiver; no automatic frozen-batch repair or model restart.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -223,5 +223,41 @@
     "three_route_passed": false,
     "new24_executed": false,
     "lockstep_not_realtime": true
+  },
+  "latest_route_entry_diagnosis": {
+    "passed": true,
+    "models": 0,
+    "integrations": 0,
+    "old_NS_mjb_sha": "412f0616d1160dad61bb395919d9442372108ad094e07a5122274df5b29201f8",
+    "actual_WE_mjb_sha": "af6f0c393382a255afb35ff1ae0db5256100705c85cc264d25bdc3541966db53",
+    "original_fixed_NS_sha_rejects_declared_WE": true,
+    "saved_compiled_array_count": 443,
+    "saved_identical_array_records": 441,
+    "changed_array_names": [
+      "body_pos",
+      "light_poscom0"
+    ],
+    "assembly_xml_identical_except_declared_actor_anchor": true,
+    "xml_gate_negative_cases": [
+      true,
+      true
+    ],
+    "diagnosis": "Route-specific registered actor anchor changes the compiled MJB hash; worker/audit/archiver incorrectly hard-code NS scene-model SHA.",
+    "actual_initial_pose": [
+      -4.0,
+      -2.0,
+      0.0
+    ],
+    "actual_native": 0,
+    "private_native": 0,
+    "replay_native": 0,
+    "training_updates": 0,
+    "original_frozen_sources_and_failed_results_preserved": true,
+    "remaining_tasks_unexecuted": [
+      "repeat_west_east",
+      "main_east_west",
+      "repeat_east_west"
+    ],
+    "navigation_restart_authorized": false
   }
 }

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "models": 0,
+  "integrations": 0,
+  "old_NS_mjb_sha": "412f0616d1160dad61bb395919d9442372108ad094e07a5122274df5b29201f8",
+  "actual_WE_mjb_sha": "af6f0c393382a255afb35ff1ae0db5256100705c85cc264d25bdc3541966db53",
+  "original_fixed_NS_sha_rejects_declared_WE": true,
+  "saved_compiled_array_count": 443,
+  "saved_identical_array_records": 441,
+  "changed_array_names": [
+    "body_pos",
+    "light_poscom0"
+  ],
+  "assembly_xml_identical_except_declared_actor_anchor": true,
+  "xml_gate_negative_cases": [
+    true,
+    true
+  ],
+  "diagnosis": "Route-specific registered actor anchor changes the compiled MJB hash; worker/audit/archiver incorrectly hard-code NS scene-model SHA.",
+  "actual_initial_pose": [
+    -4.0,
+    -2.0,
+    0.0
+  ],
+  "actual_native": 0,
+  "private_native": 0,
+  "replay_native": 0,
+  "training_updates": 0,
+  "original_frozen_sources_and_failed_results_preserved": true,
+  "remaining_tasks_unexecuted": [
+    "repeat_west_east",
+    "main_east_west",
+    "repeat_east_west"
+  ],
+  "navigation_restart_authorized": false
+}
