@@ -1,0 +1,54 @@
+{
+  "closed": true,
+  "diagnosis_complete": true,
+  "old_failure_reproduced": true,
+  "failed_gates": [
+    "full_raw_geometry"
+  ],
+  "root_native": 24535,
+  "corridor_cursor": 4375,
+  "remaining_native": 3975,
+  "proof": {
+    "passed": false,
+    "checks": {
+      "finite": true,
+      "full_states": true,
+      "full_raw_geometry": false,
+      "full_200_stop": true,
+      "goal_upper": true,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "complete2200stop": true,
+      "terminal_full_cycle_hold": true
+    },
+    "minimum_full_cycle_raw_m": 0.24340361889199177,
+    "native": 3975,
+    "finite_corridor_not_original_goal": true,
+    "endpoint_xy": [
+      1.6341996816627788,
+      -0.6726263031140154
+    ]
+  },
+  "details": {
+    "static_minimum": 0.24340361889199177,
+    "dynamic_minimum": 0.4570572250701354,
+    "minimum_static_index": 914,
+    "minimum_dynamic_index": 2040,
+    "maximum_abs_longitudinal": 0.08306810799697299,
+    "maximum_abs_lateral": 0.017482577726794537,
+    "maximum_abs_yawrate": 0.09005041807999846,
+    "maximum_ctrl_slew_excess": 1.3877787807814457e-17,
+    "final_predicted_speed": [
+      1.693316949481484e-110,
+      -7.903096679448624e-140,
+      -1.3186795777538876e-137
+    ]
+  },
+  "actual_input_and_ctrl_reconstructed": true,
+  "maximum_control_reconstruction_error": 2.220446049250313e-16,
+  "models": 0,
+  "integrations": 0,
+  "no_model_restart": true,
+  "wall_s": 2.152952175005339
+}

@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
+  "status": "CLOSED_FAILED",
   "absolute_deadline_unix": 1794531600,
   "temporary_limit_bytes": 8589934592,
   "max_corridors_per_navigation": 2,
@@ -16,5 +16,10 @@
     "old_windows_unchanged": true
   },
   "driver_pid": 31351,
-  "watchdog_pid": 31353
+  "watchdog_pid": 31353,
+  "closure": "COMPLETION.json",
+  "actual_run_s": 91.00607180595398,
+  "stop_reason": "ACTIVE_CORRIDOR_RECEDING_CERTIFICATE_REJECTED: static predicted minimum .243403619 below .243534210",
+  "actual_final_stop_completed": false,
+  "remaining_confirmation_unexecuted": true
 }

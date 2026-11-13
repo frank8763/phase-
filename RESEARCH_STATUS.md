@@ -1339,3 +1339,7 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - 用户重新授权思考修订后续通宵，V1090单新候选沿原11月13日09:00/8GiB不延期。原5000→80000仍局部；粗去重20k得完整静态，直接倒车/高速接法因动态门拒绝保留。最终有限原因果走廊软件8350步/净1.186m/全周期raw.254357/两完整2200尾资格过；四滚动点及56实际隔离入口/短尾负例/控制slew/旧日志拒绝过。至多两走廊后真实观测更新，再原完整目标参考；有限段不当到达，新整路1200s/外1205仍总09:00。固定WE/EW主重复+NS完整回归全过才条件原24。0模型冻源，不改旧失败。
 
 - V1090新冻结有限原因果恢复候选于2026-11-12T22:29:41.570138+08:00后台启动，沿原11月13日09:00/1794531600/原monotonic44733.993截止不延期，master31351/watchdog31353。首WE真实模型443数组PASS，主实际进行中；本批不复用旧失败。父+看护离线独立，固定WE/EW主重复+NS完整回归全门后条件原24，首异常停，临时8GiB，Stage隔离/CPU2idle/GPU隐藏。
+
+- FINAL V1090 overnight: development=False confirmation=False; {"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 24535, "own_replay_native": 24535, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 230200}; old failures preserved. See docs/RPCCR_ACTIVE_CORRIDOR_V1090_REPORT.md.
+
+- 11月13日晨检V1090：昨22:31:12首WE24535实际/24535自身重放误差0闭批，实际约91秒非跑满通宵；恢复段执行4375/8350，后续4开发导航/全部24未执行。零模型保存根ctrl重建2.22e-16，唯一拒绝静态未来raw.243403619<.243534210（未来914步，差.131mm），动态.457057/速率控制均过；不可降门。末实际平速.0745699未停车，重认证异常直接退出未执行保留后备是必须修的退出缺陷，不能称安全停稳。当前guard恢复/锁空闲/父看护退出，原NS成功保持，本次0新增模型积分，旧09:00不延。

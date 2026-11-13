@@ -1,6 +1,6 @@
 # Phase导航：唯一当前阅读入口 · 2026-11-12
 
-当前状态：**用户重新授权后，V1090有限原因果恢复走廊候选已于22:29:41后台启动，仍沿原11月13日09:00硬截止/8GiB；WE主进行中，父31351/看护31353已确认。固定两路线主重复+NS完整回归全门过才条件原24。原V1089失败保持，不在原冻结批修补；首异常停，不自动新池。**
+当前状态：**V1090昨22:31首WE功能失败停，未跑满通宵，后续4开发任务及24全部未执行。24535实际/全重放误差0；恢复4375步后静态未来净空低于原门.131mm拒绝，实际末速度.07457m/s未完成停车，异常退出未执行后备是下一优先缺陷。原NS主+完整重复成功保持；当前仅零模型收尾，无自动新物理授权。**
 
 本次结果及下一步：[V1085检查与下一实验](/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/docs/RPCCR_FRESH_NS_V1085_INSPECTION_AND_NEXT.md)。精简状态：CURRENT_EXPERIMENT.json。历史复盘见PHASE_NAVIGATION_FULL_REVIEW_20261112.md；旧摘要无损保存在records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json。
 

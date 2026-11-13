@@ -1,33 +1,26 @@
 {
   "schema_version": 2,
-  "status": "RUNNING",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1090_active_corridor",
-  "active_window": {
-    "started_unix": 1794493781.5701377,
-    "started_monotonic": 6915.56357642,
-    "absolute_deadline_unix": 1794531600,
-    "hard_stop_monotonic": 44733.99344110489,
-    "boot_id": "65f8d742-949c-49e5-bab2-19583493ff14",
-    "old_windows_unchanged": true
-  },
-  "active_entrypoint": "experiments/v1090_active_corridor/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_OVERNIGHT_V1089_REPORT.md",
+  "latest_report": "docs/RPCCR_ACTIVE_CORRIDOR_V1090_REPORT.md",
   "latest_completed": {
     "closed": true,
     "passed": false,
-    "version": "v1089",
+    "version": "v1090",
     "three_route_development_passed": false,
     "confirmation_passed": false,
     "error": {
       "error": "AssertionError('FIRST_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE')",
-      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1089_route_scene_contract/campaign.py\", line 61, in main\n    for task in tasks[:4]:run(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1089_route_scene_contract/campaign.py\", line 48, in run\n    rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE\n"
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1090_active_corridor/campaign.py\", line 61, in main\n    for task in tasks[:5]:run(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1090_active_corridor/campaign.py\", line 48, in run\n    rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE\n"
     },
     "attempted": [
       "main_west_east"
@@ -36,6 +29,7 @@
       "repeat_west_east",
       "main_east_west",
       "repeat_east_west",
+      "repeat_ns_regression",
       "t0_confirm_01",
       "t0_confirm_02",
       "t0_confirm_03",
@@ -92,22 +86,22 @@
     "counts": {
       "vehicle_initializations": 1,
       "historical_replay_native": 0,
-      "new_actual_native": 20160,
-      "own_replay_native": 20160,
+      "new_actual_native": 24535,
+      "own_replay_native": 24535,
       "replay_state_initializations": 1,
       "private_mujoco_native": 0,
       "training_updates": 0,
-      "analytical_prediction_native": 0
+      "analytical_prediction_native": 230200
     },
     "development_counts": {
       "vehicle_initializations": 1,
       "historical_replay_native": 0,
-      "new_actual_native": 20160,
-      "own_replay_native": 20160,
+      "new_actual_native": 24535,
+      "own_replay_native": 24535,
       "replay_state_initializations": 1,
       "private_mujoco_native": 0,
       "training_updates": 0,
-      "analytical_prediction_native": 0
+      "analytical_prediction_native": 230200
     },
     "confirmation_t0_counts": {
       "vehicle_initializations": 0,
@@ -231,7 +225,7 @@
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
     "latest_raw_remote_delivery_pending": true,
-    "latest_closed_archive": "records/nav2_v1089_20261112/RECORD_INDEX.json",
+    "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
     "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-route-model-entry-v1088-20261112",
@@ -252,7 +246,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Current one repaired offline campaign only, same original09:00 deadline; first failure stops, no runtime repair",
+  "next_scope": "Saved-state rejection-to-actual-stop fallback diagnosis and qualification first; no automatic new physical window or route restart.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -379,5 +373,66 @@
     "terminated_by_wall": false,
     "finite_progress_passed": true,
     "functional_goal_source": false
+  },
+  "latest_recert_failure_diagnosis": {
+    "closed": true,
+    "diagnosis_complete": true,
+    "old_failure_reproduced": true,
+    "failed_gates": [
+      "full_raw_geometry"
+    ],
+    "root_native": 24535,
+    "corridor_cursor": 4375,
+    "remaining_native": 3975,
+    "proof": {
+      "passed": false,
+      "checks": {
+        "finite": true,
+        "full_states": true,
+        "full_raw_geometry": false,
+        "full_200_stop": true,
+        "goal_upper": true,
+        "speed_yaw": true,
+        "legal_ctrl": true,
+        "legal_slew": true,
+        "complete2200stop": true,
+        "terminal_full_cycle_hold": true
+      },
+      "minimum_full_cycle_raw_m": 0.24340361889199177,
+      "native": 3975,
+      "finite_corridor_not_original_goal": true,
+      "endpoint_xy": [
+        1.6341996816627788,
+        -0.6726263031140154
+      ]
+    },
+    "details": {
+      "static_minimum": 0.24340361889199177,
+      "dynamic_minimum": 0.4570572250701354,
+      "minimum_static_index": 914,
+      "minimum_dynamic_index": 2040,
+      "maximum_abs_longitudinal": 0.08306810799697299,
+      "maximum_abs_lateral": 0.017482577726794537,
+      "maximum_abs_yawrate": 0.09005041807999846,
+      "maximum_ctrl_slew_excess": 1.3877787807814457e-17,
+      "final_predicted_speed": [
+        1.693316949481484e-110,
+        -7.903096679448624e-140,
+        -1.3186795777538876e-137
+      ]
+    },
+    "actual_input_and_ctrl_reconstructed": true,
+    "maximum_control_reconstruction_error": 2.220446049250313e-16,
+    "models": 0,
+    "integrations": 0,
+    "no_model_restart": true,
+    "wall_s": 2.152952175005339
+  },
+  "latest_safety_exit_gap": {
+    "actual_final_translation_speed_m_s": 0.07456985841315988,
+    "final_stop_executed": false,
+    "simulation_exit_not_actual_braking": true,
+    "no_recorded_bad_contacts": true,
+    "priority": "Certify and execute retained fallback on recertification rejection"
   }
 }
