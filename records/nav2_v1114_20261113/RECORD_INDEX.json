@@ -1,0 +1,43 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-coupled-steering-v1114-20261113",
+  "archives": [
+    {
+      "group": "v1114-parked-mode-response",
+      "source_files": 99,
+      "raw_bytes": 31964142,
+      "archive_bytes": 14929106,
+      "archive_sha256": "12e4001a9a608af83062b675e6d8273cb134e5016a7bf0d826bad13921a63d4d",
+      "parts": [
+        {
+          "name": "v1114-parked-mode-response.tar.zst.part000",
+          "bytes": 14929106,
+          "sha256": "12e4001a9a608af83062b675e6d8273cb134e5016a7bf0d826bad13921a63d4d"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    },
+    {
+      "group": "v1114-component-review-and-calibration-input",
+      "source_files": 12,
+      "raw_bytes": 1524194,
+      "archive_bytes": 762278,
+      "archive_sha256": "052d30b1e03ec72a4c40eeb1dcbe62b7080cbd1bef55864693fb7f863bb87448",
+      "parts": [
+        {
+          "name": "v1114-component-review-and-calibration-input.tar.zst.part000",
+          "bytes": 762278,
+          "sha256": "052d30b1e03ec72a4c40eeb1dcbe62b7080cbd1bef55864693fb7f863bb87448"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ],
+  "archive_inventories": [
+    "INVENTORY.json",
+    "REVIEW_INVENTORY.json"
+  ],
+  "restoration": "tools/phase_storage_20261107/restore.py"
+}
