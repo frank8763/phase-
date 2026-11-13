@@ -1,0 +1,800 @@
+{
+  "archive": {
+    "group": "v1091-exit",
+    "source_files": 156,
+    "raw_bytes": 25879395,
+    "archive_bytes": 15880373,
+    "archive_sha256": "6412fcc39259d941470479e8fbc6533d15ccbacefd1084341a2be9dc7529c3fd",
+    "parts": [
+      {
+        "name": "v1091-exit.tar.zst.part000",
+        "bytes": 15880373,
+        "sha256": "6412fcc39259d941470479e8fbc6533d15ccbacefd1084341a2be9dc7529c3fd"
+      }
+    ],
+    "source_sha_and_decompressed_member_sha_verified": true,
+    "part_reassembly_sha_verified": true
+  },
+  "inventory": [
+    {
+      "path": "docs/RPCCR_CERTIFIED_EXIT_V1091_REPORT.md",
+      "bytes": 740,
+      "sha256": "4a28ad785ce140b2d884067b060c8d0b8c4c7f3c5feec44ae6d52f2581c02cf6"
+    },
+    {
+      "path": "experiments/v1091_certified_exit/PROTOCOL.md",
+      "bytes": 2284,
+      "sha256": "4cab1e39aa7e0c75228461d54d89503af01722680ee95f66e1bba578508734bd"
+    },
+    {
+      "path": "experiments/v1091_certified_exit/SOURCE_FREEZE.json",
+      "bytes": 438505,
+      "sha256": "72e43a72f9ffb239d28e2db3598358f706ef77dfe27dab471ac4bb40ee7b69fc"
+    },
+    {
+      "path": "experiments/v1091_certified_exit/audit.py",
+      "bytes": 5200,
+      "sha256": "e7f405eec8cf21cb77240b38f1ca7321cb7867c276436c4aecaaf933ad1a55b2"
+    },
+    {
+      "path": "experiments/v1091_certified_exit/campaign.py",
+      "bytes": 7496,
+      "sha256": "72daccbbca912c03805b476a4480a228b665f10521c8577b1879b0a976198c3c"
+    },
+    {
+      "path": "experiments/v1091_certified_exit/check_entry.py",
+      "bytes": 1599,
+      "sha256": "1b42564cfedfd2dc3f73dc5b377f6e2c24521063b081b04ae2cff7c6bfa51663"
+    },
+    {
+      "path": "experiments/v1091_certified_exit/qualify.py",
+      "bytes": 4247,
+      "sha256": "072e2afa89ce42a32d3c5626c57f4bcb5c3397d916fef818e403cf2e7b47deba"
+    },
+    {
+      "path": "experiments/v1091_certified_exit/stop.py",
+      "bytes": 3384,
+      "sha256": "7bb814d9b63078664e1877515e315c4d19c6deea0f623f84240f2b73ea0e97fb"
+    },
+    {
+      "path": "experiments/v1091_certified_exit/worker.py",
+      "bytes": 7546,
+      "sha256": "f8e36f67a00e3218fbe26eebd85be229bb9057fc320b74a120dd85616b787b69"
+    },
+    {
+      "path": "runs/v1091_certified_exit/ACTIVE.json",
+      "bytes": 21,
+      "sha256": "a54ac5bb1f80f63e97d0fdea2ed11b5d547130e28378703d643019b310611f98"
+    },
+    {
+      "path": "runs/v1091_certified_exit/APPROVAL.json",
+      "bytes": 51,
+      "sha256": "f60ddddef6654805e97d2920c7a14fb8613e41623629c96e59f33def399be4e8"
+    },
+    {
+      "path": "runs/v1091_certified_exit/AUTHORIZATION.json",
+      "bytes": 280,
+      "sha256": "bd27dc265da973ae1b64e74f9f3573236bcd6fb1ab6b33bf60e488e4549f883d"
+    },
+    {
+      "path": "runs/v1091_certified_exit/AUTHORIZATION_CLOSED.json",
+      "bytes": 93,
+      "sha256": "dcacff2c4bf922e7ecba67d90f38d1f535e122b92bbea4c625edd6743a986907"
+    },
+    {
+      "path": "runs/v1091_certified_exit/COMPLETION.json",
+      "bytes": 576,
+      "sha256": "096a2594d0145d34793ebf2b85d8b3b3965b150fa414c1c3ec1c16fadcb072c3"
+    },
+    {
+      "path": "runs/v1091_certified_exit/ENTRY_QUALIFICATION.json",
+      "bytes": 188,
+      "sha256": "b6ab12891ee9ee292fcdb312db324af85ca7e6f5ca75c31d831f6b987234c69d"
+    },
+    {
+      "path": "runs/v1091_certified_exit/GUARD.bin",
+      "bytes": 351,
+      "sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66"
+    },
+    {
+      "path": "runs/v1091_certified_exit/LAUNCH.json",
+      "bytes": 127,
+      "sha256": "47cdb0580c40dd37468e48c11defdcbfcba6b1d0363dac721f3c55ba84b87cd4"
+    },
+    {
+      "path": "runs/v1091_certified_exit/QUALIFICATION.json",
+      "bytes": 930,
+      "sha256": "8dc93d87067f4dafa98d14de3914b7b8a576d7bee33314cf257251a1b2c3ac7b"
+    },
+    {
+      "path": "runs/v1091_certified_exit/RESULTS.json",
+      "bytes": 51625,
+      "sha256": "5374fef1b1d688f2d7d714e6136b356819780cac7ad263e0059585a734638752"
+    },
+    {
+      "path": "runs/v1091_certified_exit/ROUND_WINDOW.json",
+      "bytes": 257,
+      "sha256": "d1cc7034db8b2527d5a9820db9e32ad735dec9cb494b7660df8e055563e19793"
+    },
+    {
+      "path": "runs/v1091_certified_exit/TASK.json",
+      "bytes": 802,
+      "sha256": "44efb7ce6b3f4882ffb9d4e67aac42d7db3a7e15b4991efc27ead16494fb2a8d"
+    },
+    {
+      "path": "runs/v1091_certified_exit/audit.console",
+      "bytes": 888,
+      "sha256": "3b77916b8c0479c07f573cef601b3a0953af1b333923b57671dfb851827b39a6"
+    },
+    {
+      "path": "runs/v1091_certified_exit/driver.lock",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/v1091_certified_exit/worker.console",
+      "bytes": 2482,
+      "sha256": "ff800bed1666f272e7ed7c05467dab9cf0fc7dc74557b84df94811287e8f535e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/ACTUAL_EXIT_INPUT.json",
+      "bytes": 80027,
+      "sha256": "5cc21d98881c19151779dd9c3e61f67392be9165a2270616dee5b88ac3ebc3f9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/CERTIFIED_EXIT.json",
+      "bytes": 45725,
+      "sha256": "7a4b0042acae7e9c27a7a4124e5b7ae29e1114eb0539bd5821c1958b7e2679bb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/CERTIFIED_EXIT_PLAN.npz",
+      "bytes": 36098,
+      "sha256": "35fb76e765ea7d789baafb25dea1721cedab75f0f3565b2f9695cf2d888e37dd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/FINAL_INDEPENDENT_AUDIT.json",
+      "bytes": 988,
+      "sha256": "589ed073f97b532c56ec04727b17edea47324a8253fafa72db8a8c47afeb4c78"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/HISTORICAL_REPLAY_PROOF.json",
+      "bytes": 179,
+      "sha256": "2034974835f80d3c0a931d1f29586dda6196338a8ee490544ce72470797c2028"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/ORIGINAL_REJECTION.json",
+      "bytes": 493,
+      "sha256": "1ecca515fcf5011ecd0a3fee833d617dc7308a61104b879c1e9cb31a14c6a755"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/PARTIAL.json",
+      "bytes": 80,
+      "sha256": "b713b5ccfb4ff6aecd67793da50471331e870d851bfffe25bd2df15a48e3d672"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/RESULT.json",
+      "bytes": 51625,
+      "sha256": "5374fef1b1d688f2d7d714e6136b356819780cac7ad263e0059585a734638752"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/BODY_COMMANDS.json",
+      "bytes": 3060047,
+      "sha256": "9cd30b54ca9e6f99a2861c26cd159bcdc6ef2298d8b85e3da67365d1215c98a7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/CONTACTS.json.gz",
+      "bytes": 1436213,
+      "sha256": "02f0030ab47a7fb5baa85e2cd4488f631a9a75478c35e673fb4d175bb1562d79"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/DECLARED_COURSE_BINDING.json",
+      "bytes": 447,
+      "sha256": "d8ab7680f31b15b2e7af054747a2474dbe64907c8c3974c0d9257f20477575e9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/EXACT_SENSOR_BINDING.json",
+      "bytes": 366,
+      "sha256": "18f0c820658783b162be835fdb7e5fb3399273dd0aef3cc4458707595b053319"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/INITIAL_STATE.npz",
+      "bytes": 261,
+      "sha256": "3b99c7efb340bc974c7072878bb50954dd40cf7868c20c43f5456153c95a2706"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/MODEL_BUILD_CONTRACT.json",
+      "bytes": 91508,
+      "sha256": "0c0b2e713e1e21cef1089fadcd014e00789af5b74cd2f82bc0a408b6184c4679"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/NATIVE_TRACE.npz",
+      "bytes": 7881716,
+      "sha256": "dd4dc52588cbd3c8f8a41b814dc222f2d67773b1f72b630e097d08a54c7b4d50"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/PATCHED_ASSEMBLY.xml",
+      "bytes": 13720,
+      "sha256": "cb8d534a868771f32ba9884d649e20409169b2246b86f64353e8124a15be563e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/REPLAY.json",
+      "bytes": 125,
+      "sha256": "14a749222a265831463e2499f238faa31f8729aadd8bba8797b5c79543646c74"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/REPLAY_PROGRESS.json",
+      "bytes": 34,
+      "sha256": "d92befb622e9aabee5ff97c49d7b7075ea9f26079e47860a2247c130c3dff76b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/SCENE_MODEL_CONTRACT.json",
+      "bytes": 456,
+      "sha256": "1d57518d09bc54bcb71f737b980ec14412addc20e638fe1ed745ebaae860b8c3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/SELECTED_NATIVE_BINDING.json",
+      "bytes": 405,
+      "sha256": "5e413a2fbbe4d5959edefc183c07b50184794a96ea1823e2dfe693873efb2a75"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/SENSORS.json.gz",
+      "bytes": 1233750,
+      "sha256": "c2dc53339aefe808da14e1266b3791a4f9fb3253aabfc56dcef7218761a7dca7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/SETUP.json",
+      "bytes": 32264,
+      "sha256": "d5f44c5ae603d983d35113b7f17de68f427d9395451da71bc0d9b0f9c406a0de"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/ACTOR_PATCH_SELECTION.json",
+      "bytes": 28373,
+      "sha256": "c5fd16ddf06a589047a75c368aadb15f9b6253b8bbdb08cc65f808139200b751"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/ARENA_CONSTRUCTION.json",
+      "bytes": 8040,
+      "sha256": "cab0ff4cee1814b2af8cc3517d04f725ffb01c832cdf72d9f4736c33cd78d62f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/INITIALIZATION_PROVENANCE.json",
+      "bytes": 1179,
+      "sha256": "dfed4525ad864710baa7e18e8a2408edb5265c249a3d73485e4aca56f3af215d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/KNOWN_PRIOR_REFERENCE.json",
+      "bytes": 25114,
+      "sha256": "d5f8c20dedd9b54384e4d7c6aa1aaebf93764e169f0b422c133aff3b13d588bd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/MOTION_ENVELOPE_CHECK.json",
+      "bytes": 50160,
+      "sha256": "176f1f3095ede51a702a693dc3112767db82b39ffb4f985024b054139fa7aae9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/assets/isolated_indoor.xml",
+      "bytes": 13488,
+      "sha256": "5cb3f627f127b626f43f62d7afbdaed2bd6fcafdafdce3a2a153e9769fed6ce7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/index",
+      "bytes": 1310728,
+      "sha256": "6d0552c4e71fe85e6cdc7e7745882ea91b382fbc56448f2e9e1c2d77dcf67d81"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part0/mesa_cache.db",
+      "bytes": 1667,
+      "sha256": "9e8811497234b4993143ee3a6a18fbe541e8eda78f0452fb51d9506a8c1bc32a"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part0/mesa_cache.idx",
+      "bytes": 104,
+      "sha256": "60b6b3b7d695f0bab3339f3905c2e676e2ad82e8639c77b53d5c427b9cd53fc5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part1/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "e252efe0a0c89e3e0d9139a6c112528e593446210262a260fc1d2c1ef3d74bfd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part1/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "e252efe0a0c89e3e0d9139a6c112528e593446210262a260fc1d2c1ef3d74bfd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part10/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d03d4fbd2a84a18e2a683f27003fec3e14b61b3ddaae786706d5d65e975ae271"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part10/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d03d4fbd2a84a18e2a683f27003fec3e14b61b3ddaae786706d5d65e975ae271"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part11/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "3d84fb18ca05c3799136f2f74a9e8db6f1e1452d14129ff98fdfeae1ad456321"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part11/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "3d84fb18ca05c3799136f2f74a9e8db6f1e1452d14129ff98fdfeae1ad456321"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part12/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "b1d21f1194e6233fd1dbe0b2902d1b216e59593868797561a3f3fea98e5adeae"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part12/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "b1d21f1194e6233fd1dbe0b2902d1b216e59593868797561a3f3fea98e5adeae"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part13/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "37e56192ef117ae10bd9ecba84c3d61b3404587738037e8af2531f41dcd3f0d3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part13/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "37e56192ef117ae10bd9ecba84c3d61b3404587738037e8af2531f41dcd3f0d3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part14/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "c91f63257d5e649da52203fc11617d0c3a3bf8f39541f6761051a27d9a30a723"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part14/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "c91f63257d5e649da52203fc11617d0c3a3bf8f39541f6761051a27d9a30a723"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part15/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "8ef65ff3f2463b87ee9086ced95abeda6bb01857f858ed7f581335cd84e9284c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part15/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "8ef65ff3f2463b87ee9086ced95abeda6bb01857f858ed7f581335cd84e9284c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part16/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "bf1290cb71b1e1e5a30be5903a6a677293b2b548b3a7946556084b0495e7f53b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part16/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "bf1290cb71b1e1e5a30be5903a6a677293b2b548b3a7946556084b0495e7f53b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part17/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "297faf99200341f267557709830aca479337de6ff6ecea9d439a408d8f5001fb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part17/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "297faf99200341f267557709830aca479337de6ff6ecea9d439a408d8f5001fb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part18/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "0ce1e8f20855604be222cc9325170a8f93488083d1948fed3bad7e80fdd852f6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part18/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "0ce1e8f20855604be222cc9325170a8f93488083d1948fed3bad7e80fdd852f6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part19/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "db2e3fcb4d9b82562b0aa1f4e6b459048d98f2a9b2c516d5e00780893ec77ad6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part19/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "db2e3fcb4d9b82562b0aa1f4e6b459048d98f2a9b2c516d5e00780893ec77ad6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part2/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "3da57a341a74fe7c596ae82ad15a410e11b2978eb668e7478f312e9e607e93c3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part2/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "3da57a341a74fe7c596ae82ad15a410e11b2978eb668e7478f312e9e607e93c3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part20/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "afec4404a8bef8c72a640a2ebcc41cb8e65cd0f7adb9548e42af3f16554f51bd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part20/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "afec4404a8bef8c72a640a2ebcc41cb8e65cd0f7adb9548e42af3f16554f51bd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part21/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "8bed6fc5389a6f61a96a2ccc4ec9bc10117fcacf28a84d1f4d19577464d8c211"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part21/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "8bed6fc5389a6f61a96a2ccc4ec9bc10117fcacf28a84d1f4d19577464d8c211"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part22/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d34086be5ad3691004f49584b7942c17d4511b896aea8052c7ac06d4f9b77c48"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part22/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d34086be5ad3691004f49584b7942c17d4511b896aea8052c7ac06d4f9b77c48"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part23/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "17c9c5f7d6a64f3bc8bb37ce590b8bcb15909d5b09ea1d16132840c5255c5802"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part23/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "17c9c5f7d6a64f3bc8bb37ce590b8bcb15909d5b09ea1d16132840c5255c5802"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part24/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "686477f185592162bb6ff6201915f59f91fa5adb9925c7878e4a65836787fc93"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part24/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "686477f185592162bb6ff6201915f59f91fa5adb9925c7878e4a65836787fc93"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part25/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "fee593d59da4870913bdf5cfe421894d51b65f1255ab1e5d23d1dbfa1cba216d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part25/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "fee593d59da4870913bdf5cfe421894d51b65f1255ab1e5d23d1dbfa1cba216d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part26/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "5c4700bdc567a95269c5836a71daa4e54f92d3b3cc7bab82ba47658cb8c4ea28"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part26/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "5c4700bdc567a95269c5836a71daa4e54f92d3b3cc7bab82ba47658cb8c4ea28"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part27/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "e8cdf19e43c4c3cc7dd0294db4e80e2a5c9c23b5b57b60317e65331f8fad0fcb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part27/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "e8cdf19e43c4c3cc7dd0294db4e80e2a5c9c23b5b57b60317e65331f8fad0fcb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part28/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "ba79dbd05aa1e9c54f18eaf08037d772c2e78220775a49559a3dd3fe0ab08f75"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part28/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "ba79dbd05aa1e9c54f18eaf08037d772c2e78220775a49559a3dd3fe0ab08f75"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part29/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "47ee92f927f030b37bb7a7272f4de90bf94efce67557b0d64b057de45f31cf5e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part29/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "47ee92f927f030b37bb7a7272f4de90bf94efce67557b0d64b057de45f31cf5e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part3/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "2ff38223b5faf4d321c00912e95994527be6117017b10d8affc2c1c552788d47"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part3/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "2ff38223b5faf4d321c00912e95994527be6117017b10d8affc2c1c552788d47"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part30/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "da32c19eca93179272eff002d8fb15631149e045dca56b73ecbbd17f8970cedd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part30/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "da32c19eca93179272eff002d8fb15631149e045dca56b73ecbbd17f8970cedd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part31/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "7d9986e0394636567d4c5afd86d208ffe532792cea65b196be058b06fd88bf73"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part31/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "7d9986e0394636567d4c5afd86d208ffe532792cea65b196be058b06fd88bf73"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part32/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "aa24cc064c744bb4ab614ea29ea2c39973dbceed1a9e2f9309910b2f472728a7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part32/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "aa24cc064c744bb4ab614ea29ea2c39973dbceed1a9e2f9309910b2f472728a7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part33/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "e7753ec583e22d3eeef3c0eddb23dd07f7fc918122fc9c2ccad89292e5046516"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part33/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "e7753ec583e22d3eeef3c0eddb23dd07f7fc918122fc9c2ccad89292e5046516"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part34/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "e70e1dd93845ac04eac92e15acb31b6f75139b850d317696d01c2c026d316bcc"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part34/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "e70e1dd93845ac04eac92e15acb31b6f75139b850d317696d01c2c026d316bcc"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part35/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "faa56a62078fb7ccc8591d1a2c38e53b22fb2eb8490c9d24105a885ef0c1ea62"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part35/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "faa56a62078fb7ccc8591d1a2c38e53b22fb2eb8490c9d24105a885ef0c1ea62"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part36/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "16c3d5ed2dfc38e7dedbe987a19a5e5ad77422edb7e98215f0186f0416436ac7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part36/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "16c3d5ed2dfc38e7dedbe987a19a5e5ad77422edb7e98215f0186f0416436ac7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part37/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "760e6eb44beb9b4cf26df59ee0d2e16db87773c0830e16c01b9cbc46d6a54729"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part37/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "760e6eb44beb9b4cf26df59ee0d2e16db87773c0830e16c01b9cbc46d6a54729"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part38/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "b90de074741e86fd549f6f5d38f30be1601a5968fdb27badd74dbd5a5e1c5ff4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part38/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "b90de074741e86fd549f6f5d38f30be1601a5968fdb27badd74dbd5a5e1c5ff4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part39/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "a1b87db3adedfe46b064cb856da9dbc700d7f6691394af745cf2495410d98da5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part39/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "a1b87db3adedfe46b064cb856da9dbc700d7f6691394af745cf2495410d98da5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part4/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "f79b121ec84b7915cc5ad9352539e44a4f3d5b89adae8128cf90f2c1b2f3d552"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part4/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "f79b121ec84b7915cc5ad9352539e44a4f3d5b89adae8128cf90f2c1b2f3d552"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part40/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "fb7b785bf5bb8f82b98615529d6be7361cfaaffff039a32c6d39580e4368ed6f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part40/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "fb7b785bf5bb8f82b98615529d6be7361cfaaffff039a32c6d39580e4368ed6f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part41/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "a846cdd386ba066589dd293aec926dded85d38aac17dd212df7a0bd665f9fe96"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part41/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "a846cdd386ba066589dd293aec926dded85d38aac17dd212df7a0bd665f9fe96"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part42/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "c8f2344e9e440205d011258ac341773cf97891854a0bb28db9e648b2f6b1aaaf"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part42/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "c8f2344e9e440205d011258ac341773cf97891854a0bb28db9e648b2f6b1aaaf"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part43/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d7dfe19d3e0994c5279359eba92f144f43149cdaee983c29c37d20addc018748"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part43/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d7dfe19d3e0994c5279359eba92f144f43149cdaee983c29c37d20addc018748"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part44/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "fb978f9fd59bfc9f7be0bd893a13eb0de949e5b0c5fc43b70c17d643673e4ec5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part44/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "fb978f9fd59bfc9f7be0bd893a13eb0de949e5b0c5fc43b70c17d643673e4ec5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part45/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "b350a852bc25661a04af922bc9bf9e3d812af5d26dd49cb1cc6d827e003fb303"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part45/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "b350a852bc25661a04af922bc9bf9e3d812af5d26dd49cb1cc6d827e003fb303"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part46/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "5936f6651070c13de28b032506020ea751b0d797fcaaa8441cbc48c1b0be7ae3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part46/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "5936f6651070c13de28b032506020ea751b0d797fcaaa8441cbc48c1b0be7ae3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part47/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "c03565769f01d73a1040c5841060c03ac62531b77808af581169ff4034a19847"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part47/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "c03565769f01d73a1040c5841060c03ac62531b77808af581169ff4034a19847"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part48/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "e53102d95f2f871e71b86e2d8fd34d79f2a534f43ad44b68ef7ea82dab203233"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part48/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "e53102d95f2f871e71b86e2d8fd34d79f2a534f43ad44b68ef7ea82dab203233"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part49/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "e747a4ccf5d6218efea177ace0f8cbf3a857f6e39ace5ebbfc1b34f4cf415536"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part49/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "e747a4ccf5d6218efea177ace0f8cbf3a857f6e39ace5ebbfc1b34f4cf415536"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part5/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "8ba885e19e8b2dcf75a5ace141b9d5e7ab6e81038fb53ae0f6ce63361be4aec7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part5/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "8ba885e19e8b2dcf75a5ace141b9d5e7ab6e81038fb53ae0f6ce63361be4aec7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part6/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "e7f4590fe942beb1e74ac4aee85c525d5c403b26bbc641d70d91e748ab2954e3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part6/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "e7f4590fe942beb1e74ac4aee85c525d5c403b26bbc641d70d91e748ab2954e3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part7/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "dccef528775c3f1d2bd92ddaae5100bb64480f031191f360080212b92e77349f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part7/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "dccef528775c3f1d2bd92ddaae5100bb64480f031191f360080212b92e77349f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part8/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "2c0a66b1a9923da271bfb5edcaad77327a054ffb35768a337e4a46e6a3179954"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part8/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "2c0a66b1a9923da271bfb5edcaad77327a054ffb35768a337e4a46e6a3179954"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part9/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d0c75e8a109bd625645ad6b51a747f7b2408ad8ec7c5fbbfeb6649eef8edbd9b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/cache/mesa_shader_cache_db/part9/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d0c75e8a109bd625645ad6b51a747f7b2408ad8ec7c5fbbfeb6649eef8edbd9b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/paired/paired_reset.json",
+      "bytes": 365,
+      "sha256": "c1804765981df124abefe0e3cfda70209151729423d96d9f669d41d98c208a5e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/scene_model.mjb",
+      "bytes": 9940106,
+      "sha256": "af6f0c393382a255afb35ff1ae0db5256100705c85cc264d25bdc3541966db53"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1091/exit_saved_we/physics/v648_environment.json",
+      "bytes": 1912,
+      "sha256": "454a0c019ce9f6139b199bae8d4da15d7876fabde9dc001ad69e0ee066975e10"
+    }
+  ]
+}
