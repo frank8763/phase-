@@ -1,0 +1,29 @@
+{
+  "closed": true,
+  "passed": false,
+  "version": "v1113",
+  "scope": "two original static t0 parked-steering components only",
+  "attempted": [
+    "negative_to_positive"
+  ],
+  "unexecuted": [
+    "positive_to_negative"
+  ],
+  "counts": {
+    "vehicle_initializations": 1,
+    "new_actual_native": 2228,
+    "own_replay_native": 2228,
+    "replay_state_initializations": 1,
+    "private_mujoco_native": 0,
+    "training_updates": 0
+  },
+  "error": {
+    "error": "AssertionError('FIRST_RESPONSE_SAFETY_OR_EVIDENCE_FAILURE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1113_static_mode_entry/campaign.py\", line 47, in main\n    assert row['passed'],'FIRST_RESPONSE_SAFETY_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_RESPONSE_SAFETY_OR_EVIDENCE_FAILURE\n"
+  },
+  "source_unchanged": true,
+  "guard_original": true,
+  "whole_route_passed": false,
+  "new24_executed": false,
+  "closed_unix": 1794568222.0841155
+}
