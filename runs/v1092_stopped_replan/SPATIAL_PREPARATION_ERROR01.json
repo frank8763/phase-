@@ -1,0 +1,164 @@
+{
+  "full_cycle_center_polygon": [
+    [
+      2.9128252081526727,
+      -1.2460000519233223
+    ],
+    [
+      2.938249968703667,
+      -1.2460000519233223
+    ],
+    [
+      2.9582669601143667,
+      -1.2259830605126225
+    ],
+    [
+      3.1404636511480777,
+      -0.7861213379995369
+    ],
+    [
+      3.1404636511480777,
+      -0.7831104450885832
+    ],
+    [
+      3.072838368059451,
+      -0.7550991356739539
+    ],
+    [
+      3.0278361399021323,
+      -0.7550991356739539
+    ],
+    [
+      2.9989435858366313,
+      -0.7839916897394547
+    ],
+    [
+      2.844777067278742,
+      -1.1561825897057545
+    ],
+    [
+      2.844777067278742,
+      -1.2143208184768457
+    ],
+    [
+      2.8507395996589198,
+      -1.2202833508570237
+    ]
+  ],
+  "proposer_only_dynamic_outer_box": [
+    2.7447770672787417,
+    -1.3460000519233224,
+    3.2404636511480778,
+    -0.655099135673954
+  ],
+  "physical_scene_changed": false,
+  "actual_static_entities_unchanged": true,
+  "static": {
+    "passed": true,
+    "functional_goal_source": true,
+    "expanded": 23,
+    "status": "ORIGINAL_PYTHON_COMPLETE_GOAL_SOURCE_PASS",
+    "minimum_raw_m": 0.3736252986435196,
+    "terminal_goal_upper_m": 0.42231886632505794,
+    "actions": [
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": 0.0,
+        "speed": 0.08,
+        "ticks": 750
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": -0.42722137342572125,
+        "speed": 0.08,
+        "ticks": 125
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": 0.0,
+        "speed": 0.08,
+        "ticks": 1000
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": -0.21361068671286063,
+        "speed": 0.08,
+        "ticks": 250
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": -0.42722137342572125,
+        "speed": 0.08,
+        "ticks": 125
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": 0.0,
+        "speed": 0.08,
+        "ticks": 125
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": -0.21361068671286063,
+        "speed": 0.08,
+        "ticks": 125
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": 0.0,
+        "speed": 0.08,
+        "ticks": 125
+      },
+      {
+        "kind": "move",
+        "gear": 1,
+        "target": -0.42722137342572125,
+        "speed": 0.08,
+        "ticks": 125
+      },
+      {
+        "kind": "wait",
+        "gear": 0,
+        "target": 0.0,
+        "ticks": 200
+      }
+    ]
+  },
+  "original_full_cycle_certificate": {
+    "passed": false,
+    "checks": {
+      "finite": true,
+      "full_states": true,
+      "full_raw_geometry": false,
+      "full_200_stop": true,
+      "goal_upper": true,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "complete2200stop": true,
+      "terminal_full_cycle_hold": true
+    },
+    "minimum_full_cycle_raw_m": -0.10000200000000001,
+    "native": 4950,
+    "finite_corridor_not_original_goal": true,
+    "endpoint_xy": [
+      3.922319664468295,
+      -1.6666113803491582
+    ]
+  },
+  "actual_original_goal_predicted_distance_m": 0.3423188663235083,
+  "models": 0,
+  "integrations": 0,
+  "physical_authorized": false,
+  "not_a_complete_physical_qualification": true,
+  "wall_s": 0.8254707730011432,
+  "preparation_error": "proposer rectangle uses center/half extents, initial bounding box encoding was rejected by independent original full-cycle certificate"
+}

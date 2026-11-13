@@ -1,0 +1,106 @@
+[
+  {
+    "task": {
+      "task_id": "main_west_east",
+      "case_id": "WEST_EAST",
+      "seed": 10010001,
+      "phase": 0.6573753567727383,
+      "dynamic": true,
+      "goal_xy": [
+        4.0,
+        -2.0
+      ],
+      "goal_yaw": 0.0,
+      "run_id": "v1061-0-main",
+      "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1092/main_west_east",
+      "from_actual_native_zero": true,
+      "start_xy": [
+        -4.0,
+        -2.0
+      ],
+      "start_yaw": 0.0,
+      "course_id": "V1061_EW_START_NORTH_010",
+      "canonical_parent_case_id": "WEST_EAST",
+      "kind": "main",
+      "run_root": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1092_stopped_replan",
+      "target": 0.0,
+      "speed": 0.125,
+      "prefix_native": 125,
+      "stop_native": 2200,
+      "historical_prefix_native": 0,
+      "native_limit": 85000,
+      "stage": "development"
+    },
+    "result": {
+      "passed": false,
+      "vehicle_initializations": 1,
+      "internal_factory_model_constructions": "unknown",
+      "historical_replay_native": 0,
+      "new_actual_native": 39660,
+      "navigation_native": 39660,
+      "own_replay_native": 39660,
+      "replay_state_initializations": 1,
+      "private_mujoco_native": 0,
+      "training_updates": 0,
+      "fresh_native_zero": true,
+      "analytical_prediction_scope": "Live recovery trajectory forecasts only; original static C++ previews and static predictions not counted in this field",
+      "new_main_samples": 0,
+      "resource_policy": {
+        "cpu_affinity": [
+          2
+        ],
+        "nice": 19,
+        "scheduler": 5,
+        "gpu_visible": "",
+        "mujoco_gl": "osmesa",
+        "io_class": 3,
+        "stage_process_access": false
+      },
+      "first_causal_discovery_native": 15560,
+      "observation_approach_native": 2400,
+      "recovery_origin_native": 20160,
+      "error": "AssertionError(('NO_CERTIFIED_SINGLE_GEAR_STOP_PREFIX', [{'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': True, 'speed_yaw': True, 'legal_ctrl': True, 'legal_slew': True, 'complete2200stop': True, 'terminal_full_cycle_hold': False}, 'minimum_full_cycle_raw_m': -0.10000200000000001, 'native': 4200, 'finite_corridor_not_original_goal': True, 'endpoint_xy': [3.406804343170952, -1.3612156294200437], 'first_gear': 1, 'prefix_native': 2000, 'static_complete_goal_not_executed': True, 'predicted_motion_m': 1.561277295641361}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': True, 'speed_yaw': True, 'legal_ctrl': True, 'legal_slew': True, 'complete2200stop': True, 'terminal_full_cycle_hold': False}, 'minimum_full_cycle_raw_m': -0.10000200000000001, 'native': 3700, 'finite_corridor_not_original_goal': True, 'endpoint_xy': [3.0321607405921367, -1.2227039821159074], 'first_gear': 1, 'prefix_native': 1500, 'static_complete_goal_not_executed': True, 'predicted_motion_m': 1.1620543385809279}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': True, 'speed_yaw': True, 'legal_ctrl': True, 'legal_slew': True, 'complete2200stop': True, 'terminal_full_cycle_hold': False}, 'minimum_full_cycle_raw_m': -0.10000200000000001, 'native': 3200, 'finite_corridor_not_original_goal': True, 'endpoint_xy': [2.655062512390112, -1.092336214259975], 'first_gear': 1, 'prefix_native': 1000, 'static_complete_goal_not_executed': True, 'predicted_motion_m': 0.763134149742674}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': True, 'speed_yaw': True, 'legal_ctrl': True, 'legal_slew': True, 'complete2200stop': True, 'terminal_full_cycle_hold': False}, 'minimum_full_cycle_raw_m': 0.04781935264626133, 'native': 2700, 'finite_corridor_not_original_goal': True, 'endpoint_xy': [2.288313582668665, -0.9638160607113665], 'first_gear': 1, 'prefix_native': 500, 'static_complete_goal_not_executed': True, 'predicted_motion_m': 0.37483906718423343}]))",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_worker.py\", line 37, in main\n    owner.navigate(v,setup,task,end,out,r);r['new_main_samples']=1 if task['kind']=='main'else 0\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1092_stopped_replan/worker.py\", line 17, in navigate\n    return original(v,setup,task,end,out,result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/owner.py\", line 46, in navigate\n    result['recovery_origin_native']=v.count;result['feedback_execution']=execute(v,setup,seed,end,evidence,out,causal.packet);goal=float(np.linalg.norm(np.asarray(v.body()[:2])-task['goal_xy']));assert goal<=.45 and np.linalg.norm(v.body()[3:])<=.03,'FRESH_ORIGINAL_GOAL_AND_STOP';assert np.linalg.norm(np.asarray(v.body()[:2])-evidence.first['xy'])>=1.,'FRESH_ONE_METRE_AFTER_DISCOVERY';result.update(passed=True,status='FRESH_T0_GOAL_AND_STOP',actual_original_goal_reached=True,actual_goal_distance_m=goal,static_renewals=static_renewals)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/fresh_worker.py\", line 36, in <lambda>\n    owner.execute=lambda *args:pipeline.execute(*args,output=O)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1092_stopped_replan/pipeline.py\", line 25, in execute\n    q=corridor.construct(setup,packet,source,output,goal_seed['goal'])\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1092_stopped_replan/corridor.py\", line 30, in construct\n    raise AssertionError(('NO_CERTIFIED_SINGLE_GEAR_STOP_PREFIX',candidates))\nAssertionError: ('NO_CERTIFIED_SINGLE_GEAR_STOP_PREFIX', [{'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': True, 'speed_yaw': True, 'legal_ctrl': True, 'legal_slew': True, 'complete2200stop': True, 'terminal_full_cycle_hold': False}, 'minimum_full_cycle_raw_m': -0.10000200000000001, 'native': 4200, 'finite_corridor_not_original_goal': True, 'endpoint_xy': [3.406804343170952, -1.3612156294200437], 'first_gear': 1, 'prefix_native': 2000, 'static_complete_goal_not_executed': True, 'predicted_motion_m': 1.561277295641361}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': True, 'speed_yaw': True, 'legal_ctrl': True, 'legal_slew': True, 'complete2200stop': True, 'terminal_full_cycle_hold': False}, 'minimum_full_cycle_raw_m': -0.10000200000000001, 'native': 3700, 'finite_corridor_not_original_goal': True, 'endpoint_xy': [3.0321607405921367, -1.2227039821159074], 'first_gear': 1, 'prefix_native': 1500, 'static_complete_goal_not_executed': True, 'predicted_motion_m': 1.1620543385809279}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': True, 'speed_yaw': True, 'legal_ctrl': True, 'legal_slew': True, 'complete2200stop': True, 'terminal_full_cycle_hold': False}, 'minimum_full_cycle_raw_m': -0.10000200000000001, 'native': 3200, 'finite_corridor_not_original_goal': True, 'endpoint_xy': [2.655062512390112, -1.092336214259975], 'first_gear': 1, 'prefix_native': 1000, 'static_complete_goal_not_executed': True, 'predicted_motion_m': 0.763134149742674}, {'passed': False, 'checks': {'finite': True, 'full_states': True, 'full_raw_geometry': False, 'full_200_stop': True, 'goal_upper': True, 'speed_yaw': True, 'legal_ctrl': True, 'legal_slew': True, 'complete2200stop': True, 'terminal_full_cycle_hold': False}, 'minimum_full_cycle_raw_m': 0.04781935264626133, 'native': 2700, 'finite_corridor_not_original_goal': True, 'endpoint_xy': [2.288313582668665, -0.9638160607113665], 'first_gear': 1, 'prefix_native': 500, 'static_complete_goal_not_executed': True, 'predicted_motion_m': 0.37483906718423343}])\n",
+      "analytical_prediction_native": 183750,
+      "physical": {
+        "actual_native": 39660,
+        "fully_recorded_native": 39660,
+        "minimum_actual_clearance_m": 0.27698465551487667,
+        "minimum_self_margin_m": 0.00930379483429683,
+        "bad_contacts": 0,
+        "final_body": [
+          1.9279772528175403,
+          -0.8605588300833481,
+          -0.25215444788934666,
+          4.6820030330535025e-06,
+          -2.9343490719525095e-06
+        ],
+        "final_translation_speed_m_s": 4.713876452538412e-06,
+        "root_guard_native_count": 39660,
+        "goal_distance_m": 2.3646573630322374,
+        "first_actor_detection": {
+          "native_tick": 15560,
+          "sim_time": 155.60000000000346,
+          "xy": [
+            0.48866674815543165,
+            -0.32861931356516927
+          ],
+          "rays": [
+            28
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 2.8368798418641563
+      },
+      "evidence_saved": true,
+      "replay": {
+        "replay_native": 39660,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true
+    },
+    "returncode": 1
+  }
+]
