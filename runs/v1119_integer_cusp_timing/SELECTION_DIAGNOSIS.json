@@ -1,0 +1,10 @@
+{
+  "closed": true,
+  "models": 0,
+  "physical_integrations": 0,
+  "new_analytical_dynamics": 0,
+  "selected_integer_events_identical_to_old_seed": true,
+  "cause": "integer_seed returned self.best which included old seed, so complete-source ranking could discard every repaired prefix before its final-leg refinement",
+  "classification": "seed-selection implementation/design error; no safety gate relaxed, original failure preserved",
+  "required_fix": "choose refinement seed among the new completed timing beams only; keep old candidate as non-admitted fallback and save explicit beam history"
+}

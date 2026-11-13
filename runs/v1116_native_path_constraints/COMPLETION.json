@@ -1,0 +1,134 @@
+{
+  "passed": false,
+  "optimizer_constraint_review": {
+    "minimum_certified_raw_lower_m": 0.24144850319272254,
+    "maximum_certified_cross_upper_m": 0.038106892218079655,
+    "endpoint_errors_m": [
+      0.01911071978600362,
+      0.02129504946793078,
+      0.01333516976570213,
+      0.02217711917629017
+    ],
+    "coupled_mode_envelope_lower_m": [
+      0.48619022442580995,
+      0.24271636002268823,
+      0.38010180069503086
+    ],
+    "maximum_restoration_violation_m": 0.003177119176290169,
+    "restoration_targets_met": false,
+    "sampled_geometry_poses": 1027,
+    "explicit_inequality_count": 2055
+  },
+  "cpp_python_maximum_error": 1.3851501634132907e-15,
+  "complete_review": {
+    "passed": false,
+    "checks": {
+      "finite": true,
+      "full_states": true,
+      "full_raw_geometry": true,
+      "full_200_stop": true,
+      "goal_upper": true,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "path_cross_track": true,
+      "gear_endpoints_within_02": false,
+      "parked_alignment_settled": true,
+      "coupled_mode_envelopes": false,
+      "complete2200stop": true,
+      "terminal_full_cycle_hold": true
+    },
+    "minimum_full_cycle_raw_m": 0.2562250787862964,
+    "goal_upper_m": 0.10573268140593124,
+    "maximum_predicted_cross_track_m": 0.03810689221807893,
+    "sections": [
+      {
+        "gear": -1,
+        "start_native": 0,
+        "moving_end_native": 1550,
+        "end_native": 3750,
+        "stopped_endpoint_error_m": 0.01911071978600362,
+        "maximum_cross_track_m": 0.01911071978600362
+      },
+      {
+        "gear": 1,
+        "start_native": 3750,
+        "moving_end_native": 4996,
+        "end_native": 7196,
+        "stopped_endpoint_error_m": 0.02129504946793078,
+        "maximum_cross_track_m": 0.02129504946793078
+      },
+      {
+        "gear": -1,
+        "start_native": 7196,
+        "moving_end_native": 8392,
+        "end_native": 10592,
+        "stopped_endpoint_error_m": 0.01333516976570213,
+        "maximum_cross_track_m": 0.029235004306265806
+      },
+      {
+        "gear": 1,
+        "start_native": 10592,
+        "moving_end_native": 16259,
+        "end_native": 18459,
+        "stopped_endpoint_error_m": 0.02217711917629099,
+        "maximum_cross_track_m": 0.03810689221807893
+      }
+    ],
+    "coupled_envelopes": [
+      {
+        "start_native": 3750,
+        "whole_mode_raw_lower_m": 0.48619022442580995,
+        "translation_m": 0.008366942546855658,
+        "angle_rad": 0.0867283479041534,
+        "speed_m_s": 0.0069709628346394025,
+        "passed": true
+      },
+      {
+        "start_native": 7196,
+        "whole_mode_raw_lower_m": 0.24271636002268823,
+        "translation_m": 0.008366942565326774,
+        "angle_rad": 0.0867283668209282,
+        "speed_m_s": 0.006970964514156822,
+        "passed": false
+      },
+      {
+        "start_native": 10592,
+        "whole_mode_raw_lower_m": 0.38010180069503086,
+        "translation_m": 0.008366941327029077,
+        "angle_rad": 0.08672836154543752,
+        "speed_m_s": 0.0069709645749504974,
+        "passed": true
+      }
+    ],
+    "analytical_native": 18459
+  },
+  "handoff_selection": {
+    "mode": "RETAINED_COMPLETE_STOP",
+    "retained_stop_preserved": true,
+    "actual_execution": false
+  },
+  "cpp_accounting": {
+    "completed_calls": 1159,
+    "completed_native": 21362310,
+    "partial_call_work_unknown": false
+  },
+  "python_accounting": {
+    "python_full_source": 18459,
+    "python_rolling_stops": 0
+  },
+  "entry_analytical_work": {
+    "cpp_native": 0,
+    "python_native": 0
+  },
+  "frozen_source_unchanged": true,
+  "guard_original": true,
+  "closed": true,
+  "wall_s": 32.76903219000087,
+  "models": 0,
+  "physical_integrations": 0,
+  "official_planning_calls": 0,
+  "new_measurements": 0,
+  "automatic_physical_launch": false,
+  "whole_route_acceptance": false
+}

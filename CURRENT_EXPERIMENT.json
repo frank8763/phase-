@@ -11,7 +11,7 @@
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_PARKED_MODE_RESPONSE_V1114_REPORT.md",
+  "latest_report": "docs/RPCCR_COUPLED_ROUTE_PREPARATION_20261113_REPORT.md",
   "latest_completed": {
     "closed": true,
     "passed": true,
@@ -312,15 +312,12 @@
   },
   "latest_method_review": "docs/RPCCR_DYNAMIC_METHOD_RESET_AND_LITERATURE_20261113.md",
   "latest_software_experiment": {
-    "version": "v1111",
-    "completion": "runs/v1111_sqp_joint_source/COMPLETION.json",
-    "passed": true,
+    "version": "v1120",
+    "completion": "runs/v1120_explicit_timing_seed/COMPLETION.json",
+    "passed": false,
     "closed": true,
     "physical_integrations": 0,
-    "whole_route_acceptance": false,
-    "scope": "saved EW nominal complete-source qualification only",
-    "independent_inspection": "runs/v1111_sqp_joint_source/INDEPENDENT_READONLY_INSPECTION.json",
-    "rolling_full_stop_checks": 124
+    "whole_route_acceptance": false
   },
   "method_reassessment": {
     "completed": true,
@@ -506,5 +503,147 @@
     "new_software_model_predictions_in_this_review": 0,
     "new_physical_integrations_in_this_review": 0,
     "next_required": "Recompute and audit complete recovery sources with the revised coupled model/mode before same-version three-route regression; later physical window remains to be decided"
+  },
+  "next_physical_campaign_authorized_conditionally": {
+    "user_choice": "新独立12小时：三路线全过后，条件进入固定24项",
+    "recorded_unix": 1794571074.1721249,
+    "scope": "qualified same-version three route mains and complete repeats; conditional fixed24",
+    "start_condition": "complete recovery source and live integration qualification passed before any new physical initialization",
+    "root_duration_seconds": 43200,
+    "root_not_started": true,
+    "old_windows_unchanged": true,
+    "runtime_scientific_edits": false,
+    "safety_or_evidence_anomaly_stops": true,
+    "Stage_access": false
+  },
+  "latest_preparation_review": {
+    "evidence_integrity_passed": true,
+    "software_outcomes": [
+      {
+        "name": "v1115_coupled_complete_source",
+        "passed": false,
+        "selected_native": 18506,
+        "wall_s": 27.615813363998313,
+        "counts": {
+          "cpp_native": 31407583,
+          "python_native": 18506,
+          "entry": {
+            "cpp_native": 43501,
+            "python_native": 22901
+          }
+        },
+        "failed_final_gates": [
+          "gear_endpoints_within_02",
+          "coupled_mode_envelopes"
+        ],
+        "model_integrations": 0
+      },
+      {
+        "name": "v1116_native_path_constraints",
+        "passed": false,
+        "selected_native": 18459,
+        "wall_s": 32.76903219000087,
+        "counts": {
+          "cpp_native": 21362310,
+          "python_native": 18459,
+          "entry": {
+            "cpp_native": 0,
+            "python_native": 0
+          }
+        },
+        "failed_final_gates": [
+          "gear_endpoints_within_02",
+          "coupled_mode_envelopes"
+        ],
+        "model_integrations": 0
+      },
+      {
+        "name": "v1117_fixed_tick_native_sqp",
+        "passed": false,
+        "selected_native": 18459,
+        "wall_s": 123.56091428099899,
+        "counts": {
+          "cpp_native": 11998350,
+          "python_native": 18459,
+          "entry": {
+            "cpp_native": 36918,
+            "python_native": 0
+          }
+        },
+        "failed_final_gates": [
+          "gear_endpoints_within_02",
+          "coupled_mode_envelopes"
+        ],
+        "model_integrations": 0
+      },
+      {
+        "name": "v1118_coupled_live_qualification",
+        "passed": true,
+        "selected_native": null,
+        "wall_s": 19.40525913600868,
+        "counts": {
+          "cpp_native": 91746,
+          "python_native": 107946
+        },
+        "failed_final_gates": [],
+        "model_integrations": 0
+      },
+      {
+        "name": "v1119_integer_cusp_timing",
+        "passed": false,
+        "selected_native": 18459,
+        "wall_s": 122.51400908999494,
+        "counts": {
+          "cpp_native": 15950771,
+          "python_native": 18459,
+          "entry": {
+            "cpp_native": 0,
+            "python_native": 0
+          }
+        },
+        "failed_final_gates": [
+          "gear_endpoints_within_02",
+          "coupled_mode_envelopes"
+        ],
+        "model_integrations": 0
+      },
+      {
+        "name": "v1120_explicit_timing_seed",
+        "passed": false,
+        "selected_native": 18459,
+        "wall_s": 122.41557618101069,
+        "counts": {
+          "cpp_native": 16369976,
+          "python_native": 18459,
+          "entry": {
+            "cpp_native": 0,
+            "python_native": 0
+          }
+        },
+        "failed_final_gates": [
+          "gear_endpoints_within_02",
+          "coupled_mode_envelopes"
+        ],
+        "model_integrations": 0
+      }
+    ],
+    "physical_models": 0,
+    "physical_integrations": 0,
+    "old_NS_observed_route_pass_preserved": true,
+    "same_version_three_route_passed": false,
+    "new24_executed": false,
+    "new24_denominator": null,
+    "new12h_physical_root_started": false,
+    "complete_recovery_source_passed": false,
+    "physical_window_authorization": "RPCCR_COUPLED_ROUTE_AUTHORIZATION_20261113.json",
+    "guard_original": true,
+    "execution_lock_idle": true,
+    "source_unchanged": true,
+    "actual_executor_and_independent_auditor_qualification_still_required": true
+  },
+  "latest_mode_suffix_qualification": {
+    "passed": true,
+    "completion": "runs/v1118_coupled_live_qualification/COMPLETION.json",
+    "scope": "24 software suffixes, not physical integration"
   }
 }

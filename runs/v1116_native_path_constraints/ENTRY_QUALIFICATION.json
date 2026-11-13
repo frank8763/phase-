@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "maximum_cpp_python_state_ctrl_error": 1.124100812432971e-14,
+  "both_physically_qualified_nominal_profiles_calibrated": true,
+  "real_seed_full_source_calibrated": true,
+  "coupled_rolling_stop_flag_exercised": true,
+  "missing_episode_stop_errors": [
+    0.0018643898458980505,
+    0.0018643898458980505
+  ],
+  "invalid_cpp_cases_rejected": [
+    "target_cap",
+    "moving_entry",
+    "zero_tick"
+  ],
+  "all_failed_call_work_counted": true,
+  "generic_solver_seed_reads_no_saved_trace_or_vector": true,
+  "registered_saved_development_seed": "V1115 selected z for this same fixed EW software continuation",
+  "coefficient_frozen_from_V1114": -0.009909420465944674,
+  "imports_refused": [
+    "mujoco",
+    "physical",
+    "vehicle",
+    "factory",
+    "torch",
+    "rclpy"
+  ],
+  "models": 0,
+  "physical_integrations": 0,
+  "arithmetic_qualification": {
+    "passed": true,
+    "old_conservative_cross_upper_m": 0.05102576806639836,
+    "new_exact_cross_max_m": 0.03812274067335259,
+    "other_constraint_maximum_error": 5.377642775528102e-16,
+    "native_perturbation_rejected": true,
+    "count": 2055,
+    "new_analytical_dynamics": 0,
+    "invalid_source_still_rejected": true
+  },
+  "entry_dynamics_qualification_reused_by_sha": true,
+  "reused_analytical_work": {
+    "cpp_native": 43501,
+    "python_native": 22901
+  },
+  "analytical_work": {
+    "cpp_native": 0,
+    "python_native": 0
+  }
+}

@@ -1,0 +1,137 @@
+# Coupled-mode route preparation
+
+The prior NS observed route success is preserved. V1114 both physical steering/restart/stop components passed, but that is not same-version three-route or24 acceptance. The new independently authorized12-hour physical root has not started. Every operation reviewed here used zero physical models and integrations.
+
+V1115–V1117 complete-source candidates were rejected under unchanged endpoint and mode-envelope gates. Read-only diagnosis found nearly saturated first-three-gear steering, so V1119 explicitly searches bounded integer timings before one constrained refinement. V1119 selection returned the old timing seed; this defect is preserved explicitly. V1120 selects its refinement seed only from the new timing beams and retains the original hard admission gates. V1118 mode-state suffix seam passed24 full suffix tests with maximum state/control error2.78e-16; it does not replace physical route qualification.
+
+V1120 also NOT_PASSED. Its timing search improves the first cusp endpoint to6.05mm but the retained second-stage beams violate future endpoint/envelope gates; the selected full candidate still has21.292mm endpoint error versus20mm and mode-envelope lower.242714m versus.243534m. This is a planning/whole-source future-feasibility gap, not a new observed physical tracking failure. No extra physical experiment was consumed. See experiments/v1119_closed_software_review/NEXT_DESIGN.md for the next repair boundary.
+
+Next physical launch requires complete source admission plus actual executor and independent auditor qualifications. Same-version three-route mains and exact complete repeats must ALL pass before the fixed24 list may start within the same nonextendable12-hour root. Old failures/results/windows remain unchanged. No24 denominator/rate is reported for unexecuted tasks.
+
+```json
+{
+  "evidence_integrity_passed": true,
+  "software_outcomes": [
+    {
+      "name": "v1115_coupled_complete_source",
+      "passed": false,
+      "selected_native": 18506,
+      "wall_s": 27.615813363998313,
+      "counts": {
+        "cpp_native": 31407583,
+        "python_native": 18506,
+        "entry": {
+          "cpp_native": 43501,
+          "python_native": 22901
+        }
+      },
+      "failed_final_gates": [
+        "gear_endpoints_within_02",
+        "coupled_mode_envelopes"
+      ],
+      "model_integrations": 0
+    },
+    {
+      "name": "v1116_native_path_constraints",
+      "passed": false,
+      "selected_native": 18459,
+      "wall_s": 32.76903219000087,
+      "counts": {
+        "cpp_native": 21362310,
+        "python_native": 18459,
+        "entry": {
+          "cpp_native": 0,
+          "python_native": 0
+        }
+      },
+      "failed_final_gates": [
+        "gear_endpoints_within_02",
+        "coupled_mode_envelopes"
+      ],
+      "model_integrations": 0
+    },
+    {
+      "name": "v1117_fixed_tick_native_sqp",
+      "passed": false,
+      "selected_native": 18459,
+      "wall_s": 123.56091428099899,
+      "counts": {
+        "cpp_native": 11998350,
+        "python_native": 18459,
+        "entry": {
+          "cpp_native": 36918,
+          "python_native": 0
+        }
+      },
+      "failed_final_gates": [
+        "gear_endpoints_within_02",
+        "coupled_mode_envelopes"
+      ],
+      "model_integrations": 0
+    },
+    {
+      "name": "v1118_coupled_live_qualification",
+      "passed": true,
+      "selected_native": null,
+      "wall_s": 19.40525913600868,
+      "counts": {
+        "cpp_native": 91746,
+        "python_native": 107946
+      },
+      "failed_final_gates": [],
+      "model_integrations": 0
+    },
+    {
+      "name": "v1119_integer_cusp_timing",
+      "passed": false,
+      "selected_native": 18459,
+      "wall_s": 122.51400908999494,
+      "counts": {
+        "cpp_native": 15950771,
+        "python_native": 18459,
+        "entry": {
+          "cpp_native": 0,
+          "python_native": 0
+        }
+      },
+      "failed_final_gates": [
+        "gear_endpoints_within_02",
+        "coupled_mode_envelopes"
+      ],
+      "model_integrations": 0
+    },
+    {
+      "name": "v1120_explicit_timing_seed",
+      "passed": false,
+      "selected_native": 18459,
+      "wall_s": 122.41557618101069,
+      "counts": {
+        "cpp_native": 16369976,
+        "python_native": 18459,
+        "entry": {
+          "cpp_native": 0,
+          "python_native": 0
+        }
+      },
+      "failed_final_gates": [
+        "gear_endpoints_within_02",
+        "coupled_mode_envelopes"
+      ],
+      "model_integrations": 0
+    }
+  ],
+  "physical_models": 0,
+  "physical_integrations": 0,
+  "old_NS_observed_route_pass_preserved": true,
+  "same_version_three_route_passed": false,
+  "new24_executed": false,
+  "new24_denominator": null,
+  "new12h_physical_root_started": false,
+  "complete_recovery_source_passed": false,
+  "physical_window_authorization": "RPCCR_COUPLED_ROUTE_AUTHORIZATION_20261113.json",
+  "guard_original": true,
+  "execution_lock_idle": true,
+  "source_unchanged": true,
+  "actual_executor_and_independent_auditor_qualification_still_required": true
+}
+```
