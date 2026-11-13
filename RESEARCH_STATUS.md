@@ -1349,3 +1349,7 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1091日间退出组件闭批：passed=True；分账={"vehicle_initializations": 1, "historical_replay_native": 24535, "new_actual_native": 2200, "own_replay_native": 26735, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 6175}；不等于WE整路/三路线/24通过，旧V1090失败保持。见docs/RPCCR_CERTIFIED_EXIT_V1091_REPORT.md。
 
 - V1092日间单WE主及成功条件完整重复准备：原两个真实保存根有限单gear源/滚动/完整尾通过，真实隔离双任务/源码审核入口/短尾、未来源与历史物理读取拒绝通过，0模型冻源。改为每段实际停稳再真实观测重规划、最多8段，终点仍原目标.45；移除旧完整目标相位穷举。旧240s软件超时和固定旧观测名义拼接全周期拒绝保持，不称全目标软件验证成功。新独立90min，首次功能/安全/证据异常停，不自动EW/NS/24。
+
+- FINAL v1092 fresh WE navigation: passed=False; counts={"vehicle_initializations": 1, "historical_replay_native": 0, "new_actual_native": 39660, "own_replay_native": 39660, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 183750}; single WE main+repeat gate only; three-route/24 not executed. See docs/RPCCR_STOPPED_REPLAN_V1092_REPORT.md.
+
+- V1092闭批独立24/25门PASS，唯一原目标到达false；39660新实际/39660完整重放误差0，6实际完整段，末余2.364657m/平速4.714e-6/最低.276985/坏接触0。16等待相位全动态净空拒绝；原因果动态外盒拓扑20k仍仅安全局部源，0新模型，非下一版整路资格。冻结源不改，原扩展审核命名空间缺陷仅诊断修复；完整操作失败保留。当前REVIEW_PENDING/锁空闲，无追加物理或24。
