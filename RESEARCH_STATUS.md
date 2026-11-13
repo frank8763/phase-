@@ -1347,3 +1347,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - 2026-11-13用户改为白天逐步完成三路线。V1091先单独验证昨24535真实失败态的拒绝→完整2200实际停车；保存根软件10门/短尾和不安全停车拒绝/实际隔离入口资格通过，0模型冻源。新独立90分钟只此组件，不自动整路或24；旧V1090失败/09:00窗口保持关闭。
 
 - V1091日间退出组件闭批：passed=True；分账={"vehicle_initializations": 1, "historical_replay_native": 24535, "new_actual_native": 2200, "own_replay_native": 26735, "replay_state_initializations": 1, "private_mujoco_native": 0, "training_updates": 0, "analytical_prediction_native": 6175}；不等于WE整路/三路线/24通过，旧V1090失败保持。见docs/RPCCR_CERTIFIED_EXIT_V1091_REPORT.md。
+
+- V1092日间单WE主及成功条件完整重复准备：原两个真实保存根有限单gear源/滚动/完整尾通过，真实隔离双任务/源码审核入口/短尾、未来源与历史物理读取拒绝通过，0模型冻源。改为每段实际停稳再真实观测重规划、最多8段，终点仍原目标.45；移除旧完整目标相位穷举。旧240s软件超时和固定旧观测名义拼接全周期拒绝保持，不称全目标软件验证成功。新独立90min，首次功能/安全/证据异常停，不自动EW/NS/24。

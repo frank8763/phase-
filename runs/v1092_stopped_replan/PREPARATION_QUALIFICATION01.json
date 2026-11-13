@@ -1,0 +1,452 @@
+{
+  "passed": false,
+  "roots": [
+    {
+      "actual_root": 20160,
+      "proof": {
+        "passed": true,
+        "checks": {
+          "finite": true,
+          "full_states": true,
+          "full_raw_geometry": true,
+          "full_200_stop": true,
+          "goal_upper": true,
+          "speed_yaw": true,
+          "legal_ctrl": true,
+          "legal_slew": true,
+          "complete2200stop": true,
+          "terminal_full_cycle_hold": true
+        },
+        "minimum_full_cycle_raw_m": 0.4179276198923774,
+        "native": 4200,
+        "finite_corridor_not_original_goal": true,
+        "endpoint_xy": [
+          0.068550782725797,
+          -0.5910446861518931
+        ],
+        "first_gear": -1,
+        "prefix_native": 2000,
+        "static_complete_goal_not_executed": true,
+        "predicted_motion_m": 0.5028472957400488
+      },
+      "rolling_points": [
+        125,
+        2000
+      ],
+      "static_actions": [
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.0,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.2136106867128606,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.42722137342572125,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.2136106867128606,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.42722137342572125,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": -0.42722137342572125,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.42722137342572125,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": -0.21361068671286063,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "wait",
+          "gear": 0,
+          "target": 0.0,
+          "ticks": 200
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.42722137342572125,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": -0.21361068671286063,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.42722137342572125,
+          "speed": -0.03,
+          "ticks": 375
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": 0.2136106867128606,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "wait",
+          "gear": 0,
+          "target": 0.0,
+          "ticks": 200
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 1125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 500
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 250
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 1000
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 500
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 375
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 625
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "wait",
+          "gear": 0,
+          "target": 0.0,
+          "ticks": 200
+        }
+      ]
+    },
+    {
+      "actual_root": 26735,
+      "proof": {
+        "passed": true,
+        "checks": {
+          "finite": true,
+          "full_states": true,
+          "full_raw_geometry": true,
+          "full_200_stop": true,
+          "goal_upper": true,
+          "speed_yaw": true,
+          "legal_ctrl": true,
+          "legal_slew": true,
+          "complete2200stop": true,
+          "terminal_full_cycle_hold": true
+        },
+        "minimum_full_cycle_raw_m": 0.2519107681345379,
+        "native": 3275,
+        "finite_corridor_not_original_goal": true,
+        "endpoint_xy": [
+          0.8917292284029071,
+          -0.5718377450782042
+        ],
+        "first_gear": 1,
+        "prefix_native": 1075,
+        "static_complete_goal_not_executed": true,
+        "predicted_motion_m": 0.6623654616435719
+      },
+      "rolling_points": [
+        125,
+        1075
+      ],
+      "static_actions": [
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 875
+        },
+        {
+          "kind": "wait",
+          "gear": 0,
+          "target": 0.0,
+          "ticks": 200
+        },
+        {
+          "kind": "move",
+          "gear": -1,
+          "target": -0.21361068671286063,
+          "speed": -0.03,
+          "ticks": 125
+        },
+        {
+          "kind": "wait",
+          "gear": 0,
+          "target": 0.0,
+          "ticks": 200
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 500
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 250
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 375
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 1125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 250
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": 0.0,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.21361068671286063,
+          "speed": 0.08,
+          "ticks": 125
+        },
+        {
+          "kind": "move",
+          "gear": 1,
+          "target": -0.42722137342572125,
+          "speed": 0.08,
+          "ticks": 375
+        },
+        {
+          "kind": "wait",
+          "gear": 0,
+          "target": 0.0,
+          "ticks": 200
+        }
+      ]
+    }
+  ],
+  "error": "TimeoutError('BOUNDED240S_QUALIFICATION')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1092_stopped_replan/qualify.py\", line 42, in main\n    proposal=corridor.live.produce(x['setup'],packet,x['source'],O,x['goal'])\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/live_reference.py\", line 112, in produce\n    bounds=[(robust(wait),wait)for wait in range(0,period,25)];low,wait=max(bounds)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/live_reference.py\", line 112, in <listcomp>\n    bounds=[(robust(wait),wait)for wait in range(0,period,25)];low,wait=max(bounds)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/live_reference.py\", line 111, in robust\n    def robust(wait):return min(float(g.clearances(states[:,:3],np.arange(len(states))+wait,.005).min())for states in scenarios)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/live_reference.py\", line 111, in <genexpr>\n    def robust(wait):return min(float(g.clearances(states[:,:3],np.arange(len(states))+wait,.005).min())for states in scenarios)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/exact_timed.py\", line 17, in clearances\n    use=np.flatnonzero(ix==row);dynamic[use]=pg.distances(p[use],self.polygons[row])-.1\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v934_rpccr_certified_recovery/polygon_geometry.py\", line 13, in distances\n    edge=np.roll(q,-1,axis=0)-q;n=np.c_[-edge[:,1],edge[:,0]];length=np.sum(edge*edge,axis=1);assert np.all(length>1e-24)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/numpy/_core/numeric.py\", line 1286, in roll\n    result[res_index] = a[arr_index]\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1092_stopped_replan/qualify.py\", line 15, in halt\n    def halt(*_):raise TimeoutError('BOUNDED240S_QUALIFICATION')\nTimeoutError: BOUNDED240S_QUALIFICATION\n",
+  "models": 0,
+  "integrations": 0,
+  "wall_s": 240.00189222499466
+}
