@@ -11,29 +11,37 @@
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_CERTIFIED_EXIT_V1091_REPORT.md",
+  "latest_report": "docs/RPCCR_STOPPED_REPLAN_V1092_REPORT.md",
   "latest_completed": {
     "closed": true,
-    "passed": true,
-    "version": "v1091",
-    "scope": "EXIT_COMPONENT_ONLY",
-    "navigation_passed": false,
-    "three_route_passed": false,
-    "new24_executed": 0,
+    "passed": false,
+    "version": "v1092",
+    "scope": "Fresh canonical WE navigation main plus conditional full repeat; eight stopped finite episodes maximum",
+    "attempted": [
+      "main_west_east"
+    ],
+    "unexecuted": [
+      "repeat_west_east"
+    ],
+    "error": {
+      "error": "AssertionError('FIRST_FUNCTIONAL_OR_SAFETY_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1092_stopped_replan/campaign.py\", line 43, in main\n    out=Path(task['output']);rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_OR_SAFETY_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_OR_SAFETY_FAILURE\n"
+    },
+    "complete_repeat": null,
     "counts": {
       "vehicle_initializations": 1,
-      "historical_replay_native": 24535,
-      "new_actual_native": 2200,
-      "own_replay_native": 26735,
+      "historical_replay_native": 0,
+      "new_actual_native": 39660,
+      "own_replay_native": 39660,
       "replay_state_initializations": 1,
       "private_mujoco_native": 0,
       "training_updates": 0,
-      "analytical_prediction_native": 6175
+      "analytical_prediction_native": 183750
     },
-    "error": null,
-    "source_unchanged": true,
     "guard_original": true,
-    "models_not_restarted": true
+    "source_unchanged": true,
+    "whole_route_passed": false,
+    "new24_executed": false
   },
   "latest_diagnosis": {
     "passed": true,
@@ -140,7 +148,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Saved-state rejection-to-actual-stop fallback diagnosis and qualification first; no automatic new physical window or route restart.",
+  "next_scope": "Complete WE main and conditional full repeat, then review before EW/NS; no24",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
