@@ -1,0 +1,43 @@
+{
+  "repository": "frank8763/phase-",
+  "release_tag": "phase-parked-mode-v1112-20261113",
+  "archives": [
+    {
+      "group": "v1112-parked-mode-response",
+      "source_files": 56,
+      "raw_bytes": 10997808,
+      "archive_bytes": 4831376,
+      "archive_sha256": "49e7bb263d8814afb5d77abee533f6eb3264ee510f3ad73fd1dba5a22c34c85c",
+      "parts": [
+        {
+          "name": "v1112-parked-mode-response.tar.zst.part000",
+          "bytes": 4831376,
+          "sha256": "49e7bb263d8814afb5d77abee533f6eb3264ee510f3ad73fd1dba5a22c34c85c"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    },
+    {
+      "group": "v1112-entry-failure-diagnosis",
+      "source_files": 11,
+      "raw_bytes": 444341,
+      "archive_bytes": 176632,
+      "archive_sha256": "769fd9755847ff43a8343f52a986b1221214c9e0e40255c6b2875200efbe7449",
+      "parts": [
+        {
+          "name": "v1112-entry-failure-diagnosis.tar.zst.part000",
+          "bytes": 176632,
+          "sha256": "769fd9755847ff43a8343f52a986b1221214c9e0e40255c6b2875200efbe7449"
+        }
+      ],
+      "source_sha_and_decompressed_member_sha_verified": true,
+      "part_reassembly_sha_verified": true
+    }
+  ],
+  "archive_inventories": [
+    "INVENTORY.json",
+    "REVIEW_INVENTORY.json"
+  ],
+  "restoration": "tools/phase_storage_20261107/restore.py"
+}

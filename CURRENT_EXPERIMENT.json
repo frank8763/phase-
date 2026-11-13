@@ -11,69 +11,37 @@
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_STOPPED_REPLAN_V1092_REPORT.md",
+  "latest_report": "docs/RPCCR_PARKED_MODE_RESPONSE_V1112_REPORT.md",
   "latest_completed": {
     "closed": true,
     "passed": false,
-    "version": "v1092",
-    "scope": "Fresh canonical WE navigation main plus conditional full repeat; eight stopped finite episodes maximum",
+    "version": "v1112",
+    "scope": "two original static t0 parked-steering components only",
     "attempted": [
-      "main_west_east"
+      "negative_to_positive"
     ],
     "unexecuted": [
-      "repeat_west_east"
+      "positive_to_negative"
     ],
-    "error": {
-      "error": "AssertionError('FIRST_FUNCTIONAL_OR_SAFETY_FAILURE')",
-      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1092_stopped_replan/campaign.py\", line 43, in main\n    out=Path(task['output']);rp=out/'RESULT.json';rp=rp if rp.exists()else out/'physics/paired/ENTRY_FAILURE_RESULT.json';result=json.loads(rp.read_text())if rp.exists()else dict(passed=False,missing_result=True);row=dict(task=task,result=result,returncode=code);rows.append(row);dump(O/'RESULTS.json',rows);assert code==0 and result['passed'],'FIRST_FUNCTIONAL_OR_SAFETY_FAILURE'\nAssertionError: FIRST_FUNCTIONAL_OR_SAFETY_FAILURE\n"
-    },
-    "complete_repeat": null,
     "counts": {
       "vehicle_initializations": 1,
-      "historical_replay_native": 0,
-      "new_actual_native": 39660,
-      "own_replay_native": 39660,
+      "new_actual_native": 0,
+      "own_replay_native": 0,
       "replay_state_initializations": 1,
       "private_mujoco_native": 0,
-      "training_updates": 0,
-      "analytical_prediction_native": 183750
+      "training_updates": 0
     },
-    "guard_original": true,
+    "error": {
+      "error": "AssertionError('FIRST_RESPONSE_SAFETY_OR_EVIDENCE_FAILURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1112_parked_mode_response/campaign.py\", line 45, in main\n    assert row['passed'],'FIRST_RESPONSE_SAFETY_OR_EVIDENCE_FAILURE'\nAssertionError: FIRST_RESPONSE_SAFETY_OR_EVIDENCE_FAILURE\n"
+    },
     "source_unchanged": true,
+    "guard_original": true,
     "whole_route_passed": false,
-    "new24_executed": false
+    "new24_executed": false,
+    "closed_unix": 1794567603.7207534
   },
-  "latest_diagnosis": {
-    "passed": true,
-    "models": 0,
-    "integrations": 0,
-    "old_failure_preserved": true,
-    "canonical_model_same": true,
-    "actual_initial_pose": [
-      -1.600000023841858,
-      4.0,
-      -1.5707963267948963
-    ],
-    "expected_pose": [
-      -1.600000023841858,
-      4.0,
-      -1.5707963267948966
-    ],
-    "maximum_pose_error": 2.220446049250313e-16,
-    "full_canonical_initial_state_error": 0.0,
-    "original_state_tolerance": 1e-08,
-    "wrong_old_exact_equality_reproduced": true,
-    "corrected_pose_contract_passed": true,
-    "over_tolerance_negative_cases": [
-      true,
-      true,
-      true
-    ],
-    "vehicle_initializations_in_failed_entry": 1,
-    "internal_factory_model_constructions": "unknown",
-    "navigation_native": 0,
-    "root_deadline_not_extended": 1794489035.0956674
-  },
+  "latest_diagnosis": "runs/v1111_sqp_joint_source/INDEPENDENT_READONLY_INSPECTION.json",
   "protected_historical_milestones": {
     "static_unknown_V657": {
       "selected": 24,
@@ -148,7 +116,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Prepare dynamically informed complete topology from saved39660 root; no new model authorized by closure",
+  "next_scope": "Read-only mode-model coverage audit and design of physically validated hybrid response/feedback/retained-backup contract; no physical window or automatic model launch",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -344,5 +312,58 @@
       "goal"
     ],
     "remaining_goal_m": 2.3646573630322374
+  },
+  "latest_method_review": "docs/RPCCR_DYNAMIC_METHOD_RESET_AND_LITERATURE_20261113.md",
+  "latest_software_experiment": {
+    "version": "v1111",
+    "completion": "runs/v1111_sqp_joint_source/COMPLETION.json",
+    "passed": true,
+    "closed": true,
+    "physical_integrations": 0,
+    "whole_route_acceptance": false,
+    "scope": "saved EW nominal complete-source qualification only",
+    "independent_inspection": "runs/v1111_sqp_joint_source/INDEPENDENT_READONLY_INSPECTION.json",
+    "rolling_full_stop_checks": 124
+  },
+  "method_reassessment": {
+    "completed": true,
+    "research_only": true,
+    "new_physical_models": 0,
+    "new_physical_integrations": 0,
+    "new_analytical_predictions_this_review": 0,
+    "recommendation": "Validated hybrid vehicle model, constrained receding-horizon proposal and independent causal retained-backup certification",
+    "immediate_gap": "Unvalidated zero-drive parked steering response; empirical steering_rate_b produces about 0.08019 rad yaw for full reversal",
+    "innovation_not_established": true,
+    "research_sources": "Primary papers, author repositories and official implementations; no performance replication",
+    "implementation_order": "Preserve V1111 baseline; distinguish physical mode-model mismatch, execution/certificate handoff mismatch and measured timing bottleneck before selecting one change; no immediate architecture replacement",
+    "parked_yaw_is_confirmed_physical_error": false,
+    "nominal_rolling_stops_do_not_prove_every_live_handoff": true
+  },
+  "latest_entry_diagnosis": {
+    "cause": "Entry guard compared a newly registered static component model against an actor-present dynamic fixture SHA",
+    "classification": "assistant entry-contract error, no measured controller response obtained",
+    "exact_setup_difference_keys": [
+      "actor",
+      "dynamic",
+      "model_sha256"
+    ],
+    "reference_dynamic": true,
+    "actual_dynamic": false,
+    "reference_model_sha": "412f0616d1160dad61bb395919d9442372108ad094e07a5122274df5b29201f8",
+    "actual_static_model_sha": "d8e1b9064085acd9da166561eac2b1c3b09285b99a9a35e5ecb6eb4a2a954711",
+    "all_other_saved_setup_fields_identical": true,
+    "actual_initial_body_exact": true,
+    "vehicle_initializations": 1,
+    "new_actual_native": 0,
+    "own_replay_native": 0,
+    "replay_state_initializations": 1,
+    "private_mujoco_native": 0,
+    "training_updates": 0,
+    "both_response_tests_unassessed": true,
+    "old_sources_unchanged": true,
+    "full_compiled_static_dynamic_array_equivalence_not_claimed": true,
+    "original_audit_missing_trace_failure_preserved": true,
+    "closed": true,
+    "no_model_restart": true
   }
 }
