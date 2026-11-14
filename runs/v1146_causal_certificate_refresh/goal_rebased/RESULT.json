@@ -1,0 +1,109 @@
+{
+  "passed": false,
+  "entry_offset": 12349,
+  "full_source_passed": false,
+  "proof": {
+    "passed": false,
+    "checks": {
+      "finite": true,
+      "full_states": true,
+      "full_raw_geometry": false,
+      "full_200_stop": true,
+      "goal_upper": true,
+      "speed_yaw": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "coupled_mode_envelopes": true,
+      "parked_ready": true,
+      "full2200tail": true,
+      "terminal_full_cycle_hold": true,
+      "safe_terminal_position": false,
+      "safe_terminal_heading": true
+    },
+    "minimum_raw_m": 0.17853239474945068,
+    "goal_upper_m": 0.23490824804903393,
+    "mode_envelopes": [],
+    "native": 4298,
+    "states_sha256": "6f191988bee78c437ed79764a1dd3da0bd7ab595efeb1a1a568d08a03d3596d4",
+    "controls_sha256": "ff3c195767012d80b46d3803af1500ad13646ee1aa7c32d333fc1b870ebc50f2",
+    "minimum_timed_raw_m": 0.17853239474945068,
+    "minimum_static_m": 0.21947911196365721,
+    "minimum_timed_dynamic_m": 0.17853239474945068,
+    "terminal_full_cycle_raw_m": 0.3075280642277285,
+    "old_full_cycle_motion_raw_m": 0.07283681108266363,
+    "coupled_coefficient_domain": true
+  },
+  "best": {
+    "rows": [
+      [
+        -0.3571226815428843,
+        0.12,
+        213,
+        0
+      ],
+      [
+        0.34418448528594575,
+        0.12,
+        302,
+        0
+      ],
+      [
+        0.3645429491529679,
+        0.12,
+        284,
+        0
+      ],
+      [
+        0.3756220271922133,
+        0.12,
+        307,
+        0
+      ],
+      [
+        0.27629035717858963,
+        0.12,
+        352,
+        0
+      ],
+      [
+        0.1747357855731412,
+        0.12,
+        324,
+        0
+      ],
+      [
+        0.3208599548416666,
+        0.12,
+        316,
+        0
+      ],
+      [
+        0.0,
+        0.0,
+        2200,
+        0
+      ]
+    ],
+    "rank": [
+      0.06500181545281866,
+      216.4164886127312
+    ],
+    "minimum_raw_m": 0.17853239474945068,
+    "terminal_error_m": 0.0257937319064258,
+    "terminal_yaw_rad": 0.046962981096661305
+  },
+  "optimizer_stop": "FIXED_SOFTWARE_BUDGET",
+  "optimizer_calls": 300,
+  "backup_count": 0,
+  "failed_backups": 0,
+  "backups": [],
+  "python_cpp_error": 3.469446951953614e-18,
+  "analytical_cpp_native": 1295811,
+  "analytical_python_native": 4298,
+  "models": 0,
+  "physical_native": 0,
+  "source_sensor_native": 34715,
+  "future_observations_used": 0,
+  "original_goal_physical_passed": false,
+  "wall_s": 8.573474127973896
+}
