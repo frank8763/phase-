@@ -1,0 +1,109 @@
+{
+  "recorded_diagnosis_passed": true,
+  "component_passed": false,
+  "navigation_attempts": 1,
+  "navigation_successes": 0,
+  "unexecuted": [
+    "left_repeat",
+    "right_main",
+    "right_repeat"
+  ],
+  "safety_replay_and_recording_checks_passed": true,
+  "evidence_checks": {
+    "fully_recorded": true,
+    "finite_all_states": true,
+    "time_monotonic": true,
+    "actual_clearance": true,
+    "full_self": true,
+    "actual_control_limits": true,
+    "actual_control_rates": true,
+    "bad_contacts_zero": true,
+    "own_full_replay": true,
+    "independent_allocation": true,
+    "complete_stop": true,
+    "sources_unchanged": true,
+    "independent_arc_tracking": true,
+    "independent_actual_turn": true,
+    "independent_component_goal": true
+  },
+  "actual_native": 1680,
+  "own_replay_native": 1680,
+  "simulation_time_s": 16.8,
+  "maximum_control_replay_error": 0.0,
+  "component_goal_error_m": 0.07515677947910282,
+  "actual_yaw": 0.16834137347109554,
+  "desired_terminal_yaw": 0.3,
+  "terminal_heading_error": 0.13165862652890448,
+  "maximum_radial_error": 0.029762279757262977,
+  "whole_command_yaw_integral": 0.22405438383372914,
+  "terminal_point_bearing": 0.16766556868687182,
+  "actual_heading_vs_terminal_bearing": 0.0006758047842237158,
+  "goal_checker_yaw_tolerance": 3.141592653589793,
+  "rpp_rotate_to_heading": false,
+  "lookahead_m": 0.6,
+  "phase_chunks": [
+    {
+      "first_native": 1,
+      "last_native": 500,
+      "command_v_mean": 0.1,
+      "command_w_mean": 0.02624756961989102,
+      "actual_v_mean": 0.09113047529937136,
+      "actual_w_mean": 0.01591709538941673,
+      "commanded_yaw_integral": 0.1312378480994551,
+      "measured_yaw_rate_integral": 0.07958547694708366,
+      "final_actual_yaw": 0.0795841948557086
+    },
+    {
+      "first_native": 501,
+      "last_native": 1000,
+      "command_v_mean": 0.08264937055002196,
+      "command_w_mean": 0.01720612736252278,
+      "actual_v_mean": 0.08223802561627079,
+      "actual_w_mean": 0.01510641853212308,
+      "commanded_yaw_integral": 0.08603063681261391,
+      "measured_yaw_rate_integral": 0.0755320926606154,
+      "final_actual_yaw": 0.15511625286582809
+    },
+    {
+      "first_native": 1001,
+      "last_native": 1480,
+      "command_v_mean": 0.04973654510552365,
+      "command_w_mean": 0.001413728942012531,
+      "actual_v_mean": 0.052277130377092806,
+      "actual_w_mean": 0.0027223019388040014,
+      "commanded_yaw_integral": 0.0067858989216601495,
+      "measured_yaw_rate_integral": 0.013067049306259206,
+      "final_actual_yaw": 0.16818304999982533
+    },
+    {
+      "first_native": 1481,
+      "last_native": 1680,
+      "command_v_mean": 0.0,
+      "command_w_mean": 0.0,
+      "actual_v_mean": 0.0007036578647009239,
+      "actual_w_mean": 7.910042023411561e-05,
+      "commanded_yaw_integral": 0.0,
+      "measured_yaw_rate_integral": 0.00015820084046823125,
+      "final_actual_yaw": 0.16834137347109554
+    }
+  ],
+  "findings": [
+    "Actual RPP action succeeded at positional component goal, independently required terminal tangent heading failed.",
+    "Actual vehicle yaw initially lags requested yaw. Later RPP yaw request decreases almost to zero and becomes slightly negative before positional completion.",
+    "The native goal checker yaw tolerance pi does not enforce this new component terminal heading criterion; planar tracking and braking passed.",
+    "No evidence of a second controller overwriting ctrl: independent allocation and own full replay error0. This does not establish perfect physical response to nominal body commands."
+  ],
+  "limits": [
+    "One exposed component, not general RPP failure or RP-CCR regression.",
+    "No causal intervention or tuned variant was physically executed; lookahead/terminal handling/plant response contributions not separately identified.",
+    "Do not fix by relaxing terminal gate or enabling in-place rotation for this car."
+  ],
+  "next_design": [
+    "Retain common vehicle adapter; examine causal endpoint-aware lookahead/curvature handling using saved observations first.",
+    "Test candidate against the same closed saved input and geometry; preserve original component gates and old failure.",
+    "New physical task needs a separately frozen bounded protocol; no automatic retry."
+  ],
+  "models": 0,
+  "new_physical_native": 0,
+  "analytical_vehicle_native": 0
+}
