@@ -46,3 +46,5 @@ V1294完成2次规范Vehicle初始化（内部MjModel重建数未知）、3370�
 必要源码、报告、汇总与恢复清单保存在Git；完整MJB、初态、轨迹、传感、控制、接触及原V1293入口见证保存在[同仓Release](https://github.com/frank8763/phase-/releases/tag/phase-rpp-component-v1294-20261118)。下载入口及SHA见records/v1294_backup_20261118/RECORD_INDEX.json；发布和每个解压成员远端SHA回读成功由FULL_REMOTE_VERIFIED.json确认后，才清理原始临时缓存。远端失败时保留必要本地证据。
 
 下一步建议：先同控制层转弯/制动组件，再原静态整路与成功重复；全过才进入同感知动态开发。MPPI继续有限保存输入/软件反馈适配，原软件失败不得当作正式性能比较。后续新物理范围需另行明确，本轮不自动启动。
+
+备份完成：同仓Release已发布，90成员及全部原始资产下载/解压SHA通过，源码标签绑定aa714762e468f7c929c08559ec69e6f9c5ebbee5；已清理约50.6MB逻辑临时数据，未删冻结源/依赖。恢复命令：`python3 -B experiments/v1295_rpp_component_closure/restore.py --list`，按需`--task main`、`--task repeat`或`--task v1293-entry`；旧入口11文件恢复及再SHA核验实测通过。

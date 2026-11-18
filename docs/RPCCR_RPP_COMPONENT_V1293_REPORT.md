@@ -33,3 +33,5 @@ V1293一次启动driver149075，先真实隔离OSMesa/llvmpipe上下文和当前
 已向用户提交唯一一次“输出入口接续”确认。只有明确批准，且V1293原14:18:27截止余时足够，才沿原双时钟接原两个未执行任务，初始化另记，不新开90分钟；再异常即停。未批准、原截止届满或余时不足均不启动模型。准备完成不等于组件或整路通过。
 
 证据：`runs/v1293_rpp_component90/ENTRY_FAILURE_DIAGNOSIS.json`、原COMPLETION/native.console/INITIALIZATION_PROVENANCE；`runs/v1294_rpp_output_scope/OUTPUT_SCOPE_QUALIFICATION.json`、ENTRY_BINDING_QUALIFICATION、READY_FOR_ENTRY_REVIEW。
+
+补充：用户随后明确批准这唯一接续，V1294已按原截止完成主及重复全部门通过。原V1293失败和0导航结论保持；见[V1294结果](RPCCR_RPP_COMPONENT_V1294_REPORT.md)。
