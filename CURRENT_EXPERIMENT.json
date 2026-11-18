@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_FROZEN_OVERNIGHT_BASELINE_RELAY",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1341_overnight_baseline_relay",
-  "active_window": {
-    "started_unix": 1795009192.453465,
-    "started_monotonic": 130967.90288672,
-    "absolute_deadline_unix": 1795050000.0,
-    "hard_stop_monotonic": 171775.4494217351,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1341_overnight_baseline_relay/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -9956,5 +9950,40 @@
     "restore_index": "records/v1337_margin_route_20261118/RECORD_INDEX.json",
     "models_for_backup": 0,
     "old_v1329_partial_raw_untouched": true
+  },
+  "latest_v1341": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "rpp_default_static_main",
+      "rpp_default_static_repeat",
+      "rpp_default_dynamic_main"
+    ],
+    "unexecuted": [
+      "rpp_default_dynamic_repeat",
+      "rpp_preview_static_main",
+      "rpp_preview_static_repeat",
+      "rpp_preview_dynamic_main",
+      "rpp_preview_dynamic_repeat",
+      "rpp_local_static_main",
+      "rpp_local_static_repeat",
+      "rpp_local_dynamic_main",
+      "rpp_local_dynamic_repeat",
+      "coherent_mppi_static_main",
+      "coherent_mppi_static_repeat",
+      "coherent_mppi_dynamic_main",
+      "coherent_mppi_dynamic_repeat"
+    ],
+    "stop_reason": "EVIDENCE_OR_OPERATION_STOP",
+    "report": "docs/OVERNIGHT_BASELINE_20261118_REPORT.md",
+    "primary_failure": "NATIVE_SAFETY_ANOMALY",
+    "static_main_repeat_passed": true,
+    "dynamic_passed": false,
+    "exact_actual_native": 25209,
+    "own_replay_native": 18390,
+    "dynamic_actual_native": 6819,
+    "closed_at_local": "2026-11-18T21:44:41+08:00",
+    "raw_backup_pending": true,
+    "addendum": "runs/v1341_overnight_baseline_relay/INDEPENDENT_CHECK_ADDENDUM.json"
   }
 }

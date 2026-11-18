@@ -1,0 +1,86 @@
+{
+  "rows": [
+    {
+      "task": "rpp_default_static_main",
+      "branch": "rpp_default",
+      "stage": "static",
+      "role": "main",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.39051535524721187,
+      "minimum_actual_clearance_m": 0.2500331552976056,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.40315932400699
+    },
+    {
+      "task": "rpp_default_static_repeat",
+      "branch": "rpp_default",
+      "stage": "static",
+      "role": "repeat",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.39051535524721187,
+      "minimum_actual_clearance_m": 0.2500331552976056,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.37195798801258
+    },
+    {
+      "task": "rpp_default_dynamic_main",
+      "branch": "rpp_default",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "EVIDENCE_OR_OPERATION_STOP",
+      "passed": false,
+      "actual_native": "unknown",
+      "actual_recorded_lower_bound": 6500,
+      "own_replay_native": 0,
+      "goal_distance_m": 2.050318093201531,
+      "minimum_actual_clearance_m": 0.14954611312079638,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951053947290284,
+          -0.7293176133084903
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 74.32789745199261
+    }
+  ],
+  "unexecuted": [
+    "rpp_default_dynamic_repeat",
+    "rpp_preview_static_main",
+    "rpp_preview_static_repeat",
+    "rpp_preview_dynamic_main",
+    "rpp_preview_dynamic_repeat",
+    "rpp_local_static_main",
+    "rpp_local_static_repeat",
+    "rpp_local_dynamic_main",
+    "rpp_local_dynamic_repeat",
+    "coherent_mppi_static_main",
+    "coherent_mppi_static_repeat",
+    "coherent_mppi_dynamic_main",
+    "coherent_mppi_dynamic_repeat"
+  ],
+  "skipped_dependencies": [],
+  "exact_actual_total": 18390,
+  "unknown_actual_tasks": [
+    "rpp_default_dynamic_main"
+  ],
+  "exact_replay_total": 18390,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}
