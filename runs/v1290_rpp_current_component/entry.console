@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1290_rpp_current_component/native_component.py", line 171, in <module>
+    raise SystemExit(main())
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1290_rpp_current_component/native_component.py", line 157, in main
+    sys.meta_path.insert(0, NoPhysical()); old, Adapter, _, _ = binding()
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1290_rpp_current_component/native_component.py", line 27, in binding
+    import chain_tools as old
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1180_fresh_recovery_chain/chain_tools.py", line 9, in <module>
+    import recovery_tools as previous
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1179_frozen_recovery_native/recovery_tools.py", line 9, in <module>
+    q=load('v1179_unchanged_science',R/'experiments/v1160_safe_terminal_connection/search.py');np=q.np;dump=q.dump;sha=q.sha;GUARD=q.GUARD
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1179_frozen_recovery_native/recovery_tools.py", line 8, in load
+    s=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(s);sys.modules[n]=m;s.loader.exec_module(m);return m
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1160_safe_terminal_connection/search.py", line 20, in <module>
+    from bindings import REQUIRED
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1121_coupled_route_night/bindings.py", line 12, in <module>
+    from coupled_model import Predictor,initial,GAIN
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1114_coupled_steering_mode/coupled_model.py", line 7, in <module>
+    GAIN=json.loads((C/'COUPLING.json').read_text())['rear_zero_steering_gain']
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1290_rpp_current_component/COUPLING.json'

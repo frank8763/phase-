@@ -1,0 +1,423 @@
+{
+  "passed": false,
+  "scope": "baseline_interface_software_only",
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_native": 0,
+  "training_updates": 0,
+  "started_unix": 1794968498.1801953,
+  "automatic_physical_continuation": false,
+  "worker_returncode": 1,
+  "controller": {
+    "passed": false,
+    "models": 0,
+    "physical_native": 0,
+    "analytical_vehicle_propagation": 0,
+    "navigation_trials": 0,
+    "synthetic_stationary_fixture": true,
+    "cases": [
+      {
+        "id": "MPPI_original_straight",
+        "plugin": "MPPI_original",
+        "kind": "straight",
+        "passed": false,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": false,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.0032758209999883547,
+        "command_receive_interval_s": {
+          "p50": 0.04990669600374531,
+          "p95": 0.05035669100470841,
+          "maximum": 0.05041130699100904
+        },
+        "median_moving_w": -0.0006606142269447446,
+        "no_physical_execution": true
+      },
+      {
+        "id": "MPPI_original_left",
+        "plugin": "MPPI_original",
+        "kind": "left",
+        "passed": false,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": false
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.0026216069963993505,
+        "command_receive_interval_s": {
+          "p50": 0.05000643100356683,
+          "p95": 0.0503697509993799,
+          "maximum": 0.05050273099914193
+        },
+        "median_moving_w": -0.00012125008288421668,
+        "no_physical_execution": true
+      },
+      {
+        "id": "MPPI_original_right",
+        "plugin": "MPPI_original",
+        "kind": "right",
+        "passed": false,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": false,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": false
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.002540868998039514,
+        "command_receive_interval_s": {
+          "p50": 0.050020679002045654,
+          "p95": 0.05018452899821568,
+          "maximum": 0.05036618899612222
+        },
+        "median_moving_w": 0.0004053002194268629,
+        "no_physical_execution": true
+      },
+      {
+        "id": "MPPI_original_goal",
+        "plugin": "MPPI_original",
+        "kind": "goal",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "goal_at_origin_action_succeeded": true,
+          "no_movement_requested": true
+        },
+        "action_status": 4,
+        "action_error_code": 0,
+        "raw_commands": 1,
+        "first_command_after_goal_s": 0.0009094889974221587,
+        "command_receive_interval_s": {
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        },
+        "median_moving_w": null,
+        "no_physical_execution": true
+      },
+      {
+        "id": "MPPI_threshold_straight",
+        "plugin": "MPPI_threshold",
+        "kind": "straight",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.0020374440064188093,
+        "command_receive_interval_s": {
+          "p50": 0.050004057004116476,
+          "p95": 0.050490858004195616,
+          "maximum": 0.05079481199209113
+        },
+        "median_moving_w": 8.482787234243006e-05,
+        "no_physical_execution": true
+      },
+      {
+        "id": "MPPI_threshold_left",
+        "plugin": "MPPI_threshold",
+        "kind": "left",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.002479128001141362,
+        "command_receive_interval_s": {
+          "p50": 0.04997674800688401,
+          "p95": 0.05047423600626644,
+          "maximum": 0.05303172700223513
+        },
+        "median_moving_w": 0.0002847589203156531,
+        "no_physical_execution": true
+      },
+      {
+        "id": "MPPI_threshold_right",
+        "plugin": "MPPI_threshold",
+        "kind": "right",
+        "passed": false,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": false,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.0025254339998355135,
+        "command_receive_interval_s": {
+          "p50": 0.04996131199004594,
+          "p95": 0.05031275999499485,
+          "maximum": 0.050544288009405136
+        },
+        "median_moving_w": -0.00014436864876188338,
+        "no_physical_execution": true
+      },
+      {
+        "id": "MPPI_threshold_goal",
+        "plugin": "MPPI_threshold",
+        "kind": "goal",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "goal_at_origin_action_succeeded": true,
+          "no_movement_requested": true
+        },
+        "action_status": 4,
+        "action_error_code": 0,
+        "raw_commands": 1,
+        "first_command_after_goal_s": 0.0010460299963597208,
+        "command_receive_interval_s": {
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        },
+        "median_moving_w": null,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Adapted_original_straight",
+        "plugin": "Adapted_original",
+        "kind": "straight",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.003894416004186496,
+        "command_receive_interval_s": {
+          "p50": 0.0498390189895872,
+          "p95": 0.05040180899959523,
+          "maximum": 0.051663931997609325
+        },
+        "median_moving_w": 7.357625145232305e-05,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Adapted_original_left",
+        "plugin": "Adapted_original",
+        "kind": "left",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.0026239809958497062,
+        "command_receive_interval_s": {
+          "p50": 0.0499791229958646,
+          "p95": 0.05020115099614486,
+          "maximum": 0.050416056998074055
+        },
+        "median_moving_w": 8.994004019768909e-05,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Adapted_original_right",
+        "plugin": "Adapted_original",
+        "kind": "right",
+        "passed": false,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": false
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.002790205995552242,
+        "command_receive_interval_s": {
+          "p50": 0.04997081100009382,
+          "p95": 0.05026051799359266,
+          "maximum": 0.05045642600452993
+        },
+        "median_moving_w": 0.00014641402958659455,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Adapted_original_goal",
+        "plugin": "Adapted_original",
+        "kind": "goal",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "goal_at_origin_action_succeeded": true,
+          "no_movement_requested": true
+        },
+        "action_status": 4,
+        "action_error_code": 0,
+        "raw_commands": 1,
+        "first_command_after_goal_s": 0.003501412007608451,
+        "command_receive_interval_s": {
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        },
+        "median_moving_w": null,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Adapted_threshold_straight",
+        "plugin": "Adapted_threshold",
+        "kind": "straight",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.002698781987419352,
+        "command_receive_interval_s": {
+          "p50": 0.04995537600188982,
+          "p95": 0.050406558002578095,
+          "maximum": 0.05055853600788396
+        },
+        "median_moving_w": -9.32981856749393e-05,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Adapted_threshold_left",
+        "plugin": "Adapted_threshold",
+        "kind": "left",
+        "passed": false,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": false
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.002631105002365075,
+        "command_receive_interval_s": {
+          "p50": 0.049884136009495705,
+          "p95": 0.05041724399779923,
+          "maximum": 0.050592968007549644
+        },
+        "median_moving_w": -6.5639755121083e-05,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Adapted_threshold_right",
+        "plugin": "Adapted_threshold",
+        "kind": "right",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.002642977997311391,
+        "command_receive_interval_s": {
+          "p50": 0.04996249999385327,
+          "p95": 0.05030801099201199,
+          "maximum": 0.050670144002651796
+        },
+        "median_moving_w": -0.00013891128037357703,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Adapted_threshold_goal",
+        "plugin": "Adapted_threshold",
+        "kind": "goal",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "goal_at_origin_action_succeeded": true,
+          "no_movement_requested": true
+        },
+        "action_status": 4,
+        "action_error_code": 0,
+        "raw_commands": 1,
+        "first_command_after_goal_s": 0.001019909992464818,
+        "command_receive_interval_s": {
+          "p50": null,
+          "p95": null,
+          "maximum": null
+        },
+        "median_moving_w": null,
+        "no_physical_execution": true
+      }
+    ],
+    "scope": "Actual upstream controller software interface, not physical navigation",
+    "controller_active": true,
+    "wall_s": 18.255436685998575,
+    "no_model_modules_loaded": true,
+    "controller_server_exited": true
+  },
+  "contract_checks": 24,
+  "source_unchanged": true,
+  "independently_revalidated_observations": 898,
+  "physical_successes": null,
+  "physical_trials": 0,
+  "closed": true,
+  "wall_s": 18.926046708002104,
+  "closed_unix": 1794968517.106242,
+  "review_pending_unchanged": true
+}

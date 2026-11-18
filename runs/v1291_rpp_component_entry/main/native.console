@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1291_rpp_component_entry/native_component.py", line 171, in <module>
+    raise SystemExit(main())
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1291_rpp_component_entry/native_component.py", line 164, in main
+    proof = run(task, window)
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1291_rpp_component_entry/native_component.py", line 40, in run
+    import mujoco as mj
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/__init__.py", line 68, in <module>
+    from mujoco.rendering.classic.renderer import Renderer  # pytype: disable=import-error
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/rendering/classic/renderer.py", line 20, in <module>
+    from mujoco.rendering.classic import gl_context
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/rendering/classic/gl_context.py", line 38, in <module>
+    from mujoco.osmesa import GLContext as _GLContext
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/osmesa/__init__.py", line 31, in <module>
+    from OpenGL import GL
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/GL/__init__.py", line 4, in <module>
+    from OpenGL.GL.VERSION.GL_1_1 import *
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/GL/VERSION/GL_1_1.py", line 14, in <module>
+    from OpenGL.raw.GL.VERSION.GL_1_1 import *
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/raw/GL/VERSION/GL_1_1.py", line 7, in <module>
+    from OpenGL.raw.GL import _errors
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/raw/GL/_errors.py", line 4, in <module>
+    _error_checker = _ErrorChecker( _p, _p.GL.glGetError )
+AttributeError: 'NoneType' object has no attribute 'glGetError'

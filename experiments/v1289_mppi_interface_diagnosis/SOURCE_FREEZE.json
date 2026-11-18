@@ -1,0 +1,58 @@
+{
+  "files": {
+    "experiments/v1288_baseline_interface/PROTOCOL.md": "f43dee902212b39633cfdea70f837aba2fe16f16e2a68dd49c23c63720eb8c5c",
+    "experiments/v1288_baseline_interface/TASKS.json": "4f0b48e26130091ca61a607eba425f32606c91ad32708a6d317d65de7c549ddc",
+    "experiments/v1288_baseline_interface/contract.py": "2412832c79f7eb2caafed4d6c197b80399c62b23a19e7b6361316eb9ed614a55",
+    "experiments/v1288_baseline_interface/controller_probe.py": "fc896d2ea3ec2e3d4bd386eeb9e97bbfe7014e656e5815365deb2666e7d2bb79",
+    "experiments/v1288_baseline_interface/params.json": "1731f4d433ea9b6494e570637cf922054e62e90a5108c1454d4d8b67f7a069e9",
+    "experiments/v1288_baseline_interface/prepare.py": "3609563f866f1df1193bdae9e7cc7e1c43936975a960c6776d2dbc2db32da0a0",
+    "experiments/v1288_baseline_interface/qualify_contract.py": "824556dd82363c74010f2c7752683a990378c39d070a2bc88dcd1024404ef2db",
+    "experiments/v1288_baseline_interface/run_software.py": "15c2f2f12c110d9f57ad45d7b103d0f2b47a25b59efe120ef5dac60234ce783a",
+    "experiments/v1289_mppi_interface_diagnosis/PROTOCOL.md": "04b88b9f729785f557245d062e874eab34e35c6fb77b646e57188d69c7fe9a0e",
+    "experiments/v1289_mppi_interface_diagnosis/TASKS.json": "ac8cb1a85aa90a706a8ac957878c10a3134f106147b321d4528f85382dd3ee5f",
+    "experiments/v1289_mppi_interface_diagnosis/contract.py": "2412832c79f7eb2caafed4d6c197b80399c62b23a19e7b6361316eb9ed614a55",
+    "experiments/v1289_mppi_interface_diagnosis/controller_probe.py": "0eec13b153d18a5c0bdf16329d4d0407c6132a9a3870de47a42ce498ca104cbf",
+    "experiments/v1289_mppi_interface_diagnosis/params.json": "98c6a42707f49ca7ba65243a4065587d2b219b09cf5c0cf5550db12205737930",
+    "experiments/v1289_mppi_interface_diagnosis/prepare.py": "28eb0cba4eef4afe905c43d1ebe624f57721f8e30f494939db925277bb3e1091",
+    "experiments/v1289_mppi_interface_diagnosis/qualify_contract.py": "824556dd82363c74010f2c7752683a990378c39d070a2bc88dcd1024404ef2db",
+    "experiments/v1289_mppi_interface_diagnosis/reproduce_trace.py": "dfbd6661a5a2628f5faab158b721bfb237ea7cae68cc01435bf63c89d91c358f",
+    "experiments/v1289_mppi_interface_diagnosis/run_software.py": "e32a3e9796760bcf842f74f20c08d6085ec51433b43c896f766274759b87562c",
+    "experiments/v856_nav2_foundation/ros_environment.py": "6fc6ee3254458c09392524eee094343b44e56882fbf418204e48c79aeeeb3182",
+    "runs/v856_nav2_foundation/rootfs/opt/ros/jazzy/lib/libmppi_controller.so": "915224409043672db4c94c692cc0d5d3e08cc247c4ac20f22010d2d9ed88dcbf",
+    "runs/v856_nav2_foundation/rootfs/opt/ros/jazzy/lib/libnav2_regulated_pure_pursuit_controller.so": "d090ed742e76e98e11ec1d739890621567f42b482f8a5450b211f3c347a7ba00",
+    "runs/v856_nav2_foundation/rootfs/opt/ros/jazzy/lib/nav2_controller/controller_server": "a3728b0add30d1e87b5318705957a888a75615a232675d146505353fe7161985",
+    "runs/v856_nav2_foundation/rootfs/opt/ros/jazzy/share/nav2_mppi_controller/package.xml": "08b4106a692ca9fab9b83fb0901f81ad914b848f0ae4c18e827cb0bb0f3680fe",
+    "runs/v856_nav2_foundation/rootfs/opt/ros/jazzy/share/nav2_regulated_pure_pursuit_controller/package.xml": "4633e1fc3cc4d4df7143be1392fc26eff6f2fbb832fdc670948e1496eb9e2429",
+    "runs/v929_executable_mppi/install/lib/libphase_executable_mppi.so": "e22c587be7283e0d02550d4700fb2a99c40854d1c9e6ca481539fe2b849cb34c",
+    "runs/v929_executable_mppi/install/share/ament_index/resource_index/nav2_core__pluginlib__plugin/phase_executable_mppi": "769f84f75521b9f1637f598897525ff8756f1a1cdb2abf30756f57ec78271278",
+    "runs/v929_executable_mppi/install/share/ament_index/resource_index/packages/phase_executable_mppi": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v929_executable_mppi/install/share/phase_executable_mppi/package.xml": "7cecad3d38c4ded3fcf223d123dbb58358799ad814a45f2dd6d0d05f10c43895",
+    "runs/v929_executable_mppi/install/share/phase_executable_mppi/plugin.xml": "ea9ae6a3adc30dc9d9e24c25a1e5c52b753b192388a98ba3ac6860849a698923"
+  },
+  "parent_harness_changes": [
+    "case count compares with explicit task table length"
+  ],
+  "variants": [
+    [
+      "MPPI_original",
+      false,
+      1.4
+    ],
+    [
+      "MPPI_threshold",
+      false,
+      0.1
+    ],
+    [
+      "Adapted_original",
+      true,
+      1.4
+    ],
+    [
+      "Adapted_threshold",
+      true,
+      0.1
+    ]
+  ],
+  "physical_models": 0
+}

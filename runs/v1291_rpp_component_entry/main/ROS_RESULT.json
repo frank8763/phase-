@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "physical_models_in_ros": 0,
+  "commands": 0,
+  "error": "TimeoutError('ACTUAL_T0_OR_LIFECYCLE_MISSING')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1291_rpp_component_entry/ros_component.py\", line 93, in main\n    wait(lambda: latest is not None and client.service_is_ready(), 45, 'ACTUAL_T0_OR_LIFECYCLE_MISSING')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1291_rpp_component_entry/ros_component.py\", line 90, in wait\n    raise TimeoutError(message)\nTimeoutError: ACTUAL_T0_OR_LIFECYCLE_MISSING\n",
+  "wall_s": 45.19454692800355
+}

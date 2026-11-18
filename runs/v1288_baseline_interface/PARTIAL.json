@@ -1,0 +1,206 @@
+{
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_propagation": 0,
+  "navigation_trials": 0,
+  "synthetic_stationary_fixture": true,
+  "cases": [
+    {
+      "id": "rpp_straight",
+      "plugin": "RPP",
+      "kind": "straight",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.0035322830080986023,
+      "command_receive_interval_s": {
+        "p50": 0.05001000000629574,
+        "p95": 0.050180974998511374,
+        "maximum": 0.05027714799507521
+      },
+      "median_moving_w": 0.0,
+      "no_physical_execution": true
+    },
+    {
+      "id": "rpp_left",
+      "plugin": "RPP",
+      "kind": "left",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.0014235989947337657,
+      "command_receive_interval_s": {
+        "p50": 0.049992190004559234,
+        "p95": 0.050261712007340975,
+        "maximum": 0.050429124996298924
+      },
+      "median_moving_w": 0.05000559980183712,
+      "no_physical_execution": true
+    },
+    {
+      "id": "rpp_right",
+      "plugin": "RPP",
+      "kind": "right",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.001733490003971383,
+      "command_receive_interval_s": {
+        "p50": 0.05002780999348033,
+        "p95": 0.0503139549982734,
+        "maximum": 0.05039825401036069
+      },
+      "median_moving_w": -0.05000559980183712,
+      "no_physical_execution": true
+    },
+    {
+      "id": "rpp_goal",
+      "plugin": "RPP",
+      "kind": "goal",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "goal_at_origin_action_succeeded": true,
+        "no_movement_requested": true
+      },
+      "action_status": 4,
+      "action_error_code": 0,
+      "raw_commands": 1,
+      "first_command_after_goal_s": 0.0010804630001075566,
+      "command_receive_interval_s": {
+        "p50": null,
+        "p95": null,
+        "maximum": null
+      },
+      "median_moving_w": null,
+      "no_physical_execution": true
+    },
+    {
+      "id": "mppi_straight",
+      "plugin": "MPPI",
+      "kind": "straight",
+      "passed": false,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": false,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.0029148750036256388,
+      "command_receive_interval_s": {
+        "p50": 0.04994588500994723,
+        "p95": 0.050287834004848264,
+        "maximum": 0.05078888399293646
+      },
+      "median_moving_w": -0.0006024276663083583,
+      "no_physical_execution": true
+    },
+    {
+      "id": "mppi_left",
+      "plugin": "MPPI",
+      "kind": "left",
+      "passed": false,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": false
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.002336649995413609,
+      "command_receive_interval_s": {
+        "p50": 0.049934012000449,
+        "p95": 0.05022015600115992,
+        "maximum": 0.05085537300328724
+      },
+      "median_moving_w": -0.0002721414202824235,
+      "no_physical_execution": true
+    },
+    {
+      "id": "mppi_right",
+      "plugin": "MPPI",
+      "kind": "right",
+      "passed": false,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": false
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.0018640959897311404,
+      "command_receive_interval_s": {
+        "p50": 0.050001689000055194,
+        "p95": 0.050324641008046456,
+        "maximum": 0.05061909600044601
+      },
+      "median_moving_w": 0.00026968299061991274,
+      "no_physical_execution": true
+    },
+    {
+      "id": "mppi_goal",
+      "plugin": "MPPI",
+      "kind": "goal",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "goal_at_origin_action_succeeded": true,
+        "no_movement_requested": true
+      },
+      "action_status": 4,
+      "action_error_code": 0,
+      "raw_commands": 1,
+      "first_command_after_goal_s": 0.0011944460129598156,
+      "command_receive_interval_s": {
+        "p50": null,
+        "p95": null,
+        "maximum": null
+      },
+      "median_moving_w": null,
+      "no_physical_execution": true
+    }
+  ],
+  "scope": "Actual upstream controller software interface, not physical navigation",
+  "controller_active": true
+}
