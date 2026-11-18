@@ -1,0 +1,53 @@
+[WARN] [1795006009.752413123] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1795006009.752433309] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[INFO] [1795006009.762701796] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795006009.764202648] [controller_server]: Creating controller server
+[INFO] [1795006009.767166355] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795006009.767375335] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1795006010.112865756] [controller_server]: Configuring controller interface
+[INFO] [1795006010.112894254] [controller_server]: getting progress checker plugins..
+[INFO] [1795006010.112955997] [controller_server]: getting goal checker plugins..
+[INFO] [1795006010.112982120] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1795006010.113008242] [local_costmap.local_costmap]: Configuring
+[INFO] [1795006010.115853212] [local_costmap.local_costmap]: Using plugin "static_layer"
+[INFO] [1795006010.117692468] [local_costmap.local_costmap]: Subscribing to the map topic (/phase_public_static) with transient local durability
+[INFO] [1795006010.118395398] [local_costmap.local_costmap]: Initialized plugin "static_layer"
+[INFO] [1795006010.118408460] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1795006010.118554508] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1795006010.119810759] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1795006010.119828570] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1795006010.120004302] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795006010.128396724] [local_costmap.local_costmap]: StaticLayer: Resizing static layer to 240 X 240 at 0.050000 m/pix
+[INFO] [1795006010.128446595] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1795006010.128521400] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1795006010.128717318] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1795006010.128821808] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[INFO] [1795006010.129300323] [controller_server]: Created controller : RPP of type nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795006010.130779802] [controller_server]: Controller Server has RPP  controllers available.
+[INFO] [1795006010.133874122] [controller_server]: Activating
+[INFO] [1795006010.133896682] [local_costmap.local_costmap]: Activating
+[INFO] [1795006010.133906181] [local_costmap.local_costmap]: Checking transform
+[INFO] [1795006010.133963175] [local_costmap.local_costmap]: start
+[INFO] [1795006010.284290597] [controller_server]: Activating controller: RPP of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795006010.284349967] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1795006012.003192361] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795006013.203428660] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795006013.203466657] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795006013.357726691] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795006013.357771811] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1795006013.357816932] [controller_server]: Deactivating
+[INFO] [1795006013.357839492] [controller_server]: Deactivating controller: RPP of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795006013.357860865] [local_costmap.local_costmap]: Deactivating
+[INFO] [1795006013.434183462] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1795006013.444383081] [controller_server]: Cleaning up
+[INFO] [1795006013.444400891] [controller_server]: Cleaning up controller: RPP of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795006013.444437700] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1795006013.449683558] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1795006013.451255653] [local_costmap.local_costmap]: Destroying
+[INFO] [1795006013.453189900] [controller_server]: Destroying

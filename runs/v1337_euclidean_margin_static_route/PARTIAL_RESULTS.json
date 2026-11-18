@@ -1,0 +1,31 @@
+[
+  {
+    "task": "rpp_main",
+    "attempted": true,
+    "passed": false,
+    "native": null,
+    "ros": {
+      "passed": false,
+      "physical_models_in_ros": 0,
+      "commands": 898,
+      "public_static_map_receipt": {
+        "passed": true,
+        "checked_world": [
+          -3.15,
+          0.0
+        ],
+        "value": 100,
+        "source": "a2c27394f18509d828790f7550cb4ab8c11393a4440af7777c0e1a4ce6e9d418"
+      },
+      "action_accepted": true,
+      "error": "ValueError('COMMAND_CURVATURE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1337_euclidean_margin_static_route/ros_component.py\", line 125, in main\n    wait(f.done, 1200, 'FULL_STATIC_ROUTE_NAVIGATION_1200S')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1337_euclidean_margin_static_route/ros_component.py\", line 104, in wait\n    rclpy.spin_once(node, timeout_sec=.005)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py\", line 226, in spin_once\n    executor.spin_once(timeout_sec=timeout_sec)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 926, in spin_once\n    self._spin_once_impl(timeout_sec)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 918, in _spin_once_impl\n    raise handler.exception()\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/task.py\", line 286, in _execute_coroutine_step\n    result = coro.send(None)\n             ^^^^^^^^^^^^^^^\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 592, in handler\n    await call_coroutine()\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 480, in _execute\n    await await_or_execute(sub.callback, *msg_tuple)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 115, in await_or_execute\n    return callback(*args)\n           ^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1337_euclidean_margin_static_route/ros_component.py\", line 63, in receive_twist\n    rows.append(p); command(p, run_id=task['run_id'], now=time.monotonic(), previous_sequence=sequence - 1)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1288_baseline_interface/contract.py\", line 51, in command\n    v, w = twist(p['v'], p['w'])\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1288_baseline_interface/contract.py\", line 40, in twist\n    raise ValueError('COMMAND_CURVATURE')\nValueError: COMMAND_CURVATURE\n",
+      "wall_s": 49.1516359209927
+    },
+    "audit": null,
+    "worker_returncodes": [
+      1,
+      -15
+    ]
+  }
+]
