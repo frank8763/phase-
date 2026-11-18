@@ -1,0 +1,1 @@
+One actual-installed RPP software response after same653recordedobservations. ONLY collision-footprint representation changes to circumscribed Minkowski Euclidean15cm buffer; controller and public map/rays/noise unchanged. No physical model/nav. Nonzero legal output expected but not guaranteed; retain result if rejects.

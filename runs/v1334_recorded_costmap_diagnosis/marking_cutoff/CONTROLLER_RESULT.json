@@ -1,0 +1,39 @@
+{
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_propagation": 0,
+  "navigation_trials": 0,
+  "synthetic_stationary_fixture": true,
+  "cases": [
+    {
+      "id": "rpp_recorded_history_marking_cutoff",
+      "plugin": "RPP",
+      "kind": "whole_path_fixture",
+      "passed": false,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": false,
+        "nonzero_forward": false,
+        "action_cancelled": false
+      },
+      "action_status": 6,
+      "action_error_code": 104,
+      "raw_commands": 7,
+      "first_command_after_goal_s": 0.00668852700619027,
+      "command_receive_interval_s": {
+        "p50": 0.04989026200200897,
+        "p95": 0.04995081799279433,
+        "maximum": 0.050307033001445234
+      },
+      "median_moving_w": null,
+      "no_physical_execution": true
+    }
+  ],
+  "scope": "Actual upstream controller software interface, not physical navigation",
+  "controller_active": true,
+  "wall_s": 36.869313941002474,
+  "no_model_modules_loaded": true,
+  "controller_server_exited": true
+}

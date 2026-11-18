@@ -9754,7 +9754,7 @@
     "raw_available_locally": false,
     "cleanup_logical_bytes": 75890415
   },
-  "latest_baseline_report": "docs/COHERENT_MPPI_STATIC_V1329_REPORT.md",
+  "latest_baseline_report": "docs/COMMON_MAP_STATIC_V1333_REPORT.md",
   "latest_v1325": {
     "closed": true,
     "component_passed": false,
@@ -9838,5 +9838,47 @@
     "physical_route_verified": false,
     "automatic_physical_launch": false,
     "report": "docs/COHERENT_MPPI_STATIC_V1329_REPORT.md"
+  },
+  "latest_v1332": {
+    "closed": true,
+    "static_route_passed": false,
+    "attempted": [
+      "mppi_main"
+    ],
+    "unexecuted": [
+      "mppi_repeat",
+      "rpp_main",
+      "rpp_repeat"
+    ],
+    "stop_reason": "FIRST_SAFETY_SOURCE_OPERATION_OR_EVIDENCE_FAILURE",
+    "report": "docs/COMMON_MAP_STATIC_V1333_REPORT.md",
+    "normalized_ledger": "runs/v1332_common_map_static_campaign/NORMALIZED_LEDGER.json"
+  },
+  "latest_v1333": {
+    "closed": true,
+    "static_route_passed": false,
+    "attempted": [
+      "rpp_main"
+    ],
+    "unexecuted": [
+      "rpp_repeat"
+    ],
+    "stop_reason": "FIRST_RPP_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE",
+    "report": "docs/COMMON_MAP_STATIC_V1333_REPORT.md",
+    "actual_native": 3460,
+    "own_replay_native": 3460,
+    "minimum_actual_clearance_m": 0.3148995667394884,
+    "bad_contacts": 0,
+    "full_physical_gates_passed": true,
+    "full_navigation_passed": false
+  },
+  "prepared_v1336": {
+    "euclidean_margin_contains_original_15cm_buffer": true,
+    "saved_state_software_admission_passed": true,
+    "unsafe_state_negative_passed": true,
+    "new_physical_models": 0,
+    "whole_route_passed": false,
+    "automatic_physical_launch": false,
+    "qualification": "experiments/v1336_euclidean_costmap_margin/SOFTWARE_QUALIFICATION.json"
   }
 }

@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "original_exact_ast_reproduced_premature_abort": true,
+  "cases": [
+    {
+      "name": "functional_ros_drain",
+      "passed": true,
+      "actual": "DRAIN"
+    },
+    {
+      "name": "unexpected_ros_fault",
+      "passed": true,
+      "actual": "ABORT"
+    },
+    {
+      "name": "missing_ros_result",
+      "passed": true,
+      "actual": "ABORT"
+    },
+    {
+      "name": "wrong_exit_even_with_receipt",
+      "passed": true,
+      "actual": "ABORT"
+    },
+    {
+      "name": "map_missing",
+      "passed": true,
+      "actual": "ABORT"
+    },
+    {
+      "name": "native_safety_fail",
+      "passed": true,
+      "actual": "ABORT"
+    },
+    {
+      "name": "native_signal",
+      "passed": true,
+      "actual": "ABORT"
+    },
+    {
+      "name": "native_functional_saved",
+      "passed": true,
+      "actual": "DRAIN"
+    },
+    {
+      "name": "native_replay_missing",
+      "passed": true,
+      "actual": "ABORT"
+    },
+    {
+      "name": "normal_ros_exit_waits_native",
+      "passed": true,
+      "actual": "WAIT"
+    },
+    {
+      "name": "both_running",
+      "passed": true,
+      "actual": "WAIT"
+    }
+  ],
+  "tests": 11,
+  "models": 0,
+  "physical_native": 0,
+  "original_deadline_and_storage_checks_remain_in_wait_loop": true
+}

@@ -1,0 +1,1 @@
+Recorded ROS input playback only, fixed653poses/rays at20Hz, no physical models. Original vs public noiseclip-derived2.94m marking cutoff, same raytracing, controllers/map/trajectory unchanged. Counterfactual software probe only, not navigation/safety qualified.
