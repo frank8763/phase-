@@ -1,0 +1,212 @@
+{
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_propagation": 0,
+  "navigation_trials": 0,
+  "synthetic_stationary_fixture": true,
+  "cases": [
+    {
+      "id": "Original_5000",
+      "plugin": "Original",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.006930926989298314,
+      "command_receive_interval_s": {
+        "p50": 0.049966068007051945,
+        "p95": 0.05034122700453736,
+        "maximum": 0.050464697007555515
+      },
+      "median_moving_w": 0.0056070315185934305,
+      "no_physical_execution": true
+    },
+    {
+      "id": "Original_6000",
+      "plugin": "Original",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.005139428001712076,
+      "command_receive_interval_s": {
+        "p50": 0.04995657000108622,
+        "p95": 0.05052168200199958,
+        "maximum": 0.051267249989905395
+      },
+      "median_moving_w": 0.0032801986671984196,
+      "no_physical_execution": true
+    },
+    {
+      "id": "AngleEarly_5000",
+      "plugin": "AngleEarly",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.005383993993746117,
+      "command_receive_interval_s": {
+        "p50": 0.04996250700787641,
+        "p95": 0.050323418006883,
+        "maximum": 0.05043382800067775
+      },
+      "median_moving_w": 0.005283385748043656,
+      "no_physical_execution": true
+    },
+    {
+      "id": "AngleEarly_6000",
+      "plugin": "AngleEarly",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.004563631999189965,
+      "command_receive_interval_s": {
+        "p50": 0.049980315001448616,
+        "p95": 0.0502783050033031,
+        "maximum": 0.05062971799634397
+      },
+      "median_moving_w": 0.0032827083487063646,
+      "no_physical_execution": true
+    },
+    {
+      "id": "AlignEarly_5000",
+      "plugin": "AlignEarly",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.0056534890027251095,
+      "command_receive_interval_s": {
+        "p50": 0.05001118200016208,
+        "p95": 0.050232003995915875,
+        "maximum": 0.05093126899737399
+      },
+      "median_moving_w": 0.005557669559493661,
+      "no_physical_execution": true
+    },
+    {
+      "id": "AlignEarly_6000",
+      "plugin": "AlignEarly",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.004665732005378231,
+      "command_receive_interval_s": {
+        "p50": 0.05001355698914267,
+        "p95": 0.05020588499610312,
+        "maximum": 0.05067008300102316
+      },
+      "median_moving_w": 0.002924126572906971,
+      "no_physical_execution": true
+    },
+    {
+      "id": "BothEarly_5000",
+      "plugin": "BothEarly",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.005406550000770949,
+      "command_receive_interval_s": {
+        "p50": 0.04994469899975229,
+        "p95": 0.050427892012521625,
+        "maximum": 0.05126131400174927
+      },
+      "median_moving_w": 0.005085780518129468,
+      "no_physical_execution": true
+    },
+    {
+      "id": "BothEarly_6000",
+      "plugin": "BothEarly",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.004695412004366517,
+      "command_receive_interval_s": {
+        "p50": 0.04998625098960474,
+        "p95": 0.0503127330011921,
+        "maximum": 0.05050387399387546
+      },
+      "median_moving_w": 0.003056579502299428,
+      "no_physical_execution": true
+    }
+  ],
+  "scope": "Actual upstream controller software interface, not physical navigation",
+  "controller_active": true
+}

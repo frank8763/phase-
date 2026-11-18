@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "scope": "baseline_interface_software_only",
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_native": 0,
+  "training_updates": 0,
+  "started_unix": 1794988611.7626727,
+  "automatic_physical_continuation": false,
+  "worker_returncode": 0,
+  "controller": {
+    "passed": true,
+    "models": 0,
+    "physical_native": 0,
+    "analytical_vehicle_propagation": 0,
+    "navigation_trials": 0,
+    "synthetic_stationary_fixture": true,
+    "cases": [
+      {
+        "id": "Original_5000",
+        "plugin": "Original",
+        "kind": "saved_corner",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.027315988001646474,
+        "command_receive_interval_s": {
+          "p50": 0.049965894999331795,
+          "p95": 0.05040055699646473,
+          "maximum": 0.05071382199821528
+        },
+        "median_moving_w": 0.0056073113810271025,
+        "no_physical_execution": true
+      },
+      {
+        "id": "Original_6000",
+        "plugin": "Original",
+        "kind": "saved_corner",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.004971243004547432,
+        "command_receive_interval_s": {
+          "p50": 0.04997844899480697,
+          "p95": 0.050488859007600695,
+          "maximum": 0.05087507699499838
+        },
+        "median_moving_w": 0.003308609127998352,
+        "no_physical_execution": true
+      },
+      {
+        "id": "ReferenceObjective_5000",
+        "plugin": "ReferenceObjective",
+        "kind": "saved_corner",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.005693268001778051,
+        "command_receive_interval_s": {
+          "p50": 0.05001833201094996,
+          "p95": 0.050297412002692,
+          "maximum": 0.05040073100826703
+        },
+        "median_moving_w": 0.006465909071266651,
+        "no_physical_execution": true
+      },
+      {
+        "id": "ReferenceObjective_6000",
+        "plugin": "ReferenceObjective",
+        "kind": "saved_corner",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.005009172004065476,
+        "command_receive_interval_s": {
+          "p50": 0.04988983299699612,
+          "p95": 0.05052019299182575,
+          "maximum": 0.05073063200688921
+        },
+        "median_moving_w": 0.0035876474576070905,
+        "no_physical_execution": true
+      }
+    ],
+    "scope": "Actual upstream controller software interface, not physical navigation",
+    "controller_active": true,
+    "wall_s": 7.869177919012145,
+    "no_model_modules_loaded": true,
+    "controller_server_exited": true
+  },
+  "contract_checks": 24,
+  "source_unchanged": true,
+  "independently_revalidated_observations": 379,
+  "physical_successes": null,
+  "physical_trials": 0,
+  "closed": true,
+  "wall_s": 8.673050379002234,
+  "closed_unix": 1794988620.4357216,
+  "review_pending_unchanged": true
+}

@@ -1,0 +1,87 @@
+{
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_propagation": 0,
+  "navigation_trials": 0,
+  "synthetic_stationary_fixture": true,
+  "cases": [
+    {
+      "id": "RPP_saved_corner",
+      "plugin": "RPP",
+      "kind": "saved_corner",
+      "passed": false,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": false,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.006755219001206569,
+      "command_receive_interval_s": {
+        "p50": 0.049969629995757714,
+        "p95": 0.05012515399721451,
+        "maximum": 0.050475381009164266
+      },
+      "median_moving_w": 0.13079289460996,
+      "no_physical_execution": true
+    },
+    {
+      "id": "MPPI56_saved_corner",
+      "plugin": "MPPI56",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.005798329002573155,
+      "command_receive_interval_s": {
+        "p50": 0.04992214200319722,
+        "p95": 0.05038040500949137,
+        "maximum": 0.05046707100700587
+      },
+      "median_moving_w": 0.003151906654238701,
+      "no_physical_execution": true
+    },
+    {
+      "id": "MPPI160_saved_corner",
+      "plugin": "MPPI160",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.009934565998264588,
+      "command_receive_interval_s": {
+        "p50": 0.04989839799236506,
+        "p95": 0.0502783050033031,
+        "maximum": 0.05089446599595249
+      },
+      "median_moving_w": 0.002926430432125926,
+      "no_physical_execution": true
+    }
+  ],
+  "scope": "Actual upstream controller software interface, not physical navigation",
+  "controller_active": true
+}

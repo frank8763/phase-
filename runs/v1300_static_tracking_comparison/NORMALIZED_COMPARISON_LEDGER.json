@@ -1,0 +1,82 @@
+{
+  "original_driver_completion_preserved": true,
+  "reason_for_supplement": "driver killed ROS peer after native safety failure; absent ROS_RESULT caused original completion to omit actual MPPI main. Recorded native evidence proves it was executed.",
+  "rows": [
+    {
+      "task": "rpp_main",
+      "algorithm": "Nav2 RPP",
+      "role": "main",
+      "executed": true,
+      "full_success": true,
+      "status": "PASSED",
+      "actual_native": 8960,
+      "fully_recorded_native": 8960,
+      "own_replay_native": 8960,
+      "goal_distance_m": 0.3844080253582461,
+      "minimum_actual_clearance_m": 0.24839759925494342,
+      "bad_contacts": 0,
+      "wall_s_including_replay_if_executed": 95.84215286200924,
+      "own_full_replay_passed": true,
+      "source_unchanged": true
+    },
+    {
+      "task": "rpp_repeat",
+      "algorithm": "Nav2 RPP",
+      "role": "repeat",
+      "executed": true,
+      "full_success": true,
+      "status": "PASSED",
+      "actual_native": 8955,
+      "fully_recorded_native": 8955,
+      "own_replay_native": 8955,
+      "goal_distance_m": 0.38440801116178114,
+      "minimum_actual_clearance_m": 0.24839759925494342,
+      "bad_contacts": 0,
+      "wall_s_including_replay_if_executed": 96.01566346900654,
+      "own_full_replay_passed": true,
+      "source_unchanged": true
+    },
+    {
+      "task": "mppi_main",
+      "algorithm": "MPPI + executable sample adapter",
+      "role": "main",
+      "executed": true,
+      "full_success": false,
+      "status": "SAFETY_GATE_FAILED",
+      "actual_native": 7413,
+      "fully_recorded_native": 7412,
+      "own_replay_native": 0,
+      "goal_distance_m": 4.668188025204368,
+      "minimum_actual_clearance_m": 0.14949842480859205,
+      "bad_contacts": 0,
+      "wall_s_including_replay_if_executed": 79.13306958100293,
+      "own_full_replay_passed": false,
+      "source_unchanged": true
+    },
+    {
+      "task": "mppi_repeat",
+      "algorithm": "MPPI + executable sample adapter",
+      "role": "repeat",
+      "executed": false,
+      "full_success": null,
+      "status": "UNEXECUTED_AFTER_MAIN_SAFETY_FAILURE"
+    }
+  ],
+  "main_denominators": {
+    "RPP": {
+      "attempted": 1,
+      "successes": 1
+    },
+    "adapted_MPPI": {
+      "attempted": 1,
+      "successes": 0
+    }
+  },
+  "replicates_not_independent": true,
+  "actual_native_exact": 25328,
+  "own_replay_native_exact": 17915,
+  "vehicle_initializations_completed": 3,
+  "internal_factory_model_constructions": "unknown",
+  "stage_access": false,
+  "new_models_for_supplement": 0
+}

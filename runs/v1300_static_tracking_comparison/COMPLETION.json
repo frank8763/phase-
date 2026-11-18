@@ -1,0 +1,215 @@
+{
+  "passed": false,
+  "scope": "same_static_reference_rpp_and_adapted_mppi",
+  "results": [
+    {
+      "task": "rpp_main",
+      "passed": true,
+      "native": {
+        "passed": true,
+        "canonical_vehicle_initializations": 1,
+        "internal_factory_model_constructions": null,
+        "new_actual_native": 8960,
+        "own_replay_native": 8960,
+        "private_mujoco_native": 0,
+        "analytical_vehicle_native": 0,
+        "training_updates": 0,
+        "original_goal_navigation": true,
+        "historical_controls_used": 0,
+        "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+        "functional_checks": {
+          "upstream_action_succeeded": true,
+          "component_distance": true,
+          "actual_forward_m": true,
+          "body_stopped": true,
+          "steering_settled": true,
+          "drive_command_zero": true
+        },
+        "component_goal_distance_m": 0.3844080253582461,
+        "forward_displacement_m": 7.936547809036305,
+        "model_native_inflight_unknown": false,
+        "physical": {
+          "actual_native": 8960,
+          "fully_recorded_native": 8960,
+          "minimum_actual_clearance_m": 0.24839759925494342,
+          "minimum_self_margin_m": 0.00917594138691774,
+          "bad_contacts": 0,
+          "final_body": [
+            3.9365478090363046,
+            -1.6208649984217591,
+            -0.5884577879819438,
+            -2.3980930087834996e-07,
+            1.0808720922661527e-06
+          ],
+          "final_translation_speed_m_s": 2.405604993577806e-07,
+          "root_guard_native_count": 8960,
+          "goal_distance_m": 0.3844080253582461,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "independent_allocation": {
+          "passed": true,
+          "control_error": 0.0,
+          "memory_error": 0.0,
+          "recorded_rows": 8960
+        },
+        "replay": {
+          "replay_native": 8960,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "wall_s": 95.84215286200924,
+        "closed_unix": 1794987309.1750584,
+        "source_unchanged": true
+      },
+      "ros": {
+        "passed": true,
+        "physical_models_in_ros": 0,
+        "commands": 1752,
+        "action_accepted": true,
+        "action_status": 4,
+        "error_code": 0,
+        "wall_s": 92.04454764600086
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "fully_recorded": true,
+          "finite_all_states": true,
+          "time_monotonic": true,
+          "actual_clearance": true,
+          "full_self": true,
+          "actual_control_limits": true,
+          "actual_control_rates": true,
+          "bad_contacts_zero": true,
+          "own_full_replay": true,
+          "independent_allocation": true,
+          "complete_stop": true,
+          "component_functional": true,
+          "sources_unchanged": true
+        },
+        "actual_reviewed": 8960,
+        "minimum_actual_clearance_m": 0.24839759925494342,
+        "models": 0,
+        "new_physical_native": 0
+      },
+      "worker_returncodes": [
+        0,
+        0
+      ]
+    },
+    {
+      "task": "rpp_repeat",
+      "passed": true,
+      "native": {
+        "passed": true,
+        "canonical_vehicle_initializations": 1,
+        "internal_factory_model_constructions": null,
+        "new_actual_native": 8955,
+        "own_replay_native": 8955,
+        "private_mujoco_native": 0,
+        "analytical_vehicle_native": 0,
+        "training_updates": 0,
+        "original_goal_navigation": true,
+        "historical_controls_used": 0,
+        "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+        "functional_checks": {
+          "upstream_action_succeeded": true,
+          "component_distance": true,
+          "actual_forward_m": true,
+          "body_stopped": true,
+          "steering_settled": true,
+          "drive_command_zero": true
+        },
+        "component_goal_distance_m": 0.38440801116178114,
+        "forward_displacement_m": 7.9365478274792896,
+        "model_native_inflight_unknown": false,
+        "physical": {
+          "actual_native": 8955,
+          "fully_recorded_native": 8955,
+          "minimum_actual_clearance_m": 0.24839759925494342,
+          "minimum_self_margin_m": 0.00917594138691774,
+          "bad_contacts": 0,
+          "final_body": [
+            3.9365478274792896,
+            -1.6208650097290438,
+            -0.5884578420232913,
+            -7.170260112436697e-07,
+            1.081028100491333e-06
+          ],
+          "final_translation_speed_m_s": 7.171086122911482e-07,
+          "root_guard_native_count": 8955,
+          "goal_distance_m": 0.38440801116178114,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "independent_allocation": {
+          "passed": true,
+          "control_error": 0.0,
+          "memory_error": 0.0,
+          "recorded_rows": 8955
+        },
+        "replay": {
+          "replay_native": 8955,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "wall_s": 96.01566346900654,
+        "closed_unix": 1794987408.432896,
+        "source_unchanged": true
+      },
+      "ros": {
+        "passed": true,
+        "physical_models_in_ros": 0,
+        "commands": 1751,
+        "action_accepted": true,
+        "action_status": 4,
+        "error_code": 0,
+        "wall_s": 92.06622964599228
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "fully_recorded": true,
+          "finite_all_states": true,
+          "time_monotonic": true,
+          "actual_clearance": true,
+          "full_self": true,
+          "actual_control_limits": true,
+          "actual_control_rates": true,
+          "bad_contacts_zero": true,
+          "own_full_replay": true,
+          "independent_allocation": true,
+          "complete_stop": true,
+          "component_functional": true,
+          "sources_unchanged": true
+        },
+        "actual_reviewed": 8955,
+        "minimum_actual_clearance_m": 0.24839759925494342,
+        "models": 0,
+        "new_physical_native": 0
+      },
+      "worker_returncodes": [
+        0,
+        0
+      ]
+    }
+  ],
+  "unexecuted": [
+    "mppi_main",
+    "mppi_repeat"
+  ],
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1300_static_tracking_comparison/campaign.py\", line 67, in main\n    native = read(out / 'RESULT.json'); ros = read(out / 'ROS_RESULT.json')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1300_static_tracking_comparison/component_context.py\", line 15, in read\n    return json.loads(Path(p).read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1300/mppi_main/ROS_RESULT.json'\n",
+  "stop_reason": "OPERATION_STOP_NO_RETRY",
+  "closed": true,
+  "closed_unix": 1794987492.1678743,
+  "source_unchanged": true,
+  "review_pending_restored": true
+}

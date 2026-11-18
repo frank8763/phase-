@@ -1,0 +1,11 @@
+# V1305 closed-study independent audit and storage
+
+User asks supervised comparison/ablation work and qualified self-repair. V1299 and V1300 physical/software windows are closed. This operation introduces zero models, physical steps, training or new controller candidates. Preserve MPPI safety failure and original driver/entry errors. No source/gate changes to either study. Stage stays isolated; no agents/messages.
+
+Call original frozen time audit on all eight retained inputs. Record its exact scope: five unchanged branches reuse the original successful source proof; three temporal branches independently recompute all forty windows. Keep independent C++ work separate from the primary 320 candidates.
+
+Git stores source, reports, all compact result/error/accounting metadata, plots/CSV and full SHA inventory. Same-repository Release stores complete three physical task witnesses and compact eight-state ablation inputs in four groups, each split into <=4MiB assets. Historical absolute mesh links are recorded and verified as link text without following or recreating them on the host. Mesa caches are reconstructible and excluded by manifest.
+
+One bounded source commit push (30 seconds) and remote HEAD verification (5 seconds), no retries. Create/upload one Release, download every asset, verify part/archive/every decompressed-member SHA, then publish and check tag commit. Any error preserves claims/diagnoses and local required data. Only FULL_REMOTE_VERIFIED permits manifest-based deletion of untracked temporary raw, redundant transport and exact duplicate inputs; frozen dependencies and Git-tracked records cannot be removed. Restore tool performs the same part/archive/member checks before writing regular files, never overwriting differing content. Test compact restoration and record its cleanup separately.
+
+One distinct final metadata commit/sync can persist delivery and cleanup proofs. All operations are zero-model; REVIEW_PENDING and idle execution lock are required for packaging/cleanup. This closure does not authorize a new MPPI physical retry after its failed software admission, dynamic comparisons, unseen courses or additional ablations. Those require separately frozen prospective definitions; all-comparisons-complete remains false.
