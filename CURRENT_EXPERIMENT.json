@@ -230,7 +230,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Same coherent-sampling adaptation: establish active complete path-alignment scoring and mechanically correct turning component contract. No actual closed-loop vehicle qualification yet. Current jobs closed; no automatic physics or new24.",
+  "next_scope": "V1323 coherent MPPI left component main and exact full repeat passed. Complete evidence GitHub readback/cleanup; right component not admitted by nominal geometry, whole-route/dynamic baseline not yet passed.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -9720,5 +9720,26 @@
     "old_fixture_failures_retained": true,
     "corrected_arc_software_sign_qualification_passed": true,
     "corrected_arc_actual_tracking_qualified": false
+  },
+  "latest_v1323": {
+    "closed": true,
+    "component_passed": true,
+    "attempted": [
+      "left_main",
+      "left_repeat"
+    ],
+    "unexecuted": [],
+    "stop_reason": "LEFT_MAIN_REPEAT_COMPLETE_RIGHT_NOT_ADMITTED",
+    "report": "docs/COHERENT_MPPI_TURN_V1323_REPORT.md",
+    "component_scope": "left only; right geometry refused before model",
+    "actual_native": 3750,
+    "own_replay_native": 3750,
+    "complete_pair_maximum_error": 0.0,
+    "minimum_actual_clearance_m": 0.30574563386099274,
+    "goal_error_m": 0.07270715803217194,
+    "heading_error_rad": 0.002324315349997552,
+    "right_component_passed": false,
+    "whole_route_passed": false,
+    "raw_backup_pending": true
   }
 }

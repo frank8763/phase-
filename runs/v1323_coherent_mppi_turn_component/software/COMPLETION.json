@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "scope": "baseline_interface_software_only",
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_native": 0,
+  "training_updates": 0,
+  "started_unix": 1795000357.963383,
+  "automatic_physical_continuation": false,
+  "worker_returncode": 0,
+  "controller": {
+    "passed": true,
+    "models": 0,
+    "physical_native": 0,
+    "analytical_vehicle_propagation": 0,
+    "navigation_trials": 0,
+    "synthetic_stationary_fixture": true,
+    "cases": [
+      {
+        "id": "left_main",
+        "plugin": "Deadband",
+        "kind": "arc",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.006049254996469244,
+        "command_receive_interval_s": {
+          "p50": 0.04996957701223437,
+          "p95": 0.05035782099002972,
+          "maximum": 0.05039937600668054
+        },
+        "median_moving_w": 0.00021056927653262392,
+        "no_physical_execution": true
+      },
+      {
+        "id": "right_main",
+        "plugin": "Deadband",
+        "kind": "arc",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.002997913004946895,
+        "command_receive_interval_s": {
+          "p50": 0.04999094799859449,
+          "p95": 0.05030201900808606,
+          "maximum": 0.05036138399736956
+        },
+        "median_moving_w": -0.0005750749696744606,
+        "no_physical_execution": true
+      }
+    ],
+    "scope": "Actual upstream controller software interface, not physical navigation",
+    "controller_active": true,
+    "wall_s": 4.628158524006722,
+    "no_model_modules_loaded": true,
+    "controller_server_exited": true
+  },
+  "contract_checks": 24,
+  "source_unchanged": true,
+  "independently_revalidated_observations": 219,
+  "physical_successes": null,
+  "physical_trials": 0,
+  "closed": true,
+  "wall_s": 5.442231519002235,
+  "closed_unix": 1795000363.4056158,
+  "review_pending_unchanged": true
+}

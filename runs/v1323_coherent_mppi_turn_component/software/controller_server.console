@@ -1,0 +1,173 @@
+[WARN] [1795000358.541034179] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1795000358.541062674] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[INFO] [1795000358.550935010] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795000358.552391818] [controller_server]: Creating controller server
+[INFO] [1795000358.555317307] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795000358.555526270] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1795000358.901960393] [controller_server]: Configuring controller interface
+[INFO] [1795000358.901990076] [controller_server]: getting progress checker plugins..
+[INFO] [1795000358.902041129] [controller_server]: getting goal checker plugins..
+[INFO] [1795000358.902068437] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1795000358.902092183] [local_costmap.local_costmap]: Configuring
+[INFO] [1795000358.904693541] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1795000358.906502974] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1795000358.907748444] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1795000358.907766253] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1795000358.907941973] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795000358.915588136] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1795000358.915679558] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1795000358.915865962] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1795000358.915965695] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[INFO] [1795000358.917024760] [controller_server]: Created controller : Deadband of type phase_deadband/DeadbandMPPI
+[INFO] [1795000358.917733573] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[INFO] [1795000358.918394895] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[INFO] [1795000358.918410330] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[ERROR] [1795000358.918621668] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795000358.918653725] [controller_server]: Inflation layer either not found or inflation is not set sufficiently for optimized non-circular collision checking capabilities. It is HIGHLY recommended to set the inflation radius to be at MINIMUM half of the robot's largest cross-section. See github.com/ros-planning/navigation2/tree/main/nav2_smac_planner#potential-fields for full instructions. This will substantially impact run-time performance.
+[INFO] [1795000358.918664411] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[INFO] [1795000358.918675096] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[INFO] [1795000358.918765331] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1795000358.918774829] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[INFO] [1795000358.918887622] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[INFO] [1795000358.918897120] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[INFO] [1795000358.919056217] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[INFO] [1795000358.919066903] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[INFO] [1795000358.919171385] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[INFO] [1795000358.919319796] [controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Consider Feasible Path Orientations
+[INFO] [1795000358.919329294] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[INFO] [1795000358.919421903] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1795000358.919431402] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[INFO] [1795000358.920351553] [controller_server]: Optimizer reset
+[INFO] [1795000358.921733562] [DeadbandMPPI]: Configured executable-sample MPPI Controller: Deadband
+[INFO] [1795000358.921745435] [controller_server]: Controller Server has Deadband  controllers available.
+[INFO] [1795000358.925025924] [controller_server]: Activating
+[INFO] [1795000358.925076977] [local_costmap.local_costmap]: Activating
+[INFO] [1795000358.925088850] [local_costmap.local_costmap]: Checking transform
+[INFO] [1795000358.925163649] [local_costmap.local_costmap]: start
+[WARN] [1795000359.075533049] [controller_server]: Parameter controller_server.verbose not found
+[INFO] [1795000359.076548184] [controller_server]: Optimizer reset
+[INFO] [1795000359.076613485] [DeadbandMPPI]: Activated MPPI Controller: Deadband
+[INFO] [1795000359.076624171] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1795000359.887771678] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795000359.889046830] [controller_server]: Optimizer reset
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.02195774344988452,"after_yaw_noise_sd":0.17073740278123989}
+[ERROR] [1795000359.891885646] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022130522546770347,"after_yaw_noise_sd":0.17016366776550546}
+[ERROR] [1795000359.939668230] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022073715539428256,"after_yaw_noise_sd":0.16770516350834461}
+[ERROR] [1795000359.989576067] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022204057084279683,"after_yaw_noise_sd":0.17072719572075135}
+[ERROR] [1795000360.039667935] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022452022376262811,"after_yaw_noise_sd":0.16286127767505135}
+[ERROR] [1795000360.089428549] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.023245462832571347,"after_yaw_noise_sd":0.16610165764956822}
+[ERROR] [1795000360.139821989] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021457225576004497,"after_yaw_noise_sd":0.17090470005614916}
+[ERROR] [1795000360.189390261] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022919164713624946,"after_yaw_noise_sd":0.16657396990337206}
+[ERROR] [1795000360.239536744] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022719521078226543,"after_yaw_noise_sd":0.16475957347695078}
+[ERROR] [1795000360.289389966] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021529864325473522,"after_yaw_noise_sd":0.16037824915610066}
+[ERROR] [1795000360.339402285] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022561331968267106,"after_yaw_noise_sd":0.16411820912486519}
+[ERROR] [1795000360.389369488] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022616043949395013,"after_yaw_noise_sd":0.16431890637818705}
+[ERROR] [1795000360.439690503] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022257236198721431,"after_yaw_noise_sd":0.16523489203531111}
+[ERROR] [1795000360.489426183] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022886373868032515,"after_yaw_noise_sd":0.16411777316527154}
+[ERROR] [1795000360.539801814] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021720424588836034,"after_yaw_noise_sd":0.1676595303812588}
+[ERROR] [1795000360.589418765] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.02211512483416013,"after_yaw_noise_sd":0.16644800980488192}
+[ERROR] [1795000360.639826452] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.02209142040890039,"after_yaw_noise_sd":0.16400812842444618}
+[ERROR] [1795000360.689716480] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022339099515519562,"after_yaw_noise_sd":0.16829712755693663}
+[ERROR] [1795000360.739467595] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021977853754931241,"after_yaw_noise_sd":0.16585429333901291}
+[ERROR] [1795000360.789561838] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022777884494818081,"after_yaw_noise_sd":0.16466859963993047}
+[ERROR] [1795000360.839594341] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021495817125307709,"after_yaw_noise_sd":0.16625424295091495}
+[ERROR] [1795000360.889549670] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022094247721628518,"after_yaw_noise_sd":0.17144194734607002}
+[ERROR] [1795000360.939772140] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022639338133707148,"after_yaw_noise_sd":0.16437942108771936}
+[ERROR] [1795000360.989909125] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022614866070344904,"after_yaw_noise_sd":0.17298777609966692}
+[ERROR] [1795000361.039915508] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[INFO] [1795000361.087968795] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795000361.088002039] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795000361.088552943] [controller_server]: Optimizer reset
+[INFO] [1795000361.547724045] [controller_server]: Received a goal, begin computing control effort.
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022371898996255982,"after_yaw_noise_sd":0.17169949545806168}
+[ERROR] [1795000361.549240217] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022786382454057206,"after_yaw_noise_sd":0.17174695077763347}
+[ERROR] [1795000361.599624159] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022573833469971445,"after_yaw_noise_sd":0.16638282661200193}
+[ERROR] [1795000361.649603234] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022356063004473882,"after_yaw_noise_sd":0.16995784995831231}
+[ERROR] [1795000361.699592995] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022916326536273745,"after_yaw_noise_sd":0.16737904098931874}
+[ERROR] [1795000361.749215882] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022368928459030525,"after_yaw_noise_sd":0.16079771946140534}
+[ERROR] [1795000361.799191396] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022465828305334216,"after_yaw_noise_sd":0.16570483910827397}
+[ERROR] [1795000361.849250019] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022800895099636433,"after_yaw_noise_sd":0.16630460384535087}
+[ERROR] [1795000361.899054562] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021295759707365899,"after_yaw_noise_sd":0.17042269773546273}
+[ERROR] [1795000361.949051447] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022346689392676936,"after_yaw_noise_sd":0.1684928026480158}
+[ERROR] [1795000361.999355840] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022751803498890905,"after_yaw_noise_sd":0.16576877312803909}
+[ERROR] [1795000362.049445333] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.023152711492458549,"after_yaw_noise_sd":0.16605833741547957}
+[ERROR] [1795000362.099033789] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021528553872366796,"after_yaw_noise_sd":0.17054811370067227}
+[ERROR] [1795000362.149355992] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022182206129093433,"after_yaw_noise_sd":0.16292311909110765}
+[ERROR] [1795000362.199460920] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021900485824335122,"after_yaw_noise_sd":0.1672548111186212}
+[ERROR] [1795000362.249032754] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021694643820650353,"after_yaw_noise_sd":0.16949909462679383}
+[ERROR] [1795000362.299015391] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021932358649088348,"after_yaw_noise_sd":0.16961081171090817}
+[ERROR] [1795000362.349021773] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022174959244996972,"after_yaw_noise_sd":0.16500284098894291}
+[ERROR] [1795000362.399070899] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.023663436335095156,"after_yaw_noise_sd":0.17339640252879618}
+[ERROR] [1795000362.449020292] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.021893333796784018,"after_yaw_noise_sd":0.16620679666989543}
+[ERROR] [1795000362.499328247] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022640957123216982,"after_yaw_noise_sd":0.1638420171753012}
+[ERROR] [1795000362.549088860] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.02235770634282833,"after_yaw_noise_sd":0.16669483707006036}
+[ERROR] [1795000362.599405126] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022594142026968456,"after_yaw_noise_sd":0.16704814316799285}
+[ERROR] [1795000362.649425756] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1319] {"coherent":true,"before_yaw_noise_sd":0.022843715844694985,"after_yaw_noise_sd":0.16339884416085249}
+[ERROR] [1795000362.699040333] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[INFO] [1795000362.747897416] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795000362.747931848] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795000362.748487501] [controller_server]: Optimizer reset
+[INFO] [1795000362.901319345] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795000362.901378710] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1795000362.901423827] [controller_server]: Deactivating
+[INFO] [1795000362.901446385] [DeadbandMPPI]: Deactivated MPPI Controller: Deadband
+[INFO] [1795000362.901460633] [local_costmap.local_costmap]: Deactivating
+[INFO] [1795000362.925401197] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1795000362.935642782] [controller_server]: Cleaning up
+[INFO] [1795000362.936644857] [DeadbandMPPI]: Cleaned up MPPI Controller: Deadband
+[INFO] [1795000362.936790894] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1795000362.941119762] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1795000362.942932758] [local_costmap.local_costmap]: Destroying
+[INFO] [1795000362.944853797] [controller_server]: Destroying

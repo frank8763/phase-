@@ -1,0 +1,1 @@
+Exact V1323 physical arc inputs and controller parameters; two installed-plugin software actions only, no vehicle/model. Reuse fixed V1319 sampler and mechanical transforms, current protocol applies. All declared startup inputs present in the whitelist; raw causal/legal/direction/action checks must pass.
