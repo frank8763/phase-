@@ -38,3 +38,5 @@ V1325漏带ros_component.py，ROS进程退出2；父进程终止nativepeer(-15)�
 图、CSV、成对证明：records/v1326_right_turn_20261118；完整两任务和原缺文件入口见证归档为75成员（非空成员数量和原始字节阈值先核验），同仓Release `phase-coherent-mppi-right-turn-v1326-20261118`，每块≤1MiB。旧空索引在发布前被拒绝、诊断保留，未上传、未删raw；修正归档源根后对75实际成员重新SHA归档。只有完整下载/解压成员SHA和标签commit通过才发布并清理。旧V1300未核完raw继续保留。
 
 当前全部模型已结束、review原字节恢复、锁空闲。下一实验应验证同版本MPPI完整静态主任务及成功重复，再开展动态基线；不自动运行新任务。论文剩余公平比较、闭环消融、未见测试、实时与实机以及并行写作的完整路线见[ROADMAP_20261118.md](paper_ras/ROADMAP_20261118.md)，当前证据与可写结论见[CLAIM_EVIDENCE_20261118.json](paper_ras/CLAIM_EVIDENCE_20261118.json)。
+
+备份完成：75成员（含原缺文件入口见证）全部资产下载、整体和逐解压SHA、标签commit通过，Release已发布。right_main35普通文件恢复测试通过；按SHA清理测试副本及75,999,776逻辑字节raw/重复缓存，冻结依赖保留。旧V1300未核完原件不动。
