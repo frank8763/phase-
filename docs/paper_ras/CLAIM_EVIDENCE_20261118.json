@@ -1,0 +1,58 @@
+{
+  "updated_local_date": "2026-11-18",
+  "submission_ready": false,
+  "roadmap": "docs/paper_ras/ROADMAP_20261118.md",
+  "historical_claim_snapshot_preserved": "docs/paper_ras/CLAIM_EVIDENCE.json",
+  "claims": [
+    {
+      "id": "EXPOSED_FIXED24",
+      "status": "SUPPORTED_FINITE_DEVELOPMENT_REGRESSION",
+      "result": "V1281 24/24 plus fixed1/9/17 complete repeats and independent audits",
+      "evidence": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
+      "not_supported": [
+        "unseen generalization",
+        "statistical superiority",
+        "real-time",
+        "real-robot"
+      ]
+    },
+    {
+      "id": "FAIR_COMPARATIVE_ADVANTAGE",
+      "status": "NOT_ESTABLISHED",
+      "evidence": [
+        "docs/STATIC_TRACKING_COMPARISON_V1300_REPORT.md",
+        "docs/COHERENT_MPPI_TURN_V1323_REPORT.md",
+        "docs/COHERENT_MPPI_TURN_V1326_REPORT.md"
+      ],
+      "missing": "Qualified dynamic baselines including explicit adapted/canonical labels and paired common-budget tests"
+    },
+    {
+      "id": "TEMPORAL_SOURCE_ADMISSION",
+      "status": "SUPPORTED_SAVED_STATE_MECHANISM_ONLY",
+      "result": "8 sources,320 timing candidates; selected8/8 versuswait0 5/8",
+      "evidence": "docs/TIME_WINDOW_ABLATION_V1299_REPORT.md",
+      "missing": "Physical closed-loop ablations and independent test tasks"
+    },
+    {
+      "id": "FINITE_SAFETY",
+      "status": "CONDITIONAL_DRAFT",
+      "missing": "Implementation correspondence, execution and between-sample bounds; no established invariant terminal set/recursive feasibility or guaranteed arrival"
+    },
+    {
+      "id": "REALTIME",
+      "status": "NOT_ESTABLISHED",
+      "missing": "Independent-clock continuous physics, end-to-end age/latency/expiry tests; lockstep worker time including replay insufficient"
+    },
+    {
+      "id": "REAL_ROBOT",
+      "status": "NOT_RUN",
+      "missing": "Simulation chain completion, separately authorized interface/actuation/localization qualification and controlled tests"
+    },
+    {
+      "id": "RL_CONTRIBUTION",
+      "status": "NOT_DEMONSTRATED_IN_CURRENT_METHOD",
+      "training_updates": 0,
+      "missing": "Causal algorithm role and controlled ablation if retained as a paper claim"
+    }
+  ]
+}

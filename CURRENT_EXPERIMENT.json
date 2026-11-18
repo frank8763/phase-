@@ -231,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "V1323 left component and exact repeat passed and necessary raw backed up/verified/cleaned. No active jobs. Next: independently register safe right-turn component, then same-version full static route; dynamic baseline comparison still pending.",
+  "next_scope": "Same coherent MPPI left/right components passed at different registered origins; validate full static route next, no active model jobs. Fair dynamics/closed-loop ablations/heldout/realtime/hardware still pending; see current paper roadmap.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -9754,5 +9754,40 @@
     "raw_available_locally": false,
     "cleanup_logical_bytes": 75890415
   },
-  "latest_baseline_report": "docs/COHERENT_MPPI_TURN_V1323_REPORT.md"
+  "latest_baseline_report": "docs/COHERENT_MPPI_TURN_V1323_REPORT.md",
+  "latest_v1325": {
+    "closed": true,
+    "component_passed": false,
+    "attempted": [
+      "right_main"
+    ],
+    "unexecuted": [
+      "right_repeat"
+    ],
+    "stop_reason": "FIRST_COMPONENT_SAFETY_OR_EVIDENCE_FAILURE",
+    "report": "docs/COHERENT_MPPI_TURN_V1325_REPORT.md"
+  },
+  "latest_v1326": {
+    "closed": true,
+    "component_passed": true,
+    "attempted": [
+      "right_main",
+      "right_repeat"
+    ],
+    "unexecuted": [],
+    "stop_reason": "RIGHT_COMPONENT_MAIN_REPEAT_COMPLETE",
+    "report": "docs/COHERENT_MPPI_TURN_V1326_REPORT.md",
+    "component_scope": "right at registered EW origin",
+    "continuation_actual_native": 3750,
+    "continuation_own_replay_native": 3750,
+    "complete_pair_maximum_error": 0.0,
+    "minimum_actual_clearance_m": 0.3272063659253608,
+    "goal_error_m": 0.07245882996787055,
+    "heading_error_rad": 0.00027462773919895156,
+    "prior_killed_worker_counts": "unknown, recorded actual lower bound0",
+    "whole_route_passed": false,
+    "raw_backup_pending": true
+  },
+  "paper_roadmap": "docs/paper_ras/ROADMAP_20261118.md",
+  "current_claim_map": "docs/paper_ras/CLAIM_EVIDENCE_20261118.json"
 }

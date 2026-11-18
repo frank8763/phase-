@@ -1,0 +1,7 @@
+# V1327 right component and paper-roadmap closure
+
+Zero-model continuation of current user-authorized V1325/V1326. V1326 completed right main/full repeat all17audits, both1875actual+1875ownreplay, fullpair error0. V1325 missingROSfile/killedworker exception preserved separately with exact internalcounts unknown, not silently zero. Physical root original21:00:58 unchanged; all jobs closed before cleanup. No furthermodel/task/algorithm change or Stage/agents/messages.
+
+Git preserves source, proposed/accepted tasks, geometry and520rotatingmetric/software/fullCLI qualification, original error diagnostics, allcompact results, paper-roadmap/currentclaimmap and realfigure. Fulltwo physical witnesses plus originalmissing-entry rawfiles go to sameGitHubRelease in<=1MiBchunks; everypart/wholearchive/memberSHA plus tagcommit before publication/cleanup. Keep symlinks as text, do notfollow external paths; exclude regenerableMesacache bymanifest. Preserve previous V1300 unverifiedraw unchanged.
+
+One boundedcurrent sourcepush30s+HEAD5s, distinct finalmetadata sync once, no retries. Restorequalification from actual downloadedparts and safe newoutputdirectory; cleanup only remoteverified untracked/nonfrozenselected exactSHA under V1326raw or original V1325rightmain entryraw. REVIEW_PENDING exact/lockidle mandatory. Finalreport distinguishes complete current3750actual/3750replay from original killedworker unknowncount; this does not complete dynamicbaseline/heldout/closedloopablations or realrobot.

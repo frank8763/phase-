@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "chosen": {
+    "case": {
+      "id": "EAST_WEST",
+      "start_xy": [
+        4.0,
+        -1.9
+      ],
+      "goal_xy": [
+        -4.0,
+        -2.0
+      ],
+      "yaw": 3.141592653589793,
+      "euclidean_distance_m": 8.000624975587845
+    },
+    "nominal_minimum_clearance_m": 0.2749998927116395,
+    "passed": true,
+    "arc_center": [
+      4.300000000000001,
+      2.1
+    ],
+    "component_center_goal": [
+      2.8313182266169594,
+      -1.6326898945040218
+    ],
+    "component_yaw": 2.8415926535897933,
+    "maximum_sample_arc_spacing_m": 0.001
+  },
+  "rejected_registered_origins": [
+    {
+      "case": {
+        "id": "WEST_EAST",
+        "start_xy": [
+          -4.0,
+          -2.0
+        ],
+        "goal_xy": [
+          4.0,
+          -2.0
+        ],
+        "yaw": 0.0,
+        "euclidean_distance_m": 8.0
+      },
+      "nominal_minimum_clearance_m": 0.16695036508174976,
+      "passed": false,
+      "arc_center": [
+        -4.3,
+        -6.0
+      ],
+      "component_center_goal": [
+        -2.8313182266169594,
+        -2.267310105495978
+      ],
+      "component_yaw": -0.3,
+      "maximum_sample_arc_spacing_m": 0.001
+    },
+    {
+      "case": {
+        "id": "NORTH_SOUTH",
+        "start_xy": [
+          -1.600000023841858,
+          4.0
+        ],
+        "goal_xy": [
+          -1.2777841091156006,
+          -2.9586408138275146
+        ],
+        "yaw": -1.5707963267948966,
+        "euclidean_distance_m": 6.9660968319116074
+      },
+      "nominal_minimum_clearance_m": -0.023554235994283884,
+      "passed": false,
+      "arc_center": [
+        -5.600000023841858,
+        4.3
+      ],
+      "component_center_goal": [
+        -1.8673101293378358,
+        2.8313182266169594
+      ],
+      "component_yaw": -1.8707963267948966,
+      "maximum_sample_arc_spacing_m": 0.001
+    }
+  ],
+  "physical_models": 0,
+  "original_WE_refusal_unchanged": true
+}

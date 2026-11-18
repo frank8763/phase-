@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "task": "right_main",
+      "passed": true,
+      "actual_native": 1875,
+      "own_replay_native": 1875,
+      "goal_error_m": 0.07245882996787055,
+      "heading_error_rad": 0.00027462773919895156,
+      "rear_arc_radial_error_m": 0.009895152240701144,
+      "minimum_actual_clearance_m": 0.3272063659253608,
+      "bad_contacts": 0,
+      "final_translation_speed_m_s": 5.156742174771946e-06,
+      "wall_s_including_replay": 22.070431873988127,
+      "nav2_sample_calls_observed": 334,
+      "internal_kinematic_state_samples": 18704000
+    },
+    {
+      "task": "right_repeat",
+      "passed": true,
+      "actual_native": 1875,
+      "own_replay_native": 1875,
+      "goal_error_m": 0.07245882996787055,
+      "heading_error_rad": 0.00027462773919895156,
+      "rear_arc_radial_error_m": 0.009895152240701144,
+      "minimum_actual_clearance_m": 0.3272063659253608,
+      "bad_contacts": 0,
+      "final_translation_speed_m_s": 5.156742174771946e-06,
+      "wall_s_including_replay": 21.997952969992184,
+      "nav2_sample_calls_observed": 334,
+      "internal_kinematic_state_samples": 18704000
+    }
+  ],
+  "maximum_pair_state_control_errors": {
+    "time": 0.0,
+    "qpos": 0.0,
+    "qvel": 0.0,
+    "ctrl": 0.0,
+    "mocap_pos": 0.0,
+    "mocap_quat": 0.0
+  },
+  "complete_contact_sequences_equal": true,
+  "initial_state_all_arrays_equal": true,
+  "compiled_model_sha_equal": true,
+  "continuation_actual_native": 3750,
+  "continuation_own_replay_native": 3750,
+  "continuation_canonical_vehicle_initializations": 2,
+  "internal_model_constructor_count": "unknown",
+  "prior_v1325_killed_worker": {
+    "exact_model_and_native_counts": null,
+    "recorded_actual_native_lower_bound": 0,
+    "initialization_or_result_receipt_absent": true
+  },
+  "entire_campaign_total_model_native": "unknown because prior worker lacked result",
+  "private_mujoco_native_in_completed_continuation": 0,
+  "training_updates": 0,
+  "guard_original": true,
+  "lock_idle": true,
+  "models_for_audit": 0,
+  "created_unix": 1795001805.2641542
+}

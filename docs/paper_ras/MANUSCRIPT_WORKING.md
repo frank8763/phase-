@@ -1,5 +1,7 @@
 # RP-CCR: execution-consistent recovery under partial observation
 
+Current status note (18 November 2026): see [the current roadmap](ROADMAP_20261118.md) and [current claim/evidence map](CLAIM_EVIDENCE_20261118.json). V1281 exposed fixed24 and three repeats passed; final comparative, held-out, real-time and hardware claims remain pending. The dated development narrative below is retained as historical draft material, not a statement of the current run.
+
 Working manuscript, 9 November 2026. Internal research draft, **not submission ready**. RP-CCR retains the project's existing meaning; no new English acronym expansion is asserted. Planned components below are distinguished from implemented historical versions. Quantitative superiority, final-model dynamic acceptance and real-robot performance remain unestablished.
 
 ## Abstract — working problem statement, results pending

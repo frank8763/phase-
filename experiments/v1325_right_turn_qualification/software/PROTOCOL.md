@@ -1,0 +1,1 @@
+One fixed V1325 declared mechanical rightarc at registeredEW initialpose; exact same coherentMPPI and correctedrearframe. Basiccausal/legal/direction/action checks only, no physicalmodels; parentprotocol applies.
