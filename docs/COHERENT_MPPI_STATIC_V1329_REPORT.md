@@ -38,3 +38,5 @@ V1329 NOT_PASSED，首安全门停止。左右组件已通过不代表8米整路
 V1329 sourcefreeze7103不变、原REVIEW_PENDING字节恢复、执行锁空闲；Stage/实机/训练0。完整失败原件30成员/27710971逻辑字节，分12个≤1MiB压缩块；仅全部GitHub回读SHA、逐成员与恢复核验后按清单清理。备份状态以records/v1329_static_route_20261118/FULL_REMOTE_VERIFIED.json为准；不碰旧V1300未完整核验raw。
 
 7103项是历史广域完整性清单，包含2100项本地旧输出/缓存，不等于全部为当前运行依赖或已全部上传；本轮不清理这些原件，差集见BROAD_FREEZE_LOCAL_ONLY_INVENTORY.json。当前软件20项直接依赖、必要插件二进制/manifest和新源单独纳入Git；全冻结SHA复核通过。原始日志空白原样保留，代码diff检查与日志分开。
+
+源码/报告提交f0bb243bae7d5365163583947be9888642bd9610已push且远端HEAD核对。新Release上传在API标签查询EOF中断，15项仅6个分块上传，未下载验证/未发布/未恢复测试；原始证据和全部传输分块保留，无清理。详见DELIVERY_STATUS.json，不重复upload/push旧操作。
