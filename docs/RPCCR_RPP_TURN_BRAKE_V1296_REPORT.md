@@ -57,3 +57,5 @@
 本轮已经失败封账，下一次物理任务需新的明确范围和有界窗口，不自动重试；当前guard原字节恢复/锁空闲/REVIEW_PENDING，没有后台车辆任务。未执行三项保持NA。无需因为原窗口剩余时间而刷重复或换方向取成功。
 
 完整失败见证将保存在[同仓Release](https://github.com/frank8763/phase-/releases/tag/phase-rpp-turn-v1296-20261118)，其发布与逐成员远端下载/解压SHA状态见records/v1296_backup_20261118/FULL_REMOTE_VERIFIED.json。只在完整回读通过后清理本地raw；原源码、报告、账本、任务和恢复索引保留。
+
+备份完成：Release已发布，39成员/全部资产下载与解压SHA核验通过，源码标签绑定f98de17f9a68a7d3afd33725a14f7dcefb928613；已清理临时缓存25296838逻辑字节，未删冻结源/依赖。按需恢复命令：`python3 -B experiments/v1297_turn_evidence_closure/restore.py --task left_main`（不启动模型）。
