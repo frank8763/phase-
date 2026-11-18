@@ -1,0 +1,215 @@
+{
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_propagation": 0,
+  "navigation_trials": 0,
+  "synthetic_stationary_fixture": true,
+  "cases": [
+    {
+      "id": "Original_5000",
+      "plugin": "Original",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.0068863969936501235,
+      "command_receive_interval_s": {
+        "p50": 0.04990738499327563,
+        "p95": 0.050143658998422325,
+        "maximum": 0.050729002003208734
+      },
+      "median_moving_w": 0.0056070315185934305,
+      "no_physical_execution": true
+    },
+    {
+      "id": "Original_6000",
+      "plugin": "Original",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.005283528997097164,
+      "command_receive_interval_s": {
+        "p50": 0.049982181008090265,
+        "p95": 0.05023389200505335,
+        "maximum": 0.05036331000155769
+      },
+      "median_moving_w": 0.0031842145835980773,
+      "no_physical_execution": true
+    },
+    {
+      "id": "CoolTemperature_5000",
+      "plugin": "CoolTemperature",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.004574705002596602,
+      "command_receive_interval_s": {
+        "p50": 0.05003679600486066,
+        "p95": 0.050432169999112375,
+        "maximum": 0.05261563199746888
+      },
+      "median_moving_w": 0.005307899555191398,
+      "no_physical_execution": true
+    },
+    {
+      "id": "CoolTemperature_6000",
+      "plugin": "CoolTemperature",
+      "kind": "saved_corner",
+      "passed": false,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": false,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.005003323007258587,
+      "command_receive_interval_s": {
+        "p50": 0.04995843100186903,
+        "p95": 0.050318186011281796,
+        "maximum": 0.05032768599630799
+      },
+      "median_moving_w": 0.0015967409126460552,
+      "no_physical_execution": true
+    },
+    {
+      "id": "NoRegularizer_5000",
+      "plugin": "NoRegularizer",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.005563732993323356,
+      "command_receive_interval_s": {
+        "p50": 0.050013044994557276,
+        "p95": 0.05037754800287075,
+        "maximum": 0.05040960700716823
+      },
+      "median_moving_w": 0.006085977656766772,
+      "no_physical_execution": true
+    },
+    {
+      "id": "NoRegularizer_6000",
+      "plugin": "NoRegularizer",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.004825226002139971,
+      "command_receive_interval_s": {
+        "p50": 0.050001170005998574,
+        "p95": 0.05032293000840582,
+        "maximum": 0.05039535599644296
+      },
+      "median_moving_w": 0.0033488330664113164,
+      "no_physical_execution": true
+    },
+    {
+      "id": "MoreIterations_5000",
+      "plugin": "MoreIterations",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.007938352006021887,
+      "command_receive_interval_s": {
+        "p50": 0.04995486400730442,
+        "p95": 0.05040722600824665,
+        "maximum": 0.05052477100980468
+      },
+      "median_moving_w": 0.006297898245975375,
+      "no_physical_execution": true
+    },
+    {
+      "id": "MoreIterations_6000",
+      "plugin": "MoreIterations",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.007703264011070132,
+      "command_receive_interval_s": {
+        "p50": 0.04996554501121864,
+        "p95": 0.05020657100249082,
+        "maximum": 0.05028849298832938
+      },
+      "median_moving_w": 0.0036104622995480895,
+      "no_physical_execution": true
+    }
+  ],
+  "scope": "Actual upstream controller software interface, not physical navigation",
+  "controller_active": true,
+  "wall_s": 14.65603122000175,
+  "no_model_modules_loaded": true,
+  "controller_server_exited": true
+}

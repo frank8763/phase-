@@ -1,0 +1,106 @@
+[INFO] [1794992313.039353808] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794992313.041063521] [controller_server]: Creating controller server
+[INFO] [1794992313.043918980] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794992313.044135069] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1794992313.389208641] [controller_server]: Configuring controller interface
+[INFO] [1794992313.389244260] [controller_server]: getting progress checker plugins..
+[INFO] [1794992313.389308374] [controller_server]: getting goal checker plugins..
+[INFO] [1794992313.389345181] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1794992313.389380800] [local_costmap.local_costmap]: Configuring
+[INFO] [1794992313.392359737] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1794992313.394983672] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1794992313.396223215] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1794992313.396239837] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1794992313.396415557] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1794992313.404401343] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1794992313.404482080] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1794992313.404676797] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1794992313.404778905] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[INFO] [1794992313.405871222] [controller_server]: Created controller : Original of type phase_predictive/ExecutableMPPI
+[INFO] [1794992313.406571729] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[INFO] [1794992313.407248491] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[INFO] [1794992313.407265113] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[INFO] [1794992313.407463392] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[INFO] [1794992313.407475265] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[INFO] [1794992313.407557189] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794992313.407567875] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[INFO] [1794992313.407680668] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[INFO] [1794992313.407692541] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[INFO] [1794992313.407851640] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[INFO] [1794992313.407859951] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[INFO] [1794992313.407965621] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[INFO] [1794992313.408112846] [controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Consider Feasible Path Orientations
+[INFO] [1794992313.408122344] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[INFO] [1794992313.408222078] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794992313.408231576] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[INFO] [1794992313.409152921] [controller_server]: Optimizer reset
+[INFO] [1794992313.410506444] [ExecutableMPPI]: Configured executable-sample MPPI Controller: Original
+[INFO] [1794992313.411078724] [controller_server]: Created controller : Deadband of type phase_deadband/DeadbandMPPI
+[INFO] [1794992313.411718679] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[INFO] [1794992313.411956139] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[INFO] [1794992313.411970386] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[INFO] [1794992313.412172228] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[INFO] [1794992313.412184101] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[INFO] [1794992313.412273148] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794992313.412282647] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[INFO] [1794992313.412390691] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[INFO] [1794992313.412401377] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[INFO] [1794992313.412565224] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[INFO] [1794992313.412575910] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[INFO] [1794992313.412700577] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[INFO] [1794992313.412852551] [controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Consider Feasible Path Orientations
+[INFO] [1794992313.412862049] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[INFO] [1794992313.412952284] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794992313.412960595] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[INFO] [1794992313.413935369] [controller_server]: Optimizer reset
+[INFO] [1794992313.414548017] [DeadbandMPPI]: Configured executable-sample MPPI Controller: Deadband
+[INFO] [1794992313.414557515] [controller_server]: Controller Server has Original Deadband  controllers available.
+[INFO] [1794992313.417636186] [controller_server]: Activating
+[INFO] [1794992313.417657558] [local_costmap.local_costmap]: Activating
+[INFO] [1794992313.417667056] [local_costmap.local_costmap]: Checking transform
+[INFO] [1794992313.417722859] [local_costmap.local_costmap]: start
+[WARN] [1794992313.568087395] [controller_server]: Parameter controller_server.verbose not found
+[INFO] [1794992313.569420734] [controller_server]: Optimizer reset
+[INFO] [1794992313.569499095] [DeadbandMPPI]: Activated MPPI Controller: Deadband
+[INFO] [1794992313.569509781] [ExecutableMPPI]: Activated MPPI Controller: Original
+[INFO] [1794992313.569520467] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1794992314.390157911] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1794992314.391809447] [controller_server]: Optimizer reset
+[INFO] [1794992320.390445086] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1794992320.390489016] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1794992320.391184774] [controller_server]: Optimizer reset
+[INFO] [1794992320.391733307] [controller_server]: Optimizer reset
+[INFO] [1794992320.856485578] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1794992326.856679610] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1794992326.856746098] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1794992326.856988308] [controller_server]: Optimizer reset
+[INFO] [1794992326.857073793] [controller_server]: Optimizer reset
+[INFO] [1794992327.320816816] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1794992327.321438962] [controller_server]: Optimizer reset
+[INFO] [1794992333.321005572] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1794992333.321043566] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1794992333.321229972] [controller_server]: Optimizer reset
+[INFO] [1794992333.321336829] [controller_server]: Optimizer reset
+[INFO] [1794992333.784595393] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1794992339.784765820] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1794992339.784816874] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1794992339.785041274] [controller_server]: Optimizer reset
+[INFO] [1794992339.785177813] [controller_server]: Optimizer reset
+[INFO] [1794992339.939141003] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794992339.939203930] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1794992339.939252610] [controller_server]: Deactivating
+[INFO] [1794992339.939282292] [DeadbandMPPI]: Deactivated MPPI Controller: Deadband
+[INFO] [1794992339.939294165] [ExecutableMPPI]: Deactivated MPPI Controller: Original
+[INFO] [1794992339.939311975] [local_costmap.local_costmap]: Deactivating
+[INFO] [1794992340.018048993] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1794992340.028250279] [controller_server]: Cleaning up
+[INFO] [1794992340.028950786] [DeadbandMPPI]: Cleaned up MPPI Controller: Deadband
+[INFO] [1794992340.029595490] [ExecutableMPPI]: Cleaned up MPPI Controller: Original
+[INFO] [1794992340.030064474] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1794992340.034512102] [controller_server]: Destroying bond (controller_server) to lifecycle manager.

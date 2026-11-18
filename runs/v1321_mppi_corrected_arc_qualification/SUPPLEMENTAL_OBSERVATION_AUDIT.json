@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "original_outer_completion_failed_unchanged": true,
+  "reason": "Outer observation whitelist omitted explicitly frozen startup fixture; actual controller two actions and legal checks complete",
+  "all_observation_bodies_equal_declared_startup_or_task": true,
+  "recorded_observations": 219,
+  "actual_plugin_actions": 2,
+  "controller_checks": [
+    {
+      "id": "mechanical_rear_left",
+      "plugin": "Deadband",
+      "kind": "left",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.0052775149961235,
+      "command_receive_interval_s": {
+        "p50": 0.04990783899847884,
+        "p95": 0.050413625009241514,
+        "maximum": 0.0504551799967885
+      },
+      "median_moving_w": 0.0001868865656433627,
+      "no_physical_execution": true
+    },
+    {
+      "id": "mechanical_rear_right",
+      "plugin": "Deadband",
+      "kind": "right",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.002920739003457129,
+      "command_receive_interval_s": {
+        "p50": 0.04998619999969378,
+        "p95": 0.05033645099319983,
+        "maximum": 0.05045636800059583
+      },
+      "median_moving_w": -0.0004858951870119199,
+      "no_physical_execution": true
+    }
+  ],
+  "models": 0,
+  "physical_native": 0,
+  "controller_not_rerun": true
+}

@@ -1,0 +1,5 @@
+# V1306 fixed failure reproduction, zero physical model
+
+User next-step authorization continues qualified MPPI diagnosis. Historical V1300/V1304 failures remain closed and unchanged. Reproduce the same original adapted MPPI plugin and native5000 measured body/yaw/twist, causal scan and common path. One saved state only; two distinct output attempts, no state/profile/parameter tuning. Actual installed Nav2 action generates >=20 commands. The existing early-turn symptom is median moving angular request <.01rad/s; this is a diagnostic admission gate, not proof of collision or general navigation. Basic legal/action checks remain separate.
+
+Each attempt <=240s worker/600s outer, CPU2–5 low priority, GPU hidden, ROS namespace isolation and no physical import. REVIEW_PENDING bytes stay intact. No MuJoCo, vehicle models/integration/training, Stage or other chats/agents. <=128MiB outputs. Source and installed binary SHA frozen before execution. No automatic physical continuation. Data from existing local snapshots, no full-history restore.

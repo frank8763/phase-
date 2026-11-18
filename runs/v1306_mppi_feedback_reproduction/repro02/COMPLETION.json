@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "scope": "baseline_interface_software_only",
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_native": 0,
+  "training_updates": 0,
+  "started_unix": 1794991641.4091508,
+  "automatic_physical_continuation": false,
+  "worker_returncode": 0,
+  "controller": {
+    "passed": true,
+    "models": 0,
+    "physical_native": 0,
+    "analytical_vehicle_propagation": 0,
+    "navigation_trials": 0,
+    "synthetic_stationary_fixture": true,
+    "cases": [
+      {
+        "id": "Original_5000",
+        "plugin": "Original",
+        "kind": "saved_corner",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true,
+          "correct_median_turn": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.00724505000107456,
+        "command_receive_interval_s": {
+          "p50": 0.049982771000941284,
+          "p95": 0.05018580199975986,
+          "maximum": 0.05031878199952189
+        },
+        "median_moving_w": 0.005592362256720662,
+        "no_physical_execution": true
+      }
+    ],
+    "scope": "Actual upstream controller software interface, not physical navigation",
+    "controller_active": true,
+    "wall_s": 3.0226509669882944,
+    "no_model_modules_loaded": true,
+    "controller_server_exited": true
+  },
+  "contract_checks": 24,
+  "source_unchanged": true,
+  "independently_revalidated_observations": 136,
+  "physical_successes": null,
+  "physical_trials": 0,
+  "closed": true,
+  "wall_s": 3.834681925000041,
+  "closed_unix": 1794991645.2438338,
+  "review_pending_unchanged": true
+}

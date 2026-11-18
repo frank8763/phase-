@@ -1,0 +1,62 @@
+{
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_propagation": 0,
+  "navigation_trials": 0,
+  "synthetic_stationary_fixture": true,
+  "cases": [
+    {
+      "id": "Deadband_5000",
+      "plugin": "Deadband",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.006919551000464708,
+      "command_receive_interval_s": {
+        "p50": 0.04996965700411238,
+        "p95": 0.050033770996378735,
+        "maximum": 0.050160811995738186
+      },
+      "median_moving_w": 0.005768080707639456,
+      "no_physical_execution": true
+    },
+    {
+      "id": "Deadband_6000",
+      "plugin": "Deadband",
+      "kind": "saved_corner",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true,
+        "correct_median_turn": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.0055660359939793125,
+      "command_receive_interval_s": {
+        "p50": 0.04998271798831411,
+        "p95": 0.05028904000937473,
+        "maximum": 0.050678471990977414
+      },
+      "median_moving_w": 0.003010942484252155,
+      "no_physical_execution": true
+    }
+  ],
+  "scope": "Actual upstream controller software interface, not physical navigation",
+  "controller_active": true
+}

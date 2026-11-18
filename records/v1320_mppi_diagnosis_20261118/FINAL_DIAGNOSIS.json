@@ -1,0 +1,91 @@
+{
+  "closed": true,
+  "physical_models": 0,
+  "new_actual_native": 0,
+  "own_physical_replay": 0,
+  "qualified_vehicle_engine_propagation": 0,
+  "nav2_internal_kinematic_sampling_nonzero": true,
+  "all_studies_internal_sample_total": "unknown; not globally instrumented",
+  "v1319_exact_observed_sample_work": [
+    {
+      "mode": "white",
+      "observed_sampler_calls": 120,
+      "kinematic_sample_native_steps": 6720000,
+      "before_yaw_noise_sd_median": 0.02236331739453158,
+      "after_yaw_noise_sd_median": 0.02236331739453158
+    },
+    {
+      "mode": "coherent",
+      "observed_sampler_calls": 120,
+      "kinematic_sample_native_steps": 6720000,
+      "before_yaw_noise_sd_median": 0.022363317382479004,
+      "after_yaw_noise_sd_median": 0.16750527251362876
+    }
+  ],
+  "completed_software_actions": 46,
+  "read_only_trace_equivalence": [
+    {
+      "trace": "runs/v1313_mppi_trace_binding/action",
+      "reference": "runs/v1306_mppi_feedback_reproduction/repro01",
+      "commands": 24,
+      "maximum_v_w_error": 0.0
+    },
+    {
+      "trace": "runs/v1314_mppi_critic_trace/action",
+      "reference": "runs/v1306_mppi_feedback_reproduction/repro01",
+      "commands": 24,
+      "maximum_v_w_error": 0.0
+    },
+    {
+      "trace": "runs/v1315_mppi_heading_gate_audit",
+      "reference": "runs/v1311_mppi_heading_normalization",
+      "commands": 24,
+      "maximum_v_w_error": 0.0
+    },
+    {
+      "trace": "runs/v1317_mppi_direction_trace_entry/action",
+      "reference": "runs/v1315_mppi_heading_gate_audit",
+      "commands": 24,
+      "maximum_v_w_error": 0.0
+    },
+    {
+      "trace": "runs/v1318_mppi_importance_trace/action",
+      "reference": "runs/v1317_mppi_direction_trace_entry/action",
+      "commands": 24,
+      "maximum_v_w_error": 0.0
+    }
+  ],
+  "checks": {
+    "all_recorded_feedback_exact_current_pose": true,
+    "v1309_world_geometry_and_negative_offset": true,
+    "guard_original": true,
+    "phase_execution_lock_idle": true,
+    "new_study_frozen_sources_unchanged": true
+  },
+  "failed_software_entries_preserved": [
+    "V1312_RTLD_LOCAL_RESOLUTION_ABORT",
+    "V1316_OUTPUT_DIRECTORY_CREATED_BY_BUILD",
+    "V1321_OUTER_STARTUP_OBSERVATION_WHITELIST"
+  ],
+  "old_physical_results_unchanged": true,
+  "coherent_saved5000_median_w": 0.011963108088821173,
+  "coherent_early_turn_diagnostic_passed": true,
+  "initial_left_right_checks_passed": false,
+  "physical_candidate_admitted": false,
+  "automatic_physical_continuation": false,
+  "legacy_arc_rear_lateral_fraction": 0.14834045293028014,
+  "corrected_arc_fixtures_prepared_not_executed": false,
+  "stage_access": false,
+  "training_updates": 0,
+  "created_unix": 1794995153.089245,
+  "corrected_arc_software_sign_qualification_passed": true,
+  "corrected_arc_medians_rad_s": [
+    0.0001868865656433627,
+    -0.0004858951870119199
+  ],
+  "corrected_arc_actual_tracking_qualified": false,
+  "old_initial_fixture_failures_unchanged": true,
+  "corrected_arc_original_outer_whitelist_failure_preserved": true,
+  "corrected_arc_supplemental_audit": "runs/v1321_mppi_corrected_arc_qualification/SUPPLEMENTAL_OBSERVATION_AUDIT.json",
+  "report": "docs/MPPI_MECHANISM_DIAGNOSIS_V1306_V1321_REPORT.md"
+}

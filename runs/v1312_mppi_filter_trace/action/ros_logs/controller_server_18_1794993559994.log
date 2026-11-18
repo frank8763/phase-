@@ -1,0 +1,43 @@
+[INFO] [1794993560.005639354] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794993560.007170962] [controller_server]: Creating controller server
+[INFO] [1794993560.010129697] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794993560.010345784] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1794993560.349049658] [controller_server]: Configuring controller interface
+[INFO] [1794993560.349084089] [controller_server]: getting progress checker plugins..
+[INFO] [1794993560.349141079] [controller_server]: getting goal checker plugins..
+[INFO] [1794993560.349169574] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1794993560.349196882] [local_costmap.local_costmap]: Configuring
+[INFO] [1794993560.351882539] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1794993560.353743027] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1794993560.355050237] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1794993560.355070421] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1794993560.355250890] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1794993560.363675922] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1794993560.363757845] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1794993560.363933565] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1794993560.364033297] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[INFO] [1794993560.365148166] [controller_server]: Created controller : Original of type phase_predictive/ExecutableMPPI
+[INFO] [1794993560.365894973] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[INFO] [1794993560.366551546] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[INFO] [1794993560.366566981] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[INFO] [1794993560.366772383] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[INFO] [1794993560.366786630] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[INFO] [1794993560.366880426] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794993560.366889925] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[INFO] [1794993560.366995594] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[INFO] [1794993560.367006280] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[INFO] [1794993560.367166564] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[INFO] [1794993560.367176062] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[INFO] [1794993560.367278170] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[INFO] [1794993560.367427769] [controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Consider Feasible Path Orientations
+[INFO] [1794993560.367437267] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[INFO] [1794993560.367538187] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794993560.367548873] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[INFO] [1794993560.368466650] [controller_server]: Optimizer reset
+[INFO]

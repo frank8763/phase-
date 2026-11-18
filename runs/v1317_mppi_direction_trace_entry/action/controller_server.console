@@ -1,0 +1,605 @@
+[WARN] [1794994487.650059801] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1794994487.650079985] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[INFO] [1794994487.660727624] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794994487.662214115] [controller_server]: Creating controller server
+[INFO] [1794994487.664991192] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794994487.665195406] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1794994488.012544968] [controller_server]: Configuring controller interface
+[INFO] [1794994488.012579399] [controller_server]: getting progress checker plugins..
+[INFO] [1794994488.012658948] [controller_server]: getting goal checker plugins..
+[INFO] [1794994488.012692192] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1794994488.012718312] [local_costmap.local_costmap]: Configuring
+[INFO] [1794994488.015368349] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1794994488.017307198] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1794994488.018540795] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1794994488.018557417] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1794994488.018769942] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1794994488.027037061] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1794994488.027124920] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1794994488.027311325] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1794994488.027409870] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[INFO] [1794994488.028541360] [controller_server]: Created controller : Deadband of type phase_deadband/DeadbandMPPI
+[INFO] [1794994488.029266796] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[INFO] [1794994488.029938804] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[INFO] [1794994488.029957800] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[ERROR] [1794994488.030159640] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1794994488.030183386] [controller_server]: Inflation layer either not found or inflation is not set sufficiently for optimized non-circular collision checking capabilities. It is HIGHLY recommended to set the inflation radius to be at MINIMUM half of the robot's largest cross-section. See github.com/ros-planning/navigation2/tree/main/nav2_smac_planner#potential-fields for full instructions. This will substantially impact run-time performance.
+[INFO] [1794994488.030194071] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[INFO] [1794994488.030204757] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[INFO] [1794994488.030293804] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794994488.030302115] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[INFO] [1794994488.030410159] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[INFO] [1794994488.030420844] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[INFO] [1794994488.030626246] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[INFO] [1794994488.030640493] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[INFO] [1794994488.030752099] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[INFO] [1794994488.030901698] [controller_server]: PathAngleCritic instantiated with 1 power and 20.000000 weight. Mode set to: Consider Feasible Path Orientations
+[INFO] [1794994488.030911196] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[INFO] [1794994488.031007367] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794994488.031018052] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[INFO] [1794994488.031928706] [controller_server]: Optimizer reset
+[INFO] [1794994488.033349895] [DeadbandMPPI]: Configured executable-sample MPPI Controller: Deadband
+[INFO] [1794994488.033362955] [controller_server]: Controller Server has Deadband  controllers available.
+[INFO] [1794994488.036531839] [controller_server]: Activating
+[INFO] [1794994488.036554398] [local_costmap.local_costmap]: Activating
+[INFO] [1794994488.036563896] [local_costmap.local_costmap]: Checking transform
+[INFO] [1794994488.036632759] [local_costmap.local_costmap]: start
+[WARN] [1794994488.186966555] [controller_server]: Parameter controller_server.verbose not found
+[INFO] [1794994488.187999500] [controller_server]: Optimizer reset
+[INFO] [1794994488.188111105] [DeadbandMPPI]: Activated MPPI Controller: Deadband
+[INFO] [1794994488.188132476] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1794994489.005477732] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1794994489.006526112] [controller_server]: Optimizer reset
+[DEBUG-1314] {"critic":"Constraint","mean":1.509189636443864e-07,"sd":8.4108385656944217e-08,"minimum":0,"maximum":5.0067899337591371e-07,"furthest":0}
+[ERROR] [1794994489.008919694] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1314] {"critic":"Follow","mean":0.53674317127466198,"sd":0.054558563355304603,"minimum":0.35713103413581848,"maximum":0.66192221641540527,"furthest":8}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.66691511804419035,"mean_mode2_angle":0.66691511804419035,"goal_x":-1.8254686594009399,"goal_y":-1.9184277057647705,"goal_yaw":0.25409203767776489,"path_index":12}
+[DEBUG-1314] {"critic":"Angle","mean":13.338302485466004,"sd":1.9203302658343251,"minimum":10.175423622131348,"maximum":23.928913116455078,"furthest":8}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1312] {"optimized_unfiltered_v":0.010415595024824142,"optimized_unfiltered_w":0.0013907519169151783,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4884472212273182e-07,"sd":7.8177853389150702e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994489.057381414] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1314] {"critic":"Follow","mean":0.530640063136816,"sd":0.057631540384024453,"minimum":0.34485641121864319,"maximum":0.65240907669067383,"furthest":8}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.67856121519889046,"mean_mode2_angle":0.67856121519889046,"goal_x":-1.8254686594009399,"goal_y":-1.9184277057647705,"goal_yaw":0.25409203767776489,"path_index":12}
+[DEBUG-1314] {"critic":"Angle","mean":13.571224425315856,"sd":2.1431098822891981,"minimum":10.323491096496582,"maximum":24.003244400024414,"furthest":8}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1312] {"optimized_unfiltered_v":0.015817468985915184,"optimized_unfiltered_w":0.0042647169902920723,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4288425736808108e-07,"sd":8.1847231334238482e-08,"minimum":0,"maximum":5.0067899337591371e-07,"furthest":0}
+[ERROR] [1794994489.107368805] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":11}
+[DEBUG-1314] {"critic":"Follow","mean":0.67159608036279683,"sd":0.060062423757262985,"minimum":0.39328604936599731,"maximum":0.80212616920471191,"furthest":11}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.58382815831669532,"mean_mode2_angle":0.58382815831669532,"goal_x":-1.7970932722091675,"goal_y":-1.9095821380615234,"goal_yaw":0.27225610613822937,"path_index":15}
+[DEBUG-1314] {"critic":"Angle","mean":11.676563169479371,"sd":1.4152004349993792,"minimum":9.3858051300048828,"maximum":23.800970077514648,"furthest":11}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":11}
+[DEBUG-1312] {"optimized_unfiltered_v":0.016161046922206879,"optimized_unfiltered_w":0.0046432605013251305,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.481056245271617e-07,"sd":7.5984328178228371e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994489.157384691] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57400683394074437,"sd":0.058919534672974401,"minimum":0.3713487982749939,"maximum":0.70522820949554443,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64487533639277606,"mean_mode2_angle":0.64487533639277606,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.897506795883178,"sd":1.8458400559306969,"minimum":9.8978614807128906,"maximum":23.275960922241211,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012895307503640652,"optimized_unfiltered_w":0.0025459770113229752,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4953613575308112e-07,"sd":7.8374161100661752e-08,"minimum":0,"maximum":4.2915343101412873e-07,"furthest":0}
+[ERROR] [1794994489.207323403] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1314] {"critic":"Follow","mean":0.52683636879920959,"sd":0.055132906062661705,"minimum":0.35432198643684387,"maximum":0.64842140674591064,"furthest":8}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.6839156289043169,"mean_mode2_angle":0.6839156289043169,"goal_x":-1.8254686594009399,"goal_y":-1.9184277057647705,"goal_yaw":0.25409203767776489,"path_index":12}
+[DEBUG-1314] {"critic":"Angle","mean":13.678312621116639,"sd":2.0577600952951927,"minimum":10.378975868225098,"maximum":24.565700531005859,"furthest":8}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1312] {"optimized_unfiltered_v":0.01012137345969677,"optimized_unfiltered_w":0.0018522330792620778,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.5246868435347948e-07,"sd":8.3306656503200465e-08,"minimum":0,"maximum":5.2452088539212127e-07,"furthest":0}
+[ERROR] [1794994489.257421213] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57207353064417843,"sd":0.058844270392193011,"minimum":0.36744946241378784,"maximum":0.70216673612594604,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64766167614290615,"mean_mode2_angle":0.64766167614290615,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.953233500480652,"sd":1.874379352456611,"minimum":9.9833154678344727,"maximum":23.617940902709961,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013074425980448723,"optimized_unfiltered_w":0.0023693100083619356,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4481544811140167e-07,"sd":8.0381099009627269e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994489.307361112] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57586199009418493,"sd":0.059252948112389424,"minimum":0.36768737435340881,"maximum":0.71201294660568237,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64226390285039914,"mean_mode2_angle":0.64226390285039914,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.845278120994568,"sd":1.883714805452025,"minimum":9.7896385192871094,"maximum":22.990633010864258,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.011429780162870884,"optimized_unfiltered_w":0.003927986603230238,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4562607105972348e-07,"sd":8.3461271178383655e-08,"minimum":0,"maximum":5.4836272056490998e-07,"furthest":0}
+[ERROR] [1794994489.357334256] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57762569826841359,"sd":0.057822416535205846,"minimum":0.37859487533569336,"maximum":0.7054477334022522,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.63924004109614463,"mean_mode2_angle":0.63924004109614463,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.784800878524781,"sd":1.7815309955310621,"minimum":9.9420261383056641,"maximum":23.440946578979492,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013188506476581097,"optimized_unfiltered_w":0.0021347897127270699,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4281273171690145e-07,"sd":7.7020273258536301e-08,"minimum":0,"maximum":4.5299529460862686e-07,"furthest":0}
+[ERROR] [1794994489.407388136] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57748989999294276,"sd":0.06025090505193087,"minimum":0.35932287573814392,"maximum":0.70981317758560181,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64082360113087367,"mean_mode2_angle":0.64082360113087367,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.816471868515015,"sd":1.8812917693903168,"minimum":9.7941160202026367,"maximum":23.672431945800781,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013138051144778728,"optimized_unfiltered_w":0.0029746091458946466,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.5070438696618282e-07,"sd":8.2162651545704242e-08,"minimum":0,"maximum":6.1988828292669496e-07,"furthest":0}
+[ERROR] [1794994489.457510878] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":11}
+[DEBUG-1314] {"critic":"Follow","mean":0.66988399851322178,"sd":0.061577836600098995,"minimum":0.38543087244033813,"maximum":0.81202250719070435,"furthest":11}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.58642847367882878,"mean_mode2_angle":0.58642847367882878,"goal_x":-1.7970932722091675,"goal_y":-1.9095821380615234,"goal_yaw":0.27225610613822937,"path_index":15}
+[DEBUG-1314] {"critic":"Angle","mean":11.728569514274596,"sd":1.4730755851104333,"minimum":9.2468976974487305,"maximum":25.754732131958008,"furthest":11}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":11}
+[DEBUG-1312] {"optimized_unfiltered_v":0.015752838924527168,"optimized_unfiltered_w":0.0043073189444839954,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4858246164983767e-07,"sd":8.0174522232490071e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994489.507387851] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57295837235450742,"sd":0.058442673551054446,"minimum":0.37407165765762329,"maximum":0.70623874664306641,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64596162275925428,"mean_mode2_angle":0.64596162275925428,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.919232350349427,"sd":1.8765085822431788,"minimum":9.9148797988891602,"maximum":22.076517105102539,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013923359103500843,"optimized_unfiltered_w":0.0033707148395478725,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4910698222081463e-07,"sd":8.1494121734746836e-08,"minimum":0,"maximum":5.2452088539212127e-07,"furthest":0}
+[ERROR] [1794994489.557421547] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.62313898825645442,"sd":0.06098191221712778,"minimum":0.38896188139915466,"maximum":0.75768113136291504,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.6108166640105267,"mean_mode2_angle":0.6108166640105267,"goal_x":-1.8065338134765625,"goal_y":-1.9125878810882568,"goal_yaw":0.26620140671730042,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":12.21633323764801,"sd":1.6525716771478658,"minimum":9.5611906051635742,"maximum":23.807979583740234,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.015978433191776276,"optimized_unfiltered_w":0.0040746089071035385,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.5029907544850119e-07,"sd":8.3185825606723773e-08,"minimum":0,"maximum":5.4836272056490998e-07,"furthest":0}
+[ERROR] [1794994489.607488487] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57301784473657613,"sd":0.059565993027520456,"minimum":0.36298483610153198,"maximum":0.70036786794662476,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64665010162682246,"mean_mode2_angle":0.64665010162682246,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.93300193309784,"sd":1.9052157768241857,"minimum":10.014228820800781,"maximum":23.366123199462891,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.014344654977321625,"optimized_unfiltered_w":0.0035340830218046904,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4672279670691068e-07,"sd":7.9448441453279897e-08,"minimum":0,"maximum":5.0067899337591371e-07,"furthest":0}
+[ERROR] [1794994489.657443821] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1314] {"critic":"Follow","mean":0.53005315253138541,"sd":0.055850554811038566,"minimum":0.36501970887184143,"maximum":0.65269410610198975,"furthest":8}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.67771177042247421,"mean_mode2_angle":0.67771177042247421,"goal_x":-1.8254686594009399,"goal_y":-1.9184277057647705,"goal_yaw":0.25409203767776489,"path_index":12}
+[DEBUG-1314] {"critic":"Angle","mean":13.554235599517822,"sd":2.0315647324236425,"minimum":10.344033241271973,"maximum":22.690290451049805,"furthest":8}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1312] {"optimized_unfiltered_v":0.017088862136006355,"optimized_unfiltered_w":0.0050578494556248188,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4727115924451085e-07,"sd":7.9145169965071623e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994489.707355225] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.62203192415833475,"sd":0.062381042759009415,"minimum":0.38754355907440186,"maximum":0.75732749700546265,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.61260243789943092,"mean_mode2_angle":0.61260243789943092,"goal_x":-1.8065338134765625,"goal_y":-1.9125878810882568,"goal_yaw":0.26620140671730042,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":12.25204866886139,"sd":1.7170908993341067,"minimum":9.5458221435546875,"maximum":23.959926605224609,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.017103254795074463,"optimized_unfiltered_w":0.0032673082314431667,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4574528018407307e-07,"sd":8.0302234938768272e-08,"minimum":0,"maximum":4.2915343101412873e-07,"furthest":0}
+[ERROR] [1794994489.757413854] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57143272629380226,"sd":0.060262812822263444,"minimum":0.36640188097953796,"maximum":0.71505743265151978,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.6497121958605151,"mean_mode2_angle":0.6497121958605151,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.994243868827819,"sd":1.9117807319724678,"minimum":9.7532892227172852,"maximum":23.288064956665039,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013585541397333145,"optimized_unfiltered_w":0.0031639537774026394,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4593601525625388e-07,"sd":7.9276810091085213e-08,"minimum":0,"maximum":5.0067899337591371e-07,"furthest":0}
+[ERROR] [1794994489.807333570] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57625500398874285,"sd":0.05811964372710833,"minimum":0.36856409907341003,"maximum":0.70434463024139404,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64190816499382963,"mean_mode2_angle":0.64190816499382963,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.838163294792174,"sd":1.8541463537739336,"minimum":9.9083042144775391,"maximum":23.834518432617188,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.017239103093743324,"optimized_unfiltered_w":0.0064554754644632339,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4984608003487664e-07,"sd":8.0977336756046467e-08,"minimum":0,"maximum":5.0067899337591371e-07,"furthest":0}
+[ERROR] [1794994489.857472934] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.6223311835229397,"sd":0.059220402632196897,"minimum":0.39235067367553711,"maximum":0.74820703268051147,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.61191216309120833,"mean_mode2_angle":0.61191216309120833,"goal_x":-1.8065338134765625,"goal_y":-1.9125878810882568,"goal_yaw":0.26620140671730042,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":12.238243317604065,"sd":1.6285399826085549,"minimum":9.7170257568359375,"maximum":23.410247802734375,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.016701130196452141,"optimized_unfiltered_w":0.0050970651209354401,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.470565825076875e-07,"sd":7.8387795022689403e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994489.907360593] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57390933576226233,"sd":0.060751087230663803,"minimum":0.36510783433914185,"maximum":0.69546812772750854,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64630307636590623,"mean_mode2_angle":0.64630307636590623,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.926061480522156,"sd":1.9428955093027838,"minimum":10.062394142150879,"maximum":24.134477615356445,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.019414883106946945,"optimized_unfiltered_w":0.0045056790113449097,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.5277862897100646e-07,"sd":8.3621850822646383e-08,"minimum":0,"maximum":5.9604644775390625e-07,"furthest":0}
+[ERROR] [1794994489.957756413] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1314] {"critic":"Follow","mean":0.53004354044795032,"sd":0.058021796219957518,"minimum":0.34320250153541565,"maximum":0.66022437810897827,"furthest":8}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.67978239100334359,"mean_mode2_angle":0.67978239100334359,"goal_x":-1.8254686594009399,"goal_y":-1.9184277057647705,"goal_yaw":0.25409203767776489,"path_index":12}
+[DEBUG-1314] {"critic":"Angle","mean":13.595647743225097,"sd":2.1677647807940512,"minimum":10.175460815429688,"maximum":24.180322647094727,"furthest":8}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1312] {"optimized_unfiltered_v":0.011890716850757599,"optimized_unfiltered_w":0.0035928264260292053,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4564991308851916e-07,"sd":8.024873101901132e-08,"minimum":0,"maximum":5.0067905021933257e-07,"furthest":0}
+[ERROR] [1794994490.007412549] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57759694170951847,"sd":0.057072181384318105,"minimum":0.36643034219741821,"maximum":0.7080959677696228,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.63887588848068189,"mean_mode2_angle":0.63887588848068189,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.777517819404602,"sd":1.7480881303728069,"minimum":9.8492584228515625,"maximum":22.850595474243164,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.014154833741486073,"optimized_unfiltered_w":0.0019494745647534728,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4805794086747427e-07,"sd":8.1075991139202173e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[ERROR] [1794994490.057573285] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57594195264577863,"sd":0.059044094957916002,"minimum":0.36503696441650391,"maximum":0.69940119981765747,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.64234105962166432,"mean_mode2_angle":0.64234105962166432,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.846821232795715,"sd":1.8241535149406949,"minimum":10.003423690795898,"maximum":22.578605651855469,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.017770947888493538,"optimized_unfiltered_w":0.0034727223683148623,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4705658256097821e-07,"sd":7.7958778702275154e-08,"minimum":0,"maximum":5.0067899337591371e-07,"furthest":0}
+[ERROR] [1794994490.107722148] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.57760336792469025,"sd":0.058513299903890162,"minimum":0.37444636225700378,"maximum":0.70338982343673706,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.63975228856643462,"mean_mode2_angle":0.63975228856643462,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.795045629501343,"sd":1.8271468936530542,"minimum":9.9886751174926758,"maximum":24.120096206665039,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013775505125522614,"optimized_unfiltered_w":0.0029453390743583441,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.5075207053172336e-07,"sd":8.0360400615706696e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994490.157483954] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.5724084358513355,"sd":0.059306483849453646,"minimum":0.3765435516834259,"maximum":0.70887809991836548,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.6470964244428199,"mean_mode2_angle":0.6470964244428199,"goal_x":-1.8159924745559692,"goal_y":-1.9155365228652954,"goal_yaw":0.26014673709869385,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":12.941928595542908,"sd":1.8701968651880481,"minimum":9.8108577728271484,"maximum":23.716846466064453,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.017172614112496376,"optimized_unfiltered_w":0.0044625690206885338,"frame_layout_validated":true}
+[INFO] [1794994490.205735523] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1794994490.205759269] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1794994490.206196193] [controller_server]: Optimizer reset
+[INFO] [1794994490.665528813] [controller_server]: Received a goal, begin computing control effort.
+[DEBUG-1314] {"critic":"Constraint","mean":1.4770031294375484e-07,"sd":8.1282818844965249e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994490.667442729] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.9075954041481022,"sd":0.036714320285360785,"minimum":5.7586493492126465,"maximum":5.9761776924133301,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":4}
+[DEBUG-1314] {"critic":"Follow","mean":0.76919737958908085,"sd":0.067868621731554349,"minimum":0.48665761947631836,"maximum":0.9061732292175293,"furthest":4}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.13351261225764888,"mean_mode2_angle":0.13351261225764888,"goal_x":-4.1392111778259277,"goal_y":-2.0175778865814209,"goal_yaw":0.079999998211860657,"path_index":8}
+[DEBUG-1314] {"critic":"Angle","mean":2.6702523083686827,"sd":0.34100751023894094,"minimum":2.1746540069580078,"maximum":4.5725245475769043,"furthest":4}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":4}
+[DEBUG-1312] {"optimized_unfiltered_v":0.005582740530371666,"optimized_unfiltered_w":1.1474161510705017e-05,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.7313957558684478e-07,"sd":8.7188720526221168e-08,"minimum":0,"maximum":6.4373017494290252e-07,"furthest":0}
+[ERROR] [1794994490.717728130] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.8818502674102779,"sd":0.044483314646748325,"minimum":5.7000827789306641,"maximum":5.9689621925354004,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":5}
+[DEBUG-1314] {"critic":"Follow","mean":0.81248028612136836,"sd":0.080253076524606143,"minimum":0.49242401123046875,"maximum":0.98764419555664062,"furthest":5}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.13451335331836176,"mean_mode2_angle":0.13451335331836176,"goal_x":-4.1190285682678223,"goal_y":-2.0188689231872559,"goal_yaw":0.090000003576278687,"path_index":9}
+[DEBUG-1314] {"critic":"Angle","mean":2.6902670288085937,"sd":0.39334383268542844,"minimum":2.0886516571044922,"maximum":4.9415874481201172,"furthest":5}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":5}
+[DEBUG-1312] {"optimized_unfiltered_v":0.0076388968154788017,"optimized_unfiltered_w":-0.00099021010100841522,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.7728805897476717e-07,"sd":8.1558338174774664e-08,"minimum":0,"maximum":4.5299532303033629e-07,"furthest":0}
+[ERROR] [1794994490.767412762] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.8640191669464112,"sd":0.047505893120182281,"minimum":5.7037696838378906,"maximum":5.9659814834594727,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":5}
+[DEBUG-1314] {"critic":"Follow","mean":0.77403540706634522,"sd":0.087488974446833484,"minimum":0.4781346321105957,"maximum":0.99200725555419922,"furthest":5}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14086269714696628,"mean_mode2_angle":0.14086269714696628,"goal_x":-4.1190285682678223,"goal_y":-2.0188689231872559,"goal_yaw":0.090000003576278687,"path_index":9}
+[DEBUG-1314] {"critic":"Angle","mean":2.8172538633346558,"sd":0.45834356494163619,"minimum":2.0762491226196289,"maximum":5.2911572456359863,"furthest":5}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":5}
+[DEBUG-1312] {"optimized_unfiltered_v":0.009097919799387455,"optimized_unfiltered_w":-0.00068417243892326951,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8489361176676766e-07,"sd":8.8866428972557751e-08,"minimum":0,"maximum":5.2452088539212127e-07,"furthest":0}
+[ERROR] [1794994490.817407277] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.8528807287216189,"sd":0.049482642784031812,"minimum":5.6706099510192871,"maximum":5.9582586288452148,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":6}
+[DEBUG-1314] {"critic":"Follow","mean":0.85433579587936403,"sd":0.090802860604943553,"minimum":0.54521465301513672,"maximum":1.0782647132873535,"furthest":6}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.13147031013188401,"mean_mode2_angle":0.13147031013188401,"goal_x":-4.0988345146179199,"goal_y":-2.0199582576751709,"goal_yaw":0.10000000149011612,"path_index":10}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":6}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":6}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012553730979561806,"optimized_unfiltered_w":0.00044853019062429667,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.9619465252773694e-07,"sd":9.0021751600573564e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[ERROR] [1794994490.866906691] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.8220936579704281,"sd":0.053088910652551516,"minimum":5.5994863510131836,"maximum":5.9559140205383301,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1314] {"critic":"Follow","mean":0.88730213737487795,"sd":0.10037521385996245,"minimum":0.50379323959350586,"maximum":1.15118408203125,"furthest":7}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.13344634799951419,"mean_mode2_angle":0.13344634799951419,"goal_x":-4.0786304473876953,"goal_y":-2.0208456516265869,"goal_yaw":0.10999999940395355,"path_index":11}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012243591248989105,"optimized_unfiltered_w":7.8830846177879721e-05,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8661022564891993e-07,"sd":8.6467656019969424e-08,"minimum":0,"maximum":5.4836277740832884e-07,"furthest":0}
+[ERROR] [1794994490.917013999] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.8005922565460208,"sd":0.056631060490925998,"minimum":5.6200466156005859,"maximum":5.9345927238464355,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1314] {"critic":"Follow","mean":0.8297015347480774,"sd":0.10858317935901872,"minimum":0.49641990661621094,"maximum":1.0847992897033691,"furthest":7}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14580922683587935,"mean_mode2_angle":0.14580922683587935,"goal_x":-4.0786304473876953,"goal_y":-2.0208456516265869,"goal_yaw":0.10999999940395355,"path_index":11}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012497873976826668,"optimized_unfiltered_w":0.00019540167704690248,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8782616036716605e-07,"sd":8.5807891424630188e-08,"minimum":0,"maximum":5.4836277740832884e-07,"furthest":0}
+[ERROR] [1794994490.967073815] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7772411680221554,"sd":0.059139717795859401,"minimum":5.5643219947814941,"maximum":5.926518440246582,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1314] {"critic":"Follow","mean":0.88123575639724727,"sd":0.11124597791491589,"minimum":0.52647542953491211,"maximum":1.1981658935546875,"furthest":8}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14086739349091804,"mean_mode2_angle":0.14086739349091804,"goal_x":-4.0584182739257812,"goal_y":-2.0215308666229248,"goal_yaw":0.11999999731779099,"path_index":12}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":8}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012634415179491043,"optimized_unfiltered_w":-0.00033123992034234107,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.7843246786952704e-07,"sd":8.373803690596679e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[ERROR] [1794994491.017084952] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7605862231254576,"sd":0.059834966351017302,"minimum":5.5571069717407227,"maximum":5.9302330017089844,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.94142643594741826,"sd":0.1135694660431357,"minimum":0.55368375778198242,"maximum":1.2682995796203613,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.13298033551266619,"mean_mode2_angle":0.13298033551266619,"goal_x":-4.0382003784179688,"goal_y":-2.0220141410827637,"goal_yaw":0.12999999523162842,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013202187605202198,"optimized_unfiltered_w":-0.0002539982961025089,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.6584396677821189e-07,"sd":7.9833080061791606e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[ERROR] [1794994491.067093714] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7499488921165467,"sd":0.061054378750551308,"minimum":5.5174422264099121,"maximum":5.9245486259460449,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":1.0117746691703797,"sd":0.11285214560689452,"minimum":0.55665206909179688,"maximum":1.3590755462646484,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.12507015764779122,"mean_mode2_angle":0.12507015764779122,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013191455043852329,"optimized_unfiltered_w":0.00077861855970695615,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.6839504588972431e-07,"sd":8.7597436651682804e-08,"minimum":0,"maximum":6.1988828292669496e-07,"furthest":0}
+[ERROR] [1794994491.117134533] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7421231913566588,"sd":0.059909894977125497,"minimum":5.5466222763061523,"maximum":5.9044647216796875,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.88986381387710567,"sd":0.11594319038577137,"minimum":0.52318143844604492,"maximum":1.2221765518188477,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.1430584731106066,"mean_mode2_angle":0.1430584731106066,"goal_x":-4.0382003784179688,"goal_y":-2.0220141410827637,"goal_yaw":0.12999999523162842,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012109496630728245,"optimized_unfiltered_w":-0.0005283057689666748,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.6102791176209052e-07,"sd":7.8993527714807574e-08,"minimum":0,"maximum":5.0067905021933257e-07,"furthest":0}
+[ERROR] [1794994491.166901088] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7315344796180723,"sd":0.060062835994377596,"minimum":5.4949216842651367,"maximum":5.9165887832641602,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.96434344959259033,"sd":0.11379389159844855,"minimum":0.52628087997436523,"maximum":1.3082818984985352,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.13226857623295502,"mean_mode2_angle":0.13226857623295502,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012404927052557468,"optimized_unfiltered_w":4.389443711261265e-05,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.5904903732355535e-07,"sd":8.2833763291570737e-08,"minimum":0,"maximum":5.2452088539212127e-07,"furthest":0}
+[ERROR] [1794994491.217058262] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7229594063758853,"sd":0.063541819414651368,"minimum":5.5363774299621582,"maximum":5.9097065925598145,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.84312376546859746,"sd":0.12059363388050795,"minimum":0.5040740966796875,"maximum":1.2071018218994141,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.15176778016572218,"mean_mode2_angle":0.15176778016572218,"goal_x":-4.0382003784179688,"goal_y":-2.0220141410827637,"goal_yaw":0.12999999523162842,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013327617198228836,"optimized_unfiltered_w":-0.00030329450964927673,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.5444755878313288e-07,"sd":8.0328015382611642e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[ERROR] [1794994491.267224935] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7209014372825626,"sd":0.060513815164295708,"minimum":5.5260810852050781,"maximum":5.8871479034423828,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.83158721351623532,"sd":0.11486208682047154,"minimum":0.50814008712768555,"maximum":1.1704916954040527,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.15202003506103962,"mean_mode2_angle":0.15202003506103962,"goal_x":-4.0382003784179688,"goal_y":-2.0220141410827637,"goal_yaw":0.12999999523162842,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012914718128740788,"optimized_unfiltered_w":-0.00057345459936186671,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4626980127729894e-07,"sd":7.8731487796362773e-08,"minimum":0,"maximum":4.2915345943583816e-07,"furthest":0}
+[ERROR] [1794994491.316877509] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7208007745742799,"sd":0.060917432933068061,"minimum":5.5075836181640625,"maximum":5.8940548896789551,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.92557774209976196,"sd":0.11494588343636462,"minimum":0.56115150451660156,"maximum":1.2820963859558105,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.13681242924032105,"mean_mode2_angle":0.13681242924032105,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.01183962170034647,"optimized_unfiltered_w":-0.00025641251704655588,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4536381060636926e-07,"sd":7.8387124394350005e-08,"minimum":0,"maximum":4.2915343101412873e-07,"furthest":0}
+[ERROR] [1794994491.366748546] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7178941602706912,"sd":0.061457395894538969,"minimum":5.5003833770751953,"maximum":5.8899807929992676,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Follow","mean":0.81473009061813351,"sd":0.11626892394494795,"minimum":0.47541999816894531,"maximum":1.1689305305480957,"furthest":9}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.15902334358221173,"mean_mode2_angle":0.15902334358221173,"goal_x":-4.0382003784179688,"goal_y":-2.0220141410827637,"goal_yaw":0.12999999523162842,"path_index":13}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":9}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013728910125792027,"optimized_unfiltered_w":-8.8822096586227417e-05,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4574528026400913e-07,"sd":7.7894787913227995e-08,"minimum":0,"maximum":5.2452088539212127e-07,"furthest":0}
+[ERROR] [1794994491.416782241] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7153378314971928,"sd":0.061157949000873672,"minimum":5.4830832481384277,"maximum":5.8935971260070801,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.9048049111366272,"sd":0.11456444371978328,"minimum":0.48287487030029297,"maximum":1.2705154418945312,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14183349712111332,"mean_mode2_angle":0.14183349712111332,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012902594171464443,"optimized_unfiltered_w":-0.00060047046281397343,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4719963407650027e-07,"sd":7.9166904333299556e-08,"minimum":0,"maximum":5.0067905021933257e-07,"furthest":0}
+[ERROR] [1794994491.466798127] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7122961249351505,"sd":0.060730125413725723,"minimum":5.5234637260437012,"maximum":5.8830742835998535,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.89981983423233036,"sd":0.11715398646478724,"minimum":0.53666353225708008,"maximum":1.205345630645752,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14189915160452282,"mean_mode2_angle":0.14189915160452282,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012159848585724831,"optimized_unfiltered_w":-0.00046417527482844889,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4610290844885298e-07,"sd":7.6738257551697719e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994491.516691723] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7100307865142819,"sd":0.062055718763409241,"minimum":5.5097928047180176,"maximum":5.8863801956176758,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.89106209659576419,"sd":0.1170337201268494,"minimum":0.54192399978637695,"maximum":1.2998714447021484,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14369353622605646,"mean_mode2_angle":0.14369353622605646,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013546428643167019,"optimized_unfiltered_w":-0.00081787363160401583,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.3859272304905801e-07,"sd":7.6806431220303722e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[ERROR] [1794994491.566782408] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7099662857055664,"sd":0.060845115826557432,"minimum":5.4961957931518555,"maximum":5.8834490776062012,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.88560733652114865,"sd":0.11645262989846068,"minimum":0.55804252624511719,"maximum":1.2150225639343262,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14477832031731788,"mean_mode2_angle":0.14477832031731788,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013008504174649715,"optimized_unfiltered_w":-0.00048707544920034707,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.3592243492865919e-07,"sd":7.5393064462982584e-08,"minimum":0,"maximum":4.2915343101412873e-07,"furthest":0}
+[ERROR] [1794994491.616766237] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7095729570388798,"sd":0.060974387497745773,"minimum":5.5149803161621094,"maximum":5.8880300521850586,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.87898049402236933,"sd":0.11404008018056731,"minimum":0.52881050109863281,"maximum":1.2583155632019043,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14623906679283122,"mean_mode2_angle":0.14623906679283122,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.012608318589627743,"optimized_unfiltered_w":0.00031251375912688673,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.4042854590812227e-07,"sd":7.9153174382119409e-08,"minimum":0,"maximum":5.2452088539212127e-07,"furthest":0}
+[ERROR] [1794994491.666772625] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7099603538513186,"sd":0.060103316228204862,"minimum":5.5397453308105469,"maximum":5.8726787567138672,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.87862631416320802,"sd":0.11375775837584456,"minimum":0.54266071319580078,"maximum":1.233879566192627,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.1483701060907453,"mean_mode2_angle":0.1483701060907453,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.011457363143563271,"optimized_unfiltered_w":4.7282796003855765e-05,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.3749599745693784e-07,"sd":7.6177297080050106e-08,"minimum":0,"maximum":5.4836277740832884e-07,"furthest":0}
+[ERROR] [1794994491.716726772] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7097984862327573,"sd":0.061447182822629738,"minimum":5.493340015411377,"maximum":5.8907670974731445,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.87796006155014039,"sd":0.11676621297689417,"minimum":0.54430389404296875,"maximum":1.2494072914123535,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14854509557924361,"mean_mode2_angle":0.14854509557924361,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013220650143921375,"optimized_unfiltered_w":-0.00049633183516561985,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.3868809029737862e-07,"sd":7.7144203742582271e-08,"minimum":0,"maximum":5.2452088539212127e-07,"furthest":0}
+[ERROR] [1794994491.766722475] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7063400721549984,"sd":0.060834786847451833,"minimum":5.4840736389160156,"maximum":5.8798012733459473,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.8722914924621582,"sd":0.11438469091446556,"minimum":0.49879693984985352,"maximum":1.1955561637878418,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.14767946026356529,"mean_mode2_angle":0.14767946026356529,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.014171569608151913,"optimized_unfiltered_w":-0.00014584428572561592,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.3849735535664819e-07,"sd":7.7243643318230267e-08,"minimum":0,"maximum":4.5299532303033629e-07,"furthest":0}
+[ERROR] [1794994491.816802475] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (1.033308) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":5.7075924406051639,"sd":0.060630692729799228,"minimum":5.5257062911987305,"maximum":5.9198007583618164,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.87539598560333254,"sd":0.11590609479219743,"minimum":0.5431671142578125,"maximum":1.2934374809265137,"furthest":10}
+[DEBUG-1316] {"flipped":0,"samples":1000,"mean_forward_angle":0.1465333332738247,"mean_mode2_angle":0.1465333332738247,"goal_x":-4.0179786682128906,"goal_y":-2.0222949981689453,"goal_yaw":0.14000000059604645,"path_index":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.013259395025670528,"optimized_unfiltered_w":-0.00033815519418567419,"frame_layout_validated":true}
+[INFO] [1794994491.865688058] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1794994491.865715366] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1794994491.865940952] [controller_server]: Optimizer reset
+[INFO] [1794994492.019597980] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794994492.019698899] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1794994492.019749953] [controller_server]: Deactivating
+[INFO] [1794994492.019780823] [DeadbandMPPI]: Deactivated MPPI Controller: Deadband
+[INFO] [1794994492.019798632] [local_costmap.local_costmap]: Deactivating
+[INFO] [1794994492.036843404] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1794994492.047058869] [controller_server]: Cleaning up
+[INFO] [1794994492.048193921] [DeadbandMPPI]: Cleaned up MPPI Controller: Deadband
+[INFO] [1794994492.048382700] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1794994492.052806552] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1794994492.054580367] [local_costmap.local_costmap]: Destroying
+[INFO] [1794994492.056577393] [controller_server]: Destroying

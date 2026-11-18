@@ -1,0 +1,5 @@
+# V1322 closed software diagnosis Git record
+
+Zero-model storage operation after user-authorized V1306–V1321 work. All plugin processes closed, physical review guard restored byte-identically and execution lock idle. Git retains new source, protocols, exact dependency/header provenance, small diagnostic binaries, raw software observations/commands, immutable errors, source SHA inventories and tables/report. No physical trajectories were newly generated, so there is no new large raw Release group. Preserve previous V1300 draft-backup incompleteness and necessary raw locally; never claim full backup or delete unique data because a Git push succeeded.
+
+Only explicitly selected new study paths and current report/status are staged. Other historical dirty/untracked files remain untouched. No individual blob above90MiB. One current-round push30seconds plus remote HEAD5seconds, record claims/results without retry. This is a new completed diagnosis commit, not a retry of any old synchronization or network readback. The result proof may be locally committed afterward without another push. No simulation, training, Stage, agents or external messaging.

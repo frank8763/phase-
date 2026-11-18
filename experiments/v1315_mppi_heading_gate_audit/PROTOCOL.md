@@ -1,0 +1,3 @@
+# V1315 frozen failed-candidate score audit
+
+Read-only reuse of qualified V1314 critic tracer; re-exercise only V1311 fixed native5000 and stationaryleft, exact same failed candidate parameters/frames. No new configuration or physics. V1314 original5000 score data showed only PathFollow varying; Align/Angle and other critics zero across24 actual calls. This study verifies whether the V1311 lowered .1 angle activation actually became active, rather than guessing from parameter values. Same size/dt guards, all raw legal/action checks, output comparison against original V1311 firstcase before accepting trace. <=600s/128MiB CPU2–5/GPUhidden/isolation/REVIEW_PENDING. Zero physical/MuJoCo/training/Stage/agents. Diagnostic tagged interposer not deployed to physical code.

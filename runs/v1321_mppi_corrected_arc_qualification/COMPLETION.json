@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "scope": "baseline_interface_software_only",
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_native": 0,
+  "training_updates": 0,
+  "started_unix": 1794995191.554687,
+  "automatic_physical_continuation": false,
+  "worker_returncode": 0,
+  "error": "AssertionError('SYNTHETIC_POSE_CHANGED')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1321_mppi_corrected_arc_qualification/run_software.py\", line 73, in main\n    assert packet['sequence'] == i and packet['body'] in [x['body'] for x in json.loads((C/'ALL_SAVED_INPUTS.json').read_text()).values()], 'SYNTHETIC_POSE_CHANGED'\nAssertionError: SYNTHETIC_POSE_CHANGED\n",
+  "closed": true,
+  "wall_s": 5.439145884010941,
+  "closed_unix": 1794995196.9938352,
+  "review_pending_unchanged": true
+}

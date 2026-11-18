@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "command": [
+    "g++",
+    "-std=c++17",
+    "-shared",
+    "-fPIC",
+    "-O2",
+    "-DXTENSOR_USE_XSIMD",
+    "-mavx2",
+    "-I",
+    "runs/v1314_mppi_critic_trace/headers/usr/include",
+    "experiments/v1314_mppi_critic_trace/interpose.cpp",
+    "experiments/v1314_mppi_critic_trace/critic_trace.cpp",
+    "-ldl",
+    "-o",
+    "runs/v1314_mppi_critic_trace/libtrace.so"
+  ],
+  "stderr": "",
+  "models": 0
+}

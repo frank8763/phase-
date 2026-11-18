@@ -1,0 +1,287 @@
+[WARN] [1794994086.426869938] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1794994086.426893684] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[INFO] [1794994086.436380153] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794994086.437858332] [controller_server]: Creating controller server
+[INFO] [1794994086.440554674] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794994086.440787383] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1794994086.789389580] [controller_server]: Configuring controller interface
+[INFO] [1794994086.789447758] [controller_server]: getting progress checker plugins..
+[INFO] [1794994086.789530868] [controller_server]: getting goal checker plugins..
+[INFO] [1794994086.789560550] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1794994086.789604480] [local_costmap.local_costmap]: Configuring
+[INFO] [1794994086.793086810] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1794994086.795061278] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1794994086.796401731] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1794994086.796418353] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1794994086.796626129] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1794994086.803949351] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1794994086.804027712] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1794994086.804211742] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1794994086.804307913] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[INFO] [1794994086.805376476] [controller_server]: Created controller : Original of type phase_predictive/ExecutableMPPI
+[INFO] [1794994086.806079354] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[INFO] [1794994086.806739489] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[INFO] [1794994086.806757298] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[INFO] [1794994086.806961512] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[INFO] [1794994086.806973385] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[INFO] [1794994086.807060058] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794994086.807069556] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[INFO] [1794994086.807168101] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[INFO] [1794994086.807177600] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[INFO] [1794994086.807336697] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[INFO] [1794994086.807346195] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[INFO] [1794994086.807448302] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[INFO] [1794994086.807602650] [controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Consider Feasible Path Orientations
+[INFO] [1794994086.807615711] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[INFO] [1794994086.807714256] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1794994086.807724941] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[INFO] [1794994086.808640344] [controller_server]: Optimizer reset
+[INFO] [1794994086.809949928] [ExecutableMPPI]: Configured executable-sample MPPI Controller: Original
+[INFO] [1794994086.809973674] [controller_server]: Controller Server has Original  controllers available.
+[INFO] [1794994086.813036889] [controller_server]: Activating
+[INFO] [1794994086.813059448] [local_costmap.local_costmap]: Activating
+[INFO] [1794994086.813067759] [local_costmap.local_costmap]: Checking transform
+[INFO] [1794994086.813122374] [local_costmap.local_costmap]: start
+[WARN] [1794994086.963449065] [controller_server]: Parameter controller_server.verbose not found
+[INFO] [1794994086.964339534] [controller_server]: Optimizer reset
+[INFO] [1794994086.964401273] [ExecutableMPPI]: Activated MPPI Controller: Original
+[INFO] [1794994086.964411959] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1794994087.778468513] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1794994087.779705672] [controller_server]: Optimizer reset
+[DEBUG-1314] {"critic":"Constraint","mean":2.0756721903758547e-07,"sd":9.7976879366856404e-08,"minimum":0,"maximum":6.1988828292669496e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1314] {"critic":"Follow","mean":0.65978500360250469,"sd":0.024656344530220725,"minimum":0.60219877958297729,"maximum":0.72761619091033936,"furthest":7}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":7}
+[DEBUG-1312] {"optimized_unfiltered_v":0.026113640516996384,"optimized_unfiltered_w":0.0031773841474205256,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":2.2184849206752232e-07,"sd":9.5641147240687542e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Follow","mean":0.73770578122138974,"sd":0.03408184555483542,"minimum":0.66631466150283813,"maximum":0.83570855855941772,"furthest":10}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":10}
+[DEBUG-1312] {"optimized_unfiltered_v":0.033887963742017746,"optimized_unfiltered_w":0.0047888550907373428,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":2.1879673445113212e-07,"sd":1.0053145440825197e-07,"minimum":0,"maximum":6.4373011809948366e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1314] {"critic":"Follow","mean":0.82994207906723028,"sd":0.041600541261059276,"minimum":0.73836606740951538,"maximum":0.95975327491760254,"furthest":13}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1312] {"optimized_unfiltered_v":0.038855385035276413,"optimized_unfiltered_w":0.0044753742404282093,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":2.1996498504428529e-07,"sd":9.6930932391677803e-08,"minimum":0,"maximum":7.152557373046875e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1314] {"critic":"Follow","mean":0.81079634326696393,"sd":0.039469274867850249,"minimum":0.73228710889816284,"maximum":0.94606351852416992,"furthest":13}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1312] {"optimized_unfiltered_v":0.040772330015897751,"optimized_unfiltered_w":0.0053420476615428925,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":2.1500587856770892e-07,"sd":9.2780296223119294e-08,"minimum":0,"maximum":6.1988833977011382e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1314] {"critic":"Follow","mean":0.79606287616491322,"sd":0.034773339451965042,"minimum":0.72797739505767822,"maximum":0.91969197988510132,"furthest":13}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":13}
+[DEBUG-1312] {"optimized_unfiltered_v":0.041919656097888947,"optimized_unfiltered_w":0.0062731429934501648,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":2.0873546997712821e-07,"sd":9.432754835161915e-08,"minimum":0,"maximum":7.152557373046875e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1314] {"critic":"Follow","mean":0.82262997591495512,"sd":0.038212510416573094,"minimum":0.75070029497146606,"maximum":0.96039396524429321,"furthest":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1312] {"optimized_unfiltered_v":0.040302008390426636,"optimized_unfiltered_w":0.0056809443049132824,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.9831657790980729e-07,"sd":9.3144730228514035e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1314] {"critic":"Follow","mean":0.81538627183437351,"sd":0.036901308596334233,"minimum":0.74678874015808105,"maximum":0.96363818645477295,"furthest":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1312] {"optimized_unfiltered_v":0.040252599865198135,"optimized_unfiltered_w":0.0064323265105485916,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":2.0234585172929086e-07,"sd":9.494877768108536e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1314] {"critic":"Follow","mean":0.8104880486726761,"sd":0.034859324596484678,"minimum":0.74960529804229736,"maximum":0.94544774293899536,"furthest":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1312] {"optimized_unfiltered_v":0.040753718465566635,"optimized_unfiltered_w":0.0070188152603805065,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.9578934091235567e-07,"sd":9.4285599804361865e-08,"minimum":0,"maximum":5.9604644775390625e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Follow","mean":0.84533154898881913,"sd":0.03988880915819585,"minimum":0.77084249258041382,"maximum":1.0095043182373047,"furthest":15}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1312] {"optimized_unfiltered_v":0.039752386510372162,"optimized_unfiltered_w":0.0057026613503694534,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.9817352633921815e-07,"sd":9.8206045795673505e-08,"minimum":0,"maximum":5.9604644775390625e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":17}
+[DEBUG-1314] {"critic":"Follow","mean":0.91958952647447589,"sd":0.046411458026630346,"minimum":0.82079011201858521,"maximum":1.0827099084854126,"furthest":17}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":17}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":17}
+[DEBUG-1312] {"optimized_unfiltered_v":0.03926534578204155,"optimized_unfiltered_w":0.0055378652177751064,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.9195080193057378e-07,"sd":9.4036106564833806e-08,"minimum":0,"maximum":6.4373017494290252e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Follow","mean":0.83864775341749187,"sd":0.036083578675894436,"minimum":0.76710754632949829,"maximum":0.9878113865852356,"furthest":15}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1312] {"optimized_unfiltered_v":0.039443466812372208,"optimized_unfiltered_w":0.0068847388029098511,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.9080639243185259e-07,"sd":9.3376694708599419e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Follow","mean":0.83902345579862592,"sd":0.037676030551444306,"minimum":0.77129989862442017,"maximum":0.99522358179092407,"furthest":15}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1312] {"optimized_unfiltered_v":0.039831366389989853,"optimized_unfiltered_w":0.0057137967087328434,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.91974643469095e-07,"sd":9.2999433311202691e-08,"minimum":0,"maximum":5.2452088539212127e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Follow","mean":0.83719233542680738,"sd":0.03671014209089752,"minimum":0.7687717080116272,"maximum":0.97442477941513062,"furthest":15}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1312] {"optimized_unfiltered_v":0.039970710873603821,"optimized_unfiltered_w":0.005716345738619566,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8939972265563655e-07,"sd":9.0601771763123821e-08,"minimum":0,"maximum":4.76837158203125e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1314] {"critic":"Follow","mean":0.80068966799974439,"sd":0.031192506260958174,"minimum":0.74674403667449951,"maximum":0.92387884855270386,"furthest":14}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":14}
+[DEBUG-1312] {"optimized_unfiltered_v":0.041437212377786636,"optimized_unfiltered_w":0.006062693428248167,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8634796516003859e-07,"sd":9.0486508391585989e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Follow","mean":0.87349717873334887,"sd":0.042119725398117973,"minimum":0.7982514500617981,"maximum":1.010777473449707,"furthest":16}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1312] {"optimized_unfiltered_v":0.040918748825788498,"optimized_unfiltered_w":0.0056472672149538994,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8837452353714923e-07,"sd":9.3206723031479857e-08,"minimum":0,"maximum":6.1988828292669496e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Follow","mean":0.87172653537988665,"sd":0.041054450880115403,"minimum":0.78566104173660278,"maximum":1.0609687566757202,"furthest":16}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1312] {"optimized_unfiltered_v":0.039894696325063705,"optimized_unfiltered_w":0.0048600821755826473,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.892805132488462e-07,"sd":9.6083809226972111e-08,"minimum":0,"maximum":5.0067899337591371e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Follow","mean":0.87030077743530276,"sd":0.039511415570101058,"minimum":0.79294389486312866,"maximum":1.0476592779159546,"furthest":16}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1312] {"optimized_unfiltered_v":0.041274555027484894,"optimized_unfiltered_w":0.0050798039883375168,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.858711281119696e-07,"sd":9.3599819739120178e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Follow","mean":0.86857531720399861,"sd":0.038045173107538716,"minimum":0.78680360317230225,"maximum":1.0094314813613892,"furthest":16}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1312] {"optimized_unfiltered_v":0.040337890386581421,"optimized_unfiltered_w":0.0053872223943471909,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8436909069841078e-07,"sd":9.0804968456282449e-08,"minimum":0,"maximum":5.4836277740832884e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Follow","mean":0.86959949195384978,"sd":0.039552879328038179,"minimum":0.78226304054260254,"maximum":1.047887921333313,"furthest":16}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1312] {"optimized_unfiltered_v":0.040310554206371307,"optimized_unfiltered_w":0.0057115061208605766,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8854141614532695e-07,"sd":9.1272711562466693e-08,"minimum":0,"maximum":6.1988828292669496e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Follow","mean":0.83420914930105206,"sd":0.036243937900925852,"minimum":0.77341949939727783,"maximum":0.98569780588150024,"furthest":15}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1312] {"optimized_unfiltered_v":0.039903823286294937,"optimized_unfiltered_w":0.0054915472865104675,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8558502552323831e-07,"sd":9.3450790271527489e-08,"minimum":0,"maximum":5.4836277740832884e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Follow","mean":0.83464590144157413,"sd":0.035746438114152311,"minimum":0.76862400770187378,"maximum":0.99399083852767944,"furthest":15}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1312] {"optimized_unfiltered_v":0.039583809673786163,"optimized_unfiltered_w":0.0058279316872358322,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8780231776815982e-07,"sd":9.1565992982200094e-08,"minimum":0,"maximum":5.9604644775390625e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Follow","mean":0.87232265162467959,"sd":0.039832023739627416,"minimum":0.79605400562286377,"maximum":1.0191967487335205,"furthest":16}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":16}
+[DEBUG-1312] {"optimized_unfiltered_v":0.039950691163539886,"optimized_unfiltered_w":0.0053323982283473015,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8606186255887281e-07,"sd":9.2263936736796113e-08,"minimum":0,"maximum":6.6757201011569123e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Follow","mean":0.83587499803304677,"sd":0.035913781995759959,"minimum":0.77187150716781616,"maximum":0.97820419073104858,"furthest":15}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1312] {"optimized_unfiltered_v":0.038613442331552505,"optimized_unfiltered_w":0.0055414061062037945,"frame_layout_validated":true}
+[DEBUG-1314] {"critic":"Constraint","mean":1.8911362043105838e-07,"sd":9.216466770044675e-08,"minimum":0,"maximum":5.7220461258111754e-07,"furthest":0}
+[DEBUG-1314] {"critic":"Cost","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Goal","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"GoalAngle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":0}
+[DEBUG-1314] {"critic":"Align","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Follow","mean":0.83466757291555405,"sd":0.035573026224909918,"minimum":0.77488046884536743,"maximum":0.9961169958114624,"furthest":15}
+[DEBUG-1314] {"critic":"Angle","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1314] {"critic":"Forward","mean":0,"sd":0,"minimum":0,"maximum":0,"furthest":15}
+[DEBUG-1312] {"optimized_unfiltered_v":0.041182413697242737,"optimized_unfiltered_w":0.0052934791892766953,"frame_layout_validated":true}
+[INFO] [1794994088.978773940] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1794994088.978822619] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1794994088.979415079] [controller_server]: Optimizer reset
+[INFO] [1794994089.132530720] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1794994089.132598395] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1794994089.132644700] [controller_server]: Deactivating
+[INFO] [1794994089.132674382] [ExecutableMPPI]: Deactivated MPPI Controller: Original
+[INFO] [1794994089.132692191] [local_costmap.local_costmap]: Deactivating
+[INFO] [1794994089.213355670] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1794994089.223597257] [controller_server]: Cleaning up
+[INFO] [1794994089.224460419] [ExecutableMPPI]: Cleaned up MPPI Controller: Original
+[INFO] [1794994089.224709750] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1794994089.229702316] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1794994089.231390646] [local_costmap.local_costmap]: Destroying
+[INFO] [1794994089.233273692] [controller_server]: Destroying
