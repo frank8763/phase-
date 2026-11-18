@@ -217,7 +217,8 @@
       "verified_physical_groups": 3,
       "compact_group_pending": true,
       "unique_raw_retained_bytes": 73405578
-    }
+    },
+    "latest_verified_component_release": "https://github.com/frank8763/phase-/releases/tag/phase-coherent-mppi-left-turn-v1323-20261118"
   },
   "preparation_policy": {
     "user_request": "准备时间加快，不再准备一两个小时",
@@ -230,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "V1323 coherent MPPI left component main and exact full repeat passed. Complete evidence GitHub readback/cleanup; right component not admitted by nominal geometry, whole-route/dynamic baseline not yet passed.",
+  "next_scope": "V1323 left component and exact repeat passed and necessary raw backed up/verified/cleaned. No active jobs. Next: independently register safe right-turn component, then same-version full static route; dynamic baseline comparison still pending.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -9740,6 +9741,18 @@
     "heading_error_rad": 0.002324315349997552,
     "right_component_passed": false,
     "whole_route_passed": false,
-    "raw_backup_pending": true
-  }
+    "raw_backup_pending": false
+  },
+  "verified_v1323_github_backup": {
+    "published": true,
+    "remote_member_sha_verified": true,
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-coherent-mppi-left-turn-v1323-20261118",
+    "source_commit": "d069fac826fb3b21212b18e7aee4b58b3c1daaac",
+    "verified_members": 72,
+    "restore_tool": "experiments/v1324_coherent_turn_closure/restore.py",
+    "restore_qualification_passed": true,
+    "raw_available_locally": false,
+    "cleanup_logical_bytes": 75890415
+  },
+  "latest_baseline_report": "docs/COHERENT_MPPI_TURN_V1323_REPORT.md"
 }

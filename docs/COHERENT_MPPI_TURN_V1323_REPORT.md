@@ -40,3 +40,5 @@
 当前源和所有进程已闭，REVIEW_PENDING原字节恢复、执行锁空闲，无后台导航或自动新候选。本轮为持续采样MPPI在当前执行器上的首个合格转弯组件证据；下一步补合格右转及同版本完整静态路线，再进入动态基线；原RP-CCR V1281固定24成功及V1300适配MPPI失败均保持。
 
 表和成对证明：records/v1323_coherent_turn_20261118/RESULT_SUMMARY.json、TURN_COMPONENT.csv；图为真实记录，不生成新积分：left_turn_recorded.png/pdf。完整72成员证据按≤1MiB块存同仓[Release](https://github.com/frank8763/phase-/releases/tag/phase-coherent-mppi-left-turn-v1323-20261118)。只有FULL_REMOTE_VERIFIED.json确认每块/压缩整体/每解压成员SHA及标签commit后才发布、清理raw。网络失败则保留必要本地数据并明确未完成状态。
+
+备份已完成：同仓Release已发布；72成员全部下载及解压SHA、标签commit核验通过。恢复35个普通文件的实测通过后清理测试副本；raw与重复缓存合计75,890,415逻辑字节已按清单清理，源码和冻结依赖保留。旧V1300尚未核完的独立归档不在本次清理范围。
