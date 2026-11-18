@@ -50,3 +50,5 @@ V1301回放软件继承了静止夹具的ROS零twist/零yaw，原结果不能当
 静态表见records/v1300_study_backup_20261118/STATIC_TRACKING_PILOT.csv。独立机制消融见[TIME_WINDOW_ABLATION_V1299_REPORT.md](TIME_WINDOW_ABLATION_V1299_REPORT.md)，不混静态与动态、开发与独立确认、主与重复、物理与数学计数。
 
 原始3任务与紧凑8槽复现输入保存于[同仓Release](https://github.com/frank8763/phase-/releases/tag/phase-static-pilot-and-time-ablation-20261118)，每块最多4MiB。只有FULL_REMOTE_VERIFIED.json确认下载及所有解压成员SHA通过后才清理raw；源码/报告/失败台账/CSV/索引保留。所有物理任务已闭，guard原字节/锁空闲，REVIEW_PENDING；无自动新24、训练、GPU/实体机或无限调参。
+
+备份状态补记：源码、报告、表图已push并核对远端HEAD；原始15资产已上传但Release仍为draft。三个车辆组102成员的下载/解压SHA已过，紧凑消融组尚有两个分块回读不完整，所有73405578字节必要原件保留。未标记完整远端备份通过、未删除唯一raw。详情records/v1300_study_backup_20261118/DELIVERY_STATUS.json；网络错误不改变本轮科学结果。

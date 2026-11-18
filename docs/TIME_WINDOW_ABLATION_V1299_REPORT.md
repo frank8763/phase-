@@ -42,3 +42,5 @@ V1305调用原冻结audit_time.verify独立复核：原未变成功分支5槽保
 图表与CSV：records/v1300_study_backup_20261118/TIME_WINDOW_ABLATION.csv、ABLATION_SUMMARY.csv、time_window_ablation.pdf/png。图标题明确source admission，不是navigation success。紧凑八槽输入将单独归档，后续不再为几份输入下载整批大轨迹。
 
 原V1281成功/全部历史失败和窗口保持。当前研究已闭，guard未改变，全部原始/新科学源未修改；研究源冻结SHA复核通过。必要原始证据与复现输入远端完整下载/解压SHA核验后才清理，索引records/v1300_study_backup_20261118/RECORD_INDEX.json。
+
+备份状态补记：源码、报告、表图已push并核对远端HEAD；原始15资产已上传但Release仍为draft。三个车辆组102成员的下载/解压SHA已过，紧凑消融组尚有两个分块回读不完整，所有73405578字节必要原件保留。未标记完整远端备份通过、未删除唯一raw。详情records/v1300_study_backup_20261118/DELIVERY_STATUS.json；网络错误不改变本轮科学结果。

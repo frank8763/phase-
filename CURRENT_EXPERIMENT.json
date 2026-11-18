@@ -197,7 +197,7 @@
   },
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
-    "latest_raw_remote_delivery_pending": false,
+    "latest_raw_remote_delivery_pending": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
@@ -209,7 +209,15 @@
     "source_git_push_pending": false,
     "latest_verified_backup_source_commit": "81efd1883d5c11c0f4ee89543880ac9eebac7e9d",
     "latest_verified_backup_files": 15528,
-    "v1281_raw_cache_restorable_from_release": true
+    "v1281_raw_cache_restorable_from_release": true,
+    "pending_v1300_backup": {
+      "status": "UPLOADED_DRAFT_READBACK_INCOMPLETE",
+      "index": "records/v1300_study_backup_20261118/RECORD_INDEX.json",
+      "status_record": "records/v1300_study_backup_20261118/DELIVERY_STATUS.json",
+      "verified_physical_groups": 3,
+      "compact_group_pending": true,
+      "unique_raw_retained_bytes": 73405578
+    }
   },
   "preparation_policy": {
     "user_request": "准备时间加快，不再准备一两个小时",
@@ -222,7 +230,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "V1281 exposed fixed24 acceptance complete and GitHub backup verified; no active physics. Prepare fair baseline interfaces, comparative/ablation protocol and new bounded authority before future model runs. Restore only needed saved cases from the verified Release.",
+  "next_scope": "V1300 static RPP main/repeat passed; adapted MPPI safety failure remains and software repair not physically admitted. V1299 8-state temporal mechanism ablation independently audited. No active physical/software jobs; remaining dynamic baselines/closed-loop ablations pending. Complete bounded missing-byte backup readback before deleting raw.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",

@@ -19,6 +19,7 @@ def main():
     parser.add_argument('--list', action='store_true')
     parser.add_argument('--group')
     parser.add_argument('--destination', help='Optional NEW directory inside repository runs/')
+    parser.add_argument('--verified-readback', action='store_true', help='Reuse the complete downloaded verification parts for local restore qualification')
     args = parser.parse_args()
     index = read(D / 'RECORD_INDEX.json')
     if args.list:
@@ -27,6 +28,7 @@ def main():
     base = R
     if args.destination:
         base = Path(args.destination).absolute()
+        assert '..' not in base.parts, 'DESTINATION_TRAVERSAL'
         assert base.is_relative_to(R / 'runs') and base != R / 'runs'
         assert not base.exists() and not base.is_symlink()
         assert not any(parent.is_symlink() for parent in base.parents)
@@ -37,15 +39,19 @@ def main():
             assert path.is_file() and sha(path) == item['sha256'], 'EXISTING_DIFFERENT_FILE'
     folder = O / ('restore_' + group['group'])
     folder.mkdir(exist_ok=False)
+    part_folder = O / 'readback' if args.verified_readback else folder
+    if args.verified_readback: assert read(D / 'FULL_REMOTE_VERIFIED.json')['passed']
     for part in group['parts']:
-        dest = folder / part['name']
-        with dest.open('xb') as stream:
-            result = subprocess.run([str(R / 'tools/phase_storage_20261107/vendor/gh'), 'release', 'download', index['release_tag'], '--repo', 'frank8763/phase-', '--pattern', part['name'], '--output', '-'], cwd=R, stdout=stream, stderr=subprocess.PIPE, timeout=120)
-        assert result.returncode == 0 and dest.stat().st_size == part['bytes'] and sha(dest) == part['sha256'], 'PART_SHA'
+        dest = part_folder / part['name']
+        if not args.verified_readback:
+            with dest.open('xb') as stream:
+                result = subprocess.run([str(R / 'tools/phase_storage_20261107/vendor/gh'), 'release', 'download', index['release_tag'], '--repo', 'frank8763/phase-', '--pattern', part['name'], '--output', '-'], cwd=R, stdout=stream, stderr=subprocess.PIPE, timeout=120)
+            assert result.returncode == 0, 'PART_DOWNLOAD'
+        assert dest.stat().st_size == part['bytes'] and sha(dest) == part['sha256'], 'PART_SHA'
     archive = folder / (group['group'] + '.tar.gz')
     with archive.open('xb') as stream:
         for part in group['parts']:
-            with (folder / part['name']).open('rb') as source:
+            with (part_folder / part['name']).open('rb') as source:
                 for chunk in iter(lambda: source.read(1048576), b''): stream.write(chunk)
     assert archive.stat().st_size == group['archive_bytes'] and sha(archive) == group['archive_sha256']
     verify(archive, items)
@@ -62,9 +68,10 @@ def main():
             count += 1
     for item in items:
         if item.get('kind') != 'symlink': assert sha(safe_path(base, item['path'])) == item['sha256']
-    for part in group['parts']: (folder / part['name']).unlink()
+    if not args.verified_readback:
+        for part in group['parts']: (folder / part['name']).unlink()
     archive.unlink()
-    proof = dict(passed=True, group=group['group'], restored_regular_files=count, destination=str(base), all_part_archive_member_SHA_verified=True, historical_links_not_recreated=True, models=0)
+    proof = dict(passed=True, group=group['group'], restored_regular_files=count, destination=str(base), all_part_archive_member_SHA_verified=True, historical_links_not_recreated=True, reused_verified_download_parts=args.verified_readback, models=0)
     dump(folder / 'RESTORED.json', proof); print(json.dumps(proof))
 
 
