@@ -1,0 +1,184 @@
+[INFO] [1795008675.119554035] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795008675.121258992] [controller_server]: Creating controller server
+[INFO] [1795008675.124684342] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795008675.124976417] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1795008675.304065811] [controller_server]: Configuring controller interface
+[INFO] [1795008675.304106179] [controller_server]: getting progress checker plugins..
+[INFO] [1795008675.304173855] [controller_server]: getting goal checker plugins..
+[INFO] [1795008675.304202350] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1795008675.304228470] [local_costmap.local_costmap]: Configuring
+[INFO] [1795008675.307631261] [local_costmap.local_costmap]: Using plugin "static_layer"
+[INFO] [1795008675.309834883] [local_costmap.local_costmap]: Subscribing to the map topic (/phase_public_static) with transient local durability
+[INFO] [1795008675.310871393] [local_costmap.local_costmap]: Initialized plugin "static_layer"
+[INFO] [1795008675.310891577] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1795008675.311069671] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1795008675.312660648] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1795008675.312679645] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1795008675.312868425] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795008675.320893361] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1795008675.320982408] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1795008675.321142693] [local_costmap.local_costmap]: StaticLayer: Resizing static layer to 240 X 240 at 0.050000 m/pix
+[INFO] [1795008675.321166439] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1795008675.321279232] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[INFO] [1795008675.321883566] [controller_server]: Created controller : RPPDefault of type phase_rpp/ExecutableRPP
+[INFO] [1795008675.323362937] [controller_server]: Created controller : RPPPreview of type phase_rpp/ExecutableRPP
+[INFO] [1795008675.324628595] [controller_server]: Created controller : RPPLocal of type phase_rpp/ExecutableRPP
+[INFO] [1795008675.327342754] [controller_server]: Created controller : Deadband of type phase_deadband/DeadbandMPPI
+[INFO] [1795008675.328194045] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[INFO] [1795008675.329047711] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[INFO] [1795008675.329066708] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[ERROR] [1795008675.329299418] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008675.329325539] [controller_server]: Inflation layer either not found or inflation is not set sufficiently for optimized non-circular collision checking capabilities. It is HIGHLY recommended to set the inflation radius to be at MINIMUM half of the robot's largest cross-section. See github.com/ros-planning/navigation2/tree/main/nav2_smac_planner#potential-fields for full instructions. This will substantially impact run-time performance.
+[INFO] [1795008675.329342161] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[INFO] [1795008675.329352847] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[INFO] [1795008675.329465640] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1795008675.329477513] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[INFO] [1795008675.329661544] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[INFO] [1795008675.329684102] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[INFO] [1795008675.329921561] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[INFO] [1795008675.329935809] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[INFO] [1795008675.330061662] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[INFO] [1795008675.330236195] [controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Consider Feasible Path Orientations
+[INFO] [1795008675.330245693] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[INFO] [1795008675.330359674] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[INFO] [1795008675.330370359] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[INFO] [1795008675.331660951] [controller_server]: Optimizer reset
+[INFO] [1795008675.333174753] [DeadbandMPPI]: Configured executable-sample MPPI Controller: Deadband
+[INFO] [1795008675.333186626] [controller_server]: Controller Server has RPPDefault RPPPreview RPPLocal Deadband  controllers available.
+[INFO] [1795008675.336966978] [controller_server]: Activating
+[INFO] [1795008675.336993098] [local_costmap.local_costmap]: Activating
+[INFO] [1795008675.337002596] [local_costmap.local_costmap]: Checking transform
+[INFO] [1795008675.337075021] [local_costmap.local_costmap]: start
+[WARN] [1795008675.487497147] [controller_server]: Parameter controller_server.verbose not found
+[INFO] [1795008675.488520596] [controller_server]: Optimizer reset
+[INFO] [1795008675.488616767] [DeadbandMPPI]: Activated MPPI Controller: Deadband
+[INFO] [1795008675.488626266] [controller_server]: Activating controller: RPPLocal of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008675.488636951] [controller_server]: Activating controller: RPPPreview of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008675.488646450] [controller_server]: Activating controller: RPPDefault of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008675.488661885] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1795008677.215831283] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795008678.416095245] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795008678.416127302] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795008678.416975032] [controller_server]: Optimizer reset
+[INFO] [1795008679.786184164] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795008680.986356756] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795008680.986388813] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795008680.986999083] [controller_server]: Optimizer reset
+[INFO] [1795008682.355295247] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1795008682.360196407] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008682.408046826] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008682.458224347] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008682.508005311] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008682.558022546] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008682.607966170] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008682.658229176] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[ERROR] [1795008682.658280230] [controller_server]: Controller patience exceeded
+[INFO] [1795008682.658789580] [controller_server]: Optimizer reset
+[WARN] [1795008682.658803827] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1795008684.025047190] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795008685.225280422] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795008685.225344536] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795008685.225638985] [controller_server]: Optimizer reset
+[INFO] [1795008686.602125217] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795008687.802289635] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795008687.802331190] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795008687.802578148] [controller_server]: Optimizer reset
+[INFO] [1795008689.169999427] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1795008689.174607325] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008689.223208122] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008689.273050831] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008689.322841299] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008689.372708941] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008689.423074061] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008689.472833659] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[ERROR] [1795008689.472859779] [controller_server]: Controller patience exceeded
+[INFO] [1795008689.473011753] [controller_server]: Optimizer reset
+[WARN] [1795008689.473023626] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1795008690.841264177] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795008692.041423930] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795008692.041455987] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795008692.041796741] [controller_server]: Optimizer reset
+[INFO] [1795008693.410291433] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795008694.610466671] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795008694.610505852] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795008694.610898847] [controller_server]: Optimizer reset
+[INFO] [1795008695.981110423] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1795008695.985885731] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008696.033902383] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008696.083805649] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008696.133796776] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008696.183761782] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008696.233770718] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795008696.283766594] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[ERROR] [1795008696.283795089] [controller_server]: Controller patience exceeded
+[INFO] [1795008696.284042047] [controller_server]: Optimizer reset
+[WARN] [1795008696.284052733] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1795008697.650336770] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795008697.650651404] [controller_server]: Optimizer reset
+[ERROR] [1795008697.653272955] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008697.701857136] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008697.751811457] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008697.801726598] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008697.852111908] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008697.901725475] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008697.951817522] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.001700606] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.051717855] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.101729167] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.151682302] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.201703112] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.251710863] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.301691305] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.351702617] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.401658127] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.451760861] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.501699748] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.551662381] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.601773426] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.651736059] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.701705816] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.751972397] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795008698.801670263] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[INFO] [1795008698.850533460] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795008698.850569079] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795008698.850829097] [controller_server]: Optimizer reset
+[INFO] [1795008700.220651334] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1795008700.222256559] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[WARN] [1795008700.222758786] [controller_server]: EXECUTABLE_FILTERED_TRAJECTORY_COLLISION
+[ERROR] [1795008700.272320114] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[WARN] [1795008700.272804531] [controller_server]: EXECUTABLE_FILTERED_TRAJECTORY_COLLISION
+[ERROR] [1795008700.322438285] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[WARN] [1795008700.322950010] [controller_server]: EXECUTABLE_FILTERED_TRAJECTORY_COLLISION
+[ERROR] [1795008700.372037607] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[WARN] [1795008700.372533897] [controller_server]: EXECUTABLE_FILTERED_TRAJECTORY_COLLISION
+[ERROR] [1795008700.422069105] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[WARN] [1795008700.422548773] [controller_server]: EXECUTABLE_FILTERED_TRAJECTORY_COLLISION
+[ERROR] [1795008700.472060234] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[WARN] [1795008700.472552963] [controller_server]: EXECUTABLE_FILTERED_TRAJECTORY_COLLISION
+[ERROR] [1795008700.522059675] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[WARN] [1795008700.522545280] [controller_server]: EXECUTABLE_FILTERED_TRAJECTORY_COLLISION
+[ERROR] [1795008700.522569026] [controller_server]: Controller patience exceeded
+[INFO] [1795008700.522662822] [controller_server]: Optimizer reset
+[WARN] [1795008700.522675882] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1795008700.675394302] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795008700.675441794] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1795008700.675490473] [controller_server]: Deactivating
+[INFO] [1795008700.675517781] [DeadbandMPPI]: Deactivated MPPI Controller: Deadband
+[INFO] [1795008700.675523717] [controller_server]: Deactivating controller: RPPLocal of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008700.675535590] [controller_server]: Deactivating controller: RPPPreview of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008700.675543901] [controller_server]: Deactivating controller: RPPDefault of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008700.675562898] [local_costmap.local_costmap]: Deactivating
+[INFO] [1795008700.737280958] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1795008700.747454904] [controller_server]: Cleaning up
+[INFO] [1795008700.748512785] [DeadbandMPPI]: Cleaned up MPPI Controller: Deadband
+[INFO] [1795008700.748523471] [controller_server]: Cleaning up controller: RPPLocal of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008700.748546030] [controller_server]: Cleaning up controller: RPPPreview of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008700.748557902] [controller_server]: Cleaning up controller: RPPDefault of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795008700.748734810] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1795008700.753989785] [controller_server]: Destroying bond (controller_server) to lifecycle manager.

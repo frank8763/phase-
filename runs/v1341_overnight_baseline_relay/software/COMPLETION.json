@@ -1,0 +1,295 @@
+{
+  "passed": true,
+  "scope": "baseline_interface_software_only",
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_native": 0,
+  "training_updates": 0,
+  "started_unix": 1795008674.4987075,
+  "automatic_physical_continuation": false,
+  "worker_returncode": 0,
+  "controller": {
+    "passed": true,
+    "models": 0,
+    "physical_native": 0,
+    "analytical_vehicle_propagation": 0,
+    "navigation_trials": 0,
+    "synthetic_stationary_fixture": true,
+    "cases": [
+      {
+        "id": "rpp_default_t0",
+        "plugin": "RPPDefault",
+        "kind": "whole_path_fixture",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.006211934989551082,
+        "command_receive_interval_s": {
+          "p50": 0.049976865004282445,
+          "p95": 0.05031405598856509,
+          "maximum": 0.050797285002772696
+        },
+        "median_moving_w": 0.0,
+        "no_physical_execution": true
+      },
+      {
+        "id": "rpp_default_saved_pose_synthetic_clear",
+        "plugin": "RPPDefault",
+        "kind": "whole_path_fixture",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.006631049996940419,
+        "command_receive_interval_s": {
+          "p50": 0.049948369996855035,
+          "p95": 0.050588323996635154,
+          "maximum": 0.05064887600019574
+        },
+        "median_moving_w": -0.07574313133843848,
+        "no_physical_execution": true
+      },
+      {
+        "id": "rpp_default_unsafe_pose",
+        "plugin": "RPPDefault",
+        "kind": "blocked",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "no_forward_from_known_unsafe_state": true,
+          "static_costmap_received": true
+        },
+        "action_status": 6,
+        "action_error_code": 104,
+        "raw_commands": 7,
+        "first_command_after_goal_s": 0.00743722400511615,
+        "command_receive_interval_s": {
+          "p50": 0.04992818798928056,
+          "p95": 0.05026063100376632,
+          "maximum": 0.05027487900224514
+        },
+        "median_moving_w": null,
+        "no_physical_execution": true
+      },
+      {
+        "id": "rpp_preview_t0",
+        "plugin": "RPPPreview",
+        "kind": "whole_path_fixture",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.005600477001280524,
+        "command_receive_interval_s": {
+          "p50": 0.04998161899857223,
+          "p95": 0.05032593398937024,
+          "maximum": 0.05035680400033016
+        },
+        "median_moving_w": 0.0,
+        "no_physical_execution": true
+      },
+      {
+        "id": "rpp_preview_saved_pose_synthetic_clear",
+        "plugin": "RPPPreview",
+        "kind": "whole_path_fixture",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.006742657002178021,
+        "command_receive_interval_s": {
+          "p50": 0.04999705600494053,
+          "p95": 0.05015734100015834,
+          "maximum": 0.05027725800755434
+        },
+        "median_moving_w": -0.07570013716196101,
+        "no_physical_execution": true
+      },
+      {
+        "id": "rpp_preview_unsafe_pose",
+        "plugin": "RPPPreview",
+        "kind": "blocked",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "no_forward_from_known_unsafe_state": true,
+          "static_costmap_received": true
+        },
+        "action_status": 6,
+        "action_error_code": 104,
+        "raw_commands": 7,
+        "first_command_after_goal_s": 0.007236573001137003,
+        "command_receive_interval_s": {
+          "p50": 0.04970498199691065,
+          "p95": 0.050283196003874764,
+          "maximum": 0.0505610239924863
+        },
+        "median_moving_w": null,
+        "no_physical_execution": true
+      },
+      {
+        "id": "rpp_local_t0",
+        "plugin": "RPPLocal",
+        "kind": "whole_path_fixture",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.00529178099532146,
+        "command_receive_interval_s": {
+          "p50": 0.049993496999377385,
+          "p95": 0.050289133010664955,
+          "maximum": 0.05047197800013237
+        },
+        "median_moving_w": 0.0,
+        "no_physical_execution": true
+      },
+      {
+        "id": "rpp_local_saved_pose_synthetic_clear",
+        "plugin": "RPPLocal",
+        "kind": "whole_path_fixture",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.006693979012197815,
+        "command_receive_interval_s": {
+          "p50": 0.04998043899831828,
+          "p95": 0.0501799040066544,
+          "maximum": 0.05030931999499444
+        },
+        "median_moving_w": -0.0683035521710267,
+        "no_physical_execution": true
+      },
+      {
+        "id": "rpp_local_unsafe_pose",
+        "plugin": "RPPLocal",
+        "kind": "blocked",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "no_forward_from_known_unsafe_state": true,
+          "static_costmap_received": true
+        },
+        "action_status": 6,
+        "action_error_code": 104,
+        "raw_commands": 7,
+        "first_command_after_goal_s": 0.007282878010300919,
+        "command_receive_interval_s": {
+          "p50": 0.04995313299878035,
+          "p95": 0.04996856799698435,
+          "maximum": 0.05003149500407744
+        },
+        "median_moving_w": null,
+        "no_physical_execution": true
+      },
+      {
+        "id": "coherent_mppi_t0",
+        "plugin": "Deadband",
+        "kind": "whole_path_fixture",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "at_least20_commands": true,
+          "nonzero_forward": true,
+          "action_cancelled": true
+        },
+        "action_status": 5,
+        "action_error_code": 0,
+        "raw_commands": 25,
+        "first_command_after_goal_s": 0.018749790004221722,
+        "command_receive_interval_s": {
+          "p50": 0.049942448997171596,
+          "p95": 0.05036868900060654,
+          "maximum": 0.050438739999663085
+        },
+        "median_moving_w": 0.0016981657245196402,
+        "no_physical_execution": true
+      },
+      {
+        "id": "coherent_mppi_unsafe_pose",
+        "plugin": "Deadband",
+        "kind": "blocked",
+        "passed": true,
+        "checks": {
+          "action_accepted": true,
+          "raw_commands_legal": true,
+          "no_forward_from_known_unsafe_state": true,
+          "static_costmap_received": true
+        },
+        "action_status": 6,
+        "action_error_code": 104,
+        "raw_commands": 7,
+        "first_command_after_goal_s": 0.004501041999901645,
+        "command_receive_interval_s": {
+          "p50": 0.04998638101096731,
+          "p95": 0.05002318699553143,
+          "maximum": 0.05012885600444861
+        },
+        "median_moving_w": null,
+        "no_physical_execution": true
+      }
+    ],
+    "scope": "Actual upstream controller software interface, not physical navigation",
+    "controller_active": true,
+    "wall_s": 25.886174671992194,
+    "no_model_modules_loaded": true,
+    "controller_server_exited": true
+  },
+  "contract_checks": 24,
+  "source_unchanged": true,
+  "independently_revalidated_observations": 1279,
+  "physical_successes": null,
+  "physical_trials": 0,
+  "closed": true,
+  "wall_s": 26.797201505993144,
+  "closed_unix": 1795008701.295909,
+  "review_pending_unchanged": true
+}

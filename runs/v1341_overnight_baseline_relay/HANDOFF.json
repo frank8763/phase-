@@ -1,0 +1,34 @@
+{
+  "status": "RUNNING_OFFLINE_RELAY",
+  "launch": {
+    "pid": 223666,
+    "started_once": true,
+    "hard_stop_unix": 1795050000.0,
+    "offline": true,
+    "maximum_tasks": 16
+  },
+  "hard_stop": "2026-11-19T09:00:00+08:00",
+  "storage_limit_GiB": 10,
+  "branches": [
+    "rpp_default",
+    "rpp_preview",
+    "rpp_local",
+    "coherent_mppi"
+  ],
+  "dependencies": "each branch static main/repeat then conditional dynamic main/repeat; only successful mains repeat",
+  "ordinary_functional_failure": "safecomplete audit/replaypass then next frozen independentbranch",
+  "anomaly": "safetycontrolsourceoperationevidence stop allphysical then zero-modelclosure",
+  "source_freeze": "experiments/v1341_overnight_baseline_relay/SOURCE_FREEZE.json",
+  "runtime_status": "runs/v1341_overnight_baseline_relay/ACTIVE.json",
+  "results": "runs/v1341_overnight_baseline_relay/PARTIAL_RESULTS.json",
+  "final": "runs/v1341_overnight_baseline_relay/COMPLETION.json",
+  "evidence_closure": "runs/v1341_overnight_baseline_relay/FINALIZED.json",
+  "report": "docs/OVERNIGHT_BASELINE_20261118_REPORT.md",
+  "network_needed_while_running": false,
+  "relaunch_forbidden": true,
+  "postphysics_onlyzeromodel": true,
+  "remote_backup_before_cleanup": true,
+  "noStage": true,
+  "training": false,
+  "realrobot": false
+}
