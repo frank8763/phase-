@@ -1,0 +1,1 @@
+Actual installed Nav2 software only, no physical models. Same controller; public static layer plus original scan. Fixed t0 command and saved near-failure obstruction rejection. No physical remedy claim. CPU2-5, GPUhidden; bounded600s.

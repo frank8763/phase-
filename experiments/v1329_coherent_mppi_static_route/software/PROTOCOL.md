@@ -1,0 +1,1 @@
+One actual installed coherentMPPI action on exact whole-route t0 rearframe/path, declared params and initialbody, no physics. Basiccausal/legal/forward/action checks; notnavigation. Parentprotocol and existing componentqualifications apply.

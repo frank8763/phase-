@@ -1,0 +1,65 @@
+{
+  "passed": false,
+  "results": [
+    {
+      "task": "static_main",
+      "attempted": true,
+      "passed": false,
+      "native": {
+        "passed": false,
+        "canonical_vehicle_initializations": 1,
+        "internal_factory_model_constructions": null,
+        "new_actual_native": null,
+        "own_replay_native": 0,
+        "private_mujoco_native": 0,
+        "analytical_vehicle_native": 0,
+        "training_updates": 0,
+        "original_goal_navigation": true,
+        "historical_controls_used": 0,
+        "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+        "error": "AssertionError('NATIVE_SAFETY_ANOMALY')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1329_coherent_mppi_static_route/native_component.py\", line 105, in run\n    step(vr, wr, 'MPPI_ACTUAL_FEEDBACK')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1329_coherent_mppi_static_route/native_component.py\", line 67, in step\n    journal.append(row); v.adapter.parked_target = None; in_step = True; original_step(vr, wr, False); in_step = False; row['applied'] = True\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 81, in step\n    try:clear,margin=self.check()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 72, in check\n    assert clear>=.15-1e-8 and margin>=-1e-10 and bad==0,'NATIVE_SAFETY_ANOMALY'\nAssertionError: NATIVE_SAFETY_ANOMALY\n",
+        "model_native_inflight_unknown": true,
+        "physical": {
+          "actual_native": 12165,
+          "fully_recorded_native": 12164,
+          "minimum_actual_clearance_m": 0.1498536434419533,
+          "minimum_self_margin_m": 0.00982000230886193,
+          "bad_contacts": 0,
+          "final_body": [
+            0.921162081180956,
+            -0.14337604102379284,
+            0.44484752084823614,
+            0.022837096035722492,
+            -0.01534094479373185
+          ],
+          "final_translation_speed_m_s": 0.022884438645565403,
+          "root_guard_native_count": 12165,
+          "goal_distance_m": 3.595315765743319,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "closed": true,
+        "wall_s": 127.25458107099985,
+        "closed_unix": 1795002860.9603875,
+        "source_unchanged": true
+      },
+      "ros": null,
+      "audit": null,
+      "worker_returncodes": [
+        -15,
+        1
+      ]
+    }
+  ],
+  "unexecuted": [
+    "static_repeat"
+  ],
+  "scope": "coherent_mppi_common_full_static_route",
+  "stop_reason": "FIRST_COMPONENT_SAFETY_OR_EVIDENCE_FAILURE",
+  "closed": true,
+  "closed_unix": 1795002862.5130255,
+  "source_unchanged": true,
+  "review_pending_restored": true
+}

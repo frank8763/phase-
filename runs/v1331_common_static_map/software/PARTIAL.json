@@ -1,0 +1,59 @@
+{
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_vehicle_propagation": 0,
+  "navigation_trials": 0,
+  "synthetic_stationary_fixture": true,
+  "cases": [
+    {
+      "id": "whole_static_t0",
+      "plugin": "Deadband",
+      "kind": "whole_path_fixture",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "at_least20_commands": true,
+        "nonzero_forward": true,
+        "action_cancelled": true
+      },
+      "action_status": 5,
+      "action_error_code": 0,
+      "raw_commands": 25,
+      "first_command_after_goal_s": 0.015454548003617674,
+      "command_receive_interval_s": {
+        "p50": 0.04980102401168551,
+        "p95": 0.05045406699355226,
+        "maximum": 0.05060129800403956
+      },
+      "median_moving_w": 0.0020660884911194444,
+      "no_physical_execution": true
+    },
+    {
+      "id": "saved_near_failure_known_map_rejection",
+      "plugin": "Deadband",
+      "kind": "blocked",
+      "passed": true,
+      "checks": {
+        "action_accepted": true,
+        "raw_commands_legal": true,
+        "no_forward_from_known_unsafe_state": true,
+        "static_costmap_received": true
+      },
+      "action_status": 6,
+      "action_error_code": 104,
+      "raw_commands": 7,
+      "first_command_after_goal_s": 0.006828452009358443,
+      "command_receive_interval_s": {
+        "p50": 0.04984259299817495,
+        "p95": 0.05007650599873159,
+        "maximum": 0.05013942898949608
+      },
+      "median_moving_w": null,
+      "no_physical_execution": true
+    }
+  ],
+  "scope": "Actual upstream controller software interface, not physical navigation",
+  "controller_active": true
+}
