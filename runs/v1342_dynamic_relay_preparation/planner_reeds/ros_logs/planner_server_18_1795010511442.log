@@ -1,0 +1,46 @@
+[INFO] [1795010511.452566681] [planner_server]: 
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795010511.453229195] [planner_server]: Creating
+[INFO] [1795010511.456159455] [global_costmap.global_costmap]: 
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795010511.456379106] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [1795010511.799893929] [planner_server]: Configuring
+[INFO] [1795010511.799941421] [global_costmap.global_costmap]: Configuring
+[INFO] [1795010511.802980913] [global_costmap.global_costmap]: Using plugin "static_layer"
+[INFO] [1795010511.805115681] [global_costmap.global_costmap]: Subscribing to the map topic (/phase_public_static) with transient local durability
+[INFO] [1795010511.805871992] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[INFO] [1795010511.805892176] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[INFO] [1795010511.806092830] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795010511.814579662] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 240 X 240 at 0.050000 m/pix
+[INFO] [1795010511.817574036] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner::SmacPlannerHybrid
+[INFO] [1795010511.817604906] [planner_server]: Configuring GridBased of type SmacPlannerHybrid
+[INFO] [1795010511.818128506] [planner_server]: Even sized heuristic lookup table size set 200.000000, increasing size by 1 to make odd
+[ERROR] [1795010511.818145128] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795010511.818172436] [planner_server]: Inflation layer either not found or inflation is not set sufficiently for optimized non-circular collision checking capabilities. It is HIGHLY recommended to set the inflation radius to be at MINIMUM half of the robot's largest cross-section. See github.com/ros-planning/navigation2/tree/main/nav2_smac_planner#potential-fields for full instructions. This will substantially impact run-time performance.
+[INFO] [1795010514.078617611] [planner_server]: Configured plugin GridBased of type SmacPlannerHybrid with maximum iterations 200000, max on approach iterations 1000, and not allowing unknown traversal. Tolerance 0.25.Using motion model: Reeds-Shepp.
+[INFO] [1795010514.078667477] [planner_server]: Planner Server has GridBased  planners available.
+[INFO] [1795010514.082517896] [planner_server]: Activating
+[INFO] [1795010514.082546392] [global_costmap.global_costmap]: Activating
+[INFO] [1795010514.082555890] [global_costmap.global_costmap]: Checking transform
+[INFO] [1795010514.082642563] [global_costmap.global_costmap]: start
+[INFO] [1795010514.132770433] [planner_server]: Activating plugin GridBased of type SmacPlannerHybrid
+[INFO] [1795010514.133704839] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[ERROR] [1795010515.145366466] [computeCircumscribedCost]: The inflation radius (0.850000) is smaller than the circumscribed radius (0.979948) If this is an SE2-collision checking plugin, it cannot use costmap potential field to speed up collision checking by only checking the full footprint when robot is within possibly-inscribed radius of an obstacle. This may significantly slow down planning times!
+[ERROR] [1795010515.145424643] [planner_server]: Inflation layer either not found or inflation is not set sufficiently for optimized non-circular collision checking capabilities. It is HIGHLY recommended to set the inflation radius to be at MINIMUM half of the robot's largest cross-section. See github.com/ros-planning/navigation2/tree/main/nav2_smac_planner#potential-fields for full instructions. This will substantially impact run-time performance.
+[WARN] [1795010515.540993140] [planner_server]: GridBased plugin failed to plan from (0.22, -0.72) to (3.77, -1.47): "exceeded maximum iterations"
+[WARN] [1795010515.541069127] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1795010515.541624784] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795010515.541688898] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[INFO] [1795010515.541728079] [planner_server]: Deactivating
+[INFO] [1795010515.541756574] [global_costmap.global_costmap]: Deactivating
+[INFO] [1795010515.542929628] [planner_server]: Deactivating plugin GridBased of type SmacPlannerHybrid
+[INFO] [1795010515.542946251] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[INFO] [1795010515.553103615] [planner_server]: Cleaning up
+[INFO] [1795010515.555678872] [global_costmap.global_costmap]: Cleaning up
+[INFO] [1795010515.556728447] [planner_server]: Cleaning up plugin GridBased of type SmacPlannerHybrid
+[INFO] [1795010515.559805932] [planner_server]: Destroying plugin GridBased of type SmacPlannerHybrid
+[INFO] [1795010515.562224465] [planner_server]: Destroying bond (planner_server) to lifecycle manager.

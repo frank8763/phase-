@@ -1,0 +1,42 @@
+{
+  "status": "RUNNING_OFFLINE_CAUSAL_RELAY",
+  "launch": {
+    "pid": 231022,
+    "started_once": true,
+    "hard_stop_unix": 1795050000.0,
+    "offline": true,
+    "maximum_tasks": 16
+  },
+  "same_original_night_window": true,
+  "hard_stop": "2026-11-19T09:00:00+08:00",
+  "temporary_limit_GiB": 10,
+  "branches": [
+    "rpp_causal_default",
+    "rpp_causal_preview",
+    "rpp_causal_slow",
+    "coherent_mppi_causal"
+  ],
+  "max_navigations": 16,
+  "parent_V1341_safety_failure_preserved": true,
+  "V1343_pre_model_filename_error_preserved": true,
+  "ordinary_functional_failure": "nextindependentfixedbranch only after fullsafe stop/physicalcontrolsourceaudit/replayPASS",
+  "safety_control_source_evidence_or_operation": "entirephysicsstops, zero-modelclosureonly",
+  "never_relaunch_or_edit_frozen": true,
+  "needs_network": false,
+  "stage_access": false,
+  "physicalCPU": [
+    2
+  ],
+  "ROSCPU": [
+    3,
+    4,
+    5
+  ],
+  "GPUhidden": true,
+  "active": "runs/v1344_causal_night_entry/ACTIVE.json",
+  "results": "runs/v1344_causal_night_entry/PARTIAL_RESULTS.json",
+  "completion": "runs/v1344_causal_night_entry/COMPLETION.json",
+  "finalized": "runs/v1344_causal_night_entry/FINALIZED.json",
+  "report": "docs/CAUSAL_DYNAMIC_OVERNIGHT_20261118_REPORT.md",
+  "raw_delete_only_after_full_remote_SHA_and_restore": true
+}

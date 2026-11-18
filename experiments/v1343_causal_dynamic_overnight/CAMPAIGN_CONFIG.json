@@ -1,0 +1,26 @@
+{
+  "hard_stop_iso": "2026-11-19T09:00:00+08:00",
+  "hard_stop_unix": 1795050000.0,
+  "storage_limit_bytes": 10737418240,
+  "cpus_native": [
+    2
+  ],
+  "cpus_ros": [
+    3,
+    4,
+    5
+  ],
+  "branches": [
+    "rpp_causal_default",
+    "rpp_causal_preview",
+    "rpp_causal_slow",
+    "coherent_mppi_causal"
+  ],
+  "maximum_navigations": 16,
+  "dynamic_after_each_branch_static_main_repeat": true,
+  "safety_control_source_evidence_stop": true,
+  "software_gate_required": true,
+  "maximum_replans_per_task": 12,
+  "maximum_wait_native_per_task": 4000,
+  "causal_horizon_s": 1.5
+}
