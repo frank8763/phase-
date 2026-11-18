@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1294_rpp_output_scope/qualify_output.py", line 77, in <module>
+    raise SystemExit(child() if '--child' in sys.argv else main())
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1294_rpp_output_scope/qualify_output.py", line 51, in child
+    link.unlink()
+  File "/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py", line 1206, in unlink
+    self._accessor.unlink(self)
+  File "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runtime/mk-mini/experiments/phase_rpccr_p0b3_v1/pilot.py", line 95, in write_guard
+    raise PermissionError('Filesystem mutation outside isolated experiment: '+str(p))
+PermissionError: Filesystem mutation outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments

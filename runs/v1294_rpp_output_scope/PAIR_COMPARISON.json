@@ -1,0 +1,38 @@
+{
+  "NATIVE_TRACE.npz": {
+    "same_fields": true,
+    "same_shapes": {
+      "time": true,
+      "qpos": true,
+      "qvel": true,
+      "ctrl": true,
+      "mocap_pos": true,
+      "mocap_quat": true,
+      "clearance": true,
+      "self_margin": true
+    },
+    "maximum_errors": {
+      "time": 0.0,
+      "qpos": 0.0,
+      "qvel": 0.0,
+      "ctrl": 0.0,
+      "mocap_pos": 0.0,
+      "mocap_quat": 0.0,
+      "clearance": 0.0,
+      "self_margin": 0.0
+    },
+    "maximum_error": 0.0
+  },
+  "INITIAL_STATE.npz": {
+    "same_fields": true,
+    "same_shapes": {
+      "state": true
+    },
+    "maximum_errors": {
+      "state": 0.0
+    },
+    "maximum_error": 0.0
+  },
+  "model_sha_equal": true,
+  "scope": "observed complete pair equality for this component only; repeat not an independent task"
+}

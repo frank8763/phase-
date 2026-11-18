@@ -1,0 +1,16 @@
+{
+  "passed": false,
+  "scope": "current_adapter_rpp_1p2m_component",
+  "results": [],
+  "unexecuted": [
+    "main",
+    "repeat"
+  ],
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1293_rpp_component90/campaign.py\", line 65, in main\n    native = read(out / 'RESULT.json'); ros = read(out / 'ROS_RESULT.json')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1293_rpp_component90/component_context.py\", line 14, in read\n    return json.loads(Path(p).read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1293_rpp_component90/main/RESULT.json'\n",
+  "stop_reason": "OPERATION_STOP_NO_RETRY",
+  "closed": true,
+  "closed_unix": 1794977315.066279,
+  "source_unchanged": true,
+  "review_pending_restored": true
+}
