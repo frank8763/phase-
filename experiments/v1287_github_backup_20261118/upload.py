@@ -81,7 +81,7 @@ def main():
     url=f'https://github.com/{REPO}/releases/download/{tag}/RECORD_INDEX.json'
     with urllib.request.urlopen(url,timeout=60)as src:public=src.read()
     assert hashlib.sha256(public).hexdigest()==sha(D/'RECORD_INDEX.json'),'PUBLIC_INDEX_READBACK'
-    complete=dict(pre,published=True,draft_at_readback=True,public_index_download_SHA_verified=True,tag_commit_verified=True,asset_identities_unchanged=True,verified_unix=time.time(),local_raw_cleanup_not_yet_done=True)
+    complete=dict(pre,release_url=final['html_url'],published=True,draft_at_readback=True,public_index_download_SHA_verified=True,tag_commit_verified=True,asset_identities_unchanged=True,verified_unix=time.time(),local_raw_cleanup_not_yet_done=True)
     dump(D/'FULL_REMOTE_VERIFIED.json',complete)
     gh(['release','upload',tag,str(D/'FULL_REMOTE_VERIFIED.json'),'--repo',REPO])
     finalproof=dict(name='FULL_REMOTE_VERIFIED.json',bytes=(D/'FULL_REMOTE_VERIFIED.json').stat().st_size,sha256=sha(D/'FULL_REMOTE_VERIFIED.json'))

@@ -197,16 +197,19 @@
   },
   "storage": {
     "policy": "docs/STORAGE_POLICY.md",
-    "latest_raw_remote_delivery_pending": true,
+    "latest_raw_remote_delivery_pending": false,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
     "redundant_bytes_removed_or_coalesced": 415947518,
     "unique_evidence_deleted": false,
-    "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-route-model-entry-v1088-20261112",
+    "latest_release": "https://github.com/frank8763/phase-/releases/tag/phase-dynamic-fixed24-v1281-20261118",
     "all222_source_decompressed_sha_verified": true,
     "source_commit": "12b69fa494f3ba4d368ab16a3fcd2aa81eae089d",
     "source_members_verified": 161,
-    "latest_verified_cache_cleanup_bytes": 335440698,
-    "source_git_push_pending": false
+    "latest_verified_cache_cleanup_bytes": 3829034023,
+    "source_git_push_pending": false,
+    "latest_verified_backup_source_commit": "81efd1883d5c11c0f4ee89543880ac9eebac7e9d",
+    "latest_verified_backup_files": 15528,
+    "v1281_raw_cache_restorable_from_release": true
   },
   "preparation_policy": {
     "user_request": "准备时间加快，不再准备一两个小时",
@@ -219,7 +222,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "V1281 same-science original fixed24 fresh t0/main then fixed1/9/17 full repeats; no inherited samples. Original23:31 development ceiling preserved; this root3h until01:26, night09 hard stop. After trusted closure V1286 zero-model evidence, parallel audit equivalence, saved temporal ablation and baseline inventory; no unqualified baseline vehicle runs.",
+  "next_scope": "V1281 exposed fixed24 acceptance complete and GitHub backup verified; no active physics. Prepare fair baseline interfaces, comparative/ablation protocol and new bounded authority before future model runs. Restore only needed saved cases from the verified Release.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -9549,5 +9552,17 @@
     "parent_confirmation_passed": true,
     "models": 0,
     "physical_native": 0
+  },
+  "verified_v1281_github_backup": {
+    "completed_local": "2026-11-18T09:35:23.118323+08:00",
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-dynamic-fixed24-v1281-20261118",
+    "source_commit": "81efd1883d5c11c0f4ee89543880ac9eebac7e9d",
+    "all_member_SHA_readback": 15528,
+    "published": true,
+    "remote_verified": true,
+    "cleanup_logical_bytes": 3829034023,
+    "raw_restore_index": "records/v1281_backup_20261118/RECORD_INDEX.json",
+    "raw_cache_available_locally": false,
+    "models_started_for_backup": 0
   }
 }

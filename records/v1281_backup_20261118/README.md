@@ -19,3 +19,5 @@ python3 experiments/v1287_github_backup_20261118/restore.py --group frozen-depen
 仅下载校验、不恢复可加`--verify-only`。恢复全部已选运行数据用`--all`；不会重新运行模型，也不会覆盖已有但SHA不同的文件。源码与元数据从Git取得，恢复器只写选定的runs路径。
 
 上传结果以Release中的`FULL_REMOTE_VERIFIED.json`为准：必须Git远端提交核对、所有资产下载SHA及解压逐成员SHA通过，才允许按清单清除本地闭合缓存。任何未验证原件均保留。
+
+本轮远端30组/15528文件已全部下载及解压SHA核验；已清理8131个闭合原始缓存和重复压缩传输数据，合计文件大小3829034023字节，6957项冻结依赖保留。最终核验与清理凭据同时在Release及Git记录目录保存。
