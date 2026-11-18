@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "NORTH_SOUTH",
+    "seed": 10010002,
+    "phase": 3.673083947600074,
+    "dynamic": false,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "task_id": "rate_main",
+    "run_id": "v1177-rate_main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1177/rate_main",
+    "scope": "fixed static response component only",
+    "component": "rate",
+    "role": "main",
+    "plan": "runs/v1173_rate_preconditioned_input/positive.npz",
+    "plan_sha256": "3eefb6ada38367bafadfc911f2a841328cef94ffc403db060b78a1fd5631698c",
+    "planned_native": 7200,
+    "required_feature": 0.6042696793941015
+  },
+  {
+    "case_id": "NORTH_SOUTH",
+    "seed": 10010002,
+    "phase": 3.673083947600074,
+    "dynamic": false,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "task_id": "rate_repeat",
+    "run_id": "v1177-rate_repeat",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1177/rate_repeat",
+    "scope": "fixed static response component only",
+    "component": "rate",
+    "role": "repeat",
+    "plan": "runs/v1173_rate_preconditioned_input/positive.npz",
+    "plan_sha256": "3eefb6ada38367bafadfc911f2a841328cef94ffc403db060b78a1fd5631698c",
+    "planned_native": 7200,
+    "required_feature": 0.6042696793941015
+  },
+  {
+    "case_id": "NORTH_SOUTH",
+    "seed": 10010002,
+    "phase": 3.673083947600074,
+    "dynamic": false,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "task_id": "lateral_main",
+    "run_id": "v1177-lateral_main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1177/lateral_main",
+    "scope": "fixed static response component only",
+    "component": "lateral",
+    "role": "main",
+    "plan": "runs/v1174_response_input_bundle/lateral.npz",
+    "plan_sha256": "95780c1cd47530593ad9dc3781c8242bc7fafc24ee0ae92784445bc98b200933",
+    "planned_native": 5000,
+    "required_feature": 0.026001030270743172
+  },
+  {
+    "case_id": "NORTH_SOUTH",
+    "seed": 10010002,
+    "phase": 3.673083947600074,
+    "dynamic": false,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "task_id": "lateral_repeat",
+    "run_id": "v1177-lateral_repeat",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1177/lateral_repeat",
+    "scope": "fixed static response component only",
+    "component": "lateral",
+    "role": "repeat",
+    "plan": "runs/v1174_response_input_bundle/lateral.npz",
+    "plan_sha256": "95780c1cd47530593ad9dc3781c8242bc7fafc24ee0ae92784445bc98b200933",
+    "planned_native": 5000,
+    "required_feature": 0.026001030270743172
+  },
+  {
+    "case_id": "NORTH_SOUTH",
+    "seed": 10010002,
+    "phase": 3.673083947600074,
+    "dynamic": false,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "task_id": "low_main",
+    "run_id": "v1177-low_main",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1177/low_main",
+    "scope": "fixed static response component only",
+    "component": "low",
+    "role": "main",
+    "plan": "runs/v1175_low_speed_input_entry/LOW.npz",
+    "plan_sha256": "be78b69e5235718b36d53965293570f622c0eb8771da002698197a8692a2ac4c",
+    "planned_native": 5400,
+    "required_feature": 0.006
+  },
+  {
+    "case_id": "NORTH_SOUTH",
+    "seed": 10010002,
+    "phase": 3.673083947600074,
+    "dynamic": false,
+    "goal_xy": [
+      -1.2777841091156006,
+      -2.9586408138275146
+    ],
+    "task_id": "low_repeat",
+    "run_id": "v1177-low_repeat",
+    "output": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v858_nav2_verified/v1177/low_repeat",
+    "scope": "fixed static response component only",
+    "component": "low",
+    "role": "repeat",
+    "plan": "runs/v1175_low_speed_input_entry/LOW.npz",
+    "plan_sha256": "be78b69e5235718b36d53965293570f622c0eb8771da002698197a8692a2ac4c",
+    "planned_native": 5400,
+    "required_feature": 0.006
+  }
+]

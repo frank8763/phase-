@@ -1450,3 +1450,481 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1119已122.514s闭批NOT_PASSED，18459Python/15950771Cpp865calls，原门未降。只读定位整数时长种子选择用了包含旧seed的global best，实际选回原时长，原失败/选择缺陷保存。V1120仅改为从4个新完整beam选一refinement种子并保存全部prefix历史，预算/搜索/模型/门全部保持，反例资格过，0新增动力学准备；一次后台，非物理，新12h未启动。
 
 - 耦合完整源软件准备闭批复核：[{"name": "v1115_coupled_complete_source", "passed": false, "selected_native": 18506, "wall_s": 27.615813363998313, "counts": {"cpp_native": 31407583, "python_native": 18506, "entry": {"cpp_native": 43501, "python_native": 22901}}, "failed_final_gates": ["gear_endpoints_within_02", "coupled_mode_envelopes"], "model_integrations": 0}, {"name": "v1116_native_path_constraints", "passed": false, "selected_native": 18459, "wall_s": 32.76903219000087, "counts": {"cpp_native": 21362310, "python_native": 18459, "entry": {"cpp_native": 0, "python_native": 0}}, "failed_final_gates": ["gear_endpoints_within_02", "coupled_mode_envelopes"], "model_integrations": 0}, {"name": "v1117_fixed_tick_native_sqp", "passed": false, "selected_native": 18459, "wall_s": 123.56091428099899, "counts": {"cpp_native": 11998350, "python_native": 18459, "entry": {"cpp_native": 36918, "python_native": 0}}, "failed_final_gates": ["gear_endpoints_within_02", "coupled_mode_envelopes"], "model_integrations": 0}, {"name": "v1118_coupled_live_qualification", "passed": true, "selected_native": null, "wall_s": 19.40525913600868, "counts": {"cpp_native": 91746, "python_native": 107946}, "failed_final_gates": [], "model_integrations": 0}, {"name": "v1119_integer_cusp_timing", "passed": false, "selected_native": 18459, "wall_s": 122.51400908999494, "counts": {"cpp_native": 15950771, "python_native": 18459, "entry": {"cpp_native": 0, "python_native": 0}}, "failed_final_gates": ["gear_endpoints_within_02", "coupled_mode_envelopes"], "model_integrations": 0}, {"name": "v1120_explicit_timing_seed", "passed": false, "selected_native": 18459, "wall_s": 122.41557618101069, "counts": {"cpp_native": 16369976, "python_native": 18459, "entry": {"cpp_native": 0, "python_native": 0}}, "failed_final_gates": ["gear_endpoints_within_02", "coupled_mode_envelopes"], "model_integrations": 0}]；所有新实际模型/积分0，旧NS成功保留，同版本三路线/24均未完成，新授权12h物理根未启动。下一先完整源与实际执行/独立审核接口全资格，再物理三路线全主/重复过后才条件24。见docs/RPCCR_COUPLED_ROUTE_PREPARATION_20261113_REPORT.md。
+
+- 用户11月13日新通宵授权，明确11月14日09:00硬截止/原wall+mono锁定不延期，断网本机接力。V1121显式改合同：Smac换挡端点.02/导引cross.04改软引导，连续传播完整状态/模式源硬验收；原物理净空/ctrl/自体/全尾/实际到合格源.04等门不减，不追认V1120。保存EW整源资格PASS/冷曲率种子PASS18314、129完整2200后备全过/CppPython9.45e-16，实际run_phase隔离+嵌套真实ROS规划/工厂禁止物理资格/真实调度9反例过，准备实际模型积分0。16冻结候选=4半径×.015/.001初始模式储备×8/25前缀，三路线新主/全重复全过才条件固定24；功能完整安全停+终审过可接力，安全/模型/证据异常全夜停。候选耗尽或确认结束仍接力固定开发状态离线可行性图，9点前300秒收尾，不用空循环刷时长，不用确认失败调参。8GiB临时限/CPU2最低优先/GPU隐藏/Stage完全隔离/无AI网络依赖，源码任务科学参数已冻结。
+
+- V1121通宵闭批：three_route=False, fixed24=False, counts={"vehicle_initializations": 4, "new_actual_native": 0, "own_replay_native": 0, "replay_state_initializations": 0, "historical_replay_native": 0, "private_mujoco_native": 0, "training_updates": 0}, offline_jobs=0, hard_error=True；新几何引导合同/原物理门保持，09:00不延期，见docs/RPCCR_COUPLED_OVERNIGHT_V1121_REPORT.md。
+
+- V1121原通宵入口遗漏解析库缓存：3真实t0全过，首EW主0导航步失败；原4车辆初始化/0实际0重放保留并FINALIZED。V1122只复制已核验同SHA缓存与操作输出绑定，科学源/16候选/24清单不改，复用3已过t0不重做；真实Reserve三路线及run_phase隔离资格过，39609准备解析步(含保留导入命名失败)/0新模型物理，冻源后接未执行导航。原11月14日09:00 wall+mono/boot截止逐字节不变，安全证据异常停，完整安全功能停可接下候选，原始证据不删。
+
+- 11月14日晨用户要求继续三路线。V1122仍按原09:00截止做离线开发，原EW两候选主/重复通过而WE SMAC_NO_PATH、NS未执行、24未启动。V1123固定WE20160真实保存输入100k/1m/5m搜索额度复现：100k原207迭代上限，增额度仍208无路径；V1124固定时间20s/覆盖外接半径1.15势场/原地航向四对照均无路，0动力学模型积分。只读确认原精确WE终点(4,-2,0)整车静态raw.17499989<.243534210；原XY.45目标区有安全终态。V1125明确新提案在原目标区.25内选足净空姿态、原goal校验不变；固定保存态软件600s一次后台，条件单完整源+独立Python全门，不自动物理/新窗口，不修改昨夜冻结源，旧失败全保留。
+
+- V1122缓存入口接续闭批：three_route=False, fixed24=False, counts={"vehicle_initializations": 20, "new_actual_native": 539180, "own_replay_native": 539180, "replay_state_initializations": 20, "historical_replay_native": 0, "private_mujoco_native": 0, "training_updates": 0}, offline_jobs=343, hard_error=False；新几何引导合同/原物理门保持，09:00不延期，见docs/RPCCR_COUPLED_OVERNIGHT_V1122_ENTRY_RELAY_REPORT.md。
+
+- V1123–27晨间保存态软件诊断闭合：迭代cap/时间/势场/终航向/3固定有证倒行前缀后Smac仍无路；原目标(4,-2,0)static raw.175低于.243534，目标区(4,-1.85,0)raw.325安全但不能单独解决无路。仅导引去actor全周期占据时0.224s有33姿态路，完整原动态/静态控制源仍FAIL：末static.098107、dynamic.128709、120s预算613calls，未执行物理。selected_z单独18017Cpp拆分定位末停姿偏移与中途actor过近；不降门不冒称已修好。原V1122已343离线后08:55预留收尾FINALIZED14132来源407672797字节，本地SHA通过/远端待同步。下一需动态可行绕行拓扑与安全终态共同闭合，报告docs/RPCCR_WE_RECOVERY_DIAGNOSIS_20261114.md；无活动新模型/窗口/24，旧成功EW和旧NS不拼成同版本三路线。
+
+- 用户11月14日09:02后要求下一步。V1128明确科学修订：移动原生时刻用原因果周期系数集/.025时间格±.075s外包络，静态整车/.243534不降，转向模式和末停全周期原门保持；原目标区安全终态增加.025m/.1rad终端约束，去除内循环仅诊断用O(native*path)计算，保留软导引目标及全部原生groupmin。256保守几何+周期边界/系数顶点+未来/过期拒绝资格PASS/0动力学，冻源后一次冷种子120s1700calls软件源与条件全部125间隔2200停车后备审核，600s根，不自动导航/新物理窗/24。协议experiments/v1128_timed_terminal_source/PROTOCOL.md；旧EW和各失败/09:00窗全保持。
+
+- V1128检查确认09:07:40记录入口异常：solver已返回、全源proof已构造，但新增safe_terminal NumPy bool导致OPTIMIZATION及finally COMPLETION两次JSON失败；原ERROR/console/冻结源保持。完整科学结论及optimizer解析数未持久化=未知，不填0、不叫安全失败或通过；独立Python和后备审核未执行，实际模型/物理0。零模型ZERO_MODEL_CLOSURE补账，无求解重跑。V1129仅记录入口准备：真实原dump红例复现、嵌套NumPy bool/int/float/array写回及5非法/非有限值拒绝保护旧文件资格PASS，0模型/物理/解析；不自动重跑或开启物理窗。
+
+- 用户明确解决记录并开始下一步：V1130只操作入口接续，原V1128科学run/timed_source/模型/路径/任务字节保持，NumPy严格标量/array规范化与先编码再原子写代替dump/最终console；原实际main两条夹具(NumPy proof、注入异常闭批)全过，夹具不是科学资格。一次新600s软件根/原120s1700calls冷种子/原全门及条件独立Python+全部125间隔2200后备，后台启动，不增加候选/不重开09物理窗/不自动导航或24。V1128原未知解析账和记录失败永存，阶段/训练/实机0。
+
+- V1130已正常120.6208s闭批NOT_PASSED，记录接口修复成功/4934冻源不变：1357calls/23282301优化Cpp，timed .108598/static.116669/terminalcycle.231654均不足，safe终态误差.127349>.025，独立Python/后备0，实际模型物理0。原selected_z只读17312Cpp拆分另列：几何guide951加密static.277792过，预测完整源偏guide.189779，四段端点误差.01436/.04020/.04348/.15072，末段主要。下一设计固定前三段连续状态记忆、仅末12角+1时长恢复，完整原生/独立重放/125完整2200后备门不降；先保存态暖启动诊断，不能当冷启动通用策略。未启动此下一求解/物理/24，报告docs/RPCCR_TIMED_SOURCE_V1130_REVIEW_AND_NEXT.md。
+
+- 用户明确“下一步开始啊”：V1131保存态末段恢复启动。V1130固定失败向量暖启动，前三段36转角+3时长共39变量固定/首41schedule和9388原生完全相同，仅末12角+1时长13变量可变，26边界资格0动力学通过；整源从原实际状态/记忆连续传播不重置。原V1128时间/静态/终态/ctrl/全尾门及原120s1700call40iter保持，600s软件根，一次后台；全过才独立Python全重放和125间隔2200后备。不是通用冷策略，不自动物理/24/新候选，旧失败源保留。
+
+- V1131正常31.0624s闭批NOT_PASSED/332calls5745017Cpp：原前三段41行9388native精确不变，末段安全终态误差.128749>.025，timed/static.114818/terminalcycle.229933仍低于.243534；status8线搜索方向导数失败/16迭代，不是墙钟耗尽。原ctrl/body/模式/2200尾过但安全源失败，独立Python/后备0、模型物理0，4943源保持/guard锁正常。停止同类权重重试，下一拆安全终态可达性与时序避障/后备兼容，未自动启动；报告docs/RPCCR_FINAL_SECTION_V1131_REVIEW.md。
+
+- 用户下一步：V1132将问题拆开，固定V1131前三段及末整数时长，仅末12角终态least_squares(明确不含路径碰撞目标，不冒称安全源)，原动态模型连续传播/原末停门；120s1700calls，若终态及全静态过才固定40个0..1950步初等候完整传播时序对照，首全源合格才独立Python和125完整2200后备。完整源安全门不降，阶段结论与整路分开。LS软件例+24前缀边界/40相位唯一资格通过0动力学，冻源后台600s软件根，模型物理训练0/不自动24。
+
+- V1132仅7.5737秒拆分成功：安全终态组件PASS/end(4,-1.85,约0)/fullcycle.325，独立Python17317与Cpp误差3.77e-15；全源static.171732仍不合.243534，0时序探针/0后备/模型物理0，29456217优化Cpp(达到1700work cap)。只读保存states定位rectangle9北侧斜车体净空不足，非终点不可达。V1133同用户下一步范围继续，把该公共矩形北面整车投影半空间加入末段修复，每原生精确组min，旧静态/时序/终态全门独立不降；真实失败face拒绝/安全终态接受+24固定前缀和40相位资格过，冻源600s软件后台/12角/先空间后条件时序。无物理导航或24启动。
+
+- V1133已18.4637秒正常闭：安全终态和全静态源PASS/minstatic.246047>.243534，独立Python17317误差3.77e-15；固定40初等待整源传播均动态净空失败，besttimed 0.04408397075429246；只能说明该空间源固定相位失败，不是动态无解证明。29456217优化Cpp/731680时序Cpp/17317Python，备份0/物理模型积分0。下步需空间+时间共同修复，先精确几何核查动态瓶颈；旧门不降/原失败保留，不自动新优化或物理/24。见docs/RPCCR_TERMINAL_SPATIAL_TIMING_V1132_V1133_REPORT.md。
+
+- 用户开始联合时空下一步：V1134先独立精确距离见证19167Cpp/0物理，bestwait1850在原生16378pose(3.51505,-1.85577,-.17670)投影.044084/精确.046751均不合.243534，排除单纯投影过松。固定首3段命令/末段时长，只末12角+初hold0..1963native联合修复，全部从原实际20160状态记忆完整传播，不只平移时间、不假称新增hold后状态仍同旧prefix。6排程边界/拒绝资格0动力学过，冻源一次120s1700call100nfev/600s软件后台，原全静态/定时动态/终态/控制模式/后备门保留，条件独立Python和125全2200备份；无模型物理训练/自动24或旧窗延长。
+
+- 用户要求多步自动推进：V1134正常60.3928s闭批FAILED，622calls/11868845Cpp/19001Python，static.237593/dynamic.105526/终态误差.046624；V1135新90分钟有限软件接力已冻源，8方向同一6系数因果域+对偶上界证明→40固定时序→saved/cold各.08/.10/.12共6固定支线→独立Python→每8原生完整2200后备审核→报告。真实数据域非空/64合成角点/32+32对偶资格、4真实入口和18排程边界过；冻结前导入命名错误保留0积分。物理模型/导航/训练0、不自动三路线/24，不重开旧09窗，guard保留。
+
+- V1135多步软件接力闭批：component=False, stages=8, error=False, wall_s=578.7261585700035；物理/模型/训练0，同版本三路线与24未执行；报告docs/RPCCR_CAUSAL_BATCH_V1135_REPORT.md。
+
+- 用户继续多步推进：V1136保存态只读见证重现V1135动态冲突x2.2–3.6，最差x3.587/-1.881而该固定姿态全相位最佳.406454，前三段当前安全；非动态无解证明。新科学变化：末12角+12独立原生命令时长乘子[.4,1.8]+初等待25变量共同恢复，前三41原命令固定/600模式及2200尾不减，净空残差尺度.01代替.08但原独立门不变。4固定static/dynamic保存种子×.08/.12、各300s5000call、根90分钟软件；24真实边界/20负例/旧真实失败红例资格0动力学过，4990+源冻前核验。新速度仅软件提案未物理响应资格，不自动模型/导航/三路线/24，旧失败及窗口保留。
+
+- V1136非均匀分段时钟接力闭批：component=False, stages=4, error=False, wall_s=450.48068301801686；物理/模型/训练0，同版本三路线与24未执行；报告docs/RPCCR_ROUTE_CLOCK_V1136_REPORT.md。
+
+- V1136检查有整源突破但总NOT_PASSED：dynamic_seed_v120完整16618预测源static.246555/dynamic.243911>.243534、safe终态误差.0006959/原goal上界.229539、独立误差3.77e-15全过；116个125间隔完整2200后备12次raw+terminalcycle失败(x2.15–3.78)，每8审核未进入。V1137仅保存态几何复盘0动力学：22s尾>19.63495周期，现源整周期最低.050288，局部x2.6/3/3.4共各6601姿态采样最高.214699<门，非全局无解证明。下一先配置空间后备可行通道/更大绕行，再将完整刹停约束纳入求解，避免窄通道局部速度相位重试。无新物理/求解/窗口，.12实际响应尚未资格。详见docs/RPCCR_ROUTE_CLOCK_V1136_BACKUP_REVIEW.md。
+
+- 用户下一步已授权V1138有限软件接力：原actual20160/同coupled周期包络精确整车配置图(.05m/72航向/原[-5,5])静态与整周期各90s，goalXY.025/yaw.1，边中点Lipschitz及独立连续复核；图允许横移/原转仅诊断。再固定V1136原生12500前缀+2200完整尾观察停靠组件，独立Python及每8原生完整停车审核；组件目标单独登记，原终点未到/真实观察0，.12实际响应仍未资格。新900s软件根/无新物理窗，3图正负例/6前缀边界/真实停靠区域/真实driver入口0动力学资格过。准备通用common命名遮蔽错误在编译和模型前已保留，更名corridor_tools后冻源；旧科学源不改/Stage隔离/CPU2空闲优先/2GiB临时。
+
+- V1138科学5.019s闭：静态107姿态连续证书.256146PASS(含横移/原转非车控)，整周期图698646状态无格点通道(非连续全局无解)。固定12500+2200观察停靠14700Cpp/14700独立Python误差3.77e-15，原全部安全/控制门过；新额外起刹到终点位移.02025175>.020拒绝，组件NOT_PASSED/每8审核未执行。额外正常刹停位移门与原停驻转向.02包络不是同一合同，不追认本批成功。原报告raw json.dumps遗漏NumPy规范化再次失败，COMPLETION已准确持久化；独立zero_model_close仅补报告/指针/清单，原错误冻结源及证据保留，无重跑、模型物理0。后续必须统一完整报告编码实际入口资格，先设计真实观测刷新和正确停靠终点合同。docs/RPCCR_BACKUP_CORRIDOR_V1138_REPORT.md。
+
+- 用户明确新批到今日14:30并继续：V1139统一绝对wall/mono/boot截止，软件固定12500+2200观察停靠每8完整尾全过→两个原NS新.12×200响应(各8000，.02包络只模式，原模型/门/每步/完整重复和独审)→条件WE原20160真实历史命令/反馈/五状态重建+14700固定观察停靠/实际每8完整后备/全重复和独审→仅真实range白名单原周期域更新+原因果LP对偶/配置图。原goal/三路线/24不在本批，首实际失败停、不修补延期。正常刹停原.025终态/完整2200合同保留，V1138额外.02失败永存；.12×300准备第二sign静态拒绝16200解析保留，再锁.12×200两sign16000解析准备全过。真实20160ctrl重建2.22e-16、2生产静态正例9记录/篡改拒绝、全历史+停靠审核正例3拒绝/统一NumPy最终报告/实际guard阻断资格全过，无新模型。genericexecution导入/新夹具mocap遗漏/重复压缩解压慢等准备错误保留，冻结前修复，不动旧冻结源。5051源/数据SHA冻前核验、2GiB新证据/CPU2空闲/Stage隔离。协议experiments/v1139_afternoon_observer/PROTOCOL.md。
+
+- V1139下午14:30硬截止轮闭：components=False, reason=EXCEPTION_OR_DEADLINE, counts={
+  "vehicle_initializations": 0,
+  "new_actual_native": 0,
+  "own_replay_native": 0,
+  "replay_state_initializations": 0,
+  "private_mujoco_native": 0,
+  "training_updates": 0,
+  "analytical_prediction_native": 0,
+  "historical_reconstruction_native": 0,
+  "new_observer_component_native": 0
+}；原goal/同版本三路线/24未完成，报告docs/RPCCR_AFTERNOON_OBSERVER_V1139_REPORT.md。
+
+- V1139首软件父目录遗漏导致首次SOURCE_PROOF写前14700Cpp已完成/0Python，错误结果也无法写；主COMPLETION准确实际模型/物理0、未尝试静态/观察物理，原错误/冻结源/报告保留。用户既有到14:30及继续授权内仅一次V1140目录操作接续：新software父目录准备、输出根/报告名操作重绑、旧科学5051文件SHA完全不变、任务文件逐字节不变；原ROUND_WINDOW wall/mono/boot逐字节继承，不延期。实际输出写入和8真实入口零模型资格过，第一批原解析计数另账，不宣称0。再异常整个下午停止无再接续。
+
+- V1139下午14:30硬截止轮闭：components=False, reason=FIRST_PHYSICAL_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE, counts={
+  "vehicle_initializations": 3,
+  "new_actual_native": 16000,
+  "own_replay_native": 16000,
+  "replay_state_initializations": 2,
+  "private_mujoco_native": 0,
+  "training_updates": 0,
+  "analytical_prediction_native": 0,
+  "historical_reconstruction_native": 0,
+  "new_observer_component_native": 0
+}；原goal/同版本三路线/24未完成，报告docs/RPCCR_AFTERNOON_ENTRY_V1140_REPORT.md。
+
+- 12:16用户检查，V1140原12:10闭批不重启：观察软件14700/1564完整后备PASS、两个.12NS响应16000实际+16000全重放及独审PASS误差0/坏接触0/min.286573，WE观察新模型已初始化但0积分CANONICAL_SETUP_CHANGED。V1141独立保存diff发现仅actor离线构造elapsed_s/search.wall_s自然计时差异导致错误整字典比较；MJB与INITIAL_STATE逐字节相同，443数组WE注册合同通过。旧WE误标EW课程标签另保留非本拒绝原因。软件/响应里程碑保留，真实观察域更新/原goal/三路线/24未执行。5011+源及50/424清单回读通过、guard原字节/锁空闲，物理尝试总3init、不启动修订或新窗口。docs/RPCCR_AFTERNOON_V1140_STATUS_REVIEW.md。
+
+- 用户明确新独立到今日21:00离线无人值守V1142：修复actor整字典纳入构造timer误比较，仅剔除exact2wall字段，保留全科学结构/路径/轴相位噪声ctrl/model初态，旧课程label独立注册绑定/原失败保存。真实旧新redgreen+9重要篡改拒绝、完整观察审核正例3拒绝、12后缀排程边界/所有输出父目录/严格最终NumPyencoder/真实run_phaseguard资格全过；复用V1140两static.12响应和1564观察软件后备全SHA，不重跑或混新样本。新固定观察主+完整重复各旧20160真实重建+14700前缀/完整2200尾/实际每8后备/全回放/独审，目标注册为冻结停车终态(.025/.1)，非起刹点(.02只驻转)；都过才真实range白名单原周期域更新/耦合LP对偶/配置图，随后固定.08/.12两软件目标后缀/完整独立+每8尾审。无自动物理目标/三路线/24，design_only草稿不在执行队列；21:00wall+mono/boot唯一锁定、首实际异常停不修补；CPU2空闲优先/Stage隔离/2GiB临时/无网络依赖/原件保留远端待核验。5093源证据SHA冻结。协议experiments/v1142_evening_observer/PROTOCOL.md。
+
+- V1142晚21:00轮闭：observer_main_repeat=False, goal_software=False, reason=FIRST_PHYSICAL_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE, counts={
+  "vehicle_initializations": 1,
+  "new_actual_native": 20160,
+  "own_replay_native": 20160,
+  "replay_state_initializations": 1,
+  "private_mujoco_native": 0,
+  "training_updates": 0,
+  "analytical_prediction_native": 0,
+  "historical_reconstruction_native": 20160,
+  "new_observer_component_native": 0
+}；原goal物理/同版本三路线/24未完成；docs/RPCCR_EVENING_OBSERVER_V1142_REPORT.md。
+
+- 用户12:33检查：V1142已约39s闭，20160真实历史重建+20160全回放误差0/接触一致后saved-entry两list相减TypeError，newobserver0/后续全未执行，非状态超差。V1143独立零模型重建本次实际packet/全20160反馈ctrl，旧语句red；float数组规范同1e-8门state/ctrl/integral全0、7篡改拒绝，5093源/178清单回读，guard/锁正常。原失败/冻结源不改、未重启模型，预计下一同固定队列仅上限6950s≈1h56，不承诺完成或当前运行。docs/RPCCR_SAVED_ENTRY_V1143_PREPARATION.md。
+
+- 用户明确修复后启动V1144保存态入口接续：只state/ctrl表示转finitefloatarrays，state/ctrl1e-8不降且积分memory显式1e-8；从实际worker提取AST真实交接语句在本次真实p执行state/ctrl/integral0、7篡改拒绝，父目录/严格encoder/实际新run_phaseguard过。原V1142源码/失败/20160实际+20160回放独立账保留；原21:00wall/monotonic/boot逐字节继承，不开新窗/不延长。新最多2真实canonical重建+观察主/完整重复，原固定真实测距估计/两目标软件/全后备接力保持；复用两static.12和1564后备不重跑，无物理目标/三路线/24。新5123源证据SHA冻结，Stage隔离/CPU2空闲/2GiB临时/原件待远端核验。
+
+- V1144晚21:00轮闭：observer_main_repeat=False, goal_software=False, reason=FIRST_PHYSICAL_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE, counts={
+  "vehicle_initializations": 1,
+  "new_actual_native": 34715,
+  "own_replay_native": 34715,
+  "replay_state_initializations": 1,
+  "private_mujoco_native": 0,
+  "training_updates": 0,
+  "analytical_prediction_native": 5921563,
+  "historical_reconstruction_native": 20160,
+  "new_observer_component_native": 14555
+}；原goal物理/同版本三路线/24未完成；docs/RPCCR_SAVED_ENTRY_RELAY_V1144_REPORT.md。
+
+- 20:12检查V1144原12:44已闭：20160历史+12355新前缀+2200真实完整停=34715实际及34715回放误差0/接触一致/minactual.276985/bad0，观察目标仍NOT_PASSED；下一8+2200raw.2429746<.2435342而当前停.2455386有效，按证书安全停。V1145零物理失败收尾重建2686停止证书/ctrl7.63e-17，额外5921563解析独审；原审核inf未完成哨兵序列化失败保留，补null/unassessed不改判。仅真实白名单6944唯一包(4精确重复)含2911新增测距离线域更新，4097对偶LP，原停点cycleRaw.248122→.452658；非实时source/实际净空收益，更新域刚体图704552仍无格点通道非全局无解。原post未去重重复拒绝诊断保留。未启动新模型/观察重复/目标/三路线/24，guard锁正常/5123源174清单回读。docs/RPCCR_OBSERVER_V1144_FAILURE_AND_MEASUREMENT_REVIEW.md。
+
+- V1146用户授权研究修订：真实32515拒绝态仅当时6504测距/排除440未来包、同8+2200状态ctrl哈希不变，旧raw.242974609→新.435458383/门.243534210，12拒绝+4完整性拒绝通过。新域显式交旧域/对偶回读；快速全周期新界.427626409、30暖证书中位20.229ms，不含感知规划非系统实时。剩余2345软件40完整停尾全过但终点偏.037389660>.025；实际停稳34715两固定300次目标源仍净空/终点拒绝，不重启物理/三路线/24。新增Cpp2678659/Python19781解析、3次准备LP12297/模型物理训练0；原同名kernel和SciPy入口错误/辅助诊断source混用中间记录保留，最终QUALIFICATION纠正。原21:00不延长、guard原字节/锁空闲，当前REVIEW_PENDING。下一重点实测状态的时空可执行运动段搜索，不是再沿旧切点调权；创新/泛化尚未证明。docs/RPCCR_CAUSAL_BACKUP_REDESIGN_20261114.md。
+
+- V1147用户要求短时间新测试，独立600s；FIRST_PHYSICAL_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE；实际/历史/新组件/自身重放=[8325, 8325, 0, 8325]，无整路/三路线/24自动任务，旧21:00不延长，guard恢复。docs/RPCCR_SHORT_REFRESH_V1147_REPORT.md。
+
+- V1148独立明早09截止闭批：physical_refresh_pair=True, goal_software=False, reason=FINITE_QUEUE_COMPLETE, counts={
+  "models": 2,
+  "new_actual_native": 69446,
+  "historical_reconstruction_native": 65030,
+  "new_component_native": 4416,
+  "own_replay_native": 69446
+}；原goal物理/同版本三路线/24未执行，guard恢复，旧窗不改。docs/RPCCR_OVERNIGHT_CAUSAL_V1148_REPORT.md。
+
+- V1149新独立10:00软件接力闭批：goal_all8=False, reason=FINITE_RELAY_COMPLETE，8固定前置完整停车约束搜索，原V1148两名义goal/失败停车保留；新模型/物理/训练0，guard恢复。docs/RPCCR_BRAKE_AWARE_RELAY_V1149_REPORT.md。
+
+- 2026-11-15 V1150只读后备合同复盘：保存态6个同状态立即BrakeOnly拒绝/完整目标后缀名义通过见证回核；V1149八支99606扩展/486855完整停车测试/76944拒绝/目标尝试0，不能据有限队列断言全局无解。原raw.243534已含.04位置/.035航向/时延插值储备，不重复加；真实8+2200交接不证明完整58秒恢复误差界。推荐新登记“带误差集合的可执行恢复后备→安全终端→完整2200停车”，保留旧证书至新证书完整原子提交；这是新合同，旧失败不改判。方案与PSF/FASTER/FaSTrack原文依据见docs/RPCCR_BACKUP_CONTRACT_RESOLUTION_20261115.md。标准库保存证据审核PASS仅指诊断，新策略DESIGN_ONLY_NOT_QUALIFIED；0新模型/物理/解析传播/训练/后台启动，REVIEW_PENDING及原截止保持。
+
+- 2026-11-15用户“好，开始吧”后V1151–V1153落实新恢复合同软件阶段：同V1148固定源反馈7项安全控制全过/终点6过，x落后.04末误差.032142245；V1152仅全2200停后前向低速捕获218步再完整2200停，终点.011432955，固定7/7全部门过。V1153全部保存请求独立C++状态ctrl/反馈请求/积分记忆/几何审核PASS最大1.28e-15；原451名义后缀/20交接拒绝与4游标拒绝通过，合成正例非实际证书。共62018Cpp/62018Python解析、0模型物理训练，旧失败源/门/窗保持。模型扰动与反馈误差管未证明，physical_eligible=false，未启动物理、三路线、24或后台接力；原位姿外包络充分条件未过不作无解证明。guard原字节/锁空闲，报告docs/RPCCR_RETAINED_RECOVERY_V1151_V1153_REPORT.md。
+
+- 2026-11-15用户在修订实验计划后明确“开始吧”：V1154固定V1139两实际8000步组件及V1148实际20160–34723历史段，冻结原预测器，先实际状态/控制/记忆对齐再单步残差与固定8/100/200/2200/5800步窗口审计。只软件600s/CPU2空闲优先/执行锁；前置真实数据与4篡改拒绝通过，准备期误排历史倒车的断言失败0传播原样保留并在冻结前修正，不删该实际段。无新车辆模型/物理/训练/窗口，REVIEW_PENDING原字节保持，动态准入仍false；读experiments/v1154_measured_model_error/PROTOCOL.md。
+
+- V1154真实保存预测误差审计正常闭批13.384s：30563实测单步控制最大4.44e-16/积分记忆0，固定84多步窗口原.04/.035/.015响应全过，最差58s保存请求位置.037390193m/航向.024150404rad；非新反馈管。静态经验参照不能包动态残差，转向/轮角速率1064步超参照，rate最大.060491193vs.019220147。实际.12最长连续14.19s，目标20s运动；本选定实际正向低速捕获0，软件仅218步.006–.01606。独立保存统计/全测量对齐/来源SHA/计数回读PASS；Python解析124615/Cpp0、模型物理训练0、无未知在途。原准备断言0传播保留，冻结后无异常；当前REVIEW_PENDING/锁空闲/旧窗旧失败保持。下一单一模型瞬态/稳定偏置修订与完整反馈覆盖，缺数据只准备安全可停响应组件，不自动动态实测/三路线/24。报告docs/RPCCR_MEASURED_MODEL_ERROR_V1154_REPORT.md。
+
+- 2026-11-15用户“下一步开始”：V1155唯一行驶偏置ARX拟合被参数符号/稳定门拒绝(a1.032446/b-.325287/c+.218053，谱1.077611)，原拟合保留、0预测/模型物理；固定2s驱动目标不变、偏置/平衡误差相关.962，不能辨识该三参数，未重拟合/换科学候选。按既定数据缺口分支准备V1156原模型单一NS安全可停输入：2200保持→20s .12目标0/+CAP/-CAP/0各5s→2200停车→前方.04m固定捕获→2200停车，原全门/每8完整尾/原CppPython一致性。只软件600s，0新物理窗，Stage隔离/CPU2空闲/guard不变，预检原门正例和5拒绝过；协议experiments/v1156_response_input_preparation/PROTOCOL.md。
+
+- V1155拒绝保留，0新预测；V1156原模型固定NS输入软件资格PASS(约3.343s)：2200保持→20s .12目标0/+CAP/-CAP/0各500→2200停→前方.04m捕获261→2200停，共8861步，raw.354745430、捕获末误差.011436495，285每8完整2200停车全过，CppPython2.22e-16。新Cpp635861/Python8861/模型物理训练0；独立保存控制记忆0/请求2.36e-17/来源SHA计数PASS，审核准备精确浮点断言0传播及原脚本保留，仅独立回读按1e-12修正不动科学源。实际worker资格/实际响应/误差管仍false，未开物理窗/动态整路/三路线/24。下一完成该固定组件实际执行与回放审核入口及零模型资格，再登记有界物理窗；当前REVIEW_PENDING/锁空闲。docs/RPCCR_STEERING_IDENTIFICATION_V1155_V1156_REPORT.md。
+
+- 2026-11-15用户问第三步并要求继续：V1157固定NS20s转向变化/实际停车后因果前方.04m捕获的worker/实测完整停车证书/全状态接触回放/独立审核/成功条件重复/离线driver与看门狗准备完成；保存数组8861调用与功能拒绝后2200停车流程、5正15负、授权/双时钟/boot/首失败停重复及启动前故障收尾资格通过。只读真实隔离导入与元数据演练(非新MJB)、5077来源SHA、run_phase guard0模型拦截通过。准备同名audit导入错误保留并冻结前独特命名修正，旧科学未改。新模型物理预测训练0；组件实际响应/反馈管/动态第三步仍未执行，等待新独立90min固定组件主/成功重复窗口登记，旧窗不复用；当前REVIEW_PENDING/锁空闲/APPROVALfalse，无后台模型。docs/RPCCR_RESPONSE_ENTRY_V1157_PREPARATION.md。
+
+- 用户明确选择“启动新的90分钟组件验证”：V1157于2026-11-15T10:56:50.832314+08:00一次锁定新5400s窗，唯一硬截止2026-11-15T12:26:50.832314+08:00；后台driver345907/看门狗345908，主通过run_phase开始实际changing_drive(已观察2300原生)。主与独审全过才完整重复，首失败/截止停；非动态整路/三路线/24，无冻结后修补或新拟合，原窗失败保持。
+
+- V1157固定静态响应组件闭批：passed=True, reason=FIXED_COMPONENT_QUEUE_COMPLETE；非动态整路/三路线/24，旧失败截止保持。docs/RPCCR_CHANGING_STEERING_RESPONSE_V1157_REPORT.md。
+
+- V1157最终检查：主8862/完整重复8862实际及各完整自身回放误差0，两独审全PASS；20s行驶转向变化+实际捕获262步/2.62s+完整停车，minactual.393903432/坏0、最大响应位置.017128949/航向.009996106/虚拟轮角.013228111，捕获末误差.011902490m。10:58:11.795因固定队列完成正常闭批(约80.96s)，原12:26:50.832上限未延续为新窗。5077源/原304清单58,969,246B全SHA回读，guard原字节/锁空闲/active_run null；远端未核验原件保留。未完成动态原目标/三路线/24/反馈误差管，不自动新拟合或物理。docs/RPCCR_RESPONSE_V1157_FINAL_REVIEW.md；最新闭批交接runs/v1157_response_execution/FINAL_HANDOFF.md。
+
+- 2026-11-15用户“下一步是第几步？开始下一步的”：进入第2步V1158新增转向激励的一次稳定约束辨识，固定V1157主2200..6400拟合、重复仅复现、未拟合捕获段和V1139/V1148旧开发数据固定回归；不启用V1155拒绝参数，不复用已闭物理窗。软件每调用600s/CPU2空闲/执行锁/guard保持，0新物理/训练，不自动第三步动态实测/三路线/24。协议experiments/v1158_excited_steering_model/PROTOCOL.md。
+
+- V1158第2步固定回归正常闭批24.50s：V1157新数据一次稳定约束拟合a.887867/b.948412/c-.552115、局部谱.942267/边界未激活；4组39425单步/119窗口，新CppPython各170941误差1.33e-15，旧参照Cpp37464/Python8862。旧动态位置.03739→.02052/航向.02415→.00609改善，但轮角动态.01659/新转向.02620超过原.015，15窗口拒绝，候选整体NOT_ACCEPTED；7恢复软件/第三步实际/三路线/24未执行。独立保存与代数确认2700小正目标+.006的偏置项压过恢复力，预测rate-.001675而实际+.055376，是预测结构缺陷非车辆实际反转；原V1157实际PASS保持。88源SHA/计数审核PASS、guard/锁空闲，模型物理训练0，不追加候选或复用旧窗。docs/RPCCR_EXCITED_MODEL_V1158_REPORT.md。
+
+- 2026-11-15用户“下一步开始”：V1159唯一有界连续行驶负载模型，保留原瞬态a0/b0，仅一次拟合k=.492633747，负载k*v²*tanh(delta/.015)；2700反例新rate+.0160415与实际同号，过零连续/奇对称/有界/局部Schur及5拒绝过。固定119窗口/原门回归，全部门过才条件7恢复软件，不追加候选或降低门；0新车辆模型/物理/策略训练，不复用旧窗、Stage隔离/CPU2空闲/执行锁/guard保持。协议experiments/v1159_bounded_steering_load/PROTOCOL.md。
+
+- V1159正常闭批31.15s：有界连续负载k=.492633747/原瞬态不改，119/119原响应与改善/不退步门全PASS；条件原恢复7软件功能/控制/完整停车/终态全过，但7/7raw.229970..231008<.2435342102、cycle不足。独立几何定位全7最差为右下静态箱体index9(3.2,-2.85,.75,.30)缺1.25..1.36cm，x_plus另timedynamic.242704低.000830；不得降门/移箱，下一只固定新模型修首次不足前末段连接与终端姿态。Cpp候选232958/Python227158，旧参照Cpp37464/Python8862，整状态控制记忆<=1.61e-15；0新模型物理训练，88源/计数/旧V1148冻结归档SHA回读过，guard/锁空闲。第2步整体尚缺合格恢复源与连续反馈覆盖，不自动第3步/三路线/24。docs/RPCCR_BOUNDED_LOAD_V1159_REPORT.md。
+
+- 2026-11-15用户下一步开始：V1160固定V1159预测器/参数，原34723真实保存态/因果时钟与目标/安全门保持；先保存数组RED精确复现静态3390和x_plus动态1916，再固定61时间/末段转角参考、名义合格后最多8×原7点完整反馈/停车/C++Python核验。0物理/训练，不复用已闭窗口；600s软件硬限/CPU2空闲/执行锁/临时2GiB，原源与失败不改。协议experiments/v1160_safe_terminal_connection/PROTOCOL.md。
+
+- V1160正常闭批8.673s：固定V1159模型，61名义评估/60不同控制时序、22合格，首排名id41原7点完整反馈全部通过；等待16→17s/第7行驶块.16→.24，其余原目标/控制/净空门保持。7点static最低.262930/dynamic最低.244845960，原raw.2435342102仅额外1.31mm；目标上界最大.250927<.45/全2200尾/全周期/ctrl与速率/末姿态全过。Cpp422417/Python56917，新车辆模型物理训练0，独立保存请求/分配器记忆误差0/时变几何1.33e-15/45源SHA与计数全过。PREFLIGHT unique61语义为表项、原对照与组合25控制等价，不当61独立样本，原记录保留并补澄清。下一第2步连续初态/模型扰动/反馈后继覆盖，7点不是连续管，不自动第3步实际/三路线/24。guard原字节/锁空闲/active null，远端未核验原件保留。docs/RPCCR_SAFE_CONNECTION_V1160_REPORT.md。
+
+- 用户下一步开始：V1161固定V1160/id41与V1159模型，不调源/控制/门；事前20个XY .04球边界×yaw ±.035/0联合组合，去掉旧7轴点重复，先反例筛查原连续初态集合。首完整失败停，20全过也仅有限筛查非连续证明；0车辆模型物理训练、600s/CPU2空闲/执行锁/2GiB，旧窗口保持。协议experiments/v1161_joint_pose_coverage/PROTOCOL.md。
+
+- V1161正常首完整失败闭批6.00175s：原20联合组合实际6、5全过/第6仅动态raw.240160172<.2435342102，剩14未执行；偏差(-.028284,+.028284,-.035)在原集合，首次3376/最差3389且静态.311645163，目标上界.245657/控制/停车/末态全过。是原充分下界认证拒绝，不是实际碰撞/真实安全反证；原119模型与7轴点PASS保持。Cpp/Python各49266、状态ctrl记忆<=1.39e-15，独立保存请求/分配器记忆0/时变界4.44e-16/42源与计数过，新模型物理训练0。零传播保存曲线时序诊断-.4s六曲线.258703054仅线索非新证书；下一优先新批16.6s等待+原7/20完整重传播，再连续/模型扰动覆盖，不追加本批或物理/三路线/24。guard原字节/锁空闲/active null/远端未核验保留。docs/RPCCR_JOINT_POSE_V1161_REPORT.md。
+
+- 用户2026-11-15授权下一步开启到下午三点：V1162新独立日间唯一硬截止15:00+08:00，固定16.6s等待/其余id41控制与V1159模型不改；先原7+20全27再条件298新点（共325有限样本），首完整功能/安全/来源/证据异常停，队列完成提前停不填满。连续/模型扰动覆盖未证，故仅软件，不据采样自动开物理/三路线/24；0模型物理训练。325去重/原真实通过与拒绝保存输入门核/源码解析0传播通过；冻结前AST else3600和依赖元数据启动拒绝均0模型0分析步记录保留，修正后事前冻结。单CPU2空闲/执行锁/2GiB、离线后台/PID看门狗。协议experiments/v1162_pose_timing_day/PROTOCOL.md。
+
+- V1162闭批：FIRST_COMPLETE_FAILED_CASE，23/325有限初态点、通过22，原27全过False；Cpp192598/Python186738，核心22.376s，模型物理训练0；独立保存审核True、源不变True。15:00最晚截止不强行填满，连续/模型扰动覆盖未证/physicalfalse，不自动动态实测/三路线/24。guard原字节/当前指针关闭，后台退出释放锁，远端未核验原件保留。docs/RPCCR_POSE_TIMING_V1162_REPORT.md。
+
+- 用户修复后继续：V1163联合前后瓶颈修复，24旧保存曲线×9等待只几何0传播最差评分选16.85s，其余id41控制/V1159模型/原门不变；固定原27成功才298、325表精确原顺序，首功能/安全/证据异常停。继承V1162原15:00 wall/monotonic/boot，禁止延期重置；源和两个原拒绝保存门/325表/双时钟资格0传播过，51+来源冻结。仅软件0模型物理训练，连续覆盖未证不自动实测/三路线/24；后台离线/CPU2空闲/2GiB/执行锁。协议experiments/v1163_joint_timing_repair/PROTOCOL.md。
+
+- V1163闭批：FIXED_FINITE_QUEUE_COMPLETE_CONTINUOUS_PROOF_STILL_REQUIRED，325/325有限初态点、通过325，原27全过True；Cpp2639734/Python2633849，核心306.600s，模型物理训练0；独立保存审核True、源不变True。15:00最晚截止不强行填满，连续/模型扰动覆盖未证/physicalfalse，不自动动态实测/三路线/24。guard原字节/当前指针关闭，后台退出释放锁，远端未核验原件保留。docs/RPCCR_POSE_TIMING_V1163_REPORT.md。
+
+- 用户下一关开始：V1164固定V1163参考/全部325旧记录与V1159模型，仅零模型零状态传播的连续车体误差管几何证明和39425实测/119响应证据审计；原15:00窗口已闭不续。XY .04球+yaw .035经Hausdorff距离1-Lipschitz及原交付/插值储备一次扣除比较.155，区分几何蕴含和动力学后继/误差界不变性，禁止样本最大冒充全局W。600s有界保存核验/CPU2空闲/执行锁/2GiB，旧通过失败保持，不自动物理/三路线/24。协议experiments/v1164_continuous_geometry_contract/PROTOCOL.md。
+
+- V1164零传播核心14.477s闭批：325旧轨迹2634174原生状态，连续XY .04球/yaw .035 Hausdorff及原交付/插值储备一次扣除，最低.1596349083>=.155/终端全周期.1739825604，连续几何蕴含PASS而非闭环初态到管内证明。39425实测/119窗口原门全过，最差位置.021946916/航向.007746760/轮角.011733810；观测残差不是任意状态W，all_successors/model_disturbance未证/physicalfalse，原保留准入3种自称覆盖全拒绝。独立Decimal/完整保存向量1.11e-16/371源SHA/计数过，新模型/物理/解析状态传播/训练0。下一固定参考建立显式适用域条件W及全状态控制记忆后继包含/切换/捕获/停车，不再普通网格或自动实测三路线24；旧15:00窗闭/guard原字节/锁空闲/active null，远端未核验保留。docs/RPCCR_CONTINUOUS_GEOMETRY_V1164_REPORT.md。
+
+- 用户下一项开始：V1165固定路径/模型/控制，仅零传播审计全程独立W箱的必要留管条件与39425实际残差的阶段/状态/控制记忆/时序/轮角运动学结构；等待1685步世界平移不变/零XY反馈下合法箱内w_x同向序列作数学反例，不当实际失败。600s/执行锁/CPU2空闲/2GiB/guard保持，旧15:00窗口闭，0新模型/物理/解析状态传播/训练，不自动三路线24。协议experiments/v1165_structured_error_contract/PROTOCOL.md。
+
+- V1165必要合同审计核心1.429s闭批：全程独立W箱允许wx3.5836e-5每步同向，初始误差0等待1685中1117步出.04/末.060384；是误差假设反例非实车/路径失败。39425旧记录六模式11956/13200/4400/4200/4226/1443及8状态/5记忆/请求域分组，前进δ残差−.01rate缺口1.291e-6，保存时序/状态条件静止层；宽loaded停车2200独立位置残差和.04637说明仅分模式箱仍不足。独立Decimal/原数组一致/计数极值/86源SHA全过，新模型物理解析状态传播训练0。下一结构化primitive误差+运动学缺口/阶段状态条件W及完整状态控制记忆时变管一步像，不普通网格/不改路径；fullcoverage/physicalfalse，原325/几何PASS保持。旧15:00窗闭/guard原字节/锁空闲/active null，远端未核验保留。docs/RPCCR_STRUCTURED_ERROR_V1165_REPORT.md。
+
+- 用户下一步：V1166新有界600s软件完整闭环，固定V1163参考/控制/V1159模型，整向量保时序的原V1157阶段残差生成器0/+1/-1三固定任务，先零残差精确旧全轨迹再条件压力；每步受扰状态反馈/原控制记忆保持并独立Cpp同原点同请求核验，完整捕获/停车，首完整门失败停，不调参/新网格。仅有限条件误差模型非物理或全后继证明，0车辆模型MuJoCo训练；旧15:00窗闭，不自动三路线24。协议experiments/v1166_structured_closed_loop/PROTOCOL.md。
+
+- V1166固定结构化误差完整软件闭环3/3通过，核心4.374s：scale0/+1/-1整向量时序残差，受扰状态每步真实反馈（软件）、最大位置.015554396/航向.006206914，raw最低.258143217/目标上界最大.243727，全控制速率/全周期/完整停车过；3×8085，捕获均未触发不称该分支新过。Cpp/Python各24255，逐原生同完整原点/请求/扰动独立<=5.97e-16，零基线全旧轨迹精确；独立保存请求ctrl记忆0/注入2.22e-16/几何4.44e-16/46源SHA计数过。0车辆模型MuJoCo训练，非新真实响应或全连续/所有扰动证明，physicalfalse。下一时变全状态控制记忆一步像含捕获切换，不再有限压力点当全域证书；旧窗闭/guard原字节/锁空闲/active null，远端未核验保留。docs/RPCCR_STRUCTURED_CLOSED_LOOP_V1166_REPORT.md。
+
+- 用户下一步继续推进：V1167固定原V1163/case003在5885的完整解析保存态/控制记忆与原绝对时间，补结构化残差0/+1/-1下实际软件触发捕获到完整2200尾，零扰须精确旧后缀；不重跑旧前缀、不新物理。6连续guard边界/局部入口球.002与yaw.002充分判据0传播通过，跨阈值AMBIGUOUS不得强行获证，局部球不替代原全局初态集；原控制/目标/门不改，600s软件/锁/CPU2空闲/2GiB/guard保持，旧15:00与物理窗闭，不自动三路线24。协议experiments/v1167_capture_switch_coverage/PROTOCOL.md。
+
+- V1167捕获交接固定条件3/3过，core1.389s：原case003/5885解析完整态记忆接续、不重跑旧前缀，原绝对clock，捕获217/217/216后各完整2200尾，raw最低.264236661/末参考位置最大.011900611，全门过；零扰旧后缀误差0。Cpp/Python各7250，逐原生1.39e-17；独立请求ctrl记忆0/注入2.22e-16/几何4.44e-16/45源SHA计数过，0新模型MuJoCo训练。连续入口局部.002/.002可定捕获；出口.0001位置球跨.012，必须AMBIGUOUS并集传播捕获/停车两分支，不是车停车失败、不改阈值或缩原全局集合。下一双分支一步像/完整状态控制记忆与停车证明，通用W支持未证/physicalfalse，不自动物理三路线24。旧窗闭/guard原字节/锁空闲/active null，远端未核验保留。docs/RPCCR_CAPTURE_SWITCH_V1167_REPORT.md。
+
+- 用户下一步：V1168固定三保存捕获出口，局部XY坐标箱±.0001/yaw±.0001及其余完整状态记忆精确；50位区间含STOP/CAPTURING双后继及稳定矩阵卷积/小增益完整2200刹停后备，不把有限角点当连续证明、不宣称实际捕获后必立刻停车。固定模型条件/显式数值裕量非全平台形式证明，原模型误差支持与全路线未证；600s软件/CPU2空闲/锁/2GiB，旧物理窗闭、不自动三路线24。协议experiments/v1168_branch_union_inclusion/PROTOCOL.md。
+
+- V1168局部双分支/完整后备6/6过，core1.7054s，raw最低.263971357>原.243534210，目标上界最大.245294383；50位区间含完整8状态5记忆，原局部XYZ±.0001箱，完整2200刹停稳定矩阵卷积/小增益最大.000285081。Cpp/Python各13266，最大7.05e-18，48源SHA/保存审核/3负例过；准备前12区间计算单列，冻结后6像逐位回建，不重跑点轨迹。固定模型实数包含与数值裕量非全平台机器形式证明，CAPTURING像的后备可停车不代表原策略后续切换已证；实际W/全程仍未证，physicalfalse，0新模型MuJoCo训练。下一连续多步捕获到终端集合，不再普通网格；旧窗闭/guard原字节/锁空闲/active null，远端未核验原件保留。docs/RPCCR_BRANCH_UNION_V1168_REPORT.md。
+
+- 用户要求多跑几关解决一步：V1169同版本四关软件接力，完整13维区间旧六组回核→原局部箱连续混杂捕获最多32步→所有可能STOP出口完整2200尾→分支拓扑/记忆/来源独立保存审核。原模型控制目标阈值不变，冻结前0状态映射/0点传播；900s软件、CPU2空闲/锁/2GiB，自动零模型封账，无新物理窗/三路线/24。协议experiments/v1169_capture_terminal_chain/PROTOCOL.md。
+
+- V1169四关接力闭批：local_capture_terminal_passed=True，gates=4/4；根最迟捕获步[2, 3, 2]、完整2200停车出口10；计数{"analytical_python_native": 22007, "analytical_cpp_native": 22007, "interval_maps_completed": 13, "interval_maps_reconstructed": 7, "new_physical_models": 0, "new_mujoco_native": 0, "training_updates": 0}。固定模型/原局部集合，区间连续归纳非有限采样证明；源不变True，实际W/全程仍未证/physicalfalse。旧窗闭、guard原字节、active null；报告docs/RPCCR_CAPTURE_TERMINAL_CHAIN_V1169_REPORT.md。
+
+- 用户下一步：V1170完整参考误差合同桥接，原39425实测单步残差转可逆运动学创新→1685等待完整连续初态/原储备净空证据及20步区间漂移回核→原325全部状态记忆请求对实测阶段观测域→独立保存审核。源/任务在新变换/映射前冻结，固定模型/原初态/目标/门不改，900s软件/CPU2空闲/锁/2GiB；全程驱动/首停入集/未来W缺口如实保留，无新物理窗/三路线24。协议experiments/v1170_reference_error_contract/PROTOCOL.md。
+
+- V1170闭批审查passed=True：原39425实测残差转可逆运动学创新，完整时间状态记忆保留；原1685等待连续XY.04球/yaw.035合同按刚体对称性核验，非零漂移使严格恒半径需纳米级增量（非原两米失败原因），原.155门不降。旧325全部2633849状态记忆/请求作实测域必要对照，不当未来W。常规新预测0/区间hold20明确记账/新模型MuJoCo训练0；全程行驶/首停入集及真实误差支持仍未证，physicalfalse。docs/RPCCR_REFERENCE_ERROR_CONTRACT_V1170_REPORT.md。
+
+- V1170闭批后0模型0预测边界幅度补充：FORWARD横向速度最大超出有限观测.000338883434m/s(case19/native2885)，虚拟轮角速率.0142392696rad/s(case3/1723)，低速请求差1.99666443e-5m/s(case3/6101)。属于观测域覆盖差异，非物理失败/非通用误差上界违反；具体值/来源SHA/原结果不改，见docs/RPCCR_REFERENCE_ERROR_V1170_DOMAIN_GAP_ADDENDUM.md。下一优先准备对应实际响应资格和完整行驶传播，无新物理窗。
+
+- 用户下一轮开始：V1171固定三响应输入资格，原静态NS规范初态各2200保持，原case003/019驱动请求2000或低速.0061000，再完整2200停；预测实际激发所需轮角速率/侧速/低速域与原门都须过。源前冻结/600s软件/CPU2空闲/锁/2GiB，首拒绝停，不把软件态传入物理；未开新物理窗/未准备新worker、不自动三路线24。
+
+- V1171固定响应输入准备闭批：all_inputs_qualified=False、saved_audit=True；FIRST_STIMULUS_OR_SAFETY_OR_EVIDENCE_REFUSAL。原NS规范态/旧case003及019固定请求/低速.006，不传送软件态，原控制模型安全门不改；新模型物理0，Python/Cpp=6400/6400，入口worker未准备不冒称可实测，无新物理窗。docs/RPCCR_GAP_RESPONSE_PREPARATION_V1171_REPORT.md。
+
+- V1171输入拒绝后，按用户继续推进新V1172固定48短组件输入设计库；先安全与同时激发rate/lateral，选最短/净空/id，接.006低速及完整停车，一套固定预测输入，不改控制/模型/安全门；.13仅明示新静态组件激励，不改整路.12，0物理窗。600s/CPU2空闲/锁/2GiB，保存资格后另准备真实入口。
+
+- V1172固定48短输入库闭批：combined_stimulus_qualified=False，saved_audit=True，Python/Cpp=0/254400；原V1171拒绝保留。固定NS规范初态/控制/安全门，若.13请求须明示仅新组件激励、身体.13门不降；新模型物理0，新worker/物理窗未开，不冒称实测。docs/RPCCR_SAFE_GAP_STIMULI_V1172_REPORT.md。
+
+- V1172库保存反查确定RATE见证缺少“非零轮角停稳→加速回舵”模式，继续V1173固定双镜像预置400行驶/2200停/旧200请求/2200停资格，原模型门保持，0新物理窗/不自动实测。
+
+- V1173回舵加速前置模式固定双镜像输入资格闭批，rate_qualified=1/2、saved_audit=True；合法行驶置轮角/完整2200停后接原200步，不传送状态，原门不降。新模型物理0，PythonCpp各14400，实际worker/新物理窗未开；保留V1171/1172全部拒绝。docs/RPCCR_RATE_PRECONDITION_V1173_REPORT.md。
+
+- V1174三响应输入固定包closed/qualified=False：rate7200复用、lat5000/low5400新PythonCpp各10400；安全速率预置模式达到.604269679、横向ID36达到.02750655且.13请求仅静态激励、低速.006，不降门/不传送状态。V1171/72全部拒绝及V1173保存后console序列化错误保留，0新物理窗/新worker未准备，下一直接完成固定包真实入口/审计隔离资格。docs/RPCCR_RESPONSE_INPUT_BUNDLE_V1174_REPORT.md。
+
+- V1175低速float接口资格及三组件包最终完成：rate7200/raw.374011893/速率.604269679，lat5000/raw.372002357/侧速.02750655（明示.13静态激励），low5400/raw.374951005/请求.006；三者原NS独立初态/完整停车/原门保持，原件SHA回读。完整本轮Python36600/Cpp285600/新物理0。明确保留V1173保存后consoleJSON错误及V1174整数dtype在C前拒绝；更正原V1174报告硬编码计数为Py10400/Cpp5000、2项完成。真实执行worker/审计隔离资格尚缺、未开新窗，下一直接完成固定输入实际入口不再搜索；docs/RPCCR_GAP_RESPONSE_ROUND_V1175_REPORT.md。
+
+- 用户要求下一轮多核CPU/可选GPU加速：V1176实现最多4独立进程/核心2/3/4/5低优先级完整停车后端，复用固定三输入原每8边界任务，串行/4核完整状态ctrl记忆SHA和门/计数一致性及含启动净计时；物理仍单所有者，不看Stage进程、不保证独占，GPU不另开迁移/训练支线。900s软件/2GiB/原锁，源前冻结，0新物理窗。
+
+- V1176用户多核CPU/可选GPU授权已落实新后端：validated=True，核心2/3/4/5低优先级进程各独立C++全局计数/1线程、完整数组SHA与原门/顺序/计数一致；含启动实测净倍数3.314049947121028，选择four_process。原源不改/不看其他线进程/不保证独占；物理仍唯一所有者。GPU未启计算、不另开迁移支线，0新物理/训练，下一直接补固定三组件实际入口。docs/RPCCR_MULTICORE_STOP_BACKEND_V1176_REPORT.md。
+
+- 用户最新“下一步抓紧时间”接续既定三组件：V1177真实入口/原17,600数据替身调用及22拒绝/原生5拒绝边界完整2200停/四核审核冷启动/监督首失败与6任务3对重复/隔离零模型探针全过，4560依赖/固定任务在模型前冻结。按本次继续指令新立最多90分钟组件窗，rate主/重复→lateral主/重复→low主/重复，首失败停；实际.13/.03/.16/.15、原响应界/全尾重放保持，峰值与模型值的观测域覆盖仅单列非新增物理失败门，未来W仍未证。物理仅run_phase/单CPU2唯一控制者，离线审核4核；不新输入搜索、不自动整路/三路线24、不延期旧截止。
+
+- V1177固定三个静态响应及条件重复物理轮闭批：all_three_pairs=True、reason=FIXED_THREE_COMPONENT_QUEUE_COMPLETE，counts={"models": 6, "new_actual_native": 35200, "own_replay_native": 35200, "analytical_cpp_native": 9715200, "analytical_python_native": 0}；真实/元数据/替身/四核审核分账、旧窗保留、原门不降。实际峰值覆盖模型值单列、非事后放宽门；0新动态目标/三路线24。docs/RPCCR_GAP_RESPONSE_EXECUTION_V1177_REPORT.md。
+
+- 用户要求V1177完后继续推进：V1178直接接新实测主17600残差/可逆创新固定参数回核→原V1163完整恢复每8边界完整2200停/原因果绝对时间四核扫描→名义到达与即时刹停语义核对/独立保存审查，900s/2GiB/旧锁，源前冻结，0新物理窗/不重复组件，发现首拒绝用于定位后备缺口不当实际碰撞。
+
+- V1178新实测17600主记录（重复另计）固定模型单步/创新回建及原5885参考每8完整2200停车四核扫描闭批：audit=True、nominal_stop=737/refused=169，完整名义恢复=True；Python/Cpp=17600/1639000，审核Cpp=4400、新物理0。全参考/即时停语义区分，缺失futureW/formal后继不填True，无新物理窗，不重复已过组件。docs/RPCCR_MEASURED_REFERENCE_BRIDGE_V1178_REPORT.md。
+
+- 用户V1177完后继续：V1178定位169/737即时停车证书拒绝后，V1179明示有限离线物理策略资格，原34723完整控制规范重建→固定5885参考→原条件前向捕获<=600→始终完整2200停，原单WE主全门/审计后一次完整重复。旧formal retained gate保持未证，不拿有限到达追认全后继保证；完整8085保存数组调用/34723历史ctrl精确/4入口负例/首失败与条件重复监督资格通过后冻源，新独立最多90分钟，首失败停，非从头新三路线24。物理单CPU2原隔离锁，0训练/实机/Stage。experiments/v1179_frozen_recovery_native/PROTOCOL.md。
+
+- V1179原保存34723状态完整恢复闭批：pair=True、reason=FINITE_ORIGINAL_RECOVERY_MAIN_AND_REPEAT_COMPLETE、counts={"models": 2, "historical_reconstruction_native": 69446, "new_actual_native": 16170, "total_actual_model_native": 85616, "own_replay_native": 85616, "analytical_cpp_native": 0, "analytical_python_native": 16170}；原源/模型/安全门保持，有限离线策略实测不追认任意时刻停车或全后继证明，不计新三路线24。docs/RPCCR_FROZEN_RECOVERY_NATIVE_V1179_REPORT.md。
+
+- 用户V1179恢复成功后要求下一轮：V1180原WE从规范t0正常导航/本轮测距发现/完整停车→当前域核验后观测库→现场证书刷新8+2200→当前完整状态与本轮联合支持重新传播V1163固定参考→原反馈到达/停车。完整42808保存实测数组替身调用、控制请求精确/整路保存审核5939941Cpp、禁读旧实际控制/未来观测/窗口监督资格通过后冻结，新独立90分钟主全门后完整重复，首失败停。0历史控制用于导航，已知课程开发库非新独立确认；formal retained与V1178停车缺口保持未证，原静态分析总数未插桩如实unknown。物理原隔离单CPU2单所有者，0训练Stage实机，不自动三路线24。experiments/v1180_fresh_recovery_chain/PROTOCOL.md。
+
+- V1180原WE从t0完整因果恢复链闭批：main_repeat=True、reason=FRESH_CAUSAL_CHAIN_MAIN_AND_REPEAT_COMPLETE、counts={"models": 2, "historical_reconstruction_native": 0, "new_actual_native": 85616, "total_actual_model_native": 85616, "own_replay_native": 85616, "analytical_cpp_native": null, "analytical_python_native": null}；导航禁读旧实际轨迹控制传感/规范零态/当前源刷新，已知课程开发非独立泛化；formal retained未证，0新三路线24。docs/RPCCR_FRESH_CAUSAL_RECOVERY_CHAIN_V1180_REPORT.md。
+
+- 用户检查继续时V1180原WE从t0主已过/完整重复审核完成后全门通过。接V1181新900秒纯软件固定两输入转接：旧NS.125名义参考明示新.12与比例延时/原等待停车；EW旧通用源行序在当前V1159模型重新传播，逐原生联合域/状态ctrl记忆PythonCpp/全部原门。旧NS/EW小包未存侧速、raw已归档移出本地，沿原名义lateral=0约定只诊断，不冒称全实际状态或物理准入；两固定功能拒绝均记录，首模型/证据异常停。源前冻结/父闭批guard锁/0新模型物理训练/不自动三路线24。experiments/v1181_remaining_route_transfer/PROTOCOL.md。
+
+- V1181两剩余路线当前模型名义转接闭批：two_sources=False、completed=2、Cpp/Python=24499/24499，新模型物理0；旧NS.125→明示新.12延时，EW原行序/当前模型；不计实际三路线24，旧失败和formal缺口保持。docs/RPCCR_REMAINING_ROUTE_TRANSFER_V1181_REPORT.md。
+
+- 用户要求检查继续，V1180全整路主重复PASS后V1181EW当前模型名义全门PASS；NS新.12参考仅动态时序raw.208629失败，其余门过。接V1182新900秒纯软件只优化初始等待：一1963完整hold/1964离散时序几何提案/只一最优完整模型传播+PythonCpp全statectrl记忆/原全部门，原行驶及停车尾不改，0新模型物理，不自动三路线24，名义侧速约定与未证formal缺口如实保留。experiments/v1182_ns_timing_alignment/PROTOCOL.md。
+
+- V1182南北唯一初始等待修订软件闭批：nominal_pass=True、wait=1067、raw=0.2474118075185168、Cpp/Python=8064/6101；1964相位仅提案/仅一完整传播，原驱动/门不降，0新模型物理，不计实际三路线24。docs/RPCCR_NS_TIMING_ALIGNMENT_V1182_REPORT.md。
+
+- V1183三路线统一反馈批闭：passed=False、reason=FIRST_NATIVE_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE，全部来源与原始证据本地回读；旧成功不填本轮未执行，0新24/训练/实机。docs/RPCCR_THREE_ROUTE_FEEDBACK_V1183_REPORT.md。
+
+- 用户要求抓紧三路线：V1183统一入口六任务已冻结，新增NS/EW生产策略解析替身资格Cpp53230/Python57630/误差<1e-12、隔离软件资格通过；原首NS已初始化1模型但解析缓存缺失在0导航积分处失败，原批FINALIZED保留。V1184唯一入口接续只补V1180同SHA二进制/命名空间，科学route_policy字节相同，追加三个真实软件Reserve五请求预览资格后启动；继承原2026-11-15T21:39:36.740177+08:00及monotonic截止不变，首NS已有6500实际原生进度，后台六任务成功才重复/首异常停，不自动24。原入口初始化单独记账，不混成功。experiments/v1184_three_route_entry/PROTOCOL.md。
+
+- V1184三路线统一反馈批闭：passed=True、reason=SIX_FRESH_NAVIGATIONS_COMPLETE，全部来源与原始证据本地回读；旧成功不填本轮未执行，0新24/训练/实机。docs/RPCCR_THREE_ROUTE_ENTRY_V1184_REPORT.md。
+
+- 用户在V1184三路线六次全门/重复通过后要求下一关，启动V1185固定24当前版本复验：route_policy逐字节保持，原V82810060001–24相位/顺序不换，明确旧前8已暴露并非新未见池；20负例/真实保存安全视图与控制篡改拒绝/解析缓存及隔离资格通过。新独立12h截止2026-11-16T08:42:33.249012+08:00，24t0全过才原序24主，完整主门后固定1/9/17重复；第二获证安全停稳库激活功能拒绝或首次其他异常停，0科学修订/训练实机，2GiB/原始未远端核验不删。已实际通过前三t0及独审，尚0主导航，不报全分母率。experiments/v1185_fixed24_confirmation/PROTOCOL.md。
+
+- V1185固定24当前版本复验闭批：passed=False、main=2/24开始/0成功，stop=SECOND_FUNCTIONAL_FAILURE_FIXED_POOL_STOP；原暴露池非新未见样本，未执行不算失败分母，无自动修补/新池/训练。docs/RPCCR_FIXED24_CONFIRMATION_V1185_REPORT.md。
+
+- 用户要求继续：V1186两个V1185实际失败输入生产入口红复现；当前全状态时刻重传原形状01观测可过、02停车转向空间不足，不能直接删时钟门。整目标当前宽域直接提案两例失败保留；新增前向调整完整认证后两观测源均过、429/484组完整停车合同均过。0模型物理；新目标阶段必须新增实际测距后再建源，不假称已解决新相位全目标。docs/RPCCR_LIVE_OBSERVER_REGENERATION_V1186_REPORT.md。
+
+- 用户继续后V1187当前状态/时刻恢复开发已冻源并通过两真实失败输入完整PythonCpp误差3.78e-15/913停车合同及19负例、真实保存成功域对偶审核和隔离入口；新独立90分钟绝对截止2026-11-15T22:50:52.743965+08:00，原10060001主重复→10060002主重复/至多4从t0导航/首异常停，不自动重开24。已核验main_slot01实际3500原生行驶。机制为当前8状态/侧速/记忆/绝对时刻与本轮域重新传播观测源，实际新测距停稳后再生成目标；不能假称软件观测通过就是完整新相位到达。experiments/v1187_live_recovery_validation/PROTOCOL.md。
+
+- V1187两个原失败槽位当前状态/时刻恢复开发闭：passed=False、reason=FIRST_NATIVE_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE，全部来源与原始证据本地回读；旧失败/未执行不改，0新24/训练/实机。docs/RPCCR_LIVE_RECOVERY_VALIDATION_V1187_REPORT.md。
+
+- 用户要求本夜离线接力，V1189已冻源5690文件/启动，统一新截止11月16日09:00+0800/1794790800；5固定连续目标恢复解析分支，先原两失败槽主重复→条件同版本三路线主重复→条件原固定24，首安全证据异常停、开发首功能停/确认第二获证功能拒绝停，0训练实机Stage。新连续目标在V1187真实36933停稳输入原全门通过、strict raw.255536，生产/独立CppPython误差9.37e-16；固定参考7扰动5过2拒保留，未证formal/W，不声称新未见泛化。旧V1187观测真实已过而目标失败、0完整重放保持；新源审计用该真实轨迹资格并明确不追认旧重放。后台PID457541、首recovery_main_slot01模型入口已核验，2GiB上限，断网自主。不修改任何旧窗口。docs/PHASE_OVERNIGHT_RELAY_20261115_PLAN.md。
+
+- V1189通宵冻结接力闭：passed=False，确认0实际开始/0成功、stop=FIRST_INDEPENDENT_AUDIT_FAILURE，原失败与窗口保持。docs/RPCCR_GOAL_RESTORATION_NIGHT_V1189_REPORT.md。
+
+- 用户检查：V1189首原失败槽实际44533到达.192568m/完整停车/自身44533重放误差0，原终审仅JSON list与tuple参数比较误拒停批；V1190零模型补核完整PASS、429停车证书/1934526Cpp解析/5数值ID篡改拒绝、旧原件SHA未变，原失败不改。按已授权原通宵任务一次V1191审计记录接续，科学/安全/5解析分支/原09:00及monotonic截止不变，复用原主，不新增该主导航，直接recovery_repeat_slot01接剩余60；旧44533/44533和新增分账，首再异常停。后台PID458664已启动，原模型GPU/Stage隔离不变。experiments/v1191_night_audit_entry/PROTOCOL.md。
+
+- V1191通宵冻结接力闭：passed=False，确认0实际开始/0成功、stop=DEVELOPMENT_FUNCTIONAL_FAILURE_NO_DEPENDENT_NAVIGATION，原失败与窗口保持。docs/RPCCR_NIGHT_AUDIT_ENTRY_V1191_REPORT.md。
+
+- 用户明确提高本夜共享8GiB并要求失败固定候选接力。V1191 recovery1主重复全过/误差0，recovery2安全停稳但完整目标源拒绝、全重放独审过后闭批。V1192已锁定共享8GiB/原09:00+monotonic截止、A容量接续/B/C独立候选及严格功能失败分类；首次安全或证据异常全局停、不跨候选拼三路线或24，不新增D。B/C旧仅改引导却同动作的无效方案保存拒绝，新观测截点区间固定后2号真实入口模型软件完整原门过（raw .274154/.333293，模型物理0），冻结/隔离资格通过后已自动转候选B v1194后台；rootPID460975、Bdriver460979，单CPU隔离GPU隐藏/Stage无访问。docs/PHASE_OVERNIGHT_RELAY_20261115_8GIB.md。
+
+- V1194通宵冻结接力闭：passed=False，确认0实际开始/0成功、stop=DEVELOPMENT_FUNCTIONAL_FAILURE_NO_DEPENDENT_NAVIGATION，原失败与窗口保持。docs/RPCCR_NIGHT_AUDIT_ENTRY_V1194_REPORT.md。
+
+- V1195通宵冻结接力闭：passed=False，确认0实际开始/0成功、stop=DEVELOPMENT_FUNCTIONAL_FAILURE_NO_DEPENDENT_NAVIGATION，原失败与窗口保持。docs/RPCCR_NIGHT_AUDIT_ENTRY_V1195_REPORT.md。
+
+- V1197零模型失败源诊断已闭：A2/B1/C1原15提案精确复现；同10段显式minimax约束及20段细分共6求解仍无原完整证书，最好raw .157526/.236386/.179003，原门.243534保持。源/输入SHA、独立PythonCpp全状态控制记忆回读PASS，0模型物理/训练；Cpp总47657950、Python16950，搜索222.089s。确认观察停车点评分缺后续连接测试；拟全状态控制空间候选+后续连接联合筛选，未实施/未开新物理窗，不叫三路线/24通过。docs/RPCCR_GOAL_FEASIBILITY_DIAGNOSIS_V1197_REPORT.md。
+
+- 用户要求开始改，V1198–V1200纯软件改造已闭：V1198入口/记录错误原样保留；V1199单静态路线197时机×4仍全拒。V1200全状态控制空间+均衡相位联合搜索，A2/B1/P1原完整名义源PASS，C1固定45s拒；raw .257992/.245922/.251591，独立PythonCpp全状态控制记忆误差9.99e-16、旧P成功保持。4态静态连接全过但不作动态通过；搜索Cpp10239200/54.634s、独立Cpp38100/Python38100，全部新MuJoCo/物理/训练0。可复用goal_connection入口不含诊断钩子，科学AST同获证源；未替换线上，反馈尾及C1后续连接未齐，不自动物理/三路线/24。REVIEW_PENDING原字节/锁空闲，docs/RPCCR_JOINT_PATH_TIME_V1200_REPORT.md。
+
+- 用户要求下一步开始，V1201中间安全停车点＋后续目标源联合验证已闭：C1/A2/B1/P1完整名义源及反馈4/4、5个计划内完整停车尾、独立PythonCpp全状态ctrl记忆回读PASS；C1整源7600/最低raw.247085，搜索12.941s。原固定28软件旧参考压力仅4名义过、24偏差监视拒绝/其中3几何拒绝全部保留，不混物理24确认。V1202事前固定C1 yaw+/B1 x−/B1 y+/P1 x+从当前同偏差状态再生源，原门不变、源/停车尾/反馈/回读4/4PASS，26.587s；支持当前状态匹配必要性，不证明观测间扰动抑制。两轮Cpp6032608/Python305508，模型物理训练0，源/REVIEW_PENDING保持；生产入口交接及新有界物理复验尚缺，不自动三路线24。docs/RPCCR_REFUGE_ONWARD_V1201_V1202_REPORT.md。
+
+- 用户要求下一关开始，V1203目标执行入口及完整停车交接软件资格完成：固定C1/A2/B1/P1及4偏差对照8例，False控制模式与真实观察表重建True带入模式各8/8PASS，65.022s/64.281s；C1全部完整停车后按当前8状态/控制记忆/负载模式和实际时间再生后续，原全门不降。11入口拒绝＋3新窗口绑定拒绝全过，独立Cpp请求回读最大4.57e-16。一次余时不足的软件模式检查在0传播拒绝，原360s不延长；另列120s纯软件同8例模式资格，科学执行器不改、拒绝保留。Cpp15712400/Python259200，新模型物理训练0；原源码及REVIEW_PENDING保持/锁空闲。新live_entry显式注入新窗口上下文，完整原生独审和隔离物理worker尚缺，不自动三路线或24。docs/RPCCR_GOAL_ENTRY_HANDOFF_V1203_REPORT.md。
+
+- 用户要求多做几关，V1204连续5项准备资格PASS：16份新软件目标独审/14篡改拒绝；原V1195实际36570步/383停车证书及已存全重放原生审计；15工作器拒绝＋5个run_phase真实隔离零模型进程；17接力门；后台禁授权/7授权拒绝/记录PID看门狗及旧真实主重复比较器。总Cpp解析2131000/Python模型传播0，模型物理训练0。资格前同名campaign导入错误0传播保留，改专属文件加载后原任务完成/科学源不改。两暴露槽主→重复→第二槽主→重复已具体登记和后台实现，首失败停/不自动三路线24；新物理截止未选定、APPROVAL与USER_AUTH仍False，未建新ROUND_WINDOW。REVIEW_PENDING原字节恢复/锁空闲。docs/RPCCR_AUDIT_WORKER_V1204_REPORT.md。
+
+- 用户当前明确选择V1204新独立90分钟：首次模型前一次锁定总窗，原槽1主→全门独审后重复→槽2主→条件重复，首失败停，不自动三路线24。五项准备门和全源冻结SHA复核通过；实际截止见runs/v1204_goal_audit_worker/ROUND_WINDOW.json，旧物理窗口不复用，0训练实机Stage/GPU，CPU2低优先级/2GiB/单实例run_phase。
+
+- V1204新90分钟已锁11:44:15.267515–13:14:15.267515+08，首模型/443数组和CPU渲染通过，但Reserve缺运行命名空间解析binary，在0导航/0实际/0重放处首失败封账，初始化1/内部工厂数unknown；助手漏检正常所有者首步路径，原证据和截止保持。V1205供原同SHA binary＋WEST_EAST_STATIC_SOURCE，完整正常owner首步前软件资格PASS；共享fast库旧清单无条目导致首次0传播准备KeyError保留，后新冻结/数值接口通过。V1206仅新命名空间及原截止继承，科学源/任务控制字节不改，确切正常owner首步＋隔离入口0模型全过；两资格Cpp13220/Python57853，0新物理/训练。V1206尚未授权，不擅自重启；须一次入口例外，仍原13:14截止/不足1700秒不启。REVIEW_PENDING原字节/锁空闲，docs/RPCCR_V1204_ENTRY_FAILURE_V1205_FIX.md。
+
+- 用户当前明确批准唯一V1206依赖入口接续，原V1204绝对截止13:14:15.267515及monotonic原值继承，不重开90分钟。原1初始化/0导航/0重放独立保留；新构造另计，原两槽主条件重复4表不变，再异常停、不三路线24。原SHA依赖/全部科学源与新命名空间首步前及隔离资格再核验通过，接续后台启动；唯一截止见两批同值ROUND_WINDOW。
+
+- V1206唯一入口接续已尝试但后台驱动在导入sequence时失败，尚未创建自身ROUND_WINDOW或模型；新增模型/导航/物理重放/解析传播全0，4任务全部未执行。原V1204初始化1/0积分独立保持。按用户“再异常即停”消耗该入口例外并关闭授权，不擅自再启/不延期；REVIEW_PENDING原字节/锁空闲。原因是新命名空间漏打包驱动依赖，完整驱动CLI检查缺失；后续仅零模型诊断与封账。
+
+- V1206接续失败复盘：漏打包sequence、以及审计CLI需显式父审计绑定；此前只测正常owner首步与worker，漏测完整campaign启动。V1207待审软件包增加相同源接力门/绝对文件审计绑定；首次输出命名映射0传播错误和原冻结快照保留，仅修正软件包输出根绑定。现完整3个实际CLI命令均导入成功并在各自预期拒绝门停止，正常owner首步前/隔离worker亦过，Cpp4405/Python28924、新模型物理0。当前V1204/V1206均停止，V1207物理未授权，无后台物理实验；不自动第三次接续、不延原13:14:15截止。docs/RPCCR_V1206_DRIVER_IMPORT_STOP.md。
+
+- 用户要求修复后推进24并明确先只完成原13:14截止内复验，24窗口另议。V1207本次工作器OpenGL导入glGetError错误，实际/重放0、初始化unknown原样保留，已首失败封账/撤权/REVIEW_PENDING锁空闲。助手启动遗漏进程前OSMesa LD_LIBRARY_PATH；V1208同隔离真实CPU GLContext红复现/唯一环境修正绿过，0模型积分。V1209同科学源四任务命名空间＋启动环境SHA核验，完整owner首步/隔离正负入口/4实际CLI全过，源冻结回读；尚无物理授权/窗口，不自动再启或延期，原V1204/V1206错误保持。docs/RPCCR_V1207_RENDER_ENTRY_V1209_FIX.md。
+
+- 用户明确批准V1209仅启动环境接续、原截止不变。已按已验证启动前OSMesa库路径和库SHA启动launch.py，登记主PID535638；原13:14:15.267515绝对/monotonic截止不重开，原两暴露槽主条件重复，首再异常停。用户已选先仅完成原截止内复验，24窗口另议；不自动三路线24。源/算法/门保持，CPU2单实例GPU隐藏。查runs/v1209_complete_runtime_entry/HANDOFF.md与实际COMPLETION，勿重复启动。
+
+- V1209已正常闭批TWO_EXPOSED_SLOTS_MAIN_REPEAT_AUDITED：原两个暴露失败槽主及完整重复4/4全门，目标.267996/.261048，最低实际.272956/坏接触0，两组完整状态ctrl/mocap/time误差0；真实发现停稳→当前态中间停车→新观测后目标再生→到达/停车。实际184310/自身重放184310/4模型，解析总unknown不填0。原V1204/6/7操作失败分账保留，本批非新三路线/24。全源与全部必要本地原件SHA回读，远端待核验不删；REVIEW_PENDING/锁空闲/撤权，不自动新物理，24窗口另议。docs/RPCCR_CURRENT_GOAL_PHYSICAL_V1209_REPORT.md。
+
+- 用户要求下一步，V1210同版本三路线统一入口已冻源，科学0变更：WE获证V1209链＋NS/EW原V1184策略，显式当前窗口/审核分派。3真实保存t0首步前、旧NS23591/EW42034原生独审分派、4实际完整CLI、隔离正负entry、6任务/双时钟门全过，Cpp66445/Python81094/新模型物理0，资格23.343s。3源+binary SHA冻结，源码不变资格复用。新90分钟6任务已准备但未授权、无window/后台物理；旧13:14V1209已封账不复用，24另议。docs/RPCCR_THREE_ROUTE_COMPATIBILITY_V1210_PREPARATION.md。
+
+- 用户明确选择启动新的90分钟三路线回归，V1210已后台PID541361，首次模型前新双时钟一次锁定2026-11-16T13:01:11.512220+08:00至2026-11-16T14:31:11.512220+08:00，旧V1209及所有旧截止保持。固定NS主重复/EW主重复/WE主重复，独审与全重放通过才后继，首异常停，0科学修订/不自动24。启动前全冻结源码/运行依赖SHA与执行锁核验通过，正确OSMesa启动环境，CPU2idle单物理实例。运行仅查本轮紧凑记录，不重复启动或改冻结源；查runs/v1210_three_route_compatibility/HANDOFF.md最新。
+
+- V1210三路线兼容性回归闭批：passed=False、reason=FIRST_WORKER_FAILURE；旧V1209两暴露失败槽开发4/4保持，新24未启动。docs/RPCCR_THREE_ROUTE_COMPATIBILITY_V1210_REPORT.md。
+
+- 用户检查V1210：已首失败封账，NS/EW主重复4全过/误差0；WE实际到达.169516m并停稳、物理最低.276985坏接触0，但FULL_EXECUTED_GOAL_PROOF失败，WE自身重放0/独审未做、重复未执行、24未启。V1211零模型保存数组回读明确实际proof全过raw.248076，影子静态full_raw_geometry/terminal_cycle raw.226949<原.243534，终端误差.012570m/航向.000628均过；不能说车无法到达或降低门补成功。模型/积分/解析状态传播0，诊断脚本命名遮蔽inspect准备错误0传播保留后更名。下一候选准入前移完整反馈/影子与终端余量仅建议、未实施/未新物理；旧14:31截止闭批不复用。docs/RPCCR_V1210_TERMINAL_SHADOW_DIAGNOSIS.md。
+
+- 用户下一步/继续：V1212原参考提前红拒绝成功，但后验准入/终点内部/短双分支/49尾转角尝试未全过；60s正例在固定资格少8扩展墙钟拒绝，旧源/失败保留。V1213改固定240direct/3000onward工作+30/120s保护，当前实测与连续影子8态/记忆/模式共同扩展+完整反馈影子准入；3真实保存交接全过raw反馈.246618/.247116/.248686、影子.250951/.247986/.250493，CppPython误差<=1.11e-16、0影子重置，15482800Cpp/86000Py/92.513s，0物理。V1214实际执行函数3解析接口/原核心及新独立Cpp准入审核全过121.703s/4篡改拒绝；3t0首步、4CLI、隔离正负entry/NS-EW旧实际审核回读23.067s全过。WE主重复优先再NS/EW六任务已冻源，准备新90min但未授权/无window，不自动24；旧V1210failed/14:31截止封账不复用。docs/RPCCR_FIXED_WORK_SHADOW_V1213_V1214_PREPARATION.md。
+
+- 用户明确批准V1214新的90分钟三路线复验。全源/运行依赖/资格及空闲执行锁核验后launch.py后台PID552854；新根2026-11-16T13:49:02.196568+08:00至2026-11-16T15:19:02.196568+08:00双时钟一次锁定，旧V1210failed/14:31deadline保持。固定WE主重复优先→NS主重复→EW主重复，原任务/相位/场景/门；仅WE新固定工作量反馈连续影子准入候选，首异常停、不自动24。全部物理run_phase单CPU2idle/GPUhidden/CPU渲染/2GiB，Stage/训练实机0。查runs/v1214_shadow_route_integration/HANDOFF.md最新，禁止重复启动/改冻结源。
+
+- V1214三路线兼容性回归闭批：passed=False、reason=WORKER_EXIT_FAILURE；旧V1209两暴露失败槽开发4/4保持，新24未启动。docs/RPCCR_THREE_ROUTE_COMPATIBILITY_V1214_REPORT.md。
+
+- 用户检查V1214：初始化1/实际20160/重放0，正常发现停车后恢复import旧B57cachedadmission不含preview，首异常封账WORKER_EXIT_FAILURE，余5未执行/24未启，原15:19:02截止不复用。非新算法物理失败，助手干净进程软件资格漏真实启动缓存污染。V1215私有package相对导入+绝对SHA，4科学模块函数类AST同V1213；真实旧admission红复现与两类缓存污染绿例均在普通及只读Phase隔离通过，旧模块对象不动，模型积分解析传播0。尚未完成新worker/audit全装配，不自动重启；guard/锁/授权已恢复关闭。docs/RPCCR_V1214_IMPORT_COLLISION_V1215_FIX.md。
+
+- 用户要求加速修复运行：V1216私有完整运行包准备通过，4科学函数类AST同V1213/审核函数AST同V1214，绝对SHA+私有相对导入，车辆构造前预绑定。真实旧B57+6通用名污染的两加载顺序在普通/只读隔离4例完整owner全过；私有执行器原WE解析10600完整执行与原资格trace误差0，核心/独立准入审核全过。只修审核connection显式绑定后复用执行数组，无重求解；observer缺显式路径/检查器不存在R字段/审核导入准备错误均保留。3t0/4CLI/隔离正负entry/NS-EW旧原生审核通过23.115s，66445Cpp/81094Py；2worker独立零模型并行，物理仍0/未授权。准备仅一次原V1214绝对monotonic15:19:02接续，不重开90min；再异常停、不自动24。docs/RPCCR_PRIVATE_RUNTIME_V1216_PREPARATION.md。
+
+- 用户明确选择V1216“只保留修复，暂不启动模型”。已登记USER_HOLD_DECISION/授权False/APPROVALFalse，无V1216ROUND_WINDOW或实际车辆输出，新模型积分0。旧V1214原15:19:02及全部失败保持；不自动启动/接续/新窗口/24。REVIEW_PENDING原字节、执行锁空闲，修复与资格保留待审。
+
+- 用户在新独立90分钟WE优先三路线方案后明确“下一步开始”“继续”。V1217独立新批复用V1216同字节科学包，仅新命名空间/新窗口输出；缓存污染4例、3真实保存t0首步、旧NS/EW独审、4完整CLI/隔离入口、6任务与双时钟及新窗授权正负例全过，资格23.389s/物理0。新5400秒首次模型前锁定，WE主重复→NS主重复→EW主重复，首异常停、不自动24；旧V1216hold及V1214失败/截止不改。准备一次后台启动。
+
+- V1217已后台启动PID563715，首次模型前独立双时钟14:35:42.823720至16:05:42.823720+08，5400秒不延长；首main_WEST_EAST工作器已提交。全部旧窗口保持，按固定六任务/首失败停止/不自动24。
+
+- V1217三路线兼容性回归闭批：passed=True、reason=THREE_ROUTES_SIX_NAVIGATIONS_AUDITED；旧V1209两暴露失败槽开发4/4保持，新24未启动。docs/RPCCR_THREE_ROUTE_COMPATIBILITY_V1217_REPORT.md。
+
+- 用户在V1217三路线6/6全门后明确“好，下一轮开始”，选择新独立3小时/2GiB。V1218固定原24相位顺序、24真实t0→24主→条件固定1/9/17重复；科学包同V1217字节，实际执行/独审仅私有名字调整。4缓存污染、24保存真实t0首步及相位、任务授权/双时钟/全分母重复门、ctrl篡改拒绝和3隔离入口全部通过，资格81.24s/105720Cpp/648752Py/0新模型积分。首次模型前独立10800秒，原失败/窗口保持；第二合格功能拒绝或首次安全证据/其他异常停止，不替补不修补。准备一次后台启动。
+
+- V1218已启动PID571887，独立15:02:39.426510至18:02:39.426510+08，3小时双时钟不延长/2GiB。首真实t0_slot01返回PASS/1初始化0积分；后续24t0全部独审通过才自动主1–24及条件固定重复。运行中不改冻源/不重复启动，原三路线已封账通过保持。
+
+- V1218固定24当前版本复验闭批：passed=False、main=3/24开始/2成功，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；原暴露池非新未见样本，未执行不算失败分母，无自动修补/新池/训练。docs/RPCCR_FIXED24_CONFIRMATION_V1218_REPORT.md。
+
+- 用户明确修复通过继续24项并继续。V1219保存槽3红复现：名义停车仅1.370mm余量，实际10.044mm位置差使下一8步+完整停车拒绝；新原42候选沿途停车余量优先使槽3余量45.312mm，槽1保存输入亦过。完整当前获证停车2200解析步/3拒绝例及整段14000解析步执行器与Cpp误差3.775e-15、独立332证书审核全过，0物理。V1220三路线正常首步/缓存污染/5CLI/3隔离入口及任务截止负例通过。准备缺静态引导/接口索引/重复输出目录零模型错误保留；同SHA运行依赖补齐。新批原槽3主重复→同版三路线六任务全过→条件固定24从槽1，原18:02:39.426510与monotonic336484.411977153不延/2GiB，旧V1218失败不改不混分母。模型仅run_phase CPU2idle/Stage无访问；准备一次后台启动。docs/RPCCR_STOP_RESERVE_V1219_PREPARATION.md。
+
+- V1220固定24当前版本复验闭批：passed=False、main=2/24开始/1成功，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；原暴露池非新未见样本，未执行不算失败分母，无自动修补/新池/训练。docs/RPCCR_FIXED24_CONFIRMATION_V1220_REPORT.md。
+
+- 用户明确下一步并运行至今天20:30，V1221零模型精确计算修复：V1220槽2原300s停车证书超时，保存输入精确选择27.494s全证书通过；共享初始完整停车的词典序上界＋真实边界/尾内点拒绝见证＋精确输入缓存，仅计算改变。槽1/3选中状态控制记忆数组同旧穷举精确，54.860/37.372s；三组42候选淘汰见证与选中全部停车独审通过，假见证拒绝。缓存开关证书/状态全同，源/时间变化拒绝复用；局部0.610→0.263s不称实时。准备顺序/严格界/缓存/尾端尝试超时和夹具打印/域负例错误保留，0新模型物理，解析中断计数unknown。V1222完整3路线首步/污染cache/5CLI/3隔离入口和任务/截止负例资格180.156s全过，继承V1220八开发及4重复误差0和全部来源SHA回读，非新三路线样本。新批原槽2主重复全过后24真实t0/原序24主/条件固定1/9/17，旧成功不混新分母；新独立硬截止2026-11-16 20:30+08(unix1794832200)及事前monotonic锁定，2GiB/CPU2idle/Stage隔离，首开发或安全证据异常停。新选择600s仍在导航1200/物理1500与总截止内；原旧截止不延。准备一次后台启动。docs/RPCCR_EXACT_STOP_PRUNING_V1221_PREPARATION.md。
+
+- V1222固定24当前版本复验闭批：passed=False、main=9/24开始/8成功，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；原暴露池非新未见样本，未执行不算失败分母，无自动修补/新池/训练。docs/RPCCR_FIXED24_CONFIRMATION_V1222_REPORT.md。
+
+- 用户检查并思考下一步：V1222修复槽2主重复均过/完整误差0，24t0全过，WE固定槽1–8全链与完整重放独审8/8成功；NS首槽9CURRENT_FULL_STATE_SOURCE_REFUSED停止，余15主/3固定重复未执行，不能报全24率。原NS开发与新槽9完整保存输入重构V1223精确：同控制SHA，实际停车初位差.234502m/向南.234297m；预测静态.188206<.243534、动态.036830、终端偏.246309>.025，旧NS分别.247412/.247600/.010718过。固定时序控制库不适应新相位造成的实测恢复起点与时钟变化，候选尚未执行；不是本次追踪中途失败。实际prefix净空.279217坏接触0/停稳，自身重放0不可补报独审成功。V1223仅12202Cpp/0模型物理/不改科学；下一NS从当前全状态和原因果域生成完整可执行来源，先旧成功+槽9保存资格再条件t0主重复，当前无模型运行/guard锁已恢复，最新20:30授权不重开旧批。docs/RPCCR_NS_SLOT09_V1223_DIAGNOSIS.md。
+
+- 用户“下一步开始”授权V1224南北当前全状态来源修复：真实保存槽9/原NS完整解析执行及独立控制/准入审核均过7500/8200步，8篡改负例拒绝；新实际live适配用原始真实测距重建因果域+独立完整审核/外部ctrl篡改拒绝通过。V1225三正常首步/缓存污染2顺序/5CLI/3授权截止负例/2隔离入口资格40.655s全过，0新模型物理。NS仅current_goal_source科学变化，WE/EW未改资格按源SHA继承；已冻结6023依赖。新批槽9主重复→原NS主重复四全门/两重复全状态<=1e-8后条件固定24全t0原序主+固定1/9/17，不混旧8成功。统一原今天20:30/unix1794832200及monotonic345324.98546409607，不延期；CPU2idle单实例/2GiB/Stage隔离，首异常停。准备一次离线后台启动。docs/RPCCR_NS_CURRENT_SOURCE_V1224_PREPARATION.md。
+
+- V1225固定24当前版本复验闭批：passed=False、main=0/24开始/0成功，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；原暴露池非新未见样本，未执行不算失败分母，无自动修补/新池/训练。docs/RPCCR_FIXED24_CONFIRMATION_V1225_REPORT.md。
+
+- 用户检查V1225：首NS槽9新源5300步整路及完整停车已执行，实际目标.212403m/最低.279217/坏接触0；末相对参考25.296mm>25mm触发72步捕获，位置降15.298mm但航向.035183888>.035而ACTUAL_REFERENCE_REFUSED首异常停。1模型/20957实际/0自身重放，24未启/余3开发未执行；281来源108488696字节回读FINALIZED/guard锁恢复。V1226零传播保存数组精确复现直接航向门失败，原解析资格capture0未覆盖真实偏差分支；深层捕获动力学原因待实测终端全状态资格，不直接归因规划或抢控制，不降门/不重启旧批。docs/RPCCR_NS_TERMINAL_CAPTURE_V1226_DIAGNOSIS.md。
+
+- 用户V1225闭批后明确“下一步开始”。V1227固定实测末端原捕获法75解析步红复现航向门；按原25mm终点合同8补偿+2200完整停车，末24.114mm/最大航向.003469，原门不降，独立Cpp4416及ctrl篡改拒绝全过。仅末端修复不足，旧实际prefix保守动态raw.241492<原.243534负例保留；新NS搜索/完整反馈影子增加20mm名义余量至REQUIRED+.022，槽9/原NS完整解析7600/8200全过raw.266315/.267671及8篡改拒绝。实际goal接口新增当前全状态/连续影子完整末端预检，独立Cpp全数组重建资格通过。V1228实际接入及新终审/3正常首步/缓存2顺序/5CLI/3授权截止负例/2隔离入口全过40.953s；任务根登记错误在0模型预检拒绝保留修正。源6129依赖全冻结回读，0新物理准备完成，准备一次后台启动。槽9主重复→原NS主重复4全门/2重复才条件24，WE/EW未改科学资格继承不当新样本；原20:30及monotonic345324.98546409607不延/2GiB/CPU2idle/Stage隔离/首异常停。docs/RPCCR_NS_TERMINAL_RESERVE_V1227_PREPARATION.md。
+
+- V1228固定24当前版本复验闭批：passed=False、main=6/24开始/6成功，stop=INSUFFICIENT_REMAINING_FOR_COMPLETE_TASK_AUDIT；原暴露池非新未见样本，未执行不算失败分母，无自动修补/新池/训练。docs/RPCCR_FIXED24_CONFIRMATION_V1228_REPORT.md。
+
+- 用户继续思考下一步实验：V1228因完整任务/独审余时不足闭批，24t0全过/当前确认6主全成功0功能失败、四NS开发及两重复全过，原20:30与旧closed不变。V1229仅零模型接续计划/检查点资格：6129冻源及4716来源全SHA回读、原24池清单/6原主记录/24t0/两开发重复精确通过；原序剩7–24共18主+固定1/9/17，不重跑已过6或换算法/相位/门。拟独立3h需用户明确新窗后才锁定，不延旧窗，无runtime新启动/模型传播。保留原V1228封账，以同科学同预注册池跨窗完成报告父6+接续18，非24新未见样本。原证据917962307字节+后21任务可能超2GiB，先GitHub必要记录备份/流式SHA回读再清理，默认共享2GiB不擅增。experiments/v1229_fixed24_resume_preparation/PLAN.md。
+
+- 用户明确接受新独立3小时接续“好，开始下一步的实验”。V1230保持V1228科学0修订，原6已审核主/24t0/4NS开发及2精确重复检查点继承，新增只原7–24与主门后固定1/9/17；父V1228closed/20:30不改，合并仅称同科学同预注册池跨窗完成。GitHubRelease父10767成员压缩与每解压SHA回读后按清单清理父大件，保留main1完整重复基线；共享父+新2GiB/256MiB任务储备。接续源码、控制包、原模型/输入SHA不变，新增计数/基线/三正常首步/缓存2顺序/完整CLI和三隔离入口资格通过，准备一次模型前锁定10800秒双时钟离线后台启动。experiments/v1230_fixed24_resume/PROTOCOL.md。
+
+- V1230同科学原固定24跨窗接续闭批：passed=False，父6主继承/新增4主，合并9/10已执行，原24全分母=False，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；原V1228闭批及20:30不改，不冒称新池/独立新样本。docs/RPCCR_FIXED24_SAME_SCIENCE_RESUME_V1230_REPORT.md。
+
+- 用户V1230闭批后要求思考并继续推进，V1231仅零模型固定槽10原搜索精确复现：3000扩展/20相位各150/3965节点/12638000Cpp/终端尝试0/20开放队列非空，未到120s或节点上限；最接近1.328477m，开放相位12–14分数48而差分支55–57仍平均预算。两完整诊断各12638000Cpp（共25276000）/0物理，tuple-JSONlist比较误判原错保留，保存JSON逐字段精确回核通过未第三次传播。V1232准备只共享最优frontier调度，原动作/相位/3000总量/score/.022余量/全部门不改；先槽10/9/原NS资格，不自动物理或继承原9为新科学分母。docs/RPCCR_NS_SLOT10_SEARCH_V1231_DIAGNOSIS.md。
+
+- V1232纯共享全局优先0物理资格失败：3000全部首相位、终端0，保留。V1233各原20相位先20再共享最优frontier，槽10仅855扩展/21.348s/3641800Cpp完整源和8600执行独审过，槽9也过，但原NS回归无源失败，因此未物理。V1234保留原平衡3000/120s源码及成功选择，只有明确全部3000无源才一次V1233后备3000/120s，异常/部分/墙钟不后备，最坏6000扩展单列预算。三真实保存状态完整执行/原核心及独立准入全过：槽10原3000+后备855/8600步/raw.271374，槽9原支7600/raw.266315，原NS原支8200/raw.267671；12时钟状态记忆篡改拒绝，原两成功源/全执行/ctrl/记忆/连续影子数组逐字节原样。准备0新车辆物理，新科学不重启V1230或自动继承旧9确认分母。V1235六导航开发后台入口资格准备中，尚无物理授权或新window。docs/RPCCR_NS_SEARCH_ALLOCATION_V1231_V1234_PREPARATION.md。
+
+- V1235实际live用槽10真实测距重建域+新完整目标/连续影子/末端独审全过8600解析步，外部ctrl篡改拒绝。全后台入口资格10.660s通过：6248源冻结/回读、两缓存顺序、4有限后备分支门（部分/源异常不后备，成功保留）、3授权/截止负例、两真实t0正常首步、4CLI拒绝与3隔离阻断模型入口。无新车辆物理，guard原字节/锁空闲。已明确问用户新独立90min仅槽10/9/原NS各主及成功重复最多6导航、首失败即停、不自动24；等待答复，无ROUND_WINDOW/LAUNCH。原V1230失败及23:30:41闭批不复用。runs/v1235_ns_fallback_development/HANDOFF.md。
+
+- 用户明确同意V1235“启动新的90分钟六任务验证（推荐）”。新独立5400秒，仅槽10/槽9/原NS各主与成功完整重复六任务；首失败或安全证据异常/截止即停，不自动24。模型前再核6248冻源与六TASKJSON/全部资格/guard原字节/执行锁空闲通过，仅更新操作授权后准备一次start.py。旧V1230失败与23:30:41窗口保持关闭，未复用旧科学0授权。
+
+- V1235已一次后台启动PID646705，新独立双时钟2026-11-16T21:15:15.079957+08:00至2026-11-16T22:45:15.079957+08:00/5400秒，首slot10_main进行中；driver/watchdog已核存活。仅六NS开发/首失败停/不自动24，旧窗口不改，运行冻结源不编辑。
+
+- V1235南北有限后备六开发闭批：passed=True，stop=NS_THREE_STATE_MAIN_REPEAT_DEVELOPMENT_COMPLETE，不自动24；docs/RPCCR_NS_RETAINED_FALLBACK_V1235_REPORT.md。
+
+- V1236冻结通宵接力闭批：三路线资格=False、新固定24全门=False，实际主0/成功0，stop=DRIVER_EXCEPTION_OR_DEADLINE；父开发/本夜新增/固定重复分账，明早09:00不延/无自动新候选。docs/RPCCR_FROZEN_OVERNIGHT_V1236_REPORT.md。
+
+- 用户要求开启通宵并明确本夜临时8GiB/远端回读后清理。V1235六开发全过、140998实际+完整重放/三对全状态ctrl误差0，1007来源329656017字节SHA回读FINALIZED。V1236原接力驱动漏开发slot字段（助手资格漏检驱动取值）于0模型0积分首异常停/完整封档，未启动导航。按现有通宵授权一次纯操作元数据V1237接续，仅四开发slot0/方向NOT_CONFIRMATION_DEVELOPMENT，不改科学/任务相位/模型/门/导航名额，原9点及授权monotonic不延；55任务真实campaign AST取值+5缺字段拒绝、父失败/缺归档/重复坏门、截止/源预算负例和三路线首步/两缓存/5CLI/3隔离入口全过44.360s。V1237已后台启动PID650696，先新WE/EW各主重复+继承本晚NS对通过后24真实t0/原序新24主/固定1/9/17重复；不混旧9成功。截止2026-11-17 09:00/unix1794877200、临时父+新8GiB/CPU2idle/GPUhidden/Stage0/断网可运行，首异常停/不冻结后修补或新候选。runs/v1237_night_metadata_entry/HANDOFF.md。
+
+- 用户明确要求本夜V1237结束不论成功失败继续接力，并确认有条件范围。V1238独立等待父driver/watchdog退出及FINALIZED/全成员SHA回读；成功后固定1/9/17各一次附加整路+完整重放独审/对父同槽误差<=1e-8，不计新确认分母。失败输出保存证据诊断；仅精确NS原3000+3000耗尽可接一次6000解析候选，失败输入+三旧成功完整执行/独审及数组保持资格，父缺完整实际失败重放时不新物理。其他未知/安全证据异常不盲修补。原2026-11-17 09:00/monotonic/共享8GiB不延，CPU2idle/GPUhidden/Stage0。3任务实际CLI锁模拟、6拒绝/两真实模块缓存/四合成交接路径资格通过0新模型物理，源冻结后准备一次后台非积分等待器。experiments/v1238_conditional_night_relay/PROTOCOL.md。
+
+- V1237冻结通宵接力闭批：三路线资格=True、新固定24全门=False，实际主12/成功11，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；父开发/本夜新增/固定重复分账，明早09:00不延/无自动新候选。docs/RPCCR_FROZEN_OVERNIGHT_V1237_REPORT.md。
+
+- 2026-11-17用户要求解决槽12并开始下一实验。V1239原最佳路径精确重建0误差、28短/长后继全动态拒绝；旧完整骨架60定时+63细化仍差3.177mm。V1240单段±1s/1400全路提案失败保留0物理。V1241细化完整骨架动作±.25/.5s+当前时间重算，槽12仅184重接提案14.727s得全路，8260完整解析与core/admission/terminal独审过，原.022余量不降；三旧成功7600/8200/8600完整执行及参考/执行/终点数组逐字节不变。13分支/状态负例与独立骨架归属篡改拒绝过。V1242真实保存雷达重建因果域、全live适配/外部ctrl篡改独审过；两原任务正常首步/缓存/4CLI/权限相位截止负例及两真实隔离entry-check6.260s全过。用户明确开始本轮范围，按惯用新独立90min仅原槽12主+成功完整重复（操作有界时长由助手选择，无伪称用户本轮明确回答90），首失败即停/不自动24。旧09:00及11确认成功/槽12失败保持新旧分账，模型前全源冻结，准备一次后台锁窗启动。docs/RPCCR_SLOT12_RECONNECTION_20261117.md。
+
+- V1242已一次后台启动driver11877/watchdog11878，当前slot12_main，2026-11-17 09:57:37–11:27:37新独立双时钟/当前boot，6310冻源SHA全回读。只原槽12主+条件完整重复/首失败停/不自动24。V1241四保存全执行+三独审及旧数组保持、真实雷达live适配/ctrl篡改通过；V1242前置资格6.260s全过、0物理资格。实际新t0模型由run_phase执行，CPU2idle/Stage0/新共享2GiB；旧V1237/8和旧09:00保持。
+
+- V1242槽12完整重接主及重复开发闭批：passed=True，stop=SLOT12_MAIN_REPEAT_DEVELOPMENT_COMPLETE，不自动24；docs/RPCCR_SLOT12_RECONNECTION_V1242_REPORT.md。
+
+- 用户明确继续固定24并接受新3h准备范围/本轮临时8GiB。V1243科学精确V1241/V1242，父槽12真实主重复全过且385成员143663414字节+旧三路线5658成员1295814993字节SHA回读；原WE/EW代码原样、NS原成功优先分支及三旧成功全数组相同建立开发资格，非本批新跑三路线。0旧确认导入，原24清单/相位全t0→全24主→条件固定1/9/17，主>=23/24/路线7/8/方向11/12/所有安全证据和全重复必需。原授权字段缺项在0模型准备拦住、保留修正；51真实driver行+5缺字段负例、父/分母/任务相位截止负例、三正常首步/两缓存/5CLI/三真实隔离entry-check41.181s全过，0新物理。全源码任务资格冻结后准备一次新独立10800秒后台启动，原11:27/昨夜09:00不改；8GiB共享/CPU2idle/Stage0/无自动修订。experiments/v1243_reconnected_fixed24/PROTOCOL.md。
+
+- V1243已一次后台启动driver17051/watchdog17052，当前24真实t0预检顺序进行；新独立2026-11-17 10:48:44.985–13:48:44.985、unix1794894524.9852374/monotonic16301.283138735，6399冻源回读。所有51任务先全t0再原序24主及条件固定1/9/17，0旧确认导入。当前模型执行由run_phase单实例、CPU2idle/GPUhidden/Stage0；8GiB共享/256MiB预留，首安全证据操作异常停止，无自动修补。原V1242闭批和旧窗口保持。
+
+- V1243新固定24闭批：passed=False，开始13/成功12，完整24分母=False，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；0旧确认导入。docs/RPCCR_RECONNECTED_FIXED24_V1243_REPORT.md。
+
+- 用户问V1243是否结束并思考下一实验：实际11:50:20首异常闭批，前12主完整到达/自身重放独审全过（含新槽12），槽13BASELINE_DID_NOT_EXHAUST_FIXED_WORK_NO_FALLBACK，11主+3固定重复未执行。V1244只读当前保存几何0模型0积分0解析推进：静态.263954924低于REQUIRED+.022=.265534210，差1.579mm；原预测门.243534210仍过，所有等待路径均包含原起点，根全拒绝，追加搜索预算无效。具体原因是额外储备的起点准入不可满足，非本次新路线追踪失败；原槽13坏接触0/实际.279217但重放和独审未完成，不能补报全门。下一计划先有完整证书的短恢复段建立满足储备的新入口，再实测重规划整路，显式无根/耗尽/异常终止分类，原安全门不降；当前仅计划不启动新物理，旧13:48不延。experiments/v1244_slot13_entry_reserve_diagnosis/PLAN.md。
+
+- 用户明确“下一轮开始”。V1245固定28短前进+完整停车候选9个满足新入口；V1246显式分段合同（短恢复原安全预测门+2mm、计划交接+44mm、后续整路仍+22mm）从槽13实测全状态/控制记忆和当前原因果时钟保留连续影子，短前进2s/.32+2200完整停→实测重规划→完整目标全流程10600解析/core+分段准入+terminal独审通过。原四成功按代码字节相同/根READY及原分支派发保持，继承原完整保存执行三独审。V1247真实保存雷达全live轨迹已完成；旧单阶段prefix断言错误0物理保留，仅修审核上下文并原轨迹重审，外部ctrl/交接边界篡改拒绝过。2任务正常首步/两缓存/4CLI/权限相位截止负例及两真实隔离entry-check6.497s全过，0新模型物理。用户授权下一轮，助手采用新独立90min只原槽13主+成功完整重复，首失败即停/不自动24，旧V1243和13:48不复用。全部源/任务/资格与旧源前15765证据冻结回读后准备一次后台锁窗启动；新共享2GiB/单CPU2idle/Stage0，原实际.15等安全门不降，新增短段合同单列。experiments/v1247_slot13_entry_validation/PROTOCOL.md。
+
+- V1247已一次后台启动driver28756/watchdog28757，当前原slot13_main，2026-11-17 12:15:40.404984–13:45:40.404984新独立双时钟，6378源/任务/资格/旧源前缀见证全SHA回读。只原槽13主+条件完整重复/首异常停/不自动24；源科学V1246明确短恢复2mm/计划交接44mm/后续整路22mm额外储备，原实际.15等完整安全门保持。新2GiB共享、CPU2idle/GPUhidden/Stage0；旧V1243闭批和旧窗口不变。保存态全10600+core/分段admission/terminal及真实雷达live/ctrl与交接边界篡改拒绝资格已过，旧审核单段断言0物理保留后同轨迹重审。
+
+- V1247槽12完整重接主及重复开发闭批：passed=True，stop=SLOT13_MAIN_REPEAT_DEVELOPMENT_COMPLETE，不自动24；docs/RPCCR_SLOT13_RECONNECTION_V1247_REPORT.md。
+
+- 用户继续要求固定24全部完成。V1248科学精确V1246/V1247，0新修订；槽13实际主+完整重复误差0父399成员150640793字节及旧三路线5658成员全SHA回读。旧9–12四NS成功输入均READY调用原分支；原三路线按源码/分支等价继承，不声称新跑三路线。全新24t0/原序24主/条件固定1/9/17，0旧确认或开发导入。51真row+5缺字段/父与分母/权限相位截止负例、三owner首步/两缓存/5CLI/三真实隔离entry-check48.909s全过，0新物理；完整来源任务资格冻结后准备一次独立10800秒后台启动。沿同次验收已明确8GiB，旧已闭窗口不延，Stage0/单CPU2idle/单锁/不运行中调参修补。父V1247旧标题slot12笔误另立记录更正，不改其归档和实际slot13证据。experiments/v1248_entry_recovered_fixed24/PROTOCOL.md。
+
+- V1248已一次后台启动driver33057/watchdog33058，2026-11-17 12:45:19.879585–15:45:19.879585新独立10800秒双时钟，6467源任务资格全SHA回读。24实际t0预检顺序进行（首项过/第二进行）；先全t0再原序1–24主/条件固定1/9/17，0旧确认/开发导入。科学精确V1246/V1247，原三路线按未变成功分支及新槽13实际主重复准入，不称新跑三路线；临时8GiB/单CPU2idle/GPUhidden/Stage0，首安全证据操作异常停，无自动修补或新池。原V1243、V1247及旧截止保持。
+
+- V1248新固定24闭批：passed=False，开始17/成功16，完整24分母=False，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；0旧确认导入。docs/RPCCR_RECONNECTED_FIXED24_V1248_REPORT.md。
+
+- 2026-11-17用户继续剩余EW8项。V1249同原动作在旧开发/槽17真实停车完整状态复现旧PASS/新拒绝，位置差.518658m/航向-.248859rad/时钟-13s；不是新实际碰撞。V1250当前前进6000扩展无源；V1251十二固定退让十局部可证，但前三退让后全前进均6000无源，最好剩1.344545m，75866400Cpp解析/0物理。V1252当前完整有符号骨架局部修复540完整候选后精确部分14590步触发-201停车转向边界拒绝，10683276Cpp/0物理；原错误保持，完整优化候选池未全保存，不能声称全部候选可复核。发现旧EW本身raw.255245低于新套用NS+.022门.265534，不能混称原EW门。新V1253只保存输入：有符号三点连接旧课程入口后从完整当前态推进原EW余程，固定4种初值/总1000传播/600s，经原EW全部门及额外2mm，22mm单独报告；未新增车辆导航/训练/Stage，不自动24。旧V1248仍16已成功/17尝试，18–24与三固定重复未执行；旧截止不延。docs/RPCCR_EW_SLOT17_DIAGNOSIS_20261117.md。
+
+- V1253四个完整三点连接均接回旧EW入口，但80种当前域全余程全拒绝：静态.253–.257及目标上界.138–.140通过，动态最好.056804；不能只归咎跟踪。925拟合+80完整余程/9711428Cpp/0物理，无异常。V1254通用source名导入冲突0解析保留；唯一模块名V1255算法逐字节相同，完整安全观察交接9881解析步(含额外2200停)及连续影子通过，raw.266381952/末周期.295799941、Cpp/Python全状态ctrl记忆误差2.22e-16；4入口负例、额外独立5真实验证器篡改拒绝过。Cpp1932601+独审9881/Python19762，0新车辆/物理/真实新传感/训练/Stage；1976scan仅解析接口。新实际EW观测刷新live及完整独审入口仍待资格，不能报槽17或24成功；V1248仍16成功/17尝试、18–24未执行，原闭批截止不延。本次软件全闭/guard原字节恢复/Phase锁空闲/当前REVIEW_PENDING。docs/RPCCR_EW_SLOT17_DIAGNOSIS_20261117.md。
+
+- 用户“下一步开始”后，V1256实际EW观测交接候选及独审已冻源：槽17当前真实雷达域重建/9881完整组件及缺新实际传感余程0步拒绝；旧EW真实雷达域下20514完整余程保留加载模式通过，八外部状态ctrl记忆请求篡改真验证器拒绝，真实旧EW全原生安全审核通过。正常实际调用首指令、两缓存顺序、五授权/相位/截止负例、四禁用CLI及两真实隔离entry-check8.811s通过，准备0新物理。最后打印NumPy bool摘要错误保留，所有正式资格文件已写出并独立回读，仅修打印未重执行。准备一次原槽17主+成功完整重复，助手按惯例新独立90min/2GiB/CPU2idle，原闭批不延，不自动24；模型前全源任务资格SHA回读通过。experiments/v1256_ew_actual_observation/PROTOCOL.md。
+
+- V1256已一次后台启动driver51826/watchdog51827，2026-11-17 16:26:47.825826–17:56:47.825826新独立双时钟/当前boot，6532源任务资格SHA回读通过。原slot17_main由run_phase单CPU2idle执行，启动核验两登记PID存活，实际STATIC_00已11500原生；主任务全功能/自身完整重放/独审通过才slot17_repeat。首次失败/安全证据操作异常停，2GiB/无自动18–24/无运行中修补或延期；旧V1248及旧截止保持。runs/v1256_ew_actual_observation/HANDOFF.md。
+
+- V1256原槽17实际观测交接主/条件完整重复闭批：passed=False，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION，不自动24；docs/RPCCR_EW_ACTUAL_OBSERVATION_V1256_REPORT.md。
+
+- 用户要求检查并尽快完成24。V1256因真实Adapter缺parked_target在20220原生停，组件实际0/自身重放0，实际raw.279430518/坏接触0，原批完整归档保持未过；系助手代理预初始化掩盖入口字段的资格漏检。V1257仅停稳且无活动模式时显式初始化默认None，ctrl/积分/负载及所有算法门不改；精确缺字段红例0步复现、3模式/记忆负例及组件所有执行数组逐字节不变、完整旧EW余程/八外部数组拒绝与真实旧全原生审计通过。任务根目录名复制错误在0模型操作检查拒绝保留修正；两实际隔离入口/五授权负例/缓存/首指令/四CLI全过8.858s，源任务资格全冻结回读，准备一次新独立90min仅原槽17主及成功重复，旧V1256闭批和17:56:47不延，不自动科学改参。
+
+- V1257原槽17实际观测交接主/条件完整重复闭批：passed=False，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION，不自动24；docs/RPCCR_EW_ACTUAL_OBSERVATION_V1257_REPORT.md。
+
+- 用户要求加快并可多CPU/GPU。V1257实际9881安全观察后真正新传感使EW完整源首过并续7178，到第二停车门实测.239839<REQUIRED.243534拒绝；名义.247779仅4.245mm储备，实际位差9.823mm/航向4.095e-6在原跟踪门内，原37279实际/0自身重放/坏接触0/最小.275665保持不追认通过。V1259零物理164候选找到新停车储备，V1260四低优先级spawn CPU2/3/4/5固定6工作33.595s/15449077Cpp，5完整解析可行，目标仍原.45内生成当前几何安全末端。V1261完整组件9881+新余程20161保存态执行及独审通过，名义raw.265560/第二停车.315614/末周期.319332，9外部状态控制记忆请求和降储备负例拒绝。独审局部变量遮蔽错误保留，原完整执行不重跑、补审核过。两缓存/首指令/五授权负例/四CLI/两隔离入口8.699s全过0新物理。准备新独立90min原槽17主+成功完整重复；V1258原51任务固定24全部操作资格47.913s通过，只能父真实全门/FINALIZED及成员回读才另独立3h/8GiB开启，旧前16不导入分母。V1262仅一次零模型有界离线等待接力，8纯门拒绝例过，不失败接新候选，不查看Stage进程。全部源任务资格模型前冻结。
+
+- V1261已一次后台启动driver60505/watchdog登记，2026-11-17 17:22:06.630635–18:52:06.630635新独立90min双时钟/当前boot，6534冻结源SHA全回读。原slot17_main实际STATIC_00已7500原生；四核只有限解析候选，物理单CPU2/单Phase锁。V1258原51任务/完整主门和固定3重复已全部条件资格，6609来源冻结，须V1261真实主重复全审/源和FINALIZED成员回读才由V1262零模型有界等待器pid60515一次开启；确认根另3h/持续固定24明确8GiB，不导入旧16。父或启动任何失败停，无后台修补/延期/新种子/自动对照训练；无需实时对话监控，断网本机继续。runs/v1261_ew_reserved_validation/HANDOFF.md。
+
+- V1261原槽17实际观测交接主/条件完整重复闭批：passed=False，stop=FIRST_INDEPENDENT_AUDIT_FAILURE，不自动24；docs/RPCCR_EW_ACTUAL_OBSERVATION_V1261_REPORT.md。
+
+- 用户检查：V1261实际slot17主已完整到达并停稳，剩.047410448m，50262实际+50262自身重放全qpos/qvel/ctrl/mocap误差0、最低实际.275664625/坏接触0。独立原生/两次原因果重建/组件/余程全部核验并已保存FINAL_INDEPENDENT_AUDIT PASS，但末尾CLI print(json.dumps())遇NumPy bool出错，驱动audit_rc1按原首异常闭批；旧NOT_PASSED/源/归档保持，repeat未执行，V1262已闭/确认0启动。V1263仅JSON/AST/全归档成员SHA+原冻源回读0模型物理解析，确认错误仅摘要打印，不追认旧驱动通过或自动重启。docs/RPCCR_SLOT17_ACTUAL_SUCCESS_AUDIT_CLI_20261117.md。
+
+- 用户明确开始只修摘要输出的接续并要求以后加速。V1264仅原slot17_repeat新模型任务，复用V1261已经功能/自身重放/独审内容全过的主作显式父基线；原父NOT_PASSED/CLI_rc1保持。修改后完整真实主审核CLI隔离重跑0物理，退出0/37723解析/原证据字节未改且所有结论相同；两缓存/首指令/五权限期限负例/四CLI及唯一重复隔离入口7.539s全过。科学控制/搜索/动作/模型/审计语句精确原样，仅摘要规范JSON输出；沿V1261原18:52:06.630635双时钟，不重置90min。全部源任务资格SHA模型前冻结，准备一次补重复，成功全重复/全审/归档后条件固定24另批3h，失败停。四核数学解析继续、真实物理单实例，Stage隔离/训练0。
+
+- 用户持久要求“以后实验都要加速”：记录docs/EXPERIMENT_ACCELERATION_POLICY_20261117.md。默认独立解析候选四低优先级spawn CPU2–5、固定顺序/准确计数/缓存域/只重验受影响资格；实际模型单实例和全门保持，GPU仅有经过验证实现时启用，不虚称提速。禁止查看Stage进程/资源。后台有限条件接力，健康进度不持续对话监控。V1264已一次启动pid62514补唯一未执行完整重复，继承原18:52:06.630635不重置，原成功主不重跑；新固定24V1265科学不改、摘要CLI统一规范JSON，待真实重复全门后另根3h。
+
+- V1264原槽17实际观测交接主/条件完整重复闭批：passed=True，stop=SLOT17_MAIN_REPEAT_DEVELOPMENT_COMPLETE，不自动24；docs/RPCCR_EW_ACTUAL_OBSERVATION_V1264_REPORT.md。
+
+- V1264原槽17唯一完整重复已通过：新增50262实际+50262自身完整重放/全独审，和V1261已通过内容的主长度/全qpos/qvel/ctrl/mocap成对误差0，226来源99742472字节SHA回读FINALIZED。原父末打印错误/CLI_rc1/NOT_PASSED保留不追认；跨操作主+重复开发全门已完成，父主不重跑，原18:52:06不延。V1266有限零模型等待器pid63175已一次启动，准备只执行V1265原固定51任务确认操作资格/冻结/一次启动，另3h/8GiB/0旧样本导入。用户持久加速约定已写文件，真实物理单实例/四核解析/Stage隔离。
+
+- 用户本轮继续后，V1264只补原slot17完整重复50262实际/自身重放全门及全状态ctrl成对误差0，原主不重跑、原父打印错误NOT_PASSED保留、原18:52截止不延。V1266零模型接力已一次成功开启V1265(driver63318/watchdog登记)：2026-11-17 17:40:21.174940–20:40:21.174940新独立3h双时钟；48.897s操作资格/6633来源冻结及真实父新旧全归档SHA门过。原24真实t0进行后原序全24新主/条件固定1/9/17完整重复，0旧16及开发导入分母；8GiB/CPU2物理单实例/四核解析/Stage隔离/首异常停，无自动修补/延期。runs/v1265_ew_cli_fixed24/HANDOFF.md。
+
+- V1265新固定24闭批：passed=False，开始9/成功8，完整24分母=False，stop=FIRST_INDEPENDENT_AUDIT_FAILURE；0旧确认导入。docs/RPCCR_RECONNECTED_FIXED24_V1265_REPORT.md。
+
+- 用户明确必须继续完成24。V1265原1–9功能到达/自身完整回放0误差，但槽9NS全审核调用向新分发器传output_path触发TypeError，助手真实接口资格漏检；原批9执行/8全门及NOT_PASSED保持，不是车辆退化。V1267精确红例复现后透明kwargs修复，同原23185保存轨迹全部NS原生/因果/准入/末端独审过，7.308s/47800Cpp/0新物理，原件不变。V1268科学精确V1265，原24t0+9同科学主显式继承（槽9补核单列），只原10–24共15新主及固定1/9/17完整重复；原更旧16不混入。恢复索引/全父成员SHA、18真driver行/5缺字段/分发实调用/权限相位期限/缓存/首命令及两实际隔离entry-check23.558s全过。沿原17:40:21–20:40:21.174940双时钟，不重置3h不延；8GiB共享/四核解析/单实例物理/Stage0访问，源任务资格模型前全冻结，准备一次后台启动。
+
+- V1268已一次后台启动driver70090/watchdog70091，当前main_slot10，9同科学主全门已继承，24t0不重跑；沿原V1265 20:40:21.174940/monotonic根不延，receipt明确new_independent_window=False。只原10–24与固定1/9/17重复，本轮不从1重新开始。槽9接口补核7.308s/47800Cpp/0物理，原父NOT_PASSED错误保持；科学完全V1265，6715冻结源资格回读通过。记录跨操作同科学全分母，不导入旧V1248的16成功；后续只读紧凑状态。runs/v1268_same_science_resume/HANDOFF.md。
+
+- V1268新固定24闭批：passed=False，开始19/成功17，完整24分母=False，stop=SECOND_FUNCTIONAL_FAILURE_FIXED_POOL_STOP；继承同科学父9主/24t0，旧父未过保持。docs/RPCCR_RECONNECTED_FIXED24_V1268_REPORT.md。
+
+- 用户要求统一解决而非逐项补丁并明确下一步。V1269同一17完整形状在三真实域做40完整因果时间平移：17原wait0精确保持；18可行950–1300原生，19可行1350–1800，0新物理。发现原6优化源固定wait0，时间自由度遗漏可被共同时间窗机制改善。V1270动态别名spawn导入失败原日志及部分解析unknown保留，仅读实际Phase锁关联的本资格进程后停止0模型组/guard恢复；V1273稳定可导入原数学源码正常，17名义15449077Cpp已完成但替身缺first_detection在0执行步错误保持。V1274仅资格入口补字段、复用17名义不重搜索，三真实状态完整executor与独立40窗/外部状态ctrl记忆请求等待绑定负例全过：17原20161/wait0及原数组逐字节保持；18共21111/wait950、19共21511/wait1350，51713875新Cpp/125566Python（继承17名义15449077另计，负例部分unknown）/0模型物理，source unchanged。V1271候选原6成功优先、仅完整无源后同一模板40安全等待最大slack选窗，不按slot/seed设时。四任务18主重复→19主重复/两缓存/首指令/五期限权限负例/四真实隔离entry-check11.460s过；全部源资格冻结，准备新独立90min联合验证，旧V1268二失败与20:40旧窗不延。物理单实例/数学四核/Stage完全隔离。
+
+- V1271统一时间窗联合开发已一次启动driver75929/watchdog75930，新独立2026-11-17 19:36:22.863433–21:06:22.863433双时钟；18主已经51308实际/自身完整重放/独审全过，目标剩.060170861m，当前18_repeat，后续19主+重复同源不改参。V1276零模型条件等待器pid76268已启动，父四任务两精确重复及FINALIZED成员SHA/进程退出锁空闲后，才一次V1275资格/冻结/独立3h固定24确认，0旧成功导入；父失败或启动拒绝停无修补循环。旧V1268第二失败/20:40旧窗保持封账不延。物理单CPU2/数学四spawn低优先级/Stage0访问/训练实机0。runs/v1271_ew_joint_phase_validation/HANDOFF.md。
+
+- V1271原18/19联合开发实际观测交接主/条件完整重复闭批：passed=True，stop=JOINT_PHASE_18_19_MAIN_REPEATS_COMPLETE，不自动24；docs/RPCCR_EW_ACTUAL_OBSERVATION_V1271_REPORT.md。
+
+- 19:57检查：V1271统一时间窗联合开发18主/重复各51308、19主/重复各51683原生全部到达/停稳/自身完整重放/独审PASS；18目标.060170861m、19目标.045812975m，两对全状态ctrl误差0/长度初态模型传感接触相同，205982实际+205982回放，FINALIZED全成员SHA读回。V1276已一次自动启动V1275 driver78576/watchdog78577，新独立19:54:13.957456–22:54:13.957456固定24根，当前21真实t0全过/22进行，未新主；0旧确认或开发导入。相同时间窗机制联合两相位成功，仍不称24验收或泛化已过。runs/v1275_time_window_fixed24/HANDOFF.md。
+
+- 2026-11-17T21:22:27.995124+08:00用户选择明早11月18日09:00硬停止，V1277零模型夜间接力一次启动pid89668，当前只等待父V1275闭批/FINALIZED/全SHA回读/登记进程退出/锁空闲；当前父原22:54:13.957456截止不变。26项纯入口/负例与稳定spawn元数据检查通过，0科学传播/模型。父通过才三主1/9/17公共原生安全审核串行/三并行精确等价测量，父可信完整记录上EW17–24固定40窗保存态机制消融；安全证据操作异常只诊断，不新物理或自动换候选。09点双时钟/2GiB新输出/CPU2–4低优先级/Stage隔离，后台离线自主结束恢复guard及REVIEW_PENDING；原证据不删不自动push。协议experiments/v1277_overnight_evidence_acceleration/PROTOCOL.md。
+
+- V1275因果时间窗固定24闭批：passed=False，主23/24已执行，完整分母=True，stop=FIRST_SAFETY_EVIDENCE_OR_OPERATION_EXCEPTION；0旧确认开发导入，docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1275_REPORT.md。
+
+- V1277夜间零模型接力闭批：SOFTWARE_FINITE_JOBS_COMPLETE；软件通过=True，父确认通过=False；0新模型/实际积分/训练。报告docs/RPCCR_OVERNIGHT_EVIDENCE_V1277_REPORT.md。
+
+- 用户要求先解决第24项再安排通宵。V1278原导航函数在16930保存接口请求精确复现REAL_SENSOR_DISCOVERY_REQUIRED；SAFE_PROGRESS_NOT_ARRIVAL完整结束后外层未准入续接，最大实际跟踪.011938m/未发现/坏接触0。完成部分静态源须原200尾/所有静态门、实测车身转向停稳/驱动零/不伪发现才续接；原8次界不变。真实末态原2万及诊断10万扩展均无源，旧结果保留，线上2万不增。固定10种5转角×前.08/后-.03各500+2200停，完整当前记忆传播、全5步刹停前瞻及原2万后续源、全拼接Python检查后2种合格，四核保存态19.842s，固定首index6共4175步；所有前进调整均拒绝，非无证倒车。8状态/尾/门负例、原16930接口红绿、23旧成功未经过新支路、实际首命令/4权限负例/4禁用CLI/两真实隔离入口8.541s全过0新模型物理，解析次数未插桩unknown。全EW审核5源逐字节继承＋新增部分续接独审，全部6800余源任务资格SHA冻结。准备一次新独立最多90分钟，仅原槽24完整主/成功重复，原V1275 NOT_PASSED及旧22:54不改，不自动确认/多算法/通宵；用户09点绝对夜界保持，2GiB/单CPU2物理/四核固定解析/Stage隔离。
+
+- V1278已一次后台启动driver98441/watchdog98442，2026-11-17T22:01:53.085654+08:00—2026-11-17T23:31:53.085654+08:00新独立90min双时钟，slot24_main已登记物理进程存活；成功全门才唯一完整重复，首失败停不自动固定24/通宵。6810冻结源SHA回读过，原V1275 23/24及操作失败旧截止保持。runs/v1278_static_partial_reconnection/HANDOFF.md。
+
+- V1278原24开发实际观测交接主/条件完整重复闭批：passed=False，stop=FIRST_INDEPENDENT_AUDIT_FAILURE，不自动24；docs/RPCCR_EW_ACTUAL_OBSERVATION_V1278_REPORT.md。
+
+- 22:09用户检查并允许安排通宵。V1278第24实际主完整到达.054168611m/56361实际＋自身完整重放全状态ctrl误差0/最低.262532494坏接触0，原完整EW审核保存PASS；新增转移审计把无积分两次同帧重读monotonic时间字段差.000653044s误判不等，原FIRST_INDEPENDENT_AUDIT_FAILURE与232成员归档保持NOT_PASSED。V1279原真全转移审核红例及9状态/ctrl/sim_time/时钟顺序/一致性/50ms负例过，精确非时钟字段与完整新静态源4175步补核通过，全原档SHA不变/0新模型物理。V1280仅补唯一未执行slot24_repeat，科学8源逐字节不改，主显式继承不重跑；仍继承V1278原23:31:53.085654绝对/monotonic不延不重置。实际绑定/4权限负例/4禁用CLI/真实隔离入口全过，准备一次启动；主重复全门后夜间新固定24条件接力，明早09硬界、未过不开始正式多算法。
+
+- V1280原24开发实际观测交接主/条件完整重复闭批：passed=True，stop=SLOT24_MAIN_REPEAT_DEVELOPMENT_COMPLETE，不自动24；docs/RPCCR_EW_ACTUAL_OBSERVATION_V1280_REPORT.md。
+
+- V1282夜间零模型接力闭批：NIGHT_OPERATION_OR_DEADLINE_STOP_NO_RETRY；软件通过=False，父确认通过=False；0新模型/实际积分/训练。报告docs/RPCCR_OVERNIGHT_EVIDENCE_V1282_REPORT.md。
+
+- V1285夜间零模型接力闭批：NIGHT_OPERATION_OR_DEADLINE_STOP_NO_RETRY；软件通过=False，父确认通过=False；0新模型/实际积分/训练。报告docs/RPCCR_OVERNIGHT_EVIDENCE_V1285_REPORT.md。
+
+- 11月17日22:20 V1280槽24唯一完整重复56361实际＋自身完整重放/全独审通过，与V1278主完整状态ctrl/长度初态模型传感接触成对误差0，211来源SHA回读FINALIZED；原V1278新增审核时钟误拒旧NOT_PASSED保持。夜间V1281软件资格55.883s/51driver行/全部缓存首命令CLI及三隔离入口通过；V1283缺NS证明副本在0模型/未锁根拒绝保持，V1284只补原SHA证明不改科学/任务/冻结，首次V1281物理于22:26:05.294776一次启动driver103975/watchdog103976，至11月18日01:26:05.294776独立3h，24t0→24新主→固定1/9/17完整重复，0旧23/开发导入。V1286零模型后接力104907等待父全闭/源及归档SHA/进程退出锁空闲后有限串行/并行公共安全审核、40窗保存态机制消融与基线接口整理；V1282不启动父诊断/V1285真实IPC门管道拒绝0worker撤回均保留，V1286真spawn与原文件描述符拒绝已资格。统一明早09停止，物理单CPU2/解析四核/后审核三核/GPU未用/Stage0访问；未合格多算法车辆/训练/实机0。后台离线自主，有限任务结束提前封账不刷重复。runs/v1286_night_post_verified/NIGHT_PLAN.json。
+
+- 用户报告Stage CPU“好像8、10、12”；只读取主机sysfs CPU拓扑、不访问Stage文件进程模型，确认这些物理核含超线程24/26/28与Phase CPU2–5含18–21完全无交集。按用户给定分配不重叠，实际Stage亲和未独立读取；Phase当前物理CPU2、候选四核2–5及后审核2–4不变，等待协调器也收至CPU2，GPU未用。记录runs/v1286_night_post_verified/CPU_PARTITION_USER_REPORT_VERIFICATION.json。
+
+- V1281因果时间窗固定24闭批：passed=True，主24/24已执行，完整分母=True，stop=FIXED24_AND_THREE_REPEATS_COMPLETE；0旧确认开发导入，docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md。
+
+- V1286夜间零模型接力闭批：SOFTWARE_FAILED_NO_RETRY；软件通过=False，父确认通过=True；0新模型/实际积分/训练。报告docs/RPCCR_OVERNIGHT_EVIDENCE_V1286_REPORT.md。
+
+- 2026-11-18晨检：V1281原固定24主24/24全门、三路线各8/8、方向各12/12，固定1/9/17完整重复全部通过/全状态ctrl误差0；24t0＋27导航独审全部PASS，1089992实际＋1089992自身重放；最低实际0.2558472575406923m/坏接触0，7415成员2043653814字节晨间再次逐来源SHA回读通过、guard原字节/执行锁空闲。模型2026-11-17T22:26:05.294776+08:00至2026-11-18T00:18:58.779016+08:00闭批，未运行至09；已暴露固定课程不称未见泛化/实时/实机/RAS全面优势。V1286后软件在导入原ionice时write守卫误拒/dev/null，0新模型/传播未完成，多核/时间消融/基线整理未执行，原失败保留不自动重跑。当前REVIEW_PENDING，远端备份未核验，原件保留。records/v1281_morning_review_20261118/VERIFIED_RESULT.json。

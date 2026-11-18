@@ -1,0 +1,7 @@
+# V1234 retained balanced source plus one seeded finite fallback
+
+User asks analyze and continue. Zero vehicle/model/physical/replay preparation only. All old closed failures and windows remain closed unchanged. No implicit physical model launch.
+
+The original V1227 balanced source search runs first, byte-identical candidate_search.py: same20 waits/actions/3000 expansions/120s. All old successful paths retain their original choice. Only if it returns no source after all3000 expansions (not wall-time/source/operation error), run one fixed V1233 seeded-frontier source:20 expansions per original phase then global best open score, max3000/120s. This is a finite portfolio source, maximum6000 expansions/two120s calls; no more phases/actions/seeds. Report exact two searches separately and total. Partial/exception or source/safety abnormality never triggers fallback. Source/terminal/admission .022reserve/full feedback and continuous shadow/all2200tail and all original physical gates unchanged.
+
+Original V1232 global-priority failure and V1233 oldNS regression preserved. V1234 fallback is not claimed overall faster: original failures add one bounded search, while original successful choices keep the same path. Fixed slot10 actual saved input must pass full actual executor+independent core/admission/terminal audits; slot9/originalNS regression must select original full reference arrays exactly and pass full executor/audits and12 clock/state/control negatives. No physics until new bounded authorization and complete runtime qualification.

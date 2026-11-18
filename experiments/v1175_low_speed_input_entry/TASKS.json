@@ -1,0 +1,78 @@
+{
+  "rows": [
+    [
+      0.0,
+      0.0,
+      2200,
+      0
+    ],
+    [
+      0.0,
+      0.006,
+      1000,
+      0
+    ],
+    [
+      0.0,
+      0.0,
+      2200,
+      0
+    ]
+  ],
+  "unchanged_low_speed": 0.006,
+  "source_scope": "NS static canonical",
+  "reuse_only": [
+    {
+      "name": "rate",
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "raw": true,
+        "body": true,
+        "ctrl": true,
+        "slew": true,
+        "complete2200rest": true,
+        "memory": true,
+        "feature_coverage": true,
+        "cpp_python": true
+      },
+      "plan": "runs/v1173_rate_preconditioned_input/positive.npz",
+      "plan_sha256": "3eefb6ada38367bafadfc911f2a841328cef94ffc403db060b78a1fd5631698c",
+      "reused_no_new_propagation": true,
+      "native": 7200,
+      "minimum_raw": 0.37401189328138773,
+      "needed_feature": "virtual_rate",
+      "required": 0.6042696793941015,
+      "model_feature_value": 0.6042696793941013,
+      "request_speed_max": 0.12,
+      "cpp_python_error": 2.220446049250313e-16,
+      "independent_controller_memory_error": 0.0
+    },
+    {
+      "name": "lateral",
+      "passed": true,
+      "checks": {
+        "finite": true,
+        "raw": true,
+        "body": true,
+        "ctrl": true,
+        "slew": true,
+        "complete2200rest": true,
+        "memory": true,
+        "feature_coverage": true,
+        "cpp_python": true
+      },
+      "plan": "runs/v1174_response_input_bundle/lateral.npz",
+      "plan_sha256": "95780c1cd47530593ad9dc3781c8242bc7fafc24ee0ae92784445bc98b200933",
+      "reused_no_new_propagation": false,
+      "native": 5000,
+      "minimum_raw": 0.3720023571063704,
+      "needed_feature": "lateral_v",
+      "required": 0.026001030270743172,
+      "model_feature_value": 0.027506550452094405,
+      "request_speed_max": 0.13,
+      "cpp_python_error": 1.1102230246251565e-16,
+      "independent_controller_memory_error": 0.0
+    }
+  ]
+}

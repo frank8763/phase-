@@ -1,0 +1,12 @@
+"""User-authorized representation-only entry continuation, same original21:00 window."""
+from evening_tools import *
+import subprocess,fcntl
+
+def main():
+ assert not(O/'ROUND_WINDOW.json').exists(),'NO_WINDOW_RESET';parent=R/'runs/v1142_evening_observer';assert json.loads((parent/'COMPLETION.json').read_text())['closed'];assert source_ok()and sha(R/'REVIEW_PENDING')==GUARD_SHA;assert all(json.loads((O/n).read_text())['passed']for n in ['ENTRY_QUALIFICATION.json','OBSERVER_AUDIT_QUALIFICATION.json','REUSED_GATES.json','ISOLATED_ENTRY_GUARD_QUALIFICATION.json']);w=json.loads((parent/'ROUND_WINDOW.json').read_text());assert w['absolute_deadline_unix']==1794661200. and remaining(w)>6500;lock=(R/'runs/v648_static_unknown/execution.lock').open('a+');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);fcntl.flock(lock,fcntl.LOCK_UN)
+ (O/'ROUND_WINDOW.json').write_bytes((parent/'ROUND_WINDOW.json').read_bytes());(O/'GUARD.bin').write_bytes((parent/'GUARD.bin').read_bytes());dump(O/'APPROVAL.json',{'models_authorized':True,'user_instruction':'没有就修复之后启动','entry_continuation':True,'new_deadline_created':False,'same_original21_00_wall_monotonic_boot':True,'maximum_new_vehicle_attempts':2,'prior_failed_reconstruction_counts_separate':True,'no_automatic_three_route_or24':True});cur=json.loads((R/'CURRENT_EXPERIMENT.json').read_text());cur.update(status='RUNNING_V1144_SAVED_ENTRY',active_run=str(O.relative_to(R)),active_window=str((O/'ROUND_WINDOW.json').relative_to(R)),active_entrypoint=str((C/'campaign.py').relative_to(R)),active_zero_model_diagnostic=None,next_physical_authorized=True);dump(R/'CURRENT_EXPERIMENT.json',cur)
+ with(O/'campaign.console').open('x')as log:p=subprocess.Popen([sys.executable,'-B',str(C/'campaign.py')],cwd=R,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+ receipt={'master_pid':p.pid,'master_proc_start':Path('/proc',str(p.pid),'stat').read_text().split()[21],'launched_unix':time.time(),'deadline_unix':w['absolute_deadline_unix'],'original_window_bytes_identical':True,'detached':True,'internet_or_Codex_required':False};dump(O/'LAUNCH_RECEIPT.json',receipt)
+ with(O/'watchdog.console').open('x')as log:watch=subprocess.Popen([sys.executable,'-B',str(C/'watchdog.py')],cwd=R,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
+ dump(O/'WATCHDOG_LAUNCH.json',{'pid':watch.pid,'proc_start':Path('/proc',str(watch.pid),'stat').read_text().split()[21]});print(encode(receipt))
+if __name__=='__main__':main()

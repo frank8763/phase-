@@ -1,0 +1,1 @@
+Goal physical continuation sketches only. NOT qualified/authorized in V1142 task queue; no entry point will launch them. Current queue ends with fully audited goal software sources and reports physical readiness separately.
