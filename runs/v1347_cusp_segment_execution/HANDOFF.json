@@ -1,5 +1,5 @@
 {
-  "status": "FROZEN_READY_FOR_ONE_BOUNDED_LAUNCH",
+  "status": "RUNNING_BOUNDED_CUSP_SEGMENT",
   "window_seconds": 5400,
   "old_windows_unchanged": true,
   "maximum_tasks": 4,
@@ -8,5 +8,15 @@
   "offline": true,
   "report": "docs/CUSP_SEGMENT_V1347_REPORT.md",
   "source_freeze": "experiments/v1347_cusp_segment_execution/SOURCE_FREEZE.json",
-  "raw_cleanup_only_after_remoteSHA_restore": true
+  "raw_cleanup_only_after_remoteSHA_restore": true,
+  "launch": {
+    "pid": 273850,
+    "started_once": true,
+    "hard_stop_unix": 1795059086.9680352,
+    "offline": true,
+    "maximum_tasks": 4
+  },
+  "deadline_unix": 1795059086.9680352,
+  "source_commit": "c8bdf8c6",
+  "entry_qualification": "runs/v1347_cusp_segment_execution/FULL_ENTRY_QUALIFICATION.json"
 }
