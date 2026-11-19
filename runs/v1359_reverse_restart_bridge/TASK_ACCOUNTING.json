@@ -1,0 +1,74 @@
+{
+  "rows": [
+    {
+      "task": "reverse_restart_component_main",
+      "branch": "reverse_restart_component",
+      "stage": "component",
+      "role": "main",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 710,
+      "actual_recorded_lower_bound": 0,
+      "own_replay_native": 710,
+      "goal_distance_m": 8.217973308508116,
+      "minimum_actual_clearance_m": 0.31498444049826857,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 6.112611101008952
+    },
+    {
+      "task": "reverse_restart_component_repeat",
+      "branch": "reverse_restart_component",
+      "stage": "component",
+      "role": "repeat",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 710,
+      "actual_recorded_lower_bound": 0,
+      "own_replay_native": 710,
+      "goal_distance_m": 8.217973308508116,
+      "minimum_actual_clearance_m": 0.31498444049826857,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 6.247303311014548
+    },
+    {
+      "task": "sweep_terminal_dynamic_main",
+      "branch": "sweep_terminal",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "passed": false,
+      "actual_native": 16465,
+      "actual_recorded_lower_bound": 16000,
+      "own_replay_native": 16465,
+      "goal_distance_m": 2.5891611667701784,
+      "minimum_actual_clearance_m": 0.25003315523538416,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951053979255851,
+          -0.7293176132121152
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 162.64654931498808
+    }
+  ],
+  "unexecuted": [
+    "sweep_terminal_dynamic_repeat"
+  ],
+  "skipped_dependencies": [
+    "sweep_terminal_dynamic_repeat"
+  ],
+  "exact_actual_total": 17885,
+  "unknown_actual_tasks": [],
+  "exact_replay_total": 17885,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}

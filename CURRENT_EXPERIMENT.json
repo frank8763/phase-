@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_BOUNDED_REVERSE_RESTART_RELAY",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1359_reverse_restart_bridge",
-  "active_window": {
-    "started_unix": 1795069731.1674938,
-    "started_monotonic": 191506.616915276,
-    "absolute_deadline_unix": 1795078800.0,
-    "hard_stop_monotonic": 200575.4494214058,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1359_reverse_restart_bridge/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10258,5 +10252,19 @@
     ],
     "stop_reason": "EVIDENCE_OR_OPERATION_STOP",
     "report": "docs/TERMINAL_CONTRACT_V1358_REPORT.md"
+  },
+  "latest_v1359": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "reverse_restart_component_main",
+      "reverse_restart_component_repeat",
+      "sweep_terminal_dynamic_main"
+    ],
+    "unexecuted": [
+      "sweep_terminal_dynamic_repeat"
+    ],
+    "stop_reason": "ALL_FROZEN_BRANCH_DEPENDENCIES_CLOSED",
+    "report": "docs/REVERSE_RESTART_V1359_REPORT.md"
   }
 }
