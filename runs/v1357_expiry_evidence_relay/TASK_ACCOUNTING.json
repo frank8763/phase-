@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "task": "entry_static_static_main",
+      "branch": "entry_static",
+      "stage": "static",
+      "role": "main",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.3905153553279037,
+      "minimum_actual_clearance_m": 0.2500331552234696,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.34462779201567
+    },
+    {
+      "task": "entry_static_static_repeat",
+      "branch": "entry_static",
+      "stage": "static",
+      "role": "repeat",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9190,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9190,
+      "goal_distance_m": 0.39051535690410194,
+      "minimum_actual_clearance_m": 0.25003315527273917,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.20121961200493
+    },
+    {
+      "task": "periodic_mode0_dynamic_main",
+      "branch": "periodic_mode0",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "passed": false,
+      "actual_native": 20795,
+      "actual_recorded_lower_bound": 20500,
+      "own_replay_native": 20795,
+      "goal_distance_m": 1.4847286511483246,
+      "minimum_actual_clearance_m": 0.2500331552799441,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.0395105395549146,
+          -0.7293176132720944
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 214.79740116599714
+    },
+    {
+      "task": "periodic_mode1_dynamic_main",
+      "branch": "periodic_mode1",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "passed": false,
+      "actual_native": 29330,
+      "actual_recorded_lower_bound": 29000,
+      "own_replay_native": 29330,
+      "goal_distance_m": 2.020584633364578,
+      "minimum_actual_clearance_m": 0.2500331552446258,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951053971922225,
+          -0.72931761319959
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 304.29559860599693
+    }
+  ],
+  "unexecuted": [
+    "periodic_mode0_dynamic_repeat",
+    "periodic_mode1_dynamic_repeat"
+  ],
+  "skipped_dependencies": [
+    "periodic_mode0_dynamic_repeat",
+    "periodic_mode1_dynamic_repeat"
+  ],
+  "exact_actual_total": 68510,
+  "unknown_actual_tasks": [],
+  "exact_replay_total": 68510,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}
