@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "software_only": true,
+  "models": 0,
+  "physical_native": 0,
+  "training_updates": 0,
+  "independent_navigation_trials": 0,
+  "automatic_physical_continuation": false,
+  "results": [],
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1352_shared_controller_probe/run.py\", line 45, in main\n    proof=read(O/task['id']/'RESULT.json');results.append(proof);dump(O/'PARTIAL.json',summary)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1352_shared_controller_probe/common.py\", line 18, in read\n    return json.loads(Path(path).read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1352_shared_controller_probe/saved01_rpp/RESULT.json'\n",
+  "closed": true,
+  "closed_unix": 1795059423.2709675,
+  "wall_s": 3.131294438004261,
+  "review_pending_unchanged": true,
+  "current_pointer_unchanged": true
+}

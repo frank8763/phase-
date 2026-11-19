@@ -1,0 +1,33 @@
+{
+  "status": "PREPARATION_REQUIRED",
+  "physical_started": false,
+  "automatic_physical_continuation": false,
+  "prerequisites": [
+    {
+      "item": "six_same_input_actual_controller_calls",
+      "passed": true,
+      "receipt": "runs/v1353_controller_recording/INDEPENDENT_AUDIT.json"
+    },
+    {
+      "item": "fast_mode0_actual_worker_and_live_result_binding",
+      "passed": false
+    },
+    {
+      "item": "actual_command_origin_timestamp_and_expiry",
+      "passed": false
+    },
+    {
+      "item": "new_frozen_finite_physical_protocol_and_full_entry",
+      "passed": false
+    }
+  ],
+  "next_scope": "original WE slot1 shared framework short closed-loop; later9/17 only after interface qualification",
+  "unchanged_safety": {
+    "native_clearance_m": 0.15,
+    "speed_m_s": 0.1,
+    "curvature_m_inv": 0.7575757575757576,
+    "full_own_replay_max_error": 1e-08
+  },
+  "models": 0,
+  "physical_native": 0
+}
