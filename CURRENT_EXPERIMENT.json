@@ -10353,13 +10353,14 @@
     "original_full_own_replay_error": 0
   },
   "latest_v1368": {
-    "stage": "PREPARED_AWAITING_SINGLE_ENTRY_CONTINUATION",
-    "models": 0,
-    "physical_native": 0,
-    "qualification_passed": true,
-    "entry_continuation_authorized": false,
-    "window_reset": false,
-    "original_absolute_deadline_unix": 1795092915.2168496,
-    "report": "docs/ROLLING_MAP_ENTRY_V1368_PREPARATION.md"
+    "closed": true,
+    "component_pair_passed": false,
+    "unexecuted": [
+      "rpp_recovery_repeat",
+      "mppi_recovery_main",
+      "mppi_recovery_repeat"
+    ],
+    "stop_reason": "FIRST_COMPONENT_FAILURE_OR_EVIDENCE_ANOMALY",
+    "report": "docs/ROLLING_MAP_ENTRY_V1368_REPORT.md"
   }
 }
