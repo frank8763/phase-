@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-11-19T01:19:48.470382+00:00",
+  "scope": "zero-model saved-evidence check; not full dynamic independent audit",
+  "primary_error": "AssertionError('FORWARD_BEFORE_COMPLETE_REVERSE_STOP')",
+  "original_classification": "EVIDENCE_OR_OPERATION_STOP",
+  "original_new_actual_native": null,
+  "original_inflight_unknown": true,
+  "independently_exact_dynamic_actual_native": 16255,
+  "exact_count_basis": "trace qpos rows, applied journal, physical/root counts agree; traceback places compute assertion before ctrl write and native integration",
+  "rejected_forward_candidate_applied": false,
+  "actual_native_total": 34645,
+  "own_replay_native_total": 18390,
+  "dynamic_own_replay_native": 0,
+  "dynamic_full_audit_completed": false,
+  "dynamic_final_stopped": false,
+  "minimum_recorded_dynamic_clearance_m": 0.2500332961195857,
+  "recorded_bad_contacts": 0,
+  "final_signed_body_speed_m_s": -0.09437051855034022,
+  "goal_remaining_m": 3.1908400616331782,
+  "after_detection_travel_m": 1.9872568970914348,
+  "planning_attempts": [
+    {
+      "index": 1,
+      "wall_s": 13.062870584020857,
+      "live_min_clearance_m": -0.03301801854227493,
+      "admitted": false
+    },
+    {
+      "index": 2,
+      "wall_s": 12.950249098008499,
+      "live_min_clearance_m": -0.039368723734089395,
+      "admitted": false
+    },
+    {
+      "index": 3,
+      "wall_s": 12.970148271007929,
+      "live_min_clearance_m": 0.08230938922946529,
+      "admitted": false
+    },
+    {
+      "index": 4,
+      "wall_s": 12.879770880012074,
+      "live_min_clearance_m": 0.22984594297562044,
+      "admitted": true
+    },
+    {
+      "index": 5,
+      "wall_s": 12.934142165991943,
+      "live_min_clearance_m": 0.22459582170726233,
+      "admitted": true
+    }
+  ],
+  "unexecuted": [
+    "rpp_async_default_dynamic_repeat"
+  ],
+  "models_in_check": 0,
+  "new_native_in_check": 0,
+  "original_results_preserved": true,
+  "raw_retained": true,
+  "remote_backup_pending": true,
+  "evidence_SHA256": {
+    "runs/v1345_nonblocking_route_io/COMPLETION.json": "3e71f085c59d399102c47d29c803089a59e3a271135d24ad432553177f94218d",
+    "runs/v1345_nonblocking_route_io/FINALIZED.json": "fdb35f6870a1138bdfad5f44ac4bb94b916cd239ec38577e95fd020db1fe6a85",
+    "runs/v858_nav2_verified/v1345/rpp_async_default_dynamic_main/RESULT.json": "7765b9656c38fbb10270e138a54244d6fc90858c924861fc091dc29827852e00",
+    "runs/v858_nav2_verified/v1345/rpp_async_default_dynamic_main/APPLIED_JOURNAL.json": "9db72f9a390ddc5478e9d916a79b50c79bc7e4aa77ad9adfc3c66f898f32062d",
+    "runs/v858_nav2_verified/v1345/rpp_async_default_dynamic_main/physics/NATIVE_TRACE.npz": "4d9cde9d6de54c45e440c9c9ef9782ec8766a8bf7a459800d3ec4f76d769439f",
+    "runs/v858_nav2_verified/v1345/rpp_async_default_dynamic_main/CAUSAL_ROUTE_RECORDS.json": "eae313fe617b9196764792e70d54ce0f1274d2620913e3575ab06a4e88554a5c"
+  },
+  "next_repair": "Explicit mixed-gear cusp brake, actual standstill and drive-state gate before next segment. Not implemented/launched during check."
+}

@@ -1,0 +1,361 @@
+{
+  "passed": false,
+  "results": [
+    {
+      "task": "rpp_async_default_static_main",
+      "branch": "rpp_async_default",
+      "stage": "static",
+      "role": "main",
+      "attempted": true,
+      "passed": true,
+      "native": {
+        "passed": true,
+        "canonical_vehicle_initializations": 1,
+        "internal_factory_model_constructions": null,
+        "new_actual_native": 9195,
+        "own_replay_native": 9195,
+        "private_mujoco_native": 0,
+        "analytical_vehicle_native": 0,
+        "training_updates": 0,
+        "original_goal_navigation": true,
+        "historical_controls_used": 0,
+        "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+        "functional_checks": {
+          "upstream_action_succeeded": true,
+          "whole_goal_distance": true,
+          "actual_forward_m": true,
+          "body_stopped": true,
+          "steering_settled": true,
+          "drive_command_zero": true
+        },
+        "whole_goal_distance_m": 0.39051521319901383,
+        "forward_displacement_m": 7.943760144355473,
+        "maximum_center_reference_distance_m": 0.08675636643222033,
+        "mean_center_reference_distance_m": 0.022614891657094512,
+        "terminal_yaw_error_report_only_rad": 0.6980020548391119,
+        "model_native_inflight_unknown": false,
+        "physical": {
+          "actual_native": 9195,
+          "fully_recorded_native": 9195,
+          "minimum_actual_clearance_m": 0.25003314084130046,
+          "minimum_self_margin_m": 0.009175940583099063,
+          "bad_contacts": 0,
+          "final_body": [
+            3.9437601443554726,
+            -1.6135556826954833,
+            -0.6980020548391119,
+            4.083689708027119e-07,
+            2.593849983446409e-06
+          ],
+          "final_translation_speed_m_s": 4.807065106421715e-07,
+          "root_guard_native_count": 9195,
+          "goal_distance_m": 0.39051521319901383,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "independent_allocation": {
+          "passed": true,
+          "control_error": 0.0,
+          "memory_error": 0.0,
+          "recorded_rows": 9195
+        },
+        "replay": {
+          "replay_native": 9195,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "wall_s": 98.38044017300126,
+        "closed_unix": 1795050557.2602394,
+        "source_unchanged": true
+      },
+      "ros": {
+        "passed": true,
+        "physical_models_in_ros": 0,
+        "commands": 1799,
+        "public_static_map_receipt": {
+          "passed": true,
+          "checked_world": [
+            -3.15,
+            0.0
+          ],
+          "value": 100,
+          "source": "a2c27394f18509d828790f7550cb4ab8c11393a4440af7777c0e1a4ce6e9d418"
+        },
+        "action_accepted": true,
+        "action_status": 4,
+        "error_code": 0,
+        "causal_observation_updates": 0,
+        "causal_route_proposals": 0,
+        "wait_native_report_only": 0,
+        "wall_s": 94.11323102400638
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "fully_recorded": true,
+          "finite_all_states": true,
+          "time_monotonic": true,
+          "actual_clearance": true,
+          "full_self": true,
+          "actual_control_limits": true,
+          "actual_control_rates": true,
+          "bad_contacts_zero": true,
+          "own_full_replay": true,
+          "independent_allocation": true,
+          "complete_stop": true,
+          "component_functional": true,
+          "sources_unchanged": true,
+          "sensor_gzip_complete": true,
+          "sensor_trace_has_initial_and_final": true,
+          "declared_actor_mode": true,
+          "independent_whole_goal": true,
+          "independent_forward_progress": true
+        },
+        "actual_reviewed": 9195,
+        "minimum_actual_clearance_m": 0.25003314084130046,
+        "actual_sensor_packets": 3630,
+        "first_actor_detection": null,
+        "models": 0,
+        "new_physical_native": 0
+      },
+      "monitor": {
+        "returncodes": [
+          0,
+          0
+        ],
+        "drain_requested": true,
+        "wall_s": 100.77951705499436
+      },
+      "worker_returncodes": [
+        0,
+        0
+      ],
+      "classification": "PASSED"
+    },
+    {
+      "task": "rpp_async_default_static_repeat",
+      "branch": "rpp_async_default",
+      "stage": "static",
+      "role": "repeat",
+      "attempted": true,
+      "passed": true,
+      "native": {
+        "passed": true,
+        "canonical_vehicle_initializations": 1,
+        "internal_factory_model_constructions": null,
+        "new_actual_native": 9195,
+        "own_replay_native": 9195,
+        "private_mujoco_native": 0,
+        "analytical_vehicle_native": 0,
+        "training_updates": 0,
+        "original_goal_navigation": true,
+        "historical_controls_used": 0,
+        "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+        "functional_checks": {
+          "upstream_action_succeeded": true,
+          "whole_goal_distance": true,
+          "actual_forward_m": true,
+          "body_stopped": true,
+          "steering_settled": true,
+          "drive_command_zero": true
+        },
+        "whole_goal_distance_m": 0.39051521319901383,
+        "forward_displacement_m": 7.943760144355473,
+        "maximum_center_reference_distance_m": 0.08675636643222033,
+        "mean_center_reference_distance_m": 0.022614891657094512,
+        "terminal_yaw_error_report_only_rad": 0.6980020548391119,
+        "model_native_inflight_unknown": false,
+        "physical": {
+          "actual_native": 9195,
+          "fully_recorded_native": 9195,
+          "minimum_actual_clearance_m": 0.25003314084130046,
+          "minimum_self_margin_m": 0.009175940583099063,
+          "bad_contacts": 0,
+          "final_body": [
+            3.9437601443554726,
+            -1.6135556826954833,
+            -0.6980020548391119,
+            4.083689708027119e-07,
+            2.593849983446409e-06
+          ],
+          "final_translation_speed_m_s": 4.807065106421715e-07,
+          "root_guard_native_count": 9195,
+          "goal_distance_m": 0.39051521319901383,
+          "first_actor_detection": null,
+          "actual_travel_after_detection_m": 0.0
+        },
+        "evidence_saved": true,
+        "independent_allocation": {
+          "passed": true,
+          "control_error": 0.0,
+          "memory_error": 0.0,
+          "recorded_rows": 9195
+        },
+        "replay": {
+          "replay_native": 9195,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "wall_s": 98.16780159500195,
+        "closed_unix": 1795050658.8142498,
+        "source_unchanged": true
+      },
+      "ros": {
+        "passed": true,
+        "physical_models_in_ros": 0,
+        "commands": 1799,
+        "public_static_map_receipt": {
+          "passed": true,
+          "checked_world": [
+            -3.15,
+            0.0
+          ],
+          "value": 100,
+          "source": "a2c27394f18509d828790f7550cb4ab8c11393a4440af7777c0e1a4ce6e9d418"
+        },
+        "action_accepted": true,
+        "action_status": 4,
+        "error_code": 0,
+        "causal_observation_updates": 0,
+        "causal_route_proposals": 0,
+        "wait_native_report_only": 0,
+        "wall_s": 94.03139033101615
+      },
+      "audit": {
+        "passed": true,
+        "checks": {
+          "fully_recorded": true,
+          "finite_all_states": true,
+          "time_monotonic": true,
+          "actual_clearance": true,
+          "full_self": true,
+          "actual_control_limits": true,
+          "actual_control_rates": true,
+          "bad_contacts_zero": true,
+          "own_full_replay": true,
+          "independent_allocation": true,
+          "complete_stop": true,
+          "component_functional": true,
+          "sources_unchanged": true,
+          "sensor_gzip_complete": true,
+          "sensor_trace_has_initial_and_final": true,
+          "declared_actor_mode": true,
+          "independent_whole_goal": true,
+          "independent_forward_progress": true
+        },
+        "actual_reviewed": 9195,
+        "minimum_actual_clearance_m": 0.25003314084130046,
+        "actual_sensor_packets": 3632,
+        "first_actor_detection": null,
+        "models": 0,
+        "new_physical_native": 0
+      },
+      "monitor": {
+        "returncodes": [
+          0,
+          0
+        ],
+        "drain_requested": true,
+        "wall_s": 100.7271511220024
+      },
+      "worker_returncodes": [
+        0,
+        0
+      ],
+      "classification": "PASSED"
+    },
+    {
+      "task": "rpp_async_default_dynamic_main",
+      "branch": "rpp_async_default",
+      "stage": "dynamic",
+      "role": "main",
+      "attempted": true,
+      "passed": false,
+      "native": {
+        "passed": false,
+        "canonical_vehicle_initializations": 1,
+        "internal_factory_model_constructions": null,
+        "new_actual_native": null,
+        "own_replay_native": 0,
+        "private_mujoco_native": 0,
+        "analytical_vehicle_native": 0,
+        "training_updates": 0,
+        "original_goal_navigation": true,
+        "historical_controls_used": 0,
+        "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+        "error": "AssertionError('FORWARD_BEFORE_COMPLETE_REVERSE_STOP')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1345_nonblocking_route_io/native_component.py\", line 109, in run\n    step(vr, wr, task['algorithm'].upper()+'_ACTUAL_FEEDBACK')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1345_nonblocking_route_io/native_component.py\", line 71, in step\n    journal.append(row); v.adapter.parked_target = None; in_step = True; original_step(vr, wr, False); in_step = False; row['applied'] = True\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 76, in step\n    _,_,_,mv,mw=self.body();ctrl=self.adapter.compute(v,w,mv,mw,stale);self.audit.before_native(self.m,self.d);self.d.ctrl[self.adapter.commands.ids]=ctrl;before=self.d.ctrl.copy();self.native(self.m,self.d);self.count+=1;self.audit.after_native(self.m,self.d)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1114_coupled_steering_mode/coupled_control.py\", line 13, in compute\n    u=super().compute(v,w,measured_v,measured_w,stale);self._steering_motion_active=False;return u\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1108_parked_steering_handoff/parked_control.py\", line 9, in compute\n    if target is None:return super().compute(v,w,measured_v,measured_w,stale)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/braking_reserve.py\", line 70, in compute\n    shadow,u,proof=self._candidate(v,w,measured_v,measured_w,stale,enc,guarded)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/braking_reserve.py\", line 35, in _candidate\n    command=signed.Adapter.compute(shadow,v,w,mv,mw,stale)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1035_signed_timed_input_source/signed_control.py\", line 17, in compute\n    assert mean>=-1e-10,'FORWARD_BEFORE_COMPLETE_REVERSE_STOP'\nAssertionError: FORWARD_BEFORE_COMPLETE_REVERSE_STOP\n",
+        "model_native_inflight_unknown": true,
+        "physical": {
+          "actual_native": 16255,
+          "fully_recorded_native": 16255,
+          "minimum_actual_clearance_m": 0.2500332961195857,
+          "minimum_self_margin_m": 0.009164465782508457,
+          "bad_contacts": 0,
+          "final_body": [
+            1.069243554852668,
+            -0.738204866806581,
+            -0.46862427550344615,
+            -0.09437051855034022,
+            0.009136339036870417
+          ],
+          "final_translation_speed_m_s": 0.09474644734723965,
+          "root_guard_native_count": 16255,
+          "goal_distance_m": 3.1908400616331782,
+          "first_actor_detection": {
+            "native_tick": 4475,
+            "sim_time": 44.749999999999666,
+            "xy": [
+              0.03950968510936259,
+              -0.72931781729883
+            ],
+            "rays": [
+              29
+            ],
+            "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+          },
+          "actual_travel_after_detection_m": 1.9872568970914348
+        },
+        "evidence_saved": true,
+        "closed": true,
+        "wall_s": 167.31207694698242,
+        "closed_unix": 1795050829.705751,
+        "source_unchanged": true
+      },
+      "ros": null,
+      "audit": null,
+      "monitor": {
+        "returncodes": [
+          -15,
+          1
+        ],
+        "drain_requested": false,
+        "wall_s": 170.11452289801673
+      },
+      "worker_returncodes": [
+        -15,
+        1
+      ],
+      "classification": "EVIDENCE_OR_OPERATION_STOP"
+    }
+  ],
+  "unexecuted": [
+    "rpp_async_default_dynamic_repeat"
+  ],
+  "skipped_dependencies": [],
+  "scope": "one frozen RPP branch staticpair thenconditionaldynamicpair with independentplanner/I/O",
+  "offline": true,
+  "stop_reason": "EVIDENCE_OR_OPERATION_STOP",
+  "passed_scope": "one staticpair and conditional dynamicpair validation; not24/generalization",
+  "closed": true,
+  "closed_unix": 1795050831.635978,
+  "source_unchanged": true,
+  "review_pending_restored": true,
+  "storage_bytes": 276325997,
+  "hard_stop_unix": 1795055854.1955254
+}

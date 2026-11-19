@@ -1,0 +1,74 @@
+{
+  "rows": [
+    {
+      "task": "rpp_async_default_static_main",
+      "branch": "rpp_async_default",
+      "stage": "static",
+      "role": "main",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.39051521319901383,
+      "minimum_actual_clearance_m": 0.25003314084130046,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.38044017300126
+    },
+    {
+      "task": "rpp_async_default_static_repeat",
+      "branch": "rpp_async_default",
+      "stage": "static",
+      "role": "repeat",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.39051521319901383,
+      "minimum_actual_clearance_m": 0.25003314084130046,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.16780159500195
+    },
+    {
+      "task": "rpp_async_default_dynamic_main",
+      "branch": "rpp_async_default",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "EVIDENCE_OR_OPERATION_STOP",
+      "passed": false,
+      "actual_native": "unknown",
+      "actual_recorded_lower_bound": 16000,
+      "own_replay_native": 0,
+      "goal_distance_m": 3.1908400616331782,
+      "minimum_actual_clearance_m": 0.2500332961195857,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03950968510936259,
+          -0.72931781729883
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 167.31207694698242
+    }
+  ],
+  "unexecuted": [
+    "rpp_async_default_dynamic_repeat"
+  ],
+  "skipped_dependencies": [],
+  "exact_actual_total": 18390,
+  "unknown_actual_tasks": [
+    "rpp_async_default_dynamic_main"
+  ],
+  "exact_replay_total": 18390,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}

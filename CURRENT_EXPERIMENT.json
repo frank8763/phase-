@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_FROZEN_OVERNIGHT_BASELINE_RELAY",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1345_nonblocking_route_io",
-  "active_window": {
-    "started_unix": 1795050454.1955254,
-    "started_monotonic": 172229.644946833,
-    "absolute_deadline_unix": 1795055854.1955254,
-    "hard_stop_monotonic": 177629.644946833,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1345_nonblocking_route_io/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10030,5 +10024,26 @@
     "remote_backup_pending": true,
     "morning_check": "runs/v1344_causal_night_entry/MORNING_CHECK_20261119.json",
     "communication_repro": "runs/v1344_causal_night_entry/COMMUNICATION_REPRO_20261119.json"
+  },
+  "latest_v1345": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "rpp_async_default_static_main",
+      "rpp_async_default_static_repeat",
+      "rpp_async_default_dynamic_main"
+    ],
+    "unexecuted": [
+      "rpp_async_default_dynamic_repeat"
+    ],
+    "stop_reason": "EVIDENCE_OR_OPERATION_STOP",
+    "report": "docs/NONBLOCKING_DYNAMIC_V1345_REPORT.md",
+    "independent_check": "runs/v1345_nonblocking_route_io/CHECK_ADDENDUM_20261119.json",
+    "primary_error": "AssertionError('FORWARD_BEFORE_COMPLETE_REVERSE_STOP')",
+    "exact_actual_native_total": 34645,
+    "own_replay_native_total": 18390,
+    "static_pair_passed": true,
+    "dynamic_passed": false,
+    "next_step": "mixed-gear stop/rest handoff repair; not launched"
   }
 }
