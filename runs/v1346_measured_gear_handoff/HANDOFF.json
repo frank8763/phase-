@@ -1,5 +1,5 @@
 {
-  "status": "FROZEN_READY_FOR_ONE_BOUNDED_LAUNCH",
+  "status": "RUNNING_BOUNDED_MEASURED_GEAR_HANDOFF",
   "window_seconds": 5400,
   "old_windows_unchanged": true,
   "maximum_tasks": 4,
@@ -11,5 +11,14 @@
   "training": false,
   "stage_access": false,
   "report": "docs/MEASURED_GEAR_HANDOFF_V1346_REPORT.md",
-  "raw_cleanup_only_after_remoteSHA_restore": true
+  "raw_cleanup_only_after_remoteSHA_restore": true,
+  "launch": {
+    "pid": 269495,
+    "started_once": true,
+    "hard_stop_unix": 1795057287.9570909,
+    "offline": true,
+    "maximum_tasks": 4
+  },
+  "deadline_unix": 1795057287.9570909,
+  "entry_qualification": "runs/v1346_measured_gear_handoff/FULL_ENTRY_QUALIFICATION.json"
 }
