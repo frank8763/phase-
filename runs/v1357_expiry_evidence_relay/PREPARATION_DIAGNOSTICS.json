@@ -1,0 +1,10 @@
+{
+  "models": 0,
+  "physical_native": 0,
+  "harness_first_attempt": "one-packet receive fixture continued into same already-consumed packet; replay gate correctly refused it",
+  "correction": "terminate only the fixture iteration on continue; production source unchanged",
+  "zero_model_ros_fixture_first_attempt": "Domain233 exceeded FastDDS port range, controller did not initialize; retain original logs; new fixture uses226",
+  "fixture_second_attempt": "software window60s was below production100s evidence reserve, so navigation loop correctly did not enter; synthetic queue send timed out. Raw commands[] and ROS closed receipt were correctly saved.",
+  "fixture_correction": "fixture-only600s declared reserve under external45s monitor; timeout dropping matches latest-packet transport; physical window unchanged17:00",
+  "software_run_preclaim": "new software output folder had not been created after retaining prior0-case attempt; open(x) failed before claim or child. Folder created, no previous claim reused."
+}
