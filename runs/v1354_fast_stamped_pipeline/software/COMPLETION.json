@@ -1,0 +1,317 @@
+{
+  "passed": true,
+  "software_only": true,
+  "models": 0,
+  "physical_native": 0,
+  "training_updates": 0,
+  "independent_navigation_trials": 0,
+  "automatic_physical_continuation": false,
+  "results": [
+    {
+      "interface_qualified": true,
+      "task": {
+        "id": "saved01_rpp",
+        "saved_request": 1,
+        "method": "rpp",
+        "plugin": "RPP",
+        "input_file": "experiments/v1352_shared_controller_probe/INPUT_01.json",
+        "common_input_sha256": "77ed7b1dac02df8d5043db24d07275693522e97bee52e951930ba1837a900224"
+      },
+      "models": 0,
+      "physical_native": 0,
+      "software_only": true,
+      "common_input_sha256": "77ed7b1dac02df8d5043db24d07275693522e97bee52e951930ba1837a900224",
+      "command_origin_age_known": true,
+      "loaded_actual_plugin_libraries": [
+        "libphase_executable_rpp.so"
+      ],
+      "action_accepted": true,
+      "terminal_before_cancel": false,
+      "action_status": 5,
+      "action_result": {
+        "result": {},
+        "error_code": 0,
+        "error_msg": ""
+      },
+      "raw_callbacks": 25,
+      "raw_moving_commands": 24,
+      "admitted_moving_commands": 24,
+      "wrong_direction_commands": 0,
+      "classification": "LEGAL_ADMITTED_COMMAND",
+      "first_raw_after_goal_s": 0.0021466440230142325,
+      "first_nonzero_after_goal_s": 0.0021466440230142325,
+      "first_admitted_after_goal_s": 0.0021466440230142325,
+      "callback_spacing_s": {
+        "median": 0.050018104491755366,
+        "maximum": 0.05039388599107042
+      },
+      "raw_moving_signs": [
+        1
+      ],
+      "maximum_observation_age_s": 0.01682052100659348,
+      "goal_sent_monotonic": 182433.73553652,
+      "measured_callback_offset": 0,
+      "nav2_action_error_is_algorithm_outcome": false,
+      "wall_s": 2.6473020529956557,
+      "controller_server_exited": true,
+      "no_model_modules_loaded": true
+    },
+    {
+      "interface_qualified": true,
+      "task": {
+        "id": "saved01_mppi",
+        "saved_request": 1,
+        "method": "mppi",
+        "plugin": "Deadband",
+        "input_file": "experiments/v1352_shared_controller_probe/INPUT_01.json",
+        "common_input_sha256": "77ed7b1dac02df8d5043db24d07275693522e97bee52e951930ba1837a900224"
+      },
+      "models": 0,
+      "physical_native": 0,
+      "software_only": true,
+      "common_input_sha256": "77ed7b1dac02df8d5043db24d07275693522e97bee52e951930ba1837a900224",
+      "command_origin_age_known": true,
+      "loaded_actual_plugin_libraries": [
+        "libphase_deadband_mppi.so",
+        "libcoherent.so",
+        "libmppi_controller.so"
+      ],
+      "action_accepted": true,
+      "terminal_before_cancel": false,
+      "action_status": 5,
+      "action_result": {
+        "result": {},
+        "error_code": 0,
+        "error_msg": ""
+      },
+      "raw_callbacks": 25,
+      "raw_moving_commands": 23,
+      "admitted_moving_commands": 23,
+      "wrong_direction_commands": 0,
+      "classification": "LEGAL_ADMITTED_COMMAND",
+      "first_raw_after_goal_s": 0.020000117976451293,
+      "first_nonzero_after_goal_s": 0.06873415398877114,
+      "first_admitted_after_goal_s": 0.06873415398877114,
+      "callback_spacing_s": {
+        "median": 0.04986256799020339,
+        "maximum": 0.050972102995729074
+      },
+      "raw_moving_signs": [
+        1
+      ],
+      "maximum_observation_age_s": 0.014652505022240803,
+      "goal_sent_monotonic": 182437.781606102,
+      "measured_callback_offset": 0,
+      "nav2_action_error_is_algorithm_outcome": false,
+      "wall_s": 2.7147242380015086,
+      "controller_server_exited": true,
+      "no_model_modules_loaded": true
+    },
+    {
+      "interface_qualified": true,
+      "task": {
+        "id": "saved04_rpp",
+        "saved_request": 4,
+        "method": "rpp",
+        "plugin": "RPP",
+        "input_file": "experiments/v1352_shared_controller_probe/INPUT_04.json",
+        "common_input_sha256": "a0c27dd3bc3b695652b75e13d5b3d35d0936c2a7a2cf23427bde0f7de4c98e64"
+      },
+      "models": 0,
+      "physical_native": 0,
+      "software_only": true,
+      "common_input_sha256": "a0c27dd3bc3b695652b75e13d5b3d35d0936c2a7a2cf23427bde0f7de4c98e64",
+      "command_origin_age_known": true,
+      "loaded_actual_plugin_libraries": [
+        "libphase_executable_rpp.so"
+      ],
+      "action_accepted": true,
+      "terminal_before_cancel": false,
+      "action_status": 5,
+      "action_result": {
+        "result": {},
+        "error_code": 0,
+        "error_msg": ""
+      },
+      "raw_callbacks": 25,
+      "raw_moving_commands": 24,
+      "admitted_moving_commands": 24,
+      "wrong_direction_commands": 0,
+      "classification": "LEGAL_ADMITTED_COMMAND",
+      "first_raw_after_goal_s": 0.002977755997562781,
+      "first_nonzero_after_goal_s": 0.002977755997562781,
+      "first_admitted_after_goal_s": 0.002977755997562781,
+      "callback_spacing_s": {
+        "median": 0.0500115739996545,
+        "maximum": 0.0503713279904332
+      },
+      "raw_moving_signs": [
+        1
+      ],
+      "maximum_observation_age_s": 0.01727644502534531,
+      "goal_sent_monotonic": 182441.674780749,
+      "measured_callback_offset": 0,
+      "nav2_action_error_is_algorithm_outcome": false,
+      "wall_s": 2.4537526789936237,
+      "controller_server_exited": true,
+      "no_model_modules_loaded": true
+    },
+    {
+      "interface_qualified": true,
+      "task": {
+        "id": "saved04_mppi",
+        "saved_request": 4,
+        "method": "mppi",
+        "plugin": "Deadband",
+        "input_file": "experiments/v1352_shared_controller_probe/INPUT_04.json",
+        "common_input_sha256": "a0c27dd3bc3b695652b75e13d5b3d35d0936c2a7a2cf23427bde0f7de4c98e64"
+      },
+      "models": 0,
+      "physical_native": 0,
+      "software_only": true,
+      "common_input_sha256": "a0c27dd3bc3b695652b75e13d5b3d35d0936c2a7a2cf23427bde0f7de4c98e64",
+      "command_origin_age_known": true,
+      "loaded_actual_plugin_libraries": [
+        "libphase_deadband_mppi.so",
+        "libcoherent.so",
+        "libmppi_controller.so"
+      ],
+      "action_accepted": true,
+      "terminal_before_cancel": false,
+      "action_status": 5,
+      "action_result": {
+        "result": {},
+        "error_code": 0,
+        "error_msg": ""
+      },
+      "raw_callbacks": 25,
+      "raw_moving_commands": 23,
+      "admitted_moving_commands": 23,
+      "wrong_direction_commands": 0,
+      "classification": "LEGAL_ADMITTED_COMMAND",
+      "first_raw_after_goal_s": 0.02025895001133904,
+      "first_nonzero_after_goal_s": 0.0683114739949815,
+      "first_admitted_after_goal_s": 0.0683114739949815,
+      "callback_spacing_s": {
+        "median": 0.05002166649501305,
+        "maximum": 0.051081334007903934
+      },
+      "raw_moving_signs": [
+        1
+      ],
+      "maximum_observation_age_s": 0.014201330981450155,
+      "goal_sent_monotonic": 182445.77112905,
+      "measured_callback_offset": 0,
+      "nav2_action_error_is_algorithm_outcome": false,
+      "wall_s": 2.6555265029892325,
+      "controller_server_exited": true,
+      "no_model_modules_loaded": true
+    },
+    {
+      "interface_qualified": true,
+      "task": {
+        "id": "saved08_rpp",
+        "saved_request": 8,
+        "method": "rpp",
+        "plugin": "RPP",
+        "input_file": "experiments/v1352_shared_controller_probe/INPUT_08.json",
+        "common_input_sha256": "920f53e30ba8d632ddb06d1e8c610eb84d3a38cb00496393a46ab45ca73968b2"
+      },
+      "models": 0,
+      "physical_native": 0,
+      "software_only": true,
+      "common_input_sha256": "920f53e30ba8d632ddb06d1e8c610eb84d3a38cb00496393a46ab45ca73968b2",
+      "command_origin_age_known": true,
+      "loaded_actual_plugin_libraries": [
+        "libphase_executable_rpp.so"
+      ],
+      "action_accepted": true,
+      "terminal_before_cancel": false,
+      "action_status": 5,
+      "action_result": {
+        "result": {},
+        "error_code": 0,
+        "error_msg": ""
+      },
+      "raw_callbacks": 25,
+      "raw_moving_commands": 24,
+      "admitted_moving_commands": 24,
+      "wrong_direction_commands": 0,
+      "classification": "LEGAL_ADMITTED_COMMAND",
+      "first_raw_after_goal_s": 0.0022891199914738536,
+      "first_nonzero_after_goal_s": 0.0022891199914738536,
+      "first_admitted_after_goal_s": 0.0022891199914738536,
+      "callback_spacing_s": {
+        "median": 0.050014542997814715,
+        "maximum": 0.05033927000476979
+      },
+      "raw_moving_signs": [
+        -1
+      ],
+      "maximum_observation_age_s": 0.012307581986533478,
+      "goal_sent_monotonic": 182449.71645598,
+      "measured_callback_offset": 0,
+      "nav2_action_error_is_algorithm_outcome": false,
+      "wall_s": 2.5487167309911456,
+      "controller_server_exited": true,
+      "no_model_modules_loaded": true
+    },
+    {
+      "interface_qualified": true,
+      "task": {
+        "id": "saved08_mppi",
+        "saved_request": 8,
+        "method": "mppi",
+        "plugin": "Deadband",
+        "input_file": "experiments/v1352_shared_controller_probe/INPUT_08.json",
+        "common_input_sha256": "920f53e30ba8d632ddb06d1e8c610eb84d3a38cb00496393a46ab45ca73968b2"
+      },
+      "models": 0,
+      "physical_native": 0,
+      "software_only": true,
+      "common_input_sha256": "920f53e30ba8d632ddb06d1e8c610eb84d3a38cb00496393a46ab45ca73968b2",
+      "command_origin_age_known": true,
+      "loaded_actual_plugin_libraries": [
+        "libphase_deadband_mppi.so",
+        "libcoherent.so",
+        "libmppi_controller.so"
+      ],
+      "action_accepted": true,
+      "terminal_before_cancel": false,
+      "action_status": 5,
+      "action_result": {
+        "result": {},
+        "error_code": 0,
+        "error_msg": ""
+      },
+      "raw_callbacks": 25,
+      "raw_moving_commands": 23,
+      "admitted_moving_commands": 23,
+      "wrong_direction_commands": 0,
+      "classification": "LEGAL_ADMITTED_COMMAND",
+      "first_raw_after_goal_s": 0.008255316992290318,
+      "first_nonzero_after_goal_s": 0.05499943401082419,
+      "first_admitted_after_goal_s": 0.05499943401082419,
+      "callback_spacing_s": {
+        "median": 0.0499391490011476,
+        "maximum": 0.05127961401012726
+      },
+      "raw_moving_signs": [
+        -1
+      ],
+      "maximum_observation_age_s": 0.01975553302327171,
+      "goal_sent_monotonic": 182453.631950738,
+      "measured_callback_offset": 0,
+      "nav2_action_error_is_algorithm_outcome": false,
+      "wall_s": 2.5490278050128836,
+      "controller_server_exited": true,
+      "no_model_modules_loaded": true
+    }
+  ],
+  "source_unchanged": true,
+  "closed": true,
+  "closed_unix": 1795060682.1314335,
+  "wall_s": 26.930629659997066,
+  "review_pending_unchanged": true,
+  "current_pointer_unchanged": true
+}
