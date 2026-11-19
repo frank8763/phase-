@@ -1,14 +1,20 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "RUNNING_FROZEN_OVERNIGHT_MATRIX",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
-  "active_window": null,
-  "active_entrypoint": null,
+  "active_run": "runs/v1370_overnight_controller_matrix",
+  "active_window": {
+    "started_unix": 1795091767.8193727,
+    "started_monotonic": 213543.268794162,
+    "absolute_deadline_unix": 1795136400.0,
+    "hard_stop_monotonic": 258175.4494214058,
+    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
+  },
+  "active_entrypoint": "experiments/v1370_overnight_controller_matrix/campaign.py",
   "automatic_additional_simulation": false,
-  "next_physical_authorized": false,
+  "next_physical_authorized": true,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -231,7 +237,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "RPP shared recovery main physically passed with separate full29-gate audit in producer runtime. Remaining: same RPP complete repeat, MPPI main and success-repeat; future bounded physical authorization required. No full dynamic route or new24 passed.",
+  "next_scope": "Only the frozen V1370 overnight matrix is authorized until2026-11-20 09:00+0800 within10GiB: recovery pairs→static pairs→conditional exposed WE8 dynamic matrix. Safe functional failure advances next preregistered branch; safety/control/source/evidence faults stop. No fresh24 or extra window.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -10381,13 +10387,19 @@
     "report": "docs/RPP_SHARED_RECOVERY_V1368_V1369_REPORT.md"
   },
   "latest_v1370": {
-    "stage": "PREPARED_USER_AUTHORIZED_OVERNIGHT",
+    "stage": "RUNNING_STATIC_AFTER_RECOVERY_GATES",
     "ready": true,
     "models": 0,
     "physical_native": 0,
     "planned_tasks": 271,
     "hard_stop_unix": 1795136400.0,
     "temporary_storage_limit_bytes": 10737418240,
-    "report": "docs/OVERNIGHT_CONTROLLER_MATRIX_V1370_PREPARATION.md"
+    "report": "docs/OVERNIGHT_CONTROLLER_MATRIX_V1370_PREPARATION.md",
+    "launched": true,
+    "owned_campaign_pid": 379060,
+    "completed_new_recovery_tasks": 7,
+    "first_complete_RPP_MPPI_recovery_pairs_qualified": true,
+    "active_task_at_last_check": "rpp_default_static_repeat",
+    "network_required": false
   }
 }
