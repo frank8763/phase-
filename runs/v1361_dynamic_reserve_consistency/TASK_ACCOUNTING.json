@@ -1,0 +1,42 @@
+{
+  "rows": [
+    {
+      "task": "sweep_terminal_dynamic_main",
+      "branch": "sweep_terminal",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "passed": false,
+      "actual_native": 19845,
+      "actual_recorded_lower_bound": 19500,
+      "own_replay_native": 19845,
+      "goal_distance_m": 1.9953624521698707,
+      "minimum_actual_clearance_m": 0.2500331345960883,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951065307102839,
+          -0.7293175822466142
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 209.2432649389957
+    }
+  ],
+  "unexecuted": [
+    "sweep_terminal_dynamic_repeat"
+  ],
+  "skipped_dependencies": [
+    "sweep_terminal_dynamic_repeat"
+  ],
+  "exact_actual_total": 19845,
+  "unknown_actual_tasks": [],
+  "exact_replay_total": 19845,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}
