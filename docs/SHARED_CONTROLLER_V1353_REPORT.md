@@ -37,3 +37,5 @@ V1352首个实际RPP已生成命令，在嵌套ROS Empty结果JSON保存时抛Ty
 本次只执行V1351第1–2步；尚未启动新的物理窗口。旧RP-CCR暴露24/24及固定重复结论保持；本次既非新增24成功，也非动态整路、泛化、实机或实时验收。所有物理窗口仍关闭，REVIEW_PENDING保留。
 
 输入和协议见experiments/v1352_shared_controller_probe/，记录修复及运行入口见experiments/v1353_controller_recording/。结果和独立审核在runs/v1353_controller_recording/。两批共74个原始成员已归档、逐成员解压SHA回读一致；75,360字节压缩档见records/shared_controller_v1353_20261119/。旧原件和新软件raw均保留，远端下载与恢复核验前不删除。
+
+本轮源码与必要证据已本地提交`2ef4db2a7483145e522b5419e43975111b106f97`。唯一一次有界GitHub push因TLS握手连接中断失败，5秒只读核验超时；远端未确认，不删除原始证据。本轮没有再次同步。详情见runs/v1353_controller_recording/SOURCE_SYNC_RESULT.json。
