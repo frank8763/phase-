@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_BOUNDED_TERMINAL_CONTRACT",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1358_terminal_contract",
-  "active_window": {
-    "started_unix": 1795068730.595296,
-    "started_monotonic": 190506.044718579,
-    "absolute_deadline_unix": 1795078800.0,
-    "hard_stop_monotonic": 200575.44942259789,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1358_terminal_contract/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10244,5 +10238,19 @@
     "full_ros_evidence_verified": true,
     "github_backup_verified": false,
     "physical_running": false
+  },
+  "latest_v1358": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "horizon_terminal_dynamic_main"
+    ],
+    "unexecuted": [
+      "horizon_terminal_dynamic_repeat",
+      "sweep_terminal_dynamic_main",
+      "sweep_terminal_dynamic_repeat"
+    ],
+    "stop_reason": "EVIDENCE_OR_OPERATION_STOP",
+    "report": "docs/TERMINAL_CONTRACT_V1358_REPORT.md"
   }
 }

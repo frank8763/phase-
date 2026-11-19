@@ -1,0 +1,117 @@
+{
+  "passed": false,
+  "results": [
+    {
+      "task": "horizon_terminal_dynamic_main",
+      "branch": "horizon_terminal",
+      "stage": "dynamic",
+      "role": "main",
+      "attempted": true,
+      "passed": false,
+      "native": {
+        "passed": false,
+        "canonical_vehicle_initializations": 1,
+        "internal_factory_model_constructions": null,
+        "new_actual_native": null,
+        "own_replay_native": 0,
+        "private_mujoco_native": 0,
+        "analytical_vehicle_native": 0,
+        "training_updates": 0,
+        "original_goal_navigation": true,
+        "historical_controls_used": 0,
+        "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+        "error": "AssertionError('REVERSE_GEAR_REQUIRES_ACTUAL_REST')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1358_terminal_contract/native_component.py\", line 142, in run\n    step(vr, wr, task['algorithm'].upper()+'_ACTUAL_FEEDBACK')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1358_terminal_contract/native_component.py\", line 87, in step\n    journal.append(row); v.adapter.parked_target = None; in_step = True; original_step(vr, wr, False); in_step = False; row['applied'] = True\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 76, in step\n    _,_,_,mv,mw=self.body();ctrl=self.adapter.compute(v,w,mv,mw,stale);self.audit.before_native(self.m,self.d);self.d.ctrl[self.adapter.commands.ids]=ctrl;before=self.d.ctrl.copy();self.native(self.m,self.d);self.count+=1;self.audit.after_native(self.m,self.d)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1114_coupled_steering_mode/coupled_control.py\", line 13, in compute\n    u=super().compute(v,w,measured_v,measured_w,stale);self._steering_motion_active=False;return u\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1108_parked_steering_handoff/parked_control.py\", line 9, in compute\n    if target is None:return super().compute(v,w,measured_v,measured_w,stale)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/braking_reserve.py\", line 70, in compute\n    shadow,u,proof=self._candidate(v,w,measured_v,measured_w,stale,enc,guarded)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/rpccr_execution_core/braking_reserve.py\", line 35, in _candidate\n    command=signed.Adapter.compute(shadow,v,w,mv,mw,stale)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1035_signed_timed_input_source/signed_control.py\", line 21, in compute\n    if not braking and abs(previous[2:]).max()<=1e-10:assert abs(measured_v)<=.003,'REVERSE_GEAR_REQUIRES_ACTUAL_REST'\nAssertionError: REVERSE_GEAR_REQUIRES_ACTUAL_REST\n",
+        "model_native_inflight_unknown": true,
+        "physical": {
+          "actual_native": 23760,
+          "fully_recorded_native": 23760,
+          "minimum_actual_clearance_m": 0.25003315523538416,
+          "minimum_self_margin_m": 0.009164030816707136,
+          "bad_contacts": 0,
+          "final_body": [
+            1.1630346432801908,
+            -0.7944537752945372,
+            -0.9817733998123528,
+            -0.006968238250184656,
+            -0.0008473177634464209
+          ],
+          "final_translation_speed_m_s": 0.006973668851351035,
+          "root_guard_native_count": 23760,
+          "goal_distance_m": 3.082485058379026,
+          "first_actor_detection": {
+            "native_tick": 4475,
+            "sim_time": 44.749999999999666,
+            "xy": [
+              0.03951053979255851,
+              -0.7293176132121152
+            ],
+            "rays": [
+              29
+            ],
+            "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+          },
+          "actual_travel_after_detection_m": 7.916980613194406
+        },
+        "evidence_saved": true,
+        "closed": true,
+        "wall_s": 244.33549045500695,
+        "closed_unix": 1795068980.987527,
+        "source_unchanged": true
+      },
+      "ros": {
+        "passed": false,
+        "physical_models_in_ros": 0,
+        "commands": 4848,
+        "public_static_map_receipt": {
+          "passed": true,
+          "checked_world": [
+            -3.15,
+            0.0
+          ],
+          "value": 100,
+          "source": "a2c27394f18509d828790f7550cb4ab8c11393a4440af7777c0e1a4ce6e9d418"
+        },
+        "action_accepted": true,
+        "functional_stop": "COOPERATIVE_PEER_CLOSED",
+        "peer_close_reason": "PEER_REQUESTED_SAVE_AND_CLOSE",
+        "ordered_segments_installed": 14,
+        "wall_s": 246.21151545000612,
+        "closed": true,
+        "evidence_write_errors": [],
+        "controller_server_exited": true
+      },
+      "audit": null,
+      "monitor": {
+        "returncodes": [
+          1,
+          1
+        ],
+        "drain_requested": false,
+        "cooperative_ros_close_requested": true,
+        "wall_s": 247.97429342599935
+      },
+      "worker_returncodes": [
+        1,
+        1
+      ],
+      "classification": "EVIDENCE_OR_OPERATION_STOP"
+    }
+  ],
+  "unexecuted": [
+    "horizon_terminal_dynamic_repeat",
+    "sweep_terminal_dynamic_main",
+    "sweep_terminal_dynamic_repeat"
+  ],
+  "skipped_dependencies": [],
+  "scope": "two terminal-contract and forecast variants; originalWE dynamic mains and successrepeats; staticpair reused by SHA",
+  "offline": true,
+  "stop_reason": "EVIDENCE_OR_OPERATION_STOP",
+  "passed_scope": "three exposed originalWE motionprior variants; not24/generalization",
+  "closed": true,
+  "closed_unix": 1795068983.7456343,
+  "source_unchanged": true,
+  "review_pending_restored": true,
+  "storage_bytes": 84253456,
+  "hard_stop_unix": 1795078800.0
+}

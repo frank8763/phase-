@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "task": "horizon_terminal_dynamic_main",
+      "branch": "horizon_terminal",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "EVIDENCE_OR_OPERATION_STOP",
+      "passed": false,
+      "actual_native": "unknown",
+      "actual_recorded_lower_bound": 23500,
+      "own_replay_native": 0,
+      "goal_distance_m": 3.082485058379026,
+      "minimum_actual_clearance_m": 0.25003315523538416,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951053979255851,
+          -0.7293176132121152
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 244.33549045500695
+    }
+  ],
+  "unexecuted": [
+    "horizon_terminal_dynamic_repeat",
+    "sweep_terminal_dynamic_main",
+    "sweep_terminal_dynamic_repeat"
+  ],
+  "skipped_dependencies": [],
+  "exact_actual_total": 0,
+  "unknown_actual_tasks": [
+    "horizon_terminal_dynamic_main"
+  ],
+  "exact_replay_total": 0,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}
