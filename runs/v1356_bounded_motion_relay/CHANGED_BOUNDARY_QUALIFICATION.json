@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "actual_worker_cases": [
+    {
+      "model": "EXCURSION",
+      "mode": 0,
+      "passed": true,
+      "wall_s": 0.5743327439995483,
+      "nonblocking_polls": 113,
+      "exactly_matches_qualified_path": true,
+      "report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 0.5119477809930686,
+        "kernel_wall_s": 0.511513183,
+        "guard_m": 0.27,
+        "generated_nodes": 42861,
+        "minimum_clearance_m": 0.2941447998051407,
+        "body_goal_distance_m": 2.029579778377357,
+        "mode": "original_euclidean",
+        "nominal_curvature_m_inv": 0.5,
+        "models": 0,
+        "physical_native": 0
+      }
+    },
+    {
+      "model": "PERIODIC",
+      "mode": 0,
+      "passed": true,
+      "wall_s": 0.5699404350016266,
+      "nonblocking_polls": 112,
+      "exactly_matches_qualified_path": true,
+      "report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 0.5086728490132373,
+        "kernel_wall_s": 0.508291685,
+        "guard_m": 0.27,
+        "generated_nodes": 43858,
+        "minimum_clearance_m": 0.27169159431827916,
+        "body_goal_distance_m": 1.622919827495827,
+        "mode": "original_euclidean",
+        "nominal_curvature_m_inv": 0.5,
+        "models": 0,
+        "physical_native": 0
+      }
+    },
+    {
+      "model": "PERIODIC",
+      "mode": 1,
+      "passed": true,
+      "wall_s": 0.5859468519920483,
+      "nonblocking_polls": 115,
+      "exactly_matches_qualified_path": true,
+      "report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 0.5230821860022843,
+        "kernel_wall_s": 0.522398228,
+        "guard_m": 0.27,
+        "generated_nodes": 46824,
+        "minimum_clearance_m": 0.27169159431827916,
+        "body_goal_distance_m": 1.622919827495827,
+        "mode": "obstacle_guided_body_goal",
+        "nominal_curvature_m_inv": 0.5,
+        "models": 0,
+        "physical_native": 0
+      }
+    }
+  ],
+  "unregistered_mode_rejected": true,
+  "stamped_negative_cases": 6,
+  "expired_request_zeroed": true,
+  "models": 0,
+  "physical_native": 0
+}
