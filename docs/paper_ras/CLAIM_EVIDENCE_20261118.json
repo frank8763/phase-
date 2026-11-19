@@ -1,5 +1,5 @@
 {
-  "updated_local_date": "2026-11-18",
+  "updated_local_date": "2026-11-19",
   "submission_ready": false,
   "roadmap": "docs/paper_ras/ROADMAP_20261118.md",
   "historical_claim_snapshot_preserved": "docs/paper_ras/CLAIM_EVIDENCE.json",
@@ -25,9 +25,11 @@
         "docs/COHERENT_MPPI_TURN_V1326_REPORT.md",
         "docs/COHERENT_MPPI_STATIC_V1329_REPORT.md",
         "docs/COMMON_MAP_STATIC_V1333_REPORT.md",
-        "docs/EUCLIDEAN_MARGIN_STATIC_V1337_REPORT.md"
+        "docs/EUCLIDEAN_MARGIN_STATIC_V1337_REPORT.md",
+        "docs/OVERNIGHT_BASELINE_20261118_REPORT.md",
+        "docs/CAUSAL_DYNAMIC_OVERNIGHT_20261118_REPORT.md"
       ],
-      "missing": "Common public static map inputs (V1331 software qualified only), qualified dynamic baselines and paired common-budget tests; original scan-only baselines not an information-parity comparison"
+      "missing": "Common-public-map RPP originalWEstaticpair physically passed; dynamicclosedloop stillunqualified aftersafety/IO failures. MPPIcompletefullroutes, PRIESTadaptation, sharedmoduledeclared pairedformaltests andfrozenunseenstudy required."
     },
     {
       "id": "TEMPORAL_SOURCE_ADMISSION",
@@ -57,5 +59,6 @@
       "training_updates": 0,
       "missing": "Causal algorithm role and controlled ablation if retained as a paper claim"
     }
-  ]
+  ],
+  "baseline_gap_report": "docs/paper_ras/BASELINE_GAPS_20261119.md"
 }

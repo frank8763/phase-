@@ -1,0 +1,62 @@
+[INFO] [1795050329.669187171] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795050329.670924193] [controller_server]: Creating controller server
+[INFO] [1795050329.673707228] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1795050329.673937564] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1795050330.012545271] [controller_server]: Configuring controller interface
+[INFO] [1795050330.012596325] [controller_server]: getting progress checker plugins..
+[INFO] [1795050330.012671125] [controller_server]: getting goal checker plugins..
+[INFO] [1795050330.012699620] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1795050330.012728116] [local_costmap.local_costmap]: Configuring
+[INFO] [1795050330.015656001] [local_costmap.local_costmap]: Using plugin "static_layer"
+[INFO] [1795050330.017638795] [local_costmap.local_costmap]: Subscribing to the map topic (/phase_public_static) with transient local durability
+[INFO] [1795050330.018355925] [local_costmap.local_costmap]: Initialized plugin "static_layer"
+[INFO] [1795050330.018370173] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[INFO] [1795050330.018513836] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1795050330.019788998] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1795050330.019806807] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1795050330.019981341] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1795050330.028743626] [local_costmap.local_costmap]: StaticLayer: Resizing static layer to 240 X 240 at 0.050000 m/pix
+[INFO] [1795050330.028843359] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1795050330.029046388] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1795050330.029243480] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1795050330.029347962] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[INFO] [1795050330.029984356] [controller_server]: Created controller : RPP of type phase_rpp/ExecutableRPP
+[INFO] [1795050330.031494604] [controller_server]: Controller Server has RPP  controllers available.
+[INFO] [1795050330.034946089] [controller_server]: Activating
+[INFO] [1795050330.034973397] [local_costmap.local_costmap]: Activating
+[INFO] [1795050330.034981708] [local_costmap.local_costmap]: Checking transform
+[INFO] [1795050330.035050572] [local_costmap.local_costmap]: start
+[INFO] [1795050330.185378379] [controller_server]: Activating controller: RPP of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795050330.185429433] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1795050344.986243483] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795050346.186498460] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795050346.186547140] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795050347.551839403] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1795050348.751993460] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1795050348.752027891] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1795050350.120530618] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1795050350.125240643] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795050350.173265802] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795050350.223353304] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795050350.273443180] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795050350.323224358] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795050350.373247746] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[WARN] [1795050350.423211768] [controller_server]: RegulatedPurePursuitController detected collision ahead!
+[ERROR] [1795050350.423252137] [controller_server]: Controller patience exceeded
+[WARN] [1795050350.423304378] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1795050350.575425010] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1795050350.575484375] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1795050350.575546115] [controller_server]: Deactivating
+[INFO] [1795050350.575571048] [controller_server]: Deactivating controller: RPP of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795050350.575611417] [local_costmap.local_costmap]: Deactivating
+[INFO] [1795050350.635303000] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1795050350.645497171] [controller_server]: Cleaning up
+[INFO] [1795050350.645520917] [controller_server]: Cleaning up controller: RPP of type regulated_pure_pursuit_controller::RegulatedPurePursuitController
+[INFO] [1795050350.645576720] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1795050350.651053742] [controller_server]: Destroying bond (controller_server) to lifecycle manager.

@@ -1,0 +1,23 @@
+{
+  "hard_stop_iso": "new independent90min lockedbeforefirstmodel",
+  "hard_stop_unix": 0.0,
+  "storage_limit_bytes": 2147483648,
+  "cpus_native": [
+    2
+  ],
+  "cpus_ros": [
+    3,
+    4,
+    5
+  ],
+  "branches": [
+    "rpp_async_default"
+  ],
+  "maximum_navigations": 4,
+  "dynamic_after_each_branch_static_main_repeat": true,
+  "safety_control_source_evidence_stop": true,
+  "software_gate_required": true,
+  "maximum_replans_per_task": 12,
+  "maximum_wait_native_per_task": 4000,
+  "causal_horizon_s": 1.5
+}
