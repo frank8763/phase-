@@ -1,0 +1,29 @@
+{
+  "commit": "340bd214be6e87fe758a75e04203d665429b020f",
+  "files": [
+    {
+      "path": "experiments/v1350_bounded_complete_search/third_party/ReedsSheppStateSpace.cpp",
+      "url": "https://raw.githubusercontent.com/ompl/ompl/340bd214be6e87fe758a75e04203d665429b020f/src/ompl/base/spaces/src/ReedsSheppStateSpace.cpp",
+      "sha256": "121ae78db62db40c92fa3a4ef33f50d30426025b14c92d543da0c9cbbf772a6a",
+      "bytes": 26294
+    },
+    {
+      "path": "experiments/v1350_bounded_complete_search/third_party/ReedsSheppStateSpace.h",
+      "url": "https://raw.githubusercontent.com/ompl/ompl/340bd214be6e87fe758a75e04203d665429b020f/src/ompl/base/spaces/ReedsSheppStateSpace.h",
+      "sha256": "d53baa96ad605c624b0c055df82a698ada507b10d2fbbc4e36a83121a06bf256",
+      "bytes": 5717
+    }
+  ],
+  "models": 0,
+  "physical_native": 0,
+  "adaptation": {
+    "path": "experiments/v1350_bounded_complete_search/standalone_reeds_shepp.hpp",
+    "sha256": "efdf70ae0f5e0c5ac36f933b8741c0b0eccde242a04f587858c6140b48947f0e",
+    "changes": [
+      "retain BSD notice/algebra/18type table/path constructor",
+      "remove OMPL StateSpace dependency, minimal matching types",
+      "same binary64 pi literal replaces boost constant",
+      "explicit namespace rename"
+    ]
+  }
+}
