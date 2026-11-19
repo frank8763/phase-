@@ -1,5 +1,5 @@
 {
-  "status": "FROZEN_READY_FOR_ONE_BOUNDED_LAUNCH",
+  "status": "RUNNING_BOUNDED_RECOVERABLE_TRACKING",
   "window_seconds": 5400,
   "old_windows_unchanged": true,
   "maximum_tasks": 4,
@@ -8,5 +8,15 @@
   "offline": true,
   "source_freeze": "experiments/v1348_recoverable_tracking/SOURCE_FREEZE.json",
   "report": "docs/RECOVERABLE_TRACKING_V1348_REPORT.md",
-  "raw_cleanup_only_after_remoteSHA_restore": true
+  "raw_cleanup_only_after_remoteSHA_restore": true,
+  "launch": {
+    "pid": 278243,
+    "started_once": true,
+    "hard_stop_unix": 1795060607.368459,
+    "offline": true,
+    "maximum_tasks": 4
+  },
+  "deadline_unix": 1795060607.368459,
+  "source_commit": "54ec8575",
+  "entry_qualification": "runs/v1348_recoverable_tracking/FULL_ENTRY_QUALIFICATION.json"
 }
