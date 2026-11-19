@@ -1,0 +1,96 @@
+{
+  "rows": [
+    {
+      "task": "rpp_fast_stamped_static_main",
+      "branch": "rpp_fast_stamped",
+      "stage": "static",
+      "role": "main",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.39051535524721187,
+      "minimum_actual_clearance_m": 0.2500331552976056,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 99.16614360999665
+    },
+    {
+      "task": "rpp_fast_stamped_static_repeat",
+      "branch": "rpp_fast_stamped",
+      "stage": "static",
+      "role": "repeat",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.39080525591324167,
+      "minimum_actual_clearance_m": 0.25002338395032847,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.6891222660197
+    },
+    {
+      "task": "rpp_fast_stamped_dynamic_main",
+      "branch": "rpp_fast_stamped",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "passed": false,
+      "actual_native": 15795,
+      "actual_recorded_lower_bound": 15500,
+      "own_replay_native": 15795,
+      "goal_distance_m": 4.16043707362681,
+      "minimum_actual_clearance_m": 0.2500331552976056,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951053947290284,
+          -0.7293176133084903
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 166.77502295799786
+    },
+    {
+      "task": "coherent_mppi_fast_stamped_static_main",
+      "branch": "coherent_mppi_fast_stamped",
+      "stage": "static",
+      "role": "main",
+      "classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "passed": false,
+      "actual_native": 12110,
+      "actual_recorded_lower_bound": 12000,
+      "own_replay_native": 12110,
+      "goal_distance_m": 3.6470578522704638,
+      "minimum_actual_clearance_m": 0.21782643468217322,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 129.02853183200932
+    }
+  ],
+  "unexecuted": [
+    "rpp_fast_stamped_dynamic_repeat",
+    "coherent_mppi_fast_stamped_static_repeat",
+    "coherent_mppi_fast_stamped_dynamic_main",
+    "coherent_mppi_fast_stamped_dynamic_repeat"
+  ],
+  "skipped_dependencies": [
+    "rpp_fast_stamped_dynamic_repeat",
+    "coherent_mppi_fast_stamped_static_repeat",
+    "coherent_mppi_fast_stamped_dynamic_main",
+    "coherent_mppi_fast_stamped_dynamic_repeat"
+  ],
+  "exact_actual_total": 46295,
+  "unknown_actual_tasks": [],
+  "exact_replay_total": 46295,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}
