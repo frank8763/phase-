@@ -1,0 +1,40 @@
+{
+  "reproduced": true,
+  "wrong_goal_label": {
+    "index": 10,
+    "reported": "GLOBAL_GOAL_PATH",
+    "actual_nominal_body_goal_distance_m": 0.7701571735826092,
+    "required_goal_radius_m": 0.45
+  },
+  "recoverable_escape_refused": {
+    "native_tick": 19650,
+    "body": [
+      2.5169189909437724,
+      -1.928793842074723,
+      3.138660990307456,
+      -5.303790750160269e-06,
+      9.764062090496908e-07
+    ],
+    "requested": [
+      0.08000013259447061,
+      -3.5880713111691095e-08
+    ],
+    "proof": {
+      "current_known_clearance_m": 0.24491773213608514,
+      "early_intervention_m": 0.245,
+      "unchanged_recovery_margin_m": 0.22,
+      "empirical_monitor_not_stopping_certificate": true,
+      "reason": "EARLY_RECOVERY_BRAKE",
+      "command_geometry_minimum_m": 0.24491773213608514,
+      "command_geometry_terminal_m": 0.24503499651668958,
+      "preview_s": 0.5,
+      "actual_dynamics_certificate": false
+    }
+  },
+  "minimum_inputs": [
+    "terminal_pose_goal",
+    "current_body_requested_twist_known_geometry"
+  ],
+  "models": 0,
+  "physical_native": 0
+}

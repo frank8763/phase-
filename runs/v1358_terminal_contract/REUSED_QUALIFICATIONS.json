@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "old_full_dependency_closure_unchanged": true,
+  "exact_unchanged_dependencies": [
+    "native_component.py",
+    "stamped_contract.py",
+    "evidence_io.py",
+    "worker_monitor.py",
+    "rpp_params.json",
+    "gear_handoff.py",
+    "segments.py",
+    "transport.py",
+    "planning_job.py"
+  ],
+  "dynamic_only_predictor_guard_and_search_changes": true,
+  "static_pair": [
+    {
+      "role": "main",
+      "source": "runs/v858_nav2_verified/v1357/entry_static_static_main",
+      "result_sha256": "43b8ea17db13e0e2a71da905eee55cabc6bcc52c7273ca69708156905a2766c8",
+      "audit_sha256": "2739592c654d05bfc9ecdac055a83f91e6b778b8bfb71e6f20e6c334c17c6c88",
+      "counted_as_new_sample": false
+    },
+    {
+      "role": "repeat",
+      "source": "runs/v858_nav2_verified/v1357/entry_static_static_repeat",
+      "result_sha256": "a938a0706cf4e5e785cafe82e63fccea83b795f93174bccfc6ea8bb54c9b5e5d",
+      "audit_sha256": "a414aa65b546e308a7bb2979d2ed02f412613494a63df9e5b29732aeeb544887",
+      "counted_as_new_sample": false
+    }
+  ],
+  "new_static_trials": 0,
+  "models": 0
+}

@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "checks": {
+    "analytic_root_forward_reverse_turn_mirror_success_original_geometry": true,
+    "current_linked_binary_signed_geometry_thresholds": true,
+    "unsafe_start_refuses": true,
+    "nonfinite_oversized_work_mode_and_negative_radius_denied": true
+  },
+  "cases": [
+    {
+      "name": "forward",
+      "passed": true,
+      "report": {
+        "status": "GLOBAL_GOAL_PATH",
+        "expanded": 1,
+        "wall_s": 0.0012822959979530424,
+        "kernel_wall_s": 0.001120821,
+        "guard_m": 0.27,
+        "generated_nodes": 1,
+        "minimum_clearance_m": 2.559999999999998,
+        "body_goal_distance_m": 2.220446049250313e-15,
+        "mode": "analytic_reeds_shepp_body_goal",
+        "nominal_curvature_m_inv": 0.5,
+        "models": 0,
+        "physical_native": 0
+      },
+      "independent_original_geometry": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 2.559999999999998,
+        "required_m": 0.22,
+        "samples": 1876,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "body_goal_distance_m": 2.220446049250313e-15
+    },
+    {
+      "name": "reverse",
+      "passed": true,
+      "report": {
+        "status": "GLOBAL_GOAL_PATH",
+        "expanded": 1,
+        "wall_s": 0.0011303200153633952,
+        "kernel_wall_s": 0.001061456,
+        "guard_m": 0.27,
+        "generated_nodes": 1,
+        "minimum_clearance_m": 2.5599999999999974,
+        "body_goal_distance_m": 2.6645352591003757e-15,
+        "mode": "analytic_reeds_shepp_body_goal",
+        "nominal_curvature_m_inv": 0.5,
+        "models": 0,
+        "physical_native": 0
+      },
+      "independent_original_geometry": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 2.5599999999999974,
+        "required_m": 0.22,
+        "samples": 1876,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "body_goal_distance_m": 2.6645352591003757e-15
+    },
+    {
+      "name": "mirror",
+      "passed": true,
+      "report": {
+        "status": "GLOBAL_GOAL_PATH",
+        "expanded": 1,
+        "wall_s": 0.0008299300097860396,
+        "kernel_wall_s": 0.000772939,
+        "guard_m": 0.27,
+        "generated_nodes": 1,
+        "minimum_clearance_m": 2.559999999999998,
+        "body_goal_distance_m": 2.220446049250313e-15,
+        "mode": "analytic_reeds_shepp_body_goal",
+        "nominal_curvature_m_inv": 0.5,
+        "models": 0,
+        "physical_native": 0
+      },
+      "independent_original_geometry": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 2.559999999999998,
+        "required_m": 0.22,
+        "samples": 1876,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "body_goal_distance_m": 2.220446049250313e-15
+    },
+    {
+      "name": "turn",
+      "passed": true,
+      "report": {
+        "status": "GLOBAL_GOAL_PATH",
+        "expanded": 1,
+        "wall_s": 0.0008536759996786714,
+        "kernel_wall_s": 0.000791936,
+        "guard_m": 0.27,
+        "generated_nodes": 1,
+        "minimum_clearance_m": 2.390918925057521,
+        "body_goal_distance_m": 2.886579864025407e-14,
+        "mode": "analytic_reeds_shepp_body_goal",
+        "nominal_curvature_m_inv": 0.5,
+        "models": 0,
+        "physical_native": 0
+      },
+      "independent_original_geometry": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 2.390918925057521,
+        "required_m": 0.22,
+        "samples": 2171,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "body_goal_distance_m": 2.886579864025407e-14
+    }
+  ],
+  "current_binary_geometry_maximum_error": 0.0,
+  "geometry_queries": 3000,
+  "binary_sha256": "591199a8b7c7345ff7d52d98c1370067ff749fb52087c0dc1e37d41277f303bb",
+  "models": 0,
+  "physical_native": 0,
+  "synthetic_empty_field_only": true,
+  "real_saved_complete_route_readiness": false
+}
