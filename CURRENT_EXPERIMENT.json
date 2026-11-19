@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_BOUNDED_CUSP_SEGMENT",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1347_cusp_segment_execution",
-  "active_window": {
-    "started_unix": 1795053686.9680352,
-    "started_monotonic": 175462.417456901,
-    "absolute_deadline_unix": 1795059086.9680352,
-    "hard_stop_monotonic": 180862.417456901,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1347_cusp_segment_execution/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10073,5 +10067,27 @@
     "exact_own_replay_native_total": 54610,
     "gear_releases": 31,
     "physical_control_evidence_passed": true
+  },
+  "latest_v1347": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "rpp_async_default_static_main",
+      "rpp_async_default_static_repeat",
+      "rpp_async_default_dynamic_main"
+    ],
+    "unexecuted": [
+      "rpp_async_default_dynamic_repeat"
+    ],
+    "stop_reason": "ALL_FROZEN_BRANCH_DEPENDENCIES_CLOSED",
+    "report": "docs/CUSP_SEGMENT_V1347_REPORT.md",
+    "check": "runs/v1347_cusp_segment_execution/CHECK_20261119.json",
+    "static_pair_passed": true,
+    "dynamic_passed": false,
+    "exact_actual_native_total": 42845,
+    "exact_own_replay_native_total": 42845,
+    "accepted_cusp_handoffs": 1,
+    "gear_releases": 2,
+    "dynamic_functional_stop": "NO_CAUSAL_ROUTE_AFTER_BOUNDED_WAIT"
   }
 }
