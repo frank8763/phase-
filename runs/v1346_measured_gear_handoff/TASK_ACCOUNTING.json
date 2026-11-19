@@ -1,0 +1,74 @@
+{
+  "rows": [
+    {
+      "task": "rpp_async_default_static_main",
+      "branch": "rpp_async_default",
+      "stage": "static",
+      "role": "main",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.3905121298374978,
+      "minimum_actual_clearance_m": 0.2500344576698157,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.15650745201856
+    },
+    {
+      "task": "rpp_async_default_static_repeat",
+      "branch": "rpp_async_default",
+      "stage": "static",
+      "role": "repeat",
+      "classification": "PASSED",
+      "passed": true,
+      "actual_native": 9195,
+      "actual_recorded_lower_bound": 9000,
+      "own_replay_native": 9195,
+      "goal_distance_m": 0.3905167891708862,
+      "minimum_actual_clearance_m": 0.2500337171958648,
+      "bad_contacts": 0,
+      "first_actor_detection": null,
+      "worker_wall_s": 98.09709989398834
+    },
+    {
+      "task": "rpp_async_default_dynamic_main",
+      "branch": "rpp_async_default",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "passed": false,
+      "actual_native": 36220,
+      "actual_recorded_lower_bound": 36000,
+      "own_replay_native": 36220,
+      "goal_distance_m": 3.7420843896634897,
+      "minimum_actual_clearance_m": 0.23919380712088256,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951066274092668,
+          -0.7293175796929023
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 379.1058219909901
+    }
+  ],
+  "unexecuted": [
+    "rpp_async_default_dynamic_repeat"
+  ],
+  "skipped_dependencies": [
+    "rpp_async_default_dynamic_repeat"
+  ],
+  "exact_actual_total": 54610,
+  "unknown_actual_tasks": [],
+  "exact_replay_total": 54610,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}

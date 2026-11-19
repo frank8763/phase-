@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_BOUNDED_MEASURED_GEAR_HANDOFF",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1346_measured_gear_handoff",
-  "active_window": {
-    "started_unix": 1795051887.9570909,
-    "started_monotonic": 173663.406512315,
-    "absolute_deadline_unix": 1795057287.9570909,
-    "hard_stop_monotonic": 179063.406512315,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1346_measured_gear_handoff/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10051,5 +10045,27 @@
     "static_pair_passed": true,
     "dynamic_passed": false,
     "next_step": "mixed-gear stop/rest handoff repair; not launched"
+  },
+  "latest_v1346": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "rpp_async_default_static_main",
+      "rpp_async_default_static_repeat",
+      "rpp_async_default_dynamic_main"
+    ],
+    "unexecuted": [
+      "rpp_async_default_dynamic_repeat"
+    ],
+    "stop_reason": "ALL_FROZEN_BRANCH_DEPENDENCIES_CLOSED",
+    "report": "docs/MEASURED_GEAR_HANDOFF_V1346_REPORT.md",
+    "check": "runs/v1346_measured_gear_handoff/CHECK_20261119.json",
+    "static_pair_passed": true,
+    "dynamic_passed": false,
+    "dynamic_functional_stop": "NO_CAUSAL_ROUTE_AFTER_BOUNDED_WAIT",
+    "exact_actual_native_total": 54610,
+    "exact_own_replay_native_total": 54610,
+    "gear_releases": 31,
+    "physical_control_evidence_passed": true
   }
 }
