@@ -1,0 +1,24 @@
+{
+  "models": 0,
+  "physical_native": 0,
+  "errors": [
+    {
+      "test": "streaming_archive",
+      "error": "TypeError: TarFile.__init__() got an unexpected keyword argument compresslevel",
+      "fix": "Explicit gzip.GzipFile(compresslevel=3) around streaming tar, compatible with native Python3.10."
+    },
+    {
+      "test": "software_rpp_default_final_print",
+      "error": "ModuleNotFoundError: No module named common",
+      "complete_saved_controller_interface_passed": true,
+      "fix": "Correct helper name software_common; replay final encoding only, reuse actual completed controller action."
+    },
+    {
+      "test": "software_rpp_local_DDS_domain",
+      "error": "Calculated port number is too high, domainId over232",
+      "fix": "Use isolated domains211\u2013214; no controller/model started for failed local entry."
+    }
+  ],
+  "recorded_unix": 1795091357.3649824,
+  "audit_review_correction": "Distinguish existing finite1.5s forecast from all-future label; preserve all geometry/source/coverage gates."
+}

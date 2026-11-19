@@ -1,0 +1,62 @@
+{
+  "hard_stop_iso": "2026-11-20T09:00:00+08:00",
+  "hard_stop_unix": 1795136400.0,
+  "storage_limit_bytes": 10737418240,
+  "raw_running_limit_bytes": 6442450944,
+  "maximum_components": 7,
+  "maximum_navigations": 264,
+  "configs": [
+    {
+      "branch": "rpp_default",
+      "kind": "rpp",
+      "lookahead_m": 0.6,
+      "plugin": "RPP"
+    },
+    {
+      "branch": "coherent_mppi",
+      "kind": "mppi",
+      "lookahead_m": null,
+      "plugin": "Deadband"
+    },
+    {
+      "branch": "rpp_local",
+      "kind": "rpp",
+      "lookahead_m": 0.4,
+      "plugin": "RPP"
+    },
+    {
+      "branch": "rpp_preview",
+      "kind": "rpp",
+      "lookahead_m": 0.8,
+      "plugin": "RPP"
+    }
+  ],
+  "methods": [
+    "adapted_RPP",
+    "engineering_coherent_MPPI"
+  ],
+  "static_before_dynamic": true,
+  "ordinary_safe_failure_continues": true,
+  "minimum_route_start_remaining_s": 1700,
+  "minimum_component_start_remaining_s": 800,
+  "cpus_native": [
+    2
+  ],
+  "cpus_ros": [
+    3
+  ],
+  "cpus_planner": [
+    4
+  ],
+  "cpus_audit": [
+    5
+  ],
+  "stage_reserved_cpus_and_siblings": [
+    8,
+    24,
+    10,
+    26,
+    12,
+    28
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "controller_server": {
+    "ros__parameters": {
+      "controller_frequency": 20.0,
+      "costmap_update_timeout": 0.3,
+      "min_x_velocity_threshold": 0.001,
+      "min_y_velocity_threshold": 0.001,
+      "min_theta_velocity_threshold": 0.001,
+      "failure_tolerance": 0.3,
+      "progress_checker_plugins": [
+        "progress_checker"
+      ],
+      "goal_checker_plugins": [
+        "goal_checker"
+      ],
+      "controller_plugins": [
+        "Deadband"
+      ],
+      "use_realtime_priority": false,
+      "progress_checker": {
+        "plugin": "nav2_controller::SimpleProgressChecker",
+        "required_movement_radius": 0.2,
+        "movement_time_allowance": 60.0
+      },
+      "use_sim_time": false,
+      "goal_checker": {
+        "stateful": true,
+        "plugin": "nav2_controller::SimpleGoalChecker",
+        "xy_goal_tolerance": 0.08,
+        "yaw_goal_tolerance": 3.141592653589793
+      },
+      "enable_stamped_cmd_vel": true,
+      "Deadband": {
+        "plugin": "phase_deadband/DeadbandMPPI",
+        "time_steps": 56,
+        "model_dt": 0.05,
+        "batch_size": 1000,
+        "ax_max": 0.4,
+        "ax_min": -0.4,
+        "ay_max": 0.0,
+        "ay_min": 0.0,
+        "az_max": 0.4,
+        "vx_std": 0.06,
+        "vy_std": 0.0,
+        "wz_std": 0.06,
+        "vx_max": 0.1,
+        "vx_min": -0.1,
+        "vy_max": 0.0,
+        "wz_max": 0.07575757575757576,
+        "iteration_count": 1,
+        "prune_distance": 1.7,
+        "transform_tolerance": 0.1,
+        "temperature": 0.3,
+        "gamma": 0.0,
+        "motion_model": "Ackermann",
+        "visualize": false,
+        "regenerate_noises": true,
+        "TrajectoryVisualizer": {
+          "trajectory_step": 5,
+          "time_step": 3
+        },
+        "AckermannConstraints": {
+          "min_turning_r": 1.32
+        },
+        "critics": [
+          "ConstraintCritic",
+          "CostCritic",
+          "GoalCritic",
+          "GoalAngleCritic",
+          "PathAlignCritic",
+          "PathFollowCritic",
+          "PathAngleCritic",
+          "PreferForwardCritic"
+        ],
+        "ConstraintCritic": {
+          "enabled": true,
+          "cost_power": 1,
+          "cost_weight": 4.0
+        },
+        "GoalCritic": {
+          "enabled": true,
+          "cost_power": 1,
+          "cost_weight": 5.0,
+          "threshold_to_consider": 1.4
+        },
+        "GoalAngleCritic": {
+          "enabled": true,
+          "cost_power": 1,
+          "cost_weight": 3.0,
+          "threshold_to_consider": 0.5
+        },
+        "PreferForwardCritic": {
+          "enabled": true,
+          "cost_power": 1,
+          "cost_weight": 5.0,
+          "threshold_to_consider": 0.5
+        },
+        "CostCritic": {
+          "enabled": true,
+          "cost_power": 1,
+          "cost_weight": 3.81,
+          "near_collision_cost": 253,
+          "critical_cost": 300.0,
+          "consider_footprint": true,
+          "collision_cost": 1000000.0,
+          "near_goal_distance": 0.45,
+          "trajectory_point_step": 2
+        },
+        "PathAlignCritic": {
+          "enabled": true,
+          "cost_power": 1,
+          "cost_weight": 14.0,
+          "max_path_occupancy_ratio": 0.05,
+          "trajectory_point_step": 4,
+          "threshold_to_consider": 0.5,
+          "offset_from_furthest": 20,
+          "use_path_orientations": false
+        },
+        "PathFollowCritic": {
+          "enabled": true,
+          "cost_power": 1,
+          "cost_weight": 5.0,
+          "offset_from_furthest": 5,
+          "threshold_to_consider": 0.1
+        },
+        "PathAngleCritic": {
+          "enabled": true,
+          "cost_power": 1,
+          "cost_weight": 2.0,
+          "offset_from_furthest": 4,
+          "threshold_to_consider": 0.5,
+          "max_angle_to_furthest": 0.1,
+          "mode": 2
+        },
+        "publish_optimal_trajectory": false,
+        "enforce_path_inversion": true,
+        "inversion_xy_tolerance": 0.16,
+        "inversion_yaw_tolerance": 0.25,
+        "open_loop": false
+      }
+    }
+  },
+  "local_costmap": {
+    "local_costmap": {
+      "ros__parameters": {
+        "update_frequency": 10.0,
+        "publish_frequency": 1.0,
+        "global_frame": "odom",
+        "robot_base_frame": "base_link",
+        "rolling_window": true,
+        "width": 6,
+        "height": 6,
+        "resolution": 0.05,
+        "plugins": [
+          "static_layer",
+          "obstacle_layer",
+          "inflation_layer"
+        ],
+        "inflation_layer": {
+          "plugin": "nav2_costmap_2d::InflationLayer",
+          "cost_scaling_factor": 4.0,
+          "inflation_radius": 0.85
+        },
+        "always_send_full_costmap": false,
+        "use_sim_time": false,
+        "footprint": "[[-0.2907257858564467, -0.375], [-0.28782963214521234, -0.4044051420988682], [-0.2792524685744503, -0.4326802610774705], [-0.26532391073005623, -0.4587387599703287], [-0.2465792252787649, -0.48157922527876484], [-0.22373875997032877, -0.5003239107300562], [-0.1976802610774706, -0.5142524685744503], [-0.16940514209886826, -0.5228296321452123], [-0.14000000000000004, -0.5257257858564467], [0.74, -0.5257257858564467], [0.7694051420988681, -0.5228296321452124], [0.7976802610774706, -0.5142524685744503], [0.8237387599703287, -0.5003239107300562], [0.8465792252787648, -0.4815792252787649], [0.8653239107300562, -0.45873875997032876], [0.8792524685744503, -0.4326802610774706], [0.8878296321452123, -0.40440514209886824], [0.8907257858564467, -0.375], [0.8907257858564467, 0.375], [0.8878296321452124, 0.4044051420988682], [0.8792524685744503, 0.43268026107747054], [0.8653239107300562, 0.45873875997032876], [0.8465792252787648, 0.48157922527876484], [0.8237387599703287, 0.5003239107300562], [0.7976802610774705, 0.5142524685744503], [0.7694051420988681, 0.5228296321452124], [0.74, 0.5257257858564467], [-0.14, 0.5257257858564467], [-0.16940514209886817, 0.5228296321452124], [-0.19768026107747053, 0.5142524685744503], [-0.22373875997032872, 0.5003239107300562], [-0.24657922527876486, 0.48157922527876484], [-0.26532391073005623, 0.45873875997032876], [-0.2792524685744503, 0.43268026107747054], [-0.28782963214521234, 0.40440514209886824], [-0.2907257858564467, 0.375]]",
+        "footprint_padding": 0.0,
+        "transform_tolerance": 0.15,
+        "obstacle_layer": {
+          "plugin": "nav2_costmap_2d::ObstacleLayer",
+          "enabled": true,
+          "observation_sources": "scan",
+          "combination_method": 1,
+          "scan": {
+            "topic": "scan",
+            "max_obstacle_height": 2.0,
+            "clearing": true,
+            "marking": true,
+            "data_type": "LaserScan",
+            "raytrace_max_range": 3.0,
+            "raytrace_min_range": 0.05,
+            "obstacle_max_range": 2.99,
+            "obstacle_min_range": 0.05,
+            "inf_is_valid": true
+          }
+        },
+        "static_layer": {
+          "plugin": "nav2_costmap_2d::StaticLayer",
+          "enabled": true,
+          "map_topic": "/phase_public_static",
+          "map_subscribe_transient_local": true,
+          "subscribe_to_updates": false
+        }
+      }
+    }
+  }
+}
