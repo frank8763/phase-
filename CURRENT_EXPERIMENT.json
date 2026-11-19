@@ -231,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Await a new independent bounded window for four shared safe recovery components: RPP main/success-repeat then coherent MPPI main/success-repeat; first failure stops. No complete-route or fixed24 launch.",
+  "next_scope": "Await explicit single rolling-map entry continuation for original four unarmed recovery tasks; original20:55:15 dual deadline unchanged. No whole-route/three-route/fixed24.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -10346,6 +10346,20 @@
       "mppi_recovery_repeat"
     ],
     "stop_reason": "FIRST_COMPONENT_FAILURE_OR_EVIDENCE_ANOMALY",
-    "report": "docs/SHARED_RECOVERY_COMPONENT_V1367_REPORT.md"
+    "report": "docs/SHARED_RECOVERY_COMPONENT_V1367_REPORT.md",
+    "error_class": "OUTSIDE_ROLLING_WINDOW_ENTRY_SENTINEL",
+    "recovery_commands": 0,
+    "original_full_state_prefix_error": 0,
+    "original_full_own_replay_error": 0
+  },
+  "latest_v1368": {
+    "stage": "PREPARED_AWAITING_SINGLE_ENTRY_CONTINUATION",
+    "models": 0,
+    "physical_native": 0,
+    "qualification_passed": true,
+    "entry_continuation_authorized": false,
+    "window_reset": false,
+    "original_absolute_deadline_unix": 1795092915.2168496,
+    "report": "docs/ROLLING_MAP_ENTRY_V1368_PREPARATION.md"
   }
 }
