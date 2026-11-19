@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-11-19T10:47:06.652203+08:00",
+  "closed": true,
+  "scientific_branch_passed": false,
+  "static_pair_passed": true,
+  "dynamic_classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+  "dynamic_functional_stop": "NO_CAUSAL_ROUTE_AFTER_BOUNDED_WAIT",
+  "dynamic_actual_native": 27410,
+  "dynamic_complete_own_replay_native": 27410,
+  "exact_actual_total": 45800,
+  "exact_replay_total": 45800,
+  "replay_error": 0.0,
+  "minimum_actual_clearance_m": 0.25003314244224667,
+  "bad_contacts": 0,
+  "after_detection_travel_m": 2.5488237349349783,
+  "remaining_goal_m": 4.0161942266885235,
+  "final_translation_speed_m_s": 4.5741728235011195e-06,
+  "all_physical_control_stop_evidence_gates_passed": true,
+  "full_dynamic_functional_audit_passed": false,
+  "earlier_reserve_brake_events": [
+    {
+      "native_tick": 14390,
+      "body": [
+        0.6987808110098749,
+        0.01424662240171872,
+        0.9633175210751898,
+        0.06325883042981124,
+        0.03848939276531235
+      ],
+      "requested": [
+        0.0644139504007147,
+        0.04879844727326871
+      ],
+      "allowed": false,
+      "proof": {
+        "current_known_clearance_m": 0.24442596601424482,
+        "early_intervention_m": 0.245,
+        "unchanged_recovery_margin_m": 0.22,
+        "empirical_monitor_not_stopping_certificate": true,
+        "reason": "EARLY_RECOVERY_BRAKE",
+        "command_geometry_minimum_m": 0.24251267179656927,
+        "command_geometry_terminal_m": 0.24313089137395852,
+        "preview_s": 0.5,
+        "actual_dynamics_certificate": false
+      },
+      "command_sequence": 2878
+    }
+  ],
+  "minimum_known_static_clearance_in_guard_records": 0.2433376373496533,
+  "outward_geometric_escape_commands": 44,
+  "gear_releases": 5,
+  "accepted_cusp_handoffs": 4,
+  "rejected_cusp_handoffs": 1,
+  "planning_attempts": 10,
+  "installed_routes": [
+    4,
+    8
+  ],
+  "planning_live_refusals": 8,
+  "maximum_gap_between_novel_observations_s": 19.54999999998222,
+  "unexecuted": [
+    "rpp_async_default_dynamic_repeat"
+  ],
+  "models_in_check": 0,
+  "new_native_in_check": 0,
+  "raw_retained": true,
+  "remote_backup_pending": true,
+  "next_qualification": "V1349 math-only planner latency; no physical window opened"
+}

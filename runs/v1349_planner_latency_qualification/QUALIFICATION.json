@@ -1,0 +1,171 @@
+{
+  "passed": true,
+  "scope": "saved-data distance and planner latency qualification only",
+  "geometry": {
+    "passed": true,
+    "fields": [
+      {
+        "poses": 67410,
+        "max_abs_error": 0.0,
+        "numpy_wall_s": 0.3464054770593066,
+        "compiled_wall_s": 0.01902093496755697,
+        "speedup": 18.21180071590343
+      },
+      {
+        "poses": 67410,
+        "max_abs_error": 0.0,
+        "numpy_wall_s": 0.3549648989283014,
+        "compiled_wall_s": 0.020963399118045345,
+        "speedup": 16.93260224305641
+      }
+    ],
+    "max_abs_error": 0.0,
+    "threshold_classifications": 539280,
+    "constructed_boundary_poses": 75,
+    "nonfinite_denied": true,
+    "models": 0,
+    "physical_native": 0
+  },
+  "benchmarks": [
+    {
+      "saved_request": 1,
+      "numpy_wall_s": 12.523253991996171,
+      "compiled_wall_s": 4.9082131090108305,
+      "speedup": 2.5514894552979235,
+      "old_report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 12.505187661998207,
+        "minimum_clearance_m": 0.2474735852837408,
+        "local_goal_distance_m": 1.3687905399920495,
+        "goal_distance_m": 1.3687905399920495,
+        "guard_m": 0.24726469854100663,
+        "nominal_maximum_curvature_m_inv": 0.5,
+        "unchanged_execution_maximum_curvature_m_inv": 0.7575757575757576,
+        "requested_nominal_clearance_m": 0.27,
+        "scope": "nominal steering and tracking clearance reserve, physical tracking not guaranteed"
+      },
+      "new_report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 4.890500601002714,
+        "minimum_clearance_m": 0.2474735852837408,
+        "local_goal_distance_m": 1.3687905399920495,
+        "goal_distance_m": 1.3687905399920495,
+        "guard_m": 0.24726469854100663,
+        "nominal_maximum_curvature_m_inv": 0.5,
+        "unchanged_execution_maximum_curvature_m_inv": 0.7575757575757576,
+        "requested_nominal_clearance_m": 0.27,
+        "scope": "nominal steering and tracking clearance reserve, physical tracking not guaranteed"
+      },
+      "same_shape": true,
+      "maximum_path_element_error": 0.0,
+      "exact_path_equal": true,
+      "original_numpy_dense_validation": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 0.2474735852837408,
+        "required_m": 0.22,
+        "samples": 781,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "new_full_goal": false
+    },
+    {
+      "saved_request": 4,
+      "numpy_wall_s": 12.556232344999444,
+      "compiled_wall_s": 4.880588975996943,
+      "speedup": 2.572687929008531,
+      "old_report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 12.53649069898529,
+        "minimum_clearance_m": 0.24818596106674395,
+        "local_goal_distance_m": 1.794476581090633,
+        "goal_distance_m": 1.794476581090633,
+        "guard_m": 0.24718596106674395,
+        "nominal_maximum_curvature_m_inv": 0.5,
+        "unchanged_execution_maximum_curvature_m_inv": 0.7575757575757576,
+        "requested_nominal_clearance_m": 0.27,
+        "scope": "nominal steering and tracking clearance reserve, physical tracking not guaranteed"
+      },
+      "new_report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 4.865661931980867,
+        "minimum_clearance_m": 0.24818596106674395,
+        "local_goal_distance_m": 1.794476581090633,
+        "goal_distance_m": 1.794476581090633,
+        "guard_m": 0.24718596106674395,
+        "nominal_maximum_curvature_m_inv": 0.5,
+        "unchanged_execution_maximum_curvature_m_inv": 0.7575757575757576,
+        "requested_nominal_clearance_m": 0.27,
+        "scope": "nominal steering and tracking clearance reserve, physical tracking not guaranteed"
+      },
+      "same_shape": true,
+      "maximum_path_element_error": 0.0,
+      "exact_path_equal": true,
+      "original_numpy_dense_validation": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 0.24818596106674395,
+        "required_m": 0.22,
+        "samples": 691,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "new_full_goal": false
+    },
+    {
+      "saved_request": 8,
+      "numpy_wall_s": 12.489299696986564,
+      "compiled_wall_s": 4.8503871530119795,
+      "speedup": 2.5749077966345415,
+      "old_report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 12.47086292100721,
+        "minimum_clearance_m": 0.24334675277230822,
+        "local_goal_distance_m": 1.2383025169400612,
+        "goal_distance_m": 1.2383025169400612,
+        "guard_m": 0.24234675277230822,
+        "nominal_maximum_curvature_m_inv": 0.5,
+        "unchanged_execution_maximum_curvature_m_inv": 0.7575757575757576,
+        "requested_nominal_clearance_m": 0.27,
+        "scope": "nominal steering and tracking clearance reserve, physical tracking not guaranteed"
+      },
+      "new_report": {
+        "status": "SAFE_PROGRESS_PREFIX",
+        "expanded": 22000,
+        "wall_s": 4.8332956149824895,
+        "minimum_clearance_m": 0.24334675277230822,
+        "local_goal_distance_m": 1.2383025169400612,
+        "goal_distance_m": 1.2383025169400612,
+        "guard_m": 0.24234675277230822,
+        "nominal_maximum_curvature_m_inv": 0.5,
+        "unchanged_execution_maximum_curvature_m_inv": 0.7575757575757576,
+        "requested_nominal_clearance_m": 0.27,
+        "scope": "nominal steering and tracking clearance reserve, physical tracking not guaranteed"
+      },
+      "same_shape": true,
+      "maximum_path_element_error": 0.0,
+      "exact_path_equal": true,
+      "original_numpy_dense_validation": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 0.24334675277230822,
+        "required_m": 0.22,
+        "samples": 661,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "new_full_goal": false
+    }
+  ],
+  "every_new_path_independently_validated_original_numpy": true,
+  "all_paths_equal_within1e8": true,
+  "binary_sha256": "87dbc80fae4ff7c669a43793870ff32a2de52c5f0a2ced8b45a53fc77b5162f1",
+  "full_goal_successes": 0,
+  "physical_navigation_tested": false,
+  "realtime_proven": false,
+  "models": 0,
+  "physical_native": 0
+}

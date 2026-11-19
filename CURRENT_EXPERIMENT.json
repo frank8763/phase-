@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_BOUNDED_RECOVERY_RESERVE",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1348_recoverable_tracking",
-  "active_window": {
-    "started_unix": 1795055207.368459,
-    "started_monotonic": 176982.817882877,
-    "absolute_deadline_unix": 1795060607.368459,
-    "hard_stop_monotonic": 182382.817882877,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1348_recoverable_tracking/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10095,5 +10089,33 @@
     "accepted_cusp_handoffs": 1,
     "gear_releases": 2,
     "dynamic_functional_stop": "NO_CAUSAL_ROUTE_AFTER_BOUNDED_WAIT"
+  },
+  "latest_v1348": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "rpp_async_default_static_main",
+      "rpp_async_default_static_repeat",
+      "rpp_async_default_dynamic_main"
+    ],
+    "unexecuted": [
+      "rpp_async_default_dynamic_repeat"
+    ],
+    "stop_reason": "ALL_FROZEN_BRANCH_DEPENDENCIES_CLOSED",
+    "report": "docs/RECOVERABLE_TRACKING_V1348_REPORT.md",
+    "check": "runs/v1348_recoverable_tracking/CHECK_20261119.json",
+    "static_pair_passed": true,
+    "dynamic_passed": false,
+    "exact_actual_native_total": 45800,
+    "exact_own_replay_native_total": 45800,
+    "dynamic_functional_stop": "NO_CAUSAL_ROUTE_AFTER_BOUNDED_WAIT",
+    "early_reserve_brake_worked_on_saved_run": true
+  },
+  "prepared_v1349": {
+    "scope": "zero-model planner distance/latency qualification only",
+    "physical_authorized": false,
+    "report": "docs/PLANNER_LATENCY_V1349_NEXT.md",
+    "models": 0,
+    "new_native": 0
   }
 }

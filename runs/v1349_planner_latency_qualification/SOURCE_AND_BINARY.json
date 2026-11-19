@@ -1,0 +1,30 @@
+{
+  "files": {
+    "experiments/v1349_planner_latency_qualification/candidate.py": "e89f7dc91e84bcd43694158e727a7fd0953413834b93552593e42612deae04b0",
+    "experiments/v1349_planner_latency_qualification/qualify.py": "8a206f2a9644db61a6f7567142993b084ed91f24addb0f5aea9f288ce312e14b",
+    "experiments/v1349_planner_latency_qualification/fast_clearance.py": "e38a9131a6673f7c7bc98b0128fa520e61b8c84a2fc6f7d299a808001c750dd2",
+    "experiments/v1349_planner_latency_qualification/PROTOCOL.md": "8d266400af9f2b4258cb090a3c0f542e02406c5fdcde54b9aad2ca47433ddc6f",
+    "experiments/v1349_planner_latency_qualification/clearance.cpp": "5488f2d07c2563d079d120a7fc2b0f839b8407bacbec35113110aef6f23c0e52"
+  },
+  "binary_sha256": "87dbc80fae4ff7c669a43793870ff32a2de52c5f0a2ced8b45a53fc77b5162f1",
+  "compile_command": [
+    "taskset",
+    "-c",
+    "3",
+    "nice",
+    "-n",
+    "19",
+    "g++",
+    "-std=c++17",
+    "-O3",
+    "-fPIC",
+    "-shared",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "experiments/v1349_planner_latency_qualification/clearance.cpp",
+    "-o",
+    "runs/v1349_planner_latency_qualification/libclearance.so"
+  ],
+  "model_scope": "zero models/zero integration",
+  "physical_authorized": false
+}
