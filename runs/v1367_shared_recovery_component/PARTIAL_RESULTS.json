@@ -1,0 +1,118 @@
+[
+  {
+    "task": "rpp_recovery_main",
+    "branch": "rpp",
+    "role": "main",
+    "attempted": true,
+    "passed": false,
+    "monitor": {
+      "returncodes": [
+        1,
+        1
+      ],
+      "drain_requested": true,
+      "cooperative_ros_close_requested": false,
+      "wall_s": 10.626362005015835
+    },
+    "native": {
+      "passed": false,
+      "canonical_vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
+      "new_actual_native": 15305,
+      "own_replay_native": 15305,
+      "private_mujoco_native": 0,
+      "analytical_vehicle_native": 0,
+      "training_updates": 0,
+      "original_goal_navigation": false,
+      "historical_controls_used": 15105,
+      "historical_prefix_replay_native": 15105,
+      "new_component_native": 200,
+      "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+      "observation_transport_drops": 105,
+      "functional_checks": {
+        "upstream_action_succeeded": false,
+        "component_goal_distance": false,
+        "actual_reverse_progress": false,
+        "body_stopped": true,
+        "steering_settled": true,
+        "drive_command_zero": true
+      },
+      "whole_goal_distance_m": 0.800009173835515,
+      "forward_displacement_m": -9.17449465907929e-06,
+      "maximum_center_reference_distance_m": 9.204813212248104e-06,
+      "mean_center_reference_distance_m": 4.622991605641572e-06,
+      "terminal_yaw_error_report_only_rad": 5.983499743456022e-07,
+      "model_native_inflight_unknown": false,
+      "physical": {
+        "actual_native": 15305,
+        "fully_recorded_native": 15305,
+        "minimum_actual_clearance_m": 0.2500331345960883,
+        "minimum_self_margin_m": 0.009164030809881929,
+        "bad_contacts": 0,
+        "final_body": [
+          2.007894845845503,
+          -1.8837916459679718,
+          -0.8782321968728674,
+          4.58610226965998e-06,
+          2.948902217898337e-07
+        ],
+        "final_translation_speed_m_s": 4.602217072699747e-06,
+        "root_guard_native_count": 15305,
+        "goal_distance_m": 1.9954917506107976,
+        "first_actor_detection": {
+          "native_tick": 4475,
+          "sim_time": 44.749999999999666,
+          "xy": [
+            0.03951065307102839,
+            -0.7293175822466142
+          ],
+          "rays": [
+            29
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 5.0515997828893155
+      },
+      "evidence_saved": true,
+      "independent_allocation": {
+        "passed": true,
+        "control_error": 0.0,
+        "memory_error": 0.0,
+        "recorded_rows": 15305
+      },
+      "replay": {
+        "replay_native": 15305,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "actual_total_native": 15305,
+      "closed": true,
+      "wall_s": 29.254498930997215,
+      "closed_unix": 1795087546.9549649,
+      "source_unchanged": true
+    },
+    "ros": {
+      "passed": false,
+      "physical_models_in_ros": 0,
+      "scope": "one safe recovery component, not goalnavigation",
+      "actual_loaded_libraries": [
+        "libphase_executable_rpp.so"
+      ],
+      "error": "AssertionError()",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1367_shared_recovery_component/ros_component.py\", line 137, in main\n    assert 0<=ix<cm.info.width and 0<=iy<cm.info.height and cm.data[iy*cm.info.width+ix]==100\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "commands": 0,
+      "origin_native": 15105,
+      "final_native": 15105,
+      "wall_s": 0.6388961099728476,
+      "closed": true,
+      "evidence_write_errors": [],
+      "controller_server_exited": true,
+      "no_physical_modules_loaded": true
+    },
+    "worker_returncodes": [
+      1,
+      1
+    ]
+  }
+]
