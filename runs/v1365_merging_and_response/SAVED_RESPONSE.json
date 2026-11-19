@@ -1,0 +1,214 @@
+{
+  "executed": true,
+  "feedback_trace_alignment_errors": {
+    "position": 0.0,
+    "steering_position": 0.0,
+    "steering_velocity": 0.0,
+    "control": 0.0
+  },
+  "acceleration": {
+    "matched_initial_native": 1001,
+    "original_matched_interval_native": 1450,
+    "nominal_acceleration_duration_s": 1.0,
+    "nominal_speed_m_s": 0.1,
+    "actual_90percent_speed_sustained_halfsecond_s": 0.73,
+    "actual_95percent_speed_sustained_halfsecond_s": 3.86,
+    "checkpoints": [
+      {
+        "native_tick": 100,
+        "time_s": 1.0,
+        "measured_longitudinal_speed_m_s": 0.09075806125106824,
+        "actual_progress_m": 0.08164758975428477,
+        "nominal_progress_m": 0.05,
+        "difference_m": 0.03164758975428476
+      },
+      {
+        "native_tick": 200,
+        "time_s": 2.0,
+        "measured_longitudinal_speed_m_s": 0.09257323279525136,
+        "actual_progress_m": 0.1733572072074323,
+        "nominal_progress_m": 0.15000000000000002,
+        "difference_m": 0.023357207207432285
+      },
+      {
+        "native_tick": 500,
+        "time_s": 5.0,
+        "measured_longitudinal_speed_m_s": 0.09608259633963082,
+        "actual_progress_m": 0.4569293739865201,
+        "nominal_progress_m": 0.45,
+        "difference_m": 0.006929373986520104
+      },
+      {
+        "native_tick": 1000,
+        "time_s": 10.0,
+        "measured_longitudinal_speed_m_s": 0.09865884851843985,
+        "actual_progress_m": 0.9449046082896837,
+        "nominal_progress_m": 0.9500000000000001,
+        "difference_m": -0.005095391710316366
+      }
+    ],
+    "maximum_absolute_progress_error_m": 0.032066641976562636,
+    "nominal200ms_at_point1mps_distance_m": 0.02,
+    "first_outside20mm_nominal_progress_native": 41,
+    "original200ms_actual_timing_capture_qualified": false,
+    "remark": "Measured near-straight0.1 command step; nominal1s speed ramp is different and cannot be substituted online."
+  },
+  "stops": [
+    {
+      "start_native": 4505,
+      "finish_native": 4785,
+      "zero_native": 280,
+      "start_body": [
+        0.06828168525675997,
+        -0.7204208327498608,
+        0.5020417482484916,
+        0.09797100829649769,
+        -0.05860062582318701
+      ],
+      "first_full_measured_rest_sustained200ms_native": 4555,
+      "full_measured_rest_after_s": 0.5,
+      "both_original200zero_and_full_rest_after_s": 2.0,
+      "maximum_path_drift_during_zero_m": 0.014477254956531457,
+      "steering_position_drift_rad": 0.007093375132682822
+    },
+    {
+      "start_native": 5145,
+      "finish_native": 5395,
+      "zero_native": 250,
+      "start_body": [
+        0.235607457353664,
+        -0.6682286517580268,
+        0.4147073888991019,
+        0.04703887241277167,
+        -0.01838717686851156
+      ],
+      "first_full_measured_rest_sustained200ms_native": 5185,
+      "full_measured_rest_after_s": 0.4,
+      "both_original200zero_and_full_rest_after_s": 2.0,
+      "maximum_path_drift_during_zero_m": 0.004928858085513506,
+      "steering_position_drift_rad": 0.0017080683267584607
+    },
+    {
+      "start_native": 6265,
+      "finish_native": 6515,
+      "zero_native": 250,
+      "start_body": [
+        -0.05822217429796659,
+        -0.8122841326548484,
+        0.22582295628224852,
+        -0.048605892631532394,
+        -0.034172960039240315
+      ],
+      "first_full_measured_rest_sustained200ms_native": 6306,
+      "full_measured_rest_after_s": 0.41000000000000003,
+      "both_original200zero_and_full_rest_after_s": 2.0,
+      "maximum_path_drift_during_zero_m": 0.005414289467552336,
+      "steering_position_drift_rad": 0.004398673491198157
+    },
+    {
+      "start_native": 7870,
+      "finish_native": 8120,
+      "zero_native": 250,
+      "start_body": [
+        0.5373917185020124,
+        -0.8080489841751418,
+        0.01370056379687147,
+        0.04955290493276184,
+        -0.03016327502048261
+      ],
+      "first_full_measured_rest_sustained200ms_native": 7911,
+      "full_measured_rest_after_s": 0.41000000000000003,
+      "both_original200zero_and_full_rest_after_s": 2.0,
+      "maximum_path_drift_during_zero_m": 0.0055967442613664535,
+      "steering_position_drift_rad": 0.003189753790204697
+    },
+    {
+      "start_native": 8575,
+      "finish_native": 8895,
+      "zero_native": 320,
+      "start_body": [
+        0.42999233737359177,
+        -0.7896821220650782,
+        0.0798125852361695,
+        -0.04556310785812353,
+        0.028049038923885872
+      ],
+      "first_full_measured_rest_sustained200ms_native": 8615,
+      "full_measured_rest_after_s": 0.4,
+      "both_original200zero_and_full_rest_after_s": 2.0,
+      "maximum_path_drift_during_zero_m": 0.005025334191452405,
+      "steering_position_drift_rad": 0.0029599910641518457
+    },
+    {
+      "start_native": 10575,
+      "finish_native": 10825,
+      "zero_native": 250,
+      "start_body": [
+        1.54484484511919,
+        -0.7717564639128424,
+        -0.011695865668762994,
+        0.05119530615190844,
+        -0.006816214542873906
+      ],
+      "first_full_measured_rest_sustained200ms_native": 10616,
+      "full_measured_rest_after_s": 0.41000000000000003,
+      "both_original200zero_and_full_rest_after_s": 2.0,
+      "maximum_path_drift_during_zero_m": 0.005320245457199595,
+      "steering_position_drift_rad": 0.000538409894437139
+    },
+    {
+      "start_native": 12325,
+      "finish_native": 12575,
+      "zero_native": 250,
+      "start_body": [
+        0.7042054596598744,
+        -0.7013064497313997,
+        -0.5502887136930984,
+        -0.05032344126193387,
+        -0.0310298263792861
+      ],
+      "first_full_measured_rest_sustained200ms_native": 12367,
+      "full_measured_rest_after_s": 0.42,
+      "both_original200zero_and_full_rest_after_s": 2.0,
+      "maximum_path_drift_during_zero_m": 0.005716881024164464,
+      "steering_position_drift_rad": 0.003267593872055552
+    },
+    {
+      "start_native": 14905,
+      "finish_native": 19845,
+      "zero_native": 4940,
+      "start_body": [
+        2.0057495295394188,
+        -1.8807259858546679,
+        -0.8774496394488477,
+        0.05181068604672969,
+        -0.011869766056208413
+      ],
+      "first_full_measured_rest_sustained200ms_native": 14946,
+      "full_measured_rest_after_s": 0.41000000000000003,
+      "both_original200zero_and_full_rest_after_s": 2.0,
+      "maximum_path_drift_during_zero_m": 0.005671435770592169,
+      "steering_position_drift_rad": 0.0009955277304638521
+    }
+  ],
+  "steering": {
+    "unchanged_nominal_wheelbase_m": 0.6,
+    "nominal_extreme_curvature_m_inv": 0.5,
+    "unchanged_virtual_steering_rate_rad_s": 0.6,
+    "opposite_extreme_center_angle_change_rad": 0.5829135889557342,
+    "minimum_commanded_opposite_extreme_transition_s": 0.971522648259557,
+    "nominal_cruise_primitive_instantaneous_curvature_switch_qualified": false,
+    "matching_controlled_opposite_extreme_saved_experiment": false,
+    "large_recorded_upstream_curvature_changes": 0,
+    "parked_steering_uses_separate_explicit_target": true,
+    "zero_twist_hold_does_not_establish_requested_new_steering_angle": true
+  },
+  "source_journal_sha256": "52f27a0c762f3775773b031bcb5d1b094411489182377e0ed4f9fd4a30354e01",
+  "source_trace_sha256": "f9af32e46e1b72ac1fdcafe62a5667e3611998b8990dc39451fe6a9df9573e7e",
+  "actual_recorded_native_reviewed": 19845,
+  "new_models": 0,
+  "new_physical_native": 0,
+  "new_replay_native": 0,
+  "dynamics_or_timing_capture_qualified": false,
+  "wall_s": 0.3319071870064363
+}
