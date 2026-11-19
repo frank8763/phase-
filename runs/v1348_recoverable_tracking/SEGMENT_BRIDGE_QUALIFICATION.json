@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "actual_production_callbacks_executed": true,
+  "actual_saved_reserve_loss_zero_commanded": true,
+  "cases": [
+    {
+      "gear": 1,
+      "requested": -0.05,
+      "sent": 0.0,
+      "mode": "brake"
+    },
+    {
+      "gear": 1,
+      "requested": 0.0,
+      "sent": 0.0,
+      "mode": "track"
+    },
+    {
+      "gear": 1,
+      "requested": 0.05,
+      "sent": 0.05,
+      "mode": "track"
+    },
+    {
+      "gear": -1,
+      "requested": -0.05,
+      "sent": -0.05,
+      "mode": "track"
+    },
+    {
+      "gear": -1,
+      "requested": 0.0,
+      "sent": 0.0,
+      "mode": "track"
+    },
+    {
+      "gear": -1,
+      "requested": 0.05,
+      "sent": 0.0,
+      "mode": "brake"
+    }
+  ],
+  "in_flight_old_command_during_brake_blocked": true,
+  "all_python_parse": true,
+  "models": 0,
+  "physical_native": 0,
+  "ros_process_in_this_test": false
+}

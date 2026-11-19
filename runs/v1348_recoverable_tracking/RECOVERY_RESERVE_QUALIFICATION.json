@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "exact_saved_loss_request_denied": true,
+  "first_early_hold": {
+    "native": 15220,
+    "body": [
+      0.710280493131589,
+      -0.17452104787584322,
+      0.7849915143798395,
+      0.05167751000906273,
+      0.03148760441330812
+    ],
+    "request": [
+      0.05,
+      0.03787878787878788,
+      false
+    ],
+    "proof": {
+      "current_known_clearance_m": 0.24401142871040832,
+      "early_intervention_m": 0.245,
+      "unchanged_recovery_margin_m": 0.22,
+      "empirical_monitor_not_stopping_certificate": true,
+      "reason": "EARLY_RECOVERY_BRAKE",
+      "command_geometry_minimum_m": 0.21877685187629817,
+      "command_geometry_terminal_m": 0.21877685187629817,
+      "preview_s": 0.5,
+      "actual_dynamics_certificate": false
+    }
+  },
+  "stopped_outward_preview_allowed": {
+    "current_known_clearance_m": 0.24401142871040832,
+    "early_intervention_m": 0.245,
+    "unchanged_recovery_margin_m": 0.22,
+    "empirical_monitor_not_stopping_certificate": true,
+    "reason": "CLEARANCE_INCREASING_ESCAPE",
+    "command_geometry_minimum_m": 0.24401142871040832,
+    "command_geometry_terminal_m": 0.2680358222506229,
+    "preview_s": 0.5,
+    "actual_dynamics_certificate": false
+  },
+  "below_recovery_margin_not_admitted": true,
+  "qualified_new_paths": [
+    {
+      "saved_request": 4,
+      "geometry": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 0.24818640380071816,
+        "required_m": 0.22,
+        "samples": 751,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "full_goal_reached": false
+    },
+    {
+      "saved_request": 5,
+      "geometry": {
+        "reason": "LIVE_CAUSAL_FIELD_REVALIDATED",
+        "minimum_clearance_m": 0.2872408256271195,
+        "required_m": 0.22,
+        "samples": 781,
+        "start_translation_m": 0.0,
+        "start_heading_rad": 0.0
+      },
+      "full_goal_reached": false
+    }
+  ],
+  "nominal_curvature_m_inv": 0.5,
+  "execution_curvature_m_inv": 0.7575757575757576,
+  "physical_braking_not_tested": true,
+  "synthetic_stopped_feedback_explicit": true,
+  "models": 0,
+  "physical_native": 0
+}

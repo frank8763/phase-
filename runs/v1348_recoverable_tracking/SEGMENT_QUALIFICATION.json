@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "checks": {
+    "actual_plugin_reproduced_premature_reverse_on_mixed_path": true,
+    "actual_same_pose_ranges_plugin_forward_on_first_segment": true,
+    "all_original_edges_and_pose_yaws_preserved_in_order": true,
+    "all_three_admitted_routes_first_and_next_cusp_geometry": true,
+    "moved_heading_and_new_obstacle_negatives": true,
+    "opposite_direction_never_forwarded_or_sign_flipped": true,
+    "invalid_gear_negative": true
+  },
+  "actual_plugin_actions": 2,
+  "route_positives": [
+    {
+      "plan": 4,
+      "segments": 2,
+      "cusp_validation": {
+        "reason": "LATEST_FIELD_SEGMENT_AND_CAPTURE_GAP_CHECK",
+        "minimum_clearance_m": 0.24440955342154075,
+        "required_m": 0.22,
+        "start_distance_m": 6.206335383118183e-17,
+        "start_heading_rad": 0.0,
+        "samples": 447,
+        "dynamics_certificate": false
+      }
+    },
+    {
+      "plan": 6,
+      "segments": 2,
+      "cusp_validation": {
+        "reason": "LATEST_FIELD_SEGMENT_AND_CAPTURE_GAP_CHECK",
+        "minimum_clearance_m": 0.22468305680541922,
+        "required_m": 0.22,
+        "start_distance_m": 2.7755575615628914e-17,
+        "start_heading_rad": 0.0,
+        "samples": 435,
+        "dynamics_certificate": false
+      }
+    },
+    {
+      "plan": 7,
+      "segments": 2,
+      "cusp_validation": {
+        "reason": "LATEST_FIELD_SEGMENT_AND_CAPTURE_GAP_CHECK",
+        "minimum_clearance_m": 0.22684721596375468,
+        "required_m": 0.22,
+        "start_distance_m": 0.0,
+        "start_heading_rad": 0.0,
+        "samples": 363,
+        "dynamics_certificate": false
+      }
+    }
+  ],
+  "total_preserved_edges": 288,
+  "planned_cusp_software_states_synthetic": true,
+  "models": 0,
+  "physical_native": 0,
+  "physical_segment_tracking_qualified": false,
+  "reused_from": "runs/v1347_cusp_segment_execution/SEGMENT_QUALIFICATION.json",
+  "scope_of_reuse": "Unchanged component/subfunction evidence only; changed proposal/reserve separately qualified",
+  "new_qualification_refs": [
+    "RECOVERY_RESERVE_QUALIFICATION.json",
+    "NEW_PLANNER_QUALIFICATION.json",
+    "SEGMENT_BRIDGE_QUALIFICATION.json",
+    "aligned_controller_probe/RESULT.json"
+  ]
+}
