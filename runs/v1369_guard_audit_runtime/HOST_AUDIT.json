@@ -1,0 +1,151 @@
+{
+  "closed": true,
+  "diagnosis_passed": true,
+  "supplemental_full_audit_passed": false,
+  "audit": {
+    "passed": false,
+    "checks": {
+      "full_recorded": true,
+      "exact_prefix": true,
+      "exact_count_separation": true,
+      "actual_model_original": true,
+      "actual_clearance": true,
+      "full_self": true,
+      "finite_state": true,
+      "native_clock": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "no_bad_contacts": true,
+      "full_own_replay": true,
+      "complete_tail": true,
+      "sources_unchanged": true,
+      "restored_component_origin": true,
+      "gear_reconstruction": true,
+      "stamped_source_and_expiry": true,
+      "complete_ros_evidence": true,
+      "reverse_commands_only": true,
+      "actual_controller_plugin": true,
+      "causal_field_guard_reconstructs": false,
+      "full_current_window_public_occupancy": true,
+      "independent_allocation": true,
+      "component_functional": true,
+      "component_goal": true,
+      "reverse_progress": true,
+      "final_measured_rest": true,
+      "final_steering_rest": true,
+      "final_drive_zero": true
+    },
+    "accounting": {
+      "actual_total_native": 16590,
+      "historical_prefix_replay_native": 15105,
+      "new_component_native": 1485
+    },
+    "own_replay_native": 16590,
+    "original_prefix_max_error": 0.0,
+    "actual_component_goal_distance_m": 0.07646860622640655,
+    "actual_reverse_progress_m": 0.724036326710018,
+    "minimum_actual_clearance_m": 0.2500331345960883,
+    "models": 0,
+    "new_physical_native": 0,
+    "scope": "shared safe recovery component, not full goalnavigation"
+  },
+  "guard_events": 257,
+  "proof_differences": [
+    {
+      "index": 179,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.3163456298844992,
+      "rebuilt": 0.3163456298844993,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 180,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.31628203746213435,
+      "rebuilt": 0.31628203746213446,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 183,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.31613556077876925,
+      "rebuilt": 0.31613556077876914,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 184,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.31610148766877233,
+      "rebuilt": 0.3161014876687722,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 191,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.3160689964511981,
+      "rebuilt": 0.316068996451198,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 211,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.31794375021965204,
+      "rebuilt": 0.31794375021965193,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 214,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.31847346727577175,
+      "rebuilt": 0.31847346727577186,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 215,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.31866429037710453,
+      "rebuilt": 0.3186642903771044,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 219,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.3194985472008812,
+      "rebuilt": 0.31949854720088133,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 222,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.32019843576747253,
+      "rebuilt": 0.3201984357674724,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "index": 225,
+      "field": "current_dynamic_clearance_m",
+      "recorded": 0.3209615684786311,
+      "rebuilt": 0.3209615684786312,
+      "absolute_error": 1.1102230246251565e-16
+    }
+  ],
+  "maximum_proof_error": 1.1102230246251565e-16,
+  "all_decisions_exact": true,
+  "tamper_negatives": [],
+  "python": "3.10.20",
+  "numpy": "2.2.6",
+  "interpreter": "/home/linghu/miniconda3/envs/mk_mujoco/bin/python",
+  "exact_proof_equality_required": true,
+  "safety_thresholds_unchanged": true,
+  "original_failed_audit_and_batch_unchanged": true,
+  "unexecuted": [
+    "rpp_recovery_repeat",
+    "mppi_recovery_main",
+    "mppi_recovery_repeat"
+  ],
+  "new_models": 0,
+  "new_physical_native": 0,
+  "new_replay_native": 0,
+  "training_updates": 0,
+  "source_unchanged": true
+}

@@ -1,0 +1,86 @@
+{
+  "closed": true,
+  "diagnosis_passed": true,
+  "supplemental_full_audit_passed": true,
+  "audit": {
+    "passed": true,
+    "checks": {
+      "full_recorded": true,
+      "exact_prefix": true,
+      "exact_count_separation": true,
+      "actual_model_original": true,
+      "actual_clearance": true,
+      "full_self": true,
+      "finite_state": true,
+      "native_clock": true,
+      "legal_ctrl": true,
+      "legal_slew": true,
+      "no_bad_contacts": true,
+      "full_own_replay": true,
+      "complete_tail": true,
+      "sources_unchanged": true,
+      "restored_component_origin": true,
+      "gear_reconstruction": true,
+      "stamped_source_and_expiry": true,
+      "complete_ros_evidence": true,
+      "reverse_commands_only": true,
+      "actual_controller_plugin": true,
+      "causal_field_guard_reconstructs": true,
+      "full_current_window_public_occupancy": true,
+      "independent_allocation": true,
+      "component_functional": true,
+      "component_goal": true,
+      "reverse_progress": true,
+      "final_measured_rest": true,
+      "final_steering_rest": true,
+      "final_drive_zero": true
+    },
+    "accounting": {
+      "actual_total_native": 16590,
+      "historical_prefix_replay_native": 15105,
+      "new_component_native": 1485
+    },
+    "own_replay_native": 16590,
+    "original_prefix_max_error": 0.0,
+    "actual_component_goal_distance_m": 0.07646860622640655,
+    "actual_reverse_progress_m": 0.724036326710018,
+    "minimum_actual_clearance_m": 0.2500331345960883,
+    "models": 0,
+    "new_physical_native": 0,
+    "scope": "shared safe recovery component, not full goalnavigation"
+  },
+  "guard_events": 257,
+  "proof_differences": [],
+  "maximum_proof_error": 0.0,
+  "all_decisions_exact": true,
+  "tamper_negatives": [
+    {
+      "tamper": "decision",
+      "rejected": true
+    },
+    {
+      "tamper": "one_ulp_scalar",
+      "rejected": true
+    },
+    {
+      "tamper": "reason",
+      "rejected": true
+    }
+  ],
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "interpreter": "/usr/bin/python3.12",
+  "exact_proof_equality_required": true,
+  "safety_thresholds_unchanged": true,
+  "original_failed_audit_and_batch_unchanged": true,
+  "unexecuted": [
+    "rpp_recovery_repeat",
+    "mppi_recovery_main",
+    "mppi_recovery_repeat"
+  ],
+  "new_models": 0,
+  "new_physical_native": 0,
+  "new_replay_native": 0,
+  "training_updates": 0,
+  "source_unchanged": true
+}
