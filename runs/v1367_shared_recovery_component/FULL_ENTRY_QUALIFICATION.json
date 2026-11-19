@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "entries": [
+    {
+      "kind": "native",
+      "proof": {
+        "passed": true,
+        "models": 0,
+        "physical_native": 0,
+        "actual_current_adapter_imported": true
+      }
+    },
+    {
+      "kind": "ros",
+      "branch": "rpp",
+      "proof": {
+        "passed": true,
+        "actual_ros_imports": true,
+        "models": 0,
+        "physical_native": 0,
+        "origin": 15105
+      }
+    },
+    {
+      "kind": "ros",
+      "branch": "mppi",
+      "proof": {
+        "passed": true,
+        "actual_ros_imports": true,
+        "models": 0,
+        "physical_native": 0,
+        "origin": 15105
+      }
+    }
+  ],
+  "backend": {
+    "passed": true,
+    "actual_renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "backend": {
+      "passed": true,
+      "actual_context_module": "mujoco.osmesa",
+      "actual_OpenGL_dispatch_module": "OpenGL.platform.osmesa",
+      "hardware_GPU_used": false,
+      "legacy_environment_label_restored": true
+    },
+    "models": 0,
+    "native_integrations": 0
+  },
+  "models": 0,
+  "physical_native": 0
+}

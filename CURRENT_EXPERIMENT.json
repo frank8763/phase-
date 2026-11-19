@@ -231,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Same coherent MPPI left/right components passed at different registered origins; validate full static route next, no active model jobs. Fair dynamics/closed-loop ablations/heldout/realtime/hardware still pending; see current paper roadmap.",
+  "next_scope": "Await a new independent bounded window for four shared safe recovery components: RPP main/success-repeat then coherent MPPI main/success-repeat; first failure stops. No complete-route or fixed24 launch.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -10336,5 +10336,17 @@
     "physical_launch": false,
     "hard_stop_unix": 1795078800.0,
     "report": "docs/CANONICAL_SHARED_CONTROLLERS_V1366_REPORT.md"
+  },
+  "latest_v1367": {
+    "stage": "PREPARED_AWAITING_NEW_BOUNDED_WINDOW",
+    "models": 0,
+    "physical_native": 0,
+    "maximum_component_tasks": 4,
+    "qualification_passed": true,
+    "new_window_authorized": false,
+    "proposed_new_window_seconds": 5400,
+    "old_deadline_unix": 1795078800.0,
+    "complete_dynamic_route_qualified": false,
+    "report": "docs/SHARED_RECOVERY_COMPONENT_V1367_PREPARATION.md"
   }
 }

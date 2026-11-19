@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "first_exit": "ros",
+      "passed": true,
+      "proof": {
+        "returncodes": [
+          0,
+          0
+        ],
+        "drain_requested": true,
+        "cooperative_ros_close_requested": false,
+        "wall_s": 0.15
+      }
+    },
+    {
+      "first_exit": "native",
+      "passed": true,
+      "proof": {
+        "returncodes": [
+          0,
+          0
+        ],
+        "drain_requested": false,
+        "cooperative_ros_close_requested": true,
+        "wall_s": 0.15
+      }
+    }
+  ],
+  "production_caller_uses_ros_native_order": true,
+  "models": 0,
+  "physical_native": 0
+}
