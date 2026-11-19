@@ -2080,3 +2080,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - 用户明确11/19通宵/多支线/多线程/10GiB并选择恢复pair→多控制器静态→条件动态；V1370冻结4配置(RPP .4/.6/.8+coherentMPPI)、2已有预测×2已有模式、原WE八既有相位的271条件任务(7组件/8静态/256动态，非新24)，普通安全完整功能失败转下一冻结任务，安全控制来源证据异常全停。14入口/4实际软件动作/6规划/两生产runtime保存审核/1711双类型动态审核及负例/11输出/依赖分类/33MiB分块解压存储压力全过，0新模型。CPU2物理、3ROS、4planner、5audit/调度，与已知Stage核及兄弟不重叠，Stage隔离/GPU隐藏。明早11/20 09:00/1795136400唯一硬止，10GiB/6GiB运行界预留归档；离线后台和单次同步/原件远端恢复前保留，旧窗口不延。docs/OVERNIGHT_CONTROLLER_MATRIX_V1370_PREPARATION.md。
 
 - V1370已一次后台启动pid379060，新绝对/双钟硬止2026-11-20 09:00/1795136400，10GiB，源46bc2baf冻；7个新增恢复组件已全部完整ownreplay/生产runtime独立审核PASS（RPP默认完整重复、coherentMPPI主重复、RPP .4/.8各主重复，复用旧默认主单列不计新样本），已自动接rpp_default_static_main且LIVE_STATIC。CPU2/3/4/5分核、仅一车锁、Stage隔离、临时idle/sleep抑制随本轮退出或09:00释放、无永久电源设置更改。离线不依赖在线监督，普通安全完整功能失败继续其它冻结任务；静态pair过才对应动态，任一安全控制证据异常全停不冻结后修补。必要原件完整归档SHA回读/单次同步，9时后仅零模型收尾。runs/v1370_overnight_controller_matrix/HANDOFF.json。
+
+- V1370夜间队列已闭：EVIDENCE_OR_OPERATION_STOP；实际尝试15、未执行256，动态开发pair存在全门通过=False；原八WE开发矩阵不是新24确认，所有分母/未知分账见docs/OVERNIGHT_CONTROLLER_MATRIX_V1370_REPORT.md。REVIEW_PENDING恢复，零模型归档/单次同步。
