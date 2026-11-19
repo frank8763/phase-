@@ -1,0 +1,87 @@
+{
+  "reproduced": true,
+  "saved_failure_tick": 23760,
+  "prior_gear": -1,
+  "drive_targets": [
+    0.0,
+    0.0
+  ],
+  "measured_longitudinal_m_s": -0.006968238250184656,
+  "old_interlock_passed_reverse_without_actual_rest": true,
+  "actual_unchanged_allocator_error": "REVERSE_GEAR_REQUIRES_ACTUAL_REST",
+  "failed_row": {
+    "before_native": 23760,
+    "phase": "HORIZON_TERMINAL_ACTUAL_FEEDBACK",
+    "request": [
+      -0.07876680226340912,
+      -0.010093222566454464,
+      false
+    ],
+    "upstream_request": [
+      -0.07876680226340912,
+      -0.010093222566454464,
+      false
+    ],
+    "gear_handoff": {
+      "requested_gear": -1,
+      "prior_gear": -1,
+      "drive_gear": 0,
+      "measured_body_gear": -1,
+      "brake_start": null,
+      "measured_rest": false,
+      "braking_native": 0,
+      "mode": "UNCHANGED",
+      "released": false
+    },
+    "last_ctrl": [
+      0.07915809119385822,
+      0.07390330968099755,
+      0.0,
+      0.0
+    ],
+    "integral": 0.0,
+    "encoders": [
+      0.07940966485177144,
+      0.07417136453106568,
+      -0.001394245866960544,
+      -0.0015254574878299713
+    ],
+    "body": [
+      1.1630346432801908,
+      -0.7944537752945372,
+      -0.9817733998123528,
+      -0.006968238250184656,
+      -0.0008473177634464209
+    ],
+    "applied": false,
+    "raw_upstream_request": [
+      -0.07876680226340912,
+      -0.010093222566454464,
+      false
+    ],
+    "expiry_gate": {
+      "fresh": true,
+      "source_age_s": 0.007387454010313377,
+      "applied_monotonic": 190753.487195969,
+      "reason": "FRESH"
+    },
+    "delivery": {
+      "origin": {
+        "kind": "NAV2_STAMPED",
+        "stamp_ns": 1795068978030382260,
+        "receipt_ros_ns": 1795068978030837001,
+        "receipt_monotonic": 190753.480263256,
+        "generated_monotonic": 190753.479808515,
+        "receipt_age_s": 0.00045474100000000004
+      },
+      "validated_monotonic": 190753.487073676,
+      "observation_sequence": 14115,
+      "observation_native_tick": 23740,
+      "observation_sampled_at": 190753.468368767
+    },
+    "command_sequence": 4752,
+    "freshness_rejection_index": null
+  },
+  "models": 0,
+  "physical_native": 0
+}
