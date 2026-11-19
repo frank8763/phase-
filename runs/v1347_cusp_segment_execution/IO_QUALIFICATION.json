@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "exact_send_timeout_red_then_nonblocking_congestion_recovery",
+      "passed": true,
+      "dropped": 64,
+      "wall_s": 0.0001306810008827597
+    },
+    {
+      "case": "planner_success",
+      "passed": true,
+      "io_brake_pump_iterations": 53,
+      "wall_s": 0.2641763949941378,
+      "error": null
+    },
+    {
+      "case": "planner_crash",
+      "passed": true,
+      "io_brake_pump_iterations": 3,
+      "wall_s": 0.01526123401708901,
+      "error": "PLANNER_EXIT_OR_RESULT_MISSING"
+    },
+    {
+      "case": "planner_no_result",
+      "passed": true,
+      "io_brake_pump_iterations": 3,
+      "wall_s": 0.015235097002005205,
+      "error": "PLANNER_EXIT_OR_RESULT_MISSING"
+    },
+    {
+      "case": "planner_foreign",
+      "passed": true,
+      "io_brake_pump_iterations": 52,
+      "wall_s": 0.2645529969886411,
+      "error": "FOREIGN_PLANNER_RESULT"
+    },
+    {
+      "case": "planner_hang",
+      "passed": true,
+      "io_brake_pump_iterations": 120,
+      "wall_s": 0.605457051016856,
+      "error": null
+    },
+    {
+      "case": "planner_cancel",
+      "passed": true,
+      "io_brake_pump_iterations": 10,
+      "wall_s": 0.0467323379998561,
+      "error": null
+    },
+    {
+      "case": "expired_root_denied",
+      "passed": true
+    }
+  ],
+  "tests": 8,
+  "original_red_reproduced": true,
+  "io_independent_of_child_planner": true,
+  "stale_future_command_gates_unchanged": true,
+  "models": 0,
+  "physical_native": 0,
+  "reused_from": "runs/v1346_measured_gear_handoff/IO_QUALIFICATION.json",
+  "unchanged_code_SHA_evidence": "REUSED_QUALIFICATIONS.json"
+}
