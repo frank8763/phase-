@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_BOUNDED_MOTION_AFTERNOON",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1356_bounded_motion_relay",
-  "active_window": {
-    "started_unix": 1795063331.5408225,
-    "started_monotonic": 185106.990244083,
-    "absolute_deadline_unix": 1795078800.0,
-    "hard_stop_monotonic": 200575.4494216442,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1356_bounded_motion_relay/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10189,5 +10183,31 @@
     ],
     "stop_reason": "ALL_FROZEN_BRANCH_DEPENDENCIES_CLOSED",
     "report": "docs/FAST_STAMPED_V1354_REPORT.md"
+  },
+  "latest_v1356": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "excursion_mode0_dynamic_main",
+      "periodic_mode0_dynamic_main"
+    ],
+    "unexecuted": [
+      "excursion_mode0_dynamic_repeat",
+      "periodic_mode0_dynamic_repeat",
+      "periodic_mode1_dynamic_main",
+      "periodic_mode1_dynamic_repeat"
+    ],
+    "stop_reason": "EVIDENCE_OR_OPERATION_STOP",
+    "report": "docs/BOUNDED_MOTION_V1356_REPORT.md",
+    "inspection_unix": 1795064585.078922,
+    "physical_main_attempts": 2,
+    "physical_successes": 0,
+    "actual_native": 55150,
+    "own_replay_native": 55150,
+    "unknown_native_tasks": 0,
+    "second_task_interruption": "OBSERVATION_EXPIRED_AT_DELIVERY_AND_MISSING_ROS_TAIL_RECORDS",
+    "third_main_unexecuted": true,
+    "github_backup_verified": false,
+    "no_restart": true
   }
 }

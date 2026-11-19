@@ -1,0 +1,72 @@
+{
+  "rows": [
+    {
+      "task": "excursion_mode0_dynamic_main",
+      "branch": "excursion_mode0",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "passed": false,
+      "actual_native": 31750,
+      "actual_recorded_lower_bound": 31500,
+      "own_replay_native": 31750,
+      "goal_distance_m": 2.2141117930783567,
+      "minimum_actual_clearance_m": 0.2500331552446258,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951053971922225,
+          -0.72931761319959
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 332.0803520799964
+    },
+    {
+      "task": "periodic_mode0_dynamic_main",
+      "branch": "periodic_mode0",
+      "stage": "dynamic",
+      "role": "main",
+      "classification": "EVIDENCE_OR_OPERATION_STOP",
+      "passed": false,
+      "actual_native": 23400,
+      "actual_recorded_lower_bound": 23000,
+      "own_replay_native": 23400,
+      "goal_distance_m": 2.073483411320375,
+      "minimum_actual_clearance_m": 0.2500331552446258,
+      "bad_contacts": 0,
+      "first_actor_detection": {
+        "native_tick": 4475,
+        "sim_time": 44.749999999999666,
+        "xy": [
+          0.03951053971922225,
+          -0.72931761319959
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "worker_wall_s": 246.18432842902257
+    }
+  ],
+  "unexecuted": [
+    "excursion_mode0_dynamic_repeat",
+    "periodic_mode0_dynamic_repeat",
+    "periodic_mode1_dynamic_main",
+    "periodic_mode1_dynamic_repeat"
+  ],
+  "skipped_dependencies": [
+    "excursion_mode0_dynamic_repeat"
+  ],
+  "exact_actual_total": 55150,
+  "unknown_actual_tasks": [],
+  "exact_replay_total": 55150,
+  "unknown_replay_tasks": [],
+  "models_for_closure": 0
+}
