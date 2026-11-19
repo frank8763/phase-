@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "software_only": true,
+  "models": 0,
+  "physical_native": 0,
+  "training_updates": 0,
+  "independent_navigation_trials": 0,
+  "automatic_physical_continuation": false,
+  "results": [
+    {
+      "interface_qualified": true,
+      "task": {
+        "id": "saved_request10_reverse_escape",
+        "saved_request": 10,
+        "method": "rpp",
+        "plugin": "RPP",
+        "input_file": "experiments/v1361_dynamic_reserve_consistency/INPUT_00.json",
+        "common_input_sha256": "541b7c4971c60713ff851eb441bf5fad8575781504509754158f68fccf33b5ff"
+      },
+      "models": 0,
+      "physical_native": 0,
+      "software_only": true,
+      "common_input_sha256": "541b7c4971c60713ff851eb441bf5fad8575781504509754158f68fccf33b5ff",
+      "command_origin_age_known": true,
+      "loaded_actual_plugin_libraries": [
+        "libphase_executable_rpp.so"
+      ],
+      "action_accepted": true,
+      "terminal_before_cancel": false,
+      "action_status": 5,
+      "action_result": {
+        "result": {},
+        "error_code": 0,
+        "error_msg": ""
+      },
+      "raw_callbacks": 25,
+      "raw_moving_commands": 24,
+      "admitted_moving_commands": 24,
+      "wrong_direction_commands": 0,
+      "classification": "LEGAL_ADMITTED_COMMAND",
+      "first_raw_after_goal_s": 0.002416179981082678,
+      "first_nonzero_after_goal_s": 0.002416179981082678,
+      "first_admitted_after_goal_s": 0.002416179981082678,
+      "callback_spacing_s": {
+        "median": 0.049934772003325634,
+        "maximum": 0.05072552099591121
+      },
+      "raw_moving_signs": [
+        -1
+      ],
+      "maximum_observation_age_s": 0.01213313898188062,
+      "goal_sent_monotonic": 192198.549009773,
+      "measured_callback_offset": 0,
+      "nav2_action_error_is_algorithm_outcome": false,
+      "wall_s": 2.698853481997503,
+      "controller_server_exited": true,
+      "no_model_modules_loaded": true
+    }
+  ],
+  "source_unchanged": true,
+  "closed": true,
+  "closed_unix": 1795070426.9838064,
+  "wall_s": 6.951436223986093,
+  "review_pending_unchanged": true,
+  "current_pointer_unchanged": true
+}

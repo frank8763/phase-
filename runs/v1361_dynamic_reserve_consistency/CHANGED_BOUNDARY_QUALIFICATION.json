@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": {
+    "entire_static_callback_AST_unchanged": true,
+    "actual_installed_RPP_saved_escape_commands_pass": true,
+    "actual_production_callback_saved_red_now_green": true,
+    "toward_occupancy_refused": true,
+    "below22cm_nonzero_refused": true,
+    "exact_zero_braking_always_allowed": true,
+    "small_nonzero_toward_command_not_zero_bypass": true,
+    "independent_scalar_geometry_and_direction_boundaries": true,
+    "malformed_nonfinite_and_negative_radius_refused": true
+  },
+  "actual_saved_request": 10,
+  "actual_RPP_moving_commands": 24,
+  "boundary_cases": 81,
+  "first_actual_command": [
+    -0.1,
+    -0.03280134364402668
+  ],
+  "first_preview": {
+    "current_dynamic_clearance_m": 0.24590602697419706,
+    "early_intervention_m": 0.25,
+    "unchanged_recovery_margin_m": 0.22,
+    "empirical_monitor_not_stopping_certificate": true,
+    "reason": "NONDECREASING_DYNAMIC_COMMAND",
+    "command_geometry_minimum_m": 0.24590602697419706,
+    "command_geometry_terminal_m": 0.28133815825811515,
+    "preview_s": 0.5,
+    "preview_samples": 11,
+    "actual_dynamics_certificate": false
+  },
+  "independent_scalar_maximum_error_m": 0.0,
+  "models": 0,
+  "physical_native": 0,
+  "static_trials_reused_not_new": true
+}
