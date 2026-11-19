@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "symptom_reproduced": true,
+  "production_socket_timeout_s": 0.02,
+  "unread_receiver_queued_messages": 70,
+  "reproduced_error": "TimeoutError",
+  "production_exception_handler_types": [
+    "(FileNotFoundError, BlockingIOError, ConnectionRefusedError)"
+  ],
+  "timeout_not_caught": true,
+  "source_callsite": "native_component.py:90",
+  "blocking_planner_callsite": "ros_component.py:175",
+  "diagnosis": "same ROS callback thread executes synchronous planner and cannot drain observation datagrams; bounded socket queue saturates, uncaught TimeoutError closes native worker",
+  "wall_s": 0.02064598602009937,
+  "models": 0,
+  "physical_native": 0
+}

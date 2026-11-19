@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_FROZEN_OVERNIGHT_BASELINE_RELAY",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1344_causal_night_entry",
-  "active_window": {
-    "started_unix": 1795009192.453465,
-    "started_monotonic": 130967.90288672,
-    "absolute_deadline_unix": 1795050000.0,
-    "hard_stop_monotonic": 171775.4494217351,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1344_causal_night_entry/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -9991,5 +9985,44 @@
     "closed_at_local": "2026-11-18T21:44:41+08:00",
     "raw_backup_pending": true,
     "addendum": "runs/v1341_overnight_baseline_relay/INDEPENDENT_CHECK_ADDENDUM.json"
+  },
+  "latest_v1344": {
+    "closed": true,
+    "any_complete_branch_passed": false,
+    "attempted": [
+      "rpp_causal_default_static_main",
+      "rpp_causal_default_static_repeat",
+      "rpp_causal_default_dynamic_main"
+    ],
+    "unexecuted": [
+      "rpp_causal_default_dynamic_repeat",
+      "rpp_causal_preview_static_main",
+      "rpp_causal_preview_static_repeat",
+      "rpp_causal_preview_dynamic_main",
+      "rpp_causal_preview_dynamic_repeat",
+      "rpp_causal_slow_static_main",
+      "rpp_causal_slow_static_repeat",
+      "rpp_causal_slow_dynamic_main",
+      "rpp_causal_slow_dynamic_repeat",
+      "coherent_mppi_causal_static_main",
+      "coherent_mppi_causal_static_repeat",
+      "coherent_mppi_causal_dynamic_main",
+      "coherent_mppi_causal_dynamic_repeat"
+    ],
+    "stop_reason": "EVIDENCE_OR_OPERATION_STOP",
+    "report": "docs/CAUSAL_DYNAMIC_OVERNIGHT_20261118_REPORT.md",
+    "primary_failure": "NATIVE_OBSERVATION_DATAGRAM_SEND_TIMEOUT",
+    "static_main_repeat_passed": true,
+    "dynamic_passed": false,
+    "exact_actual_total": 23090,
+    "exact_own_replay_total": 23090,
+    "dynamic_actual": 4705,
+    "dynamic_replay": 4705,
+    "dynamic_minimum_clearance_m": 0.2500331552976056,
+    "closed_at_local": "2026-11-18T22:18:31+08:00",
+    "remaining13_unexecuted": true,
+    "remote_backup_pending": true,
+    "morning_check": "runs/v1344_causal_night_entry/MORNING_CHECK_20261119.json",
+    "communication_repro": "runs/v1344_causal_night_entry/COMMUNICATION_REPRO_20261119.json"
   }
 }
