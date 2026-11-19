@@ -1,0 +1,7 @@
+# V1351 check, throughput accounting and comparison plan
+
+User asks “检查一下，思考接下来怎么提速与实验”. This task reads compact status, saved timings and frozen interface sources only, then creates a concrete next-experiment plan. Zero new model construction/navigation/replay/integration/training/hardware, no physical window, REVIEW_PENDING unchanged. No subagents, Stage files/models/processes or resource scans. One local data-only audit, <=120s, outputs<=8MiB inside this run root.
+
+Reuse existing V1350 fixed-input timing and correctness receipts; do not rerun successful performance tests merely for another status check. Inspect V1346–1348 recorded task durations, planning durations, direction/observation decisions, and explicitly compare selected V1281 task fields with V1348. Verify core source/parameter equality for possible future static-qualification reuse; do not turn equality into new physical samples or count a future static regression as passed. Record prior/estimator/route-proposal/control-limit differences before proposing comparisons.
+
+Deliver: source-hashed structured audit, timing/fairness table, next bounded pilot plan with readiness gates and failure accounting. All estimates are conditional planning estimates, not promised runtime or speedup. GPU has no qualified implementation here; no GPU claims or activation. Do not open a model round on this check/planning request. Old failed batches/deadlines remain unchanged; no cleanup before original remoteSHA+restoration.

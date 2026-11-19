@@ -1,0 +1,62 @@
+{
+  "status": "PREPARED_CHECK_AND_PLAN_ONLY",
+  "physical_authorized": false,
+  "new_window": false,
+  "models": 0,
+  "new_native": 0,
+  "fixed_saved_inputs": [
+    1,
+    4,
+    8
+  ],
+  "fixed_exposed_pilot_slots": [
+    1,
+    9,
+    17
+  ],
+  "preparation_policy": {
+    "reuse": "exact source/task/dependency SHA only; changed seams and entry/output/clock/lock always qualified",
+    "reuse_static_physics_only_after_explicit_preregistration": true,
+    "old_passes_are_new_samples": false,
+    "latency_trials": "serial on an assigned Phase core; do not benchmark concurrent probes on the same core",
+    "offline_data_qualification": "independent cases may run on PhaseCPU3/4/5",
+    "physical": "single canonical vehicle onCPU2; asynchronous planner onCPU3–5",
+    "gpu": "no qualified backend/speed measurement; do not add CUDA setup to current blocker"
+  },
+  "sequence": [
+    {
+      "step": 1,
+      "title": "Freeze shared input and clock contracts",
+      "scope": "zero models",
+      "output": "same sensor schema, declared periodic/speed priors, goal region, prediction field, actuator permissions and computation-time semantics; inventory remaining differences",
+      "readiness": "no online actor truth; independent same-input output checks and same external acceptance; disclosing common versus method-specific modules"
+    },
+    {
+      "step": 2,
+      "title": "Fixed same-state RPP/MPPI software pilot",
+      "scope": "zero physical models",
+      "tasks": "same three exposed saved inputs1/4/8; identical publicmap/causal prediction/registered path/actuator wrapper and fresh-command gate",
+      "outputs": "legal command/refusal, direction/curvature/age, compute and dispatch latency; controller differences separated from shared planner failure",
+      "stopping": "source/info/control/recording anomaly stops; legitimate bounded method refusal recorded"
+    },
+    {
+      "step": 3,
+      "title": "Small closed-loop pilot after changed interface readiness",
+      "scope": "not started; requires a separately frozen bounded physical batch",
+      "tasks": "first original exposed WE slot1, same shared framework for RPP and MPPI; add slots9/17 only after pilot interfaces are sound",
+      "static": "reuse RPP old static pair only if exact unaffected dependency closure is proven; MPPI full static not automatically qualified by short-turn components",
+      "outcomes": "safe complete nonarrival remains a failure and may continue a predeclared comparison list; safety/control/source/evidence anomalies stop the batch",
+      "repeats": "pass-dependent checks are repeatability evidence, not additional independent samples",
+      "duration": "conditional15–30min planning target for small pilot, not measured or guaranteed; each task retains its frozen hard cap and whole campaign a finite new root"
+    },
+    {
+      "step": 4,
+      "title": "Paired comparison and single-mechanism closed-loop ablations",
+      "scope": "later, separate frozen protocol",
+      "tasks": "common exposed24 task table once versions/interfaces/evaluator are frozen, followed by a genuinely unexposed table",
+      "caveat": "do not directly merge old V1281 successes with new methods; first align information/actuation/clock contracts or separate tables"
+    }
+  ],
+  "key_decision": "Stop requiring every baseline to succeed before comparisons. Preserve V1348 valid safe failure; never call a failed software interface algorithm evidence.",
+  "no_automatic_training_no_new_pool_no_hardware": true
+}

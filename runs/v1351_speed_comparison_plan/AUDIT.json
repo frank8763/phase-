@@ -1,0 +1,238 @@
+{
+  "passed": true,
+  "scope": "data-only accounting and next-plan readiness audit",
+  "checked_at": "2026-11-19T11:26:01.383381+08:00",
+  "current_status": "REVIEW_PENDING",
+  "active_navigation": false,
+  "historical_task_timing": [
+    {
+      "version": "v1346_measured_gear_handoff",
+      "tasks": [
+        {
+          "task": "rpp_async_default_static_main",
+          "stage": "static",
+          "passed": true,
+          "actual": 9195,
+          "own_replay": 9195,
+          "simulated_actual_s": 91.95,
+          "task_monitor_wall_s": 100.4736334939953,
+          "native_worker_wall_s": 98.15650745201856,
+          "ros_worker_wall_s": 93.9727028220077
+        },
+        {
+          "task": "rpp_async_default_static_repeat",
+          "stage": "static",
+          "passed": true,
+          "actual": 9195,
+          "own_replay": 9195,
+          "simulated_actual_s": 91.95,
+          "task_monitor_wall_s": 100.52858834699146,
+          "native_worker_wall_s": 98.09709989398834,
+          "ros_worker_wall_s": 93.98572074400727
+        },
+        {
+          "task": "rpp_async_default_dynamic_main",
+          "stage": "dynamic",
+          "passed": false,
+          "actual": 36220,
+          "own_replay": 36220,
+          "simulated_actual_s": 362.2,
+          "task_monitor_wall_s": 381.6232763649896,
+          "native_worker_wall_s": 379.1058219909901,
+          "ros_worker_wall_s": 364.0138973759895
+        }
+      ],
+      "summed_monitor_wall_s": 582.6254982059763,
+      "static_pair_monitor_s": 201.00222184098675,
+      "dynamic_monitor_s": 381.6232763649896
+    },
+    {
+      "version": "v1347_cusp_segment_execution",
+      "tasks": [
+        {
+          "task": "rpp_async_default_static_main",
+          "stage": "static",
+          "passed": true,
+          "actual": 9195,
+          "own_replay": 9195,
+          "simulated_actual_s": 91.95,
+          "task_monitor_wall_s": 100.94127929199021,
+          "native_worker_wall_s": 98.37751179400948,
+          "ros_worker_wall_s": 94.2230869680061
+        },
+        {
+          "task": "rpp_async_default_static_repeat",
+          "stage": "static",
+          "passed": true,
+          "actual": 9195,
+          "own_replay": 9195,
+          "simulated_actual_s": 91.95,
+          "task_monitor_wall_s": 100.6966573910031,
+          "native_worker_wall_s": 98.24220993500785,
+          "ros_worker_wall_s": 94.03091176401358
+        },
+        {
+          "task": "rpp_async_default_dynamic_main",
+          "stage": "dynamic",
+          "passed": false,
+          "actual": 24455,
+          "own_replay": 24455,
+          "simulated_actual_s": 244.55,
+          "task_monitor_wall_s": 260.02624623000156,
+          "native_worker_wall_s": 257.3099801359931,
+          "ros_worker_wall_s": 246.6085139119823
+        }
+      ],
+      "summed_monitor_wall_s": 461.6641829129949,
+      "static_pair_monitor_s": 201.6379366829933,
+      "dynamic_monitor_s": 260.02624623000156
+    },
+    {
+      "version": "v1348_recoverable_tracking",
+      "tasks": [
+        {
+          "task": "rpp_async_default_static_main",
+          "stage": "static",
+          "passed": true,
+          "actual": 9195,
+          "own_replay": 9195,
+          "simulated_actual_s": 91.95,
+          "task_monitor_wall_s": 100.84942195599433,
+          "native_worker_wall_s": 98.48496955400333,
+          "ros_worker_wall_s": 94.08934353999211
+        },
+        {
+          "task": "rpp_async_default_static_repeat",
+          "stage": "static",
+          "passed": true,
+          "actual": 9195,
+          "own_replay": 9195,
+          "simulated_actual_s": 91.95,
+          "task_monitor_wall_s": 100.51552516498487,
+          "native_worker_wall_s": 98.1018710169883,
+          "ros_worker_wall_s": 93.98762071298552
+        },
+        {
+          "task": "rpp_async_default_dynamic_main",
+          "stage": "dynamic",
+          "passed": false,
+          "actual": 27410,
+          "own_replay": 27410,
+          "simulated_actual_s": 274.1,
+          "task_monitor_wall_s": 288.9112885679933,
+          "native_worker_wall_s": 286.4307447449828,
+          "ros_worker_wall_s": 274.65953960697516
+        }
+      ],
+      "summed_monitor_wall_s": 490.2762356889725,
+      "static_pair_monitor_s": 201.3649471209792,
+      "dynamic_monitor_s": 288.9112885679933
+    }
+  ],
+  "acceleration_accounting": {
+    "recorded_planning_attempts": 10,
+    "recorded_planning_wall_s": 117.87561020694557,
+    "recorded_dynamic_monitor_s": 288.9112885679933,
+    "planning_wall_fraction": 0.40799932322202886,
+    "saved_input_mean_old_s": 12.52292867799406,
+    "saved_input_mean_new_s": 0.4986505216608445,
+    "mean_kernel_ratio": 25.113637976922618,
+    "nominal_cost_for10_fast_requests_s": 4.986505216608445,
+    "hypothetical_saved_time_same10decisions_s": 112.88910499033712,
+    "caveat": "Accounting only; no new closed-loop run and changed decisions may change all durations"
+  },
+  "information_fairness": {
+    "selected_task_fields_match": {
+      "case_id": true,
+      "seed": true,
+      "phase": true,
+      "dynamic": true,
+      "goal_xy": true,
+      "goal_yaw": true,
+      "start_xy": true,
+      "start_yaw": true,
+      "course_id": true
+    },
+    "model_equivalence_proven_by_this_audit": false,
+    "rpccr_estimator": "past-observation periodic coefficient polytope, declared sinusoidal/amplitude prior",
+    "rpp_estimator": "last novel endpoint center ball, Euclidean speed bound and1.5s horizon",
+    "estimator_prior_equivalent": false,
+    "rpccr_proposal": "route-dispatched qualified control sources/observation approaches and reconnection library",
+    "rpp_proposal": "generic bounded pose lattice plus RPP path tracking",
+    "proposal_prior_equivalent": false,
+    "same_lidar_backend_does_not_prove_same_information": true,
+    "formal_independent_method_comparison_ready": false
+  },
+  "clock_fairness": {
+    "rpccr_original_has_inline_planning_stages": true,
+    "original_independent_clock_realtime_acceptance_proven": false,
+    "current_rpp_runs_async_search_and_brake_timers": true,
+    "same_physical_clock_during_compute_proven": false,
+    "consequence": "Do not compare old RPCCR success directly with a new RPP continuous-planning experiment as a controlled latency comparison"
+  },
+  "qualification_reuse": {
+    "examples": [
+      {
+        "component": "native_component.py",
+        "sha256": "f6eb36a0b8b60a323d07c48591d179050a1595b91ac2e29878f74c9d11cc4a41",
+        "same_1347_1348": true
+      },
+      {
+        "component": "gear_handoff.py",
+        "sha256": "4b2cda734b5012c0f69acdc7b7e74015da7065085418cc25ac046ee7233ae3cb",
+        "same_1347_1348": true
+      },
+      {
+        "component": "transport.py",
+        "sha256": "1af882a727666816d7b2f362539012f864394aa0b9ff8b6ccef0febe87fbc3f2",
+        "same_1347_1348": true
+      },
+      {
+        "component": "rpp_async_default_params.json",
+        "sha256": "9e2c36246061ef5defc235d307c5895532413a935a322527f89a7e1e278c577d",
+        "same_1347_1348": true
+      }
+    ],
+    "completed_old_static_passes": 2,
+    "old_static_passes_are_new_trials": false,
+    "replay_new_software_actions_if_changed": true,
+    "reuse_requires_exact_dependency_closure_and_task_contract": true,
+    "entry_output_guard_root_clock_lock_checks_never_skipped": true,
+    "any_future_skipped_static_stage_must_be_preregistered": true
+  },
+  "qualified_gpu_backend": false,
+  "gpu_speedup_measured": false,
+  "resource_plan": {
+    "native_cpu": [
+      2
+    ],
+    "ros_planning_cpu": [
+      3,
+      4,
+      5
+    ],
+    "native_single_instance": true,
+    "offline_math_can_parallelize_distinct_cores": true,
+    "latency_benchmarks_serial": true,
+    "no_stage_process_inspection": true
+  },
+  "source_sha256": {
+    "experiments/v1281_partial_reconnection_fixed24/owner.py": "c9c678bcf9a92af684f02019b62a6aeaaa94fa61e6a97ceca7894f00125128d3",
+    "experiments/v1281_partial_reconnection_fixed24/route_dispatch.py": "96a46c92ec9970ff8f4f4a07d3f2858c7100f2a71362f7423c85fa896a9ad676",
+    "experiments/v1037_periodic_norm_source/periodic_norm.py": "756dc414a7cdf3ad37310a1b61ec5bfedb1fb69fba13c315ed01398cd3e4eb3e",
+    "experiments/v1020_terminal_two_route_development/periodic_support.py": "9ba6af692056a28f7292ad89e36d44cd442aaa2a32dccfd83f4e6ba2131b812b",
+    "experiments/v1348_recoverable_tracking/causal_occupancy.py": "409c93126feac7a8e3d21729a3d8df37040cc9adef7dd231228a28a9c6c88679",
+    "experiments/v1348_recoverable_tracking/ros_component.py": "a4e851452d7cbb233262f854bb03009056eb9f21f1237fec18ba7ddf5c71fce4",
+    "experiments/v1288_baseline_interface/contract.py": "2412832c79f7eb2caafed4d6c197b80399c62b23a19e7b6361316eb9ed614a55",
+    "experiments/v1348_recoverable_tracking/rpp_async_default_params.json": "9e2c36246061ef5defc235d307c5895532413a935a322527f89a7e1e278c577d"
+  },
+  "models": 0,
+  "new_native": 0,
+  "replay_native": 0,
+  "training": 0,
+  "stage_access": 0,
+  "physical_authorized": false,
+  "new_physical_window": false,
+  "guard_preserved": true,
+  "wall_s": 0.008786032005446032
+}
