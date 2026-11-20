@@ -10595,5 +10595,24 @@
     "full_pair_state_ctrl_mocap_error": 0.0,
     "endpoint_position_m": 0.07383943651861057,
     "endpoint_heading_rad": 0.07620595394872422
+  },
+  "latest_v1397_preparation": {
+    "recorded_unix": 1795187908.406539,
+    "status": "CURRENT_CUSP_HOOK_AND_CAUSAL_FIELD_PREPARED_BACKEND_REQUIRED",
+    "preparation_document": "experiments/v1397_event_handoff_integration/INTEGRATION_CHECKPOINT.md",
+    "route_hook_qualification": "runs/v1397_event_handoff_integration/ROUTE_HOOK_QUALIFICATION.json",
+    "bridge_field_qualification": "runs/v1397_event_handoff_integration/BRIDGE_FIELD_MATH_QUALIFICATION.json",
+    "storage_preflight": "runs/v1397_event_handoff_integration/ROUTE_STORAGE_PREFLIGHT.json",
+    "all_saved_handoff_source_sha_pass": true,
+    "execution_lock_idle": true,
+    "current_event_model_backend_complete": false,
+    "full_production_route_qualification": false,
+    "physical_admission": false,
+    "new_vehicle_initializations": 0,
+    "new_analytical_native": 0,
+    "new_physical_native": 0,
+    "new_replay_native": 0,
+    "scientific_revisions_applied": 0,
+    "next_work": "Implement current-native full packet and causal coefficient binding; once-generated complete response/braking/capture/gear backend, real plugin peer, full production guard qualification; complete bounded verified-storage recovery before new large model evidence"
   }
 }

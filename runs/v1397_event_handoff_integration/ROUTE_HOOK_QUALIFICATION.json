@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "scope": "production cusp-hook AST and read-only acquisition/reference software qualification only",
+  "synthetic_fixture": true,
+  "not_new_measured_sensor_or_physics": true,
+  "read_only_acquisition": true,
+  "original_frozen_event_unchanged": true,
+  "production_cusp_blocks": [
+    {
+      "geometry_passed": true,
+      "next_required_gate": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "request_preserved": true,
+      "queue_retained": true,
+      "paths_sent": 0
+    },
+    {
+      "geometry_passed": false,
+      "next_required_gate": "CAUSAL_TIMED_NEXT_SEGMENT_CERTIFICATE",
+      "request_preserved": true,
+      "queue_retained": true,
+      "paths_sent": 0
+    }
+  ],
+  "negative_cases": [
+    "relabeled_scan",
+    "old_frame",
+    "changed_feedback_body",
+    "wrong_gear_clock",
+    "nonfinite_memory",
+    "modeled_frame",
+    "foreign_run",
+    "future_coefficient",
+    "missing_forecast",
+    "wrong_segment_start",
+    "replayed_observation",
+    "reference_replayed_native",
+    "response_outside_2cm",
+    "response_outside_0p1rad",
+    "response_after_fixed_reference",
+    "reference_bound_to_changed_event",
+    "production_launch_without_complete_backend"
+  ],
+  "tick_translation_invariant": true,
+  "complete_route_qualified": false,
+  "physical_admission": false,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "replay_native": 0
+}
