@@ -2132,3 +2132,7 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1379原冻结响应校核/完整935起点各200刹停见证通过：真实旧行驶rear模型残差.006585/.004418m，名义末.033849m/.055855rad，完整tube.223729/刹停最低.224976>=.22，有限经验非普适保证。准备0MuJoCo/物理，分析已知190600+一次未知（上界3730），遗漏导入0步/NumPy JSON错误原件保持，生产真实嵌套JSON闭环已过。V1380新源冻结，6组保存/时钟/全角度足迹/负例＋4完整真实CPU2入口/生产JSON/原守卫资格通过；CPU4父继承入口拒绝原诊断保留，科学源不改。仅新追加原32210 main成功repeat最多2，仍17点首次失败停不整路24，尚0新物理待一次后台。docs/TIMED_HANDOFF_V1379_PREPARATION_REPORT.md。
 
 - V1380原32210完整时序交接组件已闭：main/repeat全门=False，未执行['timed_handoff_repeat']；无整路/24或RPP对比结论，32210时序仍未资格。见docs/TIMED_HANDOFF_V1380_REPORT.md。REVIEW_PENDING原字节恢复，零模型归档。
+
+- V1380已一次后台启动pid561764，15:43:40/原17:00绝对+boot/monotonic，源a019bd6c；仅补充原32210完整交接main成功全重复最多2，原4/4不翻，full9390仍false、不整路24。6保存组/4完整入口全过、所有source SHA固定，实际每native当前memory完整200刹停证书及全尾重放/模型审核由离线驱动执行；首失败/异常停、运行不修补。只看紧凑ACTIVE/PARTIAL，勿再launch，见runs/v1380_timed_handoff_component/LAUNCH.json。
+
+- V1380已首次来源/状态异常封账，main32211actual历史/ownreplay误差0、新交接0，repeat未执行；native普通prefix_restore导入被native_component预先缓存V1372同名模块劫持，未恢复原parked mode，32211ctrl差.002009783/qpos.000185544/qvel.018554390，mocap0，原全状态门正确拒绝。cleanup原200模型刹停tube.212985<.22亦拒绝追加积分，不冒称实际碰撞或200实际尾完成。科学NOT_PASSED保持，归档SHA回读FINALIZED非验收；唯一sync远端fbfed272已确认，未下载恢复不删/不再push。日原4+补充1=5尝试/0导航，96811actual=92591历史+4220新、96811自身重放、5初始化内部未知；本批解析200/独立分析0，V1379另190600已知+1未知<=3730。V1381纯零模型真实导入红例拒绝→私有exact importlib路径9函数身份绿例过，原源码/入口不修改不重启。REVIEW_PENDING原字节/空闲锁，17点只零模型收尾，full9390/32210 false。docs/TIMED_HANDOFF_V1380_FAILURE_DIAGNOSIS.md。

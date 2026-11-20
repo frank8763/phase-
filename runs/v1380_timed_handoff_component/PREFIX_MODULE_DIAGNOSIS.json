@@ -1,0 +1,80 @@
+{
+  "original_completion_passed": false,
+  "closed": true,
+  "scope": "zero-model existing raw state/control comparison only",
+  "cause": "Native imports generic prefix_restore after native_component dependency has already loaded V1372 module; intended new V1380 restoration of parked steering metadata was not bound.",
+  "actual_function_path_in_original_traceback": "experiments/v1372_coherent_sampling_fault/prefix_restore.py",
+  "intended_source": "experiments/v1380_timed_handoff_component/prefix_restore.py",
+  "first_original_prefix_mismatch_native": 32211,
+  "original_prefix_expected_ctrl_at32211": [
+    -0.0063965952290566215,
+    -0.006433632730969261,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "actual_ctrl_at32211": [
+    -0.004406306229832775,
+    -0.004423849668560851,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "prefix_comparison": {
+    "qpos": {
+      "max_error": 0.00018554390415562432,
+      "first_bad_actual_tick": 32211
+    },
+    "qvel": {
+      "max_error": 0.018554390415562397,
+      "first_bad_actual_tick": 32211
+    },
+    "ctrl": {
+      "max_error": 0.0020097830624084094,
+      "first_bad_actual_tick": 32211
+    },
+    "mocap_pos": {
+      "max_error": 0.0,
+      "first_bad_actual_tick": null
+    },
+    "mocap_quat": {
+      "max_error": 0.0,
+      "first_bad_actual_tick": null
+    }
+  },
+  "actual_total_native": 32211,
+  "own_replay_native": 32211,
+  "replay_error": 0.0,
+  "new_component_native": 0,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "analytical_native": 200,
+  "audit_analytical_native": 0,
+  "cleanup_stop_completed": false,
+  "cleanup_error": "AssertionError('CURRENT_MEASURED_STATE_COMPLETE_BRAKING_RESERVE_REJECTED')",
+  "repeat_unexecuted": true,
+  "model_source_state_gate_failure_preserved": true,
+  "frozen_source_edited": false,
+  "restart": false,
+  "raw_deleted": false,
+  "remote_ref_confirmed": true,
+  "remote_download_restore_verified": false,
+  "review_pending_original": true,
+  "execution_lock_idle": true,
+  "models_during_diagnosis": 0,
+  "physical_native_during_diagnosis": 0,
+  "replay_native_during_diagnosis": 0,
+  "next_zero_model_fix": "Pin prefix restore by exact private importlib path and assert all production callable source identities in pre-model complete entry qualification; do not restart this failed batch."
+}

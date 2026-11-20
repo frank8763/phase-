@@ -231,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "New human supplemental maximum2 same32210 complete-handoff main/success-repeat;17:00 unchanged. Source and response/braking/entry qualification first; no new physics yet.",
+  "next_scope": "V1380 source/state-prefix binding failure closed; no restart or repeat. V1381 zero-model exact-source binding demonstrated; preserve17:00 closure, full9390/full32210 still unqualified.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -10501,6 +10501,22 @@
     "closed": true,
     "timed_handoff_pair_passed": false,
     "full_dynamic_route_qualified": false,
-    "report": "docs/TIMED_HANDOFF_V1380_REPORT.md"
+    "report": "docs/TIMED_HANDOFF_V1380_FAILURE_DIAGNOSIS.md",
+    "error": "PREFIX_FULL_STATE_OR_CONTROL_MISMATCH",
+    "cause": "generic prefix_restore resolved to V1372 rather than V1380",
+    "new_handoff_native": 0,
+    "actual_total_native": 32211,
+    "own_replay_native": 32211,
+    "repeat_unexecuted": true,
+    "github_ref_confirmed": true
+  },
+  "latest_v1381": {
+    "passed": true,
+    "models": 0,
+    "physical_native": 0,
+    "scope": "exact function source identity; private module memory only",
+    "physical_entry_patched": false,
+    "new_physical_authority": false,
+    "report": "docs/TIMED_HANDOFF_V1380_FAILURE_DIAGNOSIS.md"
   }
 }

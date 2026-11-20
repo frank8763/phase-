@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "original_red_case": "PRODUCTION_RESTORE_WRONG_SOURCE",
+  "original_loaded_restore": "experiments/v1372_coherent_sampling_fault/prefix_restore.py",
+  "expected_restore": "experiments/v1380_timed_handoff_component/prefix_restore.py",
+  "private_memory_binding_passed": true,
+  "production_function_sources": {
+    "restore": "experiments/v1380_timed_handoff_component/prefix_restore.py",
+    "Capture": "experiments/v1380_timed_handoff_component/controller.py",
+    "Geometry": "experiments/v1380_timed_handoff_component/geometry_contract.py",
+    "membership": "experiments/v1380_timed_handoff_component/geometry_contract.py",
+    "certify": "experiments/v1380_timed_handoff_component/reserve.py",
+    "wire_packet": "experiments/v1380_timed_handoff_component/frames.py",
+    "SampleCache": "experiments/v1380_timed_handoff_component/frames.py",
+    "GearHandoff": "experiments/v1380_timed_handoff_component/gear_handoff.py",
+    "before_step": "experiments/v1380_timed_handoff_component/stamped_contract.py"
+  },
+  "actual_physical_entry_patched": false,
+  "old_frozen_sources_edited": false,
+  "new_physical_authority": false,
+  "physics_restart": false,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "next_requirement": "Any future separately-authorized component must pin these private source identities in its production loader and assert them before first model initialization; do not restart V1380."
+}
