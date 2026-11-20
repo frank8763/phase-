@@ -1,20 +1,14 @@
 {
   "schema_version": 2,
-  "status": "RUNNING_FROZEN_CAPTURE_COMPONENT",
+  "status": "REVIEW_PENDING",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": "runs/v1376_prepared_capture_component",
-  "active_window": {
-    "started_unix": 1795141311.4502866,
-    "started_monotonic": 263086.899707971,
-    "absolute_deadline_unix": 1795165200,
-    "hard_stop_monotonic": 286975.4494214058,
-    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
-  },
-  "active_entrypoint": "experiments/v1376_prepared_capture_component/campaign.py",
+  "active_run": null,
+  "active_window": null,
+  "active_entrypoint": null,
   "automatic_additional_simulation": false,
-  "next_physical_authorized": true,
+  "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10442,12 +10436,9 @@
     "report": "docs/ACTUAL_CAPTURE_V1375_REPORT.md"
   },
   "latest_v1376": {
-    "status": "RUNNING_PREPARED_FORWARD_CAPTURE_PAIR",
-    "original_v1375_failure_preserved": true,
-    "maximum_components": 2,
-    "new_navigation": 0,
-    "full_handoff_qualified": false,
-    "hard_stop_local": "2026-11-20 17:00 +0800",
-    "protocol": "experiments/v1376_prepared_capture_component/PROTOCOL.md"
+    "closed": true,
+    "pose_capture_pair_passed": true,
+    "full_dynamic_handoff_qualified": false,
+    "report": "docs/PREPARED_CAPTURE_V1376_REPORT.md"
   }
 }

@@ -1,0 +1,258 @@
+[
+  {
+    "task": "capture_main",
+    "passed": true,
+    "returncode": 0,
+    "native": {
+      "passed": true,
+      "canonical_vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
+      "private_mujoco_native": 0,
+      "own_replay_native": 10775,
+      "training_updates": 0,
+      "original_goal_navigation": false,
+      "producer_python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+      "producer_numpy": "2.2.6",
+      "scope": "measured RPCCR two-arc pose capture only; no Nav2 performance claim",
+      "functional_checks": {
+        "capture_complete": true,
+        "no_reserve_refusal": true,
+        "original_position_bound": true,
+        "original_heading_bound": true,
+        "body_stopped": true,
+        "steering_rest": true,
+        "drive_zero": true
+      },
+      "functional_stop": null,
+      "position_error_m": 0.023781342000777448,
+      "heading_error_rad": 0.17151269519885143,
+      "actual_total_native": 10775,
+      "historical_prefix_replay_native": 9390,
+      "new_component_native": 1385,
+      "model_native_inflight_unknown": false,
+      "physical": {
+        "actual_native": 10775,
+        "fully_recorded_native": 10775,
+        "minimum_actual_clearance_m": 0.25003275891123405,
+        "minimum_self_margin_m": 0.009164030816348478,
+        "bad_contacts": 0,
+        "final_body": [
+          0.32972170416559987,
+          -0.8391911158333963,
+          -0.04848854292733495,
+          6.836654086892586e-06,
+          -3.542137079509386e-06
+        ],
+        "final_translation_speed_m_s": 7.0999885734777255e-06,
+        "root_guard_native_count": 10775,
+        "goal_distance_m": 3.8494700978749252,
+        "first_actor_detection": {
+          "native_tick": 4475,
+          "sim_time": 44.749999999999666,
+          "xy": [
+            0.03950796611406217,
+            -0.7293178242086084
+          ],
+          "rays": [
+            29
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 1.71689544760942
+      },
+      "evidence_saved": true,
+      "independent_allocation": {
+        "passed": true,
+        "control_error": 0.0,
+        "memory_error": 0.0
+      },
+      "replay": {
+        "replay_native": 10775,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "wall_s": 20.926374847011175,
+      "source_unchanged": true
+    },
+    "audit_returncode": 0,
+    "audit": {
+      "passed": true,
+      "checks": {
+        "full_recorded": true,
+        "exact_prefix": true,
+        "full_body_feedback": true,
+        "separated_counts": true,
+        "original_model": true,
+        "finite": true,
+        "actual_clearance": true,
+        "self_margin": true,
+        "actual_clock": true,
+        "legal_ctrl": true,
+        "legal_slew": true,
+        "no_bad_contacts": true,
+        "own_replay": true,
+        "complete_stop": true,
+        "measured_rest": true,
+        "steering_rest": true,
+        "drive_zero": true,
+        "root_guard": true,
+        "allocator": true,
+        "source_unchanged": true,
+        "all_gear_and_expiry": true,
+        "all_wire_actual_scan_binding": true,
+        "measured_capture_controller_and_reserves": true,
+        "every_new_actual_pose_causal_all_future22cm": true,
+        "position_capture": true,
+        "heading_capture": true,
+        "component_functional": true
+      },
+      "position_error_m": 0.023781342000777448,
+      "heading_error_rad": 0.17151269519885143,
+      "minimum_causal_actual_clearance_m": 0.2969740023436388,
+      "body_error": 0.0,
+      "prefix_error": 0.0,
+      "actual_total_native": 10775,
+      "historical_prefix_replay_native": 9390,
+      "new_component_native": 1385,
+      "own_replay_native": 10775,
+      "repeat": null,
+      "models": 0,
+      "new_physical_native": 0,
+      "scope": "pose capture component, not complete dynamic handoff or original goal navigation",
+      "audit_python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+      "audit_numpy": "2.2.6"
+    }
+  },
+  {
+    "task": "capture_repeat",
+    "passed": true,
+    "returncode": 0,
+    "native": {
+      "passed": true,
+      "canonical_vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
+      "private_mujoco_native": 0,
+      "own_replay_native": 10775,
+      "training_updates": 0,
+      "original_goal_navigation": false,
+      "producer_python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+      "producer_numpy": "2.2.6",
+      "scope": "measured RPCCR two-arc pose capture only; no Nav2 performance claim",
+      "functional_checks": {
+        "capture_complete": true,
+        "no_reserve_refusal": true,
+        "original_position_bound": true,
+        "original_heading_bound": true,
+        "body_stopped": true,
+        "steering_rest": true,
+        "drive_zero": true
+      },
+      "functional_stop": null,
+      "position_error_m": 0.023781342000777448,
+      "heading_error_rad": 0.17151269519885143,
+      "actual_total_native": 10775,
+      "historical_prefix_replay_native": 9390,
+      "new_component_native": 1385,
+      "model_native_inflight_unknown": false,
+      "physical": {
+        "actual_native": 10775,
+        "fully_recorded_native": 10775,
+        "minimum_actual_clearance_m": 0.25003275891123405,
+        "minimum_self_margin_m": 0.009164030816348478,
+        "bad_contacts": 0,
+        "final_body": [
+          0.32972170416559987,
+          -0.8391911158333963,
+          -0.04848854292733495,
+          6.836654086892586e-06,
+          -3.542137079509386e-06
+        ],
+        "final_translation_speed_m_s": 7.0999885734777255e-06,
+        "root_guard_native_count": 10775,
+        "goal_distance_m": 3.8494700978749252,
+        "first_actor_detection": {
+          "native_tick": 4475,
+          "sim_time": 44.749999999999666,
+          "xy": [
+            0.03950796611406217,
+            -0.7293178242086084
+          ],
+          "rays": [
+            29
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 1.71689544760942
+      },
+      "evidence_saved": true,
+      "independent_allocation": {
+        "passed": true,
+        "control_error": 0.0,
+        "memory_error": 0.0
+      },
+      "replay": {
+        "replay_native": 10775,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "wall_s": 21.2311015240266,
+      "source_unchanged": true
+    },
+    "audit_returncode": 0,
+    "audit": {
+      "passed": true,
+      "checks": {
+        "full_recorded": true,
+        "exact_prefix": true,
+        "full_body_feedback": true,
+        "separated_counts": true,
+        "original_model": true,
+        "finite": true,
+        "actual_clearance": true,
+        "self_margin": true,
+        "actual_clock": true,
+        "legal_ctrl": true,
+        "legal_slew": true,
+        "no_bad_contacts": true,
+        "own_replay": true,
+        "complete_stop": true,
+        "measured_rest": true,
+        "steering_rest": true,
+        "drive_zero": true,
+        "root_guard": true,
+        "allocator": true,
+        "source_unchanged": true,
+        "all_gear_and_expiry": true,
+        "all_wire_actual_scan_binding": true,
+        "measured_capture_controller_and_reserves": true,
+        "every_new_actual_pose_causal_all_future22cm": true,
+        "position_capture": true,
+        "heading_capture": true,
+        "component_functional": true,
+        "full_repeat": true
+      },
+      "position_error_m": 0.023781342000777448,
+      "heading_error_rad": 0.17151269519885143,
+      "minimum_causal_actual_clearance_m": 0.2969740023436388,
+      "body_error": 0.0,
+      "prefix_error": 0.0,
+      "actual_total_native": 10775,
+      "historical_prefix_replay_native": 9390,
+      "new_component_native": 1385,
+      "own_replay_native": 10775,
+      "repeat": {
+        "full_state_ctrl_mocap_max_error": 0.0,
+        "full_native_count": 10775
+      },
+      "models": 0,
+      "new_physical_native": 0,
+      "scope": "pose capture component, not complete dynamic handoff or original goal navigation",
+      "audit_python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+      "audit_numpy": "2.2.6"
+    }
+  }
+]
