@@ -1,0 +1,18 @@
+{
+  "registered_candidate": "TIME_BOUND_NEXT_SEGMENT",
+  "source_native_tick": 32210,
+  "wait_seconds": [0,5,10,15,20,25,30,35,40],
+  "speed_m_s": 0.1,
+  "reverse_curvature_m_inv": -0.5,
+  "acceleration_m_s2": 0.1,
+  "braking_m_s2": 0.05,
+  "fixed_body_nominal_prepare_s": 4.0,
+  "full_stop_s": 2.0,
+  "source_time_uncertainty_s": 0.2,
+  "nominal_step_s": 0.02,
+  "forecast_cell_s": 0.1,
+  "goal_rule": "original next reverse segment endpoint; nominal starts at actual rear and must satisfy unchanged .12m/.20rad terminal contract, never pretend original cusp was visited",
+  "evaluation_scope": "complete nominal move/brake/hold geometry only; fixed-body steering preparation remains unqualified against actual coupled motion",
+  "registered_before_software_evaluation": true,
+  "no_fourth_scientific_candidate": true
+}
