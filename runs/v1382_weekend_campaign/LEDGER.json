@@ -1,5 +1,5 @@
 {
-  "status": "ROUND_CLOSED_REVIEW_REQUIRED",
+  "status": "PREPARING_FULL9390_RESPONSE_ENTRY",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -23,7 +23,11 @@
       "finalized": true,
       "full32210_handoff_qualified": true,
       "archive_index": "runs/v1383_exact_timed_handoff/ARCHIVE_INDEX.json",
-      "archive_recovery": "runs/v1391_handoff_archive_recovery"
+      "archive_recovery": "runs/v1391_handoff_archive_recovery",
+      "remote_recovery_verified": true,
+      "remote_release": "https://github.com/frank8763/phase-/releases/tag/phase-v1383-exact-timed-handoff-20261120",
+      "unique_git_head": "c46796e947b6ed5e5be37c5141306b7592b434c4",
+      "transport_duplicates_cleaned": true
     }
   ],
   "vehicle_task_starts": 2,
@@ -32,17 +36,27 @@
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
   "models_now_authorized": false,
   "preexisting_runs_allocated_bytes": 23690563584,
-  "prepared_next_round": "v1383_exact_timed_handoff",
+  "prepared_next_round": null,
   "next_round_qualification": "runs/v1383_exact_timed_handoff/QUALIFICATION.json",
   "qualification_passed": true,
   "physical_launch_blocker": null,
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
   "storage_ready": true,
-  "storage_allocated_bytes": 9656713216,
+  "storage_allocated_bytes": 9825910784,
   "storage_proof": "runs/v1382_weekend_campaign/storage/FINALIZED.json",
   "complete_recovery_index": "records/weekend_storage_v1382_20261120/RECOVERY_INDEX.json",
   "old_day_zero_model_closure": "runs/v1390_day_zero_model_closure/FINALIZED.json",
   "active_task": null,
   "last_round_failure_requires_inspection": false,
-  "latest_32210_handoff_qualified": true
+  "latest_32210_handoff_qualified": true,
+  "next_preparation": "experiments/v1393_full9390_preparation/PROTOCOL.md",
+  "actual_total_native": 67070,
+  "historical_reconstruction_native": 65200,
+  "new_component_native": 1870,
+  "own_replay_native": 67070,
+  "native_analytical_native": 374000,
+  "independent_audit_analytical_native": 374000,
+  "canonical_vehicle_initializations": 2,
+  "internal_factory_model_constructions": null,
+  "navigation_tasks_started": 0
 }

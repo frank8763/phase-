@@ -1,0 +1,7 @@
+# V1392 原32210成功轮的首次远端归档传输入口
+
+V1383科学主/完整重复与V1391全源归档全部通过；唯一Git push已确认c46796e947b6ed5e5be37c5141306b7592b434c4。原deliver_round.py尚无DELIVERY_CLAIM、从未运行。为避免已实测的GH大流下载超时，首次调用原冻结delivery main时只在独立入口绑定已资格V1389有限Range/只读API/上传结果核对传输器；原科学/归档源完全不改，0模型/积分/重放。
+
+固定同Phase仓库新V1383 Release：创建POST仅一次，未知创建结果只读tag核，不第二创建；资产上传先远端size/digest核，下载4MiB严格206/范围/完整SHA、有限网络预算保持。原冻结delivery main负责全块实际下载SHA、全归档重组SHA、每解压成员与链接文本SHA、恢复index下载SHA后才FULL_REMOTE_VERIFIED；当前原始物理证据仍保留。
+
+适配资格验证真实已打开二进制输出文件不截断、元数据JSON字节往返、幂等上传分派和未知操作拒绝；原V1389传输和源SHA/资格不变。所有传输仅CPU5/nice19线程1/GPU隐藏，10GiB总额度/原512MiB物理预留不绕过，Stage隔离。一次新claim，禁止重复原delivery/finalizer/物理或再次push。

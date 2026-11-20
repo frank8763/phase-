@@ -11,7 +11,7 @@
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
+  "latest_report": "docs/EXACT_TIMED_HANDOFF_V1383_REPORT.md",
   "latest_completed": {
     "closed": true,
     "physical_observer_main_and_repeat_passed": false,
@@ -231,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "V1383 exact-bound original32210 main and all-gates-success full repeat; storage qualified, original science and old failures retained",
+  "next_scope": "Full9390 forward continuation response/causal/braking preparation from actual captured10775, original RPP.6; no new physical entry yet",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -241,7 +241,7 @@
     "approved": true,
     "exhausted": true
   },
-  "active_zero_model_diagnostic": null,
+  "active_zero_model_diagnostic": "experiments/v1393_full9390_preparation",
   "latest_functional_main": {
     "version": "v1085_entry",
     "fresh_start": true,
@@ -10526,7 +10526,7 @@
     "temporary_storage_cap_bytes": 10737418240,
     "storage_ready": true,
     "old_windows_closed": true,
-    "storage_allocated_bytes": 9656713216
+    "storage_allocated_bytes": 9825910784
   },
   "latest_old_day_closure": "runs/v1390_day_zero_model_closure/FINALIZED.json",
   "latest_v1383": {
@@ -10535,6 +10535,10 @@
     "full_dynamic_route_qualified": false,
     "report": "docs/EXACT_TIMED_HANDOFF_V1383_REPORT.md",
     "full32210_handoff_qualified": true,
-    "archive_recovered": true
+    "archive_recovered": true,
+    "full9390_continuation_qualified": false,
+    "remote_download_restore_verified": true,
+    "source_commit": "c46796e947b6ed5e5be37c5141306b7592b434c4",
+    "release": "https://github.com/frank8763/phase-/releases/tag/phase-v1383-exact-timed-handoff-20261120"
   }
 }
