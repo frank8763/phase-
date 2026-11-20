@@ -7,3 +7,5 @@ V1383冻结原32210完整时序交接，修V1380误绑定prefix_restore的执行
 V1383最初资格父进程导入campaign改变模块路径，再import native导致SampleCache身份拒绝，原失败保存在V1384/ORIGINAL_QUALIFICATION_FAILURE.json，0模型/分析/物理。V1384仅修资格调用环境：7组保存/时钟/几何/负例检查和4真实进程入口通过；实际生产CLI9函数来源全部本版，真实CPU2后端、生产嵌套JSON、输出守卫通过。V1383冻结源未改。资格SHA在启动时复核，V1384源原字节副本连同来源清单保存于V1383/qualification_sources供闭批归档。
 
 科学证据仍有限：原9390仅姿态捕获pair通过，完整续行未过；原32210只零驱动准备通过，完整移动交接未过。RPCCR V1281暴露24回归已经通过，不重新包装成未见泛化。当前只待存储准入，随后一次V1383 main，全门过才完整repeat，全部重放和独立模型审核后检查下一步。
+
+原存储首块300s超时，29882944B部分下载原件保留；V1386独立纯I/O接续已用实际HTTP Range补齐至33554432B并核SHA，3错误元数据负例拒绝。原worker已退出，单次新接续worker最多3并发/每资产一次900s，复用同PLAN与已上传资产，全部组下载/解压/恢复索引核后才清理，0新物理。状态runs/v1386_storage_transfer_resume/CLAIM、TRANSFER、PROGRESS、ERROR、FINALIZED。
