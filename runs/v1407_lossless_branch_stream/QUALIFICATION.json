@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source": "runs/v858_nav2_verified/v1396/full9390_main/BRAKING_ALTERNATIVES.npz",
+  "source_sha256": "557d12e845e96289146e3fd7727d276e138da3df7c60478e61af3398b0b70c73",
+  "saved_actual_branches_roundtripped": 2585,
+  "each_branch_states": 201,
+  "each_branch_ctrl": 200,
+  "every_float64_bit_and_raw_SHA_exact": true,
+  "stream_SHA_and_gzip_CRC_passed": true,
+  "original_npz_bytes": 28019320,
+  "stream_bytes": 26448033,
+  "raw_bytes": 49797440,
+  "stream_ratio_to_original_npz": 0.9439213014448602,
+  "separate_npz64_bytes": 735776,
+  "estimated_separate_npz2585_bytes": 29718452.5,
+  "negative_cases": [
+    "incomplete201_states",
+    "float32_precision_change",
+    "wrong_frame_order",
+    "wrong_raw_frame_SHA",
+    "changed_whole_stream_SHA",
+    "changed_XOR_payload"
+  ],
+  "wall_s": 1.5668617999763228,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "not_new_actual_or_modeled_trajectory": true,
+  "physical_admission": false
+}

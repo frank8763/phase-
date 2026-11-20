@@ -1,11 +1,11 @@
 {
-  "status": "COMPLETE_FINITE_METHOD_CLI_QUALIFIED_PREPARING_NATIVE_EXECUTION",
+  "status": "RUNNING_COMPLETE_CAPTURE_PLUS_RPP_MODEL_WITNESS",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
   "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4",
   "storage_limit_bytes": 10737418240,
-  "active_round": null,
+  "active_round": "v1408_saved_capture_witness",
   "rounds": [
     {
       "id": "v1383_exact_timed_handoff",
@@ -150,13 +150,25 @@
       "unique_git_head": "17813a5f4161f7a41a0cbff6df11436eb3497724",
       "remote_release": "https://github.com/frank8763/phase-/releases/tag/phase-v1401-model-origin-qualification-20261121",
       "transport_duplicates_cleaned": true
+    },
+    {
+      "id": "v1408_saved_capture_witness",
+      "kind": "complete_saved_input_finite_method_model_qualification",
+      "started_unix": 1795193920.4919431,
+      "hard_stop_unix": 1795199320.4919431,
+      "status": "RUNNING",
+      "scientific_revision": 2,
+      "maximum_generation_analytical": 904500,
+      "maximum_audit_analytical": 904500,
+      "maximum_vehicle_tasks": 0,
+      "source_freeze_sha256": "aeaf69c74d1256219e211ad0e9926018d3a1b53e898a16a55dff4ff8f215231c"
     }
   ],
   "vehicle_task_starts": 6,
-  "scientific_revisions": 1,
+  "scientific_revisions": 2,
   "review_pending_original_bytes_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
-  "models_now_authorized": false,
+  "models_now_authorized": true,
   "preexisting_runs_allocated_bytes": 23690563584,
   "prepared_next_round": null,
   "next_round_qualification": null,
@@ -214,5 +226,7 @@
   "latest_closed_transport_recovery": "records/closed_transport_recovery_v1400_20261121/RECOVERY_INDEX.json",
   "latest_complete_route_transaction_preparation": "runs/v1404_route_bridge_session/PREPARATION_CHECKPOINT02.json",
   "latest_complete_finite_method_preparation": "runs/v1406_complete_finite_witness/PREPARATION_CHECKPOINT.json",
-  "latest_zstd_cache_recovery": "records/zstd_cache_recovery_v1405_20261121/RECOVERY_INDEX.json"
+  "latest_zstd_cache_recovery": "records/zstd_cache_recovery_v1405_20261121/RECOVERY_INDEX.json",
+  "latest_lossless_branch_storage_qualification": "runs/v1407_lossless_branch_stream/QUALIFICATION.json",
+  "latest_complete_saved_capture_model_round": "runs/v1408_saved_capture_witness/RUNNING_CHECKPOINT.json"
 }
