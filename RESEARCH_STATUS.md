@@ -2082,3 +2082,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1370已一次后台启动pid379060，新绝对/双钟硬止2026-11-20 09:00/1795136400，10GiB，源46bc2baf冻；7个新增恢复组件已全部完整ownreplay/生产runtime独立审核PASS（RPP默认完整重复、coherentMPPI主重复、RPP .4/.8各主重复，复用旧默认主单列不计新样本），已自动接rpp_default_static_main且LIVE_STATIC。CPU2/3/4/5分核、仅一车锁、Stage隔离、临时idle/sleep抑制随本轮退出或09:00释放、无永久电源设置更改。离线不依赖在线监督，普通安全完整功能失败继续其它冻结任务；静态pair过才对应动态，任一安全控制证据异常全停不冻结后修补。必要原件完整归档SHA回读/单次同步，9时后仅零模型收尾。runs/v1370_overnight_controller_matrix/HANDOFF.json。
 
 - V1370夜间队列已闭：EVIDENCE_OR_OPERATION_STOP；实际尝试15、未执行256，动态开发pair存在全门通过=False；原八WE开发矩阵不是新24确认，所有分母/未知分账见docs/OVERNIGHT_CONTROLLER_MATRIX_V1370_REPORT.md。REVIEW_PENDING恢复，零模型归档/单次同步。
+
+- 11/20早检查V1370：昨晚21:05:40已停，仅约29m33s；7恢复PASS，RPP.6/.4静态各pairPASS，MPPI/preview静态功能FAIL；两动态原slot1均12replan用尽/余1.9187和3.4468m，第二audit KeyError41410停止，256未执行。实际传感41390→41415缺41410，过期3×5零速推进后当前body/tick与缓存测距未同tick绑定，不能跳过补配或追认全因果PASS。累计246305actual/ownreplay误差0/接触0，完整归档本地回读，单次pushTLS失败/远端未确认，原件保留无重试。当前REVIEW_PENDING/锁空闲，仅0模型检查记录，无重启。docs/OVERNIGHT_CONTROLLER_MATRIX_V1370_INSPECTION_20261120.md。
