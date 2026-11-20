@@ -38,7 +38,7 @@
   "canonical_vehicle_initializations": 4,
   "counts_scope": "all closed day batches, historical/native/replay separated",
   "internal_factory_model_constructions": null,
-  "next_zero_model_work": "Bind existing TIME_BOUND_NEXT_SEGMENT command/steering/velocity/braking clocks to an explicit moving-response contract; no new models or navigation",
+  "next_zero_model_work": "Bind explicit reverse-intent release request to nominal phase and braking clock; reject subthreshold pre-release commands; no physical execution, no frozen GearHandoff edits",
   "current_physical_jobs": 0,
   "latest_capture": {
     "batch": "v1376_prepared_capture_component",
@@ -50,9 +50,9 @@
   },
   "remaining_component_slots": 0,
   "initialization_accounting": "4 canonical vehicle initializations; internal factory model constructions unknown",
-  "last_supervision_unix": 1795144901.0968194,
-  "latest_zero_model_diagnostic": "docs/TIMED_HANDOFF_V1377_OBSERVED_RESPONSE_ADDENDUM.md",
-  "day_storage_bytes_inode_deduplicated": 225522332,
+  "last_supervision_unix": 1795145358.9205534,
+  "latest_zero_model_diagnostic": "docs/TIMED_HANDOFF_V1377_GEAR_CLOCK_DIAGNOSIS.md",
+  "day_storage_bytes_inode_deduplicated": 225887229,
   "nominal_timed_witnesses_passed": 5,
   "actual_time_and_coupled_response_envelope_qualified": false,
   "allowed_new_physical_scope": "NONE: day component limit 4/4; zero-model saved-data analysis only",
@@ -60,5 +60,10 @@
   "latest_32210_steering_response_passed": true,
   "nominal_bridge_from_observed_preparation_passed": true,
   "conditional_pose_tube_geometry_passed": true,
-  "conditional_pose_tube_lower_m": 0.23619602178917884
+  "conditional_pose_tube_lower_m": 0.23619602178917884,
+  "mandatory_reverse_gear_delay_native": 200,
+  "nominal_3p9s_motion_clock_executable": false,
+  "source_level_subthreshold_gear_gap_detected": true,
+  "zero_model_delayed_tube_lower_m": 0.23772593931909458,
+  "extra_gear_hold_response_qualified": false
 }
