@@ -2196,3 +2196,5 @@ V1408已按4500上限功能拒绝闭批，0RPP命令/0物理/0audit（成功依�
 V1408闭批本地归档6077成员/49325715B原源/输入/失败证据及全部分支流SHA回读全过，FINALIZED仅归档不科学通过。V1409保存4501state零积分映射与原V1393轮角反变换逐点误差0、t0原实测两轮字节保持，投影残差1.355269e-7rad公开；末映射角到原准备目标误差2.22e-16/轮速1.84e-15，拒缺步与错误.125模式。源已冻，尚未新完整数值资格。下一新模型getter/rest/audit与生产入口共同绑定该原标量坐标，不改任何旧冻源/不重启V1408/不增预算。
 
 V1408唯一Git push/ref已确认c8ef04d1725f0345350fde6496e099be3dd5961f，不再push；失败证据6077成员49.33MB首次递送单后台pid744014，状态remote_delivery/CLAIM/ERROR/FINALIZED及FULL_REMOTE_VERIFIED，先看不重复launch。V1410新generator/audit已共同接V1409当前标量坐标getter（含私有分支绑定/停车轮速），原物理/模型状态/参数/控制/门均不改；3真实生产CPU2/run_phase/原RPP RPC/首错准确0资格过，DEPENDENCY_SOURCE_FREEZE显式含getter及4501保存映射源；仍0新数值/物理，下一同原4500/904500上限另轮准备，不重启V1408或扩大额度。
+
+V1408失败原源/输入/全部流证据6077成员49.33MB已完整远端实际块/成员/整流/index SHA通过，唯一Git c8ef04d1/Release phase-v1408-saved-capture-model-failure-20261121，只清已核运输part，所有失败原件保留，worker744014已完成；禁止重push/重launch。当前无模型运行，V1410准备下一新来源接口数值资格。
