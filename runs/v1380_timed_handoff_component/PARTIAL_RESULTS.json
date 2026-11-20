@@ -1,0 +1,73 @@
+[
+  {
+    "task": "timed_handoff_main",
+    "passed": false,
+    "returncode": 1,
+    "native": {
+      "passed": false,
+      "canonical_vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
+      "private_mujoco_native": 0,
+      "own_replay_native": 32211,
+      "training_updates": 0,
+      "analytical_native": 200,
+      "original_goal_navigation": false,
+      "producer_python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+      "producer_numpy": "2.2.6",
+      "scope": "same32210 complete next-segment timed handoff, no original whole route",
+      "error": "AssertionError('PREFIX_FULL_STATE_OR_CONTROL_MISMATCH')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1380_timed_handoff_component/native.py\", line 67, in run\n    prefix=restore(v,task,step,end);dump(out/'PREFIX_RESTORE.json',prefix);dump(out/'COMPONENT_INITIAL_PACKET.json',old.packet(v))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1372_coherent_sampling_fault/prefix_restore.py\", line 28, in restore\n    assert maximum<=1e-8,'PREFIX_FULL_STATE_OR_CONTROL_MISMATCH'\nAssertionError: PREFIX_FULL_STATE_OR_CONTROL_MISMATCH\n",
+      "error_stop_tail_error": "AssertionError('CURRENT_MEASURED_STATE_COMPLETE_BRAKING_RESERVE_REJECTED')",
+      "actual_total_native": 32211,
+      "historical_prefix_replay_native": 32211,
+      "new_component_native": 0,
+      "model_native_inflight_unknown": false,
+      "physical": {
+        "actual_native": 32211,
+        "fully_recorded_native": 32211,
+        "minimum_actual_clearance_m": 0.25003275891123405,
+        "minimum_self_margin_m": 0.009164030816348478,
+        "bad_contacts": 0,
+        "final_body": [
+          2.1017952704469796,
+          -1.7200399216368585,
+          -0.8556529990329773,
+          4.6924402320742225e-06,
+          1.7068893367800978e-06
+        ],
+        "final_translation_speed_m_s": 4.69245174925025e-06,
+        "root_guard_native_count": 32211,
+        "goal_distance_m": 1.9187388672705183,
+        "first_actor_detection": {
+          "native_tick": 4475,
+          "sim_time": 44.749999999999666,
+          "xy": [
+            0.03950796611406217,
+            -0.7293178242086084
+          ],
+          "rays": [
+            29
+          ],
+          "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+        },
+        "actual_travel_after_detection_m": 10.880258096388891
+      },
+      "evidence_saved": true,
+      "independent_allocation": {
+        "passed": true,
+        "control_error": 0.0,
+        "memory_error": 0.0
+      },
+      "replay": {
+        "replay_native": 32211,
+        "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+        "contact_mismatched_ticks": 0,
+        "passed": true
+      },
+      "closed": true,
+      "wall_s": 51.2721743840375,
+      "source_unchanged": true
+    },
+    "audit_returncode": 1
+  }
+]
