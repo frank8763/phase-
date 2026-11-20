@@ -1,0 +1,109 @@
+{
+  "passed": false,
+  "closed": true,
+  "scope": "one sampling fault component",
+  "new_navigation": 0,
+  "results": [],
+  "monitor": {
+    "returncodes": [
+      0,
+      0
+    ],
+    "drain_requested": true,
+    "cooperative_ros_close_requested": false,
+    "wall_s": 21.72921600099653
+  },
+  "native": {
+    "passed": true,
+    "canonical_vehicle_initializations": 1,
+    "internal_factory_model_constructions": null,
+    "new_actual_native": 41615,
+    "own_replay_native": 41615,
+    "private_mujoco_native": 0,
+    "analytical_vehicle_native": 0,
+    "training_updates": 0,
+    "original_goal_navigation": false,
+    "historical_controls_used": 41390,
+    "historical_prefix_replay_native": 41390,
+    "new_component_native": 225,
+    "adapter_source": "experiments/v1114_coupled_steering_mode/coupled_control.py",
+    "observation_transport_drops": 118,
+    "functional_checks": {
+      "peer_passed": true,
+      "exact_native_count": true,
+      "four_observation_expiry_refusals": true,
+      "body_stopped": true,
+      "steering_settled": true,
+      "drive_command_zero": true
+    },
+    "component_scope": "sampling fault injection only, no navigation",
+    "model_native_inflight_unknown": false,
+    "physical": {
+      "actual_native": 41615,
+      "fully_recorded_native": 41615,
+      "minimum_actual_clearance_m": 0.27341458481867664,
+      "minimum_self_margin_m": 0.009164026602637043,
+      "bad_contacts": 0,
+      "final_body": [
+        1.1711477857508699,
+        -2.8394433895913758,
+        -1.2681547628296364,
+        1.8995182837100842e-06,
+        2.5197214794566565e-06
+      ],
+      "final_translation_speed_m_s": 2.0453554144966038e-06,
+      "root_guard_native_count": 41615,
+      "goal_distance_m": 2.9507744838246897,
+      "first_actor_detection": {
+        "native_tick": 4455,
+        "sim_time": 44.549999999999706,
+        "xy": [
+          -0.00419460589825629,
+          -0.7226868195580065
+        ],
+        "rays": [
+          29
+        ],
+        "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+      },
+      "actual_travel_after_detection_m": 19.71149481808578
+    },
+    "evidence_saved": true,
+    "independent_allocation": {
+      "passed": true,
+      "control_error": 0.0,
+      "memory_error": 0.0,
+      "recorded_rows": 41615
+    },
+    "replay": {
+      "replay_native": 41615,
+      "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+      "contact_mismatched_ticks": 0,
+      "passed": true
+    },
+    "actual_total_native": 41615,
+    "closed": true,
+    "wall_s": 66.29602768100449,
+    "closed_unix": 1795138839.682082,
+    "source_unchanged": true
+  },
+  "peer": {
+    "passed": true,
+    "models": 0,
+    "controller_goals": 0,
+    "initial_observation": 118,
+    "fresh_observation": 133,
+    "final_observation": 134,
+    "fault": "four genuine expired observations, fresh zero recovery",
+    "deliberately_stale_packets": 4,
+    "fresh_packets": 1,
+    "no_physical_modules_loaded": true,
+    "closed": true
+  },
+  "error": "AssertionError('INDEPENDENT_AUDIT_FAILED')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1372_coherent_sampling_fault/campaign.py\", line 55, in main\n    assert audit.returncode==0,'INDEPENDENT_AUDIT_FAILED'\nAssertionError: INDEPENDENT_AUDIT_FAILED\n",
+  "stop_reason": "FIRST_FAILURE_OR_EXCEPTION",
+  "closed_unix": 1795138845.3021243,
+  "source_unchanged": true,
+  "review_pending_restored": true
+}
