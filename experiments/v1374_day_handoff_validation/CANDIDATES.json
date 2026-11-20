@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "maximum_zero_model_designs": 3,
+  "source_state_ticks": [9390, 32210],
+  "candidates": [
+    {"id": "CAPTURE_TWO_ARCS", "reverse_curvature_m_inv": 0.5, "reverse_nominal_distance_m": 0.25, "forward_curvature_m_inv": -0.5, "forward_nominal_distance_m": 0.15, "speed_m_s": 0.1, "complete_stop_native": 200, "purpose": "actual-pose bounded capture at9390; nominal steering slew included; not a physical response certificate"},
+    {"id": "TIME_BOUND_NEXT_SEGMENT", "source_tick": 32210, "time_uncertainty_s": 0.2, "complete_stop_native": 200, "maximum_wait_s": 40.0, "purpose": "complete travel, gear-change and stop interval under original causal periodic coefficients; no actor truth"}
+  ],
+  "new_map_or_task_pool": false,
+  "registered_before_software_evaluation": true
+}
