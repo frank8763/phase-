@@ -1,14 +1,20 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "RUNNING_FROZEN_SAMPLING_COMPONENT",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
-  "active_window": null,
-  "active_entrypoint": null,
+  "active_run": "runs/v1372_coherent_sampling_fault",
+  "active_window": {
+    "started_unix": 1795138770.170556,
+    "started_monotonic": 260545.619977618,
+    "absolute_deadline_unix": 1795144170.170556,
+    "hard_stop_monotonic": 265945.619977618,
+    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
+  },
+  "active_entrypoint": "experiments/v1372_coherent_sampling_fault/campaign.py",
   "automatic_additional_simulation": false,
-  "next_physical_authorized": false,
+  "next_physical_authorized": true,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10402,13 +10408,18 @@
     "planned_next_window_s": 5400
   },
   "latest_v1372": {
-    "status": "PREPARED_AWAITING_NEW_WINDOW_REPLY",
-    "models": 0,
-    "physical_native": 0,
-    "new_physical_authorized": false,
+    "status": "RUNNING_SAMPLING_FAULT_COMPONENT",
+    "models_authorized": true,
     "maximum_components": 1,
     "maximum_navigation": 0,
-    "report": "docs/COHERENT_SAMPLING_V1372_PREPARATION.md",
-    "qualifications_passed": true
+    "window": {
+      "started_unix": 1795138770.170556,
+      "started_monotonic": 260545.619977618,
+      "absolute_deadline_unix": 1795144170.170556,
+      "hard_stop_monotonic": 265945.619977618,
+      "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
+    },
+    "protocol": "experiments/v1372_coherent_sampling_fault/PROTOCOL.md",
+    "report": "docs/COHERENT_SAMPLING_V1372_PREPARATION.md"
   }
 }
