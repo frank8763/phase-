@@ -1,14 +1,20 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "RUNNING_FROZEN_CAPTURE_COMPONENT",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
-  "active_window": null,
-  "active_entrypoint": null,
+  "active_run": "runs/v1375_actual_capture_component",
+  "active_window": {
+    "started_unix": 1795140592.7920597,
+    "started_monotonic": 262368.241481281,
+    "absolute_deadline_unix": 1795165200,
+    "hard_stop_monotonic": 286975.4494216442,
+    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
+  },
+  "active_entrypoint": "experiments/v1375_actual_capture_component/campaign.py",
   "automatic_additional_simulation": false,
-  "next_physical_authorized": false,
+  "next_physical_authorized": true,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
   "latest_report": "docs/RPCCR_CAUSAL_TIME_WINDOW_FIXED24_V1281_REPORT.md",
@@ -10428,5 +10434,13 @@
     "day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
     "automation_id": "phase-17",
     "hard_stop_local": "2026-11-20 17:00 Asia/Shanghai"
+  },
+  "latest_v1375": {
+    "status": "RUNNING_CAPTURE_MAIN_AND_SUCCESS_REPEAT",
+    "protocol": "experiments/v1375_actual_capture_component/PROTOCOL.md",
+    "hard_stop_local": "2026-11-20 17:00 +0800",
+    "maximum_components": 2,
+    "new_navigation": 0,
+    "full_handoff_qualified": false
   }
 }
