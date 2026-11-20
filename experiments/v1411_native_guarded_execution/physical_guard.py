@@ -15,11 +15,26 @@ assert Path(route_event.__file__).resolve()==R/'experiments/v1397_event_handoff_
 class PhysicalGuard:
     def __init__(self,vehicle,*,setup,causal_snapshot):
         assert vehicle.count==0 and float(vehicle.d.time)==0.
+        self.configure(vehicle,setup,causal_snapshot,checked=0)
+
+    @classmethod
+    def at_event(cls,vehicle,*,setup,causal_snapshot,canonical_owner):
+        assert canonical_owner.vehicle is vehicle and canonical_owner.applied==vehicle.count
+        canonical_owner.mode_memory.snapshot(vehicle.count)
+        assert canonical_owner.gear.last_tick==vehicle.count-1
+        assert len(vehicle.rows)==vehicle.count and len(vehicle.contacts)==vehicle.count+1
+        assert vehicle.audit.native_count==vehicle.count and vehicle.bad==0
+        instance=cls.__new__(cls)
+        instance.configure(vehicle,setup,causal_snapshot,checked=vehicle.count)
+        instance.field.all_future(instance.snapshot,current_native=vehicle.count,current_sim_time=float(vehicle.d.time))
+        return instance
+
+    def configure(self,vehicle,setup,causal_snapshot,*,checked):
         assert Path(vehicle.step.__func__.__code__.co_filename).resolve()==R/'experiments/v858_nav2_verified/vehicle.py'
         assert Path(vehicle.check.__func__.__code__.co_filename).resolve()==R/'experiments/v858_nav2_verified/vehicle.py'
         assert Path(vehicle.adapter.compute.__func__.__code__.co_filename).resolve()==R/'experiments/v1114_coupled_steering_mode/coupled_control.py'
         assert abs(vehicle.dt-.01)<=1e-12
-        self.snapshot=json.loads(json.dumps(causal_snapshot,allow_nan=False));self.setup=setup;self.checked=0
+        self.snapshot=json.loads(json.dumps(causal_snapshot,allow_nan=False));self.setup=setup;self.checked=checked
         p=R/'experiments/v1396_rpp_rpc_retirement/geometry_contract.py'
         spec=importlib.util.spec_from_file_location('v1411_original_actual_geometry',p);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);self.Geometry=m.Geometry
         p=R/'experiments/v1397_event_handoff_integration/causal_bridge_field.py'

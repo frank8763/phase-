@@ -1,0 +1,9 @@
+# V1411 当前生产接入推进
+
+新增event_owner把原owner当前全状态/allocator/连续mode/系数绑定扩展为base_input_sha+完整method_spec/event_geometry，再重算输入SHA；commit额外核独立audit输入和method身份。bridge_execution实际调用同原Method，真实body/双轮反馈每5native，gear/当前200证书每native，不执行模型控制数组。原RPP实时命令来源、旧回复先身份核后有限淘汰，原5native命令hold、200ms证书后复核、完整200最终尾和固定参考不变。
+
+route_ros新副本只在真实command datagram加command_source，公开原插件/本地刹停贡献；所有HORIZON规划/原观测及参数不改。新context只允许--entry-check，正常authorize仍明确拒绝物理launch。原正常route前缀通过observe_original_prefix连续维护t0 gear/mode与实际original Vehicle行/接触/根计数，不能在bridge已开始后借此跳过当前证书。这个observer不执行车辆/不取旧文件控制；canonical外层owner实际调用链尚待接齐。
+
+明确剩余接入：原正常route物理loop须逐native调用该observer，收到当前事件后安装当前reserve/physicalguard并新生成＋独立审核证书，commit后实例化BridgeExecution；外层负责实际ROUTE_ACTUAL_FRAME和事件文件通知/RPP command调度。PhysicalGuard当前仍canonical-t0初始化，需证明连续owner后才允许在实际当前事件安装因果snapshot，不能借旧snapshot或跳步计数。整路完整源审核/物理replay/pair/预算与存储仍未完成，所以不允许launch。
+
+下一资格仅新源真实CPU2/run_phase/原guard/profile禁止任何模型构造/step/真实NumPy JSON与路线命令拒绝边界/CPU3真实ROS import entry，不将任何软件transition当实际native步或物理进展。新源尚未冻结，旧V1410/V1412完全不改。

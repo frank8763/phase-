@@ -35,7 +35,26 @@ class NativeStep:
         self.vehicle=vehicle;self.run_id=run_id;self.reserve=reserve;self.physical_guard=physical_guard;self.sink=evidence_sink
         self.gear=gear_module.GearHandoff();self.mode_memory=mode.ModeMemory(canonical_native=0,coupled_episode=False,steering_motion_active=False)
         self.sampler=frames.SampleCache();self.sequence=0;self.applied=0;self.in_step=False;self.events=[];self.last_zero_count=0
+        self.bridge_started=False
         self.plugin_native=0;self.bridge_native=0;self.stop_native=0;self.sent={}
+
+    def observe_original_prefix(self,row,*,control_owner):
+        # An observer of the original normal-route execution from canonical t0;
+        # never a function that applies a command or authorizes a bridge step.
+        v=self.vehicle
+        assert not self.bridge_started and not self.in_step and v.count==self.applied+1
+        assert row['applied'] is True and row['before_native']==self.applied
+        assert control_owner in {'ORIGINAL_RPP','DISCLOSED_SHARED_EXECUTION_BRIDGE','APPLIED_STOP_TAIL'}
+        assert len(v.rows)==v.count and len(v.contacts)==v.count+1 and v.audit.native_count==v.count and v.bad==0
+        assert bool(getattr(v.adapter,'_steering_motion_active',False))==(row['parked_target'] is not None)
+        candidate=copy.deepcopy(self.gear)
+        vr,wr,proof=candidate.select(*row['upstream_request'][:2],native_tick=row['before_native'],body=row['body'],last_ctrl=row['last_ctrl'],encoders=row['encoders'])
+        assert [vr,wr,False]==row['request'] and proof==row['gear_handoff'],'ORIGINAL_PREFIX_GEAR_ACCOUNT_CHANGED'
+        self.mode_memory.applied(before_native=row['before_native'],v=vr,w=wr,parked_target=row['parked_target'],steering_motion_active_after=bool(getattr(v.adapter,'_steering_motion_active',False)))
+        self.gear=candidate;self.applied+=1
+        self.plugin_native+=control_owner=='ORIGINAL_RPP';self.bridge_native+=control_owner=='DISCLOSED_SHARED_EXECUTION_BRIDGE';self.stop_native+=control_owner=='APPLIED_STOP_TAIL'
+        self.last_zero_count=self.last_zero_count+1 if control_owner=='APPLIED_STOP_TAIL'else 0
+        self.events.append(copy.deepcopy(dict(row,control_owner=control_owner,original_normal_route_prefix_observation=True)))
 
     def packet(self,scan_wire):
         # Body/encoder samples are current actual measurements. Scan provenance

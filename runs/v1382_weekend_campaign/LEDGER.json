@@ -1,5 +1,5 @@
 {
-  "status": "SAVED_COMPLETE_SCALAR_MODEL_WITNESS_INDEPENDENTLY_QUALIFIED",
+  "status": "CURRENT_RESERVE_FULL_PERIOD_GEOMETRY_REFUSED",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -231,6 +231,25 @@
       "transport_duplicates_cleaned": true,
       "unique_git_head": "0a449768e8c2831090f4b6c17d37124b9e86f8e1",
       "remote_release": "https://github.com/frank8763/phase-/releases/tag/phase-v1412-saved-complete-model-audit-20261121"
+    },
+    {
+      "id": "v1413_current_reserve_qualification",
+      "kind": "current_measured_packet_reserve_analytical_qualification",
+      "status": "CLOSED",
+      "started_unix": 1795203572.5127017,
+      "hard_stop_unix": 1795204472.5127017,
+      "maximum_analytical_native": 400,
+      "maximum_vehicle_tasks": 0,
+      "scientific_revision": 3,
+      "source_freeze_sha256": "16d3969a8ee70abc95b3bb26a8f3eb4bdbceb3a8d0e8cbf338dd4c82716daa5e",
+      "closed": true,
+      "passed": false,
+      "analytical_native": 200,
+      "analytical_unknown": false,
+      "physical_native": 0,
+      "completion": "runs/v1413_current_reserve_qualification/COMPLETION.json",
+      "finalized": true,
+      "archive_index": "runs/v1413_current_reserve_qualification/ARCHIVE_INDEX.json"
     }
   ],
   "vehicle_task_starts": 6,
@@ -242,7 +261,7 @@
   "prepared_next_round": null,
   "next_round_qualification": null,
   "qualification_passed": true,
-  "physical_launch_blocker": "Current actual native reserve, full physical entry/RPC/method/replay/pair and whole-route budget not yet qualified",
+  "physical_launch_blocker": "V1413 initial full-period envelope insufficient and failed proof/branch not saved; new original causal-time geometry and save-before-assert needed, complete actual route still unqualified",
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
   "storage_ready": true,
   "storage_allocated_bytes": 9339875328,
@@ -252,7 +271,7 @@
   "active_task": null,
   "last_round_failure_requires_inspection": false,
   "latest_32210_handoff_qualified": true,
-  "next_preparation": "experiments/v1411_native_guarded_execution/PROTOCOL.md",
+  "next_preparation": "experiments/v1414_current_timed_geometry/PROTOCOL.md",
   "actual_total_native": 115880,
   "historical_reconstruction_native": 108300,
   "new_component_native": 7580,
@@ -308,5 +327,6 @@
   "scalar_feedback_saved_generation_independent_audit_native": 791940,
   "latest_complete_saved_scalar_model_witness_qualified": true,
   "latest_complete_saved_scalar_model_generation": "runs/v1410_scalar_feedback_witness/model/RESULT.json",
-  "latest_complete_saved_scalar_model_independent_audit": "runs/v1412_saved_witness_audit/model/INDEPENDENT_AUDIT.json"
+  "latest_complete_saved_scalar_model_independent_audit": "runs/v1412_saved_witness_audit/model/INDEPENDENT_AUDIT.json",
+  "current_reserve_qualification_analytical_native": 200
 }
