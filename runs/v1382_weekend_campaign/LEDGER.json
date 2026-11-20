@@ -1,5 +1,5 @@
 {
-  "status": "CURRENT_RESERVE_FULL_PERIOD_GEOMETRY_REFUSED",
+  "status": "CURRENT_RESERVE_QUALIFICATION_CLOSED",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -254,10 +254,29 @@
       "transport_duplicates_cleaned": true,
       "unique_git_head": "11a7f8398815ab0fb601e3bf5611cbdf15284d33",
       "remote_release": "https://github.com/frank8763/phase-/releases/tag/phase-v1413-current-reserve-refusal-20261121"
+    },
+    {
+      "id": "v1416_timed_reserve_qualification",
+      "kind": "current_causal_timed_reserve_analytical_qualification",
+      "status": "CLOSED",
+      "started_unix": 1795208925.8516428,
+      "hard_stop_unix": 1795209825.8516428,
+      "maximum_analytical_native": 400,
+      "maximum_vehicle_tasks": 0,
+      "scientific_revision": 4,
+      "source_freeze_sha256": "bbc7debe78b92f3cf5cda95cb52773ad0eb07f8df5f9ebb7e9cf4b8bb8a55831",
+      "closed": true,
+      "passed": true,
+      "analytical_native": 400,
+      "analytical_unknown": false,
+      "physical_native": 0,
+      "completion": "runs/v1416_timed_reserve_qualification/COMPLETION.json",
+      "finalized": true,
+      "archive_index": "runs/v1416_timed_reserve_qualification/ARCHIVE_INDEX.json"
     }
   ],
   "vehicle_task_starts": 6,
-  "scientific_revisions": 3,
+  "scientific_revisions": 4,
   "review_pending_original_bytes_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
   "models_now_authorized": false,
@@ -265,7 +284,7 @@
   "prepared_next_round": null,
   "next_round_qualification": null,
   "qualification_passed": true,
-  "physical_launch_blocker": "V1413 initial full-period envelope insufficient and failed proof/branch not saved; new original causal-time geometry and save-before-assert needed, complete actual route still unqualified",
+  "physical_launch_blocker": "Timed current reserve400 qualified; full timed finite model generation/audit and actual outer route owner/RPC/replay/pair/budget still required",
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
   "storage_ready": true,
   "storage_allocated_bytes": 9339875328,
@@ -275,7 +294,7 @@
   "active_task": null,
   "last_round_failure_requires_inspection": false,
   "latest_32210_handoff_qualified": true,
-  "next_preparation": "experiments/v1414_current_timed_geometry/PROTOCOL.md",
+  "next_preparation": "experiments/v1415_unified_causal_witness/PROTOCOL.md",
   "actual_total_native": 115880,
   "historical_reconstruction_native": 108300,
   "new_component_native": 7580,
@@ -333,5 +352,7 @@
   "latest_complete_saved_scalar_model_generation": "runs/v1410_scalar_feedback_witness/model/RESULT.json",
   "latest_complete_saved_scalar_model_independent_audit": "runs/v1412_saved_witness_audit/model/INDEPENDENT_AUDIT.json",
   "current_reserve_qualification_analytical_native": 200,
-  "latest_current_timed_geometry_qualification": "runs/v1414_current_timed_geometry/QUALIFICATION.json"
+  "latest_current_timed_geometry_qualification": "runs/v1414_current_timed_geometry/QUALIFICATION.json",
+  "current_timed_reserve_qualification_analytical_native": 400,
+  "latest_current_timed_reserve_qualified": true
 }
