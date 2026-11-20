@@ -1,0 +1,23 @@
+{
+  "physical_native": 0,
+  "vehicle_initializations": 0,
+  "analytical_attempts": [
+    {
+      "id": "first",
+      "source": "RESPONSE_MODEL_PROBE.json",
+      "analytical_native": 0,
+      "error": "missing GearHandoff module path"
+    },
+    {
+      "id": "entry02",
+      "source": "entry02/response_probe.console",
+      "analytical_native": null,
+      "conservative_upper_bound": 3730,
+      "error": "NumPy bool nested JSON serialization failed after analytical work; exact step count unavailable, not zero",
+      "upper_bound_derivation": "source fixed2*(485+380) saved-response steps + at most2000 schedule steps"
+    }
+  ],
+  "new_component_tasks_started": 0,
+  "old_failures_preserved": true,
+  "no_private_MuJoCo": true
+}

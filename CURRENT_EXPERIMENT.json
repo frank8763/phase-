@@ -231,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "Day component allowance exhausted (4/4). Zero-model original32210 timed-handoff command/steering/speed/braking-response contract only until17:00; full9390/full32210 remain unqualified, no navigation/new24.",
+  "next_scope": "New human supplemental maximum2 same32210 complete-handoff main/success-repeat;17:00 unchanged. Source and response/braking/entry qualification first; no new physics yet.",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -10489,5 +10489,19 @@
     "single_steering_prerequisite_only": true,
     "remote_ref_confirmed": true,
     "remote_download_restore_verified": false
+  },
+  "latest_v1379": {
+    "status": "RESPONSE_AND_BRAKING_QUALIFICATION_PASSED",
+    "report": "docs/TIMED_HANDOFF_V1379_PREPARATION_REPORT.md",
+    "models": 0,
+    "analytical_known": 190600,
+    "analytical_unknown_attempts": 1
+  },
+  "latest_v1380": {
+    "status": "QUALIFIED_FROZEN_NOT_YET_LAUNCHED",
+    "protocol": "experiments/v1380_timed_handoff_component/PROTOCOL.md",
+    "maximum_components": 2,
+    "original_deadline_unix": 1795165200,
+    "qualification": "runs/v1380_timed_handoff_component/QUALIFICATION.json"
   }
 }

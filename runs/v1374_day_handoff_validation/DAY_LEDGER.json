@@ -1,5 +1,5 @@
 {
-  "status": "STEERING_RESPONSE_CLOSED_DAY_COMPONENT_LIMIT",
+  "status": "SUPPLEMENTAL_TIMED_HANDOFF_QUALIFIED",
   "human_authority": "继续下一步的实验，然后开启监督的运行检查时间，继续推进实验，今天白天都这样安排",
   "recorded_unix": 1795139465.0648975,
   "absolute_model_hard_stop_unix": 1795165200,
@@ -13,12 +13,12 @@
   "navigation_tasks_started": 0,
   "private_model_native": 0,
   "own_replay_native": 64600,
-  "physical_entry_ready": false,
+  "physical_entry_ready": true,
   "allowed_saved_ticks": [
     9390,
     32210
   ],
-  "models_now_authorized": false,
+  "models_now_authorized": true,
   "physical_scope_authorized_conditionally": true,
   "stage_access": false,
   "old_windows_not_reopened": true,
@@ -38,7 +38,7 @@
   "canonical_vehicle_initializations": 4,
   "counts_scope": "all closed day batches, historical/native/replay separated",
   "internal_factory_model_constructions": null,
-  "next_zero_model_work": "Read-only consistency of mapped evidence; targeted correction only for a concrete new issue; no repeated software fixtures or new candidates; zero-model closure at17:00",
+  "next_zero_model_work": "Response-aware nominal prediction/actual saved calibration and complete braking/time witness; through isolated CPU2 lock and separate analytical counts; no new physical yet",
   "current_physical_jobs": 0,
   "latest_capture": {
     "batch": "v1376_prepared_capture_component",
@@ -50,12 +50,12 @@
   },
   "remaining_component_slots": 0,
   "initialization_accounting": "4 canonical vehicle initializations; internal factory model constructions unknown",
-  "last_supervision_unix": 1795148817.9091873,
-  "latest_zero_model_diagnostic": "docs/TIMED_HANDOFF_V1377_EVIDENCE_REUSE_MAP.md",
+  "last_supervision_unix": 1795160555.5360417,
+  "latest_zero_model_diagnostic": "docs/TIMED_HANDOFF_V1379_PREPARATION_REPORT.md",
   "day_storage_bytes_inode_deduplicated": 227427569,
   "nominal_timed_witnesses_passed": 5,
   "actual_time_and_coupled_response_envelope_qualified": false,
-  "allowed_new_physical_scope": "NONE: day component limit 4/4; zero-model saved-data analysis only",
+  "allowed_new_physical_scope": "only supplemental2 same32210 complete handoff main/success-repeat; first failure stop;17:00",
   "source_envelope_certificate_lower_m": 0.2491784949415564,
   "latest_32210_steering_response_passed": true,
   "nominal_bridge_from_observed_preparation_passed": true,
@@ -85,5 +85,13 @@
   "action_tail_wrapper_required": true,
   "evidence_reuse_map": "runs/v1377_timed_handoff_witness/EVIDENCE_REUSE_MAP.json",
   "core_software_contract_and_evidence_inventory_complete": true,
-  "full_physical_entry_qualified": false
+  "full_physical_entry_qualified": false,
+  "supplemental_authority": "runs/v1379_timed_response_preparation/SUPPLEMENTAL_AUTHORITY.json",
+  "original_component_limit": 4,
+  "supplemental_component_limit": 2,
+  "supplemental_components_started": 0,
+  "supplemental_scope": "same32210 complete handoff main/success-repeat only; first failure stop;17:00 unchanged",
+  "latest_preparation_known_analytical_steps": 190600,
+  "latest_preparation_unknown_analytical_attempts": 1,
+  "latest_preparation_unknown_upper_bound": 3730
 }

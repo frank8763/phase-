@@ -1,0 +1,16 @@
+{
+  "human_reply": "允许追加最多2次，17:00截止不变",
+  "recorded_unix": 1795156685.675364,
+  "absolute_deadline_unix": 1795165200,
+  "original_component_limit": 4,
+  "original_attempts": 4,
+  "additional_component_limit": 2,
+  "scope": "Original32210 complete timed handoff main; full repeat only if all main gates pass; no whole route/new24",
+  "models_now_authorized": false,
+  "physical_start_condition": "response-aware exact-source witness, full braking/causal time coverage, complete entry/audit qualification and source freeze",
+  "stop": "first failure or any anomaly; root17:00 unchanged; no old-batch restart",
+  "allowed_preparation": "Same-input saved-state response analysis and original analytical predictor/braking witness through run_phase CPU2 single lock only; analytical steps separately counted; no MuJoCo vehicle in preparation",
+  "analytical_step_cap": 250000,
+  "preparation_wall_cap_s": 1800,
+  "storage_limit_bytes": 2147483648
+}

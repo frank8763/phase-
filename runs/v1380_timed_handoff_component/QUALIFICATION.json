@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_saved32600_and_original32200": true,
+    "full_saved_gear_metadata_exact": true,
+    "actual_callback_release_request_clock_and200tail_equivalent": true,
+    "full_response_geometry_matches_braking_qualification": true,
+    "continuous_full_footprint_corner_support_bound": true,
+    "bad_response_and_no_authority_refused": true
+  },
+  "negative_cases": [
+    "position",
+    "yaw",
+    "time",
+    "disabled_model_authority"
+  ],
+  "entries": [
+    {
+      "label": "backend",
+      "proof": {
+        "passed": true,
+        "actual_renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+        "backend": {
+          "passed": true,
+          "actual_context_module": "mujoco.osmesa",
+          "actual_OpenGL_dispatch_module": "OpenGL.platform.osmesa",
+          "hardware_GPU_used": false,
+          "legacy_environment_label_restored": true
+        },
+        "models": 0,
+        "native_integrations": 0
+      }
+    },
+    {
+      "label": "native",
+      "proof": {
+        "passed": true,
+        "models": 0,
+        "physical_native": 0
+      }
+    },
+    {
+      "label": "producer",
+      "proof": {
+        "passed": true,
+        "whole_actual_audit_roundtrip": true,
+        "models": 0
+      }
+    },
+    {
+      "label": "guard",
+      "proof": {
+        "passed": true,
+        "checks": {
+          "APPLIED_JOURNAL.json": true,
+          "RESULT.json": true,
+          "OBSERVATIONS_SENT.jsonl": true,
+          "RECEIVED_COMMANDS.jsonl": true,
+          "FRESHNESS_REJECTIONS.json": true,
+          "physics/PATCHED_ASSEMBLY.xml": true,
+          "physics/MODEL_BUILD_CONTRACT.json": true,
+          "physics/SETUP.json": true,
+          "physics/INITIAL_STATE.npz": true,
+          "old_metadata_root": true,
+          "parent_traversal_outside_legacy_root": true,
+          "outside_mkdir": true,
+          "outside_rename": true,
+          "symlink_write_escape": true
+        },
+        "production_guard_function_executed": true,
+        "guard_root_broadened": false,
+        "models": 0,
+        "physical_native": 0
+      }
+    }
+  ],
+  "full_tube_lower_m": 0.2237288882916815,
+  "maximum_support_bound_violation_m": 0.0,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "tested_source_hashes": {
+    "experiments/v1380_timed_handoff_component/evidence_io.py": "fe0e6d133ea0a2631846c6a909acb5a3afb21f3ad77646cbfb9aeddd71cd9d97",
+    "experiments/v1380_timed_handoff_component/stamped_contract.py": "5b07af25be5eb7519806235da826d763336ea5c14975e6250c041100f83af958",
+    "experiments/v1380_timed_handoff_component/gear_handoff.py": "7f732f6609c357d0ed97fe968849fc3b6f9d5b825fdceb10a631ba7736e412e7",
+    "experiments/v1380_timed_handoff_component/native.py": "b77f9dc96585ea70282a9ea9d2bec319843757e4a9e3ba93a7db8cc2d897b12f",
+    "experiments/v1380_timed_handoff_component/frames.py": "351dda8f5782ae586db9165301d4d75418122d30e9ffcd82adf0a07b74f725c7",
+    "experiments/v1380_timed_handoff_component/finalize.py": "14952887d1250a29db2dc8af0664b28b1ec4ef061c375389d9c0a7e681fb8f9d",
+    "experiments/v1380_timed_handoff_component/backend_check.py": "4a5244e44753991a65c326f93020a013e651b29a2539c3f0fa46393ec93f3af5",
+    "experiments/v1380_timed_handoff_component/controller.py": "71c04c4c738d11bcbf37fb5b0c6b62521b6ecf443445659075be6172b6794b84",
+    "experiments/v1380_timed_handoff_component/start.py": "ce982e2af1a24a945697bb81fff1184a70e5c765d1aedf696f0a193c85356188",
+    "experiments/v1380_timed_handoff_component/qualify.py": "ce015ba78f99b2d92daf0c50c9e7ebbd1c926e928b723d8250efe020eba07928",
+    "experiments/v1380_timed_handoff_component/reserve.py": "f740eabd46a1a5d6a6f3f37b3c340326d8dd63f1acb833761713e3d2b5bedfb8",
+    "experiments/v1380_timed_handoff_component/qualify_cpu_entry.py": "d1ae5dd60bbc2ce627839f429bcb67099614322c5af3c4b33cb86e159e433c7f",
+    "experiments/v1380_timed_handoff_component/campaign.py": "b9ea3fea936a2ff2ffc5ffbe3e30064379850e04a10b389d0672d72ddbb0de13",
+    "experiments/v1380_timed_handoff_component/geometry_contract.py": "463a7787222b9bea6a45eea4aaf48dbb39733cb5116214109a7ea5b8f6d8f420",
+    "experiments/v1380_timed_handoff_component/component_context.py": "a501491160b73bdbd8f9cb6ac6bcdcaa7790d8b03f9a65ae69d8b12add3dc634",
+    "experiments/v1380_timed_handoff_component/audit.py": "937db081b679b73310016be3a04d878a0704566173c3ef593609d24a87ff3a7d",
+    "experiments/v1380_timed_handoff_component/prefix_restore.py": "5d9ef9ded95dfcc4c9c6c58b6dc10b425dd4c68b7ceef20064e5fb13ae7dc3ee",
+    "experiments/v1380_timed_handoff_component/sync_results.py": "461eadb08d9e722d5b0de3397c1bcfc74ee61888149d27d21d5c34f51bef0f08",
+    "experiments/v1380_timed_handoff_component/audit_entry.py": "5d36024f5b1f3ebb21643ddc11705f77d4275cfdaf3679a79fb436779c4b902a"
+  }
+}
