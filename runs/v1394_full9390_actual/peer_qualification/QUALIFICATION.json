@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_native": 0,
+  "saved_sensor_playback_only": true,
+  "not_new_sensor_acquisition": true,
+  "physical_admission": false,
+  "negative_cases": [
+    "wrong_kind",
+    "changed_tick",
+    "changed_body",
+    "stale",
+    "scan_tick",
+    "ranges"
+  ],
+  "source_saved_scan_native": 10775,
+  "source_scan_file": "runs/v858_nav2_verified/v1376/capture_main/physics/SENSORS.json.gz",
+  "actual_plugin_loaded": true,
+  "production_frame_to_scan_binding": true,
+  "replies": [
+    {
+      "kind": "ORIGINAL_RPP_ACTUAL_COMMAND",
+      "run_id": "v1394-saved-frame-interface-only",
+      "sequence": 34,
+      "native_tick": 10775,
+      "body": [
+        0.32972170416559987,
+        -0.8391911158333963,
+        -0.04848854292733495,
+        6.836654086892586e-06,
+        -3.542137079509386e-06
+      ],
+      "v": 0.07891489319237059,
+      "w": -0.05978400999422014,
+      "origin": {
+        "kind": "NAV2_STAMPED",
+        "stamp_ns": 1795178855106127954,
+        "receipt_ros_ns": 1795178855106791665,
+        "receipt_monotonic": 300605.552293774,
+        "generated_monotonic": 300605.551630063,
+        "receipt_age_s": 0.000663711
+      },
+      "first_tf_ros_ns": 1795178855070527378,
+      "command_ros_ns": 1795178855106127954,
+      "reply_monotonic": 300605.552293774,
+      "observation_sequence": 34,
+      "observation_sampled_at": 300605.501795906,
+      "observation_native_tick": 10775,
+      "actual_frame_bound": true
+    },
+    {
+      "kind": "ORIGINAL_RPP_ACTUAL_COMMAND",
+      "run_id": "v1394-saved-frame-interface-only",
+      "sequence": 35,
+      "native_tick": 10775,
+      "body": [
+        0.32972170416559987,
+        -0.8391911158333963,
+        -0.04848854292733495,
+        6.836654086892586e-06,
+        -3.542137079509386e-06
+      ],
+      "v": 0.07891489319237059,
+      "w": -0.05978400999422014,
+      "origin": {
+        "kind": "NAV2_STAMPED",
+        "stamp_ns": 1795178855156141396,
+        "receipt_ros_ns": 1795178855156888220,
+        "receipt_monotonic": 300605.602390329,
+        "generated_monotonic": 300605.601643505,
+        "receipt_age_s": 0.0007468240000000001
+      },
+      "first_tf_ros_ns": 1795178855110518660,
+      "command_ros_ns": 1795178855156141396,
+      "reply_monotonic": 300605.602390329,
+      "observation_sequence": 35,
+      "observation_sampled_at": 300605.552164357,
+      "observation_native_tick": 10775,
+      "actual_frame_bound": true
+    }
+  ],
+  "bootstrap_refreshed_playback_frames": 36
+}

@@ -1,0 +1,11 @@
+# V1394 原9390捕获后完整前进段实际组件
+
+本独立90min轮属V1382周末根2026-11-23 09:00/1795395600，至多main与全部门成功完整repeat两个任务，0整路/24。canonical t0真实重建原V1376全部10775动作至捕获末态，逐qpos/qvel/ctrl/mocap/控制记忆/parked mode<=1e-8；原seed10060001/WE/model/actor/map不改。原9390捕获旧pair不重标新增成功，历史/新动作分别计。
+
+原RPP.6/.1真实插件/原49点1.919987m前进段/9360因果all-future ball不改；新物理peer只接受完整真实wire与其采集来源，发布同实际LaserScan及rear TF/odom、原公共地图+原因果球；保留与V1393无合成扫描的预测参考区别，不能忽略新扫描来凑参考。命令生成stamp≤200ms、原body/interface/gear/方向/源序号，证书完成后再次fresh核。真实wire不是保存timestamp重标。
+
+V1393已有一次模型响应PASS：2575名义动作/每起点完整200刹停、固定参考2cm rear/.1rad yaw/±.2s、名义tube.232069/最低刹停.232591，有限经验假设非普适。物理每新native从当前实际body/轮角/控制记忆构造完整200零输入刹停alternative、全静态+原因果球完整矩形tube>=.22，原实际>=.15/自体/控制幅值及slew/接触/根守卫；实际响应对固定原参考单调时间匹配，不能重置参考掩盖漂移。若原插件因真实扫描输出不同而超合同，原门拒绝后科学诊断，不调参数/扩大误差界。
+
+RPP action原成功后完整200已施加零请求，终点原.12m/.20rad和body/steering rest、drivezero；完整N动作/N+1状态、自身全state/ctrl/mocap<=1e-8回放，独立审核重算每实际native200刹停，主所有门才完整repeat，repeat全轨迹长度及状态误差<=1e-8。native每任务<=3000新动作、分析<=650000、物理900s/outer905、独立模型审核<=240s，根/子窗剩余不足1500s不启任务，离线双钟/boot与锁约束。首次功能/安全/来源/状态/模型/证据异常关轮并保留准确或未知账，冻结后不改/不重启。
+
+所有构造/积分/预测/回放/模型审核run_phase CPU2单锁，peer3只有ROS/纯数学，调度/零模型审核5，nice19线程1/GPU隐藏/OSMesa，Stage隔离，SAC/current/runtime冻结，无训练实机。必须全部来源身份/保存输入/原帧错误注入/真实生产CLI/原guard/JSON资格过、源冻结和V1393远端恢复清运输后实际存储10GiB减512MiB预留才一次launch。source/数据/32MiB归档解压/重组全SHA后FINALIZED，原件远端实际下载恢复前保留。full9390仅主repeat所有门+源归档过才true，整路另注册事件触发通用方案不硬编码tick。每新物理轮一次30s push+5s ref，补核本地，不重试旧批。

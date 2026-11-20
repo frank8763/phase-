@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "saved_prefix_gear_rows": 10775,
+  "parked_source_metadata_preserved": true,
+  "original_fixed_response_native": 2575,
+  "complete200_reference_zero_tail": true,
+  "full_reference_membership_points": 2576,
+  "full_response_tube_lower_m": 0.2320689792491846,
+  "negative_cases": [
+    "position",
+    "yaw",
+    "time"
+  ],
+  "actual_peer_saved_frame_interface_qualified": true,
+  "saved_frame_playback_not_new_acquisition": true,
+  "entries": [
+    {
+      "label": "backend",
+      "proof": {
+        "passed": true,
+        "actual_renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+        "backend": {
+          "passed": true,
+          "actual_context_module": "mujoco.osmesa",
+          "actual_OpenGL_dispatch_module": "OpenGL.platform.osmesa",
+          "hardware_GPU_used": false,
+          "legacy_environment_label_restored": true
+        },
+        "models": 0,
+        "native_integrations": 0
+      }
+    },
+    {
+      "label": "native",
+      "proof": {
+        "passed": true,
+        "production_callable_sources": {
+          "restore": "experiments/v1394_full9390_actual/prefix_restore.py",
+          "Geometry": "experiments/v1394_full9390_actual/geometry_contract.py",
+          "membership": "experiments/v1394_full9390_actual/geometry_contract.py",
+          "certify": "experiments/v1394_full9390_actual/reserve.py",
+          "SampleCache": "experiments/v1394_full9390_actual/frames.py",
+          "wire_packet": "experiments/v1394_full9390_actual/frames.py",
+          "GearHandoff": "experiments/v1394_full9390_actual/gear_handoff.py",
+          "before_step": "experiments/v1394_full9390_actual/stamped_contract.py"
+        },
+        "models": 0,
+        "physical_native": 0
+      }
+    },
+    {
+      "label": "producer",
+      "proof": {
+        "passed": true,
+        "full_actual_producer_JSON_roundtrip": true,
+        "models": 0
+      }
+    },
+    {
+      "label": "guard",
+      "proof": {
+        "passed": true,
+        "checks": {
+          "APPLIED_JOURNAL.json": true,
+          "RESULT.json": true,
+          "OBSERVATIONS_SENT.jsonl": true,
+          "RECEIVED_COMMANDS.jsonl": true,
+          "FRESHNESS_REJECTIONS.json": true,
+          "physics/PATCHED_ASSEMBLY.xml": true,
+          "physics/MODEL_BUILD_CONTRACT.json": true,
+          "physics/SETUP.json": true,
+          "physics/INITIAL_STATE.npz": true,
+          "old_metadata_root": true,
+          "parent_traversal_outside_legacy_root": true,
+          "outside_mkdir": true,
+          "outside_rename": true,
+          "symlink_write_escape": true
+        },
+        "production_guard_function_executed": true,
+        "guard_root_broadened": false,
+        "models": 0,
+        "physical_native": 0
+      }
+    }
+  ],
+  "tested_source_hashes": {
+    "experiments/v1394_full9390_actual/evidence_io.py": "fe0e6d133ea0a2631846c6a909acb5a3afb21f3ad77646cbfb9aeddd71cd9d97",
+    "experiments/v1394_full9390_actual/peer_environment.py": "e7c9ca74fc2b9bdd599af22f240049639d14496833445478ae24b41cd5086f4f",
+    "experiments/v1394_full9390_actual/stamped_contract.py": "5b07af25be5eb7519806235da826d763336ea5c14975e6250c041100f83af958",
+    "experiments/v1394_full9390_actual/gear_handoff.py": "7f732f6609c357d0ed97fe968849fc3b6f9d5b825fdceb10a631ba7736e412e7",
+    "experiments/v1394_full9390_actual/native.py": "0f2945affbef5cf5d4c6b66f869b3cbf111de5b6f721435a91b040b062f2d2df",
+    "experiments/v1394_full9390_actual/frames.py": "351dda8f5782ae586db9165301d4d75418122d30e9ffcd82adf0a07b74f725c7",
+    "experiments/v1394_full9390_actual/finalize.py": "8adef8fa951a44907c6e97b50c059311fc549e91d94396da2c525decb02a87c7",
+    "experiments/v1394_full9390_actual/rpp_peer.py": "ec7043d6be34634290bb0192e370a1f343b376412e2cb3df2987ccf90b61c468",
+    "experiments/v1394_full9390_actual/ENTRY.json": "009b7287d236021fa80843510c1533db6fc77cbfd03b1355de1036d65235128b",
+    "experiments/v1394_full9390_actual/backend_check.py": "4a5244e44753991a65c326f93020a013e651b29a2539c3f0fa46393ec93f3af5",
+    "experiments/v1394_full9390_actual/start.py": "8f4852f82d38568adb93132bf5e14fc24fb72864655218d82ee76d6ac88e67a9",
+    "experiments/v1394_full9390_actual/qualify.py": "12d2ad1e493350354de09995aeeedc79856ed56e94f2a8f0f05d45245a72ee4b",
+    "experiments/v1394_full9390_actual/reserve.py": "6d6d9da328bedecdbf8826cd4699f5808b4a4ad00fbc7a14eb92e8ae08b6ed65",
+    "experiments/v1394_full9390_actual/PROTOCOL.md": "9918d86d57e065ec90c88259baeacef1b7e69d8b3bde686e46bd4735d150538d",
+    "experiments/v1394_full9390_actual/TASKS.json": "1dc5a63e9972acd10e8edb7735f85887ee8e289bda67f70f1c2c8de7db0fba91",
+    "experiments/v1394_full9390_actual/campaign.py": "467732f53302956e4f1dda58c188a343c524cc3c37571cbb4eaed12dbd6de727",
+    "experiments/v1394_full9390_actual/geometry_contract.py": "67446603fed30cb6bfa547f481f8463d2e0dc1644565210807494a3cef1c2d18",
+    "experiments/v1394_full9390_actual/component_context.py": "d0036dfb03a73792c5b16f1c02e7ea4900a745b3cfd559e5e14ef2dc7ce9fa70",
+    "experiments/v1394_full9390_actual/qualify_peer.py": "94236482efc064a022051b31dcb6083d48d209c8120c0accc9fd73dbf126b216",
+    "experiments/v1394_full9390_actual/audit.py": "fb63350277528d5bdabfebb14f7974a2e67ba2003684244124036b629aec5184",
+    "experiments/v1394_full9390_actual/prefix_restore.py": "c4c39bac280fb1f99c227f3abcf8f52bd90f5526a6c6c61d13e98d936f7b0b12",
+    "experiments/v1394_full9390_actual/sync_results.py": "35379991fcb80d5a63f622192abb90b7ecc98f42351f1850bd113c3e45934ef1",
+    "experiments/v1394_full9390_actual/audit_entry.py": "7a35d082d3e007e182dd7f36a4735983e90efa12da4b56a4a71ac825aa62ab78"
+  }
+}

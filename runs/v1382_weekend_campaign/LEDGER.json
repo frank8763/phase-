@@ -1,5 +1,5 @@
 {
-  "status": "FULL9390_ANALYSIS_PASSED_PHYSICAL_ENTRY_PENDING",
+  "status": "READY_FOR_FULL9390_ACTUAL_COMPONENT",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -46,7 +46,10 @@
       "physical_native": 0,
       "finalized": true,
       "archive_index": "runs/v1393_full9390_preparation/ARCHIVE_INDEX.json",
-      "physical_admission": false
+      "physical_admission": false,
+      "remote_recovery_verified": true,
+      "unique_git_head": "650168c6a521797005cd5fa1de64b5b9e60e5a71",
+      "transport_duplicates_cleaned": true
     }
   ],
   "vehicle_task_starts": 2,
@@ -55,13 +58,13 @@
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
   "models_now_authorized": false,
   "preexisting_runs_allocated_bytes": 23690563584,
-  "prepared_next_round": null,
-  "next_round_qualification": "runs/v1383_exact_timed_handoff/QUALIFICATION.json",
+  "prepared_next_round": "v1394_full9390_actual",
+  "next_round_qualification": "runs/v1394_full9390_actual/QUALIFICATION.json",
   "qualification_passed": true,
   "physical_launch_blocker": null,
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
   "storage_ready": true,
-  "storage_allocated_bytes": 9825910784,
+  "storage_allocated_bytes": 9855533056,
   "storage_proof": "runs/v1382_weekend_campaign/storage/FINALIZED.json",
   "complete_recovery_index": "records/weekend_storage_v1382_20261120/RECOVERY_INDEX.json",
   "old_day_zero_model_closure": "runs/v1390_day_zero_model_closure/FINALIZED.json",
