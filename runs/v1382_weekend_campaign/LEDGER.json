@@ -1,5 +1,5 @@
 {
-  "status": "SCALAR_FEEDBACK_GENERATION_SAVED_STDOUT_JSON_FAILURE_CLOSED",
+  "status": "SAVED_MODEL_AUDIT_CLOSED_REVIEW_REQUIRED",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -200,7 +200,31 @@
       "generation_saved_checks_passed": true,
       "diagnosis": "runs/v1410_scalar_feedback_witness/DIAGNOSIS.json",
       "finalized": true,
-      "archive_index": "runs/v1410_scalar_feedback_witness/ARCHIVE_INDEX.json"
+      "archive_index": "runs/v1410_scalar_feedback_witness/ARCHIVE_INDEX.json",
+      "remote_recovery_verified": true,
+      "transport_duplicates_cleaned": true,
+      "unique_git_head": "13739cb9d4675a163a053f7f1849c6d98cc7deea",
+      "remote_release": "https://github.com/frank8763/phase-/releases/tag/phase-v1410-scalar-feedback-json-failure-20261121"
+    },
+    {
+      "id": "v1412_saved_witness_audit",
+      "kind": "saved_generation_independent_model_audit",
+      "status": "CLOSED",
+      "started_unix": 1795195929.0772593,
+      "hard_stop_unix": 1795201329.0772593,
+      "source_generation": "v1410_scalar_feedback_witness",
+      "scientific_revision": 3,
+      "maximum_generation_analytical": 0,
+      "maximum_audit_analytical": 791940,
+      "maximum_vehicle_tasks": 0,
+      "source_freeze_sha256": "eb9ecb30d0a5c7987e4272a0d02fe99f865f2847839ac33170cabd8f33c9221e",
+      "closed": true,
+      "passed": true,
+      "completion": "runs/v1412_saved_witness_audit/COMPLETION.json",
+      "generation_analytical_native": 0,
+      "audit_analytical_native": 791940,
+      "audit_unknown": false,
+      "physical_native": 0
     }
   ],
   "vehicle_task_starts": 6,
@@ -274,5 +298,6 @@
   "latest_scalar_steering_coordinate_preparation": "runs/v1409_scalar_steering_feedback/PREPARATION_CHECKPOINT.json",
   "latest_scalar_feedback_complete_preparation": "runs/v1410_scalar_feedback_witness/PREPARATION_CHECKPOINT.json",
   "complete_scalar_feedback_model_generation_native": 791940,
-  "complete_scalar_feedback_model_audit_native": 0
+  "complete_scalar_feedback_model_audit_native": 0,
+  "scalar_feedback_saved_generation_independent_audit_native": 791940
 }

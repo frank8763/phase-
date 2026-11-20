@@ -9,7 +9,11 @@ R=Path(__file__).resolve().parents[2]
 
 
 def encode(value):
-    return json.dumps(value,sort_keys=True,separators=(',',':'),allow_nan=False)
+    def native(v):
+        if hasattr(v,'tolist'):return v.tolist()
+        if hasattr(v,'item'):return v.item()
+        raise TypeError(type(v).__name__)
+    return json.dumps(value,sort_keys=True,separators=(',',':'),allow_nan=False,default=native)
 
 
 class EvidenceSink:

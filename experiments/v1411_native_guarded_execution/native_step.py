@@ -103,5 +103,6 @@ class NativeStep:
 
     def exact_accounting(self):
         return dict(actual_native=None if self.in_step else self.applied,actual_inflight_unknown=self.in_step,
-                    original_RPP_native=self.plugin_native,shared_bridge_native=self.bridge_native,applied_stop_tail_native=self.stop_native,
+                    original_RPP_native=None if self.in_step else self.plugin_native,shared_bridge_native=None if self.in_step else self.bridge_native,applied_stop_tail_native=None if self.in_step else self.stop_native,
+                    completed_original_RPP_native_lower_bound=self.plugin_native,completed_shared_bridge_native_lower_bound=self.bridge_native,completed_stop_tail_native_lower_bound=self.stop_native,
                     complete200_applied_zero_tail=self.last_zero_count>=200)
