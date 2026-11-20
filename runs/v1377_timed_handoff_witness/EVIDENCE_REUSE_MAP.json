@@ -1,0 +1,267 @@
+{
+  "models": 0,
+  "physical_native": 0,
+  "private_native": 0,
+  "replay_native": 0,
+  "registered_candidate": "TIME_BOUND_NEXT_SEGMENT",
+  "new_scientific_candidates": 0,
+  "claims": [
+    {
+      "id": "original9390_pose_capture_pair",
+      "status": "ACTUAL_COMPONENT_PAIR_PASSED",
+      "evidence": [
+        "runs/v1376_prepared_capture_component/COMPLETION.json",
+        "runs/v1376_prepared_capture_component/FINALIZED.json"
+      ],
+      "can_reuse_for": [
+        "exact fixed9390 pose-capture response and same-version full repeat"
+      ],
+      "cannot_promote_to": [
+        "full9390 next-segment continuation",
+        "arbitrary initial steering states",
+        "independent fresh navigation sample"
+      ],
+      "missing": []
+    },
+    {
+      "id": "original32210_steering_preparation",
+      "status": "ACTUAL_SINGLE_COMPONENT_PASSED",
+      "evidence": [
+        "runs/v1378_steering_response_32210/COMPLETION.json",
+        "runs/v1378_steering_response_32210/FINALIZED.json"
+      ],
+      "can_reuse_for": [
+        "exact saved32210 zero-drive steering190+stop200 response; resulting32600 state"
+      ],
+      "cannot_promote_to": [
+        "extra200 gear-hold physical response",
+        "moving tracking/braking/time bound",
+        "complete same-input repeat"
+      ],
+      "missing": []
+    },
+    {
+      "id": "concrete_request_clock",
+      "status": "SOFTWARE_QUALIFIED",
+      "evidence": [
+        "runs/v1377_timed_handoff_witness/NATIVE_CLOCK_COMMAND_CONTRACT.json"
+      ],
+      "can_reuse_for": [
+        "original wire/expiry/gear logical compatibility for this fixed request schedule"
+      ],
+      "cannot_promote_to": [
+        "actual release time",
+        "measured speed acceleration braking",
+        "physical source delivery performance"
+      ],
+      "missing": []
+    },
+    {
+      "id": "original_allocator_metadata",
+      "status": "SOFTWARE_QUALIFIED_SCOPED",
+      "evidence": [
+        "runs/v1377_timed_handoff_witness/CONCRETE_ALLOCATOR_METADATA_QUALIFICATION.json"
+      ],
+      "can_reuse_for": [
+        "exact saved control-memory re-evaluation; fixed <=.1 unguarded branch target legality"
+      ],
+      "cannot_promote_to": [
+        "predicted vehicle states",
+        "physical encoder/body tracking",
+        "other allocator branches"
+      ],
+      "missing": []
+    },
+    {
+      "id": "space_time_geometry",
+      "status": "CONDITIONAL_GEOMETRY_PASSED",
+      "evidence": [
+        "runs/v1377_timed_handoff_witness/NATIVE_CLOCK_COMMAND_CONTRACT.json"
+      ],
+      "can_reuse_for": [
+        "full footprint conditional clearance for registered request-arc reference"
+      ],
+      "cannot_promote_to": [
+        "empirically qualified response tube",
+        "future recursive safety",
+        "complete arrival"
+      ],
+      "missing": []
+    },
+    {
+      "id": "response_sample_and_action_audit",
+      "status": "SOFTWARE_QUALIFIED",
+      "evidence": [
+        "runs/v1377_timed_handoff_witness/RESPONSE_MEMBERSHIP_QUALIFICATION.json",
+        "runs/v1377_timed_handoff_witness/ACTION_TAIL_QUALIFICATION.json"
+      ],
+      "can_reuse_for": [
+        "sample monotone phase membership and N actions/N+1 states tail rejection logic"
+      ],
+      "cannot_promote_to": [
+        "new actual response observations",
+        "continuous-time invariant proof",
+        "authenticity/model/contact/replay replacement"
+      ],
+      "missing": []
+    },
+    {
+      "id": "full32210_handoff",
+      "status": "NOT_QUALIFIED",
+      "evidence": [],
+      "can_reuse_for": [],
+      "cannot_promote_to": [
+        "full route navigation admission"
+      ],
+      "missing": [
+        "actual exact schedule gear-wait/move/brake/tail",
+        "measured spatial/time response bounds",
+        "full independent original control/contact/source/model/state/replay evidence",
+        "complete actual same-input repeat"
+      ]
+    },
+    {
+      "id": "full9390_handoff",
+      "status": "NOT_QUALIFIED",
+      "evidence": [],
+      "can_reuse_for": [],
+      "cannot_promote_to": [
+        "full route navigation admission"
+      ],
+      "missing": [
+        "post-capture complete executable causal next-segment continuation",
+        "complete actual continuation main and successful repeat with all original gates"
+      ]
+    },
+    {
+      "id": "WE_dynamic_main_repeat",
+      "status": "UNEXECUTED",
+      "evidence": [],
+      "can_reuse_for": [],
+      "cannot_promote_to": [
+        "new24/comparison conclusion"
+      ],
+      "missing": [
+        "both full handoffs independently qualified and finalized",
+        "new authorized bounded model scope after today slot exhaustion"
+      ]
+    }
+  ],
+  "physical_attempt_rows": [
+    {
+      "task": "capture_main",
+      "passed": false,
+      "actual_total_native": 10450,
+      "historical_reconstruction_native": 9390,
+      "new_component_native": 1060,
+      "own_replay_native": 10450,
+      "position_error_m": 0.028428074665921954,
+      "heading_error_rad": 0.20753858353129118,
+      "error": null,
+      "canonical_vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
+      "version": 1375
+    },
+    {
+      "task": "capture_main",
+      "passed": true,
+      "actual_total_native": 10775,
+      "historical_reconstruction_native": 9390,
+      "new_component_native": 1385,
+      "own_replay_native": 10775,
+      "position_error_m": 0.023781342000777448,
+      "heading_error_rad": 0.17151269519885143,
+      "error": null,
+      "canonical_vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
+      "version": 1376
+    },
+    {
+      "task": "capture_repeat",
+      "passed": true,
+      "actual_total_native": 10775,
+      "historical_reconstruction_native": 9390,
+      "new_component_native": 1385,
+      "own_replay_native": 10775,
+      "position_error_m": 0.023781342000777448,
+      "heading_error_rad": 0.17151269519885143,
+      "error": null,
+      "canonical_vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
+      "version": 1376
+    },
+    {
+      "task": "steering_response",
+      "passed": true,
+      "actual_total_native": 32600,
+      "historical_reconstruction_native": 32210,
+      "new_component_native": 390,
+      "own_replay_native": 32600,
+      "position_error_m": 0.07958442357688018,
+      "heading_error_rad": 0.007252693135330168,
+      "error": null,
+      "canonical_vehicle_initializations": 1,
+      "internal_factory_model_constructions": null,
+      "version": 1378
+    }
+  ],
+  "day_counts": {
+    "components": 4,
+    "component_limit": 4,
+    "navigations": 0,
+    "actual_native": 64600,
+    "historical_native": 60380,
+    "new_component_native": 4220,
+    "own_replay_native": 64600,
+    "canonical_initializations": 4,
+    "internal_factory_constructions": null
+  },
+  "required_actual_inputs": [
+    "original same-task canonical t0/model/map/actor/noise/sensor and exact frozen control/source closure",
+    "full qpos/qvel/ctrl/mocap and controller/gear/sampling memory reconstructed from native0; no root-state injection",
+    "original32200 causal coefficients and <=32210 observations, original endpoint; no future truth as controller input",
+    "complete request sequence with source and reference clocks separately bound, release intent and low-speed cutoff explicit",
+    "full-horizon spatial/time and braking/steering-response witness with genuinely supported error bounds",
+    "fresh bounded physical authorization, available component slots, root deadline and original execution isolation/lock"
+  ],
+  "required_actual_outputs": [
+    "all native state/control/mocap/encoder/body/contacts and root/time guard records including historical prefix and full tail",
+    "actual observation acquisitions/command origin/delivery/expiry, causal coefficient provenance and freshness bindings",
+    "gear memory/hold/release and actual speed/steering readiness; N applied transitions with N+1 states",
+    "actual rear/yaw/time response against the precise registered reference including move/brake/stop; report any refusal/failure",
+    "original .12m/.20rad terminal, .22 predictive/.15 physical, self/legal control/slew and full200 actual zero-tail checks",
+    "full qpos/qvel/ctrl/mocap <=1e-8 own replay, exact/unknown private/history/new/replay/init accounting",
+    "independent producer-compatible complete audit, frozen sources/sourceSHA/archive memberSHA/32MiB reassembly readback FINALIZED",
+    "success-dependent complete actual repeat kept distinct from independent navigation confirmation"
+  ],
+  "actual_moving_witness": null,
+  "full9390_handoff_qualified": false,
+  "full32210_handoff_qualified": false,
+  "physical_admission": false,
+  "models_authorized": false,
+  "deadline_unix": 1795165200,
+  "storage_limit_bytes": 2147483648,
+  "old_failures_and_unexecuted_preserved": true,
+  "no_more_software_fixture_tests_can_supply_missing_actual_motion": true,
+  "software_preparation_boundary": "core existing-candidate request/clock/allocator/audit/conditional geometry and missing-evidence inventory complete; do not grow new candidates or rerun qualification fixtures to imply physical progress",
+  "next_work": "read-only consistency of this closure and existing source/evidence; targeted zero-model correction only on concrete newly found issue. No new model task today.",
+  "input_sha256": {
+    "experiments/v1377_timed_handoff_witness/evidence_reuse_map.py": "e2d947b2b178be313672a5e37e2ed671f45d6014f5ba1f98865183d5d129ec0d",
+    "experiments/v1377_timed_handoff_witness/snapshot_diagnostic.py": "d21bddbf10c87be93729632e3cf66e4bcba91be66656e238aa698fde8906a9f3",
+    "runs/v1375_actual_capture_component/COMPLETION.json": "62c00b09b8427d36a0b4449af1031f6dafb300809e8a441b37878adb5c48aca9",
+    "runs/v1375_actual_capture_component/ACCOUNTING.json": "8c7f35302a50592a2070078a73e0d0b9b274ee53d3c00dd044bbcf0c1154044a",
+    "runs/v1375_actual_capture_component/FINALIZED.json": "dfee0dfefbfb6846d62b11334f6314c8eff526bda2789eda952a6da75c0f8bb0",
+    "runs/v1376_prepared_capture_component/COMPLETION.json": "215c3b130687145c405b8b012178dda062835e6f79a97dbf0a73242fc0aa5d91",
+    "runs/v1376_prepared_capture_component/ACCOUNTING.json": "a9040bc1ea2910b91460ac893d9e317841b482d38c73ba2edabac784f73fb5b2",
+    "runs/v1376_prepared_capture_component/FINALIZED.json": "724998364ee7b9e8baf1c5eaec6eaf3290c041307b0283dcee54953f4bb3ac4d",
+    "runs/v1378_steering_response_32210/COMPLETION.json": "2c15f7f74281ac4eaca6c27e89b1fc5b6f054ff9efe912c0055667a290c92ad2",
+    "runs/v1378_steering_response_32210/ACCOUNTING.json": "201c63959c68b4ac40e61c04b5b64f9f178d61e12e70f0be63c41628faa643f3",
+    "runs/v1378_steering_response_32210/FINALIZED.json": "c6ab7cc044ae97f0f11e9f31b5b6a488dca7a6aa74fb5e6dfe35048563363cc3",
+    "runs/v1377_timed_handoff_witness/FIXED_INPUTS.json": "2ae4a6a1bfa065482227fa204e57d4af35e480ae161c1ccc24d812898bf1630e",
+    "runs/v1377_timed_handoff_witness/NATIVE_CLOCK_COMMAND_CONTRACT.json": "af2022c32a8c4557694fe2498afcfd28cf4e74a63db141ab16fe4dcdfb7fd928",
+    "runs/v1377_timed_handoff_witness/CONCRETE_ALLOCATOR_METADATA_QUALIFICATION.json": "461a941b05f15b2b3b24a4c2323dcaf970bcf1cb7739787814f5c281ce0f474f",
+    "runs/v1377_timed_handoff_witness/RESPONSE_MEMBERSHIP_QUALIFICATION.json": "ba755e5d09ec2b0c136720f6fa05b4c6eb0a5d0538f32046a822bb01b4dbb810",
+    "runs/v1377_timed_handoff_witness/ACTION_TAIL_QUALIFICATION.json": "273c99e8d0999ed4d81eaf7c89bccfbbee2857ac5ba1270e5cbb5b249aab8771",
+    "runs/v1377_timed_handoff_witness/RESPONSE_EVIDENCE_OBLIGATIONS.json": "f0e6b4d6ac48ecb5a455db19feab63917d9ea70fc2856ebe490e9af868a34610"
+  }
+}
