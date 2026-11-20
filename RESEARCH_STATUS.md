@@ -2100,3 +2100,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1375测量反馈两弧捕获组件已闭：main/repeat全门=False，未执行['capture_repeat']；无整路/24或RPP对比结论，32210时序仍未资格。见docs/ACTUAL_CAPTURE_V1375_REPORT.md。REVIEW_PENDING原字节恢复，零模型归档。
 
 - V1375安全完整功能FAIL：10450actual/ownreplay误差0，rear位置.028428过/.207539rad>原.20未过，repeat未执行；原前进释放10075两前轮仍正(+.334,+.258)，负w命令却实际正yaw-rate+.073467，停车未建立轮角换向。V1376本日第3预注册设计只补原受限parked转向准备：后驱0、原.2rad/s、实测角/轮速/body/驱动目标齐备才放前进，同两弧/原门不变；名义.038708m/.104147rad/min.299922，5保存/400次真实分配元数据及4完整入口JSON资格过，0新积分待一次新批。仍沿今天17点和2GiB/总4组件范围，phase-17监督，不自动整路/24。docs/PREPARED_CAPTURE_V1376_PREPARATION.md。
+
+- V1376一次后台启动pid452253，78dcaf29源冻结，原9390实测转向准备→前进捕获main成功repeat，不翻旧V1375失败；本日总组件起始1、最多再2，原17点/1795165200和2GiB不改。5保存含真实转向Allocator400次元数据与4完整入口/JSON资格全过，runtime同native生产者。phase-17当前聊天监督继续，原32210/完整续行/整路24仍未准入。runs/v1376_prepared_capture_component/LAUNCH.json。
