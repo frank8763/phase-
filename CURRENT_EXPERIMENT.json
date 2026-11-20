@@ -241,7 +241,7 @@
     "approved": true,
     "exhausted": true
   },
-  "active_zero_model_diagnostic": "experiments/v1398_current_event_witness",
+  "active_zero_model_diagnostic": "experiments/v1402_current_witness_evidence",
   "latest_functional_main": {
     "version": "v1085_entry",
     "fresh_start": true,
@@ -10650,5 +10650,24 @@
     "storage_launch_pid": 717947,
     "next_work": "Inspect single V1399 worker without relaunch; finish bounded current-input model owner and independent audit; qualify/register numerical branch work only after storage/testedSHA/dual-clock gates"
   },
-  "active_zero_model_storage_worker": "runs/v1400_archive_link_schema"
+  "active_zero_model_storage_worker": null,
+  "latest_model_origin_preparation": "runs/v1401_model_origin_qualification/PREPARATION_CHECKPOINT.json",
+  "latest_complete_witness_evidence_preparation": "runs/v1402_current_witness_evidence/PREPARATION_CHECKPOINT.json",
+  "latest_v1401": {
+    "recorded_unix": 1795190923.9703252,
+    "status": "CLOSED_NUMERICAL_ORIGIN_AND_PRIVATE_BRANCH_PASS",
+    "report": "docs/CURRENT_MODEL_ORIGIN_V1401_REPORT.md",
+    "completion": "runs/v1401_model_origin_qualification/COMPLETION.json",
+    "local_archive": "runs/v1401_model_origin_qualification/FINALIZED.json",
+    "analytical_native": 804,
+    "explicit_predictor_constructions": 6,
+    "private_branch_copies": 2,
+    "maximum_model_state_ctrl_error": 0.0,
+    "mujoco_models": 0,
+    "physical_native": 0,
+    "replay_native": 0,
+    "physical_admission": false,
+    "remote_delivery_pending": true,
+    "next_work": "Complete V1401 archive remote delivery without second old push; V1402 full real production/peer/exception save and independently bounded numerical audit qualification; then actual shared route integration"
+  }
 }

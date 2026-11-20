@@ -41,3 +41,7 @@ V1398实际run_phase CPU2零构造入口/原函数身份/分支轮角闭包独�
 V1399首组远端流式回读遇旧index链接schema不兼容而安全退出：旧kind=symlink/target/bytes，新核验器只识别symlink键，故在assets/meshes_fixed链接报ARCHIVE_MEMBER_SIZE。零组清理、原件全留，不是已证实归档损坏。已用原本地流确认tar链接文本与旧index一致，后续只能新版本兼容两显式schema并保留旧ERROR/冻源/CLAIM，不重启V1399；远端已在资产须核size/digest后跳过。
 
 V1399链接schema诊断后新V1400仅兼容两显式格式并拒绝三种冲突/目标/长度负例，同7组/同Release/同有限传输/源与清理门；单次新worker pid719804，状态runs/v1400_archive_link_schema/{LAUNCH,CLAIM,PROGRESS,ERROR,FINALIZED}，旧V1399禁止重启。已上传正确资产先核size/digest跳过，0新模型/物理，原件未核保持。
+
+V1401已准备严格804步新数值资格（原owner/私有branch与fresh逐状态控制比较、2模式fixture、最多6解析构造/2copy、0MuJoCo/物理/实际重放），不是旧完整轨迹重跑。初entry01语法空格错误在parse阶段0模型保留；新entry02真实run_phase CPU2/原guard/构造profile拒绝/原来源身份资格过，全部源已冻，尚未数值launch；必须等V1400全备份/旧硬链清理和4MiB+32MiB实际预留后注册父轮。V1402新增完整当前响应生产保存入口、逐200分支NPZ原子SHA索引和逐状态/控制独立重算审核源码；存储往返与6负例过、0模型，不能当完整生成/审核资格。两模块仍非整路。V1400当前6/7已恢复核和精确清运输，余V1390旧小归档（只运输），无新异常，继续有界I/O。
+
+V1400七组227458223B运输全远端实际块/全成员与链接文本/重组/恢复index核后精确清理及V1399遗留已核硬链接清完，raw全留，恢复索引records/closed_transport_recovery_v1400_20261121/RECOVERY_INDEX.json。随后唯一新注册V1401两输入origin/私有encoder分支数值资格PASS：804解析/6显式Predictor构造/2copy，2×完整200私有与fresh逐state/ctrl误差0，原owner未变/各1步名义pair误差0；0MuJoCo/物理/重放/导航，第二输入明确模型mode fixture。6011成员/40960781B完整本地归档回读过，远端备份待完成，禁止重跑V1401。原数值804另栏不混原解析/实际分母；科学修订仍1。V1402完整响应生产入口/独立审核源码及逐分支NPZ原子索引/6负例通过，仍未生产CLI/完整数值资格或实际整路准入。报告docs/CURRENT_MODEL_ORIGIN_V1401_REPORT.md，下一准备V1402，不只轮询。

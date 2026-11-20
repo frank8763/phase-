@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "physical_admission": false,
+  "error": "SyntaxError('invalid syntax', ('<unknown>', 70, 38, '        assert p.adapter.__class__is Adapter\\n', 70, 45))",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1401_model_origin_qualification/qualify_entry.py\", line 26, in main\n    for p in C.glob('*.py'):ast.parse(p.read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/ast.py\", line 50, in parse\n    return compile(source, filename, mode, flags,\n  File \"<unknown>\", line 70\n    assert p.adapter.__class__is Adapter\n                                 ^^^^^^^\nSyntaxError: invalid syntax\n",
+  "review_pending_restored": true
+}
