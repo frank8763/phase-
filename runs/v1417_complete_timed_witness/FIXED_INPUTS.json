@@ -1,0 +1,56 @@
+{
+  "packet_file": "runs/v858_nav2_verified/v1378/steering_response/COMPONENT_INITIAL_PACKET.json",
+  "packet_sha256": "5e6906db04efed63868b5d2f70669ad338e4483d46dacb4e15c31cc4c54dfc89",
+  "journal_file": "runs/v858_nav2_verified/v1383/timed_handoff_main/APPLIED_JOURNAL.json",
+  "journal_sha256": "57a6058fc588500e33e80aa6546d53050b6ff9fb87b618297e3ada7c0076c094",
+  "historical_mode_gear_rows": 32210,
+  "original_reported_packet": {
+    "body": [
+      2.1017952397559396,
+      -1.7200398861407966,
+      -0.855653016102313,
+      4.68886419126283e-06,
+      1.7068637723950174e-06
+    ],
+    "body_lateral": -1.0484050679122323e-08,
+    "native_tick": 32210,
+    "sim_time": 322.09999999985206,
+    "body_measured_at": 266102.355123399,
+    "sent_at": 266102.355123399,
+    "dynamic_discovered": true,
+    "steering": {
+      "position": [
+        -0.004406479005676214,
+        -0.004424021579426477
+      ],
+      "velocity": [
+        -2.2745920150458501e-10,
+        -2.2712066099650708e-10
+      ],
+      "native_tick": 32210,
+      "measured_at": 266102.355123399
+    },
+    "controller_memory": {
+      "last_ctrl": [
+        -0.004406306229832775,
+        -0.004423849668560851,
+        0.0,
+        0.0
+      ],
+      "integral": 0.0
+    },
+    "coupled_episode": false,
+    "steering_motion_active": false
+  },
+  "derived_mode": {
+    "canonical_origin_native": 0,
+    "covered_native": 32210,
+    "coupled_episode": false,
+    "steering_motion_active": false,
+    "parked_target": null
+  },
+  "model_input_sha256": "db4aeb31c9a2e2469d21715c4a144e64ca4aeaf2c55716fbffcc00faae8b7d14",
+  "causal_source_tick": 32200,
+  "models": 0,
+  "physical_admission": false
+}
