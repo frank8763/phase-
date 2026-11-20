@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "actual_moving_response_qualified": false,
+  "physical_admission": false,
+  "saved_constant_fixture_only": true,
+  "error": "AssertionError('PEER_CALLBACK_TIMEOUT')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1393_full9390_preparation/qualify_peer.py\", line 45, in main\n    assert job.poll() is None and time.monotonic()<until,'PEER_CALLBACK_TIMEOUT'\nAssertionError: PEER_CALLBACK_TIMEOUT\n"
+}

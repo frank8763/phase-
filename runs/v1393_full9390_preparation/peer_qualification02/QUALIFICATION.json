@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "actual_moving_response_qualified": false,
+  "physical_admission": false,
+  "saved_constant_fixture_only": true,
+  "negative_cases": [
+    "wrong_kind",
+    "foreign_id",
+    "replay",
+    "nonfinite",
+    "old_delivery"
+  ],
+  "replies": [
+    {
+      "kind": "ORIGINAL_RPP_MODELED_COMMAND",
+      "run_id": "v1393-peer-qualification02",
+      "sequence": 0,
+      "native_tick": 10775,
+      "body": [
+        0.32972170416559987,
+        -0.8391911158333963,
+        -0.04848854292733495,
+        6.836654086892586e-06,
+        -3.542137079509386e-06
+      ],
+      "v": 0.07891489319237059,
+      "w": -0.05978400999422014,
+      "origin": {
+        "kind": "NAV2_STAMPED",
+        "stamp_ns": 1795176531060422070,
+        "receipt_ros_ns": 1795176531061779161,
+        "receipt_monotonic": 298281.507280083,
+        "generated_monotonic": 298281.505922992,
+        "receipt_age_s": 0.0013570910000000002
+      },
+      "first_tf_ros_ns": 1795176530675558958,
+      "command_ros_ns": 1795176531060422070,
+      "reply_monotonic": 298281.507280083,
+      "not_measured_response": true
+    },
+    {
+      "kind": "ORIGINAL_RPP_MODELED_COMMAND",
+      "run_id": "v1393-peer-qualification02",
+      "sequence": 1,
+      "native_tick": 10775,
+      "body": [
+        0.32972170416559987,
+        -0.8391911158333963,
+        -0.04848854292733495,
+        6.836654086892586e-06,
+        -3.542137079509386e-06
+      ],
+      "v": 0.07891489319237059,
+      "w": -0.05978400999422014,
+      "origin": {
+        "kind": "NAV2_STAMPED",
+        "stamp_ns": 1795176531110575095,
+        "receipt_ros_ns": 1795176531111244736,
+        "receipt_monotonic": 298281.55674447,
+        "generated_monotonic": 298281.556074829,
+        "receipt_age_s": 0.000669641
+      },
+      "first_tf_ros_ns": 1795176531075568542,
+      "command_ros_ns": 1795176531110575095,
+      "reply_monotonic": 298281.55674447,
+      "not_measured_response": true
+    }
+  ],
+  "real_original_plugin_loaded": true,
+  "no_synthetic_scan_messages": true,
+  "controller_exited": true,
+  "tested_peer_sha256": "ebe217a661408c67ef3a285e6737289fa9400e02fbcf71fca040d5537d10c428"
+}
