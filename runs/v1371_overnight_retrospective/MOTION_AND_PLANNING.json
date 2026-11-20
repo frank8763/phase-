@@ -1,0 +1,896 @@
+{
+  "results": [
+    {
+      "task": "rpp_default_horizon_m1_s01_main",
+      "original_goal_distance_m": 8.0,
+      "minimum_actual_goal_distance_m": 1.8721159912929235,
+      "minimum_goal_native_tick": 28616,
+      "final_actual_goal_distance_m": 1.9187317005047795,
+      "minimum_goal_sim_time_s": 286.15999999988475,
+      "all_trajectory_travel_m": 15.305710138566274,
+      "after_detection_travel_m": 10.880267558435353,
+      "actual_reverse_travel_m": 4.247792526045453,
+      "actual_forward_travel_m": 11.033090259424155,
+      "zero_request_native": 11300,
+      "route_proposals": 12,
+      "proposal_status_counts": {
+        "SAFE_PROGRESS_PREFIX": 6,
+        "GLOBAL_GOAL_PATH": 3,
+        "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET": 3
+      },
+      "full_goal_proposals": 3,
+      "installed_full_goal_proposals": 3,
+      "installed_routes": 8,
+      "total_planner_kernel_s": 4.530187602000001,
+      "total_planning_delivery_s": 6.789864302001661,
+      "task_native_wall_s": 337.56475160398986,
+      "brake_reason_counts": {
+        "FIRST_CAUSAL_NOVEL_RETURN": 1,
+        "GEAR_CUSP_COMPLETE": 16,
+        "CAUSAL_FUTURE_BALL_RESERVE": 2,
+        "LOCAL_SEGMENT_COMPLETE_OR_REFUSED": 1
+      },
+      "last_brakes": [
+        {
+          "native_tick": 22335,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            1.7357540840184214,
+            -1.4839775518469238,
+            -0.8289181730163321,
+            0.05153799278186908,
+            -0.02858445769511907
+          ],
+          "goal_distance_m": 2.32230246415861
+        },
+        {
+          "native_tick": 24430,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            0.9404566394823326,
+            -0.4780391807961291,
+            -1.0416339951447056,
+            -0.051353735403978786,
+            -0.011957444526382874
+          ],
+          "goal_distance_m": 3.4171874853568482
+        },
+        {
+          "native_tick": 26130,
+          "reason": "CAUSAL_FUTURE_BALL_RESERVE",
+          "body": [
+            1.7522121232661878,
+            -1.282574572685478,
+            -0.8185541198791925,
+            0.09906653438899554,
+            -0.022414901577872164
+          ],
+          "goal_distance_m": 2.3595019776531077
+        },
+        {
+          "native_tick": 26975,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            1.6516735511399583,
+            -1.168782677974909,
+            -0.8206165377917952,
+            -0.04729712585342999,
+            0.004160126736268912
+          ],
+          "goal_distance_m": 2.491096013173755
+        },
+        {
+          "native_tick": 28595,
+          "reason": "LOCAL_SEGMENT_COMPLETE_OR_REFUSED",
+          "body": [
+            2.1347082409848515,
+            -1.8115430502743954,
+            -0.9306430893472116,
+            0.050748396091518946,
+            -0.006814877802524806
+          ],
+          "goal_distance_m": 1.8747878195011045
+        },
+        {
+          "native_tick": 30050,
+          "reason": "CAUSAL_FUTURE_BALL_RESERVE",
+          "body": [
+            1.9976140420915425,
+            -1.5976324847746022,
+            -0.8218197021190178,
+            -0.0482709427785039,
+            0.022498526231579618
+          ],
+          "goal_distance_m": 2.042412578725864
+        },
+        {
+          "native_tick": 31960,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            2.0997437929481535,
+            -1.7176660388058733,
+            -0.855637517988514,
+            0.046971041540980515,
+            -0.00031422347268956574
+          ],
+          "goal_distance_m": 1.9211158523323462
+        }
+      ],
+      "routes": [
+        {
+          "index": 1,
+          "native_tick": 4705,
+          "status": "SAFE_PROGRESS_PREFIX",
+          "planned_body_goal_distance_m": 1.9028887777387864,
+          "planner_kernel_s": 0.505120369,
+          "end_to_end_planning_s": 0.6955694569915067,
+          "live_minimum_m": 0.19367142977519625,
+          "live_required_m": 0.22,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 2,
+          "native_tick": 5280,
+          "status": "SAFE_PROGRESS_PREFIX",
+          "planned_body_goal_distance_m": 2.112190959489816,
+          "planner_kernel_s": 0.50431656,
+          "end_to_end_planning_s": 0.6923672859848011,
+          "live_minimum_m": 0.2482560845733215,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 3,
+          "native_tick": 9390,
+          "status": "SAFE_PROGRESS_PREFIX",
+          "planned_body_goal_distance_m": 1.7845515349042398,
+          "planner_kernel_s": 0.497634385,
+          "end_to_end_planning_s": 0.6862122750026174,
+          "live_minimum_m": 0.2703052666422197,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 4,
+          "native_tick": 12540,
+          "status": "SAFE_PROGRESS_PREFIX",
+          "planned_body_goal_distance_m": 1.9293526808240542,
+          "planner_kernel_s": 0.504202577,
+          "end_to_end_planning_s": 0.6954899059783202,
+          "live_minimum_m": 0.2701880629811557,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 5,
+          "native_tick": 15685,
+          "status": "GLOBAL_GOAL_PATH",
+          "planned_body_goal_distance_m": 0.1385193648838916,
+          "planner_kernel_s": 0.009475912,
+          "end_to_end_planning_s": 0.19891103901318274,
+          "live_minimum_m": 0.2733221542274631,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 6,
+          "native_tick": 18280,
+          "status": "SAFE_PROGRESS_PREFIX",
+          "planned_body_goal_distance_m": 1.8616436921185289,
+          "planner_kernel_s": 0.496195365,
+          "end_to_end_planning_s": 0.6873057849879842,
+          "live_minimum_m": 0.25549309493221106,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 7,
+          "native_tick": 26335,
+          "status": "SAFE_PROGRESS_PREFIX",
+          "planned_body_goal_distance_m": 1.8153857081312892,
+          "planner_kernel_s": 0.504584888,
+          "end_to_end_planning_s": 0.6919457850162871,
+          "live_minimum_m": 0.23821104489409284,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 8,
+          "native_tick": 28795,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.502133095,
+          "end_to_end_planning_s": 0.6866515750007238,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 9,
+          "native_tick": 29360,
+          "status": "GLOBAL_GOAL_PATH",
+          "planned_body_goal_distance_m": 0.11962700301793791,
+          "planner_kernel_s": 0.001471076,
+          "end_to_end_planning_s": 0.1871661790064536,
+          "live_minimum_m": 0.27343403972881763,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 10,
+          "native_tick": 30250,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.498844249,
+          "end_to_end_planning_s": 0.6844503050087951,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 11,
+          "native_tick": 30815,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.504259565,
+          "end_to_end_planning_s": 0.6943940159981139,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 12,
+          "native_tick": 31385,
+          "status": "GLOBAL_GOAL_PATH",
+          "planned_body_goal_distance_m": 0.12917376196157873,
+          "planner_kernel_s": 0.001949561,
+          "end_to_end_planning_s": 0.18940069401287474,
+          "live_minimum_m": 0.27793443910919446,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        }
+      ],
+      "tracking_by_active_segment": [
+        {
+          "segment_index": 0,
+          "plan_index": 0,
+          "gear": 1,
+          "commands": 901,
+          "maximum_rear_reference_distance_m": 0.04913689808656678,
+          "p95_rear_reference_distance_m": 0.04730942254143585,
+          "maximum_heading_error_rad": 0.14664388449012022
+        },
+        {
+          "segment_index": 1,
+          "plan_index": 2,
+          "gear": 1,
+          "commands": 72,
+          "maximum_rear_reference_distance_m": 0.019500714435406873,
+          "p95_rear_reference_distance_m": 0.018887955354470312,
+          "maximum_heading_error_rad": 0.02145043440599198
+        },
+        {
+          "segment_index": 2,
+          "plan_index": 2,
+          "gear": -1,
+          "commands": 174,
+          "maximum_rear_reference_distance_m": 0.020754404712182307,
+          "p95_rear_reference_distance_m": 0.019091339206931648,
+          "maximum_heading_error_rad": 0.06363694550840843
+        },
+        {
+          "segment_index": 3,
+          "plan_index": 2,
+          "gear": 1,
+          "commands": 271,
+          "maximum_rear_reference_distance_m": 0.05582132848610072,
+          "p95_rear_reference_distance_m": 0.050679731146894474,
+          "maximum_heading_error_rad": 0.1975342911925177
+        },
+        {
+          "segment_index": 4,
+          "plan_index": 2,
+          "gear": -1,
+          "commands": 91,
+          "maximum_rear_reference_distance_m": 0.05429580115676466,
+          "p95_rear_reference_distance_m": 0.054201064128263,
+          "maximum_heading_error_rad": 0.2722010234570109
+        },
+        {
+          "segment_index": 5,
+          "plan_index": 3,
+          "gear": 1,
+          "commands": 336,
+          "maximum_rear_reference_distance_m": 0.02923788370626083,
+          "p95_rear_reference_distance_m": 0.025728144675777227,
+          "maximum_heading_error_rad": 0.07112295051921173
+        },
+        {
+          "segment_index": 6,
+          "plan_index": 3,
+          "gear": -1,
+          "commands": 180,
+          "maximum_rear_reference_distance_m": 0.02510582653530253,
+          "p95_rear_reference_distance_m": 0.021020985921305305,
+          "maximum_heading_error_rad": 0.10673292088427547
+        },
+        {
+          "segment_index": 7,
+          "plan_index": 4,
+          "gear": 1,
+          "commands": 193,
+          "maximum_rear_reference_distance_m": 0.02005226221039933,
+          "p95_rear_reference_distance_m": 0.01925136784787805,
+          "maximum_heading_error_rad": 0.043020113638388924
+        },
+        {
+          "segment_index": 8,
+          "plan_index": 4,
+          "gear": -1,
+          "commands": 322,
+          "maximum_rear_reference_distance_m": 0.06336063953509911,
+          "p95_rear_reference_distance_m": 0.061262031997965996,
+          "maximum_heading_error_rad": 0.27243309505646984
+        },
+        {
+          "segment_index": 9,
+          "plan_index": 5,
+          "gear": 1,
+          "commands": 242,
+          "maximum_rear_reference_distance_m": 0.02001853012484517,
+          "p95_rear_reference_distance_m": 0.019006778845245625,
+          "maximum_heading_error_rad": 0.03217476162232044
+        },
+        {
+          "segment_index": 10,
+          "plan_index": 5,
+          "gear": -1,
+          "commands": 173,
+          "maximum_rear_reference_distance_m": 0.020749189101963477,
+          "p95_rear_reference_distance_m": 0.019676077195390444,
+          "maximum_heading_error_rad": 0.04013624423178433
+        },
+        {
+          "segment_index": 11,
+          "plan_index": 6,
+          "gear": 1,
+          "commands": 242,
+          "maximum_rear_reference_distance_m": 0.0235692486628901,
+          "p95_rear_reference_distance_m": 0.021695511625129282,
+          "maximum_heading_error_rad": 0.07457352339396983
+        },
+        {
+          "segment_index": 12,
+          "plan_index": 6,
+          "gear": -1,
+          "commands": 180,
+          "maximum_rear_reference_distance_m": 0.025959127278815407,
+          "p95_rear_reference_distance_m": 0.02232838541266217,
+          "maximum_heading_error_rad": 0.133826866557042
+        },
+        {
+          "segment_index": 13,
+          "plan_index": 6,
+          "gear": 1,
+          "commands": 275,
+          "maximum_rear_reference_distance_m": 0.030140520369906585,
+          "p95_rear_reference_distance_m": 0.02452692479741172,
+          "maximum_heading_error_rad": 0.17565079736181693
+        },
+        {
+          "segment_index": 14,
+          "plan_index": 6,
+          "gear": -1,
+          "commands": 369,
+          "maximum_rear_reference_distance_m": 0.029081941263596846,
+          "p95_rear_reference_distance_m": 0.025742295470413325,
+          "maximum_heading_error_rad": 0.09598171850448067
+        },
+        {
+          "segment_index": 15,
+          "plan_index": 6,
+          "gear": 1,
+          "commands": 290,
+          "maximum_rear_reference_distance_m": 0.0751479901116915,
+          "p95_rear_reference_distance_m": 0.07319700623151025,
+          "maximum_heading_error_rad": 0.18210377657318977
+        },
+        {
+          "segment_index": 16,
+          "plan_index": 7,
+          "gear": -1,
+          "commands": 112,
+          "maximum_rear_reference_distance_m": 0.020147527396907065,
+          "p95_rear_reference_distance_m": 0.019024302059729027,
+          "maximum_heading_error_rad": 0.025777900823077404
+        },
+        {
+          "segment_index": 17,
+          "plan_index": 7,
+          "gear": 1,
+          "commands": 274,
+          "maximum_rear_reference_distance_m": 0.021699583863228435,
+          "p95_rear_reference_distance_m": 0.019883093769801366,
+          "maximum_heading_error_rad": 0.04297993541346645
+        },
+        {
+          "segment_index": 18,
+          "plan_index": 9,
+          "gear": -1,
+          "commands": 134,
+          "maximum_rear_reference_distance_m": 0.020216255779249345,
+          "p95_rear_reference_distance_m": 0.018543420223663037,
+          "maximum_heading_error_rad": 0.026161169225775164
+        },
+        {
+          "segment_index": 19,
+          "plan_index": 12,
+          "gear": 1,
+          "commands": 111,
+          "maximum_rear_reference_distance_m": 0.02068646899061629,
+          "p95_rear_reference_distance_m": 0.019098021305647025,
+          "maximum_heading_error_rad": 0.03528783339087438
+        }
+      ],
+      "maximum_active_rear_path_distance_m": 0.0751479901116915,
+      "p95_segment_distance_max_m": 0.07319700623151025,
+      "models": 0,
+      "physical_native": 0,
+      "scope": "saved-data diagnosis, no counterfactual execution"
+    },
+    {
+      "task": "rpp_local_horizon_m1_s01_main",
+      "original_goal_distance_m": 8.0,
+      "minimum_actual_goal_distance_m": 1.7836164909147671,
+      "minimum_goal_native_tick": 34191,
+      "final_actual_goal_distance_m": 3.4467902276995925,
+      "minimum_goal_sim_time_s": 341.90999999983404,
+      "all_trajectory_travel_m": 26.081233802931273,
+      "after_detection_travel_m": 21.677720191077526,
+      "actual_reverse_travel_m": 10.533077897972838,
+      "actual_forward_travel_m": 15.52334025609221,
+      "zero_request_native": 11671,
+      "route_proposals": 12,
+      "proposal_status_counts": {
+        "SAFE_PROGRESS_PREFIX": 2,
+        "GLOBAL_GOAL_PATH": 4,
+        "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET": 6
+      },
+      "full_goal_proposals": 4,
+      "installed_full_goal_proposals": 4,
+      "installed_routes": 6,
+      "total_planner_kernel_s": 4.556557687,
+      "total_planning_delivery_s": 6.830476139002712,
+      "task_native_wall_s": 464.06505098799244,
+      "brake_reason_counts": {
+        "FIRST_CAUSAL_NOVEL_RETURN": 1,
+        "GEAR_CUSP_COMPLETE": 15,
+        "LOCAL_SEGMENT_COMPLETE_OR_REFUSED": 3
+      },
+      "last_brakes": [
+        {
+          "native_tick": 25820,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            0.6723779600820943,
+            -1.196377231577517,
+            -0.8881493924913547,
+            -0.05027699486088241,
+            -0.030996789514937412
+          ],
+          "goal_distance_m": 3.4232846791458083
+        },
+        {
+          "native_tick": 30070,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            2.525394404767383,
+            -4.024229187879266,
+            -0.6222336390651414,
+            0.05257593340826035,
+            0.026833236837900325
+          ],
+          "goal_distance_m": 2.5043892402247883
+        },
+        {
+          "native_tick": 31195,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            2.269390582171805,
+            -3.8228751162197976,
+            -0.4088895428553684,
+            -0.04772165700058553,
+            0.02938342153651482
+          ],
+          "goal_distance_m": 2.513539863699994
+        },
+        {
+          "native_tick": 34170,
+          "reason": "LOCAL_SEGMENT_COMPLETE_OR_REFUSED",
+          "body": [
+            4.033706292387613,
+            -3.783646043781502,
+            0.11399863318996341,
+            0.05158468428823054,
+            -0.0016387349024379752
+          ],
+          "goal_distance_m": 1.783964496183689
+        },
+        {
+          "native_tick": 37970,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            2.1924968711920703,
+            -3.8195818239531243,
+            -0.33595690242601556,
+            -0.051501299067764836,
+            -0.03398106258893232
+          ],
+          "goal_distance_m": 2.5647505872328082
+        },
+        {
+          "native_tick": 39095,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            2.48167741815799,
+            -3.969103434689288,
+            -0.40557092164689584,
+            0.049219830389111166,
+            -0.028019287477250285
+          ],
+          "goal_distance_m": 2.486497898458098
+        },
+        {
+          "native_tick": 43920,
+          "reason": "GEAR_CUSP_COMPLETE",
+          "body": [
+            0.7225894277353571,
+            -0.940836362428829,
+            -0.9551016508371908,
+            -0.05094878426698229,
+            0.03137113666878598
+          ],
+          "goal_distance_m": 3.444306558705983
+        }
+      ],
+      "routes": [
+        {
+          "index": 1,
+          "native_tick": 4705,
+          "status": "SAFE_PROGRESS_PREFIX",
+          "planned_body_goal_distance_m": 1.9339015067332426,
+          "planner_kernel_s": 0.500879296,
+          "end_to_end_planning_s": 0.692931249999674,
+          "live_minimum_m": 0.2253006338031004,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 2,
+          "native_tick": 13925,
+          "status": "GLOBAL_GOAL_PATH",
+          "planned_body_goal_distance_m": 0.12142202213502132,
+          "planner_kernel_s": 0.115589265,
+          "end_to_end_planning_s": 0.3050540729891509,
+          "live_minimum_m": 0.25885322909650066,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 3,
+          "native_tick": 20535,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.500190655,
+          "end_to_end_planning_s": 0.6869115919980686,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 4,
+          "native_tick": 21100,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.499050838,
+          "end_to_end_planning_s": 0.6865933930093888,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 5,
+          "native_tick": 21665,
+          "status": "GLOBAL_GOAL_PATH",
+          "planned_body_goal_distance_m": 0.1347271343564782,
+          "planner_kernel_s": 0.000939161,
+          "end_to_end_planning_s": 0.18948855399503373,
+          "live_minimum_m": 0.2700189486804896,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 6,
+          "native_tick": 22500,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.498533171,
+          "end_to_end_planning_s": 0.6834244659985416,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 7,
+          "native_tick": 23065,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.498964164,
+          "end_to_end_planning_s": 0.6868486640159972,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 8,
+          "native_tick": 23630,
+          "status": "GLOBAL_GOAL_PATH",
+          "planned_body_goal_distance_m": 0.27094736329544356,
+          "planner_kernel_s": 0.000968844,
+          "end_to_end_planning_s": 0.18941850299597718,
+          "live_minimum_m": 0.2709369993784342,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 9,
+          "native_tick": 24260,
+          "status": "SAFE_PROGRESS_PREFIX",
+          "planned_body_goal_distance_m": 1.7876545997190294,
+          "planner_kernel_s": 0.499065086,
+          "end_to_end_planning_s": 0.6941660480224527,
+          "live_minimum_m": 0.2703940726861044,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        },
+        {
+          "index": 10,
+          "native_tick": 34370,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.49172158,
+          "end_to_end_planning_s": 0.6799824569898192,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 11,
+          "native_tick": 34935,
+          "status": "NO_MEANINGFUL_GLOBAL_PROGRESS_WITHIN_BUDGET",
+          "planned_body_goal_distance_m": 0.0,
+          "planner_kernel_s": 0.492672615,
+          "end_to_end_planning_s": 0.6814737159875222,
+          "live_minimum_m": null,
+          "live_required_m": null,
+          "installed": false,
+          "first_segment_refused": false
+        },
+        {
+          "index": 12,
+          "native_tick": 35500,
+          "status": "GLOBAL_GOAL_PATH",
+          "planned_body_goal_distance_m": 0.26998981703706104,
+          "planner_kernel_s": 0.457983012,
+          "end_to_end_planning_s": 0.6541834230010863,
+          "live_minimum_m": 0.2635114407092134,
+          "live_required_m": 0.22,
+          "installed": true,
+          "first_segment_refused": false
+        }
+      ],
+      "tracking_by_active_segment": [
+        {
+          "segment_index": 0,
+          "plan_index": 0,
+          "gear": 1,
+          "commands": 901,
+          "maximum_rear_reference_distance_m": 0.023058671925109197,
+          "p95_rear_reference_distance_m": 0.02135120663887085,
+          "maximum_heading_error_rad": 0.10945842584121301
+        },
+        {
+          "segment_index": 1,
+          "plan_index": 1,
+          "gear": 1,
+          "commands": 202,
+          "maximum_rear_reference_distance_m": 0.020062661730490726,
+          "p95_rear_reference_distance_m": 0.01923533802073642,
+          "maximum_heading_error_rad": 0.02415107861910515
+        },
+        {
+          "segment_index": 2,
+          "plan_index": 1,
+          "gear": -1,
+          "commands": 232,
+          "maximum_rear_reference_distance_m": 0.02569723611751533,
+          "p95_rear_reference_distance_m": 0.022953724461424154,
+          "maximum_heading_error_rad": 0.08727347513236508
+        },
+        {
+          "segment_index": 3,
+          "plan_index": 1,
+          "gear": 1,
+          "commands": 560,
+          "maximum_rear_reference_distance_m": 0.03280661689166758,
+          "p95_rear_reference_distance_m": 0.024710825761176922,
+          "maximum_heading_error_rad": 0.11713092445548504
+        },
+        {
+          "segment_index": 4,
+          "plan_index": 1,
+          "gear": -1,
+          "commands": 275,
+          "maximum_rear_reference_distance_m": 0.025410082968314436,
+          "p95_rear_reference_distance_m": 0.023082261302172984,
+          "maximum_heading_error_rad": 0.09568911304226302
+        },
+        {
+          "segment_index": 5,
+          "plan_index": 1,
+          "gear": 1,
+          "commands": 319,
+          "maximum_rear_reference_distance_m": 0.04386187688467344,
+          "p95_rear_reference_distance_m": 0.04157592135714016,
+          "maximum_heading_error_rad": 0.14208109826937432
+        },
+        {
+          "segment_index": 6,
+          "plan_index": 2,
+          "gear": -1,
+          "commands": 384,
+          "maximum_rear_reference_distance_m": 0.024671655537203813,
+          "p95_rear_reference_distance_m": 0.0221097647054284,
+          "maximum_heading_error_rad": 0.09035838323114187
+        },
+        {
+          "segment_index": 7,
+          "plan_index": 2,
+          "gear": 1,
+          "commands": 427,
+          "maximum_rear_reference_distance_m": 0.05529118650416378,
+          "p95_rear_reference_distance_m": 0.05293641198479328,
+          "maximum_heading_error_rad": 0.1920409300726501
+        },
+        {
+          "segment_index": 8,
+          "plan_index": 2,
+          "gear": -1,
+          "commands": 185,
+          "maximum_rear_reference_distance_m": 0.02981919904922537,
+          "p95_rear_reference_distance_m": 0.025407044403601284,
+          "maximum_heading_error_rad": 0.16112818616788238
+        },
+        {
+          "segment_index": 9,
+          "plan_index": 2,
+          "gear": 1,
+          "commands": 125,
+          "maximum_rear_reference_distance_m": 0.03656290273199826,
+          "p95_rear_reference_distance_m": 0.03376017068416635,
+          "maximum_heading_error_rad": 0.12408567866979102
+        },
+        {
+          "segment_index": 10,
+          "plan_index": 5,
+          "gear": -1,
+          "commands": 113,
+          "maximum_rear_reference_distance_m": 0.02053798556301097,
+          "p95_rear_reference_distance_m": 0.019592382934144052,
+          "maximum_heading_error_rad": 0.04377574054476924
+        },
+        {
+          "segment_index": 11,
+          "plan_index": 8,
+          "gear": -1,
+          "commands": 72,
+          "maximum_rear_reference_distance_m": 0.020353384338213168,
+          "p95_rear_reference_distance_m": 0.019452963919017238,
+          "maximum_heading_error_rad": 0.030862255020420115
+        },
+        {
+          "segment_index": 12,
+          "plan_index": 9,
+          "gear": -1,
+          "commands": 298,
+          "maximum_rear_reference_distance_m": 0.02435077772224177,
+          "p95_rear_reference_distance_m": 0.02230192635441984,
+          "maximum_heading_error_rad": 0.06543482228785291
+        },
+        {
+          "segment_index": 13,
+          "plan_index": 9,
+          "gear": 1,
+          "commands": 800,
+          "maximum_rear_reference_distance_m": 0.025624408208592624,
+          "p95_rear_reference_distance_m": 0.020515211172313197,
+          "maximum_heading_error_rad": 0.13020933364796894
+        },
+        {
+          "segment_index": 14,
+          "plan_index": 9,
+          "gear": -1,
+          "commands": 175,
+          "maximum_rear_reference_distance_m": 0.020973623603776824,
+          "p95_rear_reference_distance_m": 0.018844683991078012,
+          "maximum_heading_error_rad": 0.09813820736169798
+        },
+        {
+          "segment_index": 15,
+          "plan_index": 9,
+          "gear": 1,
+          "commands": 545,
+          "maximum_rear_reference_distance_m": 0.042318021925089204,
+          "p95_rear_reference_distance_m": 0.03911614213108595,
+          "maximum_heading_error_rad": 0.2012395929417239
+        },
+        {
+          "segment_index": 16,
+          "plan_index": 12,
+          "gear": -1,
+          "commands": 481,
+          "maximum_rear_reference_distance_m": 0.021468049994987595,
+          "p95_rear_reference_distance_m": 0.019825327358406718,
+          "maximum_heading_error_rad": 0.04178573654275308
+        },
+        {
+          "segment_index": 17,
+          "plan_index": 12,
+          "gear": 1,
+          "commands": 175,
+          "maximum_rear_reference_distance_m": 0.02629256950608008,
+          "p95_rear_reference_distance_m": 0.02380462584880669,
+          "maximum_heading_error_rad": 0.1106225273267028
+        },
+        {
+          "segment_index": 18,
+          "plan_index": 12,
+          "gear": -1,
+          "commands": 915,
+          "maximum_rear_reference_distance_m": 0.03551849695262049,
+          "p95_rear_reference_distance_m": 0.031247882449174102,
+          "maximum_heading_error_rad": 0.1361583967215616
+        }
+      ],
+      "maximum_active_rear_path_distance_m": 0.05529118650416378,
+      "p95_segment_distance_max_m": 0.05293641198479328,
+      "models": 0,
+      "physical_native": 0,
+      "scope": "saved-data diagnosis, no counterfactual execution"
+    }
+  ],
+  "models": 0,
+  "physical_native": 0
+}

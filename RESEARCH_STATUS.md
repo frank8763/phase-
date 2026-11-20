@@ -2084,3 +2084,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1370夜间队列已闭：EVIDENCE_OR_OPERATION_STOP；实际尝试15、未执行256，动态开发pair存在全门通过=False；原八WE开发矩阵不是新24确认，所有分母/未知分账见docs/OVERNIGHT_CONTROLLER_MATRIX_V1370_REPORT.md。REVIEW_PENDING恢复，零模型归档/单次同步。
 
 - 11/20早检查V1370：昨晚21:05:40已停，仅约29m33s；7恢复PASS，RPP.6/.4静态各pairPASS，MPPI/preview静态功能FAIL；两动态原slot1均12replan用尽/余1.9187和3.4468m，第二audit KeyError41410停止，256未执行。实际传感41390→41415缺41410，过期3×5零速推进后当前body/tick与缓存测距未同tick绑定，不能跳过补配或追认全因果PASS。累计246305actual/ownreplay误差0/接触0，完整归档本地回读，单次pushTLS失败/远端未确认，原件保留无重试。当前REVIEW_PENDING/锁空闲，仅0模型检查记录，无重启。docs/OVERNIGHT_CONTROLLER_MATRIX_V1370_INSPECTION_20261120.md。
+
+- V1371零模型复盘完成：1事件/2传感记录原审核KeyError41410约.3s精确复现，4过期×5零步约13ms但旧墙钟缓存仍41390；数据合同原型正确保存帧/4错误帧/快速制动元数据回归PASS，未装入物理runner。两动态实已接收3/4完整名义目标路径，活动段rear最大位置参考距离.07515/.05529m；8交接拒绝固定body/path仅换预测圆，6动态场变化、2航向.30158/.31625超.20；0.4原因果FAIL保持，反事实非执行。实际走15.31/26.08m，最接近目标1.872/1.784，内核合计4.53/4.56s，主要缺口是执行时域/换挡末态契约，不支持纯加CPU。建议新90min最大5组件/2原WE导航：真实采样故障回归→9390捕获与32210时序交接→全门后RPP.6主成功repeat，尚未授权物理；旧资格按精确闭包复用，MPPI静态另行零模型定位。原窗口/源/失败均保持，REVIEW_PENDING，无新积分/Stage/训练/实机或Git重试。docs/OVERNIGHT_RETROSPECTIVE_V1371_NEXT_PLAN.md。

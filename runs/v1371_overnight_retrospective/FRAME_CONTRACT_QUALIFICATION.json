@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "saved_frame_positive": true,
+  "broken_frame_negatives": [
+    {
+      "case": "old_sensor",
+      "rejected": true,
+      "reason": "SENSOR_NATIVE_TICK_MISMATCH"
+    },
+    {
+      "case": "forged_tick",
+      "rejected": true,
+      "reason": "SENSOR_PHYSICAL_CLOCK_MISMATCH"
+    },
+    {
+      "case": "forged_tick_and_time",
+      "rejected": true,
+      "reason": "SENSOR_POSE_MISMATCH"
+    },
+    {
+      "case": "future_sensor",
+      "rejected": true,
+      "reason": "SENSOR_NATIVE_TICK_MISMATCH"
+    }
+  ],
+  "rapid_expiry_brake_metadata_frames": [
+    {
+      "body_native": 41390,
+      "sensor_native": 41390
+    },
+    {
+      "body_native": 41395,
+      "sensor_native": 41395
+    },
+    {
+      "body_native": 41400,
+      "sensor_native": 41400
+    },
+    {
+      "body_native": 41405,
+      "sensor_native": 41405
+    },
+    {
+      "body_native": 41410,
+      "sensor_native": 41410
+    }
+  ],
+  "same_tick_reuse_and_wall_refresh_passed": true,
+  "new_contract_prototype_only": true,
+  "installed_in_physical_runner": false,
+  "old_missing_scan_not_recreated_or_fabricated": true,
+  "models": 0,
+  "physical_native": 0,
+  "replay_native": 0
+}
