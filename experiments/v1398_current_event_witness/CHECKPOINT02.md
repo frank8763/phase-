@@ -1,0 +1,5 @@
+# V1398真实CPU2零模型入口资格
+
+V1398实际run_phase CPU2零构造入口/原函数身份/分支轮角闭包独立绑定/真实NumPy生产JSON/原严格writeguard六拒绝全部通过，0模型构造积分物理重放。初入口在原guard拒绝resource_policy打开/dev/null时停，原CLAIM/错误保留；entry02只把同原零模型低I/O资源bootstrap置于guard前，随后guard原字节不变，3真实生产入口过，REVIEW_PENDING恢复；生成器仍未数值资格。V1399新零模型已闭运输恢复worker单次pid717947：计划原gzip已闭归档7组227458223B，15组因与当前冻结来源/Git跟踪同inode全部排除（不能拿目录看似重复就删）。跨块gzip/链接/全成员/重组SHA与错成员SHA拒绝资格过，单32MiB下载、原V1389有界传输；只有全远端实际恢复核后清这7组重复运输，原raw全留。现查runs/v1399_closed_transport_recovery/{CLAIM,PROGRESS,ERROR,FINALIZED}，禁止重复launch。存储仍未足整路，后续实际重算。
+
+下一读取PREPARATION_CHECKPOINT02.json。当前完整数值生成器/独立审核/实际整路仍未资格；不把此CPU2入口通过当完整模型响应成功。CPU2_ENTRY_SOURCE_FREEZE冻结本次已测源码，后续改另文件/版本。

@@ -23,6 +23,13 @@ def exact(name,path):
     spec=importlib.util.spec_from_file_location(name,path);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
 
 
+def clone_private_branch(p, join):
+    branch=copy.deepcopy(p)
+    # A function's captured owner survives deepcopy unless explicitly rebound.
+    branch.adapter.encoders=lambda owner=branch:join(owner.front,owner.front_rate)
+    return branch
+
+
 def binding():
     assert sorted(os.sched_getaffinity(0))==[2], 'CURRENT_WITNESS_REQUIRES_CPU2'
     assert os.environ.get('PHASE_REPO')==str(R) and os.environ.get('CUDA_VISIBLE_DEVICES')=='', 'CURRENT_WITNESS_REQUIRES_RUN_PHASE'
@@ -117,10 +124,7 @@ def generate(current, setup, *, authority, lock, peer_command, save_branch):
             assert requested is not None
             # Complete branch from every exact nominal origin, including modes,
             # gear holds and both applied200-zero tails; stream evidence out.
-            branch=copy.deepcopy(p);result['analytical_branch_copies']+=1;branch.adapter.parked_target=None
-            # Python deepcopy does not clone a lambda's closed-over owner.
-            # Every private branch must observe its own modeled wheel state.
-            branch.adapter.encoders=lambda owner=branch:np.r_[owner.front,owner.front_rate]
+            branch=clone_private_branch(p,lambda a,b:np.r_[a,b]);result['analytical_branch_copies']+=1;branch.adapter.parked_target=None
             bs=[branch.state.copy()];bu=[]
             for _ in range(200):s,u=advance(branch,0.,0.);bs.append(s.copy());bu.append(u.copy())
             bs=np.asarray(bs);bu=np.asarray(bu);lower=geometry.tube(bs);minimum_brake=min(minimum_brake,lower)

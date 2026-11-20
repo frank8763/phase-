@@ -1,0 +1,7 @@
+{
+  "error": "AssertionError('ARCHIVE_MEMBER_SIZE')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1399_closed_transport_recovery/worker.py\", line 97, in main\n    reader=RemoteReader(remote_parts,known,readback,download);count=verify_stream(reader,recovery)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1399_closed_transport_recovery/worker.py\", line 36, in verify_stream\n    assert member.isfile() and member.size==row['bytes'], 'ARCHIVE_MEMBER_SIZE'\nAssertionError: ARCHIVE_MEMBER_SIZE\n",
+  "completed": [],
+  "unverified_originals_retained": true,
+  "models": 0
+}

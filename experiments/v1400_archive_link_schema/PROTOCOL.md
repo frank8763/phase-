@@ -1,0 +1,5 @@
+# V1400旧归档链接schema有界接续
+
+仅零模型接续原V1399同7组计划与同Release。V1399已在第一组旧kind=symlink/target/bytes格式遇ARCHIVE_MEMBER_SIZE停，0组清理，所有原件/旧CLAIM/ERROR/冻源保留，不重启。新核验器同时支持新symlink键和旧显式链接格式；两者并存必须一致，旧bytes必须等链接UTF8文本长度，tar成员必须为symlink且目标文本精确，绝不跟随读取目标。拒绝改目标、文本长度或schema冲突，不放宽任一数据SHA/范围/预算门。
+
+复用原worker的上传前远端size/digest检查（已在正确跳过，不重复POST）、有限网络预算、每次32MiB流式实际下载/全部成员及链接文本/整体SHA/恢复index核、源SHA/锁/原REVIEW_PENDING/原逐partSHAmtimeinode/Git与同inode保护门。新验证通过前不删V1399旧上传硬链接；全7组完整恢复后才精确清旧遗留同inode运输链接。未核原件及所有物理raw保持。最多3h双钟/root周一09点，单次新CLAIM后台，不模型/不push旧批。
