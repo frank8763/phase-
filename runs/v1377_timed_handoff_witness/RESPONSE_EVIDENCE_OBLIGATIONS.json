@@ -1,0 +1,41 @@
+{
+  "scientific_candidate": "TIME_BOUND_NEXT_SEGMENT",
+  "source_native_tick": 32210,
+  "moving_origin_tick": 32600,
+  "models_authorized": false,
+  "new_physical_slots_today": 0,
+  "physical_admission": false,
+  "actual_moving_response_qualified": false,
+  "actual_moving_witness_path": null,
+  "full9390_handoff_qualified": false,
+  "full32210_handoff_qualified": false,
+  "available_evidence": {
+    "actual_same32210_steering_preparation": "runs/v1378_steering_response_32210/COMPLETION.json",
+    "actual_same9390_pose_capture_pair": "runs/v1376_prepared_capture_component/COMPLETION.json",
+    "command_clock_software": "NATIVE_CLOCK_COMMAND_CONTRACT.json",
+    "allocator_metadata_only": "CONCRETE_ALLOCATOR_METADATA_QUALIFICATION.json",
+    "conditional_geometry_m": 0.237018541000636,
+    "response_sample_membership_software": "RESPONSE_MEMBERSHIP_QUALIFICATION.json",
+    "required_action_tail_wrapper": "ACTION_TAIL_QUALIFICATION.json"
+  },
+  "missing_evidence": [
+    "actual concrete moving request schedule",
+    "actual extra gear-hold response and release time",
+    "actual rear/yaw/time tube through drive and brake",
+    "actual complete200 applied-zero tail plus measured rest",
+    "source/model/control/contact/fullstate replay independent audit for complete moving component",
+    "same-input complete moving repeat",
+    "full9390 continuation beyond pose capture"
+  ],
+  "no_claims": [
+    "actual moving arrival",
+    "full dynamic handoff",
+    "recursive safety",
+    "real-time performance",
+    "new24 acceptance"
+  ],
+  "models": 0,
+  "physical_native": 0,
+  "private_native": 0,
+  "replay_native": 0
+}
