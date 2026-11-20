@@ -1,0 +1,121 @@
+{
+  "passed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "saved_prefix_gear_rows": 10775,
+  "parked_source_metadata_preserved": true,
+  "original_fixed_response_native": 2575,
+  "complete200_reference_zero_tail": true,
+  "full_reference_membership_points": 2576,
+  "full_response_tube_lower_m": 0.2320689792491846,
+  "negative_cases": [
+    "position",
+    "yaw",
+    "time"
+  ],
+  "actual_peer_saved_frame_interface_qualified": true,
+  "saved_frame_playback_not_new_acquisition": true,
+  "entries": [
+    {
+      "label": "backend",
+      "proof": {
+        "passed": true,
+        "actual_renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+        "backend": {
+          "passed": true,
+          "actual_context_module": "mujoco.osmesa",
+          "actual_OpenGL_dispatch_module": "OpenGL.platform.osmesa",
+          "hardware_GPU_used": false,
+          "legacy_environment_label_restored": true
+        },
+        "models": 0,
+        "native_integrations": 0
+      }
+    },
+    {
+      "label": "native",
+      "proof": {
+        "passed": true,
+        "production_callable_sources": {
+          "restore": "experiments/v1396_rpp_rpc_retirement/prefix_restore.py",
+          "Geometry": "experiments/v1396_rpp_rpc_retirement/geometry_contract.py",
+          "membership": "experiments/v1396_rpp_rpc_retirement/geometry_contract.py",
+          "certify": "experiments/v1396_rpp_rpc_retirement/reserve.py",
+          "SampleCache": "experiments/v1396_rpp_rpc_retirement/frames.py",
+          "wire_packet": "experiments/v1396_rpp_rpc_retirement/frames.py",
+          "GearHandoff": "experiments/v1396_rpp_rpc_retirement/gear_handoff.py",
+          "before_step": "experiments/v1396_rpp_rpc_retirement/stamped_contract.py",
+          "initialize": "experiments/v1396_rpp_rpc_retirement/runtime_boundary.py",
+          "socket_owner": "experiments/v1396_rpp_rpc_retirement/runtime_boundary.py",
+          "close_peer": "experiments/v1396_rpp_rpc_retirement/runtime_boundary.py",
+          "assess_reply": "experiments/v1396_rpp_rpc_retirement/reply_contract.py"
+        },
+        "models": 0,
+        "physical_native": 0
+      }
+    },
+    {
+      "label": "producer",
+      "proof": {
+        "passed": true,
+        "full_actual_producer_JSON_roundtrip": true,
+        "models": 0
+      }
+    },
+    {
+      "label": "guard",
+      "proof": {
+        "passed": true,
+        "checks": {
+          "APPLIED_JOURNAL.json": true,
+          "RESULT.json": true,
+          "OBSERVATIONS_SENT.jsonl": true,
+          "RECEIVED_COMMANDS.jsonl": true,
+          "FRESHNESS_REJECTIONS.json": true,
+          "physics/PATCHED_ASSEMBLY.xml": true,
+          "physics/MODEL_BUILD_CONTRACT.json": true,
+          "physics/SETUP.json": true,
+          "physics/INITIAL_STATE.npz": true,
+          "old_metadata_root": true,
+          "parent_traversal_outside_legacy_root": true,
+          "outside_mkdir": true,
+          "outside_rename": true,
+          "symlink_write_escape": true
+        },
+        "production_guard_function_executed": true,
+        "guard_root_broadened": false,
+        "models": 0,
+        "physical_native": 0
+      }
+    }
+  ],
+  "tested_source_hashes": {
+    "experiments/v1396_rpp_rpc_retirement/evidence_io.py": "fe0e6d133ea0a2631846c6a909acb5a3afb21f3ad77646cbfb9aeddd71cd9d97",
+    "experiments/v1396_rpp_rpc_retirement/peer_environment.py": "e7c9ca74fc2b9bdd599af22f240049639d14496833445478ae24b41cd5086f4f",
+    "experiments/v1396_rpp_rpc_retirement/stamped_contract.py": "5b07af25be5eb7519806235da826d763336ea5c14975e6250c041100f83af958",
+    "experiments/v1396_rpp_rpc_retirement/gear_handoff.py": "7f732f6609c357d0ed97fe968849fc3b6f9d5b825fdceb10a631ba7736e412e7",
+    "experiments/v1396_rpp_rpc_retirement/native.py": "b735dd750ec47205d82ac4d309e8d4f9e727d152a2651b376e8e8f50616a70dd",
+    "experiments/v1396_rpp_rpc_retirement/frames.py": "351dda8f5782ae586db9165301d4d75418122d30e9ffcd82adf0a07b74f725c7",
+    "experiments/v1396_rpp_rpc_retirement/finalize.py": "5e49f864ef13849b9c5caf7bbd6a45618ed378cb033737d9a45c4013fdf177ce",
+    "experiments/v1396_rpp_rpc_retirement/rpp_peer.py": "ec7043d6be34634290bb0192e370a1f343b376412e2cb3df2987ccf90b61c468",
+    "experiments/v1396_rpp_rpc_retirement/runtime_boundary.py": "01d97bce03611c0bee2b4d8c3d43c8aaf0bcd93ae8cbbeb83e06f47769ae7dc1",
+    "experiments/v1396_rpp_rpc_retirement/ENTRY.json": "3cee2f0d08108869e416fa85f74388db27772a86048fd0a3a7830578d7593632",
+    "experiments/v1396_rpp_rpc_retirement/reply_contract.py": "02b201bc995ea8fb063a7b91d06ed960955f2a3e0dcbebb0542d1f10fadb238e",
+    "experiments/v1396_rpp_rpc_retirement/backend_check.py": "4a5244e44753991a65c326f93020a013e651b29a2539c3f0fa46393ec93f3af5",
+    "experiments/v1396_rpp_rpc_retirement/start.py": "8f4852f82d38568adb93132bf5e14fc24fb72864655218d82ee76d6ac88e67a9",
+    "experiments/v1396_rpp_rpc_retirement/qualify.py": "12d2ad1e493350354de09995aeeedc79856ed56e94f2a8f0f05d45245a72ee4b",
+    "experiments/v1396_rpp_rpc_retirement/reserve.py": "6d6d9da328bedecdbf8826cd4699f5808b4a4ad00fbc7a14eb92e8ae08b6ed65",
+    "experiments/v1396_rpp_rpc_retirement/PROTOCOL.md": "7dce3438a9cfb6d8cde7739375edae00864a6ffc94efba1dd5f2d95ea74be9e8",
+    "experiments/v1396_rpp_rpc_retirement/TASKS.json": "65dc8ca2aa6af397afb969128ce603cb8c0875af5cb465c7f6da3fc1a52c8baa",
+    "experiments/v1396_rpp_rpc_retirement/campaign.py": "95dfc1fb4da0fd9931f86b80f7177206941d2fb6ef371c16cc8327ff38970e0e",
+    "experiments/v1396_rpp_rpc_retirement/geometry_contract.py": "67446603fed30cb6bfa547f481f8463d2e0dc1644565210807494a3cef1c2d18",
+    "experiments/v1396_rpp_rpc_retirement/qualify_retirement.py": "f80dffa3ba8eb400bbbdb1e889e8324af7ed06ab9bda731606534a84286c1213",
+    "experiments/v1396_rpp_rpc_retirement/component_context.py": "1a04729e684cc3fb0349df145b7827215dc247ff18d20266dbec2e3486e6ad7f",
+    "experiments/v1396_rpp_rpc_retirement/qualify_peer.py": "7ec4e8d5b9882ef0b63ecfda8a5ba0d524fd23a59200762fec00121afc0abab1",
+    "experiments/v1396_rpp_rpc_retirement/audit.py": "68468c106ffae67637f703f2c19f2dbbb8b485953103b4d0a3eec4b85fee59b4",
+    "experiments/v1396_rpp_rpc_retirement/prefix_restore.py": "c4c39bac280fb1f99c227f3abcf8f52bd90f5526a6c6c61d13e98d936f7b0b12",
+    "experiments/v1396_rpp_rpc_retirement/sync_results.py": "64306e9a4fbbb371afb395f8d31d2c0aeacdd9a556fc36acbc28a6a069e718d6",
+    "experiments/v1396_rpp_rpc_retirement/audit_entry.py": "7a35d082d3e007e182dd7f36a4735983e90efa12da4b56a4a71ac825aa62ab78"
+  }
+}

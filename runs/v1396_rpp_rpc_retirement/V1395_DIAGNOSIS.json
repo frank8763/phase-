@@ -1,0 +1,32 @@
+{
+  "original_round": "v1395_full9390_runtime_repair",
+  "error": "AssertionError('RPP_REPLY_WRONG_ACTUAL_STATE')",
+  "reason": "valid delayed reply for an earlier actually observed body must be retired without use; current native incorrectly treats it as malformed source",
+  "before_cleanup_native": 10915,
+  "historical_native": 10775,
+  "new_RPP_native": 140,
+  "new_error_cleanup_native": 200,
+  "actual_total_native": 11115,
+  "own_replay_native": 11115,
+  "own_replay_max_error": 0.0,
+  "native_analytical_native": 68000,
+  "independent_model_audit_native": 0,
+  "failed_audit_reason": "ERROR_STOP_TAIL has no response_membership by design; success-only audit assumed all rows normal",
+  "all_native_evidence_saved": true,
+  "actual_minimum_clearance_m": 0.25003275891123405,
+  "bad_contacts": 0,
+  "stop_tail_recorded_but_full_independent_audit_not_passed": true,
+  "unconsumed_saved_replies": [
+    {
+      "sequence": 41,
+      "native_tick": 10910
+    },
+    {
+      "sequence": 42,
+      "native_tick": 10915
+    }
+  ],
+  "main_passed": false,
+  "repeat_unexecuted": true,
+  "models_during_diagnosis": 0
+}
