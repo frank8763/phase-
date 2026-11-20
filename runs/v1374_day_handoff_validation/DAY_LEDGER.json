@@ -38,7 +38,7 @@
   "canonical_vehicle_initializations": 4,
   "counts_scope": "all closed day batches, historical/native/replay separated",
   "internal_factory_model_constructions": null,
-  "next_zero_model_work": "Bind explicit reverse-intent release request to nominal phase and braking clock; reject subthreshold pre-release commands; no physical execution, no frozen GearHandoff edits",
+  "next_zero_model_work": "Original allocator metadata/encoder/control-memory qualification for the concrete native-clock request schedule; no model or vehicle prediction, no new physical slots",
   "current_physical_jobs": 0,
   "latest_capture": {
     "batch": "v1376_prepared_capture_component",
@@ -50,9 +50,9 @@
   },
   "remaining_component_slots": 0,
   "initialization_accounting": "4 canonical vehicle initializations; internal factory model constructions unknown",
-  "last_supervision_unix": 1795145358.9205534,
-  "latest_zero_model_diagnostic": "docs/TIMED_HANDOFF_V1377_GEAR_CLOCK_DIAGNOSIS.md",
-  "day_storage_bytes_inode_deduplicated": 225887229,
+  "last_supervision_unix": 1795146391.0334864,
+  "latest_zero_model_diagnostic": "docs/TIMED_HANDOFF_V1377_NATIVE_CLOCK_CONTRACT.md",
+  "day_storage_bytes_inode_deduplicated": 226720019,
   "nominal_timed_witnesses_passed": 5,
   "actual_time_and_coupled_response_envelope_qualified": false,
   "allowed_new_physical_scope": "NONE: day component limit 4/4; zero-model saved-data analysis only",
@@ -65,5 +65,11 @@
   "nominal_3p9s_motion_clock_executable": false,
   "source_level_subthreshold_gear_gap_detected": true,
   "zero_model_delayed_tube_lower_m": 0.23772593931909458,
-  "extra_gear_hold_response_qualified": false
+  "extra_gear_hold_response_qualified": false,
+  "software_command_expiry_gear_chain_passed": true,
+  "software_tick_decisions": 935,
+  "software_command_packets": 187,
+  "software_clock_tube_lower_m": 0.237018541000636,
+  "full_pipeline_subthreshold_pass_not_demonstrated": true,
+  "concrete_schedule_allocator_qualified": false
 }
