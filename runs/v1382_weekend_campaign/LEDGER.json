@@ -1,5 +1,5 @@
 {
-  "status": "READY_FOR_FULL9390_ACTUAL_COMPONENT",
+  "status": "ROUND_CLOSED_REVIEW_REQUIRED",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -50,9 +50,26 @@
       "remote_recovery_verified": true,
       "unique_git_head": "650168c6a521797005cd5fa1de64b5b9e60e5a71",
       "transport_duplicates_cleaned": true
+    },
+    {
+      "id": "v1394_full9390_actual",
+      "source_freeze_sha256": "1e3f73cc795c51c40a3b709336f7c1eeba531e5f11f6b9bbb5fb1dfdd3e133e8",
+      "started_unix": 1795179054.652926,
+      "hard_stop_unix": 1795184454.652926,
+      "maximum_tasks": 2,
+      "status": "CLOSED",
+      "closed": true,
+      "passed": false,
+      "completion": "runs/v1394_full9390_actual/COMPLETION.json",
+      "completion_sha256": "f7930946ea7a133c4d8d32b1fb7b07f87a9636ff89429f78b0b9b230773d908a",
+      "stop_reason": "FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE",
+      "source_or_evidence_fault": true,
+      "finalized": true,
+      "full9390_handoff_qualified": false,
+      "archive_index": "runs/v1394_full9390_actual/ARCHIVE_INDEX.json"
     }
   ],
-  "vehicle_task_starts": 2,
+  "vehicle_task_starts": 3,
   "scientific_revisions": 1,
   "review_pending_original_bytes_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
@@ -69,7 +86,7 @@
   "complete_recovery_index": "records/weekend_storage_v1382_20261120/RECOVERY_INDEX.json",
   "old_day_zero_model_closure": "runs/v1390_day_zero_model_closure/FINALIZED.json",
   "active_task": null,
-  "last_round_failure_requires_inspection": false,
+  "last_round_failure_requires_inspection": true,
   "latest_32210_handoff_qualified": true,
   "next_preparation": "V1393 actual RPP physical entry and source qualification; do not launch before remote cleanup and entry readiness",
   "actual_total_native": 67070,
@@ -81,5 +98,27 @@
   "canonical_vehicle_initializations": 2,
   "internal_factory_model_constructions": null,
   "navigation_tasks_started": 0,
-  "full9390_preparation_analytical_native": 517575
+  "full9390_preparation_analytical_native": 517575,
+  "latest_9390_handoff_qualified": false,
+  "actual_total_native_additional_unknown_tasks": [
+    "full9390_main"
+  ],
+  "historical_reconstruction_native_additional_unknown_tasks": [
+    "full9390_main"
+  ],
+  "new_component_native_additional_unknown_tasks": [
+    "full9390_main"
+  ],
+  "own_replay_native_additional_unknown_tasks": [
+    "full9390_main"
+  ],
+  "native_analytical_native_additional_unknown_tasks": [
+    "full9390_main"
+  ],
+  "independent_audit_analytical_native_additional_unknown_tasks": [
+    "full9390_main"
+  ],
+  "canonical_vehicle_initializations_additional_unknown_tasks": [
+    "full9390_main"
+  ]
 }

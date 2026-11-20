@@ -1,0 +1,7 @@
+# OriginalRPP full9390 actual continuation
+
+Main and complete-repeat all gates passed: False. Stop: FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE.
+Registered canonical t0 reconstruction to actual captured10775, then original RPP lookahead.6/speed.1 on unchanged49-point forward segment with actual acquired scan/body and original9360 causal ball; no whole route or24.
+Original .12m/.20rad endpoint, .22m complete current-state200-step braking tube/.15m actual, legal control/slew/contact/root guards, fixed predicted-reference rear2cm/yaw.1rad/time.2s membership, complete200 applied zero tail, own replay and complete pair full state/control/mocap<=1e-8. Passing applies only to this finite saved component. Model error assumptions do not prove universal future response, recursive safety or real-time operation.
+Counts: [{"task": "full9390_main", "passed": false, "actual_total_native": null, "historical_reconstruction_native": null, "new_component_native": null, "own_replay_native": null, "native_analytical_native": null, "analytical_unknown": true, "audit_analytical_native": null, "canonical_vehicle_initializations": null, "internal_factory_model_constructions": null, "position_error_m": null, "heading_error_rad": null, "error": null, "audit_error": null}].
+Unexecuted: ["full9390_repeat"]. Actual originalRPP full9390 qualification=False; original full32210 V1383 is separately qualified. An original-route batch still requires its own preregistration and event-based integration.
