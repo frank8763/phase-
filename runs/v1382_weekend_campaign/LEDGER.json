@@ -1,5 +1,5 @@
 {
-  "status": "CURRENT_MODEL_ORIGIN_QUALIFIED_PREPARING_COMPLETE_WITNESS_ENTRY",
+  "status": "COMPLETE_CLI_QUALIFIED_PREPARING_CURRENT_NATIVE_ROUTE_TRANSACTION",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -145,7 +145,11 @@
       "physical_native": 0,
       "completion": "runs/v1401_model_origin_qualification/COMPLETION.json",
       "finalized": true,
-      "archive_index": "runs/v1401_model_origin_qualification/ARCHIVE_INDEX.json"
+      "archive_index": "runs/v1401_model_origin_qualification/ARCHIVE_INDEX.json",
+      "remote_recovery_verified": true,
+      "unique_git_head": "17813a5f4161f7a41a0cbff6df11436eb3497724",
+      "remote_release": "https://github.com/frank8763/phase-/releases/tag/phase-v1401-model-origin-qualification-20261121",
+      "transport_duplicates_cleaned": true
     }
   ],
   "vehicle_task_starts": 6,
@@ -160,14 +164,14 @@
   "physical_launch_blocker": "Current-event generator CPU2/guard/numerical qualification and actual integrated route entry incomplete; storage recovery still required",
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
   "storage_ready": true,
-  "storage_allocated_bytes": 9905324032,
+  "storage_allocated_bytes": 9865031680,
   "storage_proof": "runs/v1382_weekend_campaign/storage/FINALIZED.json",
   "complete_recovery_index": "records/weekend_storage_v1382_20261120/RECOVERY_INDEX.json",
   "old_day_zero_model_closure": "runs/v1390_day_zero_model_closure/FINALIZED.json",
   "active_task": null,
   "last_round_failure_requires_inspection": false,
   "latest_32210_handoff_qualified": true,
-  "next_preparation": "experiments/v1402_current_witness_evidence/PROTOCOL.md",
+  "next_preparation": "experiments/v1404_route_bridge_session/PROTOCOL.md",
   "actual_total_native": 115880,
   "historical_reconstruction_native": 108300,
   "new_component_native": 7580,
@@ -202,10 +206,11 @@
   ],
   "v1394_original_missing_result_unknown_account_preserved": true,
   "latest_route_preparation_checkpoint": "runs/v1402_current_witness_evidence/PREPARATION_CHECKPOINT.json",
-  "active_zero_model_storage_worker": "runs/v1401_model_origin_qualification/remote_delivery",
+  "active_zero_model_storage_worker": null,
   "latest_model_origin_preparation": "runs/v1401_model_origin_qualification/PREPARATION_CHECKPOINT.json",
   "latest_complete_witness_evidence_preparation": "runs/v1402_current_witness_evidence/PREPARATION_CHECKPOINT.json",
   "model_origin_qualification_analytical_native": 804,
   "latest_model_origin_qualification_passed": true,
-  "latest_closed_transport_recovery": "records/closed_transport_recovery_v1400_20261121/RECOVERY_INDEX.json"
+  "latest_closed_transport_recovery": "records/closed_transport_recovery_v1400_20261121/RECOVERY_INDEX.json",
+  "latest_complete_route_transaction_preparation": "runs/v1404_route_bridge_session/PREPARATION_CHECKPOINT02.json"
 }

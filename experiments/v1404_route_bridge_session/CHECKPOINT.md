@@ -1,0 +1,11 @@
+# V1403/V1404完整入口与当前cusp事务准备
+
+V1403三个实际run_phase CPU2 CLI资格全过：原模型函数导入、构造profile禁止；实际生产ModeledClient在CPU3原RPP peer取得两个回调并完整保存/关闭；模型前注入首错经同finally保存准确0构造/0步及原错。所有0模型积分/物理/重放，不是当前路径数值资格。该源已冻结。
+
+V1404原route_ros真实cusp分支新副本已连接当前完整系数snapshot→独立全周期包络→请求文件通知→native完整owner绑定→不可变certificate提交→原RPP开始/实际完成通知→最后才消费下一段队列。请求文件加SHA解决大系数snapshot重复编码超datagram缓冲的问题，HORIZON规划保持。native后端仍须实现完整当前模型/独立audit/实际逐native执行与原守卫，当前context禁止launch；没有车辆或实际新交接通过。
+
+有限方法分派复用原V1376捕获和原V1378受限转向/20步ready＋完整200停尾，再原V1383 gear释放时钟/速度廓线；反向长度必须在准备及200尾完成后从当时实测后轴到原段目标计算，且不超原已资格长度.3996434672909046m，不是整条path弧长，更不能在准备前借旧值。首软件资格误用path长度/零body导致域拒绝，源码快照和ERROR01保留；entry02按正确阶段/原保存body检验2次时钟平移一致，8身份/次序/完整尾负例拒绝。是有限软件分派资格，不是新科学或实际域资格。旧V1398生成器尚未实现此完整反向方法；native commit明确要求generation.qualified_method匹配，缺失就拒绝，不能拿旧RPP-only证书替代。下一必须新版本接齐模型和实际共享执行，不改旧冻源。
+
+V1401远端归档已全核完成：Git唯一17813a5f4161f7a41a0cbff6df11436eb3497724，Release phase-v1401-model-origin-qualification-20261121；6011成员/40960781B/两块/恢复index实际下载SHA全过，只清已核40.96MB重复运输，所有原packet、804步证据、失败原件保留，禁止重push/重启动/重资格。当前无模型/备份worker运行。
+
+原整路存储仍须重预算：新只读盘点V1122/V1121的zstd旧运输433786295B未与当前freeze/Git同inode，可作为下一有界备份/实际回读候选，未核不能删；已核其local archive/inventory存在，不等于远端恢复证明。不要重启旧storage worker；如接续需新目录/计划/资格/冻结。
