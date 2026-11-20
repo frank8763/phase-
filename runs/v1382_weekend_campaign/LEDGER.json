@@ -1,5 +1,5 @@
 {
-  "status": "SAVED_MODEL_AUDIT_CLOSED_REVIEW_REQUIRED",
+  "status": "SAVED_COMPLETE_SCALAR_MODEL_WITNESS_INDEPENDENTLY_QUALIFIED",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -224,7 +224,9 @@
       "generation_analytical_native": 0,
       "audit_analytical_native": 791940,
       "audit_unknown": false,
-      "physical_native": 0
+      "physical_native": 0,
+      "finalized": true,
+      "archive_index": "runs/v1412_saved_witness_audit/ARCHIVE_INDEX.json"
     }
   ],
   "vehicle_task_starts": 6,
@@ -236,7 +238,7 @@
   "prepared_next_round": null,
   "next_round_qualification": null,
   "qualification_passed": true,
-  "physical_launch_blocker": "Complete scalar method generated; mandatory independent audit unexecuted due stdout JSON failure; actual shared/native/whole route qualification still missing",
+  "physical_launch_blocker": "Current actual native reserve, full physical entry/RPC/method/replay/pair and whole-route budget not yet qualified",
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
   "storage_ready": true,
   "storage_allocated_bytes": 9339875328,
@@ -299,5 +301,8 @@
   "latest_scalar_feedback_complete_preparation": "runs/v1410_scalar_feedback_witness/PREPARATION_CHECKPOINT.json",
   "complete_scalar_feedback_model_generation_native": 791940,
   "complete_scalar_feedback_model_audit_native": 0,
-  "scalar_feedback_saved_generation_independent_audit_native": 791940
+  "scalar_feedback_saved_generation_independent_audit_native": 791940,
+  "latest_complete_saved_scalar_model_witness_qualified": true,
+  "latest_complete_saved_scalar_model_generation": "runs/v1410_scalar_feedback_witness/model/RESULT.json",
+  "latest_complete_saved_scalar_model_independent_audit": "runs/v1412_saved_witness_audit/model/INDEPENDENT_AUDIT.json"
 }
