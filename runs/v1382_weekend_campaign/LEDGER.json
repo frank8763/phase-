@@ -1,5 +1,5 @@
 {
-  "status": "STORAGE_BACKUP_REQUIRED_BEFORE_PHYSICS",
+  "status": "STORAGE_READY_FOR_FIRST_ROUND",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -16,6 +16,11 @@
   "prepared_next_round": "v1383_exact_timed_handoff",
   "next_round_qualification": "runs/v1383_exact_timed_handoff/QUALIFICATION.json",
   "qualification_passed": true,
-  "physical_launch_blocker": "historical backup/readback cleanup to10GiB reserve",
-  "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md"
+  "physical_launch_blocker": null,
+  "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
+  "storage_ready": true,
+  "storage_allocated_bytes": 9656713216,
+  "storage_proof": "runs/v1382_weekend_campaign/storage/FINALIZED.json",
+  "complete_recovery_index": "records/weekend_storage_v1382_20261120/RECOVERY_INDEX.json",
+  "old_day_zero_model_closure": "runs/v1390_day_zero_model_closure/FINALIZED.json"
 }

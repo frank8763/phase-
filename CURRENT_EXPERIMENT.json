@@ -231,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "V1382 autonomous bounded Phase campaign until2026-11-23 09:00; historical backup/readback cleanup first, then qualified frozenV1383 exact-binding original32210 main/success-repeat",
+  "next_scope": "V1383 exact-bound original32210 main and all-gates-success full repeat; storage qualified, original science and old failures retained",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -10524,7 +10524,9 @@
     "ledger": "runs/v1382_weekend_campaign/LEDGER.json",
     "absolute_hard_stop_unix": 1795395600,
     "temporary_storage_cap_bytes": 10737418240,
-    "storage_ready": false,
-    "old_windows_closed": true
-  }
+    "storage_ready": true,
+    "old_windows_closed": true,
+    "storage_allocated_bytes": 9656713216
+  },
+  "latest_old_day_closure": "runs/v1390_day_zero_model_closure/FINALIZED.json"
 }
