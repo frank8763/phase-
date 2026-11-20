@@ -2136,3 +2136,7 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1380已一次后台启动pid561764，15:43:40/原17:00绝对+boot/monotonic，源a019bd6c；仅补充原32210完整交接main成功全重复最多2，原4/4不翻，full9390仍false、不整路24。6保存组/4完整入口全过、所有source SHA固定，实际每native当前memory完整200刹停证书及全尾重放/模型审核由离线驱动执行；首失败/异常停、运行不修补。只看紧凑ACTIVE/PARTIAL，勿再launch，见runs/v1380_timed_handoff_component/LAUNCH.json。
 
 - V1380已首次来源/状态异常封账，main32211actual历史/ownreplay误差0、新交接0，repeat未执行；native普通prefix_restore导入被native_component预先缓存V1372同名模块劫持，未恢复原parked mode，32211ctrl差.002009783/qpos.000185544/qvel.018554390，mocap0，原全状态门正确拒绝。cleanup原200模型刹停tube.212985<.22亦拒绝追加积分，不冒称实际碰撞或200实际尾完成。科学NOT_PASSED保持，归档SHA回读FINALIZED非验收；唯一sync远端fbfed272已确认，未下载恢复不删/不再push。日原4+补充1=5尝试/0导航，96811actual=92591历史+4220新、96811自身重放、5初始化内部未知；本批解析200/独立分析0，V1379另190600已知+1未知<=3730。V1381纯零模型真实导入红例拒绝→私有exact importlib路径9函数身份绿例过，原源码/入口不修改不重启。REVIEW_PENDING原字节/空闲锁，17点只零模型收尾，full9390/32210 false。docs/TIMED_HANDOFF_V1380_FAILURE_DIAGNOSIS.md。
+
+- 用户联网有电全权接力，并明确确认2026-11-23周一09:00/1795395600截止。新V1382总协议允许逐轮检查、证据支持修订后另版短批，不翻旧失败/旧17点窗口；10GiB总临时证据、每轮先备份实际下载/解压SHA才清理。当前既有runs约22GiB，历史归档worker单次后台进行，未核完与空间准入前0新物理。V1383仅新生产入口精确绑定修复，冻结后零模型资格；原32210主全门过才完整重复，full9390/full32210仍false，不重复已有RPCCR24冒称未见确认。见experiments/v1382_weekend_campaign/PROTOCOL.md。
+
+- V1383原生产入口9函数身份及7保存/时序/几何/负例组、4真实CPU2/生产JSON/守卫入口已全过；资格父进程路径污染拒绝另存V1384零模型接续，冻源未改，0新模型/物理。所有新增资格源原字节副本纳入待归档来源。当前只存储备份/远端下载SHA清理准入阻塞，仍禁止launch；V1382总截止周一09点，原full9390/32210 false。docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md。

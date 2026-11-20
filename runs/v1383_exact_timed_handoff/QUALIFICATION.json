@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_saved32600_and_original32200": true,
+    "full_saved_gear_metadata_exact": true,
+    "actual_callback_release_request_clock_and200tail_equivalent": true,
+    "full_response_geometry_matches_braking_qualification": true,
+    "continuous_full_footprint_corner_support_bound": true,
+    "bad_response_and_no_authority_refused": true,
+    "exact_production_callable_sources": true
+  },
+  "negative_cases": [
+    "position",
+    "yaw",
+    "time",
+    "disabled_model_authority"
+  ],
+  "entries": [
+    {
+      "label": "backend",
+      "proof": {
+        "passed": true,
+        "actual_renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+        "backend": {
+          "passed": true,
+          "actual_context_module": "mujoco.osmesa",
+          "actual_OpenGL_dispatch_module": "OpenGL.platform.osmesa",
+          "hardware_GPU_used": false,
+          "legacy_environment_label_restored": true
+        },
+        "models": 0,
+        "native_integrations": 0
+      }
+    },
+    {
+      "label": "native",
+      "proof": {
+        "passed": true,
+        "production_callable_sources": {
+          "restore": "experiments/v1383_exact_timed_handoff/prefix_restore.py",
+          "Capture": "experiments/v1383_exact_timed_handoff/controller.py",
+          "Geometry": "experiments/v1383_exact_timed_handoff/geometry_contract.py",
+          "membership": "experiments/v1383_exact_timed_handoff/geometry_contract.py",
+          "certify": "experiments/v1383_exact_timed_handoff/reserve.py",
+          "SampleCache": "experiments/v1383_exact_timed_handoff/frames.py",
+          "wire_packet": "experiments/v1383_exact_timed_handoff/frames.py",
+          "GearHandoff": "experiments/v1383_exact_timed_handoff/gear_handoff.py",
+          "before_step": "experiments/v1383_exact_timed_handoff/stamped_contract.py"
+        },
+        "models": 0,
+        "physical_native": 0
+      }
+    },
+    {
+      "label": "producer",
+      "proof": {
+        "passed": true,
+        "whole_actual_audit_roundtrip": true,
+        "models": 0
+      }
+    },
+    {
+      "label": "guard",
+      "proof": {
+        "passed": true,
+        "checks": {
+          "APPLIED_JOURNAL.json": true,
+          "RESULT.json": true,
+          "OBSERVATIONS_SENT.jsonl": true,
+          "RECEIVED_COMMANDS.jsonl": true,
+          "FRESHNESS_REJECTIONS.json": true,
+          "physics/PATCHED_ASSEMBLY.xml": true,
+          "physics/MODEL_BUILD_CONTRACT.json": true,
+          "physics/SETUP.json": true,
+          "physics/INITIAL_STATE.npz": true,
+          "old_metadata_root": true,
+          "parent_traversal_outside_legacy_root": true,
+          "outside_mkdir": true,
+          "outside_rename": true,
+          "symlink_write_escape": true
+        },
+        "production_guard_function_executed": true,
+        "guard_root_broadened": false,
+        "models": 0,
+        "physical_native": 0
+      }
+    }
+  ],
+  "full_tube_lower_m": 0.2237288882916815,
+  "maximum_support_bound_violation_m": 0.0,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "tested_source_hashes": {
+    "experiments/v1383_exact_timed_handoff/evidence_io.py": "fe0e6d133ea0a2631846c6a909acb5a3afb21f3ad77646cbfb9aeddd71cd9d97",
+    "experiments/v1383_exact_timed_handoff/stamped_contract.py": "5b07af25be5eb7519806235da826d763336ea5c14975e6250c041100f83af958",
+    "experiments/v1383_exact_timed_handoff/gear_handoff.py": "7f732f6609c357d0ed97fe968849fc3b6f9d5b825fdceb10a631ba7736e412e7",
+    "experiments/v1383_exact_timed_handoff/native.py": "1d4528aa465bdcb7699d9e714559a7ef41beee071617f65bcd09883cd0adb5ad",
+    "experiments/v1383_exact_timed_handoff/frames.py": "351dda8f5782ae586db9165301d4d75418122d30e9ffcd82adf0a07b74f725c7",
+    "experiments/v1383_exact_timed_handoff/finalize.py": "723ffd93ebcdf25409059b4a88e79acbaa0534e801dda0d2292067e9f855e666",
+    "experiments/v1383_exact_timed_handoff/backend_check.py": "4a5244e44753991a65c326f93020a013e651b29a2539c3f0fa46393ec93f3af5",
+    "experiments/v1383_exact_timed_handoff/controller.py": "71c04c4c738d11bcbf37fb5b0c6b62521b6ecf443445659075be6172b6794b84",
+    "experiments/v1383_exact_timed_handoff/start.py": "bd484c9e525295deb921338e3d53a4d691115540659a8440d016523159ff72ed",
+    "experiments/v1383_exact_timed_handoff/qualify.py": "b0f04c134352a03197a64bb96a5b8287fcb3031e30a0aa96e7ed4f91cb5a364b",
+    "experiments/v1383_exact_timed_handoff/reserve.py": "334ce5a0fa812f8fcc7cb79bae70b082d66e8b39f4cfda27ccd270eb865f8932",
+    "experiments/v1383_exact_timed_handoff/campaign.py": "c43106ef033afd5f0fc1c5bd8a80c7864d6ac6465ec19efa1a3068e93eeb7525",
+    "experiments/v1383_exact_timed_handoff/geometry_contract.py": "463a7787222b9bea6a45eea4aaf48dbb39733cb5116214109a7ea5b8f6d8f420",
+    "experiments/v1383_exact_timed_handoff/component_context.py": "32cadf052a6309bc368e448cad88db2a5e979949e8adcc9b9f6ea1c0a71588bb",
+    "experiments/v1383_exact_timed_handoff/audit.py": "09efaad498f88cf71da84be8739a79b4fea1f7fb02cf31029bd5a8a7bb3afd5c",
+    "experiments/v1383_exact_timed_handoff/prefix_restore.py": "5d9ef9ded95dfcc4c9c6c58b6dc10b425dd4c68b7ceef20064e5fb13ae7dc3ee",
+    "experiments/v1383_exact_timed_handoff/sync_results.py": "d6c4a7ed249c464433ad639d6ea270367050b8484d50ab8b663040b89ea3f0be",
+    "experiments/v1383_exact_timed_handoff/audit_entry.py": "7a35d082d3e007e182dd7f36a4735983e90efa12da4b56a4a71ac825aa62ab78",
+    "experiments/v1384_production_entry_qualification/SOURCE_FREEZE.json": "765524984e218a1d071ae3b562c8184ef0b4b5d14a5a8780dbe5cb8418240c65",
+    "experiments/v1384_production_entry_qualification/qualify.py": "5a77c7564d6f63bf0b5044923f4470265973752e52c6188a8979b86dca2c0556",
+    "experiments/v1384_production_entry_qualification/PROTOCOL.md": "fd1ae573f84e030a48ac196493c7d113e6fffed27501aff86d77d914d3854625"
+  }
+}

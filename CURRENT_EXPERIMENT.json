@@ -7,7 +7,7 @@
   "active_run": null,
   "active_window": null,
   "active_entrypoint": null,
-  "automatic_additional_simulation": false,
+  "automatic_additional_simulation": true,
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
@@ -231,7 +231,7 @@
     "does_not_shorten_any_safety_or_physical_evidence_gate": true,
     "no_new_physical_window": true
   },
-  "next_scope": "V1380 source/state-prefix binding failure closed; no restart or repeat. V1381 zero-model exact-source binding demonstrated; preserve17:00 closure, full9390/full32210 still unqualified.",
+  "next_scope": "V1382 autonomous bounded Phase campaign until2026-11-23 09:00; historical backup/readback cleanup first, then qualified frozenV1383 exact-binding original32210 main/success-repeat",
   "pending_entry_relay": {
     "prepared": true,
     "source": "experiments/v1085_pose_entry_relay",
@@ -10518,5 +10518,13 @@
     "physical_entry_patched": false,
     "new_physical_authority": false,
     "report": "docs/TIMED_HANDOFF_V1380_FAILURE_DIAGNOSIS.md"
+  },
+  "weekend_campaign": {
+    "authority": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
+    "ledger": "runs/v1382_weekend_campaign/LEDGER.json",
+    "absolute_hard_stop_unix": 1795395600,
+    "temporary_storage_cap_bytes": 10737418240,
+    "storage_ready": false,
+    "old_windows_closed": true
   }
 }
