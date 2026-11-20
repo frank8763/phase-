@@ -1,0 +1,32 @@
+{
+  "recorded_unix": 1795194347.9778512,
+  "round_closed": true,
+  "model_functional_result": false,
+  "stop_reason": "CURRENT_NOMINAL_LIMIT_REFUSAL",
+  "generation_analytical_native": 904500,
+  "generation_inflight_unknown": false,
+  "nominal_native": 4500,
+  "complete200_braking_branches": 4500,
+  "explicit_predictor_constructions": 1,
+  "internal_allocator_constructions": null,
+  "independent_model_audit_native": 0,
+  "independent_model_audit_unexecuted": true,
+  "physical_native": 0,
+  "actual_replay_native": 0,
+  "scientific_revision": 2,
+  "cause": "Current generator exposes p.front/p.front_rate as feedback, but original <=0.1m/s scalar-model step updates state[6:8] while dual-front cache only advances in the separate0.125m/s episode. PREPARE_FORWARD therefore receives unchanged original wheel angles and never releases, although modeled scalar steering reaches its target.",
+  "evidence": {
+    "phases": {
+      "REVERSE_ARC": 285,
+      "BRAKE_REVERSE": 200,
+      "PREPARE_FORWARD": 4015
+    },
+    "RPP_commands": 0,
+    "stored_preparation_angle_error_rad": 0.18530606004674766,
+    "last_scalar_delta": -0.29145679447786693,
+    "target_delta": -0.2914567944778671
+  },
+  "model_envelope_or_RPP_algorithm_failure_established": false,
+  "original_physical_component_results_unchanged": true,
+  "next": "New explicit scalar-coordinate model feedback adapter, preserving exact measured origin and finite model assumptions; saved-state reconstruction qualification against original V1393 coordinate formula; do not modify/restart V1408 or raise budgets/thresholds."
+}
