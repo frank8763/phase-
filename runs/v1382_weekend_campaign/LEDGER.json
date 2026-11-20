@@ -1,5 +1,5 @@
 {
-  "status": "ROUND_CLOSED_REVIEW_REQUIRED",
+  "status": "READY_FOR_FULL9390_RUNTIME_REPAIR_NEW_ROUND",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -66,7 +66,18 @@
       "source_or_evidence_fault": true,
       "finalized": true,
       "full9390_handoff_qualified": false,
-      "archive_index": "runs/v1394_full9390_actual/ARCHIVE_INDEX.json"
+      "archive_index": "runs/v1394_full9390_actual/ARCHIVE_INDEX.json",
+      "remote_recovery_verified": true,
+      "scientific_component_tested": false,
+      "source_derived_actual_native": 10975,
+      "source_derived_historical_native": 10775,
+      "source_derived_new_cleanup_native": 200,
+      "source_derived_analytical_native": 40000,
+      "own_replay_native": 0,
+      "full_native_evidence_saved": false,
+      "full_tail_independently_verified": false,
+      "initial_error_unknown": true,
+      "diagnostic": "runs/v1395_full9390_runtime_repair/V1394_SOURCE_DERIVED_ACCOUNTING.json"
     }
   ],
   "vehicle_task_starts": 3,
@@ -75,8 +86,8 @@
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
   "models_now_authorized": false,
   "preexisting_runs_allocated_bytes": 23690563584,
-  "prepared_next_round": "v1394_full9390_actual",
-  "next_round_qualification": "runs/v1394_full9390_actual/QUALIFICATION.json",
+  "prepared_next_round": "v1395_full9390_runtime_repair",
+  "next_round_qualification": "runs/v1395_full9390_runtime_repair/QUALIFICATION.json",
   "qualification_passed": true,
   "physical_launch_blocker": null,
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
@@ -86,16 +97,16 @@
   "complete_recovery_index": "records/weekend_storage_v1382_20261120/RECOVERY_INDEX.json",
   "old_day_zero_model_closure": "runs/v1390_day_zero_model_closure/FINALIZED.json",
   "active_task": null,
-  "last_round_failure_requires_inspection": true,
+  "last_round_failure_requires_inspection": false,
   "latest_32210_handoff_qualified": true,
   "next_preparation": "V1393 actual RPP physical entry and source qualification; do not launch before remote cleanup and entry readiness",
-  "actual_total_native": 67070,
-  "historical_reconstruction_native": 65200,
-  "new_component_native": 1870,
+  "actual_total_native": 78045,
+  "historical_reconstruction_native": 75975,
+  "new_component_native": 2070,
   "own_replay_native": 67070,
-  "native_analytical_native": 374000,
+  "native_analytical_native": 414000,
   "independent_audit_analytical_native": 374000,
-  "canonical_vehicle_initializations": 2,
+  "canonical_vehicle_initializations": 3,
   "internal_factory_model_constructions": null,
   "navigation_tasks_started": 0,
   "full9390_preparation_analytical_native": 517575,
@@ -120,5 +131,6 @@
   ],
   "canonical_vehicle_initializations_additional_unknown_tasks": [
     "full9390_main"
-  ]
+  ],
+  "v1394_original_missing_result_unknown_account_preserved": true
 }
