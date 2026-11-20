@@ -1,5 +1,5 @@
 {
-  "status": "PREPARING_FULL9390_RESPONSE_ENTRY",
+  "status": "FULL9390_ANALYSIS_PASSED_PHYSICAL_ENTRY_PENDING",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -28,10 +28,29 @@
       "remote_release": "https://github.com/frank8763/phase-/releases/tag/phase-v1383-exact-timed-handoff-20261120",
       "unique_git_head": "c46796e947b6ed5e5be37c5141306b7592b434c4",
       "transport_duplicates_cleaned": true
+    },
+    {
+      "id": "v1393_analysis01",
+      "kind": "analytical_preparation",
+      "status": "CLOSED",
+      "source_freeze_sha256": "10fcc5d0003a47be2ddf666ccb59a1c243eac9cee7c85d9631ce8d0685d9d214",
+      "started_unix": 1795177271.316051,
+      "hard_stop_unix": 1795182671.316051,
+      "maximum_analytical_steps": 650000,
+      "maximum_vehicle_tasks": 0,
+      "closed": true,
+      "passed": true,
+      "completion": "runs/v1393_full9390_preparation/ANALYSIS_COMPLETION.json",
+      "analytical_native": 517575,
+      "analytical_unknown": false,
+      "physical_native": 0,
+      "finalized": true,
+      "archive_index": "runs/v1393_full9390_preparation/ARCHIVE_INDEX.json",
+      "physical_admission": false
     }
   ],
   "vehicle_task_starts": 2,
-  "scientific_revisions": 0,
+  "scientific_revisions": 1,
   "review_pending_original_bytes_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
   "models_now_authorized": false,
@@ -49,7 +68,7 @@
   "active_task": null,
   "last_round_failure_requires_inspection": false,
   "latest_32210_handoff_qualified": true,
-  "next_preparation": "experiments/v1393_full9390_preparation/PROTOCOL.md",
+  "next_preparation": "V1393 actual RPP physical entry and source qualification; do not launch before remote cleanup and entry readiness",
   "actual_total_native": 67070,
   "historical_reconstruction_native": 65200,
   "new_component_native": 1870,
@@ -58,5 +77,6 @@
   "independent_audit_analytical_native": 374000,
   "canonical_vehicle_initializations": 2,
   "internal_factory_model_constructions": null,
-  "navigation_tasks_started": 0
+  "navigation_tasks_started": 0,
+  "full9390_preparation_analytical_native": 517575
 }
