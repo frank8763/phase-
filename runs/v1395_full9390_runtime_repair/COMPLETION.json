@@ -1,0 +1,87 @@
+{
+  "passed": false,
+  "closed": true,
+  "results": [
+    {
+      "task": "full9390_main",
+      "passed": false,
+      "returncode": 1,
+      "native": {
+        "passed": false,
+        "canonical_vehicle_initializations": 1,
+        "internal_factory_model_constructions": null,
+        "private_mujoco_native": 0,
+        "own_replay_native": 11115,
+        "training_updates": 0,
+        "analytical_native": 68000,
+        "original_goal_navigation": false,
+        "producer_python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+        "producer_numpy": "2.2.6",
+        "scope": "same9390 complete forward next-segment originalRPP, no whole route",
+        "analytical_step_inflight_unknown": false,
+        "error": "AssertionError('RPP_REPLY_WRONG_ACTUAL_STATE')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1395_full9390_runtime_repair/native.py\", line 113, in run\n    reply,wire=request_command()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1395_full9390_runtime_repair/native.py\", line 103, in request_command\n    source=sent[reply['sequence']];assert source['native_tick']==v.count,'RPP_REPLY_WRONG_ACTUAL_STATE'\nAssertionError: RPP_REPLY_WRONG_ACTUAL_STATE\n",
+        "error_stop_tail_completed": true,
+        "peer_close_errors": [],
+        "actual_total_native": 11115,
+        "historical_prefix_replay_native": 10775,
+        "new_component_native": 340,
+        "model_native_inflight_unknown": false,
+        "physical": {
+          "actual_native": 11115,
+          "fully_recorded_native": 11115,
+          "minimum_actual_clearance_m": 0.25003275891123405,
+          "minimum_self_margin_m": 0.009164030816348478,
+          "bad_contacts": 0,
+          "final_body": [
+            0.4213226140072607,
+            -0.864464319908089,
+            -0.09023815004165327,
+            2.720630218538339e-07,
+            -5.560461054082517e-07
+          ],
+          "final_translation_speed_m_s": 8.413290323020863e-07,
+          "root_guard_native_count": 11115,
+          "goal_distance_m": 3.754513698706881,
+          "first_actor_detection": {
+            "native_tick": 4475,
+            "sim_time": 44.749999999999666,
+            "xy": [
+              0.03950796611406217,
+              -0.7293178242086084
+            ],
+            "rays": [
+              29
+            ],
+            "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+          },
+          "actual_travel_after_detection_m": 1.8143878260059267
+        },
+        "evidence_saved": true,
+        "independent_allocation": {
+          "passed": true,
+          "control_error": 0.0,
+          "memory_error": 0.0
+        },
+        "replay": {
+          "replay_native": 11115,
+          "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+          "contact_mismatched_ticks": 0,
+          "passed": true
+        },
+        "closed": true,
+        "wall_s": 30.42357116600033,
+        "source_unchanged": true
+      },
+      "audit_returncode": 1
+    }
+  ],
+  "unexecuted": [
+    "full9390_repeat"
+  ],
+  "new_navigation": 0,
+  "stop_reason": "FIRST_FUNCTIONAL_SAFETY_SOURCE_OR_EVIDENCE_FAILURE",
+  "closed_unix": 1795179479.495375,
+  "source_unchanged": true,
+  "review_pending_restored": true
+}

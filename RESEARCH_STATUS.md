@@ -2164,3 +2164,5 @@ V7409固定分支，73−8完成一次观察与后续实际约.270m净进展，�
 - V1394原9390完整前进段实际main/repeat全门=False，未执行['full9390_repeat']，原RPP/真实扫描/固定响应/完整200尾/源状态审核结果按保存记录，非原整路或24。docs/FULL9390_ACTUAL_V1394_REPORT.md。
 
 - V1394实际入口失败已闭/重复未执行，原10775历史前缀全state误差0，但RPP续行0；初始异常被finally未初始化target掩盖，原值未知。FINAL_PACKET10975与完成源分支精确推导10775历史+200错误停机/40000解析，规范初始化1/内部未知、0自身重放/独立模型审核；缺journal/trace/RESULT，不能称完整停尾或实际安全/功能审核过。原缺失账与5dfa2389唯一远端/6094成员恢复核保持。V1395仅修canonical cwd短相对Unix端点/初始化端点/异常关闭不掩盖和首错早保存，新真实隔离cwd socket ENOENT红例→canonical socket实收绿例、完整生产finally早异常仍落RESULT/journal资格通过；原科学不改，10775保存/2576参考/6wire负例/4真实入口再次全过，0补跑/0新模型。新独立轮待一次launch，旧失败不重启。
+
+- V1395原9390完整前进段实际main/repeat全门=False，未执行['full9390_repeat']，原RPP/真实扫描/固定响应/完整200尾/源状态审核结果按保存记录，非原整路或24。docs/FULL9390_ACTUAL_V1395_REPORT.md。
