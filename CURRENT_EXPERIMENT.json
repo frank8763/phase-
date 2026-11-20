@@ -5407,7 +5407,7 @@
     "physical_eligible": false,
     "report": "docs/RPCCR_REFUGE_ONWARD_V1201_V1202_REPORT.md"
   },
-  "current_software_focus": "docs/TIMED_HANDOFF_V1377_NATIVE_CLOCK_CONTRACT.md",
+  "current_software_focus": "docs/TIMED_HANDOFF_V1377_ALLOCATOR_METADATA.md",
   "latest_v1203": {
     "closed": true,
     "software_entry_cases": 8,
@@ -10451,7 +10451,7 @@
     "static_body14_interval_checks_passed": true,
     "full_segment_all_future_geometry_passed": false,
     "full_timed_motion_qualified": false,
-    "report": "docs/TIMED_HANDOFF_V1377_NATIVE_CLOCK_CONTRACT.md",
+    "report": "docs/TIMED_HANDOFF_V1377_ALLOCATOR_METADATA.md",
     "nominal_timed_witnesses_passed": 5,
     "actual_time_and_coupled_response_envelope_qualified": false,
     "conditional_pose_tube_geometry_passed": true,
@@ -10463,8 +10463,12 @@
     "software_command_expiry_gear_chain_passed": true,
     "software_native_clock_tube_lower_m": 0.237018541000636,
     "complete_physical_admission": false,
-    "concrete_schedule_allocator_qualified": false,
-    "isolated_gear_probe_not_full_pipeline_evidence": true
+    "concrete_schedule_allocator_qualified": true,
+    "isolated_gear_probe_not_full_pipeline_evidence": true,
+    "allocator_qualification_scope": "controller metadata only; actual moving response remains unqualified",
+    "allocator_saved_control_memory_error": 6.661338147750939e-16,
+    "allocator_metadata_calls": 935,
+    "actual_moving_response_qualified": false
   },
   "latest_v1378": {
     "closed": true,
