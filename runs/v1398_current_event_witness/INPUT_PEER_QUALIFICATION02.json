@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "closed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "fixture_not_new_measured_state": true,
+  "physical_admission": false,
+  "complete_model_backend_qualified": false,
+  "mode_transition_cases": 3,
+  "negative_cases": [
+    "missing_canonical_mode_history",
+    "mode_history_gap",
+    "parked_drive",
+    "active_without_parked_mode",
+    "changed_coefficient_same_tick",
+    "old_full_state_frame",
+    "changed_root_state",
+    "changed_owner_gear",
+    "changed_owner_mode",
+    "unbound_input",
+    "actual_frame_in_modeled_peer",
+    "before_event_origin"
+  ],
+  "full_origin_readonly_binding": true,
+  "real_original_plugin_callback": true,
+  "modeled_native_origin_without_saved_tick": 300,
+  "no_synthetic_scan_publisher": true,
+  "replies": [
+    {
+      "kind": "ORIGINAL_RPP_MODELED_COMMAND",
+      "input_sha256": "bddb54f6e764d2fa376befaf7ad6f8357c452c733dd5c3443500ab5df526fbb6",
+      "run_id": "v1398-modeled-peer-interface-only",
+      "sequence": 8,
+      "native_tick": 300,
+      "body": [
+        0.32972170416559987,
+        -0.8391911158333963,
+        -0.04848854292733495,
+        6.836654086892586e-06,
+        -3.542137079509386e-06
+      ],
+      "v": 0.07891489319237059,
+      "w": -0.05978400999422014,
+      "origin": {
+        "kind": "NAV2_STAMPED",
+        "stamp_ns": 1795188558634645243,
+        "receipt_ros_ns": 1795188558635834919,
+        "receipt_monotonic": 310309.081337029,
+        "generated_monotonic": 310309.080147353,
+        "receipt_age_s": 0.001189676
+      },
+      "first_tf_ros_ns": 1795188558606616603,
+      "command_ros_ns": 1795188558634645243,
+      "reply_monotonic": 310309.081337029,
+      "not_measured_response": true
+    },
+    {
+      "kind": "ORIGINAL_RPP_MODELED_COMMAND",
+      "input_sha256": "bddb54f6e764d2fa376befaf7ad6f8357c452c733dd5c3443500ab5df526fbb6",
+      "run_id": "v1398-modeled-peer-interface-only",
+      "sequence": 9,
+      "native_tick": 300,
+      "body": [
+        0.32972170416559987,
+        -0.8391911158333963,
+        -0.04848854292733495,
+        6.836654086892586e-06,
+        -3.542137079509386e-06
+      ],
+      "v": 0.07891489319237059,
+      "w": -0.05978400999422014,
+      "origin": {
+        "kind": "NAV2_STAMPED",
+        "stamp_ns": 1795188558684653218,
+        "receipt_ros_ns": 1795188558685345415,
+        "receipt_monotonic": 310309.13084515,
+        "generated_monotonic": 310309.130152953,
+        "receipt_age_s": 0.0006921970000000001
+      },
+      "first_tf_ros_ns": 1795188558666637097,
+      "command_ros_ns": 1795188558684653218,
+      "reply_monotonic": 310309.13084515,
+      "not_measured_response": true
+    }
+  ],
+  "peer_result": {
+    "passed": true,
+    "models": 0,
+    "physical_native": 0,
+    "analytical_native": 0,
+    "physical_admission": false,
+    "synthetic_scan_messages": 0,
+    "fixture_or_model_only": true,
+    "original_plugin_loaded": true,
+    "original_parameters_sha256": "7e47bf6e3d209f8fcc36472278633de9a0227f415fc4ed275d2a19b58938f41d",
+    "causal_ball_raster_cells": 436,
+    "closed": true,
+    "wall_s": 0.8525600510183722,
+    "commands": 2,
+    "controller_exited": true
+  },
+  "closed_unix": 1795188559.1536887
+}
