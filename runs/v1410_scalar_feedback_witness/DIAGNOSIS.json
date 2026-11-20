@@ -1,0 +1,18 @@
+{
+  "recorded_unix": 1795195648.1386158,
+  "closed": true,
+  "batch_passed": false,
+  "generation_persisted_checks_passed": true,
+  "generation_analytical_native": 791940,
+  "nominal_native": 3940,
+  "complete200_braking_origins": 3940,
+  "independent_audit_native": 0,
+  "independent_audit_unexecuted": true,
+  "physical_native": 0,
+  "error": "TypeError: Object of type bool is not JSON serializable",
+  "origin": "production_entry.py final plain json.dumps(stdout), after durable atomic RESULT and complete evidence save",
+  "source_of_numpy_bool": "checks include bool from abs(p.adapter.last[2:]).max()<=1e-10; original io.atomic has NumPy default conversion; final plain stdout serializer does not",
+  "numerical_infeasibility_demonstrated": false,
+  "next": "Archive closed original source and all saved evidence. New serialization-only entry may independently audit these saved generated arrays under separate registered bounded round; no generation replay/restart is needed.",
+  "sources_unchanged": true
+}

@@ -2198,3 +2198,5 @@ V1408闭批本地归档6077成员/49325715B原源/输入/失败证据及全部�
 V1408唯一Git push/ref已确认c8ef04d1725f0345350fde6496e099be3dd5961f，不再push；失败证据6077成员49.33MB首次递送单后台pid744014，状态remote_delivery/CLAIM/ERROR/FINALIZED及FULL_REMOTE_VERIFIED，先看不重复launch。V1410新generator/audit已共同接V1409当前标量坐标getter（含私有分支绑定/停车轮速），原物理/模型状态/参数/控制/门均不改；3真实生产CPU2/run_phase/原RPP RPC/首错准确0资格过，DEPENDENCY_SOURCE_FREEZE显式含getter及4501保存映射源；仍0新数值/物理，下一同原4500/904500上限另轮准备，不重启V1408或扩大额度。
 
 V1408失败原源/输入/全部流证据6077成员49.33MB已完整远端实际块/成员/整流/index SHA通过，唯一Git c8ef04d1/Release phase-v1408-saved-capture-model-failure-20261121，只清已核运输part，所有失败原件保留，worker744014已完成；禁止重push/重launch。当前无模型运行，V1410准备下一新来源接口数值资格。
+
+V1410新标量反馈完整组合生成已保存3940名义+3940×200=791940精确解析，8生成门true、原RPP2360/共享桥1580，端误差.072732850m/.070577927rad、全tube.230417726/最低刹停.231019044；但生产最后stdout plain JSON不支持NumPy bool，exit1整批false、独立audit依赖未执行0，原冻源/失败不重启。科学修订3/物理115880等原账不变。先备份完整证据后可新登记只审核这些已保存数组，不能重复生成冒充新进展。V1411新当前reserve/原物理guard/证据sink/native源码已接齐，apply不额外scan，外层原5native真实采样；尚未资格/不许车辆launch。见docs/SCALAR_FEEDBACK_MODEL_V1410_REPORT.md。

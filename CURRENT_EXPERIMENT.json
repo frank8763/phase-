@@ -241,7 +241,7 @@
     "approved": true,
     "exhausted": true
   },
-  "active_zero_model_diagnostic": "experiments/v1410_scalar_feedback_witness",
+  "active_zero_model_diagnostic": "runs/v1411_native_guarded_execution/PREPARATION_CHECKPOINT.json",
   "latest_functional_main": {
     "version": "v1085_entry",
     "fresh_start": true,
@@ -10677,5 +10677,24 @@
   "latest_lossless_branch_storage_qualification": "runs/v1407_lossless_branch_stream/QUALIFICATION.json",
   "latest_complete_saved_capture_model_round": "runs/v1408_saved_capture_witness/RUNNING_CHECKPOINT.json",
   "latest_scalar_steering_coordinate_preparation": "runs/v1409_scalar_steering_feedback/PREPARATION_CHECKPOINT.json",
-  "latest_scalar_feedback_complete_preparation": "runs/v1410_scalar_feedback_witness/PREPARATION_CHECKPOINT.json"
+  "latest_scalar_feedback_complete_preparation": "runs/v1410_scalar_feedback_witness/PREPARATION_CHECKPOINT.json",
+  "next_physical": false,
+  "latest_v1410": {
+    "recorded_unix": 1795195648.1386158,
+    "closed": true,
+    "batch_passed": false,
+    "generation_persisted_checks_passed": true,
+    "generation_analytical_native": 791940,
+    "nominal_native": 3940,
+    "complete200_braking_origins": 3940,
+    "independent_audit_native": 0,
+    "independent_audit_unexecuted": true,
+    "physical_native": 0,
+    "error": "TypeError: Object of type bool is not JSON serializable",
+    "origin": "production_entry.py final plain json.dumps(stdout), after durable atomic RESULT and complete evidence save",
+    "source_of_numpy_bool": "checks include bool from abs(p.adapter.last[2:]).max()<=1e-10; original io.atomic has NumPy default conversion; final plain stdout serializer does not",
+    "numerical_infeasibility_demonstrated": false,
+    "next": "Archive closed original source and all saved evidence. New serialization-only entry may independently audit these saved generated arrays under separate registered bounded round; no generation replay/restart is needed.",
+    "sources_unchanged": true
+  }
 }
