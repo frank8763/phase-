@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING_FROZEN_CAPTURE",
+  "status": "PREPARED_FORWARD_STEERING_CAPTURE_READY",
   "human_authority": "继续下一步的实验，然后开启监督的运行检查时间，继续推进实验，今天白天都这样安排",
   "recorded_unix": 1795139465.0648975,
   "absolute_model_hard_stop_unix": 1795165200,
@@ -14,7 +14,7 @@
   "model_initializations": 0,
   "actual_native": 0,
   "private_model_native": 0,
-  "own_replay_native": 0,
+  "own_replay_native": 10450,
   "physical_entry_ready": true,
   "allowed_saved_ticks": [
     9390,
@@ -24,10 +24,19 @@
   "physical_scope_authorized_conditionally": true,
   "stage_access": false,
   "old_windows_not_reopened": true,
-  "next_batch": "v1375_actual_capture_component",
+  "next_batch": "v1376_prepared_capture_component",
   "capture_qualification_passed": true,
   "full9390_handoff_qualified": false,
   "full32210_handoff_qualified": false,
-  "active_batch": "v1375_actual_capture_component",
-  "active_task": "capture_main"
+  "active_batch": null,
+  "active_task": null,
+  "capture_component_passed": false,
+  "safety_or_evidence_fault_stops_today_physics": false,
+  "zero_model_designs_registered": 3,
+  "new_candidate": "BRAKE_THEN_MEASURED_FORWARD_STEERING_BEFORE_DRIVE",
+  "actual_total_native": 10450,
+  "historical_prefix_replay_native": 9390,
+  "new_component_native": 1060,
+  "canonical_vehicle_initializations": 1,
+  "counts_scope": "closed V1375 only; running future batch keeps its own live counts"
 }
