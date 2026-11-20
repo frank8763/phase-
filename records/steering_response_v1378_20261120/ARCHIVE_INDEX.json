@@ -1,0 +1,951 @@
+{
+  "files": [
+    {
+      "path": "experiments/v1378_steering_response_32210/ENTRY.json",
+      "bytes": 3952,
+      "sha256": "0d47629ea630ab361e01d919bd1c84471571063fd6f3831a3c3ee7ed7691bd27"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/PROTOCOL.md",
+      "bytes": 3272,
+      "sha256": "deb78fde4bf55531a7e2651d6e5255993c7554f92ad71274692dfc7ebbe09929"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/SOURCE_FREEZE.json",
+      "bytes": 1176214,
+      "sha256": "b75fb3e8d231fccd0813c5461675cbaa6f959c0f773a5d4ac39157b3c34d4292"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/TASKS.json",
+      "bytes": 4330,
+      "sha256": "08466feb07271540670840fe3652817d7935a40a8e557eaa4a6370080773febc"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/audit.py",
+      "bytes": 9982,
+      "sha256": "a42b94b8b2ecb229397cd474dcf99ae637c870055561a7c1b1838d6cd65a3f0f"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/audit_entry.py",
+      "bytes": 907,
+      "sha256": "b947aa944cba0e8a59fa53a540781b625b24baf359bed55c844d0b12c908d5b9"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/backend_check.py",
+      "bytes": 871,
+      "sha256": "4a5244e44753991a65c326f93020a013e651b29a2539c3f0fa46393ec93f3af5"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/campaign.py",
+      "bytes": 7291,
+      "sha256": "b9a20b51c2628c9453b9264341724eb9619a6a2056658c00e388bc236f64e3c5"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/component_context.py",
+      "bytes": 1597,
+      "sha256": "6dc5161cae0fa9fc3595d6475bd27e2ff44cf7abb94f3a8b9c468720db141b72"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/controller.py",
+      "bytes": 1302,
+      "sha256": "720836a0da66be37baddee23185a146add3f218d558750ce844891ee1015fadc"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/envelope_geometry.py",
+      "bytes": 1505,
+      "sha256": "9d083f267a03cdad9d54e2600cc6779c51e9632bb3f8a8cbfedce7aa31c11494"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/evidence_io.py",
+      "bytes": 1360,
+      "sha256": "fe0e6d133ea0a2631846c6a909acb5a3afb21f3ad77646cbfb9aeddd71cd9d97"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/finalize.py",
+      "bytes": 5638,
+      "sha256": "1787854b0b1b23e6492607415cc1ff19213f750a97ef26bc3944d220e517aaf1"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/frames.py",
+      "bytes": 3000,
+      "sha256": "351dda8f5782ae586db9165301d4d75418122d30e9ffcd82adf0a07b74f725c7"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/freeze.py",
+      "bytes": 1287,
+      "sha256": "0ff04124901698de66242601f109fb02063ebeb03618a45a516cc1ca2f84407e"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/gear_handoff.py",
+      "bytes": 3004,
+      "sha256": "7f732f6609c357d0ed97fe968849fc3b6f9d5b825fdceb10a631ba7736e412e7"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/native.py",
+      "bytes": 11920,
+      "sha256": "2ab5a2fff8eb85f3d100fd516d41fbf9fa3b781ecc33e6ad794687ea28d83535"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/prefix_restore.py",
+      "bytes": 2461,
+      "sha256": "76325631ae0c49d997e64db5325044dfe7a1a2fcbd33f88ad8a28a3ed6e9ce8b"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/qualify.py",
+      "bytes": 6126,
+      "sha256": "07f52f74c8c6f3121545d234583c3f3e31376316cefab176c3235b2a6911ae12"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/stamped_contract.py",
+      "bytes": 3676,
+      "sha256": "5b07af25be5eb7519806235da826d763336ea5c14975e6250c041100f83af958"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/start.py",
+      "bytes": 1994,
+      "sha256": "a5fef580ba6dde0599bde5a3b09b68edc5c0dc2f127b81f2a9ea52405c65e12c"
+    },
+    {
+      "path": "experiments/v1378_steering_response_32210/sync_results.py",
+      "bytes": 2835,
+      "sha256": "580bc3d47e3c63d068f49dd637dbaf3aaa1f597a98f479d65e58a7dbe00ce78c"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/ACCOUNTING.json",
+      "bytes": 527,
+      "sha256": "201c63959c68b4ac40e61c04b5b64f9f178d61e12e70f0be63c41628faa643f3"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/APPROVAL.json",
+      "bytes": 51,
+      "sha256": "f60ddddef6654805e97d2920c7a14fb8613e41623629c96e59f33def399be4e8"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/COMPLETION.json",
+      "bytes": 5177,
+      "sha256": "2c15f7f74281ac4eaca6c27e89b1fc5b6f054ff9efe912c0055667a290c92ad2"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/LAUNCH.json",
+      "bytes": 282,
+      "sha256": "a76dc95fc084700dc016597eb1d3a0403e385beccd49b8beb55b25d924beba84"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/PARTIAL_RESULTS.json",
+      "bytes": 4647,
+      "sha256": "b2b848f09b14ed83d3cfefa2d42059f0308bcfe71be541721d2d20815b821832"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/PRODUCER_SERIALIZATION_FIXTURE.json",
+      "bytes": 1514,
+      "sha256": "2cbfa6467e967ad61e28f799bfe51a5a55832190aaeec3767fa90f14cdf59480"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/QUALIFICATION.json",
+      "bytes": 4725,
+      "sha256": "0c9135048b42c6efa2d4930d7929c5140a6e969cb82ccc704d46727cd28ec5cb"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/REPORT.md",
+      "bytes": 1302,
+      "sha256": "f9623f29bfbe426955742bc4876d2218b6355d05af7ba64398ef8c3cc70a66b0"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/REVIEW_PENDING.before",
+      "bytes": 351,
+      "sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/ROUND_WINDOW.json",
+      "bytes": 218,
+      "sha256": "4fb9c71e44af7b75ada129ebf40c531c8942f873967a53e0b5bd907ae4d01000"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/backend.console",
+      "bytes": 312,
+      "sha256": "6c8de441ed7385910ee699aa442393acd4e33abe814b38d4d04fcb57539f4bbe"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/campaign.console",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/finalize.console",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/native.console",
+      "bytes": 52,
+      "sha256": "47e5e97c99128a73cb26aca384a6caba86eee1d959b9a2394603cbe760da646a"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/output_guard.console",
+      "bytes": 585,
+      "sha256": "2c5870dd37b079fcd44d3b674b1a9efc6178f7bfa4e0112a46dfbb27c828c23c"
+    },
+    {
+      "path": "runs/v1378_steering_response_32210/producer_json.console",
+      "bytes": 213,
+      "sha256": "de6f88317204f9ea14f43195f9d4a11b9893b3a45fc660e6a00609d8d0d60b17"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/APPLIED_JOURNAL.json",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/FRESHNESS_REJECTIONS.json",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/OBSERVATIONS_SENT.jsonl",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/RECEIVED_COMMANDS.jsonl",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/RESULT.json",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/physics/INITIAL_STATE.npz",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/physics/MODEL_BUILD_CONTRACT.json",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/physics/PATCHED_ASSEMBLY.xml",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/qualification/physics/SETUP.json",
+      "bytes": 34,
+      "sha256": "785bb4459c4421cef908b7b2b7c8a32e3f5308e5547aff1f0fac6f5f85b80fd5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/APPLIED_JOURNAL.json",
+      "bytes": 39234805,
+      "sha256": "f4508b1c14e35781e62ab4cba564dd47287fc8d1aefc6c61cefccce8ec29854b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/CAPTURE_COMMANDS.json",
+      "bytes": 47957,
+      "sha256": "ad29cda930ee232507511ac2118ad363f9d4782aa826cc95759af06792f8a094"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/COMPONENT_INITIAL_PACKET.json",
+      "bytes": 817,
+      "sha256": "5e6906db04efed63868b5d2f70669ad338e4483d46dacb4e15c31cc4c54dfc89"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/FINAL_INDEPENDENT_AUDIT.json",
+      "bytes": 1705,
+      "sha256": "55c0448fd035bd21aaa652f970ffd2928f624315503235636d11552b1d0a4f93"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/FINAL_PACKET.json",
+      "bytes": 809,
+      "sha256": "81b59a656556c11cf69b96d8486c0117f4da8e84da3f0ea653c8fef1bb7c4af4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/INITIALIZATION_ATTEMPT.json",
+      "bytes": 48,
+      "sha256": "f20ef8bb1b84939f4ada9e824616008e2cc25945d9f6bf96bbc153f493623502"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/INITIAL_PACKET.json",
+      "bytes": 583,
+      "sha256": "9820d232227ef4366c1558d055208e956273a3dc1eb91b9b50659c287a42d95c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/OBSERVATIONS_SENT.json",
+      "bytes": 51205,
+      "sha256": "dc3a13c83e2bc9791bb45440d4c90e0ba3142e40cca09ef5f1581e3509a2d518"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/PARTIAL.json",
+      "bytes": 199,
+      "sha256": "e5d61f677ed5a97cbc93b1fd4c4ec016a9ec24020a0ee3580797a57c5254bf4b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/PREFIX_RESTORE.json",
+      "bytes": 293,
+      "sha256": "e295e651155af9980be0b4a0deb3ee88fef774d79a88d87d1171b546f5d94426"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/REPLAY_ATTEMPT.json",
+      "bytes": 30,
+      "sha256": "9f71dd96312834c92c08363288ff15b26f893d8554d445c3d4ed50f6b736ad85"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/RESULT.json",
+      "bytes": 2297,
+      "sha256": "b62bdc3511874c897d99e2976a602d2e7607fc33336e686deea15549a04f8d88"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/RESULT_PROGRESS.json",
+      "bytes": 1084,
+      "sha256": "3319e683ecc5f6e8fe96a23b5d9488ded070f87ebcebda8968817eaa533a86ef"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/TASK.json",
+      "bytes": 3952,
+      "sha256": "0d47629ea630ab361e01d919bd1c84471571063fd6f3831a3c3ee7ed7691bd27"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/audit.console",
+      "bytes": 1539,
+      "sha256": "9fca914b27286b1a710c3ca89e41bc9ee5de834cb54fda21933fa6269ee22941"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/native.console",
+      "bytes": 2486,
+      "sha256": "6084e6a0758a409e22185ddc197424868e8577ea5b59c606fcd8a74b288a2981"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/BODY_COMMANDS.json",
+      "bytes": 4110103,
+      "sha256": "9401b3c03e64f84343b817a43fde7f9734d82b6a19c4f356e559d04ccd2c66c4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/CONTACTS.json.gz",
+      "bytes": 2052667,
+      "sha256": "79005e7cef8448b2b0d4bd1de2a141212e52d58682c646358c513f6a94a0a1cb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/DECLARED_COURSE_BINDING.json",
+      "bytes": 447,
+      "sha256": "d8ab7680f31b15b2e7af054747a2474dbe64907c8c3974c0d9257f20477575e9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/EXACT_SENSOR_BINDING.json",
+      "bytes": 366,
+      "sha256": "18f0c820658783b162be835fdb7e5fb3399273dd0aef3cc4458707595b053319"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/INITIAL_STATE.npz",
+      "bytes": 261,
+      "sha256": "e9d0b319ee34f40c4ae9a246c5d2a7748affe788e1701814dc6fcbf911a24598"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/MODEL_BUILD_CONTRACT.json",
+      "bytes": 91508,
+      "sha256": "0c0b2e713e1e21cef1089fadcd014e00789af5b74cd2f82bc0a408b6184c4679"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/NATIVE_TRACE.npz",
+      "bytes": 10532097,
+      "sha256": "d84995bcdda3605857dd1a914fe168cede36b4b2e635844a60d3ca3150e1eda0"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/PATCHED_ASSEMBLY.xml",
+      "bytes": 13720,
+      "sha256": "cb8d534a868771f32ba9884d649e20409169b2246b86f64353e8124a15be563e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/REPLAY.json",
+      "bytes": 125,
+      "sha256": "335779464cb294a74bbdcfdb2623a202f32421a4682fa6759615886f332a22d6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/REPLAY_PROGRESS.json",
+      "bytes": 34,
+      "sha256": "380e87a1049a4aeecd3f4cb410bc84958adb6ac434bace19980408aa48f0044b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/SELECTED_NATIVE_BINDING.json",
+      "bytes": 405,
+      "sha256": "5e413a2fbbe4d5959edefc183c07b50184794a96ea1823e2dfe693873efb2a75"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/SENSORS.json.gz",
+      "bytes": 1561786,
+      "sha256": "3c5187376cd94dbcb853d556ca9c07d1bfa23fcc4a03c974c79f9ca5cec69620"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/SETUP.json",
+      "bytes": 32264,
+      "sha256": "5586731bb13c6019c6b015f365c577fe0860dfd5e941e9585b50181618ecfe99"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/ACTOR_PATCH_SELECTION.json",
+      "bytes": 28373,
+      "sha256": "c5fd16ddf06a589047a75c368aadb15f9b6253b8bbdb08cc65f808139200b751"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/ARENA_CONSTRUCTION.json",
+      "bytes": 8040,
+      "sha256": "cab0ff4cee1814b2af8cc3517d04f725ffb01c832cdf72d9f4736c33cd78d62f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/INITIALIZATION_PROVENANCE.json",
+      "bytes": 1179,
+      "sha256": "7ea761c7262199137004e934c48f77564384b00793a87a23e1373bda7ae0c069"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/KNOWN_PRIOR_REFERENCE.json",
+      "bytes": 25114,
+      "sha256": "d5f8c20dedd9b54384e4d7c6aa1aaebf93764e169f0b422c133aff3b13d588bd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/MOTION_ENVELOPE_CHECK.json",
+      "bytes": 50160,
+      "sha256": "ae991bbc88c7300294466295579fc02b277584cd89d7072e5ca703f326b247a1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/assets/isolated_indoor.xml",
+      "bytes": 13488,
+      "sha256": "5cb3f627f127b626f43f62d7afbdaed2bd6fcafdafdce3a2a153e9769fed6ce7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/assets/meshes_fixed",
+      "symlink": "/home/linghu/catkin_ws/src/mk-mini/training/assets/mkmini_real/meshes_fixed"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/index",
+      "bytes": 1310728,
+      "sha256": "6d0552c4e71fe85e6cdc7e7745882ea91b382fbc56448f2e9e1c2d77dcf67d81"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part0/mesa_cache.db",
+      "bytes": 1667,
+      "sha256": "8a1f202cced30f0ed60bf6ab5c494f3470d7edf4229ca9128d22cbe3a703c3a8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part0/mesa_cache.idx",
+      "bytes": 104,
+      "sha256": "3b4ecdf7501c6e67499c6f159c4c15ab3f3355b9ed6e7ecdfa161b935e57f851"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part1/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "0ae18f659d8781239f4375980893f5aa1df22cb01389ec54b40dee2df0b5f327"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part1/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "0ae18f659d8781239f4375980893f5aa1df22cb01389ec54b40dee2df0b5f327"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part10/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "c56216a9c3ac55e17bd73b554ec32329733cb542bb25a1bbf7d51ba6b6953e4b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part10/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "c56216a9c3ac55e17bd73b554ec32329733cb542bb25a1bbf7d51ba6b6953e4b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part11/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "cf3b3fe112eac02ea9493ddccce7051ec2d5a8626045cd42bd44f280cf14795c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part11/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "cf3b3fe112eac02ea9493ddccce7051ec2d5a8626045cd42bd44f280cf14795c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part12/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "bbef735a360c25599ff02aca56a67f40660b619cf75879d70ed1774c933ebb53"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part12/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "bbef735a360c25599ff02aca56a67f40660b619cf75879d70ed1774c933ebb53"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part13/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "aec3035153f6e79607f633c5e119f01874c8cd04148312bdb0b7440b3b60d3e7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part13/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "aec3035153f6e79607f633c5e119f01874c8cd04148312bdb0b7440b3b60d3e7"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part14/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "ccfb44b8adf1b8c4d962756d575a96fc3cc9f3cede205174d61ba70cb2e85dc8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part14/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "ccfb44b8adf1b8c4d962756d575a96fc3cc9f3cede205174d61ba70cb2e85dc8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part15/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "20db6f24be6f2aad571d976230545d04c9e0909c3fd40380658420ce8b3e74fd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part15/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "20db6f24be6f2aad571d976230545d04c9e0909c3fd40380658420ce8b3e74fd"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part16/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "92b2f920226021ac69d5dae744e1ad72ea6ff9b72a74f02eea3398883a69cf65"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part16/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "92b2f920226021ac69d5dae744e1ad72ea6ff9b72a74f02eea3398883a69cf65"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part17/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "8c9c5eb8f9164354ce1d10d5d8dd95ec84e8deb1da50c437fbd55ea910a51b7b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part17/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "8c9c5eb8f9164354ce1d10d5d8dd95ec84e8deb1da50c437fbd55ea910a51b7b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part18/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "35c21500182b43e49b47c0127ec6125eca49242f253fa442ce393f255d327454"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part18/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "35c21500182b43e49b47c0127ec6125eca49242f253fa442ce393f255d327454"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part19/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "6f72101555cd30b99d32b5b4d88b85087fcefe28e5a350d91e88ba5c617807da"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part19/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "6f72101555cd30b99d32b5b4d88b85087fcefe28e5a350d91e88ba5c617807da"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part2/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "c5dfc390c9b6baad0b0b722ae4f499642b7a7788608dd24b41ba2c57352e05f1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part2/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "c5dfc390c9b6baad0b0b722ae4f499642b7a7788608dd24b41ba2c57352e05f1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part20/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "c6281b0942e0d8145684a86ab201929596a64dd650e11712906649c122297155"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part20/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "c6281b0942e0d8145684a86ab201929596a64dd650e11712906649c122297155"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part21/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "900113ad17f76ba32d5522276b1c23363b2a337fb061c76ab796bfc75884970b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part21/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "900113ad17f76ba32d5522276b1c23363b2a337fb061c76ab796bfc75884970b"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part22/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "bd427dc5eb92ecf5af6bc585d4e56a10009476003f50d31ded24cfeda5bfcfa2"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part22/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "bd427dc5eb92ecf5af6bc585d4e56a10009476003f50d31ded24cfeda5bfcfa2"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part23/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "17d61e99598492dd7993027f06d06dba722246673ae2b587d0c12d75c6a5f31c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part23/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "17d61e99598492dd7993027f06d06dba722246673ae2b587d0c12d75c6a5f31c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part24/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "cd953d96973a5d3b97cd1e788270660daf14ca9573e1a05c84756cd0de0362a9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part24/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "cd953d96973a5d3b97cd1e788270660daf14ca9573e1a05c84756cd0de0362a9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part25/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "635842be1aed018ae00d0d264549e038450dd39e9a7f9bbebd0fbc8ea3589af9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part25/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "635842be1aed018ae00d0d264549e038450dd39e9a7f9bbebd0fbc8ea3589af9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part26/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "f0d6ad4144b94f47aad60966f71485be3450bab1a509d132083602d78ae14304"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part26/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "f0d6ad4144b94f47aad60966f71485be3450bab1a509d132083602d78ae14304"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part27/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "beeb2cb25ccedc56e66d2725265278e1f61dcd2526abd1819ac7c9cf391fb5ea"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part27/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "beeb2cb25ccedc56e66d2725265278e1f61dcd2526abd1819ac7c9cf391fb5ea"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part28/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "5ead0803460892100d49576368c1844693580ee7b1ff4a13cd305777a4e3fe0c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part28/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "5ead0803460892100d49576368c1844693580ee7b1ff4a13cd305777a4e3fe0c"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part29/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "b0b77addd469e8a2b04db61216f1c68d93e2a7b54363825eef8cbba29bff8adb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part29/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "b0b77addd469e8a2b04db61216f1c68d93e2a7b54363825eef8cbba29bff8adb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part3/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "6ceb676d3c31a0043cad931688c16cce2c6f3d5531a10df5cad191f10e392985"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part3/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "6ceb676d3c31a0043cad931688c16cce2c6f3d5531a10df5cad191f10e392985"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part30/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "ba8fb853488ec0111f082d904dc667edcecd248bd8af66972975ca36300d961f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part30/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "ba8fb853488ec0111f082d904dc667edcecd248bd8af66972975ca36300d961f"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part31/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d9af399193a5b938be5a55ba7f80265189f06ec71ae3e72f2068da3483a7fcb1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part31/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d9af399193a5b938be5a55ba7f80265189f06ec71ae3e72f2068da3483a7fcb1"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part32/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "7aa20bcfad262a4602e12c454bcf9aff22f16d16f6b642cece877f25f161ec01"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part32/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "7aa20bcfad262a4602e12c454bcf9aff22f16d16f6b642cece877f25f161ec01"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part33/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "ba03df386d6ce5d25eca615e02a3e7ede7d89128a3b4c6c6825093c6e18eb6d4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part33/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "ba03df386d6ce5d25eca615e02a3e7ede7d89128a3b4c6c6825093c6e18eb6d4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part34/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "96c71cc6123ae2be9ffc4212632b6e9b4f7d385a69af352bde4df3d87e83a8aa"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part34/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "96c71cc6123ae2be9ffc4212632b6e9b4f7d385a69af352bde4df3d87e83a8aa"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part35/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "2d28690a774eccad6e7140368fa506e26453899f55979fc46d63f3c9678629fb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part35/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "2d28690a774eccad6e7140368fa506e26453899f55979fc46d63f3c9678629fb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part36/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "e44a827781ec7bc22b67570fe30781fd9f73b75e24acb3c3d22649dc96670100"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part36/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "e44a827781ec7bc22b67570fe30781fd9f73b75e24acb3c3d22649dc96670100"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part37/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "c2899cb41f55c891cb4b2391f9ccf1a6c22732cd47166b9469738b4b0f732b52"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part37/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "c2899cb41f55c891cb4b2391f9ccf1a6c22732cd47166b9469738b4b0f732b52"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part38/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d079b8f9e4f989a348eeb5ecfc69ae90da1ffddde154afd66fe50f2a3fc9ddf8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part38/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d079b8f9e4f989a348eeb5ecfc69ae90da1ffddde154afd66fe50f2a3fc9ddf8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part39/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "fc66981cef72fc1f9536764591ec6f2ea682843d77787d65b4480f4d2006416d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part39/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "fc66981cef72fc1f9536764591ec6f2ea682843d77787d65b4480f4d2006416d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part4/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "db6b18ced81bc76c19251b2d5e25637a44f8865ec9520bf06e033007b22b90a5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part4/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "db6b18ced81bc76c19251b2d5e25637a44f8865ec9520bf06e033007b22b90a5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part40/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "b34fb8237996539d5dce9c85ddc697cf6791a45739de550f9ff13cbebc1ec4a4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part40/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "b34fb8237996539d5dce9c85ddc697cf6791a45739de550f9ff13cbebc1ec4a4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part41/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "50929bdb133c9464defaa16b8e76eb1ae1f93a8364fb2ae105095667e5821b52"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part41/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "50929bdb133c9464defaa16b8e76eb1ae1f93a8364fb2ae105095667e5821b52"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part42/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "b43c9742068f772d4a70c1c1f691b939112363a10487a541aafabd3f73f11da3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part42/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "b43c9742068f772d4a70c1c1f691b939112363a10487a541aafabd3f73f11da3"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part43/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "3e287040136d538d3d7feaa8d556cc5863fb643f765cc2d5038a8d47e66bf117"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part43/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "3e287040136d538d3d7feaa8d556cc5863fb643f765cc2d5038a8d47e66bf117"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part44/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d16dbea7466758a3f88785ec86c41439727a092d13028a5648b44ade547c66b5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part44/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d16dbea7466758a3f88785ec86c41439727a092d13028a5648b44ade547c66b5"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part45/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "1882bbd300a46e3f875f9cc5d41920ffd07e9a532409e61012e4b37c877c86c9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part45/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "1882bbd300a46e3f875f9cc5d41920ffd07e9a532409e61012e4b37c877c86c9"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part46/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "77bddbfe24a22ce68963ee5335058cca091180ae8fe5c289a45d40d9193359a2"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part46/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "77bddbfe24a22ce68963ee5335058cca091180ae8fe5c289a45d40d9193359a2"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part47/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d11ab24de970f5ca206323af0bb27f08e55baf425c52af5da975ab4ac6b717c6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part47/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d11ab24de970f5ca206323af0bb27f08e55baf425c52af5da975ab4ac6b717c6"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part48/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "3e2201bcfa7a79f827f8a4a7ff83c0be2128e0c3a359bada7cbc83fa3f8d2a8d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part48/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "3e2201bcfa7a79f827f8a4a7ff83c0be2128e0c3a359bada7cbc83fa3f8d2a8d"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part49/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "cc6c3af0a475c288f08abdab696fb0f1593ab50ce392d6889f2fbb49483b91e8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part49/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "cc6c3af0a475c288f08abdab696fb0f1593ab50ce392d6889f2fbb49483b91e8"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part5/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "50001b23be92e1192fdcc520118d3c5d7ffffaf6574147046103532c93a231cb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part5/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "50001b23be92e1192fdcc520118d3c5d7ffffaf6574147046103532c93a231cb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part6/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "0d83b60b7fb5eb3b7328634512d7d55eacb5d8763b0ea061c2fd6a3cb1d6cf17"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part6/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "0d83b60b7fb5eb3b7328634512d7d55eacb5d8763b0ea061c2fd6a3cb1d6cf17"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part7/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "41e183c4446e63c80e5aadd31d7ade4247e6faf94ff2387b1968b1ae7e94b606"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part7/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "41e183c4446e63c80e5aadd31d7ade4247e6faf94ff2387b1968b1ae7e94b606"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part8/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "d8ce4797d8a004f29777c25bb4c6fbb23101cb088775b15cae0160346f5c97c4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part8/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "d8ce4797d8a004f29777c25bb4c6fbb23101cb088775b15cae0160346f5c97c4"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part9/mesa_cache.db",
+      "bytes": 20,
+      "sha256": "f55b0591339579ac1cb8a4a758a9a31dd4c174e5e46ed9917e314e516bda305e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/cache/mesa_shader_cache_db/part9/mesa_cache.idx",
+      "bytes": 20,
+      "sha256": "f55b0591339579ac1cb8a4a758a9a31dd4c174e5e46ed9917e314e516bda305e"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/paired/paired_reset.json",
+      "bytes": 365,
+      "sha256": "472cea53062a50a04123f98f2b57776d29a69234f15b2fdbe5d443addadf6abb"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/scene_model.mjb",
+      "bytes": 9940106,
+      "sha256": "af6f0c393382a255afb35ff1ae0db5256100705c85cc264d25bdc3541966db53"
+    },
+    {
+      "path": "runs/v858_nav2_verified/v1378/steering_response/physics/v648_environment.json",
+      "bytes": 1912,
+      "sha256": "454a0c019ce9f6139b199bae8d4da15d7876fabde9dc001ad69e0ee066975e10"
+    }
+  ],
+  "parts": [
+    {
+      "name": "evidence.tar.gz.part000",
+      "bytes": 25141269,
+      "sha256": "b651ec31764cc99f5c3015eb196ba2fb9f295a46a7e6d18bd92cd9a36e4b7ea8"
+    }
+  ],
+  "archive_sha256": "b651ec31764cc99f5c3015eb196ba2fb9f295a46a7e6d18bd92cd9a36e4b7ea8",
+  "archive_bytes": 25141269,
+  "local_members_and_reassembly_verified": true,
+  "remote_download_restore_verified": false,
+  "raw_deleted": false,
+  "models": 0
+}
