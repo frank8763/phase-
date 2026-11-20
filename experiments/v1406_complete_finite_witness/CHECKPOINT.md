@@ -1,0 +1,11 @@
+# V1406完整有限方法与native共享step准备
+
+新生成器已接三种方法，输入SHA绑定method_spec/原event几何和前一完整origin SHA；model与audit都独立重构方法状态机，原RPP请求还绑定已接受真实原插件reply/seq/body/time，不再仅信任已保存请求。保留原5native反馈更新，gear和每200完整刹停仍逐native；反向准备20ready＋完整200尾后才量当前后轴到目标长度，完整200最终尾。原RPP/共享桥动作分账，不改源门或参数。
+
+三真实生产CPU2 CLI资格全过（0构造/积分）：原模型函数/方法源导入，CPU3原RPP两个回调，经同生产finally保存模型前首错准确0计数；尚无完整方法数值生成或独立审核PASS。当前共有804新解析资格仍只属于已闭V1401，不能为本源码宣称数值资格。源码SOURCE_FREEZE覆盖已测生成/方法/生产入口；新增native_step.py是实际共享step草案，未资格/未冻结，不能launch车辆。
+
+NativeStep从canonical t0连续维护mode/gear/真实采集wire；只接受已绑定ACTUAL_FRAME来源，当前实际packet建200完整刹停、再核200ms、原gear与控制、实际guard/固定参考，模型不得改实际状态/allocator/input packet；逐动作计数在物理step完成后立即记，首次异常仍需外层关闭保存。缺完整reserve/physical_guard实现与真实入口/源身份/全证据审核，当前不准入。
+
+V1405两个zstd闭归档已全远端范围块/解压成员/整流/恢复index实际SHA过后，精确清433786295B运输和V1122/offline的4068个淘汰软件资格文件92657569B，当前源/Git同inode与所有物理锚点保留；恢复records/zstd_cache_recovery_v1405_20261121/RECOVERY_INDEX.json，worker已退出勿重启。当前约9.34GB，不能只因低于10GiB便启动整路。
+
+下一实质资源工作：新per-origin NPZ会丢失跨分支压缩、旧线性存储估算可能低估；应以保留的真实BRAKING_ALTERNATIVES数据做0模型位级流式压缩/回读资格，保留每分支完整201状态/200控制及SHA，不降采样/阈值/精度，再实际定完整整路证据与归档峰值。共享step/完整audit与实际route owner仍须接齐并真实资格，方法整合首次数值前另登记科学修订/预算/双钟/完整源冻结。
