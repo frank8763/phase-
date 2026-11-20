@@ -1,5 +1,5 @@
 {
-  "status": "ROUND_CLOSED_REVIEW_REQUIRED",
+  "status": "BOTH_SAVED_HANDOFF_PAIRS_PASSED_PREPARING_EVENT_ROUTE",
   "authorization": "experiments/v1382_weekend_campaign/AUTHORIZATION.json",
   "absolute_hard_stop_unix": 1795395600.0,
   "hard_stop_monotonic": 517351.02310204506,
@@ -122,7 +122,11 @@
       "source_or_evidence_fault": false,
       "finalized": true,
       "full9390_handoff_qualified": true,
-      "archive_index": "runs/v1396_rpp_rpc_retirement/ARCHIVE_INDEX.json"
+      "archive_index": "runs/v1396_rpp_rpc_retirement/ARCHIVE_INDEX.json",
+      "remote_recovery_verified": true,
+      "unique_git_head": "f35e30a01d64e9373f52566e4e1817e9d2783b6d",
+      "transport_duplicates_cleaned": true,
+      "full_repeat_error": 0.0
     }
   ],
   "vehicle_task_starts": 6,
@@ -131,10 +135,10 @@
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
   "models_now_authorized": false,
   "preexisting_runs_allocated_bytes": 23690563584,
-  "prepared_next_round": "v1396_rpp_rpc_retirement",
-  "next_round_qualification": "runs/v1396_rpp_rpc_retirement/QUALIFICATION.json",
+  "prepared_next_round": null,
+  "next_round_qualification": null,
   "qualification_passed": true,
-  "physical_launch_blocker": null,
+  "physical_launch_blocker": "event-driven whole-route integration and actual complete entry not yet qualified",
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
   "storage_ready": true,
   "storage_allocated_bytes": 9907240960,
@@ -144,7 +148,7 @@
   "active_task": null,
   "last_round_failure_requires_inspection": false,
   "latest_32210_handoff_qualified": true,
-  "next_preparation": "V1393 actual RPP physical entry and source qualification; do not launch before remote cleanup and entry readiness",
+  "next_preparation": "experiments/v1397_event_handoff_integration/PROTOCOL.md",
   "actual_total_native": 115880,
   "historical_reconstruction_native": 108300,
   "new_component_native": 7580,

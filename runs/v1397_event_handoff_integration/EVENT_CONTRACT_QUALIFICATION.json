@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "classification_cases": [
+    {
+      "historical_native_for_reporting_only": 5960,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 7080,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 8685,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 9390,
+      "original_accepted": false,
+      "classification": "MEASURED_POSE_CAPTURE_CERTIFICATE",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 11390,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 12540,
+      "original_accepted": false,
+      "classification": "CAUSAL_TIMED_NEXT_SEGMENT_CERTIFICATE",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 13825,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 15685,
+      "original_accepted": false,
+      "classification": "MEASURED_POSE_CAPTURE_CERTIFICATE",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 17165,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 18280,
+      "original_accepted": false,
+      "classification": "CAUSAL_TIMED_NEXT_SEGMENT_CERTIFICATE",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 19810,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 20960,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 22585,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 24680,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 27225,
+      "original_accepted": true,
+      "classification": "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    },
+    {
+      "historical_native_for_reporting_only": 32210,
+      "original_accepted": false,
+      "classification": "CAUSAL_TIMED_NEXT_SEGMENT_CERTIFICATE",
+      "clock_shift_decision_invariant": true,
+      "physical_admission": false
+    }
+  ],
+  "classification_counts": {
+    "CURRENT_STATE_BRAKING_AND_RPP_ADMISSION": 11,
+    "MEASURED_POSE_CAPTURE_CERTIFICATE": 2,
+    "CAUSAL_TIMED_NEXT_SEGMENT_CERTIFICATE": 3
+  },
+  "negative_cases": [
+    "future_coefficient",
+    "expired_observation",
+    "future_observation"
+  ],
+  "all_tick_shift_invariant": true,
+  "scope": "next-required-certificate classification only; no controller or new physical admission",
+  "software_source_time_envelopes_are_synthetic_fixtures": true,
+  "not_measured_fresh_frames": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0
+}
