@@ -2359,3 +2359,6 @@ V1460 failed process evidence/native RESULT originalgap and new V1462 exactsourc
 
 
 V1462 full failed runtime and V1464 draftsource132members2671209B all remote actualblock/member/whole/index SHA verified; source25e34f7a reused with NO second push/Release phase-v1462-canonical-startup-failed-20261121. All I/O exited/transportonlycleanup/raw retained. Later fieldcorrection/report/checkpoint updates are supplemental local metadata, not retroactively inarchive. Next V1464 exact new readiness qualification not yet implemented. Old frozenSHA all intact/parentclosed/reviewSHA/lockidle.
+
+
+2026-11-21 V1464 one new CPU2run_phase/originalguard/profile no-model target readiness qualification PASS CLOSED,19 refusal cases. Explicit software state/NPZ/model placeholder+real Unixsocket source/hash/0clock/foreigninput/FD gates; software READY never actualauthority. init180 and coopclose200 same root clocks/no reset; savedROSfailure vs legitimateclose classified; real CPU5 softwarechild firsterror stop-save-close0steps passed. Frozen source/oldV1462failure gap retained, no live runtime yet. Source remote recovery mandatory before one distinct narrow originalfirstevent run. Counts14taskstarts/116280actual/105105replay/science5/wholeWE0 unchanged.
