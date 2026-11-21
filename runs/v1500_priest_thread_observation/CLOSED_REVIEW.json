@@ -1,0 +1,62 @@
+{
+  "passed": false,
+  "closed": true,
+  "recorded_unix": 1795273176.3796887,
+  "scope": "SAVED_INPUT_CPU_OPTIMIZER_THREAD_METADATA_REPAIR_ATTEMPT",
+  "first_error": "ObservationError('THREAD_ESRCH_STILL_VISIBLE')",
+  "work_accounting": {
+    "constructor_attempts": 0,
+    "constructor_returns": 0,
+    "optimizer_call_attempts": 0,
+    "optimizer_calls": 0,
+    "iterations_completed": 0,
+    "projection_candidate_updates": 0,
+    "elite_cost_evaluations": 0,
+    "shifted_candidate_scores": 0,
+    "initial_guess_scores": 0,
+    "mathematical_candidate_evaluations": null,
+    "inflight_unknown": false,
+    "models": 0,
+    "response_model_native": 0,
+    "physical_native": 0,
+    "Allocator_recomputations": 0,
+    "replay_native": 0
+  },
+  "optimizer_calls": 0,
+  "constructor_calls": 0,
+  "internal_import_initialization_math_work_unknown": true,
+  "original_optimizer_work_unknown": true,
+  "author_JAX_imported": true,
+  "source_unchanged": true,
+  "all_volatile_members_SHA_verified": true,
+  "volatile_members": 6,
+  "volatile_archive_sha256": "af6d86d2a9aee3e7b3884e5bc9c8dec88c94b002e075ef0a560593f414f6a0ad",
+  "observed_thread_proof": {
+    "phase": "AFTER_KERNEL",
+    "started_monotonic": 394816.100807212,
+    "passes": [
+      [
+        5,
+        6,
+        7
+      ]
+    ],
+    "observed": {},
+    "confirmed_exited": [],
+    "unobserved_final_live": [],
+    "historical_transient_affinity_unknown": true,
+    "universal_affinity_claim": false,
+    "passed": false
+  },
+  "diagnosis": "Thread was still visible at failed affinity lookup. The earlier exit-race interpretation is insufficient; inherited procfs versus nested PID namespace IDs must be checked before any further JAX call.",
+  "namespace_root_cause_not_yet_runtime_qualified": true,
+  "models": 0,
+  "response_model_native": 0,
+  "physical_native": 0,
+  "Allocator_recomputations": 0,
+  "replay_native": 0,
+  "whole_route_passed": false,
+  "current_capture": false,
+  "runtime_remote_recovery_pending": true,
+  "rerun_forbidden": true
+}

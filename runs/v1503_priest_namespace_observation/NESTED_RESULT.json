@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "models": 0,
+  "optimizer_calls": 0,
+  "actual_namespace_thread_ids": [
+    3,
+    4
+  ],
+  "observation": {
+    "phase": "EXACT_NESTED_PID_NAMESPACE_SOURCE_TARGET",
+    "started_monotonic": 395208.869994996,
+    "current_namespace_pid": 2,
+    "procfs_process_ids": {
+      "Tgid": [
+        5
+      ],
+      "Pid": [
+        5
+      ],
+      "NSpid": [
+        5,
+        2
+      ]
+    },
+    "pid_namespace": "pid:[4026533005]",
+    "passes": [
+      [
+        {
+          "proc_tid": 5,
+          "current_namespace_tid": 2,
+          "NSpid": [
+            5,
+            2
+          ],
+          "status_sha256": "b293bc7ab492d903eb234f024f6d54918bc1154a1350b842c48e3e485bb1527a"
+        },
+        {
+          "proc_tid": 6,
+          "current_namespace_tid": 3,
+          "NSpid": [
+            6,
+            3
+          ],
+          "status_sha256": "326130ef3ac80f0f6752d3f70d0d7042c2fd2e40526349b5ced6cbe9246c14fc"
+        },
+        {
+          "proc_tid": 7,
+          "current_namespace_tid": 4,
+          "NSpid": [
+            7,
+            4
+          ],
+          "status_sha256": "fc7f8dd398f2d76e5910af5bdfaf0fe9ca53c6598a7d87e0857490a199b35d67"
+        }
+      ],
+      [
+        {
+          "proc_tid": 5,
+          "current_namespace_tid": 2,
+          "NSpid": [
+            5,
+            2
+          ],
+          "status_sha256": "b293bc7ab492d903eb234f024f6d54918bc1154a1350b842c48e3e485bb1527a"
+        },
+        {
+          "proc_tid": 6,
+          "current_namespace_tid": 3,
+          "NSpid": [
+            6,
+            3
+          ],
+          "status_sha256": "326130ef3ac80f0f6752d3f70d0d7042c2fd2e40526349b5ced6cbe9246c14fc"
+        },
+        {
+          "proc_tid": 7,
+          "current_namespace_tid": 4,
+          "NSpid": [
+            7,
+            4
+          ],
+          "status_sha256": "fc7f8dd398f2d76e5910af5bdfaf0fe9ca53c6598a7d87e0857490a199b35d67"
+        }
+      ]
+    ],
+    "observed": {
+      "5:2": {
+        "proc_tid": 5,
+        "current_namespace_tid": 2,
+        "NSpid": [
+          5,
+          2
+        ],
+        "status_sha256": "b293bc7ab492d903eb234f024f6d54918bc1154a1350b842c48e3e485bb1527a",
+        "affinity": [
+          4
+        ]
+      },
+      "6:3": {
+        "proc_tid": 6,
+        "current_namespace_tid": 3,
+        "NSpid": [
+          6,
+          3
+        ],
+        "status_sha256": "326130ef3ac80f0f6752d3f70d0d7042c2fd2e40526349b5ced6cbe9246c14fc",
+        "affinity": [
+          4
+        ]
+      },
+      "7:4": {
+        "proc_tid": 7,
+        "current_namespace_tid": 4,
+        "NSpid": [
+          7,
+          4
+        ],
+        "status_sha256": "fc7f8dd398f2d76e5910af5bdfaf0fe9ca53c6598a7d87e0857490a199b35d67",
+        "affinity": [
+          4
+        ]
+      }
+    },
+    "confirmed_exited": [],
+    "passed": true,
+    "historical_transient_affinity_unknown": true,
+    "universal_affinity_claim": false,
+    "final_live": [
+      {
+        "proc_tid": 5,
+        "current_namespace_tid": 2,
+        "NSpid": [
+          5,
+          2
+        ],
+        "status_sha256": "b293bc7ab492d903eb234f024f6d54918bc1154a1350b842c48e3e485bb1527a"
+      },
+      {
+        "proc_tid": 6,
+        "current_namespace_tid": 3,
+        "NSpid": [
+          6,
+          3
+        ],
+        "status_sha256": "326130ef3ac80f0f6752d3f70d0d7042c2fd2e40526349b5ced6cbe9246c14fc"
+      },
+      {
+        "proc_tid": 7,
+        "current_namespace_tid": 4,
+        "NSpid": [
+          7,
+          4
+        ],
+        "status_sha256": "fc7f8dd398f2d76e5910af5bdfaf0fe9ca53c6598a7d87e0857490a199b35d67"
+      }
+    ],
+    "unobserved_final_live": [],
+    "ended_monotonic": 395208.870643249
+  },
+  "old_raw_proc_tid_query": [
+    {
+      "proc_tid": 5,
+      "correct_namespace_tid": 2,
+      "old_error": "ProcessLookupError(3, 'No such process')",
+      "proc_task_still_visible": true
+    },
+    {
+      "proc_tid": 6,
+      "correct_namespace_tid": 3,
+      "old_error": "ProcessLookupError(3, 'No such process')",
+      "proc_task_still_visible": true
+    },
+    {
+      "proc_tid": 7,
+      "correct_namespace_tid": 4,
+      "old_error": "ProcessLookupError(3, 'No such process')",
+      "proc_task_still_visible": true
+    }
+  ],
+  "negative_cases": [
+    "ABSENT_NSPID",
+    "WRONG_GROUP",
+    "WRONG_PROC_ID"
+  ],
+  "JAX_author_imported": false,
+  "constructor_calls": 0,
+  "all_target_helpers_joined": true
+}

@@ -1,0 +1,71 @@
+{
+  "passed": false,
+  "closed": true,
+  "scope": "ONCE_SAVED_ACTUAL_INPUT_REAL_CPU_PRIEST_PROPOSAL",
+  "models": 0,
+  "physical_native": 0,
+  "optimizer_calls": 0,
+  "optimizer_work_unknown": true,
+  "worker_returncode": 1,
+  "inner_result": {
+    "passed": false,
+    "scope": "OPTIMIZER",
+    "models": 0,
+    "optimizer_calls": 0,
+    "physical_native": 0,
+    "author_or_JAX_imported": true,
+    "source_manifest_sha256": "9421b5d18d9ba1a172636118d71b967720592f6aa7035c577996123c71b6baa6",
+    "original_error": "ObservationError('THREAD_ESRCH_STILL_VISIBLE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1500_priest_thread_observation/thread_observation.py\", line 18, in _observe\n    try:mask=sorted(query(tid))\nProcessLookupError: [Errno 3] No such process\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1500_priest_thread_observation/inner.py\", line 85, in main\n    result['thread_affinities_after_kernel']=observer.observe('AFTER_KERNEL')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1500_priest_thread_observation/thread_observation.py\", line 33, in observe\n    return _observe(phase,lambda:[int(p.name)for p in task.iterdir()],os.sched_getaffinity,lambda tid:(task/str(tid)).exists(),os.getpid())\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1500_priest_thread_observation/thread_observation.py\", line 21, in _observe\n    if exists(tid):refuse('THREAD_ESRCH_STILL_VISIBLE')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1500_priest_thread_observation/thread_observation.py\", line 13, in refuse\n    def refuse(reason):raise ObservationError(reason,proof)\nv1500_finite_live_thread_observer.ObservationError: THREAD_ESRCH_STILL_VISIBLE\n",
+    "work_accounting": {
+      "constructor_attempts": 0,
+      "constructor_returns": 0,
+      "optimizer_call_attempts": 0,
+      "optimizer_calls": 0,
+      "iterations_completed": 0,
+      "projection_candidate_updates": 0,
+      "elite_cost_evaluations": 0,
+      "shifted_candidate_scores": 0,
+      "initial_guess_scores": 0,
+      "mathematical_candidate_evaluations": null,
+      "inflight_unknown": false,
+      "models": 0,
+      "response_model_native": 0,
+      "physical_native": 0,
+      "Allocator_recomputations": 0,
+      "replay_native": 0
+    },
+    "thread_observation_failure": {
+      "phase": "AFTER_KERNEL",
+      "started_monotonic": 394816.100807212,
+      "passes": [
+        [
+          5,
+          6,
+          7
+        ]
+      ],
+      "observed": {},
+      "confirmed_exited": [],
+      "unobserved_final_live": [],
+      "historical_transient_affinity_unknown": true,
+      "universal_affinity_claim": false,
+      "passed": false
+    },
+    "closed": true,
+    "rusage": {
+      "maxrss_kib": 218932,
+      "threads": 3,
+      "CPU": [
+        4
+      ]
+    }
+  },
+  "first_error": "ObservationError('THREAD_ESRCH_STILL_VISIBLE')",
+  "wall_s": 7.954539318976458,
+  "source_unchanged": true,
+  "saved_actual_input_not_fresh_wire": true,
+  "actual_current_capture": false,
+  "actual_control_domain_qualified": false,
+  "whole_route_passed": false
+}

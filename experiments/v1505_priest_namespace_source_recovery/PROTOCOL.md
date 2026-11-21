@@ -1,0 +1,3 @@
+# V1505 namespace-worker current-source recovery
+
+One new delta for frozen V1503 exact nested namespace observation source/evidence and V1504 exact saved-input namespace-aware worker source/input. Inherited prior members by fully verified recovery chain, no claim to duplicate all. CPU5zero models, archivecap8MiB/32MiB parts, one new30s push+5sref and idempotent Release with allremoteactualblock/member/whole/indexSHA before only duplicate transport cleanup. All old closed workers/archives/pushes remain closed. Recovery success is not numerical/model/actual/navigation PASS. Exact current totalallruns root/storage/clock/once before any future math.
