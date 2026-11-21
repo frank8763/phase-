@@ -1,0 +1,550 @@
+{
+  "closed": true,
+  "source_audit_completed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "Allocator_recomputations": 0,
+  "replay_native": 0,
+  "optimizer_calls": 0,
+  "new_scientific_revision": false,
+  "all_selected_original_SHA_bound": true,
+  "rows": [
+    {
+      "path": "experiments/v1281_partial_reconnection_fixed24/worker.py",
+      "sha256": "ba213b0668fe13f973b8493ad9501e4dea8d343a41b1466aa4e184a41256dc6a",
+      "functions": [
+        {
+          "function": "physical_run",
+          "first_line": 23,
+          "last_line": 88,
+          "calls": [
+            {
+              "line": 35,
+              "call": "factory",
+              "expression": "factory()"
+            },
+            {
+              "line": 35,
+              "call": "load",
+              "expression": "load('v1204_scene_contract', R / 'experiments/v1089_route_scene_contract/contract.py')"
+            },
+            {
+              "line": 36,
+              "call": "physical.create",
+              "expression": "physical.create(out / 'physics', task)"
+            },
+            {
+              "line": 41,
+              "call": "load('v1204_initial_setup', R / 'experiments/v1067_causal_replan_brake_reserve/initial_contract.py').check_setup",
+              "expression": "load('v1204_initial_setup', R / 'experiments/v1067_causal_replan_brake_reserve/initial_contract.py').check_setup(setup, meta)"
+            },
+            {
+              "line": 51,
+              "call": "native",
+              "expression": "native(*args)"
+            },
+            {
+              "line": 59,
+              "call": "step",
+              "expression": "step(float(vr), float(wr), bool(stale))"
+            },
+            {
+              "line": 41,
+              "call": "load",
+              "expression": "load('v1204_initial_setup', R / 'experiments/v1067_causal_replan_brake_reserve/initial_contract.py')"
+            }
+          ]
+        },
+        {
+          "function": "counted",
+          "first_line": 48,
+          "last_line": 54,
+          "calls": [
+            {
+              "line": 51,
+              "call": "native",
+              "expression": "native(*args)"
+            }
+          ]
+        },
+        {
+          "function": "applied",
+          "first_line": 56,
+          "last_line": 60,
+          "calls": [
+            {
+              "line": 59,
+              "call": "step",
+              "expression": "step(float(vr), float(wr), bool(stale))"
+            }
+          ]
+        }
+      ],
+      "static_inspection_only": true
+    },
+    {
+      "path": "experiments/v1281_partial_reconnection_fixed24/worker_context.py",
+      "sha256": "898fab4ed118374cfec9d9e79de677dacf32c462d4c37cae4d58ae85188ed33d",
+      "functions": [
+        {
+          "function": "read",
+          "first_line": 15,
+          "last_line": 15,
+          "calls": [
+            {
+              "line": 15,
+              "call": "json.loads",
+              "expression": "json.loads(Path(path).read_text())"
+            }
+          ]
+        },
+        {
+          "function": "load",
+          "first_line": 28,
+          "last_line": 29,
+          "calls": [
+            {
+              "line": 29,
+              "call": "spec.loader.exec_module",
+              "expression": "spec.loader.exec_module(m)"
+            }
+          ]
+        },
+        {
+          "function": "configure_owner",
+          "first_line": 82,
+          "last_line": 91,
+          "calls": [
+            {
+              "line": 88,
+              "call": "load",
+              "expression": "load('phase_v1281_explicit_route_dispatch', C / 'route_dispatch.py')"
+            },
+            {
+              "line": 89,
+              "call": "dispatch.ns_executor",
+              "expression": "dispatch.ns_executor()"
+            },
+            {
+              "line": 89,
+              "call": "dispatch.ew_executor",
+              "expression": "dispatch.ew_executor()"
+            },
+            {
+              "line": 89,
+              "call": "dispatch.current_executor",
+              "expression": "dispatch.current_executor()"
+            },
+            {
+              "line": 90,
+              "call": "dispatch.execute",
+              "expression": "dispatch.execute(*args, output=Path(output), remaining_fn=lambda : remaining(window))"
+            }
+          ]
+        },
+        {
+          "function": "factory",
+          "first_line": 93,
+          "last_line": 96,
+          "calls": [
+            {
+              "line": 94,
+              "call": "load",
+              "expression": "load('v1204_registered_scene', R / 'experiments/v1067_causal_replan_brake_reserve/scene_binding.py')"
+            },
+            {
+              "line": 95,
+              "call": "load",
+              "expression": "load('v1204_original_exact_replay', R / 'experiments/v882_runtime_evidence_repair/physical.py')"
+            }
+          ]
+        }
+      ],
+      "static_inspection_only": true
+    },
+    {
+      "path": "experiments/v1281_partial_reconnection_fixed24/route_dispatch.py",
+      "sha256": "96a46c92ec9970ff8f4f4a07d3f2858c7100f2a71362f7423c85fa896a9ad676",
+      "functions": [
+        {
+          "function": "checked",
+          "first_line": 13,
+          "last_line": 16,
+          "calls": [
+            {
+              "line": 14,
+              "call": "json.loads",
+              "expression": "json.loads((C / 'PARENT_BINDINGS.json').read_text())"
+            }
+          ]
+        },
+        {
+          "function": "load_legacy_tools",
+          "first_line": 19,
+          "last_line": 28,
+          "calls": [
+            {
+              "line": 27,
+              "call": "spec.loader.exec_module",
+              "expression": "spec.loader.exec_module(module)"
+            }
+          ]
+        },
+        {
+          "function": "legacy_policy",
+          "first_line": 31,
+          "last_line": 41,
+          "calls": [
+            {
+              "line": 37,
+              "call": "load_legacy_tools",
+              "expression": "load_legacy_tools()"
+            }
+          ]
+        },
+        {
+          "function": "current_executor",
+          "first_line": 49,
+          "last_line": 58,
+          "calls": [
+            {
+              "line": 55,
+              "call": "spec.loader.exec_module",
+              "expression": "spec.loader.exec_module(module)"
+            }
+          ]
+        },
+        {
+          "function": "ns_executor",
+          "first_line": 61,
+          "last_line": 67,
+          "calls": [
+            {
+              "line": 65,
+              "call": "spec.loader.exec_module",
+              "expression": "spec.loader.exec_module(m)"
+            }
+          ]
+        },
+        {
+          "function": "ew_executor",
+          "first_line": 69,
+          "last_line": 75,
+          "calls": [
+            {
+              "line": 73,
+              "call": "spec.loader.exec_module",
+              "expression": "spec.loader.exec_module(m)"
+            }
+          ]
+        },
+        {
+          "function": "execute",
+          "first_line": 78,
+          "last_line": 88,
+          "calls": [
+            {
+              "line": 88,
+              "call": "policy.execute",
+              "expression": "policy.execute(v, setup, original, end, evidence, out, packet_fn, output=output)"
+            },
+            {
+              "line": 81,
+              "call": "ns_executor().execute",
+              "expression": "ns_executor().execute(v, setup, original, end, evidence, out, packet_fn, output=output, remaining_fn=remaining_fn)"
+            },
+            {
+              "line": 83,
+              "call": "current_executor().execute",
+              "expression": "current_executor().execute(v, setup, original, end, evidence, out, packet_fn, output=output, remaining_fn=remaining_fn)"
+            },
+            {
+              "line": 86,
+              "call": "ew_executor().execute",
+              "expression": "ew_executor().execute(v, setup, original, end, evidence, out, packet_fn, output=output, remaining_fn=remaining_fn)"
+            },
+            {
+              "line": 81,
+              "call": "ns_executor",
+              "expression": "ns_executor()"
+            },
+            {
+              "line": 83,
+              "call": "current_executor",
+              "expression": "current_executor()"
+            },
+            {
+              "line": 86,
+              "call": "ew_executor",
+              "expression": "ew_executor()"
+            }
+          ]
+        }
+      ],
+      "static_inspection_only": true
+    },
+    {
+      "path": "experiments/v1281_partial_reconnection_fixed24/owner.py",
+      "sha256": "c9c678bcf9a92af684f02019b62a6aeaaa94fa61e6a97ceca7894f00125128d3",
+      "functions": [
+        {
+          "function": "navigate",
+          "first_line": 21,
+          "last_line": 65,
+          "calls": [
+            {
+              "line": 22,
+              "call": "load",
+              "expression": "load('v1067_raw_causal_sensor', R / 'experiments/v1024_full_route_execution/causal.py')"
+            },
+            {
+              "line": 22,
+              "call": "load",
+              "expression": "load('v1067_raw_periodic_coefficients', R / 'experiments/v1037_periodic_norm_source/periodic_norm.py')"
+            },
+            {
+              "line": 25,
+              "call": "Reserve",
+              "expression": "Reserve(setup)"
+            },
+            {
+              "line": 46,
+              "call": "__import__('json').loads",
+              "expression": "__import__('json').loads((__import__('kernel').O / (task['case_id'] + '_STATIC_SOURCE.json')).read_text())"
+            },
+            {
+              "line": 65,
+              "call": "execute",
+              "expression": "execute(v, setup, seed, end, evidence, out, causal.packet)"
+            },
+            {
+              "line": 55,
+              "call": "renew",
+              "expression": "renew(setup, p, task['goal_xy'], wall_s=min(10.0, end - time.time() - 180), max_expansions=20000)"
+            },
+            {
+              "line": 59,
+              "call": "Reserve",
+              "expression": "Reserve(setup, use_wide_reserve=False)"
+            },
+            {
+              "line": 61,
+              "call": "__import__('json').loads",
+              "expression": "__import__('json').loads((C / 'RECOVERY_WARM_SEED.json').read_text())"
+            },
+            {
+              "line": 58,
+              "call": "renew_from_complete_partial",
+              "expression": "renew_from_complete_partial(setup, p, task['goal_xy'], __import__('kernel').O)"
+            },
+            {
+              "line": 32,
+              "call": "reserve.check",
+              "expression": "reserve.check(causal.packet(v, evidence.first is not None), rr[i:i + count])"
+            },
+            {
+              "line": 36,
+              "call": "v.step",
+              "expression": "v.step(*request)"
+            }
+          ]
+        },
+        {
+          "function": "follow",
+          "first_line": 26,
+          "last_line": 45,
+          "calls": [
+            {
+              "line": 32,
+              "call": "reserve.check",
+              "expression": "reserve.check(causal.packet(v, evidence.first is not None), rr[i:i + count])"
+            },
+            {
+              "line": 36,
+              "call": "v.step",
+              "expression": "v.step(*request)"
+            }
+          ]
+        }
+      ],
+      "static_inspection_only": true
+    },
+    {
+      "path": "experiments/v1281_partial_reconnection_fixed24/live_entry.py",
+      "sha256": "1ed9ebc4a1c56e7d4993ad02d9b92e571a1ff8f16d486fcdb2e04ed76c71c957",
+      "functions": [
+        {
+          "function": "execute",
+          "first_line": 18,
+          "last_line": 90,
+          "calls": [
+            {
+              "line": 81,
+              "call": "goal_entry.execute",
+              "expression": "goal_entry.execute(v, setup, fresh, gt, time.monotonic() + max(0.0, end - time.time() - 120), lambda : time.time() < end - 120 and remaining_fn() > 150, packet, lambda p: dump(out / 'PARTIAL_PROGRESS.json', p), goal_out)"
+            },
+            {
+              "line": 44,
+              "call": "stop_policy.execute_current_stop",
+              "expression": "stop_policy.execute_current_stop(v, proofs, predicted, p, packet, evidence.update, lambda : time.time() < end - 120 and remaining_fn() > 150, save_stop)"
+            },
+            {
+              "line": 57,
+              "call": "v.step",
+              "expression": "v.step(float(speed), 0.0 if park or speed == 0.0 else float(speed) * math.tan(target) / 0.6, False)"
+            }
+          ]
+        }
+      ],
+      "static_inspection_only": true
+    },
+    {
+      "path": "experiments/v1281_partial_reconnection_fixed24/reconnect.py",
+      "sha256": "c1d4067cf57d2c5ddcaf365df8daab649470cfb61169b5f696b6df1ec047ed79",
+      "functions": [
+        {
+          "function": "job",
+          "first_line": 9,
+          "last_line": 44,
+          "calls": [
+            {
+              "line": 18,
+              "call": "os.sched_setaffinity",
+              "expression": "os.sched_setaffinity(0, {data['cpu']})"
+            },
+            {
+              "line": 26,
+              "call": "kernel.predict",
+              "expression": "kernel.predict(setup, p, actions_from_requests(rr), tail=False)"
+            },
+            {
+              "line": 27,
+              "call": "Reserve",
+              "expression": "Reserve(setup, use_wide_reserve=False)"
+            },
+            {
+              "line": 32,
+              "call": "renew",
+              "expression": "renew(setup, pp, data['goal'], wall_s=12.0, max_expansions=20000)"
+            }
+          ]
+        },
+        {
+          "function": "renew_from_complete_partial",
+          "first_line": 45,
+          "last_line": 54,
+          "calls": [
+            {
+              "line": 50,
+              "call": "concurrent.futures.ProcessPoolExecutor",
+              "expression": "concurrent.futures.ProcessPoolExecutor(max_workers=4, mp_context=multiprocessing.get_context('spawn'))"
+            },
+            {
+              "line": 51,
+              "call": "pool.map",
+              "expression": "pool.map(job, jobs)"
+            }
+          ]
+        }
+      ],
+      "static_inspection_only": true
+    },
+    {
+      "path": "experiments/v1281_partial_reconnection_fixed24/base_safety.py",
+      "sha256": "34d89f0866a05765072fff7e2e427068bb3f466c0aa6ee36c1e5709d0fff707c",
+      "functions": [
+        {
+          "function": "audit",
+          "first_line": 4,
+          "last_line": 38,
+          "calls": [
+            {
+              "line": 6,
+              "call": "load",
+              "expression": "load('v1184_saved_route_contract', R / 'experiments/v1089_route_scene_contract/contract.py')"
+            },
+            {
+              "line": 7,
+              "call": "np.load",
+              "expression": "np.load(out / 'physics/NATIVE_TRACE.npz')"
+            },
+            {
+              "line": 11,
+              "call": "q.model.Predictor",
+              "expression": "q.model.Predictor(setup, dict(q.initial(p0), steering_load_episode=False))"
+            },
+            {
+              "line": 15,
+              "call": "owner.compute",
+              "expression": "owner.compute(*commands[i, [1, 2, 3, 4]], bool(commands[i, 5]))"
+            },
+            {
+              "line": 20,
+              "call": "json.load",
+              "expression": "json.load(f)"
+            },
+            {
+              "line": 21,
+              "call": "json.load",
+              "expression": "json.load(f)"
+            },
+            {
+              "line": 36,
+              "call": "load('v1275_independent_backup', R / 'experiments/v1219_stop_preserving_observer/audit_observer.py').verify_backup",
+              "expression": "load('v1275_independent_backup', R / 'experiments/v1219_stop_preserving_observer/audit_observer.py').verify_backup(out, time.monotonic() + 180)"
+            },
+            {
+              "line": 36,
+              "call": "load",
+              "expression": "load('v1275_independent_backup', R / 'experiments/v1219_stop_preserving_observer/audit_observer.py')"
+            }
+          ]
+        }
+      ],
+      "static_inspection_only": true
+    },
+    {
+      "path": "experiments/v1281_partial_reconnection_fixed24/prestep.py",
+      "sha256": "55aaff7bc24c23b9f1f2befbe2624f469d6aa5b5cd8539ff899f7766241cc28c",
+      "functions": [
+        {
+          "function": "main",
+          "first_line": 9,
+          "last_line": 25,
+          "calls": [
+            {
+              "line": 18,
+              "call": "FirstStep",
+              "expression": "FirstStep()"
+            }
+          ]
+        },
+        {
+          "function": "step",
+          "first_line": 18,
+          "last_line": 18,
+          "calls": [
+            {
+              "line": 18,
+              "call": "FirstStep",
+              "expression": "FirstStep()"
+            }
+          ]
+        }
+      ],
+      "static_inspection_only": true
+    }
+  ],
+  "source_count": 8,
+  "unresolved_dynamic_import_and_backend_paths": true,
+  "full_graph_coverage_not_established": true,
+  "historical_parallel_model_path_identified": true,
+  "not_currently_executable_under_CPU2_single_owner": true,
+  "old_deadlines_and_storage_caps_not_renewed": true,
+  "route_target": "originalWE10060001 only; no fresh task",
+  "current_admission": false,
+  "allruns_allocated_bytes": 10087297024,
+  "source_scope_peak_bytes": 10668208128,
+  "wall_s": 1.2742770370095968
+}
