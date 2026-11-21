@@ -1,0 +1,36 @@
+{
+  "source": "runs/v1443_task_local_initializer_cache/initializer_only/initializer.console",
+  "source_sha256": "a00d01ad74497ef6b63cba32f00036b33bd9bc94fa1bb60f03b652eacfab0601",
+  "supplemental_parsed_record": {
+    "passed": false,
+    "closed": true,
+    "canonical_factory_call_attempts": 1,
+    "canonical_vehicle_initializations": null,
+    "initializer_inflight_unknown": true,
+    "internal_factory_model_constructions": null,
+    "actual_native": 0,
+    "private_prediction_native": 0,
+    "allocator_compute": 0,
+    "own_replay_native": 0,
+    "first_error": {
+      "stage": "CANONICAL_INITIALIZER_ONLY",
+      "error": "PermissionError('Write outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1443_task_local_initializer_cache/initializer_only/physics/paired/KNOWN_PRIOR_REFERENCE.json')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1443_task_local_initializer_cache/initializer.py\", line 69, in _run\n    vehicle=call_factory_once(lambda:factory.create_vehicle(out/'physics',task),save=save,result=result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1443_task_local_initializer_cache/initializer.py\", line 26, in call_factory_once\n    vehicle=factory_call()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1443_task_local_initializer_cache/initializer.py\", line 69, in <lambda>\n    vehicle=call_factory_once(lambda:factory.create_vehicle(out/'physics',task),save=save,result=result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/scene_binding.py\", line 30, in create_vehicle\n    with bind_scene(vehicle,arena,factory):instance=canonical.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1020_terminal_two_route_development/physical.py\", line 9, in create_vehicle\n    v=base.create_vehicle(out,task);out=Path(out);setup=json.loads((out/'SETUP.json').read_text());sensor=json.loads((out/'EXACT_SENSOR_BINDING.json').read_text())\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v959_hold_response18/physical.py\", line 21, in create_vehicle\n    vehicle=base.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v945_rpccr_observation_liveness/physical.py\", line 10, in create_vehicle\n    instance=engine.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v882_runtime_evidence_repair/physical.py\", line 18, in create_vehicle\n    instance=vehicle.Vehicle(out,task['case_id'],task['seed'],task['dynamic'])\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 33, in __init__\n    self.actor=setup(self.context,self.env,rect,circ,self.context['F'],self.context['H'],self.context['B'],mj,planner_steering_bound(self.env,mj)[0]);self.m,self.d=self.env.model,self.env.data\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v855_renewal_worker/dynamic_scene.py\", line 72, in setup\n    (Path(context['out'])/'KNOWN_PRIOR_REFERENCE.json').write_text(json.dumps({'qualification_version':'V709','reference':selection['certificate'],'construction_only':True,'actor_truth_input_to_online':False},indent=2))\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1154, in write_text\n    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/bounded_io.py\", line 92, in <lambda>\n    Path.open=lambda file,mode='r',*a,**kw:opener(original_path_open,file,mode,*a,**kw)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/bounded_io.py\", line 58, in opener\n    try:stream=original(file,mode,*args,**kwargs)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\n  File \"/home/linghu/catkin_ws/src/mk-mini/experiments/phase_rpccr_p0b3_v1/pilot.py\", line 89, in write_guard\n    raise PermissionError('Write outside isolated experiment: '+str(p))\nPermissionError: Write outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1443_task_local_initializer_cache/initializer_only/physics/paired/KNOWN_PRIOR_REFERENCE.json\n"
+    },
+    "secondary_errors": [
+      {
+        "stage": "SAVE_FIRST_ERROR",
+        "error": "PermissionError('Write outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1443_task_local_initializer_cache/initializer_only/FIRST_ERROR.json.tmp')"
+      },
+      {
+        "stage": "SAVE_FINAL_RESULT",
+        "error": "PermissionError('Write outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1443_task_local_initializer_cache/initializer_only/RESULT.json.tmp')"
+      }
+    ],
+    "physical_route_admission": false,
+    "factory_call_reserved": true,
+    "closed_unix": 1795237723.5927665
+  },
+  "original_machine_RESULT_not_reconstructed": true,
+  "no_model_reexecution": true
+}

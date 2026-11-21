@@ -1,0 +1,3 @@
+# V1446 旧mutable guard拒绝与新immutable guard源恢复
+
+零模型备份V1443–V1446到runs/v1443_task_local_initializer_cache首次归档锚点。完整原console/缺失机器RESULT原gap/native未记账Mesa缓存/未知构造数和新V1445目标资格均保持；base为已全核V1441。32MiB块/allruns10GiB+下载32MiB+root512MiB，逐块实际下载/所有成员/全流/index SHA后仅清运输，原件留。Git新必要source小metadata先commit后本批唯一push/ref，不重push旧V1441。归档不是完整initializer或整路PASS。

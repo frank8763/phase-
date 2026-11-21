@@ -1,0 +1,34 @@
+{
+  "closed": true,
+  "passed": false,
+  "recorded_unix": 1795240108.0106823,
+  "canonical_factory_call_attempts": 1,
+  "canonical_vehicle_initializations": null,
+  "internal_factory_model_constructions": null,
+  "initializer_inflight_unknown": true,
+  "actual_native": 0,
+  "private_prediction_native": 0,
+  "allocator_compute": 0,
+  "own_replay_native": 0,
+  "first_error": "PermissionError('Write outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1443_task_local_initializer_cache/initializer_only/physics/paired/KNOWN_PRIOR_REFERENCE.json')",
+  "first_error_console_sha256": "a00d01ad74497ef6b63cba32f00036b33bd9bc94fa1bb60f03b652eacfab0601",
+  "first_error_console_byte_offset": 2495,
+  "machine_RESULT_and_FIRST_ERROR_absent": true,
+  "console_final_record_parse_is_supplemental_not_original_machine_RESULT": true,
+  "secondary_save_errors": [
+    {
+      "stage": "SAVE_FIRST_ERROR",
+      "error": "PermissionError('Write outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1443_task_local_initializer_cache/initializer_only/FIRST_ERROR.json.tmp')"
+    },
+    {
+      "stage": "SAVE_FINAL_RESULT",
+      "error": "PermissionError('Write outside isolated experiment: /home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1443_task_local_initializer_cache/initializer_only/RESULT.json.tmp')"
+    }
+  ],
+  "cause": "Original runner adds B.write_guard using mutable B.OUT, then Vehicle changes B.OUT to historical v858 output; same guard now denies legitimate current task known-prior and error-result files",
+  "additional_native_Mesa_cache_writes_observed": true,
+  "native_cache_bytes_not_charged_by_Python_OutputBoundary": true,
+  "complete_byte_path_qualification_failed": true,
+  "no_relaunch_or_frozen_source_edit": true,
+  "next": "New immutable exact original-write_guard code binding to declared task OUT while retaining Stage/path restrictions, native Mesa cache disabled before render initialization and verified absent; targeted zero-model guard-scope and cache environment qualification before any new canonical initializer."
+}

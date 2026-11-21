@@ -1,0 +1,11 @@
+# V1445 原write_guard固定输出scope及native Mesa缓存
+
+V1443 initializer-only已单次CLOSED FAILED，0actual/private/Allocator/replay，factory调用1/完整初始化及内部模型次数未知。原current runner注册B.write_guard时取动态globals OUT，Vehicle返回原factory后B.OUT被改到历史runs/v858；相同guard因此拒绝合法当前task KNOWN_PRIOR_REFERENCE及FIRST_ERROR/RESULT。机器RESULT未落盘，首错及后续保存错误完整在有界console末JSON，独立CONSOLE_RECOVERED_FAILURE_RECORD明确只解析原console、不补造原RESULT。不得重launch或改冻源。父launch attempts8，不等于8完成初始化；原115880actual104905ownreplay/修订5/整路0不增。
+
+同时观察Mesa native shader cache文件绕过Python WriteProxy记账；不能因目录在task内而冒称byte完整，原资格失败。新source在任何renderer前MESA_SHADER_CACHE_DISABLE=true（实际bundled libOSMesa中存在该选项名），保留OSMesa/GPU隐藏/同模型和渲染输出，不改物理或传感参数。实际新initializer必须核无mesa_shader_cache成员。
+
+对原runner新增audithook用严格确切source代码身份的原write_guard函数，仅复制globals把OUT固定为声明task output，原code/Stage排除/所有open/mkdir/remove/rename判据完全保留；不替换或禁用原audit hook、不扩大任何task外写权限。B.OUT以后可按旧源码变化，但已注册guard的OUT不随之漂移。新增仅在原factory注册hook期间scope，未知hook/源变化拒绝；task已有外层原write_guard仍保留。
+
+下一必要资格只验证真实原guard代码immutable绑定、软件B.OUT漂移/合法当前输出/错误JSON、外scope与Stage负例、Mesa禁缓存env与真实无model OSMesa context（CPU2/run_phase/单锁，禁止MjModel/MjData/vehicle/Predictor/compute）；不再重复Torch配置60s或旧suite。新profile/CLI/byte/once/缓存其他函数只能按具体源AST/已测SHA复用，新增门不能凭AST填true。
+
+当前源draft/未新资格/未SOURCE_FREEZE/无新model准入；原canonical factory/模型参数/任务和安全门原样。新一次initializer仍先所有入口门及失败原件+新source远端恢复核，再1factory/180s/0native。完整整路无准入，不借此launch车辆导航。
