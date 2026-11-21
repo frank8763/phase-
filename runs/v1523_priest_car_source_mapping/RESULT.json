@@ -1,0 +1,534 @@
+{
+  "closed": true,
+  "source_capture_completed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "optimizer_calls": 0,
+  "Allocator_recomputations": 0,
+  "replay_native": 0,
+  "author_imported_or_executed": false,
+  "rows": [
+    {
+      "path": "runs/v1523_priest_car_source_mapping/upstream/priest/src/mpc_cem_dynamic.py",
+      "upstream_path": "priest/src/mpc_cem_dynamic.py",
+      "url": "https://raw.githubusercontent.com/fatemeh-rastgar/PRIEST/4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41/priest/src/mpc_cem_dynamic.py",
+      "bytes": 32266,
+      "git_blob_sha1": "96722c4cebb6bb1d33b6e72c52b4093f54e7ff9a",
+      "sha256": "cf6bbb7588e2db476ef40d3f8d2b32d5c02aa2ec501e21e035ec444ddd724fa2",
+      "raw_verified_before_parse": true,
+      "functions": [
+        {
+          "name": "__init__",
+          "first_line": 23,
+          "last_line": 155
+        },
+        {
+          "name": "path_spline",
+          "first_line": 161,
+          "last_line": 171
+        },
+        {
+          "name": "compute_contouring_error",
+          "first_line": 175,
+          "last_line": 185
+        },
+        {
+          "name": "compute_obs_traj_prediction",
+          "first_line": 189,
+          "last_line": 212
+        },
+        {
+          "name": "compute_boundary_vec",
+          "first_line": 217,
+          "last_line": 236
+        },
+        {
+          "name": "compute_warm_traj",
+          "first_line": 240,
+          "last_line": 304
+        },
+        {
+          "name": "compute_traj_guess",
+          "first_line": 309,
+          "last_line": 478
+        },
+        {
+          "name": "compute_projection",
+          "first_line": 482,
+          "last_line": 507
+        },
+        {
+          "name": "compute_cost_batch",
+          "first_line": 514,
+          "last_line": 549
+        },
+        {
+          "name": "comp_prod",
+          "first_line": 553,
+          "last_line": 560
+        },
+        {
+          "name": "compute_shifted_samples",
+          "first_line": 564,
+          "last_line": 628
+        },
+        {
+          "name": "compute_controls",
+          "first_line": 632,
+          "last_line": 654
+        },
+        {
+          "name": "compute_cem",
+          "first_line": 657,
+          "last_line": 706
+        }
+      ],
+      "relevant_source_lines": []
+    },
+    {
+      "path": "runs/v1523_priest_car_source_mapping/upstream/priest/src/mpc_expert.py",
+      "upstream_path": "priest/src/mpc_expert.py",
+      "url": "https://raw.githubusercontent.com/fatemeh-rastgar/PRIEST/4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41/priest/src/mpc_expert.py",
+      "bytes": 38913,
+      "git_blob_sha1": "0a8bb75eb7b781f93c289d86ea6ed2545af4d02a",
+      "sha256": "165f44740b2feeaba80c0008299f3c36795af563f6538348c806e6b539979105",
+      "raw_verified_before_parse": true,
+      "functions": [
+        {
+          "name": "__init__",
+          "first_line": 23,
+          "last_line": 145
+        },
+        {
+          "name": "path_spline",
+          "first_line": 149,
+          "last_line": 159
+        },
+        {
+          "name": "compute_contouring_error",
+          "first_line": 163,
+          "last_line": 173
+        },
+        {
+          "name": "compute_obs_traj_prediction",
+          "first_line": 177,
+          "last_line": 194
+        },
+        {
+          "name": "compute_boundary_vec",
+          "first_line": 198,
+          "last_line": 217
+        },
+        {
+          "name": "compute_warm_traj",
+          "first_line": 221,
+          "last_line": 291
+        },
+        {
+          "name": "compute_traj_guess",
+          "first_line": 295,
+          "last_line": 453
+        },
+        {
+          "name": "compute_projection",
+          "first_line": 457,
+          "last_line": 491
+        },
+        {
+          "name": "initial_alpha_d",
+          "first_line": 495,
+          "last_line": 546
+        },
+        {
+          "name": "compute_alph_d_proj",
+          "first_line": 550,
+          "last_line": 612
+        },
+        {
+          "name": "compute_projection_sampling",
+          "first_line": 618,
+          "last_line": 639
+        },
+        {
+          "name": "compute_cost_batch",
+          "first_line": 643,
+          "last_line": 663
+        },
+        {
+          "name": "comp_prod",
+          "first_line": 667,
+          "last_line": 674
+        },
+        {
+          "name": "compute_shifted_samples",
+          "first_line": 677,
+          "last_line": 728
+        },
+        {
+          "name": "compute_controls",
+          "first_line": 732,
+          "last_line": 746
+        },
+        {
+          "name": "compute_cem",
+          "first_line": 750,
+          "last_line": 807
+        },
+        {
+          "name": "lax_projection",
+          "first_line": 624,
+          "last_line": 631
+        }
+      ],
+      "relevant_source_lines": []
+    },
+    {
+      "path": "runs/v1523_priest_car_source_mapping/upstream/priest/src/planner_cem_dynamic.py",
+      "upstream_path": "priest/src/planner_cem_dynamic.py",
+      "url": "https://raw.githubusercontent.com/fatemeh-rastgar/PRIEST/4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41/priest/src/planner_cem_dynamic.py",
+      "bytes": 24472,
+      "git_blob_sha1": "241a0a870630ecb9555eccf5cf634f031df8a3c2",
+      "sha256": "d2068a316289422f7d867df151e2ef95dc0dd1e4b6d5e4399c966d40f6d3c991",
+      "raw_verified_before_parse": true,
+      "functions": [
+        {
+          "name": "__init__",
+          "first_line": 49,
+          "last_line": 193
+        },
+        {
+          "name": "convert_angle",
+          "first_line": 198,
+          "last_line": 206
+        },
+        {
+          "name": "convert_angle_2",
+          "first_line": 208,
+          "last_line": 215
+        },
+        {
+          "name": "Callback",
+          "first_line": 219,
+          "last_line": 258
+        },
+        {
+          "name": "OdomCallback_1",
+          "first_line": 261,
+          "last_line": 264
+        },
+        {
+          "name": "OdomCallback_2",
+          "first_line": 267,
+          "last_line": 270
+        },
+        {
+          "name": "OdomCallback_3",
+          "first_line": 273,
+          "last_line": 276
+        },
+        {
+          "name": "OdomCallback_4",
+          "first_line": 279,
+          "last_line": 282
+        },
+        {
+          "name": "OdomCallback_5",
+          "first_line": 285,
+          "last_line": 288
+        },
+        {
+          "name": "OdomCallback_6",
+          "first_line": 291,
+          "last_line": 294
+        },
+        {
+          "name": "OdomCallback_7",
+          "first_line": 297,
+          "last_line": 300
+        },
+        {
+          "name": "OdomCallback_8",
+          "first_line": 303,
+          "last_line": 306
+        },
+        {
+          "name": "OdomCallback_9",
+          "first_line": 309,
+          "last_line": 312
+        },
+        {
+          "name": "OdomCallback_10",
+          "first_line": 315,
+          "last_line": 318
+        },
+        {
+          "name": "drawVisibleObstacles",
+          "first_line": 322,
+          "last_line": 343
+        },
+        {
+          "name": "PlotObstacles",
+          "first_line": 346,
+          "last_line": 372
+        },
+        {
+          "name": "deleteMarkers",
+          "first_line": 376,
+          "last_line": 389
+        },
+        {
+          "name": "pathPublisher",
+          "first_line": 393,
+          "last_line": 427
+        },
+        {
+          "name": "planner",
+          "first_line": 433,
+          "last_line": 656
+        },
+        {
+          "name": "shutdown",
+          "first_line": 661,
+          "last_line": 664
+        }
+      ],
+      "relevant_source_lines": []
+    },
+    {
+      "path": "runs/v1523_priest_car_source_mapping/upstream/priest/src/planner_holonomic.py",
+      "upstream_path": "priest/src/planner_holonomic.py",
+      "url": "https://raw.githubusercontent.com/fatemeh-rastgar/PRIEST/4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41/priest/src/planner_holonomic.py",
+      "bytes": 16514,
+      "git_blob_sha1": "cf2c68bcbfb877046d7811c6f1b385b26ef89abc",
+      "sha256": "69aafe35a641127c9fd6040b0242ae12a43f6c1e5e303a7dc3a2d1f453362c12",
+      "raw_verified_before_parse": true,
+      "functions": [
+        {
+          "name": "__init__",
+          "first_line": 45,
+          "last_line": 129
+        },
+        {
+          "name": "Callback",
+          "first_line": 133,
+          "last_line": 168
+        },
+        {
+          "name": "drawVisibleObstacles",
+          "first_line": 173,
+          "last_line": 194
+        },
+        {
+          "name": "PlotObstacles",
+          "first_line": 197,
+          "last_line": 223
+        },
+        {
+          "name": "pathPublisher",
+          "first_line": 227,
+          "last_line": 260
+        },
+        {
+          "name": "planner",
+          "first_line": 264,
+          "last_line": 449
+        },
+        {
+          "name": "shutdown",
+          "first_line": 451,
+          "last_line": 454
+        }
+      ],
+      "relevant_source_lines": []
+    },
+    {
+      "path": "runs/v1523_priest_car_source_mapping/upstream/point-to-point-navigation/2d_comparison/CEM.py",
+      "upstream_path": "point-to-point-navigation/2d_comparison/CEM.py",
+      "url": "https://raw.githubusercontent.com/fatemeh-rastgar/PRIEST/4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41/point-to-point-navigation/2d_comparison/CEM.py",
+      "bytes": 17687,
+      "git_blob_sha1": "817cff7d6b1efb164674dc1717e63a171242e48f",
+      "sha256": "0e0b194a215683f21936e8c2d1dd02a38d7fa67c7282e6e09223bf9fdd46ad50",
+      "raw_verified_before_parse": true,
+      "functions": [
+        {
+          "name": "__init__",
+          "first_line": 18,
+          "last_line": 84
+        },
+        {
+          "name": "compute_initial_guess",
+          "first_line": 90,
+          "last_line": 138
+        },
+        {
+          "name": "comp_prod",
+          "first_line": 143,
+          "last_line": 150
+        },
+        {
+          "name": "path_spline",
+          "first_line": 155,
+          "last_line": 165
+        },
+        {
+          "name": "compute_contouring_error",
+          "first_line": 170,
+          "last_line": 181
+        },
+        {
+          "name": "compute_obs_traj_prediction",
+          "first_line": 186,
+          "last_line": 197
+        },
+        {
+          "name": "compute_boundary_vec",
+          "first_line": 203,
+          "last_line": 222
+        },
+        {
+          "name": "compute_projection",
+          "first_line": 249,
+          "last_line": 275
+        },
+        {
+          "name": "compute_contouring_error",
+          "first_line": 279,
+          "last_line": 289
+        },
+        {
+          "name": "compute_cost_batch",
+          "first_line": 292,
+          "last_line": 311
+        },
+        {
+          "name": "compute_mean_cov",
+          "first_line": 318,
+          "last_line": 373
+        },
+        {
+          "name": "compute_cem_part",
+          "first_line": 381,
+          "last_line": 425
+        }
+      ],
+      "relevant_source_lines": []
+    },
+    {
+      "path": "runs/v1523_priest_car_source_mapping/upstream/point-to-point-navigation/2d_comparison/Optim_part.py",
+      "upstream_path": "point-to-point-navigation/2d_comparison/Optim_part.py",
+      "url": "https://raw.githubusercontent.com/fatemeh-rastgar/PRIEST/4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41/point-to-point-navigation/2d_comparison/Optim_part.py",
+      "bytes": 16582,
+      "git_blob_sha1": "8d8148a43c500551f5440bb3a31fe8abd2462772",
+      "sha256": "d27432dc46d8248ede801d093d207396fd62760d5361805625c52c04f818e491",
+      "raw_verified_before_parse": true,
+      "functions": [
+        {
+          "name": "__init__",
+          "first_line": 21,
+          "last_line": 72
+        },
+        {
+          "name": "compute_contouring_error",
+          "first_line": 76,
+          "last_line": 86
+        },
+        {
+          "name": "compute_boundary_vec",
+          "first_line": 91,
+          "last_line": 110
+        },
+        {
+          "name": "compute_x",
+          "first_line": 114,
+          "last_line": 152
+        },
+        {
+          "name": "initial_alpha_d",
+          "first_line": 157,
+          "last_line": 209
+        },
+        {
+          "name": "compute_alph_d_proj",
+          "first_line": 212,
+          "last_line": 271
+        },
+        {
+          "name": "compute_cost_batch",
+          "first_line": 274,
+          "last_line": 294
+        },
+        {
+          "name": "SolveOpt1",
+          "first_line": 299,
+          "last_line": 343
+        },
+        {
+          "name": "lax_projection",
+          "first_line": 305,
+          "last_line": 315
+        }
+      ],
+      "relevant_source_lines": []
+    },
+    {
+      "path": "runs/v1523_priest_car_source_mapping/upstream/point-to-point-navigation/2d_comparison/casadi_solver.py",
+      "upstream_path": "point-to-point-navigation/2d_comparison/casadi_solver.py",
+      "url": "https://raw.githubusercontent.com/fatemeh-rastgar/PRIEST/4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41/point-to-point-navigation/2d_comparison/casadi_solver.py",
+      "bytes": 13508,
+      "git_blob_sha1": "efab474427bfeeee7bac7e9a4d334960b8a1210f",
+      "sha256": "901c9b94f42e6e07eab72f9234f36dab80f4997a4a8ea3d6790d406a49a7a598",
+      "raw_verified_before_parse": true,
+      "functions": [
+        {
+          "name": "__init__",
+          "first_line": 15,
+          "last_line": 20
+        },
+        {
+          "name": "__str__",
+          "first_line": 24,
+          "last_line": 29
+        },
+        {
+          "name": "__init__",
+          "first_line": 33,
+          "last_line": 45
+        },
+        {
+          "name": "SolveRockit",
+          "first_line": 50,
+          "last_line": 138
+        },
+        {
+          "name": "distsq",
+          "first_line": 140,
+          "last_line": 141
+        },
+        {
+          "name": "csmax",
+          "first_line": 142,
+          "last_line": 143
+        },
+        {
+          "name": "sqrt_special",
+          "first_line": 144,
+          "last_line": 145
+        },
+        {
+          "name": "SolveFatrop",
+          "first_line": 147,
+          "last_line": 278
+        }
+      ],
+      "relevant_source_lines": []
+    }
+  ],
+  "attempts": 7,
+  "bytes": 159942,
+  "all_exact_Gitblob_size_SHA256_readback": true,
+  "car_demo_mapping_established": false,
+  "interpretation": "seven additional relevant members inspected only; exact paper car-case steering-cost and three-distribution recipe not mapped; not proof no such author implementation exists",
+  "scientific_revision_added": false,
+  "wall_s": 11.857015203044284
+}

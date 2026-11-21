@@ -1,0 +1,183 @@
+{
+  "passed": true,
+  "closed": true,
+  "scope": "SOURCE_DERIVED_MATHEMATICAL_DIAGNOSIS",
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "Allocator_recomputations": 0,
+  "replay_native": 0,
+  "optimizer_calls": 0,
+  "recorded_runtime_request": false,
+  "reproduced_original_sign_refusal": true,
+  "input_sha256": "7f320f7b39eb11a0a0aa90cfc8e956a8ad115ddb0275fc94328fa39eeefad8db",
+  "proposal_sha256": "c555bc9751cbad0cff168e0a6e925599898dba10027705d705c53adc18b2d8ea",
+  "gear": -1,
+  "body_yaw_rad": 0.38615042668924937,
+  "samples": [
+    {
+      "time_s": 0.0,
+      "position": [
+        0.4011150197851946,
+        -0.593229212577811
+      ],
+      "velocity": [
+        -1.4835541370938898e-06,
+        -1.5066570239197219e-06
+      ],
+      "acceleration": [
+        1.9600527800811562e-07,
+        2.6142119639027685e-07
+      ],
+      "gear": -1,
+      "tangent_heading_rad": 0.7931241820292663,
+      "nominal_yaw_rate_rad_s": -0.020693544881350993,
+      "nominal_curvature_m_inv": 9786.67285242321,
+      "singular_zero_speed_tangent": false,
+      "actuator_or_collision_feasible": null,
+      "control_emitted": false
+    },
+    {
+      "time_s": 0.10101010101010101,
+      "position": [
+        0.4011517863034345,
+        -0.5930796266424134
+      ],
+      "velocity": [
+        0.0010500561334706067,
+        0.0043160102175682485
+      ],
+      "acceleration": [
+        0.019082011601951998,
+        0.08044808927687346
+      ],
+      "gear": -1,
+      "tangent_heading_rad": -1.8094528577941602,
+      "nominal_yaw_rate_rad_s": 0.10728799902594285,
+      "nominal_curvature_m_inv": -24.153574804547638,
+      "singular_zero_speed_tangent": false,
+      "actuator_or_collision_feasible": null,
+      "control_emitted": false
+    },
+    {
+      "time_s": 0.20202020202020202,
+      "position": [
+        0.40137532563593814,
+        -0.5921325283773234
+      ],
+      "velocity": [
+        0.0035396019611514313,
+        0.015327449057287687
+      ],
+      "acceleration": [
+        0.028832130984931995,
+        0.13345400316714473
+      ],
+      "gear": -1,
+      "tangent_heading_rad": -1.7977499251679945,
+      "nominal_yaw_rate_rad_s": 0.12305462236455535,
+      "nominal_curvature_m_inv": -7.8225056756762115,
+      "singular_zero_speed_tangent": false,
+      "actuator_or_collision_feasible": null,
+      "control_emitted": false
+    },
+    {
+      "time_s": 0.30303030303030304,
+      "position": [
+        0.40188682933176356,
+        -0.5898427242651633
+      ],
+      "velocity": [
+        0.00662862037711407,
+        0.03052639681539731
+      ],
+      "acceleration": [
+        0.031263815814776184,
+        0.1641629788820503
+      ],
+      "gear": -1,
+      "tangent_heading_rad": -1.784620743311985,
+      "nominal_yaw_rate_rad_s": 0.1371208101681494,
+      "nominal_curvature_m_inv": -4.389581052727926,
+      "singular_zero_speed_tangent": false,
+      "actuator_or_collision_feasible": null,
+      "control_emitted": false
+    },
+    {
+      "time_s": 0.40404040404040403,
+      "position": [
+        0.40271258882936484,
+        -0.5858930634401626
+      ],
+      "velocity": [
+        0.009668071342645471,
+        0.04789320760822404
+      ],
+      "acceleration": [
+        0.02811994968235691,
+        0.17707755928414565
+      ],
+      "gear": -1,
+      "tangent_heading_rad": -1.7699866975840282,
+      "nominal_yaw_rate_rad_s": 0.1529989756674341,
+      "nominal_curvature_m_inv": -3.1314198921205723,
+      "singular_zero_speed_tangent": false,
+      "actuator_or_collision_feasible": null,
+      "control_emitted": false
+    },
+    {
+      "time_s": 0.5050505050505051,
+      "position": [
+        0.40382179883206876,
+        -0.5801484508613247
+      ],
+      "velocity": [
+        0.012172337308799757,
+        0.0658329421789819
+      ],
+      "acceleration": [
+        0.02089734358491925,
+        0.17611337260116583
+      ],
+      "gear": -1,
+      "tangent_heading_rad": -1.7536288492653542,
+      "nominal_yaw_rate_rad_s": 0.17134168255276652,
+      "nominal_curvature_m_inv": -2.5592942334016198,
+      "singular_zero_speed_tangent": false,
+      "actuator_or_collision_feasible": null,
+      "control_emitted": false
+    }
+  ],
+  "mean_velocity_world": [
+    0.005509533928174041,
+    0.027315749870072542
+  ],
+  "mean_speed": 0.027865842084352464,
+  "desired_body_heading": -1.7698241082431398,
+  "heading_error_rad": -2.155974534932389,
+  "source_derived_raw_request": [
+    0.01539164069009938,
+    -3.593290891553982
+  ],
+  "body_forward_projection": 0.015391640690099385,
+  "gear_gate_accepted": false,
+  "initial_sample_gear_gate_accepted": true,
+  "extracted_request_source": "reply = self.proposal['reply']\nelapsed = 0.01 * (tick - self.origin)\nsamples = [poly.sample(reply['coefficients_x'], reply['coefficients_y'], time_s=min(10.0, elapsed + i * 10.0 / 99.0), gear=reply['gear']) for i in range(6)]\nvx = sum((x['velocity'][0] for x in samples)) / 6\nvy = sum((x['velocity'][1] for x in samples)) / 6\nspeed = math.hypot(vx, vy)\nassert speed > 1e-12, 'PRIEST_UNRESOLVED_ZERO_SPEED_DIRECTION'\ndesired = math.atan2(reply['gear'] * vy, reply['gear'] * vx)\nerror = wrap(desired - b[2])\nvr = reply['gear'] * speed * math.cos(error)\nwr = error / (6 * 10.0 * 0.01)",
+  "original_gate_source": "abs(vr) < 0.005 or vr * reply['gear'] > 0",
+  "source_hashes": {
+    "experiments/v1520_priest_direction_diagnosis/PROTOCOL.md": "6134ff7183e01f859e9c08d7f8b4c0c4cec382eb525562d5ccd9e6626fd829cd",
+    "experiments/v1520_priest_direction_diagnosis/analyze.py": "c37574444389df7e708e47b2aaf55affea2f100a310257cbc7be728f00f13f90",
+    "experiments/v1485_priest_current_polynomial_seam/response_policy.py": "804435e50332a03250770810639ecb32a756ce0c9c85a9aa7112fa35a17d42cf",
+    "experiments/v1485_priest_current_polynomial_seam/polynomial.py": "07485c1e21412ea7b356a0ddc77ac4cb52cf4097d48e238847a88a8a36f47fb4",
+    "runs/v1504_priest_namespace_worker/numeric/CURRENT_INPUT.json": "b12c4687a1d022e11633861f03f6933a16f630bd4cc2d1e73c577a1d1e1b28bc",
+    "runs/v1504_priest_namespace_worker/SAVED_OPTIMIZER_PROPOSAL.json": "7e405506e7521be15cbae2e0ce8ce3074ab683ef40b59b7bcd3663504704e8fe",
+    "runs/v1518_compact_parent_control/model/GENERATION_ORIGIN.json": "8bb62bacd11aebefe7adfe8d860e730caae85540fd9df31988f45f546a48ceed",
+    "runs/v1518_compact_parent_control/CLOSED_REVIEW.json": "394e58258d3148d200e4c296f614f093dfcf6f78a858e92192d1008eaf2d6afd"
+  },
+  "origin_yaw_exact": true,
+  "elapsed_s": 0.0,
+  "sample_spacing_s": 0.10101010101010101,
+  "does_not_establish_independent_model_safety": true,
+  "no_new_method_or_revision": true,
+  "wall_s": 0.0156577950110659
+}
