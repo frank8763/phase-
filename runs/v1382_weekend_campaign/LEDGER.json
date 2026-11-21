@@ -327,7 +327,7 @@
   "active_task": null,
   "last_round_failure_requires_inspection": false,
   "latest_32210_handoff_qualified": true,
-  "next_preparation": "experiments/v1435_supervisor_control_scope/PROTOCOL.md",
+  "next_preparation": "experiments/v1437_shared_phase_budget/PROTOCOL.md",
   "actual_total_native": 115880,
   "historical_reconstruction_native": 108300,
   "new_component_native": 7580,
@@ -425,5 +425,22 @@
   "latest_pre_wire_quota_preparation": "runs/v1432_pre_wire_byte_grants/PREPARATION_CHECKPOINT03.json",
   "latest_bounded_evidence_qualification": "runs/v1431_bounded_evidence_owner/QUALIFICATION.json",
   "latest_bound_pre_wire_entry_preparation": "runs/v1434_bound_production_entry/PREPARATION_CHECKPOINT.json",
-  "latest_supervisor_control_scope_preparation": "runs/v1435_supervisor_control_scope/PREPARATION_CHECKPOINT02.json"
+  "latest_supervisor_control_scope_preparation": "runs/v1435_supervisor_control_scope/PREPARATION_CHECKPOINT02.json",
+  "latest_bounded_control_peer_preparation": {
+    "recorded_unix": 1795233918.4530163,
+    "V1435_control_qualification_closed_failed": true,
+    "V1435_first_error": "CONTROL_SCOPE_NEGATIVE_ACCEPTED:control_stage_wrong_rename_target",
+    "V1436_control_passed": true,
+    "V1436_bounded_original_RPP_namespace_and_full_close_passed": true,
+    "models": 0,
+    "analytical_integrations": 0,
+    "allocator_recomputations": 0,
+    "physical_native": 0,
+    "actual_replay_native": 0,
+    "whole_route_executed": false,
+    "physical_admission": false,
+    "next_preparation": "experiments/v1437_shared_phase_budget/PROTOCOL.md",
+    "blocker": "Shared5400s normal/tail/close/allocation/replay/audit/pair/metadata guards must be integrated; old600s reserve insufficient and old normal guard blocks tail after cutoff",
+    "incremental_remote_backup_pending": true
+  }
 }

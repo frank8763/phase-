@@ -76,6 +76,12 @@ class WriterBudget:
   import hashlib
   output=Path(os.environ['PHASE_BOUNDED_TASK_OUTPUT']);role=os.environ['PHASE_BOUNDED_WRITER_ROLE'];identity=os.environ['PHASE_BOUNDED_SOURCE_ID']
   path=output/'EXTERNAL_WRITER_RESERVATIONS.json';authority=json.loads(path.read_text());assert authority['source_identity']==identity
-  assert role in authority['writers']and authority['writers'][role]['source_hook_coverage_qualified']is True
+  assert role in authority['writers']
+  if authority.get('purpose')=='ZERO_MODEL_MODELED_ROS_WRITER_QUALIFICATION':
+   parent=json.loads((R/'runs/v1382_weekend_campaign/LEDGER.json').read_text());approval=json.loads((output/'APPROVAL.json').read_text())
+   assert role=='MODELED_ROS'and parent['active_round']is None and not parent['models_now_authorized']
+   assert approval['models_authorized']is False and approval['scope']=='ZERO_MODEL_MODELED_ROS_WRITER_QUALIFICATION'
+   assert authority['writers'][role]['source_hook_coverage_qualified']is False
+  else:assert authority['writers'][role]['source_hook_coverage_qualified']is True
   assert hashlib.sha256((output/'APPROVAL.json').read_bytes()).hexdigest()==authority['approval_sha256']
   return cls(output,role=role,maximum_bytes=authority['writers'][role]['maximum_bytes'],source_identity=identity)

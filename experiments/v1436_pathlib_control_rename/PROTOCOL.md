@@ -1,0 +1,9 @@
+# V1435 监督控制文件关闭范围
+
+科学修订5及原WE/RPP/所有安全来源门不变。V1432原I/O资格因Python3.10 pathlib别名绕过包装而失败，旧文件/首错/后续grant未执行保持。V1433在另版补Path.open后真实文件/子进程日志/预wire grant与8拒绝负例通过，热路径0次du、两atomic+index hold单次.004336s仅资源样本。V1434修继承的旧EventPeer身份断言，实际run_phase CPU2 native未准入拒绝与CPU3 ROS导入入口过，所有模型/物理仍0。这些旧源/资格全部只读，不重刷。
+
+V1434正常work尚未执行；只读审查发现全任务OutputBoundary会拒绝正常恢复REVIEW_PENDING及关闭父LEDGER。新V1435只给予SUPERVISOR_LOG角色这两个确切控制文件和LEDGER.json.tmp收费权限，临时文件只准rename/replace到确切父LEDGER；普通任务内原子rename仍限本output。其他native/ROS/planner角色不获得控制文件权限。原父账/REVIEW不由软件测试伪造，真实关闭/首错及次错保存必须单独资格；本版当前只有AST草稿。
+
+下一必须一次真实零模型control write/atomic close/error资格（使用明确软件控制文件参数，不改活动父账），再当前bounded modeled peer的真实namespace/controller关闭、全部writer hook/initializer保存来源、完整lifecycle时钟/准确计数闭环资格。尚无任何COMPLETE_INTEGRATED_ROUTE_QUALIFICATION/ROUND_WINDOW/LAUNCH，禁止模型/车辆。已有V1431–V1434新资格/错误证据尚待下一增量备份，不重复旧V1430 push或递送。
+
+V1435首次control资格在stage_wrong_rename_target未拒绝而失败，原software wrong.json/console/首错与后续未执行保留，真实父账和review未写。V1436仅新增Path.replace/Path.rename显式拦截，解决同Python3.10 _accessor缓存问题；所有原权限/门/模型/控制不改，旧V1435不重刷。新一次control入口资格。
