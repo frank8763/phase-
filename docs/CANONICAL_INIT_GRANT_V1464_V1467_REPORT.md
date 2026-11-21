@@ -1,0 +1,13 @@
+# 初始化180秒超时与字节额度修复
+
+V1464独立首事件运行资格已失败关闭。监督canonical-ready180秒到期后发送同run/source的NATIVE_STOP_REQUEST；native自身180秒初始化alarm在原dynamic_scene的ElementTree逐chunk写XML期间触发。完整RESULT/FIRST_ERROR已保存，无次保存错误，原REVIEW恢复/锁空闲；ROS尚未启动。
+
+错误栈明确XML每个小write经OutputBoundary.charge_write到quota.admit时没有grant，因而每块都执行du(task)与du(allruns)。这是原初始化输出的资源核算路径问题，未观察到导航/方法失败。规范factory调用尝试1，完整返回与内部模型次数未知；machine RESULT的actual/replay均0，private与Allocator未执行。父15启动尝试/3partial注册，累计actual116280/replay105105、科学修订5、WE整路0不增。闭批禁止重跑或改冻源。
+
+V1467唯一生产改动是在factory输出前准备16MiB、最长180秒的初始化专用字节grant。真实完整du事先核全部runs/224MiBtask/56MiB未来writer cap holds/错误和pending-index/归档下载及512MiB根预留；实际输出仍逐字节扣账，压缩或覆盖不返信用，不扩路径/角色。初始化180秒、normal4140/root5400、原ROS45秒、source200ms和所有科学/控制/物理门均保持。
+
+新CPU2/run_phase/原guard/profile无模型目标资格一次通过：真实ElementTree 505次软件XML输出调用，du只在写前2次，写中0次，16899B含8192B打开开销精确扣账且无损往返；expiry/cap/超180秒与缺scope拒绝，56MiB future writer holds真实持有，无子进程时没有伪造live/source元数据。未变生产源按AST/SHA复用，未重复旧数值或ROS生命周期。
+
+V1464失败和V1467新source共140成员3519377B全部远端块/成员/整流/index SHA核过，唯一Git1c0c7e1fc5ab74f952625478bef1daad796c69eb及Release phase-v1467-initializer-byte-grant-source-20261121；仅清已核重复运输，原件留，禁止第二push/重封。
+
+之后的新有限运行资格应以真实first_event/RESULT、COMPLETION及独立event来源审核判定。工程入口或归档成功不等于当前event完整执行或整路导航通过。

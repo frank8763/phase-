@@ -1,0 +1,9 @@
+# V1469 当前wire与关闭保存的字节grant连续性
+
+V1467一次runtime已CLOSED FAILED，不重跑/改冻源。初始化grant修复有效：真实canonical完整返回1/当前t0 READY独立核后ROS已启动。原arm在issued369901.899946404、received369902.162464985，age0.262518581003s>原0.2，正确ACTUAL_ARM_ORDER_OR_AGE拒绝，未施非零route动作。原200错误零尾全部施加/连续receipt，actual200/private0/独立Allocator0/ownreplay0。关闭retire grant后原capture每小write又fullrunsdu，peer-close120报警打断保存；原FIRST_ERROR/RESULT完整、源未变，Nplus1+actualtrace保留，CONTACTS部分/SENSORS缺/physicalsummary缺口保持，不补造。父16启动尝试/4partial注册，actual116480/ownreplay105105/修订5/整路0。
+
+新fork只修资源核算时序：原Pump.publish每次wire前都fullrunsdu，wire实际间隔约0.47s，arm到达正遇下一次du，接收已旧。新before_wire在源采样前复用仍未过期且同PID/boot/已完整预留并保守扣账的grant；原BEFORE_ACTUAL5_NATIVE_WIRE两秒或CANONICAL_INITIALIZER_PREPARATION仅native0允许，其余/过期先按原8MiB/2秒准备后再采样。每byte/pending-index增长/全externalrole holds仍原quota.admit扣账，不返信用、不放宽200ms、旧回复淘汰/新状态/来源绑定或任何science门；不足立即拒绝，不暗刷新额度救本条命令。
+
+关闭时在原peer-close/root钟内先prepare声明32MiB/300s COMPLETE_ZERO_TAIL_OR_CLOSURE grant，再写原完整state/contact前缀；源门/原全200尾/byte/224MiBtask/224MiBarchive+32MiBdownload+512MiB根与原5400阶段/1event范围不改，不延长peerclose120。无newseed/参考/控制数组回放，不把组件或入口成功当导航。
+
+当前仅具体pump/helper/lifecycle源码AST，scope_entry明确拒未实现的新wire/closure资格。下一仅新真实I/O资格：同native0 grant复用前采样/不du/不足-expiry-owner拒绝/新native不能借initializergrant、关闭完整软件NPZ+受限gzip收费无损往返与无热du，精确pump/lifecycle绑定；旧初始化/ROS/controller/RPC/科学suite按SHA复用不重刷。原V1467全失败raw与新源远端完整恢复、首次目标入口真正过和freeze/全runs峰值/独立once scope后才一次新runtime，当前不准模型/导航launch。

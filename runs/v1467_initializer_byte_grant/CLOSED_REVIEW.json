@@ -1,0 +1,49 @@
+{
+  "recorded_unix": 1795248395.9473355,
+  "closed": true,
+  "passed": false,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 200,
+  "own_replay_native": 0,
+  "private_prediction_native": 0,
+  "independent_allocator_recomputations": 0,
+  "first_error": {
+    "error": "AssertionError('ACTUAL_ARM_ORDER_OR_AGE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1467_initializer_byte_grant/lifecycle.py\", line 110, in _run\n    event_stop.before_iteration();pump.iteration();event_stop.after_iteration()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1449_route_initializer_binding/pump.py\", line 91, in iteration\n    assert not self.armed and n.vehicle.count==0 and 0<=now-packet['issued_at']<=.2,'ACTUAL_ARM_ORDER_OR_AGE';self.armed=True;return\nAssertionError: ACTUAL_ARM_ORDER_OR_AGE\n"
+  },
+  "applied_only_error_complete200_zero_tail": true,
+  "arm_issued_monotonic": 369901.899946404,
+  "arm_received_monotonic": 369902.162464985,
+  "arm_age_s": 0.26251858100295067,
+  "source_age_limit_s": 0.2,
+  "wire_times": [
+    369899.35735725,
+    369899.82826835,
+    369900.296447442,
+    369900.767625688,
+    369901.23168955,
+    369901.698104294,
+    369902.161047332
+  ],
+  "source_derived_zero_route_nonzero_actions": true,
+  "source_unchanged": true,
+  "save_errors": [
+    {
+      "stage": "SAVE_PHYSICAL_PREFIX",
+      "error": "TimeoutError('ACTUAL_ROUTE_HARD_STOP_SAVE_PREFIX')"
+    }
+  ],
+  "capture_partial_CONTACTS_and_missing_SENSORS_gap_preserved": true,
+  "state_Nplus1_and_trace_present": true,
+  "physics_summary_missing": true,
+  "independent_allocator_and_replay_unexecuted": true,
+  "ready_handoff_completed": true,
+  "full_du_before_each_wire_delays_receipt": true,
+  "closure_no_grant_full_du_capture_timeout": true,
+  "review_original_SHA_restored": true,
+  "root_lock_idle": true,
+  "no_relaunch_or_frozen_edit": true,
+  "new_raw_remote_backup_pending": true,
+  "next": "New source only: reuse still-valid conservatively debited prewire grant, including initializer phase only while current native0, avoiding full du during arm wait; once expired/changed phase prepare before freshwire, all freshness gates unchanged. Prepare bounded closure grant before saved prefix. Targeted byte-grant/clock-source qualification before another finite runtime."
+}

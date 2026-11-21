@@ -1,0 +1,11 @@
+# V1467 当前握手时效与关闭保存失败
+
+一次实际首事件资格失败关闭。规范factory完整返回1，内部模型次数未知；真实N0完整状态、packet、MJB与native socket的READY核验通过后才启动ROS。初始化字节grant修复有效，原180秒初始化上限及原45秒ROS等待均未放宽。
+
+ROS arm issued369901.899946404，在369902.162464985被native收到，age0.262518581003秒超过原0.2门。原ACTUAL_ARM_ORDER_OR_AGE正确拒绝；wire采样间隔约0.47秒。原Pump每次publish前全目录du阻塞期间arm到达，读取时已旧；不以工程开销为由放宽时效。
+
+随后原200错误零控制尾完整施加，逐native receipt连续且请求全[0,0,false]；未施非零route动作。机器RESULT actual200/ownreplay0，private及独立Allocator未执行0。关闭先retire grant，原保存每chunk又走完整du，peer-close120秒报警打断physical capture，save_errors记录SAVE_PHYSICAL_PREFIX超时。完整Nplus1和原NATIVE_TRACE/journal已保存；CONTACTS压缩部分、SENSORS及physicalsummary缺失保持，不在关闭后补造或称完整安全审核。首次真实事件仍未进入。
+
+父actual116480/replay105105、16任务启动尝试/4partial注册、科学修订5、原WE整路0。旧失败不重跑，全部源未变、REVIEW原SHA/锁空闲、子进程均已退出。
+
+新V1469生产draft只复用仍有效、同PID/boot、已完整保守预留扣账的wire grant：BEFORE_ACTUAL5_NATIVE_WIRE原2秒，或初始化grant仅native0；不足立即拒绝，过期/其他phase按原8MiB/2秒写前核再采样。没有补信用、放宽source200ms或换实际状态。关闭在原clock内先准备原32MiB/300秒close grant再保存prefix，peer-close120保持。此源仅AST，目标I/O资格未实现，scope入口明确拒绝，不能启动新模型或导航。
