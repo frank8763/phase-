@@ -18,7 +18,7 @@ def charge_bytes(value):
 class WriterBudget:
  def __init__(self,output,*,role,maximum_bytes,source_identity):
   self.output=Path(output).resolve();assert self.output.is_relative_to(R/'runs')and self.output.is_dir()
-  assert role in {'ACTUAL_ROS','MODELED_ROS','PLANNER','SUPERVISOR_LOG'}and type(maximum_bytes)is int and 0<maximum_bytes<=32*1024**2
+  assert role in {'ACTUAL_ROS','MODELED_ROS','PLANNER','SUPERVISOR_LOG'}and type(maximum_bytes)is int and 16384<=maximum_bytes<=32*1024**2
   assert isinstance(source_identity,str)and len(source_identity)==64
   self.role=role;self.maximum=maximum_bytes;self.identity=source_identity
   self.path=self.output/('WRITER_'+role+'_BYTES.json');self.lock_path=self.output/('WRITER_'+role+'_BYTES.lock')
@@ -55,3 +55,12 @@ class WriterBudget:
  def append(self,path,value,stream):
   encoded=json.dumps(value,separators=(',',':'),allow_nan=False,default=lambda x:x.tolist())+'\n'
   self.reserve(path,len(encoded.encode()));stream.write(encoded);stream.flush()
+
+ @classmethod
+ def from_environment(cls):
+  import hashlib
+  output=Path(os.environ['PHASE_BOUNDED_TASK_OUTPUT']);role=os.environ['PHASE_BOUNDED_WRITER_ROLE'];identity=os.environ['PHASE_BOUNDED_SOURCE_ID']
+  path=output/'EXTERNAL_WRITER_RESERVATIONS.json';authority=json.loads(path.read_text());assert authority['source_identity']==identity
+  assert role in authority['writers']and authority['writers'][role]['source_hook_coverage_qualified']is True
+  assert hashlib.sha256((output/'APPROVAL.json').read_bytes()).hexdigest()==authority['approval_sha256']
+  return cls(output,role=role,maximum_bytes=authority['writers'][role]['maximum_bytes'],source_identity=identity)
