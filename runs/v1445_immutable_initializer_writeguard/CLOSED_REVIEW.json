@@ -1,0 +1,25 @@
+{
+  "recorded_unix": 1795240678.8010974,
+  "closed": true,
+  "passed": false,
+  "canonical_factory_call_attempts": 1,
+  "canonical_vehicle_initializations": null,
+  "internal_factory_model_constructions": null,
+  "initializer_inflight_unknown": true,
+  "actual_native": 0,
+  "private_prediction_native": 0,
+  "allocator_compute": 0,
+  "own_replay_native": 0,
+  "first_error": "AssertionError('ORIGINAL_WRITE_GUARD_CODE_CHANGED')",
+  "FIRST_ERROR_and_RESULT_complete": true,
+  "cause": "Runtime pilot is compiled as a complete module with from __future__ import annotations. V1445 expected guard was compiled as an extracted function without that flag. Nested generator code constants differ in co_flags despite identical source/bytecode; exact identity gate correctly refused, original guard itself was not changed.",
+  "source_only_compiler_diagnosis": {
+    "whole_module_flags": 16777219,
+    "extracted_function_flags": 3,
+    "same_bytecode": true,
+    "same_names": true,
+    "constants_equal": false
+  },
+  "no_relaunch_or_frozen_edit": true,
+  "next": "New source compile whole immutable original module without exec and select write_guard code constant, preserving future flags. Qualify actual full-module guard identity/immutable scope with source tamper negatives only; reuse previous unchanged zero-model OSMesa/cache and old gates by exact SHA. Keep all source and model safety gates."
+}

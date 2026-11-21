@@ -1,0 +1,7 @@
+# V1447 原整模块编译write_guard身份
+
+V1445独立initializer-only已单次CLOSED FAILED：1factory尝试/规范初始化返回与内部模型数未知，0actual/private/Allocator/replay，完整FIRST_ERROR/RESULT/父闭合/review恢复。原pilot整模块含future annotations，而V1445预期guard用单函数AST重编译缺future flags；nested generator co_consts code flags不同，导致ORIGINAL_WRITE_GUARD_CODE_CHANGED门正确拒绝。并非原源被改；原同bytecode/source，不能删除identity门求过。旧冻源/失败不重跑不修改。父vehicle_task_starts9是启动尝试，不能报9完整初始化，actual115880/ownreplay104905/修订5/整路0保持。
+
+新source只compile完整原不可变pilot文件（不exec）并从module co_consts中精确选write_guard CodeType，保留原future flags/nested constants/Stage和路径代码；逐code/const/name/flags相同才clone原code固定task OUT。不更改原runner/model/参数/观测/物理/安全门。
+
+下一只针对真实整模块编译guard身份/immutable scope/篡改负例做新零模型资格，不重复Torch60s、OSMesa上下文或旧entry suite；未变task_cache/0steps/byte/CLI按原SHA资格复用。当前仅AST/未资格/未SOURCE_FREEZE，无新准入或模型launch；必须先新入口资格和V1445真实失败+新source增量远端恢复核，才可另新1factory/180s/0native initializer-only资格。完整整路仍无COMPLETE准入。

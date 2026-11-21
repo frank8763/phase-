@@ -1,0 +1,32 @@
+{
+  "passed": false,
+  "closed": true,
+  "physical_route_admission": false,
+  "returncode": 1,
+  "console_charged_bytes": 283,
+  "native": {
+    "passed": false,
+    "closed": true,
+    "canonical_factory_call_attempts": 1,
+    "canonical_vehicle_initializations": null,
+    "initializer_inflight_unknown": true,
+    "internal_factory_model_constructions": null,
+    "actual_native": 0,
+    "private_prediction_native": 0,
+    "allocator_compute": 0,
+    "own_replay_native": 0,
+    "first_error": {
+      "stage": "CANONICAL_INITIALIZER_ONLY",
+      "error": "AssertionError('ORIGINAL_WRITE_GUARD_CODE_CHANGED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1445_immutable_initializer_writeguard/initializer.py\", line 73, in _run\n    vehicle=call_factory_once(lambda:factory.create_vehicle(out/'physics',task),save=save,result=result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1445_immutable_initializer_writeguard/initializer.py\", line 30, in call_factory_once\n    vehicle=factory_call()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1445_immutable_initializer_writeguard/initializer.py\", line 73, in <lambda>\n    vehicle=call_factory_once(lambda:factory.create_vehicle(out/'physics',task),save=save,result=result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/scene_binding.py\", line 30, in create_vehicle\n    with bind_scene(vehicle,arena,factory):instance=canonical.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1020_terminal_two_route_development/physical.py\", line 9, in create_vehicle\n    v=base.create_vehicle(out,task);out=Path(out);setup=json.loads((out/'SETUP.json').read_text());sensor=json.loads((out/'EXACT_SENSOR_BINDING.json').read_text())\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v959_hold_response18/physical.py\", line 21, in create_vehicle\n    vehicle=base.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v945_rpccr_observation_liveness/physical.py\", line 10, in create_vehicle\n    instance=engine.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v882_runtime_evidence_repair/physical.py\", line 18, in create_vehicle\n    instance=vehicle.Vehicle(out,task['case_id'],task['seed'],task['dynamic'])\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 21, in __init__\n    self.context,self.native=initialize(seed,self.out/'paired');self.context['B'].OUT=R/'runs/v858_nav2_verified';self.env=self.context['env'];install_physical_contract(self.env);self.m=self.env.model;self.d=self.env.data;self.actor=None\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v882_runtime_evidence_repair/physical.py\", line 13, in scoped_factory\n    return original(*args,**kwargs)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/factory.py\", line 57, in initialize\n    try:module.main()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/current/runner.py\", line 331, in main\n    sys.addaudithook(B.write_guard)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1445_immutable_initializer_writeguard/guard_binding.py\", line 34, in add\n    bound=bind_function(guard,output);original_add(bound);receipt['installed_original_guard_count']+=1\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1445_immutable_initializer_writeguard/guard_binding.py\", line 23, in bind_function\n    assert guard.__code__.co_code==expected.co_code and guard.__code__.co_consts==expected.co_consts and guard.__code__.co_names==expected.co_names,'ORIGINAL_WRITE_GUARD_CODE_CHANGED'\nAssertionError: ORIGINAL_WRITE_GUARD_CODE_CHANGED\n"
+    },
+    "secondary_errors": [],
+    "physical_route_admission": false,
+    "factory_call_reserved": true,
+    "closed_unix": 1795240597.7098663
+  },
+  "closed_unix": 1795240598.63534,
+  "wall_s": 67.66951768798754,
+  "review_original_restored": true,
+  "secondary_errors": []
+}
