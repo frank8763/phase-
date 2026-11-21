@@ -46,6 +46,7 @@ class PhaseBudget:
  def restore(self,value):
   assert self.active is None and self.last_index==-1
   assert value['window']==self.window and value['phase_caps']==self.caps and value['active']is None
+  assert not value.get('secondary_phase_save_errors',[]),'NATIVE_PHASE_TRANSITION_EVIDENCE_GAP'
   records=value['records'];indices=[list(self.caps).index(r['phase'])for r in records]
   assert indices==sorted(set(indices))and set(value['used'])==set(self.caps)
   assert all(r['completed_within_phase_bound']is True for r in records),'EXPIRED_NATIVE_PHASE_CANNOT_ENTER_SUCCESS_AUDIT'

@@ -1,0 +1,76 @@
+{
+  "window": {
+    "started_unix": 1795234772.1548712,
+    "started_monotonic": 356522.600379283,
+    "absolute_deadline_unix": 1795240172.1548712,
+    "hard_stop_monotonic": 361922.600379283,
+    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
+  },
+  "phase_caps": {
+    "normal": 4140,
+    "complete_zero_tail": 120,
+    "peer_close": 120,
+    "allocator_recompute": 120,
+    "own_fullstate_replay": 300,
+    "recorded_audit": 240,
+    "main_repeat_pair": 240,
+    "final_metadata": 60
+  },
+  "used": {
+    "normal": 0.0013654350186698139,
+    "complete_zero_tail": 0.001278758980333805,
+    "peer_close": 0.0015601569903083146,
+    "allocator_recompute": 0.0016243457794189453,
+    "own_fullstate_replay": 0.0018296819762326777,
+    "recorded_audit": 0.0,
+    "main_repeat_pair": 0.0,
+    "final_metadata": 0.0
+  },
+  "records": [
+    {
+      "phase": "normal",
+      "elapsed_wall_s": 0.0013654350186698139,
+      "phase_used_s": 0.0013654350186698139,
+      "phase_cap_s": 4140,
+      "root_remaining_s": 5399.998305797577,
+      "completed_within_phase_bound": true
+    },
+    {
+      "phase": "complete_zero_tail",
+      "elapsed_wall_s": 0.001278758980333805,
+      "phase_used_s": 0.001278758980333805,
+      "phase_cap_s": 120,
+      "root_remaining_s": 5399.99685950001,
+      "completed_within_phase_bound": true
+    },
+    {
+      "phase": "peer_close",
+      "elapsed_wall_s": 0.0015601569903083146,
+      "phase_used_s": 0.0015601569903083146,
+      "phase_cap_s": 120,
+      "root_remaining_s": 5399.995135307312,
+      "completed_within_phase_bound": true
+    },
+    {
+      "phase": "allocator_recompute",
+      "elapsed_wall_s": 0.0016243457794189453,
+      "phase_used_s": 0.0016243457794189453,
+      "phase_cap_s": 120,
+      "root_remaining_s": 5399.993342638016,
+      "completed_within_phase_bound": true
+    },
+    {
+      "phase": "own_fullstate_replay",
+      "elapsed_wall_s": 0.0018296819762326777,
+      "phase_used_s": 0.0018296819762326777,
+      "phase_cap_s": 300,
+      "root_remaining_s": 5399.991339445114,
+      "completed_within_phase_bound": true
+    }
+  ],
+  "active": null,
+  "started": null,
+  "last_index": 4,
+  "models_counted_by_stage": false,
+  "secondary_phase_save_errors": []
+}

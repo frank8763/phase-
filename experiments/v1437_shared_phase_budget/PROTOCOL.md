@@ -7,3 +7,5 @@
 下一必须把阶段guard实际接当前lifecycle/ROSwall/stop-reserve权限/独立审核与supervisor，normal cutoff不能阻止专门stop期，也不能通过抬normal或改200ms来源门让过期动作执行。stop只使用同一当前snapshot/剩余原预算，一次固定参考不重锚；各阶段仍受5400与根截止。当前仅生产phase helper AST与预算metadata，未资格/未SOURCE_FREEZE/未准入，不启动模型/车辆。
 
 生产接入现已写出，详见PREPARATION_CHECKPOINT02；以上“下一必须接入”已由源码完成。仍仅AST、未资格/未冻结，native/ROS/审计生命周期不能据此launch。必须先源复核及一次必要phase-path零模型资格，不重复旧I/O或peer夹具。
+
+唯一新phase入口资格：CPU2/run_phase/单锁/原writeguard/profile禁Predictor/Allocator构造step/compute，最多90s，0模型/解析积分/物理/实际replay/ROS节点。直接执行当前PhaseRuntime/NativePhaseGate、软件过去normal截止到已预留stop权限、仅clock字段绑定/阻止新事务、8阶段handoff、双钟/boot/重入和次保存错误保首错；真实Unix datagram Pump.close只测新关闭flag，ROS complete receipt明确软件文件输入。没有实际wire/证书/数组/新scan，不能作为actual生命周期或车辆准入。源审补根alarm在写receipt时保持、异常后rootalarm恢复、关闭receipt要求无保存gap。成功或失败都一次闭批/source SHA冻结不重刷。

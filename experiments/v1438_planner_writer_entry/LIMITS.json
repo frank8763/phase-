@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "scope": "FUTURE_ONCE_ORIGINAL_WE_MAIN_AND_SUCCESS_ONLY_REPEAT_EACH_INDEPENDENT90MIN",
+  "scientific_revision": 5,
+  "maximum_task_wall_s": 5400,
+  "maximum_actual_native": 40000,
+  "normal_action_native_cap_before_final200": 39800,
+  "maximum_allocator_recomputations": 40000,
+  "maximum_own_replay_native": 40000,
+  "maximum_pair_state_comparisons_per_trace": 40000,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "maximum_task_evidence_bytes": 234881024,
+  "archive_reserve_bytes": 234881024,
+  "download_reserve_bytes": 33554432,
+  "remaining_archive_download_reserve_bytes": 268435456,
+  "root_reserve_bytes": 536870912,
+  "storage_limit_bytes": 10737418240,
+  "finalization_reserve_s": 1260,
+  "replay_reserve_s": 120,
+  "replay_wall_s": 300,
+  "independent_recorded_audit_wall_s": 240,
+  "ROS_shared_route_wall_s": 4140,
+  "ROS_close_wall_s": 120,
+  "witness": {
+    "maximum_events": 8,
+    "maximum_nominal_native": 5000,
+    "maximum_generation_per_event": 1005000,
+    "maximum_audit_per_event": 1005000,
+    "maximum_generation_native": 8040000,
+    "maximum_audit_native": 8040000
+  },
+  "current_reserve": {
+    "maximum_analytical_native": 8000000,
+    "maximum_predictor_constructions": 40000,
+    "maximum_branches_per_event": 40000
+  },
+  "physical_admission": false,
+  "phase_wall_caps_s": {
+    "normal": 4140,
+    "complete_zero_tail": 120,
+    "peer_close": 120,
+    "allocator_recompute": 120,
+    "own_fullstate_replay": 300,
+    "recorded_audit": 240,
+    "main_repeat_pair": 240,
+    "final_metadata": 60
+  },
+  "root_guard_slack_s": 60,
+  "phase_budget_not_yet_integrated": false,
+  "shared_phase_integration_qualified": false
+}

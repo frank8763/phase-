@@ -1,0 +1,52 @@
+{
+  "window": {
+    "started_unix": 1795230631.1687083,
+    "started_monotonic": 352381.614216479,
+    "absolute_deadline_unix": 1795236031.1687083,
+    "hard_stop_monotonic": 357781.614216479,
+    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
+  },
+  "phase_caps": {
+    "normal": 4140,
+    "complete_zero_tail": 120,
+    "peer_close": 120,
+    "allocator_recompute": 120,
+    "own_fullstate_replay": 300,
+    "recorded_audit": 240,
+    "main_repeat_pair": 240,
+    "final_metadata": 60
+  },
+  "used": {
+    "normal": 0.0011553764343261719,
+    "complete_zero_tail": 0.0031108856201171875,
+    "peer_close": 0.0,
+    "allocator_recompute": 0.0,
+    "own_fullstate_replay": 0.0,
+    "recorded_audit": 0.0,
+    "main_repeat_pair": 0.0,
+    "final_metadata": 0.0
+  },
+  "records": [
+    {
+      "phase": "normal",
+      "elapsed_wall_s": 0.0011553764343261719,
+      "phase_used_s": 0.0011553764343261719,
+      "phase_cap_s": 4140,
+      "root_remaining_s": 1258.998554944992,
+      "completed_within_phase_bound": false
+    },
+    {
+      "phase": "complete_zero_tail",
+      "elapsed_wall_s": 0.0031108856201171875,
+      "phase_used_s": 0.0031108856201171875,
+      "phase_cap_s": 120,
+      "root_remaining_s": 1258.995282649994,
+      "completed_within_phase_bound": true
+    }
+  ],
+  "active": null,
+  "started": null,
+  "last_index": 1,
+  "models_counted_by_stage": false,
+  "secondary_phase_save_errors": []
+}

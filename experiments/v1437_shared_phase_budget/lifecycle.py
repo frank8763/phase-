@@ -78,7 +78,11 @@ def _run(task,approval,window,evidence_quota):
 
  def attempt(stage,fn):
   try:return fn()
-  except BaseException as exc:save_errors.append(dict(stage=stage,error=repr(exc)));return None
+  except BaseException as exc:
+   save_errors.append(dict(stage=stage,error=repr(exc)))
+   try:phases.arm_root()
+   except BaseException as clock_error:save_errors.append(dict(stage='ROOT_ALARM_AFTER_'+stage,error=repr(clock_error)))
+   return None
  def stop(*_):raise TimeoutError('ACTUAL_ROUTE_HARD_STOP_SAVE_PREFIX')
  signal.signal(signal.SIGALRM,stop);signal.signal(signal.SIGTERM,stop);signal.setitimer(signal.ITIMER_REAL,max(.01,remaining()-5))
  with(R/'runs/v648_static_unknown/execution.lock').open()as lock:
@@ -138,13 +142,7 @@ def _run(task,approval,window,evidence_quota):
    attempt('ENTER_PEER_CLOSE_PHASE',lambda:phases.transition('peer_close'))
    if modeled is not None:attempt('CLOSE_MODELED_PEER',modeled.close_event)
    if pump is not None:attempt('CLOSE_ACTUAL_SOCKET',pump.close)
-   def wait_actual_ROS_close():
-    # Pump.close requests cooperative closure before any independent model
-    # audit. No added native action or synthetic observation is emitted here.
-    while not(out/'ROS_RESULT.json').exists()or not read(out/'ROS_RESULT.json').get('closed'):
-     phases.check('peer_close');time.sleep(.02)
-    assert read(out/'ROS_RESULT.json').get('controller_server_exited')is True,'ACTUAL_ROS_CONTROLLER_CLOSE_INCOMPLETE'
-   if pump is not None:attempt('WAIT_ACTUAL_ROS_CLOSE',wait_actual_ROS_close)
+   if pump is not None:attempt('WAIT_ACTUAL_ROS_CLOSE',lambda:phase_module.wait_actual_ROS_close(out,phases))
    if canonical is not None:attempt('CLOSE_CANONICAL_OWNER',canonical.close)
    if journal is not None:attempt('CLOSE_ACTUAL_JOURNAL',journal.close)
    inflight=bool((pump is not None and pump.prefix_inflight)or(canonical is not None and canonical.native.in_step))
