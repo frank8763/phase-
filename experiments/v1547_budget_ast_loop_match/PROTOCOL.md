@@ -1,0 +1,7 @@
+# V1547 exact named AST loop matcher
+
+V1546source target CLOSED FAILED after realCPU5bootstrap/immutableguard/fullsourceSHA, while matching endpointfor-loop: source includes nestedtarget `_,(offset,n)` aswellas flat `kind,schedule`; matcher tried .id on nestedTuple and saved firstAttributeErrorproof before refusal.0models/numericalimports/FFI/Allocator/physics/replay; complete42counts/negativecases unexecuted. Preserveallsource/firstproof/console,neverrequalify or editclosedsource.
+
+Newbudget changes only ASTpredicate requiring everytargetelt Name before comparing ids. Exact sourceAST transformation checked; commonCPU5envbootstrap/sourceowner unchanged. Once necessarypreviouslyunexecutedmetadata targetCPU5/run_phase/originalimmutableguard/no-modelFFIprofile/120s/PLANNER2MiB/source7MiB+8archive+32download+512root/full10GiB. No oldmodule/worker/OS/ROS/physics/origin/model suites rerun. Source target verifies42oldcatalogue schedule/boundary counts/explicitCPPupper incl endpoint+certify-or-reproduction and raw8arraybytes with separateindependentrowmetadata, source/cut/error-save negatives.
+
+Opaqueimports/geometry/math/init, independentPython/time/serializedcompressiondiskpeak unknown; explicitCPPcount not wholealgorithmqualification, rawpayload not actualdiskbound/storageimpossibilityproof.0newrevision/round/admission;9kept. Nonzeroaccepted method still needs preregisteredscienceBEFORE implementation/frozenfullsource+remotechain/exactbudget/once/clock/lock/review. Allclosed200/2200components neverrerun, no newmodel/vehicleauthority.900scheckpoint.

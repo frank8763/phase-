@@ -1,0 +1,5 @@
+# V1548 original witness-budget source recovery
+
+New<=8MiB distinct source delta for V1545bootstrapfailure/V1546ASTfailure/V1547CPU5metadata source-count qualification, allnewsource/rawmetadata/source-index/error/proofs/report; inherit latestV1542full11604sourcechain viaV1543source/V1544runtime. No oldarchives reseal/retry/push. Fullruns8archive+32download+512root<10GiB/CPU5/nice19/closedparent/reviewSHA/idlelock/allfrozenSHA beforeoneclaim. One newsourcecommit<=30spush+5sref only; old28fc/928a/etc neversecondpush. Fullactualremote block/member/whole/indexSHA beforeonlyverifiedduplicatetransport cleanup/alloriginalretain.
+
+No numeric/model/FFI/Allocator/optimizer/physical/replay/admission/scientificrevision,9kept.137699400CPPcallsite upper is sourcecount, not workperformed or wholealgorithm budget. Rawpayload bytes notactualcompressed diskbound. Futureacceptednonzero method requires preregistration/fullwitness/control+gear/source/persistence/exactbudget/once gates; source/archivePASS nevermodel/navigationPASS.900scheckpoint.

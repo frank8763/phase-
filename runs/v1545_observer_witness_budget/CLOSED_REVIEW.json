@@ -1,0 +1,16 @@
+{
+  "closed": true,
+  "passed": false,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "first_error": "CPU5 bootstrap expected OSMesa before resetting isolate.py default egl",
+  "source_cause": "tools/isolate.py explicitly sets MUJOCO_GL=egl; old model resource.apply used to override; new CPU5metadata bootstrap asserted without applying override",
+  "target_body_executed": false,
+  "original_guard_install_unexecuted": true,
+  "no_numeric_import_or_FFI": true,
+  "review_original_restored": true,
+  "lock_idle": true,
+  "no_rerun_or_edit": true,
+  "unix": 1795294342.3651643
+}

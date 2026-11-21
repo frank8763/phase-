@@ -11,6 +11,7 @@ R=Path(__file__).resolve().parents[2]
 CATALOGUE='experiments/v1221_exact_stop_pruning/candidate_observer.py'
 TEMPLATE='runs/v1144_saved_entry_relay/software/ROWS.json'
 STOP_SOURCE='experiments/v1186_live_observer_regeneration/stop_certificates.py'
+ENDPOINT='experiments/v1221_exact_stop_pruning/endpoint_bound.py'
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def checked(name,prepared):
     path=R/name;assert path.is_file()and not path.is_symlink()and path.resolve()==path
@@ -19,11 +20,12 @@ def checked(name,prepared):
 
 def prefix_metadata(rows,cut):
     # Counts and modes/speed-sign only; no original target/control is returned.
+    assert type(cut)is int and cut>0,'ORIGINAL_TEMPLATE_CUT_INVALID'
     remaining=cut;parts=[]
     for row in rows:
         assert isinstance(row,list)and len(row)==4
         target,speed,count,mode=row
-        assert type(count)is int and count>0 and mode in [0,1]
+        assert type(count)is int and count>0 and type(mode)is int and mode in [0,1]
         assert math.isfinite(target)and math.isfinite(speed)
         take=min(remaining,count)
         if take:parts.append(dict(native=take,stationary=(speed==0.),parked=bool(mode)))
@@ -59,11 +61,21 @@ def analyze(*,prepared_sources,save_proof):
                source_only=True,model_permission=False,controls_output=False,original_search_budget_complete=False)
     first=None;answer=None
     try:
-        paths={name:checked(name,prepared_sources)for name in [CATALOGUE,TEMPLATE,STOP_SOURCE]}
+        paths={name:checked(name,prepared_sources)for name in [CATALOGUE,TEMPLATE,STOP_SOURCE,ENDPOINT]}
         catalog,cuts=catalog_parameters(paths[CATALOGUE].read_text());rows=json.loads(paths[TEMPLATE].read_text())['rows']
         stop_tree=ast.parse(paths[STOP_SOURCE].read_text());stop_f=next(n for n in stop_tree.body if isinstance(n,ast.FunctionDef)and n.name=='prove')
         tuples=[n for n in ast.walk(stop_f)if isinstance(n,ast.Tuple)and len(n.elts)==4 and all(isinstance(x,ast.Constant)for x in n.elts)]
         assert sum([x.value for x in n.elts]==[0.,0.,2200,0]for n in tuples)==2
+        # Account the exact explicit propagation call sites. This is not a
+        # bound on opaque geometry/import/math operations or actual runtime.
+        endpoint=ast.parse(paths[ENDPOINT].read_text())
+        upper=next(n for n in endpoint.body if isinstance(n,ast.FunctionDef)and n.name=='upper_bound')
+        simulations=[n for n in ast.walk(upper)if isinstance(n,ast.Call)and isinstance(n.func,ast.Attribute)and n.func.attr=='simulate']
+        assert len(simulations)==1 and isinstance(simulations[0].func.value,ast.Name)and simulations[0].func.value.id=='engine'
+        kinds=next(n for n in ast.walk(upper)if isinstance(n,ast.For)and isinstance(n.target,ast.Tuple)and [x.id for x in n.target.elts]==['kind','schedule'])
+        assert isinstance(kinds.iter,ast.List)and len(kinds.iter.elts)==2
+        assert [n.elts[0].value for n in kinds.iter.elts]==['current','prospective']
+        assert any(n is simulations[0]for n in ast.walk(kinds))
         cases=[]
         for turn,stage_native in catalog:
             for cut in cuts:
@@ -78,14 +90,30 @@ def analyze(*,prepared_sources,save_proof):
                 core_calls=1+2*len(prefixes)
                 core_native=length+sum(2200+2200+n for n in prefixes)
                 raw=uncompressed_arrays(length)+sum(uncompressed_arrays(2200)+uncompressed_arrays(2200+n)for n in prefixes)
+                stop_native=core_native-length
+                # endpoint and certify each traverse <=B boundaries. A
+                # rejection-reproduction branch adds one pair and skips
+                # certify; that pair is <=one completeB traversal.
+                bounded_explicit_native=length+2*stop_native
+                bounded_explicit_calls=1+4*len(prefixes)
+                canonical_raw_upper=uncompressed_arrays(length)+2*(raw-uncompressed_arrays(length))
                 cases.append(dict(original_catalogue_index=len(cases),stage_native=stage_native,source_cut=cut,
                      nominal_native=length,old_full_stop_boundaries=len(prefixes),full_no_pruning_core_engine_calls=core_calls,
                      full_no_pruning_core_cpp_native=core_native,complete8array_raw_payload_bytes=raw,
-                     extra_endpoint_pruning_reproduction_calls=None,independent_audit_calls=None,
+                     explicit_endpoint_certify_reproduction_upper_cpp_native=bounded_explicit_native,
+                     explicit_endpoint_certify_reproduction_upper_engine_calls=bounded_explicit_calls,
+                     canonical_all_explicit_call_raw_payload_upper_bytes=canonical_raw_upper,
+                     independent_audit_calls=None,
                      serialization_and_compression_disk_peak_bytes=None,model_execution_permitted=False))
         assert len(cases)==42
         proof.update(passed=True,cases=cases,original_catalogue_entries=42,
-             selector_initial_common_stop_native=2200,old_endpoint_and_pruning_extra_work_unknown=True,
+             selector_initial_common_stop_native=2200,
+             explicit_CPP_callsite_upper_native=2200+sum(v['explicit_endpoint_certify_reproduction_upper_cpp_native']for v in cases),
+             explicit_CPP_simulate_callsite_upper=1+sum(v['explicit_endpoint_certify_reproduction_upper_engine_calls']for v in cases),
+             explicit_CPP_Engine_constructor_upper=1+2*len(cases),
+             explicit_callsite_bound_includes_endpoint_certify_or_reproduction=True,
+             opaque_import_geometry_math_or_actual_runtime_work_unknown=True,
+             original_search_budget_complete=False,
              internal_constructions_unknown=True,raw_payload_not_actual_disk_bound=True,
              original_input_and_current_state_not_rebound=True,
              source_SHA={name:sha(path)for name,path in paths.items()},
