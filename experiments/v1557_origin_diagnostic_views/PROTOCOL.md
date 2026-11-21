@@ -1,0 +1,7 @@
+# V1557 original-origin list/ndarray diagnostic interface
+
+V1554singleprivate scope closed beforemodel with list.dtype AttributeError in frozenV1552origin.py;0construct/steps/copies/physical/optimizer/replay, completeoriginJSON saved but statebyteproof missingoriginal. Neverrerun/editV1554/V1552oranyclosedqualifier.
+
+Engineering-only new origin views: np.asarray(state,dtype=float64) fordiagnosticbytes/shape/advancedindex exactchecks. Returnoriginalruntime.initial answer unchanged; no cast/writes to originalsource/packet/body/memory/mode/gear/snapshot/epoch/input, no model/parameter/domain/sciencechange. Original.22/.15/.12-.20/2cm-.1rad/±.2s/source200ms/gear200/2200branches+200minimum/allstate1e-8 fixedclock gates unchanged;science10. Existingstreamdriver/witness/capability/onceowner are byte-identical except explicit neworiginpath and newsourcebase/run directory.
+
+Firstnecessary newsource target should exercise just changed diagnostic view on actualV1554savedoriginJSON and immutableM8input, list-vs-array exactbytes/checks/shapeerror/firstsecondary proofsave. No olddefinition/model/originprojection/OS/ROS/serializer/mathsuite requalification, no fakecurrentwire or modelcounts. Priorbackendbinding was actuallyreturned in failedV1554; use its SHA proof for unchanged imports, not rerun. Freezeafternewtarget; allnewsource/fullfailedruntime recovery, exact686MiBpeak/once/dualclock/root/idlelock/originalREVIEWbefore atmostonenewprivatecomponent. Newtarget notwritten/notrun/noSOURCE_FREEZE/admission/window/launch. No physical/whole-navigation grant.
