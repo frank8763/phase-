@@ -1,0 +1,5 @@
+# V1537 distinct stop-closure source recovery
+
+New <=8MiB source delta for V1535closed source failure and V1536source-only qualification, plus late V1532prelaunch refusal/current source chain and V1534delivery proofs. Inherit V1532current11538 source members via V1534/V1531 earlier actualremote indices; copy only needed new sources/results/recovery anchors. No old archives reseal/retry/delivery/push. Preserve original failures/all inputs.
+
+Allruns allocated inode plus8MiBarchive+32MiBdownload+512MiBroot must fit10GiB before one CPU5 claim. Full local and actualremote part/member/whole/indexSHA before only verified duplicate transport cleanup. One new source commit/<=30s push+5sref permitted for new V1535/36/37; old b5bb/c6/f1/etc never push twice. New helper source must be in this commit/Release SHA. Archive complete is not model/navigation PASS; no model/FFI/Allocator/optimizer/physical/replay work. New numerical owner still requires full source-chain/exactsmallbudget/once/clock/lock/review before any model authority.
