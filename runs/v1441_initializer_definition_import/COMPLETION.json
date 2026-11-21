@@ -1,0 +1,32 @@
+{
+  "passed": false,
+  "closed": true,
+  "physical_route_admission": false,
+  "returncode": 1,
+  "console_charged_bytes": 0,
+  "native": {
+    "passed": false,
+    "closed": true,
+    "canonical_factory_call_attempts": 1,
+    "canonical_vehicle_initializations": null,
+    "initializer_inflight_unknown": true,
+    "internal_factory_model_constructions": null,
+    "actual_native": 0,
+    "private_prediction_native": 0,
+    "allocator_compute": 0,
+    "own_replay_native": 0,
+    "first_error": {
+      "stage": "CANONICAL_INITIALIZER_ONLY",
+      "error": "AssertionError('BOUNDED_OUTPUT_PATH_ESCAPE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1441_initializer_definition_import/initializer.py\", line 64, in run\n    vehicle=call_factory_once(lambda:factory.create_vehicle(out/'physics',task),save=save,result=result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1441_initializer_definition_import/initializer.py\", line 21, in call_factory_once\n    vehicle=factory_call()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1441_initializer_definition_import/initializer.py\", line 64, in <lambda>\n    vehicle=call_factory_once(lambda:factory.create_vehicle(out/'physics',task),save=save,result=result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/scene_binding.py\", line 30, in create_vehicle\n    with bind_scene(vehicle,arena,factory):instance=canonical.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1020_terminal_two_route_development/physical.py\", line 9, in create_vehicle\n    v=base.create_vehicle(out,task);out=Path(out);setup=json.loads((out/'SETUP.json').read_text());sensor=json.loads((out/'EXACT_SENSOR_BINDING.json').read_text())\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v959_hold_response18/physical.py\", line 21, in create_vehicle\n    vehicle=base.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v945_rpccr_observation_liveness/physical.py\", line 10, in create_vehicle\n    instance=engine.create_vehicle(out,task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v882_runtime_evidence_repair/physical.py\", line 18, in create_vehicle\n    instance=vehicle.Vehicle(out,task['case_id'],task['seed'],task['dynamic'])\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 21, in __init__\n    self.context,self.native=initialize(seed,self.out/'paired');self.context['B'].OUT=R/'runs/v858_nav2_verified';self.env=self.context['env'];install_physical_contract(self.env);self.m=self.env.model;self.d=self.env.data;self.actor=None\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v882_runtime_evidence_repair/physical.py\", line 13, in scoped_factory\n    return original(*args,**kwargs)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/factory.py\", line 57, in initialize\n    try:module.main()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/current/runner.py\", line 161, in main\n    torch.use_deterministic_algorithms(True)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/__init__.py\", line 1522, in use_deterministic_algorithms\n    import torch._inductor.config as inductor_config\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_inductor/__init__.py\", line 11, in <module>\n    from .standalone_compile import CompiledArtifact  # noqa: TC001\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_inductor/standalone_compile.py\", line 13, in <module>\n    from torch._dynamo.aot_compile_types import BundledAOTAutogradSerializableCallable\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_dynamo/__init__.py\", line 13, in <module>\n    from . import (\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_dynamo/aot_compile.py\", line 17, in <module>\n    from torch._dynamo.package import SystemInfo\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_dynamo/package.py\", line 1173, in <module>\n    DynamoCache = DiskDynamoCache(os.path.join(cache_dir(), \"dynamo\"))\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_dynamo/package.py\", line 1170, in cache_dir\n    return cache_dir()\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_inductor/runtime/cache_dir_utils.py\", line 17, in cache_dir\n    os.environ[\"TORCHINDUCTOR_CACHE_DIR\"] = cache_dir = default_cache_dir()\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/torch/_inductor/runtime/cache_dir_utils.py\", line 25, in default_cache_dir\n    tempfile.gettempdir() if not is_fbcode() else \"/var/tmp\",\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/tempfile.py\", line 315, in gettempdir\n    return _os.fsdecode(_gettempdir())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/tempfile.py\", line 308, in _gettempdir\n    tempdir = _get_default_tempdir()\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/tempfile.py\", line 203, in _get_default_tempdir\n    fd = _os.open(filename, _bin_openflags, 0o600)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/bounded_io.py\", line 62, in raw_open\n    if not boundary.busy and flags&(os.O_WRONLY|os.O_RDWR|os.O_CREAT|os.O_TRUNC|os.O_APPEND):boundary.charge(boundary.path(path),8192)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/bounded_io.py\", line 40, in path\n    assert p in self.control_paths or(p.is_relative_to(self.output)and p.parent.resolve().is_relative_to(self.output)),'BOUNDED_OUTPUT_PATH_ESCAPE'\nAssertionError: BOUNDED_OUTPUT_PATH_ESCAPE\n"
+    },
+    "secondary_errors": [],
+    "physical_route_admission": false,
+    "factory_call_reserved": true,
+    "closed_unix": 1795236729.2915893
+  },
+  "closed_unix": 1795236730.3535638,
+  "wall_s": 10.967650739999954,
+  "review_original_restored": true,
+  "secondary_errors": []
+}

@@ -1,0 +1,21 @@
+{
+  "recorded_unix": 1795236856.8609502,
+  "closed": true,
+  "passed": false,
+  "scope": "one new initializer-only zero-integration qualification",
+  "canonical_factory_call_attempts": 1,
+  "canonical_vehicle_initializations": null,
+  "internal_factory_model_constructions": null,
+  "initializer_inflight_unknown": true,
+  "actual_native": 0,
+  "private_prediction_native": 0,
+  "allocator_compute": 0,
+  "own_replay_native": 0,
+  "first_error": "AssertionError('BOUNDED_OUTPUT_PATH_ESCAPE')",
+  "cause": "Original torch.use_deterministic_algorithms imports torch._inductor; its default cache calls tempfile.gettempdir and probes /tmp outside the task output; strict OutputBoundary rejects before open",
+  "actual_MuJoCo_C_save_executed": false,
+  "complete_t0_state_unexecuted": true,
+  "original_first_error_and_trace_saved": true,
+  "no_relaunch_or_frozen_edit": true,
+  "next": "New source version with exact task-local temp/cache environment before library import and the unchanged bounded output/byte/zero-step guards. Qualify the actual library/config write path once; no widening of output scope, no physics parameter or safety changes."
+}

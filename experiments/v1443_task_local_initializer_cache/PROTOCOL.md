@@ -1,0 +1,11 @@
+# V1443 canonical initializer的task内temp/cache修复草稿
+
+V1441新initializer-only数值资格已一次CLOSED FAILED：canonical factory调用1，完整返回/内部模型构造未知，actual/private/Allocator compute/replay均0；torch.use_deterministic_algorithms(True)导入_inductor在tempfile.gettempdir探测/tmp，OutputBoundary于open前拒绝。完整首错/RESULT/父关闭/review恢复保持；V1441所有entry与数值资格均不重跑、不改冻源。父vehicle_task_starts现7是启动尝试，不等于7次完整初始化；原actual115880/ownreplay104905/科学修订5/原WE整路0不变。
+
+新source只把tempfile以及TMPDIR/TEMP/TMP/TORCHINDUCTOR_CACHE_DIR/TORCH_EXTENSIONS_DIR/TRITON_CACHE_DIR/XDG_CACHE_HOME/MPLCONFIGDIR固定在当前task内，进入任何Torch库或factory前完成，并恢复原环境；不扩大OutputBoundary，不跳cache写入计数、不改Torch确定性/模型/参数/输入或安全门。private/compute profile只针对本Phase repo明确同名源，不把系统Torch的kernel.py元数据类当Phase Predictor；实际MuJoCo step API仍一律拒绝。
+
+还修新launch CLI把completion dict直接作为SystemExit值导致即使pass也exit1的源码问题，保留真实passed判断并输出小JSON；旧V1441本次确实failed，原结果不变。
+
+必须下一先写单次必要真实tempfile/Torch配置缓存路径零车辆资格，禁止复刷V1441整套旧fault/byte/phase/ROS fixture。允许纯Torch包/config导入，禁止MuJoCo/Vehicle/Predictor/Allocator构造与compute/训练；显式验证nn.Module构造未调用、所有真实cache写仍在任务byte边界，Phase同名构造/compute仍拒绝。旧八entry门只能按未变函数/源SHA复用，有变化的profile/CLI/env路径必须新资格，新增task_local_temp_and_torch_cache_write_path，不能凭AST填true。
+
+当前仅source draft/AST，尚无新cache ENTRY_QUALIFICATION/新SOURCE_FREEZE/initializer-only admission。独立1调用/180s/0native/32MiB+32MiB+32MiB+512MiB/root合同不变；新源和V1441失败还需下一新增量备份实际下载核（owner锚点runs/v1441），不能再push/递送/重封已核V1439。全部前提实际过后才能另登记新一次initializer-only资格；完整route admission仍无，绝不借此launch整路。

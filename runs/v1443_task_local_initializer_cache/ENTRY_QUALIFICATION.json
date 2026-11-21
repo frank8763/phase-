@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_integrations": 0,
+  "allocator_recomputations": 0,
+  "actual_replay_native": 0,
+  "actual_cpu": [
+    2
+  ],
+  "original_writeguard": true,
+  "nn_Module_and_Phase_predictor_compute_profile_guard": true,
+  "actual_torch_deterministic_configuration_called": true,
+  "task_local_temp_and_cache_write_path_verified": true,
+  "changed_runtime_source_checks_passed": true,
+  "entry_gates": {
+    "actual_no_model_entry_refusal": true,
+    "exact_factory_and_adapter_binding": true,
+    "first_error_and_unknown_count_saves": true,
+    "forbidden_native_step_guard": true,
+    "native_save_size_source_and_byte_path": true,
+    "whole_storage_peak": true,
+    "bounded_dual_clock_and_once_owner": true,
+    "supervisor_console_bounded_pipe": true,
+    "task_local_temp_and_torch_cache_write_path": true
+  },
+  "reused_initializer_entry_qualification_SHA": "3a4ec191c6ce4d6b864e4985b03a5aaa3874dc5195f08ddcccf6c0231e8ad5bc",
+  "unchanged_function_AST_gates": [
+    [
+      "initializer.py",
+      "call_factory_once"
+    ],
+    [
+      "initializer.py",
+      "save_error"
+    ],
+    [
+      "owner.py",
+      "BoundedConsole"
+    ],
+    [
+      "owner.py",
+      "claim_once"
+    ],
+    [
+      "contract.py",
+      "check_window"
+    ],
+    [
+      "contract.py",
+      "storage_preflight"
+    ],
+    [
+      "quota.py",
+      "EvidenceQuota"
+    ]
+  ],
+  "negative_cases": [
+    "new_wrapper_refuses_before_cache_or_physical_binding",
+    "Phase_constructor_frame_refused",
+    "native_step_API_still_refused"
+  ],
+  "actual_native_C_save_executed": false,
+  "actual_canonical_initializer_called": false,
+  "initializer_runtime_qualified": false,
+  "physical_route_admission": false,
+  "all_runs_peak": {
+    "allocated_all_runs_bytes": 9491009536,
+    "estimated_peak_bytes": 10128543744,
+    "limit_bytes": 10737418240,
+    "inode_accounted": true,
+    "models": 0
+  },
+  "wall_s": 60.90390874998411,
+  "source_hashes": {
+    "experiments/v1443_task_local_initializer_cache/entry.py": "bdfbae8201be2f965455cfbd9b15efff1f2b21a69ee065ca287bd0c2c606a1c3",
+    "experiments/v1443_task_local_initializer_cache/contract.py": "ef20fd7bf8af6e87bb64135325b57fd77fe5fb5327912e93b25769fbb90d2878",
+    "experiments/v1443_task_local_initializer_cache/cache_entry.py": "87438fb5f21969f96fa56b64344e37f114d1a7c6c25b1bd7cd0b47350c616be3",
+    "experiments/v1443_task_local_initializer_cache/zero_steps.py": "02ec2a42ce04d09d236c1d0ee3439d7708e401c5bba4d6aa7d62445ee38ec7c3",
+    "experiments/v1443_task_local_initializer_cache/LIMITS.json": "c42469c1b8538dd799a0481fca3fdddcbc3f08956a1f0a3f239383ed348fa958",
+    "experiments/v1443_task_local_initializer_cache/task_cache.py": "6cd21648f4bb845319de90663c5aad32ec2156488d757e1a70a984dbb74de76d",
+    "experiments/v1443_task_local_initializer_cache/PROTOCOL.md": "d95e20d2a17569843d017c186ace5e7fd8ab70eac759daaa64a7cbe7c46074d4",
+    "experiments/v1443_task_local_initializer_cache/quota.py": "0045d932837ef49ea21ddcc65b60d3f879c7756226b9ea1d07b1f358e8fc9df0",
+    "experiments/v1443_task_local_initializer_cache/owner.py": "a18cb748de53d553e926c7cd27c94fd6fe2497a6735e6f5003ac89b950085337",
+    "experiments/v1443_task_local_initializer_cache/initializer.py": "b0b9dc582716278a185104ccaab1a3e3e7b1ecdb055a85659509fe7fc93b974b"
+  }
+}

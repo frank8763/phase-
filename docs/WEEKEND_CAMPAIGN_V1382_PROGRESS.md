@@ -125,3 +125,13 @@ V1440新initializer-only权限/预算合同源码已具体写出，明确与整�
 
 V1440已具体接一次initializer/owner/entry/32MiB quota/parent4MiB有界console与完整hold/跨旧factory setprofile保持0step-Compute guard；首新CPU2/run_phase入口在合法coupled_model纯定义import前被NoModel import finder过宽拒绝，0构造，后续控制/保存门未执行。原首错/失败/SOURCE_FREEZE保存，不重刷不修改。V1441新source只允许该纯定义import，实际构造/step/compute仍profile拒绝，物理Mujoco/Vehicle/factory/torch/ROS导入仍禁；新一次真实CPU2/run_phase原guard/单锁入口13负例和8准备门通过，软件API保存明确不是实际Csave。真实lazy Adapter/factory/replay依赖、首错/次错不覆盖/未知与0调用分离、3step禁止且重置profile仍禁止、窄32MiB/写前save拒绝/真实小stdoutpipe cap/once/双钟/storage过，全部0模型/积分/Allocator/物理/replay。新源已冻结不重刷。
 已按实际ENTRY证据准备独立INITIALIZER_ONLY_ADMISSION，明确不是完成结果：initializer_runtime_qualified=false/actual_native_C_save_executed=false/physical_route_admission=false；当前仍未模型launch，父active null/modelsfalse/原6车辆115880actual104905ownreplay/修订5/整路0不增。数值资格只拟1canonical调用/180s/0步，不得借其准入整路。冻结owner额外要求新source真实远端archive逐成员SHA先核；V1442零模型备份helper已写/AST，准备首次归档V1437–V1442到V1439恢复锚点，新档尚未远端，不重push旧V1436。下一先此实际恢复闭环，然后才一次新initializer-only资格，严格保原科学门/任务/模型。checkpoint runs/v1441_initializer_definition_import/PREPARATION_CHECKPOINT.json。
+
+
+
+V1441在独立180s、1工厂调用、0积分的initializer-only合同下单次执行后失败。原工厂未完整返回；调用尝试1，规范初始化/内部模型构造按原RESULT保留unknown，实际/私有预测/Allocator compute/replay均0。首错是Torch确定性配置导入_inductor后tempfile默认探测/tmp，被严格输出边界在打开前拒绝。完整首错、trace、RESULT、父闭轮和REVIEW_PENDING原字节已保存，禁止重跑或改冻结源。
+
+V1443仅把库临时/缓存位置限到task内，不扩大写入范围；profile只识别Phase repo的Predictor/compute，保留所有MuJoCo step拒绝，并修launch CLI对completion dict的退出码处理。一次真实CPU2/run_phase/原guard/profile/单锁的目标资格通过：执行真实Torch确定性配置/tempfile I/O与cache路径，nn.Module/Phase Predictor/Allocator构造compute未允许，0MuJoCo/车辆/积分/replay。未变的七个函数/类以AST和原V1441ENTRY SHA复用，未重刷旧suite；新增路径/profile/CLI已单独检查。单次60.90s是带profiling的库配置资格成本，非实时或实际200ms来源证书。新source已冻结。
+
+此记录不表示完整初始化成功，也不表示导航/整路通过。父任务启动尝试7（不是7个完整初始化成功），原实际115880、ownreplay104905、科学修订5、整路0保持。V1437–V1442准备207成员3275727B已实际远端块/成员/整流/index SHA核过，唯一Git bcb86664和Release phase-v1439-route-runtime-initializer-entry-20261121，只清已核运输。V1441随后新增的失败证据与V1443source仍须新备份回读，当前不能再次模型launch，整路COMPLETE gate仍无。
+
+下一：V1444零模型新失败/源备份helper已写，先实际恢复核，再新V1443一次initializer-only资格；旧V1441和V1439封批/备份不重刷或第二push。
