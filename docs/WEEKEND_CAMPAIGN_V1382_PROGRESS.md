@@ -99,3 +99,5 @@ V1418–V1426全部新准备源、来源/错误/真实socket与ROS生命周期�
 V1427准备：最新peer/lifecycle、native/ROS CLI和一次监督源码已写，ordinary软件数组及CPU2/run_phase/原guard/CPU3真实ROS import资格通过，全部0模型/积分/物理。未来每task独立90min、实际40000/8event/生成和审核各8040000/currentreserve8000000等limits及10GiB峰值预算明确。新event_audit源码重核当前完整源/分支200rest和控制/固定参考/证书身份，仍仅AST；尚缺完整event数组与Allocator状态来源、集成生命周期/精确分账/分支字节门及完整准入。原全程严格门不变，未启动整路，原物理分母与修订5不增。详见 runs/v1427_route_admission_sources/PREPARATION_CHECKPOINT03.json；不重刷已过入口或修改冻源。
 
 V1428软件event完整文件路径被NumPy标量接口拒绝并保留；V1429新标量转换后完整文件路径+12拒绝负例通过，V1430 actual全state/encoder/memory/ctrl关联preflight+7负例通过。全部0模型/Allocator重算/物理/实际replay/整路；新lifecycle/supervisor显式接V1429审核和V1430 allocation，但完整执行未资格。逐支证据byte预算及完整生命周期/双钟/分账等仍缺，禁止车辆准入。详见 runs/v1430_actual_allocator_provenance/PREPARATION_CHECKPOINT.json。
+
+V1427–V1430全120成员2269508B已全部远端实际恢复SHA核过，唯一382f3659/Release phase-v1430-bound-event-allocator-preparation-20261121，原件保留，仅清已核运输。V1431已写逐支quota/lossless stream源码，尚AST/未接实际写路径或资格；无整路准入，所有模型/peer/worker退出，旧物理分母保持。

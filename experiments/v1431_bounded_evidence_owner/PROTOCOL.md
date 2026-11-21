@@ -1,0 +1,5 @@
+# V1431 逐支证据写入配额
+
+沿修订5及V1427/1430原有限limits，不增科学域或次数。下一source提供task根的严格10GiB全部runs按inode预算、224MiB任务证据、224MiB归档+32MiB下载+512MiB根预留；每branch写前实测，并把尚未写出的最终index双份原子保存与完整帧/ROWS/PROGRESS开销计入。完整branch/拒绝proof仍先保存后判门，不以省空间改精度或截尾。
+
+quota拒绝先保存原首错及准确/未知数，不强行落盘越界；必须预留小错误记录空间。字节门计算不能放宽证书后200ms；若增加来源时延导致拒绝，原任务如实闭轮。不宣称实时。仅I/O边界资格可0模型执行，任何新模型/车辆仍须完整准入。当前quota/stream源仅准备，尚未接sink/transaction/canonical owner/lifecycle或获得实际写入资格，不能拿API源码宣称整路可launch。
