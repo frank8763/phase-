@@ -31,6 +31,8 @@ def admit(task,approval,window):
  path=O/'COMPLETE_INTEGRATED_ROUTE_QUALIFICATION.json'
  if not path.is_file():raise NotAdmitted('ACTUAL_ROUTE_FULL_QUALIFICATION_AND_BUDGET_MISSING')
  qualification=read(path);assert qualification['passed']is True and qualification['physical_admission']is True
+ assert qualification['limits']==read(N/'LIMITS.json')and qualification['tasks_sha256']==sha(N/'TASKS.json')
+ assert task in read(N/'TASKS.json')
  assert approval['scope']=='ACTUAL_ROUTE_EVENT_WITNESS'and approval['models_authorized']is True
  parent=read(R/'runs/v1382_weekend_campaign/LEDGER.json');assert parent['active_round']==approval['round_id']and parent['models_now_authorized']
  original=next(t for t in read(R/'experiments/v1370_overnight_controller_matrix/TASKS.json')if t['task_id']=='rpp_default_horizon_m1_s01_main')
@@ -108,7 +110,7 @@ def _run(task,approval,window,evidence_quota):
    private_deadline=dict(approval,**phases.budget.deadlines())
    canonical.authority=private_deadline
    canonical.transaction.authority=private_deadline
-   evidence_quota.save_npz(out/'INITIAL_FULL_STATE.npz',dict(time=np.asarray([v.d.time]),**{k:np.asarray(getattr(v.d,k)).copy()for k in ['qpos','qvel','ctrl','mocap_pos','mocap_quat']}),np)
+   evidence_quota.save_npz(out/'INITIAL_FULL_STATE.npz',dict(time=np.asarray(v.d.time),**{k:np.asarray(getattr(v.d,k)).copy()for k in ['qpos','qvel','ctrl','mocap_pos','mocap_quat']}),np)
    atomic(out/'INITIAL_PACKET.json',canonical.native.packet(None));pump=pump_module.Pump(canonical,check_budget=check,append=append,model_peer=modeled)
    while not pump.stopped:pump.iteration()
    evidence_quota.retire_grant();tail_started=True;phases.transition('complete_zero_tail')
@@ -154,7 +156,7 @@ def _run(task,approval,window,evidence_quota):
      return module.save_current_prefix(v,source,out,evidence_quota,np)
     result['fullstate_prefix_before_contact']=attempt('SAVE_FULLSTATE_BEFORE_CONTACT_SERIALIZATION',state_first)
     result['physical']=attempt('SAVE_PHYSICAL_PREFIX',lambda:capture.finish(v))if capture is not None and not capture.finish_attempted else None
-    if result['physical']is not None and not result['actual_inflight_unknown']:
+    if result['physical']is not None and not result['actual_inflight_unknown']and first is None and not save_errors and result.get('fullstate_prefix_before_contact',{}).get('complete')is True:
      def audit_allocation():
       phases.transition('allocator_recompute');end=phases.budget.deadlines()
       recorded=exact('v1423_complete_receipt_normalizer',R/'experiments/v1423_integrated_route_audit/recorded.py');allocation=exact('v1431_bound_allocator_audit',R/'experiments/v1430_actual_allocator_provenance/allocation.py')
@@ -164,14 +166,14 @@ def _run(task,approval,window,evidence_quota):
       return proof
      result['independent_allocation']=attempt('INDEPENDENT_ALLOCATION_RECOMPUTATION',audit_allocation)
     if canonical is not None:result['canonical_accounting']=canonical.native.exact_accounting();result['model_generation_and_audit_accounting']=dict(canonical.transaction.budget);result['current_reserve_accounting']=dict(canonical.reserve_accounting)
-    if result['physical'] is not None and not result['actual_inflight_unknown']:
+    if result['physical'] is not None and not result['actual_inflight_unknown']and first is None and not save_errors and result.get('fullstate_prefix_before_contact',{}).get('complete')is True and result.get('independent_allocation',{}).get('passed')is True:
      replaying=True
      def replay_once():
       phases.transition('own_fullstate_replay');end=phases.budget.deadlines()
       evidence_quota.admit(65536,'OWN_REPLAY_PROGRESS_AND_RESULT');return replay(v,end['absolute_deadline_unix'],out/'physics')
      proof=attempt('OWN_FULL_STATE_REPLAY',replay_once)
      if proof is not None:replaying=False;result.update(replay=proof,own_replay_native=proof['replay_native'])
-   result.update(own_replay_native=None if replaying else result['own_replay_native'],own_replay_inflight_unknown=replaying,closed=True,save_errors=save_errors,wall_s=time.monotonic()-started,source_unchanged=all(sha(R/n)==h for n,h in approval['tested_source_hashes'].items()),physical_admission=False,evidence_quota_open_holds=dict(evidence_quota.holds),initializer_and_ROS_child_byte_enforcement_not_qualified=True)
+   result.update(own_replay_native=None if replaying else result['own_replay_native'],own_replay_inflight_unknown=replaying,closed=True,save_errors=save_errors,wall_s=time.monotonic()-started,source_unchanged=all(sha(R/n)==h for n,h in approval['tested_source_hashes'].items()),physical_admission=False,evidence_quota_open_holds=dict(evidence_quota.holds),initializer_and_ROS_writer_source_qualified_full_route_runtime_not_yet_verified=True)
    # Full independent route source/coverage/allocation/pair audits are a separate
    # required stage. An exited owner or saved prefix is not navigation PASS.
    result['native_Mesa_cache_disabled']=os.environ.get('MESA_SHADER_CACHE_DISABLE')=='true'

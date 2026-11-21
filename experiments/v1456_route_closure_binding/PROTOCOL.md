@@ -7,3 +7,9 @@ V1454独立实际零尾/Allocator/ownreplay资格一次通过，actual200、实�
 下一先完成V1454真实raw+新源恢复核；再完成确切外层CLI/once supervisor和保存顺序，不重刷旧Torch/ROS/IO suite，不播放旧控制数组、不用zero-tail冒充当前event证书。900s实际checkpoint。修订5、父actual116280/ownreplay105105/12启动尝试/WE整路0。
 
 新增state_capture.py具体保存实际initial+已完成vehicle.rows的N+1和已施加ctrl，放在接触gzip前；无未来/接触重构，actualcount与记录数差异单列。现在lifecycle已接此source-first保存但仅AST，不能称已资格。V1454两原mandatory factory t0扫描准确记2，0tail/policy扫描；旧协议无scan措辞过宽已在CLOSED_REVIEW如实保留。
+
+## 新生产入口接齐（首次资格前）
+
+新native_entry/TASKS/budget/once supervisor/route_ros及原context、planner和writerhook已明确同新输出根；旧V1449 canonicalowner/Pump/modelpeer/phase继续显式只读依赖，不复制或重刷其模型/RPC/ROS资格。四writer来源只在新actualROS/planner的完全相同AST重定位后引用既有资格；modelpeer仍运行准确旧文件。旧初始time数组[1]与标量row不兼容，当前新source只改initial time为scalar并严格形状门，保存不改实际状态。state_capture在首次真实软件I/O资格中验证N0/已记录2+在途gap1/形状和NaN/目标重复拒绝；这些明确是软件数组，不把copy当物理或独立repeat。
+
+新准入预算仍原5400s/40000actual/8event及全部gen/audit/currentreserve限额，须实测全部runs峰值。不生成COMPLETE_INTEGRATED_ROUTE_QUALIFICATION，入口资格必须真实拒绝缺准入，main/repeat目录/ROUND_WINDOW/LAUNCH继续不存在。下一不是反复完整旧suite，只检新输出/函数源绑定、state-first保存形状/错误路径和准确旧证据引用。真实currentevent与跨mode数值结果未执行，不能填已通过。

@@ -1,0 +1,43 @@
+"""A distinct partial-navigation capability; never a whole-route COMPLETE."""
+import hashlib
+import json
+import os
+from pathlib import Path
+import time
+R=Path(__file__).resolve().parents[2];C=Path(__file__).resolve().parent;O=R/'runs'/C.name
+SCOPE='LIVE_FIRST_EVENT_RUNTIME_QUALIFICATION'
+GATES={'exact_current_source_and_task_binding','real_native_and_ROS_scope_refusal','first_event_stop_no_tick_anchor','state_first_and_error_save_paths','original_science_and_postcertificate_freshness_unchanged','four_writer_source_proofs','actual_initializer_tail_allocator_replay_evidence','accurate_shared_clocks_counts_and_storage','once_supervisor_and_remote_source_recovery'}
+def read(p):return json.loads(Path(p).read_text())
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+class NotAdmitted(RuntimeError):pass
+
+def complete_narrow_admission():
+ path=O/'LIVE_FIRST_EVENT_ONLY_ADMISSION.json'
+ if not path.is_file():raise NotAdmitted('LIVE_FIRST_EVENT_ENTRY_PREREQUISITES_MISSING_NO_MODELS')
+ q=read(path);assert q['scope']==SCOPE and q['live_first_event_only']is True and q['whole_route_admission']is False
+ assert set(q['entry_gates'])==GATES and all(q['entry_gates'].values())
+ assert q['limits']==read(C/'LIMITS.json')and q['tasks_sha256']==sha(C/'TASKS.json')
+ assert q['tested_source_hashes']and all(sha(R/p)==h for p,h in q['tested_source_hashes'].items())
+ return q
+
+def clocks(window,parent,*,reserve_s):
+ assert window['boot_id']==parent['boot_id']==Path('/proc/sys/kernel/random/boot_id').read_text().strip()
+ assert 0<window['absolute_deadline_unix']-window['started_unix']<=5400 and window['absolute_deadline_unix']<=1795395600
+ assert window['hard_stop_monotonic']<=parent['hard_stop_monotonic']
+ assert abs(window['absolute_deadline_unix']-window['started_unix']-(window['hard_stop_monotonic']-window['started_monotonic']))<1e-5
+ assert min(window['absolute_deadline_unix']-time.time(),window['hard_stop_monotonic']-time.monotonic())>reserve_s
+
+def authorize(task,window,*,native):
+ q=complete_narrow_admission();approval=read(O/'APPROVAL.json');parent=read(R/'runs/v1382_weekend_campaign/LEDGER.json')
+ assert approval['scope']==SCOPE and approval['models_authorized']is True and approval['whole_route_admission']is False
+ assert approval['qualification_sha256']==sha(O/'LIVE_FIRST_EVENT_ONLY_ADMISSION.json')
+ assert approval['round_id']==parent['active_round']==C.name+'_first_event'and parent['models_now_authorized']
+ assert task in read(C/'TASKS.json')and task['role']==task['task_id']=='first_event'
+ assert task['case_id']=='WEST_EAST'and task['seed']==10060001 and task['controller_plugin']=='RPP'
+ assert Path(task['output'])==O/'first_event'and Path(task['run_root'])==O
+ assert window==read(O/'ROUND_WINDOW.json')
+ clocks(window,parent,reserve_s=q['limits']['finalization_reserve_s'])
+ if native:
+  assert os.environ.get('PHASE_REPO')==str(R)and sorted(os.sched_getaffinity(0))==[2]and os.environ.get('CUDA_VISIBLE_DEVICES')==''
+  assert not(R/'REVIEW_PENDING').exists()
+ return q

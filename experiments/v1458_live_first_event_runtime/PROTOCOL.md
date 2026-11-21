@@ -1,0 +1,19 @@
+# V1458 当前首事件的真实生产运行资格准备
+
+V1456新native/once-supervisor/routeROS输出绑定、state-first Nplus1/标量clock及独立audit入口已用新CPU2run_phase/原guard/profile0模型目标资格通过并冻结，不重刷或改源。V1454实际原始零尾/Allocator/ownreplay各200成功只能证明本地闭尾，不能填真实current event或跨mode完整运行。要求未来whole-route结果作为其自身prelaunch门会形成循环；这里明确分开一个真实局部生产资格，不制造或伪造COMPLETE_INTEGRATED_ROUTE_QUALIFICATION。
+
+拟唯一原WE10060001/原RPP.6/.1/原map/model/actor/phase/观测与原goal，从真实canonical t0运行原完整native/真实ROS/原FFI planner/current causal observations至**第一个实际原CUSP或ORDERED事件**；完全按notice/queue/current body/encoder/memory/gear/mode/真实扫描+完整snapshot绑定一次新参考，完整generator/成功依赖corrected numericalaudit后才装CurrentReserve/PhysicalGuard/EvidenceSink/BridgeExecution。执行该真实首bridge至原method的BRIDGE_COMPLETE，随后停本资格，施加原完整200零尾/关闭子进程/actual-source Allocator重算/全state ownreplay/全部来源和事件数组审核。结束由真实事件状态触发，禁止native==9390/32210等救援或早停标签；不使用旧packet、参考控制数组或组件轨迹接当前态。
+
+这是一项原任务的**部分导航运行资格**，须新增真实navigation-prefix attempt分母；不是整路main成功/独立确认或新算法优势。到达.45/forward7.5/发现后>=1m全程严格门不删除：整路这些门照样报告false/未检验，局部event资格单列。若未能在原界限内到首事件，或新state有限方法首reserve/完整参考拒绝，原任务如实失败闭批，不更换seed/放宽.22/误差包络/延长廓线/无限救RPP。原V1417当前32210首reserve失败保持。
+
+拟每版本一次共享5400s/root：normal4140/tail120/peerclose120/Allocator120/ownreplay300/recordedaudit240/pair240（本资格无repeat/pair，保持未执行0不挪用）/metadata60+slack60；原actual40000含200尾，最多1 event，5000nominal/1005000gen及成功依赖audit、currentreserve原每native200总8000000/40000构造上限。全部上限不是成功保证，不更改原长度/seed。真实独立审核只检查已执行的完整event/current reserve/固定参考/来源覆盖/fullstate与原rest门，局部证明不能冒充whole audit PASS。
+
+仍须在任何launch前完成具体窄contract/limits、真实CLI与ROScontext的显式scope、原参数/来源/byte/双钟/一次入口门、准确计数及全runs10GiB+224MiB证据+224MiB归档+32MiB下载+512MiB根预留、V1456新源与本新源远端恢复核。新的LIVE_FIRST_EVENT_ONLY_ADMISSION与ROUND_WINDOW必须独立；不存在该scope时physical binding前拒绝，完整whole-route COMPLETE不能替代它；反之此scope绝不准许第二event/完整main或repeat。内层event执行能力明确只授首event/current输入；不可静默借全route gate或假metadata。
+
+当前只有具体event-stop监督适配草稿，不存在新qualification/SOURCE_FREEZE/admission/ROUND_WINDOW/LAUNCH，禁止任何模型或导航启动。科学方法/参数/安全与时间门原样，科学修订5不增；父physical116280/ownreplay105105/12任务启动尝试/whole-route0保持。下一完成实际可审窄pipeline生产代码与必要新入口门，不能反复造软件数组冒充物理。
+
+已具体写contract/budget/native_entry、真实routeROS当前scope/context及event-stop生命周期：外层唯一LIVE_FIRST_EVENT_RUNTIME_QUALIFICATION；内层明确授首event用原ACTUAL_ROUTE_EVENT_WITNESS能力并记录outer_scope，最多1事件，不假授全程。所有原canonical/current储备/guard/bridge代码仍显式冻结只读依赖；完整goal判据继续原样记录，局部runtime_component_passed单列。event_stop只看原bridge.complete与同input/mode覆盖，不看固定native或目标真值，未到首事件就收到原stop仍失败。前缀属于partial_navigation_attempt，不能因非整路而不计启动/实际/导航前缀分母。
+
+当前once supervisor/局部独立audit和新scope CLI实际入口资格尚缺；native入口明确拒绝尚不存在LIVE_FIRST_EVENT_ONLY_ADMISSION，不能执行。源仅AST，可在首次资格前改进；不需再跑V1456或旧资格。
+
+源审新增明确监督stdout闭环：旧detached supervisor stdout直写文件不经有界pipe，不能外推writer method资格为该完整路径。新once owner保持本机5400s/root在场，经原已预留SUPERVISOR_LOG角色逐块扣费并排空真实stdout pipe，退出后核子COMPLETION/父closed；异常保留首错与已有子记录，缺记录时计unknown并恢复REVIEW/父账。此新路径必须在新scope目标资格真实小子进程stdout限额演练通过，不能声称原旧全生命周期已通过。仍无模型/导航launch。
