@@ -1,0 +1,1551 @@
+{
+  "closed": true,
+  "source_graph_built": true,
+  "models": 0,
+  "analytical_native": 0,
+  "Allocator_recomputations": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "optimizer_calls": 0,
+  "rows": [
+    {
+      "path": "experiments/v1218_fixed24_current/package_loader.py",
+      "sha256": "d746103d6ca75344e82eec797ec5788ba7fd2a34531c0a7e4e0ec6c7ca20e876",
+      "bytes": 883,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import hashlib, importlib, importlib.util, json, sys"
+      ],
+      "functions": [
+        {
+          "name": "get_goal_entry",
+          "first_line": 6,
+          "last_line": 13
+        }
+      ],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1195_eight_gib_timed_refuge/route_tools.py",
+      "sha256": "e872fa8a7303399f919abe64e814383f3972aa9fd3e08d1eaf62a673c8416af3",
+      "bytes": 4173,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import sys, os, time, json, hashlib, math, importlib.util",
+        "import chain_tools as old",
+        "import chain as bridge"
+      ],
+      "functions": [
+        {
+          "name": "remaining",
+          "first_line": 9,
+          "last_line": 9
+        },
+        {
+          "name": "source_ok",
+          "first_line": 10,
+          "last_line": 10
+        },
+        {
+          "name": "task_contract",
+          "first_line": 11,
+          "last_line": 26
+        },
+        {
+          "name": "configure_owner",
+          "first_line": 27,
+          "last_line": 34
+        },
+        {
+          "name": "factory",
+          "first_line": 35,
+          "last_line": 40
+        },
+        {
+          "name": "finite_plan",
+          "first_line": 41,
+          "last_line": 46
+        },
+        {
+          "name": "shared_used",
+          "first_line": 48,
+          "last_line": 50
+        },
+        {
+          "name": "output_of",
+          "first_line": 51,
+          "last_line": 54
+        },
+        {
+          "name": "resume_check",
+          "first_line": 55,
+          "last_line": 62
+        }
+      ],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1221_exact_stop_pruning/candidate_observer.py",
+      "sha256": "f12d7a5593f3794c43c278d20a9a9ca82e37d3cfa66ff2869e0bd9c0d4a2c8dc",
+      "bytes": 10676,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import importlib.util, sys, time, math",
+        "from current_state_tools import original, validate_input",
+        "import stop_certificates as stops"
+      ],
+      "functions": [
+        {
+          "name": "certify",
+          "first_line": 17,
+          "last_line": 40
+        },
+        {
+          "name": "_synthesize",
+          "first_line": 42,
+          "last_line": 90
+        },
+        {
+          "name": "synthesize",
+          "first_line": 93,
+          "last_line": 99
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 18,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 43,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 45,
+          "expression": "engine.simulate(origin, [(0.0, 0.0, 2200, 0)])"
+        },
+        {
+          "line": 51,
+          "expression": "engine.simulate(origin, rows)"
+        },
+        {
+          "line": 69,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from current_state_tools import original, validate_input"
+      ]
+    },
+    {
+      "path": "experiments/v1186_live_observer_regeneration/stop_certificates.py",
+      "sha256": "ab52fb49f92cc5e35910eb3d18d7d45530b236dd10b47a5cf116834fed897142",
+      "bytes": 3940,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from current_state_tools import original, R, O",
+        "import json, time, math"
+      ],
+      "functions": [
+        {
+          "name": "flags_before",
+          "first_line": 5,
+          "last_line": 13
+        },
+        {
+          "name": "forecast",
+          "first_line": 14,
+          "last_line": 16
+        },
+        {
+          "name": "prove",
+          "first_line": 17,
+          "last_line": 22
+        },
+        {
+          "name": "certify_reference",
+          "first_line": 23,
+          "last_line": 33
+        },
+        {
+          "name": "main",
+          "first_line": 34,
+          "last_line": 42
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 24,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 20,
+          "expression": "engine.simulate(origin, schedule)"
+        },
+        {
+          "line": 21,
+          "expression": "predictions.append(ss)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from current_state_tools import original, R, O"
+      ]
+    },
+    {
+      "path": "experiments/v1219_stop_preserving_observer/stop_policy.py",
+      "sha256": "24c8e1b9a248788b63f8da9a0f88c5634cf5461ae840cd462a03aaa97aa40faf",
+      "bytes": 2719,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import sys, math",
+        "from current_state_tools import original"
+      ],
+      "functions": [
+        {
+          "name": "decision",
+          "first_line": 12,
+          "last_line": 15
+        },
+        {
+          "name": "execute_current_stop",
+          "first_line": 17,
+          "last_line": 38
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 28,
+          "expression": "v.step(0.0, 0.0, False)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from current_state_tools import original"
+      ]
+    },
+    {
+      "path": "experiments/v1186_live_observer_regeneration/current_state_tools.py",
+      "sha256": "b607f14a4eeddc656bff6d4853c3dab9eec9969cfb14cb6decf4fe230d55d92b",
+      "bytes": 884,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import sys",
+        "import chain as original"
+      ],
+      "functions": [
+        {
+          "name": "validate_input",
+          "first_line": 8,
+          "last_line": 14
+        }
+      ],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1180_fresh_recovery_chain/chain_tools.py",
+      "sha256": "4556674072eb86cd9cd7c74558fcfddef9069d5a8ea5871bc2525d3da03f09d8",
+      "bytes": 3112,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import sys, os, time, json, hashlib, importlib.util, math",
+        "from resource_policy import apply",
+        "import recovery_tools as previous"
+      ],
+      "functions": [
+        {
+          "name": "load",
+          "first_line": 4,
+          "last_line": 5
+        },
+        {
+          "name": "remaining",
+          "first_line": 11,
+          "last_line": 12
+        },
+        {
+          "name": "source_ok",
+          "first_line": 13,
+          "last_line": 13
+        },
+        {
+          "name": "task_contract",
+          "first_line": 14,
+          "last_line": 19
+        },
+        {
+          "name": "history_guard",
+          "first_line": 20,
+          "last_line": 26
+        },
+        {
+          "name": "configure_owner",
+          "first_line": 27,
+          "last_line": 44
+        },
+        {
+          "name": "hook",
+          "first_line": 22,
+          "last_line": 25
+        }
+      ],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1180_fresh_recovery_chain/chain.py",
+      "sha256": "93e5d3821287fe931b9ec5a5d906f1f9d479a4062267ee01953e679c24e7a93f",
+      "bytes": 10250,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from chain_tools import *",
+        "import types",
+        "from source import Engine, initial, remaining_rows",
+        "from fast_cycle import certify",
+        "from refresh import causal_packets",
+        "from joint_domain import Domain, NORMALS"
+      ],
+      "functions": [
+        {
+          "name": "front",
+          "first_line": 11,
+          "last_line": 17
+        },
+        {
+          "name": "current_input",
+          "first_line": 18,
+          "last_line": 21
+        },
+        {
+          "name": "fresh_evidence",
+          "first_line": 22,
+          "last_line": 27
+        },
+        {
+          "name": "joint_table",
+          "first_line": 28,
+          "last_line": 31
+        },
+        {
+          "name": "execute",
+          "first_line": 32,
+          "last_line": 95
+        },
+        {
+          "name": "apply_rows",
+          "first_line": 47,
+          "last_line": 66
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 33,
+          "expression": "Engine(setup)"
+        },
+        {
+          "line": 86,
+          "expression": "q.accelerator.Engine(setup, q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 86,
+          "expression": "fast.simulate(org, fixedrows)"
+        },
+        {
+          "line": 81,
+          "expression": "engine.simulate(initial(fresh['packet']), schedule)"
+        },
+        {
+          "line": 71,
+          "expression": "engine.simulate(initial(p), schedule)"
+        },
+        {
+          "line": 56,
+          "expression": "v.step(float(speed), 0.0 if park or speed == 0 else float(speed) * math.tan(target) / 0.6, False)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from chain_tools import *"
+      ]
+    },
+    {
+      "path": "experiments/v1179_frozen_recovery_native/recovery_tools.py",
+      "sha256": "07123e51614c76b574e64a78b5087affa1f9a21d7fc2ebe7e1c998806054a628",
+      "bytes": 3037,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import sys, json, math, os, time, hashlib, importlib.util",
+        "from resource_policy import apply"
+      ],
+      "functions": [
+        {
+          "name": "load",
+          "first_line": 7,
+          "last_line": 8
+        },
+        {
+          "name": "read",
+          "first_line": 11,
+          "last_line": 11
+        },
+        {
+          "name": "remaining",
+          "first_line": 12,
+          "last_line": 13
+        },
+        {
+          "name": "source_ok",
+          "first_line": 14,
+          "last_line": 14
+        },
+        {
+          "name": "pin",
+          "first_line": 15,
+          "last_line": 18
+        },
+        {
+          "name": "packet",
+          "first_line": 19,
+          "last_line": 21
+        },
+        {
+          "name": "body_gate",
+          "first_line": 22,
+          "last_line": 24
+        },
+        {
+          "name": "stopped",
+          "first_line": 25,
+          "last_line": 25
+        },
+        {
+          "name": "load_reference",
+          "first_line": 26,
+          "last_line": 29
+        },
+        {
+          "name": "task_contract",
+          "first_line": 30,
+          "last_line": 36
+        }
+      ],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1160_safe_terminal_connection/search.py",
+      "sha256": "6c9520ad50c4461fdd5f2edfb8bfaff57d13da4efde18c61e5500e68c7ad755e",
+      "bytes": 11955,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import ast",
+        "import copy",
+        "import fcntl",
+        "import importlib.util",
+        "import itertools",
+        "import json",
+        "import math",
+        "import signal",
+        "import sys",
+        "import time",
+        "import traceback",
+        "from resource_policy import apply",
+        "from bindings import REQUIRED",
+        "from source import initial",
+        "from geometry import Geometry",
+        "import qualify as helper",
+        "import tracking",
+        "import capture",
+        "import numpy as np"
+      ],
+      "functions": [
+        {
+          "name": "load",
+          "first_line": 32,
+          "last_line": 33
+        },
+        {
+          "name": "candidates",
+          "first_line": 44,
+          "last_line": 51
+        },
+        {
+          "name": "requests_of",
+          "first_line": 54,
+          "last_line": 55
+        },
+        {
+          "name": "proof",
+          "first_line": 58,
+          "last_line": 69
+        },
+        {
+          "name": "main",
+          "first_line": 72,
+          "last_line": 171
+        },
+        {
+          "name": "step",
+          "first_line": 123,
+          "last_line": 126
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 101,
+          "expression": "accelerator.Engine(x['setup'], params['coefficients'])"
+        },
+        {
+          "line": 108,
+          "expression": "engine.simulate(origin, grid[0]['rows'])"
+        },
+        {
+          "line": 103,
+          "expression": "engine.simulate(origin, item['rows'])"
+        },
+        {
+          "line": 117,
+          "expression": "engine.simulate(origin, item['rows'])"
+        },
+        {
+          "line": 121,
+          "expression": "model.Predictor(x['setup'], org)"
+        },
+        {
+          "line": 139,
+          "expression": "engine.simulate(org, [accelerator.row(v, w) for (v, w, _) in requests])"
+        },
+        {
+          "line": 125,
+          "expression": "p.step(v, w, False)"
+        },
+        {
+          "line": 128,
+          "expression": "step(v, w)"
+        },
+        {
+          "line": 136,
+          "expression": "step(0.0, 0.0)"
+        },
+        {
+          "line": 134,
+          "expression": "step(v, w)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from bindings import REQUIRED"
+      ]
+    },
+    {
+      "path": "experiments/v1159_bounded_steering_load/model.py",
+      "sha256": "6c88f95bae448d5b7c3998583201612cc9f0dc952c3fde8345d8ff4997fcc5a5",
+      "bytes": 2771,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "from functools import lru_cache",
+        "import json",
+        "import math",
+        "import numpy as np",
+        "from runtime import Predictor as Original",
+        "from bindings import PARAMETERS as BASE",
+        "from kernel import virtual"
+      ],
+      "functions": [
+        {
+          "name": "rate_law",
+          "first_line": 15,
+          "last_line": 16
+        },
+        {
+          "name": "validate",
+          "first_line": 19,
+          "last_line": 27
+        },
+        {
+          "name": "parameters",
+          "first_line": 31,
+          "last_line": 32
+        },
+        {
+          "name": "__init__",
+          "first_line": 36,
+          "last_line": 40
+        },
+        {
+          "name": "step",
+          "first_line": 42,
+          "last_line": 58
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 47,
+          "expression": "super().step(v, w, stale)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from runtime import Predictor as Original",
+        "from bindings import PARAMETERS as BASE",
+        "from kernel import virtual"
+      ]
+    },
+    {
+      "path": "experiments/v1159_bounded_steering_load/engine.py",
+      "sha256": "cd771b2bdbc5737db3464a22bf896b5c189ce1e777c8896ee1497cf6ade6e629",
+      "bytes": 2410,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from pathlib import Path",
+        "import ctypes",
+        "import math",
+        "import numpy as np",
+        "from bindings import PARAMETERS, GAIN"
+      ],
+      "functions": [
+        {
+          "name": "row",
+          "first_line": 34,
+          "last_line": 35
+        },
+        {
+          "name": "__init__",
+          "first_line": 12,
+          "last_line": 17
+        },
+        {
+          "name": "simulate",
+          "first_line": 19,
+          "last_line": 31
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 14,
+          "expression": "ctypes.CDLL(str(R / 'runs/v1159_bounded_steering_load/profile.so'))"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from bindings import PARAMETERS, GAIN"
+      ]
+    },
+    {
+      "path": "experiments/v1159_bounded_steering_load/profile.cpp",
+      "sha256": "a8dfb59192f11919eea44a2f2166f7aef8811b1c4a15245f7596b04dfe672377",
+      "bytes": 3689,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false
+    },
+    {
+      "path": "experiments/v1159_bounded_steering_load/PARAMETERS.json",
+      "sha256": "aba892204544811f5f601c48639cdaa707c402f14a73c224a84dccb2a8dc2733",
+      "bytes": 21214,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false
+    },
+    {
+      "path": "runs/v1159_bounded_steering_load/profile.so",
+      "sha256": "af825523d9d1634c81d28fff154fac93daeb3ef092515acfc5831958de695ed7",
+      "bytes": 24184,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false
+    },
+    {
+      "path": "experiments/v1118_coupled_live_qualification/runtime.py",
+      "sha256": "bd135e5b1559d4eab3582f4f48b2e09d340bad7f21db38a20f0a3d5696ca9ca1",
+      "bytes": 3809,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "import sys, json, math, ctypes, importlib.abc",
+        "from pathlib import Path",
+        "from resource_policy import apply",
+        "from bindings import Predictor as QualifiedPredictor, initial as qualified_initial, PARAMETERS, GAIN",
+        "import numpy as np"
+      ],
+      "functions": [
+        {
+          "name": "initial",
+          "first_line": 11,
+          "last_line": 12
+        },
+        {
+          "name": "remaining_rows",
+          "first_line": 31,
+          "last_line": 38
+        },
+        {
+          "name": "python_replay",
+          "first_line": 40,
+          "last_line": 46
+        },
+        {
+          "name": "__init__",
+          "first_line": 15,
+          "last_line": 16
+        },
+        {
+          "name": "__init__",
+          "first_line": 19,
+          "last_line": 20
+        },
+        {
+          "name": "simulate",
+          "first_line": 21,
+          "last_line": 29
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 41,
+          "expression": "Predictor(setup, origin)"
+        },
+        {
+          "line": 20,
+          "expression": "ctypes.CDLL(str(O / 'profile.so'))"
+        },
+        {
+          "line": 45,
+          "expression": "p.step(speed, w, False)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from bindings import Predictor as QualifiedPredictor, initial as qualified_initial, PARAMETERS, GAIN"
+      ]
+    },
+    {
+      "path": "experiments/v1117_fixed_tick_native_sqp/bindings.py",
+      "sha256": "6946d217f4c25383d27b51670bb9aa8a00b1621fbbade4d7003d2a70187f004f",
+      "bytes": 597,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "import sys",
+        "from pathlib import Path",
+        "from resource_policy import apply",
+        "from kernel import PARAMETERS, ref, REQUIRED",
+        "from coupled_model import Predictor, initial, GAIN",
+        "from coupled_control import Adapter"
+      ],
+      "functions": [],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": [
+        "from kernel import PARAMETERS, ref, REQUIRED"
+      ]
+    },
+    {
+      "path": "experiments/v1121_coupled_route_night/bindings.py",
+      "sha256": "6946d217f4c25383d27b51670bb9aa8a00b1621fbbade4d7003d2a70187f004f",
+      "bytes": 597,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "import sys",
+        "from pathlib import Path",
+        "from resource_policy import apply",
+        "from kernel import PARAMETERS, ref, REQUIRED",
+        "from coupled_model import Predictor, initial, GAIN",
+        "from coupled_control import Adapter"
+      ],
+      "functions": [],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": [
+        "from kernel import PARAMETERS, ref, REQUIRED"
+      ]
+    },
+    {
+      "path": "experiments/v1067_causal_replan_brake_reserve/kernel.py",
+      "sha256": "7863ddd6893880f80bf01ed236ef40f2620669a34b21076d2400f19c8ee362ca",
+      "bytes": 3764,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "import hashlib, importlib.util, json, math, os, sys, time",
+        "from pathlib import Path",
+        "import numpy as np",
+        "from whole_input import Predictor, PARAMETERS, initial, checks, public_setup",
+        "from fast_predict import Expander",
+        "from geometry_model import ref, REQUIRED, RHO",
+        "from timed_input import Geometry",
+        "from exact_timed import ExactTimedGeometry as Geometry"
+      ],
+      "functions": [
+        {
+          "name": "load",
+          "first_line": 6,
+          "last_line": 7
+        },
+        {
+          "name": "dump",
+          "first_line": 17,
+          "last_line": 22
+        },
+        {
+          "name": "sha",
+          "first_line": 23,
+          "last_line": 27
+        },
+        {
+          "name": "predict",
+          "first_line": 28,
+          "last_line": 33
+        },
+        {
+          "name": "stop_witness",
+          "first_line": 34,
+          "last_line": 36
+        },
+        {
+          "name": "pin_threads",
+          "first_line": 38,
+          "last_line": 48
+        },
+        {
+          "name": "remaining_root",
+          "first_line": 51,
+          "last_line": 52
+        },
+        {
+          "name": "old_closed_window_reference",
+          "first_line": 54,
+          "last_line": 57
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 29,
+          "expression": "Predictor(setup, initial(packet), PARAMETERS)"
+        },
+        {
+          "line": 32,
+          "expression": "p.step(v, w, False)"
+        }
+      ],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1221_exact_stop_pruning/endpoint_bound.py",
+      "sha256": "263337d7ce844a09920dddb7ba233d97da0c1518b02db72517f50ba032e329e5",
+      "bytes": 2206,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "import copy, time"
+      ],
+      "functions": [
+        {
+          "name": "upper_bound",
+          "first_line": 4,
+          "last_line": 19
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 5,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 13,
+          "expression": "engine.simulate(origin, schedule)"
+        }
+      ],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1221_exact_stop_pruning/exact_cache.py",
+      "sha256": "0f506affacc149729d4d2550c0ee81e67d3c66a331b2a45c5df4f30f6676d0c0",
+      "bytes": 2576,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from contextlib import contextmanager",
+        "from collections import OrderedDict",
+        "import numpy as np"
+      ],
+      "functions": [
+        {
+          "name": "interval_cache",
+          "first_line": 12,
+          "last_line": 43
+        },
+        {
+          "name": "cached",
+          "first_line": 15,
+          "last_line": 21
+        },
+        {
+          "name": "arraykey",
+          "first_line": 24,
+          "last_line": 25
+        },
+        {
+          "name": "pose_cached",
+          "first_line": 26,
+          "last_line": 31
+        },
+        {
+          "name": "distance_cached",
+          "first_line": 32,
+          "last_line": 37
+        }
+      ],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1195_eight_gib_timed_refuge/candidate_observer.py",
+      "sha256": "58f975ee2b36df178f6e70957cd5cc3fdba5413af1acf84a9567b6f585a6b242",
+      "bytes": 3632,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from current_state_tools import original, R, O, validate_input",
+        "import math, time, json, copy"
+      ],
+      "functions": [
+        {
+          "name": "candidate_rows",
+          "first_line": 5,
+          "last_line": 9
+        },
+        {
+          "name": "synthesize",
+          "first_line": 10,
+          "last_line": 26
+        },
+        {
+          "name": "main",
+          "first_line": 27,
+          "last_line": 36
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 12,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 17,
+          "expression": "e.simulate(org, rows)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from current_state_tools import original, R, O, validate_input"
+      ]
+    },
+    {
+      "path": "experiments/v1218_fixed24_current/goal_package/__init__.py",
+      "sha256": "f6387b53ae31d2fede913888a8c9cd59c50af6d0a5519922ab001826ca95e1aa",
+      "bytes": 76,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json",
+        "experiments/v1218_fixed24_current/PACKAGE_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [],
+      "functions": [],
+      "model_calls_CPU2_required": [],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1218_fixed24_current/goal_package/admission.py",
+      "sha256": "561d196854925cecf09132eb2e969af25d4b062331fd86c6943867fb8476bfb9",
+      "bytes": 4420,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json",
+        "experiments/v1218_fixed24_current/PACKAGE_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "import copy, math, time",
+        "from pathlib import Path",
+        "import sys",
+        "from .candidate_search import q, np, PreviewGeometry"
+      ],
+      "functions": [
+        {
+          "name": "predictor_origin",
+          "first_line": 10,
+          "last_line": 13
+        },
+        {
+          "name": "check_arrays",
+          "first_line": 16,
+          "last_line": 25
+        },
+        {
+          "name": "preview",
+          "first_line": 28,
+          "last_line": 69
+        },
+        {
+          "name": "step",
+          "first_line": 34,
+          "last_line": 42
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 30,
+          "expression": "q.model.Predictor(x['setup'], copy.deepcopy(origin))"
+        },
+        {
+          "line": 31,
+          "expression": "q.model.Predictor(x['setup'], copy.deepcopy(shadow_origin))"
+        },
+        {
+          "line": 37,
+          "expression": "plant.step(float(vr), float(wr), False)"
+        },
+        {
+          "line": 37,
+          "expression": "shadow.step(float(vr), float(wr), False)"
+        },
+        {
+          "line": 60,
+          "expression": "step(0.0, 0.0, ref[-1])"
+        },
+        {
+          "line": 50,
+          "expression": "step(vr, wr, ref[i + 1])"
+        },
+        {
+          "line": 58,
+          "expression": "step(vr, wr, ref[-1])"
+        }
+      ],
+      "generic_runtime_binding_names": []
+    },
+    {
+      "path": "experiments/v1218_fixed24_current/goal_package/candidate_search.py",
+      "sha256": "551409ea2f5798eb49df2de20e71f50b3cd176c8d80a6cf6dcda0b692b7f9675",
+      "bytes": 9365,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json",
+        "experiments/v1218_fixed24_current/PACKAGE_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from dataclasses import dataclass",
+        "from pathlib import Path",
+        "import heapq",
+        "import copy",
+        "import math",
+        "import sys",
+        "import time",
+        "from current_state_tools import q, np",
+        "from .connection import Node, TURNS, DURATIONS, endpoint, state_key, path_rows, compact",
+        "from current_state_tools import validate_input",
+        "from .connection import OffsetGeometry"
+      ],
+      "functions": [
+        {
+          "name": "search",
+          "first_line": 31,
+          "last_line": 184
+        },
+        {
+          "name": "period",
+          "first_line": 21,
+          "last_line": 22
+        },
+        {
+          "name": "legal",
+          "first_line": 65,
+          "last_line": 72
+        },
+        {
+          "name": "margins",
+          "first_line": 74,
+          "last_line": 75
+        },
+        {
+          "name": "score",
+          "first_line": 77,
+          "last_line": 82
+        },
+        {
+          "name": "add",
+          "first_line": 84,
+          "last_line": 96
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 50,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 102,
+          "expression": "engine.simulate(origin, [(0.0, 0.0, wait, 0)])"
+        },
+        {
+          "line": 106,
+          "expression": "engine.simulate(shadow_origin, [(0.0, 0.0, wait, 0)])"
+        },
+        {
+          "line": 139,
+          "expression": "engine.simulate(origin, rows)"
+        },
+        {
+          "line": 141,
+          "expression": "engine.simulate(shadow_origin, rows)"
+        },
+        {
+          "line": 157,
+          "expression": "engine.simulate(node.origin, [row])"
+        },
+        {
+          "line": 161,
+          "expression": "engine.simulate(node.shadow_origin, [row])"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from current_state_tools import q, np",
+        "from current_state_tools import validate_input"
+      ]
+    },
+    {
+      "path": "experiments/v1218_fixed24_current/goal_package/connection.py",
+      "sha256": "0120aefa7e8fe1d0f44e526e0fbdbc94718b001b774830691b9f1b68c762f803",
+      "bytes": 11491,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json",
+        "experiments/v1218_fixed24_current/PACKAGE_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "from dataclasses import dataclass",
+        "from pathlib import Path",
+        "import copy",
+        "import heapq",
+        "import math",
+        "import sys",
+        "import time",
+        "from current_state_tools import q, np, validate_input"
+      ],
+      "functions": [
+        {
+          "name": "endpoint",
+          "first_line": 39,
+          "last_line": 44
+        },
+        {
+          "name": "compact",
+          "first_line": 72,
+          "last_line": 80
+        },
+        {
+          "name": "state_key",
+          "first_line": 83,
+          "last_line": 92
+        },
+        {
+          "name": "path_rows",
+          "first_line": 95,
+          "last_line": 102
+        },
+        {
+          "name": "connect",
+          "first_line": 105,
+          "last_line": 246
+        },
+        {
+          "name": "select_observation_refuge",
+          "first_line": 249,
+          "last_line": 271
+        },
+        {
+          "name": "__init__",
+          "first_line": 48,
+          "last_line": 50
+        },
+        {
+          "name": "components",
+          "first_line": 52,
+          "last_line": 53
+        },
+        {
+          "name": "cycle",
+          "first_line": 55,
+          "last_line": 56
+        },
+        {
+          "name": "__init__",
+          "first_line": 61,
+          "last_line": 62
+        },
+        {
+          "name": "components",
+          "first_line": 64,
+          "last_line": 66
+        },
+        {
+          "name": "cycle",
+          "first_line": 68,
+          "last_line": 69
+        },
+        {
+          "name": "bounds",
+          "first_line": 138,
+          "last_line": 140
+        },
+        {
+          "name": "priority",
+          "first_line": 142,
+          "last_line": 149
+        },
+        {
+          "name": "add",
+          "first_line": 151,
+          "last_line": 161
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 121,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 171,
+          "expression": "engine.simulate(initial, [(0.0, 0.0, wait, 0)])"
+        },
+        {
+          "line": 200,
+          "expression": "engine.simulate(initial, rows)"
+        },
+        {
+          "line": 221,
+          "expression": "engine.simulate(node.origin, [row])"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from current_state_tools import q, np, validate_input"
+      ]
+    },
+    {
+      "path": "experiments/v1218_fixed24_current/goal_package/current_goal_source.py",
+      "sha256": "1822bb0a404608516c28758f08819e63f5f76b3966e994a2f38c1457debf8bdf",
+      "bytes": 5168,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json",
+        "experiments/v1218_fixed24_current/PACKAGE_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "import copy",
+        "import math",
+        "from pathlib import Path",
+        "import sys",
+        "import time",
+        "from .candidate_search import q, np, search, PreviewGeometry",
+        "from .admission import preview as feedback_preview",
+        "from .connection import CAP, compact, endpoint",
+        "from current_state_tools import validate_input"
+      ],
+      "functions": [
+        {
+          "name": "generate",
+          "first_line": 16,
+          "last_line": 83
+        },
+        {
+          "name": "admit",
+          "first_line": 21,
+          "last_line": 25
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 35,
+          "expression": "q.accelerator.Engine(x['setup'], q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 65,
+          "expression": "engine.simulate(origin, rows)"
+        },
+        {
+          "line": 41,
+          "expression": "engine.simulate(origin, rows)"
+        },
+        {
+          "line": 44,
+          "expression": "engine.simulate(shadow_origin, rows)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from current_state_tools import validate_input"
+      ]
+    },
+    {
+      "path": "experiments/v1218_fixed24_current/goal_package/goal_entry.py",
+      "sha256": "b3df7d05fc8ae9f1585aeb835b4cd49de924a3f8c84fcf9b4ccaac29f2e74a12",
+      "bytes": 9188,
+      "original_manifest_matches": [
+        "experiments/v1281_partial_reconnection_fixed24/WORKER_FREEZE.json",
+        "experiments/v1218_fixed24_current/PACKAGE_FREEZE.json"
+      ],
+      "imported": false,
+      "executed": false,
+      "imports": [
+        "import copy",
+        "import math",
+        "import time",
+        "from .current_goal_source import q, np, generate, PreviewGeometry",
+        "from .admission import predictor_origin",
+        "from current_state_tools import validate_input, original"
+      ],
+      "functions": [
+        {
+          "name": "measured_origin",
+          "first_line": 10,
+          "last_line": 20
+        },
+        {
+          "name": "bind_current",
+          "first_line": 23,
+          "last_line": 32
+        },
+        {
+          "name": "execute",
+          "first_line": 35,
+          "last_line": 136
+        },
+        {
+          "name": "current",
+          "first_line": 48,
+          "last_line": 53
+        },
+        {
+          "name": "step",
+          "first_line": 55,
+          "last_line": 74
+        },
+        {
+          "name": "run_rows",
+          "first_line": 76,
+          "last_line": 92
+        }
+      ],
+      "model_calls_CPU2_required": [
+        {
+          "line": 42,
+          "expression": "q.model.Predictor(setup, initial)"
+        },
+        {
+          "line": 58,
+          "expression": "shadow.step(float(vr), float(wr), False)"
+        },
+        {
+          "line": 59,
+          "expression": "v.step(float(vr), float(wr), False)"
+        },
+        {
+          "line": 120,
+          "expression": "step(0.0, 0.0, plan['states'][-1], 'final_stop', len(plan['states']) - 1)"
+        },
+        {
+          "line": 82,
+          "expression": "q.accelerator.Engine(setup, q.model.parameters()['coefficients'])"
+        },
+        {
+          "line": 83,
+          "expression": "engine.simulate(origin, [(0.0, 0.0, int(count), 0)])"
+        },
+        {
+          "line": 91,
+          "expression": "step(vr, wr, reference[i + 1], phase, i + 1)"
+        },
+        {
+          "line": 95,
+          "expression": "predictor_origin(shadow)"
+        },
+        {
+          "line": 118,
+          "expression": "step(vr, wr, plan['states'][-1], 'capture', len(plan['states']) - 1)"
+        },
+        {
+          "line": 104,
+          "expression": "predictor_origin(shadow)"
+        }
+      ],
+      "generic_runtime_binding_names": [
+        "from current_state_tools import validate_input, original"
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "WE live_entry goal_entry",
+      "v1218.package_loader:get_goal_entry",
+      "explicit private package, not generic top-level replacement"
+    ],
+    [
+      "WE observer",
+      "v1221.candidate_observer:synthesize",
+      "C++response simulation and complete-stop evaluation:CPU2"
+    ],
+    [
+      "goal_entry:execute",
+      "current_goal_source:generate",
+      "candidate_search+fullfeedbackadmission:CPU2"
+    ],
+    [
+      "current_goal_source:generate",
+      "admission:preview",
+      "two independent carried Predictor states, no per-step memory reset:CPU2"
+    ],
+    [
+      "q",
+      "current_state_tools.original.q",
+      "original=chain, q=chain_tools.previous.q"
+    ],
+    [
+      "q.model",
+      "v1159.model:Predictor",
+      "bounded steering-load term and explicit load episode; differs from plain shared V1114"
+    ],
+    [
+      "q.accelerator",
+      "v1159.engine:Engine",
+      "ctypes profile.so + coefficients, each native is model integration:CPU2"
+    ],
+    [
+      "v1159.model:Predictor",
+      "v1118.runtime:Predictor",
+      "inherits coupled V1114 via v1117 bindings; generic runtime/bindings resolution still must be explicit"
+    ],
+    [
+      "v1159.engine:Engine",
+      "runs/v1159_bounded_steering_load/profile.so",
+      "binary SHA only, not loaded or called"
+    ],
+    [
+      "current_state_tools.original",
+      "v1180.chain helpers only",
+      "legacy chain.execute and historical library/reference loaders are outside proposed allowed callable scope"
+    ]
+  ],
+  "all_selected_sources_original_SHA_verified": true,
+  "model_variants_distinct": true,
+  "legacy_model_variant": "V1159_BOUNDED_STEERING_LOAD_OVER_V1114",
+  "latest_shared_baseline_variant": "V1114_COUPLED_SCALAR_FEEDBACK",
+  "model_variants_numerically_equivalent_not_established": true,
+  "full_transitive_controlflow_coverage": false,
+  "legacy_generic_names_not_safe_import_contract": true,
+  "allowed_future_callable_scope": [
+    "current_input",
+    "fresh_evidence",
+    "joint_table",
+    "remaining_rows",
+    "front",
+    "candidate_observer.synthesize",
+    "goal_package.generate",
+    "goal_package.admission.preview"
+  ],
+  "forbidden_future_legacy_callables": [
+    "chain.execute",
+    "recovery_tools.load_reference",
+    "legacy campaign/worker/main",
+    "any historical replay/audit/qualification main"
+  ],
+  "required_before_model": [
+    "explicit no-collision numerical bindings and qualified scalar projection",
+    "new owner CPU2run_phase/lock/current-source and exact budgets",
+    "complete fixed-clock/reference/200branch-tail evidence and independent audit",
+    "new finite source freeze+remotechain+once scope"
+  ],
+  "new_scientific_revision": false,
+  "wall_s": 0.16017518599983305
+}

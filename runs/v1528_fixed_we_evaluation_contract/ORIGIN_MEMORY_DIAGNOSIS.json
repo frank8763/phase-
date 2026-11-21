@@ -1,0 +1,62 @@
+{
+  "closed": true,
+  "source_diagnosis_completed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "Allocator_recomputations": 0,
+  "replay_native": 0,
+  "optimizer_calls": 0,
+  "scope": "SOURCE_DERIVED_CONDITIONAL_METHOD_MEMORY_ON_RECORDED_RPP_REQUESTS_NOT_ACTUAL_RPCCR_FLAG",
+  "origin_native": 6005,
+  "initial_load_epoch_unknown": true,
+  "canonical_initial_flag_not_assumed": false,
+  "first_resolved_after_native": 1,
+  "source_derived_hypothetical_carried_load_at_origin": true,
+  "transitions": [
+    {
+      "before_native": 0,
+      "actual_applied_v": 0.1,
+      "parked_target": null,
+      "before": null,
+      "after": true
+    }
+  ],
+  "original_model_source_sha256": "6c88f95bae448d5b7c3998583201612cc9f0dc952c3fde8345d8ff4997fcc5a5",
+  "extracted_conditional_source": "if parked or v <= -0.005:\n    self.steering_load_episode = False\nelif v >= 0.005:\n    self.steering_load_episode = True",
+  "original_observer_entry_explicit_reset": false,
+  "actual_load_sensor_observed": false,
+  "physical_model_fit_or_projection_qualified": false,
+  "not_an_origin_conversion_or_new_method": true,
+  "old_input_or_proposal_not_changed": true,
+  "actual_RPP_prefix_not_RPCCR_navigation": true,
+  "source_proof": {
+    "saved_actual_source_only": true,
+    "not_fresh_wire": true,
+    "actual_or_model_permission": false,
+    "raw_files": [
+      {
+        "path": "runs/v1479_retirement_scope_binding/first_event/ACTUAL_OWNER_JOURNAL.jsonl",
+        "bytes": 21192321,
+        "sha256": "dec7380f6c90a48a77de3b9542adb53b0cbdf0621096219d44bbee452bc40fca"
+      },
+      {
+        "path": "runs/v1479_retirement_scope_binding/first_event/bridge_events/event0000/CURRENT_INPUT.json",
+        "bytes": 195406,
+        "sha256": "9ec7af1d252b78bf2d27005a71aac7026e23350306525f9bc8e7ab1fdf9bcf15"
+      }
+    ],
+    "remote_index_sha256": "4b35acebed92ab73a8c08a6664ee8c74df895eddec74e715eaf14d49c84cf450",
+    "remote_proof_sha256": "43d22946fa60de044992b6ee70c3ba24ec496874de9d5bd73852e6156b367e10",
+    "normalizer_source_sha256": "e4199da8f395776b08e6129226110c129d99b8183489eab4447b22fbc0869828",
+    "current_event_input_sha256": "438dd57c289768b7bc15c497d6b3ddd8300a6497e87b6230c1040d9f79c5119f",
+    "applied_prefix_native": 6005,
+    "all_recorded_actual_rows": 6205,
+    "current_receipt_fullstate_digest_bound": true,
+    "body_encoder_projection_recomputation_executed": false,
+    "independent_Allocator_recomputation_executed": false
+  },
+  "allruns_before_bytes": 10087415808,
+  "source_scope_peak": 10668326912,
+  "wall_s": 1.950313821027521
+}
