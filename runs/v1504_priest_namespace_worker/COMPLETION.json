@@ -1,0 +1,439 @@
+{
+  "passed": true,
+  "closed": true,
+  "scope": "ONCE_SAVED_ACTUAL_INPUT_REAL_CPU_PRIEST_PROPOSAL",
+  "models": 0,
+  "physical_native": 0,
+  "optimizer_calls": 1,
+  "optimizer_work_unknown": false,
+  "worker_returncode": 0,
+  "inner_result": {
+    "passed": true,
+    "scope": "OPTIMIZER",
+    "models": 0,
+    "optimizer_calls": 1,
+    "physical_native": 0,
+    "author_or_JAX_imported": true,
+    "source_manifest_sha256": "9fc88fc0ab565d5643c2dc9f141a0b23fc6a6908cfb264e2e1dd9b79fa7ff772",
+    "original_error": null,
+    "thread_affinities_after_kernel": {
+      "phase": "AFTER_KERNEL",
+      "started_monotonic": 395722.509118812,
+      "current_namespace_pid": 2,
+      "procfs_process_ids": {
+        "Tgid": [
+          5
+        ],
+        "Pid": [
+          5
+        ],
+        "NSpid": [
+          5,
+          2
+        ]
+      },
+      "pid_namespace": "pid:[4026533005]",
+      "passes": [
+        [
+          {
+            "proc_tid": 5,
+            "current_namespace_tid": 2,
+            "NSpid": [
+              5,
+              2
+            ],
+            "status_sha256": "b584bbe8da1e48ddaecb71e31c58d54bd64deafd8bffcb2af3f33c01c04aecc1"
+          },
+          {
+            "proc_tid": 6,
+            "current_namespace_tid": 3,
+            "NSpid": [
+              6,
+              3
+            ],
+            "status_sha256": "bb6f19b20b391dc09183b23195aa14362ea3dabdbc256bf4b0ee9925832de43d"
+          },
+          {
+            "proc_tid": 7,
+            "current_namespace_tid": 4,
+            "NSpid": [
+              7,
+              4
+            ],
+            "status_sha256": "3ca8171c5ed7562b25a6700eac7f0908519142da760ef0c74148f143bdd10be6"
+          }
+        ],
+        [
+          {
+            "proc_tid": 5,
+            "current_namespace_tid": 2,
+            "NSpid": [
+              5,
+              2
+            ],
+            "status_sha256": "b584bbe8da1e48ddaecb71e31c58d54bd64deafd8bffcb2af3f33c01c04aecc1"
+          },
+          {
+            "proc_tid": 6,
+            "current_namespace_tid": 3,
+            "NSpid": [
+              6,
+              3
+            ],
+            "status_sha256": "bb6f19b20b391dc09183b23195aa14362ea3dabdbc256bf4b0ee9925832de43d"
+          },
+          {
+            "proc_tid": 7,
+            "current_namespace_tid": 4,
+            "NSpid": [
+              7,
+              4
+            ],
+            "status_sha256": "3ca8171c5ed7562b25a6700eac7f0908519142da760ef0c74148f143bdd10be6"
+          }
+        ]
+      ],
+      "observed": {
+        "5:2": {
+          "proc_tid": 5,
+          "current_namespace_tid": 2,
+          "NSpid": [
+            5,
+            2
+          ],
+          "status_sha256": "b584bbe8da1e48ddaecb71e31c58d54bd64deafd8bffcb2af3f33c01c04aecc1",
+          "affinity": [
+            4
+          ]
+        },
+        "6:3": {
+          "proc_tid": 6,
+          "current_namespace_tid": 3,
+          "NSpid": [
+            6,
+            3
+          ],
+          "status_sha256": "bb6f19b20b391dc09183b23195aa14362ea3dabdbc256bf4b0ee9925832de43d",
+          "affinity": [
+            4
+          ]
+        },
+        "7:4": {
+          "proc_tid": 7,
+          "current_namespace_tid": 4,
+          "NSpid": [
+            7,
+            4
+          ],
+          "status_sha256": "3ca8171c5ed7562b25a6700eac7f0908519142da760ef0c74148f143bdd10be6",
+          "affinity": [
+            4
+          ]
+        }
+      },
+      "confirmed_exited": [],
+      "passed": true,
+      "historical_transient_affinity_unknown": true,
+      "universal_affinity_claim": false,
+      "final_live": [
+        {
+          "proc_tid": 5,
+          "current_namespace_tid": 2,
+          "NSpid": [
+            5,
+            2
+          ],
+          "status_sha256": "b584bbe8da1e48ddaecb71e31c58d54bd64deafd8bffcb2af3f33c01c04aecc1"
+        },
+        {
+          "proc_tid": 6,
+          "current_namespace_tid": 3,
+          "NSpid": [
+            6,
+            3
+          ],
+          "status_sha256": "bb6f19b20b391dc09183b23195aa14362ea3dabdbc256bf4b0ee9925832de43d"
+        },
+        {
+          "proc_tid": 7,
+          "current_namespace_tid": 4,
+          "NSpid": [
+            7,
+            4
+          ],
+          "status_sha256": "3ca8171c5ed7562b25a6700eac7f0908519142da760ef0c74148f143bdd10be6"
+        }
+      ],
+      "unobserved_final_live": [],
+      "ended_monotonic": 395722.50983474
+    },
+    "thread_affinities_after_optimizer": {
+      "phase": "AFTER_OPTIMIZER",
+      "started_monotonic": 395739.896153695,
+      "current_namespace_pid": 2,
+      "procfs_process_ids": {
+        "Tgid": [
+          5
+        ],
+        "Pid": [
+          5
+        ],
+        "NSpid": [
+          5,
+          2
+        ]
+      },
+      "pid_namespace": "pid:[4026533005]",
+      "passes": [
+        [
+          {
+            "proc_tid": 5,
+            "current_namespace_tid": 2,
+            "NSpid": [
+              5,
+              2
+            ],
+            "status_sha256": "c82418b0323276cdb6b7ed049b0b09da8ee5661b2d0cabb38f2e7fccebdabd0e"
+          },
+          {
+            "proc_tid": 6,
+            "current_namespace_tid": 3,
+            "NSpid": [
+              6,
+              3
+            ],
+            "status_sha256": "cac806b8c655bc95732358ab220a68301115474460c47ad867f8f31ab6d21df6"
+          },
+          {
+            "proc_tid": 7,
+            "current_namespace_tid": 4,
+            "NSpid": [
+              7,
+              4
+            ],
+            "status_sha256": "8550aae135a5b0fda9e22dd5abb30373eac55c6c967865a7a9b101734b315c99"
+          },
+          {
+            "proc_tid": 11,
+            "current_namespace_tid": 8,
+            "NSpid": [
+              11,
+              8
+            ],
+            "status_sha256": "a4bf984148d35a0fb9149072225a0faba064eab480e40b1fd4453494482a431b"
+          },
+          {
+            "proc_tid": 15,
+            "current_namespace_tid": 12,
+            "NSpid": [
+              15,
+              12
+            ],
+            "status_sha256": "2ddd268e992e73166c555e761f225fd21e72b88dd7588c37508a3b6de0a6bfbd"
+          }
+        ],
+        [
+          {
+            "proc_tid": 5,
+            "current_namespace_tid": 2,
+            "NSpid": [
+              5,
+              2
+            ],
+            "status_sha256": "c82418b0323276cdb6b7ed049b0b09da8ee5661b2d0cabb38f2e7fccebdabd0e"
+          },
+          {
+            "proc_tid": 6,
+            "current_namespace_tid": 3,
+            "NSpid": [
+              6,
+              3
+            ],
+            "status_sha256": "cac806b8c655bc95732358ab220a68301115474460c47ad867f8f31ab6d21df6"
+          },
+          {
+            "proc_tid": 7,
+            "current_namespace_tid": 4,
+            "NSpid": [
+              7,
+              4
+            ],
+            "status_sha256": "8550aae135a5b0fda9e22dd5abb30373eac55c6c967865a7a9b101734b315c99"
+          },
+          {
+            "proc_tid": 11,
+            "current_namespace_tid": 8,
+            "NSpid": [
+              11,
+              8
+            ],
+            "status_sha256": "a4bf984148d35a0fb9149072225a0faba064eab480e40b1fd4453494482a431b"
+          },
+          {
+            "proc_tid": 15,
+            "current_namespace_tid": 12,
+            "NSpid": [
+              15,
+              12
+            ],
+            "status_sha256": "2ddd268e992e73166c555e761f225fd21e72b88dd7588c37508a3b6de0a6bfbd"
+          }
+        ]
+      ],
+      "observed": {
+        "5:2": {
+          "proc_tid": 5,
+          "current_namespace_tid": 2,
+          "NSpid": [
+            5,
+            2
+          ],
+          "status_sha256": "c82418b0323276cdb6b7ed049b0b09da8ee5661b2d0cabb38f2e7fccebdabd0e",
+          "affinity": [
+            4
+          ]
+        },
+        "6:3": {
+          "proc_tid": 6,
+          "current_namespace_tid": 3,
+          "NSpid": [
+            6,
+            3
+          ],
+          "status_sha256": "cac806b8c655bc95732358ab220a68301115474460c47ad867f8f31ab6d21df6",
+          "affinity": [
+            4
+          ]
+        },
+        "7:4": {
+          "proc_tid": 7,
+          "current_namespace_tid": 4,
+          "NSpid": [
+            7,
+            4
+          ],
+          "status_sha256": "8550aae135a5b0fda9e22dd5abb30373eac55c6c967865a7a9b101734b315c99",
+          "affinity": [
+            4
+          ]
+        },
+        "11:8": {
+          "proc_tid": 11,
+          "current_namespace_tid": 8,
+          "NSpid": [
+            11,
+            8
+          ],
+          "status_sha256": "a4bf984148d35a0fb9149072225a0faba064eab480e40b1fd4453494482a431b",
+          "affinity": [
+            4
+          ]
+        },
+        "15:12": {
+          "proc_tid": 15,
+          "current_namespace_tid": 12,
+          "NSpid": [
+            15,
+            12
+          ],
+          "status_sha256": "2ddd268e992e73166c555e761f225fd21e72b88dd7588c37508a3b6de0a6bfbd",
+          "affinity": [
+            4
+          ]
+        }
+      },
+      "confirmed_exited": [],
+      "passed": true,
+      "historical_transient_affinity_unknown": true,
+      "universal_affinity_claim": false,
+      "final_live": [
+        {
+          "proc_tid": 5,
+          "current_namespace_tid": 2,
+          "NSpid": [
+            5,
+            2
+          ],
+          "status_sha256": "c82418b0323276cdb6b7ed049b0b09da8ee5661b2d0cabb38f2e7fccebdabd0e"
+        },
+        {
+          "proc_tid": 6,
+          "current_namespace_tid": 3,
+          "NSpid": [
+            6,
+            3
+          ],
+          "status_sha256": "cac806b8c655bc95732358ab220a68301115474460c47ad867f8f31ab6d21df6"
+        },
+        {
+          "proc_tid": 7,
+          "current_namespace_tid": 4,
+          "NSpid": [
+            7,
+            4
+          ],
+          "status_sha256": "8550aae135a5b0fda9e22dd5abb30373eac55c6c967865a7a9b101734b315c99"
+        },
+        {
+          "proc_tid": 11,
+          "current_namespace_tid": 8,
+          "NSpid": [
+            11,
+            8
+          ],
+          "status_sha256": "a4bf984148d35a0fb9149072225a0faba064eab480e40b1fd4453494482a431b"
+        },
+        {
+          "proc_tid": 15,
+          "current_namespace_tid": 12,
+          "NSpid": [
+            15,
+            12
+          ],
+          "status_sha256": "2ddd268e992e73166c555e761f225fd21e72b88dd7588c37508a3b6de0a6bfbd"
+        }
+      ],
+      "unobserved_final_live": [],
+      "ended_monotonic": 395739.897219868
+    },
+    "work_accounting": {
+      "constructor_attempts": 1,
+      "constructor_returns": 1,
+      "optimizer_call_attempts": 1,
+      "optimizer_calls": 1,
+      "iterations_completed": 12,
+      "projection_candidate_updates": 17160,
+      "elite_cost_evaluations": 960,
+      "shifted_candidate_scores": 39600,
+      "initial_guess_scores": 3300,
+      "mathematical_candidate_evaluations": null,
+      "inflight_unknown": false,
+      "models": 0,
+      "response_model_native": 0,
+      "physical_native": 0,
+      "Allocator_recomputations": 0,
+      "replay_native": 0
+    },
+    "proposal_sha256": "c555bc9751cbad0cff168e0a6e925599898dba10027705d705c53adc18b2d8ea",
+    "actual_control_domain_qualified": false,
+    "complete_response_witness_qualified": false,
+    "input_role": "SAVED_ACTUAL_INPUT_MODEL_ONLY",
+    "saved_actual_input_not_fresh_wire": true,
+    "all_sources_unchanged": true,
+    "closed": true,
+    "rusage": {
+      "maxrss_kib": 910440,
+      "threads": 5,
+      "CPU": [
+        4
+      ]
+    }
+  },
+  "first_error": null,
+  "wall_s": 27.360730800020974,
+  "source_unchanged": true,
+  "saved_actual_input_not_fresh_wire": true,
+  "actual_current_capture": false,
+  "actual_control_domain_qualified": false,
+  "whole_route_passed": false
+}

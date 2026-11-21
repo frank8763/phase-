@@ -1,0 +1,38 @@
+{
+  "scope": "ONCE_SAVED_ACTUAL_INPUT_REAL_CPU_OPTIMIZER_NAMESPACE_BOUND",
+  "started_unix": 1795273961.5753946,
+  "started_monotonic": 395712.020902629,
+  "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4",
+  "maximum_wall_s": 650,
+  "root_deadline_unix": 1795395600,
+  "CPU": [
+    4
+  ],
+  "models": 0,
+  "physical_native": 0,
+  "source_files": 11473,
+  "source_freeze_sha256": "87a7a64967f22276bb84815518cae6c5e5919fb4fb500c93b0845fc80f6bb868",
+  "all_frozen_members_remote_covered": true,
+  "allruns_allocated_before_bytes": 10147147776,
+  "full_reserved_peak_bytes": 10734350336,
+  "storage_limit_bytes": 10737418240,
+  "headroom_bytes": 3067904,
+  "command": [
+    "ionice",
+    "-c",
+    "3",
+    "taskset",
+    "-c",
+    "4",
+    "nice",
+    "-n",
+    "19",
+    "./run_phase.sh",
+    "experiments/v1504_priest_namespace_worker/owner.py",
+    "--launch"
+  ],
+  "actual_current_capture": false,
+  "whole_route_passed": false,
+  "old_V1498_V1500_failures_preserved": true,
+  "child_pid": 866695
+}
