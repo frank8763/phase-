@@ -11,7 +11,7 @@
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/COMPLETE_TIMED_MODEL_V1417_REPORT.md",
+  "latest_report": "docs/LIVE_GRANT_BOUNDARY_V1472_REPORT.md",
   "latest_completed": {
     "closed": true,
     "physical_observer_main_and_repeat_passed": false,
@@ -11113,7 +11113,7 @@
     "root_lock_idle": true,
     "next": "Complete actual new-source remote recovery, prepare distinct zero200 admission, preregister once 600s scope and execute only bounded canonical factory+actual200+Allocator200+ownreplay200 if all gates remain satisfied. No navigation."
   },
-  "next_preparation": "experiments/v1472_closure_write_accounting/PROTOCOL.md",
+  "next_preparation": "experiments/v1474_pre_wire_resource_headroom/PROTOCOL.md",
   "latest_zero200_closure_qualification": {
     "recorded_unix": 1795242668.9250162,
     "closed": true,
@@ -11215,34 +11215,29 @@
     "verified_unix": 1795243226.3096507
   },
   "latest_live_first_event_preparation": {
-    "recorded_unix": 1795249351.7120054,
+    "recorded_unix": 1795251970.497398,
     "source_status": "CLOSED_ENTRY_QUALIFIED_FROZEN",
     "models": 0,
     "physical_native": 0,
     "actual_replay_native": 0,
     "allocator_recomputations": 0,
-    "negative_cases": 10,
-    "production_pump_real_Unix_datagram_software_dispatch": true,
-    "wire_grant_reuse_before_sampling_zero_hot_du": true,
-    "foreign_insufficient_refused_without_refresh": true,
-    "expired_or_native_nonzero_init_first_prepares": true,
-    "closure_exact_charged_bytes": 25575,
-    "closure_final_bytes_plus_open": 25381,
-    "NPZ_rewrite_credit_not_returned": true,
-    "closure_hot_du_calls": 0,
-    "old_failures_retained": true,
-    "whole_route_complete_absent": true,
-    "source_remote_recovery_pending": true,
-    "admission_or_launch": false,
-    "storage": {
-      "passed": true,
-      "allocated_all_runs_bytes": 9587060736,
-      "estimated_cap_peak_bytes": 10627248128,
-      "limit_bytes": 10737418240,
-      "inode_counted": true,
-      "models": 0
+    "near_expiry_proof": {
+      "prior_resource_remaining_s": 0.34174407296814024,
+      "du_before_new_sample": 2,
+      "source_sampled_after_new_grant": true,
+      "TTL_s": 2,
+      "minimum_resource_headroom_s": 0.5
     },
-    "next": "Recover every newsource and failed entry member remotely; then distinct once narrow first-live-event runtime only if source/clock/storage remain true."
+    "negative_cases": 4,
+    "production_only_margin_change": true,
+    "valid_reuse_no_TTL_reset": true,
+    "insufficient_near_expiry_no_refill": true,
+    "original_wire_grant_TTL_s": 2,
+    "original_source_maxage_s": 0.2,
+    "source_remote_recovery_pending": true,
+    "actual_raw_backup_pending": false,
+    "admission_or_launch": false,
+    "next": "Full newcurrent source remote recovery then once narrow originalfirstevent runtime only after exact storage/source/clock gates."
   },
   "latest_route_closure_source_recovery": {
     "passed": true,
@@ -11285,5 +11280,46 @@
     "models": 0,
     "physical_admission": false,
     "verified_unix": 1795248477.006468
+  },
+  "latest_wire_closure_source_recovery": {
+    "passed": true,
+    "source_commit": "58b4e53b8ab608850a6cbc706f897f86f786cb61",
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1472-wire-closure-grant-source-20261121",
+    "every_asset_actual_download_SHA": true,
+    "every_member_SHA_and_link_text": true,
+    "whole_archive_SHA": true,
+    "recovery_index_download_SHA": true,
+    "members": 128,
+    "archive_bytes": 1639523,
+    "models": 0,
+    "physical_admission": false,
+    "verified_unix": 1795249439.9445405
+  },
+  "latest_live_first_event_runtime": {
+    "recorded_unix": 1795249662.9022,
+    "closed": true,
+    "passed": false,
+    "actual_native": 405,
+    "original_RPP_native": 205,
+    "error_stop_tail_native": 200,
+    "own_replay_native": 0,
+    "first_error": "BYTE_GRANT_EXPIRED while logging received packet",
+    "actual_raw_backup_pending": false,
+    "first_live_event_executed": false,
+    "whole_route_passed": false
+  },
+  "latest_resource_expiry_raw_remote_recovery": {
+    "passed": true,
+    "source_commit": "58b4e53b8ab608850a6cbc706f897f86f786cb61",
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1472-wire-grant-expiry-failed-20261121",
+    "every_asset_actual_download_SHA": true,
+    "every_member_SHA_and_link_text": true,
+    "whole_archive_SHA": true,
+    "recovery_index_download_SHA": true,
+    "members": 170,
+    "archive_bytes": 8039682,
+    "models": 0,
+    "physical_admission": false,
+    "verified_unix": 1795251915.0991473
   }
 }

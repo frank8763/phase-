@@ -2386,3 +2386,18 @@ V1467 complete failedraw and V1469 concretegrantdraft160members7746309B all remo
 
 
 2026-11-21 V1472 one new no-model target entry PASS CLOSED/frozen. ExactproductionPump software-envelope/realUnixdatagram:validgrant0du before sampling;foreign/insufficientrefusal;expiry/non0init/otherphase prepares beforefreshwire. ClosureNPZ+qualifiedgzip lossless,25575emitted=debit vs25381final+open (194ZIPrewrite charge),0hotdu/56MiBfuturecapsheld/10negatives. V1469/V1471 failures retained, prior missing countsunknown.0models/physical/Allocator/replay/nav; source remote recovery pending before independentonce scope.
+
+
+V1469/V1471 complete failed entries and V1472 frozen currentwire/closure source128members1639523B all remote actualblock/member/whole/indexSHA verified; unique58b4e53b/Release phase-v1472-wire-closure-grant-source-20261121, transportonlyclear/rawkept/no secondpush. Source entry/backup are not real event runtime PASS. Distinct once narrow first-live-event scope may now be separately admitted after current peak/clock/once checks; whole-route COMPLETE remains absent.
+
+
+2026-11-21 V1472 distinct once originalfirst-live-event runtime launched after complete source recovery/narrow admission/full peak check. Task attempt17/partial-navigation registration5, prioractual116480/replay105105 remain pending actual newRESULT. Source entry/transport not runtimePASS; first real event still outcomeunknown, whole-route0. Supervisor CPU5 ownroot5400/nativeCPU2singlelock and t0READY beforeROS, original200ms/science unchanged; no relaunch. Toolsession61095 owner current.
+
+
+2026-11-21 V1472 actualfirstevent once CLOSED FAILED:canonicalreturn1/t0READYbeforeROS,205originalRPP native then BYTE_GRANT_EXPIRED on receivedpacket journal before nextaction; errorzero200 complete,actual405/Nplus1406,fullcontactsensor summarysaved/saveerrorsnone.0bridge/gen/audit/currentreserve/private/Allocator/ownreplay; firsteventnotentered/whole0. Parent17starts/5partialregistrations/actual116885/replay105105/science5. ReviewSHArestored/lockidle/ownerclosed; no rerun. New resource headroom source needed, original2sTTL/200ms/science unchanged.
+
+
+V1474 new concrete resourceheadroom helperdraft: before sampling still-valid permittedgrant must firstpass65536creditgate then >=.5s resourceheadroom forreuse; otherwise original8MiB2s prepare beforefreshsource. No2sTTL/200ms/science extension/no exhaustedcreditrefill. OnlyAST/unqualified/refusingentry; no newruntime. Checkpoint saved, V1472 fullfailedraw backup next.
+
+
+V1472 fullfailedactual405 and V1474 earlydraft170members8039682B all remote actualblock/member/whole/indexSHA verified, sole58b4e53b source reused/no secondpush/Release phase-v1472-wire-grant-expiry-failed-20261121; onlyverifiedtransportclear/rawkept/allI/Oclosed. New V1474 one CPU2run_phase/profile0model target PASS CLOSED/frozen:real original2s grant elapsed to.35sresourceleft then2du beforefreshsoftware sample/currentreceipt;validreuse0du/noTTLreset;insufficientvalidnearexpiry refusesnorefill/TTL2.001reject/missingadmissionbothrefuse. Oldsuite AST/SHA reused, no model/physics/replay/nav. Currentqualifiedsource later thanearlydraft requires newfullsource recovery.
