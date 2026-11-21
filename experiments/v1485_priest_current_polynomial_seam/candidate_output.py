@@ -20,6 +20,8 @@ def bind(current,reply):
  first=polynomial.sample(reply['coefficients_x'],reply['coefficients_y'],time_s=0.,gear=reply['gear'])
  assert max(abs(a-b)for a,b in zip(first['position'],current['rear_pose_world'][:2]))<=1e-8,'PRIEST_POLYNOMIAL_WRONG_CURRENT_REAR_POSITION'
  assert max(abs(a-b)for a,b in zip(first['velocity'],current['rear_velocity_world']))<=1e-8,'PRIEST_POLYNOMIAL_WRONG_CURRENT_REAR_VELOCITY'
+ hint=current['author_initial_boundary_hint'];assert hint['acceleration_hint_world']is not None,'PRIEST_OUTPUT_MISSING_DECLARED_ACCELERATION_BOUNDARY'
+ assert max(abs(a-b)for a,b in zip(first['acceleration'],hint['acceleration_hint_world']))<=1e-8,'PRIEST_OUTPUT_WRONG_DECLARED_ACCELERATION_HINT'
  accounting=reply['optimizer_accounting']
  assert set(accounting)=={'optimizer_calls','iterations_completed','mathematical_candidate_evaluations','inflight_unknown','author_core_source_sha256'}
  assert accounting['author_core_source_sha256']==current['core_identity']['author_members'][0]['sha256']
@@ -27,7 +29,7 @@ def bind(current,reply):
   assert accounting[key]is None or(type(accounting[key])is int and accounting[key]>=0),'PRIEST_OPTIMIZER_ACCURATE_OR_UNKNOWN_REQUIRED'
  assert type(accounting['inflight_unknown'])is bool
  value=dict(kind='BOUND_PRIEST_POLYNOMIAL_PROPOSAL',schema=1,input_sha256=identity,core_identity_sha256=current['core_identity_sha256'],reply=copy.deepcopy(reply),initial_sample=first,
-  fixed_origin_native=current['fixed_origin_native'],fixed_origin_sim_time=current['fixed_origin_sim_time'],initial_acceleration_source_qualified=False,complete_current_response_witness_passed=False,independent_audit_passed=False,actual_control_domain_qualified=False,polynomial_samples_are_not_physical_or_response_integrations=True,control_emitted=False,physical_admission=False)
+  fixed_origin_native=current['fixed_origin_native'],fixed_origin_sim_time=current['fixed_origin_sim_time'],initial_acceleration_source_qualified=False,initial_acceleration_measurement_known=False,declared_boundary_hint_sha256=digest(hint),complete_current_response_witness_passed=False,independent_audit_passed=False,actual_control_domain_qualified=False,polynomial_samples_are_not_physical_or_response_integrations=True,control_emitted=False,physical_admission=False)
  return dict(value,proposal_sha256=digest(value))
 
 def reference_at(proposal,*,native_tick):

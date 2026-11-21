@@ -1,5 +1,6 @@
 """Canonical measured input serialization; no optimizer, model or command."""
 import copy
+import importlib.util
 import fcntl
 import hashlib
 import json
@@ -8,6 +9,7 @@ import os
 from pathlib import Path
 import time
 R=Path(__file__).resolve().parents[2]
+_spec=importlib.util.spec_from_file_location('v1485_causal_boundary_source',Path(__file__).with_name('causal_boundary.py'));boundary=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(boundary)
 
 def digest(value):return hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':'),allow_nan=False).encode()).hexdigest()
 def vector(value,n):
@@ -55,7 +57,7 @@ def capture(native,envelope,snapshot,*,prepared,authority,lock,next_segment):
  value=dict(kind='PHASE_PRIEST_CURRENT_POLYNOMIAL_INPUT',schema=1,run_id=native.run_id,core_identity_sha256=identity,core_identity=copy.deepcopy(prepared.value),source_manifest_sha256=prepared.source_manifest_sha256,
   origin=copy.deepcopy(packet),fullstate=fullstate,fullstate_sha256=before,mode_history=copy.deepcopy(modes),gear_memory=gear,actual_envelope=actual,next_segment=copy.deepcopy(next_segment),
   causal_snapshot=copy.deepcopy(snapshot),causal_snapshot_sha256=digest(snapshot),causal_forecast=forecast,observation_stage=observation_stage,public_map_sha256=prepared.public_map_sha256,
-  rear_pose_world=rear,rear_velocity_world=rear_velocity,rear_acceleration_world=None,acceleration_source='UNRESOLVED_NO_MEASURED_ACCELERATION_NO_PLANNED_OR_ZERO_SUBSTITUTION',
+  rear_pose_world=rear,rear_velocity_world=rear_velocity,rear_acceleration_world=None,acceleration_source='NOT_MEASURED_EXPLICIT_POLYNOMIAL_BOUNDARY_HINT',author_initial_boundary_hint=boundary.from_recorded_owner(native,fullstate),
   fixed_origin_native=v.count,fixed_origin_sim_time=float(v.d.time),proposal_only=True,optimizer_executed=False,control_emitted=False,physical_admission=False)
  assert prepared.native.state_digest(v)==before and native.mode_memory.snapshot(v.count)==modes,'PRIEST_INPUT_CAPTURE_MUTATED_OWNER'
  assert 0<=time.monotonic()-wire['sampled_at']<=.2,'PRIEST_INPUT_EXPIRED_DURING_BINDING'
@@ -65,7 +67,6 @@ class InitialAccelerationUnresolved(RuntimeError):pass
 
 def author_initial_state(current):
  clean=dict(current);identity=clean.pop('input_sha256');assert digest(clean)==identity
- # The source does not observe acceleration. Do not use the prior optimizer's
- # desired derivative or silently fill0 and present it as actual measurement.
- if current['rear_acceleration_world']is None:raise InitialAccelerationUnresolved('PRIEST_INITIAL_ACCELERATION_SOURCE_REQUIRES_DECLARED_CAUSAL_ESTIMATOR_AND_QUALIFICATION')
- raise RuntimeError('PRIEST_INITIAL_ACCELERATION_SOURCE_NOT_YET_QUALIFIED')
+ # Author polynomial boundary uses an explicitly non-measured planner hint.
+ # The actual response model still starts from the complete actual source state.
+ return boundary.boundary_state(current)
