@@ -2377,3 +2377,12 @@ V1464 full failure+V1467 currentgrant source140members3519377B all remote actual
 
 
 V1467 complete failedraw and V1469 concretegrantdraft160members7746309B all remote actualblock/member/whole/indexSHA verified, source1c0c7e1f reused/no secondpush/Release phase-v1467-arm-freshness-save-failed-20261121. Transportonlyclear/rawretained/allworkerexited; latestreport/checkpoint supplementarylocal not inpreviousarchive. V1469 nexttarget entry still unimplemented/refuses/no freeze/admission/launch, complete old frozenSHA intact/parentclosed/reviewSHA/lockidle.
+
+
+2026-11-21 V1469 target entry CLOSED FAILED at TASKS equivalence before new wire/closure I/O: output path was normalized but separately registered run_id version token omitted.0models/physical; original frozen source/error retained/no rerun. New V1471 only corrects explicit run_id equivalence normalization, production logic unchanged; static metadata/AST reviewed, entry not yet run, no runtime admission. Parent counts unchanged; checkpoint saved.
+
+
+2026-11-21 V1471 no-model target entry CLOSED FAILED at closure total-emitted==final-size assertion. Original ZIP writer rewrites local headers and originalquota conservatively charges them; prior exact emission/debit/hotdu proof was not persisted, remains unknown. Fresh software NPZ/gzip and prior source/wire check prefix retained, not an entry PASS. New V1472 changes only qualification accounting/assertion and persists proof before gate, production logic/science unchanged; AST reviewed, no models/runtime.
+
+
+2026-11-21 V1472 one new no-model target entry PASS CLOSED/frozen. ExactproductionPump software-envelope/realUnixdatagram:validgrant0du before sampling;foreign/insufficientrefusal;expiry/non0init/otherphase prepares beforefreshwire. ClosureNPZ+qualifiedgzip lossless,25575emitted=debit vs25381final+open (194ZIPrewrite charge),0hotdu/56MiBfuturecapsheld/10negatives. V1469/V1471 failures retained, prior missing countsunknown.0models/physical/Allocator/replay/nav; source remote recovery pending before independentonce scope.

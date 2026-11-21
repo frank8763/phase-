@@ -1,0 +1,19 @@
+{
+  "closed": true,
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "first_error": {
+    "error": "AssertionError('CLOSURE_HOT_WRITE_ACCOUNTING_OR_DU')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1471_wire_scope_identity/scope_entry.py\", line 113, in qualify\n    assert emitted==expected and quota.grant['remaining_bytes']==remaining-emitted and len(calls)==before_calls,'CLOSURE_HOT_WRITE_ACCOUNTING_OR_DU'\nAssertionError: CLOSURE_HOT_WRITE_ACCOUNTING_OR_DU\n"
+  },
+  "machine_closure_proof_not_saved": true,
+  "emitted_byte_count": null,
+  "debit_count": null,
+  "hot_du_count": null,
+  "source_derived_completed_prefix": "Passed source/missing-admission/wire reuse and owner/boot/expiry/native phase software checks; lossless NPZ+gzip files written before assertion; not a complete entry PASS.",
+  "diagnosis": "ZIP seek rewrites are charged conservatively; final file size is not total emitted bytes.",
+  "stdlib_zipfile_sha256": "ae677a1f21387dac6d36f5485271e600816540afde26c866d1aa2a49f86e1c4d",
+  "no_relaunch_or_frozen_edit": true,
+  "next_version": "v1472_closure_write_accounting"
+}

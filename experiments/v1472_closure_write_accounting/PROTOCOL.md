@@ -1,0 +1,7 @@
+# V1472 closure emitted bytes and archive length
+
+V1471 one no-model target entry CLOSED FAILED at closure test comparing emitted bytes to final archive lengths. All source and completed software files are retained, no rerun/edit. Standard zipfile._ZipWriteFile.close seeks and rewrites each local header; original OutputBoundary correctly charges those additional emitted bytes. Exact prior emitted/debit/hotdu numbers were not saved and remain unknown; do not reconstruct a prior PASS.
+
+This new version changes only the qualification assertion: require every emitted byte to equal the grant debit, NPZ debit at least final file length plus original8192open overhead (no returned rewrite credit), each nonseeking bounded gzip debit exactly final file length plus8192. Persist the complete write proof before checking. Production grant/pump/lifecycle/science parameters are unchanged.
+
+Retain V1469 metadata-normalization failure and V1471 assertion failure. One new CPU2/run_phase/originalguard/profile no-model target entry may test only this new wire+closure seam; old initializer/ready/controller/RPC/scientific suites are reused by exact normalizedAST/SHA. First event actual runtime, crossmode and whole route remain unexecuted. Source freeze and full current newsource remote member recovery, global peak and separate once scope required before a distinct finite runtime; no runtime launch now.
