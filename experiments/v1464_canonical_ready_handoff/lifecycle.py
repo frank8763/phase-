@@ -81,8 +81,8 @@ def _run(task,approval,window,evidence_quota):
    creating=True;atomic(out/'INITIALIZATION_ATTEMPT.json',dict(unix=time.time(),physical_native=0))
    import mujoco as mj
    saves=exact('v1432_native_model_file_admission',C/'bounded_io.py')
-   init_end=phases.budget.deadlines();init_wall=time.time()+limits['canonical_initializer_wall_cap_s'];init_mono=time.monotonic()+limits['canonical_initializer_wall_cap_s']
-   signal.setitimer(signal.ITIMER_REAL,max(.001,min(init_end['absolute_deadline_unix']-time.time(),init_end['hard_stop_monotonic']-time.monotonic(),init_wall-time.time(),init_mono-time.monotonic())))
+   init_end=startup.initializer_deadlines(window,phases.budget.deadlines(),cap_s=limits['canonical_initializer_wall_cap_s'])
+   signal.setitimer(signal.ITIMER_REAL,max(.001,min(init_end['absolute_deadline_unix']-time.time(),init_end['hard_stop_monotonic']-time.monotonic())))
    with saves.native_model_saves(mj,evidence_quota.charge_write):v=factory.create_vehicle(out/'physics',task)
    creating=False;result['canonical_vehicle_initializations']=1
    phases.arm(phases.budget.deadlines());check('INITIALIZATION',0)

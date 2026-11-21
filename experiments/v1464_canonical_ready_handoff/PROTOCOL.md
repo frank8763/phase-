@@ -7,3 +7,5 @@ V1462唯一实际scope已失败关闭，不重跑/改冻源。ROS原45秒T0/life
 ROS任何未请求cooperative close的error/failed退出立即成为首错，即使ROS_RESULT存在。新增明确NATIVE_STOP_REQUEST，由native每步前/工厂返回后check拒绝，先让本机原handler在原shared clock内保存完整prefix/first/unknown，随后才有限TERM/KILL；不允许以失败ROS结果继续空等正常预算。合法PEER_STOP_REQUEST+COOPERATIVE_PEER_CLOSED仍是预期关闭，不当导航成功。model构造/字节/尾/重算/重放/全goal/event及所有原limits与scope保持，只加更紧的180s初始化子cap；partial分母准确。
 
 当前新source准备无qualification/SOURCE_FREEZE/admission/ROUND_WINDOW/LAUNCH，不立即跑模型。下一实际可审ready/失败分类/双钟与cooperative stop helper和source绑定，目标无模型软件控制文件/真实小子进程关闭资格，不重刷旧phase/ROS/controller/RPC/数值。V1462完整失败及本新源先全部远端成员恢复核，才独立一次有限原首事件资格；不制作whole-route COMPLETE，不把局部工程PASS当科学导航PASS。
+
+首次目标资格源码已齐：真实CPU2run_phase/原guard/profile禁模型compute；仅software_ready内软件packet/NPZ/model占位+真实Unixsocket验证ready SHA/来源/0时钟/非socket/软件门拒绝，绝不当真实模型证书。真实CPU5软件child收到有身份NATIVE_STOP_REQUEST后保存原first error和0动作关闭；init180/close200的双钟子cap在同root软件时钟核，ROS失败/成功含错误/合法cooperative分类逐项核。未变source/task/phase/科学门及旧资格由标准化AST和SHA复用，不重刷任何旧物理或ROS生命周期。软件READY文件只在独立software目录，不能准入actual ROS。源门过后仍需新source完整远端恢复/预算/独立once窗口；原归档工程PASS不可作为实际event PASS。

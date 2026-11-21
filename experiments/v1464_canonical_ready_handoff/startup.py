@@ -42,7 +42,7 @@ def unexpected_ROS_failure(output,run_id):
  if not value.get('closed'):return None
  requested=out/'PEER_STOP_REQUEST.json'
  cooperative=requested.exists()and read(requested).get('run_id')==run_id and value.get('functional_stop')=='COOPERATIVE_PEER_CLOSED'and value.get('controller_server_exited')is True and not value.get('error')and not value.get('evidence_write_errors')
- if cooperative or value.get('passed')is True:return None
+ if cooperative or(value.get('passed')is True and value.get('controller_server_exited')is True and not value.get('error')and not value.get('evidence_write_errors')):return None
  return dict(first_saved_ROS_error=value.get('error')or value.get('functional_stop')or'ROS_FAILED_WITHOUT_REASON',ROS_result_sha256=sha(path),closed=value['closed'],cooperative_request_valid=cooperative,controller_server_exited=value.get('controller_server_exited'))
 
 def request_native_stop(output,*,run_id,source_identity,error,atomic):
@@ -61,3 +61,12 @@ def wait_native_close(job,window,*,maximum_s,check):
   check();assert max(time.time()-start[0],time.monotonic()-start[1])<maximum_s,'NATIVE_COOPERATIVE_CLOSE_CAP'
   time.sleep(.05)
  return job.returncode
+
+
+def initializer_deadlines(window,phase_end,*,cap_s):
+ assert cap_s==180
+ now=time.time();mono=time.monotonic()
+ assert window['boot_id']==Path('/proc/sys/kernel/random/boot_id').read_text().strip()
+ end=dict(absolute_deadline_unix=min(window['absolute_deadline_unix']-5,phase_end['absolute_deadline_unix'],now+cap_s),hard_stop_monotonic=min(window['hard_stop_monotonic']-5,phase_end['hard_stop_monotonic'],mono+cap_s))
+ assert min(end['absolute_deadline_unix']-now,end['hard_stop_monotonic']-mono)>0,'CANONICAL_INITIALIZER_NO_REMAINING_WINDOW'
+ return end
