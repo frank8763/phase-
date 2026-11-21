@@ -1,0 +1,9 @@
+# V1429 完整事件数组审核接入
+
+本版仅补原已声明事件/方法的独立证据审核，不改变控制器、方法域、原250 CUSP/桥后200 ordered事件、安全门或科学修订5。V1427源和已过资格保持冻结，不重刷任何闭批。
+
+生产event_audit沿V1427数组审核，增加原V1422完整Session/request重建合同和request actual全state摘要绑定；集成audit实际调用此事件审核，原whole route严格门/ordinary来源/控制分账/pair保持。一次新的CPU2/run_phase/单锁/原writeguard/profile禁止模型的完整软件事件文件资格：只把V1416 FIXED_INPUTS/SETUP中的旧packet/snapshot作明确软件参数；从packet数学构造静态全state和201state/200ctrl，绝不读取/审核旧数值分支、重跑旧生成或重放。一个软件applied receipt、原完整BranchStore/Reader/EvidenceSink、完整certificate/nominal/reference文件往返，变packet/fullstate、rest/caps、control slew、来源、membership、文件/缺帧等负例。软件generation/audit字段明确placeholder，不当模型PASS或新物理样本；完整route仍必须拒绝软件fixture。
+
+本资格最多60s/证据8MiB，0Predictor/0Allocator compute/0积分/0MuJoCo/0物理/0实际replay。原V1417首reserve失败200/独立audit0不变。生产Allocator的实际全state/encoder/memory/ctrl来源关联及重算仍需补齐，分支逐次字节准入和完整lifecycle/双钟/准确分账亦未获得准入。没有完整COMPLETE_INTEGRATED_ROUTE_QUALIFICATION/ROUND_WINDOW/LAUNCH，不准入模型或车辆。
+
+V1428唯一完整软件事件入口在原ResponseReference.finite_vector拒绝NumPy float64，失败/完整软件数组/首错及未执行负例保持，禁止重刷。V1429只把独立全state测量body显式float转换为原接口的Python数值，软件fixture reference从同一软件全state body取得以避免两种序列化路径的浮点末位差。计算值/原门/动力学/方法/采样/来源权限不改；独立审核修订，不增加科学修订。新输出/claim一次必要完整路径资格，不是重试旧轮。

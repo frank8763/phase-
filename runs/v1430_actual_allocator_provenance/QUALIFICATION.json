@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_integrations": 0,
+  "actual_replay_native": 0,
+  "allocator_constructions": 0,
+  "allocator_recomputations": 0,
+  "actual_cpu": [
+    2
+  ],
+  "original_writeguard": true,
+  "constructor_step_compute_profile_guard": true,
+  "software_source_only": true,
+  "production_preflight_Nplus1_source_exercised": true,
+  "negative_cases": [
+    "body_wrong_actual_state",
+    "encoder_wrong_actual_state",
+    "actual_fullstate_changed",
+    "last_control_not_actual",
+    "initial_control_memory_not_actual",
+    "cross_mode_history_reset",
+    "missing_actual_row"
+  ],
+  "latest_EventPeer_and_V1429_event_audit_explicit_lifecycle_supervisor_bindings": true,
+  "actual_allocator_recomputation_unexecuted": true,
+  "actual_lifecycle_and_supervisor_unexecuted": true,
+  "complete_route_admission_absent": true,
+  "source_hashes": {
+    "experiments/v1430_actual_allocator_provenance/allocation.py": "c5f5e5b55de695a724d7dbacd7b5b781a00586e96f0e3b0aa60ba98e44b3ccea",
+    "experiments/v1430_actual_allocator_provenance/supervisor.py": "379a0c2b480ff9f544918d67189c508e43be79c3d8be7dc930f378a74c71685b",
+    "experiments/v1430_actual_allocator_provenance/qualify.py": "10a6542d07562bffe4d1c621d00d70a9d2a10940c6252ab5efeb815c1efbe035",
+    "experiments/v1430_actual_allocator_provenance/LIMITS.json": "560d7d9f4820b2147715acb151a6d1aa5f1fae76e33e867000bda2d196f4a016",
+    "experiments/v1430_actual_allocator_provenance/PROTOCOL.md": "f0da486888352d06ace9a77f1f03e43dd624ab0d6dac070908789711ca3fa5c0",
+    "experiments/v1430_actual_allocator_provenance/budget.py": "19557842680060c43be558fa13b5861c17187466e49787e5bbe59717f9a7edd4",
+    "experiments/v1430_actual_allocator_provenance/lifecycle.py": "0f05870b7dcfa362dc0e56e3f3e3f209b12a46f77c60958cb757b781fc77f7eb"
+  }
+}
