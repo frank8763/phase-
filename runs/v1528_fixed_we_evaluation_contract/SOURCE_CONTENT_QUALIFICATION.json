@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "closed": true,
+  "cases": [
+    {
+      "name": "saved_original_content_only",
+      "passed": true,
+      "first_error": null,
+      "proof_sha256": "522f6f1256d2124a51ebe58ebeb83766dd384cd646391a798aaa9800d02f0640",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": null
+    },
+    {
+      "name": "changed_body",
+      "passed": false,
+      "first_error": "CURRENT_WE_SAVED_CONTENT_REFUSED:unchanged_original_event",
+      "proof_sha256": "b639683e2763793405275e1f9fb29d108aefe715271e4d5178976a85e2dd934b",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": "unchanged_original_event"
+    },
+    {
+      "name": "wrong_measurement_native",
+      "passed": false,
+      "first_error": "CURRENT_WE_EVALUATION_SOURCE_REFUSED:measurement_origin",
+      "proof_sha256": "2baa98ef066489bea209691e4b857011189d0ddbd51277345ddefd9881b15a12",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": null
+    },
+    {
+      "name": "wrong_measurement_timestamp",
+      "passed": false,
+      "first_error": "CURRENT_WE_EVALUATION_SOURCE_REFUSED:measurement_origin",
+      "proof_sha256": "7516ebe67adc32707a97afd7e11dfd6392033d4ce91e9db3b5a2d8b19f9b2e94",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": null
+    },
+    {
+      "name": "changed_fullstate",
+      "passed": false,
+      "first_error": "CURRENT_WE_SAVED_CONTENT_REFUSED:unchanged_original_event",
+      "proof_sha256": "2f5c32415d03b37a2a79691109df2e29ced7647897eaca774b9786c9ab29b7f4",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": "unchanged_original_event"
+    },
+    {
+      "name": "wrong_journal_descriptor",
+      "passed": false,
+      "first_error": "CURRENT_WE_SAVED_CONTENT_REFUSED:provenance_descriptor_binding",
+      "proof_sha256": "dbf25a2bf58d20873f3d3729031facab027c83345f4bfbcf9365f779299085db",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": "provenance_descriptor_binding"
+    },
+    {
+      "name": "fresh_capture_unqualified",
+      "passed": false,
+      "first_error": "CURRENT_WE_EVALUATION_SOURCE_REFUSED:fresh_current_capture_qualified",
+      "proof_sha256": "2324241a9649ec30c0ee011ebed1bb986837d15d60dd7b9f1f091026c4befc39",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": null
+    },
+    {
+      "name": "unknown_V1159_load_epoch",
+      "passed": false,
+      "first_error": "CURRENT_WE_EVALUATION_SOURCE_REFUSED:explicit_load_epoch",
+      "proof_sha256": "d11a40c82109abc7f90d43eae55f427a0593c9213ee4df4dd144d7fd991f2249",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": null
+    },
+    {
+      "name": "missing_provenance",
+      "passed": false,
+      "first_error": "CURRENT_WE_EVALUATION_SOURCE_REFUSED:measured_steering_schema",
+      "proof_sha256": "712e71e96738907065aa2bea41e83358f19a28b7b6c764b143e54dd7ac92ff23",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": null
+    },
+    {
+      "name": "changed_content_reader_source",
+      "passed": false,
+      "first_error": "CURRENT_WE_SAVED_CONTENT_ERROR",
+      "proof_sha256": "0548688b75c11e1b0823e54b6bb63a244913708527d49a2d9a862acb81534a5c",
+      "diagnostic_saved_before_refusal": true,
+      "content_failed_stage": null
+    }
+  ],
+  "actual_saved_coordinate_projection": true,
+  "source_receipt_content_bound": true,
+  "method_memory_or_model_origin_conversion_qualified": false,
+  "actual_current_capture": false,
+  "old_source_graph_and_load_diagnosis_not_rerun": true,
+  "prior_V1497_proof_reused": "14651895c3917affa9e310c0e69680de2003fd3e189e181c992b427ce23463c0",
+  "writer": {
+    "role": "PLANNER",
+    "maximum_bytes": 2097152,
+    "source_identity": "99089df2a3e93db6e44bd43eee2711b6dcdaa934d6294c9c8eed25fa96d75567",
+    "charged_bytes": 783175,
+    "grants": 24,
+    "paths": [
+      "saved_original_content_only.json.tmp",
+      "SOURCE_ENVELOPE.json.tmp",
+      "changed_body.json.tmp",
+      "wrong_measurement_native.json.tmp",
+      "wrong_measurement_timestamp.json.tmp",
+      "changed_fullstate.json.tmp",
+      "wrong_journal_descriptor.json.tmp",
+      "fresh_capture_unqualified.json.tmp",
+      "unknown_V1159_load_epoch.json.tmp",
+      "missing_provenance.json.tmp",
+      "changed_content_reader_source.json.tmp",
+      "SECONDARY_SAVE_ERROR.json.tmp"
+    ],
+    "models": 0
+  },
+  "models": 0,
+  "physical_native": 0
+}

@@ -73,3 +73,38 @@ def validate(raw,*,source_graph_sha256,save_proof):
 def authorize_model(*_args,**_kwargs):
  # No fake complete gate or old source/worker success can activate this draft.
  raise SourceRefusal('CURRENT_WE_EVALUATION_BACKEND_NOT_IMPLEMENTED_OR_ADMITTED',dict(models_authorized=False,physical_permission=False))
+
+def validate_saved(raw,*,source_graph_sha256,files,prepared_sources,save_proof):
+ """New draft production seam, not an actual-current or model admission.
+
+ Coordinate and saved-receipt proof is computed only after envelope checks.
+ Any failure, including content-reader failure, is saved before refusal.
+ Method epoch qualification and continuous-mode audit remain separate gates.
+ """
+ import importlib.util
+ from pathlib import Path
+ proof=inspect(raw,source_graph_sha256=source_graph_sha256)
+ proof['saved_content']=None
+ first=None if proof['source_envelope_checks_passed']else 'CURRENT_WE_EVALUATION_SOURCE_REFUSED:'+str(proof['first_failed_check'])
+ if first is None:
+  try:
+   path=Path(__file__).with_name('content_binding.py');root=path.parents[2]
+   assert prepared_sources[str(path.relative_to(root))]==hashlib.sha256(path.read_bytes()).hexdigest(),'CONTENT_READER_SOURCE_CHANGED'
+   spec=importlib.util.spec_from_file_location('v1528_pinned_saved_content',path);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+   content=module.inspect(raw,files=files,prepared_sources=prepared_sources);proof['saved_content']=content
+   if not content['passed']:first='CURRENT_WE_SAVED_CONTENT_REFUSED:'+str(content.get('failed_stage'))
+   else:
+    proof['model_projection_binding_verified']=content['model_projection_binding_verified']
+    proof['source_receipts_actual_content_verified']=content['source_receipts_actual_content_verified']
+  except Exception as error:
+   first='CURRENT_WE_SAVED_CONTENT_ERROR';proof['saved_content']={'passed':False,'first_error':repr(error)}
+ proof['source_and_saved_content_passed']=first is None
+ # A verified numerical coordinate projection does not identify the private
+ # method's extra memory or establish any runtime/response-model equivalence.
+ proof['steering_load_state_qualified']=False
+ proof['method_state_receipt_content_verified']=False
+ save_error=None
+ try:save_proof(proof)
+ except BaseException as error:save_error=repr(error)
+ if first is not None or save_error is not None:raise SourceRefusal(first or 'CURRENT_WE_EVALUATION_PROOF_SAVE_FAILED',proof,save_error)
+ return proof
