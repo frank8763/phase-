@@ -1,0 +1,5 @@
+# V1543 distinct original-stop horizon source recovery
+
+New <=8MiB source delta for V1539receipt boundary and V1540/V1541closedsource failures/V1542source qualifier+exactlosslessparent payloads, allnewscientific9registration and source, source/raw/errors/preparationreport. Inherit V1536frozen11562 via V1537source+V1538runtime and earlierV1532/34chain; do not duplicate all oldsources or reseal/retry oldarchives. Allruns+8archive+32download+512root<10GiB/CPU5/revieworiginal/idlelock/parentinactive/sourceSHA beforeonceclaim. Fullactualremote block/member/whole/indexSHA beforeonlyverifiedduplicatetransportcleanup/alloriginalsretain.
+
+One newsourcecommit+<=30spush+5sref allowed; old928a/b5bb/c6/f1/etc neversecondpush. Currenthelper exactGit/ReleaseSHA source. Archive/sourcePASS not numerical/navigationPASS.0model/FFI/Allocator/optimizer/physical/replay; full sourcechain/exactsmallbudget/once/dualclock/lock/review stillrequired before one privateCPP2200+success-onlyPython2200. Alloriginalsafety/source/tail/error gates and physicaldenominators unchanged;science9 registeredbeforehorizonimplementation.900scheckpoint.

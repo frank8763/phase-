@@ -55,6 +55,9 @@ def read_component(*,prepared_sources,save_proof,requested_scope):
         runtime_remote=read(RUNTIME_RECOVERY/'FULL_REMOTE_VERIFIED.json')
         index_path=checked(str((RUNTIME_RECOVERY/'ARCHIVE_INDEX.json').relative_to(R)),prepared_sources)
         index=json.loads(index_path.read_text());members={r['path']:r for r in index['files']}
+        assert len(members)==len(index['files'])==runtime_remote['members']
+        assert index['archive_bytes']==runtime_remote['archive_bytes']
+        assert runtime_remote['source_commit']==source_remote['source_commit']
         for remote in [source_remote,runtime_remote]:
             assert remote['passed']and all(remote[k]for k in ['every_asset_actual_download_SHA','every_member_SHA_and_link_text','whole_archive_SHA','recovery_index_download_SHA'])
         values={}
@@ -88,6 +91,7 @@ def read_component(*,prepared_sources,save_proof,requested_scope):
     except BaseException as error:first=repr(error);proof.update(first_error=first,failed_stage=proof['stage'])
     secondary=None
     try:save_proof(proof)
-    except BaseException as error:secondary=repr(error)
+    except BaseException as error:
+        secondary=repr(error);proof['passed']=False;proof['secondary_save_error']=secondary
     if first is not None or secondary is not None:raise ComponentDomainRefusal(first or'COMPONENT_RECEIPT_PROOF_SAVE_FAILED',proof,secondary)
     return answer

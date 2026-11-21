@@ -1,0 +1,17 @@
+{
+  "closed": true,
+  "passed": false,
+  "source_only": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "first_error": "entry expected missing-admission error, actual unadmitteddriver saved BlockingIOError",
+  "original_unadmitted_driver_first": "BlockingIOError at driver own execution.lock",
+  "diagnosis": "source target holds execution.lock then calls productiondriver which opens same file with separatefd and requests nonblockingflock; kernel correctly refuses. No registration/scope/numerical failure.",
+  "new_numeric_claim_or_admission": false,
+  "prior_checks_before_trace_line91": "source-derived reached only, no standalone proof persisted",
+  "review_original_restored": true,
+  "lock_idle": true,
+  "no_rerun_or_edit": true,
+  "unix": 1795293034.1760724
+}
