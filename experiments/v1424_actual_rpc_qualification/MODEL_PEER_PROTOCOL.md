@@ -1,0 +1,5 @@
+# 新EventPeer进程生命周期的独立入口资格
+
+只测V1421 EventPeer.command/close_event这条从run_phase内部启动真实隔离ROS peer的生产路径，不重跑任何旧资格/owner/生成/audit/物理。选择已声明含RPP的原V1410保存当前输入，完整字节复制且标明保存fixture而非新实际wire；不向声明RPP请求0的V1417 timed input发任何请求。原冻结modeled_peer内部的原RPP插件/参数保持。
+
+新输出model_peer/bridge_events/event0000，最多一次真实RPP callback/60s，CPU2只编排/Unixclient，CPU3仅ROS+原controller，无LaserScan publisher，无模型/Predictor/物理。必须验证独立networknamespace、完整current input SHA、原RPP回复body/native一致、所有子进程关闭与source路径；任何首次异常闭资格，不重启。该结果仅新EventPeer生命周期资格，不能称原RPP新科学成功或任何物理/整路准入。

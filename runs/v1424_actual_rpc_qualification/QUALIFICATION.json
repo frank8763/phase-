@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "actual_cpu": [
+    2
+  ],
+  "socket_peer_cpu": [
+    3
+  ],
+  "real_datagram_production_pump": true,
+  "software_fixtures_not_actual_sensors_or_plant": true,
+  "production_socket_cases": [
+    "real_socket_arm",
+    "real_socket_superseded_source_retired_without_step",
+    "real_socket_current_command_reaches_budget_without_step",
+    "real_socket_tampered_origin_refused"
+  ],
+  "post_certificate_cases": [
+    {
+      "case": "expired_after_certificate",
+      "error": "AssertionError('ACTUAL_COMMAND_EXPIRED_DURING_CERTIFICATE')",
+      "elapsed_s": 0.2165514060179703,
+      "physical_native": 0,
+      "analytical_native": 0,
+      "copied_arrays_not_certificate": true
+    },
+    {
+      "case": "reserve_mutated_current_state",
+      "error": "AssertionError('PRIVATE_CERTIFICATE_MUTATED_ACTUAL_OWNER')",
+      "elapsed_s": 0.00043574400478973985,
+      "physical_native": 0,
+      "analytical_native": 0,
+      "copied_arrays_not_certificate": true
+    }
+  ],
+  "actual_route_ROS_controller_not_started": true,
+  "model_ROS_peer_lifecycle_unexecuted": true,
+  "full_route_admission": false,
+  "source_hashes": {
+    "experiments/v1424_actual_rpc_qualification/entry.py": "528dbd1f3287662d57b8128ce161752d2bf894a84bc88af068e5cd1cb2f6a8bf",
+    "experiments/v1424_actual_rpc_qualification/socket_peer.py": "4e44bfc4014f4b7c9707f96213f184ec5a7b0d36a187900b41a82754e00dce88",
+    "experiments/v1424_actual_rpc_qualification/PROTOCOL.md": "239e336b8513c2698bef88f9c838e2e18fbfc5c755a8cd2f949f0a31293579af"
+  }
+}

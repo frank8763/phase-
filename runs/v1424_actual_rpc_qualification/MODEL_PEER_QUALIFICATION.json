@@ -1,0 +1,21 @@
+{
+  "passed": false,
+  "closed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "software_saved_input_not_actual_wire": true,
+  "old_numeric_rounds_not_reexecuted": true,
+  "error": "AssertionError('MODELED_PEER_NOT_IN_PRIVATE_NET_NAMESPACE')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1424_actual_rpc_qualification/model_peer_entry.py\", line 39, in main\n    namespace=os.readlink('/proc/'+str(peer.job.pid)+'/ns/net');assert namespace!=owner_namespace,'MODELED_PEER_NOT_IN_PRIVATE_NET_NAMESPACE'\nAssertionError: MODELED_PEER_NOT_IN_PRIVATE_NET_NAMESPACE\n",
+  "peer_closed_events": [
+    {
+      "path": "runs/v1424_actual_rpc_qualification/model_peer/bridge_events/event0000",
+      "returncode": -15,
+      "errors": [],
+      "models": 0
+    }
+  ],
+  "wall_s": 0.8878930530045182,
+  "no_model_calls": true
+}

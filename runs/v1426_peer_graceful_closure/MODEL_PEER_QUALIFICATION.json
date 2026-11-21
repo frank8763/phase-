@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "closed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "software_saved_input_not_actual_wire": true,
+  "old_numeric_rounds_not_reexecuted": true,
+  "current_input_sha256": "c9f5504bc06b286ca1e9cba373ee31632f1d4f81aabcbf857e68a5ef80877d13",
+  "input_file_sha256": "c58175c34b3a2f5dae3c527c0aaf8eedccfe30b903b109a336e13e33ab6726ac",
+  "reply": {
+    "kind": "ORIGINAL_RPP_MODELED_COMMAND",
+    "input_sha256": "c9f5504bc06b286ca1e9cba373ee31632f1d4f81aabcbf857e68a5ef80877d13",
+    "run_id": "v1426_current_event_peer_lifecycle_software",
+    "sequence": 5,
+    "native_tick": 9390,
+    "body": [
+      0.4266832874546862,
+      -0.7891298159197132,
+      0.0815778219676774,
+      2.521824328551776e-06,
+      -2.5907950472055607e-06
+    ],
+    "v": 0.05,
+    "w": -0.03787878787878788,
+    "origin": {
+      "kind": "NAV2_STAMPED",
+      "stamp_ns": 1795227252497736454,
+      "receipt_ros_ns": 1795227252498450029,
+      "receipt_monotonic": 349002.943952138,
+      "generated_monotonic": 349002.943238563,
+      "receipt_age_s": 0.000713575
+    },
+    "first_tf_ros_ns": 1795227252471742640,
+    "command_ros_ns": 1795227252497736454,
+    "reply_monotonic": 349002.943952138,
+    "not_measured_response": true
+  },
+  "owner_network_namespace": "net:[4026532939]",
+  "modeled_peer_network_namespace": "net:[4026533007]",
+  "independent_private_network_namespace": true,
+  "peer_closed_events": [
+    {
+      "path": "runs/v1426_peer_graceful_closure/model_peer/bridge_events/event0000",
+      "returncode": 0,
+      "inner_peer_closure": {
+        "passed": true,
+        "models": 0,
+        "physical_native": 0,
+        "analytical_native": 0,
+        "physical_admission": false,
+        "synthetic_scan_messages": 0,
+        "fixture_or_model_only": true,
+        "original_plugin_loaded": true,
+        "original_parameters_sha256": "7e47bf6e3d209f8fcc36472278633de9a0227f415fc4ed275d2a19b58938f41d",
+        "causal_ball_raster_cells": 515,
+        "closed": true,
+        "wall_s": 0.5902399449842051,
+        "commands": 1,
+        "controller_exited": true
+      },
+      "errors": [],
+      "models": 0
+    }
+  ],
+  "complete_inner_peer_and_controller_exit_verified": true,
+  "wall_s": 1.237558713008184,
+  "no_model_calls": true
+}
