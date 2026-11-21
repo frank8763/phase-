@@ -29,8 +29,11 @@ def sources():
     assert all(sha(R/name)==identity for name,identity in values.items()),'STOP_COMPONENT_FROZEN_SOURCE_CHANGED'
     return values
 def inputs():
-    fixed=read(O/'FIXED_INPUTS.json');assert sha(INPUT)==fixed['method_input_file_sha256']and sha(SETUP)==fixed['setup_sha256']
-    current=read(INPUT);clean=dict(current);identity=clean.pop('method_input_sha256');assert digest(clean)==identity==fixed['method_input_sha256']
+    path=R/'runs/v1550_canonical_observer_policy/source_target/RESPONSE_METHOD.json'
+    fixed=read(O/'FIXED_INPUTS.json')
+    assert sha(path)==fixed['response_method_file_sha256']and sha(SETUP)==fixed['setup_sha256']
+    current=read(path);clean=dict(current);identity=clean.pop('response_method_sha256')
+    assert digest(clean)==identity==fixed['response_method_sha256']
     return current,read(SETUP)
 def guard():return load('v1532_original_immutable_guard_only',R/'experiments/v1504_priest_namespace_worker/common.py').guard(O)
 def bootstrap():

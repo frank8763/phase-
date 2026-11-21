@@ -16,6 +16,7 @@ class Branch:
     def __init__(self, trajectory):
         self.origin=trajectory.snapshot()
         self.rows=[]
+        self.persistence_started=False
 
     def advance(self, trajectory, raw):
         expected_native=self.origin['native']+len(self.rows)
@@ -49,8 +50,13 @@ def save_before_gate(branch, *, folder, name, writer, method, expected_native, a
     import hashlib
     import io
     import numpy as np
-    assert folder.resolve().is_relative_to(R/'runs/v1552_complete_canonical_witness/model')
+    root=writer.root
+    assert folder.resolve().is_relative_to(root)
+    assert root in {R/'runs/v1552_complete_canonical_witness/model',R/'runs/v1552_complete_canonical_witness/source_target/model'}
+    writer.prepare_folder(folder)
     assert Path(name).name==name and not name.endswith('.npz')
+    assert not branch.persistence_started,'BRANCH_PERSISTENCE_ALREADY_ATTEMPTED'
+    branch.persistence_started=True
     spec=importlib.util.spec_from_file_location('v1550_existing_bounded_codec',R/'experiments/v1507_priest_response_evidence/branch_store.py')
     codec=importlib.util.module_from_spec(spec)
     spec.loader.exec_module(codec)
@@ -61,6 +67,8 @@ def save_before_gate(branch, *, folder, name, writer, method, expected_native, a
     # headers, temporary allocation and archive/delivery peaks separately.
     np.savez(buffer,**arrays)
     data=buffer.getvalue()
+    raw=sum(value.nbytes for value in arrays.values())
+    assert len(data)<=raw+16384,'NONZERO_NPZ_HEADER_BOUND'
     path=folder/(name+'.npz')
     codec.write_atomic(path,data,writer)
     with np.load(path,allow_pickle=False) as stored:
@@ -73,5 +81,7 @@ def save_before_gate(branch, *, folder, name, writer, method, expected_native, a
                  geometry_kind=method['geometry_kind'],causal_snapshot_sha256=method['causal_snapshot_sha256'],
                  arrays=dict(path=path.name,bytes=len(data),sha256=hashlib.sha256(data).hexdigest()),
                  stored_before_safety_or_comparison_gate=True,physical_native=0,replay_native=0)
-    codec.write_atomic(folder/(name+'.json'),codec.encoded(receipt),writer)
+    payload=codec.encoded(receipt)
+    assert len(payload)<=16384,'NONZERO_BRANCH_RECEIPT_JSON_BOUND'
+    codec.write_atomic(folder/(name+'.json'),payload,writer)
     return arrays,receipt

@@ -24,12 +24,15 @@ def exact(name,path,guard):
 
 def save_json(folder,name,value,writer,codec):
     assert Path(name).name==name
-    codec.write_atomic(folder/name,codec.encoded(value),writer)
+    payload=codec.encoded(value)
+    assert len(payload)<=16384,'NONZERO_WITNESS_JSON_BOUND'
+    codec.write_atomic(folder/name,payload,writer)
 
 
-def read_expected(folder,name,method):
+def read_expected(folder,name,method,storage):
     import json
     import numpy as np
+    folder=storage.branch_folder(folder,name)
     receipt=json.loads((folder/(name+'.json')).read_text())
     assert receipt['complete'] is True and receipt['first_error'] is None
     assert receipt['response_method_sha256']==method['response_method_sha256']
@@ -63,6 +66,7 @@ def run(method,setup,defs,origin,*,guard,stage,folder,writer,expected_folder=Non
         assert expected_folder is None
     source=R/'experiments/v1550_canonical_observer_policy'
     schedules=exact('v1552_frozen_original_rows',source/'schedule.py',guard)
+    storage=exact('v1552_finite_storage_layout',C/'storage.py',guard)
     carriers=exact('v1552_frozen_continuous_carriers',source/'trajectory.py',guard)
     evidence=exact('v1552_current_evidence',C/'evidence.py',guard)
     gates=exact('v1552_current_saved_array_gates',C/'gates.py',guard)
@@ -94,15 +98,16 @@ def run(method,setup,defs,origin,*,guard,stage,folder,writer,expected_folder=Non
         nominal=evidence.Branch(trajectory)
 
         def persist(branch,name,n,*,current_only,first_error=None):
-            arrays,receipt=evidence.save_before_gate(branch,folder=folder,name=name,writer=writer,
+            target=storage.branch_folder(folder,name)
+            arrays,receipt=evidence.save_before_gate(branch,folder=target,name=name,writer=writer,
                  method=method,expected_native=n,accounting=guard.counts(),first_error=first_error)
             saved_names.add(name)
             assert receipt['complete'], 'NONZERO_INCOMPLETE_SAVED_BRANCH'
             proof=gates.evaluate(arrays,method,setup,geom,expected_native=n,zero_suffix=2200,raw_current_only=current_only)
             comparison=None
             if expected_folder is not None:
-                comparison=compare(arrays,read_expected(expected_folder,name,method))
-            save_json(folder,name+'_PROOF.json',dict(safety=proof,comparison=comparison,
+                comparison=compare(arrays,read_expected(expected_folder,name,method,storage))
+            save_json(target,name+'_PROOF.json',dict(safety=proof,comparison=comparison,
                         arrays_already_saved=True,response_method_sha256=method['response_method_sha256']),writer,codec)
             assert proof['passed'], 'NONZERO_COMPLETE_BRANCH_GATE_REFUSED:'+name
             assert comparison is None or comparison['passed'], 'NONZERO_INDEPENDENT_CPP_DIFFERED:'+name
@@ -111,6 +116,7 @@ def run(method,setup,defs,origin,*,guard,stage,folder,writer,expected_folder=Non
         for boundary,(offset,count) in enumerate(schedules.boundaries(rows)):
             assert trajectory.native==method['base_method']['fixed_origin_native']+offset
             for kind in ('current','prospective'):
+                guard.set_bucket(stage,'witness')
                 active_name=f'b{boundary:03d}_{kind}'
                 active_expected=2200+(count if kind=='prospective'else 0)
                 child=trajectory.fork()
@@ -123,6 +129,7 @@ def run(method,setup,defs,origin,*,guard,stage,folder,writer,expected_folder=Non
                 persist(active,active_name,active_expected,current_only=kind=='current')
                 active=None
             result['complete_current_prospective_pairs']+=1
+            guard.set_bucket(stage,'nominal')
             for index in range(count):
                 nominal.advance(trajectory,schedules.at(rows,offset+index))
                 result['complete_nominal_native']+=1
@@ -142,15 +149,17 @@ def run(method,setup,defs,origin,*,guard,stage,folder,writer,expected_folder=Non
         # Do not regenerate, rerun, invent an acknowledged row or erase an
         # original complete rejection. Model count and saved-prefix count are
         # separate if a post-step snapshot/write failed.
-        if active is not None and active_name not in saved_names:
+        if active is not None and active_name not in saved_names and not active.persistence_started:
             try:
-                evidence.save_before_gate(active,folder=folder,name=active_name+'_partial',writer=writer,
+                evidence.save_before_gate(active,folder=storage.branch_folder(folder,active_name),name=active_name+'_partial',writer=writer,
                      method=method,expected_native=active_expected,accounting=guard.counts(),first_error=result['first_error'])
             except BaseException as secondary:
                 result['secondary_errors'].append('active_partial_save:'+repr(secondary))
-        if nominal is not None and 'nominal' not in saved_names and nominal is not active:
+        elif active is not None and active_name not in saved_names:
+            result['secondary_errors'].append('branch_persistence_attempt_failed_not_retried:'+active_name)
+        if nominal is not None and 'nominal' not in saved_names and nominal is not active and not nominal.persistence_started:
             try:
-                evidence.save_before_gate(nominal,folder=folder,name='nominal_partial',writer=writer,
+                evidence.save_before_gate(nominal,folder=storage.branch_folder(folder,'nominal'),name='nominal_partial',writer=writer,
                      method=method,expected_native=13600,accounting=guard.counts(),first_error=result['first_error'])
             except BaseException as secondary:
                 result['secondary_errors'].append('nominal_partial_save:'+repr(secondary))
