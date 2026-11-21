@@ -1,0 +1,9 @@
+# V1460 首真实事件资格的owned-child管道关闭修复
+
+原V1458唯一入口资格已CLOSED FAILED并source冻结，禁止重跑/改冻源：原guard正确拒绝软件owned-close child的subprocess.DEVNULL打开/dev/null，0模型/积分/导航；原first error、CPU3纯ROs scope拒绝证明和真实21B stdout/counter保持。此前通过的source-derived入口前缀仅从同次控制流/源SHA/真实文件记录，不追认旧整轮PASS；owned-child关闭和之后的parent未知计数/全source检查未执行。
+
+本新版本只将owned-close child stdout/stderr改为明确PIPE+STDOUT并完整关闭pipe，无新增路径/role/guard例外。V1458尚未数值launch，原task/方法/参数/原physical/current证书/200ms门/事件index0停止/部分导航分母/共享5400s/实际40000/一事件nominal5000及gen-audit各1005000/currentreserve8000000/Allocator-replay40000/224MiB证据归档及32MiB下载/512MiB根预留完全继承，不新增科学修订5。真实原事件/全route运行结果仍未执行，LIVE_FIRST_EVENT_ONLY_ADMISSION/ROUND_WINDOW/LAUNCH均无。
+
+新必要入口只演练本次新owned-child真实PIPE关闭、篡改identity拒绝、parent未知/已有记录首错次错分开保存，及原未执行的sourcewriter/双钟/任务与存储/源门。原已真实完成的CPU3 context和stdout/EventStop软件前缀按完整source AST及原receipt SHA复用，不重复ROS/旧suite；新scope native与once-owner必须真实拒绝缺gate。完整真实事件资格在新源冻结/远端完整恢复和所有准入门通过后才一次launch；不能把这些软件/源成功称当前event或科学PASS，不制造whole-route COMPLETE。
+
+原V1458 PROTOCOL的科学边界逐项继承，内层明确只授原首event能力并记录outer scope；原fullgoal.45/7.5/发现后1m检查完整保存、局部componentpass单列。此scope实跑必须新增partial_navigation_attempt，不声称0导航；原WE整路仍0。缺资格或新失败不重跑同一版本，只保存再另新源。

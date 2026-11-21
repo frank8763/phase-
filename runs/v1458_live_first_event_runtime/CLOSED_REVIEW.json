@@ -1,0 +1,37 @@
+{
+  "recorded_unix": 1795244793.0943263,
+  "closed": true,
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "old_entry_not_repeated": true,
+  "first_error": {
+    "error": "PermissionError('Write outside isolated experiment: /dev/null')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1458_live_first_event_runtime/scope_entry.py\", line 89, in qualify\n    child=subprocess.Popen(['taskset','-c','5','/usr/bin/python3.12','-B','-c','import time;time.sleep(10)'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,start_new_session=True)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 837, in __init__\n    errread, errwrite) = self._get_handles(stdin, stdout, stderr)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 1633, in _get_handles\n    c2pwrite = self._get_devnull()\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 1082, in _get_devnull\n    self._devnull = os.open(os.devnull, os.O_RDWR)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runtime/mk-mini/experiments/phase_rpccr_p0b3_v1/pilot.py\", line 89, in write_guard\n    raise PermissionError('Write outside isolated experiment: '+str(p))\nPermissionError: Write outside isolated experiment: /dev/null\n"
+  },
+  "source_unchanged": true,
+  "original_writeguard_correctly_refused_devnull": true,
+  "source_derived_completed_prefix_only": true,
+  "source_SHA": {
+    "experiments/v1458_live_first_event_runtime/scope_entry.py": "81807fbf7c056c9382d5fab613a70a8d100628403016ab53feb0f73bed31dd77",
+    "runs/v1458_live_first_event_runtime/scope.console": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v1458_live_first_event_runtime/SCOPE_QUALIFICATION.json": "716f2581119d60daf93012a3942ca414282fb9a1ccb7b7e4db90924a1d070526",
+    "runs/v1458_live_first_event_runtime/ROS_SCOPE_QUALIFICATION.json": "43f4c46593843d16f9d0d8b6602f60a48e51cbbc4311390871399159367186e4",
+    "runs/v1458_live_first_event_runtime/software_scope/real_child.console": "85487109a3b4758b6fa9ae850aa0de2bc0af7dc774d2be9ee20f1d133c742535"
+  },
+  "completed_before_error": [
+    "new native and once-owner missing scope refusals",
+    "whole main/repeat roles refused",
+    "real CPU3 pure exact ROS authorize refused,0 nodes/controllers",
+    "software first-event identity/secondevent/inflight/complete dispatch checks",
+    "real CPU5 small stdout+WriterBudget cap,21 bytes retained"
+  ],
+  "prefix_stdout_bytes": 21,
+  "remaining_unexecuted": [
+    "owned child identity actual close",
+    "pure owner first/secondary unknown accounting",
+    "current sourcewriter/clock/storage/complete source freeze checks"
+  ],
+  "not_live_event_qualification": true,
+  "no_relaunch_or_frozen_edit": true
+}

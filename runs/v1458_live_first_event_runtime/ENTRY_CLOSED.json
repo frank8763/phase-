@@ -1,0 +1,9 @@
+{
+  "closed": true,
+  "passed": false,
+  "models": 0,
+  "first_error": {
+    "error": "PermissionError('Write outside isolated experiment: /dev/null')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1458_live_first_event_runtime/scope_entry.py\", line 89, in qualify\n    child=subprocess.Popen(['taskset','-c','5','/usr/bin/python3.12','-B','-c','import time;time.sleep(10)'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,start_new_session=True)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 837, in __init__\n    errread, errwrite) = self._get_handles(stdin, stdout, stderr)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 1633, in _get_handles\n    c2pwrite = self._get_devnull()\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 1082, in _get_devnull\n    self._devnull = os.open(os.devnull, os.O_RDWR)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runtime/mk-mini/experiments/phase_rpccr_p0b3_v1/pilot.py\", line 89, in write_guard\n    raise PermissionError('Write outside isolated experiment: '+str(p))\nPermissionError: Write outside isolated experiment: /dev/null\n"
+  }
+}
