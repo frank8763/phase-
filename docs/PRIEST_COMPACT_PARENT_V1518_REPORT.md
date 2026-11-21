@@ -1,0 +1,5 @@
+# V1518 parent-control representation
+
+V1516 origin source qualification remains PASS/frozen and never numerically launched. Before launch the actual parent ledger needed131385B with indent2, above unchanged131072B controlcap. New V1518 changes only parent serialization to canonical compactJSON+newline;112754B, all JSON fields/values roundtrip exactly, no quota increase or record deletion. The8KiB preflight close reserve and original1MiB supervisor budget remain.
+
+Once CPU2/run_phase metadata-only source entry passed: actual parent read-only encoding/roundtrip, prospective8KiB close growth, software atomic stage/readback under real original boundedwriter, oversize rejection. No actual parent files written during target. Common/contract/driver/generator/audit/modelbridge/LIMITS bytes are exactly V1516; owner AST differs only by compact encoder, parent_put serialization and byte preflight. V1516 origin/bootstrap/byte qualifiers reused bySHA, not rerun.0numeric imports/models/integration/optimizer/physics/Allocator/replay. New source is frozen and awaits full remote recovery/currentstorage/once/root gates before a separate numerical round.
