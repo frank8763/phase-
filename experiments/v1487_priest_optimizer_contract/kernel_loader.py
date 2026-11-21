@@ -32,6 +32,19 @@ def load(*,authority,request,lock,output_boundary):
  assert registry['writers']['PLANNER']['maximum_bytes']==writer.maximum and registry['writers']['PLANNER']['source_hook_coverage_qualified']is True
  assert hashlib.sha256((writer.output/'APPROVAL.json').read_bytes()).hexdigest()==registry['approval_sha256']
  # No package imports or fallback interpreter before an exact versions scope.
+ target=R/'runs/v1491_priest_dependency_target'
+ completion=json.loads((target/'COMPLETION.json').read_text());assert completion['passed']and completion['all_extracted_file_SHA_verified']
+ extracted_path=target/'EXTRACTED_INDEX.json'
+ assert hashlib.sha256(extracted_path.read_bytes()).hexdigest()==authority['dependency_index_sha256']
+ extracted=json.loads(extracted_path.read_text());assert extracted['remote_recovery_proof_sha256']==authority['dependency_remote_proof_sha256']
+ site=target/'site';assert str(site)not in sys.path and site.is_dir()and not site.is_symlink()
+ for row in extracted['files']:
+  path=R/row['path'];assert path.is_relative_to(site)and not path.is_symlink()and path.stat().st_size==row['bytes']
+  h=hashlib.sha256()
+  with path.open('rb')as stream:
+   for block in iter(lambda:stream.read(1024**2),b''):h.update(block)
+  assert h.hexdigest()==row['sha256'],'PRIEST_PINNED_DEPENDENCY_MEMBER_CHANGED'
+ sys.path.insert(0,str(site))
  versions={p:importlib.metadata.version(p)for p in ['jax','jaxlib','numpy','scipy','matplotlib']}
  assert versions==authority['qualified_distribution_versions'],'PRIEST_OPTIMIZER_DEPENDENCY_VERSION_CHANGED'
  for name in ['jax','jaxlib','bernstein_coeff_order10_arbitinterval']:
