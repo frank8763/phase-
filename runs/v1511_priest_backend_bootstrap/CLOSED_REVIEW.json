@@ -1,0 +1,18 @@
+{
+  "passed": false,
+  "closed": true,
+  "models": 0,
+  "response_model_native": 0,
+  "physical_native": 0,
+  "Allocator_recomputations": 0,
+  "replay_native": 0,
+  "optimizer_calls": 0,
+  "first_error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1511_priest_backend_bootstrap/entry.py\", line 39, in main\n    first=generation.bridge.binding();second=audit.bridge.binding();assert first[:6]==second[:6]\nAssertionError\n",
+  "failure_kind": "SOURCE_TARGET_OVERSTRICT_CLASS_OBJECT_EQUALITY",
+  "canonical_backend_bindings_returned_before_assert": true,
+  "model_or_allocator_constructor_step_compute_not_executed": true,
+  "explanation": "Both frozen bridge.binding calls use exact importlib module creation. Fresh Policy/Gear class objects are distinct by object identity even when their code/source hashes are identical. Source target equality first[:6] is invalid; numerical source untouched.",
+  "do_not_rerun_or_edit_failed_source": true,
+  "recorded_unix": 1795277646.7450852
+}
