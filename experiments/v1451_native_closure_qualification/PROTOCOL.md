@@ -9,3 +9,11 @@ V1447原canonical初始化t0/model保存资格已实际完整通过并全部108�
 暂拟总600s/root：init<=180、actual200<=120、Allocator<=120、replay<=120、保存<=60（同共享600上限，不叠加新窗）；证据32MiB+归档32MiB+下载32MiB+根512MiB/allruns10GiB。实际短轮独立authority只能本scope，绝不能生成full route COMPLETE。所有模型构造/实际/重算/replay通过run_phase CPU2/单锁/nice19/threads1/GPU隐藏/OSMesa；同新资格全源freeze前要先真正零模型CLI/0bootstrap/步数stage/首错unknown保存/存储和once源门通过。
 
 当前仅protocol和具体stage计数guard draft，driver/真实CLI/qualification/新SOURCE_FREEZE/准入/ROUND_WINDOW/LAUNCH均不存在，禁止模型或车辆launch。下一完成此最短必要真实路径driver与精确入口前提，不再扩散旧软件fixture；全通过后才能另登记一次新资格。原科学修订5/原actual115880ownreplay104905/整路0保持。
+
+## 2026-11-21 首次入口前生产补齐
+
+已写driver/contract/once owner/严格阶段及compute计数、32MiB窄quota、原生CLI。为不向零尾资格伪授ACTUAL_ROUTE_EVENT_WITNESS，采用新ZeroTailOwner只组合冻结V1423 NativeStep及冻结V1449 Pump.prefix_step(stop_tail=True)，与CanonicalOwner相同前缀observer；完全不创建CuspTransaction/event/reserve/peer。此公开有限组合只资格原有pre-bridge本地零尾，不资格bridge或全route owner；未来整路仍须真实完整准入。原normal来源门/非零/事件权限不变，方法修订5不增。
+
+共享600s/root，bootstrap180/actual120/allocator120/replay120/metadata60，各阶段扣同root，root前5s停止新工作；首错不再追加新200尾或重试。profile随旧工厂替换sys.setprofile仍保留bootstrap零步/禁止私有Predictor，actual和独立Allocator compute分别最多200，原mj_step前收费，inflight异常记unknown/已完成下界。只读取既有V1447PASS和V1449freeze来源，不复跑Torch/OSMesa/ROS/旧entry。新入口资格使用明确软件计数callback/错误保存，不构造MuJoCo/真实Allocator，不能把它计作actual/replay或科学PASS。
+
+新数值launch还必须独立SOURCE_FREEZE、8个必要entry门、全runs10GiB峰值与额外parent console4MiB hold、全部新源实际远端逐成员恢复核和SOURCE_REMOTE_RECOVERY，以及新scope/600s ROUND_WINDOW/一次claim。没有这些不得launch。实际数组/Allocator/ownreplay仍从未执行；原整路0。
