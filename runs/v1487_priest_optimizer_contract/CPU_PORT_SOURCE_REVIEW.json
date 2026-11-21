@@ -1,0 +1,36 @@
+{
+  "author_sha256": "dbe9cf267c78a9f56e6169fb4c73aca9d1a20d787b0f53562e2a769e43527555",
+  "ported_sha256": "68fde558827768e4f70d9c04b4ef2622144c95cc7ccae4cf55d1473c8298e6f5",
+  "cpu_backend_methods": [
+    "path_spline",
+    "compute_contouring_error",
+    "compute_obs_traj_prediction",
+    "compute_boundary_vec",
+    "compute_warm_traj",
+    "compute_traj_guess",
+    "compute_projection",
+    "initial_alpha_d"
+  ],
+  "removed_unused_import": "from jax.ops import index_update, index",
+  "numerical_method_bodies_AST_identical": true,
+  "author_module_executed": false,
+  "runtime_compatibility_qualified": false,
+  "requires": [
+    "jax",
+    "jaxlib",
+    "numpy",
+    "scipy",
+    "matplotlib"
+  ],
+  "recorded_unix": 1795268448.5286517,
+  "scope": "AST_SOURCE_TRANSFORMATION_REVIEW_ONLY",
+  "source_modules_imported": [
+    "own_cpu_source_pure_AST_transform"
+  ],
+  "author_or_JAX_imported": false,
+  "new_target_qualification_executed": false,
+  "optimizer_calls": 0,
+  "models": 0,
+  "physical_native": 0,
+  "source_frozen": false
+}
