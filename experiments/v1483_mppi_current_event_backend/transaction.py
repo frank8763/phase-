@@ -57,7 +57,7 @@ class CuspTransaction:
   if packet['request']['event']['kind']=='ORDERED_ROUTE_FIRST_SEGMENT_CHECK':
    assert self.native.bridge_started and self.last_event>=0,'ORDERED_EVENT_REQUIRES_ACTUAL_PRIOR_BRIDGE'
    assert packet['request']['completed_bridge_events']==self.last_event+1,'ORDERED_EVENT_PRIOR_BRIDGE_COUNT_CHANGED'
-  return owner.OwnerRequest(notice,output=self.output,vehicle=self.native.vehicle,mode_memory=self.native.mode_memory,gear=self.native.gear,run_id=self.native.run_id,last_event_index=self.last_event,now=time.monotonic())
+  return owner.OwnerRequest(notice,output=self.output,vehicle=self.native.vehicle,mode_memory=self.native.mode_memory,gear=self.native.gear,run_id=self.native.run_id,last_event_index=self.last_event,now=time.monotonic(),controller_identity_sha256=self.native.controller_identity_sha256)
 
  def run(self,notice):
   assert not getattr(self,'stop_phase_entered',False),'NEW_EVENT_FORBIDDEN_DURING_STOP_PHASE'

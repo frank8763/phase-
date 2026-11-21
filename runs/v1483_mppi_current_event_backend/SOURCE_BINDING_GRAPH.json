@@ -12,17 +12,21 @@
     "model_generation": "transaction.py -> generator.py -> exact original scalar Predictor + new method/geometry",
     "independent_model_audit": "transaction.py -> audit.py -> same exact backend",
     "original_branch_stream_quota": "frozen V1449 branch_store.py",
-    "original_response_dynamics_and_feedback": "frozen V1114 model/Allocator + V1409 scalar feedback"
+    "original_response_dynamics_and_feedback": "frozen V1114 model/Allocator + V1409 scalar feedback",
+    "actual_task_and_ROS_route": "route_context.py -> original MPPI exacttask + route_ros.py -> actual_controller.py",
+    "actual_event_contract": "session.py -> unchanged V1422 exact event request, new outer controller identity and MPPI notices",
+    "actual_commands": "pump.py -> route_command.py -> latest durable streamed retirement before commit, MPPI identity before retirement",
+    "canonical_actual_owner": "canonical_owner.py -> native_step.py + transaction.py + reserve/guard/sink/BridgeExecution",
+    "current_reserve": "reserve.py -> new geometry_binding + same original scalar response model; save complete200 branch before gate",
+    "physical_guard": "physical_guard.py -> new geometry_binding, original actual safety gates",
+    "plugin_and_shared_accounting": "native_step.py ENGINEERING_COHERENT_MPPI/DISCLOSED_SHARED_EXECUTION_BRIDGE/APPLIED_STOP_TAIL",
+    "original_dependency": "dependency.py -> original static main failed; static repeat unattempted; original dynamic main skipped, authorize_dynamic refuses"
   },
   "missing_edges": [
-    "actual MPPI route/session/notice vocabulary and identity",
-    "actual NativeStep/plugin-vs-shared accounting",
-    "actual bridge execution and streamed retirement provenance",
-    "actual CurrentReserve/PhysicalGuard binding to MPPI geometry",
-    "outer canonical lifecycle/native CLI/once supervisor/taskbudget/recorded/fullstate ownreplay pair audit",
-    "original MPPI static dependency evidence status",
-    "new targeted MPPI process/protocol/runtime scope qualification",
-    "source freeze/allmember remote recovery/exact storage and once admission"
+    "outer lifecycle/native CLI/once supervisor/taskbudget and full recorded/Allocator/ownreplay/pair audit for new MPPI schema",
+    "original static dependency is NOT PASSED; no dynamic admission or automatic retry even after software qualification",
+    "new targeted MPPI process/protocol/callback/source byte qualification has not executed",
+    "source freeze/allmember recovery/exact scope storage and once admission absent"
   ],
   "not_unmodified_author_whole_system": true,
   "no_old_RPP_certificate_reuse": true

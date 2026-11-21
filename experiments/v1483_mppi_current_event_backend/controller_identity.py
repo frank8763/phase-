@@ -33,6 +33,15 @@ def verify(value):
  assert value==identity(),'MPPI_TASK_PARAMETER_LIBRARY_OR_SOURCE_CHANGED'
  return identity_sha
 
+def verify_prepared(value,*,expected_sha256):
+ # The expected digest must come from task_check/identity at process preparation,
+ # before sampling. run_phase keeps those sources read-only; closure rehashes
+ # them. This validates packet bytes, not a replacement source audit or age gate.
+ clean=dict(value);actual=clean.pop('controller_identity_sha256')
+ assert actual==expected_sha256==digest(clean),'MPPI_PREPARED_CONTROLLER_BINDING_CHANGED'
+ assert value['algorithm']=='ENGINEERING_COHERENT_MPPI'and value['controller_id']=='Deadband'
+ return actual
+
 def bind_current(current,value):
  verify(value);clean=dict(current);prior=clean.pop('input_sha256');assert digest(clean)==prior,'MPPI_BASE_INPUT_CHANGED'
  assert 'controller_binding'not in clean and 'controller_identity_sha256'not in clean

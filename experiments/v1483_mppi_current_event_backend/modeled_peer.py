@@ -93,7 +93,7 @@ def main():
     action=ActionClient(node,FollowPath,'follow_path');change=node.create_client(ChangeState,'controller_server/change_state')
     def spin():
         assert not stopping[0] and time.monotonic()<deadline,'MPPI_PEER_STOP'
-        if server is not None:assert server.poll() is None,'RPP_CONTROLLER_SERVER_EXIT'
+        if server is not None:assert server.poll() is None,'MPPI_CONTROLLER_SERVER_EXIT'
         try:
             payload,sender=sock.recvfrom(65536);value=json.loads(payload)
             if value.get('kind')=='STOP' and value.get('run_id')==args.run_id:stopping[0]=True;return

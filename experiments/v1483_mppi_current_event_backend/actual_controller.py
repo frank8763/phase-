@@ -14,6 +14,7 @@ s=importlib.util.spec_from_file_location('v1483_actual_MPPI_identity',C/'control
 def start(task,*,output,log):
  output=Path(output);assert output.is_absolute()and output.is_relative_to(R/'runs')
  binding=task['controller_binding'];identity.verify_environment(binding,role='ACTUAL_ROS')
+ dependency_spec=importlib.util.spec_from_file_location('v1483_preserved_MPPI_predecessor',C/'dependency.py');dependency=importlib.util.module_from_spec(dependency_spec);dependency_spec.loader.exec_module(dependency);dependency.authorize_dynamic()
  assert task['seed']==10060001 and task['case_id']=='WEST_EAST'and task['controller_plugin']=='Deadband'and task['controller_kind']=='mppi'
  assert task['nav2_params']==str(identity.PARAMS)
  authority=json.loads((output/'ACTUAL_MPPI_PROCESS_AUTHORITY.json').read_text());parent=json.loads((R/'runs/v1382_weekend_campaign/LEDGER.json').read_text())
