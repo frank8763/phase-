@@ -32,8 +32,7 @@ def generate(current,proposal,setup,*,authority,lock,save_branch,save_origin):
   assert p.adapter.__class__ is Adapter;p.adapter.encoders=lambda owner=p:feedback.current(owner)
   p.adapter.parked_target=origin['parked_target'];p.adapter._steering_motion_active=origin['steering_motion_active']
   measured=packet(p,origin_tick)
-  origin_proof=bridge.origin_comparison(measured,current,p.state);save_origin(origin_proof)
-  assert origin_proof['passed'],'PRIEST_RESPONSE_CURRENT_ORIGIN_CHANGED'
+  bridge.validate_origin(measured,current,p.state,save_origin=save_origin)
   method=Policy(current,proposal);gate=Gear()
   for key,value in current['gear_memory'].items():setattr(gate,key,value)
   arrays['states'].append(p.state.copy())

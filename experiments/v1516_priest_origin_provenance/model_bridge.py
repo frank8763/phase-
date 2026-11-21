@@ -57,17 +57,25 @@ def current_packet(p,*,current,native_tick,feedback):
  return dict(native_tick=native_tick,sim_time=current['fixed_origin_sim_time']+.01*(native_tick-current['fixed_origin_native']),body=[float(b[0]),float(b[1]),float(b[2]),float(b[3]),float(b[5])],body_lateral=float(b[4]),steering=dict(position=[float(x)for x in enc[:2]],velocity=[float(x)for x in enc[2:]]),controller_memory=dict(last_ctrl=[float(x)for x in p.adapter.last],integral=float(p.adapter.integral)),coupled_episode=bool(p.coupled_episode),parked_target=p.adapter.parked_target,steering_motion_active=bool(getattr(p.adapter,'_steering_motion_active',False)))
 
 
+
 def origin_comparison(measured,current,model_state):
- """Exact numeric coordinates plus separate original measured-envelope provenance."""
+ """Return every origin check before refusal; no model value is reset or rounded."""
  import math
- origin=current['origin'];steering=origin['steering'];required={'position','velocity','native_tick','measured_at'}
- assert set(steering)==required,'ORIGIN_STEERING_SOURCE_SCHEMA_CHANGED'
- assert steering['native_tick']==origin['native_tick']==current['fixed_origin_native']and measured['native_tick']==origin['native_tick'],'ORIGIN_STEERING_NATIVE_SOURCE_CHANGED'
- assert isinstance(steering['measured_at'],(float,int))and math.isfinite(steering['measured_at'])and steering['measured_at']==origin['body_measured_at'],'ORIGIN_STEERING_MEASUREMENT_SOURCE_CHANGED'
- assert set(measured['steering'])=={'position','velocity'},'MODELED_STEERING_NUMERIC_SCHEMA_CHANGED'
- fields=['body','body_lateral','controller_memory','coupled_episode','parked_target','steering_motion_active']
- checks={name:measured[name]==origin[name]for name in fields}
- checks.update(steering_position=measured['steering']['position']==steering['position'],steering_velocity=measured['steering']['velocity']==steering['velocity'])
- proof=dict(passed=all(checks.values()),checks=checks,current_input_sha256=current['input_sha256'],origin_packet_sha256=digest(origin),original_measured_steering_envelope=copy.deepcopy(steering),modeled_numeric_packet=copy.deepcopy(measured),modeled_initial_state=[float(x)for x in model_state],comparison='EXACT_NUMERIC_VALUES_NO_TOLERANCE_CHANGE',source_native_tick=steering['native_tick'],original_measurement_monotonic=steering['measured_at'],saved_input_not_fresh_wire=True,does_not_fabricate_model_sensor_timestamp=True)
- assert len(proof['modeled_initial_state'])==8 and all(math.isfinite(x)for x in proof['modeled_initial_state'])
+ origin=current['origin'];steering=origin.get('steering');model_steering=measured.get('steering');is_source=isinstance(steering,dict);is_model=isinstance(model_steering,dict)
+ checks=dict(source_steering_schema=is_source and set(steering)=={'position','velocity','native_tick','measured_at'},modeled_steering_schema=is_model and set(model_steering)=={'position','velocity'})
+ checks['source_native']=is_source and steering.get('native_tick')==origin.get('native_tick')==current['fixed_origin_native']and measured.get('native_tick')==origin.get('native_tick')
+ timestamp=steering.get('measured_at')if is_source else None
+ checks['measurement_source']=type(timestamp)in (float,int)and math.isfinite(timestamp)and timestamp==origin.get('body_measured_at')
+ checks['fixed_sim_clock']=measured.get('sim_time')==origin.get('sim_time')==current['fixed_origin_sim_time']
+ for name in ['body','body_lateral','controller_memory','coupled_episode','parked_target','steering_motion_active']:checks[name]=name in measured and name in origin and measured[name]==origin[name]
+ for name in ['position','velocity']:checks['steering_'+name]=is_source and is_model and name in steering and name in model_steering and model_steering[name]==steering[name]
+ try:state=[float(x)for x in model_state];valid_state=len(state)==8 and all(math.isfinite(x)for x in state)
+ except (ValueError,TypeError,OverflowError):state=None;valid_state=False
+ checks['finite_full_initial_state']=valid_state
+ # Invalid values are described truthfully instead of being coerced to valid JSON numbers.
+ return dict(passed=bool(all(checks.values())),checks=checks,current_input_sha256=current['input_sha256'],origin_packet_sha256=digest(origin),original_measured_steering_envelope=copy.deepcopy(steering),modeled_numeric_packet=copy.deepcopy(measured),modeled_initial_state=state if valid_state else None,invalid_initial_state_repr=None if valid_state else repr(model_state),comparison='EXACT_NUMERIC_VALUES_NO_TOLERANCE_CHANGE',source_native_tick=steering.get('native_tick')if is_source else None,original_measurement_monotonic=timestamp,saved_input_not_fresh_wire=True,does_not_fabricate_model_sensor_timestamp=True)
+
+def validate_origin(measured,current,model_state,*,save_origin):
+ proof=origin_comparison(measured,current,model_state);save_origin(proof)
+ assert proof['passed'],'PRIEST_RESPONSE_CURRENT_ORIGIN_CHANGED'
  return proof

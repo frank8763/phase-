@@ -45,8 +45,7 @@ def audit(current,proposal,setup,evidence,*,branch_count,read_branch,authority,l
   assert p.adapter.__class__ is Adapter
   p.adapter.encoders=lambda owner=p:feedback.current(owner);p.adapter.parked_target=origin['parked_target'];p.adapter._steering_motion_active=origin['steering_motion_active']
   compare(p.state,nominal[0]);first=packet(p,origin_tick)
-  origin_proof=bridge.origin_comparison(first,current,p.state);save_origin(origin_proof)
-  assert origin_proof['passed'],'PRIEST_AUDIT_CURRENT_ORIGIN_CHANGED'
+  bridge.validate_origin(first,current,p.state,save_origin=save_origin)
   gate=Gear()
   for k,v in current['gear_memory'].items():setattr(gate,k,v)
   method=Policy(current,proposal)
