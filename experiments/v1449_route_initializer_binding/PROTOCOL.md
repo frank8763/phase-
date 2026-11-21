@@ -1,0 +1,9 @@
+# V1449 当前整路canonical初始化源绑定草稿
+
+真实V1447 initializer-only资格已单次启动，当前以其实际COMPLETION/RESULT为准，绝不因预备entry或本source生成full route准入。本新draft将实际整路run入口绑定V1447冻结TaskLocalCaches/full-module immutable原write_guard，只有该实际初始化完整PASS/0native记录存在才允许进入既有其他全准入门；新source本身不生成任何gate真值。原OSMesa/GPU隐藏/缓存禁用/原guard代码和task输出限制/原模型/动力学/控制/安全/200ms/固定参考/200尾/全程门保持。新actual闭尾额外保存cache禁用与成员零检查，任何native缓存出现即证据失败。
+
+继承V1439真实route ROS源码（actual事件/phase/最新peer/最新planner writer/预算/完整保存和集成audit源），仅新source输出命名及initializer工程边界绑定，科学修订5不增。新production registry的完整writer覆盖仍须由已测实际源SHA推导，不能手工fake true。源码/依赖/current/limits/boot/存储/异常关闭路径需新精确入口检查，未变旧RPC/phase/ROS/byte/数学qualify不重刷。
+
+完整actual allocation重算/fullstate replay与event模型审核/固定源闭尾/独立pair需依新真实证据核，不把软件copy当实际。原每main/repeat独立5400s/40000actual(含200尾)/generation8040000/audit8040000/currentreserve8000000/Allocator40000/replay40000/pair40000、证据224MiB/归档224MiB/下载32MiB/root512MiB/allruns10GiB原样。未满足全部完整准入前无routeCOMPLETE/ROUND_WINDOW/LAUNCH，不能launch车辆导航。
+
+当前仅AST/未SOURCE_FREEZE/未资格，可在第一次必要new binding入口资格前继续完善；先完整核真实V1447结果并按失败或成功决定下一步，若失败不借此source再跑同轮。原失败分母/unknown与已经备份来源保持。

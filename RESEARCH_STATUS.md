@@ -2294,3 +2294,17 @@ V1445新独立initializer-only1factory/180s资格已经CLOSED FAILED，不再lau
 V1447新production guard_binding只compile完整原pilot不exec，选module常量内准确write_guard，保留全部future/nested code标记且逐bytecode/constants/names/flags核后才immutable OUT clone；原source/model/控制/Stage和路径门不改。已写具体源/AST，尚未新资格/未SOURCE_FREEZE/未准入，不launch模型；下一只新的full-module身份/immutable scope/篡改零模型资格，复用未变cache/OSMesa/旧suite，禁止无谓重刷。新V1445实际失败证据和V1447source尚未远端增量备份，先新恢复闭环再考虑另新有限initializer-only数值资格。当前无模型/worker、锁闲/REVIEW_PENDING原SHA，CURRENT/父next指V1447。checkpoint runs/v1447_full_module_guard_identity/PREPARATION_CHECKPOINT02.json。
 
 V1447新CPU2/run_phase/单锁/原guard/profile0模型整模块guard身份目标资格一次通过：原整模块compile不exec精确future flags16777219/nested常量，旧单函数missing flag红例+改变常量/flag/源/外run/Stage/缺准入7负例拒绝，真实immutable原hook已注册。未变五个文件按标准化AST/原资格SHA复用，不重复Torch/OSMesa旧suite。源已冻结；只是entry准备，完整initializer/Csave仍未执行，整路无准入。V1448零模型新备份helper已写，先原V1445失败与新源完整恢复核再新一次1factory180s0native窄初始化资格；旧V1445失败不改、不重跑。父启动尝试9/原actual115880ownreplay104905/修订5/整路0保持。
+
+V1445完整失败及新V1447完整guard源79成员2043815B已全部实际远端块/成员/整流/index SHA核过，唯一Git5c3e60b5/Release phase-v1445-full-module-guard-identity-20261121；只清已核2.04MB运输/原件保持，禁止第二push/递送/封archive。之后V1447新版本独立1factory/180s/0native initializer-only资格已首次启动，唯一owner本机有界运行（tool76924），不能重launch或改冻源；以其COMPLETION/RESULT为准，父启动尝试10不是10完整初始化。
+与此同时新V1449实际route生产draft已具体绑定V1447冻结TaskLocalCaches/fullmodule immutable原guard，代码要求实际V1447完整初始化PASS/0native才能走既有全准入，并闭尾额外核native Mesa缓存禁用和零成员；全部原科学/控制/来源200ms/模型参数/预算原样。只AST/未qualification/未SOURCE_FREEZE，无整路COMPLETE/ROUND_WINDOW/LAUNCH，不把代码当准入；先核V1447实际结果再决定继续集成或新证据修复，不重复旧软件fixture。checkpoint runs/v1449_route_initializer_binding/PREPARATION_CHECKPOINT.json。
+
+
+
+一次新限定1factory/180s/0native资格完整通过，132.158s闭合，原WE10060001/原场地模型/actor/动力学参数保持。真实CPU2/run_phase/单锁/原guard代码与immutable task OUT、OSMesa/GPU隐藏、task内cache/native Mesa cache禁用、32MiB证据/4MiBparent console完整hold均生效。完整factory返回1；内部factory模型构造次数未知，不能报1个内部模型。实际/私有预测/Allocator compute/replay全部0，没有200尾/导航或repeat。
+
+保存原true t0 body[-4,-2,0,0,0]、轮反馈全0，N=0动作/N+1=1个完整qpos20/qvel19/ctrl11/mocap状态NPZ无损往返。真实mj_saveModel文件9940106B，事前mj_sizeModel+8192上界9948298B；完整模型SHA af6f0c393382a255afb35ff1ae0db5256100705c85cc264d25bdc3541966db53。全部源SHA未变、0step guard无违规、native Mesa cache未生成、FIRST_ERROR无/次保存错误无、owner exit0/父闭合/REVIEW_PENDING原SHA恢复/锁闲。
+
+旧V1441/V1443/V1445三个初始化失败和规范返回/内部模型unknown永久保持，父启动尝试10不是10次完成初始化；本次独立initializer-only四次factory尝试=1完整返回+3unknown，原6任务分开。原115880actual104905ownreplay/科学修订5/整路0不变。
+
+V1449新actual route生产source已绑定冻结V1447 cache/whole-module guard，代码要求该实际初始化成功才走既有全准入；一次新0模型入口资格核真实production未准入拒绝/精确factory与Adapter/replay绑定/四writer按已资格源归一AST和SHA映射/全部runs10GiB峰值。只是源码/写入资格，完整actual Allocator重算/ownreplay/集成200尾/整路独立审核未执行，COMPLETE_INTEGRATED_ROUTE_QUALIFICATION仍不存在，不能据本报告launch导航。实际成功raw与新source正由V1450新归档备份，未核远端前不清原件。
+
