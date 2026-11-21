@@ -309,7 +309,7 @@
     }
   ],
   "vehicle_task_starts": 6,
-  "scientific_revisions": 4,
+  "scientific_revisions": 5,
   "review_pending_original_bytes_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
   "models_now_authorized": false,
@@ -317,7 +317,7 @@
   "prepared_next_round": null,
   "next_round_qualification": null,
   "qualification_passed": true,
-  "physical_launch_blocker": "Actual t0 pump/lifecycle/model-peer sources prepared, zero-model entry refuses admission. New-plan event/ROS fork/current RPC/complete integrated audits/whole budget/launch supervisor still missing",
+  "physical_launch_blocker": "New distinct original200 plan event and realROS fork source prepared; lifecycle rebinding/integrated audit/currentRPC/cross-mode/replay-pair/per-native budget/whole storage and CLI admission still missing",
   "latest_report": "docs/WEEKEND_CAMPAIGN_V1382_PROGRESS.md",
   "storage_ready": true,
   "storage_allocated_bytes": 9339875328,
@@ -327,7 +327,7 @@
   "active_task": null,
   "last_round_failure_requires_inspection": false,
   "latest_32210_handoff_qualified": true,
-  "next_preparation": "experiments/v1421_actual_route_pump/PROTOCOL.md",
+  "next_preparation": "experiments/v1422_ordered_route_event/PROTOCOL.md",
   "actual_total_native": 115880,
   "historical_reconstruction_native": 108300,
   "new_component_native": 7580,
@@ -394,5 +394,18 @@
   "latest_robust_geometry_analysis": "runs/v1418_robust_tube_geometry_analysis/RESULT.json",
   "latest_current_cusp_transaction_preparation": "runs/v1419_current_cusp_transaction/PREPARATION_CHECKPOINT.json",
   "latest_canonical_event_installation_preparation": "runs/v1420_canonical_event_installation/PREPARATION_CHECKPOINT.json",
-  "latest_actual_route_pump_preparation": "runs/v1421_actual_route_pump/PREPARATION_CHECKPOINT02.json"
+  "latest_actual_route_pump_preparation": "runs/v1421_actual_route_pump/PREPARATION_CHECKPOINT02.json",
+  "scientific_revision_records": [
+    {
+      "revision": 5,
+      "recorded_unix": 1795225225.4488668,
+      "scope": "Explicit original200 stopped post-bridge ordered-route first-segment current witness event; original250 CUSP unchanged",
+      "protocol": "experiments/v1422_ordered_route_event/PROTOCOL.md",
+      "models": 0,
+      "physical_native": 0,
+      "old_revision": 4,
+      "old_failed_rounds_unchanged": true
+    }
+  ],
+  "latest_ordered_route_event_preparation": "runs/v1422_ordered_route_event/PREPARATION_CHECKPOINT.json"
 }

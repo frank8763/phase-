@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "models": 0,
+  "fixture_not_actual_sensor_or_plant": true,
+  "current_input_sha256": "bdc10efe9c4c369684686d3cc7cc3c84d2e5002a48db306f55b54e0db761369f",
+  "event_kind": "ORDERED_ROUTE_FIRST_SEGMENT_CHECK",
+  "method": {
+    "method": "ORIGINAL_BOUNDED_STEERING_THEN_GEAR_RELEASE_TIMED_REVERSE",
+    "task": {
+      "forward_curvature": -0.5,
+      "ready_hold_native": 20,
+      "target_segment": {
+        "gear": -1,
+        "poses": [
+          [
+            1.9547683211925448,
+            -1.550781873991701,
+            -0.8203334276519619
+          ],
+          [
+            1.927298111080357,
+            -1.5217067195083342,
+            -0.8072142740206274
+          ],
+          [
+            1.8994488344364724,
+            -1.4929944426524009,
+            -0.7940951203892926
+          ],
+          [
+            1.8712252843921928,
+            -1.4646499850859305,
+            -0.780975966757958
+          ],
+          [
+            1.842632318494912,
+            -1.436678225165677,
+            -0.7678568131266233
+          ],
+          [
+            1.813674857872083,
+            -1.4090839771035046,
+            -0.7547376594952887
+          ],
+          [
+            1.7843578863842462,
+            -1.3818719901378167,
+            -0.741618505863954
+          ],
+          [
+            1.7545946186690324,
+            -1.3551494423122392,
+            -0.7216185058639542
+          ],
+          [
+            1.724302888081782,
+            -1.3290274644888198,
+            -0.7016185058639541
+          ],
+          [
+            1.6934948109108456,
+            -1.3035165051103994,
+            -0.6816185058639541
+          ],
+          [
+            1.6621827099763231,
+            -1.2786267682205883,
+            -0.6616185058639542
+          ],
+          [
+            1.6303791097010987,
+            -1.254368209382283,
+            -0.6416185058639542
+          ],
+          [
+            1.5980967311012402,
+            -1.2307505316955762,
+            -0.6216185058639542
+          ]
+        ]
+      },
+      "length_source": "CURRENT_REAR_TO_GOAL_AFTER_PREPARATION_AND_FULL200_TAIL"
+    },
+    "physical_admission": false,
+    "control_emitted": false,
+    "current_complete_witness_required": true
+  },
+  "stop_evidence": {
+    "event_kind": "ORDERED_ROUTE_FIRST_SEGMENT_CHECK",
+    "required_native": 200,
+    "actual_native": 32210,
+    "applied_commands_sha256": "c5cfba8054f6ef08e08ad318956c8d0fd5c84b87fc93b5fa09482b32cc19714c",
+    "no_extra_native_steps": true
+  }
+}

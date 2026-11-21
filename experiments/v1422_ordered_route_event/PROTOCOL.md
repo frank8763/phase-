@@ -1,0 +1,9 @@
+# V1422 新plan首segment的当前事件合同与实际ROS fork
+
+先保守登记科学整合修订5：新增独立ORDERED_ROUTE_FIRST_SEGMENT_CHECK事件，只在至少一次已完成公开桥之后、原route新plan实际200零停稳完成后发生。原CUSP_NEXT_SEGMENT_CHECK仍要求250，不伪造CUSP标签、不增加50零动作。原200 plan与250 cusp的定时、原方法选择/有限域/.22预测/.15实际/.12/.20段门/2cm/.1rad/±.2s与完整200尾不改。本修订增加同一完整当前证书边界的事件接入范围，不声称未修改原生RPP或旧科学未变。
+
+新plan事件必须绑定原ordered route全部segments的SHA、plan_index、首segment index0和当前真实body/encoder/allocator/mode/gear/scan/完整snapshot。新的owner在任何模型构造前核实际vehicle.commands连续原生覆盖和末200个已施加零动作；CUSP核末250。请求分类永远不发控制，完整gen和独立audit仍先成功再提交、原实际每native完整储备/时效/安全/固定参考继续。路径不合新方法原有限域即拒绝，不改profile或种子救。
+
+实际route_ros fork保留原规划/预测/RPP参数。桥前新plan沿原normal prefix执行；桥完成后新plan将首segment也留在queue，保存新类型请求交native证书，不能直接send_path旁路。RPP路径只在对应BRIDGE_RPP_READY后安装，队列只在完整当前执行证据BRIDGE_COMPLETE后消费。legacy cusp_requests目录仅传输路径名，不把新事件伪装成CUSP。
+
+本轮只新增0模型输入/事件来源与真实生产入口/CPU3 ROS导入资格，任何Predictor构造/step均profile禁止。完整实际socket/跨模式/全state replay-pair/准确整路预算/supervisor准入仍缺，绝不launch模型或车辆，不重刷任何旧入口/轮。科学修订5在本代码前登记；所有旧失败/分母/原源保持。

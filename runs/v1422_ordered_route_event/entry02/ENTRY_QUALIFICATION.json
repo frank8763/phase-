@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "scientific_revision": 5,
+  "actual_cpu": [
+    2
+  ],
+  "original_writeguard": true,
+  "constructor_step_profile_guard": true,
+  "fixture_not_actual_sensor_or_plant": true,
+  "ordered200_and_original_cusp250_distinct": true,
+  "full_current_snapshot_method_owner_binding_pass": true,
+  "negative_cases": [
+    "ordered199",
+    "ordered_without_prior_completed_bridge",
+    "ordered_wrong_first_segment",
+    "cusp249_unchanged",
+    "nonzero_applied_stop_tail",
+    "tampered_event_stop_requirement",
+    "unchanged200ms_gate"
+  ],
+  "actual_execution_unexecuted": true,
+  "physical_admission": false,
+  "source_hashes": {
+    "experiments/v1422_ordered_route_event/canonical_owner.py": "bc662f3d91f75db90f73eb987806b1a3098af31105985dee51718ac70efd4717",
+    "experiments/v1422_ordered_route_event/entry02.py": "2cec5adf07c946294c5955fe1fb8643fe769d000bb6e40fe762488ee5b3b5cc3",
+    "experiments/v1422_ordered_route_event/transaction.py": "a5b9f7e917b1e530e03607c1accbba066582bcde75bf4e2a45ae5ff92fc3b0cb",
+    "experiments/v1422_ordered_route_event/entry.py": "d2fa273888e39f84312da4ab96554264cd1eee8c651415d005bb2e7ab44482c6",
+    "experiments/v1422_ordered_route_event/route_context.py": "92ef70915ae28adba30cb1caf078f2a01be585f59c0e858a4ea61a566c76e01a",
+    "experiments/v1422_ordered_route_event/PROTOCOL.md": "e78b7abc36949135dba05cbefd8f4cc5a809644e73f167599b4a157475b44fcd",
+    "experiments/v1422_ordered_route_event/route_ros.py": "61821d1145a50adb97e5f3be467556e45f75fe3f7f615933c339b0d3e50ffdc2",
+    "experiments/v1422_ordered_route_event/event_contract.py": "2bcf5abffd452f7dd56406c0cc9324b42b49dd0a2ddb8b5b10f27ab67430548e",
+    "experiments/v1422_ordered_route_event/session.py": "2fa22860129454023c197e0dc0134b9970b67ac6596c08f4a49d38f4155350b4",
+    "experiments/v1422_ordered_route_event/event_owner.py": "bb89f01e63f9b311b767f715f059763f1ab67f888cf756a3273504de83a4187d"
+  }
+}
