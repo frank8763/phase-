@@ -1,0 +1,5 @@
+# V1555 lossless complete-witness source recovery
+
+New<=8MiB delta for closedV1554source/representation qualification, stream/driver/witness/capability/owner/limits and exactsoftware sourceproofs plus V1556new exactclosedtransportrecovery helper/plan. Inherit V1552all11643chain/V1553actualremoteproof/index; V1554extends11newsource/fixedinputs to11654. No oldqualifier/model rerun or source edits. All frozenSHA/inactiveparent/idlelock/originalREVIEW/allruns+8archive+32download+512root beforeoncearchive. Unique newsourcecommit push<=30s/ref5s once, actualremote block/member/whole/indexSHA before onlyduplicate transportclear. No scientificPASS inferred.
+
+V1556oldtwoarchives remainnotcleanupeligible until their new actualremote recovery completes; newhelper must have thisnewsourceanchor first. Planpreservesalloriginalraw/parts/currentinput/anchors/frozensource and onlyselectstwo redundant whole-tarcopies. No numericadmission/window/launch currently. Source/runtime qualification and resource/representation outcomes separate, science10/controlgates unchanged.

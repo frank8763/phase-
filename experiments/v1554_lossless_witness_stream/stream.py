@@ -77,6 +77,7 @@ class Stream:
         self.data_count=0
         self.proof_count=0
         self.pending=None
+        self.pending_complete=None
         self.closed=False
         self.write_inflight=False
         self.emergency_attempted=False
@@ -106,6 +107,7 @@ class Stream:
             model_counts=accounting,complete=bool(complete and first_error is None),first_error=first_error,
             stored_before_safety_or_comparison_gate=True))
         self.pending=name
+        self.pending_complete=bool(complete and first_error is None)
         self.data_count+=1
 
     def save_proof(self,name,proof):
@@ -114,17 +116,26 @@ class Stream:
         assert len(payload)<=MAX_METADATA
         self.append('PROOF',name,payload,{})
         self.pending=None
+        self.pending_complete=None
         self.proof_count+=1
 
-    def emergency(self,name,arrays,*,first_error,accounting):
+    def emergency(self,name,arrays,*,first_error,accounting,nominal_prefix=None):
         assert not self.emergency_attempted
         self.emergency_attempted=True
         payload,description,native=encode_arrays(arrays)
+        nominal=None
+        if nominal_prefix is not None:
+            nominal,nominal_description,nominal_native=encode_arrays(nominal_prefix)
+            assert len(payload)+len(nominal)<=MAX_PAYLOAD,'EMERGENCY_BRANCH_PLUS_NOMINAL_SLOT_CAP'
         path=self.folder/'LAST_REJECTED_BRANCH.npz'
         self.codec.write_atomic(path,payload,self.writer)
         proof=dict(name=name,complete=False,first_error=first_error,model_counts=accounting,
              acknowledged_saved_native=native,binding=self.binding,arrays=description,
              payload_sha256=sha(payload),payload_bytes=len(payload),write_retry_permitted=False)
+        if nominal is not None:
+            self.codec.write_atomic(self.folder/'NOMINAL_PREFIX.npz',nominal,self.writer)
+            proof['nominal_prefix']=dict(acknowledged_native=nominal_native,arrays=nominal_description,
+                payload_bytes=len(nominal),payload_sha256=sha(nominal))
         self.codec.write_atomic(self.folder/'LAST_REJECTED_BRANCH.json',self.codec.encoded(proof),self.writer)
         return proof
 
@@ -141,6 +152,7 @@ class Stream:
         result=dict(first_error=first_error,model_counts=accounting,secondary_errors=secondary,
             binding=self.binding,acknowledged_data=self.data_count,acknowledged_proofs=self.proof_count,
             pending_data_name=self.pending,acknowledged_stream_bytes=self.size,
+            pending_complete=self.pending_complete,
             actual_stream_bytes=self.path.stat().st_size,stream_write_inflight_unknown=self.write_inflight,
             complete=False,emergency_attempted=self.emergency_attempted)
         self.codec.write_atomic(self.folder/'STREAM_ABORT.json',self.codec.encoded(result),self.writer)
@@ -164,7 +176,7 @@ class Stream:
 
 
 class Reader:
-    def __init__(self,folder,*,expected_binding,expected_result_sha256,ordered_names):
+    def __init__(self,folder,*,expected_binding,expected_result_sha256,ordered_names,check=lambda:None):
         self.folder=Path(folder)
         self.codec=codec()
         self.binding=self.codec.normalized(expected_binding)
@@ -180,6 +192,7 @@ class Reader:
         self.path=self.folder/'WITNESSES.bin'
         assert self.path.stat().st_size==self.seal['stream_bytes']
         self.offsets={}
+        self.check=check
         self.verify()
 
     def verify(self):
@@ -187,6 +200,7 @@ class Reader:
         digest=hashlib.sha256();chain='0'*64;pending=None;data_count=proof_count=0
         with self.path.open('rb')as stream:
             while True:
+                self.check()
                 header=stream.read(HEADER.size)
                 if not header:break
                 assert len(header)==HEADER.size
