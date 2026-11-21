@@ -1,0 +1,110 @@
+{
+  "candidate": {
+    "kind": "BOUND_PRIEST_POLYNOMIAL_PROPOSAL",
+    "schema": 1,
+    "input_sha256": "91a35c62ed9fe5439c4080fabebe6aa09b2dfc736b17f51c7f11b0641732afad",
+    "core_identity_sha256": "0bf45c54104d89c05a98a96cb52d63e6061639b0f3828dc92bf129af5781c2bb",
+    "reply": {
+      "kind": "PRIEST_AUTHOR_POLYNOMIAL_PROPOSAL",
+      "schema": 1,
+      "run_id": "V1493_SOFTWARE_ONLY_NOT_ACTUAL_INPUT",
+      "input_sha256": "91a35c62ed9fe5439c4080fabebe6aa09b2dfc736b17f51c7f11b0641732afad",
+      "core_identity_sha256": "0bf45c54104d89c05a98a96cb52d63e6061639b0f3828dc92bf129af5781c2bb",
+      "origin_native": 0,
+      "origin_sim_time": 0.0,
+      "horizon_s": 10.0,
+      "coordinate_frame": "REAR_AXLE_WORLD_XY",
+      "gear": 1,
+      "coefficients_x": [
+        6.726685001714333e-16,
+        3.885388094419818e-16,
+        2.2585678523632885e-16,
+        0.5787259142441125,
+        0.03730995928410889,
+        0.5474932123431875,
+        0.6676732422792052,
+        0.5779989449974451,
+        0.8185774830049908,
+        0.8901050835367996,
+        0.9999999999999998
+      ],
+      "coefficients_y": [
+        -6.74690112347347e-17,
+        -4.7274087922011575e-17,
+        2.0767303314748897e-17,
+        -0.034733418799177386,
+        -0.16145565185142605,
+        0.22511533954302468,
+        -0.266389222442565,
+        0.08277836895945254,
+        -0.0282535157774933,
+        -0.006881526577980648,
+        -1.7582076510204633e-18
+      ],
+      "optimizer_accounting": {
+        "optimizer_calls": 1,
+        "iterations_completed": 12,
+        "mathematical_candidate_evaluations": null,
+        "inflight_unknown": false,
+        "author_core_source_sha256": "dbe9cf267c78a9f56e6169fb4c73aca9d1a20d787b0f53562e2a769e43527555"
+      }
+    },
+    "initial_sample": {
+      "time_s": 0.0,
+      "position": [
+        6.726685001714333e-16,
+        -6.74690112347347e-17
+      ],
+      "velocity": [
+        -2.841296907294515e-16,
+        2.0194923312723124e-17
+      ],
+      "acceleration": [
+        1.0930289987141865e-16,
+        4.3061821131633605e-17
+      ],
+      "gear": 1,
+      "tangent_heading_rad": null,
+      "nominal_yaw_rate_rad_s": null,
+      "nominal_curvature_m_inv": null,
+      "singular_zero_speed_tangent": true,
+      "actuator_or_collision_feasible": null,
+      "control_emitted": false
+    },
+    "fixed_origin_native": 0,
+    "fixed_origin_sim_time": 0.0,
+    "initial_acceleration_source_qualified": false,
+    "initial_acceleration_measurement_known": false,
+    "declared_boundary_hint_sha256": "bdbbb887bc6314b11fe49e772a6159d65b74b9531193e45ee24d778c236926c3",
+    "complete_current_response_witness_passed": false,
+    "independent_audit_passed": false,
+    "actual_control_domain_qualified": false,
+    "polynomial_samples_are_not_physical_or_response_integrations": true,
+    "control_emitted": false,
+    "physical_admission": false,
+    "proposal_sha256": "93b3aafce47f83582870a3451d9c5175226d35fced797996a2f2eab031bef15e"
+  },
+  "optimizer_request_sha256": "0b9634b3c7f9de4613f378c14c2ccecb07e7f70adb311a803e7c5c1ca8abd17a",
+  "ported_source_sha256": "68fde558827768e4f70d9c04b4ef2622144c95cc7ccae4cf55d1473c8298e6f5",
+  "work_accounting": {
+    "constructor_attempts": 1,
+    "constructor_returns": 1,
+    "optimizer_call_attempts": 1,
+    "optimizer_calls": 1,
+    "iterations_completed": 12,
+    "projection_candidate_updates": 17160,
+    "elite_cost_evaluations": 960,
+    "shifted_candidate_scores": 39600,
+    "initial_guess_scores": 3300,
+    "mathematical_candidate_evaluations": null,
+    "inflight_unknown": false,
+    "models": 0,
+    "response_model_native": 0,
+    "physical_native": 0,
+    "Allocator_recomputations": 0,
+    "replay_native": 0
+  },
+  "proposal_only": true,
+  "complete_response_witness_passed": false,
+  "physical_admission": false
+}
