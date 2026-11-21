@@ -1,0 +1,5 @@
+# V1538 closed stop-component runtime recovery
+
+Distinct <=8MiB delta for one V1536completed private CPP200+success-onlyfreshPython200 component, all original complete arrays/origin/source/stop/comparison/error/count evidence and closure report. No repeat model/replay. Link alreadyverified V1537source/11562current source chain and original V1532input recovery; do not reseal/deliver old archives. Reuse sole928a45a1 commit with one5sref only/no secondpush. New helper itself not in that sourceGit: exact Release member SHA supplies recovery, explicitly separate.
+
+Allruns inode8archive+32download+512root<10GiB/CPU5/nice19/idlelock/parentinactive/revieworiginal/sourceSHA before one claim. Full local + actualremote block/member/whole/indexSHA before onlyduplicate transport cleanup; all originals stay. Archivecomplete not navigationPASS; numerical result is limited savedcurrent observer-stop component.0newmodel/FFI/Allocator/optimizer/physical/replay. Preserve old fails/unknown constructors/all original parentdenominators/science8/whole0. No future numerical/physical admission.
