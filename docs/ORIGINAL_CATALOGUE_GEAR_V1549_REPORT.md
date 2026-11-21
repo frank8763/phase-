@@ -1,0 +1,7 @@
+# Original catalogue / canonical gear obligation V1549
+
+One CPU5/run_phase original immutable-guard source-only target passed and closed. Five source or missing-identity negatives and first/secondary-save handling passed; writer charged152227B, inner11.186376412s/outer12.533976165s. No policy calls, model constructions/integrations, FFI, Allocator, optimizer, physical or replay work. Source is frozen and must not be rerun.
+
+Immutable M8 saved gear is+1, brake_startNone, last_tick6004. Original base catalogue entries0/1 begin956zero requests then reverse-.03. Exact canonical GearHandoff source implies accepted leading zeros do not start a gear clock; first opposing request starts the clock and yields zero at elapsed0<200 regardless of rest. Raw original batch requests and canonical applied controls therefore differ under these stated premises. This is conditional source evidence, not a new independent actual gear reconstruction. Other40 forward-stage cases remain unknown without response history; no inference of oldRPCCR failure, collision or global infeasibility.
+
+Any accepted nonzero response must explicitly register gear filtering and current scalar encoder coordinates as method/interface choices before implementation. Gear holds consume schedule ticks without added200steps or clock reset. Raw requests and filtered actions must be separate. V1549 grants no model, search, fresh wire or actual navigation permission. New source/proofs remain pending a distinct remote source recovery.

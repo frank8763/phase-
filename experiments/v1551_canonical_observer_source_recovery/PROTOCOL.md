@@ -1,0 +1,7 @@
+# V1551 distinct canonical observer source recovery
+
+One <=8MiB delta for closed V1549 conditional gear source and V1550 registered-revision10 source/API qualification/production definitions, with inherited V1547/V1548 verified chain. Do not reseal or redeliver V1548 or push4142893c again. No model/policy/integration/Allocator/FFI/optimizer/physical/replay work. Scientific revision10 source/API PASS is not numerical control/witness/navigation qualification.
+
+Before the one archive, check all frozen11629SHA, parent inactive, originalREVIEW SHA, idle lock and inode-deduplicated allruns+8MiB archive+32MiB actual-download scratch+512MiB root<10GiB. Archive only new source/proofs and exact inherited recovery references. All archive members,32MiB blocks and whole stream must verify locally first. New source commit allows one30s push+5s ref; source files and helper are explicitly staged, no add-A. Full remote actual block/member/whole/index SHA before transport cleanup. No overwrite/retry/reseal/secondpush of closed batches. Only verified transport duplicates may be removed; all currentinput/raw/anchors remain.
+
+V1550 numerical capability is absent and model response unexecuted. One full adapted catalogue0 would require970688016B raw13arrays before headers, evidence/archive/metadata and512MiB root; current storage cannot admit it. Exact once/budget/witness/audit/owner work and verified storage recovery are required before any model. Root1795395600 unchanged.
