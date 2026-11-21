@@ -9,3 +9,5 @@ V1437 phase gate、V1438真实planner writer、V1439真实actual route ROS零wir
 证据32MiB+归档32MiB+下载32MiB+根512MiB，必须按全部runs/inode实际峰值检查。原REVIEW_PENDING字节保存恢复，首错/后续save-close错误分别保存，canonical factory调用前标记pending，只有完整返回才能记初始化1；失败内部构造/已落盘输出保留未知/原件。准入须绑定此新source、task/limits及V1436/37/38/39已核资格SHA；父active只能登记本新initializer-only，models授权scope不得给整路/私有预测/训练/实车。
 
 当前只有contract/依赖接口draft AST，无入口资格/源冻结/模型准入/ROUND_WINDOW/LAUNCH。下一补具体once initializer driver、真正未准入拒绝与准确未知/0步/保存控制路径资格，然后才能另核所有必要前提决定新有限initializer资格准入；绝不把此计划中的门当已通过。科学修订5和旧物理6车辆115880actual104905ownreplay/整路0不变。
+
+当前已写具体initializer/owner/entry/0step guard/窄32MiB quota源码：一次factory前durable pending，失败时真实尝试数与内部未知分离；native C save原guard实际调用前收费、0动作仅1状态NPZ；parent4MiB实际stdout pipe cap完整hold于32MiB内。sys.setprofile被旧factory临时替换时仍组合0step/compute guard，原factory/模型/参数不改。首次必要入口资格仅CPU2/run_phase/profile禁构造的实际未准入拒绝/精确lazy binding/首错次错和unknown保存/0step API拒绝/软件save API写前-文件大小接口/真实小stdout pipe/once/双钟/storage；软件save API明确不是实际Mujoco C save。资格一旦开始所有当前source冻结，不重刷。

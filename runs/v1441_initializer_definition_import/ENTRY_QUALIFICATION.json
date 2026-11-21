@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "models": 0,
+  "physical_native": 0,
+  "analytical_integrations": 0,
+  "allocator_recomputations": 0,
+  "actual_replay_native": 0,
+  "actual_cpu": [
+    2
+  ],
+  "original_writeguard": true,
+  "model_constructor_profile_guard": true,
+  "entry_gates": {
+    "actual_no_model_entry_refusal": true,
+    "exact_factory_and_adapter_binding": true,
+    "first_error_and_unknown_count_saves": true,
+    "forbidden_native_step_guard": true,
+    "native_save_size_source_and_byte_path": true,
+    "whole_storage_peak": true,
+    "bounded_dual_clock_and_once_owner": true,
+    "supervisor_console_bounded_pipe": true
+  },
+  "negative_cases": [
+    {
+      "case": "real_initializer_refuses_before_physical_binding",
+      "error": "RuntimeError('INITIALIZER_ENTRY_PREREQUISITES_MISSING_MODELS_FORBIDDEN')"
+    },
+    {
+      "case": "factory_cannot_retry",
+      "error": "AssertionError('INITIALIZER_FACTORY_ALREADY_ATTEMPTED')"
+    },
+    {
+      "case": "failed_before_call_save_does_not_call_factory",
+      "error": "OSError('SOFTWARE_SECONDARY_SAVE_FAILURE')"
+    },
+    {
+      "case": "forbidden_mj_step",
+      "error": "RuntimeError('INITIALIZER_NATIVE_STEPS_FORBIDDEN')"
+    },
+    {
+      "case": "forbidden_mj_step1",
+      "error": "RuntimeError('INITIALIZER_NATIVE_STEPS_FORBIDDEN')"
+    },
+    {
+      "case": "forbidden_mj_step2",
+      "error": "RuntimeError('INITIALIZER_NATIVE_STEPS_FORBIDDEN')"
+    },
+    {
+      "case": "32MiB_cap_cannot_be_replaced_by224",
+      "error": "AssertionError()"
+    },
+    {
+      "case": "native_save_rejected_before_software_API_call",
+      "error": "RuntimeError('SOFTWARE_PREWRITE_REFUSAL')"
+    },
+    {
+      "case": "console_rejects_before_byte_write",
+      "error": "AssertionError('INITIALIZER_CONSOLE_BYTE_CAP_EXHAUSTED')"
+    },
+    {
+      "case": "once_claim_rejects_second_attempt",
+      "error": "FileExistsError(17, 'File exists')"
+    },
+    {
+      "case": "wrong_boot",
+      "error": "AssertionError()"
+    },
+    {
+      "case": "dual_clock_duration_changed",
+      "error": "AssertionError()"
+    },
+    {
+      "case": "close_time_reserve_missing",
+      "error": "AssertionError()"
+    }
+  ],
+  "software_faults_and_software_save_API_explicit": true,
+  "actual_native_C_save_executed": false,
+  "actual_canonical_initializer_called": false,
+  "initializer_runtime_qualified": false,
+  "physical_route_admission": false,
+  "prerequisite_qualification_SHA": {
+    "runs/v1436_pathlib_control_rename/CONTROL_QUALIFICATION.json": "075d5ecb7f1ca96424d3c7c8369b8ee7ab452acfd691f506b318363636db0043",
+    "runs/v1436_pathlib_control_rename/PEER_QUALIFICATION.json": "603e9c2e6d47a9a2f2c8fe9a1d9ef7372baf58b2b818871e1275a6804eefdada",
+    "runs/v1437_shared_phase_budget/PHASE_QUALIFICATION.json": "d42c380cd92efb74300565af6b34641a8e090ce6af353e4a9589aa533c6904d7",
+    "runs/v1438_planner_writer_entry/PLANNER_QUALIFICATION.json": "e0d4a812c5cd36427f7cd0489192fa71e6d59921eda8f04aaac2cdea960a596e",
+    "runs/v1439_actual_ros_startup_close/STARTUP_QUALIFICATION.json": "f12bf380a1980b691a7829a1909e80cdfdde4433bc5d43f0c6fcef15025e95a7"
+  },
+  "all_runs_peak": {
+    "allocated_all_runs_bytes": 9488044032,
+    "estimated_peak_bytes": 10125578240,
+    "limit_bytes": 10737418240,
+    "inode_accounted": true,
+    "models": 0
+  },
+  "source_hashes": {
+    "experiments/v1441_initializer_definition_import/entry.py": "8e7569b2b59c18fe1671dc7969f5f363bcfca0acea095d66845cee6a1b4d33b0",
+    "experiments/v1441_initializer_definition_import/contract.py": "7170f77b8c087960f0c79642ea2f03a612c925f748842de807ab16e6e97fcd12",
+    "experiments/v1441_initializer_definition_import/zero_steps.py": "e058d408621d2ee9284f7f5214b82086e898153cd39e4bfe494e3e0b69939b92",
+    "experiments/v1441_initializer_definition_import/LIMITS.json": "c42469c1b8538dd799a0481fca3fdddcbc3f08956a1f0a3f239383ed348fa958",
+    "experiments/v1441_initializer_definition_import/PROTOCOL.md": "ccde2eb8d341a02da013ac5bde6ec2b9722203d97f3e35fc4093ec85bf07d000",
+    "experiments/v1441_initializer_definition_import/quota.py": "0045d932837ef49ea21ddcc65b60d3f879c7756226b9ea1d07b1f358e8fc9df0",
+    "experiments/v1441_initializer_definition_import/owner.py": "90d3429d67153586eb2054a8053df99ed6e68da22ca2d75579c463c2c9b9ea34",
+    "experiments/v1441_initializer_definition_import/initializer.py": "7a58f2582d5a406612488f1f1bed06fc05cebe432b9a8c1927b31bc034ee328a"
+  }
+}
