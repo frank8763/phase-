@@ -1,0 +1,7 @@
+# V1467 规范初始化写前有界字节额度
+
+原V1464单次runtime已CLOSED FAILED，原源/结果不重跑不改。canonical ready180s cap超时，native同180初始化alarm在dynamic_scene原XML逐小块序列化中触发，trace明确每个write→charge_write→grant None→base.admit→du(task)+du(allruns)。原科学模型/实际积分尚未执行；factory尝试1/完整返回unknown/内部模型unknown，machine RESULT完整actual0/private0/Allocator0/replay0/saveerror[]，监督正常native cooperative close/REVIEW原SHA/锁闲，ROS从未启动。父15任务启动尝试/3partial注册，actual116280/replay105105/修订5/整路0保持。
+
+新source只在原factory任何输出前prepare一次16MiB CANONICAL_INITIALIZER_PREPARATION grant，真实du核全runs/224MiBtask、全部56MiB外writer预留/held-index/error64KiB/224MiBarchive+32MiBdownload/512MiBroot，再热写只扣明确已预留剩余额度。原Python OutputBoundary每一实际XML字节/model cap依旧收费，压缩/覆盖不返信用，不扩path/role，不改physics/control/science/source200ms/原ROS45s或初始化180上限。额度phase只新增初始化准备域，valid<=180，其他3phase/所有oldquota方法原样。native工厂后grant由原pump下一freshwire前retire/prepare，不能借初始化额度绕current来源时效。
+
+新target资格只真实原同库ElementTree多chunk序列化前/热写期间du次数和精确收费/字节往返，保持全externalcaps事前held且正确来源、短额度拒绝/expired/超180拒绝；软件I/O不构造模型或积分。原V1464ready/phase/controller/RPC/数值资格按准确AST和原SHA复用，不重刷旧fixtures。新source首次资格过/冻结并完整V1464失败+新source远端恢复核后，才独立一次同原5400/一真实首事件窄scope；不制作whole-route COMPLETE，partial分母保留。当前无新entry/freeze/admission/ROUND_WINDOW/LAUNCH，不立即模型启动。

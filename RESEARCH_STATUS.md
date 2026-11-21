@@ -2362,3 +2362,9 @@ V1462 full failed runtime and V1464 draftsource132members2671209B all remote act
 
 
 2026-11-21 V1464 one new CPU2run_phase/originalguard/profile no-model target readiness qualification PASS CLOSED,19 refusal cases. Explicit software state/NPZ/model placeholder+real Unixsocket source/hash/0clock/foreigninput/FD gates; software READY never actualauthority. init180 and coopclose200 same root clocks/no reset; savedROSfailure vs legitimateclose classified; real CPU5 softwarechild firsterror stop-save-close0steps passed. Frozen source/oldV1462failure gap retained, no live runtime yet. Source remote recovery mandatory before one distinct narrow originalfirstevent run. Counts14taskstarts/116280actual/105105replay/science5/wholeWE0 unchanged.
+
+
+V1464 full new current source53members1340679B all remote actualblock/member/whole/indexSHA passed, unique7d1481e3/Release phase-v1464-canonical-ready-scope-source-20261121; transportonlyclear/rawretained/no secondpush. Actual firstevent runtime outcome remains unknown. Narrow admission may now be prepared for one independent bounded originaltask runtime only; whole-routeCOMPLETE absent.
+
+
+2026-11-21 V1464 once runtime CLOSED FAILED canonical-ready180 cap; native complete RESULT finally saved canonicalreturnunknown, actual/private/Allocator/replay0, source unchanged, no saveerror; XML smallchunk writes repeatedly charged no-grant fullrunsdu. All childrenclosed/reviewSHA/lockidle. V1467 newsource only prepares16MiB180s init grant, full global/storage/caps and science unchanged; targeted CPU2run_phase/profile0model real XML505chunks:2du before/0during/16899bytes exact/lossless and5refusal casesPASS, futureexternalcaps56MiB held/nofake metadata. Oldready/controller suites SHA/AST reuse. Frozen, remote recovery then independentone runtime only; actual116280/replay105105/15starts/3partial regs/revision5/wholeWE0.
