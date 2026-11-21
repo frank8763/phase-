@@ -1,0 +1,7 @@
+# Bounded new Phase source and author-capture recovery delta
+
+Zero-model CPU5 metadata/I/O only, nice19/threads1/GPUhidden/ionice3. One local archive closure and one sync claim, at most30s push and5s ref, one distinct Release. Hard600s per launched I/O owner and root1795395600. No model, ROS, author/JAX imports or optimizer. No old archive reseal or second old push.
+
+Capture current V1483 unqualified MPPI draft, V1484 pinned author raw/source/disposition and V1485 narrow mathematical qualification/frozen current sources plus this helper. Include late V1481 exact cleanup source/result and explicit prior recovery anchors. Rehash all9421 V1485 frozen members before/after; never alter them. Save exact delta member SHA and sizes, complete local decompression and reassembly. Archive cap16MiB/parts<=32MiB, actual allruns10GiB with32MiB download and512MiB root reserve. Inherited files remain referenced by frozen manifests and prior recovery chain, not claimed newly duplicated.
+
+Before creating or uploading read claim/current result; matching remote size/digest accepted without duplicate POST, conflict refuses, only confirmed404 creates. Actual downloaded block/whole/member/index SHA all required before removing only verified duplicate archive/readback transport. Keep all original source/author/qualification raw. FINALIZED is archive completeness only, not response/actual/navigation qualification. No physical round/window/admission is created.
