@@ -1,0 +1,9 @@
+# V1464 规范初始化就绪后才交给原ROS
+
+V1462唯一实际scope已失败关闭，不重跑/改冻源。ROS原45秒T0/lifecycle等待先于canonical factory完整返回而耗尽，原ROS_RESULT错误保留。冻结监督仅拒“ROS无结果退出”，未拒有结果但失败，故本聊天按明确原ROS错误向精确owned Phase supervisor发SIGTERM，不等4140s；operator理由/同PID命令身份保存。全部子进程退出/REVIEW原SHA/锁闲。native RESULT缺失、机器计数None永久保留；source-derived补充factory尝试1/internalunknown/完整返回unknown，实际/private/Allocator/replay0（未到INITIAL_PACKET和journal，bootstrap禁止积分）；不是伪造RESULT。父14启动尝试/2部分导航注册，原actual116280/replay105105/修订5/整路0。
+
+新生产改动是一次准确启动交接：先启动CPU2 canonical native，在原normal4140/root5400内给工厂一个180s上限（不是新根窗），真实完成初始化/原N0初始packet/fullstate/MJB/原native socket之后写CANONICAL_T0_READY。监督核同run_id/source资格/initial packet与state及model SHA、真实native0/sim0/原counts和socket，然后才启动原CPU3 ROS/controller；原45s T0等待、200ms控制来源、实际科学门均不变，不延长或重置仿真clock，不写qpos/qvel，不伪造scan。
+
+ROS任何未请求cooperative close的error/failed退出立即成为首错，即使ROS_RESULT存在。新增明确NATIVE_STOP_REQUEST，由native每步前/工厂返回后check拒绝，先让本机原handler在原shared clock内保存完整prefix/first/unknown，随后才有限TERM/KILL；不允许以失败ROS结果继续空等正常预算。合法PEER_STOP_REQUEST+COOPERATIVE_PEER_CLOSED仍是预期关闭，不当导航成功。model构造/字节/尾/重算/重放/全goal/event及所有原limits与scope保持，只加更紧的180s初始化子cap；partial分母准确。
+
+当前新source准备无qualification/SOURCE_FREEZE/admission/ROUND_WINDOW/LAUNCH，不立即跑模型。下一实际可审ready/失败分类/双钟与cooperative stop helper和source绑定，目标无模型软件控制文件/真实小子进程关闭资格，不重刷旧phase/ROS/controller/RPC/数值。V1462完整失败及本新源先全部远端成员恢复核，才独立一次有限原首事件资格；不制作whole-route COMPLETE，不把局部工程PASS当科学导航PASS。

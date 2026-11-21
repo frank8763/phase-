@@ -1,0 +1,13 @@
+# V1462 canonical/ROS启动交接失败
+
+本轮独立首事件运行资格已失败关闭。规范工厂处于初始化阶段时，ROS原45秒T0/lifecycle等待已耗尽，ROS_RESULT保存ACTUAL_T0_OR_LIFECYCLE_MISSING并完整退出controller。冻结监督只检查“无ROS_RESULT退出”，未检查已保存失败结果，因此监督未立即终止。发现该错误后，本聊天核准确切owned supervisor PID/命令并发SIGTERM，保存EXTERNAL_STOP_REASON；所有子进程已退出、原REVIEW SHA恢复、执行锁空闲。
+
+native机器RESULT缺失、完整规范返回及内部模型次数未知保持。只另附source-derived补充：factory调用标记存在且真实初始化stdout/paired文件存在，调用尝试1；初始packet/journal/MJB不存在，未到实际控制/私有/重算/重放路径，原factory bootstrap禁止积分，因此源推导actual/private/Allocator/replay0。此补充不是机器RESULT，也不将返回unknown改为0。
+
+父14任务启动尝试与2次partial-navigation注册保持，不意味着完成车辆初始化或实际导航。累计actual116280/ownreplay105105/科学修订5/原WE整路0不变。
+
+V1464新source已具体实现：监督先等真实CANONICAL_T0_READY再启动ROS；核run/source/initialpacket/fullstate/MJB/socket与实际native0/sim0；工厂180s子cap扣同normal4140/root5400，原ROS45s等待不改。任何保存的ROS错误立即关轮，原cooperative PEER_STOP_REQUEST关闭单独分类；新增准确NATIVE_STOP_REQUEST由native工厂返回后/每步前拒绝，先有界等待完整保存再fallback TERM/KILL。不能因ROOT允许而把失败ROS留到normal超时。
+
+这些是新source草稿，仅AST，新的ready/failfast/cooperative资格尚未实现；scope_entry明确拒绝未实现资格。没有SOURCE_FREEZE/admission/ROUND_WINDOW/LAUNCH，不准模型或导航启动。下一只对这些新source路径作必要无模型资格，原closed V1462、旧数值和controller/RPC套件不重刷。
+
+归档helper继承的FINALIZED.actual_zero200_runtime_executed=true是错误标签，已另存FINALIZED_FIELD_CORRECTION明确false，原字段/归档字节保留。实际应以原COMPLETION/CLOSED_REVIEW及source-derived计数判断；归档完整不等于科学通过。
