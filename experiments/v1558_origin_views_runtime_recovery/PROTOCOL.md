@@ -1,0 +1,3 @@
+# V1558 distinct origin diagnostic source and failed runtime recovery
+
+New once <=8MiB archive of V1557 frozen source-only diagnostic qualification and V1554 original failed runtime (0models/native); original missing byteproof retained, no oldsource rerun or archive reseal. Inherit V1554all11654 source recovery; cover new11669 via delta index. Exact fullsource SHA/idlelock/review/parentinactive/allruns+8+32+512MiB gates before archive; one newsource push30s/ref5s only. All remote block/member/whole/index SHA actual downloads before duplicate transport cleanup. No physical or numeric admission from source recovery.
