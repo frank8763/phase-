@@ -6,10 +6,29 @@ from pathlib import Path
 import time
 R=Path(__file__).resolve().parents[2];C=Path(__file__).resolve().parent;O=R/'runs'/C.name
 SCOPE='LIVE_FIRST_EVENT_RUNTIME_QUALIFICATION'
-GATES={'exact_current_source_and_task_binding','real_native_and_ROS_scope_refusal','first_event_stop_no_tick_anchor','state_first_and_error_save_paths','original_science_and_postcertificate_freshness_unchanged','four_writer_source_proofs','actual_initializer_tail_allocator_replay_evidence','accurate_shared_clocks_counts_and_storage','once_supervisor_and_remote_source_recovery'}
+GATES={'exact_current_source_and_task_binding','real_native_and_ROS_scope_refusal','first_event_stop_no_tick_anchor','state_first_and_error_save_paths','original_science_and_postcertificate_freshness_unchanged','four_writer_source_proofs','actual_initializer_tail_allocator_replay_evidence','accurate_shared_clocks_counts_and_storage','once_supervisor_and_missing_remote_recovery_refusal'}
 def read(p):return json.loads(Path(p).read_text())
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 class NotAdmitted(RuntimeError):pass
+
+def verify_source_recovery(source_hashes):
+ recovery=read(O/'SOURCE_REMOTE_RECOVERY.json');assert recovery['passed']
+ proof=read(R/recovery['full_remote_verification_path']);assert proof['passed']and proof['every_asset_actual_download_SHA']and proof['every_member_SHA_and_link_text']and proof['whole_archive_SHA']and proof['recovery_index_download_SHA']
+ members={row['path']:row for row in read(R/recovery['archive_index_path'])['files']}
+ current={name:digest for name,digest in source_hashes.items()if name.startswith('experiments/v1458_live_first_event_runtime/')}
+ assert current and all(name in members and members[name]['sha256']==digest for name,digest in current.items()),'LIVE_EVENT_NEW_SOURCE_NOT_REMOTELY_RECOVERED'
+ return recovery
+
+def prepare_admission():
+ path=O/'LIVE_FIRST_EVENT_ONLY_ADMISSION.json';assert not path.exists()
+ q=read(O/'SCOPE_QUALIFICATION.json');assert q['passed']and q['models']==q['physical_native']==q['allocator_recomputations']==q['actual_replay_native']==0
+ assert set(q['entry_gates'])==GATES and all(q['entry_gates'].values())
+ frozen=read(O/'SOURCE_FREEZE.json')['files'];assert frozen==q['source_hashes']and all(sha(R/name)==h for name,h in frozen.items())
+ recovery=verify_source_recovery(frozen)
+ value=dict(scope=SCOPE,live_first_event_only=True,whole_route_admission=False,live_event_runtime_passed=False,entry_gates=q['entry_gates'],entry_qualification_sha256=sha(O/'SCOPE_QUALIFICATION.json'),tested_source_hashes=frozen,limits=read(C/'LIMITS.json'),tasks_sha256=sha(C/'TASKS.json'),external_writer_hook_qualification=q['external_writer_hook_qualification'],source_remote_recovery=recovery,actual_source_remote_recovery_verified=True)
+ text=json.dumps(value,ensure_ascii=False,indent=2,allow_nan=False)+'\n'
+ with path.open('x')as stream:stream.write(text)
+ return value
 
 def complete_narrow_admission():
  path=O/'LIVE_FIRST_EVENT_ONLY_ADMISSION.json'
@@ -18,6 +37,7 @@ def complete_narrow_admission():
  assert set(q['entry_gates'])==GATES and all(q['entry_gates'].values())
  assert q['limits']==read(C/'LIMITS.json')and q['tasks_sha256']==sha(C/'TASKS.json')
  assert q['tested_source_hashes']and all(sha(R/p)==h for p,h in q['tested_source_hashes'].items())
+ assert q['actual_source_remote_recovery_verified']is True and verify_source_recovery(q['tested_source_hashes'])==q['source_remote_recovery']
  return q
 
 def clocks(window,parent,*,reserve_s):

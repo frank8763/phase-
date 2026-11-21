@@ -19,7 +19,8 @@ def main():
  assert os.environ.get('PHASE_REPO')==str(R)and sorted(os.sched_getaffinity(0))==[2]
  os.chdir(R);sys.path.insert(0,str(R/'experiments/v1067_causal_replan_brake_reserve'));from resource_policy import apply
  apply();task=json.loads(Path(a.task).read_text());assert task in json.loads((C/'TASKS.json').read_text())
- if a.binding_qualification:raise RuntimeError('LIVE_EVENT_TARGETED_ENTRY_NOT_YET_IMPLEMENTED')
+ if a.binding_qualification:
+  original_guard(O);entry=exact('v1458_targeted_scope_qualification',C/'scope_entry.py');return entry.qualify(task)
  out=Path(task['output']);assert out.is_relative_to(O)and out.is_dir();original_guard(out)
  life=exact('v1456_actual_latest_lifecycle',C/'lifecycle.py');budget=exact('v1458_narrow_live_contract',C/'contract.py')
  q=budget.complete_narrow_admission();approval=json.loads((O/'APPROVAL.json').read_text());window=json.loads((O/'ROUND_WINDOW.json').read_text());budget.clocks(window,json.loads((R/'runs/v1382_weekend_campaign/LEDGER.json').read_text()),reserve_s=q['limits']['finalization_reserve_s'])

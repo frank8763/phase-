@@ -74,10 +74,7 @@ def cleanup_attempt(errors,stage,fn):
 
 def launch(role):
  assert role=='first_event';q=budget.complete_admission();limits=read(C/'LIMITS.json');budget.limits_check(limits)
- recovery=read(O/'SOURCE_REMOTE_RECOVERY.json');assert recovery['passed']
- restored=read(R/recovery['full_remote_verification_path']);assert restored['passed']and restored['every_member_SHA_and_link_text']
- members={row['path']:row for row in read(R/recovery['archive_index_path'])['files']}
- assert all(name in members and members[name]['sha256']==digest for name,digest in q['tested_source_hashes'].items()if name.startswith('experiments/v1458_live_first_event_runtime/')),'LIVE_EVENT_NEW_SOURCE_NOT_REMOTELY_RECOVERED'
+ budget.contract.verify_source_recovery(q['tested_source_hashes'])
  parent=read(P);auth=read(R/'experiments/v1382_weekend_campaign/AUTHORIZATION.json');assert parent['active_round']is None and not parent['models_now_authorized']and len(parent['rounds'])<auth['maximum_rounds']and parent['vehicle_task_starts']<auth['maximum_vehicle_task_starts']and parent['scientific_revisions']==5
  assert min(parent['absolute_hard_stop_unix']-time.time(),parent['hard_stop_monotonic']-time.monotonic())>5500
  task=next(t for t in read(C/'TASKS.json')if t['task_id']==role);out=Path(task['output']);assert not out.exists(),'ORIGINAL_TASK_ALREADY_ATTEMPTED_NO_RELAUNCH'
@@ -218,7 +215,8 @@ def work(role):
  with boundary(out,charge,control_paths=control_paths,control_renames=control_renames):return _work(role)
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--launch',choices=['first_event']);p.add_argument('--work',choices=['first_event']);a=p.parse_args()
- if a.launch:launch(a.launch)
+ p=argparse.ArgumentParser();p.add_argument('--launch',choices=['first_event']);p.add_argument('--work',choices=['first_event']);p.add_argument('--prepare-admission',action='store_true');a=p.parse_args()
+ if a.prepare_admission:budget.contract.prepare_admission()
+ elif a.launch:launch(a.launch)
  elif a.work:work(a.work)
  else:raise SystemExit('Specify exactly one registered task; no implicit launch')
