@@ -2401,3 +2401,9 @@ V1474 new concrete resourceheadroom helperdraft: before sampling still-valid per
 
 
 V1472 fullfailedactual405 and V1474 earlydraft170members8039682B all remote actualblock/member/whole/indexSHA verified, sole58b4e53b source reused/no secondpush/Release phase-v1472-wire-grant-expiry-failed-20261121; onlyverifiedtransportclear/rawkept/allI/Oclosed. New V1474 one CPU2run_phase/profile0model target PASS CLOSED/frozen:real original2s grant elapsed to.35sresourceleft then2du beforefreshsoftware sample/currentreceipt;validreuse0du/noTTLreset;insufficientvalidnearexpiry refusesnorefill/TTL2.001reject/missingadmissionbothrefuse. Oldsuite AST/SHA reused, no model/physics/replay/nav. Currentqualifiedsource later thanearlydraft requires newfullsource recovery.
+
+
+V1474 fullqualifiedcurrent source50members1352661B allremoteactualblock/member/whole/indexSHA verified; uniquea96b106a/Release phase-v1474-prewire-resource-headroom-source-20261121,transportonlyclear/rawretain/allI/Oclosed/no secondpush. New narrowonce admission may be prepared aftercurrent clocks/source/peak, not scientificruntimePASS.
+
+
+V1474 distinct once originalWE livefirstevent runtime launched afterfull50membercurrent recovery and newnarrow admission. Allruns9610481664B/completepeak10650669056B<10GiB (margin86749184B); taskattempt18/partialregistration6, prioractual116885/replay105105 pending newmachineRESULT. OwnerCPU5/nativeCPU2run_phase singlelock/source200ms unchanged, tool19217 active, no relaunch. Firstevent/whole-route outcomeunknown.

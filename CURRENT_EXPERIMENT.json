@@ -1,17 +1,23 @@
 {
   "schema_version": 2,
-  "status": "REVIEW_PENDING",
+  "status": "RUNNING_NARROW_LIVE_FIRST_EVENT_QUALIFICATION",
   "research_line": "Phase RP-CCR navigation",
   "target_journal": "Robotics and Autonomous Systems",
   "canonical_repository": "phase-",
-  "active_run": null,
-  "active_window": null,
-  "active_entrypoint": null,
+  "active_run": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1474_pre_wire_resource_headroom/first_event",
+  "active_window": {
+    "started_unix": 1795252064.866672,
+    "started_monotonic": 373815.312180109,
+    "absolute_deadline_unix": 1795257464.866672,
+    "hard_stop_monotonic": 379215.312180109,
+    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4"
+  },
+  "active_entrypoint": "experiments/v1474_pre_wire_resource_headroom/supervisor.py --launch first_event",
   "automatic_additional_simulation": true,
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/LIVE_GRANT_BOUNDARY_V1472_REPORT.md",
+  "latest_report": "docs/PREWIRE_HEADROOM_V1474_REPORT.md",
   "latest_completed": {
     "closed": true,
     "physical_observer_main_and_repeat_passed": false,
@@ -11234,7 +11240,7 @@
     "insufficient_near_expiry_no_refill": true,
     "original_wire_grant_TTL_s": 2,
     "original_source_maxage_s": 0.2,
-    "source_remote_recovery_pending": true,
+    "source_remote_recovery_pending": false,
     "actual_raw_backup_pending": false,
     "admission_or_launch": false,
     "next": "Full newcurrent source remote recovery then once narrow originalfirstevent runtime only after exact storage/source/clock gates."
@@ -11296,17 +11302,18 @@
     "verified_unix": 1795249439.9445405
   },
   "latest_live_first_event_runtime": {
-    "recorded_unix": 1795249662.9022,
-    "closed": true,
-    "passed": false,
-    "actual_native": 405,
-    "original_RPP_native": 205,
-    "error_stop_tail_native": 200,
-    "own_replay_native": 0,
-    "first_error": "BYTE_GRANT_EXPIRED while logging received packet",
-    "actual_raw_backup_pending": false,
-    "first_live_event_executed": false,
-    "whole_route_passed": false
+    "recorded_unix": 1795252098.751794,
+    "active_round": "v1474_pre_wire_resource_headroom_first_event",
+    "models_now_authorized": true,
+    "scope": "LIVE_FIRST_EVENT_RUNTIME_QUALIFICATION",
+    "whole_route_admission": false,
+    "tool_session": 19217,
+    "vehicle_task_starts": 18,
+    "navigation_prefix_task_starts": 6,
+    "first_event_result_exists": false,
+    "canonical_ready_exists": true,
+    "scientific_outcome_unknown": true,
+    "do_not_relaunch": true
   },
   "latest_resource_expiry_raw_remote_recovery": {
     "passed": true,
@@ -11321,5 +11328,19 @@
     "models": 0,
     "physical_admission": false,
     "verified_unix": 1795251915.0991473
+  },
+  "latest_resource_headroom_source_recovery": {
+    "passed": true,
+    "source_commit": "a96b106a0d23c4f4a7dc1f3d3476622f08e5990d",
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1474-prewire-resource-headroom-source-20261121",
+    "every_asset_actual_download_SHA": true,
+    "every_member_SHA_and_link_text": true,
+    "whole_archive_SHA": true,
+    "recovery_index_download_SHA": true,
+    "members": 50,
+    "archive_bytes": 1352661,
+    "models": 0,
+    "physical_admission": false,
+    "verified_unix": 1795252024.5844562
   }
 }
