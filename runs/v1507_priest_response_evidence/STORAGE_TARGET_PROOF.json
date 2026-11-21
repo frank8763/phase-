@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "software_inputs_only": true,
+  "new_integrations": 0,
+  "complete_branches_read": 2,
+  "refused_unsafe_proof_saved": true,
+  "bitwise_float64_including_signed_zero_and_subnormal": true,
+  "single_prewrite_debit": true,
+  "full201states200ctrl_each": true,
+  "partial_saved_states": 37,
+  "partial_saved_ctrl": 36,
+  "original_first_error_and_secondary_save_error_retained": true,
+  "abort_proof": {
+    "first_error": "SOFTWARE_PRODUCER_FIRST_ERROR",
+    "generator_counts": {
+      "analytical_native": 236,
+      "analytical_inflight_unknown": true,
+      "nominal_native": 0,
+      "complete_stop_branches": 1,
+      "software_counter_example_not_measurement": true
+    },
+    "acknowledged_complete_records": 1,
+    "acknowledged_record_bytes": 11920,
+    "actual_saved_bytes": 11920,
+    "actual_saved_sha256": "047343a15664462b74ac3c5e3c0577d316ad3f5a187f3e5e6d4c6bb30b3b89ba",
+    "unacknowledged_tail_unknown": false,
+    "secondary_errors": [],
+    "complete_seal_absent": true,
+    "numeric_audit_admitted": false,
+    "abort_receipt_save_error": "OSError('SOFTWARE_SECONDARY_SAVE_ERROR')"
+  },
+  "negative_cases": [
+    {
+      "name": "OUT_OF_ORDER_BRANCH",
+      "error": "AssertionError()"
+    },
+    {
+      "name": "INCOMPLETE_199_CONTROL",
+      "error": "AssertionError()"
+    },
+    {
+      "name": "TRUNCATED_STREAM",
+      "error": "AssertionError()"
+    },
+    {
+      "name": "CORRUPTED_PAYLOAD",
+      "error": "AssertionError()"
+    },
+    {
+      "name": "UNDECLARED_TRAILING_BYTES",
+      "error": "AssertionError()"
+    },
+    {
+      "name": "CHANGED_CURRENT_SOURCE",
+      "error": "AssertionError()"
+    },
+    {
+      "name": "CHANGED_GENERATION_ID",
+      "error": "AssertionError()"
+    },
+    {
+      "name": "ABORT_WITHOUT_COMPLETE_SEAL",
+      "error": "FileNotFoundError(2, 'No such file or directory')"
+    },
+    {
+      "name": "BYTE_CAP_BEFORE_OPEN",
+      "error": "AssertionError('CHILD_OUTPUT_BYTE_CAP_EXHAUSTED')"
+    }
+  ],
+  "writer_actual_debit": {
+    "role": "PLANNER",
+    "maximum_bytes": 2097152,
+    "source_identity": "bea2be5910ab2242c91e0718c589b54d0c698cf5452b92833255f5b5237f46d3",
+    "charged_bytes": 328032,
+    "grants": 23,
+    "paths": [
+      "BRANCHES.bin",
+      "BRANCH_SEAL.json.tmp",
+      "BRANCHES.bin.tmp",
+      "RETURNED_ARRAYS.npz.tmp",
+      "RETURNED_JOURNAL.json.tmp",
+      "RETURNED_RECEIPT.json.tmp"
+    ],
+    "models": 0
+  },
+  "read_only_fsync_actual_path_passed": true,
+  "models": 0
+}

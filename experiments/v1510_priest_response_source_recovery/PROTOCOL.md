@@ -1,0 +1,3 @@
+# V1510 complete-response current-source recovery
+
+One new source delta covers frozen V1507 software storage source/target, V1508 exact verifiedcachecleanup/source/restoreanchors, and frozen V1509 finite once-owner/CLI sourceentry/currentfixed input bindings. Include original V1504 current/proposal bytes as newmodel dependencies, preserve immutableidentity/no reoptimization. Inherited source chain explicit, not all members recopied. CPU5zero models, archivecap8MiB/32MiBparts, one30s push+5s ref, allremote actualblock/member/whole/indexSHA before only duplicate transport cleanup. Old scientific failures/source/archives/pushes stay closed. Numerical admission requires current exact source/budget/root/lock/review/once gates; archivecompletion is not sciencePASS.

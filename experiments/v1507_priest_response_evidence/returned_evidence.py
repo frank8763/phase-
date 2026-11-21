@@ -16,3 +16,19 @@ def save_returned(output,result,arrays,*,writer,boundary):
  codec.write_atomic(output/'RETURNED_ARRAYS.npz',payload,writer);codec.write_atomic(output/'RETURNED_JOURNAL.json',journal,writer)
  receipt=dict(array_bytes=len(payload),arrays_sha256=codec.sha(payload),journal_bytes=len(journal),journal_sha256=codec.sha(journal),partial_branch_present=partial is not None,generation_passed=bool(result['passed']),storage_not_scientific_pass=True)
  codec.write_atomic(output/'RETURNED_RECEIPT.json',codec.encoded(receipt),writer);return receipt
+
+
+def read_returned(output):
+ import json
+ import numpy as np
+ output=Path(output);receipt=json.loads((output/'RETURNED_RECEIPT.json').read_text());payload=(output/'RETURNED_ARRAYS.npz').read_bytes();journal=(output/'RETURNED_JOURNAL.json').read_bytes()
+ assert len(payload)==receipt['array_bytes']and codec.sha(payload)==receipt['arrays_sha256']and len(journal)==receipt['journal_bytes']and codec.sha(journal)==receipt['journal_sha256']
+ metadata=json.loads(journal)
+ with np.load(io.BytesIO(payload),allow_pickle=False)as archive:
+  assert set(archive.files)==set(metadata['saved_array_shapes']);arrays={k:archive[k].copy()for k in archive.files}
+ for key,value in arrays.items():assert list(value.shape)==metadata['saved_array_shapes'][key]and value.dtype==np.dtype('float64')
+ partial=metadata['partial_branch']
+ if partial is not None:
+  partial=dict(partial,states=arrays.pop('partial_branch_states'),ctrl=arrays.pop('partial_branch_ctrl'));assert len(partial['states'])==partial['saved_states']and len(partial['ctrl'])==partial['saved_ctrl']
+ assert set(arrays)=={'states','ctrl','memory'}
+ return dict(arrays,journal=metadata['journal'],modes=metadata['modes'],partial_branch=partial,generation=metadata['generation'])

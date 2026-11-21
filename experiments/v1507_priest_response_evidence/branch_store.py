@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 import struct
 R=Path(__file__).resolve().parents[2]
-MAGIC=b'PHASEBR1';HEADER=struct.Struct('>8sII');MAX_META=2048;MAX_PAYLOAD=20480;MAX_RECORDS=1200;MAX_STREAM=28*1024**2
+MAGIC=b'PHASEBR1';HEADER=struct.Struct('>8sII');MAX_META=2048;MAX_PAYLOAD=20480;MAX_RECORDS=1200;MAX_STREAM=26*1024**2
 sha=lambda value:hashlib.sha256(value).hexdigest()
 
 def normalized(value):
@@ -32,9 +32,14 @@ def metered(output,writer,boundary):
  assert writer.role=='PLANNER'and writer.maximum<=32*1024**2
  return output
 
+def sync_readonly(path):
+ # Never expose the metered writable descriptor. Sync its flushed bytes via a read-only descriptor.
+ with path.open('rb')as stream:os.fsync(stream.fileno())
+
 def write_atomic(path,data,writer):
- temporary=path.with_suffix(path.suffix+'.tmp');writer.reserve(temporary,len(data)+4096)
- with temporary.open('xb')as stream:stream.write(data);stream.flush();os.fsync(stream.fileno())
+ temporary=path.with_suffix(path.suffix+'.tmp')
+ with temporary.open('xb')as stream:stream.write(data);stream.flush()
+ sync_readonly(temporary)
  temporary.replace(path)
 
 def binding_check(value):
@@ -58,7 +63,7 @@ def arrays_check(states,ctrl):
 class BranchStore:
  def __init__(self,output,*,writer,boundary,binding):
   self.output=metered(output,writer,boundary);self.writer=writer;self.binding=normalized(binding);self.binding_sha=binding_check(self.binding);self.path=self.output/'BRANCHES.bin';self.count=0;self.bytes=0;self.chain='0'*64;self.digest=hashlib.sha256();self.closed=False
-  writer.reserve(self.path,4096);self.stream=self.path.open('xb')
+  self.stream=self.path.open('xb')
  def save(self,proof,states,ctrl):
   import numpy as np
   assert not self.closed and self.count<MAX_RECORDS
@@ -66,13 +71,13 @@ class BranchStore:
   buffer=io.BytesIO();np.savez_compressed(buffer,states=states,ctrl=ctrl);payload=buffer.getvalue();assert len(payload)<=MAX_PAYLOAD
   meta=encoded(dict(index=self.count,binding_sha256=self.binding_sha,previous_chain_sha256=self.chain,payload_sha256=sha(payload),proof=proof));assert len(meta)<=MAX_META
   block=HEADER.pack(MAGIC,len(meta),len(payload))+meta+payload;assert self.bytes+len(block)<=MAX_STREAM
-  self.writer.reserve(self.path,len(block));written=self.stream.write(block);assert written==len(block);self.stream.flush();os.fsync(self.stream.fileno())
+  written=self.stream.write(block);assert written==len(block);self.stream.flush();sync_readonly(self.path)
   self.digest.update(block);self.chain=sha(self.chain.encode()+meta+payload);self.bytes+=len(block);self.count+=1
   return dict(index=self.count-1,stream_bytes=self.bytes,chain_sha256=self.chain,complete_native=200,stored_before_safety_gate=True)
  def abort(self,*,first_error,generator_counts):
   errors=[]
   if not self.closed:
-   try:self.stream.flush();os.fsync(self.stream.fileno())
+   try:self.stream.flush();sync_readonly(self.path)
    except BaseException as error:errors.append('flush:'+repr(error))
    try:self.stream.close()
    except BaseException as error:errors.append('close:'+repr(error))
@@ -85,7 +90,7 @@ class BranchStore:
   except BaseException as error:receipt['abort_receipt_save_error']=repr(error)
   return receipt
  def close(self,*,generation_result_sha256):
-  assert not self.closed and len(generation_result_sha256)==64;self.stream.flush();os.fsync(self.stream.fileno());self.stream.close();self.closed=True
+  assert not self.closed and len(generation_result_sha256)==64;self.stream.flush();sync_readonly(self.path);self.stream.close();self.closed=True
   actual=hashlib.sha256()
   with self.path.open('rb')as stream:
    for block in iter(lambda:stream.read(1024**2),b''):actual.update(block)
