@@ -156,4 +156,7 @@ def prepare_saved_source(*,source_envelope,content_proof,remote_index,remote_pro
 
 
 def numeric_origin(*args,**kwargs):
-    raise AssertionError('V1532_NUMERICAL_ORIGIN_CONVERSION_AND_ONCE_OWNER_NOT_IMPLEMENTED_OR_ADMITTED')
+    import importlib.util
+    spec=importlib.util.spec_from_file_location('v1532_explicit_origin_api',C/'origin.py')
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    return module.prepare(*args,**kwargs)
