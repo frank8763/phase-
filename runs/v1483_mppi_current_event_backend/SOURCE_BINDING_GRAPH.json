@@ -1,0 +1,29 @@
+{
+  "draft": true,
+  "qualified": false,
+  "models_authorized": false,
+  "edges": {
+    "task_params_libraries_identity": "controller_identity.py",
+    "same_actual_modeled_ROS_environment": "controller_identity.environment",
+    "actual_owned_controller_factory": "actual_controller.start (requires absent ACTUAL_MPPI_PROCESS_AUTHORITY)",
+    "modeled_namespace_entry": "model_peer.py -> peer_entry.py -> bounded modeled_peer.py",
+    "modeled_RPC": "modeled_client.py (only MPPI kind+sameinput+samecontrollerSHA)",
+    "current_event_input": "event_owner.py -> finite_input + controller.bind_current + geometry.bind",
+    "model_generation": "transaction.py -> generator.py -> exact original scalar Predictor + new method/geometry",
+    "independent_model_audit": "transaction.py -> audit.py -> same exact backend",
+    "original_branch_stream_quota": "frozen V1449 branch_store.py",
+    "original_response_dynamics_and_feedback": "frozen V1114 model/Allocator + V1409 scalar feedback"
+  },
+  "missing_edges": [
+    "actual MPPI route/session/notice vocabulary and identity",
+    "actual NativeStep/plugin-vs-shared accounting",
+    "actual bridge execution and streamed retirement provenance",
+    "actual CurrentReserve/PhysicalGuard binding to MPPI geometry",
+    "outer canonical lifecycle/native CLI/once supervisor/taskbudget/recorded/fullstate ownreplay pair audit",
+    "original MPPI static dependency evidence status",
+    "new targeted MPPI process/protocol/runtime scope qualification",
+    "source freeze/allmember remote recovery/exact storage and once admission"
+  ],
+  "not_unmodified_author_whole_system": true,
+  "no_old_RPP_certificate_reuse": true
+}

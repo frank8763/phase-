@@ -2434,3 +2434,15 @@ V1481 next concretebaseline binder reads originalcoherentMPPI horizon_m1s01/WE10
 
 
 V1479 fullfirsteventfailedactual/model/input/branches182members25137421B allremoteactualblock/member/whole/indexSHA verified; solef93198a9source reused/no secondpush/Release phase-v1479-first-current-event-model-refused-20261121. AllI/Oclosed/onlyverifiedtransportremoved/latestfailureallrawretained. Then exactSHA+mtime+device/inode/nlink1/indexproof manifest cleanup removedONLY2oldV1472/V1474duplicateMJB+oldV1474nonlatestjournal,35954688allocatedB exact, alloldfailuresummaries/denominators/recoveryindiceskept. Those3oldfiles nowremoteonly; do not assume stilllocal/re-downloadexceptbyindexSHA. Allruns9674158080Bapprox, futurefullscopepeakagainbelow10GiB but ~23MiB margin only; this is not MPPIadmission. CurrentV1481binder/draft qualificationmissing, noactive models/ROS/workers/reviewSHA/lockidle.
+
+
+V1483 scientificintegrationrevision6 conservatively registered BEFORE newMPPI accepted-domain code:exactoriginalcoherent/deadbandMPPI actual/modeled/current-input contract, separatefromclosedV1479RPPfinitefailure. No source/model/ROSqualification or runtimeadmission yet,0newmodels; alloriginalscience/source200ms/reference/tail and sharedgeometrybudgets stay.
+
+
+V1483 concreteproductionMPPI controlleridentity/currentinput binding, sameactual/modeledROSenv withimmutable coherentpreload, strictMPPIclient/peer protocol, namespacehandshake+writerboundary/closure sources written/AST only. Readonlyparameter/source/3librarySHA inspected(identity3d308597...), no loadedcontroller/ROS/models. Revision6pre-registered, generator/audit/actuallifecycle stillmissing/noqualification/freeze/admission. Checkpoint saved.
+
+
+V1483 concreteprivate MPPI method/geometry/generator/correctedaudit/eventowner/transaction sourcebound, exactcontrolleridentityrejection before modelbinding; originalscalar response/gear/full200tail/geometryclock/sciencegates preserved. Actualcontrollerfactory now exactsameMPPIplugin/env identity asmodeledpeer, requiresnewregisteredtaskboundauthority+actualbyteproxy; nevercalled. AllsourceAST only/0model/ROS/compute; actualouterNativeStep/session/BridgeExecution/source-accounting integration andrealnewMPPIcallbackqualification stillmissing. DRAFT_SOURCE_SHA notfreeze. Checkpoint02 saved/noadmission.
+
+
+V1483 checkpoint03:16concretenewMPPI sourcefiles AST, controlleridentitybeforemodelbinding/MPPI-labeledRPC/witness/correctedaudit/currentOwner+boundedTransaction/exactactualfactory prepared; all9400oldfrozenSHA intact.0controller/ROS/model/optimizer/physical/replay started. SOURCE_BINDING_GRAPH explicitlylistsmissingactual route/session/NativeStep/bridge/reserve/outeraudit+CLI qualification, no newadmission/freeze/round. Parentrevision6 registeredonly,19starts/7partial/127830actual/105105replay unchanged/reviewSHA/lockidle. Newdraftnotremotelybacked; continue actualbindings, no oldsuite reruns.

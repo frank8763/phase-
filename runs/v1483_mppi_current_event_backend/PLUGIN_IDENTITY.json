@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "algorithm": "ENGINEERING_COHERENT_MPPI",
+  "controller_id": "Deadband",
+  "plugin_class": "phase_deadband/DeadbandMPPI",
+  "task_sha256": "7a80636be20e3003bf8fbbbaf8a5ddb7c9cb0d415655cacf0202ba2ae35e3eef",
+  "task_source_sha256": "e3a2865997a83947bda80eb82f588598885aca5a5f662518c6bc1495dad41317",
+  "parameters": "experiments/v1370_overnight_controller_matrix/coherent_mppi_params.json",
+  "parameters_sha256": "883835eabddd07273aa44a018187b561ca275cf2b9108325949a57d6f898da7d",
+  "source_files": {
+    "experiments/v1370_overnight_controller_matrix/coherent_mppi_params.json": "883835eabddd07273aa44a018187b561ca275cf2b9108325949a57d6f898da7d",
+    "experiments/v931_deadband_consistent_mppi/executable_controller.cpp": "1b40bc2dede57c94706cc1e3ebc578c6075c50b5a134ae6111a1314a3f5fd2f8",
+    "experiments/v931_deadband_consistent_mppi/executable_controller.hpp": "81260253d7ac40fcc60ac04f884224befa8a7229e1aba11cc4e907d216c12933",
+    "experiments/v931_deadband_consistent_mppi/executable_optimizer.hpp": "941a1dcd9983ae160aab5bbb86043d5cd41bb9fb3c5655ebb5281553afac5775",
+    "experiments/v1319_mppi_coherent_sampling/coherent.cpp": "2adced10c764f3f8cfaa56cb4c8fed830ed8d3f223052f2cc23325be3889df7f",
+    "runs/v931_deadband_consistent_mppi/install/share/phase_deadband_mppi/plugin.xml": "6c13e5a520082d68c6ca7cb5bd45bb2cd4dfaf5bf8a78493fae5aca90e2330ec"
+  },
+  "libraries": {
+    "deadband": {
+      "source_path": "runs/v931_deadband_consistent_mppi/install/lib/libphase_deadband_mppi.so",
+      "namespace_path": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v931_deadband_consistent_mppi/install/lib/libphase_deadband_mppi.so",
+      "bytes": 658920,
+      "sha256": "3ebb7d1ebee42f5b07388cc9acbe7b579e904c680d48c785242392a5233206b5"
+    },
+    "coherent": {
+      "source_path": "runs/v1319_mppi_coherent_sampling/libcoherent.so",
+      "namespace_path": "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1319_mppi_coherent_sampling/libcoherent.so",
+      "bytes": 17088,
+      "sha256": "0679cc4e25cef0f4c8cc0b9a7358322e9ea6cd06709757c254baedaf79031dad"
+    },
+    "upstream_mppi": {
+      "source_path": "runs/v856_nav2_foundation/rootfs/opt/ros/jazzy/lib/libmppi_controller.so",
+      "namespace_path": "/opt/ros/jazzy/lib/libmppi_controller.so",
+      "bytes": 822968,
+      "sha256": "915224409043672db4c94c692cc0d5d3e08cc247c4ac20f22010d2d9ed88dcbf"
+    }
+  },
+  "coherent_noise": "1",
+  "not_unmodified_author_whole_system": true,
+  "original_dependencies": [
+    "coherent_mppi_static_repeat"
+  ],
+  "controller_identity_sha256": "3d3085977f768ce370941a7c125d7ff2ff6512fbcb72fe4e62e8ebdd928a0646"
+}
