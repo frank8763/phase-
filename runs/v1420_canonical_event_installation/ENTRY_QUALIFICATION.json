@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "models": 0,
+  "analytical_native": 0,
+  "physical_native": 0,
+  "actual_installation_unexecuted": true,
+  "canonical_owner_import_pass": true,
+  "transaction_fault_paths_pass": true,
+  "actual_cpu": [
+    2
+  ],
+  "original_writeguard": true,
+  "constructor_step_profile_guard": true,
+  "cases": [
+    {
+      "case": "bind_error",
+      "passed": true,
+      "primary_exception_preserved": "RuntimeError('INJECTED_FIRST_BIND_FAILURE')",
+      "models": 0,
+      "analytical_native": 0,
+      "physical_native": 0,
+      "copied_arrays_not_integrations": true
+    },
+    {
+      "case": "complete_refusal",
+      "passed": true,
+      "primary_exception_preserved": "AssertionError('CURRENT_EVENT_GENERATION_REFUSED')",
+      "models": 0,
+      "analytical_native": 0,
+      "physical_native": 0,
+      "copied_arrays_not_integrations": true
+    },
+    {
+      "case": "partial_unknown",
+      "passed": true,
+      "primary_exception_preserved": "AssertionError('CURRENT_EVENT_GENERATION_REFUSED')",
+      "models": 0,
+      "analytical_native": 0,
+      "physical_native": 0,
+      "copied_arrays_not_integrations": true
+    },
+    {
+      "case": "first_error_plus_save_close_error",
+      "passed": true,
+      "primary_exception_preserved": "AssertionError('CURRENT_EVENT_GENERATION_REFUSED')",
+      "models": 0,
+      "analytical_native": 0,
+      "physical_native": 0,
+      "copied_arrays_not_integrations": true
+    }
+  ],
+  "source_hashes": {
+    "experiments/v1420_canonical_event_installation/canonical_owner.py": "cf162b5082ed2a89d37cf79a45eaa1b48e301bedb7b0c1d73077cb41c60dd84a",
+    "experiments/v1420_canonical_event_installation/transaction.py": "c4452fa112ec995eb01e91d928871fb0441ced3e5e4f804715ef6a469eb2c675",
+    "experiments/v1420_canonical_event_installation/entry.py": "5390408d6d2198a7fe1121f33240c0e01074840c182d223ba0972763474341a4",
+    "experiments/v1420_canonical_event_installation/PROTOCOL.md": "db464436728e0b60d7c7d223467718c87237bc324f7083dbc841032a217b6a57"
+  },
+  "physical_admission": false
+}

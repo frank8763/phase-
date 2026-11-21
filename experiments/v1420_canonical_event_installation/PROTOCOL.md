@@ -1,0 +1,9 @@
+# V1420 当前CUSP事务保存与canonical owner事件安装
+
+只在Phase本聊天推进，原V1417失败和V1418几何分析不重跑，V1419冻结源不改。新增具体canonical owner源，把原t0 prefix observer、真实scan/完整状态envelope、当前CUSP一次事务、CurrentReserve/PhysicalGuard/EvidenceSink/BridgeExecution安装和证书后fresh wire接在同一对象。生成器/审核/current reserve/实际步仍需独立登记run_phase CPU2单执行锁；本准备不注册数值或车辆轮。
+
+V1419记录仍有两个准备缺口：error/close写失败可能覆盖首异常；剩余累计预算被误限为单事件后端上限。新transaction保留原首异常及次保存/close错误，按明示per-event与全局剩余最小值预算，不加科学修订或预算。任何保存缺口明确记录，不能声称证据完整。
+
+一次新零模型生产入口资格，仅演练真实生产事务的绑定首错/首错后保存失败、完整拒绝分支保存/partial准确或未知账。使用V1417保存数组作为存储输入，明确全部为软件故障注入/数组拷贝，0模型/预测/物理，不把复制的200数组加到积分分母；禁止调用任何Predictor构造/step。原guard/profile/CPU2/锁/JSON保持。
+
+完整外层native/ROS进程生命周期、normal prefix实际命令泵、桥后新plan首segment的事件合同、完整数值审核、跨模式控制/全state replay/pair与准确整路存储和时间预算仍未完成。本版canonical owner在桥后拒绝普通非零RPP直接旁路，必须下一当前event证书；不擅自增加50刹停/改250门或重置参考。不得用本准备launch整路或复活闭批。
