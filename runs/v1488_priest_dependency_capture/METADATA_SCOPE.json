@@ -1,0 +1,44 @@
+{
+  "recorded_unix": 1795268872.1280434,
+  "scope": "BOUNDED_PRIEST_CPU_DEPENDENCY_METADATA_ONLY",
+  "models_authorized": false,
+  "CPU": 5,
+  "maximum_metadata_requests": 5,
+  "maximum_each_response_bytes": 1048576,
+  "maximum_total_response_bytes": 5242880,
+  "request_timeout_s": 15,
+  "maximum_wall_s": 100,
+  "absolute_root_deadline_unix": 1795395600,
+  "packages": [
+    [
+      "jax",
+      "0.4.30"
+    ],
+    [
+      "jaxlib",
+      "0.4.30"
+    ],
+    [
+      "scipy",
+      "1.14.1"
+    ],
+    [
+      "ml_dtypes",
+      "0.4.0"
+    ],
+    [
+      "opt_einsum",
+      "3.4.0"
+    ]
+  ],
+  "selection_reason": "Fixed CPU/Python3.10 compatibility candidates for originaljit API and currentNumPy2.2.6; candidates are not proven compatible; no version search or algorithm tuning",
+  "allowed_host": "pypi.org",
+  "wheel_download_authorized": false,
+  "install_authorized": false,
+  "author_or_JAX_import_authorized": false,
+  "optimizer_authorized": false,
+  "existing_numpy_and_matplotlib_preserved": true,
+  "all_runs_limit_bytes": 10737418240,
+  "root_reserve_bytes": 536870912,
+  "zero_new_scientific_revisions": true
+}
