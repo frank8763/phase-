@@ -101,3 +101,5 @@ V1427准备：最新peer/lifecycle、native/ROS CLI和一次监督源码已写�
 V1428软件event完整文件路径被NumPy标量接口拒绝并保留；V1429新标量转换后完整文件路径+12拒绝负例通过，V1430 actual全state/encoder/memory/ctrl关联preflight+7负例通过。全部0模型/Allocator重算/物理/实际replay/整路；新lifecycle/supervisor显式接V1429审核和V1430 allocation，但完整执行未资格。逐支证据byte预算及完整生命周期/双钟/分账等仍缺，禁止车辆准入。详见 runs/v1430_actual_allocator_provenance/PREPARATION_CHECKPOINT.json。
 
 V1427–V1430全120成员2269508B已全部远端实际恢复SHA核过，唯一382f3659/Release phase-v1430-bound-event-allocator-preparation-20261121，原件保留，仅清已核运输。V1431已写逐支quota/lossless stream源码，尚AST/未接实际写路径或资格；无整路准入，所有模型/peer/worker退出，旧物理分母保持。
+
+V1431 held-index/quota/生成分支与actual sink/capture/root文件I/O资格通过，全部0模型/物理；但只读du全runs单次0.409s>原200ms命令门，逐回调du不能实际准入。V1432已写pre-wire grant与child writer cap草稿，仅AST/未接全生产写路径或资格，下一补实际phase和全部writers；安全与来源门不改，整路仍0次。新V1431证据待下一增量备份，旧V1430全核备份不重复。
