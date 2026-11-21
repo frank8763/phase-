@@ -1,0 +1,31 @@
+{
+  "recorded_unix": 1795266433.544136,
+  "revision": 7,
+  "parent_previous_revision": 6,
+  "kind": "DISCLOSED_ENGINEERING_PRIEST_POLYNOMIAL_PROPOSAL_CURRENT_ACTUATOR_SEAM",
+  "reason": "Separate PRIEST-derived candidate source and causal/current actuator interface; original MPPI static non-success/dependency and RPP current-model refusal preserved.",
+  "author_repository": "fatemeh-rastgar/PRIEST",
+  "author_commit": "4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41",
+  "author_core": "priest/src/mpc_non_dy.py:batch_crowd_nav + priest/src/bernstein_coeff_order10_arbitinterval.py",
+  "not_author_D_PRIEST_car_reproduction": true,
+  "not_unmodified_author_whole_system": true,
+  "wrapper_excluded": "planner_nonhol_dy.py; no author actor MAT/odom/control privileges or old heading-yaw runtime",
+  "accepted_control_domain": "EMPTY_UNTIL_CURRENT_RESPONSE_AND_ACTUAL_SAME_CONTROLLER_QUALIFIED",
+  "changes_declared": [
+    "Causal common Phase observations only, complete current body/wheel/Allocator/mode/gear source binding",
+    "Author core may propose rear-world degree10 polynomial positions; no direct body command authority",
+    "Explicit zero-speed/reverse/coordinate and full-footprint response obligations; never clip or fabricate derivatives"
+  ],
+  "unchanged_gates": [
+    "source200ms post-certificate",
+    ".22prediction/.15actual",
+    ".12m/.20rad segment",
+    "fixed2cm/.1rad reference",
+    "complete200 braking/tail",
+    "N/Nplus1 and qpos/qvel/ctrl/mocap<=1e-8"
+  ],
+  "models_authorized": false,
+  "numerical_or_physical_round_registered": false,
+  "no_new_seeds": true,
+  "no_old_task_relaunch": true
+}
