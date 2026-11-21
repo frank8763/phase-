@@ -1,0 +1,26 @@
+{
+  "recorded_unix": 1795278056.2104225,
+  "scope": "PURE_SAVED_JSON_AND_SOURCE_DIAGNOSIS",
+  "source_generator_sha256": "fa948566271284434800b211d944783c4817f5f6318e81ed78d6b6795a64f504",
+  "source_packet_builder_sha256": "a02899523c03c9270649d60c8b234e9a68bce40b0b43af1b1f140768112efdf6",
+  "input_file_sha256": "b12c4687a1d022e11633861f03f6933a16f630bd4cc2d1e73c577a1d1e1b28bc",
+  "actual_origin_steering_keys": [
+    "measured_at",
+    "native_tick",
+    "position",
+    "velocity"
+  ],
+  "modeled_packet_steering_keys": [
+    "position",
+    "velocity"
+  ],
+  "metadata_native_tick": 6005,
+  "fixed_origin_native": 6005,
+  "identical_numeric_values_still_fail_whole_dict_equality": true,
+  "original_error_does_not_record_failing_key": true,
+  "not_claiming_measured_model_state_error_observed": true,
+  "no_model_reconstruct_or_replay": true,
+  "next_fix": "New source compare exact steering position/velocity only while source native/measurement provenance remains in unchanged current input SHA, with explicit metadata identity check; retain exact numeric origin equality and all scientific thresholds. Save pure origin-field diagnostic before refusal in new version; no old source edit.",
+  "models": 0,
+  "analytical_native": 0
+}
