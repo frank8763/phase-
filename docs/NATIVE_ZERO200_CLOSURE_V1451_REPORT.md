@@ -1,0 +1,11 @@
+# V1451 原始零控制收尾资格：保存拒绝
+
+一次有限资格已关闭失败，不重跑。原WE10060001规范工厂完整返回1，内部模型构造次数未知；从真实t0沿原V1449 Pump.prefix_step(stop_tail=True)和原V1423 NativeStep连续mode/gear施加200次零请求，原逐native物理/接触/控制守卫执行，actual与原实际控制compute各200。未创建事件事务、私有预测、ROS或导航。
+
+随后原Vehicle.finish保存CONTACTS.json.gz时，gzip文本TextIOWrapper调用WriteProxy.fileno，被既有输出边界拒绝。首次完整错误保存；关闭时原finish再次碰到已写NPZ导致FileExistsError次错，首错未被覆盖。NATIVE_TRACE、初始完整状态、原始逐步receipt和模型保持；CONTACTS部分文件、SENSORS及合并Nplus1未执行的缺口明确保留，不在关闭后重构。独立Allocator与ownreplay均未执行0，不能称完整安全审核或科学通过。
+
+父账actual116080、ownreplay104905、vehicle_task_starts11仅启动尝试；科学修订5，原WE整路0。REVIEW_PENDING原SHA恢复，执行锁空闲，全部源SHA未变。
+
+源准备32成员1199813B已完整远端块/成员/重组/index SHA核过；唯一Git c39ac6823654c1fe48b0e0e6cba13223df73f0be。后续实际失败92成员6624235B使用同一已推source commit另Release phase-v1451-original-zero200-save-refused-20261121，未第二push；原始文件保留，仅清已核运输。归档完整性不修复原始缺失证据，也不等于科学PASS。
+
+新V1454只修改两个原确切压缩文件的受限二进制fileobj文本适配，底层继续逐字节收费/raw descriptor继续拒绝；先存真实Nplus1再存接触，finish仅尝试一次。新CPU2/run_phase/原guard零模型实际I/O资格通过原红例、6个路径/模式/descriptor负例、压缩输出精确收费与无损往返。未变旧入口通过准确AST/SHA引用，不重刷。新数值资格须以自身COMPLETION/RESULT判断，不将入口或源归档当数值PASS。

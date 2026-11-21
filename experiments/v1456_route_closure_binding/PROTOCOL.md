@@ -1,0 +1,9 @@
+# V1456 新生产生命周期闭尾绑定准备
+
+V1454独立实际零尾/Allocator/ownreplay资格一次通过，actual200、实际controlcompute200、独立Allocator200、ownreplay200；完整201状态/200控制与初始+实际trace无损一致，重放/控制误差0与contact一致。V1451失败和原缺口永久保留，不重跑。此成功只原t0 local零尾，不是跨模式/非零event/全route。
+
+新lifecycle明确绑定V1454受限压缩capture，要求真实V1454CLOSED_REVIEW后仍必须独立完整route准入；不把这个窄PASS填全部gate。其余原V1449 current event owner/peer/模型/原严格科学门保持。当前仅生产lifecycle草稿AST，真实CLI/supervisor新输出绑定/完整Nplus1先保存/累计mode来源完整独立审核/预算和所有whole-route gate仍须补齐。没有COMPLETE或新物理launch。
+
+下一先完成V1454真实raw+新源恢复核；再完成确切外层CLI/once supervisor和保存顺序，不重刷旧Torch/ROS/IO suite，不播放旧控制数组、不用zero-tail冒充当前event证书。900s实际checkpoint。修订5、父actual116280/ownreplay105105/12启动尝试/WE整路0。
+
+新增state_capture.py具体保存实际initial+已完成vehicle.rows的N+1和已施加ctrl，放在接触gzip前；无未来/接触重构，actualcount与记录数差异单列。现在lifecycle已接此source-first保存但仅AST，不能称已资格。V1454两原mandatory factory t0扫描准确记2，0tail/policy扫描；旧协议无scan措辞过宽已在CLOSED_REVIEW如实保留。
