@@ -1,0 +1,3 @@
+# V1448 整模块guard源及前次拒绝恢复
+
+零模型归档V1445–V1448到runs/v1445_immutable_initializer_writeguard首次归档锚点，基链全核V1443。完整FIRST_ERROR/RESULT及原unknown构造数保留，V1447新source/目标资格未当完整初始化PASS。32MiB块/全部runs10GiB+下载32MiB+root512MiB，实际远端逐块/成员/全流/index SHA后仅清运输；Git必要source小metadata先commit后本批唯一push/ref，不第二push旧V1443。
