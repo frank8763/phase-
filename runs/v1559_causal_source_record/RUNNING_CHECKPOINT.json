@@ -1,0 +1,43 @@
+{
+  "unix": 1795299504.133736,
+  "active_round": "v1559_causal_source_record",
+  "owned_child": {
+    "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4",
+    "command": [
+      "ionice",
+      "-c",
+      "3",
+      "taskset",
+      "-c",
+      "2",
+      "nice",
+      "-n",
+      "19",
+      "./run_phase.sh",
+      "experiments/v1559_causal_source_record/driver.py"
+    ],
+    "pgid": 900811,
+    "pid": 900811,
+    "source_manifest_sha256": "6b37823baee5d1aac3115d4bcc35715b0d35e155cae7980e76a39463becd2ff9"
+  },
+  "owner_tool_session": 59451,
+  "phase": "PYTHON_GENERATION",
+  "closed": false,
+  "last_saved_generation_native": 160853,
+  "last_saved_nominal_native": 1223,
+  "last_saved_witness_native": 159630,
+  "last_saved_Predictor": 1,
+  "last_saved_copy": 72,
+  "last_saved_CPP_Engine": 0,
+  "last_saved_audit_native": 0,
+  "last_saved_record": "b035_prospective",
+  "last_stream_bytes": 3463277,
+  "snapshot_not_final_counts": true,
+  "physical_native": 0,
+  "replay_native": 0,
+  "optimizer_calls": 0,
+  "science": 10,
+  "whole_route_passed": false,
+  "root_deadline_unix": 1795395600,
+  "next": "monitor this owned once process until closure; no other model/source target or duplicate launch; on closed inspect exact RESULT/GENERATION and distinct runtime recovery"
+}
