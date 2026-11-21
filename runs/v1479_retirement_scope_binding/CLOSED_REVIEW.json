@@ -1,0 +1,125 @@
+{
+  "closed": true,
+  "passed": false,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 6205,
+  "canonical_accounting": {
+    "actual_native": 6205,
+    "actual_inflight_unknown": false,
+    "original_RPP_native": 5520,
+    "shared_bridge_native": 485,
+    "applied_stop_tail_native": 200,
+    "completed_original_RPP_native_lower_bound": 5520,
+    "completed_shared_bridge_native_lower_bound": 485,
+    "completed_stop_tail_native_lower_bound": 200,
+    "complete200_applied_zero_tail": true
+  },
+  "own_replay_native": 0,
+  "independent_Allocator_unexecuted": true,
+  "independent_recorded_audit_unexecuted": true,
+  "pair_unexecuted": true,
+  "private_mujoco_native": 0,
+  "model_generation_and_audit": {
+    "generation_native": 248235,
+    "audit_native": 0,
+    "generation_inflight_unknown": false,
+    "audit_inflight_unknown": false
+  },
+  "generation": {
+    "passed": false,
+    "closed": true,
+    "physical_admission": false,
+    "physical_native": 0,
+    "mujoco_initializations": 0,
+    "replay_native": 0,
+    "analytical_native": 248235,
+    "analytical_inflight_unknown": false,
+    "analytical_predictor_constructions": 1,
+    "analytical_branch_copies": 1235,
+    "complete_braking_branches": 1235,
+    "nominal_native": 1235,
+    "input_sha256": "438dd57c289768b7bc15c497d6b3ddd8300a6497e87b6230c1040d9f79c5119f",
+    "qualified_method": "ORIGINAL_RPP_CURRENT_RESPONSE",
+    "geometry_kind": "FULL_PERIOD_DISK",
+    "causal_snapshot_sha256": "545417c2d1af9980e520dd1144ea88c6156c13283201eedb77d7c20cb37642cb",
+    "model_wheel_feedback": "EXACT_MEASURED_T0_THEN_ORIGINAL_SCALAR_COORDINATES",
+    "error": "AssertionError('CURRENT_RPP_MODELED_REFUSAL')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1415_unified_causal_witness/generator.py\", line 113, in generate\n    assert reply['status']==4 and reply['error_code']==0, 'CURRENT_RPP_MODELED_REFUSAL'\nAssertionError: CURRENT_RPP_MODELED_REFUSAL\n",
+    "stop_reason": "CURRENT_EVENT_WITNESS_REFUSED_OR_EXCEPTION",
+    "original_RPP_nominal_native": 1235,
+    "shared_bridge_nominal_native": 0,
+    "source_unchanged": true,
+    "wall_s": 45.25690624903655,
+    "minimum_nominal_tube_m": 0.3496515108122652,
+    "minimum_braking_tube_m": 0.3490938918460262
+  },
+  "current_reserve": {
+    "analytical_native": 0,
+    "predictor_constructions": 0,
+    "analytical_inflight_unknown": false,
+    "construction_inflight_unknown": false
+  },
+  "first_error": {
+    "error": "AssertionError('CURRENT_EVENT_GENERATION_REFUSED')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1479_retirement_scope_binding/lifecycle.py\", line 110, in _run\n    event_stop.before_iteration();pump.iteration();event_stop.after_iteration()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1479_retirement_scope_binding/pump.py\", line 98, in iteration\n    try:ready=self.owner.on_cusp(packet)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1449_route_initializer_binding/canonical_owner.py\", line 48, in on_cusp\n    request,ready,states=self.transaction.run(notice)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1449_route_initializer_binding/transaction.py\", line 89, in run\n    assert generation['passed']is True and generation['closed']and not generation['analytical_inflight_unknown'],'CURRENT_EVENT_GENERATION_REFUSED'\nAssertionError: CURRENT_EVENT_GENERATION_REFUSED\n"
+  },
+  "full_Nplus1_saved": {
+    "recorded_actions": 6205,
+    "recorded_Nplus1_states": 6206,
+    "reported_actual_count": 6205,
+    "unrecorded_actual_gap": 0,
+    "complete": true,
+    "sha256": "c0eeebe6257f634bdd71e15787ea4e980a6544a7d64b63723cfa16cf95d2c606",
+    "no_future_states_or_contacts_fabricated": true
+  },
+  "physical": {
+    "actual_native": 6205,
+    "fully_recorded_native": 6205,
+    "minimum_actual_clearance_m": 0.2500331552976056,
+    "minimum_self_margin_m": 0.009164461593973494,
+    "bad_contacts": 0,
+    "final_body": [
+      0.6790212193027577,
+      -0.4802429336827692,
+      0.38615656827309136,
+      -1.8698354003941346e-06,
+      3.0706577981129104e-06
+    ],
+    "final_translation_speed_m_s": 1.871747445926353e-06,
+    "root_guard_native_count": 6205,
+    "goal_distance_m": 3.652199556768838,
+    "first_actor_detection": {
+      "native_tick": 4475,
+      "sim_time": 44.749999999999666,
+      "xy": [
+        0.03951053947290284,
+        -0.7293176133084903
+      ],
+      "rays": [
+        29
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 0.6914981542038107
+  },
+  "save_errors": [],
+  "source_unchanged": true,
+  "first_actual_event_notice_reached": true,
+  "event_origin_native": 6005,
+  "model_witness_generation_attempted": true,
+  "event_bridge_actual_execution": false,
+  "whole_route_passed": false,
+  "no_relaunch_or_frozen_edit": true,
+  "no_infinite_RPP_rescue": true,
+  "review_original_restored": true,
+  "lock_idle": true,
+  "owner_exited": true,
+  "actual_raw_backup_pending": true,
+  "model_plugin_rejection": {
+    "status": 6,
+    "error_code": 104,
+    "source": "saved RPP_ACTION_DONE reply at modeled7240 + original controller console collision-ahead warnings/controller patience exceeded",
+    "not_actual_collision_or_global_infeasibility": true
+  }
+}

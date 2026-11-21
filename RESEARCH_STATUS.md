@@ -2419,3 +2419,15 @@ V1474 fullactual4740failure+V1477earlydraft170members13610539B allremoteactualbl
 
 
 V1479 one new no-model streamedretirementtarget PASS CLOSED/frozen:productionPump.receive realUnixdatagram300authenticatedoldstate replies allretired/notapplied,300durablequota-chargedrows/exacthashchain/cachedlast256/0hotdu. Currentvalidaccepted/binding-origintamperrefused/201msobservationretired; sinkfirsterror no counter/chain/previouscommit. OriginalacceptanceAST exact, priorunchangedsuites SHA/ASTreuse, V1477pretargetfailure preserved.0models/physics/replay/nav; currentfullsourcebackup required beforeonce runtime.
+
+
+V1477 failedentry+V1479 fullqualifiedcurrent source87members1536866B allremoteactualblock/member/whole/indexSHA verified; uniquef93198a9/Release phase-v1479-streamed-route-retirement-source-20261121,transportonlyclear/rawretain/allI/Oclosed/no secondpush. New narrowonce admission may be prepared aftercurrent clocks/source/peak, not scientificruntimePASS.
+
+
+V1479 distinctonce originalWE firstliveevent launched after87membercomplete source recovery/newnarrow admission/sourceclockoncepeak. Allruns9651421184B/fullpeak10691608576B<10GiB margin45809664B; parent19taskattempts/7partialregistrations, prioractual121625/replay105105 pendingnewRESULT. OwnerCPU5/nativeCPU2run_phase singlelock/5400scope/firstevent1, no relaunch or frozenedit. Toolsession75601 active; scientific/wholeoutcomeunknown.
+
+
+V1479 firstREALCUSPnotice reached atactual6005; currentmodelwitness CLOSED REFUSED originalRPPstatus6/error104/model7240 collisionahead+patience. Exact248235analytic=1235nominal+1235x200stop/1Predictor/1235copies,0successdependentaudit; no eventbridgeapplied/0MuJoCoprivate. Actual6205=5520RPP+485disclosedlocalzero+200errorstop/Nplus16206/fullcontactssensorssummary/gap0/saveerrorsnone, Allocator/ownreplay/recorded/pair0unexecuted. Parent19starts/7partialregs/actual127830/replay105105/science5, whole0. ReviewSHArestore/lockidle/allownersclosed/sourceunchanged. Preserve currentfiniteRPPnon-success, no infiniteRPPrescue or re-execution. Fullfailedrawbackup next then fairbaseline preparation.
+
+
+V1481 next concretebaseline binder reads originalcoherentMPPI horizon_m1s01/WE10060001 and exactcommonRPPtaskfields/taskparamSHA, preserves originaldependencies; RPPlabeledwitness cannot certifyMPPI and runtimealwaysrefusesmissinggates.0models/control/ROS/numericalfixtures; no revision/roundregistered. OriginalV1479 currentRPPnon-successclosed/no endlessrescue. Fullfuture224+224+32+512MiBpeak presently exceeds10GiB~13MiB; fullnewfailure backup and exactverifiedduplicatecachecleanup required beforeanotherlargescope. Checkpoint saved.

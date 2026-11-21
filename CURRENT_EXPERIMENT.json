@@ -11,7 +11,7 @@
   "next_physical_authorized": false,
   "current_review": "docs/PHASE_NAVIGATION_FULL_REVIEW_20261112.md",
   "current_pipeline": "docs/PHASE_NAVIGATION_CURRENT.md",
-  "latest_report": "docs/LIVE_RETIREMENT_BOUND_V1474_REPORT.md",
+  "latest_report": "docs/LIVE_FIRST_EVENT_RPP_V1479_REPORT.md",
   "latest_completed": {
     "closed": true,
     "physical_observer_main_and_repeat_passed": false,
@@ -11113,7 +11113,7 @@
     "root_lock_idle": true,
     "next": "Complete actual new-source remote recovery, prepare distinct zero200 admission, preregister once 600s scope and execute only bounded canonical factory+actual200+Allocator200+ownreplay200 if all gates remain satisfied. No navigation."
   },
-  "next_preparation": "experiments/v1479_retirement_scope_binding/PROTOCOL.md",
+  "next_preparation": "experiments/v1481_post_event_baseline_contract/PROTOCOL.md",
   "latest_zero200_closure_qualification": {
     "recorded_unix": 1795242668.9250162,
     "closed": true,
@@ -11215,43 +11215,18 @@
     "verified_unix": 1795243226.3096507
   },
   "latest_live_first_event_preparation": {
-    "recorded_unix": 1795252582.697606,
-    "source_status": "CLOSED_ENTRY_QUALIFIED_FROZEN",
+    "recorded_unix": 1795253212.5616524,
+    "concrete_original_task_parameter_binder_written": true,
+    "source_status": "DRAFT_READONLY_BINDING_INSPECTED",
     "models": 0,
     "physical_native": 0,
-    "allocator_recomputations": 0,
-    "actual_replay_native": 0,
-    "streamed_retirement_proof": {
-      "authenticated_old_state_packets": 300,
-      "durable_retirement_rows": 300,
-      "bounded_memory_rows": 256,
-      "first_cached_sequence": 44,
-      "last_cached_sequence": 299,
-      "final_chain_sha256": "d404bc3c96185b8ca477d995cf064d07252cf38560d840dcd8f2be5d17e9e333",
-      "hot_du_calls": 0,
-      "no_stale_returned_or_applied": true,
-      "software_only_not_physical": true
-    },
-    "sink_failure_proof": {
-      "original_first_error_preserved": true,
-      "retired_total_not_advanced": true,
-      "chain_not_advanced": true,
-      "accepted_sequence_not_advanced": true,
-      "no_action": true
-    },
-    "original_acceptance_AST_exact": true,
-    "old_V1474_actual_failure_and_V1477_entry_failure_retained": true,
-    "source_remote_recovery_pending": true,
-    "admission_or_launch": false,
-    "storage": {
-      "passed": true,
-      "allocated_all_runs_bytes": 9647407104,
-      "estimated_cap_peak_bytes": 10687594496,
-      "limit_bytes": 10737418240,
-      "inode_counted": true,
-      "models": 0
-    },
-    "next": "Recover new frozen source and V1477 failed entry remotely; currentpeak/once narrow admission then distinct firstevent runtime only."
+    "old_RPP_actual_current_event_non_success_closed": true,
+    "new_scientific_revision_registered": false,
+    "new_runtime_admission": false,
+    "old_native60000_not_admission": true,
+    "actual_raw_backup_pending": true,
+    "storage_peak_currently_refused": true,
+    "next": "Complete current failedraw remote recovery; exactverified duplicatecache cleanup if needed, then actual/modeled MPPI plugin backend fairness preparation with missing gates explicit."
   },
   "latest_route_closure_source_recovery": {
     "passed": true,
@@ -11310,26 +11285,30 @@
     "verified_unix": 1795249439.9445405
   },
   "latest_live_first_event_runtime": {
-    "recorded_unix": 1795252246.6111426,
+    "recorded_unix": 1795253077.6735542,
     "closed": true,
     "passed": false,
-    "actual_native": 4740,
+    "actual_native": 6205,
     "canonical_accounting": {
-      "actual_native": 4740,
+      "actual_native": 6205,
       "actual_inflight_unknown": false,
-      "original_RPP_native": 4505,
-      "shared_bridge_native": 35,
+      "original_RPP_native": 5520,
+      "shared_bridge_native": 485,
       "applied_stop_tail_native": 200,
-      "completed_original_RPP_native_lower_bound": 4505,
-      "completed_shared_bridge_native_lower_bound": 35,
+      "completed_original_RPP_native_lower_bound": 5520,
+      "completed_shared_bridge_native_lower_bound": 485,
       "completed_stop_tail_native_lower_bound": 200,
       "complete200_applied_zero_tail": true
     },
     "own_replay_native": 0,
-    "first_error": "ROUTE_RPC_RETIREMENT_LIMIT at superseded-state reply257",
-    "actual_raw_backup_pending": false,
-    "first_live_event_executed": false,
-    "whole_route_passed": false
+    "generation_native": 248235,
+    "independent_model_audit_native": 0,
+    "first_error": "CURRENT_RPP_MODELED_REFUSAL status6/error104 collisionahead/controller patience",
+    "actual_raw_backup_pending": true,
+    "first_actual_event_notice_reached": true,
+    "event_bridge_actual_execution": false,
+    "whole_route_passed": false,
+    "no_infinite_RPP_rescue": true
   },
   "latest_resource_expiry_raw_remote_recovery": {
     "passed": true,
@@ -11372,5 +11351,19 @@
     "models": 0,
     "physical_admission": false,
     "verified_unix": 1795252425.707759
+  },
+  "latest_streamed_retirement_source_recovery": {
+    "passed": true,
+    "source_commit": "f93198a9021dd4618c3bcf4a8f876a89013ed6d7",
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1479-streamed-route-retirement-source-20261121",
+    "every_asset_actual_download_SHA": true,
+    "every_member_SHA_and_link_text": true,
+    "whole_archive_SHA": true,
+    "recovery_index_download_SHA": true,
+    "members": 87,
+    "archive_bytes": 1536866,
+    "models": 0,
+    "physical_admission": false,
+    "verified_unix": 1795252667.0917194
   }
 }
