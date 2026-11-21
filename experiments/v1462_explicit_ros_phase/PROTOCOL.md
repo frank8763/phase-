@@ -1,0 +1,7 @@
+# V1462 显式原ROS阶段时钟依赖
+
+V1460唯一真实partial-navigation scope已CLOSED FAILED，不重launch/qualify/audit/replay/改源。ROS真实normal分支__import__('phase_budget')缺模块，监督准确ACTUAL_ROS_EXIT_WITHOUT_COMPLETE_EVIDENCE并关进程/review原SHA恢复/锁闲。原native RESULT缺失和机器计数None永久保持；另有明确source-derived补充：原冻结factory前INITIALIZATION_ATTEMPT未落盘、physics目录不存在，factory调用/actual/private/Allocator/replay源推导0；这不是伪造机器RESULT。父13任务启动尝试、1次partial-navigation注册，实际导航wire/action源推导0，完整WE整路0。旧V1458/devnull入口失败同样保留。
+
+唯一新生产修订：真实route_ros normal分支通过phase_clock(window,limits)显式import精确冻结V1449 phase_budget.py，正是native PhaseRuntime所用原实现；不改变任何阶段cap/root/科学方法/当前state或control。新目标资格只实际CPU3生产routeROS模块导入与该normal分支原函数构造/normal阶段deadline及source身份，0节点/controller/模型；旧scope/pipe/identity和unknown资格按归一AST及V1460源SHA复用，不复刷旧ROS/controller生命周期/旧数值。原隐式import缺失实红例保留。所有科学参数/门、原WE10060001/RPP.6/.1/原goal/cause权限、事件index0完成停止与partial分母、5400s/actual40000/一event5000nominal及gen/audit1005000/完整200尾/全state replay1e-8/224MiB证据+224MiB归档+32MiB下载+512MiB根预留不变，修订5不增。
+
+仍只新LIVE_FIRST_EVENT_ONLY_ADMISSION窄scope，不制作whole-route COMPLETE；新源首次目标入口通过且冻结、V1460完整失败和本新source全部远端成员恢复核、实际全runs峰值/独立once/window/父账登记后，才可一次新有限运行资格。原fullgoal.45/forward7.5/发现后1m结果保留、局部event runtime pass另表。当前未新qualification/SOURCE_FREEZE/admission/ROUND_WINDOW/LAUNCH，不能立即model/nav launch。
