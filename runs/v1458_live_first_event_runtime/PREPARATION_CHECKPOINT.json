@@ -1,5 +1,5 @@
 {
-  "recorded_unix": 1795244254.967051,
+  "recorded_unix": 1795244295.7640839,
   "models": 0,
   "physical_native": 0,
   "source_status": "CONCRETE_PRODUCTION_DRAFT_UNQUALIFIED",
@@ -15,5 +15,16 @@
   "full_goal_gates_retained_component_result_separate": true,
   "once_supervisor_and_local_event_audit_concrete_source_written": true,
   "actual_parent_supervisor_stdout_bounded_pipe_concrete": true,
-  "exact_owned_process_boot_start_tick_and_pgid_fallback_close_written": true
+  "exact_owned_process_boot_start_tick_and_pgid_fallback_close_written": true,
+  "checkpoint_within_900s": true,
+  "new_source_backup_at_snapshot_pending": false,
+  "source_snapshot_remote_recovered": {
+    "source_commit": "483f775b5fe776d1bd77342d16d8cbdad39c11cc",
+    "members": 63,
+    "archive_bytes": 1464775,
+    "draft_only_no_runtime_qualification": true
+  },
+  "later_unbacked_source_changes": [
+    "supervisor WriterBudget initialization moved inside owner try so constructor failure restores parent/review; AST only"
+  ]
 }

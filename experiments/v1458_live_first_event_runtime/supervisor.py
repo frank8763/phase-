@@ -95,9 +95,9 @@ def launch(role):
  parent['rounds'].append(dict(id=round_id,kind='actual_original_WE_partial_navigation_first_event_runtime_qualification',status='RUNNING',started_unix=now,hard_stop_unix=window['absolute_deadline_unix'],maximum_actual_native=40000,maximum_own_replay_native=40000,maximum_generation_native=1005000,maximum_independent_model_audit_native=1005000,maximum_current_reserve_analytical_native=8000000,scientific_revision=5,role=role,source_qualification_sha256=sha(O/'LIVE_FIRST_EVENT_ONLY_ADMISSION.json')));parent.update(active_round=round_id,models_now_authorized=True,status='RUNNING_ORIGINAL_WE_CURRENT_EVENT_ROUTE');parent['vehicle_task_starts']+=1;parent['navigation_prefix_task_starts']=parent.get('navigation_prefix_task_starts',0)+1;put(P,parent)
  # The once owner drains the actual supervisor stdout through the same
  # already reserved SUPERVISOR_LOG role. No detached unbounded log writer.
- writer=exact('v1458_parent_stdout_writer',C/'writer_budget.py').WriterBudget(out,role='SUPERVISOR_LOG',maximum_bytes=caps['SUPERVISOR_LOG'],source_identity=approval['qualification_sha256'])
  job=None;owner_errors=[]
  try:
+  writer=exact('v1458_parent_stdout_writer',C/'writer_budget.py').WriterBudget(out,role='SUPERVISOR_LOG',maximum_bytes=caps['SUPERVISOR_LOG'],source_identity=approval['qualification_sha256'])
   with(out/'supervisor.console').open('xb')as log:
    pipe=BoundedConsole(log,writer,out/'supervisor.console')
    job=subprocess.Popen([sys.executable,'-B',str(C/'supervisor.py'),'--work',role],cwd=R,env=env(),stdout=subprocess.PIPE,stderr=subprocess.STDOUT,start_new_session=True)
