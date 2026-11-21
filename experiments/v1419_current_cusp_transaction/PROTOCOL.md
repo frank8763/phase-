@@ -1,0 +1,9 @@
+# V1419 当前CUSP完整证书事务接入准备
+
+V1417原保存32210完整时序方法已CLOSED REFUSED，gen200/audit0不重跑。V1418纯几何显式点对表明提高法向分辨率不能使同一多边形/原固定误差包络过.22门；不为成功缩包络、跳首刹停或扩大方法域。下一接实际原route_ros CUSP_NEXT_SEGMENT_CHECK的当前输入事务，任一当前状态完整储备拒绝即如实关闭该原任务，不无限救基线。
+
+本版具体生产源把OwnerRequest当前完整状态/连续mode/gear/snapshot绑定接入一次generator→保存完整/partial→成功依赖audit→commit。生成与审核只能当前已登记run_phase CPU2单锁中调用；真实RPP模型RPC由独立已资格peer回调提供，本源不启动peer/ROS/车辆，也不回放组件控制。首错保存准确/未知账，任何错误不提交certificate。完整actual outer loop、正常prefix接管、实际guard/reserve安装、跨模式、全state replay/pair与预算仍须后续接齐，不允许车辆launch。
+
+修复发现的V1415冻结audit内部错误目录：v1415_scalar_feedback_witness/generator.py不存在。新audit只更正到原冻结V1415统一后端，新增同一生产backend_binding函数供入口实际调用检查；数值算法/门/参考不改，科学修订仍4，旧audit文件不改。本次只允许新源binding/原guard/拒绝模型profile的零模型入口资格，不能执行V1417旧审核或任何新模型积分。
+
+新入口资格将实际run_phase CPU2，原writeguard，精确函数来源/坐标getter、NumPy标准JSON、禁止任何Predictor构造/step。模型资格仍未执行，不把该检查称作完整audit成功。全源/入口与检查点写出，下一完整实际outer owner仍不准入。
