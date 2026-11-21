@@ -16,11 +16,11 @@
   "remaining_archive_download_reserve_bytes": 268435456,
   "root_reserve_bytes": 536870912,
   "storage_limit_bytes": 10737418240,
-  "finalization_reserve_s": 600,
+  "finalization_reserve_s": 1260,
   "replay_reserve_s": 120,
   "replay_wall_s": 300,
   "independent_recorded_audit_wall_s": 240,
-  "ROS_shared_route_wall_s": 4560,
+  "ROS_shared_route_wall_s": 4140,
   "ROS_close_wall_s": 120,
   "witness": {
     "maximum_events": 8,
@@ -47,5 +47,6 @@
     "final_metadata": 60
   },
   "root_guard_slack_s": 60,
-  "phase_budget_not_yet_integrated": true
+  "phase_budget_not_yet_integrated": false,
+  "shared_phase_integration_qualified": false
 }
