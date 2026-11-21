@@ -1,0 +1,9 @@
+# V1477 streamed actual-route retirement receipts
+
+V1474 actualfirstevent CLOSED FAILED at old list256limit on257thsuperseded-state reply,0staleapplied; allraw and complete4740actions/4741states/200tail retained. Never rerun or edit frozenV1474. No source200ms,physics or finite-method failure was observed.
+
+New routecommand fork keeps every original packetidentity/run/sequence/source/binding/origin/twist/currentnative/clock/200ms acceptance byte-equivalent. For fully authenticated but superseded/consumed/expired replies, replace memorylist total-limit with last256 boundeddeque and exact cumulativetotal/hashchain. Mandatorysink synchronously flushes each retirement row/fullpacket/sequence/previoushash/newhash to originalownerjournal under originalbytequota before committing bookkeeping. Failuretosave still closes and returns no command. Alreadyreceivedpacket record remains unchanged. No discardedreceipt, no staleaction application, no controller output replay.
+
+Original2sno-fresh-command limit,5400sroot/normal4140/byte224MiB/10GiB/allnative and scientific budgets unchanged. Legitimate stale metadata is evidence work, not accepted control or extra numericalsearch. No arbitrary larger retirement total budget; streaming memorybounded256 and total work bounded by existing root/sourcefreshness/byte/actual limits.
+
+Current source concreteAST only, noqualification/freeze/admission/window/launch. Next one necessary CPU2run_phase/originalguard/profile0model realproductionRPC target: stream beyond256 authenticatedoldstate software messages, prove noapply and exactboundedcache/total/hashchain/durablejournal; livecurrentreply stillaccepted and tamperedpacket stillrejected underoriginalgate; sinkfailure preservesfirsterror and doesnotadvancebookkeeping orapply. Priorunchanged wire/closure/ROS/controller/init scientificsuites reusedbyAST/SHA. Full currentfailedraw/newsource remote recovery before any future distinctonce scope. Whole-routeCOMPLETE absent.

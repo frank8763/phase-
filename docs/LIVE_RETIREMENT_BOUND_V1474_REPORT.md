@@ -1,0 +1,9 @@
+# V1474 bounded stale reply retention failure
+
+One actual originalWE first-live-event qualification CLOSED FAILED at the old route Commands.retired list limit256. The next fully authenticated reply had an observation from an earlier native state and was correctly ineligible; its retirement hit the memory-list cap before any application. Zero-model metadata inspection of the existing original received-packet journal identifies257superseded-state commands,256appendable before the257th refusal. This is not an independent numerical or source/fullstate audit.
+
+Canonical returned1/internalunknown;4505originalRPP/35disclosed localzero bridge actions then200errorstop =4740actual. The35localzero steps are ordinary disclosedexecution actions, not a completed currentevent bridge. N4740/Nplus14741/gap0/fullcontacts/sensors/summary saved, saveerrorsnone; root4740/badcontacts0/minactual.250033155298m/self.009175940583m are recorded only, no independent safety PASS. Actual actor firstsensorat4475; observed travelafterdetection.0445918258m, originalwholegoal not reached.
+
+Generation/audit/currentreserve/private0; independentAllocator/ownreplay/recordedaudit/pair0unexecuted. Originalsource/science unchanged, complete error200tail saved, firstevent0/wholeWE0. Parentactual121625=116885+4740/replay105105/taskattempt18/partialregistrations6/science5. RevieworiginalSHA restored/lockidle/allownedchildrenclosed. Preserve frozenfailure/no rerun.
+
+Next source should retain at most256retirement rows in memory while streaming every retirement receipt under originalbytequota into the already complete ownerjournal, with exact cumulativecount/hashchain. Originalidentity/currentstate/200ms acceptance and2sno-fresh-command/root/bytebudgets stay unchanged; no stale reply ever applied. This is evidence retention, not extra algorithm search budget.

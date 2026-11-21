@@ -1,0 +1,14 @@
+{
+  "closed": true,
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "target_RPC_not_executed": true,
+  "first_error": {
+    "error": "AssertionError('UNDECLARED_PUMP_STREAMING_CHANGE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1477_streamed_route_retirement/scope_entry.py\", line 47, in qualify\n    assert ast.dump(ast.parse(newpump))==ast.dump(ast.parse((F/'pump.py').read_text())),'UNDECLARED_PUMP_STREAMING_CHANGE'\nAssertionError: UNDECLARED_PUMP_STREAMING_CHANGE\n"
+  },
+  "static_source_diff_only": "helper import name v1477_before_wire_grant versus v1474_before_wire_grant not normalized in newpump assertion",
+  "no_relaunch_or_frozen_edit": true,
+  "next_version": "v1479_retirement_scope_binding"
+}

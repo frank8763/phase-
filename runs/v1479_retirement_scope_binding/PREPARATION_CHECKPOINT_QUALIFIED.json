@@ -1,0 +1,39 @@
+{
+  "recorded_unix": 1795252582.697606,
+  "source_status": "CLOSED_ENTRY_QUALIFIED_FROZEN",
+  "models": 0,
+  "physical_native": 0,
+  "allocator_recomputations": 0,
+  "actual_replay_native": 0,
+  "streamed_retirement_proof": {
+    "authenticated_old_state_packets": 300,
+    "durable_retirement_rows": 300,
+    "bounded_memory_rows": 256,
+    "first_cached_sequence": 44,
+    "last_cached_sequence": 299,
+    "final_chain_sha256": "d404bc3c96185b8ca477d995cf064d07252cf38560d840dcd8f2be5d17e9e333",
+    "hot_du_calls": 0,
+    "no_stale_returned_or_applied": true,
+    "software_only_not_physical": true
+  },
+  "sink_failure_proof": {
+    "original_first_error_preserved": true,
+    "retired_total_not_advanced": true,
+    "chain_not_advanced": true,
+    "accepted_sequence_not_advanced": true,
+    "no_action": true
+  },
+  "original_acceptance_AST_exact": true,
+  "old_V1474_actual_failure_and_V1477_entry_failure_retained": true,
+  "source_remote_recovery_pending": true,
+  "admission_or_launch": false,
+  "storage": {
+    "passed": true,
+    "allocated_all_runs_bytes": 9647407104,
+    "estimated_cap_peak_bytes": 10687594496,
+    "limit_bytes": 10737418240,
+    "inode_counted": true,
+    "models": 0
+  },
+  "next": "Recover new frozen source and V1477 failed entry remotely; currentpeak/once narrow admission then distinct firstevent runtime only."
+}

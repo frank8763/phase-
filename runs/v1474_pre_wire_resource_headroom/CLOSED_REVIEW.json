@@ -1,0 +1,107 @@
+{
+  "closed": true,
+  "passed": false,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 4740,
+  "canonical_accounting": {
+    "actual_native": 4740,
+    "actual_inflight_unknown": false,
+    "original_RPP_native": 4505,
+    "shared_bridge_native": 35,
+    "applied_stop_tail_native": 200,
+    "completed_original_RPP_native_lower_bound": 4505,
+    "completed_shared_bridge_native_lower_bound": 35,
+    "completed_stop_tail_native_lower_bound": 200,
+    "complete200_applied_zero_tail": true
+  },
+  "own_replay_native": 0,
+  "independent_Allocator_unexecuted": true,
+  "independent_recorded_audit_unexecuted": true,
+  "pair_unexecuted": true,
+  "private_prediction_native": 0,
+  "model_generation_and_audit": {
+    "generation_native": 0,
+    "audit_native": 0,
+    "generation_inflight_unknown": false,
+    "audit_inflight_unknown": false
+  },
+  "current_reserve": {
+    "analytical_native": 0,
+    "predictor_constructions": 0,
+    "analytical_inflight_unknown": false,
+    "construction_inflight_unknown": false
+  },
+  "first_error": {
+    "error": "AssertionError('ROUTE_RPC_RETIREMENT_LIMIT')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1474_pre_wire_resource_headroom/lifecycle.py\", line 110, in _run\n    event_stop.before_iteration();pump.iteration();event_stop.after_iteration()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1474_pre_wire_resource_headroom/pump.py\", line 119, in iteration\n    command=self.command_gate.accept(packet,n.sent,current_native=n.vehicle.count,now=now)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1411_native_guarded_execution/route_command.py\", line 45, in accept\n    assert len(self.retired)<256,'ROUTE_RPC_RETIREMENT_LIMIT'\nAssertionError: ROUTE_RPC_RETIREMENT_LIMIT\n"
+  },
+  "full_Nplus1_saved": {
+    "recorded_actions": 4740,
+    "recorded_Nplus1_states": 4741,
+    "reported_actual_count": 4740,
+    "unrecorded_actual_gap": 0,
+    "complete": true,
+    "sha256": "89147c93f470331853968c230a2ca5b838cfd8d9b938e7265ced69e1a5291451",
+    "no_future_states_or_contacts_fabricated": true
+  },
+  "physical": {
+    "actual_native": 4740,
+    "fully_recorded_native": 4740,
+    "minimum_actual_clearance_m": 0.2500331552976056,
+    "minimum_self_margin_m": 0.009175940583099063,
+    "bad_contacts": 0,
+    "final_body": [
+      0.07917528332591312,
+      -0.717438700907752,
+      0.4961174990657997,
+      -2.1864021152968674e-06,
+      4.275323691782699e-06
+    ],
+    "final_translation_speed_m_s": 2.222160834457116e-06,
+    "root_guard_native_count": 4740,
+    "goal_distance_m": 4.125267257380014,
+    "first_actor_detection": {
+      "native_tick": 4475,
+      "sim_time": 44.749999999999666,
+      "xy": [
+        0.03951053947290284,
+        -0.7293176133084903
+      ],
+      "rays": [
+        29
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 0.04459182579962351
+  },
+  "save_errors": [],
+  "source_unchanged": true,
+  "first_live_event_executed": false,
+  "whole_route_passed": false,
+  "no_relaunch_or_frozen_edit": true,
+  "review_original_restored": true,
+  "lock_idle": true,
+  "owner_exited": true,
+  "actual_raw_backup_pending": false,
+  "source_derived_journal_metadata": {
+    "received_commands_with_superseded_native": 257,
+    "old_retired_append_count_before_refusal": 256,
+    "failed_257th_retirement_not_applied": true,
+    "not_numeric_or_model_audit": true
+  },
+  "actual_raw_remote_recovery": {
+    "passed": true,
+    "source_commit": "a96b106a0d23c4f4a7dc1f3d3476622f08e5990d",
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1474-retirement-bound-failed-20261121",
+    "every_asset_actual_download_SHA": true,
+    "every_member_SHA_and_link_text": true,
+    "whole_archive_SHA": true,
+    "recovery_index_download_SHA": true,
+    "members": 170,
+    "archive_bytes": 13610539,
+    "models": 0,
+    "physical_admission": false,
+    "verified_unix": 1795252425.707759
+  }
+}

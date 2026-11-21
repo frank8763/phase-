@@ -2407,3 +2407,15 @@ V1474 fullqualifiedcurrent source50members1352661B allremoteactualblock/member/w
 
 
 V1474 distinct once originalWE livefirstevent runtime launched afterfull50membercurrent recovery and newnarrow admission. Allruns9610481664B/completepeak10650669056B<10GiB (margin86749184B); taskattempt18/partialregistration6, prioractual116885/replay105105 pending newmachineRESULT. OwnerCPU5/nativeCPU2run_phase singlelock/source200ms unchanged, tool19217 active, no relaunch. Firstevent/whole-route outcomeunknown.
+
+
+V1474 actualfirstevent CLOSED FAILED oldretiredlist256limit at257thsupersededreply; neverapplied.4505RPP+35disclosedlocalzero+200errorstop=4740actual/Nplus14741/fullcontactssensorssummary/saveerrorsnone.0eventbridge/gen/audit/currentreserve/private/Allocator/ownreplay/pair; firstevent0/whole0. Parentactual121625/replay105105/18starts/6partialregs/science5;reviewSHArestored/lockidle/allownersclosed/no rerun. Next boundedretirementmemory+durablereceipt source, no source/science/budget relaxation.
+
+
+V1477 concrete newroutecommand/pump sourceAST: originalallidentity/state/200msgates kept; authenticatedstale replies eachdurablestreamreceipt+exacttotal/hashchain beforecommit, max256rowsinmemory, no staleapply. Original2sno-fresh/5400root/byte/native/sciencebudgets unchanged. Unqualified/refusingentry/no newruntime; source checkpoint saved.
+
+
+V1474 fullactual4740failure+V1477earlydraft170members13610539B allremoteactualblock/member/whole/indexSHA passed, solea96b106asource reused/nosecondpush/Release phase-v1474-retirement-bound-failed-20261121. Onlyverifiedtransportclear/rawkept/allI/Oclosed. V1477 entryCLOSED FAILED beforeRPCtarget because exactpumpAST proof omitted unchanged helperimportname normalization; olderror/frozensource retained/0models. V1479 only qualificationlabelnormalization, fullpureAST currentpump+originalacceptance+taskmetadata reviewed before newonce target; no currentqualification/runtime yet.
+
+
+V1479 one new no-model streamedretirementtarget PASS CLOSED/frozen:productionPump.receive realUnixdatagram300authenticatedoldstate replies allretired/notapplied,300durablequota-chargedrows/exacthashchain/cachedlast256/0hotdu. Currentvalidaccepted/binding-origintamperrefused/201msobservationretired; sinkfirsterror no counter/chain/previouscommit. OriginalacceptanceAST exact, priorunchangedsuites SHA/ASTreuse, V1477pretargetfailure preserved.0models/physics/replay/nav; currentfullsourcebackup required beforeonce runtime.
