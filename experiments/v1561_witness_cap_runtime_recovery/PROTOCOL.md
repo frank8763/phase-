@@ -1,0 +1,3 @@
+# V1561 original closed V1559 runtime recovery
+
+One distinct<=75MiB archive of originalV1559 closed stream-cap refusal, full433DATA/PROOF+last2208branch+8111nominalprefix/error/counters/source metadata. No generation/audit/replay or oldsource rerun; inheritance11682 frozen chain linked byV1560 exactindex/proof. Verify allruns+75archive+32download+512root, idlelock/REVIEW/inactiveparent/fullfrozenSHA before archiveclaim. Reuse sole865e2c41/refonly5s/no secondpush. Actual remote32MiB block/member/whole/indexSHA before duplicate transport cleanup only. Keep all original failed arrays/input/anchors. No science/model/navPASS inferred. Newhelper source backed by exact Release memberSHA, not claimed inside prior Gitcommit.

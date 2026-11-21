@@ -1,0 +1,3 @@
+# V1564 exact lossless entropy source recovery
+
+One new<=8MiB delta ofV1562/V1563 newsource/zero-model bytequalification andclosedparentpayload/proofs. InheritV1559all11682sourcechain; four old savedbyteinputs byV1561runtimeindex andactualremoteSHA; do not rearchive old23MBstream. All11716frozenSHA/inactiveparent/REVIEW/idlelock/allruns+8+32+512 beforearchiveclaim. Unique newsourcepush30s/ref5s once; allactualremote block/member/whole/indexSHA beforeduplicate transportclear. Science10 and allnumeric/control/bytecaps unchanged. No numericadmission untilfullchain/current686MiB/once/root gates. ClosedV1559andallprior sources neverrerun/modified.
