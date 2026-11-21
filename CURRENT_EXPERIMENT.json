@@ -11113,5 +11113,40 @@
     "root_lock_idle": true,
     "next": "Complete actual new-source remote recovery, prepare distinct zero200 admission, preregister once 600s scope and execute only bounded canonical factory+actual200+Allocator200+ownreplay200 if all gates remain satisfied. No navigation."
   },
-  "next_preparation": "experiments/v1451_native_closure_qualification/PROTOCOL.md"
+  "next_preparation": "experiments/v1454_bounded_gzip_closure/PROTOCOL.md",
+  "latest_zero200_closure_qualification": {
+    "recorded_unix": 1795242668.9250162,
+    "closed": true,
+    "qualification_passed": false,
+    "actual_native": 200,
+    "actual_compute": 200,
+    "independent_allocator": 0,
+    "own_replay": 0,
+    "first_error": {
+      "stage": "actual_zero_tail",
+      "error": "OSError('WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1451_native_closure_qualification/driver.py\", line 87, in _run\n    journal.close();journal=None;result['physical']=capture.finish(v)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/capture_budget.py\", line 31, in finish\n    result=vehicle.finish()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 102, in finish\n    with gzip.open(self.out/'CONTACTS.json.gz','xt')as f:json.dump(self.contacts,f)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/gzip.py\", line 66, in open\n    return io.TextIOWrapper(binary_file, encoding, errors, newline)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/gzip.py\", line 359, in fileno\n    return self.fileobj.fileno()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/bounded_io.py\", line 25, in fileno\n    def fileno(self):raise OSError('WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE')\nOSError: WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE\n"
+    },
+    "raw_gap": "Contacts gzip partial; SENSORS and combined Nplus1 unexecuted. Existing initial state and NATIVE_TRACE unchanged; no posthoc rebuilding.",
+    "no_relaunch": true,
+    "next": "Preserve complete failed raw evidence via new actual-only archive using c39ac682 source commit with no second push. Then new exact bounded gzip writer and state-before-contact save source version, targeted no-model IO first."
+  },
+  "latest_bounded_gzip_closure_preparation": {
+    "recorded_unix": 1795242884.7973182,
+    "models": 0,
+    "physical_native": 0,
+    "actual_replay_native": 0,
+    "allocator_recomputations": 0,
+    "original_red_reproduced": true,
+    "compressed_exact_target_charged_and_lossless": true,
+    "raw_descriptor_still_rejected": true,
+    "original_entry_reused_by_exact_normalized_AST_and_SHA": true,
+    "new_driver_state_saved_before_contact_gzip": true,
+    "failed_capture_not_retried": true,
+    "source_frozen": true,
+    "source_remote_recovery_pending": true,
+    "physical_route_admission": false,
+    "actual_runtime_not_executed": true,
+    "next": "Complete actual new V1454 source remote member recovery, then only once600s initializer+zero200+Allocator200+ownreplay200 narrow qualification with all original guards and exact storage. No route admission."
+  }
 }

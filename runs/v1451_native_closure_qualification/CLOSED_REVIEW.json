@@ -1,0 +1,35 @@
+{
+  "recorded_unix": 1795242604.945601,
+  "closed": true,
+  "passed": false,
+  "not_scientific_navigation_PASS": true,
+  "canonical_factory_call_attempts": 1,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 200,
+  "actual_control_compute": 200,
+  "private_prediction_native": 0,
+  "independent_allocator_recomputations": 0,
+  "own_replay_native": 0,
+  "actual_complete_zero200_owner_receipt": true,
+  "independent_allocator_and_replay_not_executed": true,
+  "full_Nplus1_combined_file_not_written": true,
+  "raw_contacts_stream_incomplete": true,
+  "first_error": {
+    "stage": "actual_zero_tail",
+    "error": "OSError('WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1451_native_closure_qualification/driver.py\", line 87, in _run\n    journal.close();journal=None;result['physical']=capture.finish(v)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/capture_budget.py\", line 31, in finish\n    result=vehicle.finish()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 102, in finish\n    with gzip.open(self.out/'CONTACTS.json.gz','xt')as f:json.dump(self.contacts,f)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/gzip.py\", line 66, in open\n    return io.TextIOWrapper(binary_file, encoding, errors, newline)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/gzip.py\", line 359, in fileno\n    return self.fileobj.fileno()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/bounded_io.py\", line 25, in fileno\n    def fileno(self):raise OSError('WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE')\nOSError: WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE\n"
+  },
+  "secondary_errors": [
+    {
+      "stage": "SAVE_EXECUTED_PREFIX",
+      "error": "FileExistsError(17, 'File exists')"
+    }
+  ],
+  "source_unchanged": true,
+  "review_original_SHA_restored": true,
+  "root_lock_idle": true,
+  "do_not_relaunch_or_edit_frozen_source": true,
+  "new_actual_raw_remote_recovery_pending": true,
+  "next": "Preserve full failed output, complete a separate zero-model actual evidence archive with no second push of c39ac682. New version only: replace gzip text wrapper descriptor request by explicitly bounded compressed fileobj path, and save canonical Nplus1 state before contact serialization. Targeted real I/O qualification before any distinct numeric round; do not reconstruct missing contacts or rerun V1451."
+}
