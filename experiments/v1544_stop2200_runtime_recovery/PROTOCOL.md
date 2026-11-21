@@ -1,0 +1,5 @@
+# V1544 distinct closed2200stop runtime recovery
+
+One <=8MiB delta of V1542singleclosedCPP2200+success-onlyfreshPython2200 currentstopcomponent, completeorigin/arrays/stop/comparison/controlmodegear/clock/count/error/source/proofs and report.0newmodel/FFI/Allocator/optimizer/physical/replay. Inherit V1543source+full11604chain and immutableV1532M8input; no oldarchives reseal/retry/delivery. Reuse sole28fc2d6a3e2649aa64d7ac860b23749641fdb588,one5sref only/no secondpush; runtimehelper itself new and recovered by exactRelease memberSHA, not falsely claimed in oldcommit.
+
+CPU5/parentinactive/reviewSHA/idlelock/frozenSHA/fullruns8archive+32download+512root<10GiB beforeonceclaim. Fullactualremote block/member/whole/indexSHA beforeonlyduplicate transportcleanup/alloriginalsretain. Component success limited to current conservative fullperiodgeometry/nooriginalqgeometry/search/actualwholeclaim; internalAllocatorconstructorunknown. Oldfailures/unknowns/counts remain,source9andallscientificgates unchanged. Latebackup supplement clearlylaterthanarchive.900scheckpoint/no newnumericorvehicleadmission.
