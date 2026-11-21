@@ -17,11 +17,17 @@ def bind_input(current,proposal):
  value=copy.deepcopy(current);identity=value.pop('input_sha256');assert digest(value)==identity
  result=copy.deepcopy(proposal);p_sha=result.pop('proposal_sha256');assert digest(result)==p_sha
  assert proposal['input_sha256']==identity and proposal['core_identity_sha256']==current['core_identity_sha256']
+ output=exact('v1497_frozen_proposal_rebinding',R/'experiments/v1485_priest_current_polynomial_seam/candidate_output.py')
+ assert output.bind(current,proposal['reply'])==proposal,'PRIEST_PROPOSAL_BOUNDARY_OR_SCHEMA_CHANGED'
  assert proposal['fixed_origin_native']==current['fixed_origin_native']==current['origin']['native_tick']
  assert proposal['fixed_origin_sim_time']==current['fixed_origin_sim_time']==current['origin']['sim_time']
  assert current['causal_snapshot_sha256']==digest(current['causal_snapshot'])
  assert current['causal_snapshot']['periodic']is not None,'PRIEST_CURRENT_RESPONSE_REQUIRES_BOUND_CAUSAL_FORECAST'
  assert current.get('software_fixture_not_actual')is not True,'PRIEST_SOFTWARE_PROPOSAL_NOT_CURRENT_EVENT_INPUT'
+ assert current.get('input_role')=='SAVED_ACTUAL_INPUT_MODEL_ONLY','PRIEST_LIVE_CAPTURE_STILL_UNQUALIFIED'
+ assert current['saved_actual_input_not_fresh_wire']is True and current['physical_admission']is False
+ assert digest(current['fullstate'])==current['fullstate_sha256']==current['author_initial_boundary_hint']['origin_fullstate_sha256']
+ assert current['saved_provenance']['source_rows_covered']==current['fixed_origin_native']and current['saved_provenance']['remote_original_files_verified']is True
  assert not current['origin']['steering_motion_active']and current['origin']['parked_target']is None
  return dict(kind='ENGINEERING_PRIEST_FIXED_POLYNOMIAL_CURRENT_RESPONSE',current_input_sha256=identity,proposal_sha256=p_sha,core_identity_sha256=current['core_identity_sha256'],geometry_kind='FULL_PERIOD_DISK',fixed_origin_native=current['fixed_origin_native'],fixed_origin_sim_time=current['fixed_origin_sim_time'],actual_admission=False)
 
