@@ -1,0 +1,13 @@
+{
+  "recorded_unix": 1795272601.0095482,
+  "cause": "A task disappeared after /proc/self/task enumeration and before sched_getaffinity. The uncaught ESRCH occurs before optimizer_call.run. Live-task masks were not evaluated or saved.",
+  "traceback_from_completion": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1498_priest_saved_proposal/inner.py\", line 88, in main\n    result['thread_affinities_after_kernel']=thread_affinities()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1498_priest_saved_proposal/inner.py\", line 85, in thread_affinities\n    values={path.name:sorted(os.sched_getaffinity(int(path.name)))for path in Path('/proc/self/task').iterdir()}\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1498_priest_saved_proposal/inner.py\", line 85, in <dictcomp>\n    values={path.name:sorted(os.sched_getaffinity(int(path.name)))for path in Path('/proc/self/task').iterdir()}\nProcessLookupError: [Errno 3] No such process\n",
+  "fault_line": 85,
+  "optimizer_call_line": 90,
+  "original_error_preserved": true,
+  "repair_scope": "New version finite task census: record confirmed exits and all successful live masks; refuse visible ESRCH/non-ESRCH/any observed nonCPU4 and unobserved final live task. No optimizer/core/kwargs/seed/model-domain change.",
+  "transient_thread_historical_affinity_unknown": true,
+  "universal_thread_affinity_claim": false,
+  "models": 0,
+  "physical_native": 0
+}

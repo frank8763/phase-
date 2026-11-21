@@ -1,0 +1,36 @@
+{
+  "passed": false,
+  "closed": true,
+  "scope": "ONCE_SAVED_ACTUAL_INPUT_REAL_CPU_PRIEST_PROPOSAL",
+  "models": 0,
+  "physical_native": 0,
+  "optimizer_calls": 0,
+  "optimizer_work_unknown": true,
+  "worker_returncode": 1,
+  "inner_result": {
+    "passed": false,
+    "scope": "OPTIMIZER",
+    "models": 0,
+    "optimizer_calls": 0,
+    "physical_native": 0,
+    "author_or_JAX_imported": true,
+    "source_manifest_sha256": "09487c98d94f61965d0d39616c460f2e986f433bf0169011bc8d5d24aabb08ff",
+    "original_error": "ProcessLookupError(3, 'No such process')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1498_priest_saved_proposal/inner.py\", line 88, in main\n    result['thread_affinities_after_kernel']=thread_affinities()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1498_priest_saved_proposal/inner.py\", line 85, in thread_affinities\n    values={path.name:sorted(os.sched_getaffinity(int(path.name)))for path in Path('/proc/self/task').iterdir()}\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1498_priest_saved_proposal/inner.py\", line 85, in <dictcomp>\n    values={path.name:sorted(os.sched_getaffinity(int(path.name)))for path in Path('/proc/self/task').iterdir()}\nProcessLookupError: [Errno 3] No such process\n",
+    "closed": true,
+    "rusage": {
+      "maxrss_kib": 218680,
+      "threads": 3,
+      "CPU": [
+        4
+      ]
+    }
+  },
+  "first_error": "ProcessLookupError(3, 'No such process')",
+  "wall_s": 8.014464944018982,
+  "source_unchanged": true,
+  "saved_actual_input_not_fresh_wire": true,
+  "actual_current_capture": false,
+  "actual_control_domain_qualified": false,
+  "whole_route_passed": false
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "ONCE_SAVED_ACTUAL_INPUT_REAL_CPU_OPTIMIZER_ONLY",
+  "started_unix": 1795272481.4230084,
+  "started_monotonic": 394231.868516507,
+  "boot_id": "6b1aa625-c962-4eef-a83d-f7034a2436b4",
+  "models": 0,
+  "physical_native": 0,
+  "maximum_wall_s": 650,
+  "CPU": [
+    4
+  ],
+  "root_deadline_unix": 1795395600,
+  "source_files": 11466,
+  "source_freeze_sha256": "7f1d7442e2dd5f7f7874d4d8f4812c29775ea9bdb777d5fb6da384203c652147",
+  "all_frozen_members_remote_covered": true,
+  "allruns_allocated_before_bytes": 10136190976,
+  "evidence_archive_download_root_reserved_bytes": 587202560,
+  "full_reserved_peak_bytes": 10723393536,
+  "storage_limit_bytes": 10737418240,
+  "headroom_bytes": 14024704,
+  "command": [
+    "ionice",
+    "-c",
+    "3",
+    "taskset",
+    "-c",
+    "4",
+    "nice",
+    "-n",
+    "19",
+    "./run_phase.sh",
+    "experiments/v1498_priest_saved_proposal/owner.py",
+    "--launch"
+  ],
+  "actual_current_capture": false,
+  "whole_route_passed": false,
+  "child_pid": 864648
+}

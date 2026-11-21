@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "scope": "NEW_THREAD_METADATA_SOURCE_ONLY",
+  "real_live_census": {
+    "phase": "NEW_SOURCE_METADATA_ENTRY",
+    "started_monotonic": 394445.797997467,
+    "passes": [
+      [
+        2
+      ],
+      [
+        2
+      ]
+    ],
+    "observed": {
+      "2": [
+        4
+      ]
+    },
+    "confirmed_exited": [],
+    "unobserved_final_live": [],
+    "historical_transient_affinity_unknown": true,
+    "universal_affinity_claim": false,
+    "passed": true,
+    "final_live": [
+      2
+    ],
+    "ended_monotonic": 394445.798099573
+  },
+  "actual_thread_exit": {
+    "phase": "REAL_THREAD_EXIT_BETWEEN_ENUMERATION_AND_QUERY",
+    "started_monotonic": 394445.798296661,
+    "passes": [
+      [
+        2,
+        3
+      ],
+      [
+        2
+      ]
+    ],
+    "observed": {
+      "2": [
+        4
+      ]
+    },
+    "confirmed_exited": [
+      {
+        "tid": 3,
+        "pass_index": 0,
+        "affinity": null,
+        "reason": "ESRCH_AND_TASK_PATH_ABSENT"
+      }
+    ],
+    "unobserved_final_live": [],
+    "historical_transient_affinity_unknown": true,
+    "universal_affinity_claim": false,
+    "passed": true,
+    "final_live": [
+      2
+    ],
+    "ended_monotonic": 394445.798487812
+  },
+  "negative_cases": [
+    {
+      "name": "OBSERVED_NON_CPU4",
+      "error": "PRIEST_OBSERVED_HELPER_AFFINITY_CHANGED",
+      "proof": {
+        "phase": "OBSERVED_NON_CPU4",
+        "started_monotonic": 394445.798512745,
+        "passes": [
+          [
+            2
+          ]
+        ],
+        "observed": {
+          "2": [
+            5
+          ]
+        },
+        "confirmed_exited": [],
+        "unobserved_final_live": [],
+        "historical_transient_affinity_unknown": true,
+        "universal_affinity_claim": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "NON_ESRCH",
+      "error": "THREAD_AFFINITY_QUERY_ERROR:PermissionError(1, 'injected query denial')",
+      "proof": {
+        "phase": "NON_ESRCH",
+        "started_monotonic": 394445.798549551,
+        "passes": [
+          [
+            2
+          ]
+        ],
+        "observed": {},
+        "confirmed_exited": [],
+        "unobserved_final_live": [],
+        "historical_transient_affinity_unknown": true,
+        "universal_affinity_claim": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "ESRCH_STILL_VISIBLE",
+      "error": "THREAD_ESRCH_STILL_VISIBLE",
+      "proof": {
+        "phase": "ESRCH_STILL_VISIBLE",
+        "started_monotonic": 394445.798585169,
+        "passes": [
+          [
+            2
+          ]
+        ],
+        "observed": {},
+        "confirmed_exited": [],
+        "unobserved_final_live": [],
+        "historical_transient_affinity_unknown": true,
+        "universal_affinity_claim": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "UNOBSERVED_FINAL_TASK",
+      "error": "THREAD_CENSUS_UNSTABLE_UNOBSERVED_LIVE",
+      "proof": {
+        "phase": "UNOBSERVED_FINAL_TASK",
+        "started_monotonic": 394445.798607727,
+        "passes": [
+          [
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "observed": {
+          "2": [
+            4
+          ]
+        },
+        "confirmed_exited": [],
+        "unobserved_final_live": [
+          2147483000
+        ],
+        "historical_transient_affinity_unknown": true,
+        "universal_affinity_claim": false,
+        "passed": false,
+        "final_live": [
+          2,
+          2147483000
+        ]
+      }
+    }
+  ],
+  "original_numerical_body_and_callgraph_AST_exact": true,
+  "unchanged_OS_target_not_rerun": true,
+  "original_V1498_failure_preserved": true,
+  "JAX_or_author_imported": false,
+  "optimizer_calls": 0,
+  "models": 0,
+  "physical_native": 0
+}
