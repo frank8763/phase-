@@ -1,0 +1,89 @@
+{
+  "scope": "DEVELOPMENT_BASELINE_DISPOSITION_NO_NEW_TRIALS",
+  "rows": [
+    {
+      "method": "Original engineering coherent/deadband MPPI in frozen shared skeleton",
+      "stage": "V1370 static main",
+      "attempted": true,
+      "outcome": "FUNCTIONAL_FAILURE_SAFE_COMPLETE",
+      "saved_audit_passed": false,
+      "actual_native": 11905,
+      "ownreplay_native": 11905,
+      "action_status": 6,
+      "error_code": 104,
+      "goal_distance_m": 3.5784844682707573,
+      "recovery_component_success_does_not_override_static_main_failure": true
+    },
+    {
+      "method": "Same original MPPI task dependency chain",
+      "stage": "V1370 static repeat and dynamic main/repeat",
+      "attempted": false,
+      "outcome": "SKIPPED_DEPENDENCY",
+      "tasks": [
+        "coherent_mppi_static_repeat",
+        "coherent_mppi_horizon_m1_s01_main",
+        "coherent_mppi_horizon_m1_s01_repeat"
+      ],
+      "not_counted_as_executed_failure": true
+    },
+    {
+      "method": "Disclosed shared skeleton + original RPP + current-event witness",
+      "stage": "V1479 live first-event qualification",
+      "attempted": true,
+      "outcome": "CURRENT_MODEL_WITNESS_REFUSED",
+      "actual_native": 6205,
+      "ownreplay_native": 0,
+      "actual_notice_reached": true,
+      "actual_bridge_applied": false,
+      "whole_route_passed": false,
+      "independent_full_actual_audit_unexecuted": true
+    },
+    {
+      "method": "New engineering MPPI current-event adapter",
+      "stage": "V1483 draft",
+      "attempted": false,
+      "outcome": "SOURCE_PREPARATION_UNQUALIFIED",
+      "revision_registered": 6,
+      "static_dependency_not_passed": true
+    },
+    {
+      "method": "PRIEST pinned author implementation / Phase adaptation",
+      "stage": "V1484 author-source inspection",
+      "attempted": false,
+      "outcome": "NOT_REPRODUCED_NOT_RUNTIME_ADMITTED"
+    }
+  ],
+  "decision": "Retain finite MPPI static non-success and original dynamic unexecuted dependency. Do not run more closed MPPI/RPP tasks or finish an unused runtime only to spend its draft. Proceed with author-source and explicit causal/Ackermann/full-footprint adaptation requirements for PRIEST; any executable new method needs separate preregistration and bounded qualification.",
+  "formal_matched_comparison_completed": false,
+  "statistical_or_algorithm_universal_superiority_established": false,
+  "independent_unseen_trials_added": 0,
+  "new_models": 0,
+  "new_physical_native": 0,
+  "old_counts_added_to_parent": false,
+  "source_proofs": [
+    {
+      "path": "runs/v1370_overnight_controller_matrix/PARTIAL_RESULTS.json",
+      "sha256": "853a9a5760331ccfb49193aff34e4049597d726f80d22e1e3a23d3785b4adaa8"
+    },
+    {
+      "path": "runs/v1370_overnight_controller_matrix/ACCOUNTING.json",
+      "sha256": "3b33ecb72507e6f673c7e5299595419414d751a9264b1939ddcbc7c6a83614b1"
+    },
+    {
+      "path": "runs/v1370_overnight_controller_matrix/COMPLETED.json",
+      "sha256": "9bc0a477873a27bf7cfb0f9b0d291fc105aa10f0a2fcadd461d91c061ce480ce"
+    },
+    {
+      "path": "experiments/v1370_overnight_controller_matrix/relay_policy.py",
+      "sha256": "fd1783a57b351f1635712a1f9a01d3294e4cccc40c0f1573fa69e8cd20e05d72"
+    },
+    {
+      "path": "runs/v1479_retirement_scope_binding/CLOSED_REVIEW.json",
+      "sha256": "1a7d5484542c69617eeb7e5f6368969bb405c81debedae1554d31aa539561488"
+    },
+    {
+      "path": "runs/v1483_mppi_current_event_backend/ORIGINAL_DEPENDENCY_STATUS.json",
+      "sha256": "cdaf1272f91238e94ce3b07b68af7ac1c17f517f45bbe38754773a0af05867ea"
+    }
+  ]
+}

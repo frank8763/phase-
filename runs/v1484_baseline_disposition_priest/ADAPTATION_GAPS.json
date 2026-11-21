@@ -1,0 +1,60 @@
+{
+  "recorded_unix": 1795265675.4033196,
+  "author_commit": "4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41",
+  "author_tree": "4792ffeb6b3d7255452d33fc4fe2093578af6014",
+  "captured_text_members": 10,
+  "HTTP_requests": 12,
+  "downloaded_bytes": 389364,
+  "acquisition_complete": true,
+  "source_execution": false,
+  "models": 0,
+  "physical_native": 0,
+  "optimizer_calls": 0,
+  "scientific_revision_added": 0,
+  "source_qualification_passed": null,
+  "numerical_qualification_passed": null,
+  "runtime_admitted": false,
+  "gaps": [
+    {
+      "id": "AUTHOR_VARIANT",
+      "status": "UNRESOLVED_NOT_ADMITTED",
+      "requirement": "Exact paper D-PRIEST car example to pinned author entry mapping unresolved; current dynamic entry is identified, not an Ackermann actuator implementation."
+    },
+    {
+      "id": "CAUSAL_OBSERVATION",
+      "status": "UNRESOLVED_NOT_ADMITTED",
+      "requirement": "Replace author MAT-file obstacle initialization, obstacle odometry/command privileges and benchmark groundtruth topics with the common actual measurement and causal snapshot, without a truth side channel."
+    },
+    {
+      "id": "ACTUATOR_MODEL",
+      "status": "UNRESOLVED_NOT_ADMITTED",
+      "requirement": "Use current full scalar/encoder/control/mode/gear memory with explicit zero-speed/reverse/steering limits and response-model consistency; output clipping alone insufficient."
+    },
+    {
+      "id": "FULL_FOOTPRINT",
+      "status": "UNRESOLVED_NOT_ADMITTED",
+      "requirement": "Author axis-aligned ellipse samples do not supply Phase oriented full-footprint tube, complete200 braking alternatives, actual contact and fixed-reference checks."
+    },
+    {
+      "id": "SOURCE_FRESHNESS",
+      "status": "UNRESOLVED_NOT_ADMITTED",
+      "requirement": "Bind exact current fullstate/snapshot/control identity and preserve200ms source verification after certificate; no synthetic scan or stale packet control."
+    },
+    {
+      "id": "OPTIMIZER_BUDGET",
+      "status": "UNRESOLVED_NOT_ADMITTED",
+      "requirement": "No JAX import/compile/CPU/GPU timing or rollout count measured; version compatibility, compilation and end-to-end bounded work remain unqualified."
+    },
+    {
+      "id": "FAIR_COMPARISON",
+      "status": "UNRESOLVED_NOT_ADMITTED",
+      "requirement": "Separate author system reproduction from Phase engineering adaptation/shared skeleton. Original MPPI dependency failure and all unexecuted trials retained."
+    },
+    {
+      "id": "REGISTRATION_AND_RUNTIME",
+      "status": "UNRESOLVED_NOT_ADMITTED",
+      "requirement": "No new accepted method/revision registration, model qualification, source freeze/recovery, runtime admission, window or launch exists."
+    }
+  ],
+  "source_recovery_remote_for_this_new_evidence": false
+}
