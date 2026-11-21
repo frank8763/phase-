@@ -1,0 +1,164 @@
+{
+  "kind": "PHASE_PRIEST_CURRENT_POLYNOMIAL_INPUT",
+  "schema": 1,
+  "run_id": "V1493_SOFTWARE_ONLY_NOT_ACTUAL_INPUT",
+  "software_fixture_not_actual": true,
+  "origin": {
+    "body": [
+      0.3,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "body_lateral": 0.0,
+    "native_tick": 0,
+    "sim_time": 0.0,
+    "steering": {
+      "position": [
+        0.0,
+        0.0
+      ],
+      "velocity": [
+        0.0,
+        0.0
+      ]
+    },
+    "controller_memory": {
+      "last_ctrl": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "integral": 0.0
+    },
+    "parked_target": null,
+    "steering_motion_active": false,
+    "coupled_episode": false
+  },
+  "fullstate": {
+    "time": 0.0,
+    "qpos": [
+      0.3,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "qvel": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "ctrl": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mocap_pos": [],
+    "mocap_quat": []
+  },
+  "fullstate_sha256": "93c9ba82ff029c8ebf7e588e3e20caf8aae434f66c1c0520604051e5b239e031",
+  "fixed_origin_native": 0,
+  "fixed_origin_sim_time": 0.0,
+  "rear_pose_world": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rear_velocity_world": [
+    0.0,
+    0.0
+  ],
+  "author_initial_boundary_hint": {
+    "kind": "CANONICAL_REST_DECLARED_ZERO_POLYNOMIAL_ACCELERATION_TARGET",
+    "origin_native": 0,
+    "origin_fullstate_sha256": "93c9ba82ff029c8ebf7e588e3e20caf8aae434f66c1c0520604051e5b239e031",
+    "acceleration_hint_world": [
+      0.0,
+      0.0
+    ],
+    "measured_instantaneous_acceleration": false,
+    "instantaneous_error_bound": null,
+    "source_qualified": false,
+    "planned_derivatives_used": false,
+    "zero_substitution_used": true,
+    "zero_role": "EXPLICIT_PLANNER_BOUNDARY_TARGET_NOT_MEASUREMENT"
+  },
+  "core_identity_sha256": "0bf45c54104d89c05a98a96cb52d63e6061639b0f3828dc92bf129af5781c2bb",
+  "core_identity": {
+    "schema": 1,
+    "algorithm": "ENGINEERING_PRIEST_POLYNOMIAL_PROPOSAL_WITH_PHASE_CURRENT_RESPONSE",
+    "scientific_revision": 7,
+    "author_commit": "4eeb402f7ed576bc39e9bc679fa0c7cd212c7b41",
+    "author_tree": "4792ffeb6b3d7255452d33fc4fe2093578af6014",
+    "author_members": [
+      {
+        "path": "priest/src/mpc_non_dy.py",
+        "sha256": "dbe9cf267c78a9f56e6169fb4c73aca9d1a20d787b0f53562e2a769e43527555",
+        "git_blob_sha1": "50ff496ef1a3f2bd3ce504fb2a172a6043a89e31",
+        "bytes": 43501
+      },
+      {
+        "path": "priest/src/bernstein_coeff_order10_arbitinterval.py",
+        "sha256": "5695fc07260671785b14bc84bc89105174b58e680cb2fe0d2bc45f918ce90469",
+        "git_blob_sha1": "cfa8bc1d270e902b8fe32e68465a5562b9d68ab5",
+        "bytes": 2605
+      }
+    ],
+    "author_core_class": "batch_crowd_nav",
+    "author_ROS_wrapper_excluded": true,
+    "unmodified_author_whole_system": false,
+    "D_PRIEST_car_example_reproduced": false,
+    "public_map_sha256": "30b3a2374d05b609e1da8790b2eb198209df4e5bb7a9c63cb1786bd12f4f9d7a",
+    "polynomial_order": 10,
+    "coefficient_count_per_axis": 11,
+    "coordinates": "REAR_AXLE_WORLD_XY",
+    "body_to_rear_offset_m": 0.3,
+    "accepted_actual_control_domain": "EMPTY_PENDING_SAME_RESPONSE_ACTUAL_CONTROLLER",
+    "optimizer_kwargs_not_yet_qualified": true,
+    "initial_boundary": "CAUSAL_BACKWARD_ACTUAL_REAR_VELOCITY_SECANT_HINT_NOT_INSTANTANEOUS_ACCELERATION",
+    "response_policy": "FROZEN_POLYNOMIAL6_DERIVATIVE_AVERAGE_SHORTEST_HEADING_NO_CLIP_ORIGINAL_GEAR_ONCE"
+  },
+  "source_manifest_sha256": "58af2a943be9c5ced8dc6096da3c832b69b652bfef0da7152f80839e7effaaa4",
+  "public_map_sha256": "30b3a2374d05b609e1da8790b2eb198209df4e5bb7a9c63cb1786bd12f4f9d7a",
+  "causal_snapshot": {
+    "model": "PERIODIC",
+    "online_actor_truth": false,
+    "periodic": null,
+    "last_observed_time": null
+  },
+  "causal_snapshot_sha256": "554c413d2009714f157f21e9f8b8564d3b2de3999a3462fc2a91a55f0298c220",
+  "causal_forecast": null,
+  "observation_stage": "NO_DYNAMIC_RETURN_YET_NO_MEASURED_FUTURE",
+  "gear_memory": {
+    "gear": 0,
+    "brake_start": null,
+    "last_tick": -1
+  },
+  "next_segment": {
+    "gear": 1,
+    "poses": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "proposal_only": true,
+  "physical_admission": false,
+  "input_sha256": "91a35c62ed9fe5439c4080fabebe6aa09b2dfc736b17f51c7f11b0641732afad"
+}
