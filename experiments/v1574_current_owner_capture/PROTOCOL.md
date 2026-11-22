@@ -17,20 +17,42 @@ before rejection. No native==6005/9390/32210 branch, oldcontrol/oldpacket/certif
 replay, reference reset or addedzero actions. One actual measurement packet and
 samebefore/after fullstate+gear+mode identity; source200ms remains unchanged.
 
-Next required source work: bind complete canonical owner receipt contents and
-its actual causal tracker into thiscapture, followed by newmethod registration
-before generic liveepoch/reference generation+CPP2200 acceptance. LatestV1571
-fullsavedcandidate PASS is development evidence only, not freshwire/actualsource
-or livecallback qualification. Actual finite fullstate replay/pair and physical
-fixedreference behavior still require newboundedruntime; no gate prefilledtrue.
-No newsource target has run, no SOURCE_FREEZE/once/window/launch.
+Concrete production source now includes an original-tracker observation adapter,
+source-bearing original CUSP/ordered-event session, actual route_ros fork and
+native socket Pump, plus an explicit strict2200 canonical t0 owner/lifecycle seam.
+No original coefficient estimator, planner, controller or event stop requirement
+is changed. Real input receipts include the original received wire, before/after
+snapshot identities, exact file and semantic SHA, causal update record deltas,
+previous receipt and skipped publication sequences. Missing received scans are
+reported as gaps, never certified as complete sensing. The actual request file,
+snapshot, fullstate projection, durable native journal, applied commands and
+per-row state-source continuity must match. SHA strings alone are insufficient.
 
-Explicit remaining binding gap: latest old actual lifecycle V1479 still constructs
-V1449canonicalowner using V1423NativeStep/plain200reserve. Thiscapture demands
-V1567strict2200 NativeStep, so a new canonical/lifecycle fork must explicitly bind
-it before any real positive capture can exist. Do not infer readiness from the
-source file or substitute the old plain200owner. causal_source currently checks
-identity/schema only; source_receipt_sha string is not yet content/provider
-qualification. Implement exact providerreceipt and canonicalfullstate projection
-coverage before the first targeted source qualification, then frozen/current
-sourcechain and proper acceptedmethod registration before numerical/live use.
+Source-only Pump ends at the first capture boundary without starting modeled ROS
+or returning BRIDGE_READY. The t0 owner explicitly uses frozen V1567 NativeStep;
+no old plain200 reserve/transaction is installed. The new lifecycle run() refuses
+before factory/model binding: its concrete t0 seam still requires a separately
+qualified and accurately budgeted actual lifecycle. A successful source API
+target never grants positive live capture, a method or physical initialization.
+
+Necessary first new source target: once only, CPU2/run_phase/original immutable
+guard/single execution lock/nice19/thread1/GPU-hidden/OSMesa; inner120s and outer
+150s. Original writer caps new target at2MiB. Additional source scope is7MiB
+evidence+8MiB archive+32MiB download+512MiB root reserve=559MiB, measured against
+all runs by inode before start. No numeric or physical admission/window/claim.
+Profile forbids all old model/native/gear/FFI/Allocator/geometry projection and
+estimator calls; import denial forbids NumPy/ROS/MuJoCo/model libraries. Exercise
+only new receipt storage/content/source binding and failure/poison/no-retry paths
+using an explicitly SOFTWARE adapter and a separately identified exposed saved
+event JSON. This does not qualify the real tracker or rerun old origin/Gear/
+definitions/ROS/RPC/serializer/model suites. Strict2200 source identity and absent
+live/actual lifecycle authority are checked directly. Producer first errors and
+capture proof-save secondary errors stay separate.
+
+After source qualification, all source/input recovery must precede any actual
+use. New accepted current method/domain/live epoch/reference/reserve behavior
+requires scientific registration before implementation. Current science10 and
+all physical denominators remain unchanged. Complete actual positive capture,
+bounded lifecycle, fixed model/physical response, current2200 latency, source
+freshness after certificate, control application and fullstate replay/pair remain
+unqualified. V1571 remains exposed saved-input development evidence only.
