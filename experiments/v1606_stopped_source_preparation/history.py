@@ -9,7 +9,7 @@ import importlib.util
 import json
 from pathlib import Path
 R=Path(__file__).resolve().parents[2]
-BASE=R/'experiments/v1603_capture_close_source'
+BASE=Path(__file__).resolve().parent
 digest=lambda v:hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':'),allow_nan=False).encode()).hexdigest()
 
 def exact(name,path,source):
@@ -80,7 +80,7 @@ class PreparedHistory:
         assert origin['online_actor_truth']is False and origin['all_published_scans_observed']is False
         refs=origin['observation_receipts'];count=len(self.refs)
         assert count<len(refs)==origin['received_observations']<=12001
-        assert refs[:count]==self.refs
+        assert refs[:count]==self.refs and storage_identity(origin['observation_journal'])==storage_identity(self.prefix)
         storage=origin['observation_journal'];assert storage['records']==len(refs)
         raw=self.provider.journal.read_prefix(self.output,storage)
         offset=self.prefix['prefix_bytes']
@@ -112,8 +112,11 @@ class PreparedHistory:
         self.same_stopped_state_unchecked();self.poisoned=False
         return dict(received_inputs=len(refs),prepared_inputs=count,new_inputs=len(refs)-count,
             novel_records=updates,skipped_published_sequences=gaps,receipt_head_sha256=head,
-            complete_prepared_prefix_SHA_rechecked=True,all_new_inputs_bound_to_actual_sent_wires=True,
+            complete_prepared_prefix_SHA_rechecked=True,all_new_inputs_bound_to_actual_sent_wires=True,all_recorded_inputs_bound_to_actual_sent_wires=True,
             estimator_recomputed=False,current_capture_passed=False,numerical_permission=False,physical_permission=False)
 
     def same_stopped_state_unchecked(self):
         assert stopped_identity(self.native,self.capture)==self.identity,'STOPPED_PREPARATION_STATE_CHANGED'
+
+def storage_identity(value):
+    return value['storage_kind'],value['path']

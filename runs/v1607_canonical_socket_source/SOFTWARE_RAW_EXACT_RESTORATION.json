@@ -1,0 +1,29 @@
+{
+  "unix": 1795334386.29874,
+  "error": "preparation helper reused p loop variable then wrote REUSE map to last SOFTWARE output journal instead of new REUSE_INPUTS.json",
+  "affected_path": "runs/v1606_stopped_source_preparation/source_target/software_event/causal_source/OBSERVATIONS.jsonl",
+  "affected_scope": "SOFTWARE_2_ROWS_ONLY_NO_ACTUAL_OR_MODEL",
+  "corrupted_bytes": 29436,
+  "corrupted_SHA": "4d9175ff2fa7cd4bd21b16b3503df52f42207d0f096379c6bab1b1fce5a27d91",
+  "corrupted_copy": "runs/v1607_canonical_socket_source/MISDIRECTED_REUSE_MANIFEST.json",
+  "exact_restoration_bytes": 2001,
+  "exact_restored_SHA": "2fcc187a1a3ca28a2f6f8998860c73a7889134bdf9c69d070192265f0357c51d",
+  "original_individual_file_and_semantic_and_whole_SHA_all_matched": true,
+  "original_SHA_already_saved_in_complete_capture_proof": true,
+  "original_SHA_also_in_misdirected_manifest": true,
+  "old_worker_or_qualifier_executed": false,
+  "original_tracker_or_model_calls": 0,
+  "rows": [
+    {
+      "index": 0,
+      "SHA": "b8afd6fdab5008f1600b47a885e013f3a4c91f62e4a161968854687c1bff2400"
+    },
+    {
+      "index": 1,
+      "SHA": "88c522028669335ddcb2e185f1e124b1dd513fe3f20e8f9a63c8f5733c4eff47"
+    }
+  ],
+  "old_failed_target_still_failed": true,
+  "actual_data_untouched": true,
+  "source_files_untouched": true
+}

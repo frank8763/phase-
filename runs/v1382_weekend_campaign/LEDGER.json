@@ -1232,7 +1232,7 @@
   "latest_complete_capture_model_diagnosis": "runs/v1408_saved_capture_witness/DIAGNOSIS.json",
   "latest_complete_finite_method_preparation": "runs/v1406_complete_finite_witness/PREPARATION_CHECKPOINT.json",
   "latest_complete_route_transaction_preparation": "runs/v1404_route_bridge_session/PREPARATION_CHECKPOINT02.json",
-  "latest_complete_runtime_source_qualification": "runs/v1603_capture_close_source/CLOSED_CHECKPOINT.json",
+  "latest_complete_runtime_source_qualification": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json",
   "latest_complete_saved_capture_model_round": "runs/v1408_saved_capture_witness/RUNNING_CHECKPOINT.json",
   "latest_complete_saved_scalar_model_generation": "runs/v1410_scalar_feedback_witness/model/RESULT.json",
   "latest_complete_saved_scalar_model_independent_audit": "runs/v1412_saved_witness_audit/model/INDEPENDENT_AUDIT.json",
@@ -2051,7 +2051,7 @@
   "new_component_native_additional_unknown_tasks": [
     "full9390_main"
   ],
-  "next_preparation": "experiments/v1606_stopped_source_preparation/PROTOCOL.md",
+  "next_preparation": "experiments/v1609_complete_refresh_source/PROTOCOL.md",
   "next_round_qualification": null,
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
@@ -3139,11 +3139,19 @@
       "result": "runs/v1603_capture_close_source/first_event/COMPLETION.json",
       "science": 12,
       "started_unix": 1795330426.2845242,
-      "status": "CLOSED_OWNER_REVIEW_PENDING",
+      "status": "CLOSED_FAILED_CURRENT_SOURCE_CAPTURE_AGE",
       "post_round_storage_barrier_path": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json",
       "post_round_storage_barrier_sha256": "6746c1ecb559219099159ee3e6ae25e17a00bb8dc6fb707b411584c5b52a5a95",
       "runtime_recovery_complete": true,
-      "runtime_recovery_supplement": "runs/v1603_capture_close_source/RUNTIME_REMOTE_RECOVERY_SUPPLEMENT.json"
+      "runtime_recovery_supplement": "runs/v1603_capture_close_source/RUNTIME_REMOTE_RECOVERY_SUPPLEMENT.json",
+      "post_round_storage_barrier": {
+        "path": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json",
+        "sha256": "6746c1ecb559219099159ee3e6ae25e17a00bb8dc6fb707b411584c5b52a5a95"
+      },
+      "runtime_review": {
+        "path": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
+        "sha256": "58e6dacc22bd99716cb207241041f18412f1447822afdfb51c66059ebd6aa7c2"
+      }
     }
   ],
   "scalar_feedback_saved_generation_independent_audit_native": 791940,
@@ -3165,7 +3173,7 @@
     "runs/v1577_goal_bound_segment_bridge/SCIENTIFIC_REVISION_REGISTRATION.json"
   ],
   "scientific_revisions": 12,
-  "status": "ACTIVE_CAMPAIGN_STOPPED_SOURCE_REFRESH_PREPARATION",
+  "status": "ACTIVE_CAMPAIGN_REFRESH_SOURCE_CLOSED_RECOVERY_PENDING",
   "storage_allocated_bytes": 9339875328,
   "storage_limit_bytes": 16106127360,
   "storage_proof": "runs/v1382_weekend_campaign/storage/FINALIZED.json",
@@ -3174,7 +3182,7 @@
   "v1394_original_missing_result_unknown_account_preserved": true,
   "v1532_source_entry_qualified": true,
   "vehicle_task_starts": 24,
-  "weekend_next_preparation": "experiments/v1606_stopped_source_preparation/PROTOCOL.md",
+  "weekend_next_preparation": "experiments/v1609_complete_refresh_source/PROTOCOL.md",
   "zero200_closure_qualification_counts": {
     "actual_native": 200,
     "canonical_factory_call_attempts": 1,
@@ -3235,6 +3243,6 @@
     "round_id": "v1454_bounded_gzip_closure_zero200"
   },
   "latest_first_event_runtime_result": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
-  "latest_stopped_source_preparation": "runs/v1606_stopped_source_preparation/PREPARATION_CHECKPOINT.json",
+  "latest_stopped_source_preparation": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json",
   "latest_first_event_runtime_storage_barrier": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json"
 }
