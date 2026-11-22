@@ -67,6 +67,7 @@ class CurrentReserve:
         self.digest=params.digest
 
     def __call__(self,packet,modes):
+        assert not self.failed and not self.in_call,'CURRENT_RESERVE_NOT_RETRIED_AFTER_FAILURE'
         entered=False;self.current_failure_save_attempted=False
         try:
             with self.namespace_bank.activate():

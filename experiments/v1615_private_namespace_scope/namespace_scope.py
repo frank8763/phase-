@@ -22,7 +22,7 @@ class Bank:
   self.source=dict(source);self.names=tuple(definitions.COLLISION_NAMES)
   assert self.names and len(set(self.names))==len(self.names)
   assert MARKER not in sys.modules,'PRIVATE_NAMESPACE_OTHER_OWNER_ACTIVE'
-  self.owner=os.getpid(),threading.get_ident();self.depth=0;self.failed=False
+  self.owner=os.getpid(),threading.get_ident();self.depth=0;self.failed=False;self.primary=None
   self.actual={n:sys.modules.get(n,MISSING)for n in self.names}
   self.private=None;self.activations=0;self.last_restore_verified=False
   self.actual_sources={n:self.identity(m)for n,m in self.actual.items()if m is not MISSING}
@@ -49,12 +49,15 @@ class Bank:
  def activate(self):
   if self.depth:
    assert self.owner==(os.getpid(),threading.get_ident())and getattr(sys.modules.get(MARKER),'bank',None)is self
+   assert not self.failed,'PRIVATE_NAMESPACE_POISONED_SCOPE'
    self.depth+=1
    try:yield self
+   except BaseException as error:
+    self.failed=True;self.primary=self.primary or error;raise
    finally:self.depth-=1
    return
   try:self.check_actual()
-  except BaseException:self.failed=True;raise
+  except BaseException as error:self.failed=True;self.primary=self.primary or error;raise
   self.depth=1;self.last_restore_verified=False
   marker=types.ModuleType(MARKER);marker.__file__=__file__;marker.bank=self
   original_path=list(sys.path);first=None;mutated=False
@@ -66,8 +69,9 @@ class Bank:
      self.identity(module);sys.modules[name]=module
    self.activations+=1
    yield self
+   if self.failed:raise self.primary or AssertionError('PRIVATE_NAMESPACE_POISONED_SCOPE')
   except BaseException as error:
-   first=error;self.failed=True;raise
+   first=error;self.failed=True;self.primary=self.primary or error;raise
   finally:
    try:
     if mutated:
@@ -88,9 +92,10 @@ class Bank:
       for name in self.names:sys.modules.pop(name,None)
       for name,module in self.actual.items():
        if module is not MISSING:sys.modules[name]=module
-      assert sys.modules.get(MARKER)is marker,'PRIVATE_NAMESPACE_MARKER_CHANGED'
-      sys.modules.pop(MARKER,None)
+      matching=sys.modules.get(MARKER)is marker
+      if matching:sys.modules.pop(MARKER,None)
      sys.path[:]=original_path
+     if mutated:assert matching,'PRIVATE_NAMESPACE_MARKER_CHANGED'
      assert all(sys.modules.get(n,MISSING)is m for n,m in self.actual.items())
      self.last_restore_verified=True
     except BaseException as error:
@@ -104,4 +109,5 @@ class Bank:
   return dict(scope='SOURCE_BOUND_MODULE_OWNERSHIP_ONLY',activations=self.activations,
    actual_aliases=self.actual_sources,private_aliases=None if self.private is None else{n:self.identity(m)for n,m in self.private.items()},
    canonical_resident_objects_restored=self.last_restore_verified,failed=self.failed,
+   first_error=None if self.primary is None else repr(self.primary),
    model_or_physical_permission=False,actual_state_reset=False,parameters_modified=False)
