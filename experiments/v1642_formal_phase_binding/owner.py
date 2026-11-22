@@ -84,7 +84,8 @@ def main(assignment_id):
      assert len(console)+len(block)<=4*1024**2,'OWNER_CONSOLE_CAP'
      console.extend(block);log.write(block);log.flush()
   child.wait(timeout=5);result['returncode']=child.returncode
-  machine=read(out/'RESULT.json');allsource=all(sha(R/n)==h for n,h in freeze.items());result['all_source_SHA_verified_after_child_exit']=allsource;result.update(canonical_vehicle_initializations=machine['canonical_vehicle_initializations'],actual_native=machine['new_actual_native'],own_replay_native=machine['own_replay_native'],machine_result_sha256=sha(out/'RESULT.json'),machine_passed=machine['passed'],full_model_work_total_native=None,tracked_recovery_model_work=machine.get('model_work'),complete_runtime_qualified=bool(machine['passed']),passed=bool(child.returncode==0 and machine['passed']and machine['closed']and machine['first_error']is None and not machine['secondary_errors']and machine['source_unchanged']and allsource))
+  allsource=all(sha(R/n)==h for n,h in freeze.items());result['all_source_SHA_verified_after_child_exit']=allsource
+  machine=read(out/'RESULT.json');result.update(canonical_vehicle_initializations=machine['canonical_vehicle_initializations'],actual_native=machine['new_actual_native'],own_replay_native=machine['own_replay_native'],machine_result_sha256=sha(out/'RESULT.json'),machine_passed=machine['passed'],full_model_work_total_native=None,tracked_recovery_model_work=machine.get('model_work'),complete_runtime_qualified=bool(machine['passed']),passed=bool(child.returncode==0 and machine['passed']and machine['closed']and machine['first_error']is None and not machine['secondary_errors']and machine['source_unchanged']and allsource))
  except BaseException as error:result['first_error']=dict(error=repr(error),traceback=traceback.format_exc())
  finally:
   PARENT_CLOSING=True
@@ -101,10 +102,14 @@ def main(assignment_id):
   if (child is None or child.poll()is not None)and idle:
    try:
     review.write_bytes(original);assert review.read_bytes()==original;cleared=True
-    put(O/'APPROVAL.json',dict(models_authorized=False,closed=True))
-    put(O/'EVALUATION_LEDGER.json',dict(status='CLOSED_FORMAL_ASSIGNMENT_REVIEW_AND_REMOTE_BACKUP_REQUIRED',active_round=None,models_now_authorized=False,vehicle_start_attempts=1,formal_assignments_executed=result['formal_assignments_executed']))
+   except BaseException as error:result['secondary_errors'].append(dict(stage='RESTORE_REVIEW',error=repr(error)))
+   try:put(O/'APPROVAL.json',dict(models_authorized=False,closed=True))
+   except BaseException as error:result['secondary_errors'].append(dict(stage='REVOKE_APPROVAL',error=repr(error)))
+   try:put(O/'EVALUATION_LEDGER.json',dict(status='CLOSED_FORMAL_ASSIGNMENT_REVIEW_AND_REMOTE_BACKUP_REQUIRED',active_round=None,models_now_authorized=False,vehicle_start_attempts=int(child is not None),formal_assignments_executed=result['formal_assignments_executed']))
+   except BaseException as error:result['secondary_errors'].append(dict(stage='CLOSE_ASSIGNMENT_LEDGER',error=repr(error)))
+   try:
     current=read(R/'CURRENT_EXPERIMENT.json');current.update(status='REGISTERED_PHASE_ASSIGNMENT_CLOSED_REVIEW',models_now_authorized=False,active_round=None,active_run=None);put(R/'CURRENT_EXPERIMENT.json',current)
-   except BaseException as error:result['secondary_errors'].append(dict(stage='RESTORE_AND_CLEAR',error=repr(error)))
+   except BaseException as error:result['secondary_errors'].append(dict(stage='CLEAR_CURRENT_AUTHORITY',error=repr(error)))
   result.update(closed=True,review_restored=cleared,lock_idle=idle,wall_s=time.monotonic()-started,closed_unix=time.time())
   if child is not None:result['returncode']=child.returncode
   if result['first_error']or result['secondary_errors']or not cleared:result['passed']=False

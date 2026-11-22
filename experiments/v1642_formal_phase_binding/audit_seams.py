@@ -48,6 +48,7 @@ def prefix_proof_input(x,selection,reference,variant):
  assert variant=='no_onward'and selection['method']=='refuge_onward'
  assert selection['prefix_counts_as_whole_arrival']is False
  assert selection['prefix_rows']==selection['rows']and selection['prefix_native']==len(reference)-1
+ assert all(type(row[2])is int and row[2]>0 for row in selection['rows'])and sum(row[2]for row in selection['rows'])==selection['prefix_native']
  assert selection['admission']['passed']and selection['admission']['shadow_memory_reset']is False
  local=copy.deepcopy(x);local['goal']=[float(v)for v in reference[-1,:2]]
  return local
