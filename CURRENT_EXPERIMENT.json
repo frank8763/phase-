@@ -28,10 +28,10 @@
     "shifted_candidate_scores": 79200
   },
   "acceleration_policy": "docs/EXPERIMENT_ACCELERATION_POLICY_20261117.md",
-  "active_entrypoint": "experiments/v1632_original_pilot_resources/pilot_entry.py",
+  "active_entrypoint": "experiments/v1636_cached_original_runtime/pilot_entry.py",
   "active_math_round": null,
-  "active_round": null,
-  "active_run": null,
+  "active_round": "v1636_pilot_WE_full",
+  "active_run": "runs/v1636_cached_original_runtime/pilot_WE_full",
   "active_window": null,
   "active_zero_model_diagnostic": null,
   "active_zero_model_storage_worker": null,
@@ -2537,7 +2537,10 @@
     "formal_executed": 0,
     "original_contract_user_selected": true,
     "overall_calendar_deadline_unix": null,
-    "path": "runs/v1635_original_cached_backends/PREPARATION_CHECKPOINT.json"
+    "path": "runs/v1636_cached_original_runtime/RUNNING_CHECKPOINT.json",
+    "operational_pilot_start_attempts": 3,
+    "active_pilot": "v1636_cached_original_runtime",
+    "current_actual_counts_pending": true
   },
   "latest_method_review": "docs/RPCCR_DYNAMIC_METHOD_RESET_AND_LITERATURE_20261113.md",
   "latest_mode_response_review": {
@@ -2697,6 +2700,7 @@
     "report": "docs/ORIGINAL_STOP2200_COMPONENT_V1542_REPORT.md",
     "runtime_backup_pending": false
   },
+  "latest_original_cached_source": "runs/v1636_cached_original_runtime/PREPARATION_CHECKPOINT.json",
   "latest_overnight": {
     "all24_executed": false,
     "attempted": [
@@ -12913,7 +12917,7 @@
     "research_only": true,
     "research_sources": "Primary papers, author repositories and official implementations; no performance replication"
   },
-  "models_now_authorized": false,
+  "models_now_authorized": true,
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13133,7 +13137,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "ORIGINAL_CACHED_BACKENDS_SOURCE_RECOVERY_REQUIRED",
+  "status": "RUNNING_ORIGINAL_CONTRACT_WE_PILOT",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13264,6 +13268,5 @@
     "storage_ready": true,
     "temporary_storage_cap_bytes": 10737418240
   },
-  "weekend_next_preparation": null,
-  "latest_original_cached_source": "runs/v1636_cached_original_runtime/PREPARATION_CHECKPOINT.json"
+  "weekend_next_preparation": null
 }
