@@ -32,7 +32,7 @@ def audit(task,functional,source):
 
 def audit_kind(result):
  n=result.get('new_actual_native')
- if not(result.get('evidence_saved')and(result.get('replay')or{}).get('passed')and type(n)is int and n>0 and result.get('fully_recorded_native')==n):return 'unreviewable'
+ if not(not result.get('model_native_inflight_unknown',False)and result.get('evidence_saved')and(result.get('replay')or{}).get('passed')and type(n)is int and n>0 and result.get('fully_recorded_native')==n):return 'unreviewable'
  if result.get('actual_original_goal_reached')and result.get('first_error')is None:return 'full_goal'
  return 'prefix_safety_only'
 

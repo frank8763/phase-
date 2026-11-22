@@ -39,7 +39,10 @@ def fresh_phase_auditor(module,sources):
 def prefix_proof_input(x,selection,reference,variant):
  assert variant in {'full','no_onward'}
  flagged=selection.get('measured_onward_still_required',False)
+ if variant=='no_onward'and selection.get('method')=='refuge_onward':assert flagged is True,'ABLATION_PREFIX_SCOPE_FLAG_MISSING'
  if not flagged:
+  assert variant!='full'or flagged is False
+
   assert not selection.get('prefix_counts_as_whole_arrival',False)
   return x
  assert variant=='no_onward'and selection['method']=='refuge_onward'
