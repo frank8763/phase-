@@ -1,0 +1,9 @@
+# V1612 actual current-source refresh runtime
+
+CLOSED FAILED at the private definition loader. The current real CUSP at native9045 completed stopped history preparation, exactly one fresh real wire/current causal input, and the saved current source/fullstate/time checks with age .09098648902727291s. The complete actual-capture runtime qualification flag remains false; no model or physical bridge acceptance follows from these source checks.
+
+The original fresh-process-only loader refused 14 generic module names already populated by canonical initialization. It refused before any private Engine/Predictor construction or nominal/witness/audit integration: all0. Original error and stage counters are retained. No scientific parameter, source200ms or safety gate was relaxed.
+
+Actual9245=6105 original RPP+2940 original public prefix actions+200 complete applied error stop. The machine broad shared_bridge_native field2940 does not denote new method12 bridge actions; live_components_installed=false. Full9246Nplus1/gap0 saved. Init1/internalfactoryunknown; Allocator machine null/source-derivedunexecuted; ownreplay0/integratedaudit/pairunexecuted. No method12 private numerical/current2200/actualbridge. Observed contacts0/minclear.2497787357084748 and discovered-then-travel.6606551707515527 are telemetry, not independently audited whole safety/arrival. Whole0.
+
+ROS cooperative close/controller exited; journal2585rows3991053B acknowledged/close true. Zero secondary errors. All12917sourceSHA/originalREVIEW/idlelock/ownedgroup exits independently verified. Parent26starts14partial151210actual105105ownreplay/science12 final, already owner-accounted once. One V1614 distinct runtime recovery must finish actualremote block/member/whole/indexSHA and exacteligible duplicate transportcleanup before any next round. All current inputs and original failures remain retained.

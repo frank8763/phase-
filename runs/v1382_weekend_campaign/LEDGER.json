@@ -32,7 +32,7 @@
   "active_round": null,
   "active_task": null,
   "active_zero_model_storage_worker": null,
-  "actual_total_native": 141965,
+  "actual_total_native": 151210,
   "actual_total_native_additional_unknown_tasks": [
     "full9390_main"
   ],
@@ -1209,6 +1209,62 @@
     "report": "docs/ORIGINAL_CATALOGUE_GEAR_V1549_REPORT.md",
     "source_only_passed": true
   },
+  "latest_census_prelaunch_health": {
+    "all_source_SHA_verified": true,
+    "execution_lock_idle": true,
+    "models": 0,
+    "next": "Once newactual-firstevent via frozen supervisor only; no old model/entry/rerun.",
+    "parent_inactive": true,
+    "passed": true,
+    "physical_native": 0,
+    "recorded_unix": 1795335870.9724588,
+    "review_original_SHA_restored": true,
+    "scientific_revision": 12,
+    "source_members": 12917,
+    "source_only": true,
+    "source_remote_all_chain_covered": true,
+    "storage": {
+      "allruns_inode_allocated_bytes": 10245865472,
+      "full_reserved_peak_bytes": 11304927232,
+      "limit_bytes": 16106127360,
+      "models": 0,
+      "old_scope_not_reused_as_admission": true
+    },
+    "whole_route_passed": false
+  },
+  "latest_census_source_recovery": {
+    "actual_runtime_qualified": false,
+    "all_frozen_members": 12917,
+    "all_frozen_members_remote_chain_covered": true,
+    "full_remote_proof_sha256": "54d95190c38240d6b6b79f3a91e9995156f5fe1d52b6a87efe121ca38b78e082",
+    "helper_Gitshow_and_Release_member_SHA_exact": true,
+    "index_path": "runs/v1613_census_source_recovery/ARCHIVE_INDEX.json",
+    "index_sha256": "4d8493473c5fdedcda6170f646d44b91aaf93bfe1641948e1c609562a1396958",
+    "inherited_frozen_members": 12846,
+    "inherited_recovery_path": "runs/v1609_complete_refresh_source/CURRENT_SOURCE_REMOTE_RECOVERY.json",
+    "inherited_recovery_sha256": "5bc4f625f743a82a7824ae3e5a680705a160c144f4283599189f5417832ef198",
+    "late_metadata_outside_closed_archive": true,
+    "latest_delta": {
+      "archive_bytes": 1783524,
+      "every_asset_actual_download_SHA": true,
+      "every_member_SHA_and_link_text": true,
+      "members": 140,
+      "models": 0,
+      "passed": true,
+      "physical_admission": false,
+      "recovery_index_download_SHA": true,
+      "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1613-locked-writer-census-source-20261122",
+      "source_commit": "52a9060d0e63aae47f31f05c728dfedf7dedaf4a",
+      "verified_unix": 1795335827.1922104,
+      "whole_archive_SHA": true
+    },
+    "models": 0,
+    "new_delta_members": 71,
+    "passed": true,
+    "physical_admission": false,
+    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
+    "uncovered_members": []
+  },
   "latest_closed_transport_recovery": "records/closed_transport_recovery_v1400_20261121/RECOVERY_INDEX.json",
   "latest_complete_batch_source_preparation": {
     "CPP_native": 1263600,
@@ -1247,6 +1303,21 @@
   },
   "latest_current_cusp_transaction_preparation": "runs/v1419_current_cusp_transaction/PREPARATION_CHECKPOINT.json",
   "latest_current_owner_capture_preparation": "runs/v1574_current_owner_capture/CLOSED_CHECKPOINT.json",
+  "latest_current_refresh_runtime_closed": {
+    "closed": true,
+    "passed": false,
+    "actual_native": 9245,
+    "Nplus1_states": 9246,
+    "full200_applied_zero_tail": true,
+    "ownreplay_native": 0,
+    "capture_saved_checks_passed": true,
+    "capture_source_age_s": 0.09098648902727291,
+    "complete_actual_capture_runtime_qualified": false,
+    "private_generation_native": 0,
+    "whole_route_passed": false,
+    "scientific_revision": 12,
+    "runtime_remote_recovery_pending": true
+  },
   "latest_current_timed_geometry_qualification": "runs/v1414_current_timed_geometry/QUALIFICATION.json",
   "latest_current_timed_reserve_qualified": true,
   "latest_evidence_quota_preparation": "runs/v1431_bounded_evidence_owner/PREPARATION_CHECKPOINT.json",
@@ -1312,8 +1383,8 @@
   },
   "latest_first_event_runtime_result": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
   "latest_first_event_runtime_storage_barrier": {
-    "path": "runs/v1609_complete_refresh_source/POST_ROUND_STORAGE_BARRIER.json",
-    "sha256": "89fafdae94b69ee56cde7fa5bbdeae7182512de65861f5a654d7bf3cc8e16784"
+    "path": "runs/v1612_locked_writer_census/POST_ROUND_STORAGE_BARRIER.json",
+    "sha256": "7300e5b8367d397d0bd58f88d4f709bafa4bea8c177c925d8c2654eb8f2214e6"
   },
   "latest_fixed_WE_evaluation_contract_preparation": {
     "actual_capture_qualified": false,
@@ -1611,6 +1682,26 @@
     "source_derived_private_native": 0,
     "source_derived_replay": 0,
     "supervisor_completion_error": "TimeoutError('ROUTE_SUPERVISOR_HARD_STOP_SAVE_PREFIX')"
+  },
+  "latest_locked_writer_census_source": {
+    "all_source_SHA_verified": true,
+    "execution_lock_idle": true,
+    "inner_wall_s": 20.34779792500194,
+    "models": 0,
+    "negative_cases": 7,
+    "no_rerun_or_frozen_source_edits": true,
+    "old_suites_reused_not_rerun": true,
+    "outer_wall_s": 21.570306651003193,
+    "passed": true,
+    "physical_native": 0,
+    "recorded_unix": 1795335751.7829983,
+    "review_original_SHA_restored": true,
+    "scientific_revision": 12,
+    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
+    "source_members": 12917,
+    "source_only": true,
+    "source_remote_recovery_pending": true,
+    "whole_route_passed": false
   },
   "latest_lossless_branch_storage_qualification": "runs/v1407_lossless_branch_stream/QUALIFICATION.json",
   "latest_lossless_witness_numeric_result": {
@@ -2051,13 +2142,13 @@
   "native_analytical_native_additional_unknown_tasks": [
     "full9390_main"
   ],
-  "navigation_prefix_task_starts": 13,
+  "navigation_prefix_task_starts": 14,
   "navigation_tasks_started": 0,
   "new_component_native": 7580,
   "new_component_native_additional_unknown_tasks": [
     "full9390_main"
   ],
-  "next_preparation": "experiments/v1612_locked_writer_census/PROTOCOL.md",
+  "next_preparation": "experiments/v1615_private_namespace_scope/PROTOCOL.md",
   "next_round_qualification": null,
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
@@ -3168,17 +3259,40 @@
       "owner_accounting_applied": true,
       "owner_close_error_count": 0,
       "passed": false,
+      "post_round_storage_barrier": {
+        "path": "runs/v1609_complete_refresh_source/POST_ROUND_STORAGE_BARRIER.json",
+        "sha256": "89fafdae94b69ee56cde7fa5bbdeae7182512de65861f5a654d7bf3cc8e16784"
+      },
       "result": "runs/v1609_complete_refresh_source/first_event/COMPLETION.json",
-      "science": 12,
-      "started_unix": 1795334855.579174,
-      "status": "CLOSED_FAILED_RESOURCE_MEASUREMENT_RACE",
+      "runtime_recovery_complete": true,
       "runtime_review": {
         "path": "runs/v1609_complete_refresh_source/RUNTIME_CLOSED_REVIEW.json",
         "sha256": "bf11c524a0b60f6627a483fd60b9686d97effb693a18fa9887181e8dbf6c3e9e"
       },
+      "science": 12,
+      "started_unix": 1795334855.579174,
+      "status": "CLOSED_FAILED_RESOURCE_MEASUREMENT_RACE"
+    },
+    {
+      "actual_native": 9245,
+      "canonical_vehicle_initializations": 1,
+      "id": "v1612_locked_writer_census",
+      "internal_factory_model_constructions": null,
+      "own_replay_native": 0,
+      "owner_accounting_applied": true,
+      "owner_close_error_count": 0,
+      "passed": false,
+      "result": "runs/v1612_locked_writer_census/first_event/COMPLETION.json",
+      "science": 12,
+      "started_unix": 1795335882.4196496,
+      "status": "CLOSED_FAILED_PRIVATE_DEFINITION_NAMESPACE_BEFORE_MODEL",
+      "runtime_review": {
+        "path": "runs/v1612_locked_writer_census/RUNTIME_CLOSED_REVIEW.json",
+        "sha256": "c2c42cafe45226ba9687a015bf9883c4806a2f3bbd5a01521a920b2f57735d14"
+      },
       "post_round_storage_barrier": {
-        "path": "runs/v1609_complete_refresh_source/POST_ROUND_STORAGE_BARRIER.json",
-        "sha256": "89fafdae94b69ee56cde7fa5bbdeae7182512de65861f5a654d7bf3cc8e16784"
+        "path": "runs/v1612_locked_writer_census/POST_ROUND_STORAGE_BARRIER.json",
+        "sha256": "7300e5b8367d397d0bd58f88d4f709bafa4bea8c177c925d8c2654eb8f2214e6"
       },
       "runtime_recovery_complete": true
     }
@@ -3210,8 +3324,8 @@
   "storage_round_policy": "ONE_ROUND_THEN_UPLOAD_FULL_REMOTE_VERIFY_EXACT_CLEANUP_BEFORE_NEXT_ROUND",
   "v1394_original_missing_result_unknown_account_preserved": true,
   "v1532_source_entry_qualified": true,
-  "vehicle_task_starts": 25,
-  "weekend_next_preparation": "experiments/v1612_locked_writer_census/PROTOCOL.md",
+  "vehicle_task_starts": 26,
+  "weekend_next_preparation": "experiments/v1615_private_namespace_scope/PROTOCOL.md",
   "zero200_closure_qualification_counts": {
     "actual_native": 200,
     "canonical_factory_call_attempts": 1,
@@ -3271,38 +3385,22 @@
     "own_replay_native": 200,
     "round_id": "v1454_bounded_gzip_closure_zero200"
   },
-  "latest_current_refresh_runtime_closed": {
-    "closed": true,
-    "passed": false,
-    "actual_native": 3545,
-    "original_RPP_native": 3345,
-    "error_stop_native": 200,
-    "Nplus1_states": 3546,
-    "full200_applied_zero_tail": true,
-    "ownreplay_native": 0,
-    "whole_route_passed": false,
-    "scientific_revision": 12,
-    "runtime_remote_recovery_pending": true,
-    "path": "runs/v1609_complete_refresh_source/RUNTIME_CLOSED_REVIEW.json"
-  },
-  "latest_locked_writer_census_source": {
-    "recorded_unix": 1795335751.7829983,
-    "passed": true,
-    "source_only": true,
+  "latest_private_namespace_preparation": {
+    "recorded_unix": 1795336460.745228,
+    "AST_only": true,
+    "source_qualified": false,
+    "actual_qualified": false,
     "models": 0,
     "physical_native": 0,
-    "whole_route_passed": false,
-    "source_members": 12917,
-    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
-    "inner_wall_s": 20.34779792500194,
-    "outer_wall_s": 21.570306651003193,
-    "negative_cases": 7,
-    "all_source_SHA_verified": true,
-    "review_original_SHA_restored": true,
-    "execution_lock_idle": true,
-    "old_suites_reused_not_rerun": true,
-    "source_remote_recovery_pending": true,
     "scientific_revision": 12,
-    "no_rerun_or_frozen_source_edits": true
+    "concrete_new_modules": [
+      "namespace_scope.py",
+      "transaction.py",
+      "components.py",
+      "current_reserve.py"
+    ],
+    "remaining": "Necessary namespace owner/fault/source-only target and source identity closure; proof/restore failures must preserve firsterror, no original definitions/model/Gear suite rerun. Full recovery/once/root/storage before future runtime.",
+    "runtime_recovery_required": "runs/v1614_census_runtime_recovery",
+    "proof_failure_firsterror_preservation_and_one_partial_attempt_draft": true
   }
 }

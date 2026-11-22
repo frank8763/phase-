@@ -2055,8 +2055,8 @@
   },
   "latest_first_event_runtime_result": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
   "latest_first_event_runtime_storage_barrier": {
-    "path": "runs/v1609_complete_refresh_source/POST_ROUND_STORAGE_BARRIER.json",
-    "sha256": "89fafdae94b69ee56cde7fa5bbdeae7182512de65861f5a654d7bf3cc8e16784"
+    "path": "runs/v1612_locked_writer_census/POST_ROUND_STORAGE_BARRIER.json",
+    "sha256": "7300e5b8367d397d0bd58f88d4f709bafa4bea8c177c925d8c2654eb8f2214e6"
   },
   "latest_fixed_WE_evaluation_contract_preparation": {
     "actual_capture_qualified": false,
@@ -12792,7 +12792,7 @@
     "start_condition": "complete recovery source and live integration qualification passed before any new physical initialization",
     "user_choice": "新独立12小时：三路线全过后，条件进入固定24项"
   },
-  "next_preparation": "experiments/v1612_locked_writer_census/PROTOCOL.md",
+  "next_preparation": "experiments/v1615_private_namespace_scope/PROTOCOL.md",
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "next_scope": "Integrate V1437 shared5400s phase guards into current production lifecycle/supervisor before necessary zero-model qualification; full route admission remains absent.",
   "night_candidate_relay": "runs/v1192_eight_gib_relay",
@@ -13027,7 +13027,7 @@
   "storage_round_policy": "ONE_ROUND_THEN_UPLOAD_FULL_REMOTE_VERIFY_EXACT_CLEANUP_BEFORE_NEXT_ROUND",
   "target_journal": "Robotics and Autonomous Systems",
   "v1532_source_entry_qualified": true,
-  "vehicle_task_starts": 25,
+  "vehicle_task_starts": 26,
   "verified_v1281_github_backup": {
     "all_member_SHA_readback": 15528,
     "cleanup_logical_bytes": 3829034023,
@@ -13124,21 +13124,22 @@
     "storage_ready": true,
     "temporary_storage_cap_bytes": 10737418240
   },
-  "weekend_next_preparation": "experiments/v1612_locked_writer_census/PROTOCOL.md",
+  "weekend_next_preparation": "experiments/v1615_private_namespace_scope/PROTOCOL.md",
   "latest_stopped_source_preparation": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json",
   "latest_current_refresh_runtime_closed": {
     "closed": true,
     "passed": false,
-    "actual_native": 3545,
-    "original_RPP_native": 3345,
-    "error_stop_native": 200,
-    "Nplus1_states": 3546,
+    "actual_native": 9245,
+    "Nplus1_states": 9246,
     "full200_applied_zero_tail": true,
     "ownreplay_native": 0,
+    "capture_saved_checks_passed": true,
+    "capture_source_age_s": 0.09098648902727291,
+    "complete_actual_capture_runtime_qualified": false,
+    "private_generation_native": 0,
     "whole_route_passed": false,
     "scientific_revision": 12,
-    "runtime_remote_recovery_pending": true,
-    "path": "runs/v1609_complete_refresh_source/RUNTIME_CLOSED_REVIEW.json"
+    "runtime_remote_recovery_pending": true
   },
   "latest_locked_writer_census_source": {
     "recorded_unix": 1795335751.7829983,
@@ -13159,5 +13160,89 @@
     "source_remote_recovery_pending": true,
     "scientific_revision": 12,
     "no_rerun_or_frozen_source_edits": true
+  },
+  "latest_census_source_recovery": {
+    "passed": true,
+    "all_frozen_members": 12917,
+    "inherited_frozen_members": 12846,
+    "new_delta_members": 71,
+    "all_frozen_members_remote_chain_covered": true,
+    "uncovered_members": [],
+    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
+    "inherited_recovery_path": "runs/v1609_complete_refresh_source/CURRENT_SOURCE_REMOTE_RECOVERY.json",
+    "inherited_recovery_sha256": "5bc4f625f743a82a7824ae3e5a680705a160c144f4283599189f5417832ef198",
+    "index_path": "runs/v1613_census_source_recovery/ARCHIVE_INDEX.json",
+    "index_sha256": "4d8493473c5fdedcda6170f646d44b91aaf93bfe1641948e1c609562a1396958",
+    "full_remote_proof_sha256": "54d95190c38240d6b6b79f3a91e9995156f5fe1d52b6a87efe121ca38b78e082",
+    "latest_delta": {
+      "passed": true,
+      "source_commit": "52a9060d0e63aae47f31f05c728dfedf7dedaf4a",
+      "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1613-locked-writer-census-source-20261122",
+      "every_asset_actual_download_SHA": true,
+      "every_member_SHA_and_link_text": true,
+      "whole_archive_SHA": true,
+      "recovery_index_download_SHA": true,
+      "members": 140,
+      "archive_bytes": 1783524,
+      "models": 0,
+      "physical_admission": false,
+      "verified_unix": 1795335827.1922104
+    },
+    "helper_Gitshow_and_Release_member_SHA_exact": true,
+    "late_metadata_outside_closed_archive": true,
+    "models": 0,
+    "physical_admission": false,
+    "actual_runtime_qualified": false
+  },
+  "latest_census_prelaunch_health": {
+    "passed": true,
+    "recorded_unix": 1795335870.9724588,
+    "all_source_SHA_verified": true,
+    "source_members": 12917,
+    "source_remote_all_chain_covered": true,
+    "review_original_SHA_restored": true,
+    "execution_lock_idle": true,
+    "parent_inactive": true,
+    "storage": {
+      "allruns_inode_allocated_bytes": 10245865472,
+      "full_reserved_peak_bytes": 11304927232,
+      "limit_bytes": 16106127360,
+      "models": 0,
+      "old_scope_not_reused_as_admission": true
+    },
+    "source_only": true,
+    "models": 0,
+    "physical_native": 0,
+    "whole_route_passed": false,
+    "scientific_revision": 12,
+    "next": "Once newactual-firstevent via frozen supervisor only; no old model/entry/rerun."
+  },
+  "latest_actual_runtime_owner": {
+    "tool_session": 3702,
+    "closed": true,
+    "passed": false,
+    "actual_native": 9245,
+    "current_source_age_s": 0.09098648902727291,
+    "private_generation_native": 0,
+    "actual_result_pending": false,
+    "whole_route_passed": false
+  },
+  "latest_private_namespace_preparation": {
+    "recorded_unix": 1795336460.745228,
+    "AST_only": true,
+    "source_qualified": false,
+    "actual_qualified": false,
+    "models": 0,
+    "physical_native": 0,
+    "scientific_revision": 12,
+    "concrete_new_modules": [
+      "namespace_scope.py",
+      "transaction.py",
+      "components.py",
+      "current_reserve.py"
+    ],
+    "remaining": "Necessary namespace owner/fault/source-only target and source identity closure; proof/restore failures must preserve firsterror, no original definitions/model/Gear suite rerun. Full recovery/once/root/storage before future runtime.",
+    "runtime_recovery_required": "runs/v1614_census_runtime_recovery",
+    "proof_failure_firsterror_preservation_and_one_partial_attempt_draft": true
   }
 }

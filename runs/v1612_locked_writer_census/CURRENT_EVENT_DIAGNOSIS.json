@@ -1,0 +1,37 @@
+{
+  "closed": true,
+  "failure_kind": "FRESH_PROCESS_DEFINITION_LOADER_IN_ALREADY_INITIALIZED_CANONICAL_NATIVE_OWNER",
+  "first_private_error": "AssertionError(('ORIGINAL_WE_DEFINITION_NAMESPACE_NOT_FRESH', ['kernel', 'common', 'coupled_model', 'coupled_control', 'prediction', 'parked_control', 'braking_reserve', 'whole_input', 'fast_predict', 'geometry_model', 'timed_input', 'exact_timed', 'vehicle', 'factory']))",
+  "original_outer_error": {
+    "error": "PrivateBoundary('CURRENT_GOAL_BOUND_PRIVATE_CLOSED_NO_LIVE_INSTALLATION')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1612_locked_writer_census/native_driver.py\", line 122, in execute\n    while not pump.stopped:pump.iteration()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1612_locked_writer_census/pump.py\", line 78, in iteration\n    self.owner.on_cusp(packet)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1612_locked_writer_census/canonical_owner.py\", line 62, in on_cusp\n    if not result['passed']:raise PrivateBoundary(result)\nv1612_real_current_canonical_owner.PrivateBoundary: CURRENT_GOAL_BOUND_PRIVATE_CLOSED_NO_LIVE_INSTALLATION\n"
+  },
+  "collisions": [
+    "kernel",
+    "common",
+    "coupled_model",
+    "coupled_control",
+    "prediction",
+    "parked_control",
+    "braking_reserve",
+    "whole_input",
+    "fast_predict",
+    "geometry_model",
+    "timed_input",
+    "exact_timed",
+    "vehicle",
+    "factory"
+  ],
+  "private_transaction_sha256": "8badf36c460ace1c395cb0714ff6ea8bf593e5614e9eeb8b59b4466ea862d15b",
+  "capture_proof_sha256": "622c5da480a8cb2b360eb4bca10df3a05c61f49c30128e92ca5e76aa3cb9c000",
+  "current_source_checks_passed": true,
+  "current_source_age_s": 0.09098648902727291,
+  "not_complete_model_or_physical_capture_qualification": true,
+  "loader_refused_before_Engine_Predictor_or_model_native": true,
+  "all_proposal_generation_audit_work_zero": true,
+  "no_algorithm_or_model_safety_gate_evaluated": true,
+  "counter_du_failure_not_reobserved_in_this_run": true,
+  "closure_first_error_full200_and_files_saved": true,
+  "proposed_next": "New source only: preserve original fresh-definition import/code audits using bounded source-verified namespace ownership around canonical private binding; never delete arbitrary module state, relax checks or mutate canonical model. Necessary integration source target, full recovery/budgets before future bounded actual. Science12 final.",
+  "models_during_diagnosis": 0
+}
