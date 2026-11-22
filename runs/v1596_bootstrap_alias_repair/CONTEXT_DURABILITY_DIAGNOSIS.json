@@ -1,0 +1,7 @@
+{
+  "unix": 1795326910.1263046,
+  "cause": "Current route_context.dump calls writable WriteProxy.fileno for fsync; original bound OutputBoundary correctly denies writable raw descriptors. Original provider invokes this new context at first actual source receipt. No navigation command or arm occurred.",
+  "new_version_fix": "Flush and close the charged temporary writer, then fsync through a readonly descriptor, atomically replace and retain readonly directory fsync. Original boundary/bytecap/rawfd prohibition unchanged.",
+  "new_source_target": "Call actual new context.dump under exact original ACTUAL_ROS OutputBoundary;readback content and confirm raw writable fd remains refused;no old ROS/OS/model suites.",
+  "scientific_or_safety_change": false
+}

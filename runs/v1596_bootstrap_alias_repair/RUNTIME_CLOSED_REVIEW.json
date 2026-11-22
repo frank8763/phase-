@@ -1,0 +1,36 @@
+{
+  "unix": 1795326910.1261325,
+  "closed": true,
+  "passed": false,
+  "scope": "REVISION12_FIRST_GOAL_BOUND_SEGMENT_ACTUAL_RUNTIME",
+  "runtime_qualification_passed": false,
+  "whole_route_passed": false,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 0,
+  "own_replay_native": 0,
+  "private_native": 0,
+  "current_reserve_native": 0,
+  "Allocator_recomputations": 0,
+  "original_mujoco_and_factory_bootstrap_reached_true_t0": true,
+  "source_gate_not_a_navigation_pass": true,
+  "first_ROS_error": "OSError('WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE')",
+  "first_ROS_traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1596_bootstrap_alias_repair/route_ros.py\", line 240, in main\n    wait(lambda: latest is not None and client.service_is_ready(), 45, 'ACTUAL_T0_OR_LIFECYCLE_MISSING')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1596_bootstrap_alias_repair/route_ros.py\", line 225, in wait\n    rclpy.spin_once(node, timeout_sec=.005)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py\", line 226, in spin_once\n    executor.spin_once(timeout_sec=timeout_sec)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 926, in spin_once\n    self._spin_once_impl(timeout_sec)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 918, in _spin_once_impl\n    raise handler.exception()\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/task.py\", line 286, in _execute_coroutine_step\n    result = coro.send(None)\n             ^^^^^^^^^^^^^^^\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 592, in handler\n    await call_coroutine()\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 454, in _execute\n    await await_or_execute(tmr.callback)\n  File \"/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py\", line 115, in await_or_execute\n    return callback(*args)\n           ^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1596_bootstrap_alias_repair/route_ros.py\", line 206, in publish\n    novel=tracker.observe(wire)\n          ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1574_current_owner_capture/causal_provider.py\", line 55, in observe\n    self.save(path, row)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1596_bootstrap_alias_repair/route_context.py\", line 19, in dump\n    stream.write(data);stream.flush();os.fsync(stream.fileno())\n                                               ^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1479_retirement_scope_binding/bounded_io.py\", line 25, in fileno\n    def fileno(self):raise OSError('WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE')\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nOSError: WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE\n",
+  "native_error": {
+    "error": "AssertionError('ACTUAL_COMMAND_BEFORE_ARM')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1596_bootstrap_alias_repair/native_driver.py\", line 122, in execute\n    while not pump.stopped:pump.iteration()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1596_bootstrap_alias_repair/pump.py\", line 83, in iteration\n    assert self.armed,'ACTUAL_COMMAND_BEFORE_ARM'\nAssertionError: ACTUAL_COMMAND_BEFORE_ARM\n"
+  },
+  "native_error_tail_not_applied": true,
+  "secondary_errors": [
+    {
+      "stage": "ORIGINAL_PREFIX_ERROR_ZERO_TAIL",
+      "error": "RuntimeError('SUPERVISOR_REQUESTED_NATIVE_SAVE_AND_CLOSE:RuntimeError(\\'ACTUAL_ROS_FAILED:{\\\\\\'first_saved_ROS_error\\\\\\': \"OSError(\\\\\\'WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE\\\\\\')\", \\\\\\'ROS_result_sha256\\\\\\': \\\\\\'8cfd2f82304e9a6c978d494b05bffb1d5609f36745b854a81c0245ce2952948c\\\\\\', \\\\\\'closed\\\\\\': True, \\\\\\'cooperative_request_valid\\\\\\': False, \\\\\\'controller_server_exited\\\\\\': True}\\')')"
+    }
+  ],
+  "source_all_unchanged": true,
+  "review_original_restored": true,
+  "lock_idle": true,
+  "rerun_prohibited": true,
+  "scientific_revision": 12,
+  "runtime_recovery_pending": true
+}
