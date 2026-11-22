@@ -1,0 +1,94 @@
+{
+  "closed": true,
+  "passed": false,
+  "first_error": {
+    "error": "RuntimeError('CaptureRefusal(\"CANONICAL_CURRENT_CAPTURE_REFUSED:AssertionError(\\'wire_age_after_capture\\')\")')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1603_capture_close_source/native_driver.py\", line 122, in execute\n    while not pump.stopped:pump.iteration()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1603_capture_close_source/pump.py\", line 89, in iteration\n    self.owner.on_cusp(packet)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1603_capture_close_source/canonical_owner.py\", line 40, in on_cusp\n    try:super().on_cusp(notice)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1603_capture_close_source/capture_owner.py\", line 88, in on_cusp\n    error=RuntimeError(first or 'SOURCE_TRANSACTION_CLOSE_SAVE_FAILED');error.secondary_errors=secondary;raise error\nRuntimeError: CaptureRefusal(\"CANONICAL_CURRENT_CAPTURE_REFUSED:AssertionError('wire_age_after_capture')\")\n"
+  },
+  "native_returncode": 1,
+  "owner_tool_exit_code": 0,
+  "owner_tool_exit_not_scientific_pass": true,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 5995,
+  "original_RPP_native": 5520,
+  "disclosed_shared_prefix_zero_native": 475,
+  "new_goal_bound_bridge_native": 0,
+  "complete_Nplus1_states": 5996,
+  "unrecorded_actual_gap": 0,
+  "full200_applied_tail": false,
+  "error_tail_applied_native": 0,
+  "own_replay_native": 0,
+  "independent_Allocator_recomputations_source_derived": 0,
+  "machine_Allocator_field_missing_or_None_preserved": true,
+  "private_method12_generation_native_source_derived": 0,
+  "private_transaction_machine_None_preserved": true,
+  "new_current_CPP2200_native": 0,
+  "actual_current_capture_passed": false,
+  "actual_goal_bound_bridge_installed": false,
+  "whole_route_passed": false,
+  "source_capture_failed_gate": "wire_age_after_capture",
+  "source_checks_before_final_age_all_true": true,
+  "causal_inputs_content_verified_at_event": 1631,
+  "final_causal_journal_rows": 1632,
+  "final_causal_journal_bytes": 2521709,
+  "causal_journal_whole_SHA": "b30c115f3d89d4e4f4b4ebd2f4fa3ed59043d979deae7326e0881d625a8e8f92",
+  "causal_journal_close_passed": true,
+  "actual_ROS_charged_bytes": 11854812,
+  "actual_ROS_cap_bytes": 25165824,
+  "ROS_RESULT_closed": true,
+  "FIRST_ERROR_file_missing": true,
+  "first_error_preserved_in_RESULT": true,
+  "secondary_errors": [
+    {
+      "stage": "SAVE_FIRST_ERROR",
+      "error": "AssertionError('BYTE_GRANT_EXPIRED')"
+    },
+    {
+      "stage": "ORIGINAL_PREFIX_ERROR_ZERO_TAIL",
+      "error": "AssertionError('BYTE_GRANT_EXPIRED')"
+    },
+    {
+      "stage": "ENTER_CLOSE",
+      "error": "AssertionError('BYTE_GRANT_EXPIRED')"
+    }
+  ],
+  "prefix_telemetry_not_independent_safety_audit": {
+    "actual_native": 5995,
+    "fully_recorded_native": 5995,
+    "minimum_actual_clearance_m": 0.2500398495048881,
+    "minimum_self_margin_m": 0.009164467413640964,
+    "bad_contacts": 0,
+    "final_body": [
+      0.6790065326939035,
+      -0.4802268116262596,
+      0.38615966032379967,
+      -1.9416584291410063e-06,
+      3.0717807360460637e-06
+    ],
+    "final_translation_speed_m_s": 1.9434976276636055e-06,
+    "root_guard_native_count": 5995,
+    "goal_distance_m": 3.6522196201747583,
+    "first_actor_detection": {
+      "native_tick": 4475,
+      "sim_time": 44.749999999999666,
+      "xy": [
+        0.03949662258152369,
+        -0.7293079674173638
+      ],
+      "rays": [
+        29
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 0.6914916324452713
+  },
+  "review_original_restored": true,
+  "source_members": 12505,
+  "all_source_SHA_verified": true,
+  "lock_idle": true,
+  "owned_processgroups_exited": true,
+  "backup_pending": true,
+  "never_rerun": true,
+  "science": 12
+}

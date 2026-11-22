@@ -32,7 +32,7 @@
   "active_round": null,
   "active_task": null,
   "active_zero_model_storage_worker": null,
-  "actual_total_native": 132425,
+  "actual_total_native": 138420,
   "actual_total_native_additional_unknown_tasks": [
     "full9390_main"
   ],
@@ -2045,13 +2045,13 @@
   "native_analytical_native_additional_unknown_tasks": [
     "full9390_main"
   ],
-  "navigation_prefix_task_starts": 11,
+  "navigation_prefix_task_starts": 12,
   "navigation_tasks_started": 0,
   "new_component_native": 7580,
   "new_component_native_additional_unknown_tasks": [
     "full9390_main"
   ],
-  "next_preparation": "experiments/v1603_capture_close_source/PROTOCOL.md",
+  "next_preparation": "experiments/v1606_stopped_source_preparation/PROTOCOL.md",
   "next_round_qualification": null,
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
@@ -3126,6 +3126,24 @@
       "science": 12,
       "started_unix": 1795327589.814253,
       "status": "CLOSED_FAILED_ACTUAL_ROS_EVIDENCE_BYTE_CAP"
+    },
+    {
+      "actual_native": 5995,
+      "canonical_vehicle_initializations": 1,
+      "id": "v1603_capture_close_source",
+      "internal_factory_model_constructions": null,
+      "own_replay_native": 0,
+      "owner_accounting_applied": true,
+      "owner_close_error_count": 0,
+      "passed": false,
+      "result": "runs/v1603_capture_close_source/first_event/COMPLETION.json",
+      "science": 12,
+      "started_unix": 1795330426.2845242,
+      "status": "CLOSED_OWNER_REVIEW_PENDING",
+      "post_round_storage_barrier_path": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json",
+      "post_round_storage_barrier_sha256": "6746c1ecb559219099159ee3e6ae25e17a00bb8dc6fb707b411584c5b52a5a95",
+      "runtime_recovery_complete": true,
+      "runtime_recovery_supplement": "runs/v1603_capture_close_source/RUNTIME_REMOTE_RECOVERY_SUPPLEMENT.json"
     }
   ],
   "scalar_feedback_saved_generation_independent_audit_native": 791940,
@@ -3147,7 +3165,7 @@
     "runs/v1577_goal_bound_segment_bridge/SCIENTIFIC_REVISION_REGISTRATION.json"
   ],
   "scientific_revisions": 12,
-  "status": "ACTIVE_CAMPAIGN_APPEND_SOURCE_CLOSED_RECOVERY_PENDING",
+  "status": "ACTIVE_CAMPAIGN_STOPPED_SOURCE_REFRESH_PREPARATION",
   "storage_allocated_bytes": 9339875328,
   "storage_limit_bytes": 16106127360,
   "storage_proof": "runs/v1382_weekend_campaign/storage/FINALIZED.json",
@@ -3155,7 +3173,8 @@
   "storage_round_policy": "ONE_ROUND_THEN_UPLOAD_FULL_REMOTE_VERIFY_EXACT_CLEANUP_BEFORE_NEXT_ROUND",
   "v1394_original_missing_result_unknown_account_preserved": true,
   "v1532_source_entry_qualified": true,
-  "vehicle_task_starts": 23,
+  "vehicle_task_starts": 24,
+  "weekend_next_preparation": "experiments/v1606_stopped_source_preparation/PROTOCOL.md",
   "zero200_closure_qualification_counts": {
     "actual_native": 200,
     "canonical_factory_call_attempts": 1,
@@ -3215,5 +3234,7 @@
     "own_replay_native": 200,
     "round_id": "v1454_bounded_gzip_closure_zero200"
   },
-  "weekend_next_preparation": "experiments/v1603_capture_close_source/PROTOCOL.md"
+  "latest_first_event_runtime_result": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
+  "latest_stopped_source_preparation": "runs/v1606_stopped_source_preparation/PREPARATION_CHECKPOINT.json",
+  "latest_first_event_runtime_storage_barrier": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json"
 }
