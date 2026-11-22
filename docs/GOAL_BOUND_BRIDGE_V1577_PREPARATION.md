@@ -32,3 +32,6 @@ remain missing. No import, policy execution, model, numerical or physical launch
 has occurred. Source qualification/recovery and exact10GiB fullscope admission
 are still required. The original .45bodycenter/7.5forward/discoverythen1m whole
 goal is separate; integrated whole-route successes remain0.
+
+
+Checkpoint04 (2026-11-22 Beijing10:58): now20 Python production drafts, all AST-only. Added dynamic stage work ledger/private Guard, variable13array stream+full Reader with original22MiB/32MiB caps, durable proposal DATA-before-safety/commit and complete readback, one CPP proposal/full CPP generation/success-only independent Python transaction, actual stopped fullstate/provider/prefix resolver, current CPP2200 on the same fixed TIME field, variable immutable reference and actual tracker NativeStep consumer, original CUSP canonical-owner fork into the new method. No imports, target, numerical or physical work executed; no new qualification/freeze/admission/once/window/launch. New lifecycle admission writer/production CLI/once supervisor, live component/current capability/actual sink/replaypair and exact resource peak remain absent. Last scientific revision12 is unchanged. All original11788 frozen SHA, REVIEW original, idle lock and inactive parent verified; allruns allocated10080178176B snapshot. New drafts are not remotely recovered.

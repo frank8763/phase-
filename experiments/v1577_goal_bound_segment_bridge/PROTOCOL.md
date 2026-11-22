@@ -47,3 +47,29 @@ or vehicle permission. Exact actual/model/audit/reserve/replay/init/time budgets
 and allruns10GiB evidence+archive+32MiBdownload+512MiBroot must be frozen; current
 large physicalscope is storage-refused. Only new exact remoteverified closed
 transport cleanup may create headroom, never delete current inputs or anchors.
+
+## Concrete preparation checkpoint04 (not qualification or admission)
+
+The draft now has a per-stage preclaim/ack/unknown ledger and private Guard:
+CPP proposal<=8200, variable complete CPP generation and independent Python
+audit<=5300800 EACH, exact counts frozen from the one saved proposal. Actual
+current and physical work are explicitly refused by this private capability.
+The new variable-count13array stream retains the qualified original codec,
+22MiB stream/8MiB emergency/32MiB writer caps. More boundaries do not grant more
+bytes. Fullphase compression fit/time remain unknown; first cap closes scope.
+The nominal proposal saves each5native DATA before safety proof and tracker
+commit; complete proposal chain is read back before its timing is frozen.
+One transaction now connects current origin, prepared TIME field, proposal,
+full CPP generation, success-dependent own-output Python audit and both full
+stream readbacks. New currentCPP reserve draft retains the event clock and
+carried method memory, and uses exactly the same prepared TIME field.
+
+A new canonical owner fork now connects the original actual CUSP source
+capture to method12 binding and that transaction. It requires a new lifecycle
+admission writer and closes without any live installation/ready notice. The
+source resolver rechecks actual stopped fullstate/memory/mode/gear and complete
+recorded provider/prefix content; no scan, timestamp relabel or state write.
+Variable fixed reference and own measured-output execution are concrete drafts
+and still require the separately qualified live resolver, current capability,
+actual evidence sink and fullstate/source/control/allocation/replay/pair audit.
+No imports/target/qualification/freeze/once/admission/window/launch were run.
