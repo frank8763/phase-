@@ -1,0 +1,22 @@
+{
+  "closed": true,
+  "passed": false,
+  "recorded_unix": 1795364023.2666953,
+  "machine_first_error": {
+    "stage": "bootstrap",
+    "error": "AssertionError('UNKNOWN_INITIALIZER_AUDIT_HOOK')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1626_explicit_intervention_binding/driver.py\", line 51, in execute\n    old.history_guard(out)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1180_fresh_recovery_chain/chain_tools.py\", line 26, in history_guard\n    sys.addaudithook(hook)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1447_full_module_guard_identity/guard_binding.py\", line 31, in add\n    bound=bind_function(guard,output);original_add(bound);receipt['installed_original_guard_count']+=1\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1447_full_module_guard_identity/guard_binding.py\", line 14, in bind_function\n    assert isinstance(guard,types.FunctionType)and guard.__name__=='write_guard'and guard.__closure__ is None,'UNKNOWN_INITIALIZER_AUDIT_HOOK'\nAssertionError: UNKNOWN_INITIALIZER_AUDIT_HOOK\n"
+  },
+  "machine_result_sha256": "30be442094ebf7755950f26ed42d9e6c68f7d7cf13a920a77a58e95c2a93f8b9",
+  "owner_first_error_is_owner_only": null,
+  "canonical_factory_attempts": 0,
+  "canonical_initializations": 0,
+  "actual_native": 0,
+  "own_replay_native": 0,
+  "private_generation_native": 0,
+  "models_constructed": 0,
+  "first_error_before_all_model_constructors": true,
+  "formal_assignments_executed": 0,
+  "backup_pending": true,
+  "no_closed_round_rerun": true
+}
