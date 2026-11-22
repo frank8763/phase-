@@ -1,0 +1,3 @@
+# V1618 metadata manifest closure
+
+V1617 once failed before metadata target because inherited manifest builder expected local Mesa identity files. Preserve failed source/console/0models/no parentwrite; never rerun. New common manifest only inherits complete frozenV1615 and adds exact metadata helper files, no Mesa loader or old suite. Original plan/hydrate bodies and fixed ten closed fields unchanged except new path. Same source-only target, cap131072/8192 close and all canonical values unchanged. Source qualifier never writes actualparent; later CPU5apply under exact parentSHA/review/idlelock and fullhydrate only. Allnewsource/payload remote SHA recovery before any nextactual.
