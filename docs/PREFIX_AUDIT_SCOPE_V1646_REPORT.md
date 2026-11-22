@@ -1,0 +1,7 @@
+# Future prefix-audit import scope
+
+First formal phase_01__full remains a functional non-success: NO_CURRENT_WHOLE_GOAL_SOURCE, with a separate missing route_tools prefix-audit import. Its36625actual/replay, zero full-state replay error and incomplete independent prefix review remain unchanged; it is not rerun or retroactively audited. No algorithmic parameter/seed/safety change follows the refusal.
+
+V1646 SOURCE closed PASS with four refusals, original dependency SHA/resident identity and PathFinder resolution, sys.path restoration, and explicit source-versus-study roots. No route_tools module, old numerical auditor, policy, NumPy/model/FFI/physics/replay was loaded or run. Nine unchanged modules reused exact bytes; the prior full17-case source proof is SHA-bound rather than repeated. Actual future prefix numerical auditing is still unexecuted.
+
+All shared20-assignment metadata/output/once/barrier records stay under runs/v1643_formal_parent_metadata. New source/qualification/recovery live under runs/v1646_prefix_audit_scope. The actual normal controller, generation, dynamics, gates, registry, phase and sensor seed are unchanged. Only the original audit directory is temporarily installed during closed-prefix review, matching the known original full-audit import scope, then restored. Next fixed assignment phase_01__no_onward requires all new-source remote recovery and current storage/once/root/prior-round barrier checks. First formal failure and19 unexecuted rows stay in the denominator.

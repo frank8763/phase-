@@ -1,0 +1,92 @@
+{
+  "passed": false,
+  "closed": true,
+  "formal_assignment_id": "phase_01__full",
+  "formal_assignment_retained_in_denominator": true,
+  "mechanism_variant": "full",
+  "phase": 2.2609711555894934,
+  "sensor_seed": 10060001,
+  "original_contract": true,
+  "canonical_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 36625,
+  "own_replay_native": 36625,
+  "replay_maxerror": 0.0,
+  "contact_mismatch": 0,
+  "complete_physical_capture": true,
+  "fully_recorded_native": 36625,
+  "model_native_inflight_unknown": false,
+  "first_error": {
+    "stage": "normal",
+    "error": "AssertionError('NO_CURRENT_WHOLE_GOAL_SOURCE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1643_formal_parent_metadata/driver.py\", line 92, in execute\n    binding['owner'].navigate(v,read(out/'physics/SETUP.json'),task,window['normal_end_unix'],out,result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/owner.py\", line 65, in navigate\n    result['recovery_origin_native']=v.count;result['feedback_execution']=execute(v,setup,seed,end,evidence,out,causal.packet);goal=float(np.linalg.norm(np.asarray(v.body()[:2])-task['goal_xy']));assert goal<=.45 and np.linalg.norm(v.body()[3:])<=.03,'FRESH_ORIGINAL_GOAL_AND_STOP';assert np.linalg.norm(np.asarray(v.body()[:2])-evidence.first['xy'])>=1.,'FRESH_ONE_METRE_AFTER_DISCOVERY';result.update(passed=True,status='FRESH_T0_GOAL_AND_STOP',actual_original_goal_reached=True,actual_goal_distance_m=goal,static_renewals=static_renewals)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1643_formal_parent_metadata/runtime_binding.py\", line 60, in <lambda>\n    owner.execute=lambda *args:dispatch.execute(*args,output=output,remaining_fn=lambda:remaining(window))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/route_dispatch.py\", line 83, in execute\n    return current_executor().execute(v, setup, original, end, evidence, out, packet_fn,\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/live_entry.py\", line 81, in execute\n    answer=goal_entry.execute(v,setup,fresh,gt,time.monotonic()+max(0.,end-time.time()-120),\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1218_fixed24_current/goal_package/goal_entry.py\", line 97, in execute\n    assert plan['passed'],'NO_CURRENT_WHOLE_GOAL_SOURCE'\nAssertionError: NO_CURRENT_WHOLE_GOAL_SOURCE\n"
+  },
+  "secondary_errors": [
+    {
+      "stage": "ORIGINAL_ACTUAL_PREFIX_SAFETY_AUDIT",
+      "error": "ModuleNotFoundError(\"No module named 'route_tools'\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1643_formal_parent_metadata/driver.py\", line 38, in attempt\n    try:return fn()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1643_formal_parent_metadata/driver.py\", line 143, in <lambda>\n    result['independent_prefix_audit']=attempt('ORIGINAL_ACTUAL_PREFIX_SAFETY_AUDIT',lambda:audit_module.audit_prefix(task,result,source))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1643_formal_parent_metadata/audit_binding.py\", line 45, in audit_prefix\n    module=load('v1642_unchanged_actual_prefix_audit',R/'experiments/v1195_eight_gib_timed_refuge/audit_refusal.py')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1643_formal_parent_metadata/context.py\", line 10, in load\n    s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);sys.modules[name]=m;s.loader.exec_module(m);return m\n  File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1195_eight_gib_timed_refuge/audit_refusal.py\", line 1, in <module>\n    from route_tools import *\nModuleNotFoundError: No module named 'route_tools'\n"
+    }
+  ],
+  "functional_result": "finite_current_whole_goal_source_refused",
+  "not_global_infeasibility": true,
+  "no_algorithm_or_parameter_repair": true,
+  "no_rerun": true,
+  "physical_telemetry": {
+    "actual_native": 36625,
+    "fully_recorded_native": 36625,
+    "minimum_actual_clearance_m": 0.27698465551487667,
+    "minimum_self_margin_m": 0.009159468748507038,
+    "bad_contacts": 0,
+    "final_body": [
+      1.1848975280079879,
+      -0.8828773496817628,
+      -0.44592833979017965,
+      1.05018284101775e-06,
+      -3.580393841237436e-06
+    ],
+    "final_translation_speed_m_s": 1.0664363428925095e-06,
+    "root_guard_native_count": 36625,
+    "goal_distance_m": 3.0286572839576253,
+    "first_actor_detection": {
+      "native_tick": 15025,
+      "sim_time": 150.25000000000833,
+      "xy": [
+        0.12483800020703673,
+        -0.5442658797223914
+      ],
+      "rays": [
+        28
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 2.014998462241653
+  },
+  "independent_actual_prefix_audit_unexecuted": true,
+  "independent_full_goal_audit_unexecuted": true,
+  "independent_safety_PASS_not_claimed": true,
+  "diagnosis": "Original NO_CURRENT_WHOLE_GOAL_SOURCE is the primary functional refusal. Separate prefix auditor import route_tools missing prevented independent prefix review; it did not cause the earlier goal-source refusal.",
+  "tracked_recovery_subset": {
+    "cpp_native": 32786000,
+    "python_native": 0,
+    "cpp_completed_native": 32786000,
+    "python_completed_native": 0,
+    "inflight": null,
+    "cpp_calls": 154516,
+    "python_calls": 0,
+    "cpp_constructor_returns": 11,
+    "python_constructor_returns": 1,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "full_modelwork_normal_static_FFI_total": null,
+  "internal_allocator_constructors": null,
+  "all_source_SHA_verified_after_child_exit": true,
+  "original_review_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
+  "lock_idle": true,
+  "owned_child_exited": true,
+  "RESULT_sha256": "c9c2d86276395ace48c3c48c6bc4b88754c0597660e792365d2fe2ca2e839ce7",
+  "COMPLETION_sha256": "ce2de9934d84aebb0f07788de3596197466a782827b67cb7d3038d7eb4cde7ea",
+  "remote_recovery_pending": true,
+  "recorded_unix": 1795386376.2511222
+}
