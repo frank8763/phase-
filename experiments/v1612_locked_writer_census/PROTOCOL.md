@@ -1,0 +1,7 @@
+# V1612 locked writer census
+
+New resource-measurement repair only, science12 final. Original V1609 closed failed3545 actual and immutable. New SOURCE target only, no model/vehicle authority before full source/recovery/current budget/once gates. Original full224MiB task/1010MiB scope/15GiB root, all safety/time/numerical/observation gates unchanged.
+
+Original bounded WriterBudget creates all three counters and lock files in the supervisor before either child starts, under their original caps/identity. Before own+allruns GNU du, acquire shared read-only locks in fixed role order with a shared .5s acquisition deadline. Validate exact roles/caps/source/counter identity. Original counter mutation takes exclusive locks; no pending replacement can race this census. No files excluded or error suppression, no retry of a failed measurement. Payload or other atomic-file races still refuse rather than hide uncertainty. No permission, action, sourceclock or science changes.
+
+One necessary source-only target: production original WriterBudget concurrent _put blocked until actual new census completes; GNU du results unchanged when stable; malformed source/cap/identity/missing lock/timeout and arbitrary du errors refuse. Numerical/policy/ROS/model/Gear/codec/bootstrap suites reuse frozen normalizedAST/SHA, not rerun. Qualification includes complete production bindings and writer coverage. Post-round V1609 fullremoteverify+cleanup barrier before any new actual.

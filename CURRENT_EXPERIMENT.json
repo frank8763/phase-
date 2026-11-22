@@ -2054,7 +2054,10 @@
     "whole_archive_SHA": true
   },
   "latest_first_event_runtime_result": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
-  "latest_first_event_runtime_storage_barrier": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json",
+  "latest_first_event_runtime_storage_barrier": {
+    "path": "runs/v1609_complete_refresh_source/POST_ROUND_STORAGE_BARRIER.json",
+    "sha256": "89fafdae94b69ee56cde7fa5bbdeae7182512de65861f5a654d7bf3cc8e16784"
+  },
   "latest_fixed_WE_evaluation_contract_preparation": {
     "actual_capture_qualified": false,
     "actual_sensor_claim": false,
@@ -12789,7 +12792,7 @@
     "start_condition": "complete recovery source and live integration qualification passed before any new physical initialization",
     "user_choice": "新独立12小时：三路线全过后，条件进入固定24项"
   },
-  "next_preparation": "experiments/v1609_complete_refresh_source/PROTOCOL.md",
+  "next_preparation": "experiments/v1612_locked_writer_census/PROTOCOL.md",
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "next_scope": "Integrate V1437 shared5400s phase guards into current production lifecycle/supervisor before necessary zero-model qualification; full route admission remains absent.",
   "night_candidate_relay": "runs/v1192_eight_gib_relay",
@@ -13024,7 +13027,7 @@
   "storage_round_policy": "ONE_ROUND_THEN_UPLOAD_FULL_REMOTE_VERIFY_EXACT_CLEANUP_BEFORE_NEXT_ROUND",
   "target_journal": "Robotics and Autonomous Systems",
   "v1532_source_entry_qualified": true,
-  "vehicle_task_starts": 24,
+  "vehicle_task_starts": 25,
   "verified_v1281_github_backup": {
     "all_member_SHA_readback": 15528,
     "cleanup_logical_bytes": 3829034023,
@@ -13121,6 +13124,40 @@
     "storage_ready": true,
     "temporary_storage_cap_bytes": 10737418240
   },
-  "weekend_next_preparation": "experiments/v1609_complete_refresh_source/PROTOCOL.md",
-  "latest_stopped_source_preparation": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json"
+  "weekend_next_preparation": "experiments/v1612_locked_writer_census/PROTOCOL.md",
+  "latest_stopped_source_preparation": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json",
+  "latest_current_refresh_runtime_closed": {
+    "closed": true,
+    "passed": false,
+    "actual_native": 3545,
+    "original_RPP_native": 3345,
+    "error_stop_native": 200,
+    "Nplus1_states": 3546,
+    "full200_applied_zero_tail": true,
+    "ownreplay_native": 0,
+    "whole_route_passed": false,
+    "scientific_revision": 12,
+    "runtime_remote_recovery_pending": true,
+    "path": "runs/v1609_complete_refresh_source/RUNTIME_CLOSED_REVIEW.json"
+  },
+  "latest_locked_writer_census_source": {
+    "recorded_unix": 1795335751.7829983,
+    "passed": true,
+    "source_only": true,
+    "models": 0,
+    "physical_native": 0,
+    "whole_route_passed": false,
+    "source_members": 12917,
+    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
+    "inner_wall_s": 20.34779792500194,
+    "outer_wall_s": 21.570306651003193,
+    "negative_cases": 7,
+    "all_source_SHA_verified": true,
+    "review_original_SHA_restored": true,
+    "execution_lock_idle": true,
+    "old_suites_reused_not_rerun": true,
+    "source_remote_recovery_pending": true,
+    "scientific_revision": 12,
+    "no_rerun_or_frozen_source_edits": true
+  }
 }

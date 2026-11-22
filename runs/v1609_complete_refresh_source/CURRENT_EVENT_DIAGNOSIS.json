@@ -1,0 +1,25 @@
+{
+  "closed": true,
+  "failure_kind": "CONCURRENT_WRITER_COUNTER_ATOMIC_REPLACE_DU_ENOENT",
+  "first_error": {
+    "error": "CalledProcessError(1, ['du', '-sx', '-B1', '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1609_complete_refresh_source/first_event'])",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1609_complete_refresh_source/native_driver.py\", line 122, in execute\n    while not pump.stopped:pump.iteration()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1609_complete_refresh_source/pump.py\", line 91, in iteration\n    if last is None or n.vehicle.count-last>=5 or (n.vehicle.count==last and n.sent and time.monotonic()-max(n.sent.values(),key=lambda p:p['sequence'])['sampled_at']>=.04):self.publish()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1609_complete_refresh_source/pump.py\", line 32, in publish\n    quota=self.owner.quota;wire_grants.before_wire(quota,native_tick=self.owner.native.vehicle.count)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1479_retirement_scope_binding/wire_grant.py\", line 22, in before_wire\n    value=quota.prepare_grant(8*1024**2,phase='BEFORE_ACTUAL5_NATIVE_WIRE',valid_for_s=2,external_writers=quota.external_writers)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1609_complete_refresh_source/quota.py\", line 35, in prepare_grant\n    snapshot=base.EvidenceQuota.admit(self,capacity_bytes,'PREPARE_BYTE_GRANT_BEFORE_FRESH_WIRE')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1609_complete_refresh_source/base_quota.py\", line 48, in admit\n    own=used(self.output);all_runs=used(R/'runs')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1609_complete_refresh_source/base_quota.py\", line 15, in used\n    def used(path):return int(subprocess.check_output(['du','-sx','-B1',str(path)],text=True,timeout=10).split()[0])\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 421, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/subprocess.py\", line 526, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['du', '-sx', '-B1', '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1609_complete_refresh_source/first_event']' returned non-zero exit status 1.\n"
+  },
+  "exact_stderr": "du: cannot access 'first_event/WRITER_ACTUAL_ROS_BYTES.json.pending': No such file or directory",
+  "caller_chain": [
+    "Pump.publish",
+    "wire_grant.before_wire",
+    "quota.prepare_grant",
+    "base_quota.admit",
+    "used(self.output)",
+    "GNU du"
+  ],
+  "native_console_sha256": "726103dbd8857e0ed47137a899264d2fe188a666b785a40578d7ca2ea734ddfb",
+  "resource_measurement_failure": true,
+  "not_algorithm_or_physics_or_goal_failure": true,
+  "closure_resource_ordering_worked_in_this_run": true,
+  "complete_error200_tail": true,
+  "source_refresh_and_method12_unreached": true,
+  "proposed_next": "New source only: sound concurrent resource measurement with full declared writer holds; no arbitrary du error suppression/retry, no larger cap, no sourceclock change. First complete runtime recovery.",
+  "scientific_revision_unchanged": 12
+}

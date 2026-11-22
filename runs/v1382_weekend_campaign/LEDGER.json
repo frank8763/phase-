@@ -32,7 +32,7 @@
   "active_round": null,
   "active_task": null,
   "active_zero_model_storage_worker": null,
-  "actual_total_native": 138420,
+  "actual_total_native": 141965,
   "actual_total_native_additional_unknown_tasks": [
     "full9390_main"
   ],
@@ -1310,6 +1310,11 @@
     "verified_unix": 1795253344.2231011,
     "whole_archive_SHA": true
   },
+  "latest_first_event_runtime_result": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
+  "latest_first_event_runtime_storage_barrier": {
+    "path": "runs/v1609_complete_refresh_source/POST_ROUND_STORAGE_BARRIER.json",
+    "sha256": "89fafdae94b69ee56cde7fa5bbdeae7182512de65861f5a654d7bf3cc8e16784"
+  },
   "latest_fixed_WE_evaluation_contract_preparation": {
     "actual_capture_qualified": false,
     "actual_sensor_claim": false,
@@ -1765,6 +1770,7 @@
   "latest_scalar_steering_coordinate_preparation": "runs/v1409_scalar_steering_feedback/PREPARATION_CHECKPOINT.json",
   "latest_scientific_revision_registration": "runs/v1550_canonical_observer_policy/SCIENTIFIC_REVISION_REGISTRATION.json",
   "latest_shared_phase_budget_preparation": "runs/v1437_shared_phase_budget/PREPARATION_CHECKPOINT02.json",
+  "latest_stopped_source_preparation": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json",
   "latest_storage_authorization": "runs/v1382_weekend_campaign/STORAGE_AUTHORIZATION_15GIB_20261122.json",
   "latest_streamed_retirement_source_recovery": {
     "archive_bytes": 1536866,
@@ -2045,13 +2051,13 @@
   "native_analytical_native_additional_unknown_tasks": [
     "full9390_main"
   ],
-  "navigation_prefix_task_starts": 12,
+  "navigation_prefix_task_starts": 13,
   "navigation_tasks_started": 0,
   "new_component_native": 7580,
   "new_component_native_additional_unknown_tasks": [
     "full9390_main"
   ],
-  "next_preparation": "experiments/v1609_complete_refresh_source/PROTOCOL.md",
+  "next_preparation": "experiments/v1612_locked_writer_census/PROTOCOL.md",
   "next_round_qualification": null,
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "old_day_ledger": "runs/v1374_day_handoff_validation/DAY_LEDGER.json",
@@ -3136,22 +3142,45 @@
       "owner_accounting_applied": true,
       "owner_close_error_count": 0,
       "passed": false,
-      "result": "runs/v1603_capture_close_source/first_event/COMPLETION.json",
-      "science": 12,
-      "started_unix": 1795330426.2845242,
-      "status": "CLOSED_FAILED_CURRENT_SOURCE_CAPTURE_AGE",
-      "post_round_storage_barrier_path": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json",
-      "post_round_storage_barrier_sha256": "6746c1ecb559219099159ee3e6ae25e17a00bb8dc6fb707b411584c5b52a5a95",
-      "runtime_recovery_complete": true,
-      "runtime_recovery_supplement": "runs/v1603_capture_close_source/RUNTIME_REMOTE_RECOVERY_SUPPLEMENT.json",
       "post_round_storage_barrier": {
         "path": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json",
         "sha256": "6746c1ecb559219099159ee3e6ae25e17a00bb8dc6fb707b411584c5b52a5a95"
       },
+      "post_round_storage_barrier_path": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json",
+      "post_round_storage_barrier_sha256": "6746c1ecb559219099159ee3e6ae25e17a00bb8dc6fb707b411584c5b52a5a95",
+      "result": "runs/v1603_capture_close_source/first_event/COMPLETION.json",
+      "runtime_recovery_complete": true,
+      "runtime_recovery_supplement": "runs/v1603_capture_close_source/RUNTIME_REMOTE_RECOVERY_SUPPLEMENT.json",
       "runtime_review": {
         "path": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
         "sha256": "58e6dacc22bd99716cb207241041f18412f1447822afdfb51c66059ebd6aa7c2"
-      }
+      },
+      "science": 12,
+      "started_unix": 1795330426.2845242,
+      "status": "CLOSED_FAILED_CURRENT_SOURCE_CAPTURE_AGE"
+    },
+    {
+      "actual_native": 3545,
+      "canonical_vehicle_initializations": 1,
+      "id": "v1609_complete_refresh_source",
+      "internal_factory_model_constructions": null,
+      "own_replay_native": 0,
+      "owner_accounting_applied": true,
+      "owner_close_error_count": 0,
+      "passed": false,
+      "result": "runs/v1609_complete_refresh_source/first_event/COMPLETION.json",
+      "science": 12,
+      "started_unix": 1795334855.579174,
+      "status": "CLOSED_FAILED_RESOURCE_MEASUREMENT_RACE",
+      "runtime_review": {
+        "path": "runs/v1609_complete_refresh_source/RUNTIME_CLOSED_REVIEW.json",
+        "sha256": "bf11c524a0b60f6627a483fd60b9686d97effb693a18fa9887181e8dbf6c3e9e"
+      },
+      "post_round_storage_barrier": {
+        "path": "runs/v1609_complete_refresh_source/POST_ROUND_STORAGE_BARRIER.json",
+        "sha256": "89fafdae94b69ee56cde7fa5bbdeae7182512de65861f5a654d7bf3cc8e16784"
+      },
+      "runtime_recovery_complete": true
     }
   ],
   "scalar_feedback_saved_generation_independent_audit_native": 791940,
@@ -3181,8 +3210,8 @@
   "storage_round_policy": "ONE_ROUND_THEN_UPLOAD_FULL_REMOTE_VERIFY_EXACT_CLEANUP_BEFORE_NEXT_ROUND",
   "v1394_original_missing_result_unknown_account_preserved": true,
   "v1532_source_entry_qualified": true,
-  "vehicle_task_starts": 24,
-  "weekend_next_preparation": "experiments/v1609_complete_refresh_source/PROTOCOL.md",
+  "vehicle_task_starts": 25,
+  "weekend_next_preparation": "experiments/v1612_locked_writer_census/PROTOCOL.md",
   "zero200_closure_qualification_counts": {
     "actual_native": 200,
     "canonical_factory_call_attempts": 1,
@@ -3242,7 +3271,38 @@
     "own_replay_native": 200,
     "round_id": "v1454_bounded_gzip_closure_zero200"
   },
-  "latest_first_event_runtime_result": "runs/v1603_capture_close_source/RUNTIME_CLOSED_REVIEW.json",
-  "latest_stopped_source_preparation": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json",
-  "latest_first_event_runtime_storage_barrier": "runs/v1603_capture_close_source/POST_ROUND_STORAGE_BARRIER.json"
+  "latest_current_refresh_runtime_closed": {
+    "closed": true,
+    "passed": false,
+    "actual_native": 3545,
+    "original_RPP_native": 3345,
+    "error_stop_native": 200,
+    "Nplus1_states": 3546,
+    "full200_applied_zero_tail": true,
+    "ownreplay_native": 0,
+    "whole_route_passed": false,
+    "scientific_revision": 12,
+    "runtime_remote_recovery_pending": true,
+    "path": "runs/v1609_complete_refresh_source/RUNTIME_CLOSED_REVIEW.json"
+  },
+  "latest_locked_writer_census_source": {
+    "recorded_unix": 1795335751.7829983,
+    "passed": true,
+    "source_only": true,
+    "models": 0,
+    "physical_native": 0,
+    "whole_route_passed": false,
+    "source_members": 12917,
+    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
+    "inner_wall_s": 20.34779792500194,
+    "outer_wall_s": 21.570306651003193,
+    "negative_cases": 7,
+    "all_source_SHA_verified": true,
+    "review_original_SHA_restored": true,
+    "execution_lock_idle": true,
+    "old_suites_reused_not_rerun": true,
+    "source_remote_recovery_pending": true,
+    "scientific_revision": 12,
+    "no_rerun_or_frozen_source_edits": true
+  }
 }
