@@ -32,3 +32,23 @@ No numerical or vehicle permission, parameter/domain/gate/time change or13th
 scientific revision. Continue current input full-witness/independent audit,
 current2200 timing and fullstate source/Allocator/replaypair only after their
 actual source/authority/resource prerequisites are met.
+
+## Concrete production binding and one source-only target
+
+The new supervisor now binds close_owner directly. Owned children enter its
+registry before log/identity persistence, and writer/selector construction plus
+parent activation occur inside try. Child-exit proof also checks process-group
+absence. Native lock proof precedes REVIEW restore/parent clearing. Metadata
+reads, each log close, counters and prepared/final saves preserve first/secondary
+errors. Native acceptance is only runtime_candidate_passed; parent scientific
+acceptance remains CLOSED_OWNER_REVIEW_PENDING until a distinct closed review.
+No actual source/physical permission is created by this target.
+
+Single120s CPU5 owner->CPU2 run_phase source-only qualification:11 explicit
+SOFTWARE closure states, original first and secondary faults, missing/inflight/
+bool/out-of-range counter handling and original bounded writes. Root REVIEW
+and real parent are never mapped as software targets. Prior policy/carrier/
+current/stream/OS/ROS/model suites are not rerun; unchanged modules use normalized
+AST and frozen source SHA.7MiB evidence+8MiB archive+32MiB download+512MiB root.
+The actual1010MiB scope stays storage-refused and complete actual source target
+false. No admission/window/actualonce/launch.

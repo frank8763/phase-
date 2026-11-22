@@ -12,7 +12,7 @@ def close_owner(*, children, close_child, child_closed, drain, close_logs,
                 save_receipt, close_parent, first_error=None, prior_errors=()):
     result = dict(closed=False, close_complete=False, runtime_pass_not_inferred=True,
         first_error=copy.deepcopy(first_error), errors=copy.deepcopy(list(prior_errors)),
-        child_exit_verified={}, all_children_closed=False, lock_idle=False,
+        child_exit_verified={}, close_refusals=[], all_children_closed=False, lock_idle=False,
         review_original_restored=False, parent_closed=False,
         machine=None, machine_counts_unknown=True, close_receipt_saved=False)
 
@@ -34,10 +34,14 @@ def close_owner(*, children, close_child, child_closed, drain, close_logs,
     for label, child in children.items():
         ok, exited = attempt('VERIFY_EXIT_' + label, lambda child=child: child_closed(child))
         result['child_exit_verified'][label] = bool(ok and exited is True)
+        if not result['child_exit_verified'][label]:
+            result['close_refusals'].append('CHILD_EXIT_UNPROVEN:' + label)
     result['all_children_closed'] = all(result['child_exit_verified'].values())
     if result['all_children_closed']:
         ok, idle = attempt('VERIFY_NATIVE_LOCK_IDLE', verify_lock_idle)
         result['lock_idle'] = bool(ok and idle is True)
+        if not result['lock_idle']:
+            result['close_refusals'].append('NATIVE_EXECUTION_LOCK_NOT_IDLE')
 
     # Do not publish a stopped system or restore a review hold while an owned
     # native owner might still be executing. Unknown stays active for recovery.
@@ -50,7 +54,8 @@ def close_owner(*, children, close_child, child_closed, drain, close_logs,
     if ok and isinstance(machine, dict):
         result['machine'] = machine
         result['machine_counts_unknown'] = bool(machine.get('actual_inflight_unknown', True)
-            or type(machine.get('actual_native')) is not int)
+            or type(machine.get('actual_native')) is not int
+            or not 0 <= machine.get('actual_native', -1) <= 40000)
 
     # Preserve a prepared close record even when review/worker verification
     # refused. Parent callback receives the real machine or explicit unknown;
