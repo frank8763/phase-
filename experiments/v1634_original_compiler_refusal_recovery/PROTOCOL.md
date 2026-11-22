@@ -1,0 +1,3 @@
+# Original compiler-lock refusal evidence
+
+One distinctruntime archive, originalsource486813f5refonly/no secondpush. Originaltaskinit1,normal0/errorstop200/replay200,fullallstateerror0;independentfullaudit andformalunexecuted. Same15GiB/240archive32download512root,allactualremote block/member/whole/indexSHA thenexacteligibleduplicate transportcleanup. Sourcecurrent guards remain,firsterror writablecompilerlock notalgorithmfailure. No model/oldworker/qualifier/replay operation duringarchiving.

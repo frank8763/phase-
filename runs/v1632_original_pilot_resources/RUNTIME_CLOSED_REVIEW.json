@@ -1,0 +1,28 @@
+{
+  "closed": true,
+  "passed": false,
+  "recorded_unix": 1795364734.1379178,
+  "first_error": {
+    "stage": "normal",
+    "error": "OSError('WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1632_original_pilot_resources/driver.py\", line 91, in execute\n    binding['owner'].navigate(v,read(out/'physics/SETUP.json'),task,window['normal_end_unix'],out,result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/owner.py\", line 25, in navigate\n    evidence=Evidence(setup['known']);result['_evidence']=evidence;segments=[];result['_direct_segments']=segments;assert not evidence.update(v.scan()),'DYNAMIC_VISIBLE_AT_T0';reserve=Reserve(setup);preemptions=[]\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/brake_reserve.py\", line 13, in __init__\n    self.setup=setup;self.use_wide_reserve=use_wide_reserve;self.armed=False;self.lib=library();self.engine=Expander(setup);self.rect=np.ascontiguousarray(setup['known']['known_rectangles'],float);self.circles=np.ascontiguousarray(setup['known']['known_circles'],float);self.limits=np.ascontiguousarray(setup['limits'],float);self.rates=np.ascontiguousarray(setup['slew_per_second'],float);p=PARAMETERS;self.parameters=np.array([p['gain_a'],p['steering_rate_b'],*p['steering_discrete'],*p['speed_discrete'],*p['lateral_discrete'],p['curvature_speed_coefficient']],float)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1067_causal_replan_brake_reserve/planner.py\", line 15, in library\n    fcntl.flock(lock,fcntl.LOCK_EX)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1436_pathlib_control_rename/bounded_io.py\", line 25, in fileno\n    def fileno(self):raise OSError('WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE')\nOSError: WRITABLE_RAW_DESCRIPTOR_REQUIRES_BOUNDED_PIPE_OR_EXPLICIT_NATIVE_SAVE\n"
+  },
+  "machine_result_sha256": "6d03abcf2d01f1ed736f80afb67b027175dd980b3a9614f5b4ce65f52610db5a",
+  "canonical_factory_attempts": 1,
+  "canonical_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "normal_actual_native": 0,
+  "error_stop_actual_native": 200,
+  "actual_native": 200,
+  "own_replay_native": 200,
+  "own_replay_maximum_error": 0.0,
+  "contact_mismatched_ticks": 0,
+  "fullNplus1_states": 201,
+  "all_source_SHA_verified_after_child_exit": true,
+  "private_prediction_native_source_derived": 0,
+  "independent_Allocator_unexecuted": true,
+  "full_independent_audit_unexecuted": true,
+  "formal_assignments_executed": 0,
+  "backup_pending": true,
+  "no_closed_round_rerun": true
+}
