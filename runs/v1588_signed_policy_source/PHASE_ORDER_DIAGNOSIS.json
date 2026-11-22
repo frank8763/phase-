@@ -1,0 +1,8 @@
+{
+  "unix": 1795325376.7445076,
+  "cause": "Authority serializer canonical sort_keys reordered nested phase_wall_caps_s. execute consumed authority limits; original PhaseBudget intentionally requires preregistered phase order. Same values, wrong iteration order.",
+  "failure_before_model_or_factory": true,
+  "scientific_or_safety_thresholds_changed": false,
+  "new_version_fix": "Read exact frozen LIMITS.json in native execute and assert dictionary-value equality to authority before PhaseRuntime. Preserve original PhaseBudget and ordered phase values.",
+  "old_sources_immutable": true
+}

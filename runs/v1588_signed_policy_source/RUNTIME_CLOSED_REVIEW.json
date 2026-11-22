@@ -1,0 +1,33 @@
+{
+  "unix": 1795325376.744307,
+  "passed": false,
+  "closed": true,
+  "scope": "REVISION12_FIRST_GOAL_BOUND_SEGMENT_ACTUAL_RUNTIME",
+  "runtime_qualification_passed": false,
+  "whole_route_passed": false,
+  "model_gate_not_evaluated": true,
+  "first_native_error": "AssertionError()",
+  "first_native_traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1588_signed_policy_source/native_entry.py\", line 19, in main\n    result=lifecycle.run(task,c.read(c.O/'ROUND_WINDOW.json'))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1588_signed_policy_source/lifecycle.py\", line 133, in run\n    return module.run(task,window)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1588_signed_policy_source/native_driver.py\", line 57, in run\n    return execute(task,window,authority,source,quota,life)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1588_signed_policy_source/native_driver.py\", line 72, in execute\n    phases=phase_module.PhaseRuntime(window,limits,lambda p:atomic(out/'NATIVE_PHASES.json',p))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1449_route_initializer_binding/phase_runtime.py\", line 15, in __init__\n    self.budget=m.PhaseBudget(window,limits);self.save=save;self.secondary_save_errors=[]\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1449_route_initializer_binding/phase_budget.py\", line 11, in __init__\n    assert list(self.caps)==['normal','complete_zero_tail','peer_close','allocator_recompute','own_fullstate_replay','recorded_audit','main_repeat_pair','final_metadata']\nAssertionError\n",
+  "owner_error": "CANONICAL_READY_MISSING",
+  "original_RESULT_missing": true,
+  "original_owner_machine_counts_unknown_preserved": true,
+  "source_derived_accounting": {
+    "actual_native": 0,
+    "private_native": 0,
+    "replay_native": 0,
+    "Allocator_recomputations": 0,
+    "canonical_vehicle_initializations": 0,
+    "physical_binding_calls": 0,
+    "unknown": false,
+    "evidence": "CLI traceback stops at original PhaseBudget constructor before native physical_binding; no initialization marker/RESULT/ready; exact frozen AST ordering",
+    "phase_constructor_line": 72,
+    "physical_binding_line": 91
+  },
+  "source_all_unchanged": true,
+  "review_original_restored": true,
+  "lock_idle": true,
+  "rerun_prohibited": true,
+  "source_target_pass_preserved": true,
+  "scientific_revision": 12,
+  "runtime_recovery_pending": true
+}
