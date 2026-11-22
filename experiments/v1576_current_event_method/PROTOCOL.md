@@ -34,3 +34,16 @@ method, never another isolated zero-stop component or a rerun of V1571/V1563.
 Source-only and actual/runtime evidence must be distinguished. Total90min/root,
 allruns10GiB/full evidence+archive+32MiB download+512MiB root need fresh explicit
 budgets. Existing622/686MiB snapshots are not new admission.
+
+Necessary static domain review before further runtime integration: one CPU4
+run_phase/immutableguard/no-model-or-NumPy profile invocation, inner60s/outer90s,
+<=64KiB result. Read the one already exposed V1571 nominal DATA payload and
+restore only its state bytes with stdlib LZMA/NPZ/XOR, then compare its final rear
+pose to the original saved request's next-segment endpoint. Pin the existing
+whole stream SHA and stored state-byte SHA. Do not invoke any old worker,
+Reader, qualifier, certificate gate or model audit; decode no controls and do
+not rerun any closed target. This tests only static compatibility of an exposed
+example with the newly declared endpoint obligation. It is not a fresh current
+model, an independent result, a permission, a general impossibility proof or a
+reason to tune the schedule/relax the gate. Save complete result/error before
+closing the new one-shot analysis; no production integration launch follows.
