@@ -71,6 +71,8 @@ class Guard:
         assert a['boot_id']==Path('/proc/sys/kernel/random/boot_id').read_text().strip()
         assert time.time()<a['absolute_deadline_unix']<=1795395600
         assert time.monotonic()<a['hard_stop_monotonic']
+        assert time.time()<a['work_deadline_unix']<=a['absolute_deadline_unix']
+        assert time.monotonic()<a['work_deadline_monotonic']<=a['hard_stop_monotonic']
         if self.deadline is not None:assert time.time()<self.deadline[0]and time.monotonic()<self.deadline[1]
         assert os.environ.get('PHASE_REPO')==str(R)and sorted(os.sched_getaffinity(0))==[2]
         assert os.environ.get('MUJOCO_GL')=='osmesa'and os.environ.get('CUDA_VISIBLE_DEVICES')==''

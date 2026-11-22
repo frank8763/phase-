@@ -21,7 +21,7 @@ def load(name,path,source):
     s=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
 
 
-def execute(*,output,source_owner,method,setup,source,lock,save_result):
+def execute(*,output,source_owner,method,setup,source,lock,save_result,context_out=None,prepare_stage=None):
     result=dict(passed=False,closed=False,first_error=None,secondary_errors=[],
         scientific_revision=12,proposal_executed=False,generation_executed=False,audit_executed=False,
         physical_permission=False,whole_route_passed=False,physical_native=0,replay_native=0,optimizer_calls=0)
@@ -76,7 +76,9 @@ def execute(*,output,source_owner,method,setup,source,lock,save_result):
         def open_writer(name):
             folder=output/name;folder.mkdir(exist_ok=False)
             return folder,writer_module.WriterBudget(folder,role='PLANNER',maximum_bytes=32*1024**2,source_identity=digest(source))
-        stage='CPP_PROPOSAL';guard.start_phase(stage);guard.set_bucket(stage,'nominal')
+        stage='CPP_PROPOSAL'
+        if prepare_stage is not None:prepare_stage(stage)
+        guard.start_phase(stage);guard.set_bucket(stage,'nominal')
         folder,writer=open_writer('proposal');result['proposal_executed']=True
         with io.OutputBoundary(folder,writer.reserve)as boundary:
             proposal_store=proposal_sinks.ProposalSink(folder=folder,writer=writer,boundary=boundary,method=method,source=source,
@@ -87,6 +89,7 @@ def execute(*,output,source_owner,method,setup,source,lock,save_result):
         guard.finish_phase(stage);guard.freeze_proposal(proposal,path=folder/'PROPOSAL.json')
         generation_folder=None;generation_reader=None
         for stage,kind,folder_name in [('CPP_GENERATION','CPP','generation'),('PYTHON_AUDIT','PYTHON','audit')]:
+            if prepare_stage is not None:prepare_stage(stage)
             guard.start_phase(stage);guard.set_bucket(stage,'nominal');phase_sink=None
             folder,writer=open_writer(folder_name);result[folder_name+'_executed']=True
             with io.OutputBoundary(folder,writer.reserve)as boundary:
@@ -128,4 +131,9 @@ def execute(*,output,source_owner,method,setup,source,lock,save_result):
         except BaseException as saving:
             result['passed']=False;result['secondary_errors'].append('transaction_result_save:'+repr(saving))
             print('GOAL_BOUND_TRANSACTION_RESULT_SAVE_GAP:'+json.dumps(result,allow_nan=False),flush=True)
+    if result['passed']and context_out is not None:
+        assert context_out=={}
+        context_out.update(guard=guard,defs=defs,method=method,setup=setup,proposal=proposal,
+            geometry=guard.geometry,generation_reader=generation_reader,source_owner=source_owner,
+            result_path=output/'TRANSACTION_RESULT.json')
     return result

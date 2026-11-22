@@ -73,3 +73,8 @@ Variable fixed reference and own measured-output execution are concrete drafts
 and still require the separately qualified live resolver, current capability,
 actual evidence sink and fullstate/source/control/allocation/replay/pair audit.
 No imports/target/qualification/freeze/once/admission/window/launch were run.
+
+
+## Checkpoint05 — concrete live seams, still unqualified
+
+LiveGuard now separately requires actual-scope authority and same-current completed private evidence. The current sink retains origin before FFI, full13array DATA before gates, proof and durable before/applied receipts, with unchanged22MiB/32MiB and one distinct8MiB emergency. Components bind one carried observer epoch, current CPP2200, same prepared TIME field, variable fixed reference and strict NativeStep; source qualification is explicitly distinct from unknown actual runtime outcome. The new Pump uses an explicitly disclosed shared-policy origin on fresh real5native wires; it never fabricates NAV2 timestamps. Original postcertificate200ms checks remain in NativeStep. New recorded/current-array/fullstate-source audit schema and original wholegoal/pair gates are concrete drafts. The native factory/state-first/contact/Allocator/replay driver is now written with new owner binding, but it is NOT yet the callable lifecycle.run path. No qualification, imports, model or physical execution occurred. NativeCLI, once/ROS supervisor, exact LIMITS/fullscope peak, full audit-result predicate and source target still must be finished; the explicit lifecycle refusal stays in force. No parameter, gate, seed or scientific revision change.

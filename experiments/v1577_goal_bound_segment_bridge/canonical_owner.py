@@ -21,7 +21,7 @@ class PrivateBoundary(RuntimeError):
     def __init__(self,result):self.result=result;super().__init__('CURRENT_GOAL_BOUND_PRIVATE_CLOSED_NO_LIVE_INSTALLATION')
 
 
-def create(vehicle,*,task,output,setup,prepared_sources,atomic,check_budget,quota,lock,private_admission):
+def create(vehicle,*,task,output,setup,prepared_sources,atomic,check_budget,quota,lock,private_admission,install_live,prepare_stage):
     old=exact('v1577_exact_canonical_source_owner',R/'experiments/v1574_current_owner_capture/canonical_owner.py',prepared_sources)
     current=exact('v1577_current_input_binder',C/'current_input.py',prepared_sources)
     resolver=exact('v1577_current_stopped_source',C/'source_owner.py',prepared_sources)
@@ -33,6 +33,8 @@ def create(vehicle,*,task,output,setup,prepared_sources,atomic,check_budget,quot
     # writer, not a supplied flag or a legacy window/60000tick task template.
     callback_path=Path(private_admission.__code__.co_filename).resolve()
     assert callback_path==C/'lifecycle.py'and hashlib.sha256(callback_path.read_bytes()).hexdigest()==prepared_sources[str(callback_path.relative_to(R))]
+    assert Path(install_live.__code__.co_filename).resolve()==C/'lifecycle.py'
+    assert Path(prepare_stage.__code__.co_filename).resolve()==C/'lifecycle.py'
     class CanonicalOwner(old.CanonicalOwner):
         def on_cusp(self,notice):
             try:super().on_cusp(notice)
@@ -54,8 +56,10 @@ def create(vehicle,*,task,output,setup,prepared_sources,atomic,check_budget,quot
             stopped.verify_stopped_source(method)
             folder=self.output/'goal_bound_private';folder.mkdir(exist_ok=False)
             private_admission(method=method,stopped_source=stopped,output=folder,lock=lock)
+            context={}
             result=transaction.execute(output=folder,source_owner=stopped,method=method,setup=setup,
-                source=prepared_sources,lock=lock,save_result=lambda p:self.atomic(folder/'TRANSACTION_RESULT.json',p))
-            raise PrivateBoundary(result)
+                source=prepared_sources,lock=lock,save_result=lambda p:self.atomic(folder/'TRANSACTION_RESULT.json',p),context_out=context,prepare_stage=prepare_stage)
+            if not result['passed']:raise PrivateBoundary(result)
+            self.bridge=install_live(context=context,canonical_owner=self)
     return CanonicalOwner(vehicle,task=task,output=output,setup=setup,prepared_sources=prepared_sources,
         atomic=atomic,check_budget=check_budget,quota=quota)

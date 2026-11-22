@@ -13,9 +13,9 @@ digest=lambda v:hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':'),
 class Execution:
     def __init__(self,*,native,tracker,proposal,reference,components,method_memory,method):
         live=components.authorize_goal_bound_execution(native=native,method=method,proposal=proposal)
-        assert all(live[k]for k in ('actual_source_capture_qualified','same_current_input_complete_witness_qualified',
-            'current_CPP2200_numerically_qualified','actual_policy_qualified','fixed_reference_error_qualified',
-            'source_control_coverage_fullstate_replay_pair_pipeline_qualified'))
+        assert all(live[k]for k in ('actual_source_content_verified','same_current_input_complete_witness_qualified',
+            'current_CPP2200_same_model_branch_and_source_qualified','actual_policy_source_qualified','fixed_reference_source_qualified',
+            'source_control_coverage_fullstate_replay_pair_source_qualified'))
         assert native.applied==native.vehicle.count==tracker.origin==reference.origin
         assert reference.method_sha256==method['response_method_sha256']
         assert proposal['motion_native']+2200==proposal['nominal_native']

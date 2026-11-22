@@ -70,8 +70,9 @@ class CurrentReserve:
         self.failed=True;self.in_call=True;started=time.monotonic()
         memory=None;gear=None
         carrier=None;branch=None;attempted=False;origin_saved=False;first=None
-        source_identity=self.digest(packet)
+        source_identity=None
         try:
+            source_identity=self.digest(packet)
             memory=copy.deepcopy(self.memory());gear=copy.deepcopy(self.gear())
             assert all(packet[k]==modes[k]for k in ('coupled_episode','steering_motion_active','parked_target'))
             self.guard.require_current_reserve_source(packet,memory,gear)
