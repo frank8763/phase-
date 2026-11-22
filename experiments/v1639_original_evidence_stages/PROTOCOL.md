@@ -1,0 +1,9 @@
+# Original-contract evidence stage ownership (DRAFT)
+
+V1636 closed failed at resource emission, not method safety/function gate. Keep original RESULT missing and owner countnull, console-derived actual44950/errorstop200/replay0 separate. No rerun/repair of closed evidence.
+
+New engineering scope only: stage grant capacity is exact remaining task224MiB minus real allocated bytes/outstanding holds/original64KiB error reserve/two blocks, with original full-root15GiB check. Initializer16MiB and publicproposal32MiB explicit grants unchanged. Normal/current-model and closure byte grants stay inside original task cap; source/control/safety/dynamics unchanged. Original grant TTL maxima unchanged. Before all work reserve1MiB terminal metadata within task, consumed only after all actions/modelwork; retire expired grant and original exact allruns/hold check before RESULT. Source permission not implemented yet.
+
+Capture serializes the original rows/contacts/commands/sensors with original JSON, batching only UTF8 input into <=128KiB transient pending bytes before originalgzip/WriteProxy emission. No descriptor access or uncharged output. All compressed output still charged, raw inputs unmodified, no tick/control/scan changes. Per-target noRetry, firsterror and separate gzipclose errors retained. Lossless byte/value and failure-path target qualification REQUIRED; not yet run. No full old model/OS/Gear/codec suite repeat and no isolatedzero-stop component.
+
+Next complete source target/source owner and exact normalized source reuse, one necessary new grant/terminal/buffer/firstsecondary I/O qualification. After full newsource remotechain and V1638 upload/verify/cleanup barrier, at most one new exposed operationalpilot. Formal20 still0. No new admission/once/window/model/physics/replay launch is authorized by this draft. No overall09 deadline; newpilot once5400 technical limit with all original safety gates.

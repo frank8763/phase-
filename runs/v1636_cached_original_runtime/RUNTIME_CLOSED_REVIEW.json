@@ -1,0 +1,68 @@
+{
+  "passed": false,
+  "closed": true,
+  "scope": "exposed original WE03 operational pilot",
+  "machine_RESULT_missing": true,
+  "owner_machine_counts_remain_unknown": true,
+  "console_source_derived": {
+    "canonical_factory_attempts": 1,
+    "canonical_initializations": 1,
+    "internal_factory_model_constructions": null,
+    "actual_native": 44950,
+    "own_replay_native": 0,
+    "subset_recovery_modelwork": {
+      "cpp_native": 12253000,
+      "python_native": 47400,
+      "cpp_completed_native": 12253000,
+      "python_completed_native": 47400,
+      "inflight": null,
+      "cpp_calls": 27740,
+      "python_calls": 47400,
+      "cpp_constructor_returns": 12,
+      "python_constructor_returns": 5,
+      "internal_Allocator_constructions": null,
+      "poisoned": false
+    },
+    "full_normal_static_FFI_modelwork_total": null
+  },
+  "first_error": {
+    "stage": "normal",
+    "error": "AssertionError('BYTE_GRANT_EXHAUSTED')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1636_cached_original_runtime/driver.py\", line 92, in execute\n    binding['owner'].navigate(v,read(out/'physics/SETUP.json'),task,window['normal_end_unix'],out,result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/owner.py\", line 65, in navigate\n    result['recovery_origin_native']=v.count;result['feedback_execution']=execute(v,setup,seed,end,evidence,out,causal.packet);goal=float(np.linalg.norm(np.asarray(v.body()[:2])-task['goal_xy']));assert goal<=.45 and np.linalg.norm(v.body()[3:])<=.03,'FRESH_ORIGINAL_GOAL_AND_STOP';assert np.linalg.norm(np.asarray(v.body()[:2])-evidence.first['xy'])>=1.,'FRESH_ONE_METRE_AFTER_DISCOVERY';result.update(passed=True,status='FRESH_T0_GOAL_AND_STOP',actual_original_goal_reached=True,actual_goal_distance_m=goal,static_renewals=static_renewals)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1636_cached_original_runtime/runtime_binding.py\", line 60, in <lambda>\n    owner.execute=lambda *args:dispatch.execute(*args,output=output,remaining_fn=lambda:remaining(window))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/route_dispatch.py\", line 83, in execute\n    return current_executor().execute(v, setup, original, end, evidence, out, packet_fn,\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/live_entry.py\", line 81, in execute\n    answer=goal_entry.execute(v,setup,fresh,gt,time.monotonic()+max(0.,end-time.time()-120),\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1218_fixed24_current/goal_package/goal_entry.py\", line 136, in execute\n    np.savez_compressed(out/'EXECUTED.npz',**v._goal_trace);q.dump(out/'JOURNAL.json',journal)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py\", line 763, in savez_compressed\n    _savez(file, args, kwds, True, allow_pickle=allow_pickle)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py\", line 796, in _savez\n    format.write_array(fid, val,\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/numpy/lib/format.py\", line 759, in write_array\n    fp.write(chunk.tobytes('C'))\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/zipfile.py\", line 1160, in write\n    self._fileobj.write(data)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1436_pathlib_control_rename/bounded_io.py\", line 19, in write\n    self.boundary.charge(self.path,size);return self.stream.write(value)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1436_pathlib_control_rename/bounded_io.py\", line 45, in charge\n    try:self.reserve(Path(path),int(size))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/quota.py\", line 62, in charge_write\n    self.admit(actual_bytes,'EMIT_ACTUAL_OUTPUT_BYTES:'+path.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/quota.py\", line 47, in admit\n    assert pending+growth<=grant['remaining_bytes']+sum(self.spend_credits.values()),'BYTE_GRANT_EXHAUSTED'\nAssertionError: BYTE_GRANT_EXHAUSTED\n"
+  },
+  "secondary_errors": [
+    {
+      "stage": "SAVE_NPLUS1",
+      "error": "AssertionError('BYTE_GRANT_EXHAUSTED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1636_cached_original_runtime/driver.py\", line 38, in attempt\n    try:return fn()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1636_cached_original_runtime/driver.py\", line 113, in <lambda>\n    attempt('SAVE_NPLUS1',lambda:quota.save_npz(out/'FULL_STATE_NPLUS1.npz',arrays,np))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/base_quota.py\", line 71, in save_npz\n    self.admit(2*round_block(raw)+65536+8192*len(arrays),'COMPLETE_NPZ:'+path.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/quota.py\", line 47, in admit\n    assert pending+growth<=grant['remaining_bytes']+sum(self.spend_credits.values()),'BYTE_GRANT_EXHAUSTED'\nAssertionError: BYTE_GRANT_EXHAUSTED\n"
+    },
+    {
+      "stage": "COMPLETE_PHYSICAL_CAPTURE",
+      "error": "AssertionError('BYTE_GRANT_EXPIRED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1454_bounded_gzip_closure/capture_budget.py\", line 29, in adapted\n    with gzip.GzipFile(filename='',mode='wb',fileobj=raw,mtime=0)as compressed:yield CompressedText(compressed)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 103, in finish\n    with gzip.open(self.out/'SENSORS.json.gz','xt')as f:json.dump(self.sensor_rows,f)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/json/__init__.py\", line 180, in dump\n    fp.write(chunk)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1454_bounded_gzip_closure/capture_budget.py\", line 13, in write\n    self.compressed.write(text.encode('utf-8'));return len(text)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/gzip.py\", line 289, in write\n    self.fileobj.write(self.compress.compress(data))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1436_pathlib_control_rename/bounded_io.py\", line 19, in write\n    self.boundary.charge(self.path,size);return self.stream.write(value)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1436_pathlib_control_rename/bounded_io.py\", line 45, in charge\n    try:self.reserve(Path(path),int(size))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/quota.py\", line 62, in charge_write\n    self.admit(actual_bytes,'EMIT_ACTUAL_OUTPUT_BYTES:'+path.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/quota.py\", line 44, in admit\n    assert time.monotonic()<=grant['expires_monotonic'],'BYTE_GRANT_EXPIRED'\nAssertionError: BYTE_GRANT_EXPIRED\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1636_cached_original_runtime/driver.py\", line 38, in attempt\n    try:return fn()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1636_cached_original_runtime/driver.py\", line 115, in <lambda>\n    finish_attempted=True;result['physical']=attempt('COMPLETE_PHYSICAL_CAPTURE',lambda:capture.finish(v));result['evidence_saved']=result['physical']is not None\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1454_bounded_gzip_closure/capture_budget.py\", line 39, in finish\n    with original_finish_compressed_paths(vehicle.out):return super().finish(vehicle)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1439_actual_ros_startup_close/capture_budget.py\", line 31, in finish\n    result=vehicle.finish()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v858_nav2_verified/vehicle.py\", line 103, in finish\n    with gzip.open(self.out/'SENSORS.json.gz','xt')as f:json.dump(self.sensor_rows,f)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/contextlib.py\", line 153, in __exit__\n    self.gen.throw(typ, value, traceback)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1454_bounded_gzip_closure/capture_budget.py\", line 29, in adapted\n    with gzip.GzipFile(filename='',mode='wb',fileobj=raw,mtime=0)as compressed:yield CompressedText(compressed)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/gzip.py\", line 334, in close\n    fileobj.write(self.compress.flush())\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1436_pathlib_control_rename/bounded_io.py\", line 19, in write\n    self.boundary.charge(self.path,size);return self.stream.write(value)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1436_pathlib_control_rename/bounded_io.py\", line 45, in charge\n    try:self.reserve(Path(path),int(size))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/quota.py\", line 62, in charge_write\n    self.admit(actual_bytes,'EMIT_ACTUAL_OUTPUT_BYTES:'+path.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/quota.py\", line 44, in admit\n    assert time.monotonic()<=grant['expires_monotonic'],'BYTE_GRANT_EXPIRED'\nAssertionError: BYTE_GRANT_EXPIRED\n"
+    },
+    {
+      "stage": "SAVE_RESULT",
+      "error": "AssertionError('BYTE_GRANT_EXPIRED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1636_cached_original_runtime/driver.py\", line 140, in execute\n    try:save('RESULT.json',result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1636_cached_original_runtime/driver.py\", line 28, in save\n    def save(name,value):return quota.atomic(out/name,value,atomic)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/base_quota.py\", line 65, in atomic\n    self.admit(2*round_block(len(raw))+2*BLOCK,'ATOMIC_JSON:'+path.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1615_private_namespace_scope/quota.py\", line 44, in admit\n    assert time.monotonic()<=grant['expires_monotonic'],'BYTE_GRANT_EXPIRED'\nAssertionError: BYTE_GRANT_EXPIRED\n"
+    }
+  ],
+  "error_stop_receipts": 200,
+  "fully_applied_journal_rows": 44950,
+  "full_Nplus1_missing": true,
+  "physical_summary_missing": true,
+  "sensors_incomplete": true,
+  "independent_allocator_unexecuted": true,
+  "independent_full_audit_unexecuted": true,
+  "pair_unexecuted": true,
+  "formal_assignments_executed": 0,
+  "all_frozen_source_SHA_verified_after_child_exit": true,
+  "frozen_members": 13093,
+  "original_review_SHA": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
+  "lock_idle": true,
+  "owned_process_exited": true,
+  "no_old_rerun": true,
+  "remote_recovery_pending": true,
+  "console_recovery_sha256": "3be07bce76b8b4ff0ab6d17e98ac51395123027f2a2a13eea7ceda906faa7bc2",
+  "recorded_unix": 1795381377.3096898
+}

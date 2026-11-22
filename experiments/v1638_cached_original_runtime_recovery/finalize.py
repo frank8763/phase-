@@ -17,7 +17,8 @@ def main():
  os.sched_setaffinity(0,{5});assert not(O/'ARCHIVE_CLAIM.json').exists()
  parent=read(R/'runs/v1382_weekend_campaign/LEDGER.json');assert parent['active_round']is None and parent.get('active_math_round')is None and not parent['models_now_authorized']
  assert read(R/'runs/v1636_cached_original_runtime/SOURCE_QUALIFICATION.json')['passed']
- assert read(R/'runs/v1636_cached_original_runtime/COMPLETION.json')['closed']and read(R/'runs/v1636_cached_original_runtime/pilot_WE_full/RESULT.json')['closed']
+ assert read(R/'runs/v1636_cached_original_runtime/COMPLETION.json')['closed']and read(R/'runs/v1636_cached_original_runtime/RUNTIME_CLOSED_REVIEW.json')['closed']
+ assert not(R/'runs/v1636_cached_original_runtime/pilot_WE_full/RESULT.json').exists()and read(R/'runs/v1636_cached_original_runtime/CONSOLE_RECOVERED_FAILURE_RECORD.json')['machine_RESULT_missing']
  current=load('v1533_existing_usage_only',R/'experiments/v1518_compact_parent_control/common.py')
  frozen=read(R/'runs/v1636_cached_original_runtime/SOURCE_FREEZE.json')['files'];assert all(sha(R/n)==h for n,h in frozen.items())
  assert read(R/'runs/v1636_cached_original_runtime/CURRENT_SOURCE_REMOTE_RECOVERY.json')['all_frozen_members_remote_chain_covered']
@@ -33,6 +34,8 @@ def main():
     if(p.is_file()or p.is_symlink())and '__pycache__'not in p.parts:files.add(p)
   for name in ['CURRENT_EXPERIMENT.json','RESEARCH_STATUS.md','runs/v1620_mechanism_boundary/UNATTENDED_CONTINUATION_AUTHORIZATION_20261123.json','runs/v1636_cached_original_runtime/SOURCE_FREEZE.json','runs/v1636_cached_original_runtime/SOURCE_QUALIFICATION.json','runs/v1636_cached_original_runtime/CURRENT_SOURCE_REMOTE_RECOVERY.json','runs/v1636_cached_original_runtime/PILOT_ONCE_CLAIM.json','runs/v1636_cached_original_runtime/PILOT_ADMISSION.json','runs/v1636_cached_original_runtime/PILOT_WINDOW.json','runs/v1636_cached_original_runtime/PILOT_TASK.json','runs/v1636_cached_original_runtime/COMPLETION.json','runs/v1636_cached_original_runtime/pilot.console','runs/v1636_cached_original_runtime/RUNTIME_CLOSED_REVIEW.json','runs/v1637_cached_original_source_recovery/ARCHIVE_INDEX.json','runs/v1637_cached_original_source_recovery/FULL_REMOTE_VERIFIED.json','runs/v1637_cached_original_source_recovery/TRANSPORT_CLEANUP.json']:
    files.add(R/name)
+  files.add(R/'runs/v1636_cached_original_runtime/CONSOLE_RECOVERED_FAILURE_RECORD.json')
+  files.add(R/'docs/ORIGINAL_PILOT_RESOURCE_CLOSURE_V1636_REPORT.md')
   items=inventory(sorted(files),{});wanted={v['path']:v for v in items}
   class Bounded(io.Parts):
    def write(self,data):
