@@ -47,6 +47,7 @@ def draft_sources():
     values[str(p.relative_to(R))]=sha(p)
     p=R/'runs/v1382_weekend_campaign/STORAGE_AUTHORIZATION_15GIB_20261122.json'
     values[str(p.relative_to(R))]=sha(p)
+    p=O/'SAVED_ROWS_INPUT.json';values[str(p.relative_to(R))]=sha(p)
     return values
 
 def sources():

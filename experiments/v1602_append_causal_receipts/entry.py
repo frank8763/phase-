@@ -1,3 +1,6 @@
-"""Draft only: dedicated append-source qualification is not registered yet."""
-if __name__ == '__main__':
-    raise SystemExit('V1602_SOURCE_TARGET_NOT_REGISTERED_NO_NUMERICAL_OR_PHYSICAL_AUTHORITY')
+"""Registered once new lossless receipt source target; no numerical permission."""
+import importlib.util
+from pathlib import Path
+s=importlib.util.spec_from_file_location('v1602_registered_source_target',Path(__file__).with_name('source_target.py'))
+module=importlib.util.module_from_spec(s);s.loader.exec_module(module)
+if __name__=='__main__':raise SystemExit(module.main())

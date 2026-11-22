@@ -20,10 +20,35 @@ CURRENT_SHARED_POLICY_DELIVERY envelopes must bind source/state just as actual
 PUBLISHED envelopes,while not claiming they were transportedtoROS. This path
 was never executed in V1599;no oldfailed audit is rerun or retroactivelypassed.
 
-Concrete draft only. Need necessary newjournal/source-content/fault/close and
-sharedmeasurement audit source qualification underoriginalwriter,exact reuse
-of unchanged numerical/bootstrap/policy suites;no oldOS/ROS/RPC/model/zero-stop
-suite. Need newsourcefreeze/recovery/15GiB/once/root/barriers before any model/
-vehicle. Current newentry/common reuse assumptions must be replaced,not run.
-All actualruntime/numerical/replay outcomes remainunknown/whole0. Sourceformat
-changes do not authorize a new physicalinput domain or method13.
+Registered new SOURCE target: source_owner_entry.py once launches entry.py and
+source_target.py under CPU2/run_phase/original guard/no-model import+profile.
+Both clocks120s,8MiB evidence+10MiB archive+32MiB download+512MiB root,15GiB
+allruns cap. The original ACTUAL_ROS24MiB writer and OutputBoundary are called
+directly; this does not raise the runtime writer cap. No original ROS/tracker/
+model/Gear/FFI/Allocator execution. Old numerical/bootstrap/policy/fullsource
+proofs reused by exactSHA/normalizedAST, never rerun.
+
+New receipt_cases.py streams every one of1338 original V1599 saved complete
+receipts through the new journal, binds input bytes to already actual-remote
+verified V1601 index, then compares canonical row/semanticSHA/offset/prefix;
+an extra SOFTWARE row demonstrates later append exclusion from fixed request.
+This copies exposed evidence, never adds tracker or physical samples. New
+faults cover oversize/nonfinite/index refusal, poisoned retry,7-byte partial
+write and unknown inflight,readonlyfsync refusal,close-after-ack and latched
+secondclose,changed prefix/slice/content/source/wire,duplicate and provider
+save failure. SOFTWARE adapter checks original update keyword/order,not real
+estimator correctness. Real capture-module/provider/owner path binding and
+first+secondary proof preservation are checked,not positive actualcapture.
+
+provider_close.py is used by real route finally:stop-send failure cannot skip
+sourcejournal close;first error remains,secondary close errors separate. Four
+SOFTWARE combinations exercise this helper. measurement_source.py is used by
+integratedaudit for both measured paths,fullstate digest/wire binding/duplicate
+rejection. Local shared measured frames explicitly do not claim ROS transport.
+Unchanged integrated numerical audit AST is checked,not executed on oldarrays.
+
+After any target failure close/freeze failedsource/no rerun or edits. Success
+must save complete SOURCE_FREEZE and target qualification;source-onlyPASS is
+not actualcapture/current2200/model/live/wholePASS. Newsource remote recovery,
+fresh fullscope15GiB/once/root/priorroundbarrier remain required before one
+independent sameWE actual-firstevent round. Science12 final,no domain13.

@@ -1,4 +1,4 @@
-"""Single CPU5 original witness metadata target; no old modules or model calls."""
+"""Once CPU5 owner of CPU2 append-source target; no old suite or model calls."""
 import ast
 import fcntl
 import hashlib

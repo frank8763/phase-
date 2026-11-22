@@ -111,14 +111,15 @@ def integrated(task,result,*,components,source,check):
     mode_module=exact('v1602_original_continuous_mode',R/'experiments/v1398_current_event_witness/mode_memory.py',source)
     scalar=exact('v1602_original_actual_coordinates',R/'experiments/v1429_native_scalar_event_audit/event_audit.py',source)
     command_module=exact('v1602_original_route_retirement',R/'experiments/v1479_retirement_scope_binding/route_command.py',source)
+    measurements=exact('v1602_actual_measurement_sources',C/'measurement_source.py',source)
     sent={};retirements=[];gate=command_module.Commands(task['run_id'],retirement_sink=retirements.append)
     for event in root:
         check()
-        if event['kind']in {'PUBLISHED_ACTUAL_ENVELOPE','CURRENT_SHARED_POLICY_DELIVERY'}:
-            e=event['envelope'];wire=e['wire'];frames.validate_wire(wire)
-            assert wire['sequence']not in sent and wire['run_id']==task['run_id'];sent[wire['sequence']]=wire
-            tick=wire['native_tick'];state={k:full[k][tick].tolist()if hasattr(full[k][tick],'tolist')else full[k][tick]for k in ('time','qpos','qvel','ctrl','mocap_pos','mocap_quat')}
-            assert scalar.recorded.digest(state)==e['evidence_state_sha256']
+        def state_at(tick):
+            return {k:full[k][tick].tolist()if hasattr(full[k][tick],'tolist')else full[k][tick]for k in ('time','qpos','qvel','ctrl','mocap_pos','mocap_quat')}
+        measurement=measurements.bind(event,sent=sent,run_id=task['run_id'],state_at=state_at,
+            validate_wire=frames.validate_wire,state_digest=scalar.recorded.digest)
+        if measurement is not None:pass
         elif event['kind']=='RECEIVED_ACTUAL_ROUTE'and event['packet']['kind']=='command':
             gate.accept(event['packet'],sent,current_native=event['before_native'],now=event['received_monotonic'])
     saved_retirements=[e['retirement']for e in root if e['kind']=='RETIRED_ACTUAL_ROUTE']

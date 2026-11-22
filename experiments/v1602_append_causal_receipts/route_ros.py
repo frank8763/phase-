@@ -30,6 +30,7 @@ sys.path.insert(0, str(R / "experiments/v1370_overnight_controller_matrix"))
 from map_gate import snapshot,inspect_map
 sys.path.insert(0, str(R / 'experiments/v1288_baseline_interface'))
 from contract import observation, command
+_close_spec=importlib.util.spec_from_file_location('v1602_actual_source_closure',C/'provider_close.py');_source_close=importlib.util.module_from_spec(_close_spec);_close_spec.loader.exec_module(_source_close)
 from causal_occupancy import CausalBall
 _provider_spec=importlib.util.spec_from_file_location('v1574_actual_observation_provider',C/'causal_provider.py');_provider=importlib.util.module_from_spec(_provider_spec);_provider_spec.loader.exec_module(_provider)
 from observed_route import nominal_clearance,revalidate
@@ -366,14 +367,7 @@ def main():
         result.update(error=repr(exc), traceback=traceback.format_exc())
     finally:
         closing[0]=True;stopped=True
-        send(dict(kind='stop',run_id=task['run_id'],passed=result['passed'],issued_at=time.monotonic()))
-        try:
-            source_journal_close=tracker.close()
-            if not source_journal_close['passed']:
-                result.update(passed=False,causal_source_close_gap=True)
-                if 'error'not in result:result['error']='CAUSAL_SOURCE_JOURNAL_CLOSE_REFUSED'
-        except BaseException as source_error:
-            source_journal_close=dict(passed=False,error=repr(source_error));result.update(passed=False,causal_source_close_error=repr(source_error))
+        source_journal_close=_source_close.close(tracker,result,lambda:send(dict(kind='stop',run_id=task['run_id'],passed=result['passed'],issued_at=time.monotonic())))
         artifacts=[('CAUSAL_SOURCE_JOURNAL_CLOSED.json',source_journal_close),('ROS_COMMANDS.json',rows),('CAUSAL_OBSERVATIONS.json',tracker.records),
           ('CAUSAL_BRAKE_RECORDS.json',guard_records),('CAUSAL_ROUTE_RECORDS.json',path_records),
           ('SEGMENT_RECORDS.json',segment_records),('CURRENT_CUSP_REQUESTS.json',handoff_requests),('BRIDGE_NOTICES.json',bridge_notices),('RECOVERY_RESERVE_RECORDS.json',reserve_records),

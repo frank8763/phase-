@@ -1,4 +1,4 @@
-"""Exact prior hook proofs plus new context/source call graph, no ROS run."""
+"""Exact inherited writer proof; only disclosed route/provider changes."""
 import ast
 import hashlib
 import importlib.util
@@ -10,14 +10,13 @@ tree=lambda p:ast.dump(ast.parse(p.read_text()),include_attributes=False)
 
 
 def coverage(source):
-    path=R/'experiments/v1449_route_initializer_binding/writer_coverage.py'
-    assert sha(path)==source[str(path.relative_to(R))]
-    s=importlib.util.spec_from_file_location('v1602_original_hook_proof_reuse',path)
-    base=importlib.util.module_from_spec(s);s.loader.exec_module(base)
-    prior=base.coverage()
-    original=R/'experiments/v1574_current_owner_capture/route_ros.py'
-    changed=(C/'route_ros.py').read_text().replace("R/'experiments/v1574_current_owner_capture/causal_provider.py'","C/'causal_provider.py'").replace("R/'experiments/v1479_retirement_scope_binding/entry_boundary.py'","C/'entry_boundary.py'")
-    assert tree(original)==ast.dump(ast.parse(changed),include_attributes=False)
+    prior=json.loads((R/'runs/v1599_readonly_context_durability/ENTRY_QUALIFICATION.json').read_text())['writer_source_coverage']
+    original=R/'experiments/v1599_readonly_context_durability/route_ros.py'
+    expected=original.read_text().replace("R/'experiments/v1574_current_owner_capture/causal_provider.py'","C/'causal_provider.py'").replace("R/'experiments/v1574_current_owner_capture/event_session.py'","C/'event_session.py'")
+    expected=expected.replace('from causal_occupancy import CausalBall',"_close_spec=importlib.util.spec_from_file_location('v1602_actual_source_closure',C/'provider_close.py');_source_close=importlib.util.module_from_spec(_close_spec);_close_spec.loader.exec_module(_source_close)\nfrom causal_occupancy import CausalBall")
+    expected=expected.replace("send(dict(kind='stop',run_id=task['run_id'],passed=result['passed'],issued_at=time.monotonic()))","source_journal_close=_source_close.close(tracker,result,lambda:send(dict(kind='stop',run_id=task['run_id'],passed=result['passed'],issued_at=time.monotonic())))")
+    expected=expected.replace("artifacts=[('ROS_COMMANDS.json',rows)","artifacts=[('CAUSAL_SOURCE_JOURNAL_CLOSED.json',source_journal_close),('ROS_COMMANDS.json',rows)")
+    assert ast.dump(ast.parse(expected),include_attributes=False)==tree(C/'route_ros.py'),'UNDECLARED_ROS_CHANGE'
     # The original ACTUAL_ROS/planner/controller writer wrapper and subprocess
     # invocation are byte-identical. New context dump is still inside that
     # wrapper; it has no direct child or descriptor escape.
@@ -37,9 +36,10 @@ def coverage(source):
     assert 'Scope(parent=self.quota.output_boundary'in (C/'lifecycle.py').read_text()
     rows={}
     for role in ('ACTUAL_ROS','PLANNER','SUPERVISOR_LOG'):
-        row=prior[role];proof=R/row['qualification_file']
-        assert sha(proof)==source[str(proof.relative_to(R))] and json.loads(proof.read_text())['passed']
+        row=prior[role];assert row is True
         rows[role]=dict(source_hook_coverage_qualified=True,inherited_proof=row,
+            inherited_qualification_file='runs/v1599_readonly_context_durability/ENTRY_QUALIFICATION.json',
             current_route_sha256=sha(C/'route_ros.py'),current_context_sha256=sha(C/'route_context.py'),
+            current_journal_sha256=sha(C/'observation_journal.py'),
             source_only=True,new_ROS_runtime_executed=False)
     return rows
