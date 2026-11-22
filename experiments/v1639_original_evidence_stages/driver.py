@@ -139,7 +139,7 @@ def execute(task,window,source,limits,out):
     if ledger is not None:result['model_work']=ledger.snapshot()
     result.update(closed=True,wall_s=time.monotonic()-start,source_unchanged=all(sha(R/n)==h for n,h in source.items()if Path(n).name not in {'NATIVE_TRACE.npz','BODY_COMMANDS.json','SENSORS.json.gz','CONTACTS.json.gz','ACTUAL_CAUSAL_ENTRY_INPUT.json'}),source_hash_check_scope='runtime-safe source subset; allsource including historicalraw must be verified by owner AFTER childexit',full_source_verification_deferred_to_owner=True)
     if not result['source_unchanged']or remaining(window)<=0:result['passed']=False
-    try:resources.save_terminal(quota,lambda:save('RESULT.json',result))
+    try:resources.save_terminal(quota,result,lambda:save('RESULT.json',result))
     except BaseException as error:
      first(error,'SAVE_RESULT');result['passed']=False;os.write(2,(__import__('json').dumps(result,default=lambda a:a.tolist())+'\n').encode())
    quota.write_enforcement_active=False;signal.setitimer(signal.ITIMER_REAL,0);signal.signal(signal.SIGALRM,originalalarm);signal.signal(signal.SIGTERM,originalterm)

@@ -1,5 +1,5 @@
 """Stage grants within unchanged task/root caps; terminal ownership is separate."""
-import time
+import json
 TERMINAL_KEY='original-contract-terminal-metadata'
 TERMINAL_BYTES=1024**2
 
@@ -19,11 +19,14 @@ def prepare(quota,stage,*,cap=None,ttl=1800):
  assert type(cap)is int and cap>0,'NO_RESOURCE_GRANT_HEADROOM'
  return quota.prepare_grant(cap,phase=stage,valid_for_s=ttl,external_writers=[])
 
-def save_terminal(quota,save):
+def save_terminal(quota,value,save):
  # Closure only: no model/actuator/source command follows. Retiring an expired
  # grant restores original exact all-runs/holds checking for this small record.
- quota.retire_grant()
+ from quota import base
+ raw=json.dumps(value,ensure_ascii=False,indent=2,allow_nan=False,default=lambda x:x.tolist()).encode()+b'\n'
  assert TERMINAL_KEY in quota.holds
+ assert 2*base.round_block(len(raw))+2*base.BLOCK<=quota.holds[TERMINAL_KEY],'TERMINAL_RECORD_EXCEEDS_RESERVED_CAP'
+ quota.retire_grant()
  with quota.spend(TERMINAL_KEY):answer=save()
  quota.release(TERMINAL_KEY)
  return answer

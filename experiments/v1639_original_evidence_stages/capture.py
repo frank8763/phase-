@@ -29,17 +29,21 @@ def exact_compressed_paths(output,secondary):
  def adapted(filename,mode='rb',*args,**kwargs):
   path=Path(filename).absolute();assert path in targets and mode=='xt'and not args and not kwargs
   assert path not in opened,'CAPTURE_TARGET_NO_RETRY';opened.add(path)
-  first=None
-  with path.open('xb')as raw:
-   compressed=gzip.GzipFile(filename='',mode='wb',fileobj=raw,mtime=0);text=TextChunks(compressed)
-   try:yield text
-   except BaseException as error:first=error
-   for name,action in [('UTF8_BUFFER_FLUSH',text.flush),('GZIP_CLOSE',compressed.close)]:
-    try:action()
-    except BaseException as error:
-     if first is None:first=error
-     else:secondary.append(dict(stage=name,error=repr(error)))
-   if first is not None:raise first
+  first=None;raw=None;compressed=None;text=None
+  try:
+   raw=path.open('xb');compressed=gzip.GzipFile(filename='',mode='wb',fileobj=raw,mtime=0);text=TextChunks(compressed)
+   yield text
+  except BaseException as error:first=error
+  actions=[]
+  if text is not None:actions.append(('UTF8_BUFFER_FLUSH',text.flush))
+  if compressed is not None:actions.append(('GZIP_CLOSE',compressed.close))
+  if raw is not None:actions.append(('RAW_CLOSE',raw.close))
+  for name,action in actions:
+   try:action()
+   except BaseException as error:
+    if first is None:first=error
+    else:secondary.append(dict(stage=name,error=repr(error)))
+  if first is not None:raise first
  gzip.open=adapted
  try:yield
  finally:gzip.open=original
