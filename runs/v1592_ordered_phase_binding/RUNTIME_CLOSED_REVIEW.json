@@ -1,0 +1,33 @@
+{
+  "unix": 1795325964.3415606,
+  "closed": true,
+  "passed": false,
+  "scope": "REVISION12_FIRST_GOAL_BOUND_SEGMENT_ACTUAL_RUNTIME",
+  "runtime_qualification_passed": false,
+  "whole_route_passed": false,
+  "first_native_error": "AttributeError(\"'NoneType' object has no attribute 'glGetError'\")",
+  "first_native_traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1592_ordered_phase_binding/native_driver.py\", line 101, in execute\n    import mujoco as mj\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/__init__.py\", line 68, in <module>\n    from mujoco.rendering.classic.renderer import Renderer  # pytype: disable=import-error\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/rendering/classic/renderer.py\", line 20, in <module>\n    from mujoco.rendering.classic import gl_context\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/rendering/classic/gl_context.py\", line 38, in <module>\n    from mujoco.osmesa import GLContext as _GLContext\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/mujoco/osmesa/__init__.py\", line 31, in <module>\n    from OpenGL import GL\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/GL/__init__.py\", line 4, in <module>\n    from OpenGL.GL.VERSION.GL_1_1 import *\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/GL/VERSION/GL_1_1.py\", line 14, in <module>\n    from OpenGL.raw.GL.VERSION.GL_1_1 import *\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/raw/GL/VERSION/GL_1_1.py\", line 7, in <module>\n    from OpenGL.raw.GL import _errors\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/site-packages/OpenGL/raw/GL/_errors.py\", line 4, in <module>\n    _error_checker = _ErrorChecker( _p, _p.GL.glGetError )\nAttributeError: 'NoneType' object has no attribute 'glGetError'\n",
+  "native_RESULT_present": true,
+  "actual_native": 0,
+  "own_replay_native": 0,
+  "canonical_vehicle_initializations_machine_unknown_preserved": true,
+  "source_derived_accounting": {
+    "actual_native": 0,
+    "private_native": 0,
+    "replay_native": 0,
+    "Allocator_recomputations": 0,
+    "canonical_vehicle_initializations": 0,
+    "canonical_factory_calls": 0,
+    "physical_binding_calls": 1,
+    "numerical_models_constructed": 0,
+    "unknown": false,
+    "evidence": "SavedFIRST_ERROR trace fails importingMuJoCo before original create_vehicle call;INITIALIZATION_ATTEMPT marker precedes import;no physicsfolder. physical_binding only imports definitions/Adapter class,not constructors."
+  },
+  "source_all_unchanged": true,
+  "review_original_restored": true,
+  "lock_idle": true,
+  "rerun_prohibited": true,
+  "source_target_pass_preserved": true,
+  "scientific_revision": 12,
+  "runtime_recovery_pending": true
+}
