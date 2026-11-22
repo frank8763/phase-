@@ -1,0 +1,21 @@
+{
+  "human_instruction": "放宽15gib，跑一轮就整理上传，然后清理，继续实验",
+  "recorded_unix": 1795323604.5453203,
+  "storage_limit_bytes": 16106127360,
+  "previous_storage_limit_bytes": 10737418240,
+  "scope": "Phase only; all runs inode allocation incl evidence/archive/download/root reserve",
+  "absolute_hard_stop_unix": 1795395600,
+  "single_active_round": true,
+  "after_every_round": [
+    "close and audit accurate/unknown counters",
+    "archive/upload",
+    "actual remote block/member/whole/recovery-index SHA verification",
+    "exact SHA-size-mtime-device-inode eligible cleanup",
+    "then consider next independent round"
+  ],
+  "delete_unverified": false,
+  "preserve_current_inputs_success_failure_anchors": true,
+  "scientific_revision_limit": 12,
+  "safety_source_time_replay_gates_unchanged": true,
+  "old_frozen_budgets_unchanged": true
+}
