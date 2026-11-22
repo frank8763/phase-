@@ -28,7 +28,7 @@
     "shifted_candidate_scores": 79200
   },
   "acceleration_policy": "docs/EXPERIMENT_ACCELERATION_POLICY_20261117.md",
-  "active_entrypoint": null,
+  "active_entrypoint": "experiments/v1632_original_pilot_resources/pilot_entry.py",
   "active_math_round": null,
   "active_round": null,
   "active_run": null,
@@ -36,6 +36,7 @@
   "active_zero_model_diagnostic": null,
   "active_zero_model_storage_worker": null,
   "automatic_additional_simulation": true,
+  "automatic_continuation_authorized": false,
   "background_master": {
     "boot_id": "65f8d742-949c-49e5-bab2-19583493ff14",
     "deadline_unix": 1794618000.0,
@@ -94,7 +95,7 @@
     ],
     "physical_core_overlap_against_reported_allocation": false,
     "stage_processes_or_files_accessed": false,
-    "user_report_text": "好像是8、10、12",
+    "user_report_text": "\u597d\u50cf\u662f8\u300110\u300112",
     "user_reported_stage": [
       {
         "core_id": 8,
@@ -1406,6 +1407,16 @@
   },
   "latest_actual_route_pump_preparation": "runs/v1421_actual_route_pump/PREPARATION_CHECKPOINT02.json",
   "latest_actual_rpc_peer_lifecycle_qualification": "runs/v1426_peer_graceful_closure/PREPARATION_CHECKPOINT.json",
+  "latest_actual_runtime_owner": {
+    "actual_native": 9245,
+    "actual_result_pending": false,
+    "closed": true,
+    "current_source_age_s": 0.09098648902727291,
+    "passed": false,
+    "private_generation_native": 0,
+    "tool_session": 3702,
+    "whole_route_passed": false
+  },
   "latest_actual_zero200_closure_qualification": {
     "N_actions": 200,
     "Nplus1_states": 201,
@@ -1653,6 +1664,62 @@
     "remote_pending": true,
     "report": "docs/ORIGINAL_CATALOGUE_GEAR_V1549_REPORT.md",
     "source_only_passed": true
+  },
+  "latest_census_prelaunch_health": {
+    "all_source_SHA_verified": true,
+    "execution_lock_idle": true,
+    "models": 0,
+    "next": "Once newactual-firstevent via frozen supervisor only; no old model/entry/rerun.",
+    "parent_inactive": true,
+    "passed": true,
+    "physical_native": 0,
+    "recorded_unix": 1795335870.9724588,
+    "review_original_SHA_restored": true,
+    "scientific_revision": 12,
+    "source_members": 12917,
+    "source_only": true,
+    "source_remote_all_chain_covered": true,
+    "storage": {
+      "allruns_inode_allocated_bytes": 10245865472,
+      "full_reserved_peak_bytes": 11304927232,
+      "limit_bytes": 16106127360,
+      "models": 0,
+      "old_scope_not_reused_as_admission": true
+    },
+    "whole_route_passed": false
+  },
+  "latest_census_source_recovery": {
+    "actual_runtime_qualified": false,
+    "all_frozen_members": 12917,
+    "all_frozen_members_remote_chain_covered": true,
+    "full_remote_proof_sha256": "54d95190c38240d6b6b79f3a91e9995156f5fe1d52b6a87efe121ca38b78e082",
+    "helper_Gitshow_and_Release_member_SHA_exact": true,
+    "index_path": "runs/v1613_census_source_recovery/ARCHIVE_INDEX.json",
+    "index_sha256": "4d8493473c5fdedcda6170f646d44b91aaf93bfe1641948e1c609562a1396958",
+    "inherited_frozen_members": 12846,
+    "inherited_recovery_path": "runs/v1609_complete_refresh_source/CURRENT_SOURCE_REMOTE_RECOVERY.json",
+    "inherited_recovery_sha256": "5bc4f625f743a82a7824ae3e5a680705a160c144f4283599189f5417832ef198",
+    "late_metadata_outside_closed_archive": true,
+    "latest_delta": {
+      "archive_bytes": 1783524,
+      "every_asset_actual_download_SHA": true,
+      "every_member_SHA_and_link_text": true,
+      "members": 140,
+      "models": 0,
+      "passed": true,
+      "physical_admission": false,
+      "recovery_index_download_SHA": true,
+      "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1613-locked-writer-census-source-20261122",
+      "source_commit": "52a9060d0e63aae47f31f05c728dfedf7dedaf4a",
+      "verified_unix": 1795335827.1922104,
+      "whole_archive_SHA": true
+    },
+    "models": 0,
+    "new_delta_members": 71,
+    "passed": true,
+    "physical_admission": false,
+    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
+    "uncovered_members": []
   },
   "latest_complete_batch_comparison_progress": {
     "CPP_analytical_native": 1263600,
@@ -1934,6 +2001,21 @@
   },
   "latest_current_cusp_transaction_preparation": "runs/v1419_current_cusp_transaction/PREPARATION_CHECKPOINT.json",
   "latest_current_owner_capture_preparation": "runs/v1574_current_owner_capture/CLOSED_CHECKPOINT.json",
+  "latest_current_refresh_runtime_closed": {
+    "Nplus1_states": 9246,
+    "actual_native": 9245,
+    "capture_saved_checks_passed": true,
+    "capture_source_age_s": 0.09098648902727291,
+    "closed": true,
+    "complete_actual_capture_runtime_qualified": false,
+    "full200_applied_zero_tail": true,
+    "ownreplay_native": 0,
+    "passed": false,
+    "private_generation_native": 0,
+    "runtime_remote_recovery_pending": true,
+    "scientific_revision": 12,
+    "whole_route_passed": false
+  },
   "latest_development_milestone": {
     "confirmation_not_counted_yet": true,
     "maximum_complete_state_ctrl_error": 0.0,
@@ -2389,6 +2471,26 @@
     "recorded_unix": 1795253077.6735542,
     "whole_route_passed": false
   },
+  "latest_locked_writer_census_source": {
+    "all_source_SHA_verified": true,
+    "execution_lock_idle": true,
+    "inner_wall_s": 20.34779792500194,
+    "models": 0,
+    "negative_cases": 7,
+    "no_rerun_or_frozen_source_edits": true,
+    "old_suites_reused_not_rerun": true,
+    "outer_wall_s": 21.570306651003193,
+    "passed": true,
+    "physical_native": 0,
+    "recorded_unix": 1795335751.7829983,
+    "review_original_SHA_restored": true,
+    "scientific_revision": 12,
+    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
+    "source_members": 12917,
+    "source_only": true,
+    "source_remote_recovery_pending": true,
+    "whole_route_passed": false
+  },
   "latest_lossless_branch_storage_qualification": "runs/v1407_lossless_branch_stream/QUALIFICATION.json",
   "latest_lossless_witness_numeric_result": {
     "audit_native": 0,
@@ -2426,6 +2528,16 @@
     "saved_audit_passed": true,
     "single_step_samples": 30563,
     "version": "V1154"
+  },
+  "latest_mechanism_boundary_evaluation": {
+    "additional_actual_native": 200,
+    "additional_own_replay_native": 200,
+    "automation_id": "phase-09",
+    "canonical_initializations_completed": 1,
+    "formal_executed": 0,
+    "original_contract_user_selected": true,
+    "overall_calendar_deadline_unix": null,
+    "path": "runs/v1635_original_cached_backends/PREPARATION_CHECKPOINT.json"
   },
   "latest_method_review": "docs/RPCCR_DYNAMIC_METHOD_RESET_AND_LITERATURE_20261113.md",
   "latest_mode_response_review": {
@@ -3768,6 +3880,29 @@
     "user_window_approved": true,
     "version": "V1235"
   },
+  "latest_private_namespace_preparation": {
+    "actual_runtime_qualified": false,
+    "all_source_SHA_verified": true,
+    "execution_lock_idle": true,
+    "inner_wall_s": 17.99205724702915,
+    "models": 0,
+    "negative_cases": 9,
+    "no_rerun_or_frozen_source_edits": true,
+    "original_definition_import_or_suite_rerun": false,
+    "outer_wall_s": 19.221119877998717,
+    "passed": true,
+    "physical_native": 0,
+    "recorded_unix": 1795337005.4167645,
+    "review_original_SHA_restored": true,
+    "scientific_revision": 12,
+    "source_freeze_sha256": "ca4103e24aef3588d8f5f31b26e5cebf4df995267dd58b4666b3f5ebde1c5e2c",
+    "source_members": 12990,
+    "source_only": true,
+    "source_remote_recovery_pending": true,
+    "unchanged_modules_by_normalized_AST": 59,
+    "whole_route_passed": false,
+    "writer_charged_bytes": 268043
+  },
   "latest_recert_failure_diagnosis": {
     "actual_input_and_ctrl_reconstructed": true,
     "closed": true,
@@ -4694,6 +4829,7 @@
     "training_updates": 0,
     "version": "V1155"
   },
+  "latest_stopped_source_preparation": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json",
   "latest_storage_authorization": "runs/v1382_weekend_campaign/STORAGE_AUTHORIZATION_15GIB_20261122.json",
   "latest_streamed_retirement_source_recovery": {
     "archive_bytes": 1536866,
@@ -4730,7 +4866,7 @@
     "no_window_created": true,
     "old_deadline_unix": 1794813542.1965683,
     "recorded_unix": 1794809706.4682565,
-    "user_instruction": "只保留修复，暂不启动模型"
+    "user_instruction": "\u53ea\u4fdd\u7559\u4fee\u590d\uff0c\u6682\u4e0d\u542f\u52a8\u6a21\u578b"
   },
   "latest_v1157_closed_handoff": "runs/v1157_response_execution/FINAL_HANDOFF.md",
   "latest_v1157_entry_readiness": {
@@ -12790,9 +12926,9 @@
     "safety_or_evidence_anomaly_stops": true,
     "scope": "qualified same-version three route mains and complete repeats; conditional fixed24",
     "start_condition": "complete recovery source and live integration qualification passed before any new physical initialization",
-    "user_choice": "新独立12小时：三路线全过后，条件进入固定24项"
+    "user_choice": "\u65b0\u72ec\u7acb12\u5c0f\u65f6\uff1a\u4e09\u8def\u7ebf\u5168\u8fc7\u540e\uff0c\u6761\u4ef6\u8fdb\u5165\u56fa\u5b9a24\u9879"
   },
-  "next_preparation": "experiments/v1615_private_namespace_scope/PROTOCOL.md",
+  "next_preparation": "v1636_cached_original_runtime",
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "next_scope": "Integrate V1437 shared5400s phase guards into current production lifecycle/supervisor before necessary zero-model qualification; full route admission remains absent.",
   "night_candidate_relay": "runs/v1192_eight_gib_relay",
@@ -12844,7 +12980,7 @@
     "reuse_qualification_for_unchanged_source_hashes": true,
     "single_candidate_at_a_time": true,
     "single_failed_state_first": true,
-    "user_request": "准备时间加快，不再准备一两个小时"
+    "user_request": "\u51c6\u5907\u65f6\u95f4\u52a0\u5feb\uff0c\u4e0d\u518d\u51c6\u5907\u4e00\u4e24\u4e2a\u5c0f\u65f6"
   },
   "prepared_next_static_route": {
     "controller_changed": false,
@@ -12997,7 +13133,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "REVIEW_PENDING",
+  "status": "ORIGINAL_CACHED_BACKENDS_SOURCE_RECOVERY_REQUIRED",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13026,6 +13162,10 @@
   "storage_limit_bytes": 16106127360,
   "storage_round_policy": "ONE_ROUND_THEN_UPLOAD_FULL_REMOTE_VERIFY_EXACT_CLEANUP_BEFORE_NEXT_ROUND",
   "target_journal": "Robotics and Autonomous Systems",
+  "user_stop": {
+    "path": "runs/v1382_weekend_campaign/user_stop_20261122/STOP_RECORD.json",
+    "sha256": "0d42f9ea105b0a30eb6bed24ec10d75ec8fc96e0c49005ec36e1a580c01536c6"
+  },
   "v1532_source_entry_qualified": true,
   "vehicle_task_starts": 26,
   "verified_v1281_github_backup": {
@@ -13124,130 +13264,6 @@
     "storage_ready": true,
     "temporary_storage_cap_bytes": 10737418240
   },
-  "weekend_next_preparation": "experiments/v1615_private_namespace_scope/PROTOCOL.md",
-  "latest_stopped_source_preparation": "runs/v1609_complete_refresh_source/CLOSED_CHECKPOINT.json",
-  "latest_current_refresh_runtime_closed": {
-    "closed": true,
-    "passed": false,
-    "actual_native": 9245,
-    "Nplus1_states": 9246,
-    "full200_applied_zero_tail": true,
-    "ownreplay_native": 0,
-    "capture_saved_checks_passed": true,
-    "capture_source_age_s": 0.09098648902727291,
-    "complete_actual_capture_runtime_qualified": false,
-    "private_generation_native": 0,
-    "whole_route_passed": false,
-    "scientific_revision": 12,
-    "runtime_remote_recovery_pending": true
-  },
-  "latest_locked_writer_census_source": {
-    "recorded_unix": 1795335751.7829983,
-    "passed": true,
-    "source_only": true,
-    "models": 0,
-    "physical_native": 0,
-    "whole_route_passed": false,
-    "source_members": 12917,
-    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
-    "inner_wall_s": 20.34779792500194,
-    "outer_wall_s": 21.570306651003193,
-    "negative_cases": 7,
-    "all_source_SHA_verified": true,
-    "review_original_SHA_restored": true,
-    "execution_lock_idle": true,
-    "old_suites_reused_not_rerun": true,
-    "source_remote_recovery_pending": true,
-    "scientific_revision": 12,
-    "no_rerun_or_frozen_source_edits": true
-  },
-  "latest_census_source_recovery": {
-    "passed": true,
-    "all_frozen_members": 12917,
-    "inherited_frozen_members": 12846,
-    "new_delta_members": 71,
-    "all_frozen_members_remote_chain_covered": true,
-    "uncovered_members": [],
-    "source_freeze_sha256": "b2d5e17ddf48f6e74dd6ed09218470f19c2192b01b7ca7904eb3d976ad5c6bda",
-    "inherited_recovery_path": "runs/v1609_complete_refresh_source/CURRENT_SOURCE_REMOTE_RECOVERY.json",
-    "inherited_recovery_sha256": "5bc4f625f743a82a7824ae3e5a680705a160c144f4283599189f5417832ef198",
-    "index_path": "runs/v1613_census_source_recovery/ARCHIVE_INDEX.json",
-    "index_sha256": "4d8493473c5fdedcda6170f646d44b91aaf93bfe1641948e1c609562a1396958",
-    "full_remote_proof_sha256": "54d95190c38240d6b6b79f3a91e9995156f5fe1d52b6a87efe121ca38b78e082",
-    "latest_delta": {
-      "passed": true,
-      "source_commit": "52a9060d0e63aae47f31f05c728dfedf7dedaf4a",
-      "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1613-locked-writer-census-source-20261122",
-      "every_asset_actual_download_SHA": true,
-      "every_member_SHA_and_link_text": true,
-      "whole_archive_SHA": true,
-      "recovery_index_download_SHA": true,
-      "members": 140,
-      "archive_bytes": 1783524,
-      "models": 0,
-      "physical_admission": false,
-      "verified_unix": 1795335827.1922104
-    },
-    "helper_Gitshow_and_Release_member_SHA_exact": true,
-    "late_metadata_outside_closed_archive": true,
-    "models": 0,
-    "physical_admission": false,
-    "actual_runtime_qualified": false
-  },
-  "latest_census_prelaunch_health": {
-    "passed": true,
-    "recorded_unix": 1795335870.9724588,
-    "all_source_SHA_verified": true,
-    "source_members": 12917,
-    "source_remote_all_chain_covered": true,
-    "review_original_SHA_restored": true,
-    "execution_lock_idle": true,
-    "parent_inactive": true,
-    "storage": {
-      "allruns_inode_allocated_bytes": 10245865472,
-      "full_reserved_peak_bytes": 11304927232,
-      "limit_bytes": 16106127360,
-      "models": 0,
-      "old_scope_not_reused_as_admission": true
-    },
-    "source_only": true,
-    "models": 0,
-    "physical_native": 0,
-    "whole_route_passed": false,
-    "scientific_revision": 12,
-    "next": "Once newactual-firstevent via frozen supervisor only; no old model/entry/rerun."
-  },
-  "latest_actual_runtime_owner": {
-    "tool_session": 3702,
-    "closed": true,
-    "passed": false,
-    "actual_native": 9245,
-    "current_source_age_s": 0.09098648902727291,
-    "private_generation_native": 0,
-    "actual_result_pending": false,
-    "whole_route_passed": false
-  },
-  "latest_private_namespace_preparation": {
-    "recorded_unix": 1795337005.4167645,
-    "passed": true,
-    "source_only": true,
-    "models": 0,
-    "physical_native": 0,
-    "whole_route_passed": false,
-    "source_members": 12990,
-    "source_freeze_sha256": "ca4103e24aef3588d8f5f31b26e5cebf4df995267dd58b4666b3f5ebde1c5e2c",
-    "negative_cases": 9,
-    "writer_charged_bytes": 268043,
-    "inner_wall_s": 17.99205724702915,
-    "outer_wall_s": 19.221119877998717,
-    "actual_runtime_qualified": false,
-    "original_definition_import_or_suite_rerun": false,
-    "unchanged_modules_by_normalized_AST": 59,
-    "all_source_SHA_verified": true,
-    "review_original_SHA_restored": true,
-    "execution_lock_idle": true,
-    "source_remote_recovery_pending": true,
-    "scientific_revision": 12,
-    "no_rerun_or_frozen_source_edits": true
-  }
+  "weekend_next_preparation": null,
+  "latest_original_cached_source": "runs/v1636_cached_original_runtime/PREPARATION_CHECKPOINT.json"
 }

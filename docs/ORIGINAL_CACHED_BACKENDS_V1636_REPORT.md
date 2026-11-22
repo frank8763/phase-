@@ -1,0 +1,5 @@
+# Original cached analytical-backend source binding
+
+V1636 SOURCE closed PASS; 9 refusal cases, two real DLL loads for original ctypes signatures and zero numerical calls/models/physical/replay. The planner and fast-expander libraries are exact original binary bytes; the latter was rebuilt once from original C++ with exact binary SHA before load. Missing/corrupt cache refuses before CDLL, online compiler branch removed in the new library wrapper, no writable raw fd permission. Runtime binds Reserve alias and original Expander globals before canonical factory/navigation. Original search/expand/stop and mechanism decisions unchanged.
+
+V1632 failure remains: init1, normal0, errorstop200 and exact ownreplay200; not a navigation/whole-safety or mechanism result. New source pass does not qualify actual runtime. All20 formal assignments remain unexecuted. Next new-source full remote recovery then one exposed WE03 operational pilot, original contract/sensor seed/parameters unchanged, per-round5400s technical timeout and no overall09 deadline.

@@ -1,0 +1,1 @@
+One bounded new source delta including exact original rebuilt binary and V1636 source qualification. No models; unique new sourcepush/ref then complete actualremote everyblock/member/whole/indexSHA. No overallcalendar stop; operation timeouts remain. Only exactverifiedduplicate archive transport cleanup. Inherit old V1632 frozen source chain; do not reupload/reseal old rounds.
