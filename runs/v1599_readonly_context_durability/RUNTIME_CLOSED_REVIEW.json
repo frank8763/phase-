@@ -1,0 +1,50 @@
+{
+  "unix": 1795328394.0412104,
+  "closed": true,
+  "passed": false,
+  "scope": "REVISION12_FIRST_GOAL_BOUND_SEGMENT_ACTUAL_RUNTIME",
+  "runtime_qualification_passed": false,
+  "whole_route_passed": false,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 4595,
+  "actual_inflight_unknown": false,
+  "recorded_Nplus1_states": 4596,
+  "recorded_actual_gap": 0,
+  "own_replay_native": 0,
+  "independent_Allocator_recomputation_unexecuted": true,
+  "goal_bound_method12_private_transaction_unexecuted": true,
+  "current_CPP2200_unexecuted": true,
+  "new_goal_bound_bridge_not_installed": true,
+  "original_RPP_native": 4505,
+  "original_shared_execution_prefix_native": 90,
+  "applied_stop_tail_native": 0,
+  "complete200_applied_zero_tail": false,
+  "minimum_observed_actual_clearance_m": 0.2500393127533587,
+  "observed_bad_contacts": 0,
+  "not_independent_safety_acceptance": true,
+  "causal_observation_evidence_incomplete_at_failure": true,
+  "ROS_RESULT_missing": true,
+  "ROS_console_sha256": "2074bbe049dfc938c0b8950e3705955219138ddd8213cd9cd30457982e6a475f",
+  "ROS_failure": "CHILD_OUTPUT_BYTE_CAP_EXHAUSTED",
+  "native_first_error": {
+    "error": "AssertionError('GOAL_BOUND_CURRENT_EVENT_NOT_COMPLETED')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1599_readonly_context_durability/native_driver.py\", line 123, in execute\n    assert canonical.bridge is not None and canonical.bridge.closed,'GOAL_BOUND_CURRENT_EVENT_NOT_COMPLETED'\nAssertionError: GOAL_BOUND_CURRENT_EVENT_NOT_COMPLETED\n"
+  },
+  "secondary_errors": [
+    {
+      "stage": "ORIGINAL_PREFIX_ERROR_ZERO_TAIL",
+      "error": "RuntimeError(\"SUPERVISOR_REQUESTED_NATIVE_SAVE_AND_CLOSE:RuntimeError('ACTUAL_ROS_EXITED_WITHOUT_RESULT')\")"
+    },
+    {
+      "stage": "WAIT_ACTUAL_ROS_CLOSE",
+      "error": "TimeoutError('GOAL_BOUND_ACTUAL_ROOT_OR_PHASE_STOP')"
+    }
+  ],
+  "source_all_unchanged": true,
+  "review_original_restored": true,
+  "lock_idle": true,
+  "rerun_prohibited": true,
+  "scientific_revision": 12,
+  "runtime_recovery_pending": true
+}
