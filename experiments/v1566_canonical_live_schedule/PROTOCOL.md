@@ -36,3 +36,18 @@ the necessary new current-owner API target, not old OS/ROS/RPC/serializer suites
 Before any numerical/actual scope: source freeze, full remote chain, exact all
 runs/archive/download/root512MiB10GiB budget and singleCPU2/run_phase authority.
 No closed RPP/MPPI/PRIEST task is restarted. Original whole WE remains0/false.
+
+## Necessary new source target
+
+One source-only CPU2/run_phase target, <=120s, original immutable guard and
+forbidden numerical model/FFI/Allocator calls, validates saved-current source
+metadata and durable method-memory API. Explicit software transitions exercise
+load-state update/chain and failed saves; they are not actual measurements,
+response integrations or new physical samples. Original saved M8 packet and
+complete V1563 source identities are SHA-bound. FRESH role, clock/gear/memory/
+source malformed cases must save refusal before raising; actual Guard without
+new admission refuses before any numerical module import. No old definition,
+origin, gear, model, OS, ROS, RPC, serializer suite is repeated. Full writer2MiB
+for this target inside source-owner7MiB evidence/8MiBarchive/32MiBdownload/
+512MiBroot peak; source freeze only after success. This creates no numerical
+or physical admission and no once model/vehicle owner.

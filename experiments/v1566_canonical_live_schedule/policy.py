@@ -102,6 +102,8 @@ class CanonicalSchedule:
             epoch_native=self.origin,load_before=self.load_episode,load_after=load,
             applied_body=[actual_v,actual_w],parked_target=target,
             actual_sensor_claim=False,decision_sha256=pending['decision_sha256'],
+            response_method_sha256=self.method_sha256,source_packet_sha256=row['source_packet_sha256'],
+            source_full_state_sha256=row['source_full_state_sha256'],after_full_state_sha256=durable_receipt['after_full_state_sha256'],
             previous_chain_sha256=self.method_memory_chain)
         chain=digest(memory)
         self.offset+=1;self.load_episode=load;self.method_memory_chain=chain;self.pending=None;self.prepared_feedback=None
