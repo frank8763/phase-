@@ -16,6 +16,27 @@ P=c.R/'runs/v1382_weekend_campaign/LEDGER.json';REVIEW=c.R/'REVIEW_PENDING'
 def parent_bytes(value,maximum=131072):
  raw=json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False,allow_nan=False).encode()+b'\n';assert len(raw)<=maximum,'PARENT_CONTROL_SERIALIZED_CAP';return raw
 
+def work_unknown(machine):
+ if not isinstance(machine,dict):return True
+ return (type(machine.get('CPP_analytical_native'))is not int or
+  type(machine.get('Engine_constructions'))is not int or
+  machine.get('CPP_inflight_unknown')is not False or
+  'construction_inflight'not in machine or machine['construction_inflight']is not None)
+
+def owned_identity(process):
+ stat=Path('/proc/'+str(process.pid)+'/stat').read_text().rsplit(')',1)[1].split()
+ return dict(pid=process.pid,pgid=os.getpgid(process.pid),start_ticks=int(stat[19]),
+  boot_id=Path('/proc/sys/kernel/random/boot_id').read_text().strip())
+
+def close_owned(process,identity):
+ if process.poll()is not None:return process.returncode
+ assert owned_identity(process)==identity and identity['pgid']==process.pid,'CPP_OWNED_CHILD_IDENTITY_CHANGED'
+ os.killpg(process.pid,signal.SIGTERM)
+ try:return process.wait(timeout=5)
+ except subprocess.TimeoutExpired:
+  assert owned_identity(process)==identity,'CPP_OWNED_CHILD_IDENTITY_CHANGED_BEFORE_KILL'
+  os.killpg(process.pid,signal.SIGKILL);return process.wait(timeout=5)
+
 def reserve_parent_budget(writer,original,limits):
  # Prepay all close controls before the child. Logs can never consume this hold.
  control_max=131072
@@ -31,7 +52,7 @@ def runtime_passed(returncode,machine,secondary):
  if type(returncode)is not int or returncode!=0 or not isinstance(machine,dict):return False
  if machine.get('closed')is not True or machine.get('passed')is not True:return False
  if 'first_error'not in machine or machine['first_error']is not None or machine.get('secondary_errors')!=[]or secondary:return False
- if machine.get('CPP_inflight_unknown')is not False or machine.get('construction_inflight')is not None:return False
+ if work_unknown(machine):return False
  if type(machine.get('CPP_analytical_native'))is not int or machine['CPP_analytical_native']!=1263600:return False
  if type(machine.get('Engine_constructions'))is not int or machine['Engine_constructions']!=1:return False
  count=machine.get('accounting',{}).get('stages',{}).get('CPP_AUDIT',{})
@@ -74,7 +95,7 @@ def launch():
  # The audit deadline is conservatively measured from launch and includes
  # initialization; the CPP phase can never receive >2300seconds.
  with(c.O/'NUMERIC_ONCE_CLAIM.json').open('x')as file:json.dump(dict(started_unix=unix,models_physical=0,authority=authority),file)
- task=c.O/'model';proc=None;rc=None;first=None;secondary=[];total=0;machine=None
+ task=c.O/'model';proc=None;proc_identity=None;rc=None;first=None;secondary=[];total=0;machine=None
  try:
   metadata('ROUND_WINDOW.json',dict(scope=limits['scope'],started_unix=unix,started_monotonic=start,absolute_deadline_unix=wall,hard_stop_monotonic=end,allruns_before_bytes=before,full_reserved_peak_bytes=before+extra,storage_limit_bytes=10*1024**3,limits=limits));metadata('FULL_CPP_BATCH_ADMISSION.json',authority)
   task.mkdir()
@@ -83,7 +104,9 @@ def launch():
    parent['active_round']=C.name;parent['models_now_authorized']=True;parent['rounds'].append(dict(id=C.name,scope=limits['scope'],started_unix=unix,status='ACTIVE',models_actual_vehicle=0,physical_native=0,maximum_generation_native=0,success_only_maximum_audit_native=limits['CPP_native'],science_revision=10));parent_put(parent)
   REVIEW.unlink();env=os.environ.copy();env.update(OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',NUMEXPR_NUM_THREADS='1',CUDA_VISIBLE_DEVICES='',MUJOCO_GL='osmesa',PYOPENGL_PLATFORM='osmesa',PYTHONDONTWRITEBYTECODE='1')
   command=['ionice','-c','3','taskset','-c','2','nice','-n','19','./run_phase.sh',str((C/'driver.py').relative_to(c.R))]
-  proc=subprocess.Popen(command,cwd=c.R,env=env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,start_new_session=True);metadata('OWNED_CHILD.json',dict(pid=proc.pid,pgid=proc.pid,command=command,source_manifest_sha256=identity,boot_id=authority['boot_id']))
+  proc=subprocess.Popen(command,cwd=c.R,env=env,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,start_new_session=True)
+  proc_identity=owned_identity(proc);assert proc_identity['pgid']==proc.pid
+  metadata('OWNED_CHILD.json',dict(**proc_identity,command=command,source_manifest_sha256=identity))
   os.set_blocking(proc.stdout.fileno(),False);selector=selectors.DefaultSelector();selector.register(proc.stdout,selectors.EVENT_READ)
   with(c.O/'numeric.console').open('xb')as output:
    while selector.get_map():
@@ -100,9 +123,8 @@ def launch():
  finally:
   if proc and proc.poll()is None:
    try:
-    os.killpg(proc.pid,signal.SIGTERM)
-    try:rc=proc.wait(timeout=5)
-    except subprocess.TimeoutExpired:os.killpg(proc.pid,signal.SIGKILL);rc=proc.wait(timeout=5)
+    assert proc_identity is not None,'CPP_OWNED_CHILD_IDENTITY_MISSING'
+    rc=close_owned(proc,proc_identity)
    except BaseException as error:secondary.append('owned_child_close:'+repr(error))
   try:REVIEW.write_bytes(original);assert c.sha(REVIEW)=='4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66'
   except BaseException as error:secondary.append('review_restore:'+repr(error))
@@ -115,7 +137,7 @@ def launch():
    scope=limits['scope'],first_error=first,secondary_errors=secondary,machine_result_present=machine is not None,
    CPP_analytical_native=machine.get('CPP_analytical_native')if machine else None,
    Engine_constructions=machine.get('Engine_constructions')if machine else None,
-   model_work_unknown=machine is None or type(machine.get('CPP_analytical_native'))is not int or type(machine.get('Engine_constructions'))is not int or machine.get('CPP_inflight_unknown')is not False or machine.get('construction_inflight')is not None,
+   model_work_unknown=work_unknown(machine),
    models_physical=0,physical_native=0,optimizer_calls=0,ownreplay_native=0,python_generation_native=0,
    stdout_bytes=total,review_original_restored=c.sha(REVIEW)=='4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66',
    closed_unix=time.time(),wall_s=time.monotonic()-start,whole_route_passed=False,
@@ -141,7 +163,8 @@ if __name__=='__main__':
  try:answer=launch()
  except BaseException as error:
   answer=dict(passed=False,closed=True,prelaunch_refused=True,first_error=repr(error),traceback=traceback.format_exc(),
-   numeric_once_claim_present=(c.O/'NUMERIC_ONCE_CLAIM.json').exists(),models_started=False)
+   numeric_once_claim_present=(c.O/'NUMERIC_ONCE_CLAIM.json').exists(),
+   owned_child_record_present=(c.O/'OWNED_CHILD.json').exists(),models_started=None)
   c.put(c.O/'PRELAUNCH_REFUSAL.json',answer)
  print(json.dumps(answer,allow_nan=False))
  raise SystemExit(0 if answer.get('passed')else 1)

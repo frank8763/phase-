@@ -10,6 +10,13 @@ s=importlib.util.spec_from_file_location('v1571_driver_common',C/'common.py')
 c=importlib.util.module_from_spec(s);s.loader.exec_module(c)
 
 
+def record_failure(result,error,*,stage):
+    result['passed']=False
+    first=stage+':'+repr(error)
+    if result.get('first_error')is None:result['first_error']=first
+    else:result['secondary_errors'].append(first)
+
+
 def execute():
     start=time.monotonic();guard=None;writer=None;phase_writer=None;codec=None;boundary=None
     result=dict(passed=False,closed=False,first_error=None,secondary_errors=[],
@@ -59,7 +66,8 @@ def execute():
             guard.check();assert c.sources()==source
             result['passed']=True
     except BaseException as error:
-        result.update(passed=False,first_error=result['first_error']or repr(error),traceback=traceback.format_exc())
+        record_failure(result,error,stage='driver')
+        result['traceback']=traceback.format_exc()
         if getattr(error,'secondary',None):result['secondary_errors'].append('origin_proof_save:'+error.secondary)
     finally:
         result.update(closed=True,wall_s=time.monotonic()-start)
@@ -68,14 +76,14 @@ def execute():
             CPP_inflight_unknown=count['inflight_unknown']if count else False,
             Engine_constructions=count['Engine']if count else 0,
             construction_inflight=count['construction_inflight']if count else None,
-            internal_Allocator_constructors=None if count and count['Engine']else 0,
+            internal_Allocator_constructors=None if count and(count['Engine']or count['construction_inflight']=='Engine')else 0,
             accounting=guard.counts()if guard else dict(models=0,native=0,physical_native=0,replay_native=0,optimizer_calls=0))
         if writer is not None:
             result['storage_accounting']=dict(root=writer._read(),phase=None if phase_writer is None else phase_writer._read())
             try:
                 with boundary.OutputBoundary(folder,writer.reserve):codec.write_atomic(folder/'RESULT.json',codec.encoded(result),writer)
             except BaseException as error:
-                result['passed']=False;result['secondary_errors'].append('result_save:'+repr(error))
+                record_failure(result,error,stage='result_save')
                 print('FULL_CPP_BATCH_RESULT_SAVE_GAP:'+json.dumps(result,allow_nan=False),flush=True)
         else:
             try:
@@ -86,7 +94,7 @@ def execute():
                 writer=budget.WriterBudget(target,role='PLANNER',maximum_bytes=1024**2,source_identity=c.digest({str(p.relative_to(c.R)):c.sha(p)for p in C.iterdir()if p.is_file()}))
                 with boundary.OutputBoundary(target,writer.reserve):codec.write_atomic(target/'RESULT.json',codec.encoded(result),writer)
             except BaseException as error:
-                result['passed']=False;result['secondary_errors'].append('unadmitted_result_save:'+repr(error))
+                record_failure(result,error,stage='unadmitted_result_save')
                 print('FULL_CPP_BATCH_UNADMITTED_SAVE_GAP:'+json.dumps(result,allow_nan=False),flush=True)
     return result
 

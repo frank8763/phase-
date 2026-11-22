@@ -32,3 +32,28 @@ permission. Fullsource freeze/recovery/currentpeak/once and new owner/control
 path qualification remain missing. Newsource-only target must exercise only new
 owner/result accounting and realCLI preadmission failure; no repeat old batch,
 Gear/origin/serializer/OS/ROS/RPC/model suite or isolatedzero-stop numeric target.
+
+
+## Necessary new source-owner qualification
+
+One CPU2/run_phase/immutableguard/profile target <=120s dualclock; no NumPy,
+JAX, original Gear/policy/definition/origin/model/Allocator/FFI code can run.
+Reuse V1569 source/API proof by five exact backend files and saved proofSHA.
+Only new complete-result predicate/unknown/first-secondary handling, actual
+new parent-precharge and compact closing reference, stdlib owned-child start
+identity refusal+close, and real driver missing-admission save are exercised.
+Software machine-shaped predicate values never become a physical/model count.
+The qualifier releases its lock before real driver owns a separate descriptor;
+no fake admission is installed. New source freeze includes three savedV1563
+reference SHA identities and V1565 verifiedindex/proof, with no Reader/NPZ/model
+reexecution here. Profile prevents launching any numerical phase.
+
+Source writer2MiB and alltarget evidence7MiB/archive8MiB/download32MiB/root512MiB
+(559MiB) are separate from the proposed full622MiB numerical scope. Sourceowner
+checks allruns before one entry, saves original REVIEW bytes before removing
+that marker for run_phase, restores exactSHA/idlelock on close. No retries.
+New owner tracks subprocess pid/pgid/boot/startticks before bounded close. Its
+2300s audit cutoff is conservatively measured from launch including init, so
+the actual CPP phase never receives more than2300s. Numeric once/window/launch
+still requires this qualification, full newsource/reference remotechain and
+fresh622MiB storage and original root gates.
