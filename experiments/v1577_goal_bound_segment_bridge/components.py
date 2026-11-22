@@ -20,6 +20,7 @@ def exact(name,path,source):
 class Components:
     def __init__(self,*,context,native,actual_admission,output,writer,boundary,source,check_budget):
         self.method=context['method'];self.proposal=context['proposal'];self.native=native;self.check_budget=check_budget
+        self.generation_reader=context['generation_reader']
         self.memory_module=exact('v1577_same_durable_epoch',R/'experiments/v1567_epoch_scope_target/method_memory.py',source)
         live=exact('v1577_actual_current_capability',C/'live_guard.py',source)
         store=exact('v1577_complete_current_actual_sink',C/'actual_sink.py',source)
@@ -64,9 +65,21 @@ class Components:
     def install(self):
         assert not self.installed;self.guard.check();n=self.native
         n.reserve=self.reserve;n.physical_guard=self.physical;n.sink=self.sink;n.bridge_started=True
+        n.before_native_budget=self.native_budget
         self.execution=self.execution_module.Execution(native=n,tracker=self.tracker,proposal=self.proposal,
             reference=self.reference,components=self,method_memory=self.memory,method=self.method)
         self.installed=True;return self.execution
+
+    def native_budget(self,stage,count):
+        # The registered2200 nominal tail is part of normal method execution,
+        # not an extra120s error-tail window. Its original zero request and
+        # current2200 safety checks remain in NativeStep unchanged.
+        if stage=='ACTUAL_STOP_TAIL':
+            offset=self.native.applied-self.tracker.origin
+            assert self.proposal['motion_native']<=offset<self.proposal['nominal_native']
+            assert self.execution.inflight and not self.execution.closed
+            return self.check_budget('ACTUAL_NATIVE',count)
+        return self.check_budget(stage,count)
 
     def check_before_native(self,*,method,native,count):
         self.guard.check();assert method==self.method and native is self.native and count==1

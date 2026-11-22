@@ -125,5 +125,6 @@ class Lifecycle:
 def run(task,window):
     # The actual native initializer/close/audit supervisor must invoke the
     # explicit Lifecycle seam. No inherited scope can enter an old owner.
-    authorize(task,window)
-    raise RuntimeError('V1577_NATIVE_FACTORY_CLOSURE_SUPERVISOR_NOT_YET_BOUND')
+    _,source=authorize(task,window)
+    module=exact('v1577_explicit_native_initializer_closure',C/'native_driver.py',source)
+    return module.run(task,window)

@@ -39,7 +39,7 @@ def run(task,window):
  caches=life.exact('v1577_frozen_task_cache',R/'experiments/v1447_full_module_guard_identity/task_cache.py',source)
  guards=life.exact('v1577_immutable_original_guard',R/'experiments/v1447_full_module_guard_identity/guard_binding.py',source)
  with caches.TaskLocalCaches(out),guards.bind_original_guard(out):
-  quota_module=life.exact('v1577_original_pre_wire_quota',R/'experiments/v1479_retirement_scope_binding/quota.py',source)
+  quota_module=life.exact('v1577_original_pre_wire_quota',C/'quota.py',source)
   quota=quota_module.EvidenceQuota(out,limits)
   registry=read(out/'EXTERNAL_WRITER_RESERVATIONS.json')
   assert registry['source_identity']==authority['qualification_sha256']and registry['approval_sha256']==sha(out/'APPROVAL.json')
@@ -161,9 +161,22 @@ def execute(task,window,authority,source,quota,life):
        phases.transition('own_fullstate_replay');return replay(v,phases.budget.deadlines()['absolute_deadline_unix'],out/'physics')
       replaying=True;proof=attempt('OWN_FULLSTATE_REPLAY',own_replay)
       if proof is not None:replaying=False;result['own_replay_native']=proof['replay_native'];result['replay']=proof
+      if proof is not None and proof.get('passed')and owner.components is not None and not secondary:
+       def integrated_audit():
+        phases.transition('recorded_audit')
+        module=life.exact('v1577_complete_new_schema_audit',C/'actual_audit.py',source)
+        result['source_unchanged']=all(sha(R/n)==h for n,h in source.items())
+        review=module.integrated(task,result,components=owner.components,source=source,check=lambda:phases.check('recorded_audit'))
+        atomic(out/'INDEPENDENT_INTEGRATED_AUDIT.json',review);return review
+       result['integrated_audit']=attempt('INDEPENDENT_INTEGRATED_AUDIT',integrated_audit)
+       result['passed']=bool(result.get('integrated_audit',{}).get('passed')and not secondary)
    result.update(own_replay_native=None if replaying else result['own_replay_native'],own_replay_inflight_unknown=replaying,
     closed=True,secondary_errors=secondary,wall_s=time.monotonic()-started,
     source_unchanged=all(sha(R/n)==h for n,h in source.items()),whole_route_passed=False)
+   if (out/'goal_bound_private/TRANSACTION_RESULT.json').exists():
+    result['private_transaction']=attempt('READ_PRIVATE_ACCOUNTING',lambda:read(out/'goal_bound_private/TRANSACTION_RESULT.json'))
+   else:result['private_transaction']=None
+   if first is not None or secondary or not result['source_unchanged']:result['passed']=False
    result['shared_phase_accounting']=attempt('NATIVE_PHASE_CLOSE',phases.finish)
    attempt('NATIVE_RESULT_SAVE',lambda:atomic(out/'RESULT.json',result))
    if secondary:os.write(2,(json.dumps(dict(first_error=first,secondary_errors=secondary,evidence_gap=True),allow_nan=False)+'\n').encode())

@@ -78,3 +78,21 @@ No imports/target/qualification/freeze/once/admission/window/launch were run.
 ## Checkpoint05 — concrete live seams, still unqualified
 
 LiveGuard now separately requires actual-scope authority and same-current completed private evidence. The current sink retains origin before FFI, full13array DATA before gates, proof and durable before/applied receipts, with unchanged22MiB/32MiB and one distinct8MiB emergency. Components bind one carried observer epoch, current CPP2200, same prepared TIME field, variable fixed reference and strict NativeStep; source qualification is explicitly distinct from unknown actual runtime outcome. The new Pump uses an explicitly disclosed shared-policy origin on fresh real5native wires; it never fabricates NAV2 timestamps. Original postcertificate200ms checks remain in NativeStep. New recorded/current-array/fullstate-source audit schema and original wholegoal/pair gates are concrete drafts. The native factory/state-first/contact/Allocator/replay driver is now written with new owner binding, but it is NOT yet the callable lifecycle.run path. No qualification, imports, model or physical execution occurred. NativeCLI, once/ROS supervisor, exact LIMITS/fullscope peak, full audit-result predicate and source target still must be finished; the explicit lifecycle refusal stays in force. No parameter, gate, seed or scientific revision change.
+
+## Single necessary source target (120s, no numerical or actual authority)
+
+Run source_owner_entry.py once, CPU5 owner -> original run_phase CPU2 child,
+original immutable guard and execution lock. This exercises only the new signed
+policy (SOFTWARE straight forward/reverse inputs), variable witness counts,
+preclaim/unknown ledger, current-input first/secondary preservation, one new
+current ORIGIN/DATA/unsafePROOF storage schema with SOFTWARE2200 arrays, strict
+no-apply on refused proof, actual lifecycle/real CLI/once missing-authority
+refusal, and exact original writer/ROS-body AST proof reuse. No model, original
+Gear.select, FFI, ROS node, allocator or replay executes. Existing codec/OS/ROS/
+definition/origin/model suites are not rerun. Entry success is SOURCE ONLY;
+actual capture/current numeric/whole-route runtime remain unqualified.
+Reserve7MiB evidence+8MiB archive+32MiB download+512MiB root; whole allruns measured
+before this once target. No producer can authorize an actual/model round here.
+Current actual scope is independently budgeted226MiB evidence+240MiB archive+
+32MiB download+512MiB root=1010MiB, with original32MiB writer/22MiB stream caps.
+Its full peak must be remeasured and recovered headroom established before launch.

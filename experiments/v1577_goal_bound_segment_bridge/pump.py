@@ -115,6 +115,7 @@ class Pump:
   self.append(dict(kind='CURRENT_SHARED_POLICY_DELIVERY',delivery=delivery,envelope=envelope))
   result=bridge.block(delivery)
   if result['complete']:
+   self.publish()
    self.owner.atomic(self.owner.output/'GOAL_BOUND_ACTUAL_COMPLETE.json',result)
    self.stopped=True
 
