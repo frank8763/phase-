@@ -1,0 +1,118 @@
+{
+  "closed": true,
+  "passed": false,
+  "formal_assignment_id": "phase_02__no_onward",
+  "formal_assignment_retained_in_denominator": true,
+  "mechanism_variant": "no_onward",
+  "phase": 4.551718764234382,
+  "sensor_seed": 10060001,
+  "source_version_root": "runs/v1649_error_stop_sensor_capture",
+  "original_contract": true,
+  "canonical_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 39320,
+  "own_replay_native": 39320,
+  "replay": {
+    "replay_native": 39320,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "physical_telemetry": {
+    "actual_native": 39320,
+    "fully_recorded_native": 39320,
+    "minimum_actual_clearance_m": 0.27698465551487667,
+    "minimum_self_margin_m": 0.00907268565166125,
+    "bad_contacts": 0,
+    "final_body": [
+      1.6218929511933322,
+      -1.1230492877140659,
+      -0.5012162387047818,
+      -2.2573818593363925e-06,
+      -2.653156071681485e-06
+    ],
+    "final_translation_speed_m_s": 2.269333277994078e-06,
+    "root_guard_native_count": 39320,
+    "goal_distance_m": 2.534647053805079,
+    "first_actor_detection": {
+      "native_tick": 14920,
+      "sim_time": 149.20000000000928,
+      "xy": [
+        0.05185053754770566,
+        -0.5847543281530397
+      ],
+      "rays": [
+        28
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 2.620088365524941
+  },
+  "first_error": {
+    "stage": "normal",
+    "error": "AssertionError('NO_MEASURED_HANDOFF_ONWARD_SOURCE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/driver.py\", line 92, in execute\n    binding['owner'].navigate(v,read(out/'physics/SETUP.json'),task,window['normal_end_unix'],out,result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/owner.py\", line 65, in navigate\n    result['recovery_origin_native']=v.count;result['feedback_execution']=execute(v,setup,seed,end,evidence,out,causal.packet);goal=float(np.linalg.norm(np.asarray(v.body()[:2])-task['goal_xy']));assert goal<=.45 and np.linalg.norm(v.body()[3:])<=.03,'FRESH_ORIGINAL_GOAL_AND_STOP';assert np.linalg.norm(np.asarray(v.body()[:2])-evidence.first['xy'])>=1.,'FRESH_ONE_METRE_AFTER_DISCOVERY';result.update(passed=True,status='FRESH_T0_GOAL_AND_STOP',actual_original_goal_reached=True,actual_goal_distance_m=goal,static_renewals=static_renewals)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/runtime_binding.py\", line 60, in <lambda>\n    owner.execute=lambda *args:dispatch.execute(*args,output=output,remaining_fn=lambda:remaining(window))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/route_dispatch.py\", line 83, in execute\n    return current_executor().execute(v, setup, original, end, evidence, out, packet_fn,\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/live_entry.py\", line 81, in execute\n    answer=goal_entry.execute(v,setup,fresh,gt,time.monotonic()+max(0.,end-time.time()-120),\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1218_fixed24_current/goal_package/goal_entry.py\", line 106, in execute\n    assert onward['passed'],'NO_MEASURED_HANDOFF_ONWARD_SOURCE'\nAssertionError: NO_MEASURED_HANDOFF_ONWARD_SOURCE\n"
+  },
+  "secondary_errors": [],
+  "outer_first_error": null,
+  "actual_original_goal_reached": false,
+  "audit_scope": "prefix_safety_only",
+  "independent_full_goal_audit": {},
+  "independent_prefix_safety_audit": {
+    "passed": true,
+    "actual_replay_verified": true,
+    "qualification_only": false,
+    "safety_evidence_only": true,
+    "functional_passed": false,
+    "native_reviewed": 39320,
+    "control_error": 2.2898349882893854e-16,
+    "memory_error": 2.2898349882893854e-16,
+    "all_actual_clearance_m": 0.27698465551487667,
+    "analytical_cpp_native": 0,
+    "models": 0,
+    "new_mujoco_native": 0,
+    "not_whole_goal_pass": true,
+    "canonical_first_error_preserved": true,
+    "original_numeric_actual_prefix_gates_unchanged": true,
+    "prefix_import_dependency": {
+      "path": "experiments/v1195_eight_gib_timed_refuge/route_tools.py",
+      "sha256": "e872fa8a7303399f919abe64e814383f3972aa9fd3e08d1eaf62a673c8416af3",
+      "original_parent_import_directory": true
+    }
+  },
+  "prefix_audit_not_arrival": true,
+  "tracked_q1159_recovery_subset": {
+    "cpp_native": 20326000,
+    "python_native": 12200,
+    "cpp_completed_native": 20326000,
+    "python_completed_native": 12200,
+    "inflight": null,
+    "cpp_calls": 93508,
+    "python_calls": 12200,
+    "cpp_constructor_returns": 8,
+    "python_constructor_returns": 4,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "full_modelwork_total": null,
+  "internal_Allocator_constructions": null,
+  "fully_recorded_native": 39320,
+  "model_native_inflight_unknown": false,
+  "journal_rows": 39320,
+  "journal_applied_rows": 39320,
+  "source_members": 13200,
+  "all_source_SHA_verified_after_child_exit": true,
+  "review_original": true,
+  "execution_idle": true,
+  "owned_child_gone": true,
+  "no_parameter_or_seed_tuning": true,
+  "remote_runtime_recovery_pending": true,
+  "recorded_unix": 1795421217.0520127,
+  "source_result_paths_SHA256": {
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__no_onward/COMPLETION.json": "966d361f7d486c92b1039ab9f875cd444c2dbd9fa454b277103599a20586e274",
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__no_onward/FORMAL_ADMISSION.json": "07b33631346e4765b72802236d865e7658e7207686c979adf5b101bd097836e8",
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__no_onward/FORMAL_TASK.json": "b02f0993438d1f794a098fa497bbb6032f7b455577de8cb4cfa2c7f11720122b",
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__no_onward/actual/RESULT.json": "c30526a315079d59424f0d2e8a6a53bf9260e10727a40d5bfacac3492fc79cab",
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__no_onward/actual/APPLIED_JOURNAL.json": "e7b1f9fd0b0cf5a3bb5e12d20fa44958c8ff74022d1ea870d643be6b62e78f8f"
+  }
+}

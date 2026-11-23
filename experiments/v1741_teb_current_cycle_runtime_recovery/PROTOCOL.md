@@ -1,0 +1,3 @@
+# V1741 distinct actual TEB current-cycle runtime recovery
+
+After actualCOMPLETION/machineRESULT closed, exact sourceSHA/review/lock/ownedchildgone review uses ACTUAL_RUNTIME_CLOSED_REVIEW separately from earlier SOURCE review. Accurate canonical init/nativequery/counts/inflight and actual/replay unknowns, all failures and original raw retained. One240MiB archive/32MiB stream blocks,32download/512root/allhistory15GiB, refonly soleV1740 sourcecommit/no sourcepush function. Allactualremote block/member/whole/indexSHA/exactduplicatecleanup/canonicalbarrier before next. Helper created after sourceGit, covered by first runtimeRelease memberSHA; never claim oldGit included it. Scientific navigation false for this exposed short component even if operational PASS.

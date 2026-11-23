@@ -1,0 +1,102 @@
+{
+  "scope": "saved nominal/actual array analysis; not a new prediction, replay or independent audit",
+  "full_initial_selection_passed": true,
+  "selected_refuge": 0,
+  "prefix_native": 2600,
+  "nominal_full_reference_native": 8700,
+  "nominal_prefix_initial_state_equal_to_actual": true,
+  "nominal_handoff_state": [
+    1.6278646638729042,
+    -1.125803489298132,
+    -0.5010615999376613,
+    3.484857090450399e-110,
+    -3.9855042715088503e-19,
+    -6.650055418854213e-17,
+    0.15999999999999992,
+    7.085413119895378e-16
+  ],
+  "actual_handoff_state": [
+    1.6218971343601374,
+    -1.1230510491274062,
+    -0.5012109322013698,
+    -2.257598751292854e-06,
+    -2.326156782679769e-07,
+    -2.6533480195987772e-06,
+    0.15893325164124755,
+    -1.0137922967908609e-11
+  ],
+  "actual_minus_nominal_handoff": [
+    -0.0059675295127668004,
+    0.002752440170725734,
+    -0.0001493322637085015,
+    -2.257598751292854e-06,
+    -2.3261567826757834e-07,
+    -2.6533480195322767e-06,
+    -0.0010667483587523674,
+    -1.0138631509220598e-11
+  ],
+  "terminal_position_heading_steering_difference": [
+    0.006571707189092304,
+    0.0001493322637085015,
+    0.0010667483587523674
+  ],
+  "tracking_limits_unchanged": [
+    0.04,
+    0.035,
+    0.015
+  ],
+  "terminal_tracking_differences_inside_limits": true,
+  "actual_minus_nominal_controller_memory": [
+    -0.0012349839577606991,
+    -0.000930928277512233,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "measured_onward_passed": false,
+  "finite_search_nodes": 3571,
+  "finite_terminal_attempts": 0,
+  "finite_best_goal_distance_m": 0.5994171522779428,
+  "full_tracked_recovery_subset": {
+    "cpp_native": 24500900,
+    "python_native": 24400,
+    "cpp_completed_native": 24500900,
+    "python_completed_native": 24400,
+    "inflight": null,
+    "cpp_calls": 120989,
+    "python_calls": 24400,
+    "cpp_constructor_returns": 9,
+    "python_constructor_returns": 4,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "no_onward_tracked_recovery_subset": {
+    "cpp_native": 20326000,
+    "python_native": 12200,
+    "cpp_completed_native": 20326000,
+    "python_completed_native": 12200,
+    "inflight": null,
+    "cpp_calls": 93508,
+    "python_calls": 12200,
+    "cpp_constructor_returns": 8,
+    "python_constructor_returns": 4,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "additional_tracked_subset_CPP": 4174900,
+  "additional_tracked_subset_Python": 12200,
+  "full_normal_static_otherFFI_and_internal_work_total": null,
+  "causal_explanation_not_isolated": [
+    "nominal versus actual handoff state and controller memory",
+    "observation/source renewal",
+    "finite search incompleteness"
+  ],
+  "no_global_infeasibility_or_unique_cause_claim": true,
+  "new_model_or_physical_or_replay_or_planner_calls": 0,
+  "source_paths_SHA256": {
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__full/actual/CURRENT_GOAL_ENTRY/INITIAL_SELECTION.json": "88e230b8b6c018b99e111184c59f565d7a233ad47c97054c8b721d8bfa99fc37",
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__full/actual/CURRENT_GOAL_ENTRY/ONWARD_SELECTION.json": "d8a373b3ec82e5e4e94e1c38d02a9733cf2793371b659c4fba0fb0a36ed84eab",
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__full/actual/CURRENT_GOAL_ENTRY/INITIAL_REFERENCE.npz": "d2a76423e56224e5f30f16b0aac298d9cbd2c10bafe2c5e7345027dc6e13f9c8",
+    "runs/v1643_formal_parent_metadata/rounds/phase_02__full/actual/CURRENT_GOAL_ENTRY/EXECUTED.npz": "7908920a8c81dc0fa2b694afdb5be958edc12a20f1e44de94066b945354a61d6"
+  }
+}

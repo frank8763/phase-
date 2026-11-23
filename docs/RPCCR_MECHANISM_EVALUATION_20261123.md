@@ -1,5 +1,12 @@
 # RP-CCR机制收益与同课程新相位边界
 
+最新闭账（23November2026）：第2相位full/no_onward均非成功，各39320actual/39320ownreplay误差0、contactmismatch0，原独立实际prefix安全审核均PASS/secondary0。全部状态/控制/请求/clearance/self-margin轨迹逐元素或成员字节相同，初始状态和场景相同，未观察到执行分叉或该相位到达收益。full额外名义onward预检通过，但实测handoff仍有限搜索拒绝，状态误差6.57mm等在原跟踪门内；不能唯一归因模型误差、观测更新或有限搜索。正式4closed非成功/16unexecuted。详见[配对结果与图](RPCCR_PHASE02_PAIR_20261123.md)和[当前论文Methods/Results](paper_ras/RESULTS_SCOPE_20261123.md)。本段覆盖下文旧ACTIVE/3closed等历史状态，原始历史机器账不改。自动运行保持删除，仅手动按固定锁表继续。
+
+
+最新手动推进状态（2026-11-23）：用户此前已停止自动运行，phase-09保持删除；本次“多推进几步”按既有锁表手动继续，无整体09:00截止。phase01的full/no_onward均已关闭非成功并完整远端保存，旧独立审核缺口不补审。新phase02no_onward已关闭方法非成功：39320actual/39320ownreplay误差0，实测handoff onward未找到，goal2.534647m；原独立prefix安全审核PASS而功能仍false，secondary0。其同相位full尚未准入，必须前驱全远端校验/精确运输清理后再跑。正式现3closed非成功、17unexecuted；下面旧ACTIVE叙述仅为历史记录，以本段和逐轮机器账为准。
+
+当前可用的论文Methods/Results稿见[RESULTS_SCOPE_20261123.md](paper_ras/RESULTS_SCOPE_20261123.md)，第2相位配对见[RPCCR_PHASE02_PAIR_20261123.md](RPCCR_PHASE02_PAIR_20261123.md)。
+
 用户选择V1281原仿真合同，全部原安全门保持：4cm/.035rad/.015转向跟踪、原预测储备、.15m实际间距、完整2200停止尾、逐状态/控制/mocap精确重放等。结果不声称满足周末新版合同。旧周末任务已按用户要求停止，science12及原分母独立保留。
 
 用户随后明确取消09:00总截止，授权持续无人值守推进并保留安全异常退出与证据闭环。每轮5400秒（normal4200+close1200）及独立双钟是单轮技术上限，不延任何旧冻结窗口；没有新的整体日历截止。

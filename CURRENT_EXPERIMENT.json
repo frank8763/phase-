@@ -28,7 +28,7 @@
     "shifted_candidate_scores": 79200
   },
   "acceleration_policy": "docs/EXPERIMENT_ACCELERATION_POLICY_20261117.md",
-  "active_entrypoint": "experiments/v1646_prefix_audit_scope/entry.py",
+  "active_entrypoint": "experiments/v1649_error_stop_sensor_capture/entry.py",
   "active_math": null,
   "active_math_round": null,
   "active_preparation": null,
@@ -5036,6 +5036,48 @@
     "passed": true,
     "repeat_not_executed": true
   },
+  "latest_teb_actual_query": {
+    "HCP_constructor_returns": 1,
+    "HCP_plan_attempts": 1,
+    "HCP_plan_returns": 1,
+    "actual_error_stop_native": 200,
+    "canonical_barrier_sha256": "f0b93a6629a835c2b19990cbb9c161174ccfb3229eb1baffd74571966e5191e0",
+    "canonical_initializations": 1,
+    "control_native": 0,
+    "first_native_error": "NO_OPTIMIZED_SELECTED_TEB",
+    "independent_actual_audit_passed": false,
+    "internal_factory_models": null,
+    "internal_optimizer_calls": null,
+    "method_scope": "exposed standalone HCP point-obstacle Phase adaptation",
+    "own_replay_native": 200,
+    "replay_error": 0.0,
+    "runtime_recovery_pending": false,
+    "runtime_remote_verified": true,
+    "selected_classes": 0,
+    "selected_samples": 0,
+    "whole_navigation_passed": false
+  },
+  "latest_teb_dependency_diagnosis": {
+    "barrier_sha256": "289c7eefe5f61a77a73ef44d4cd59482e858faf44306c5fc1770f5bd47d8eefc",
+    "closed": true,
+    "explicit_DLL_loads": 1,
+    "metadata_FFI_calls": 0,
+    "missing_original_files": [
+      "libuuid.so.1.3.0",
+      "libexpat.so.1.6.11",
+      "libz.so.1.2.11"
+    ],
+    "models": 0,
+    "optimizer_calls": 0,
+    "passed": false,
+    "remote_closed": true,
+    "substituted_conda_files": [
+      "libuuid.so.1.3.0",
+      "libexpat.so.1.12.1",
+      "libz.so.1.3.2"
+    ],
+    "substitutions_not_preloaded": true
+  },
   "latest_teb_local_configure": {
     "C_and_CXX_ABI_checks_passed": true,
     "actual_cmake_invocations": 1,
@@ -5076,6 +5118,37 @@
     "scope": "ORIGINAL_TEB_CPU4_LIBRARY_BUILD_ONLY",
     "secondary_errors": [],
     "source_SHA_unchanged": true
+  },
+  "latest_teb_runtime_binding": {
+    "all_source_SHA_verified": true,
+    "canonical_barrier_sha256": "003dd26d6eed3bcc8a6983c0280178d0ecf54edde74217255ae8e828dddc54a4",
+    "closed": true,
+    "complete_vehicle_or_numeric_runtime_qualified": false,
+    "execution_idle": true,
+    "expected_ELF_mapped_by_device_inode": 51,
+    "explicit_DLL_loads": 1,
+    "metadata_FFI_calls": 15,
+    "models": 0,
+    "native_first_error": null,
+    "negative_cases": 8,
+    "optimizer_calls": 0,
+    "outer_first_error": null,
+    "owner_and_child_gone": true,
+    "passed": true,
+    "physical_native": 0,
+    "planner_constructors": 0,
+    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1737-teb-runtime-source-20261123",
+    "replay_native": 0,
+    "review_original": true,
+    "runtime_archive_bytes": 2595535,
+    "runtime_archive_members": 93,
+    "runtime_recovery_pending": false,
+    "runtime_remote_verified": true,
+    "scope": "TEB_LOADER_C_POD_SOURCE_ONLY",
+    "source_members": 14153,
+    "source_version": "V1737",
+    "underlying_conda_unchanged": true,
+    "upstream_static_registration_count": null
   },
   "latest_time_window_diagnosis": "runs/v1269_ew_phase_diagnosis/COMPLETION.json",
   "latest_user_hold": {
@@ -13156,7 +13229,7 @@
     "prior_round_remote_pending": false,
     "required": "Implement and qualify the exact original TEB runtime/ABI/current-observation binding under experiments/v1730_teb_runtime_binding/PROTOCOL.md before any solver/vehicle execution."
   },
-  "next_experiment": "v1739_teb_current_cycle",
+  "next_experiment": "fixed phase_03__no_onward then phase_03__full",
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13174,6 +13247,7 @@
   "next_preparation": "new frame/causal/native query/physical cycle SOURCE",
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "next_scope": "Bind footprint reference point, Ackermann speed/curvature and observed32range obstacles to original HCP; singlequery qualification before physical control",
+  "next_step": "After current full runtime canonical remote barrier, continue fixed phase03 pair without scientific source/parameter/seed changes; current external whole benchmark remains incomplete",
   "night_candidate_relay": "runs/v1192_eight_gib_relay",
   "night_hard_deadline_unix": 1794790800.0,
   "night_plan": {
@@ -13376,7 +13450,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "TEB_CURRENT_CYCLE_PRODUCTION_PREPARED_SOURCE_PENDING",
+  "status": "PHASE02_PAIR_CLOSED_NULL_RESULT_ALL_RUNTIME_REMOTE_VERIFIED",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13455,6 +13529,7 @@
   },
   "target_journal": "Robotics and Autonomous Systems",
   "teb_actual_build_progress": {
+    "ABI_qualification_scope": "C POD sizes/offsets/integer metadata only; no numerical optimizer or vehicle ABI",
     "all9_author_CXX_objects_compiled": true,
     "compiler_refusal": null,
     "configure_passed": true,
@@ -13472,8 +13547,7 @@
     "runtime_barrier_sha256": "b1fc0f33bf0fed2e9cfddd45ec66d2160e29459939eb1ef8bfcb38b78d6ae223",
     "runtime_remote_verified": true,
     "source_SHA_unchanged": true,
-    "static_transitive_candidate_files": 50,
-    "ABI_qualification_scope": "C POD sizes/offsets/integer metadata only; no numerical optimizer or vehicle ABI"
+    "static_transitive_candidate_files": 50
   },
   "user_stop": {
     "path": "runs/v1382_weekend_campaign/user_stop_20261122/STOP_RECORD.json",
@@ -13586,57 +13660,31 @@
     "temporary_storage_cap_bytes": 10737418240
   },
   "weekend_next_preparation": null,
-  "latest_teb_runtime_binding": {
-    "closed": true,
-    "passed": true,
-    "scope": "TEB_LOADER_C_POD_SOURCE_ONLY",
-    "outer_first_error": null,
-    "native_first_error": null,
-    "explicit_DLL_loads": 1,
-    "metadata_FFI_calls": 15,
-    "planner_constructors": 0,
-    "optimizer_calls": 0,
-    "models": 0,
-    "physical_native": 0,
-    "replay_native": 0,
-    "upstream_static_registration_count": null,
-    "complete_vehicle_or_numeric_runtime_qualified": false,
-    "all_source_SHA_verified": true,
-    "owner_and_child_gone": true,
-    "review_original": true,
-    "execution_idle": true,
-    "runtime_recovery_pending": false,
-    "source_version": "V1737",
-    "source_members": 14153,
-    "expected_ELF_mapped_by_device_inode": 51,
-    "negative_cases": 8,
-    "underlying_conda_unchanged": true,
-    "runtime_remote_verified": true,
-    "canonical_barrier_sha256": "003dd26d6eed3bcc8a6983c0280178d0ecf54edde74217255ae8e828dddc54a4",
-    "release_url": "https://github.com/frank8763/phase-/releases/tag/phase-v1737-teb-runtime-source-20261123",
-    "runtime_archive_members": 93,
-    "runtime_archive_bytes": 2595535
+  "latest_mechanism_pair": {
+    "phase": "phase_02",
+    "phase_value": 4.551718764234382,
+    "source": "v1649_error_stop_sensor_capture",
+    "both_closed": true,
+    "both_success": false,
+    "actual_native_each": 39320,
+    "own_replay_native_each": 39320,
+    "both_prefix_safety_audits_passed": true,
+    "all_state_control_requests_clearance_trace_equal": true,
+    "goal_distance_each_m": 2.534647053805079,
+    "observed_onward_precheck_completion_benefit": false,
+    "source_model_total_work_unknown": true,
+    "report": "docs/RPCCR_PHASE02_PAIR_20261123.md",
+    "runtime_remote_recovery_pending": false,
+    "both_runtime_full_remote_verified": true,
+    "full_remote_barrier_path": "runs/v1643_formal_parent_metadata/rounds/phase_02__full/POST_ROUND_STORAGE_BARRIER.json"
   },
-  "next_step": "One new SOURCE qualification, full source remote chain, then fresh exposed WE03 original HCP query and conditional10+2200 actual/replay/audit",
-  "latest_teb_dependency_diagnosis": {
-    "closed": true,
-    "passed": false,
-    "explicit_DLL_loads": 1,
-    "metadata_FFI_calls": 0,
-    "missing_original_files": [
-      "libuuid.so.1.3.0",
-      "libexpat.so.1.6.11",
-      "libz.so.1.2.11"
-    ],
-    "substituted_conda_files": [
-      "libuuid.so.1.3.0",
-      "libexpat.so.1.12.1",
-      "libz.so.1.3.2"
-    ],
-    "substitutions_not_preloaded": true,
-    "remote_closed": true,
-    "barrier_sha256": "289c7eefe5f61a77a73ef44d4cd59482e858faf44306c5fc1770f5bd47d8eefc",
-    "models": 0,
-    "optimizer_calls": 0
+  "formal_mechanism_progress": {
+    "registered": 4,
+    "closed": 4,
+    "non_success": 4,
+    "unexecuted": 16,
+    "total": 20,
+    "new_maps": false,
+    "statistical_advantage_established": false
   }
 }
