@@ -1,0 +1,15 @@
+# DWA receding full-task exposed development
+
+This is one separately registered prospective full-task development attempt on the previously exposed WE03 original course/seed/phase, not an independent new task, common benchmark, recovered historical DWA-C3 or original Fox author-code replication. Historical C3 and old V1683 failure/V1690 component PASS remain unchanged.
+
+One current measured DWA solve per10native/.1s, exact pinned PythonRobotics mathematical functions/config/Ackermann mask unchanged. Input uses current measured body state/globalgoal, public static boundary points and32-ray whitelisted current endpoints; no actor truth/axis/phase/future or alternative planner. This instantaneous obstacle cost representation and original external Phase safety gate are disclosed adaptations. No parameter/seed tuning, clipped actions, retry or RPCCR route rescue.
+
+Every selected10native+2200stop and two measured5native+2200stop predictions retain original eight-state/memory model, actuator/body/clearance/stop/tracking gates. Original causal Evidence and exact timed periodic geometry/full-cycle terminal hold apply after discovery. Before discovery the existing reactive static-only assumption is explicit. Goal acceptance requires original .45m goal with .08 predictionreserve (.37 trigger), full2200zero-stop and actual stopped/fullgoal gate. A local prefix never counts as arrival.
+
+Independent actualprefix audit runs on complete evidence/replay even when the method refuses; it preserves canonicalfirst, repeats the original generic30 numerical/Allocator/control-memory/scene/contact/clearance/sensor/replay gates, reconstructs causal snapshots from saved whitelist scans, recomputes saved prediction geometry/profile gates and verifies current receipts and coverage of every normal action. Successful whole-goal evidence additionally requires original fullgoal/2200stop. Technical/incomplete/unknown evidence is separate from method refusal, not silently passed.
+
+SOURCE qualification PASSED once with0numerical model/library/FFI/query/physical/replay calls. Ten original pipeline modules and generic auditor reused by exact SHA; controller configuration bytes and original task seed/phase unchanged. Genuine nonzero-native receipt/scan software positives and fault/actualunadmittedCLI negatives passed. This is software/source qualification only. Full source remote recovery must precede one new physical initializer.
+
+Limits:5400root/4200normal/1200close bootdualclock,actual/replay60000 each,57600control cap leaves2200goalstop+200error reserve. Canonicalinit1/internalfactoryunknown, Python25M/CPP150M q1159subset caps unchanged; all other model work unknown, no equal-work claim.224MiBtask/240MiBarchive/32MiBblock-download/512MiBroot/allruns15GiB/oldTTLs retained. CPU2run_phase/execution.lock, CPU5owner/I/O,nice19/thread1/GPUhiddenOSMesa. First method refusal closes without rescue. Automation remains deleted; formal20 stays2closed18unexecuted.
+
+Exact SOURCE count14065;negative cases13;inner4.485274s. Actual task not yet launched.
