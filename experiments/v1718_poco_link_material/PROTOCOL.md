@@ -1,0 +1,5 @@
+# V1718 one original Poco development link material
+
+Actual original ROS class_loaderConfig.cmake line119 exports /usr/lib/x86_64-linux-gnu/libPocoFoundation.so. Recovered runtime only has versioned Foundation.so.62; do not fabricate an alias. Recover exact original libpoco-dev1.9.2-3ubuntu3 .deb523992B/SHAf6d63efab3b71e64467058f6eff225777ab35a1f85ab4c140070b1c05e615231 from prior publisher-signed FULL_DECLARED plan, preserve original unversioned symlink/header/CMake data, fullraw retain. This is one explicit additional dev record beyond earlier136, not completePoco runtime/APTinstallation.
+
+Materials reader byte-identical V1716; reuse its software proof by exactSHA, no old suite rerun. No package program/library/compiler/model/optimizer/physics/replay. CPU5/nice19/thread1/GPUhidden;224task/8terminal/32archive/32download/512root/allhistorical15GiB unchanged. Source one30spush5sref, one explicit singleton batch once/5400bootdual/4200normal+1200close. Prerequisite V1716 complete runtime fullremote/cleanupbarrier and first3V1712success; original failed partial excluded. Accurateclose/fullactualremote/exactduplicatecleanup/barrier before originalCPU4 build.
