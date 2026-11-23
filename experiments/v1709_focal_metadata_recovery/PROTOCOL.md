@@ -1,0 +1,3 @@
+# V1708 static ELF/signed Focal metadata recovery
+
+One32MiBarchive/32download/512root/full15GiB after genuineclosedRESULT/accurateclosedreview/allsourceSHA/REVIEWoriginal/idlelock/V1706priorfullremotebarrier. Newsource unique30spush5sref beforeentry, no secondpush. Releasephase-v1708-focal-dependency-metadata-20261123 actualremote eachblock/member/whole/indexSHA then exactSHA-size-mtime-device-inode duplicate transportcleanup/canonicalbarrier. Keep all originalindices/softwarefixtures/metadata/input and failure anchors. Archivepass not signature/ABI/build/methodpass; allsciencecountunchanged. New round has zero binarypayload download/execution or model/optimizer/physics/replay. Lateproofs outside olderarchives explicit, no old reseal.
