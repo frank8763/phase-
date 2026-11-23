@@ -222,3 +222,9 @@ completion. The final contribution statement must follow those results,
 including negative outcomes and technical censoring. The present manuscript
 is a working draft and is not submission-ready. A concrete completion
 checklist is recorded in `docs/PAPER_REMAINING_STEPS_20261123.md`.
+
+## Phase04 complete-method update
+
+The complete method in the fourth registered phase passed the original whole-goal, stopping, independent numerical/physical audit and own full-state/control/mocap replay checks. It executed47320actual and47320replay steps with maximum replay error0, contact mismatch0, final goal distance0.2424782463m, minimum actual clearance0.2769846555m and no bad contact. The controller/memory reconstruction errors were each2.2898349882893854e-16. The native-goal analytical subaudit has its own physical_audit_complete=false because it does not integrate the plant; the encompassing independent actual audit explicitly physical_audit_complete=true and reviewed47320rows. Neither field is silently conflated. No first or secondary error was recorded.
+
+Seven of twenty assignments are now closed, with one complete qualified success and thirteen not yet started. This dated update supersedes earlier interim counts. The matched no-onward assignment is pending, so no onward-check benefit is inferred. q1159 recovery workCPP20346008/Python48800 is a subset; all normal/static/otherFFI/internal total remains unknown and overlapping auditwork is not summed. The original monitor disappeared before postprocessing, but original model-owner and machine results were complete; only metadata and artifact closure were resumed. No numerical execution or audit was repeated.

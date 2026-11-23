@@ -1,9 +1,9 @@
 {
   "scope": "new phase mechanism comparison only",
-  "recorded_unix": 1795424985.3330536,
-  "registered_assignments": 6,
-  "closed_assignments": 6,
-  "unexecuted_assignments": 14,
+  "recorded_unix": 1795429684.267866,
+  "registered_assignments": 8,
+  "closed_assignments": 7,
+  "unexecuted_assignments": 12,
   "registered_does_not_mean_completed": true,
   "pilot_excluded": true,
   "tasklist_sha256": "b70ad141f8460181f784c15206615cc55ceda82bba0858b1ff8f79efc1ff1b0a",
@@ -154,13 +154,20 @@
       "variant": "full",
       "phase": 4.8689554913751625,
       "sensor_seed": 10060001,
-      "registered": false,
-      "closed": false,
-      "status": "UNEXECUTED",
-      "model_result": null,
-      "owner_passed": null,
-      "actual_native": null,
-      "own_replay_native": null
+      "registered": true,
+      "closed": true,
+      "status": "CLOSED_PASS_REMOTE_VERIFIED",
+      "model_result": true,
+      "owner_passed": true,
+      "actual_native": 47320,
+      "own_replay_native": 47320,
+      "source_version_root": "runs/v1744_formal_interface_qualification",
+      "completion_path": "runs/v1643_formal_parent_metadata/rounds/phase_04__full/COMPLETION.json",
+      "completion_sha256": "35f3a9ec803be8826c3bc52a5147f82daa04696990fbf22ccfa9a93c85a81e1d",
+      "functional_result": null,
+      "independent_full_goal_audit_passed": true,
+      "independent_prefix_safety_audit_passed": false,
+      "post_round_barrier_sha256": "e554d8852dfd334fa78bb4908bf21e4a03802a426516405ee1356fc031d4ccd0"
     },
     {
       "assignment_id": "phase_04__no_onward",
@@ -169,13 +176,14 @@
       "variant": "no_onward",
       "phase": 4.8689554913751625,
       "sensor_seed": 10060001,
-      "registered": false,
+      "registered": true,
       "closed": false,
-      "status": "UNEXECUTED",
+      "status": "ACTIVE_REGISTERED_SINGLE_BACKGROUND",
       "model_result": null,
       "owner_passed": null,
       "actual_native": null,
-      "own_replay_native": null
+      "own_replay_native": null,
+      "source_version_root": "runs/v1744_formal_interface_qualification"
     },
     {
       "assignment_id": "phase_05__full",
@@ -359,11 +367,12 @@
     }
   ],
   "closed_non_success_assignments": 6,
-  "closed_actual_native_known_sum": 199565,
-  "closed_own_replay_native_known_sum": 199565,
+  "closed_actual_native_known_sum": 246885,
+  "closed_own_replay_native_known_sum": 246885,
   "closed_native_counts_unknown_assignments": [
     "phase_03__full"
   ],
   "closed_phase_pairs": 3,
-  "closed_phase03_effect_comparison_eligible": false
+  "closed_phase03_effect_comparison_eligible": false,
+  "closed_successful_assignments": 1
 }

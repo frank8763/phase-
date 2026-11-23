@@ -1,0 +1,399 @@
+{
+  "closed": true,
+  "passed": true,
+  "formal_assignment_id": "phase_04__full",
+  "formal_assignment_retained_in_denominator": true,
+  "mechanism_variant": "full",
+  "phase": 4.8689554913751625,
+  "sensor_seed": 10060001,
+  "source_version_root": "runs/v1744_formal_interface_qualification",
+  "original_contract": true,
+  "canonical_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 47320,
+  "own_replay_native": 47320,
+  "replay": {
+    "replay_native": 47320,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "physical_telemetry": {
+    "actual_native": 47320,
+    "fully_recorded_native": 47320,
+    "minimum_actual_clearance_m": 0.27698465551487667,
+    "minimum_self_margin_m": 0.00907268565166125,
+    "bad_contacts": 0,
+    "final_body": [
+      3.787895384087783,
+      -1.882495396564004,
+      -0.13996593084247633,
+      -7.484618012280962e-06,
+      7.49317511479597e-07
+    ],
+    "final_translation_speed_m_s": 7.484618993318226e-06,
+    "root_guard_native_count": 47320,
+    "goal_distance_m": 0.24247824628184625,
+    "first_actor_detection": {
+      "native_tick": 14920,
+      "sim_time": 149.20000000000928,
+      "xy": [
+        0.05185053754770566,
+        -0.5847543281530397
+      ],
+      "rays": [
+        28
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 4.9882686946367905
+  },
+  "first_error": null,
+  "secondary_errors": [],
+  "outer_first_error": null,
+  "actual_original_goal_reached": true,
+  "audit_scope": "full_goal",
+  "independent_full_goal_audit": {
+    "passed": true,
+    "actual_replay_verified": true,
+    "physical_audit_complete": true,
+    "observer_stop_certificates": 433,
+    "goal": {
+      "passed": true,
+      "native_reviewed": 10800,
+      "generations": 2,
+      "full_stop_certificates": 2,
+      "minimum_raw_m": 0.26153250729836675,
+      "analytical_cpp_native": 29800,
+      "models": 0,
+      "new_mujoco_native": 0,
+      "external_native_trace_bound": true,
+      "physical_audit_complete": false
+    },
+    "native_reviewed": 47320,
+    "analytical_cpp_native": 4651208,
+    "models": 0,
+    "new_mujoco_native": 0,
+    "formal_retained_commit": false,
+    "admission": {
+      "passed": true,
+      "generations": [
+        {
+          "passed": true,
+          "native": 10800,
+          "feedback_raw_m": 0.25739903590049984,
+          "shadow_raw_m": 0.25739903590049984,
+          "analytical_cpp_native": 21600,
+          "models": 0,
+          "new_mujoco_native": 0,
+          "offset": 0
+        },
+        {
+          "passed": true,
+          "native": 8200,
+          "feedback_raw_m": 0.25928010697805703,
+          "shadow_raw_m": 0.25764868927201745,
+          "analytical_cpp_native": 16400,
+          "models": 0,
+          "new_mujoco_native": 0,
+          "offset": 2600
+        }
+      ],
+      "analytical_cpp_native": 48800,
+      "models": 0,
+      "new_mujoco_native": 0
+    },
+    "stop_reserve": {
+      "passed": true,
+      "complete_stop_certificates": 433,
+      "minimum_stop_raw_m": 0.34644449077928474,
+      "analytical_cpp_native": 1922200,
+      "models": 0,
+      "new_mujoco_native": 0
+    },
+    "exact_selection": {
+      "passed": true,
+      "exact_original_maxmin_selection": true,
+      "candidate_witnesses": [
+        {
+          "index": 0,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 1,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 2,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 3,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 4,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 5,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 6,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 7,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 8,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 9,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 10,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 11,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 12,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 13,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 14,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 15,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 16,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 17,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 18,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 19,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 20,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 21,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 22,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 23,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 24,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 25,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 26,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 27,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 28,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 29,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 30,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 31,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 32,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 33,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 34,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 35,
+          "reason": "original_feasibility_refused"
+        },
+        {
+          "index": 36,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 37,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 38,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 39,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 40,
+          "reason": "shared_complete_initial_stop_lexicographic_bound",
+          "upper_bound": 0.34644449077928474
+        },
+        {
+          "index": 41,
+          "reason": "complete_stop_witness",
+          "upper_bound": 0.34644449077928474
+        }
+      ],
+      "analytical_cpp_native": 711208,
+      "models": 0,
+      "new_mujoco_native": 0
+    },
+    "fresh_phase_provenance_rule_explicit": true,
+    "ablation_prefix_goal_only": true,
+    "all_original_current_safety_numeric_gates_retained": true,
+    "functional_input_separate_from_final_result": true,
+    "source_bindings": [
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/native_audit.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1204_goal_audit_worker/native_audit.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1195_eight_gib_timed_refuge/audit_refusal.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1089_route_scene_contract/contract.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1024_full_route_execution/causal.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1037_periodic_norm_source/periodic_norm.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1024_full_route_execution/causal.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1037_periodic_norm_source/periodic_norm.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/audit_admission.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1219_stop_preserving_observer/audit_observer.py",
+      "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1221_exact_stop_pruning/audit_selection.py"
+    ],
+    "seam_proofs": [
+      {
+        "original_goal_verify_sha256": "9f1e2805e875ef09bfff0f803d64401d292b514154fbdebadda84c6a24375dbe",
+        "only_added_flagged_initial_prefix_goal_input": true,
+        "all_other_original_verify_AST_unchanged": true,
+        "whole_actual_goal_and_onward_checks_unchanged": true,
+        "variant": "full",
+        "transformed_verify_AST_sha256": "b05136f934cc95cd284047c302a1c468b0954eaeebea04d9dcd07eeddabb0cc6"
+      },
+      {
+        "removed_only_historical_same_phase_prefix_comparison": true,
+        "original_current_source_and_all_numeric_gates_retained": true,
+        "original_source_sha256": "9214459fd371127d779c0476937c8a08cc80c32b107c55558cc3f13e5e71c404",
+        "transformed_audit_AST_sha256": "7291fe6be3e125636cd96b6a3caafb7f9fc19964716a02d7036ab11c0332d34a"
+      },
+      {
+        "variant": "full",
+        "original_numeric_verify_source_unchanged": true,
+        "prefix_goal_only_for_flagged_no_onward": true,
+        "final_actual_task_goal_unchanged": true
+      }
+    ],
+    "formal_assignment_id": "phase_04__full"
+  },
+  "independent_prefix_safety_audit": {},
+  "prefix_audit_not_arrival": true,
+  "tracked_q1159_recovery_subset": {
+    "cpp_native": 20346008,
+    "python_native": 48800,
+    "cpp_completed_native": 20346008,
+    "python_completed_native": 48800,
+    "inflight": null,
+    "cpp_calls": 82979,
+    "python_calls": 48800,
+    "cpp_constructor_returns": 17,
+    "python_constructor_returns": 7,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "full_modelwork_total": null,
+  "internal_Allocator_constructions": null,
+  "fully_recorded_native": 47320,
+  "model_native_inflight_unknown": false,
+  "journal_rows": 47320,
+  "journal_applied_rows": 47320,
+  "source_members": 13226,
+  "all_source_SHA_verified_after_child_exit": true,
+  "review_original": true,
+  "execution_idle": true,
+  "owned_child_gone": true,
+  "no_parameter_or_seed_tuning": true,
+  "remote_runtime_recovery_pending": true,
+  "recorded_unix": 1795429514.2488902,
+  "source_result_paths_SHA256": {
+    "runs/v1643_formal_parent_metadata/rounds/phase_04__full/COMPLETION.json": "35f3a9ec803be8826c3bc52a5147f82daa04696990fbf22ccfa9a93c85a81e1d",
+    "runs/v1643_formal_parent_metadata/rounds/phase_04__full/FORMAL_ADMISSION.json": "d57e4ff99813196e7925d785abb32c502467ecae4e01c897ceee51c22e13c140",
+    "runs/v1643_formal_parent_metadata/rounds/phase_04__full/FORMAL_TASK.json": "94cfc007b4549d2b2840a43f701c23d964f6c694051b7b177b3510b1ae2a739f",
+    "runs/v1643_formal_parent_metadata/rounds/phase_04__full/actual/RESULT.json": "bbb22000754f2b40b55345bceece0a3e2bd9359110d42438ea642c3f38757131",
+    "runs/v1643_formal_parent_metadata/rounds/phase_04__full/actual/APPLIED_JOURNAL.json": "6b9fc93b4f1d8629e4d83fe0534fe795172c6798acea4398c51ec7e701e26a3e"
+  }
+}
