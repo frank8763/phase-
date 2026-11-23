@@ -1,0 +1,23 @@
+{
+  "closed": true,
+  "passed": false,
+  "configure_calls": 1,
+  "compile_calls": 0,
+  "optimizer_constructors": 0,
+  "optimizer_calls": 0,
+  "optimizer_DLL_loads": 0,
+  "models": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "method_outcome": null,
+  "first_error": {
+    "error": "AssertionError(('configure_DEPENDENCY_OR_COMPILER_REFUSAL', 1))",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1714_teb_native_namespace/owner.py\", line 85, in main\n    run('configure',argv,180,view);result['configure_passed']=True;result['compile_calls']=1\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1714_teb_native_namespace/owner.py\", line 75, in run\n    assert child.returncode==0,(stage+'_DEPENDENCY_OR_COMPILER_REFUSAL',child.returncode)\nAssertionError: ('configure_DEPENDENCY_OR_COMPILER_REFUSAL', 1)\n"
+  },
+  "secondary_errors": [],
+  "wall_s": 0.5302483330015093,
+  "source_SHA_unchanged": true,
+  "compiler_exited": true,
+  "review_original": true,
+  "task_allocated_bytes": 7188480
+}

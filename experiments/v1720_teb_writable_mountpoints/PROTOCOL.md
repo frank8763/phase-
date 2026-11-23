@@ -1,0 +1,7 @@
+# V1720 original TEB build: namespace mountpoint correction
+
+V1714 closed failure is bwrap mkdir on readonly root, actualCMake/compiler0/optimizer0; original machine fields and console-derived stage supplement retained, no old worker retry. New namespace solely moves host aliases under isolated /tmp (existing writable mount), explicitly makes /opt tmpfs before original ROS mount, then remounts /tmp,/opt,/home roots readonly after setup; only new build/tmp output binds writable. No author/native data/algorithm/parameter change; original136+1 material/ROS/CMake proof chain reused exactly, failed partial material root excluded.
+
+Necessary source interface check exactdiff+new alias/argument ordering only, original merge/collision softwareproof SHA reused, no repeated OS/model/Gear/codec/numeric suite or isolated stop. Original CPU4 singlethread/nice19/network-isolated CMakeconfigure<=180s then originaltargetteb_local_planner build<=1800s, no optimizer/FFI/DLL/model/physics/replay authority.
+
+Same224MiB output inclsource/view/tmp/logs,8MiBterminal/32MiBfile bound/two32MiBtransient reserve/144MiB preemptive threshold,32archive/32download/512root/allhistorical15GiB. Once bootdual normal4200+close1200/root5400, exactownerchild identity, execution.lock/REVIEWoriginal. PriorV1714 fullremote/exactcleanupbarrier required, sourceunique30spush5sref before entry; accurateclosure→fullremote eachblock/member/whole/indexSHA→exacttransportduplicatecleanup→barrier before next.
