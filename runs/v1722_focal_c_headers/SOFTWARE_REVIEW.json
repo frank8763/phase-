@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "scope": "EXACT_HEADER_SELECTOR_ONLY",
+  "positive_cases": [
+    "usr",
+    "usr/include",
+    "usr/include/pthread.h",
+    "usr/include/x86_64-linux-gnu/bits/pthread_stack_min.h"
+  ],
+  "negative_cases": [
+    "usr/lib/x86_64-linux-gnu/crt1.o",
+    "usr/lib/x86_64-linux-gnu/libc_nonshared.a",
+    "usr/lib/x86_64-linux-gnu/libc.so",
+    "usr/bin/gencat",
+    "lib/x86_64-linux-gnu/libc.so.6",
+    "etc/ld.so.conf"
+  ],
+  "parser_meter_link_gates_unchanged": true,
+  "previous_software_proof_sha256": "2ac1a5b3ba65d80c1b9a2529b1052f1b596308c73dea4faf7d1a155f06d7c481",
+  "models": 0
+}

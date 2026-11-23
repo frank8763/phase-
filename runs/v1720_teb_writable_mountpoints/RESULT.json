@@ -1,0 +1,24 @@
+{
+  "closed": true,
+  "passed": false,
+  "configure_calls": 1,
+  "compile_calls": 1,
+  "optimizer_constructors": 0,
+  "optimizer_calls": 0,
+  "optimizer_DLL_loads": 0,
+  "models": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "method_outcome": null,
+  "first_error": {
+    "error": "AssertionError(('compile_DEPENDENCY_OR_COMPILER_REFUSAL', 2))",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1720_teb_writable_mountpoints/owner.py\", line 86, in main\n    run('compile',[binary,'--build',str(O/'build'),'--target','teb_local_planner','--parallel','1'],1800,view)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1720_teb_writable_mountpoints/owner.py\", line 75, in run\n    assert child.returncode==0,(stage+'_DEPENDENCY_OR_COMPILER_REFUSAL',child.returncode)\nAssertionError: ('compile_DEPENDENCY_OR_COMPILER_REFUSAL', 2)\n"
+  },
+  "secondary_errors": [],
+  "configure_passed": true,
+  "wall_s": 15.20933039400552,
+  "source_SHA_unchanged": true,
+  "compiler_exited": true,
+  "review_original": true,
+  "task_allocated_bytes": 14286848
+}
