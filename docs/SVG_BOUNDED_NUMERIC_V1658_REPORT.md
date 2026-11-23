@@ -1,0 +1,5 @@
+# SVG-MPPI original core bounded numeric qualification
+
+V1658 source qualification CLOSED PASS:13813 frozenmembers;9authority/CLI negatives and9software-only dispatch cases. No newDLL/FFI/authorconstructor/optimizer/physical/replay call. Source-only tests cover before-call journaling, output raw bytes saved before numeric gates, constructor/map/solve refusal, nonfinite/out-of-range outputs, first solve plus independent destroy secondary, raw andterminal save failures. V1656 author binaries andbinding unchanged.
+
+Fixed input: exact remotely verified V1639 exposed neutral t0, publicknown static point-occupancy map only; same original 25doubles/7integers registered in CONFIG,32samples/1guide/8gradient samples/2iterations/horizon15. Interface qualification config, not benchmark settings or certified path/full footprint. Plannedoneauthorconstructor/onesolve, original bicyclemodel prediction work, unknowninternalrollouts, zero actualplant/Allocator/replay. Source recovery then new60snormal+120sclose/bootdualclock owner admission required. No outcome yet.
