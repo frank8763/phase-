@@ -1,7 +1,7 @@
 """Close loader evidence without turning source PASS into numerical success."""
 import argparse,fcntl,os
 from pathlib import Path
-R=Path(__file__).resolve().parents[2];P=R/'runs/v1735_teb_runtime_ref_binding';D=R/'runs/v1736_teb_loader_recovery'
+R=Path(__file__).resolve().parents[2];P=R/'runs/v1735_teb_dependency_map_diagnosis';D=R/'runs/v1736_teb_diagnostic_recovery'
 import hashlib,json
 read=lambda p:json.loads(p.read_text())
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()

@@ -16,22 +16,22 @@ def load(n,p):
 def main():
  os.sched_setaffinity(0,{5});assert not(O/'ARCHIVE_CLAIM.json').exists()
  parent=read(R/'runs/v1382_weekend_campaign/LEDGER.json');assert parent['active_round']is None and parent.get('active_math_round')is None and not parent['models_now_authorized']
- assert read(R/'runs/v1735_teb_runtime_ref_binding/SOURCE_OUTER_CLOSED.json')['closed']
- assert (R/'runs/v1735_teb_runtime_ref_binding/RUNTIME_CLOSED_REVIEW.json').is_file()
+ assert read(R/'runs/v1735_teb_dependency_map_diagnosis/SOURCE_OUTER_CLOSED.json')['closed']
+ assert (R/'runs/v1735_teb_dependency_map_diagnosis/RUNTIME_CLOSED_REVIEW.json').is_file()
  current=load('v1533_existing_usage_only',R/'experiments/v1518_compact_parent_control/common.py')
  frozen=read(R/'runs/v1694_shared_observation_closure/SOURCE_FREEZE.json')['files'];assert all(sha(R/n)==h for n,h in frozen.items())
  assert read(R/'runs/v1676_dwa_bounded_proposal/CURRENT_SOURCE_REMOTE_RECOVERY.json')['all_frozen_members_remote_chain_covered']
  assert read(R/'runs/v1694_shared_observation_closure/POST_ROUND_STORAGE_BARRIER.json')['passed']
- author_freeze=R/'runs/v1735_teb_runtime_ref_binding/AUTHOR_SOURCE_FREEZE.json'
+ author_freeze=R/'runs/v1735_teb_dependency_map_diagnosis/AUTHOR_SOURCE_FREEZE.json'
  if author_freeze.exists():assert all(sha(R/n)==h for n,h in read(author_freeze)['files'].items())
- claim=read(R/'runs/v1735_teb_runtime_ref_binding/SOURCE_OUTER_ONCE_CLAIM.json');assert not Path('/proc',str(claim['owner_pid'])).exists();assert all(sha(R/k)==v for k,v in read(R/'runs/v1735_teb_runtime_ref_binding/INPUT_BINDING.json')['files_SHA256'].items())
+ claim=read(R/'runs/v1735_teb_dependency_map_diagnosis/SOURCE_OUTER_ONCE_CLAIM.json');assert not Path('/proc',str(claim['owner_pid'])).exists();assert all(sha(R/k)==v for k,v in read(R/'runs/v1735_teb_dependency_map_diagnosis/INPUT_BINDING.json')['files_SHA256'].items())
  assert current.usage()+(32+32+512)*1024**2<15*1024**3,'SOURCE_RECOVERY_FULL_STORAGE_PEAK_REFUSED'
  put(O/'ARCHIVE_CLAIM.json',dict(started_unix=time.time(),models=0,archive_cap_bytes=32*1024**2,allruns_before_bytes=current.usage(),reserved_peak_bytes=current.usage()+(32+32+512)*1024**2))
  io=load('v1501_original_archive_io',R/'experiments/v1382_weekend_campaign/storage_preserve.py');inventory=load('v1501_original_inventory',R/'experiments/v1391_handoff_archive_recovery/archive.py').inventory
  with(R/'runs/v648_static_unknown/execution.lock').open()as lock:
   fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);assert sha(R/'REVIEW_PENDING')=='4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66'
   files=set()
-  folders=[C,O,R/'experiments/v1735_teb_runtime_ref_binding',R/'runs/v1735_teb_runtime_ref_binding']
+  folders=[C,O,R/'experiments/v1735_teb_dependency_map_diagnosis',R/'runs/v1735_teb_dependency_map_diagnosis']
   for folder in folders:
    for p in folder.rglob('*'):
     if(p.is_file()or p.is_symlink())and '__pycache__'not in p.parts:files.add(p)
