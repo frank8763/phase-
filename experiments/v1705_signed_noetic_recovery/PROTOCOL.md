@@ -1,0 +1,3 @@
+# ROS-signed Noetic metadata recovery
+
+One32MiBarchive/32download/512root/all15GiB after V1704 closedRESULT/accurateclosedreview/sourceSHA/REVIEWoriginal/idlelock and V1702 priorfullremote/cleanupbarrier. One newsource30spush5sref beforemetadataentry; source4650 oldround not repushed or resealed. Releasephase-v1704-signed-noetic-metadata-20261123 fullactualremote eachblock/member/whole/indexSHA then exactSHA-size-mtime-device-inode duplicate transportcleanup/canonicalbarrier. Keep originalkeys/index/erroranchors/metadata. No model/optimizer/physics/replay or packageexecution. Metadata transportPASS is not signaturePASS, payloadSHA/ABI/build or methodPASS; point to canonicalRESULT/closedreview. Lateproofs outside earlierarchives explicit.

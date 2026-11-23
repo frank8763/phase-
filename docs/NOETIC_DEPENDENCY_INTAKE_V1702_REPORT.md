@@ -1,0 +1,9 @@
+# Noetic dependency metadata intake V1702
+
+One data-only intake CLOSED without recovering an index. Both allowed official HTTPS endpoints (Noetic final snapshot, then live packages.ros.org) returned TLS certificate hostname mismatch in this environment. Original SSL verification was preserved; no index, package or executable was downloaded, and no compiler/optimizer/model/physics/replay ran. Exact per-endpoint failures are retained in REQUESTS and ENDPOINT_ATTEMPTS; the aggregate failure is operational and not a TEB method result.
+
+The pinned original TEB20catkin components plus catkin/message_runtime/libg2o were recorded as prospective package roots. No dependency plan or byte totals were produced; nonROS closure and all package/ABI availability remain unknown. The previous V1699 real configure missing-catkin failure is unchanged. No system install, ROS2 substitution, source edits or old case retry.
+
+Owner75896 exited0 because a closed metadata attempt is recorded; RESULT.passed is false. Owner gone/REVIEW original/execution idle/source owner-protocol and14079 sharedsource SHAs verified. Unique source4650e62f4a53a4a3a579547f1f6d646ba5724849 pushed/ref-verified once; closed report and metadata are later than that Git source and will be covered by distinct V1703 Release member hashes, not a second source push. All original records retained.
+
+Next necessary fallback is separately registered signature-verified ROS metadata transport through a compatible mirror (or publisher-documented HTTP), with a pinned upstream ROS signing key. A mirror is a byte carrier; successful TLS alone cannot grant package/build authority. Do not disable certificate checks or declare unsigned metadata recovered. No new model/numerical authority, comparison denominators unchanged, automation remains deleted.
