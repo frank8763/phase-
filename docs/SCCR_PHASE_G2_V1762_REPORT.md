@@ -1,0 +1,5 @@
+# SCCR-PhaseG2 V1762 preregistered component
+
+Single pending adapted geometric query on the same exposed synthetic input. Historical SCCR and original V1754 geometric-query result remain unchanged. New seven-control-point generator has endpoint tangent alignment/zero endpoint curvature; shoulder semantics are explicitly changed. Full sampled path Phase-steering, heading-increment and origin-heading feasibility only narrows original feasible status. Original search/evaluator/spline bodies, candidate bounds/score weights stay byte-identical. This is a separately named adaptation, not a faithful full-SCCR replay or a new independent sample.
+
+One SOURCE stage only tests new shape and filter interfaces; prior NumPy and original helper proofs reused. At most one adapted search/648candidate entries after fullsource remote evidence. No model/Allocator/physics/replay/SAC. Any PASS is geometric compatibility only. Record all candidates and first finite refusal, no after-outcome tuning. End for user review; tonight unattended work remains unauthorized.

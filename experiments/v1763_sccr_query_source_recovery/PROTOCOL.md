@@ -1,0 +1,1 @@
+source I/O-only V1751 closure. 32MiB blocks/download,512MiBroot,15GiB allhistory. Source archive32MiB, unique sourcepush30s/ref5s. Allremote block/member/whole/index SHA before exact duplicate transport cleanup. Originals retained. No numerical work in helper. No next experiment.
