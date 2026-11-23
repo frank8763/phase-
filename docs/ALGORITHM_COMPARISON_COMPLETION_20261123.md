@@ -6,7 +6,7 @@ Current closure update (23 November 2026): historical SCCR/DWA comparisons are c
 
 |Method|Existing evidence|Remaining concrete prerequisite|
 |---|---|---|
-|RP-CCR|exposed24/24 plus3complete repeats; registered newphase pair both non-arrival|current common-contract peer comparison not yet run|
+|RP-CCR|exposed24/24 plus3complete repeats; newphase20:8closed,2whole-goal qualifiedPASS,6non-success includingtechnicalcensors;WEpair04 bothPASS identicaltrace|current common-contract peer comparison not yet run|
 |SCCR|G4C60/100; Final300214/300 under old contract|current actuator/causal observation adapter required|
 |DWA|HistoricalC3 G4C61/100; separate current-cycle independentPASS; exposed receding full-task attempt refused selected command atnative80 on original fullstop margin, followed200stop/280replay0error|Finite adaptation non-arrival retained; secondary receipt-clock/closurephase evidence gaps prevent full independent safetyPASS;common-task comparison pending|
 |RPP|static passes/failures; dynamic non-arrival or evidence stop|prospective common-task source/owner/evidence qualification required|
