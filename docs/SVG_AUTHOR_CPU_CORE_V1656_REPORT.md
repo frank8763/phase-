@@ -1,0 +1,13 @@
+# SVG-MPPI author core: compiled and ABI-qualified, no navigation yet
+
+Exactauthorcommitf4fb7b74f12d4568790213aab26dd6f0538d1925; original grid_map1.6.4 commitb02aa92652075d56a5fe9ef949d09bc1be9921ed;530existingEigen3.4.0headerSHA matched prior originalpackage manifest. No ROS/globalinstall/GPU or Stage access.
+
+V1654 captured41additional originalsource/dependency members227762B withGitblobSHA1/size/SHA256. Its first17translation-unit compile failed because standalonecommand omitted grid_map's required Eigenplugin definitions. OriginalBUILD_RESULT/console kept;0libraryload/authorconstructor/solver/physical/replay. No oldsource or numericalbody edited.
+
+V1655 captured exactoriginalCMakeextras and applied only its EIGEN_FUNCTORS_PLUGIN/EIGEN_DENSEBASE_PLUGIN definitions uniformly.17originaltranslationunits compiled onCPU4/nice19/thread1 within180s bound,23.114825s observed.566968B CPUauthorlibrary SHA e65a293e58ce1db1d4cd2b39425bee85c471396a3b168aff3e71401676806207;584source inputs unchanged. No constructor/optimizer call. This singlebuildtime is not navigation performance or realtime guarantee.
+
+V1656 compiled a32904B C ABIwrapper in0.989128s, originalsolver/mathbody unchanged. It forwards explicit5Dstate/1Dsteering controls, host-frozenparameters, realgrid_map4layers, returns originalcontrolsequence/collisionrate andouterattempt/return counters. No actuator or obstacle truth is fabricated; failingsolve poisons its handle. Wholeplant/control/causalmap adapters are not qualified.
+
+One isolatedCPU2/run_phase originalguard SOURCE target passed andclosed:13797frozenmembers,7negative cases,oneexplicitctypesCDLLload (theauthorcore is itsELFdependency),10C ABI metadata/errorpath calls;0validauthorconfig/constructor/solve,0physical/replay/vehicle. Version1/state5/control1 confirmed; changedbridge/coreSHA rejectedbeforeload, invalidconfig/handle refusedbeforeauthorconstructor oroptimizer, realnumericentry missingadmission refused. AllsourceSHA checked afterchildexit andoriginalREVIEW restored/lockidle. SOURCE APIpass is not algorithm or navigationPASS.
+
+Next required work: fullsource recovery; separatelypreregistered CPU2mathowner/config/input/unknowninternalrolloutcount/dualclock/once; then equivalentactualsteering/longitudinalcontrol/currentcausalmap andfullfootprint qualification. Authorbicycleprediction remains different fromPhaseplant and must be disclosed. Comparing an unqualified adapter's failure as algorithmperformance is prohibited. No existingformalcase orbaseline rerun, noheartbeat recreated.
