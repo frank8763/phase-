@@ -1,0 +1,5 @@
+# EW worker导入绑定第二接口版本
+
+V1773原SOURCE软件PASS保持，prelaunch发现spawn initializer动态别名缺对应模块文件，0EWactual/0factory/0formalonce。V1776仅把同一worker_pool文件以可导入worker_pool名注册并更新计数别名；补真实CPU2单spawn纯metadata导入验证，模型/FFI/旧数值套件不执行。原科学数值body、安全/控制/来源/缓存只读权限不变。最后允许的第2必要接口版本；不重复旧资格或实际失败。尚待SOURCE及全remotechain，未称runtime/navigationPASS。
+
+一次SOURCE已CLOSED PASS，13335冻结成员/19拒绝用例及真实CPU2纯metadata spawn导入验证通过；0model/FFI/physics/replay。未执行数值initializer/优化器，因此不冒称实际worker或机制PASS。后续实际若技术错误不再自动第三接口修复。
