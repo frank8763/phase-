@@ -10,7 +10,7 @@ Historical comparisons retain their original contracts. This is saved-metadata a
 |RPP|static passes/failures; dynamic non-arrival or evidence stop|prospective common-task source/owner/evidence qualification required|
 |MPPI|static non-arrival; dynamic dependency-unexecuted|no old retry; new prospective source/observation/control qualification required|
 |PRIEST|AssertionError('PRIEST_REQUEST_OPPOSES_DECLARED_SEGMENT_GEAR'); saved component only|exact author car mapping and genuine optimizer/control adapter required|
-|TEB|Pinned originalauthor55build files/730484B exactGitblob-size-SHA recovered; first build wrapper stopped before CMake because /usr/bin/cmake was absent;optimizer/vehicle execution0|Supply repository-local fixed CMake, check actual ROS1/catkin/g2o dependencies, then qualify vehicle/causal interface;not a method failure|
+|TEB|Originalauthor55build files/730484B exact; localCMake3.31.6 and C/C++ ABI checks pass, real originalconfigure stops at missing ROS1 catkin;optimizer/vehicle execution0|Recover exact ROS1 dependency chain then vehicle/causal interface; builddependency gap, method UNEXECUTED|
 |SVG-MPPI|Author core and saved response component passed; fresh vehicle component refused by original predictive margin at native5,then200zero stop/205exact replay|Retain disclosed adaptation negative result; no common whole-task comparison or independent component safety audit|
 |PSF|literature only; no vehicle comparison|same nominal controller/model/constraints/terminal contract and faithful implementation|
 |PCBF|literature only; no vehicle comparison|same nominal controller/model/constraints/terminal contract and faithful implementation|

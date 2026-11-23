@@ -31,6 +31,7 @@
   "active_entrypoint": "experiments/v1646_prefix_audit_scope/entry.py",
   "active_math": null,
   "active_math_round": null,
+  "active_preparation": null,
   "active_round": null,
   "active_run": null,
   "active_window": null,
@@ -215,6 +216,18 @@
     "replay_native": 2210,
     "runtime_remote_verified": true,
     "version": "V1690",
+    "whole_navigation_passed": false
+  },
+  "dwa_latest_navigation": {
+    "actual_native": 280,
+    "canonical_barrier_sha256": "6072f2f340755c9ce339444bdbc79ac852a644b77704c30563fee76e99fe1395",
+    "error_stop_native": 200,
+    "independent_audit_passed": false,
+    "normal_native": 80,
+    "passed": false,
+    "replay_native": 280,
+    "runtime_remote_verified": true,
+    "version": "V1691",
     "whole_navigation_passed": false
   },
   "entry_continuation_authorization": "RPCCR_COUPLED_NIGHT_ENTRY_EXCEPTION_20261113.json",
@@ -2531,6 +2544,17 @@
     "passed": false,
     "recorded_unix": 1795253077.6735542,
     "whole_route_passed": false
+  },
+  "latest_local_cmake_toolchain": {
+    "TEB_configure_executed": false,
+    "canonical_barrier_sha256": "26f72280510e1dbfa2bc5b9f9e7807bc4a914db3fabeeb4d4fa892df6ef5dbe1",
+    "method_outcome": null,
+    "models": 0,
+    "passed": true,
+    "recovery_pending": false,
+    "review": "runs/v1698_local_cmake_toolchain/RUNTIME_CLOSED_REVIEW.json",
+    "runtime_remote_verified": true,
+    "version": "V1698"
   },
   "latest_locked_writer_census_source": {
     "all_source_SHA_verified": true,
@@ -4926,6 +4950,22 @@
     "original_batch_failed_unchanged": true,
     "passed": true,
     "repeat_not_executed": true
+  },
+  "latest_teb_local_configure": {
+    "C_and_CXX_ABI_checks_passed": true,
+    "actual_cmake_invocations": 1,
+    "canonical_barrier_sha256": "0bf6a88ff344b91880b912d27f3f0243ccee3b88a7f5d40711ad5add8bc4081a",
+    "closed": true,
+    "dependency_inventory": "runs/v1699_teb_local_cmake_configure/DEPENDENCY_INVENTORY_SUPPLEMENT.json",
+    "first_missing_dependency": "catkin",
+    "method_executed": false,
+    "method_outcome": null,
+    "models": 0,
+    "passed": false,
+    "recovery_pending": false,
+    "runtime_remote_verified": true,
+    "source_intake_passed": true,
+    "version": "V1699"
   },
   "latest_time_window_diagnosis": "runs/v1269_ew_phase_diagnosis/COMPLETION.json",
   "latest_user_hold": {
@@ -12986,7 +13026,13 @@
     "research_sources": "Primary papers, author repositories and official implementations; no performance replication"
   },
   "models_now_authorized": false,
-  "next_experiment": "v1698_local_cmake_toolchain",
+  "next_comparison_step": {
+    "heartbeat_recreation": false,
+    "method": "TEB",
+    "prior_round_closed": true,
+    "required": "Bounded exact ROS1 catkin and original dependency chain recovery inside Phase; no optimizer/model admission before build and current-client qualification"
+  },
+  "next_experiment": null,
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13001,7 +13047,7 @@
     "start_condition": "complete recovery source and live integration qualification passed before any new physical initialization",
     "user_choice": "新独立12小时：三路线全过后，条件进入固定24项"
   },
-  "next_preparation": "v1658_svg_bounded_numeric",
+  "next_preparation": null,
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "next_scope": "Integrate V1437 shared5400s phase guards into current production lifecycle/supervisor before necessary zero-model qualification; full route admission remains absent.",
   "night_candidate_relay": "runs/v1192_eight_gib_relay",
@@ -13206,7 +13252,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "PREPARING_REPOSITORY_LOCAL_CMAKE_TOOLCHAIN_NO_MODELS",
+  "status": "TEB_CONFIGURE_REMOTE_CLOSED_ROS1_DEPENDENCY_RECOVERY_REQUIRED_NO_MODELS",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13394,18 +13440,5 @@
     "storage_ready": true,
     "temporary_storage_cap_bytes": 10737418240
   },
-  "weekend_next_preparation": null,
-  "dwa_latest_navigation": {
-    "version": "V1691",
-    "passed": false,
-    "actual_native": 280,
-    "normal_native": 80,
-    "error_stop_native": 200,
-    "replay_native": 280,
-    "independent_audit_passed": false,
-    "whole_navigation_passed": false,
-    "runtime_remote_verified": true,
-    "canonical_barrier_sha256": "6072f2f340755c9ce339444bdbc79ac852a644b77704c30563fee76e99fe1395"
-  },
-  "active_preparation": "v1698_local_cmake_toolchain"
+  "weekend_next_preparation": null
 }
