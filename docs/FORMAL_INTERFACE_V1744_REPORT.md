@@ -9,3 +9,9 @@
 - 12个未变生产模块按字节/SHA继承，不重刷旧数值、模型、OS或ROS套件。SOURCE13226成员已冻结，0模型、0解析/物理积分、0重放、0DLL/FFI数值。
 
 这只是软件接口资格，不是实际导航或完整独立数值审核PASS，不改变phase03两项原失败。真实后续任务仍需新的source完整远端恢复链、逐轮准入和用户下一条命令。本轮source远端恢复由V1745完成；闭环补充另记，禁止重封已闭档。
+
+## 闭环与等待审阅（封档后补充）
+
+V1745首次51members1072829B，所有远端block/member/whole/indexSHA实际回读通过，精确重复运输文件已清理，原source/inputs/results保留。13226source=13200继承+26新delta/missing[]。唯一sourcecommit f50b12d93f0cd00807339dc09472d6fb02c9e7b2已push/ref成功，无第二push或重新封档。worker6248exit0，原REVIEW/双锁闲/ownedchildren均已退出。此晚闭环信息不冒旧归档成员。
+
+现在等待用户审阅。用户下一次明确命令后，至多启动phase04 full这一项后台仿真；其配对no_onward也必须再等用户下一条命令。本轮没有启动任何新导航。

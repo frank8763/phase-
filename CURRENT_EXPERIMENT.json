@@ -13255,7 +13255,7 @@
     "prior_round_remote_pending": false,
     "required": "Implement and qualify the exact original TEB runtime/ABI/current-observation binding under experiments/v1730_teb_runtime_binding/PROTOCOL.md before any solver/vehicle execution."
   },
-  "next_experiment": "one background V1744 source-only qualification; stop for user review before any further round",
+  "next_experiment": "only after a NEW user command: single phase_04__full under newly qualified SOURCEv1744; no automatic paired successor",
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13476,7 +13476,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "WAITING_USER_REVIEW_AFTER_SOURCE_QUALIFICATION",
+  "status": "WAITING_USER_REVIEW_V1744_SOURCE_PASS_REMOTE_CLOSED",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13722,5 +13722,19 @@
   "manual_review_after_every_round": true,
   "automatic_next_round": false,
   "active_source_round": null,
-  "latest_background_result": "runs/v1744_formal_interface_qualification/BACKGROUND_RESULT.json"
+  "latest_background_result": "runs/v1744_formal_interface_qualification/BACKGROUND_RESULT.json",
+  "latest_source_round": {
+    "version": "v1744",
+    "source_only_passed": true,
+    "actual_navigation_qualified": false,
+    "source_members": 13226,
+    "negative_cases": 17,
+    "clock_boundary_software_cases": 264,
+    "models": 0,
+    "physical_native": 0,
+    "replay_native": 0,
+    "full_remote_closed": true,
+    "result": "docs/FORMAL_INTERFACE_V1744_REPORT.md",
+    "wait_for_user_review": true
+  }
 }
