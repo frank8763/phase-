@@ -31,7 +31,7 @@
   "active_entrypoint": "experiments/v1646_prefix_audit_scope/entry.py",
   "active_math": null,
   "active_math_round": null,
-  "active_preparation": "v1704_signed_noetic_metadata",
+  "active_preparation": "v1706_noetic_payload_intake",
   "active_round": null,
   "active_run": null,
   "active_window": null,
@@ -4871,6 +4871,22 @@
     "source_unchanged": true,
     "stop_reason": "FIRST_PHYSICAL_FUNCTIONAL_SAFETY_OR_EVIDENCE_FAILURE",
     "worker_returncode": 1
+  },
+  "latest_signed_noetic_metadata": {
+    "ROS_declared_installed_bytes": 45873152,
+    "ROS_download_bytes": 6915624,
+    "ROS_packages": 74,
+    "canonical_barrier_sha256": "961fa2c211b23d936fe58d108a83e555eb941da7d1882dd2bef8b696a613f6dc",
+    "closed": true,
+    "external_groups_unresolved": 86,
+    "method_executed": false,
+    "models": 0,
+    "package_payloads_recovered": false,
+    "passed": true,
+    "recovery_pending": false,
+    "runtime_remote_verified": true,
+    "signature_authenticated": true,
+    "version": "V1704"
   },
   "latest_software_experiment": {
     "all8_audit_unexecuted": true,
@@ -13044,7 +13060,7 @@
     "prior_round_closed": true,
     "required": "Bounded exact ROS1 catkin and original dependency chain recovery inside Phase; no optimizer/model admission before build and current-client qualification"
   },
-  "next_experiment": "v1704_signed_noetic_metadata",
+  "next_experiment": "v1706_noetic_payload_intake",
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13264,7 +13280,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "PREPARING_ROS_SIGNED_MIRROR_METADATA_NO_MODELS",
+  "status": "PREPARING_EXACT_NOETIC_74_PACKAGE_PAYLOAD_INTAKE_NO_MODELS",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
