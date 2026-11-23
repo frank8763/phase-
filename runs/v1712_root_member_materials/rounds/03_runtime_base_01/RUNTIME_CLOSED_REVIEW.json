@@ -1,0 +1,38 @@
+{
+  "closed": true,
+  "passed": false,
+  "scope": "ONE_NATIVE_SELECTED_BUILD_MATERIAL_DATA_BATCH",
+  "batch_id": "03_runtime_base_01",
+  "package_downloads": 83,
+  "package_reuses": 0,
+  "completed_extractions": 82,
+  "selected_member_full_verification": false,
+  "selected_entries": null,
+  "excluded_entries": null,
+  "selected_materials_not_full_package_install": true,
+  "task_allocated_bytes": 98451456,
+  "allruns_bytes": 11394957312,
+  "models": 0,
+  "package_programs_or_libraries_executed": 0,
+  "compiler_calls": 0,
+  "optimizer_calls": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "method_outcome": null,
+  "ABI_or_build_qualified": false,
+  "first_error": {
+    "error": "AssertionError('NATIVE_DATA_NAMESPACE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1712_root_member_materials/owner.py\", line 59, in main\n    detail=m.extract(file,prefix,meter,pkg['Package'],entries,excluded);records.append(dict(pkg,deb_path=str(file.relative_to(R)),**detail));meter.reconcile()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1712_root_member_materials/materials.py\", line 77, in extract\n    name=safe_name(member.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1712_root_member_materials/materials.py\", line 31, in safe_name\n    assert p.parts[0]in ['usr','lib','lib64','bin','sbin','etc'],'NATIVE_DATA_NAMESPACE';return name\nAssertionError: NATIVE_DATA_NAMESPACE\n"
+  },
+  "source_SHA_exact": true,
+  "owner_gone": true,
+  "review_original": true,
+  "execution_idle": true,
+  "all14079_shared_source_SHA_verified": true,
+  "runtime_recovery_pending": true,
+  "source_paths_SHA256": {
+    "runs/v1712_root_member_materials/rounds/03_runtime_base_01/RESULT.json": "9c3b566fdd968ef55ead45c9dd5e927cf27b3e65501cafae4ec736861c9ca9b6",
+    "runs/v1712_root_member_materials/rounds/03_runtime_base_01/ONCE_CLAIM.json": "44a6f89b0795936eaba95d34f414bfd9c21e779ada1a625bd809f614be06c9be",
+    "runs/v1712_root_member_materials/BATCHES_LOCKED.json": "3c97509bcd6f48cc5e08929c17033f44d1e18a67f83eadddcdbf5d4868c38bf4"
+  }
+}

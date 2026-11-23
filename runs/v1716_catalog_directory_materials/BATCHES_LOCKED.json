@@ -1,0 +1,4123 @@
+{
+  "batches": [
+    {
+      "id": "03_runtime_base_01",
+      "packages": [
+        {
+          "Package": "distro-info-data",
+          "Version": "0.43ubuntu1",
+          "Architecture": "all",
+          "Filename": "pool/main/d/distro-info-data/distro-info-data_0.43ubuntu1_all.deb",
+          "Size": "4504",
+          "SHA256": "9eb1ad5348f9751ba729ab2224904eea71cf9d8538dbdd48b18e7996f9c6c12b",
+          "Installed-Size": "17",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "gcc-10-base",
+          "Version": "10-20200411-0ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/g/gcc-10/gcc-10-base_10-20200411-0ubuntu1_amd64.deb",
+          "Size": "19024",
+          "SHA256": "5268c7d97c4615f8522fec21cfa361b32f87a6e028411f45537de062d9c5da1f",
+          "Installed-Size": "256",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libamd2",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libamd2_5.7.1+dfsg-2_amd64.deb",
+          "Size": "19968",
+          "SHA256": "b47b52222e32211775c4117ec47133c3bd56a6ad45a49758ea08b805b586e85d",
+          "Installed-Size": "77",
+          "Depends": "libc6 (>= 2.2.5), libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libapr1",
+          "Version": "1.6.5-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/a/apr/libapr1_1.6.5-1ubuntu1_amd64.deb",
+          "Size": "91356",
+          "SHA256": "55a6ca7c5848600a4481c75852f9b1ca10bfd83de148613dd31607a477d7886d",
+          "Installed-Size": "272",
+          "Depends": "libc6 (>= 2.15), libuuid1 (>= 2.16)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libaprutil1",
+          "Version": "1.6.1-4ubuntu2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/a/apr-util/libaprutil1_1.6.1-4ubuntu2_amd64.deb",
+          "Size": "84720",
+          "SHA256": "bbacb623d08e0a6800b7098143402837b77f9cb83be30062ac444449bcc58bf2",
+          "Installed-Size": "282",
+          "Depends": "libapr1 (>= 1.6.2), libc6 (>= 2.25), libdb5.3, libexpat1 (>= 2.0.1), libgdbm6 (>= 1.16), libssl1.1 (>= 1.1.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libasn1-8-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libasn1-8-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "181044",
+          "SHA256": "5c00687599d667f533d153d1408c18e7f243be14cecce3e88de3757fbd541a7b",
+          "Installed-Size": "798",
+          "Depends": "libc6 (>= 2.14), libcom-err2 (>= 1.43.9), libroken18-heimdal (>= 1.4.0+git20110226)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libblas3",
+          "Version": "3.9.0-1build1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/l/lapack/libblas3_3.9.0-1build1_amd64.deb",
+          "Size": "141540",
+          "SHA256": "00ae536e4255ca4c90ff4f38424bcf2c5f4d12d4b6ef447576b40b3b34b26e0a",
+          "Installed-Size": "467",
+          "Depends": "libc6 (>= 2.4)",
+          "Provides": "libblas.so.3",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-atomic1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/main/b/boost1.71/libboost-atomic1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "205476",
+          "SHA256": "27bdeca234b580c32f4abdc04f2ef1650b1088e3c91d8db99e7597fd4ac75deb",
+          "Installed-Size": "1973",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-chrono1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/main/b/boost1.71/libboost-chrono1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "217236",
+          "SHA256": "4af58d4155189517f447300ee4535cb4db1351cb55802e28cec8c1f13ac108e6",
+          "Installed-Size": "2010",
+          "Depends": "libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-date-time1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/main/b/boost1.71/libboost-date-time1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "218996",
+          "SHA256": "d75870d792f9d6e7a0be7d20c2ea14c9da6b4560cbdc79e80ed32a078b91604d",
+          "Installed-Size": "2034",
+          "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-filesystem1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/main/b/boost1.71/libboost-filesystem1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "242068",
+          "SHA256": "6793184cc2b8df0da401fdbe78fbf57ac598438177a6af163f99f9f1c14f9eb8",
+          "Installed-Size": "2074",
+          "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-graph1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/universe/b/boost1.71/libboost-graph1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "297420",
+          "SHA256": "4024ee6c25a333238b74fdf808e96ae92c749501156938359a006af1ded02981",
+          "Installed-Size": "2274",
+          "Depends": "libboost-regex1.71.0-icu66, libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)",
+          "source": "FOCAL_UNIVERSE",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-regex1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/universe/b/boost1.71/libboost-regex1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "470600",
+          "SHA256": "7160fc29e33b7b191a618ae4b3ae0bc82c30ad5f38d00b82dc6362c9e954e377",
+          "Installed-Size": "2980",
+          "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.0), libicu66 (>= 66.1-1~), libstdc++6 (>= 9)",
+          "Provides": "libboost-regex1.71.0-icu66",
+          "source": "FOCAL_UNIVERSE",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-serialization1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/main/b/boost1.71/libboost-serialization1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "301616",
+          "SHA256": "29a885e9b1353b1bb69c6d067909c689af86c02bf3a108db1b9d56e9cc63343c",
+          "Installed-Size": "2413",
+          "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-system1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/main/b/boost1.71/libboost-system1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "205176",
+          "SHA256": "7d4e150855855a2788481f319f4cd9515f526f8fcbf7038a98441d68a8c4c4c1",
+          "Installed-Size": "1973",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-test1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/universe/b/boost1.71/libboost-test1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "436672",
+          "SHA256": "3fd4afefc4fa0b234c3e237adf198c4bce33df243a93cd43ea4575d436652dc0",
+          "Installed-Size": "2761",
+          "Depends": "libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)",
+          "source": "FOCAL_UNIVERSE",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libboost-thread1.71.0",
+          "Version": "1.71.0-6ubuntu6",
+          "Architecture": "amd64",
+          "Filename": "pool/main/b/boost1.71/libboost-thread1.71.0_1.71.0-6ubuntu6_amd64.deb",
+          "Size": "248696",
+          "SHA256": "707045c56ef0141a77f449eed92eca741660ea1857b00a38db228e6038e0ac92",
+          "Installed-Size": "2130",
+          "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libbtf1",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libbtf1_5.7.1+dfsg-2_amd64.deb",
+          "Size": "11288",
+          "SHA256": "e8a6b4730aaf09be3221b69fb494e6edbc5f5b8221104d0d8775b1e57f726153",
+          "Installed-Size": "56",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libbz2-1.0",
+          "Version": "1.0.8-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/b/bzip2/libbz2-1.0_1.0.8-2_amd64.deb",
+          "Size": "32308",
+          "SHA256": "f3632ec38402ca0f9c61a6854469f1a0eba9389d3f73827b466033c3d5bbec69",
+          "Installed-Size": "99",
+          "Depends": "libc6 (>= 2.4)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libcamd2",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libcamd2_5.7.1+dfsg-2_amd64.deb",
+          "Size": "21684",
+          "SHA256": "70be40188cbc09e8e3ff4ce94f4cf48445f2145d10c30857a86e904686e90855",
+          "Installed-Size": "78",
+          "Depends": "libc6 (>= 2.2.5), libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libccolamd2",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libccolamd2_5.7.1+dfsg-2_amd64.deb",
+          "Size": "23248",
+          "SHA256": "b6016d045a56c88bcd6b91345db544bdfd965579cfdcd78f85421f0dc25355fe",
+          "Installed-Size": "82",
+          "Depends": "libc6 (>= 2.4), libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libcholmod3",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libcholmod3_5.7.1+dfsg-2_amd64.deb",
+          "Size": "307968",
+          "SHA256": "22d665d88dde0d1d4f3354a771a830ee601c6a5fc216e17fab39fc39775400c2",
+          "Installed-Size": "947",
+          "Depends": "libamd2 (>= 1:4.5.2), libblas3 | libblas.so.3, libc6 (>= 2.7), libcamd2 (>= 1:4.5.2), libccolamd2 (>= 1:4.5.2), libcolamd2 (>= 1:4.5.2), libgomp1 (>= 4.9), liblapack3 | liblapack.so.3, libmetis5, libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libcolamd2",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libcolamd2_5.7.1+dfsg-2_amd64.deb",
+          "Size": "17020",
+          "SHA256": "c5792b279a60c57523da081f07c9d62001df5932dae833a1d4387dc6fd9eb922",
+          "Installed-Size": "66",
+          "Depends": "libc6 (>= 2.4), libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libcom-err2",
+          "Version": "1.45.5-2ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/e/e2fsprogs/libcom-err2_1.45.5-2ubuntu1_amd64.deb",
+          "Size": "9544",
+          "SHA256": "5e2bc5c9010f2d2e11affabe94a80a25f93fb1f5034c373c3685d88afa653b30",
+          "Installed-Size": "100",
+          "Depends": "libc6 (>= 2.17)",
+          "Provides": "libcomerr2 (= 1.45.5-2ubuntu1)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libconsole-bridge0.4",
+          "Version": "0.4.4+dfsg-1build1",
+          "Architecture": "amd64",
+          "Filename": "pool/universe/c/console-bridge/libconsole-bridge0.4_0.4.4+dfsg-1build1_amd64.deb",
+          "Size": "8436",
+          "SHA256": "8dcd22cf2f42aaaf017dcb0d6d7641d0a0867699e5fc25e9870be21af4e33f00",
+          "Installed-Size": "32",
+          "Depends": "libc6 (>= 2.4), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)",
+          "source": "FOCAL_UNIVERSE",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libcrypt1",
+          "Version": "1:4.4.10-10ubuntu4",
+          "Architecture": "amd64",
+          "Filename": "pool/main/libx/libxcrypt/libcrypt1_4.4.10-10ubuntu4_amd64.deb",
+          "Size": "78204",
+          "SHA256": "231b4dbbe5865775f118cfa61394f1e16fa7102b6953a327e672499a20876d73",
+          "Installed-Size": "226",
+          "Depends": "libc6 (>= 2.25)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libcxsparse3",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libcxsparse3_5.7.1+dfsg-2_amd64.deb",
+          "Size": "64204",
+          "SHA256": "4a2fb40ba9240024bfcbd49ee3b1ca00b7f75eee142d02c7295cf91b38e72fec",
+          "Installed-Size": "216",
+          "Depends": "libc6 (>= 2.7)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libdb5.3",
+          "Version": "5.3.28+dfsg1-0.6ubuntu2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/d/db5.3/libdb5.3_5.3.28+dfsg1-0.6ubuntu2_amd64.deb",
+          "Size": "675076",
+          "SHA256": "330775026b5e31340387fb58e12e40e241ca34cbbb6c0c28331bd83cb47c3656",
+          "Installed-Size": "1749",
+          "Depends": "libc6 (>= 2.17)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libexpat1",
+          "Version": "2.2.9-1build1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/e/expat/libexpat1_2.2.9-1build1_amd64.deb",
+          "Size": "73292",
+          "SHA256": "342720dc6e3c55dee5b863a86dc2090d8c716f5c5116ab55066a5eb0433bd6c1",
+          "Installed-Size": "401",
+          "Depends": "libc6 (>= 2.25)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libffi7",
+          "Version": "3.3-4",
+          "Architecture": "amd64",
+          "Filename": "pool/main/libf/libffi/libffi7_3.3-4_amd64.deb",
+          "Size": "19688",
+          "SHA256": "4584aa8fef1bf5086168ce2f7078cd2ebd78fdc4cc0d86d958d795d4e0b0f50d",
+          "Installed-Size": "65",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libgdbm6",
+          "Version": "1.18.1-5",
+          "Architecture": "amd64",
+          "Filename": "pool/main/g/gdbm/libgdbm6_1.18.1-5_amd64.deb",
+          "Size": "27352",
+          "SHA256": "8ac1108585490fc2321df8d27cc565054003d86fab0ab8b8e2a4a2d050a53098",
+          "Installed-Size": "87",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libgfortran5",
+          "Version": "10-20200411-0ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/g/gcc-10/libgfortran5_10-20200411-0ubuntu1_amd64.deb",
+          "Size": "733556",
+          "SHA256": "403923d282fe7bc6a87b0b72144cff31fc42d628784c9a7564f4d57f746d9788",
+          "Installed-Size": "2895",
+          "Depends": "gcc-10-base (= 10-20200411-0ubuntu1), libc6 (>= 2.29), libgcc-s1 (>= 4.3), libquadmath0 (>= 4.6)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libgmp10",
+          "Version": "2:6.2.0+dfsg-4",
+          "Architecture": "amd64",
+          "Filename": "pool/main/g/gmp/libgmp10_6.2.0+dfsg-4_amd64.deb",
+          "Size": "240448",
+          "SHA256": "23096fc84d7f5baebf73e2e401349ac03fe171b6953f1ec23b6359f5447d1aa9",
+          "Installed-Size": "567",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libgnutls30",
+          "Version": "3.6.13-2ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/g/gnutls28/libgnutls30_3.6.13-2ubuntu1_amd64.deb",
+          "Size": "828448",
+          "SHA256": "3063ed45f71bced56145119c205288a13820022a7e10b20e86df193d3b5892d1",
+          "Installed-Size": "2192",
+          "Depends": "libgmp10 (>= 2:6.0.0), libc6 (>= 2.25), libhogweed5, libidn2-0 (>= 2.0.0), libnettle7, libp11-kit0 (>= 0.23.18.1), libtasn1-6 (>= 4.14), libunistring2 (>= 0.9.7)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libgomp1",
+          "Version": "10-20200411-0ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/g/gcc-10/libgomp1_10-20200411-0ubuntu1_amd64.deb",
+          "Size": "100872",
+          "SHA256": "16486e704cf644945f3900f265f6e1e5c643f5957ba79a3af5827dcbb8f35367",
+          "Installed-Size": "286",
+          "Depends": "gcc-10-base (= 10-20200411-0ubuntu1), libc6 (>= 2.17)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libgssapi3-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libgssapi3-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "96132",
+          "SHA256": "a4c7837863d389cb98b138c10534b72d272487ff7b75c6e5c700723de55e53dc",
+          "Installed-Size": "324",
+          "Depends": "libasn1-8-heimdal (>= 1.4.0+git20110226), libc6 (>= 2.14), libcom-err2 (>= 1.43.9), libhcrypto4-heimdal (>= 1.4.0+git20110226), libheimntlm0-heimdal (>= 1.4.0+git20110226), libkrb5-26-heimdal (>= 1.6~git20131117), libroken18-heimdal (>= 1.7~git20150920)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libhcrypto4-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libhcrypto4-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "87864",
+          "SHA256": "cd6a292f26dfcb98db1df4d2110fad3ffe15e017ff7a778bf0f8ae2bb2bd62ff",
+          "Installed-Size": "274",
+          "Depends": "libasn1-8-heimdal (>= 1.4.0+git20110226), libc6 (>= 2.14), libheimbase1-heimdal (>= 1.4.0+git20110226), libroken18-heimdal (>= 1.7~git20150920)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libheimbase1-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libheimbase1-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "29716",
+          "SHA256": "ea9cbae6347dd791da289ae66e17d2e066e8bfadd97d05a38e150a468228707d",
+          "Installed-Size": "113",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libheimntlm0-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libheimntlm0-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "15088",
+          "SHA256": "0f7a5f3318cd71de72546d30f2d5b911db0645b2fb8ecde87aeea4202bd92187",
+          "Installed-Size": "85",
+          "Depends": "libc6 (>= 2.4), libhcrypto4-heimdal (>= 1.4.0+git20110226), libkrb5-26-heimdal (>= 1.4.0+git20110226), libroken18-heimdal (>= 1.7~git20150920), libwind0-heimdal (>= 1.4.0+git20110226)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libhogweed5",
+          "Version": "3.5.1+really3.5.1-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/n/nettle/libhogweed5_3.5.1+really3.5.1-2_amd64.deb",
+          "Size": "137896",
+          "SHA256": "f6d44532a0d12bf5c7046295755c4a5897f8e06c814d36acb545c50f9652f852",
+          "Installed-Size": "241",
+          "Depends": "libc6 (>= 2.14), libgmp10 (>= 2:6.0.0), libnettle7 (= 3.5.1+really3.5.1-2)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libhx509-5-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libhx509-5-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "106632",
+          "SHA256": "ebd2672917ca0d912ffade7cca384886f9b1316a8ec10a452df75e9b809c7eb8",
+          "Installed-Size": "360",
+          "Depends": "libasn1-8-heimdal (>= 1.4.0+git20110226), libc6 (>= 2.14), libcom-err2 (>= 1.43.9), libhcrypto4-heimdal (>= 1.4.0+git20110226), libheimbase1-heimdal (>= 1.6~git20131117), libroken18-heimdal (>= 1.7~git20150920), libwind0-heimdal (>= 1.4.0+git20110226)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libicu66",
+          "Version": "66.1-2ubuntu2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/i/icu/libicu66_66.1-2ubuntu2_amd64.deb",
+          "Size": "8520140",
+          "SHA256": "8039b175ab95a5476c07850d8d30e0f21ff6935c030e0cc5483e1887ef64c798",
+          "Installed-Size": "32773",
+          "Depends": "libc6 (>= 2.29), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), tzdata (>> 2019c-3ubuntu1~)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libidn2-0",
+          "Version": "2.2.0-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/libi/libidn2/libidn2-0_2.2.0-2_amd64.deb",
+          "Size": "50448",
+          "SHA256": "698abe11d444c7e87c656c2083373d1e0fae04b3a64be0371adb2bb180092537",
+          "Installed-Size": "216",
+          "Depends": "libc6 (>= 2.14), libunistring2 (>= 0.9.7)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libklu1",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libklu1_5.7.1+dfsg-2_amd64.deb",
+          "Size": "71708",
+          "SHA256": "41594f63b52b7287c1b82dd4f27d6df4ba3a5e185449030614e205fe5a22abaa",
+          "Installed-Size": "220",
+          "Depends": "libamd2 (>= 1:4.5.2), libbtf1 (>= 1:4.5.2), libc6 (>= 2.4), libcolamd2 (>= 1:4.5.2), libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libkrb5-26-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libkrb5-26-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "207648",
+          "SHA256": "a2130cdef5b1d003e520622a595a49393539fab6df8350c21a7d00ea142f767d",
+          "Installed-Size": "665",
+          "Depends": "libasn1-8-heimdal (>= 1.6~git20131117), libc6 (>= 2.15), libcom-err2 (>= 1.43.9), libcrypt1 (>= 1:4.1.0), libhcrypto4-heimdal (>= 1.7~git20161112), libheimbase1-heimdal (>= 1.6~git20131117), libhx509-5-heimdal (>= 1.4.0+git20110226), libroken18-heimdal (>= 1.7~git20160418), libsqlite3-0 (>= 3.5.9), libwind0-heimdal (>= 1.6~git20120311)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "liblapack3",
+          "Version": "3.9.0-1build1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/l/lapack/liblapack3_3.9.0-1build1_amd64.deb",
+          "Size": "2153520",
+          "SHA256": "d78561ea1a6c59e0ce3060d72e81ab860b487f97dde46ec719e951f63a452de0",
+          "Installed-Size": "6831",
+          "Depends": "libblas3 | libblas.so.3, libc6 (>= 2.29), libgcc-s1 (>= 4.0), libgfortran5 (>= 8)",
+          "Provides": "liblapack.so.3",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libldap-2.4-2",
+          "Version": "2.4.49+dfsg-2ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/o/openldap/libldap-2.4-2_2.4.49+dfsg-2ubuntu1_amd64.deb",
+          "Size": "155528",
+          "SHA256": "d93a63d1927f12f67065f5b038fbe656d9920d4bdf9788643e43800c136a7ae4",
+          "Installed-Size": "522",
+          "Depends": "libc6 (>= 2.28), libgnutls30 (>= 3.6.10), libgssapi3-heimdal (>= 1.4.0+git20110226), libsasl2-2 (>= 2.1.27+dfsg), libldap-common",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libldap-common",
+          "Version": "2.4.49+dfsg-2ubuntu1",
+          "Architecture": "all",
+          "Filename": "pool/main/o/openldap/libldap-common_2.4.49+dfsg-2ubuntu1_all.deb",
+          "Size": "17288",
+          "SHA256": "73f8e44594518e2d9c8bde2025b3b9794308c39078ee40feb92fbb2faee78958",
+          "Installed-Size": "101",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libldl2",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libldl2_5.7.1+dfsg-2_amd64.deb",
+          "Size": "10956",
+          "SHA256": "b918068c29f9da79b50c9de317454ed304f85f0648e93da12380794bdef58f08",
+          "Installed-Size": "52",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "liblog4cxx10v5",
+          "Version": "0.10.0-15ubuntu2",
+          "Architecture": "amd64",
+          "Filename": "pool/universe/l/log4cxx/liblog4cxx10v5_0.10.0-15ubuntu2_amd64.deb",
+          "Size": "416860",
+          "SHA256": "b0fd6444115b5c6a60cd20cc3f76688199e798e54519a910e96b97b66087066f",
+          "Installed-Size": "1926",
+          "Depends": "libapr1 (>= 1.4.8-2~), libaprutil1 (>= 1.2.7+dfsg), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)",
+          "source": "FOCAL_UNIVERSE",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "liblzma5",
+          "Version": "5.2.4-1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/x/xz-utils/liblzma5_5.2.4-1_amd64.deb",
+          "Size": "92352",
+          "SHA256": "01020b5a0515dbc9a7c00b464a65450f788b0258c3fbb733ecad0438f5124800",
+          "Installed-Size": "259",
+          "Depends": "libc6 (>= 2.17)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libmetis5",
+          "Version": "5.1.0.dfsg-5",
+          "Architecture": "amd64",
+          "Filename": "pool/main/m/metis/libmetis5_5.1.0.dfsg-5_amd64.deb",
+          "Size": "168742",
+          "SHA256": "f694c7ce485de75f52ebc50918d8160946eb412b4417c7612c2faea72dc3a55c",
+          "Installed-Size": "456",
+          "Depends": "libc6 (>= 2.11)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libmongoose2",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libmongoose2_5.7.1+dfsg-2_amd64.deb",
+          "Size": "31384",
+          "SHA256": "4c4e0497297b301eb89d00a1c1e840cfa3e5319aacb0b703df00a03e23473d81",
+          "Installed-Size": "105",
+          "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2), libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libmpdec2",
+          "Version": "2.4.2-3",
+          "Architecture": "amd64",
+          "Filename": "pool/main/m/mpdecimal/libmpdec2_2.4.2-3_amd64.deb",
+          "Size": "81132",
+          "SHA256": "4e624c616de0fa1dea3571291b05b3d6fe5f75d8667b278f9503b1eca36ffbcf",
+          "Installed-Size": "243",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libncursesw6",
+          "Version": "6.2-0ubuntu2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/n/ncurses/libncursesw6_6.2-0ubuntu2_amd64.deb",
+          "Size": "132368",
+          "SHA256": "7dd1a78af0cbf71a7bbf263e0e829e7e5dd861b6b02c58bc9831f8aebafefe23",
+          "Installed-Size": "418",
+          "Depends": "libtinfo6 (= 6.2-0ubuntu2), libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libnettle7",
+          "Version": "3.5.1+really3.5.1-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/n/nettle/libnettle7_3.5.1+really3.5.1-2_amd64.deb",
+          "Size": "114416",
+          "SHA256": "6bdca19cb53cda650dee1c7789b298b4a7a0089693da754a8511604c80f3ca24",
+          "Installed-Size": "395",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "liborocos-kdl1.4",
+          "Version": "1.4.0-7build2",
+          "Architecture": "amd64",
+          "Filename": "pool/universe/o/orocos-kdl/liborocos-kdl1.4_1.4.0-7build2_amd64.deb",
+          "Size": "226348",
+          "SHA256": "b030b2b68d79c7f6141ce997ff3d3aa34a91dbcd82e2a8c50c4e6e6e8e34902e",
+          "Installed-Size": "782",
+          "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)",
+          "source": "FOCAL_UNIVERSE",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libp11-kit0",
+          "Version": "0.23.20-1build1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/p/p11-kit/libp11-kit0_0.23.20-1build1_amd64.deb",
+          "Size": "188260",
+          "SHA256": "2c7f1c736ae5e36e8aa6858c25e62eee1bad3e2251b4a583fbc27432716f01dc",
+          "Installed-Size": "1270",
+          "Depends": "libc6 (>= 2.26), libffi7 (>= 3.3~20180313)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libpcre3",
+          "Version": "2:8.39-12build1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/p/pcre3/libpcre3_8.39-12build1_amd64.deb",
+          "Size": "232028",
+          "SHA256": "2e94c88431a1cfdc9f5be37a9063c617c2e85be4eeee194b3956b7a1d35040cd",
+          "Installed-Size": "671",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libpocofoundation62",
+          "Version": "1.9.2-3ubuntu3",
+          "Architecture": "amd64",
+          "Filename": "pool/universe/p/poco/libpocofoundation62_1.9.2-3ubuntu3_amd64.deb",
+          "Size": "444468",
+          "SHA256": "3691d36c9ed6d074cfc2ef0064224c81e53a2b168c63cc5d106ebac715d4fd0e",
+          "Installed-Size": "1776",
+          "Depends": "libc6 (>= 2.17), libgcc-s1 (>= 3.0), libpcre3, libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)",
+          "source": "FOCAL_UNIVERSE",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libquadmath0",
+          "Version": "10-20200411-0ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/g/gcc-10/libquadmath0_10-20200411-0ubuntu1_amd64.deb",
+          "Size": "145896",
+          "SHA256": "a95f27c8d2a5e4e30ba09c6aa101bed235b0f2df64a62f8e66b548ca45a1bb2b",
+          "Installed-Size": "304",
+          "Depends": "gcc-10-base (= 10-20200411-0ubuntu1), libc6 (>= 2.23)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "librbio2",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/librbio2_5.7.1+dfsg-2_amd64.deb",
+          "Size": "24468",
+          "SHA256": "6b166cd3dc1052a88a86b8e8be7919de5b463eebc4bb5e3b6facecdab43b5636",
+          "Installed-Size": "94",
+          "Depends": "libc6 (>= 2.7), libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libreadline8",
+          "Version": "8.0-4",
+          "Architecture": "amd64",
+          "Filename": "pool/main/r/readline/libreadline8_8.0-4_amd64.deb",
+          "Size": "130880",
+          "SHA256": "5c0e982098eeb1b69a1360f4dc20553397d0a41240f3b2fc2812ee3f02274a82",
+          "Installed-Size": "441",
+          "Depends": "readline-common, libc6 (>= 2.15), libtinfo6 (>= 6)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libroken18-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libroken18-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "41848",
+          "SHA256": "7a8efaa9b9e1ad5f3b32c10c30f67a21ebe128637a214f32968fe58657718b1e",
+          "Installed-Size": "144",
+          "Depends": "libc6 (>= 2.16), libcrypt1 (>= 1:4.1.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libsasl2-2",
+          "Version": "2.1.27+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/c/cyrus-sasl2/libsasl2-2_2.1.27+dfsg-2_amd64.deb",
+          "Size": "49324",
+          "SHA256": "dce82e1205282a907c96f973508b7307b8a69fa4dde3af9297e60215733f2d30",
+          "Installed-Size": "152",
+          "Depends": "libsasl2-modules-db (>= 2.1.27+dfsg-2), libc6 (>= 2.15)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libsasl2-modules-db",
+          "Version": "2.1.27+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/c/cyrus-sasl2/libsasl2-modules-db_2.1.27+dfsg-2_amd64.deb",
+          "Size": "14932",
+          "SHA256": "5ad91f3581c8d286c0855455554de51d38e20ad0340dded73ea9616e726373bd",
+          "Installed-Size": "66",
+          "Depends": "libc6 (>= 2.14), libdb5.3",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libsctp1",
+          "Version": "1.0.18+dfsg-1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/l/lksctp-tools/libsctp1_1.0.18+dfsg-1_amd64.deb",
+          "Size": "7876",
+          "SHA256": "f030b6264725bae3f9a62b1f7a7378338d0271f1995a9c4ecfb7990e0c108ae3",
+          "Installed-Size": "36",
+          "Depends": "libc6 (>= 2.4)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libspqr2",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libspqr2_5.7.1+dfsg-2_amd64.deb",
+          "Size": "64780",
+          "SHA256": "d39a45a4dfc78986d49de770e086896a7ddca1ed6df340b129413370cd35ac69",
+          "Installed-Size": "216",
+          "Depends": "libblas3 | libblas.so.3, libc6 (>= 2.14), libcholmod3 (>= 1:4.5.2), libgcc-s1 (>= 4.0), liblapack3 | liblapack.so.3, libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libsqlite3-0",
+          "Version": "3.31.1-4",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/sqlite3/libsqlite3-0_3.31.1-4_amd64.deb",
+          "Size": "547832",
+          "SHA256": "6d8f20d36b47a2ebc64c1cdd09acbe98c2786ee6f6ef49c84e0277e5b5453709",
+          "Installed-Size": "1322",
+          "Depends": "libc6 (>= 2.29)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libssl1.1",
+          "Version": "1.1.1f-1ubuntu2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb",
+          "Size": "1318204",
+          "SHA256": "09ee28588a1fb5613ddc6c26a992d5a76931b3cf22c022930da413a5e580599e",
+          "Installed-Size": "4026",
+          "Depends": "libc6 (>= 2.25), debconf (>= 0.5) | debconf-2.0",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libsuitesparseconfig5",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libsuitesparseconfig5_5.7.1+dfsg-2_amd64.deb",
+          "Size": "9736",
+          "SHA256": "174dd9fb90afe15382b9234246c243b01fed9feac6179aaf2d46ab7f748ae1b8",
+          "Installed-Size": "53",
+          "Depends": "libc6 (>= 2.17)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libtasn1-6",
+          "Version": "4.16.0-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/libt/libtasn1-6/libtasn1-6_4.16.0-2_amd64.deb",
+          "Size": "38088",
+          "SHA256": "f4d9cbcc2c915a58557ecf3ea6ffb42321c8a2f444945af57e64d9ce18744329",
+          "Installed-Size": "125",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libtinfo6",
+          "Version": "6.2-0ubuntu2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/n/ncurses/libtinfo6_6.2-0ubuntu2_amd64.deb",
+          "Size": "86980",
+          "SHA256": "87f281a8d5e56dbb259c7ef9f9dead8c52c73982c7bd65b267a71dfc700875fb",
+          "Installed-Size": "537",
+          "Depends": "libc6 (>= 2.16)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libtinyxml2-6a",
+          "Version": "7.0.0+dfsg-1build1",
+          "Architecture": "amd64",
+          "Filename": "pool/universe/t/tinyxml2/libtinyxml2-6a_7.0.0+dfsg-1build1_amd64.deb",
+          "Size": "28388",
+          "SHA256": "7a433dcbd40e86cd8741a204c99466f3f9b3a43ac102790eddb4b244171a939a",
+          "Installed-Size": "118",
+          "Depends": "libc6 (>= 2.14), libgcc-s1 (>= 3.0), libstdc++6 (>= 5)",
+          "Provides": "libtinyxml2-6",
+          "source": "FOCAL_UNIVERSE",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libumfpack5",
+          "Version": "1:5.7.1+dfsg-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/s/suitesparse/libumfpack5_5.7.1+dfsg-2_amd64.deb",
+          "Size": "228836",
+          "SHA256": "a8a6cf1a619363dd225b4301d3e96e79414a1139a538c9af3168334db942c5d1",
+          "Installed-Size": "735",
+          "Depends": "libamd2 (>= 1:4.5.2), libblas3 | libblas.so.3, libc6 (>= 2.29), libcholmod3 (>= 1:4.5.2), libsuitesparseconfig5 (>= 1:5.0.0)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libunistring2",
+          "Version": "0.9.10-2",
+          "Architecture": "amd64",
+          "Filename": "pool/main/libu/libunistring/libunistring2_0.9.10-2_amd64.deb",
+          "Size": "368092",
+          "SHA256": "4ccfbc1e3a1cbc42616bd4fd407e01eb1434996c8500ac2fbccb7a2e1bcb166a",
+          "Installed-Size": "1582",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libuuid1",
+          "Version": "2.34-0.1ubuntu9",
+          "Architecture": "amd64",
+          "Filename": "pool/main/u/util-linux/libuuid1_2.34-0.1ubuntu9_amd64.deb",
+          "Size": "20092",
+          "SHA256": "764851bea58689a957ad2f42a51b335a2792ec077b5743a2feebd69dcb6dfc88",
+          "Installed-Size": "122",
+          "Depends": "libc6 (>= 2.25)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libwind0-heimdal",
+          "Version": "7.7.0+dfsg-1ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/h/heimdal/libwind0-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb",
+          "Size": "48048",
+          "SHA256": "fb6a804bab8ea7a19e8ee85d9d4f6f9f16ad65a74e48b1671bc5bb8bbc84cd0c",
+          "Installed-Size": "205",
+          "Depends": "libc6 (>= 2.14), libcom-err2 (>= 1.43.9), libroken18-heimdal (>= 1.4.0+git20110226)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "libyaml-0-2",
+          "Version": "0.2.2-1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/liby/libyaml/libyaml-0-2_0.2.2-1_amd64.deb",
+          "Size": "48916",
+          "SHA256": "5a31dfa3bf44863cb13a323e3dd873bef7d8a7fe3bbda708bab697ddd620e67f",
+          "Installed-Size": "148",
+          "Depends": "libc6 (>= 2.14)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "lsb-release",
+          "Version": "11.1.0ubuntu2",
+          "Architecture": "all",
+          "Filename": "pool/main/l/lsb/lsb-release_11.1.0ubuntu2_all.deb",
+          "Size": "10568",
+          "SHA256": "085abfef45c0aba423c522c26bc583a2c1b24efbf8983e2a782904cca71d05b2",
+          "Installed-Size": "66",
+          "Depends": "python3:any, distro-info-data",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "mime-support",
+          "Version": "3.64ubuntu1",
+          "Architecture": "all",
+          "Filename": "pool/main/m/mime-support/mime-support_3.64ubuntu1_all.deb",
+          "Size": "30596",
+          "SHA256": "b4f73c76fa2abc24562466ec814eb9b6cfe5e030628187bb71b3da1422bda901",
+          "Installed-Size": "114",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "readline-common",
+          "Version": "8.0-4",
+          "Architecture": "all",
+          "Filename": "pool/main/r/readline/readline-common_8.0-4_all.deb",
+          "Size": "53492",
+          "SHA256": "38c3ac67e2dab4122a2f948f433c4cb5d5653d82b323f3ff30599797b7adee9f",
+          "Installed-Size": "79",
+          "Depends": "dpkg (>= 1.15.4) | install-info",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "sgml-base",
+          "Version": "1.29.1",
+          "Architecture": "all",
+          "Filename": "pool/main/s/sgml-base/sgml-base_1.29.1_all.deb",
+          "Size": "12432",
+          "SHA256": "1402d68810ff4099f9b3ce206fbbe719b51d0730310079903f9f7ad75c1d263b",
+          "Installed-Size": "70",
+          "Pre-Depends": "dpkg (>= 1.16.4)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "xml-core",
+          "Version": "0.18+nmu1",
+          "Architecture": "all",
+          "Filename": "pool/main/x/xml-core/xml-core_0.18+nmu1_all.deb",
+          "Size": "21592",
+          "SHA256": "ca2d6758bdd3d9bb789b9be48838930bd6be130d524fac4133d8e9e60a39f4e8",
+          "Installed-Size": "118",
+          "Depends": "sed (>= 4.1.2-8), sgml-base (>= 1.28)",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        },
+        {
+          "Package": "zlib1g",
+          "Version": "1:1.2.11.dfsg-2ubuntu1",
+          "Architecture": "amd64",
+          "Filename": "pool/main/z/zlib/zlib1g_1.2.11.dfsg-2ubuntu1_amd64.deb",
+          "Size": "53700",
+          "SHA256": "dbfea100d99ffe17fcb94f62b396c0b27c15aa46e875556126c4f769dc77f1f1",
+          "Installed-Size": "163",
+          "Depends": "libc6 (>= 2.14)",
+          "Provides": "libz1",
+          "source": "FOCAL_MAIN",
+          "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+        }
+      ],
+      "download_bytes": 23853266,
+      "declared_installed_bytes": 99378176,
+      "predecessor": null
+    }
+  ],
+  "total_packages": 85,
+  "download_bytes": 23853266,
+  "declared_installed_bytes": 99378176,
+  "host_packages": {
+    "debconf": "1.5.86ubuntu1",
+    "dpkg": "1.22.6ubuntu6.6",
+    "libc-dev-bin": "2.39-0ubuntu8.12",
+    "libc6": "2.39-0ubuntu8.12",
+    "libc6-dev": "2.39-0ubuntu8.12",
+    "libgcc-s1": "14.2.0-4ubuntu2~24.04.1",
+    "libstdc++-13-dev": "13.3.0-6ubuntu2~24.04.1",
+    "libstdc++6": "14.2.0-4ubuntu2~24.04.1",
+    "perl": "5.38.2-3.2ubuntu0.7",
+    "pkg-config": "1.8.1-2build1",
+    "sed": "4.9-2ubuntu0.24.04.1",
+    "tar": "1.35+dfsg-3ubuntu0.4",
+    "tzdata": "2026e-0ubuntu0.24.04.1",
+    "libstdc++-dev": "13.3.0-6ubuntu2~24.04.1"
+  },
+  "host_query": "debconf\t1.5.86ubuntu1\tinstall ok installed\ndpkg\t1.22.6ubuntu6.6\tinstall ok installed\nlibc-dev-bin\t2.39-0ubuntu8.12\tinstall ok installed\nlibc6:amd64\t2.39-0ubuntu8.12\tinstall ok installed\nlibc6-dev:amd64\t2.39-0ubuntu8.12\tinstall ok installed\nlibgcc-s1:amd64\t14.2.0-4ubuntu2~24.04.1\tinstall ok installed\nlibstdc++-13-dev:amd64\t13.3.0-6ubuntu2~24.04.1\tinstall ok installed\nlibstdc++6:amd64\t14.2.0-4ubuntu2~24.04.1\tinstall ok installed\nperl\t5.38.2-3.2ubuntu0.7\tinstall ok installed\npkg-config:amd64\t1.8.1-2build1\tinstall ok installed\nsed\t4.9-2ubuntu0.24.04.1\tinstall ok installed\ntar\t1.35+dfsg-3ubuntu0.4\tinstall ok installed\ntzdata\t2026e-0ubuntu0.24.04.1\tinstall ok installed\n",
+  "host_tools_SHA256": {
+    "/usr/bin/cc": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26",
+    "/usr/bin/c++": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+    "/usr/bin/ld": "e9ceb054c12207970f2726dfc07e9a66b411602748628baf27399f02a9bbb31b",
+    "/usr/bin/make": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+    "/usr/bin/pkg-config": "7e8152db1b0c7e49d47b4b82a70dc9997b557951c5d4d938b0e7f208ce9eb10b",
+    "/usr/bin/bwrap": "e318903862396f96de3df57264e0158682b952fd3fb53ac23d876413e7b30f71",
+    "/usr/lib/x86_64-linux-gnu/libc.so.6": "755a371e86cc9f564ab54f66140747700fb0a103f698f659f2060f707897e09a",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6": "1fd75fe70354a416d75aef22bcae68c47bd25d20e2d0568c30b1a9838cf62f11",
+    "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": "d93224d2b0dab4247598be683adca02f5cf00586f99c187579cd7e92058fb7cb"
+  },
+  "source_inputs_SHA256": {
+    "runs/v1708_focal_dependency_resolution/FULL_DECLARED_DEPENDENCY_PLAN.json": "720b177f29cc0ef4d48e4ca57853c46f389bcec60e54de3f522c46b90b589060",
+    "runs/v1708_focal_dependency_resolution/BUILD_CANDIDATE_PLAN.json": "30ca07f73c6a999d468f7f9d43cf7c6ec4e93d0c25bcab20163294225d045ac6",
+    "runs/v1708_focal_dependency_resolution/ELF_DEPENDENCIES.json": "6f39416856af6d5c204b0e2cefd93fa0703d5435be0d86b9d88979cb3e61522b",
+    "runs/v1708_focal_dependency_resolution/POST_ROUND_STORAGE_BARRIER.json": "9b8ea8e510b4e1cb478ed767a1c337dfecd4a0a0a1d16c693ff073a5f2a1d897",
+    "runs/v1696_teb_author_build/source/cmake_modules/FindSUITESPARSE.cmake": "3f31835770231f06f0d64b474ddafc58cb0637cac64a8663b0e0e836059ed3c1",
+    "runs/v1696_teb_author_build/source/CMakeLists.txt": "10ed4eb3db28418e400e3a50dae078b50a396432db30753432d3426d1a1fc89c",
+    "experiments/v1708_focal_dependency_resolution/debian.py": "a2655ac73bdf731f5e11cf2f43263fc279938ab931709cb7063abe61cf631a8b",
+    "runs/v1710_native_build_materials/BATCHES_LOCKED.json": "bbfa85bd28b37f7451fd3e808621ce13fed4ef4c9036fa9e557d900963a3891e",
+    "runs/v1710_native_build_materials/rounds/01_boost_headers_01/RESULT.json": "f08d8f9320c01f8149364c2918c9adfa40887a4a096908a331aa3719768a90c7",
+    "runs/v1710_native_build_materials/rounds/01_boost_headers_01/RAW_PACKAGE_FAILURE_SUPPLEMENT.json": "56f5cb9fbef31954d2bc041558df58d4aafc01a8379eb5df86620f69a7eedd08",
+    "runs/v1710_native_build_materials/rounds/01_boost_headers_01/POST_ROUND_STORAGE_BARRIER.json": "55f31cf17bb1bd7e705902fbc3fd6cb424551ac837a8d09b13a6c73ce2a12b36",
+    "runs/v1712_root_member_materials/rounds/01_boost_headers_01/POST_ROUND_STORAGE_BARRIER.json": "04fe8e7b2031f6659ddba9e8e440d27ab24ca6ba8014defcb0e8197e8e726ec8",
+    "runs/v1712_root_member_materials/rounds/02_development_python_01/POST_ROUND_STORAGE_BARRIER.json": "8ade3a1610f86cd38c71c7fda5f3da3f8c3672b644366b3780b074b040f4bc5e",
+    "runs/v1712_root_member_materials/rounds/02_development_python_02/POST_ROUND_STORAGE_BARRIER.json": "994ce518eafc494ce5309d594deaf4fbb345ae17525a5b866e90338bb4f00d87",
+    "runs/v1712_root_member_materials/rounds/03_runtime_base_01/POST_ROUND_STORAGE_BARRIER.json": "78e25396b18c5b867313f3b4385dac54d7aa2cd479f468f0b2385832b6560417"
+  },
+  "dependency_edges": [
+    {
+      "parent": "ROOT",
+      "group": "libeigen3-dev",
+      "selected": "libeigen3-dev",
+      "version": "3.3.7-2",
+      "virtual_requested": "libeigen3-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libsuitesparse-dev",
+      "selected": "libsuitesparse-dev",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparse-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libboost-system-dev",
+      "selected": "libboost-system-dev",
+      "version": "1.71.0.0ubuntu2",
+      "virtual_requested": "libboost-system-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libboost-thread-dev",
+      "selected": "libboost-thread-dev",
+      "version": "1.71.0.0ubuntu2",
+      "virtual_requested": "libboost-thread-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libboost-graph-dev",
+      "selected": "libboost-graph-dev",
+      "version": "1.71.0.0ubuntu2",
+      "virtual_requested": "libboost-graph-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libboost-filesystem-dev",
+      "selected": "libboost-filesystem-dev",
+      "version": "1.71.0.0ubuntu2",
+      "virtual_requested": "libboost-filesystem-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libboost-regex-dev",
+      "selected": "libboost-regex-dev",
+      "version": "1.71.0.0ubuntu2",
+      "virtual_requested": "libboost-regex-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libboost-chrono-dev",
+      "selected": "libboost-chrono-dev",
+      "version": "1.71.0.0ubuntu2",
+      "virtual_requested": "libboost-chrono-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libconsole-bridge-dev",
+      "selected": "libconsole-bridge-dev",
+      "version": "0.4.4+dfsg-1build1",
+      "virtual_requested": "libconsole-bridge-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libtinyxml2-dev",
+      "selected": "libtinyxml2-dev",
+      "version": "7.0.0+dfsg-1build1",
+      "virtual_requested": "libtinyxml2-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "liborocos-kdl-dev",
+      "selected": "liborocos-kdl-dev",
+      "version": "1.4.0-7build2",
+      "virtual_requested": "liborocos-kdl-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "liblog4cxx-dev",
+      "selected": "liblog4cxx-dev",
+      "version": "0.10.0-15ubuntu2",
+      "virtual_requested": "liblog4cxx-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libapr1-dev",
+      "selected": "libapr1-dev",
+      "version": "1.6.5-1ubuntu1",
+      "virtual_requested": "libapr1-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libaprutil1-dev",
+      "selected": "libaprutil1-dev",
+      "version": "1.6.1-4ubuntu2",
+      "virtual_requested": "libaprutil1-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "python3-catkin-pkg-modules",
+      "selected": "python3-catkin-pkg-modules",
+      "version": "1.0.0-1",
+      "virtual_requested": "python3-catkin-pkg-modules",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "python3-rospkg-modules",
+      "selected": "python3-rospkg-modules",
+      "version": "1.6.0-1",
+      "virtual_requested": "python3-rospkg-modules",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "python3-empy",
+      "selected": "python3-empy",
+      "version": "3.3.2-5.1",
+      "virtual_requested": "python3-empy",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "python3-docutils",
+      "selected": "python3-docutils",
+      "version": "0.16+dfsg-2",
+      "virtual_requested": "python3-docutils",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "python3-yaml",
+      "selected": "python3-yaml",
+      "version": "5.3.1-1",
+      "virtual_requested": "python3-yaml",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "ROOT",
+      "group": "libpocofoundation62",
+      "selected": "libpocofoundation62",
+      "version": "1.9.2-3ubuntu3",
+      "virtual_requested": "libpocofoundation62",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libeigen3-dev",
+      "group": "pkg-config",
+      "selected": "pkg-config",
+      "version": "1.8.1-2build1",
+      "virtual_requested": "pkg-config",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libamd2 (= 1:5.7.1+dfsg-2)",
+      "selected": "libamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libcamd2 (= 1:5.7.1+dfsg-2)",
+      "selected": "libcamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libbtf1 (= 1:5.7.1+dfsg-2)",
+      "selected": "libbtf1",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libbtf1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libcolamd2 (= 1:5.7.1+dfsg-2)",
+      "selected": "libcolamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcolamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libccolamd2 (= 1:5.7.1+dfsg-2)",
+      "selected": "libccolamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libccolamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libcholmod3 (= 1:5.7.1+dfsg-2)",
+      "selected": "libcholmod3",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcholmod3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libcxsparse3 (= 1:5.7.1+dfsg-2)",
+      "selected": "libcxsparse3",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcxsparse3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libgraphblas3 (= 1:5.7.1+dfsg-2)",
+      "selected": "libgraphblas3",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libgraphblas3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libklu1 (= 1:5.7.1+dfsg-2)",
+      "selected": "libklu1",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libklu1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libldl2 (= 1:5.7.1+dfsg-2)",
+      "selected": "libldl2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libldl2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libmongoose2 (= 1:5.7.1+dfsg-2)",
+      "selected": "libmongoose2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libmongoose2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libumfpack5 (= 1:5.7.1+dfsg-2)",
+      "selected": "libumfpack5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libumfpack5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "librbio2 (= 1:5.7.1+dfsg-2)",
+      "selected": "librbio2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "librbio2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libspqr2 (= 1:5.7.1+dfsg-2)",
+      "selected": "libspqr2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libspqr2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libsuitesparseconfig5 (= 1:5.7.1+dfsg-2)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "libblas-dev | libblas.so",
+      "selected": "libblas-dev",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "libblas-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparse-dev",
+      "group": "liblapack-dev | liblapack.so",
+      "selected": "liblapack-dev",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "liblapack-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-system-dev",
+      "group": "libboost-system1.71-dev",
+      "selected": "libboost-system1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-system1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-thread-dev",
+      "group": "libboost-thread1.71-dev",
+      "selected": "libboost-thread1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-thread1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-graph-dev",
+      "group": "libboost-graph1.71-dev",
+      "selected": "libboost-graph1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-graph1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-filesystem-dev",
+      "group": "libboost-filesystem1.71-dev",
+      "selected": "libboost-filesystem1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-filesystem1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-regex-dev",
+      "group": "libboost-regex1.71-dev",
+      "selected": "libboost-regex1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-regex1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-chrono-dev",
+      "group": "libboost-chrono1.71-dev",
+      "selected": "libboost-chrono1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-chrono1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libconsole-bridge-dev",
+      "group": "libconsole-bridge0.4 (= 0.4.4+dfsg-1build1)",
+      "selected": "libconsole-bridge0.4",
+      "version": "0.4.4+dfsg-1build1",
+      "virtual_requested": "libconsole-bridge0.4",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libconsole-bridge-dev",
+      "group": "pkg-config",
+      "selected": "pkg-config",
+      "version": "1.8.1-2build1",
+      "virtual_requested": "pkg-config",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libtinyxml2-dev",
+      "group": "libtinyxml2-6a (= 7.0.0+dfsg-1build1)",
+      "selected": "libtinyxml2-6a",
+      "version": "7.0.0+dfsg-1build1",
+      "virtual_requested": "libtinyxml2-6a",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liborocos-kdl-dev",
+      "group": "liborocos-kdl1.4 (= 1.4.0-7build2)",
+      "selected": "liborocos-kdl1.4",
+      "version": "1.4.0-7build2",
+      "virtual_requested": "liborocos-kdl1.4",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liborocos-kdl-dev",
+      "group": "libeigen3-dev",
+      "selected": "libeigen3-dev",
+      "version": "3.3.7-2",
+      "virtual_requested": "libeigen3-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liblog4cxx-dev",
+      "group": "libapr1-dev",
+      "selected": "libapr1-dev",
+      "version": "1.6.5-1ubuntu1",
+      "virtual_requested": "libapr1-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liblog4cxx-dev",
+      "group": "libaprutil1-dev",
+      "selected": "libaprutil1-dev",
+      "version": "1.6.1-4ubuntu2",
+      "virtual_requested": "libaprutil1-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liblog4cxx-dev",
+      "group": "liblog4cxx10v5 (= 0.10.0-15ubuntu2)",
+      "selected": "liblog4cxx10v5",
+      "version": "0.10.0-15ubuntu2",
+      "virtual_requested": "liblog4cxx10v5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libapr1-dev",
+      "group": "libapr1 (= 1.6.5-1ubuntu1)",
+      "selected": "libapr1",
+      "version": "1.6.5-1ubuntu1",
+      "virtual_requested": "libapr1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libapr1-dev",
+      "group": "uuid-dev",
+      "selected": "uuid-dev",
+      "version": "2.34-0.1ubuntu9",
+      "virtual_requested": "uuid-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libapr1-dev",
+      "group": "libsctp-dev",
+      "selected": "libsctp-dev",
+      "version": "1.0.18+dfsg-1",
+      "virtual_requested": "libsctp-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libaprutil1-dev",
+      "group": "libaprutil1 (= 1.6.1-4ubuntu2)",
+      "selected": "libaprutil1",
+      "version": "1.6.1-4ubuntu2",
+      "virtual_requested": "libaprutil1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libaprutil1-dev",
+      "group": "libldap2-dev",
+      "selected": "libldap2-dev",
+      "version": "2.4.49+dfsg-2ubuntu1",
+      "virtual_requested": "libldap2-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libaprutil1-dev",
+      "group": "libexpat1-dev",
+      "selected": "libexpat1-dev",
+      "version": "2.2.9-1build1",
+      "virtual_requested": "libexpat1-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libaprutil1-dev",
+      "group": "libapr1-dev (>= 1.2.2-1)",
+      "selected": "libapr1-dev",
+      "version": "1.6.5-1ubuntu1",
+      "virtual_requested": "libapr1-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-catkin-pkg-modules",
+      "group": "python3:any (>= 3.6~)",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-catkin-pkg-modules",
+      "group": "python3-dateutil",
+      "selected": "python3-dateutil",
+      "version": "2.7.3-3ubuntu1",
+      "virtual_requested": "python3-dateutil",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-catkin-pkg-modules",
+      "group": "python3-docutils",
+      "selected": "python3-docutils",
+      "version": "0.16+dfsg-2",
+      "virtual_requested": "python3-docutils",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-catkin-pkg-modules",
+      "group": "python3-pyparsing",
+      "selected": "python3-pyparsing",
+      "version": "2.4.6-1",
+      "virtual_requested": "python3-pyparsing",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-rospkg-modules",
+      "group": "python3:any (>= 3.6~)",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-rospkg-modules",
+      "group": "python3-catkin-pkg-modules",
+      "selected": "python3-catkin-pkg-modules",
+      "version": "1.0.0-1",
+      "virtual_requested": "python3-catkin-pkg-modules",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-rospkg-modules",
+      "group": "python3-distro (>= 1.4.0) | python3 (<< 3.8)",
+      "selected": "python3-distro",
+      "version": "1.4.0-1",
+      "virtual_requested": "python3-distro",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-rospkg-modules",
+      "group": "python3-yaml",
+      "selected": "python3-yaml",
+      "version": "5.3.1-1",
+      "virtual_requested": "python3-yaml",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-rospkg-modules",
+      "group": "lsb-release",
+      "selected": "lsb-release",
+      "version": "11.1.0ubuntu2",
+      "virtual_requested": "lsb-release",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-empy",
+      "group": "python3:any",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-docutils",
+      "group": "docutils-common (= 0.16+dfsg-2)",
+      "selected": "docutils-common",
+      "version": "0.16+dfsg-2",
+      "virtual_requested": "docutils-common",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-docutils",
+      "group": "python3-roman",
+      "selected": "python3-roman",
+      "version": "2.0.0-3build1",
+      "virtual_requested": "python3-roman",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-docutils",
+      "group": "python3:any",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-yaml",
+      "group": "python3 (<< 3.9)",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-yaml",
+      "group": "python3 (>= 3.8~)",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-yaml",
+      "group": "python3:any",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-yaml",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "python3-yaml",
+      "group": "libyaml-0-2",
+      "selected": "libyaml-0-2",
+      "version": "0.2.2-1",
+      "virtual_requested": "libyaml-0-2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpocofoundation62",
+      "group": "libc6 (>= 2.17)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libpocofoundation62",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libpocofoundation62",
+      "group": "libpcre3",
+      "selected": "libpcre3",
+      "version": "2:8.39-12build1",
+      "virtual_requested": "libpcre3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpocofoundation62",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libpocofoundation62",
+      "group": "zlib1g (>= 1:1.1.4)",
+      "selected": "zlib1g",
+      "version": "1:1.2.11.dfsg-2ubuntu1",
+      "virtual_requested": "zlib1g",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libamd2",
+      "group": "libc6 (>= 2.2.5)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libamd2",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcamd2",
+      "group": "libc6 (>= 2.2.5)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libcamd2",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcolamd2",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libcolamd2",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libccolamd2",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libccolamd2",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libamd2 (>= 1:4.5.2)",
+      "selected": "libamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libblas3 | libblas.so.3",
+      "selected": "libblas3",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "libblas3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libc6 (>= 2.7)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libcamd2 (>= 1:4.5.2)",
+      "selected": "libcamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libccolamd2 (>= 1:4.5.2)",
+      "selected": "libccolamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libccolamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libcolamd2 (>= 1:4.5.2)",
+      "selected": "libcolamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcolamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libgomp1 (>= 4.9)",
+      "selected": "libgomp1",
+      "version": "10-20200411-0ubuntu1",
+      "virtual_requested": "libgomp1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "liblapack3 | liblapack.so.3",
+      "selected": "liblapack3",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "liblapack3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libmetis5",
+      "selected": "libmetis5",
+      "version": "5.1.0.dfsg-5",
+      "virtual_requested": "libmetis5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcholmod3",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcxsparse3",
+      "group": "libc6 (>= 2.7)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgraphblas3",
+      "group": "libc6 (>= 2.29)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgraphblas3",
+      "group": "libgomp1 (>= 6)",
+      "selected": "libgomp1",
+      "version": "10-20200411-0ubuntu1",
+      "virtual_requested": "libgomp1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libklu1",
+      "group": "libamd2 (>= 1:4.5.2)",
+      "selected": "libamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libklu1",
+      "group": "libbtf1 (>= 1:4.5.2)",
+      "selected": "libbtf1",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libbtf1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libklu1",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libklu1",
+      "group": "libcolamd2 (>= 1:4.5.2)",
+      "selected": "libcolamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcolamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libklu1",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libmongoose2",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libmongoose2",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libmongoose2",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libmongoose2",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libumfpack5",
+      "group": "libamd2 (>= 1:4.5.2)",
+      "selected": "libamd2",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libamd2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libumfpack5",
+      "group": "libblas3 | libblas.so.3",
+      "selected": "libblas3",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "libblas3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libumfpack5",
+      "group": "libc6 (>= 2.29)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libumfpack5",
+      "group": "libcholmod3 (>= 1:4.5.2)",
+      "selected": "libcholmod3",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcholmod3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libumfpack5",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "librbio2",
+      "group": "libc6 (>= 2.7)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "librbio2",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libspqr2",
+      "group": "libblas3 | libblas.so.3",
+      "selected": "libblas3",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "libblas3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libspqr2",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libspqr2",
+      "group": "libcholmod3 (>= 1:4.5.2)",
+      "selected": "libcholmod3",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libcholmod3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libspqr2",
+      "group": "libgcc-s1 (>= 4.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libspqr2",
+      "group": "liblapack3 | liblapack.so.3",
+      "selected": "liblapack3",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "liblapack3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libspqr2",
+      "group": "libsuitesparseconfig5 (>= 1:5.0.0)",
+      "selected": "libsuitesparseconfig5",
+      "version": "1:5.7.1+dfsg-2",
+      "virtual_requested": "libsuitesparseconfig5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsuitesparseconfig5",
+      "group": "libc6 (>= 2.17)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libblas-dev",
+      "group": "libblas3 (= 3.9.0-1build1)",
+      "selected": "libblas3",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "libblas3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liblapack-dev",
+      "group": "liblapack3 (= 3.9.0-1build1)",
+      "selected": "liblapack3",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "liblapack3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liblapack-dev",
+      "group": "libblas-dev | libblas.so",
+      "selected": "libblas-dev",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "libblas-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-system1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-system1.71-dev",
+      "group": "libboost-system1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-system1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-system1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-thread1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-thread1.71-dev",
+      "group": "libboost-atomic1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-atomic1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-atomic1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-thread1.71-dev",
+      "group": "libboost-chrono1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-chrono1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-chrono1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-thread1.71-dev",
+      "group": "libboost-date-time1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-date-time1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-date-time1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-thread1.71-dev",
+      "group": "libboost-system1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-system1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-system1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-thread1.71-dev",
+      "group": "libboost-thread1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-thread1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-thread1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-graph1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-graph1.71-dev",
+      "group": "libboost-graph1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-graph1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-graph1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-graph1.71-dev",
+      "group": "libboost-regex1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-regex1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-regex1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-graph1.71-dev",
+      "group": "libboost-serialization1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-serialization1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-serialization1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-graph1.71-dev",
+      "group": "libboost-test1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-test1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-test1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-filesystem1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-filesystem1.71-dev",
+      "group": "libboost-filesystem1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-filesystem1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-filesystem1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-filesystem1.71-dev",
+      "group": "libboost-system1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-system1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-system1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-regex1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-regex1.71-dev",
+      "group": "libboost-regex1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-regex1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-regex1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-regex1.71-dev",
+      "group": "libicu-dev",
+      "selected": "libicu-dev",
+      "version": "66.1-2ubuntu2",
+      "virtual_requested": "libicu-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-chrono1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-chrono1.71-dev",
+      "group": "libboost-chrono1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-chrono1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-chrono1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libconsole-bridge0.4",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libconsole-bridge0.4",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libconsole-bridge0.4",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libtinyxml2-6a",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libtinyxml2-6a",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libtinyxml2-6a",
+      "group": "libstdc++6 (>= 5)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liborocos-kdl1.4",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liborocos-kdl1.4",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liborocos-kdl1.4",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liblog4cxx10v5",
+      "group": "libapr1 (>= 1.4.8-2~)",
+      "selected": "libapr1",
+      "version": "1.6.5-1ubuntu1",
+      "virtual_requested": "libapr1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liblog4cxx10v5",
+      "group": "libaprutil1 (>= 1.2.7+dfsg)",
+      "selected": "libaprutil1",
+      "version": "1.6.1-4ubuntu2",
+      "virtual_requested": "libaprutil1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liblog4cxx10v5",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liblog4cxx10v5",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liblog4cxx10v5",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libapr1",
+      "group": "libc6 (>= 2.15)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libapr1",
+      "group": "libuuid1 (>= 2.16)",
+      "selected": "libuuid1",
+      "version": "2.34-0.1ubuntu9",
+      "virtual_requested": "libuuid1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "uuid-dev",
+      "group": "libc6-dev | libc-dev",
+      "selected": "libc6-dev",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6-dev",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "uuid-dev",
+      "group": "libuuid1 (= 2.34-0.1ubuntu9)",
+      "selected": "libuuid1",
+      "version": "2.34-0.1ubuntu9",
+      "virtual_requested": "libuuid1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsctp-dev",
+      "group": "libsctp1 (= 1.0.18+dfsg-1)",
+      "selected": "libsctp1",
+      "version": "1.0.18+dfsg-1",
+      "virtual_requested": "libsctp1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsctp-dev",
+      "group": "libc6-dev | libc-dev",
+      "selected": "libc6-dev",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6-dev",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libaprutil1",
+      "group": "libapr1 (>= 1.6.2)",
+      "selected": "libapr1",
+      "version": "1.6.5-1ubuntu1",
+      "virtual_requested": "libapr1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libaprutil1",
+      "group": "libc6 (>= 2.25)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libaprutil1",
+      "group": "libdb5.3",
+      "selected": "libdb5.3",
+      "version": "5.3.28+dfsg1-0.6ubuntu2",
+      "virtual_requested": "libdb5.3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libaprutil1",
+      "group": "libexpat1 (>= 2.0.1)",
+      "selected": "libexpat1",
+      "version": "2.2.9-1build1",
+      "virtual_requested": "libexpat1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libaprutil1",
+      "group": "libgdbm6 (>= 1.16)",
+      "selected": "libgdbm6",
+      "version": "1.18.1-5",
+      "virtual_requested": "libgdbm6",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libaprutil1",
+      "group": "libssl1.1 (>= 1.1.0)",
+      "selected": "libssl1.1",
+      "version": "1.1.1f-1ubuntu2",
+      "virtual_requested": "libssl1.1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libldap2-dev",
+      "group": "libldap-2.4-2 (= 2.4.49+dfsg-2ubuntu1)",
+      "selected": "libldap-2.4-2",
+      "version": "2.4.49+dfsg-2ubuntu1",
+      "virtual_requested": "libldap-2.4-2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libexpat1-dev",
+      "group": "libexpat1 (= 2.2.9-1build1)",
+      "selected": "libexpat1",
+      "version": "2.2.9-1build1",
+      "virtual_requested": "libexpat1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libexpat1-dev",
+      "group": "libc6-dev | libc-dev",
+      "selected": "libc6-dev",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6-dev",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "python3",
+      "group": "python3-minimal (= 3.8.2-0ubuntu2)",
+      "selected": "python3-minimal",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3-minimal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3",
+      "group": "python3.8 (>= 3.8.2-1~)",
+      "selected": "python3.8",
+      "version": "3.8.2-1ubuntu1",
+      "virtual_requested": "python3.8",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3",
+      "group": "libpython3-stdlib (= 3.8.2-0ubuntu2)",
+      "selected": "libpython3-stdlib",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "libpython3-stdlib",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-dateutil",
+      "group": "python3-six (>= 1.5)",
+      "selected": "python3-six",
+      "version": "1.14.0-2",
+      "virtual_requested": "python3-six",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-dateutil",
+      "group": "python3:any (>= 3.2~)",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-dateutil",
+      "group": "tzdata",
+      "selected": "tzdata",
+      "version": "2026e-0ubuntu0.24.04.1",
+      "virtual_requested": "tzdata",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "python3-pyparsing",
+      "group": "python3:any",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-distro",
+      "group": "lsb-release",
+      "selected": "lsb-release",
+      "version": "11.1.0ubuntu2",
+      "virtual_requested": "lsb-release",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-distro",
+      "group": "python3:any",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "lsb-release",
+      "group": "python3:any",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "lsb-release",
+      "group": "distro-info-data",
+      "selected": "distro-info-data",
+      "version": "0.43ubuntu1",
+      "virtual_requested": "distro-info-data",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "docutils-common",
+      "group": "sgml-base (>= 1.28)",
+      "selected": "sgml-base",
+      "version": "1.29.1",
+      "virtual_requested": "sgml-base",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "docutils-common",
+      "group": "xml-core (>= 0.14)",
+      "selected": "xml-core",
+      "version": "0.18+nmu1",
+      "virtual_requested": "xml-core",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-roman",
+      "group": "python3:any",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libyaml-0-2",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libpcre3",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "zlib1g",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libblas3",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgomp1",
+      "group": "gcc-10-base (= 10-20200411-0ubuntu1)",
+      "selected": "gcc-10-base",
+      "version": "10-20200411-0ubuntu1",
+      "virtual_requested": "gcc-10-base",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgomp1",
+      "group": "libc6 (>= 2.17)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liblapack3",
+      "group": "libblas3 | libblas.so.3",
+      "selected": "libblas3",
+      "version": "3.9.0-1build1",
+      "virtual_requested": "libblas3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "liblapack3",
+      "group": "libc6 (>= 2.29)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liblapack3",
+      "group": "libgcc-s1 (>= 4.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liblapack3",
+      "group": "libgfortran5 (>= 8)",
+      "selected": "libgfortran5",
+      "version": "10-20200411-0ubuntu1",
+      "virtual_requested": "libgfortran5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libmetis5",
+      "group": "libc6 (>= 2.11)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost1.71-dev",
+      "group": "libstdc++-dev",
+      "selected": "libstdc++-dev",
+      "version": "13.3.0-6ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++-dev",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-atomic1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-atomic1.71-dev",
+      "group": "libboost-atomic1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-atomic1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-atomic1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-date-time1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-date-time1.71-dev",
+      "group": "libboost-date-time1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-date-time1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-date-time1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-date-time1.71-dev",
+      "group": "libboost-serialization1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-serialization1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-serialization1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-thread1.71.0",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-thread1.71.0",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-thread1.71.0",
+      "group": "libstdc++6 (>= 9)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-graph1.71.0",
+      "group": "libboost-regex1.71.0-icu66",
+      "selected": "libboost-regex1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-regex1.71.0-icu66",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-graph1.71.0",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-graph1.71.0",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-graph1.71.0",
+      "group": "libstdc++6 (>= 9)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-serialization1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-serialization1.71-dev",
+      "group": "libboost-serialization1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-serialization1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-serialization1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-test1.71-dev",
+      "group": "libboost1.71-dev (= 1.71.0-6ubuntu6)",
+      "selected": "libboost1.71-dev",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost1.71-dev",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-test1.71-dev",
+      "group": "libboost-test1.71.0 (= 1.71.0-6ubuntu6)",
+      "selected": "libboost-test1.71.0",
+      "version": "1.71.0-6ubuntu6",
+      "virtual_requested": "libboost-test1.71.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-filesystem1.71.0",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-filesystem1.71.0",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-filesystem1.71.0",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-regex1.71.0",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-regex1.71.0",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-regex1.71.0",
+      "group": "libicu66 (>= 66.1-1~)",
+      "selected": "libicu66",
+      "version": "66.1-2ubuntu2",
+      "virtual_requested": "libicu66",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-regex1.71.0",
+      "group": "libstdc++6 (>= 9)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libicu-dev",
+      "group": "libicu66 (= 66.1-2ubuntu2)",
+      "selected": "libicu66",
+      "version": "66.1-2ubuntu2",
+      "virtual_requested": "libicu66",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libicu-dev",
+      "group": "icu-devtools (>= 66.1-2ubuntu2)",
+      "selected": "icu-devtools",
+      "version": "66.1-2ubuntu2",
+      "virtual_requested": "icu-devtools",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libicu-dev",
+      "group": "libc6-dev | libc-dev",
+      "selected": "libc6-dev",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6-dev",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-chrono1.71.0",
+      "group": "libc6 (>= 2.17)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-chrono1.71.0",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-chrono1.71.0",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libuuid1",
+      "group": "libc6 (>= 2.25)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libsctp1",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libdb5.3",
+      "group": "libc6 (>= 2.17)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libexpat1",
+      "group": "libc6 (>= 2.25)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgdbm6",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libssl1.1",
+      "group": "libc6 (>= 2.25)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libssl1.1",
+      "group": "debconf (>= 0.5) | debconf-2.0",
+      "selected": "debconf",
+      "version": "1.5.86ubuntu1",
+      "virtual_requested": "debconf",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libldap-2.4-2",
+      "group": "libc6 (>= 2.28)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libldap-2.4-2",
+      "group": "libgnutls30 (>= 3.6.10)",
+      "selected": "libgnutls30",
+      "version": "3.6.13-2ubuntu1",
+      "virtual_requested": "libgnutls30",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libldap-2.4-2",
+      "group": "libgssapi3-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libgssapi3-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libgssapi3-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libldap-2.4-2",
+      "group": "libsasl2-2 (>= 2.1.27+dfsg)",
+      "selected": "libsasl2-2",
+      "version": "2.1.27+dfsg-2",
+      "virtual_requested": "libsasl2-2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libldap-2.4-2",
+      "group": "libldap-common",
+      "selected": "libldap-common",
+      "version": "2.4.49+dfsg-2ubuntu1",
+      "virtual_requested": "libldap-common",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-minimal",
+      "group": "python3.8-minimal (>= 3.8.2-1~)",
+      "selected": "python3.8-minimal",
+      "version": "3.8.2-1ubuntu1",
+      "virtual_requested": "python3.8-minimal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-minimal",
+      "group": "dpkg (>= 1.13.20)",
+      "selected": "dpkg",
+      "version": "1.22.6ubuntu6.6",
+      "virtual_requested": "dpkg",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "python3.8",
+      "group": "python3.8-minimal (= 3.8.2-1ubuntu1)",
+      "selected": "python3.8-minimal",
+      "version": "3.8.2-1ubuntu1",
+      "virtual_requested": "python3.8-minimal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3.8",
+      "group": "libpython3.8-stdlib (= 3.8.2-1ubuntu1)",
+      "selected": "libpython3.8-stdlib",
+      "version": "3.8.2-1ubuntu1",
+      "virtual_requested": "libpython3.8-stdlib",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3.8",
+      "group": "mime-support",
+      "selected": "mime-support",
+      "version": "3.64ubuntu1",
+      "virtual_requested": "mime-support",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3-stdlib",
+      "group": "libpython3.8-stdlib (>= 3.8.2-1~)",
+      "selected": "libpython3.8-stdlib",
+      "version": "3.8.2-1ubuntu1",
+      "virtual_requested": "libpython3.8-stdlib",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3-six",
+      "group": "python3:any",
+      "selected": "python3",
+      "version": "3.8.2-0ubuntu2",
+      "virtual_requested": "python3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "sgml-base",
+      "group": "dpkg (>= 1.16.4)",
+      "selected": "dpkg",
+      "version": "1.22.6ubuntu6.6",
+      "virtual_requested": "dpkg",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "xml-core",
+      "group": "sed (>= 4.1.2-8)",
+      "selected": "sed",
+      "version": "4.9-2ubuntu0.24.04.1",
+      "virtual_requested": "sed",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "xml-core",
+      "group": "sgml-base (>= 1.28)",
+      "selected": "sgml-base",
+      "version": "1.29.1",
+      "virtual_requested": "sgml-base",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgfortran5",
+      "group": "gcc-10-base (= 10-20200411-0ubuntu1)",
+      "selected": "gcc-10-base",
+      "version": "10-20200411-0ubuntu1",
+      "virtual_requested": "gcc-10-base",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgfortran5",
+      "group": "libc6 (>= 2.29)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgfortran5",
+      "group": "libgcc-s1 (>= 4.3)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgfortran5",
+      "group": "libquadmath0 (>= 4.6)",
+      "selected": "libquadmath0",
+      "version": "10-20200411-0ubuntu1",
+      "virtual_requested": "libquadmath0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libboost-date-time1.71.0",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-date-time1.71.0",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-date-time1.71.0",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-serialization1.71.0",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-serialization1.71.0",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-serialization1.71.0",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-test1.71.0",
+      "group": "libc6 (>= 2.17)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-test1.71.0",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libboost-test1.71.0",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libicu66",
+      "group": "libc6 (>= 2.29)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libicu66",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libicu66",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libicu66",
+      "group": "tzdata (>> 2019c-3ubuntu1~)",
+      "selected": "tzdata",
+      "version": "2026e-0ubuntu0.24.04.1",
+      "virtual_requested": "tzdata",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "icu-devtools",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "icu-devtools",
+      "group": "libgcc-s1 (>= 3.0)",
+      "selected": "libgcc-s1",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libgcc-s1",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "icu-devtools",
+      "group": "libicu66 (>= 66.1-1~)",
+      "selected": "libicu66",
+      "version": "66.1-2ubuntu2",
+      "virtual_requested": "libicu66",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "icu-devtools",
+      "group": "libstdc++6 (>= 5.2)",
+      "selected": "libstdc++6",
+      "version": "14.2.0-4ubuntu2~24.04.1",
+      "virtual_requested": "libstdc++6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgnutls30",
+      "group": "libgmp10 (>= 2:6.0.0)",
+      "selected": "libgmp10",
+      "version": "2:6.2.0+dfsg-4",
+      "virtual_requested": "libgmp10",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgnutls30",
+      "group": "libc6 (>= 2.25)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgnutls30",
+      "group": "libhogweed5",
+      "selected": "libhogweed5",
+      "version": "3.5.1+really3.5.1-2",
+      "virtual_requested": "libhogweed5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgnutls30",
+      "group": "libidn2-0 (>= 2.0.0)",
+      "selected": "libidn2-0",
+      "version": "2.2.0-2",
+      "virtual_requested": "libidn2-0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgnutls30",
+      "group": "libnettle7",
+      "selected": "libnettle7",
+      "version": "3.5.1+really3.5.1-2",
+      "virtual_requested": "libnettle7",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgnutls30",
+      "group": "libp11-kit0 (>= 0.23.18.1)",
+      "selected": "libp11-kit0",
+      "version": "0.23.20-1build1",
+      "virtual_requested": "libp11-kit0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgnutls30",
+      "group": "libtasn1-6 (>= 4.14)",
+      "selected": "libtasn1-6",
+      "version": "4.16.0-2",
+      "virtual_requested": "libtasn1-6",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgnutls30",
+      "group": "libunistring2 (>= 0.9.7)",
+      "selected": "libunistring2",
+      "version": "0.9.10-2",
+      "virtual_requested": "libunistring2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgssapi3-heimdal",
+      "group": "libasn1-8-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libasn1-8-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libasn1-8-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgssapi3-heimdal",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgssapi3-heimdal",
+      "group": "libcom-err2 (>= 1.43.9)",
+      "selected": "libcom-err2",
+      "version": "1.45.5-2ubuntu1",
+      "virtual_requested": "libcom-err2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgssapi3-heimdal",
+      "group": "libhcrypto4-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libhcrypto4-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libhcrypto4-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgssapi3-heimdal",
+      "group": "libheimntlm0-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libheimntlm0-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libheimntlm0-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgssapi3-heimdal",
+      "group": "libkrb5-26-heimdal (>= 1.6~git20131117)",
+      "selected": "libkrb5-26-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libkrb5-26-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libgssapi3-heimdal",
+      "group": "libroken18-heimdal (>= 1.7~git20150920)",
+      "selected": "libroken18-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libroken18-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsasl2-2",
+      "group": "libsasl2-modules-db (>= 2.1.27+dfsg-2)",
+      "selected": "libsasl2-modules-db",
+      "version": "2.1.27+dfsg-2",
+      "virtual_requested": "libsasl2-modules-db",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsasl2-2",
+      "group": "libc6 (>= 2.15)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "python3.8-minimal",
+      "group": "libc6 (>= 2.29)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "python3.8-minimal",
+      "group": "libpython3.8-minimal (= 3.8.2-1ubuntu1)",
+      "selected": "libpython3.8-minimal",
+      "version": "3.8.2-1ubuntu1",
+      "virtual_requested": "libpython3.8-minimal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3.8-minimal",
+      "group": "libexpat1 (>= 2.1~beta3)",
+      "selected": "libexpat1",
+      "version": "2.2.9-1build1",
+      "virtual_requested": "libexpat1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "python3.8-minimal",
+      "group": "zlib1g (>= 1:1.2.0)",
+      "selected": "zlib1g",
+      "version": "1:1.2.11.dfsg-2ubuntu1",
+      "virtual_requested": "zlib1g",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libpython3.8-minimal (= 3.8.2-1ubuntu1)",
+      "selected": "libpython3.8-minimal",
+      "version": "3.8.2-1ubuntu1",
+      "virtual_requested": "libpython3.8-minimal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "mime-support",
+      "selected": "mime-support",
+      "version": "3.64ubuntu1",
+      "virtual_requested": "mime-support",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libbz2-1.0",
+      "selected": "libbz2-1.0",
+      "version": "1.0.8-2",
+      "virtual_requested": "libbz2-1.0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libc6 (>= 2.28)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libcrypt1 (>= 1:4.1.0)",
+      "selected": "libcrypt1",
+      "version": "1:4.4.10-10ubuntu4",
+      "virtual_requested": "libcrypt1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libdb5.3",
+      "selected": "libdb5.3",
+      "version": "5.3.28+dfsg1-0.6ubuntu2",
+      "virtual_requested": "libdb5.3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libffi7 (>= 3.3~20180313)",
+      "selected": "libffi7",
+      "version": "3.3-4",
+      "virtual_requested": "libffi7",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "liblzma5 (>= 5.1.1alpha+20120614)",
+      "selected": "liblzma5",
+      "version": "5.2.4-1",
+      "virtual_requested": "liblzma5",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libmpdec2",
+      "selected": "libmpdec2",
+      "version": "2.4.2-3",
+      "virtual_requested": "libmpdec2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libncursesw6 (>= 6)",
+      "selected": "libncursesw6",
+      "version": "6.2-0ubuntu2",
+      "virtual_requested": "libncursesw6",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libreadline8 (>= 7.0~beta)",
+      "selected": "libreadline8",
+      "version": "8.0-4",
+      "virtual_requested": "libreadline8",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libsqlite3-0 (>= 3.7.15)",
+      "selected": "libsqlite3-0",
+      "version": "3.31.1-4",
+      "virtual_requested": "libsqlite3-0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libtinfo6 (>= 6)",
+      "selected": "libtinfo6",
+      "version": "6.2-0ubuntu2",
+      "virtual_requested": "libtinfo6",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-stdlib",
+      "group": "libuuid1 (>= 2.20.1)",
+      "selected": "libuuid1",
+      "version": "2.34-0.1ubuntu9",
+      "virtual_requested": "libuuid1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libquadmath0",
+      "group": "gcc-10-base (= 10-20200411-0ubuntu1)",
+      "selected": "gcc-10-base",
+      "version": "10-20200411-0ubuntu1",
+      "virtual_requested": "gcc-10-base",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libquadmath0",
+      "group": "libc6 (>= 2.23)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libgmp10",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libhogweed5",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libhogweed5",
+      "group": "libgmp10 (>= 2:6.0.0)",
+      "selected": "libgmp10",
+      "version": "2:6.2.0+dfsg-4",
+      "virtual_requested": "libgmp10",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhogweed5",
+      "group": "libnettle7 (= 3.5.1+really3.5.1-2)",
+      "selected": "libnettle7",
+      "version": "3.5.1+really3.5.1-2",
+      "virtual_requested": "libnettle7",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libidn2-0",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libidn2-0",
+      "group": "libunistring2 (>= 0.9.7)",
+      "selected": "libunistring2",
+      "version": "0.9.10-2",
+      "virtual_requested": "libunistring2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libnettle7",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libp11-kit0",
+      "group": "libc6 (>= 2.26)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libp11-kit0",
+      "group": "libffi7 (>= 3.3~20180313)",
+      "selected": "libffi7",
+      "version": "3.3-4",
+      "virtual_requested": "libffi7",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libtasn1-6",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libunistring2",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libasn1-8-heimdal",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libasn1-8-heimdal",
+      "group": "libcom-err2 (>= 1.43.9)",
+      "selected": "libcom-err2",
+      "version": "1.45.5-2ubuntu1",
+      "virtual_requested": "libcom-err2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libasn1-8-heimdal",
+      "group": "libroken18-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libroken18-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libroken18-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libcom-err2",
+      "group": "libc6 (>= 2.17)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libhcrypto4-heimdal",
+      "group": "libasn1-8-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libasn1-8-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libasn1-8-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhcrypto4-heimdal",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libhcrypto4-heimdal",
+      "group": "libheimbase1-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libheimbase1-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libheimbase1-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhcrypto4-heimdal",
+      "group": "libroken18-heimdal (>= 1.7~git20150920)",
+      "selected": "libroken18-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libroken18-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libheimntlm0-heimdal",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libheimntlm0-heimdal",
+      "group": "libhcrypto4-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libhcrypto4-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libhcrypto4-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libheimntlm0-heimdal",
+      "group": "libkrb5-26-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libkrb5-26-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libkrb5-26-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libheimntlm0-heimdal",
+      "group": "libroken18-heimdal (>= 1.7~git20150920)",
+      "selected": "libroken18-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libroken18-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libheimntlm0-heimdal",
+      "group": "libwind0-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libwind0-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libwind0-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libasn1-8-heimdal (>= 1.6~git20131117)",
+      "selected": "libasn1-8-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libasn1-8-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libc6 (>= 2.15)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libcom-err2 (>= 1.43.9)",
+      "selected": "libcom-err2",
+      "version": "1.45.5-2ubuntu1",
+      "virtual_requested": "libcom-err2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libcrypt1 (>= 1:4.1.0)",
+      "selected": "libcrypt1",
+      "version": "1:4.4.10-10ubuntu4",
+      "virtual_requested": "libcrypt1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libhcrypto4-heimdal (>= 1.7~git20161112)",
+      "selected": "libhcrypto4-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libhcrypto4-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libheimbase1-heimdal (>= 1.6~git20131117)",
+      "selected": "libheimbase1-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libheimbase1-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libhx509-5-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libhx509-5-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libhx509-5-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libroken18-heimdal (>= 1.7~git20160418)",
+      "selected": "libroken18-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libroken18-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libsqlite3-0 (>= 3.5.9)",
+      "selected": "libsqlite3-0",
+      "version": "3.31.1-4",
+      "virtual_requested": "libsqlite3-0",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libkrb5-26-heimdal",
+      "group": "libwind0-heimdal (>= 1.6~git20120311)",
+      "selected": "libwind0-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libwind0-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libroken18-heimdal",
+      "group": "libc6 (>= 2.16)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libroken18-heimdal",
+      "group": "libcrypt1 (>= 1:4.1.0)",
+      "selected": "libcrypt1",
+      "version": "1:4.4.10-10ubuntu4",
+      "virtual_requested": "libcrypt1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsasl2-modules-db",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libsasl2-modules-db",
+      "group": "libdb5.3",
+      "selected": "libdb5.3",
+      "version": "5.3.28+dfsg1-0.6ubuntu2",
+      "virtual_requested": "libdb5.3",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libpython3.8-minimal",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libpython3.8-minimal",
+      "group": "libssl1.1 (>= 1.1.1)",
+      "selected": "libssl1.1",
+      "version": "1.1.1f-1ubuntu2",
+      "virtual_requested": "libssl1.1",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libbz2-1.0",
+      "group": "libc6 (>= 2.4)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libcrypt1",
+      "group": "libc6 (>= 2.25)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libffi7",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "liblzma5",
+      "group": "libc6 (>= 2.17)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libmpdec2",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libncursesw6",
+      "group": "libtinfo6 (= 6.2-0ubuntu2)",
+      "selected": "libtinfo6",
+      "version": "6.2-0ubuntu2",
+      "virtual_requested": "libtinfo6",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libncursesw6",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libreadline8",
+      "group": "readline-common",
+      "selected": "readline-common",
+      "version": "8.0-4",
+      "virtual_requested": "readline-common",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libreadline8",
+      "group": "libc6 (>= 2.15)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libreadline8",
+      "group": "libtinfo6 (>= 6)",
+      "selected": "libtinfo6",
+      "version": "6.2-0ubuntu2",
+      "virtual_requested": "libtinfo6",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libsqlite3-0",
+      "group": "libc6 (>= 2.29)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libtinfo6",
+      "group": "libc6 (>= 2.16)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libheimbase1-heimdal",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libwind0-heimdal",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libwind0-heimdal",
+      "group": "libcom-err2 (>= 1.43.9)",
+      "selected": "libcom-err2",
+      "version": "1.45.5-2ubuntu1",
+      "virtual_requested": "libcom-err2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libwind0-heimdal",
+      "group": "libroken18-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libroken18-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libroken18-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhx509-5-heimdal",
+      "group": "libasn1-8-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libasn1-8-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libasn1-8-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhx509-5-heimdal",
+      "group": "libc6 (>= 2.14)",
+      "selected": "libc6",
+      "version": "2.39-0ubuntu8.12",
+      "virtual_requested": "libc6",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    },
+    {
+      "parent": "libhx509-5-heimdal",
+      "group": "libcom-err2 (>= 1.43.9)",
+      "selected": "libcom-err2",
+      "version": "1.45.5-2ubuntu1",
+      "virtual_requested": "libcom-err2",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhx509-5-heimdal",
+      "group": "libhcrypto4-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libhcrypto4-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libhcrypto4-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhx509-5-heimdal",
+      "group": "libheimbase1-heimdal (>= 1.6~git20131117)",
+      "selected": "libheimbase1-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libheimbase1-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhx509-5-heimdal",
+      "group": "libroken18-heimdal (>= 1.7~git20150920)",
+      "selected": "libroken18-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libroken18-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "libhx509-5-heimdal",
+      "group": "libwind0-heimdal (>= 1.4.0+git20110226)",
+      "selected": "libwind0-heimdal",
+      "version": "7.7.0+dfsg-1ubuntu1",
+      "virtual_requested": "libwind0-heimdal",
+      "satisfied_by": "EXACT_NATIVE_PACKAGE"
+    },
+    {
+      "parent": "readline-common",
+      "group": "dpkg (>= 1.15.4) | install-info",
+      "selected": "dpkg",
+      "version": "1.22.6ubuntu6.6",
+      "virtual_requested": "dpkg",
+      "satisfied_by": "HOST_BUILD_TOOLCHAIN"
+    }
+  ],
+  "omitted_graphblas_package": [
+    {
+      "Package": "libgraphblas3",
+      "Version": "1:5.7.1+dfsg-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/s/suitesparse/libgraphblas3_5.7.1+dfsg-2_amd64.deb",
+      "Size": "3770096",
+      "SHA256": "86524951e1e1e1e284a66e1fe4564477970cd6aac0633a11ad885792e493fa1b",
+      "Installed-Size": "50801",
+      "Depends": "libc6 (>= 2.29), libgomp1 (>= 6)",
+      "source": "FOCAL_MAIN",
+      "base_url": "https://mirrors.tuna.tsinghua.edu.cn/ubuntu"
+    }
+  ],
+  "omission_reason": "Original FindSUITESPARSE shared-library list and all92ROS ELF dependencies have no GraphBLAS requirement; packaging installation is not claimed.",
+  "deferred_image_and_other_optional_ROS_dependencies": "33externalSONAME inventory remains a superset; defer image/GL/Pythonextension-specific payloads until actual unchanged author target link evidence requires them.",
+  "selected_file_policy": "Preserve headers/shared objects/CMake/pkgconfig/Python/tools, omit static.a and documentation/locale/debug only; complete original debs retained.",
+  "full_APT_or_ABI_or_build_qualification": false,
+  "models": 0
+}
