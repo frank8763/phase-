@@ -1,0 +1,5 @@
+# EW新相位正式对照接口
+
+原NS四相位完整通过，原EW两份提案已精确SHA恢复。新SOURCE尚未执行；新原EW optimizer单CPU2独立spawn接口/原wait0eligibility消融/完整独立时间审核仅改变选择eligibility、全部40数值证明保留，原科学函数code/参数/模型/安全门不改。数学worker无physicalmodule、只读已核currentcache/no compiler，不得把SOURCE称实际导航或机制PASS。后台固定8任务完整闭环按注册顺序，无聊天自动监督。
+
+一次SOURCE已CLOSED PASS，13298冻结源、19软件拒绝用例，0models/FFI/physical/replay；原generate/solve_job code身份、单CPU2单spawn接口元数据顺序、独立timing eligibility精确AST及原数值门保持、8锁表准入、CLI拒绝测试通过。不代表worker数值或导航PASS；首个正式EW任务是新接口的第一次真实完整运行，任何技术/安全异常保原失败并停新模型，不伪称全8已合格。
