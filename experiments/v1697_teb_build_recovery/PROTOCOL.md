@@ -1,0 +1,3 @@
+# Exact author TEB build-readiness evidence recovery
+
+One archive<=16MiB/32MiBblocks-download/512MiBroot/all15GiB. RequireexactclosedRESULT/RUNTIME_CLOSED_REVIEW/sourceSHA/REVIEWoriginal/idlelock/sharedV1694canonicalbarrier. Original optimizer not executed; scientific_navigation_passed null. Sourcebd59 containing exact intake/compile owner reused refonly/no secondpush; recoveredauthorbytes and buildlogs exactRelease members. Releasephase-v1696-teb-author-build-readiness-20261123. Allactualremote block/member/whole/indexSHA then exactSHA-size-mtime-device-inode duplicate transportcleanup/canonicalbarrier.0models/solver/physics/audit/replay in recovery;alloriginalsretained.

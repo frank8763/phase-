@@ -1,0 +1,3 @@
+# Local CMake exact tool recovery
+
+One archive<=32MiB/32MiBparts-download/512MiBroot/all15GiB. RequireRESULTpassed/closedreview/wheelpinSHA/allunpackmembersSHA/REVIEWoriginal/idlelock/priorV1696barrier. Include wheel and fullmembermanifest, not duplicateunpackedprefix. Newsource30spush5sref once before toolprobe, thenfirstsamePhaseReleasephase-v1698-local-cmake-toolchain-20261123. Actualremote everyblock/member/whole/indexSHA→exactSHA-size-mtime-device-inode duplicate transportcleanup→canonicalbarrier. Retain wheel/currentprefix/allanchors,0method/model/nativework; no repeated push/deliver/reseal.
