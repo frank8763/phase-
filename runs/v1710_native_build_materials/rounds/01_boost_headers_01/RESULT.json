@@ -1,0 +1,22 @@
+{
+  "passed": false,
+  "closed": true,
+  "batch_id": "01_boost_headers_01",
+  "package_downloads": 1,
+  "package_executions": 0,
+  "compiler_calls": 0,
+  "optimizer_calls": 0,
+  "models": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "method_outcome": null,
+  "first_error": {
+    "error": "IndexError('tuple index out of range')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1710_native_build_materials/owner.py\", line 56, in main\n    detail=m.extract(file,prefix,meter,pkg['Package'],entries,excluded);records.append(dict(pkg,deb_path=str(file.relative_to(R)),**detail));meter.reconcile()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1710_native_build_materials/materials.py\", line 77, in extract\n    name=safe_name(member.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1710_native_build_materials/materials.py\", line 31, in safe_name\n    assert p.parts[0]in ['usr','lib','lib64','bin','sbin','etc'],'NATIVE_DATA_NAMESPACE';return name\nIndexError: tuple index out of range\n"
+  },
+  "wall_s": 9.863529752998147,
+  "review_original": true,
+  "completed_extractions": 0,
+  "download_attempts": 1,
+  "completed_package_records": []
+}

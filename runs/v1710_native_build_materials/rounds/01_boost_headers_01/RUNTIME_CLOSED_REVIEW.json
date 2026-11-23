@@ -1,0 +1,37 @@
+{
+  "closed": true,
+  "passed": false,
+  "scope": "ONE_NATIVE_SELECTED_BUILD_MATERIAL_DATA_BATCH",
+  "batch_id": "01_boost_headers_01",
+  "package_downloads": 1,
+  "completed_extractions": 0,
+  "selected_member_full_verification": false,
+  "selected_entries": null,
+  "excluded_entries": null,
+  "selected_materials_not_full_package_install": true,
+  "task_allocated_bytes": 9097216,
+  "allruns_bytes": 11049541632,
+  "models": 0,
+  "package_programs_or_libraries_executed": 0,
+  "compiler_calls": 0,
+  "optimizer_calls": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "method_outcome": null,
+  "ABI_or_build_qualified": false,
+  "first_error": {
+    "error": "IndexError('tuple index out of range')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1710_native_build_materials/owner.py\", line 56, in main\n    detail=m.extract(file,prefix,meter,pkg['Package'],entries,excluded);records.append(dict(pkg,deb_path=str(file.relative_to(R)),**detail));meter.reconcile()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1710_native_build_materials/materials.py\", line 77, in extract\n    name=safe_name(member.name)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1710_native_build_materials/materials.py\", line 31, in safe_name\n    assert p.parts[0]in ['usr','lib','lib64','bin','sbin','etc'],'NATIVE_DATA_NAMESPACE';return name\nIndexError: tuple index out of range\n"
+  },
+  "source_SHA_exact": true,
+  "owner_gone": true,
+  "review_original": true,
+  "execution_idle": true,
+  "all14079_shared_source_SHA_verified": true,
+  "runtime_recovery_pending": true,
+  "source_paths_SHA256": {
+    "runs/v1710_native_build_materials/rounds/01_boost_headers_01/RESULT.json": "f08d8f9320c01f8149364c2918c9adfa40887a4a096908a331aa3719768a90c7",
+    "runs/v1710_native_build_materials/rounds/01_boost_headers_01/ONCE_CLAIM.json": "c959bffd6195b02b759c801d489b0f1b63265a9fbb6bc97f39a97625acb1a04a",
+    "runs/v1710_native_build_materials/BATCHES_LOCKED.json": "bbfa85bd28b37f7451fd3e808621ce13fed4ef4c9036fa9e557d900963a3891e"
+  }
+}
