@@ -2951,3 +2951,7 @@ V1749source恢复V1750已39members1057517B全actualremote block/member/whole/ind
 V1751 single synthetic original SCCR query closed: pipeline=True; interface_pass=False; see runs/v1751_sccr_original_query/BACKGROUND_RESULT.json. Artificial software fixture, not measured navigation/benchmark;0plant-physics-replay;no auto successor.
 
 用户检查后再明确继续：V1751原首SCCR_UNAUTHORIZED_IMPORT:ctypes是NumPy导入阶段策略错误，原planner未进入的source推导另栏/原queryattemptnull保持，不重entry或改冻源；原70.329777s整轮/2.162953s失败target/4.051412sowner/全部runtime远端SHA闭环保持。下一V1754只exactNumPy/ctypes516filepin+仅bootstrap原PyDLL(None)一次准入/所有其他librarysymbol拒绝及审计，7纯软件负例；同原fixture/helper/core/config，至多1originalquery，不调参或改变任务。新单后台完成后等待用户审阅，0plant/physics/replay/SAC，无共同benchmark结论。
+
+V1754 NumPy dependency single synthetic original SCCR query closed: pipeline=True; interface_pass=True; see runs/v1754_sccr_numpy_dependency/BACKGROUND_RESULT.json. Artificial software fixture, not measured navigation/benchmark;0plant-physics-replay;no auto successor.
+
+用户命令下一轮：V1754真正corequery1return1/648candidate/118pointselected，计算2.122355s/target4.437492s/owner7.882033s/整69.433671s，NumPy bootstrap1explicitprocesshandle不是0DLL；SOURCE+runtime全remote闭环/原REVIEW/锁闲/childrengone。下一V1757仅原人工路径→Phase原vehiclebridge的采样曲率/转向/速度必要门，不再query/模型/物理/Allocator。不能把原SCCR SAC融合替换成新tracker冒同算法，当前不定义tracker；原V1665requestbody与cap/.1固定，超限保首拒绝不clip/smooth/tune。完成单后台后等审阅，formal20和共同benchmark原分母不改。
