@@ -1,0 +1,94 @@
+{
+  "passed": false,
+  "closed": true,
+  "formal_assignment_id": "phase_01__no_onward",
+  "formal_assignment_retained_in_denominator": true,
+  "mechanism_variant": "no_onward",
+  "phase": 2.2609711555894934,
+  "sensor_seed": 10060001,
+  "original_contract": true,
+  "canonical_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 39425,
+  "own_replay_native": 39425,
+  "replay_maxerror": 0.0,
+  "contact_mismatch": 0,
+  "complete_physical_arrays_and_contact_capture": true,
+  "sensor_5native_coverage_complete": false,
+  "fully_recorded_native": 39425,
+  "model_native_inflight_unknown": false,
+  "first_error": {
+    "stage": "normal",
+    "error": "AssertionError('NO_MEASURED_HANDOFF_ONWARD_SOURCE')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1646_prefix_audit_scope/driver.py\", line 92, in execute\n    binding['owner'].navigate(v,read(out/'physics/SETUP.json'),task,window['normal_end_unix'],out,result)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/owner.py\", line 65, in navigate\n    result['recovery_origin_native']=v.count;result['feedback_execution']=execute(v,setup,seed,end,evidence,out,causal.packet);goal=float(np.linalg.norm(np.asarray(v.body()[:2])-task['goal_xy']));assert goal<=.45 and np.linalg.norm(v.body()[3:])<=.03,'FRESH_ORIGINAL_GOAL_AND_STOP';assert np.linalg.norm(np.asarray(v.body()[:2])-evidence.first['xy'])>=1.,'FRESH_ONE_METRE_AFTER_DISCOVERY';result.update(passed=True,status='FRESH_T0_GOAL_AND_STOP',actual_original_goal_reached=True,actual_goal_distance_m=goal,static_renewals=static_renewals)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1646_prefix_audit_scope/runtime_binding.py\", line 60, in <lambda>\n    owner.execute=lambda *args:dispatch.execute(*args,output=output,remaining_fn=lambda:remaining(window))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/route_dispatch.py\", line 83, in execute\n    return current_executor().execute(v, setup, original, end, evidence, out, packet_fn,\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/live_entry.py\", line 81, in execute\n    answer=goal_entry.execute(v,setup,fresh,gt,time.monotonic()+max(0.,end-time.time()-120),\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1218_fixed24_current/goal_package/goal_entry.py\", line 106, in execute\n    assert onward['passed'],'NO_MEASURED_HANDOFF_ONWARD_SOURCE'\nAssertionError: NO_MEASURED_HANDOFF_ONWARD_SOURCE\n"
+  },
+  "secondary_errors": [
+    {
+      "stage": "ORIGINAL_ACTUAL_PREFIX_SAFETY_AUDIT",
+      "error": "AssertionError()",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1646_prefix_audit_scope/driver.py\", line 38, in attempt\n    try:return fn()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1646_prefix_audit_scope/driver.py\", line 143, in <lambda>\n    result['independent_prefix_audit']=attempt('ORIGINAL_ACTUAL_PREFIX_SAFETY_AUDIT',lambda:audit_module.audit_prefix(task,result,source))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1646_prefix_audit_scope/audit_binding.py\", line 61, in audit_prefix\n    answer=module.audit(task,result_override=scratch,output_path=path)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1195_eight_gib_timed_refuge/audit_refusal.py\", line 25, in audit\n    assert set(range(0,n+1,5)).issubset({s['native_tick']for s in sensors})\nAssertionError\n"
+    }
+  ],
+  "outer_first_error": null,
+  "functional_result": "finite_measured_handoff_onward_source_refused",
+  "not_global_infeasibility": true,
+  "no_algorithm_or_parameter_repair": true,
+  "no_rerun": true,
+  "physical_telemetry": {
+    "actual_native": 39425,
+    "fully_recorded_native": 39425,
+    "minimum_actual_clearance_m": 0.27698465551487667,
+    "minimum_self_margin_m": 0.00907267627376368,
+    "bad_contacts": 0,
+    "final_body": [
+      1.7710302372091629,
+      -1.2144301699072702,
+      -0.5056111786372685,
+      3.983107446516988e-07,
+      -3.043934332478374e-06
+    ],
+    "final_translation_speed_m_s": 3.983119947157369e-07,
+    "root_guard_native_count": 39425,
+    "goal_distance_m": 2.3633506217630424,
+    "first_actor_detection": {
+      "native_tick": 15025,
+      "sim_time": 150.25000000000833,
+      "xy": [
+        0.12483800020703673,
+        -0.5442658797223914
+      ],
+      "rays": [
+        28
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 2.6921697180011166
+  },
+  "independent_actual_prefix_audit_failed": true,
+  "independent_full_goal_audit_unexecuted": true,
+  "independent_safety_PASS_not_claimed": true,
+  "diagnosis": "Original functional refusal follows2800 executed local-prefix actions. Separate independent prefix audit rejected40missing5native sensor rows in the200errorstop; preserve gap and do not reconstruct scans.",
+  "tracked_recovery_subset": {
+    "cpp_native": 23842000,
+    "python_native": 12800,
+    "cpp_completed_native": 23842000,
+    "python_completed_native": 12800,
+    "inflight": null,
+    "cpp_calls": 95091,
+    "python_calls": 12800,
+    "cpp_constructor_returns": 11,
+    "python_constructor_returns": 4,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "full_modelwork_normal_static_FFI_total": null,
+  "internal_allocator_constructors": null,
+  "all_source_SHA_verified_after_child_exit": true,
+  "original_review_sha256": "4ce7a8b33615619b40355b52f612b43dabf50344324eeba758969ab13e3eed66",
+  "lock_idle": true,
+  "owned_child_exited": true,
+  "RESULT_sha256": "6774ce2038de2eb1c43d17f410d2d96e92c2b617569d45603c7653e1a3cb6d9a",
+  "COMPLETION_sha256": "cbf51a4aaf5a22a2a7ca5fc199a43b4de429c7f3c83920419d2b2ba9e5cdbdf5",
+  "remote_recovery_pending": true,
+  "recorded_unix": 1795387559.1201947
+}

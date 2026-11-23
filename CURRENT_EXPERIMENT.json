@@ -28,14 +28,14 @@
     "shifted_candidate_scores": 79200
   },
   "acceleration_policy": "docs/EXPERIMENT_ACCELERATION_POLICY_20261117.md",
-  "active_entrypoint": "experiments/v1643_formal_parent_metadata/entry.py",
+  "active_entrypoint": "experiments/v1646_prefix_audit_scope/entry.py",
   "active_math_round": null,
   "active_round": null,
   "active_run": null,
   "active_window": null,
   "active_zero_model_diagnostic": null,
   "active_zero_model_storage_worker": null,
-  "automatic_additional_simulation": true,
+  "automatic_additional_simulation": false,
   "automatic_continuation_authorized": false,
   "background_master": {
     "boot_id": "65f8d742-949c-49e5-bab2-19583493ff14",
@@ -95,7 +95,7 @@
     ],
     "physical_core_overlap_against_reported_allocation": false,
     "stage_processes_or_files_accessed": false,
-    "user_report_text": "\u597d\u50cf\u662f8\u300110\u300112",
+    "user_report_text": "好像是8、10、12",
     "user_reported_stage": [
       {
         "core_id": 8,
@@ -2537,17 +2537,17 @@
     "canonical_initializations_completed": 3,
     "current_actual_counts_pending": false,
     "exposed_operational_pilot_complete_pass": true,
+    "formal_actual_native": 36625,
     "formal_completed_assignments": 1,
     "formal_executed": 0,
+    "formal_own_replay_native": 36625,
     "formal_registered_start_attempts": 1,
+    "formal_successes": 0,
+    "formal_unexecuted_assignments": 19,
     "operational_pilot_start_attempts": 4,
     "original_contract_user_selected": true,
     "overall_calendar_deadline_unix": null,
-    "path": "runs/v1646_prefix_audit_scope/PREPARATION_CHECKPOINT_QUALIFIED.json",
-    "formal_successes": 0,
-    "formal_unexecuted_assignments": 19,
-    "formal_actual_native": 36625,
-    "formal_own_replay_native": 36625
+    "path": "runs/v1646_prefix_audit_scope/PREPARATION_CHECKPOINT_QUALIFIED.json"
   },
   "latest_method_review": "docs/RPCCR_DYNAMIC_METHOD_RESET_AND_LITERATURE_20261113.md",
   "latest_mode_response_review": {
@@ -4877,7 +4877,7 @@
     "no_window_created": true,
     "old_deadline_unix": 1794813542.1965683,
     "recorded_unix": 1794809706.4682565,
-    "user_instruction": "\u53ea\u4fdd\u7559\u4fee\u590d\uff0c\u6682\u4e0d\u542f\u52a8\u6a21\u578b"
+    "user_instruction": "只保留修复，暂不启动模型"
   },
   "latest_v1157_closed_handoff": "runs/v1157_response_execution/FINAL_HANDOFF.md",
   "latest_v1157_entry_readiness": {
@@ -12937,9 +12937,9 @@
     "safety_or_evidence_anomaly_stops": true,
     "scope": "qualified same-version three route mains and complete repeats; conditional fixed24",
     "start_condition": "complete recovery source and live integration qualification passed before any new physical initialization",
-    "user_choice": "\u65b0\u72ec\u7acb12\u5c0f\u65f6\uff1a\u4e09\u8def\u7ebf\u5168\u8fc7\u540e\uff0c\u6761\u4ef6\u8fdb\u5165\u56fa\u5b9a24\u9879"
+    "user_choice": "新独立12小时：三路线全过后，条件进入固定24项"
   },
-  "next_preparation": "v1647_prefix_scope_source_recovery",
+  "next_preparation": "v1650_comparison_completion",
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "next_scope": "Integrate V1437 shared5400s phase guards into current production lifecycle/supervisor before necessary zero-model qualification; full route admission remains absent.",
   "night_candidate_relay": "runs/v1192_eight_gib_relay",
@@ -12991,7 +12991,7 @@
     "reuse_qualification_for_unchanged_source_hashes": true,
     "single_candidate_at_a_time": true,
     "single_failed_state_first": true,
-    "user_request": "\u51c6\u5907\u65f6\u95f4\u52a0\u5feb\uff0c\u4e0d\u518d\u51c6\u5907\u4e00\u4e24\u4e2a\u5c0f\u65f6"
+    "user_request": "准备时间加快，不再准备一两个小时"
   },
   "prepared_next_static_route": {
     "controller_changed": false,
@@ -13144,7 +13144,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "PREFIX_AUDIT_FUTURE_SOURCE_RECOVERY_REQUIRED",
+  "status": "AUTHORIZED_COMPARISON_COMPLETION_PREPARATION",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13275,5 +13275,19 @@
     "storage_ready": true,
     "temporary_storage_cap_bytes": 10737418240
   },
-  "weekend_next_preparation": null
+  "weekend_next_preparation": null,
+  "formal_registered_assignments": 2,
+  "formal_completed_assignments": 2,
+  "formal_actual_native": 76050,
+  "formal_own_replay_native": 76050,
+  "formal_successes": 0,
+  "user_stop_20261123": {
+    "unix": 1795395624.202496,
+    "instruction": "停止自动运行",
+    "automation": "phase-09",
+    "automation_deleted": true,
+    "resume_requires_explicit_user_instruction": true,
+    "unfinished_preparation": "v1649_error_stop_sensor_capture"
+  },
+  "comparison_continuation_authorization": "runs/v1650_comparison_completion/AUTHORIZATION.json"
 }
