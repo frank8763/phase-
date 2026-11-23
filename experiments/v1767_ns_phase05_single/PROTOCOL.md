@@ -1,0 +1,3 @@
+# V1767 one locked NS formal assignment
+
+phase_05__full only, sourceV1765 and commonV1643root. User requested one background task then review, no automatic successor or overnight. Actual owner5400s wall/mono bootclock normal4200close1200; wrapper7200s separate total bound and transport600s I/O.224MiBtask/240MiBarchive/32MiBdownload/512MiBroot/15GiB unchanged. Checks all8 predecessor barriers and fullnewsource remote chain/once/idlelocks/review/fresh1015MiBpeak before launch. Full original current numerical/safety/stop/causal/replay/wholegoal independently checked, canonical first/secondary/unknown retained. Closed runtime once archive/upload/allactualremoteSHA/exactduplicatecleanup/barrier then stop for review. No retuning/seedchange/repeat of failures.
