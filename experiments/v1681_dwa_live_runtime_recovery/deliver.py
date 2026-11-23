@@ -9,7 +9,7 @@ import sys
 import time
 import traceback
 
-R=Path(__file__).resolve().parents[2];O=R/'runs/v1681_dwa_live_runtime_recovery';I=O;TAG='phase-v1679-dwa-fresh-component-runtime-20261123'
+R=Path(__file__).resolve().parents[2];O=R/'runs/v1681_dwa_live_runtime_recovery';I=O;TAG='phase-v1683-dwa-fresh-component-runtime-20261123'
 def load(name,path):
     spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
 h=load('v1401_bounded_delivery',R/'experiments/v1389_idempotent_storage_transfer/resume.py');h.O=O/'remote_delivery';h.W=h.O;h.base.TAG=TAG
@@ -40,8 +40,8 @@ signal.setitimer(signal.ITIMER_REAL,600)
 
 def sync():
     assert not(O/'SYNC_CLAIM.json').exists()
-    original=R/'runs/v1680_dwa_live_source_recovery/SYNC_RESULT.json';source=h.read(original)
-    assert source['remote_verified']and source['head'].startswith('b9ee349c')
+    original=R/'runs/v1684_dwa_geometry_source_recovery/SYNC_RESULT.json';source=h.read(original)
+    assert source['remote_verified']and source['head'].startswith('42a06137')
     h.dump(O/'SYNC_CLAIM.json',dict(head=source['head'],unix=time.time(),models=0,no_retry=True,push_executed=False,ref_only=True))
     ref=subprocess.run(['git','ls-remote','origin','refs/heads/main'],cwd=R,capture_output=True,text=True,timeout=5)
     proof=dict(head=source['head'],remote_verified=ref.returncode==0 and ref.stdout.split()[0]==source['head'],models=0,push_executed=False,source_sync_sha256=h.sha(original),ref_only=True)
@@ -53,7 +53,7 @@ def deliver():
     assert h.base.usage()+(32+512)*1024**2<15*1024**3
     h.O.mkdir();h.dump(h.O/'CLAIM.json',dict(pid=os.getpid(),unix=time.time(),source_head=sync_result['head'],models=0,input_archive_index_sha256=h.sha(I/'ARCHIVE_INDEX.json'),original_sync_sha256=h.sha(I/'SYNC_RESULT.json'),new_IO_deadline_unix=DEADLINE,new_IO_monotonic_deadline=START_MONO+600,boot_id=BOOT,no_new_push_or_reseal=True))
     try:
-        request=h.O/'CREATE_RELEASE.json';h.dump(request,dict(tag_name=TAG,target_commitish=sync_result['head'],name='Phase fresh DWA control-cycle runtime',body='Distinct V1679 fresh originalcanonical DWA reference control-cycle actuator runtime. Exact original RESULT/COMPLETION/RUNTIME_CLOSED_REVIEW determine primary-secondary/outcomes/counts/unknowns;no scientificconclusion fromarchivepass. Onefreshcurrentquery/10native+2200zero stop andoriginalmeasured5nativeadmission gates;capture/allNplus1/ownreplay/independentaudit preserved withfailures. SeparatePythonRoboticsPhaseadaptation,not restoredoldG4CC3 orwholebenchmark. Sourceb9ee349c refonly/no2push. Actualremote everyblock/member/whole/indexSHA thenexactduplicatecleanup. No newquery/model/audit/replay duringarchive.',draft=False,prerelease=False,make_latest='false'))
+        request=h.O/'CREATE_RELEASE.json';h.dump(request,dict(tag_name=TAG,target_commitish=sync_result['head'],name='Phase fresh DWA control-cycle runtime',body='Distinct V1683 fresh originalcanonical DWA reference control-cycle actuator runtime. Exact original RESULT/COMPLETION/RUNTIME_CLOSED_REVIEW determine primary-secondary/outcomes/counts/unknowns;no scientificconclusion fromarchivepass. Onefreshcurrentquery/10native+2200zero stop andoriginalmeasured5nativeadmission gates;capture/allNplus1/ownreplay/independentaudit preserved withfailures. SeparatePythonRoboticsPhaseadaptation,not restoredoldG4CC3 orwholebenchmark. Source42a06137 refonly/no2push. Actualremote everyblock/member/whole/indexSHA thenexactduplicatecleanup. No newquery/model/audit/replay duringarchive.',draft=False,prerelease=False,make_latest='false'))
         lookup=subprocess.run([str(R/'tools/phase_storage_20261107/vendor/gh'),'api','repos/frank8763/phase-/releases/tags/'+TAG],cwd=R,capture_output=True,text=True,timeout=30)
         h.dump(h.O/'RELEASE_LOOKUP.json',dict(returncode=lookup.returncode,confirmed_missing=lookup.returncode!=0 and '404'in lookup.stderr,models=0))
         if lookup.returncode==0:

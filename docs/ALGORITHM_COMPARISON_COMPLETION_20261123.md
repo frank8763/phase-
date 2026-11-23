@@ -6,7 +6,7 @@ Historical comparisons retain their original contracts. This is saved-metadata a
 |---|---|---|
 |RP-CCR|exposed24/24 plus3complete repeats; registered newphase pair both non-arrival|current common-contract peer comparison not yet run|
 |SCCR|G4C60/100; Final300214/300 under old contract|current actuator/causal observation adapter required|
-|DWA|G4C61/100 under old contract|exact missing environment source restoration and current adapter required|
+|DWA|HistoricalC3 G4C61/100; separatelypinned PythonRobotics query/stop-response passed;fresh2210actual+2210replay ended technicalpacketbinding failure|OriginalC3 code/config unavailable;newadaptation needs one measured-origin evidencebinding before further cases;wholecomparison pending|
 |RPP|static passes/failures; dynamic non-arrival or evidence stop|prospective common-task source/owner/evidence qualification required|
 |MPPI|static non-arrival; dynamic dependency-unexecuted|no old retry; new prospective source/observation/control qualification required|
 |PRIEST|AssertionError('PRIEST_REQUEST_OPPOSES_DECLARED_SEGMENT_GEAR'); saved component only|exact author car mapping and genuine optimizer/control adapter required|
@@ -40,3 +40,11 @@ V1658 before-DLL binding failure and V1663 archive-inventory failure remain expl
 The one fresh canonical exposed WE03 component is CLOSED NON-SUCCESS. A new author solve used the new plant measured t0, no carried saved controls. After5actual steps, the next5-step prefix with2200stop predicted fullfootprint minimum0.24320396753259443m below unchanged0.24353421020226934m, a0.00033024266967490723m deficit. The first method refusal was retained; no configuration/seed/threshold rescue or rerun. Original200zero stop and205ownreplay completed with fullstate-ctrl-mocaperror0/contactmismatch0;205actual telemetry minclear0.31051034619210516m/badcontacts0. Independentcomponentaudit was not executed afterrefusal,70+2200component did not complete,wholegoal remained7.99810358332m. This is a finite limitation of this explicit development adaptation, not an authoralgorithm global failure or collision.
 
 Actual runtime109members6215472B is fullremote block/member/whole/indexSHA verified and exactduplicate transportcleaned; alloriginals/anchors kept. Source88515112 was reused refonly withoutsecondpush. Canonicalbarrier and lateproofs saved outsideclosedarchive. Formalmechanism denominator remains2closednon-success/18unexecuted; no new common benchmarkcase is claimed.
+
+## DWA start: separate reference identity and actual evidence
+
+OldG4CC3 outcome61/100 is unchanged. Originalenvironment/C3config474B are unavailable locally,so a separatelynamed pinnedPythonRoboticsPhaseAckermann-mask adaptation was started;it is not exactoldC3 ororiginalFoxauthorcode. Original7function+EnumAST preserved exceptannouncedpremotionadmissibilitymask,Phasecaps/footprint/config changesdisclosed. One savedquery26candidate780kinematicmotioncalls plus5native+2200stop originalresponse passed. Not a wholebenchmark.
+
+Onefreshcanonical exposedWE03 case then completed the originalreference0.1s=10native controlcycle and2200zero stop:2210actual/2210ownreplay/error0/contactmismatch0,minactual.31499187744198576m/bad0. Execution/current2originalstopproofs/tracking were reported passed, butcompleteindependentaudit refused exactpacketbinding: initialandfreshsolverpacket differonly3walltimestamps,physicalstate/native/simtime/memory/modesidentical. Complete RESULT remainsfalse/technicalevidencefailure;no retrospectiveauditpass,rerun,orclassificationasDWAfunctional/collisionfailure. Wholegoal7.99921725727m;noarrival/newindependenttask/commonbenchmark. QsubsetPython6620/constructorreturns4includesgenericnumericaudit,notallmodelwork.
+
+Distinctfreshruntime112members7515163B allactualremote block/member/whole/indexSHA verified andexacttransportduplicatecleanup;source42a06137refonly/no2push,allrawkept. Canonicalbarrier/lateprogress outsidearchive. Structuredrecord:runs/v1650_comparison_completion/DWA_EXECUTION_PROGRESS_20261123.json;detailedreport:docs/DWA_REFERENCE_V1676_REPORT.md. OldDWA100/formal20/weekend accounting unchanged;automationdisabled.
