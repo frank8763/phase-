@@ -10,8 +10,8 @@ Historical comparisons retain their original contracts. This is saved-metadata a
 |RPP|static passes/failures; dynamic non-arrival or evidence stop|prospective common-task source/owner/evidence qualification required|
 |MPPI|static non-arrival; dynamic dependency-unexecuted|no old retry; new prospective source/observation/control qualification required|
 |PRIEST|AssertionError('PRIEST_REQUEST_OPPOSES_DECLARED_SEGMENT_GEAR'); saved component only|exact author car mapping and genuine optimizer/control adapter required|
-|TEB|literature only; no vehicle comparison|pin author core/version and qualify vehicle/causal observation interface|
-|SVG-MPPI|literature only; no vehicle comparison|pin author core/version and qualify sampling/control interface|
+|TEB|Author source pinned; car kinematic edge/API reviewed; no vehicle comparison|Build exact dependencies and qualify vehicle/causal observation interface|
+|SVG-MPPI|Original author CPU core compiled;1real constructor/solve passed;measured data bridge and2270step original response component passed|Current causal map/reference,retained-stop certificate and actual plant/capture/replay before common benchmark|
 |PSF|literature only; no vehicle comparison|same nominal controller/model/constraints/terminal contract and faithful implementation|
 |PCBF|literature only; no vehicle comparison|same nominal controller/model/constraints/terminal contract and faithful implementation|
 
@@ -28,3 +28,9 @@ V1649 closure-capture SOURCE PASS,13200 frozen members,6negative cases,0model/FF
 TEB authorcommit9e55af4724310c34bcfa8cbb3b2783478c1a246a and SVG-MPPI authorcommitf4fb7b74f12d4568790213aab26dd6f0538d1925 captured18exact source members/210315B, eachsize/GitblobSHA1/SHA256 verified; not imported/compiled. V1652 source review confirms TEB car-kinematic edge and velocity API; SVG-MPPI uses5state dimensions and steering-only1D control. Actualwheel-to-steering/speed/executor and causalmap adapters remain unqualified. Originalauthor config12threads/reference1.5m/s is not applied to Phase. These newly captured sources and V1653 helper were created after the closed sourcearchive; they are retained locally and not falsely claimed in that archive.
 
 The user-stopped heartbeat remains deleted. No new physical benchmark has launched, and no old task has been rerun. The current next deliverable is qualified current-vehicle adapters followed by a separately frozen common-task comparison, not further baseline retuning.
+
+## Current execution supplement
+
+SVG-MPPI is now beyond source/interface inspection. One genuine authorconstructor/solve returned14finite bounded steering values. The unchanged original Phase eight-state response model then completed exactly70candidate+2200stop steps with complete memory/control records and original component gates. Staticfullbody minimum.243960895m exceeded originalrequired.243534210m;originalwholegoal check remained false at7.948227707m. No new vehicle step/replay/commonbenchmark or independent navigation sample. Internalrollouts and allmodelwork stayunknown; these components are not added to prior benchmark rows.
+
+V1658 before-DLL binding failure and V1663 archive-inventory failure remain explicit. All successful numeric raw and component arrays,plus relevant sourcechains,are remoteSHAverified with exactduplicate transportcleanup; originals retained. Latest structured proof: runs/v1650_comparison_completion/SVG_EXECUTION_PROGRESS_20261123.json. Earlier registry is a historical snapshot and has not been relabeled as current completed comparisons. No heartbeat was recreated.
