@@ -144,10 +144,81 @@ The second locked pair, phase02 at4.551718764234382 rad with sensor seed10060001
 
 The full method did perform its extra nominal onward check: a8700-step nominal complete reference with2600-step prefix was accepted, but measured-handoff finite search later returned no source (3571nodes,0terminal attempts, best distance0.599417m). The actual handoff differed from the nominal point by6.57mm in position,0.000149rad in heading and0.001067rad in virtual steering, all within the original tracking limits. These data show a boundary between a nominal onward witness and successful replanning from the actual handoff. State/memory deviation, observation/source renewal and finite-search incompleteness have not been causally separated; no unique failure cause or global infeasibility is inferred. The full method adds4174900tracked CPP and12200tracked Python recovery-model native steps in this pair; total model work remains unknown.
 
-See `docs/RPCCR_PHASE02_PAIR_20261123.md` and the saved pair analysis and PDF/PNG figure. The two plotted curves coincide exactly. Four of the twenty assignments are closed without arrival, with sixteen unexecuted; the earlier phase01 audit gaps remain explicit. No new repeat or independent task is created by analysis/figure export.
+See `docs/RPCCR_PHASE02_PAIR_20261123.md` and the saved pair analysis and PDF/PNG figure. The two plotted curves coincide exactly. Six of the twenty assignments are closed without a complete success. Four did not arrive; phase03 no_onward recorded arrival and stopping but failed the full independent source-proof audit; phase03 full was technically censored before numerical admission. Fourteen assignments have not started. The earlier phase01 audit gaps remain explicit. No new repeat or independent task is created by analysis/figure export.
 
 The paper still requires completed applicable mechanism contrasts and faithful
 common-task external comparisons before claiming which mechanism improves
 completion. Generalization is limited to phases of the same known course,
 model and single-actor motion class. New-map, multi-actor, statistical,
 real-time and hardware claims remain unsupported by these results.
+
+
+## Phase03 interim result: recorded arrival with failed complete audit
+
+The no-onward assignment completed44875actual steps and44875own replay steps
+with zero maximum replay error and no contact mismatch. The recorded final
+goal distance was0.276449900m, with final translation speed2.15e-7m/s; the
+minimum actual clearance was0.276984656m and no bad contact was recorded.
+The original base native audit reviewed all44875rows and returned controller
+and memory errors of2.220446049250313e-16. However, the complete independent
+audit refused `REBUILT_SOURCE_PROOF`. The canonical outcome therefore remains
+not passed; recorded arrival is not substituted for the required complete
+audit. The paired full assignment was subsequently censored before numerical admission.
+
+Saved-source inspection identifies a separate audit-scope issue: the flagged
+no-onward initial reference is a local refuge prefix, while another full-audit
+path rebuilds its proof against the whole task goal. Its saved endpoint is
+2.546081537m from that goal. The caught assertion did not retain the complete
+failed-check set, so source inspection is not presented as a numerical
+re-audit or a retrospective pass. The old result and all safety gates remain
+unchanged. The full assignment refused a monotonic duration of5400.000000000007s against the immutable <=5400s entry bound, before numerical imports or factory execution. Its canonical owner counts remain null and no machine RESULT is reconstructed; a separate exact-source/console record derives zero factory, physical and replay calls. Both outcomes are retained, and this pair cannot establish a mechanism advantage.
+
+## Discussion: what the present evidence establishes
+
+The distinction between admissible execution and continued task completion is
+central to interpreting these experiments. In phase02, independent numerical
+auditing of the executed prefixes and exact replay succeeded, while both
+variants failed to reach the goal. These findings support the recorded
+prefix checks; they do not establish a guarantee of eventual arrival. A
+refusal to supply a new command must therefore remain a functional
+non-success even when the resulting recorded stop is collision-free.
+
+The additional onward check in the complete method was active, rather than
+skipped by this task. Its accepted nominal continuation did not lead to a
+different actual trajectory or successful replanning at the measured
+handoff. A nominal continuation from a reference state is consequently
+insufficient evidence, in this case, for successful continuation after
+execution. The saved handoff deviation was within the unchanged tracking
+limits. This observation motivates examining the relationship between
+nominal continuation and measured-state renewal; it does not isolate whether
+state and controller-memory differences, renewed observations, or finite
+search caused the refusal. No counterfactual rollout was performed to assign
+a unique cause, and the registered experiments were not tuned after failure.
+
+The result also limits the efficiency claim. The complete method performed
+additional tracked recovery-model work without an observed completion
+benefit in phase02. The instrumented subset is not a complete accounting of
+normal planning, static processing, other foreign-function work or internal
+optimizer iterations. We therefore report the subset explicitly and make
+no equal-total-work or overall computational-efficiency claim from it.
+
+External-method component tests answer a different question from the
+registered mechanism contrasts. An adapter refusal or failed current query
+characterizes the stated implementation and contract. It is not evidence
+that the published algorithm is globally incapable, nor a substitute for a
+shared whole-task comparison. Historical SCCR/DWA results retain their
+original task populations and evaluation contracts. Pooling them with the
+current RPCCR phase experiments would confound the method with the test
+conditions.
+
+## Provisional conclusion and completion conditions
+
+The current implementation has reproducible exposed-task evidence and
+explicitly audited new-phase execution prefixes. The completed phase02
+contrast does not show an arrival benefit from the pre-execution onward
+check. The remaining registered contrasts and common-contract external
+comparisons are required before a paper can claim a mechanism improves task
+completion. The final contribution statement must follow those results,
+including negative outcomes and technical censoring. The present manuscript
+is a working draft and is not submission-ready. A concrete completion
+checklist is recorded in `docs/PAPER_REMAINING_STEPS_20261123.md`.

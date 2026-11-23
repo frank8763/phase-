@@ -1,0 +1,41 @@
+{
+  "closed": true,
+  "passed": false,
+  "machine_RESULT_missing": true,
+  "canonical_owner_counts_preserved": {
+    "canonical_vehicle_initializations": null,
+    "actual_native": null,
+    "own_replay_native": null
+  },
+  "source_derived_before_numerical_import": {
+    "canonical_factory_calls": 0,
+    "model_calls": 0,
+    "physical_native": 0,
+    "replay_native": 0
+  },
+  "inference_scope": "Exact original console and entry control flow, not reconstructed machine RESULT",
+  "console_path": "runs/v1643_formal_parent_metadata/rounds/phase_03__full/formal.console",
+  "console_sha256": "4208f172f5f11f05b1f4d0f6efb046b1b064bf221d15db1ccb7e53ca8539a9d6",
+  "original_owner_first_error": {
+    "error": "FileNotFoundError(2, 'No such file or directory')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/owner.py\", line 89, in main\n    machine=read(out/'RESULT.json');result.update(canonical_vehicle_initializations=machine['canonical_vehicle_initializations'],actual_native=machine['new_actual_native'],own_replay_native=machine['own_replay_native'],machine_result_sha256=sha(out/'RESULT.json'),machine_passed=machine['passed'],full_model_work_total_native=None,tracked_recovery_model_work=machine.get('model_work'),complete_runtime_qualified=bool(machine['passed']),passed=bool(child.returncode==0 and machine['passed']and machine['closed']and machine['first_error']is None and not machine['secondary_errors']and machine['source_unchanged']and allsource))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/owner.py\", line 14, in <lambda>\n    read=lambda p:json.loads(p.read_text())\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v1643_formal_parent_metadata/rounds/phase_03__full/actual/RESULT.json'\n"
+  },
+  "native_entry_primary": "AssertionError at immutable context.admission dual-clock duration bound",
+  "wall_duration_repr": "5400.0",
+  "monotonic_duration_repr": "5400.000000000007",
+  "round_once_consumed": true,
+  "no_retry": true,
+  "all_source_SHA_verified_after_child_exit": true,
+  "source_members": 13200,
+  "review_original": true,
+  "execution_idle": true,
+  "owned_child_gone": true,
+  "recorded_unix": 1795424702.8236961,
+  "source_paths_SHA256": {
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__full/COMPLETION.json": "a09e1f99a0e686896ec8eb10ac2bd73068b9460017a6d0d232a54cad7b6eeeeb",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__full/ROUND_WINDOW.json": "06e255c38db88045562ae57c4e50917186f4ef367cb2d874c3be1d1556cdbecc",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__full/formal.console": "4208f172f5f11f05b1f4d0f6efb046b1b064bf221d15db1ccb7e53ca8539a9d6",
+    "experiments/v1649_error_stop_sensor_capture/context.py": "5a2f3afbddf67688c184eddabecd20008b2e8d9bd35a0635c4b1da04b8ac1481",
+    "experiments/v1649_error_stop_sensor_capture/driver.py": "6c85cebaa1ebe5523881c060e9d3b4ae6442c9349995ce36d30457c28201eaea"
+  }
+}

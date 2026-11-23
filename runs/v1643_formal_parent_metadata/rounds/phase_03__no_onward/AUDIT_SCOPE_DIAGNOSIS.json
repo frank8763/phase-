@@ -1,0 +1,62 @@
+{
+  "scope": "saved JSON and exact source inspection only; no import/reconstruction/physics/replay/audit rerun",
+  "recorded_unix": 1795424413.8779383,
+  "canonical_result_unchanged": true,
+  "actual_original_goal_recorded": true,
+  "full_independent_audit_passed": false,
+  "first_error": {
+    "stage": "ORIGINAL_FULL_INDEPENDENT_AUDIT",
+    "error": "AssertionError('REBUILT_SOURCE_PROOF')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/driver.py\", line 38, in attempt\n    try:return fn()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/driver.py\", line 138, in <lambda>\n    result['independent_audit']=attempt('ORIGINAL_FULL_INDEPENDENT_AUDIT',lambda:auditor.audit(task,audit_input,source))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/audit_binding.py\", line 26, in audit\n    module=bind_reader(load('v1642_original_full_auditor',OLD/'native_audit.py'));result=module.audit(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/native_audit.py\", line 28, in audit\n    result=parent.audit(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/audit_seams.py\", line 87, in audit\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1204_goal_audit_worker/audit_goal.py\", line 92, in verify\n    assert proof['passed'],'REBUILT_SOURCE_PROOF'\nAssertionError: REBUILT_SOURCE_PROOF\n"
+  },
+  "secondary_errors": [],
+  "base_native_audit": {
+    "passed": true,
+    "actual_replay_verified": true,
+    "qualification_only": false,
+    "safety_evidence_only": true,
+    "functional_passed": true,
+    "native_reviewed": 44875,
+    "control_error": 2.220446049250313e-16,
+    "memory_error": 2.220446049250313e-16,
+    "all_actual_clearance_m": 0.27698465551487667,
+    "analytical_cpp_native": 0,
+    "models": 0,
+    "new_mujoco_native": 0
+  },
+  "initial_selection_is_flagged_local_refuge_prefix": true,
+  "initial_prefix_native": 2800,
+  "initial_reference_endpoint": [
+    1.6218796547925383,
+    -1.0905634628643295,
+    -0.5076779353440306
+  ],
+  "actual_task_goal": [
+    4.0,
+    -2.0
+  ],
+  "saved_prefix_endpoint_distance_to_whole_goal_m": 2.5460815366690395,
+  "whole_goal_upper_if_applied_to_saved_prefix_m": 2.6260815366690395,
+  "whole_goal_upper_limit_m": 0.45,
+  "source_inspection_findings": [
+    "audit_binding applies prefix_proof_input only to audit_admission.verify_source",
+    "audit_goal.verify separately rebuilds every source using q.proof with unchanged whole x.goal",
+    "initial no_onward reference is a local stopped prefix rather than a whole-goal reference",
+    "the caught assertion did not save rebuilt failed_checks; no complete failed-check set is inferred",
+    "kernel binds whole_input V1046, which binds checks to signed V1035; exact whole-goal upper condition <=.45 is preserved"
+  ],
+  "interpretation": "source-level audit-scope mismatch witness; original failed full audit remains authoritative, no retrospective pass or sole-cause numerical claim",
+  "new_model_planner_physics_replay_audit_calls": 0,
+  "source_paths_SHA256": {
+    "experiments/v1649_error_stop_sensor_capture/audit_binding.py": "ae86aa901fc211b4cf12cd6614180eb05dccda000556e51811a4ce1b3a2d8383",
+    "experiments/v1649_error_stop_sensor_capture/audit_seams.py": "db1e493d6dd380a5798cfe8e27288f2deba8f073c9b18f444235cb7583fbc195",
+    "experiments/v1204_goal_audit_worker/audit_goal.py": "9f1e2805e875ef09bfff0f803d64401d292b514154fbdebadda84c6a24375dbe",
+    "experiments/v1160_safe_terminal_connection/search.py": "6c9520ad50c4461fdd5f2edfb8bfaff57d13da4efde18c61e5500e68c7ad755e",
+    "experiments/v1067_causal_replan_brake_reserve/kernel.py": "7863ddd6893880f80bf01ed236ef40f2620669a34b21076d2400f19c8ee362ca",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/actual/CURRENT_GOAL_ENTRY/INITIAL_SELECTION.json": "6fd8acdc819db2a8823ba76143ae0c4cebcd0435355a28c7fa7dd2b2cc9d5ade",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/actual/BASE_NATIVE_AUDIT.json": "60dfc4e567ba8e03300c070dc6f6544fa145a815b567f54244bb4e0aa36811ad",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/actual/RESULT.json": "97b451c4332992da0b1b0ba38cf744e78f69b51a03539d0e07d4c1737e3af7a0",
+    "experiments/v1046_retreat_entry_timed_route/whole_input.py": "54d60be8db5225ebb94ab3fdc71e5856c1a9eb83bd59cd97e4a80ee8fa3b7715",
+    "experiments/v1035_signed_timed_input_source/whole_input.py": "3c8a44683e6570f0fbe28c5b6fadc3df94648ad544a9cf0ba7e4bcbdec368a1e"
+  }
+}

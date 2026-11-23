@@ -233,6 +233,15 @@
   "entry_continuation_authorization": "RPCCR_COUPLED_NIGHT_ENTRY_EXCEPTION_20261113.json",
   "formal_actual_native": 76050,
   "formal_completed_assignments": 2,
+  "formal_mechanism_progress": {
+    "closed": 4,
+    "new_maps": false,
+    "non_success": 4,
+    "registered": 4,
+    "statistical_advantage_established": false,
+    "total": 20,
+    "unexecuted": 16
+  },
   "formal_own_replay_native": 76050,
   "formal_registered_assignments": 2,
   "formal_successes": 0,
@@ -2646,6 +2655,23 @@
     "original_contract_user_selected": true,
     "overall_calendar_deadline_unix": null,
     "path": "runs/v1646_prefix_audit_scope/PREPARATION_CHECKPOINT_QUALIFIED.json"
+  },
+  "latest_mechanism_pair": {
+    "both_closed": true,
+    "qualified_successes": 0,
+    "no_onward_actual_native": 44875,
+    "no_onward_own_replay_native": 44875,
+    "no_onward_recorded_goal": true,
+    "no_onward_full_audit_pass": false,
+    "full_owner_actual_native": null,
+    "full_owner_replay_native": null,
+    "full_source_derived_factory_physical_replay": 0,
+    "pair_effect_eligible": false,
+    "report": "docs/RPCCR_PHASE03_PAIR_20261123.md",
+    "runtime_remote_recovery_pending": false,
+    "both_runtime_actualremote_SHA_verified": true,
+    "phase": "phase_03",
+    "no_mechanism_effect_inference": true
   },
   "latest_method_review": "docs/RPCCR_DYNAMIC_METHOD_RESET_AND_LITERATURE_20261113.md",
   "latest_mode_response_review": {
@@ -13229,7 +13255,7 @@
     "prior_round_remote_pending": false,
     "required": "Implement and qualify the exact original TEB runtime/ABI/current-observation binding under experiments/v1730_teb_runtime_binding/PROTOCOL.md before any solver/vehicle execution."
   },
-  "next_experiment": "fixed phase_03__no_onward then phase_03__full",
+  "next_experiment": "new source-only conservative clock and flagged no_onward whole-audit scope qualification before fixed phase04",
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13450,7 +13476,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "PHASE02_PAIR_CLOSED_NULL_RESULT_ALL_RUNTIME_REMOTE_VERIFIED",
+  "status": "PHASE03_CLOSED_AUDIT_AND_ENTRY_GAPS_ALL_RUNTIME_REMOTE_VERIFIED",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13660,31 +13686,37 @@
     "temporary_storage_cap_bytes": 10737418240
   },
   "weekend_next_preparation": null,
-  "latest_mechanism_pair": {
-    "phase": "phase_02",
-    "phase_value": 4.551718764234382,
-    "source": "v1649_error_stop_sensor_capture",
+  "latest_mechanism_phase03": {
     "both_closed": true,
-    "both_success": false,
+    "qualified_successes": 0,
+    "no_onward_actual_native": 44875,
+    "no_onward_own_replay_native": 44875,
+    "no_onward_recorded_goal": true,
+    "no_onward_full_audit_pass": false,
+    "full_owner_actual_native": null,
+    "full_owner_replay_native": null,
+    "full_source_derived_factory_physical_replay": 0,
+    "pair_effect_eligible": false,
+    "report": "docs/RPCCR_PHASE03_PAIR_20261123.md",
+    "runtime_remote_recovery_pending": false,
+    "both_runtime_actualremote_SHA_verified": true
+  },
+  "previous_mechanism_pair_phase02": {
     "actual_native_each": 39320,
-    "own_replay_native_each": 39320,
-    "both_prefix_safety_audits_passed": true,
     "all_state_control_requests_clearance_trace_equal": true,
+    "both_closed": true,
+    "both_prefix_safety_audits_passed": true,
+    "both_runtime_full_remote_verified": true,
+    "both_success": false,
+    "full_remote_barrier_path": "runs/v1643_formal_parent_metadata/rounds/phase_02__full/POST_ROUND_STORAGE_BARRIER.json",
     "goal_distance_each_m": 2.534647053805079,
     "observed_onward_precheck_completion_benefit": false,
-    "source_model_total_work_unknown": true,
+    "own_replay_native_each": 39320,
+    "phase": "phase_02",
+    "phase_value": 4.551718764234382,
     "report": "docs/RPCCR_PHASE02_PAIR_20261123.md",
     "runtime_remote_recovery_pending": false,
-    "both_runtime_full_remote_verified": true,
-    "full_remote_barrier_path": "runs/v1643_formal_parent_metadata/rounds/phase_02__full/POST_ROUND_STORAGE_BARRIER.json"
-  },
-  "formal_mechanism_progress": {
-    "registered": 4,
-    "closed": 4,
-    "non_success": 4,
-    "unexecuted": 16,
-    "total": 20,
-    "new_maps": false,
-    "statistical_advantage_established": false
+    "source": "v1649_error_stop_sensor_capture",
+    "source_model_total_work_unknown": true
   }
 }

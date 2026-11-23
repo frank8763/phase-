@@ -1,0 +1,97 @@
+{
+  "closed": true,
+  "passed": false,
+  "formal_assignment_id": "phase_03__no_onward",
+  "formal_assignment_retained_in_denominator": true,
+  "mechanism_variant": "no_onward",
+  "phase": 6.154111091474658,
+  "sensor_seed": 10060001,
+  "source_version_root": "runs/v1649_error_stop_sensor_capture",
+  "original_contract": true,
+  "canonical_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "actual_native": 44875,
+  "own_replay_native": 44875,
+  "replay": {
+    "replay_native": 44875,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "physical_telemetry": {
+    "actual_native": 44875,
+    "fully_recorded_native": 44875,
+    "minimum_actual_clearance_m": 0.27698465551487667,
+    "minimum_self_margin_m": 0.009074343326365197,
+    "bad_contacts": 0,
+    "final_body": [
+      3.75063729960649,
+      -1.8806568361908724,
+      -0.13049507476806296,
+      -1.427663696340954e-07,
+      9.285467943277237e-07
+    ],
+    "final_translation_speed_m_s": 2.14881286476314e-07,
+    "root_guard_native_count": 44875,
+    "goal_distance_m": 0.2764498997929203,
+    "first_actor_detection": {
+      "native_tick": 15275,
+      "sim_time": 152.75000000000605,
+      "xy": [
+        0.2875317865645899,
+        -0.4277516940656616
+      ],
+      "rays": [
+        27
+      ],
+      "source": "actual physical sensor return and corrupted range; offline-only actor attribution"
+    },
+    "actual_travel_after_detection_m": 4.607757293134746
+  },
+  "first_error": {
+    "stage": "ORIGINAL_FULL_INDEPENDENT_AUDIT",
+    "error": "AssertionError('REBUILT_SOURCE_PROOF')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/driver.py\", line 38, in attempt\n    try:return fn()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/driver.py\", line 138, in <lambda>\n    result['independent_audit']=attempt('ORIGINAL_FULL_INDEPENDENT_AUDIT',lambda:auditor.audit(task,audit_input,source))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/audit_binding.py\", line 26, in audit\n    module=bind_reader(load('v1642_original_full_auditor',OLD/'native_audit.py'));result=module.audit(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1281_partial_reconnection_fixed24/native_audit.py\", line 28, in audit\n    result=parent.audit(task)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1649_error_stop_sensor_capture/audit_seams.py\", line 87, in audit\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1204_goal_audit_worker/audit_goal.py\", line 92, in verify\n    assert proof['passed'],'REBUILT_SOURCE_PROOF'\nAssertionError: REBUILT_SOURCE_PROOF\n"
+  },
+  "secondary_errors": [],
+  "outer_first_error": null,
+  "actual_original_goal_reached": true,
+  "audit_scope": "full_goal",
+  "independent_full_goal_audit": {},
+  "independent_prefix_safety_audit": {},
+  "prefix_audit_not_arrival": true,
+  "tracked_q1159_recovery_subset": {
+    "cpp_native": 21818400,
+    "python_native": 37400,
+    "cpp_completed_native": 21818400,
+    "python_completed_native": 37400,
+    "inflight": null,
+    "cpp_calls": 38817,
+    "python_calls": 37400,
+    "cpp_constructor_returns": 27,
+    "python_constructor_returns": 6,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "full_modelwork_total": null,
+  "internal_Allocator_constructions": null,
+  "fully_recorded_native": 44875,
+  "model_native_inflight_unknown": false,
+  "journal_rows": 44875,
+  "journal_applied_rows": 44875,
+  "source_members": 13200,
+  "all_source_SHA_verified_after_child_exit": true,
+  "review_original": true,
+  "execution_idle": true,
+  "owned_child_gone": true,
+  "no_parameter_or_seed_tuning": true,
+  "remote_runtime_recovery_pending": true,
+  "recorded_unix": 1795424312.8519986,
+  "source_result_paths_SHA256": {
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/COMPLETION.json": "7d5115f2094bcd632edfd1b380ddf1aeb9610d046573b32946361fdd1ea2a6a1",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/FORMAL_ADMISSION.json": "c1028700047d705983ad0ba6983291d61e29f843b292650252eed15196b1c4e4",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/FORMAL_TASK.json": "57dc76b08bad8c88d62b26c29a622a1a449fa1f61a6a002c7ed0603a8846c5bc",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/actual/RESULT.json": "97b451c4332992da0b1b0ba38cf744e78f69b51a03539d0e07d4c1737e3af7a0",
+    "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/actual/APPLIED_JOURNAL.json": "5779a5a49d1b56f3a1134589c1e9e10b67bccb8d9e2b7bd709ef952bba90b964"
+  }
+}

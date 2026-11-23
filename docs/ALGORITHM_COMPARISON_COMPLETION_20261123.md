@@ -2,6 +2,8 @@
 
 Historical comparisons retain their original contracts. This is saved-metadata assembly, not new simulation or a pooled league table.
 
+Current closure update (23 November 2026): historical SCCR/DWA comparisons are complete under their original contracts. V1739 TEB actual query and V1741 runtime recovery are closed; the query returned no selected optimized trajectory. Phase02 mechanism full/no_onward are both closed non-arrivals with complete remote evidence; phase03 is closed with a recorded-arrival/full-audit refusal in no_onward and a pre-numerical clock-entry refusal in full. Older pending/build-only descriptions below are retained as dated development history. No current common-contract whole-task external comparison is complete.
+
 |Method|Existing evidence|Remaining concrete prerequisite|
 |---|---|---|
 |RP-CCR|exposed24/24 plus3complete repeats; registered newphase pair both non-arrival|current common-contract peer comparison not yet run|

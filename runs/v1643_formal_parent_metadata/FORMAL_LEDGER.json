@@ -1,9 +1,9 @@
 {
   "scope": "new phase mechanism comparison only",
-  "recorded_unix": 1795421956.112527,
-  "registered_assignments": 4,
-  "closed_assignments": 4,
-  "unexecuted_assignments": 16,
+  "recorded_unix": 1795424985.3330536,
+  "registered_assignments": 6,
+  "closed_assignments": 6,
+  "unexecuted_assignments": 14,
   "registered_does_not_mean_completed": true,
   "pilot_excluded": true,
   "tasklist_sha256": "b70ad141f8460181f784c15206615cc55ceda82bba0858b1ff8f79efc1ff1b0a",
@@ -106,13 +106,22 @@
       "variant": "no_onward",
       "phase": 6.154111091474658,
       "sensor_seed": 10060001,
-      "registered": false,
-      "closed": false,
-      "status": "UNEXECUTED",
-      "model_result": null,
-      "owner_passed": null,
-      "actual_native": null,
-      "own_replay_native": null
+      "registered": true,
+      "closed": true,
+      "status": "CLOSED_NON_SUCCESS_REMOTE_VERIFIED",
+      "model_result": false,
+      "owner_passed": false,
+      "actual_native": 44875,
+      "own_replay_native": 44875,
+      "source_version_root": "runs/v1649_error_stop_sensor_capture",
+      "completion_path": "runs/v1643_formal_parent_metadata/rounds/phase_03__no_onward/COMPLETION.json",
+      "completion_sha256": "7d5115f2094bcd632edfd1b380ddf1aeb9610d046573b32946361fdd1ea2a6a1",
+      "functional_result": "AssertionError('REBUILT_SOURCE_PROOF')",
+      "independent_full_goal_audit_passed": false,
+      "independent_prefix_safety_audit_passed": false,
+      "post_round_barrier_sha256": "2ede32c1e9048f33f5aaa47605ec452f191a4d2c9f21fbc232c59d5db26558cf",
+      "scientific_classification": "FULL_AUDIT_FAILED_WITH_RECORDED_GOAL",
+      "actual_original_goal_recorded": true
     },
     {
       "assignment_id": "phase_03__full",
@@ -121,13 +130,22 @@
       "variant": "full",
       "phase": 6.154111091474658,
       "sensor_seed": 10060001,
-      "registered": false,
-      "closed": false,
-      "status": "UNEXECUTED",
-      "model_result": null,
-      "owner_passed": null,
+      "registered": true,
+      "closed": true,
+      "status": "CLOSED_NON_SUCCESS_REMOTE_VERIFIED",
+      "model_result": false,
+      "owner_passed": false,
       "actual_native": null,
-      "own_replay_native": null
+      "own_replay_native": null,
+      "source_version_root": "runs/v1649_error_stop_sensor_capture",
+      "source_derived_physical_native": 0,
+      "source_derived_replay_native": 0,
+      "source_derived_canonical_factory_calls": 0,
+      "scientific_classification": "TECHNICAL_CENSOR_BEFORE_NUMERICAL_ADMISSION",
+      "completion_path": "runs/v1643_formal_parent_metadata/rounds/phase_03__full/COMPLETION.json",
+      "completion_sha256": "a09e1f99a0e686896ec8eb10ac2bd73068b9460017a6d0d232a54cad7b6eeeeb",
+      "independent_full_goal_audit_passed": false,
+      "post_round_barrier_sha256": "8bd8143db3401c7dced07c563a7cd94836280d3099f246677fa21d9012873806"
     },
     {
       "assignment_id": "phase_04__full",
@@ -340,9 +358,12 @@
       "own_replay_native": null
     }
   ],
-  "closed_non_success_assignments": 4,
-  "closed_actual_native_known_sum": 154690,
-  "closed_own_replay_native_known_sum": 154690,
-  "closed_native_counts_unknown_assignments": [],
-  "closed_phase_pairs": 2
+  "closed_non_success_assignments": 6,
+  "closed_actual_native_known_sum": 199565,
+  "closed_own_replay_native_known_sum": 199565,
+  "closed_native_counts_unknown_assignments": [
+    "phase_03__full"
+  ],
+  "closed_phase_pairs": 3,
+  "closed_phase03_effect_comparison_eligible": false
 }
