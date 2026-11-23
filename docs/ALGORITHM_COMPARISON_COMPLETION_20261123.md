@@ -11,7 +11,7 @@ Historical comparisons retain their original contracts. This is saved-metadata a
 |MPPI|static non-arrival; dynamic dependency-unexecuted|no old retry; new prospective source/observation/control qualification required|
 |PRIEST|AssertionError('PRIEST_REQUEST_OPPOSES_DECLARED_SEGMENT_GEAR'); saved component only|exact author car mapping and genuine optimizer/control adapter required|
 |TEB|Author source pinned; car kinematic edge/API reviewed; no vehicle comparison|Build exact dependencies and qualify vehicle/causal observation interface|
-|SVG-MPPI|Original author CPU core compiled;1real constructor/solve passed;measured data bridge and2270step original response component passed|Current causal map/reference,retained-stop certificate and actual plant/capture/replay before common benchmark|
+|SVG-MPPI|Author core and saved response component passed; fresh vehicle component refused by original predictive margin at native5,then200zero stop/205exact replay|Retain disclosed adaptation negative result; no common whole-task comparison or independent component safety audit|
 |PSF|literature only; no vehicle comparison|same nominal controller/model/constraints/terminal contract and faithful implementation|
 |PCBF|literature only; no vehicle comparison|same nominal controller/model/constraints/terminal contract and faithful implementation|
 
@@ -34,3 +34,9 @@ The user-stopped heartbeat remains deleted. No new physical benchmark has launch
 SVG-MPPI is now beyond source/interface inspection. One genuine authorconstructor/solve returned14finite bounded steering values. The unchanged original Phase eight-state response model then completed exactly70candidate+2200stop steps with complete memory/control records and original component gates. Staticfullbody minimum.243960895m exceeded originalrequired.243534210m;originalwholegoal check remained false at7.948227707m. No new vehicle step/replay/commonbenchmark or independent navigation sample. Internalrollouts and allmodelwork stayunknown; these components are not added to prior benchmark rows.
 
 V1658 before-DLL binding failure and V1663 archive-inventory failure remain explicit. All successful numeric raw and component arrays,plus relevant sourcechains,are remoteSHAverified with exactduplicate transportcleanup; originals retained. Latest structured proof: runs/v1650_comparison_completion/SVG_EXECUTION_PROGRESS_20261123.json. Earlier registry is a historical snapshot and has not been relabeled as current completed comparisons. No heartbeat was recreated.
+
+## Fresh vehicle component result
+
+The one fresh canonical exposed WE03 component is CLOSED NON-SUCCESS. A new author solve used the new plant measured t0, no carried saved controls. After5actual steps, the next5-step prefix with2200stop predicted fullfootprint minimum0.24320396753259443m below unchanged0.24353421020226934m, a0.00033024266967490723m deficit. The first method refusal was retained; no configuration/seed/threshold rescue or rerun. Original200zero stop and205ownreplay completed with fullstate-ctrl-mocaperror0/contactmismatch0;205actual telemetry minclear0.31051034619210516m/badcontacts0. Independentcomponentaudit was not executed afterrefusal,70+2200component did not complete,wholegoal remained7.99810358332m. This is a finite limitation of this explicit development adaptation, not an authoralgorithm global failure or collision.
+
+Actual runtime109members6215472B is fullremote block/member/whole/indexSHA verified and exactduplicate transportcleaned; alloriginals/anchors kept. Source88515112 was reused refonly withoutsecondpush. Canonicalbarrier and lateproofs saved outsideclosedarchive. Formalmechanism denominator remains2closednon-success/18unexecuted; no new common benchmarkcase is claimed.
