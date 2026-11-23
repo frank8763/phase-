@@ -1,0 +1,3 @@
+# Once DWA exact geometry source recovery
+
+V1683SOURCEclosedPASS/allfrozenSHA/revieworiginal/idlelock/priorV1676runtimebarrier.16archive32download512root/all15GiB,verifiedV1676chain+exactnewdelta andV1682failure/V1679prelaunchproof. Oneunique newsourcepush30/ref5/ReleasePOST,fresh600sbootdualclockI/O. Everyactualremote block/member/whole/indexSHA thenexactduplicatecleanup. No numericalmodel/physicalworkduringarchive,nooldrerun/requal/reseal/2push/heartbeat.
