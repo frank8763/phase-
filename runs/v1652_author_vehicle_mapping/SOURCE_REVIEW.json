@@ -1,0 +1,51 @@
+{
+  "closed": true,
+  "passed_source_content_review": true,
+  "actual_qualified": false,
+  "source_members_reverified": 18,
+  "rows": [
+    {
+      "method": "TEB",
+      "author_commit": "9e55af4724310c34bcfa8cbb3b2783478c1a246a",
+      "author_has_car_kinematic_edge": true,
+      "control_api": "getVelocityCommand(vx,vy,omega,look_ahead_poses)",
+      "remaining": [
+        "exact minimal g2o/ROS dependency build",
+        "measured body and actuator-state to planner-start binding",
+        "public map/causal obstacle input and full footprint model",
+        "raw bodytwist to qualified original executor; no hidden recovery or clipping",
+        "full from-t0 safety/stop/capture/replay and fair task budget"
+      ]
+    },
+    {
+      "method": "SVG-MPPI",
+      "author_commit": "f4fb7b74f12d4568790213aab26dd6f0538d1925",
+      "state": [
+        "x",
+        "y",
+        "yaw",
+        "velocity",
+        "steer"
+      ],
+      "control": [
+        "steer"
+      ],
+      "state_dimension": 5,
+      "control_dimension": 1,
+      "remaining": [
+        "qualify equivalent steering mapping from actual wheel encoders and memory",
+        "publish longitudinal speed selection separately from steering optimization",
+        "replace author vehicle dimensions/speed/thread config only in explicit frozen adaptation",
+        "qualified original actuator response and fullfootprint/causal obstacle maps",
+        "exact CPU authorcore build plus actual/replay evidence"
+      ]
+    }
+  ],
+  "models": 0,
+  "FFI_loads": 0,
+  "compiled": false,
+  "numerical_calls": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "recorded_unix": 1795396736.2756467
+}
