@@ -12941,7 +12941,7 @@
     "research_sources": "Primary papers, author repositories and official implementations; no performance replication"
   },
   "models_now_authorized": false,
-  "next_experiment": "v1676_dwa_bounded_proposal",
+  "next_experiment": "v1679_dwa_live_component",
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13161,7 +13161,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "DWA_DISTINCT_REFERENCE_SOURCE_PASS_RECOVERY_REQUIRED",
+  "status": "DWA_FRESH_CONTROL_CYCLE_SOURCE_PASS_RECOVERY_REQUIRED",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13358,9 +13358,17 @@
     "distinct_reference_commit": "ef64608ceb0012f2a0b3d532fddc80243e807cfa",
     "new_reference_source_qualified": true,
     "new_reference_source_members": 13912,
-    "new_reference_query_calls": 0,
+    "new_reference_query_calls": 1,
     "new_physical_native": 0,
     "new_common_benchmark_cases": 0,
-    "automation_active": false
+    "automation_active": false,
+    "numeric_admission": false,
+    "new_reference_query_passed": true,
+    "original_response_component_passed": true,
+    "original_response_step_returns": 2205,
+    "whole_navigation_passed": false,
+    "fresh_component_source_passed": true,
+    "fresh_component_source_members": 13939,
+    "fresh_component_models_authorized": false
   }
 }

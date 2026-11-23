@@ -1,0 +1,3 @@
+# Distinct DWA query runtime recovery
+
+V1676closedmachine/owner or explicitconsolegap,accurateRUNTIME_CLOSED_REVIEW/all13912SHA/revieworiginal/idlelock.16MiBarchive32download512root/all15GiB,fresh600sbootdualclockI/O. Sole source308e372b fromV1677proof/refonly,no2push. Allrawcommand/trajectory/response/memory/events/sourceinput/counters/failureunknowns retained. Actualremote allblock/member/whole/indexSHA/exactSHA-size-mtime-device-inode duplicatecleanup/barrier before next. No oldquery/reaudit/replay/source qualification rerun,scientificnavigationnull fortransport. Newhelpers aftersourcecommit covered by Release memberSHA,not falsely oldGit.
