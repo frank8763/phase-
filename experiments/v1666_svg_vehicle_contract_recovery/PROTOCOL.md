@@ -1,0 +1,3 @@
+# Once measured vehicle bridge source recovery
+
+Require V1665 SOURCEclosedPASS/all13843SHA/revieworiginal/idlelock and V1661closednumeric runtime fullremote/exactcleanup/barrier. Archive16MiB/download32/root512/all15GiB,oneunique newsourcepush30/ref5/ReleasePOST, fresh600sbootdualclockI/O. Every delta plus fullremote prior proof, helpers and reports included. No realmodel/optimizer during archive. Actualremote eachblock/member/whole/indexSHA then exactSHA-size-mtime-device-inode duplicatecleanup; no secondpush/reseal/redelivery. Source qualification is data geometry only, not numerical model/physical/benchmark admission.
