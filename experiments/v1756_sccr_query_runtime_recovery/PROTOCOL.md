@@ -1,0 +1,1 @@
+runtime I/O-only V1751 closure. 32MiB blocks/download,512MiBroot,15GiB allhistory. Runtime archive240MiB, reuse source exact proof;no secondpush/ref. Allremote block/member/whole/index SHA before exact duplicate transport cleanup. Originals retained. No numerical work in helper. No next experiment.
