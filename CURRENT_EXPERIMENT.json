@@ -13255,7 +13255,7 @@
     "prior_round_remote_pending": false,
     "required": "Implement and qualify the exact original TEB runtime/ABI/current-observation binding under experiments/v1730_teb_runtime_binding/PROTOCOL.md before any solver/vehicle execution."
   },
-  "next_experiment": "new source-only conservative clock and flagged no_onward whole-audit scope qualification before fixed phase04",
+  "next_experiment": "one background V1744 source-only qualification; stop for user review before any further round",
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13476,7 +13476,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "PHASE03_CLOSED_AUDIT_AND_ENTRY_GAPS_ALL_RUNTIME_REMOTE_VERIFIED",
+  "status": "WAITING_USER_REVIEW_AFTER_SOURCE_QUALIFICATION",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13718,5 +13718,9 @@
     "runtime_remote_recovery_pending": false,
     "source": "v1649_error_stop_sensor_capture",
     "source_model_total_work_unknown": true
-  }
+  },
+  "manual_review_after_every_round": true,
+  "automatic_next_round": false,
+  "active_source_round": null,
+  "latest_background_result": "runs/v1744_formal_interface_qualification/BACKGROUND_RESULT.json"
 }

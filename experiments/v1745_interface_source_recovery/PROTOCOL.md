@@ -1,0 +1,3 @@
+# V1745 closure of the single manually commanded V1744 software round
+
+I/O-only evidence closure, not a new experiment or permission to run phase04. One source commit/push30s/ref5s; no secondref/sync/push or reseal.32MiB archive/32MiB block/download/512MiBroot/allhistory15GiB. Freeze13226 inheritsV1649 13200 plus exact26delta; actualremote allblock/member/whole/indexSHA then exact SHA-size-mtime-device-inode transport duplicate cleanup. All originals retained. New helper later than SOURCEfreeze, first Release archive members cover it, not oldGit. Original SOURCE success0models/physical/replay/FFI does not qualify real navigation. After closure wait user review/next command, automatic phase04 and heartbeat forbidden.
