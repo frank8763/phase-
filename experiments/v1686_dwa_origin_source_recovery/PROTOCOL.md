@@ -1,0 +1,3 @@
+# Distinct V1690 source recovery
+
+Once archive <=16MiB, 32MiB blocks and download,512MiBroot/all15GiB; requireSOURCEclosedPASS/allfrozenSHA/priorV1683runtimebarrier/REVIEWoriginal/idlelock. Inherited13946frozenfiles viaV1683remotechain; archive every new/changed source member and current qualification/freeze plus helper/report metadata. Unique new source30spush/5sref, no retry or secondpush. One new Release, actualremote block/member/whole/indexSHA before exactSHA-size-mtime-device-inode transportduplicatecleanup; alloriginals remain. CPU5 I/O0models,600sdualclock technicalcap. Latechain outsidearchive explicit.

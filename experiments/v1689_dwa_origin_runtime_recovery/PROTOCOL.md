@@ -1,0 +1,3 @@
+# Distinct V1690 runtime recovery
+
+No entry until actualCOMPLETIONclosed/machineRESULT and accurateRUNTIME_CLOSED_REVIEW/sourceSHA/REVIEWoriginal/idlelock. One archive240MiB cap/32MiBblocks+download/512MiBroot/all15GiB. Sourcecommit fromV1686 once newsourceSYNC_RESULT;runtime exactrefonly/no secondpush. Release phase-v1690-dwa-measured-origin-runtime-20261123. Actualremote everyblock/member/whole/indexSHA then exactSHA-size-mtime-device-inode eligibleduplicatecleanup/canonicalbarrier. No new query/model/physics/audit/replay. No scientificpass from archive; actual outcomes in original closedreview.
