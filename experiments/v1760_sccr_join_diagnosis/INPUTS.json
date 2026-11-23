@@ -1,0 +1,18 @@
+{
+  "files_SHA256": {
+    "runs/v1754_sccr_numpy_dependency/ORIGINAL_QUERY_RESPONSE.json": "846b72811897abb670b75692ae833c028a096b513ef6df7de2821bf333b67e1a",
+    "experiments/v1754_sccr_numpy_dependency/FIXED_FIXTURE.json": "06cdb57d0bcf5860e8c77b20a42b16125015b22acde64763120f9516cab1e05f",
+    "runs/v1757_sccr_path_vehicle_gate/QUERY_RESULT.json": "12d3debdda2ce74ced2b21df022d57798542bab00441a67601dfc3e5720b4979",
+    "runs/v1757_sccr_path_vehicle_gate/PATH_REQUEST_GATE.json": "21066e0bebf6198ab33aa9aea165739f414dd503ce34d2d2b18e4c92a3642144",
+    "runs/v1757_sccr_path_vehicle_gate/POST_ROUND_STORAGE_BARRIER.json": "2a4940dc60f27d18b21f8b601fb04c07dbe9ed59ec507fdbf5c716874fd0ad66",
+    "runtime/mk-mini/navigation/phase22/continuous_corridor_planner.py": "d1cdb55220fbf3575401f8a067973fef5b1d0621fa7cc24125e7f60f027ab13a",
+    "runtime/mk-mini/navigation/phase21/local_planners/phase21_v4_safe_detour.py": "46f6d14ea883314633451d30cca27ec077f89df64507c760b91f2977d566f1db"
+  },
+  "ranked_hypotheses": [
+    "H1: full-path joins excluded by original local-curve metrics; first steering spike is at a join.",
+    "H2: local curve interior also exceeds Phase center-steering envelope, independently of joins.",
+    "H3: finite-point quantization or degenerate segment causes the first spike."
+  ],
+  "selected_after_observing_prior_failure": true,
+  "not_independent_confirmation": true
+}

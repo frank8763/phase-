@@ -2955,3 +2955,7 @@ V1751 single synthetic original SCCR query closed: pipeline=True; interface_pass
 V1754 NumPy dependency single synthetic original SCCR query closed: pipeline=True; interface_pass=True; see runs/v1754_sccr_numpy_dependency/BACKGROUND_RESULT.json. Artificial software fixture, not measured navigation/benchmark;0plant-physics-replay;no auto successor.
 
 用户命令下一轮：V1754真正corequery1return1/648candidate/118pointselected，计算2.122355s/target4.437492s/owner7.882033s/整69.433671s，NumPy bootstrap1explicitprocesshandle不是0DLL；SOURCE+runtime全remote闭环/原REVIEW/锁闲/childrengone。下一V1757仅原人工路径→Phase原vehiclebridge的采样曲率/转向/速度必要门，不再query/模型/物理/Allocator。不能把原SCCR SAC融合替换成新tracker冒同算法，当前不定义tracker；原V1665requestbody与cap/.1固定，超限保首拒绝不clip/smooth/tune。完成单后台后等审阅，formal20和共同benchmark原分母不改。
+
+V1757 saved synthetic SCCR path/vehicle envelope gate closed: pipeline=True; interface_pass=False; see runs/v1757_sccr_path_vehicle_gate/BACKGROUND_RESULT.json. Artificial software fixture, not measured navigation/benchmark;0plant-physics-replay;no auto successor.
+
+用户新增汇报偏好：以后每轮启动回复同时给预计耗时和最长技术上限；检查时给实际已耗/剩余，估计不当完成保证。当前V1757已closed：原路径采样116点/首vertex2 rawdelta-1.410288122rad超原.427221373cap，数值映射0.000488s/target2.090089s/owner3.903680s/整轮88.892718s；只采样人工路径必要门拒绝，非连续BSpline或SCCR整体不可能证明，0plant/physics/replay/originalquery。完整远端证据闭环及identity退出/原REVIEW/idlelock已核；本条和用户偏好为晚archive外metadata，不重封传push。

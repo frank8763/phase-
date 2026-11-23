@@ -1,0 +1,1 @@
+V1761 I/O-only closure of single V1760 saved-math diagnosis. Combined source+results+figures32MiB/32download/512root/allhistory15GiB. Unique sourcepush30s/ref5s then complete actualremote block/member/whole/indexSHA. Delete only exact SHA-size-mtime-device-inode verified duplicate transport; originals retained.0planner/model/physics/replay. No secondpush/reseal or successor.
