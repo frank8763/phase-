@@ -1,0 +1,11 @@
+# Shared measured-clock and closure evidence contract
+
+For future unexecuted adapters only; no old DWA task, qualifier, audit, replay, result, clock or journal was altered/repeated. V1691 remains a finite originalmargin refusal/non-arrival with audit gaps.
+
+The production helper independently binds packet and scan simulation time to integernative using the original1e-8 tolerance and uses actual packet simtime for scan age. Native causality remains strict, scans at most5native old, recorded timestamps and packetSHA are unchanged. This handles accumulation roundoff without clockreset or future-scan admission. Current real-channel monotonic timestamps must still agree within the original acquisition interval. Whitelist/range/schema/SHA gates remain.
+
+Production closure wrapper sets ERROR_STOP_CLOSURE before calling exact unchanged200zero+current5native-scan code. It changes only the evidence tag, preserves requests/scan cadence and first error propagation. Journal partition treats normal zero waits as normal, recognizes optional original goal-stop separately and forbids normal after terminal/errorstop. No stage inference from velocity/request magnitude.
+
+SOURCE CLOSED PASS once: 14079frozen files, 19negative cases, inner4.384346s. Actual production metadata tested with nonzero-native accumulated-time positives, exactone acquisition, future/stale/nonfinite/clock/SHA/shape/truth refusals and realCLI no-model refusal. Exact originaltail exercised only with200 SOFTWARE fake-step callbacks/41fake-scan callbacks,0physical callbacks. Faulting callback preserved its original error/tag; explicit phasepartition tests retain normal zero waits. AllsourceSHA verified after sourcechildexit/REVIEWoriginal restored/idlelock.0numerical model/library imports, DLL/FFI/optimizer/physical/replay operations. These software callbacks are not physical integration or an extra stop experiment.
+
+This is shared source/interface qualification, not a qualified complete controller client, a repair of the old failed audit, an algorithm result, full safety PASS or navigation evidence. Source remote recovery pending before any next researchround. Automatic heartbeat remains deleted, no training/Stage/hardware/new agents; oldformal20 and DWA100 ledgers unchanged.

@@ -1,0 +1,3 @@
+# Shared contract source recovery
+
+RequireV1694SOURCEclosedPASS/allsourceSHA/priorV1691runtimebarrier/REVIEWoriginal/idlelock. One<=16MiB archive/32MiBblocks-download/512MiBroot/all15GiB. Inherit14065source chain, include all new/changed source and qualification members. New unique30spush5sref,Releasephase-v1695-shared-observation-closure-source-20261123. First actualremote everyblock/member/whole/indexSHA then exactSHA-size-mtime-device-inode transportduplicatecleanup/canonicalbarrier before next round. CPU5I/O600sdualclock0models,alloriginals retained, lateaggregate outsidearchive. No repeated old push/delivery/reseal.
