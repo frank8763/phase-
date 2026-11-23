@@ -1,0 +1,3 @@
+# Once separate DWA reference source recovery
+
+V1676SOURCEclosedPASS/allfrozenSHA/revieworiginal/idlelock/priorV1672runtimebarrier.16MiBarchive32download512root/all15GiB,inheritverifiedV1672chain/newdelta+exactupstreamlicense+failedmetadataintake andoldC3availabilityproof. Unique newsourcepush30/ref5/Releaseonce/fresh600sbootdualclockI/O. Actualremote eachblock/member/whole/indexSHA then exactduplicatecleanup.0numericquery-model-physical-replayduringarchive. No oldrerun/reseal/2push/heartbeat.

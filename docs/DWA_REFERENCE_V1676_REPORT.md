@@ -1,0 +1,9 @@
+# DWA reference start and limits
+
+Historical G4C DWA-C3 remains61/100, SCCR60/100. Its exact environment and474B frozenconfig are absent locally; cleanupinventory preserves configSHAff3e9c3d... but cannot recoverbytes. No originaloldC3 rerun or guessedconfig. Availability record: runs/v1675_dwa_reference_intake/OLD_IMPLEMENTATION_AVAILABILITY.json.
+
+New separately named PYTHONROBOTICS_DWA_PHASE_ACKERMANN_MASK pins AtsushiSakai/PythonRobotics ef64608ceb0012f2a0b3d532fddc80243e807cfa: DWAfile10138B SHA985aa9acb1e6de234fa15ec9c83d5a7435ce2d9e22c6f6e308e1ab038141c471 plusMITlicense1170B,exactGitblob/size/SHA verified. InitialmetadataAPI trailing-slash request failed beforecapture; separatecorrectedendpointcapture passed,originalfailure retained.
+
+Source qualification CLOSED PASS/13912frozen/13negative/0model-FFI-query-physical-replay. Extract7functions andRobotType originalAST,onlypremotionAckermannforwardmask added;costs/tiebreak/trajectory unchanged. Phasecaps/bodydimensions explicitlydisclosed;defaultcostweights/horizon/grid/dynamicwindowaccel retained. Instuckrotation flag0 suppresses car-incompatibleinplacespin.1116publicstaticperimeterpoints only. Referencepoint/rectanglecost is not a continuousfullfootprint ororiginalpaperbrakingcertificate; original8state+memory5native+2200stop externalgate required. Savedexposedinput only,no newvehicle/commonbenchmark. Numericalquery not yet executed.
+
+Primary paper describes reachable velocities and braking admissibility; the educational reference is a distinct implementation and does not establish that full contract. [Fox et al., original paper](https://publications.ri.cmu.edu/storage/publications/pub_files/pub1/fox_dieter_1997_1/fox_dieter_1997_1.pdf), [maintainer documentation](https://atsushisakai.github.io/PythonRobotics/modules/5_path_planning/dynamic_window_approach/dynamic_window_approach.html). Our external originalresponsegate is an adaptation,not a claim of exactpaper implementation.
