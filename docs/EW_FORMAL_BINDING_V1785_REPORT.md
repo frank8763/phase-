@@ -1,0 +1,5 @@
+# EW相同配额/stdio接口的软件API修复
+
+原V1781源码资格0models时被/dev/null O_RDWR拒绝，原FAILED结果保持。本版只继承只读stdin、不创建DEVNULL，并补软件测试Path导入。相同原writer/所有安全/数值body/参数/门保持，不加fileno/rawfd权限；必须真实writer下3metadata child证明通过后才下一未执行case。不是旧actual重跑；phase09full技术失败永久保留。
+
+一次SOURCE已CLOSED PASS，13373冻结源/19拒绝用例；真实原OutputBoundary下3子进程纯metadata文件+stdio交换全部通过，文件写入逐字节计费、首选candidate数组保持，0models/FFI/physics/replay。未执行数值workerinitializer/optimizer，实际资格待剩余正式case，不重跑phase09full。

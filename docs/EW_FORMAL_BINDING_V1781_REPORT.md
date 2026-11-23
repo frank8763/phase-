@@ -1,0 +1,3 @@
+# EW配额内文件/标准输出工作接口
+
+原phase09full技术censor、30418actual/replay/独立前缀安全审核/远端闭环保持，不重跑不计方法拒绝。新版本只用原边界计费的currenttask输入文件和有界stdio替代不允许的共享semaphoreIPC；不放rawfd/fileno、不改数值function code/参数/门。原固定顺序首次选中candidate数组保持，后续数值不选candidate只保presence/完整摘要；所有原优化工作与时间/call上限保留。仅剩7未执行case，新的真实边界软件SOURCE待执行，未称数值或导航PASS；再有技术/安全异常不再自动修源。
