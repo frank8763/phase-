@@ -31,7 +31,7 @@
   "active_entrypoint": "experiments/v1646_prefix_audit_scope/entry.py",
   "active_math": null,
   "active_math_round": null,
-  "active_preparation": "v1710_native_build_materials",
+  "active_preparation": null,
   "active_round": null,
   "active_run": null,
   "active_window": null,
@@ -2745,6 +2745,31 @@
       "parent_console_hold_bytes": 4194304
     }
   },
+  "latest_native_material_batch": {
+    "ABI_or_build_qualified": false,
+    "barrier_sha256": "0cfdfda30ed3b9d1771e634da0f16567a311af4cc559e43c202a22c1d0b8473d",
+    "batch": "06_python_boost_link_01",
+    "models": 0,
+    "package_downloads": 4,
+    "passed": true,
+    "recovery_pending": false,
+    "runtime_remote_verified": true,
+    "source_version": "V1726",
+    "task_allocated_bytes": 13758464
+  },
+  "latest_native_material_campaign": {
+    "additional_dev_package_complete": true,
+    "additional_exact_dev_package": "libpoco-dev1.9.2-3ubuntu3",
+    "all_required_roots_remote_closed": true,
+    "failed_old_runtime_root_excluded": true,
+    "models": 0,
+    "original136_material_records_complete": true,
+    "original_author_source_unchanged": true,
+    "successful_input_roots": [
+      "v1712:first3",
+      "v1716:runtime85"
+    ]
+  },
   "latest_noetic_metadata_intake": {
     "barrier_sha256": "b109bceb812b995cd1384e5c25b0d8a5d1d255707da203e0e490f423c7c8a877",
     "closed": true,
@@ -5026,6 +5051,31 @@
     "runtime_remote_verified": true,
     "source_intake_passed": true,
     "version": "V1699"
+  },
+  "latest_teb_native_build": {
+    "all14079_shared_source_SHA_verified": true,
+    "allruns_bytes": 11586576384,
+    "closed": true,
+    "compile_calls": 1,
+    "configure_calls": 1,
+    "execution_idle": true,
+    "first_error": null,
+    "method_outcome": null,
+    "models": 0,
+    "optimizer_DLL_loads": 0,
+    "optimizer_calls": 0,
+    "optimizer_constructors": 0,
+    "other_toolchain_dynamic_load_count": null,
+    "owner_and_child_gone": true,
+    "passed": true,
+    "physical_native": 0,
+    "replay_native": 0,
+    "result_sha256": "8388293df20cc5489b9f5d4f5ea6dd561043a909adf81805f2d8f69eac0cb752",
+    "review_original": true,
+    "runtime_recovery_pending": false,
+    "scope": "ORIGINAL_TEB_CPU4_LIBRARY_BUILD_ONLY",
+    "secondary_errors": [],
+    "source_SHA_unchanged": true
   },
   "latest_time_window_diagnosis": "runs/v1269_ew_phase_diagnosis/COMPLETION.json",
   "latest_user_hold": {
@@ -13103,9 +13153,10 @@
     "heartbeat_recreation": false,
     "method": "TEB",
     "prior_round_closed": true,
-    "required": "Select complete author-CMake and actual ELF native build materials; recover exact payloads in original224MiBtask/15GiBroot, qualify original absolute-path namespace and bounded CPU4 originalsource compilation. V1710 currently one AST-only module with no owner/protocol/entry/once or authority."
+    "prior_round_remote_pending": false,
+    "required": "Implement and qualify the exact original TEB runtime/ABI/current-observation binding under experiments/v1730_teb_runtime_binding/PROTOCOL.md before any solver/vehicle execution."
   },
-  "next_experiment": "v1710_native_build_materials",
+  "next_experiment": "v1735_teb_dependency_map_diagnosis",
   "next_physical": false,
   "next_physical_authorized": false,
   "next_physical_campaign_authorized_conditionally": {
@@ -13120,7 +13171,7 @@
     "start_condition": "complete recovery source and live integration qualification passed before any new physical initialization",
     "user_choice": "新独立12小时：三路线全过后，条件进入固定24项"
   },
-  "next_preparation": "v1710_native_build_materials",
+  "next_preparation": "v1735_teb_dependency_map_diagnosis",
   "next_route_binding_draft": "experiments/v1449_route_initializer_binding/PROTOCOL.md",
   "next_scope": "Integrate V1437 shared5400s phase guards into current production lifecycle/supervisor before necessary zero-model qualification; full route admission remains absent.",
   "night_candidate_relay": "runs/v1192_eight_gib_relay",
@@ -13325,7 +13376,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "PREPARING_FROZEN_NATIVE_BUILD_MATERIAL_CAMPAIGN_NO_MODELS",
+  "status": "TEB_DEPENDENCY_MAP_DIAGNOSIS_PREPARED",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13403,6 +13454,26 @@
     "whole_navigation_qualified": false
   },
   "target_journal": "Robotics and Autonomous Systems",
+  "teb_actual_build_progress": {
+    "all9_author_CXX_objects_compiled": true,
+    "compiler_refusal": null,
+    "configure_passed": true,
+    "dynamic_load_or_ABI_qualified": false,
+    "final_link_inputs_present": true,
+    "library_compiled": true,
+    "library_path": "runs/v1728_teb_final_link_build/build/devel/lib/libteb_local_planner.so",
+    "library_sha256": "a64f3c2fec3a9508d019854a00aeb720d971c674e11328ff6a56f6bdb3158853",
+    "link_missing": [],
+    "message_generation_passed": true,
+    "missing_SONAMEs": [],
+    "models": 0,
+    "one_author_CXX_object_compiled": true,
+    "optimizer_calls": 0,
+    "runtime_barrier_sha256": "b1fc0f33bf0fed2e9cfddd45ec66d2160e29459939eb1ef8bfcb38b78d6ae223",
+    "runtime_remote_verified": true,
+    "source_SHA_unchanged": true,
+    "static_transitive_candidate_files": 50
+  },
   "user_stop": {
     "path": "runs/v1382_weekend_campaign/user_stop_20261122/STOP_RECORD.json",
     "sha256": "0d42f9ea105b0a30eb6bed24ec10d75ec8fc96e0c49005ec36e1a580c01536c6"
@@ -13513,5 +13584,28 @@
     "storage_ready": true,
     "temporary_storage_cap_bytes": 10737418240
   },
-  "weekend_next_preparation": null
+  "weekend_next_preparation": null,
+  "latest_teb_runtime_binding": {
+    "closed": true,
+    "passed": false,
+    "scope": "TEB_LOADER_C_POD_SOURCE_ONLY",
+    "outer_first_error": "AssertionError()",
+    "native_first_error": "AssertionError('EXPECTED_DEPENDENCY_NOT_MAPPED')",
+    "explicit_DLL_loads": 1,
+    "metadata_FFI_calls": 0,
+    "planner_constructors": 0,
+    "optimizer_calls": 0,
+    "models": 0,
+    "physical_native": 0,
+    "replay_native": 0,
+    "upstream_static_registration_count": null,
+    "complete_vehicle_or_numeric_runtime_qualified": false,
+    "all_source_SHA_verified": true,
+    "owner_and_child_gone": true,
+    "review_original": true,
+    "execution_idle": true,
+    "runtime_recovery_pending": false,
+    "canonical_barrier_sha256": "3c83987b17a52f9c64a8f21660d1e966c60d84b47f848505e01b36249288c0f0"
+  },
+  "next_step": "One sourceguarded map diagnostic; reuse exact bridge, no recompilation or optimizer"
 }
