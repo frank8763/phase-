@@ -18,7 +18,8 @@ def main():
  assert sha(out/'RESULT.json')==owner['machine_result_sha256']
  rows=read(out/'APPLIED_JOURNAL.json');applied=sum(r['applied']for r in rows)
  assert result['new_actual_native']==owner['actual_native']==applied
- origin=read(out/'CURRENT_MEASURED_ORIGIN.json')if(out/'CURRENT_MEASURED_ORIGIN.json').exists()else None
+ origin_paths=sorted(out.glob('cycle_*_origin.json'));origin=read(origin_paths[0])['receipt']if origin_paths else None
+ progress=read(out/'NAVIGATION_PROGRESS.json')if(out/'NAVIGATION_PROGRESS.json').exists()else None
  audit=result.get('independent_audit')or{}
  proof=dict(closed=True,reviewed_unix=time.time(),scope='EXPOSED_DWA_RECEDING_FULLTASK_DEVELOPMENT_NOT_COMMON_BENCHMARK',
   passed=bool(owner['passed']and result['passed']),scientific_navigation_passed=bool(result.get('whole_navigation_passed')),whole_navigation_passed=bool(result.get('whole_navigation_passed')),
@@ -26,7 +27,7 @@ def main():
   actual_native=result.get('new_actual_native'),own_replay_native=result.get('own_replay_native'),
   navigation_functional_passed=bool((result.get('navigation')or{}).get('passed')),
   independent_full_audit_passed=bool(audit.get('passed')),
-  actual_query_counts=(result.get('navigation')or{}).get('reference_counts'),
+  actual_query_counts=(result.get('navigation')or{}).get('reference_counts')or(progress or{}).get('reference_counts'),recorded_navigation_progress=progress,current_origin_receipt_count=len(origin_paths),
   tracked_recovery_subset=result.get('model_work'),all_modelwork_total=None,internal_Allocator_constructions=None,
   first_error=result.get('first_error'),secondary_errors=result.get('secondary_errors'),outer_first_error=owner.get('first_error'),
   saved_independent_audit=audit,original_goal_distance_m=(result.get('navigation')or{}).get('original_goal_distance_m'),
@@ -37,7 +38,8 @@ def main():
   formal_assignment_increment=0,new_independent_task_increment=0,old_V1683_case_not_reaudited_or_rerun=True,
   remote_runtime_recovery_pending=True,closure_review_models=0,closure_review_numerical_calls=0)
  proof['source_result_paths_SHA256']={str(p.relative_to(R)):sha(p)for p in [O/'COMPLETION.json',O/'SOURCE_FREEZE.json',out/'RESULT.json',out/'APPLIED_JOURNAL.json']}
- if origin:proof['source_result_paths_SHA256'][str((out/'CURRENT_MEASURED_ORIGIN.json').relative_to(R))]=sha(out/'CURRENT_MEASURED_ORIGIN.json')
+ if origin_paths:proof['source_result_paths_SHA256'][str(origin_paths[0].relative_to(R))]=sha(origin_paths[0])
+ if progress:proof['source_result_paths_SHA256'][str((out/'NAVIGATION_PROGRESS.json').relative_to(R))]=sha(out/'NAVIGATION_PROGRESS.json')
  (O/'RUNTIME_CLOSED_REVIEW.json').write_text(json.dumps(proof,indent=2,allow_nan=False)+'\n')
  print(json.dumps({k:proof[k]for k in ['passed','actual_native','own_replay_native','navigation_functional_passed','independent_full_audit_passed','first_error','whole_navigation_passed']}))
 

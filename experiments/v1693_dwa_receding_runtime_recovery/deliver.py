@@ -68,16 +68,34 @@ def deliver():
         folder=h.O/'readback';folder.mkdir();reader=Reader(index['parts'],known,folder,h.download);count=verify(reader,index)
         assert len(reader.verified)==len(index['parts'])
         recovered=folder/'ARCHIVE_INDEX.json';h.download(recovered,known['ARCHIVE_INDEX.json']);assert h.sha(recovered)==h.sha(I/'ARCHIVE_INDEX.json')
-        proof=dict(passed=True,source_commit=sync_result['head'],release_url=release['html_url'],every_asset_actual_download_SHA=True,every_member_SHA_and_link_text=True,whole_archive_SHA=True,recovery_index_download_SHA=True,members=count,archive_bytes=index['archive_bytes'],models=0,physical_admission=False,verified_unix=time.time())
+        # Explicit late metadata assets; immutable archive/index are not resealed.
+        late=h.read(I/'LATE_MEMBERS_INDEX.json');assert late['sealed_archive_index_sha256']==h.sha(I/'ARCHIVE_INDEX.json')
+        latefiles=[]
+        for row in late['files']:
+            path=I/'late_transport'/row['asset_name'];assert path.stat().st_size==row['bytes']and h.sha(path)==row['sha256']
+            h.ensure_uploaded(path,h.assets(h.read(h.O/'RELEASE.json')));latefiles.append((path,row['sha256']))
+        h.ensure_uploaded(I/'LATE_MEMBERS_INDEX.json',h.assets(h.read(h.O/'RELEASE.json')))
+        lateknown=h.assets(h.read(h.O/'RELEASE.json'));latefolder=h.O/'late_readback';latefolder.mkdir()
+        lateverified=[]
+        for row in late['files']:
+            downloaded=latefolder/row['asset_name'];h.download(downloaded,lateknown[row['asset_name']])
+            assert downloaded.stat().st_size==row['bytes']and h.sha(downloaded)==row['sha256']
+            latefiles.append((downloaded,row['sha256']));lateverified.append(dict(path=row['path'],asset_name=row['asset_name'],sha256=row['sha256'],bytes=row['bytes']))
+        lateindex=latefolder/'LATE_MEMBERS_INDEX.json';h.download(lateindex,lateknown['LATE_MEMBERS_INDEX.json']);assert h.sha(lateindex)==h.sha(I/'LATE_MEMBERS_INDEX.json')
+        latefiles.append((lateindex,h.sha(lateindex)))
+        proof=dict(passed=True,source_commit=sync_result['head'],release_url=release['html_url'],every_asset_actual_download_SHA=True,every_member_SHA_and_link_text=True,whole_archive_SHA=True,recovery_index_download_SHA=True,members=count,archive_bytes=index['archive_bytes'],late_members=lateverified,late_index_sha256=h.sha(I/'LATE_MEMBERS_INDEX.json'),late_index_actual_remote_SHA_verified=True,sealed_archive_unchanged=True,models=0,physical_admission=False,verified_unix=time.time())
         h.dump(O/'FULL_REMOTE_VERIFIED.json',proof)
         entries=[]
         for row in index['parts']:
             path=I/'archive'/row['name'];st=path.lstat();assert path.is_file()and not path.is_symlink()and st.st_size==row['bytes']and h.sha(path)==row['sha256']
             entries.append(dict(path=str(path.relative_to(R)),sha256=row['sha256'],bytes=st.st_size,device=st.st_dev,inode=st.st_ino,mtime_ns=st.st_mtime_ns))
+        for path,identity in latefiles:
+            st=path.lstat();assert path.is_file()and not path.is_symlink()and h.sha(path)==identity
+            entries.append(dict(path=str(path.relative_to(R)),sha256=identity,bytes=st.st_size,device=st.st_dev,inode=st.st_ino,mtime_ns=st.st_mtime_ns))
         h.dump(O/'TRANSPORT_CLEANUP_MANIFEST.json',dict(verified_remote_proof_sha256=h.sha(O/'FULL_REMOTE_VERIFIED.json'),entries=entries))
         for row in entries:
             path=R/row['path'];st=path.lstat();assert (st.st_dev,st.st_ino,st.st_size,st.st_mtime_ns)==(row['device'],row['inode'],row['bytes'],row['mtime_ns'])and h.sha(path)==row['sha256'];path.unlink()
-        recovered.unlink();folder.rmdir();h.dump(O/'TRANSPORT_CLEANUP.json',dict(passed=True,only_remote_verified_duplicate_transport_removed=True,archive_bytes=index['archive_bytes'],all_original_qualification_inputs_and_outputs_retained=True,exact_SHA_size_mtime_device_inode_manifest=True,cleanup_unix=time.time(),models=0));h.dump(h.O/'FINALIZED.json',proof)
+        latefolder.rmdir();(I/'late_transport').rmdir();recovered.unlink();folder.rmdir();h.dump(O/'TRANSPORT_CLEANUP.json',dict(passed=True,only_remote_verified_duplicate_transport_removed=True,archive_bytes=index['archive_bytes'],all_original_qualification_inputs_and_outputs_retained=True,exact_SHA_size_mtime_device_inode_manifest=True,cleanup_unix=time.time(),models=0));h.dump(h.O/'FINALIZED.json',proof)
     except BaseException as exc:h.dump(h.O/'ERROR.json',dict(error=repr(exc),traceback=traceback.format_exc(),unverified_originals_retained=True,models=0));raise
 
 
