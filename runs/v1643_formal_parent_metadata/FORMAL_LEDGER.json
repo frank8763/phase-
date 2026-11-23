@@ -1,8 +1,8 @@
 {
   "scope": "new phase mechanism comparison only",
-  "recorded_unix": 1795429684.267866,
+  "recorded_unix": 1795430353.5081625,
   "registered_assignments": 8,
-  "closed_assignments": 7,
+  "closed_assignments": 8,
   "unexecuted_assignments": 12,
   "registered_does_not_mean_completed": true,
   "pilot_excluded": true,
@@ -177,13 +177,19 @@
       "phase": 4.8689554913751625,
       "sensor_seed": 10060001,
       "registered": true,
-      "closed": false,
-      "status": "ACTIVE_REGISTERED_SINGLE_BACKGROUND",
-      "model_result": null,
-      "owner_passed": null,
-      "actual_native": null,
-      "own_replay_native": null,
-      "source_version_root": "runs/v1744_formal_interface_qualification"
+      "closed": true,
+      "status": "CLOSED_PASS_REMOTE_VERIFIED",
+      "model_result": true,
+      "owner_passed": true,
+      "actual_native": 47320,
+      "own_replay_native": 47320,
+      "source_version_root": "runs/v1744_formal_interface_qualification",
+      "completion_path": "runs/v1643_formal_parent_metadata/rounds/phase_04__no_onward/COMPLETION.json",
+      "completion_sha256": "e272b21c7b0135c225e766364a61a9c7fa989ed108712f2b25d50041e2351f2b",
+      "functional_result": null,
+      "independent_full_goal_audit_passed": true,
+      "independent_prefix_safety_audit_passed": false,
+      "post_round_barrier_sha256": "37f262cd21d3c0087143a2d316203e4252c69fbb52896c2915e456e7689c2755"
     },
     {
       "assignment_id": "phase_05__full",
@@ -367,12 +373,14 @@
     }
   ],
   "closed_non_success_assignments": 6,
-  "closed_actual_native_known_sum": 246885,
-  "closed_own_replay_native_known_sum": 246885,
+  "closed_actual_native_known_sum": 294205,
+  "closed_own_replay_native_known_sum": 294205,
   "closed_native_counts_unknown_assignments": [
     "phase_03__full"
   ],
-  "closed_phase_pairs": 3,
+  "closed_phase_pairs": 4,
   "closed_phase03_effect_comparison_eligible": false,
-  "closed_successful_assignments": 1
+  "closed_successful_assignments": 2,
+  "closed_phase04_effect_comparison_eligible": true,
+  "closed_phase04_onward_benefit_observed": false
 }

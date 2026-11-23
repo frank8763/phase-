@@ -1,0 +1,44 @@
+{
+  "figure_only_no_model_or_audit_calls": true,
+  "source_vehicle_body_sha256": "bc1d52585fef8fee8885ae0ec70ae5db9e6a128e41af84238a3b93492c853add",
+  "initial_state_uncompressed_members_SHA_equal": true,
+  "initial_member_SHA256": {
+    "phase_04__no_onward": {
+      "qpos.npy": "5a12a3aadd908d44a4fc93b016e0f6c9de741961a2214444f00a59cec4c07ae9",
+      "qvel.npy": "52615d9a98d3211e2b1032c9c5c18fb4b4f3697558e093b81f02a6baf0630f05",
+      "ctrl.npy": "9ca3040a3dec3e7421b3a970ae8d4ea3599d0eb9363701fd7f1731aab25e5f2f",
+      "mocap_pos.npy": "8e5e92a02320e54f3ba3d222aa209f56c34b7bdf06177d34c2c73ef082718621",
+      "mocap_quat.npy": "a7763ce45ecfc430a927e106f5f22ff3eb6cd9765e3ac983f8ffed04ecbf68ab",
+      "time.npy": "a0d329eb3937582ac064de62a424759a98f7c8a8e478fab934328ea35b92fe0b"
+    },
+    "phase_04__full": {
+      "qpos.npy": "5a12a3aadd908d44a4fc93b016e0f6c9de741961a2214444f00a59cec4c07ae9",
+      "qvel.npy": "52615d9a98d3211e2b1032c9c5c18fb4b4f3697558e093b81f02a6baf0630f05",
+      "ctrl.npy": "9ca3040a3dec3e7421b3a970ae8d4ea3599d0eb9363701fd7f1731aab25e5f2f",
+      "mocap_pos.npy": "8e5e92a02320e54f3ba3d222aa209f56c34b7bdf06177d34c2c73ef082718621",
+      "mocap_quat.npy": "a7763ce45ecfc430a927e106f5f22ff3eb6cd9765e3ac983f8ffed04ecbf68ab",
+      "time.npy": "a0d329eb3937582ac064de62a424759a98f7c8a8e478fab934328ea35b92fe0b"
+    }
+  },
+  "rows": [
+    {
+      "assignment": "phase_04__no_onward",
+      "scientific_passed": true,
+      "actual_native": 47320,
+      "own_replay_native": 47320,
+      "goal_distance_m": 0.24247824628184625,
+      "actual_min_clearance_m": 0.27698465551487667,
+      "first_error": null
+    },
+    {
+      "assignment": "phase_04__full",
+      "scientific_passed": true,
+      "actual_native": 47320,
+      "own_replay_native": 47320,
+      "goal_distance_m": 0.24247824628184625,
+      "actual_min_clearance_m": 0.27698465551487667,
+      "first_error": null
+    }
+  ],
+  "limitations": "Same known course/new phase only; independent audit outcomes remain original machine results; no statistical/realtime/generalization claim"
+}
