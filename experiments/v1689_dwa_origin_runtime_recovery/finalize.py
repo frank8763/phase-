@@ -31,7 +31,7 @@ def main():
   for folder in folders:
    for p in folder.rglob('*'):
     if(p.is_file()or p.is_symlink())and '__pycache__'not in p.parts:files.add(p)
-  for name in ['CURRENT_EXPERIMENT.json','RESEARCH_STATUS.md','docs/DWA_REFERENCE_V1676_REPORT.md']:
+  for name in ['CURRENT_EXPERIMENT.json','RESEARCH_STATUS.md','docs/DWA_REFERENCE_V1676_REPORT.md','docs/DWA_MEASURED_ORIGIN_V1690_REPORT.md','docs/ALGORITHM_COMPARISON_COMPLETION_20261123.md','runs/v1650_comparison_completion/DWA_EXECUTION_PROGRESS_20261123.json']:
    files.add(R/name)
   inherited=frozen.copy()
   for name,identity in frozen.items():
