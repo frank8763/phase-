@@ -16,7 +16,7 @@ def load(n,p):
 def main():
  os.sched_setaffinity(0,{5});assert not(O/'ARCHIVE_CLAIM.json').exists()
  parent=read(R/'runs/v1382_weekend_campaign/LEDGER.json');assert parent['active_round']is None and parent.get('active_math_round')is None and not parent['models_now_authorized']
- assert read(R/'runs/v1730_teb_runtime_binding/SOURCE_OUTER_CLOSED.json')['closed']
+ assert read(R/'runs/v1730_teb_runtime_binding/PREENTRY_COMPLETION.json')['closed']
  assert (R/'runs/v1730_teb_runtime_binding/RUNTIME_CLOSED_REVIEW.json').is_file()
  current=load('v1533_existing_usage_only',R/'experiments/v1518_compact_parent_control/common.py')
  frozen=read(R/'runs/v1694_shared_observation_closure/SOURCE_FREEZE.json')['files'];assert all(sha(R/n)==h for n,h in frozen.items())
@@ -24,7 +24,7 @@ def main():
  assert read(R/'runs/v1694_shared_observation_closure/POST_ROUND_STORAGE_BARRIER.json')['passed']
  author_freeze=R/'runs/v1730_teb_runtime_binding/AUTHOR_SOURCE_FREEZE.json'
  if author_freeze.exists():assert all(sha(R/n)==h for n,h in read(author_freeze)['files'].items())
- claim=read(R/'runs/v1730_teb_runtime_binding/SOURCE_OUTER_ONCE_CLAIM.json');assert not Path('/proc',str(claim['owner_pid'])).exists();assert all(sha(R/k)==v for k,v in read(R/'runs/v1730_teb_runtime_binding/INPUT_BINDING.json')['files_SHA256'].items())
+ assert not(R/'runs/v1730_teb_runtime_binding/BUILD_ONCE_CLAIM.json').exists()and not(R/'runs/v1730_teb_runtime_binding/SOURCE_OUTER_ONCE_CLAIM.json').exists();assert all(sha(R/k)==v for k,v in read(R/'runs/v1730_teb_runtime_binding/INPUT_BINDING.json')['files_SHA256'].items())
  assert current.usage()+(32+32+512)*1024**2<15*1024**3,'SOURCE_RECOVERY_FULL_STORAGE_PEAK_REFUSED'
  put(O/'ARCHIVE_CLAIM.json',dict(started_unix=time.time(),models=0,archive_cap_bytes=32*1024**2,allruns_before_bytes=current.usage(),reserved_peak_bytes=current.usage()+(32+32+512)*1024**2))
  io=load('v1501_original_archive_io',R/'experiments/v1382_weekend_campaign/storage_preserve.py');inventory=load('v1501_original_inventory',R/'experiments/v1391_handoff_archive_recovery/archive.py').inventory

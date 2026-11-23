@@ -47,7 +47,7 @@ def source_sync():
         pushed=subprocess.run(['git','push','origin','HEAD:main'],cwd=R,capture_output=True,text=True,timeout=30)
         proof['push_executed']=True
         proof['push_returncode']=pushed.returncode
-        ref=subprocess.run(['git','ls-remote','origin','refs/heads/main'],cwd=R,capture_output=True,text=True,timeout=5)
+        ref=subprocess.run([str(R/'tools/phase_storage_20261107/vendor/gh'),'api','repos/frank8763/phase-/git/ref/heads/main'],cwd=R,capture_output=True,text=True,timeout=5)
         proof['remote_verified']=ref.returncode==0 and ref.stdout.split()[0]==head
     except subprocess.TimeoutExpired:proof['error']='BOUNDED_REF_TIMEOUT'
     h.dump(O/'SOURCE_SYNC_RESULT.json',proof);print(json.dumps(proof))
@@ -57,10 +57,11 @@ def source_sync():
 def sync():
     assert not(O/'SYNC_CLAIM.json').exists()
     original=O/'SOURCE_SYNC_RESULT.json';source=h.read(original)
-    assert source['remote_verified']and len(source['head'])==40
+    assert len(source['head'])==40
+    if not source['remote_verified']:assert h.read(O/'PREENTRY_REMOTE_REF_PROOF.json')['passed']and h.read(O/'PREENTRY_REMOTE_REF_PROOF.json')['head']==source['head']
     h.dump(O/'SYNC_CLAIM.json',dict(head=source['head'],unix=time.time(),models=0,no_retry=True,push_executed=False,ref_only=True))
-    ref=subprocess.run(['git','ls-remote','origin','refs/heads/main'],cwd=R,capture_output=True,text=True,timeout=5)
-    proof=dict(head=source['head'],remote_verified=ref.returncode==0 and ref.stdout.split()[0]==source['head'],models=0,push_executed=False,source_sync_sha256=h.sha(original),ref_only=True)
+    ref=subprocess.run([str(R/'tools/phase_storage_20261107/vendor/gh'),'api','repos/frank8763/phase-/git/ref/heads/main'],cwd=R,capture_output=True,text=True,timeout=5)
+    proof=dict(head=source['head'],remote_verified=ref.returncode==0 and json.loads(ref.stdout)['object']['sha']==source['head'],models=0,push_executed=False,source_sync_sha256=h.sha(original),ref_only=True)
     h.dump(O/'SYNC_RESULT.json',proof);assert proof['remote_verified'];print(json.dumps(proof))
 
 

@@ -1,0 +1,3 @@
+# V1733 TEB runtime SOURCE evidence recovery
+
+One newsource30spush5sref before interfacebuild/SOURCE; one independent32MiB archive after closed build/source owner, accurate native/outer first errors and counts. Raw .so/source/console/maps/POD/CPP metadata and any failures retained. Runtime is refonly same source/no2push/reseal; fullactualremote everyblock/member/whole/indexSHA, exact SHA-size-mtime-device-inode duplicatecleanup then canonicalbarrier before numerical scope.224MiBtask+32archive+32download+512root/all15GiB unchanged. Libraryloads and metadataFFI are not solver or safety/nav results. Lateaggregate/checkpoint source timing explicit.
