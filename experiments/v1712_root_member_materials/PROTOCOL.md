@@ -1,0 +1,7 @@
+# V1712 exact package-root parser repair
+
+Continue the explicitly authorized TEB original dependency/build task, no automation. V1710 firstbatch failed before extraction because a valid dot tar root has empty PurePosixPath.parts; original result/error/raw remain immutable. New version only treats empty/dot tar root as an ignorable directory, rejects a non-directory root, and retains every original namespace/traversal/symlink/quota/content check. No author source or algorithm/parameters changed.
+
+Same fixed136packages/four batch order and signed-index bytes. Firstbatch reuses the exact original Boost .deb after SHA/size and V1710 actualremote barrier, no duplicate download or old attempt replay. Other selected payloads are new static material recovery; no maintainer script/downloaded program/library/FFI/compiler/model/optimizer/physics/replay execution. New software fixture covers dot/slashdot roots, root regular rejection, original selected/omitted byte/link cases and path negatives; no old numerical suite.
+
+Each batch once, ROOT OWNER.lock, closed actualremote/exactcleanup predecessor barrier. CPU5 nice19/thread1/GPUhidden; original224MiB/task,8MiBterminal,32MiBarchive/download,512MiBroot and all historical15GiB unchanged. Original normal4200/close1200/root5400 bootdual retained. One common newsource30spush5sref, runtime refonly; no retry/reseal. Accurate closure then raw .debs/membermanifest fullremote and exacttransportcleanup before next batch. Only after all complete may a separately frozen CPU4 original library compilation run.
