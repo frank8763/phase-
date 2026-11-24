@@ -1,0 +1,3 @@
+# Distinct first archive executor for closed phase10full
+
+OldV1799 ARCHIVE_CLAIM/failedinventory and originalsource/results immutable. No oldfinalizer/deliver reentry, numericalaudit/replay/plant orscientificreclassification. New once exactinventory references existing real originalAUTH20261123 (never manufactures AUTH20261124). Include complete oldround/claim/error console, saved descriptive pair plots andnewhelper. Same240MiBarchive/32MiBstreamdownload/512MiBroot/full15GiB cap. Reuse exactsolecc820source proof/no push/ref, newReleasephase-v1801-phase-10-full-runtime-20261124. Allactualremote block/member/whole/indexSHA then exactSHA-size-mtime-device-inode eligibleduplicatecleanup andlatecanonicalbarrier; scientificpassedfalse preserved.

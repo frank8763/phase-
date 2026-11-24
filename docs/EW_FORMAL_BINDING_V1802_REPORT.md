@@ -1,0 +1,3 @@
+# 关闭阶段字节授权重新核算
+
+原phase10full的SAVE_NPLUS1/BYTE_GRANT_EXHAUSTED永久保留，未重跑补审。新代码只在已停止动作、无inflight且原capture/terminal holds存在时，原full census重新核真实task/root余量和原300sTTL；不扩224MiB/15GiB、不用压缩估计credit。driver除一个关闭保存前调用外AST精确相同。一次SOURCE已PASS13490freeze/7negative，source2.150184s/outer5.502575s，0model/FFI/physics/replay；旧worker/auditor suite按SHA复用，尚不代表新完整actualcapture或独立数值audit通过。
