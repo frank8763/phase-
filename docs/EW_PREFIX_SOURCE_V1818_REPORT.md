@@ -1,0 +1,7 @@
+# 首次发现早期拒绝的审核阶段接口
+
+只未来未执行phase11full/phase12full/no_time。原phase11no_time functional与secondary保持，不重跑补审。新增guard仅在精确FIRST_DISCOVERY_NOT_NORMAL_DRIVING且真实检测native=n-200、200zero已完整、拒绝前zero请求、尚无DISCOVERY_STOP时不要求已执行后续2200阶段。原其它actualctrl/memory/slew/body/causalnormal/reference/scene/contact/self/source/replay/finalstopped数值断言原样。原审核AST只一处阶段expectation被guard包裹，实际branch软件测试和篡改拒绝，不改变正常算法/控制/参数/seed/安全门。未SOURCE前不准入。
+
+V1814在0model/FFI/physics/replay的SOURCE发现原audit_refusal.py未在继承EW冻结清单，原FAILED源码/qualification/outer保持。V1818仅显式从已全remote的V1806 DWA来源链核相同原文件SHA并纳入新freeze/delta，不放权、不改原审核数值或方法。新qualification不得把旧SOURCE重跑或旧实际补审。
+
+新V1818 SOURCE一次CLOSED PASS13530freeze/8negative/source2.190813s/outer5.692735s/0modelFFIphysicalreplay，实际stageguard软件branch与原审核function身份/AST恢复通过。旧数值suite未重跑，旧V1814和phase11no_time FAIL保持。完整source恢复链后仅phase11full/phase12full/no_time固定三项；新primary真实方法拒绝只有完整prefix审核/replay/capture/remote均通过才下一项。

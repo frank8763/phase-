@@ -1,0 +1,3 @@
+# 首次发现早期拒绝的审核阶段接口
+
+只未来未执行phase11full/phase12full/no_time。原phase11no_time functional与secondary保持，不重跑补审。新增guard仅在精确FIRST_DISCOVERY_NOT_NORMAL_DRIVING且真实检测native=n-200、200zero已完整、拒绝前zero请求、尚无DISCOVERY_STOP时不要求已执行后续2200阶段。原其它actualctrl/memory/slew/body/causalnormal/reference/scene/contact/self/source/replay/finalstopped数值断言原样。原审核AST只一处阶段expectation被guard包裹，实际branch软件测试和篡改拒绝，不改变正常算法/控制/参数/seed/安全门。未SOURCE前不准入。
