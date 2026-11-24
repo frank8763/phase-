@@ -1,0 +1,7 @@
+# 2026-11-24 checked restart
+
+Prior evening batch closed3/9: TEB common02 finite original HCP refusal with independent prefix audit (200actual/replay), DWA finite retained-stop refusal with independent prefix audit (280actual/replay), RPCCR technical source/output-root binding failure before numerical initialization; machine RESULT missing and owner counts remain null. All three raw/evidence archives actual remote SHA verified and canonicalbarriers closed. No whole navigation success in those three; no reruns.
+
+User requested careful checking and restart. New V1849TEB/V1850DWA/V1851RPCCR namespaces and V1852controller preserve original six remaining tasks/order and physical fields. RPCCR SOURCE=O alias removed, global plan remains in global source root. New valid-admission software regression exercises the exact production functions rather than only no-admission rejection. Separate V1853 source recovery explicitly includes the proof root, V1854 per-round runtime recovery. Preparation and software proof are not scientific progress; source and actual statuses are their saved machine records.
+
+Deadline remains today21:00+08; fixed six entries run detached sequentially, every round closes and verifies remote evidence before next. No chat automation, no training/hardware/Stage, no numerical tuning. Expected1–3h, hard actual5400s each/laststart19:00, complete batch stops by21:00. Real safety/evidence anomalies still stop. Newly qualified source must be frozen and fully remotely recoverable before actual authority.
