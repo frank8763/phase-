@@ -1,0 +1,3 @@
+# TEB入口顺序 SOURCE失败
+
+原资格0model/DLL/FFI/native/optimizer失败，正确bridge/source索引与会话软件正负例已走到CLI负例。native_worker先bind cwd guard再检查缺admission，源码fixture的cwd为repo触发guard路径断言，未到预期未授权拒绝。原失败/FAILED_SOURCE_FREEZE永久保持，不改源重qual。新的必要权限入口顺序修正应在新版本将admission检查移到guard之前，guard/readonly/native配置不放宽。该软件错误不是TEB功能负例；共同actual仍未注册。

@@ -1,0 +1,17 @@
+{
+  "closed": true,
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "replay_native": 0,
+  "FFI_loads": 0,
+  "FFI_calls": 0,
+  "optimizer_calls": 0,
+  "primary": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1829_teb_common_exact_bridge/source_target.py\", line 102, in main\n    try:runpy.run_path(str(C/name),run_name='__main__')\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/runpy.py\", line 289, in run_path\n    return _run_module_code(code, init_globals, run_name,\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/runpy.py\", line 96, in _run_module_code\n    _run_code(code, mod_globals, init_globals,\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1829_teb_common_exact_bridge/native_worker.py\", line 102, in <module>\n    if __name__=='__main__':raise SystemExit(main())\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1829_teb_common_exact_bridge/native_worker.py\", line 21, in main\n    guard=load('v1824_native_guard',R/'experiments/v1504_priest_namespace_worker/common.py').guard(Path.cwd())\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1504_priest_namespace_worker/common.py\", line 30, in guard\n    sys.addaudithook(binding.bind_function(original,output))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1447_full_module_guard_identity/guard_binding.py\", line 13, in bind_function\n    assert output.is_relative_to(R/'runs')and output.is_dir()and not Path(output).is_symlink()\nAssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1829_teb_common_exact_bridge/source_target.py\", line 103, in main\n    except AssertionError as e:assert str(e)==reason;negatives.append('unadmitted_'+name)\nAssertionError\n",
+  "classification": "SOURCE_ENTRY_ORDER_SOFTWARE_REFUSAL_BEFORE_ANY_MODEL",
+  "all_failed_source_SHA_verified": true,
+  "diagnosis": "native entry installs cwd-scoped immutable guard before unadmitted authority check; source fixture cwd is repo not runs. Entry must reject authority first, then require readonly runtime cwd. No numerical library behavior changed.",
+  "new_actual_registered": false,
+  "source_backup_pending": true
+}
