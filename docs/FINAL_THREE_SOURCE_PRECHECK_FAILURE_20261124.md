@@ -1,0 +1,3 @@
+# Failed closure source precheck
+
+V1875 contract generation mistakenly required maximum_control_native37600 instead of original57600. No task numericalfieldchanged. Metadata contractpreflight failed and the subsequent shellcommand mistakenly still invoked the onceSOURCE owner, which rejected with0modelsFFIphysicalreplay and restoredREVIEW. Alloriginalfailedsource/inputs/FAILEDfreeze/outerconsole retained and immutable; no actualonce/init/navigation. NewV1878 archives and verifies this failedSOURCE before newnecessaryqualification. Originalcommon09evidencefailure is separate and not rerun. No safety/model/parameter/seedchange, no taskcap/deadlineextension.
