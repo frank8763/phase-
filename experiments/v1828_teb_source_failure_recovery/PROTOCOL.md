@@ -1,0 +1,1 @@
+One32MiB failedSOURCE archive,actualremote block/member/whole/indexSHA,exacteligibleduplicatecleanup then barrier. Zero model/DLL/optimizer/native/physics/replay. Preserve FAILED_SOURCE_FREEZE and all primary/outer failure. One new unique source push30/ref5; no oldsource repush/deliver/requal. Runtime not admitted; scientificpassed null. Full15GiB incl32MiBdownload/512MiBroot.
