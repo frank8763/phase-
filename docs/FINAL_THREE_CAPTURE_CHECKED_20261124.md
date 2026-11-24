@@ -1,0 +1,7 @@
+# RPCCR final3 prospective common EW tasks
+
+common09 actual goal/stop returned but original Nplus1 save failed bytegrantprecharge; original missingevidence and technicalcensor remain. No repeat or repaired-oldresult. Newcommon10–12 originalphase/seed/safety/method unchanged. Physicalcapture-first closes/releases its exacthold, then freshoriginalquota grants Nplus1 write on actualallocatedusage. Does not enlarge224MiBtask or15GiBroot, assumecompressioncredit or reduceprecision/tail. OriginalNumericalbody unchanged, newSOURCE validates only grant/order/bytecapacity/realadmissioninterfaces beforefreeze/remote/actual. Software samples do not guaranteefullactual fit.
+
+Source/actual statuses are machineJSON, fullgoalindependentaudit required after capture/replay; near-goal notPASS. Original21+08deadline/19laststart/5400perround and CPU2run_phase singlelock remain.3fixed tasks backgroundsequential only after sourceremote chain; bounded once networklookupI/Ocontinuation retains olderrors andarchiveidentity. All oldfailures/unknowns immutable. Other14baseline slots resource/auditblocked retain denominator, not falsely compared asmethodfailures. Expected20–60min uncertain.
+
+The earlier V1875 SOURCE precheck failed before all numerical execution due generated validation constants37600/3400. Its failed proof and source are immutable and fully remote verified under V1878; new checker restores exact registered57600/5400 constants, no task or numerical changes. This new version is not qualified until its one real SOURCE gate passes.
