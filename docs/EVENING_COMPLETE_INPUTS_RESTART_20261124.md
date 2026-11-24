@@ -1,0 +1,5 @@
+# Remaining-five complete-input restart
+
+This preparation made an input-copy mistake: the previous relocation included tasks but omitted original LIMITS_DRAFT and method configuration JSON. common03 DWA exited before canonical initialization and has no RESULT; owneractual/replay remain null. This technical censor and original console are preserved and fully remotely recovered, never retried. Source14859/softwareadmission qualification stays its original scope, not actual runtime success.
+
+New relocation includes all14 exact original immutable supplemental inputs, pinned at their new paths and compared to V1844 frozen SHA. New source regression exercises exact driver.run beyond admission through limits loading, with explicit nonnumerical first-load stop. Five original remaining entries only, same physical/scientific parameters and fixed order. Sourcefreeze/remote/actual statuses are saved machine records. Earlier failures never erased or relabeled method failures. Deadline still2026-11-24 21:00+08, background bounded sequential, no chat supervision or automatic tuning. Expected1–3h; safe evidence closure required before each next task.
