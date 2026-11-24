@@ -1,0 +1,5 @@
+# RPCCR首共同任务配对准备
+
+与V1806 DWA common01完全相同：case/model/course/起终点/actor相位2.5198721131983906/route-sensorseed10060001/单actor/motionclass/actual-replay60000/2200stop，以及原V1281全部安全和成功门。原RPCCR V1744完整WE full已验证runtime/audit-binding/数值body按精确SHA引用，只有commonauthority、输出namespace、已验证关闭grant与结果身份变更，不调参数/seed/安全门。不是旧20消融任务，不重跑旧失败。
+
+一次SOURCE PASS14435freeze/2unadmittedCLI negatives，核了原driverAST只插原关闭grant+metadata、全部物理task字段和DWA/sharedtask一致；source2.248057s/outer5.604122s，0model/FFI/physical/replay/oldnumeric-suite。新source全actualremote恢复链后才一个原合同actual尝试。DWA同任务已完整closure/replay/独立prefix安全审核和remoteSHA闭账为有限method拒绝，RPCCR结果仍未知，不能提前宣称优越或统计优势。
