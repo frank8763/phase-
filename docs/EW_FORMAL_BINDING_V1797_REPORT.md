@@ -1,0 +1,7 @@
+# 原独立审核目录绑定修复
+
+原phase10no_time记录到达/50754actual+replay误差0，但全独立审核因通配导入C=V1271导致读错ew_audit路径，原FAILED不改不重审。新接口只在原native/ew/timing审核模块源SHA与functioncode验证后，将C绑定自身原目录，在phase/timing seam复制namespace之前完成；不改任何数值门或函数body。仅新SOURCE软件实际调用原dispatcher→EW→base节点，在数值body前截停并核路径；原历史审核/worker软件suite按SHA复用。新phase10full只有源全remote/priorbarrier后可单独启动，无夜间自动后继。
+
+V1793 SOURCE outer在source_target解析前SyntaxError失败，模型/FFI/物理/数值/测试均0。原字节及FAILED_SOURCE_FREEZE保持。V1797只测试脚本补空格，所有newsource/helper先全ASTparse成功，再一次SOURCE；原审核目录接口和科学数值不改。
+
+一次实际CPU2/run_phase SOURCE已CLOSED PASS：13452冻结成员、5个新接口负例，原native dispatcher→EW→base safety实际软件调用链在数值body前截停；full/no_time原phase和timing seam保持，C-relative依赖逐sourceSHA/存在核过，0model/FFI/physics/replay。旧worker/数值suite按源SHA复用。SOURCE outer6.307424s，source不是完整数值审核或导航通过。
