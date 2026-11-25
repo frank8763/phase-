@@ -13671,7 +13671,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "RPP_STRAIGHT_CONTROL_OUTPUT_COMPONENT_PASSED_FORMAL_PENDING",
+  "status": "RPP_CURRENT_VEHICLE_COMPONENT_SOURCE_RECOVERY_PENDING",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13971,5 +13971,23 @@
     "ETA_not_measured_or_guaranteed": true,
     "ETA_excludes_all12_formal_execution": true,
     "no_background_navigation": true
+  },
+  "rpp_current_vehicle_component": {
+    "source_root": "runs/v1968_rpp_current_vehicle_component",
+    "source_passed": true,
+    "source_members": 15796,
+    "models_authorized": false,
+    "actual_started": false,
+    "formal_started": false,
+    "planned_actual_native": 2210,
+    "planned_complete_stop": 2200,
+    "maximum_actual_including_error_stop": 2410,
+    "maximum_round_s": 5400,
+    "normal_s": 4200,
+    "close_s": 1200,
+    "CPU2_physics_only": true,
+    "CPU4_nominal_geometry_only": true,
+    "readonly_ROS_peer": true,
+    "source_remote_pending": true
   }
 }

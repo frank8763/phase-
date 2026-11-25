@@ -1,0 +1,9 @@
+# 当前RPP原车辆接口验收
+
+V1963原单RPP直线CABI输出通过后，新V1966当前地图软件实现/独立C++参考/信息域负例通过。新增同步public-grid窗口+当前32ray端点标记+原inflation公式是明确工程适配；保留原RPPbinary/参数/原36vertexfootprint，不冒称ROS异步窗口时序等价。完整实际足迹和动态原保守预测门另独立执行。
+
+V1968当前组件一次SOURCE PASS15796，9个原response/capture/physicalclose/work模块body不改；真实物理CLI/原生binding/隔离只读ROSpeer在无准入时拒绝，0RPPDLLconstructorquery/modelphysicsreplay。实际只读ROSpeer所有输出仅pipe，parent单证据写者承担原quota，纯几何规划CPU4，模型/Predictor/Allocator/actualreplay严格CPU2executionlock。
+
+拟做exposed原WEseed10060003/phase.6896150643753352新鲜t0一组件：1canonicalinit/1RPPquery，10normal+2200完整真实刹停，前0/5均需原5+2200当前状态准入；全状态捕获Nplus1/actualcontactselfroot/自重放1e-8/原genericctrlmemoryaudit与预测数组完整几何及全2210实际误差核验。不是旧44750导航重跑，不计入common120；功能拒绝原样闭。先全新source远端闭链才actual，正常预估数分钟，5400s technicalcap(normal4200close1200)不是预计用满。
+
+后续formalcommon01RPP后台启动只在完整生产资格与source/task/safety/capture/replay/provenance/storage准入实际通过后；当前formalRPP12仍0启动。其他6方法三核接口档案已具体核对，仍缺生产方法资格，PSF/PCBF未实现/完整SCCR传感不兼容保留。不会因CPU利用要求并发未资格模型。
