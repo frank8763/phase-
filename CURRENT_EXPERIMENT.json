@@ -13671,7 +13671,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "RPP_SYNTHETIC_COMPONENT_CLOSED_DEPENDENCY_REFUSAL",
+  "status": "RPP_STRAIGHT_CONTROL_OUTPUT_COMPONENT_PASSED_FORMAL_PENDING",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13894,11 +13894,11 @@
     "source_passed": true,
     "source_members": 15656,
     "source_remote_recovery_passed": true,
-    "controller_constructors": 0,
-    "solver_calls": 0,
+    "controller_constructors": 1,
+    "solver_calls": 1,
     "actual_native": 0,
     "formal_tasks_started": 0,
-    "next_action": "EXACT24_OBSERVED_CONSTRUCTOR_TYPE_SUPPORT_PINS_BEFORE_NEXT_BOUNDED_API_QUERY",
+    "next_action": "CAUSAL_CURRENT_MAP_FRAME_CLOCK_AND_ORIGINAL_VEHICLE_RESPONSE_QUALIFICATION",
     "prior_loader_failures_preserved": [
       "v1944",
       "v1945",
@@ -13922,7 +13922,9 @@
     "component_runtime_remote_barrier": "runs/v1952_rpp_component_entry_checked/COMPONENT_POST_STORAGE_BARRIER.json",
     "component_runtime_remote_barrier_sha256": "0ac0c7fa5c5b9cf2910bb5011187b518ff6072f2aaa49a5f407ef66fb83ac11e",
     "next_exact_dependency_draft": "runs/v1952_rpp_component_entry_checked/NEXT_EXACT_DEPENDENCIES_DRAFT.json",
-    "no_background_navigation": true
+    "no_background_navigation": true,
+    "latest_synthetic_output_verified": true,
+    "latest_synthetic_source_root": "runs/v1963_rpp_nonexecuting_shm_scope"
   },
   "common_algorithm_current_summary": {
     "denominator": 120,
@@ -13933,5 +13935,41 @@
     "TEB_complete": true,
     "RPCCR_complete": true,
     "SCCR_full_sensor_applicability_blocked": true
+  },
+  "rpp_control_output_latest": {
+    "source_root": "runs/v1963_rpp_nonexecuting_shm_scope",
+    "source_members": 15753,
+    "exact_prior24dependencies_pinned": true,
+    "same_isolated_entry_preflight_passed": true,
+    "source_remote_pending": false,
+    "actual_component_started": true,
+    "actual_control_output_verified": true,
+    "formal_tasks_started": 0,
+    "prior_v1957_failure": "resource_policy /dev/null denied by guard before native child; no RPP DLL or constructor",
+    "prior_v1957_runtime_barrier": "runs/v1957_rpp_observed_constructor_dependencies/COMPONENT_POST_STORAGE_BARRIER.json",
+    "models_now_authorized": false,
+    "all_ELF_pins_passed_in_prior_component": true,
+    "nonexecuting_DDS_mapping_classifier_saved_cases_passed": true,
+    "actual_component_closed": true,
+    "returned_twist": [
+      0.1,
+      0.0
+    ],
+    "valid_solver_calls": 1,
+    "constructor_calls_returned": 1,
+    "actual_native": 0,
+    "replay_native": 0,
+    "component_wall_s": 6.771371932001784,
+    "runtime_full_remote_verified": true,
+    "runtime_barrier": "runs/v1963_rpp_nonexecuting_shm_scope/COMPONENT_POST_STORAGE_BARRIER.json",
+    "runtime_barrier_sha256": "0d215b624d13a88f1e8100520e28f74738e1863147b1933e7bcf50e7e4017687",
+    "next_action": "CAUSAL_CURRENT_MAP_FRAME_CLOCK_AND_ORIGINAL_VEHICLE_RESPONSE_QUALIFICATION",
+    "formal_start_eta_engineering_hours": [
+      3,
+      6
+    ],
+    "ETA_not_measured_or_guaranteed": true,
+    "ETA_excludes_all12_formal_execution": true,
+    "no_background_navigation": true
   }
 }

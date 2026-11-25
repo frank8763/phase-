@@ -1,0 +1,5 @@
+# Original RPP straight output component evidence closure
+
+V1963 original binary/params/fixture oneactualcomponent PASS6.771s:1DLL1constructor1nonnullhandle1validsolverreturn v.1m/s,w0, one duplicatednative tick rejected before compute/handlepoisoned,1destroy. Constructor/query exactELFpins and boundednonexecutingDDSmetadata passed. No MuJoCo model/physics/replay/currentcausalmap or vehicle-response qualification, no common task/whole goal/navigation performance claim. Internalnativework unknown. All15753source SHA afterchildexit/REVIEWoriginal/dualidlelock/ownedchildgone verified.
+
+One runtimearchive32/download32/root512/allhistory15GiB, reference solebd245588 sourceproof/refonly/no secondpushref/newRelease/sourcequal/audit/replay/model. Existing sourceRelease only, actualremote block/member/whole/indexSHA then exactSHA-size-mtime-device-inode duplicatecleanup; originalrawfailure/pass retained. CPU5I/O600bootdualclock, rawresult/fullconstructormap/fullquerymap/console/source-derivedreview retained. Newhelper lateGit covered by runtimememberSHA. Nextcomponent onlyafter fullbarrier. No Stage/agent/chat/heartbeat/training/hardware.
