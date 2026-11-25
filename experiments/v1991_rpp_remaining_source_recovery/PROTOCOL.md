@@ -1,0 +1,3 @@
+# RPP fixed night source recovery
+
+Once new source freeze/inherit15897, one unique push30/ref5, source delta <=32MiB, actualremote eachblock/member/whole/indexSHA and exact duplicate transportcleanup before any new model. common01 closedtechnical/error1015/replay1015/barrier retained, no replay/retry. Newfixedcommon02–12 pipeline has unchangednumericalRPP/vehicle/safety/params, only exactlossless logs/request/static reference and metadata task-aware owner. Every source member current/inherited actualremote chain required, modelpermission not implied by transport. No second oldsource push/ref/reseal/requal/audit/replay.
