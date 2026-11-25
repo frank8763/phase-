@@ -13671,7 +13671,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "RPP_METADATA_SOURCE_PASSED_RECOVERY_PENDING",
+  "status": "RPP_SYNTHETIC_API_SOURCE_RECOVERY_PENDING",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -13893,17 +13893,22 @@
     "source_root": "runs/v1948_rpp_observed_dependency_scope",
     "source_passed": true,
     "source_members": 15656,
-    "source_remote_recovery_passed": false,
+    "source_remote_recovery_passed": true,
     "controller_constructors": 0,
     "solver_calls": 0,
     "actual_native": 0,
     "formal_tasks_started": 0,
-    "next_action": "SOURCE_DELTA_REMOTE_RECOVERY_THEN_DISTINCT_BOUNDED_CURRENT_CONTROL_COMPONENT",
+    "next_action": "NEW_COMPONENT_SOURCE_DELTA_REMOTE_RECOVERY_THEN_ONE_SYNTHETIC_QUERY",
     "prior_loader_failures_preserved": [
       "v1944",
       "v1945",
       "v1946"
-    ]
+    ],
+    "metadata_source_commit": "b8f35228d985b96fc3c1548efc32ba9237e8d558",
+    "synthetic_component_source_root": "runs/v1952_rpp_component_entry_checked",
+    "synthetic_component_source_passed": true,
+    "synthetic_component_source_remote_pending": true,
+    "synthetic_component_started": false
   },
   "common_algorithm_current_summary": {
     "denominator": 120,

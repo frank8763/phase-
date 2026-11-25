@@ -9,3 +9,5 @@ RPP V1943同步C边界编译成功，使用原ExecutableRPP及显式既有车辆
 V1948新一次SOURCE成功：实际依赖严格ELF magic+路径+SHA；额外11个运行时加载中间件来源固定，两个精确命名lttng共享等待文件必须非ELF且实际mapping无可执行权限。保存91maps软件反馈复现旧11缺失，6负例通过；实际1DLL+6POD/null调用及7接口负例通过，0controller/costmapconstructor/solve/model/physics/replay。15546继承+110新delta=15656source，childexit后全SHA核过，REVIEW原字节恢复、双锁闲。
 
 这仅关闭加载清单问题。仍需原参数下真实控制器/TF+因果地图/当前指令调用、车辆全状态响应/完整2200安全尾、capture/replay/独立审核，再准入原12RPP任务。完整RP-CCR/TEB/DWA对照已闭，七方法尚未正式执行。源/元数据远端恢复进行中，不谎称新文件在旧3c5171sourcecommit/Release中。系统/TLS外部ELF仅精确哈希约束，不打包为可跨机自包含的ROS环境。
+
+后续补记（晚于V1949sourcearchive）：V1948源码远端闭链15656项完整核过，7符号链接经V1950精确文本与目标SHA审核，不重复传封。V1952新增一次synthetic空地图直线API组件源已软件验证（10authority负例、真实-I入口纯导入、0DLL），尚未调用控制器；V1951入口草稿软件pass因静态发现隔离import和非finiteJSON缺口在0numerical前withdrawn保留。原参数及36顶点footprint固定，只验API，不等价当前因果地图/车辆安全或导航。
