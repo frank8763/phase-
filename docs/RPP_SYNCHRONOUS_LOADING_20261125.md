@@ -11,3 +11,11 @@ V1948新一次SOURCE成功：实际依赖严格ELF magic+路径+SHA；额外11�
 这仅关闭加载清单问题。仍需原参数下真实控制器/TF+因果地图/当前指令调用、车辆全状态响应/完整2200安全尾、capture/replay/独立审核，再准入原12RPP任务。完整RP-CCR/TEB/DWA对照已闭，七方法尚未正式执行。源/元数据远端恢复进行中，不谎称新文件在旧3c5171sourcecommit/Release中。系统/TLS外部ELF仅精确哈希约束，不打包为可跨机自包含的ROS环境。
 
 后续补记（晚于V1949sourcearchive）：V1948源码远端闭链15656项完整核过，7符号链接经V1950精确文本与目标SHA审核，不重复传封。V1952新增一次synthetic空地图直线API组件源已软件验证（10authority负例、真实-I入口纯导入、0DLL），尚未调用控制器；V1951入口草稿软件pass因静态发现隔离import和非finiteJSON缺口在0numerical前withdrawn保留。原参数及36顶点footprint固定，只验API，不等价当前因果地图/车辆安全或导航。
+
+本轮实际 API 组件结果（晚于源码封档）：控制器成功创建、配置并激活一次，随后因24个新加载类型支持ELF未列入资格清单而在有效求解前拒绝。组件5.1913s闭，1DLL/1create attempt/1nonnullhandle/1destroy，0validsolver/0physical/0replay/0MuJoCo model init。原RESULT将returned计数放在依赖审核之后，保留原0字段；独立源码推导补记由destroy_calls=1所需非空handle与ROS activation日志确认返回1。它不是算法导航失败，也不构成导航或安全通过。
+
+全130newmaps已保存，24个额外ELF按实际路径与SHA逐个保存作为证据；本轮不再构造/重试/调整controller/参数。REVIEW原SHA恢复、父子退出、CPU2execution与OWNER锁均闲、全部15686冻结源逐SHA保持。共同120账仍36closed/7whole/84未执行，RPP12项未启动。
+
+下一实质门槛：用这24个实际加载文件补全精确依赖，在独立有界组件中验证第一条原RPP控制输出；随后才是因果地图/TF/车辆响应/完整安全尾/捕获与重放独审，再运行RPP12项。当前没有后台导航。
+
+证据收尾完成：本次组件121members/1301591B已远端逐块、成员、整体与index SHA回读，精确运输重复清理，组件存储barrier闭。原raw结果不改；下一24库精确输入仅DRAFT，未准入下一构造或求解。
