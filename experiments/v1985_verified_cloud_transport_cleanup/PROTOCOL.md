@@ -1,0 +1,3 @@
+# Exact already-public-restored cloud transport duplicates
+
+CPU5 <=600s only. Existing records FULL_REMOTE_VERIFIED/all_streamed_download_sha_verified and PUBLIC_RESTORE part+whole+member verification plus actual downloaded RECORD_INDEX hash must all match before eligibility. Only runs/*/cloud/*.tar.*.part* compressed transport copies outside15897current frozen source. No raw/source/currentinput/anchor, no new remote request/upload/reseal, no model/audit/replay. Exact SHA-size-mtime-device-inode before delete, both locks idle/held and original REVIEW, full15897SHA before/after. Existing storage policy authorizes alreadyverified duplicate transportation cleanup to preserve15GiB; budget never expanded.

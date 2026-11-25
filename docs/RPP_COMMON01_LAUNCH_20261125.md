@@ -9,3 +9,9 @@ V1978正式common01源码资格通过15897成员：连续当前观测/每5步原
 共同对照目前RP-CCR、DWA、TEB各12已闭，whole分别7/12、0/12、0/12；DWA/TEB各10有效有限拒绝+2技术censor。其余7种84项未执行。SCCR原完整传感合同不适用；MPPI同步接口已编译而尚未调用/安全验收；SVG-MPPI、PRIEST仍缺当前完整车辆与正式owner闭环；PSF/PCBF缺实质实现。不能称其余算法全部ready。
 
 新formal只1轮，5400s技术上限含4200正常+1200收尾；后台pipeline7200s上限另含远端恢复。无overall日历截止。预计首轮及审核约30–90分钟只是工程预估，尚无该连续RPP正式实测；可能提前有限拒绝，传输另有最多10分钟技术窗口。没有自动续轮/新chat/heartbeat，模型CPU2持锁，CPU4与CPU6分别准备几何/非模型接口。
+
+## 21:23实际启动更新（晚于源码封档）
+
+V1979全80成员1427960B已远端核验/精确运输清理，15897源链全覆盖，唯一源码commit406bd3d5；不得再推同旧源。首common01于21:21:59后台启动，独立owner与CPU2实际child身份已核，21:23:18已295实际步/59当前RPP查询，仍在运行。统一账37注册/36闭/83未执行，whole7不预加。无自动第二轮。
+
+今晚剩余11项固定表见runs/v1982_rpp_night_queue_proposal/PLAN_DRAFT.json，仅提案，首轮闭环与新task-aware source/owner资格待过。MPPI静态85ELF+plugin入口核过，0DLL/optimizer，RNG/加载/车辆安全未过。新准备与此段为late，当前仅本地/待未来runtime或新source成员SHA，不称旧Git/源封档已覆盖。
