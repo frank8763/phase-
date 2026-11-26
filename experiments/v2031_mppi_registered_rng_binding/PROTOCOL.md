@@ -1,0 +1,5 @@
+# Registered MPPI sampler stream provenance
+
+User requests otherCPUalgorithms. New fixed32bitseed for each of12stillunexecutedcommonMPPI slots, derivedsolelytaskID and fixedtag, lockedbeforeanyformaloutcome. Originalsensor/route/phase/model/tasksunchanged. NewthinCABI seeds originalxtensor defaultmt19937 engine BEFORE nativecontrollerconstructor; exactenginevariableaddress mustequal actualpluginexportedvariable. If separateengine/refusal, stopbeforeconstructor; no silent RNGfallback. No optimizer/noise transformation/parameters changed. Thread scheduling/repeated-controller exact output equivalence not claimed. Runtime saves seed+enginebinding+rawcausalinputs/returns. Existing closed componentzerooutput and failures neverrerun/rescored.
+
+CPU6compile/pure standalone mt19937normal-distribution mathfixture, noalgorithmDLL/controller/plant/replay. Sharedhelper built againstsamefrozenxtensorheaders. Standalone checks fixedseed repeated draws byteexact,differentseed notsame, seedcap/once negative. Prospective actualpluginbinding only aftersource qualification/fullremotechain; no modelpermission from build. Stage8–15,24–31untouched.

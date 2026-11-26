@@ -1,0 +1,3 @@
+# Full first-common MPPI evidence pipeline
+
+Source compactinherits successfulV2027componentfullremotechain; exactnewfulltaskinterface+RNGseed+permethodeventledger/sourceproof only, <=32MiBarchive/downloadwindow, original15GiB. Singlepush30/ref5/fullactualremoteeachassetmemberwholeindexSHA+exactduplicatecleanupbeforemodel. Runtimeoncearchive<=240MiB/parts<=32/readback32window, refonlysameSourceRelease/no secondpush-ref, fullactualremoteeverymember/block/whole/index andexactduplicatecleanupbeforeclosedbarrier. Allactual/replay/audit firsterrors preserved; FINALIZED onlytransport. Runtime includes methodregistration/closureeventcopies andlatebackgroundmetadata. No oldmodel/controller/audit/replay rerun, RPPsourceandglobalstate untouched.
