@@ -1,0 +1,3 @@
+# Source transport pre-archive metadata correction
+
+V2007 archive claim failed inventory preflight because copied report path names a nonexistent20261126report. No archive/index/upload or numerical claim occurred. Keep originalclaim/sourcehelper frozen. New metadata wrapper removes exactly the mutable CURRENT/RESEARCH_STATUS/report listing loop by AST assertion, redirects output to V2009, inventories this wrapper and original failure proof. Numerical source V2006 freeze16085 remains unchanged, no new qualification/constructor/query. Same source onepush/ref has not occurred and may occur only once after concrete archive complete. Source archive/readback each4MiB in original24MiB joint reservation; user authorized continuing otheralgorithms.

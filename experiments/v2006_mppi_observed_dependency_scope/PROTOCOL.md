@@ -1,0 +1,5 @@
+# MPPI exact observed runtime dependency correction
+
+User explicitly requests other algorithms running. Preserve V1993 constructor exit139 and V2000 exact constructor-return/ELF refusal with zero queries, both remotely closed. New scope adds only the two individually SHA-bound visualization typesupport ELFs actually loaded by the prior constructor; no generic library bypass, binary/parameters/sampler/fixture unchanged. Source uses compact inherited V2000 chain. One new constructor and first native query, CPU6 only, 300s dual clock, nice19/thread1/GPUhidden. Not formal navigation or Phase safety qualification. RNG reproducibility/internal work unknown. Stage cores8–15,24–31 untouched; RPP remains CPU2.
+
+8MiB evidence quota, archive/readback each4MiB per phase; full joint peak16092344320B<16106127360B based on active RPP original reservation. Quota guards do not alter optimizer mathematics. All exact source SHA and source remote chain before numeric; at most one once source push30s/ref5s; zero plant/replay/training. On refusal preserve and close, no automatic further constructor. Runtime transport-only success cannot imply scientific success.
