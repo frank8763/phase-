@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "closed": true,
+  "models": 0,
+  "DLLs": 0,
+  "constructors": 0,
+  "optimizer_calls": 0,
+  "physics": 0,
+  "replay": 0,
+  "formal_tasks_registered": 0,
+  "first_error": "ModuleNotFoundError(\"No module named 'context'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2103_svg03_pcbf_diagnosis/qualify_source.py\", line 30, in main\n    ns=e.load('source_bound_diagnostic_namespace',R/'experiments/v2101_parallel_priest_vehicle/filter_namespace.py');cmd=ns.command(C/'math_worker.py',S/'math')\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2103_svg03_pcbf_diagnosis/evidence.py\", line 19, in load\n    spec=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(spec);sys.modules[n]=m;spec.loader.exec_module(m);return m\n                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2101_parallel_priest_vehicle/filter_namespace.py\", line 1, in <module>\n    from context import R,C,SOURCE as S,load\nModuleNotFoundError: No module named 'context'\n"
+}

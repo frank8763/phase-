@@ -1,0 +1,144 @@
+{
+  "closed": true,
+  "local": "2026-11-26T19:43:28.074149+08:00",
+  "scientific_component_passed": false,
+  "formal_common_tasks": 0,
+  "whole_arrivals": 0,
+  "primary": {
+    "stage": "normal",
+    "error": "AssertionError('PRIEST_CURRENT_CYCLE_COMPLETE_STOP_REFUSED')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2101_parallel_priest_vehicle/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2101_parallel_priest_vehicle/navigation.py\", line 32, in run\n    shadow,_=proof_for(receipt,[raw.copy()for _ in range(10)]+[[0.,0.,False]for _ in range(2200)],'shadow',0);assert shadow['passed'],'PRIEST_CURRENT_CYCLE_COMPLETE_STOP_REFUSED'\nAssertionError: PRIEST_CURRENT_CYCLE_COMPLETE_STOP_REFUSED\n"
+  },
+  "secondary": [],
+  "PRIEST": {
+    "author_constructor_attempts": 1,
+    "author_constructor_returns": 1,
+    "optimizer_attempts": 1,
+    "optimizer_returns": 1,
+    "CEM_iterations": 12,
+    "unclipped_request": [
+      0.08959019416365194,
+      0.049774141827173185,
+      false
+    ],
+    "normal_control_native_applied": 0,
+    "errorstop_actual": 200,
+    "own_replay": 200,
+    "replay_error": 0,
+    "contact_mismatch": 0,
+    "bad_contacts": 0,
+    "independent_actual_prefix_audit_passed": true,
+    "whole_arrival": false,
+    "minimum_predicted_raw": 0.24300174789934914,
+    "required_raw": 0.24353421020226934,
+    "reserve_deficit_m": 0.0005324623029202002,
+    "minimum_actual": 0.31498918194116166,
+    "canonical_vehicle_initializations": 1,
+    "internal_factory_model_constructions": null,
+    "q1159_subset": {
+      "cpp_native": 0,
+      "python_native": 2210,
+      "cpp_completed_native": 0,
+      "python_completed_native": 2210,
+      "inflight": null,
+      "cpp_calls": 0,
+      "python_calls": 2210,
+      "cpp_constructor_returns": 0,
+      "python_constructor_returns": 2,
+      "internal_Allocator_constructions": null,
+      "poisoned": false
+    },
+    "total_modelwork": null,
+    "threads_observed_CPU6": [
+      {
+        "phase": "threads_before",
+        "passed": true,
+        "live_count": 3,
+        "all_observed_affinity6": true
+      },
+      {
+        "phase": "threads_after",
+        "passed": true,
+        "live_count": 5,
+        "all_observed_affinity6": true
+      }
+    ],
+    "machine_wall_s": 27.073546009953134
+  },
+  "filters": {
+    "models": 0,
+    "physics": 0,
+    "formal_tasks": 0,
+    "completed_cases": 4,
+    "PSF_performance_NLP_returns": 2,
+    "PSF_initial_hard_refusals": 1,
+    "PCBF_auxiliary_NLP_attempts": 2,
+    "PCBF_auxiliary_calls_returned": 2,
+    "PCBF_auxiliary_accepted": 1,
+    "PCBF_performance_NLP_returns": 1,
+    "PCBF_last_auxiliary_status": null,
+    "PCBF_last_auxiliary_residual": null,
+    "PCBF_last_auxiliary_iterations": null,
+    "last_attempted_case": {
+      "method": "PCBF",
+      "x0": [
+        1.4,
+        0.0,
+        0.0
+      ],
+      "result": "AUXILIARY_ACCEPTANCE_FAILED; exact status/residual not saved"
+    },
+    "remaining_case_unexecuted": {
+      "method": "PCBF",
+      "x0": [
+        -0.1,
+        0.1,
+        0.3
+      ]
+    },
+    "not_Phase_vehicle_qualification": true
+  },
+  "pipeline_wall_s": 61.75105765502667,
+  "all_known_parent_child_identities_gone": [
+    {
+      "identity_path": "runs/v2102_parallel_priest_dispatch/LAUNCH_IDENTITY.json",
+      "pid": 1525394,
+      "same_identity_live": false
+    },
+    {
+      "identity_path": "runs/v2102_parallel_priest_dispatch/ACTIVE_STAGE.json",
+      "pid": 1525637,
+      "same_identity_live": false
+    },
+    {
+      "identity_path": "runs/v2101_parallel_priest_vehicle/VEHICLE_OWNED_CHILD.json",
+      "pid": 1525410,
+      "same_identity_live": false
+    },
+    {
+      "identity_path": "runs/v2101_parallel_priest_vehicle/FILTERS_OWNED_CHILD.json",
+      "pid": 1525411,
+      "same_identity_live": false
+    },
+    {
+      "identity_path": "runs/v2101_parallel_priest_vehicle/vehicle/OWNED_CHILD.json",
+      "pid": 1525414,
+      "same_identity_live": false
+    }
+  ],
+  "REVIEW_original_exact": true,
+  "global_locks_idle": true,
+  "source_members": 17291,
+  "source_commit": "b32311ca8300ece33d40c2f0aaff3006ce0d77de",
+  "all_source_SHA_unchanged": true,
+  "source_and_runtime_full_remote_SHA_and_cleanup_closed": true,
+  "source_runtime_barrier_path": "runs/v2101_parallel_priest_vehicle/POST_COMPONENT_STORAGE_BARRIER.json",
+  "source_runtime_barrier_sha256": "daf322eba30c0cab0f53bdec22d3f76fb8e57b608b36ea8d2359e92ba2554028",
+  "base_formal_denominator": 120,
+  "base_formal_closed": 62,
+  "base_formal_unexecuted": 58,
+  "base_whole_arrivals": 7,
+  "late_metadata": true,
+  "not_in_previously_sealed_source_or_runtime_archive": true,
+  "new_model_replay_or_old_case_reaudit": false
+}
