@@ -14118,7 +14118,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "MPPI_COMMON10_ACTIVE_DUAL_ROUTE_IO_SVG_NOT_STARTED",
+  "status": "MPPI_FINAL_COMMON12_ACTIVE_SVG_SOURCE_READY_REMOTE_PENDING",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -14339,25 +14339,41 @@
   "active_parallel_lanes": [
     {
       "method": "MPPI",
-      "round_id": "common_10__MPPI",
+      "round_id": "common_12__MPPI",
       "CPU": 6,
       "identity": {
         "CPU": 6,
         "boot_id": "638061fd-af0c-4457-bf58-e0e51e42aedf",
-        "pgid": 1418891,
-        "pid": 1418891,
-        "start_ticks": "31294758"
+        "pgid": 1437648,
+        "pid": 1437648,
+        "start_ticks": "31540839"
       },
       "native_live": true,
-      "partial_progress": null
+      "partial_progress": {
+        "native": 3000,
+        "phase": "normal",
+        "modelwork": {
+          "cpp_native": 0,
+          "python_native": 1323000,
+          "cpp_completed_native": 0,
+          "python_completed_native": 1323000,
+          "inflight": null,
+          "cpp_calls": 0,
+          "python_calls": 1323000,
+          "cpp_constructor_returns": 0,
+          "python_constructor_returns": 600,
+          "internal_Allocator_constructions": null,
+          "poisoned": false
+        }
+      }
     }
   ],
-  "parallel_algorithm_checkpoint": "runs/v2063_mppi_remaining_three_dual_route/RUNNING_CHECKPOINT.json",
+  "parallel_algorithm_checkpoint": "runs/v2070_mppi_final_two_shared_metadata/RUNNING_CHECKPOINT.json",
   "parallel_common_ledger": {
     "denominator": 120,
-    "registered": 58,
-    "closed": 57,
-    "unexecuted": 62,
+    "registered": 60,
+    "closed": 59,
+    "unexecuted": 60,
     "qualified_success": 7
   },
   "parallel_actual_rpp08_closed_technical": true,
@@ -14376,19 +14392,19 @@
   "SVG_formal_common_tasks": 0,
   "SVG_full_vehicle_qualified": false,
   "SVG_reverse_reference_qualified": false,
-  "SVG_vehicle_component_source": "runs/v2059_svg_recovered_queue_prerequisite",
-  "SVG_vehicle_source_members": 16782,
+  "SVG_vehicle_component_source": "runs/v2073_svg_parameter_inheritance_scope",
+  "SVG_vehicle_source_members": 16861,
   "SVG_vehicle_source_passed": true,
-  "SVG_vehicle_source_remote_pending": false,
+  "SVG_vehicle_source_remote_pending": true,
   "SVG_vehicle_component_started": false,
   "SVG_vehicle_component_admission_requires_current_MPPI_queue_closed": true,
-  "latest_parallel_check_local": "2026-11-26T14:12:13.383804+08:00",
+  "latest_parallel_check_local": "2026-11-26T14:57:29.994885+08:00",
   "SVG_vehicle_source_commit": "c42d434630c7cff4fbf31bb27cbd6730c2accb46",
   "SVG_vehicle_source_release": "https://github.com/frank8763/phase-/releases/tag/phase-v2059-svg-recovered-queue-source-20261126",
-  "SVG_background_dispatcher_root": "runs/v2060_svg_recovered_background_dispatch",
+  "SVG_background_dispatcher_root": "runs/v2074_svg_case_barrier_dispatch",
   "SVG_background_dispatcher_live": false,
-  "SVG_vehicle_current_stage": "UNEXECUTED_WAITING_FINAL_MPPI_CLOSURE_ADMISSION",
-  "MPPI_current_queue_root": "runs/v2063_mppi_remaining_three_dual_route",
+  "SVG_vehicle_current_stage": "SOURCE_ARCHIVE_CLOSED_REMOTE_PENDING",
+  "MPPI_current_queue_root": "runs/v2070_mppi_final_two_shared_metadata",
   "MPPI_old_queue_failure_preserved": true,
   "MPPI_current_queue_closed_failed": false,
   "dual_route_transport_recovery_root": "runs/v2062_bounded_dual_route_transport",
@@ -14399,5 +14415,12 @@
   "parallel_PRIEST_math_CPU": 7,
   "parallel_PSF_PCBF_math_CPU": 2,
   "parallel_math_Phase_models_authorized": false,
-  "latest_five_algorithm_prepare_local": "2026-11-26T14:23:57.354381+08:00"
+  "latest_five_algorithm_prepare_local": "2026-11-26T14:23:57.354381+08:00",
+  "five_algorithm_preparation_source_remote_pending": false,
+  "five_algorithm_preparation_source_commit": "51e280b3eb1c42233b60b721d9aa94dead43a376",
+  "five_algorithm_math_pipeline_closed_pass": true,
+  "five_algorithm_live_status": "runs/v2064_five_algorithm_parallel_math/FIVE_METHOD_LIVE_STATUS.json",
+  "PRIEST_author_t0_optimizer_component_passed": true,
+  "PSF_PCBF_linear_formulation_passed": true,
+  "remaining_five_formal_common_tasks_unexecuted": 60
 }

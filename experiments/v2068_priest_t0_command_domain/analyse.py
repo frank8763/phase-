@@ -1,0 +1,16 @@
+from pathlib import Path
+import hashlib,importlib.util,json,math,os,time
+R=Path(__file__).resolve().parents[2];C=Path(__file__).resolve().parent;D=R/'runs'/C.name;S=R/'runs/v2064_five_algorithm_parallel_math'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def load(n,p):
+ s=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+os.sched_setaffinity(0,{7});os.nice(max(0,19-os.getpriority(os.PRIO_PROCESS,0)));assert not(D/'RESULT.json').exists();start=time.monotonic();poly=load('original_pure_Bernstein',R/'experiments/v1485_priest_current_polynomial_seam/polynomial.py');contract=load('original_twist_domain',R/'experiments/v1288_baseline_interface/contract.py');current=json.loads((S/'CURRENT_INPUT.json').read_text());result=json.loads((S/'priest_output/RESULT.json').read_text());assert result['passed'];output=json.loads((S/'priest_output/POLYNOMIAL_PROPOSAL.json').read_text());reply=output['candidate']['reply'];samples=[];bad=[];singular=[]
+for i in range(1001):
+ assert time.monotonic()-start<30;s=poly.sample(reply['coefficients_x'],reply['coefficients_y'],time_s=.01*i,gear=reply['gear']);speed=math.hypot(*s['velocity']);row=dict(native_offset=i,time_s=.01*i,speed=speed,curvature=s['nominal_curvature_m_inv'],yaw_rate=s['nominal_yaw_rate_rad_s'],singular=s['singular_zero_speed_tangent']);samples.append(row)
+ if row['singular']:singular.append(i)
+ elif speed>.1+1e-8 or abs(row['curvature'])>1/1.32+1e-8:bad.append(row)
+preview=[poly.sample(reply['coefficients_x'],reply['coefficients_y'],time_s=i*10./99.,gear=reply['gear'])for i in range(6)];vx=sum(x['velocity'][0]for x in preview)/6;vy=sum(x['velocity'][1]for x in preview)/6;speed=math.hypot(vx,vy);desired=math.atan2(reply['gear']*vy,reply['gear']*vx);error=math.atan2(math.sin(desired-current['origin']['body'][2]),math.cos(desired-current['origin']['body'][2]));vr=reply['gear']*speed*math.cos(error);wr=error/(6*10.*.01);accepted=True;first=None
+try:contract.twist(vr,wr)
+except AssertionError as e:accepted=False;first=repr(e)
+report=dict(closed=True,analysis_completed=True,source_bindings={str(p.relative_to(R)):sha(p)for p in[S/'priest_output/RESULT.json',S/'priest_output/POLYNOMIAL_PROPOSAL.json',S/'CURRENT_INPUT.json',R/'experiments/v1485_priest_current_polynomial_seam/polynomial.py',R/'experiments/v1485_priest_current_polynomial_seam/response_policy.py',R/'experiments/v1288_baseline_interface/contract.py',C/'analyse.py']},time_grid_points=1001,singular_offsets=singular,violating_nonsingular_samples=len(bad),first_violating_nonsingular_sample=bad[0]if bad else None,maximum_speed=max(x['speed']for x in samples),maximum_absolute_curvature=max(abs(x['curvature'])for x in samples if not x['singular']),first_original_preview_request=[vr,wr,False],first_preview_original_twist_domain_passed=accepted,first_domain_error=first,no_clipping_or_parameter_change=True,not_Phase_response_or_navigation_qualification=True,models=0,optimizer_calls=0,physics=0,replay=0,wall_s=time.monotonic()-start)
+raw=json.dumps(dict(report=report,samples=samples),allow_nan=False,indent=2).encode()+b'\n';assert len(raw)<=1024**2;(D/'RESULT.json').write_bytes(raw);print(json.dumps(report))
