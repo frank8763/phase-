@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "cleanup": {
+    "passed": true,
+    "entries": 8786,
+    "freed_allocated_bytes": 69242880,
+    "all_frozen_source_SHA_unchanged": true,
+    "models": 0,
+    "physics": 0,
+    "replay": 0,
+    "independent_audits": 0
+  },
+  "retention": {
+    "passed": true,
+    "original_state_sha256": "4ec7e5b772033f8cf0df99a5849b6b575256e0b64b06d9f37d7326c3fb7692c7",
+    "actual_du_allocated_by_case": {
+      "common_05__MPPI": 20000768,
+      "common_04__MPPI": 10866688,
+      "common_06__MPPI": 20017152,
+      "common_08__MPPI": 20054016,
+      "common_12__RPP": 15691776,
+      "common_03__MPPI": 10878976,
+      "common_11__RPP": 15691776,
+      "common_07__MPPI": 19939328,
+      "common_10__RPP": 15691776
+    },
+    "idle_RPP_224MiB_coverage": {
+      "cap_bytes": 234881024,
+      "allocated_bytes": 148832256,
+      "case_roots": [
+        "common_10__RPP",
+        "common_11__RPP",
+        "common_12__RPP",
+        "common_03__MPPI",
+        "common_04__MPPI",
+        "common_05__MPPI",
+        "common_06__MPPI",
+        "common_07__MPPI",
+        "common_08__MPPI"
+      ],
+      "original_RPP_models_permanently_closed": true,
+      "no_new_RPP_or_third_model_permission": true
+    },
+    "remaining_closed_144MiB_allocated": 0,
+    "current_MPI_case_still_in_own_224MiB_grant": "common_09__MPPI",
+    "joint_peak_bytes_unchanged": 16095019008,
+    "limit_bytes_unchanged": 16106127360,
+    "no_baseline_or_window_or_model_source_change": true,
+    "no_numerical_calls": true
+  }
+}

@@ -14118,7 +14118,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "MPPI_COMMON09_RESUMED_SVG_RECOVERED_PREREQUISITE_SOURCE_PASSED_RECOVERY_PENDING",
+  "status": "MPPI_COMMON10_ACTIVE_DUAL_ROUTE_IO_SVG_NOT_STARTED",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -14339,41 +14339,25 @@
   "active_parallel_lanes": [
     {
       "method": "MPPI",
-      "round_id": "common_09__MPPI",
+      "round_id": "common_10__MPPI",
       "CPU": 6,
       "identity": {
         "CPU": 6,
         "boot_id": "638061fd-af0c-4457-bf58-e0e51e42aedf",
-        "pgid": 1403056,
-        "pid": 1403056,
-        "start_ticks": "30929463"
+        "pgid": 1418891,
+        "pid": 1418891,
+        "start_ticks": "31294758"
       },
       "native_live": true,
-      "partial_progress": {
-        "native": 1000,
-        "phase": "normal",
-        "modelwork": {
-          "cpp_native": 0,
-          "python_native": 441000,
-          "cpp_completed_native": 0,
-          "python_completed_native": 441000,
-          "inflight": null,
-          "cpp_calls": 0,
-          "python_calls": 441000,
-          "cpp_constructor_returns": 0,
-          "python_constructor_returns": 200,
-          "internal_Allocator_constructions": null,
-          "poisoned": false
-        }
-      }
+      "partial_progress": null
     }
   ],
-  "parallel_algorithm_checkpoint": "runs/v2056_svg_stop_background_dispatch/RUNNING_CHECKPOINT.json",
+  "parallel_algorithm_checkpoint": "runs/v2063_mppi_remaining_three_dual_route/RUNNING_CHECKPOINT.json",
   "parallel_common_ledger": {
     "denominator": 120,
-    "registered": 57,
-    "closed": 56,
-    "unexecuted": 63,
+    "registered": 58,
+    "closed": 57,
+    "unexecuted": 62,
     "qualified_success": 7
   },
   "parallel_actual_rpp08_closed_technical": true,
@@ -14395,15 +14379,25 @@
   "SVG_vehicle_component_source": "runs/v2059_svg_recovered_queue_prerequisite",
   "SVG_vehicle_source_members": 16782,
   "SVG_vehicle_source_passed": true,
-  "SVG_vehicle_source_remote_pending": true,
+  "SVG_vehicle_source_remote_pending": false,
   "SVG_vehicle_component_started": false,
   "SVG_vehicle_component_admission_requires_current_MPPI_queue_closed": true,
-  "latest_parallel_check_local": "2026-11-26T13:12:16.479364+08:00",
-  "SVG_vehicle_source_commit": "ff816b6cca77f5d6844ce78fe9ed8535ef46e4c7",
-  "SVG_vehicle_source_release": "https://github.com/frank8763/phase-/releases/tag/phase-v2055-svg-original-vehicle-stop-source-20261126",
-  "SVG_background_dispatcher_root": "runs/v2056_svg_stop_background_dispatch",
+  "latest_parallel_check_local": "2026-11-26T14:12:13.383804+08:00",
+  "SVG_vehicle_source_commit": "c42d434630c7cff4fbf31bb27cbd6730c2accb46",
+  "SVG_vehicle_source_release": "https://github.com/frank8763/phase-/releases/tag/phase-v2059-svg-recovered-queue-source-20261126",
+  "SVG_background_dispatcher_root": "runs/v2060_svg_recovered_background_dispatch",
   "SVG_background_dispatcher_live": false,
-  "SVG_vehicle_current_stage": "NEW_SOURCE_RECOVERY_PENDING",
-  "MPPI_current_queue_root": "runs/v2058_mppi_remaining_four_resume",
-  "MPPI_old_queue_failure_preserved": true
+  "SVG_vehicle_current_stage": "UNEXECUTED_WAITING_FINAL_MPPI_CLOSURE_ADMISSION",
+  "MPPI_current_queue_root": "runs/v2063_mppi_remaining_three_dual_route",
+  "MPPI_old_queue_failure_preserved": true,
+  "MPPI_current_queue_closed_failed": false,
+  "dual_route_transport_recovery_root": "runs/v2062_bounded_dual_route_transport",
+  "five_algorithm_preparation_source": "runs/v2064_five_algorithm_parallel_math",
+  "five_algorithm_preparation_source_passed": true,
+  "five_algorithm_source_members": 16815,
+  "five_algorithm_source_remote_pending": true,
+  "parallel_PRIEST_math_CPU": 7,
+  "parallel_PSF_PCBF_math_CPU": 2,
+  "parallel_math_Phase_models_authorized": false,
+  "latest_five_algorithm_prepare_local": "2026-11-26T14:23:57.354381+08:00"
 }
