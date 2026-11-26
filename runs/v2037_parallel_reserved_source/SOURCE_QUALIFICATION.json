@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "closed": true,
+  "models": 0,
+  "algorithm_DLLs": 0,
+  "controller_constructors": 0,
+  "optimizer_queries": 0,
+  "physics": 0,
+  "replay": 0,
+  "source_members": 16482,
+  "proof": {
+    "passed": true,
+    "lanes": [
+      {
+        "method": "RPP",
+        "task": "common_09",
+        "CPU": 2,
+        "original_safety_modules_same": [
+          "capture.py",
+          "error_stop.py",
+          "resources.py",
+          "work.py",
+          "history_binding.py",
+          "response.py",
+          "evidence_service.py",
+          "generic_audit.py",
+          "observation.py"
+        ],
+        "namespace": {
+          "passed": true,
+          "CPU": 2,
+          "blocked": [
+            "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v2037_parallel_reserved_source/lanes/common_02__MPPI/FORBIDDEN_WRITE",
+            "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2038_rpp09_reserved_census/FORBIDDEN_WRITE"
+          ],
+          "models": 0
+        },
+        "unadmitted_real_CLI_zero_models_DLL_constructors": true
+      },
+      {
+        "method": "MPPI",
+        "task": "common_02",
+        "CPU": 6,
+        "original_safety_modules_same": [
+          "capture.py",
+          "error_stop.py",
+          "resources.py",
+          "work.py",
+          "history_binding.py",
+          "response.py",
+          "evidence_service.py",
+          "generic_audit.py",
+          "observation.py"
+        ],
+        "namespace": {
+          "passed": true,
+          "CPU": 6,
+          "blocked": [
+            "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v2037_parallel_reserved_source/lanes/common_09__RPP/FORBIDDEN_WRITE",
+            "/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2039_mppi02_reserved_census/FORBIDDEN_WRITE"
+          ],
+          "models": 0
+        },
+        "unadmitted_real_CLI_zero_models_DLL_constructors": true
+      }
+    ],
+    "reserved_census_real_function_synthetic_capacity_checks": [
+      {
+        "method": "RPP",
+        "synthetic_capacity_states": 5,
+        "own_scope_scan_errors_fail_closed": true,
+        "global_tree_never_scanned": true
+      },
+      {
+        "method": "MPPI",
+        "synthetic_capacity_states": 5,
+        "own_scope_scan_errors_fail_closed": true,
+        "global_tree_never_scanned": true
+      }
+    ],
+    "quiescent_baseline_sha256": "173f9e355cf00f7680f15c2c3bb9995625c801f44f247fdc302f75d4e8ca5859",
+    "original_closed_failures_not_repeated_or_upgraded": true,
+    "old_globaldu_race_replaced_by_precharged_algebraic_upper_bound": true,
+    "missing_local_files_still_fail_closed": true,
+    "MPPI_actual_plugin_preload_seed_probe_still_required_before_formal_claim": true,
+    "original120_denominator_and_task_fields_retained": true,
+    "source_only": true,
+    "models": 0,
+    "actual_algorithm_DLLs": 0,
+    "actual_constructors": 0,
+    "actual_optimizer_queries": 0
+  }
+}
