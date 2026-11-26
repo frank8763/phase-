@@ -1,0 +1,67 @@
+# Multi-algorithm parallel progress — 2026-11-26
+
+RPP original source and queue remain unchanged on CPU2. The morning metadata continuation has closed common05 and06; common07 is active. Whole-goal successes stay7 in the120-slot common denominator. RP-CCR/DWA/TEB each have12 closed cases. No new MPPI/SVG/PRIEST/SCCR/PSF/PCBF formal scores are asserted.
+
+MPPI native first-query qualification V2006 passed onCPU6: one DLL/constructor/query/destroy, raw(v,w)=(0.009196212515234947,-0.00011210761294933036), all native ELF dependencies verified, full internal work unknown. V2009 source52members128514B and V2010 runtime66members146993B recovered with every remote asset/member/whole/index SHA and exact duplicate cleanup; sole source3efea738. Original V1993 crash and V2000 dependency refusal retained.
+
+V2012 source-only current vehicle preparation failed before DLL/model because shared mapping_scope path was misspelled; preserved, superseded only prospectively by V2014. V2014 source16161/sole1d5011d3, actual cold OpenGL load failed before initialization return/0actual0replay; source and runtime remote closure complete. V2017 startup-only fix sets original OSMesa LD_LIBRARY_PATH before Python startup, cold GL metadata seam passed with0MuJoCo imports/models/contexts. Source16202/sole2e5aff4d; actual canonicalinit1/currentMPPIquery1 returned but ModelWork CPU2 predicate refusedCPU6 before normal control.200errorstop+200replay/error0/contactmismatch0/independent prefix auditPASS; technical failure is not an MPPI performance result. Full remote closure passed.
+
+V2020 only exact remotely verified closed V2017 unprotected duplicates moved to cold storage: scene model9940992 allocatedB plus44entries1331200B. All16202sourceSHA verified, canonicalRESULT/audit/finalpacket retained, no current input/anchor removed; restore index/proofs preserved.
+
+V2021 changes only work.before CPU predicate2→6 plus namespace; same model/controller/sampler/parameters/complete safety gates. Synthetic bookkeeping(cap/deadline negative) passed, no numerical calls duringSOURCE. Source16247/solea8537401/Release458840661,52members67996B every actual remote block/member/whole/index SHA verified, cleanup and inherited chain closed. V2023 detached parent1321057/start29630693,CPU6child1321079/start29630883,boot638061fd. One original exposed current-interface component only; ten normal control steps plus full2200actual stop have executed. Replay/audit/closure remain pending at this checkpoint; no whole navigation or formal score.
+
+Phase agreed boundary0–7,16–23; Stage8–15,24–31 untouched. Actual model RPP2/MPPI6,geometry4,metadata5; thread1/nice19/GPUhidden. Original4cm/.035rad/.015steer/.15actual and conservative reserve/contact/self-root/fullstate1e-8 remain. Physics/replay caps2410 for this component,init1/internalfactoryunknown, q1159subset only. Joint prelaunch16106061824<16106127360; per-task18MiB/archive8/readback8/parent1. No concurrent full224MiB second formal task storage reservation exists yet.
+
+SVG original-author numerical interface already passed; its prior actual retained-stop refusal remains closed. PRIEST vehicle mapping unresolved, SCCR full186feature/depth contract incompatible with common causal32ray permission, PSF/PCBF faithful vehicle implementations absent. These are not production-ready; starting them as formal scores would misrepresent the comparison.
+
+## Superseding closure and next component
+
+V2021 finished2210actual=10normal+2200stop and2210replay/error0/contactmismatch0. First technical failure SAVE_JOURNAL BYTE_GRANT_EXHAUSTED; secondary auditmissingjournal, independentauditnull, overallcomponentFAILED. Do not treat it as safetyPASS or a formal MPPI score. Every raw archive member remotely verified and closure complete. V2024 only this closed unprotected actual cache51entries12849152allocatedB moved to exact remotely restorable cold storage; all16247sourceSHA and canonicalfailedRESULT retained.
+
+V2025 zero-modelSOURCE softwarefixture failed because synthetic measure13MiB and actualusedsmall were inconsistent. Original failure preserved, no constructor/model/physics. V2027 corrects only softwarefixture consistency, moves journal after completedphysicalcapture/Nplus1, refreshes originalbytegrant before atomicjournal/replay/audit; parentconsole1MiB→64KiB and parentreservation1MiB→256KiB narrowed. No safety/model/controller parameter/countercap change. Saved2210row607054Bjournal originalatomic/OutputBoundary actualsoftware roundtripPASS, exhaustedgrantrefusalPASS, softwarequota13MiBtask/14GiBallruns explicitlysynthetic not actualcensus; no numericalcalls. Source16328/solefd0b32a8/Release458843917,89members131478B allactualremoteSHA/cleanup/chainclosed.
+
+V2029 newdetachedparent1322904/start29663964,CPU6native1322910/start29664153/boot638061fd, oneboundedcomponent, rootprelaunchjointpeak16105967616<16106127360. RPP remainscommon07CPU2, sourceunmodified. This is activevalidation with finalindependentaudit/replay/evidencepending; not production/fullformaladmission. Latebackgroundhelper copiedbeforelaunch andSHArecorded undercomponentroot, future runtime archive covers it, not falsely claimed in oldGit.
+
+## Final V2027 component result
+
+V2027 CLOSED componentPASS and fullruntime recoverabilityPASS, pipeline54.692s. Canonicalinit1,2210actual=10normal+2200stop,2210replay, state/ctrl/mocapreplayerror0/contactmismatch0, independentauditPASS/minactual.31498918194116166/controllererror0/memoryerror0. All active process threads actuallyCPU6; source16328SHAafterchildPASS. Runtimeallblock/member/whole/index actualSHA/exacttransportcleanup/canonicalbarrierPASS. No Stage kernels or RPPglobalowner modified.
+
+Critical limit: this round native raw command is exactly[0,0,false]. The accepted10+2200 trajectory validates current-interface/evidence/complete-stop plumbing, not forward-motion capability or navigation. Earlier distinctsynthetic/currentqueries returnednonzero, but stochasticstream reproducibility is unqualified and none are repeat trials. No retuning/rerunning the zero output to select a positive outcome. MPPI formalcommon12 stillunclaimed. Beforefullcomparison: lock stochasticseed/provenance and fullreceding current-query/gearhandoff/goalstop owner, qualify completeevidence/storage peak, preserve zero/refusal outcomes; no assumption that componentPASS establishes readiness.
+
+
+## 2026-11-26T11:02:01.758035+08:00 双 CPU 剩余正式对照已启动
+
+新源16658成员冻结、唯一提交0ec97a32及175成员源包全远端核验已闭。CPU2独立RPP剩余common10–12，CPU6独立MPPI剩余common03–12；每轮完整闭账和远端校验后才进入下一项，方法的可信功能拒绝可接续，技术/安全/源/未知证据问题停止对应队列。没有总体日历截止，每项5400秒技术窗口不延。
+
+上一对已闭：RPP09为3620正常+200异常收尾=3820实际/3820重放，gear拒绝、独立已执行前缀审核通过；MPPI02为40正常+200收尾=240实际/240重放，9次原生控制查询后完整停车预测门拒绝、独立前缀审核通过。两者均未whole到达，重放误差0、证据全远端核验；保留原方法失败，不调参重跑。
+
+MPPI02末候选预测raw距离0.24321427641081883m，原要求0.24353421020226934m，约差0.32mm。该差值属于原保守预测储备拒绝，不能称实际碰撞。
+
+当前已核对MPPI03完成250实际/250重放和独审/远端闭账，并自动接续04；RPP10已真实执行。预计RPP余3按最新9.6分钟/项约30–45分钟；MPPI若保持目前早期功能拒绝约10–20分钟，其他课程长轨迹可能延长，不能把早停耗时当整批保证。其余SCCR/SVG-MPPI/PRIEST/PSF/PCBF仍须各自接口、传感适用性和安全验收，未算正式完成。
+
+全部历史均计入15GiB。新baseline+准备16MiB+过去闭轮actual144MiB+两条完整512MiB运行线+全局512MiB=16095019008B<16106127360B。运行期不再全树du或清理；每条线只扫描自己的单写入者actual。Stage核8–15、24–31未使用。原参数、任务、相位、种子、安全门、接触与重放合同不改。
+
+后台入口：`experiments/v2048_remaining_parallel_dispatch/run.py`。精确状态、实际identity/CPU及台账：`runs/v2048_remaining_parallel_dispatch/RUNNING_CHECKPOINT.json`。
+
+
+## 2026-11-26T11:57:01.726770+08:00 RPP全部闭账、MPPI剩余七项恢复
+
+RPP12/12已执行、0whole到达，9项独立前缀审核通过的方法拒绝、3项历史技术删失均保留；最后12同一封包远端恢复成功，全部RPP闭账。MPPI目前5/12闭、0whole，原首项技术失败、后4项可信停车预测拒绝。05为6785实际/6785重放、重放误差0、独审PASS、零坏接触，末距2.58835m；不能作为成功。
+
+06第一次队列检查在原144MiB闭轮保留空间门前拒，formalonce/registry/model都未发生，真正剩余06–12共7项。旧dispatcher把失败preflight也计attempt造成unexecuted6，只保留机器原值，科学台账仍7未执行。
+
+已补最后RPP同包远端备份；所有实际owner停止后，精确退休已全远端核验的派生预测和native序列化重复缓存157437952B，实际物理raw/fullstates/Nplus1/sensors/contacts/controls/journal/modelscene/results/audit和输入锚点留存。利用已完成RPP原224MiB预留收纳闭轮实际证据账，保留原144MiB和其他任务/归档/下载/根储备，15GiB不扩。每个新case全closed+remote后再做安全空间核账，运行时不清理/全树扫描。
+
+MPPI06已真实后台重启为首次正式执行，CPU6，原数值源码、参数、安全门、任务与seed冻结不变；依次06–12，不重跑已失败正式项。首前置资源检查失败保留。新入口experiments/v2051_mppi_remaining_seven_resume/run.py，现checkpoint runs/v2051_mppi_remaining_seven_resume/RUNNING_CHECKPOINT.json。预计剩余1–3小时粗估，原10–20分钟批量估计被NS05约21分钟实测否定；逐项技术上限90分钟不是预计耗时。
+
+
+## 2026-11-26T12:32:20.373307+08:00 已实际加跑SVG-MPPI原生默认工作量验收
+
+MPPI common_07__MPPI仍在CPU6运行；CPU7新增SVG原生求解已通过并全远端闭账。采样8000、梯度100、SVGD10、horizon15来自已捕获作者YAML，原core/bridge不改；只预先声明Phase速度0.08和单线程，原作者车辆近似不等于Phaseplant。一次构造0.13318s/一次solve0.02634s/14原始转角都在Phasecap内，authorpointcollisionrate0不是整车安全。该输入是显式saved当前因果测量与公共route+32ray地图，不是新正式trial；不增加原120的任何slot或whole分子。
+
+随后当前控制接口13个负例通过，包括改clock/map/request、actortruth、非有限、Phase转角超限、倒车未资格、重复和关闭后复用拒绝。第一原始转角0.03286337rad映射请求[0.08,0.0043833611,false]，执行权限仍false。下一门为独立完整车辆组件：原5native+2200停车预测/完整实测状态/因果新测量/接触/重放及独立审核，正式SVG0/12保持未执行。不能用32采样旧资格或本次原生query通过代替整车/whole到达。作者forward-only参考在倒车路段须明确适用性结果，不能自动变换或伪装原算法倒车。
+
+新SOURCE16685/唯一7108b696、34成员源包及runtime全actualremoteSHA/cleanup已闭。新增作业内存只CPU7算法，0MuJoCo/Predictor/Allocator/physics，内部kinematicrolloutsunknown；8MiB证据子预留在原16MiB准备预算内，15GiB不扩。
+
+
+2026-11-26T12:45:41.570754+08:00 V2055新SVG原车接口SOURCE一次PASS16732=16685inherit+47delta/0DLLconstructorquerymodelphysicsreplay。V2054控制接口13负例按SHA复用不刷旧资格；9原capture/response/observation/independentgeneric数值模块byteexact，6仅CPU6→2和nonformal标签，author bindingCABI/config8000/100/10不改；CPU7真实只读全runsnamespace/未准入CLI/合并pipe4event-reply-close软件夹具过。新鲜t0一步原作者求解、原10+2200shadow及两次measured5+2200、完整Nplus1capture/replay/独立几何审核已具体接入；尚未原车运行/未当安全PASS/正式SVG仍0。新component34.25MiB从已结束RPP240MiBarchive预留内切，原RPP224MiB已保留actualbank不动，jointpeak16095019008/15GiB不扩。因V2051冻结队列每轮全Phasequiescent cleanup不认新增model，明确准备并行、物理必须其健康RESULT及所有7barrier与真实identitygone后准入；不打断原队列。V2056有界后台等待及一次owner→archive/refonly/全remoteSHA→exactduplicatecleanup已具体编写/冻结，但此刻未启动，SOURCE恢复待完成；新source54members68072B本地archive一次过，未谎称旧7108Git覆盖。MPPIcommon07真实闭6750actual/replay6750/error0/contactmismatch0/独审PASS(ctrl/memory各5.551115123125783e-17)/minactual.3204302381627806，原completeStoprefusal/wholefalse/secondary[]，全remote/barrier及quiescent退休已闭；原common08首次CPU6child1392847/start30742723正normal3500仅partial，formal合并账{'denominator': 120, 'registered': 56, 'closed': 55, 'unexecuted': 64, 'qualified_success': 7}，whole7不预加。Stage/新agent/chatheartbeat/训练实机0。
