@@ -1,0 +1,1 @@
+Same original MPPI algorithm, parameters, current causal input, full safety gates and original registered tasks. Shared finite13 protocol/plan/source and independent case scope at experiments/v2045_remaining_parallel_source/PROTOCOL.md. No closed case retry or parameter tuning.
