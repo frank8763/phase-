@@ -1,0 +1,3 @@
+from common import R,C,S,O,load
+def command(script):
+ ros=load('original_readonly_Phase_ROS_namespace',R/'experiments/v856_nav2_foundation/ros_environment.py');cmd=ros.command(['/usr/bin/python3.12','-I','-B','-S',str(script)]);i=cmd.index('--bind');assert cmd[i+1:i+3]==[str(R/'runs'),str(R/'runs')];cmd[i]='--ro-bind';j=cmd.index('--chdir');cmd[j:j]=['--bind',str(O),str(O)];env=ros.environment();env.pop('LD_PRELOAD',None);env.pop('PHASE_COHERENT_NOISE',None);env.update(PHASE_REPO=str(R),CUDA_VISIBLE_DEVICES='',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1',ROS_DOMAIN_ID='207',ROS_LOG_DIR='/tmp/svg_source_2052',ROS_LOGGING_DISABLE_FILE_LOGGING='1');return cmd,env
