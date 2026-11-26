@@ -1,0 +1,5 @@
+# MPPI08 original archive recovery
+
+Two original 600s-cap IO episodes both failed the very first Release GET, 6 transports each, before upload or asset creation. Original failures/results/source remain immutable. A single explicit new metadata-only600s recovery episode follows a same-Release read-only probe returning HTTP200 through both default and direct paths. Root cause is consistent with transient connectivity, not proven proxy or authentication failure. No network retry loop or parameter/model change.
+
+Exact original index, parts, SHA and sourcecommit0ec97a32 retained; no reseal, push, ref, numerical initialization, query, physics, replay or audit. New worker directory only. Full actual remote per asset/member/whole/indexSHA and exact duplicate transport cleanup required before a canonical barrier and successor. All Phase model owners must be closed with idle locks/REVIEW exact before recovery; source SHA checked.15GiB and existing grants unchanged. Failure closes with originals retained. New helper is late and must not be attributed to original sourceGit.
