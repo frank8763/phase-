@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "models": 0,
+  "DLLs": 0,
+  "solvers": 0,
+  "physics": 0,
+  "replay": 0,
+  "analytic_jacobian_maximum_difference": 4.055104524738895e-10,
+  "actual_campaign_state_machine_tests": [
+    {
+      "name": "functional_refusal_continues",
+      "actual_main_invoked": true,
+      "owner_calls": 2,
+      "component_lines_closed_even_on_vehicle_failure": true,
+      "reason": "FINITE_QUEUE_COMPLETE"
+    },
+    {
+      "name": "technical_only_vehicle_lane_stops",
+      "actual_main_invoked": true,
+      "owner_calls": 1,
+      "component_lines_closed_even_on_vehicle_failure": true,
+      "reason": "SVG_TECHNICAL_CENSOR_AFFECTED_LANE_STOPPED_COMPONENTS_RETAINED"
+    },
+    {
+      "name": "09_clock_stops_new_case",
+      "actual_main_invoked": true,
+      "owner_calls": 1,
+      "component_lines_closed_even_on_vehicle_failure": true,
+      "reason": "CANNOT_START_NEXT_WITH_COMPLETE_ORIGINAL_WINDOW_AND_TRANSPORT_RESERVE"
+    }
+  ],
+  "unchanged_numerical_modules": [
+    "driver.py",
+    "navigation.py",
+    "error_stop.py",
+    "resource_policy.py",
+    "binding.py",
+    "response.py",
+    "capture.py",
+    "native_worker.py",
+    "console_codec.py",
+    "compact_record.py",
+    "resources.py",
+    "evidence_service.py",
+    "work.py",
+    "runtime_binding.py",
+    "granted_quota.py",
+    "observation.py",
+    "compact_json.py",
+    "quota.py",
+    "parallel_events.py",
+    "input_frame.py",
+    "audit_component.py",
+    "history_binding.py",
+    "generic_audit.py",
+    "cpu_policy.py",
+    "audit_budget.py",
+    "direct_bits.py",
+    "peer_contract.py",
+    "base_quota.py",
+    "software_peer.py",
+    "channel.py",
+    "native_client.py"
+  ],
+  "original_owner_byte_exact": true,
+  "production_unadmitted_refused_before_numerical_import": true,
+  "closed": true
+}

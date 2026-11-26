@@ -1,0 +1,119 @@
+{
+  "closed": true,
+  "scope": "ORIGINAL_COMMON03_CLOSED_SCIENTIFIC_READOUT_NOT_NEW_AUDIT",
+  "formal_task_passed": false,
+  "whole_goal_passed": false,
+  "valid_finite_method_refusal": true,
+  "technical_censor": false,
+  "primary": {
+    "stage": "normal",
+    "error": "AssertionError('SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2099_svg_direct_array_scope/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2099_svg_direct_array_scope/navigation.py\", line 80, in run\n    assert full['passed'],'SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED'\nAssertionError: SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED\n"
+  },
+  "secondary": [],
+  "actual_native": 4255,
+  "normal_native": 4055,
+  "errorstop_native": 200,
+  "own_replay_native": 4255,
+  "replay": {
+    "replay_native": 4255,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "physical": {
+    "actual_native": 4255,
+    "fully_recorded_native": 4255,
+    "minimum_actual_clearance_m": 0.2669666896408098,
+    "minimum_self_margin_m": 0.00930553520703481,
+    "bad_contacts": 0,
+    "final_body": [
+      -0.8003316490988734,
+      -1.919565594611212,
+      0.07462089789173601,
+      -8.349341556236459e-06,
+      -4.45801852466532e-09
+    ],
+    "final_translation_speed_m_s": 8.352103462420576e-06,
+    "root_guard_native_count": 4255,
+    "goal_distance_m": 4.8010054816580405,
+    "first_actor_detection": null,
+    "actual_travel_after_detection_m": 0.0
+  },
+  "independent_audit": {
+    "passed": true,
+    "scope": "INDEPENDENT_ACTUAL_PREFIX_SAFETY_ONLY_CANONICAL_FAILURE_PRESERVED",
+    "whole_navigation_passed": false,
+    "actual_native": 4255,
+    "own_replay_native": 4255,
+    "maximum_controller_error": 1.1102230246251565e-16,
+    "maximum_memory_error": 1.1102230246251565e-16,
+    "maximum_actual_tracking": [
+      0.0003175170297325327,
+      0.0003476309748376497,
+      0.005203584070418902
+    ],
+    "normal_native_with_current_admission": 4055,
+    "minimum_actual_clearance_m": 0.2669666896408098,
+    "canonical_first_error": {
+      "stage": "normal",
+      "error": "AssertionError('SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2099_svg_direct_array_scope/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2099_svg_direct_array_scope/navigation.py\", line 80, in run\n    assert full['passed'],'SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED'\nAssertionError: SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED\n"
+    },
+    "original_generic_audit_seam": {
+      "generic_original_statements_preserved": 30,
+      "original_SHA256": "be03f551bfe6fcdecfbd6adcb88ecd1254a515336adebc696833878154540946",
+      "generic_AST_SHA256": "324366ca2ba25a010aeec864ab1db49517d8d95ace9e85beebac7f3240d37d6b",
+      "removed_only_old_discovery_and_whole_task_scope": true
+    },
+    "causal_sources_rebuilt_from_whitelist": true,
+    "independent_saved_prediction_geometry_profiles": 1623,
+    "internal_Allocator_constructions": null,
+    "total_modelwork": null,
+    "new_physical_native_during_audit": 0,
+    "compact_query_audit": {
+      "query_records": 812,
+      "closed_accounting": true
+    }
+  },
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_models": null,
+  "q1159subset": {
+    "cpp_native": 0,
+    "python_native": 3582775,
+    "cpp_completed_native": 0,
+    "python_completed_native": 3582775,
+    "inflight": null,
+    "cpp_calls": 0,
+    "python_calls": 3582775,
+    "cpp_constructor_returns": 0,
+    "python_constructor_returns": 1624,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "total_modelwork": null,
+  "predictive_evidence": {
+    "full_records": 1623,
+    "recipe_records": 0,
+    "recipe_reserved_native": 0,
+    "rebuilt_native": 0,
+    "rebuild_wall_s": 0.0,
+    "unspent_audit_holds": {},
+    "poisoned": false,
+    "original_python_subset_cap": 25000000,
+    "maximum_rebuild_subset_native": 0,
+    "total_modelwork": null,
+    "cache_bytes": 817992,
+    "pack_bytes": 40449854
+  },
+  "machine_wall_s": 809.9161047099624,
+  "owner_wall_s": 816.1798547789804,
+  "input_SHA256": {
+    "runs/v2095_svg_common_full_route/rounds/common_03__SVGMPPI/actual/RESULT.json": "33b0949a1d5d68a9b7415e4a3cfb15204e2e09a3f423d230b0d7898c74839302",
+    "runs/v2095_svg_common_full_route/rounds/common_03__SVGMPPI/COMPLETION.json": "c23c3d90078b3a4388f1ea80fa0be1f84068ee03c5a8cae3252d4b8ad83f7897",
+    "runs/v2095_svg_common_full_route/rounds/common_03__SVGMPPI/FORMAL_CLOSED_EVENT.json": "66765c43967962ecf9cbb5e10b7cf2269079541862231adebfbfc565e398ee21"
+  },
+  "late_metadata": true,
+  "not_in_previously_sealed_runtime_archive": true,
+  "new_model_solver_replay_or_independent_audit_calls": 0
+}

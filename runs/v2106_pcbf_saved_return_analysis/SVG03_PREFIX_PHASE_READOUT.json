@@ -1,0 +1,94 @@
+{
+  "closed": true,
+  "models": 0,
+  "solver_calls": 0,
+  "physics": 0,
+  "replay": 0,
+  "new_independent_audit": false,
+  "new_trials": 0,
+  "task_ids": [
+    "common_02__SVGMPPI",
+    "common_03__SVGMPPI"
+  ],
+  "phases": [
+    2.43776467499587,
+    5.776761281508346
+  ],
+  "same_sensor_seed": true,
+  "arrays": {
+    "qpos": {
+      "shape": [
+        4256,
+        20
+      ],
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "qvel": {
+      "shape": [
+        4256,
+        19
+      ],
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "ctrl": {
+      "shape": [
+        4256,
+        11
+      ],
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "mocap_pos": {
+      "shape": [
+        4256,
+        1,
+        3
+      ],
+      "bitwise_equal": false,
+      "maximum_absolute_difference": 0.45922950160350917
+    },
+    "mocap_quat": {
+      "shape": [
+        4256,
+        1,
+        4
+      ],
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "time": {
+      "shape": [
+        4256
+      ],
+      "bitwise_equal": true,
+      "maximum_absolute_difference": 0.0
+    }
+  },
+  "actual_requested_commands_equal": true,
+  "actual_counts": [
+    4255,
+    4255
+  ],
+  "first_actor_detection": [
+    null,
+    null
+  ],
+  "both_whole_goal_false": true,
+  "both_primary": [
+    "AssertionError('SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED')",
+    "AssertionError('SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED')"
+  ],
+  "interpretation": "Vehicle trace coincidence over these closed prefixes only; actor phase/mocap differs; no observed actor here. No global phase invariance, mechanism gain or independent success is established.",
+  "input_SHA256": {
+    "runs/v2095_svg_common_full_route/rounds/common_02__SVGMPPI/actual/FULL_STATE_NPLUS1.npz": "52f03dbcbf2b0619ac65e7bddb8e40ea7130a0d868565890bb0c737802de6b38",
+    "runs/v2095_svg_common_full_route/rounds/common_03__SVGMPPI/actual/FULL_STATE_NPLUS1.npz": "49ba307e2c6d6a6b01f1a7280a787813844cd15da2573bb8d7bfd39c2fb62092",
+    "runs/v2095_svg_common_full_route/rounds/common_02__SVGMPPI/actual/APPLIED_JOURNAL.json": "8e5da9e84d476cc74005c8016a13bc873a9d126a0be514737aa31ce5a5167a05",
+    "runs/v2095_svg_common_full_route/rounds/common_03__SVGMPPI/actual/APPLIED_JOURNAL.json": "8e5da9e84d476cc74005c8016a13bc873a9d126a0be514737aa31ce5a5167a05",
+    "runs/v2095_svg_common_full_route/rounds/common_02__SVGMPPI/actual/RESULT.json": "96335d28b05e7704f240b2127a9eb9f151a517b4d838826227aef47fd812da3e",
+    "runs/v2095_svg_common_full_route/rounds/common_03__SVGMPPI/actual/RESULT.json": "33b0949a1d5d68a9b7415e4a3cfb15204e2e09a3f423d230b0d7898c74839302"
+  },
+  "late_local_analysis_not_in_previously_sealed_runtime": true,
+  "wall_s": 0.07718496699817479
+}
