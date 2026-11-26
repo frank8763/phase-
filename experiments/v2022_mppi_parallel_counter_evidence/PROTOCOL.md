@@ -1,0 +1,3 @@
+# Source-bound MPPI vehicle evidence pipeline
+
+SOURCE archives only exact new source/proofs/inputs and compact parent16085chain; onepush30s/ref5s, actualremote everyblock/member/whole/indexSHA then exacttransportcleanup before new vehicle authority. Runtime includes actual scene/capture/journal/state/replay/audit/first-secondary errors, own source ref only, no additionalpush/ref, no numericalcall in transport.8MiBarchive/readback limits and original15GiB. Mutable RPP CURRENT/RESEARCH excluded. No oldresults/methodruntimes rerun. Scientific result only original machine and independentreview; FINALIZED means transport.
