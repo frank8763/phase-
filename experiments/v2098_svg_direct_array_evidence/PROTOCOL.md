@@ -1,0 +1,3 @@
+# Saved-array evidence timing only
+
+Bounded software diagnosis of original ModelWork.before570s deadline red and saved full-array representations. CPU4/thread1/GPUhidden, zero model/controller/Predictor/physics/replay/new old-case audit. One saved exposed SVG analytic array fixture plus arbitrary IEEE754 payload bits, corruption negative, byte-exact roundtrip. Timing is codec only and not algorithm speed or navigation result. V2099 uses an additional integer delta/delta2 reversible codec tested through its real Service/OutputBoundary; V2098 raw/XOR is only the initial measurement. Original common01 failure stays immutable.

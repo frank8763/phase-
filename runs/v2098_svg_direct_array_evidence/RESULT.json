@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "models": 0,
+  "DLLs": 0,
+  "optimizer_queries": 0,
+  "physics": 0,
+  "replay": 0,
+  "new_old_case_audit": false,
+  "old_actual_deadline_red": true,
+  "prospective_full_arrays_no_reconstruction_needed": true,
+  "timing": [
+    {
+      "codec": "old",
+      "packed_bytes": 17685,
+      "encode_s": 0.015497408981900662,
+      "decode_s": 0.09702828800072894,
+      "arrays_raw_bytes": 363304
+    },
+    {
+      "codec": "new",
+      "packed_bytes": 33569,
+      "encode_s": 0.01185249601257965,
+      "decode_s": 0.0005651399842463434,
+      "arrays_raw_bytes": 363304
+    }
+  ],
+  "vectorized_decode_32_s": 0.015264704008586705,
+  "byte_exact_full_arrays": true,
+  "arbitrary_IEEE754_bits_exact": true,
+  "corruption_refused": true,
+  "closed_input_sha256": "e8f0a3f930f15903cfdb6c6d6c0b1c9f9c4b82a170f91efd425cca3c7632396b",
+  "closed_input": "runs/v1672_svg_direct_live_component/actual/CURRENT_SHADOW.npz",
+  "source_SHA256": {
+    "experiments/v2098_svg_direct_array_evidence/array_bits.py": "a5ecc18189757f267e1a32a2592c4780f9654620c8d38aaafe17af45d34b0700",
+    "experiments/v2098_svg_direct_array_evidence/qualify_software.py": "2df75f073a51711f201aa0fe0d4d49abb4adfb19f8bd94f9c5d8598d4a5375ac"
+  },
+  "closed": true
+}

@@ -1,0 +1,115 @@
+{
+  "closed": true,
+  "whole_navigation_passed": false,
+  "qualified_success": false,
+  "valid_finite_method_refusal": false,
+  "technical_censor": true,
+  "classification_reason": "Primary original functional complete-stop refusal exists, but mandatory independent actual-prefix/prediction/current-map audit did not complete; preserve technical censor and first/secondary errors.",
+  "method": "SVG-MPPI",
+  "assignment": "common_01__SVGMPPI",
+  "denominator": 120,
+  "normal_actual_native": 4055,
+  "error_stop_actual_native": 200,
+  "actual_native": 4255,
+  "own_replay_native": 4255,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "native_solver_counts": {
+    "DLL_loads": 1,
+    "constructor_attempts": 1,
+    "constructor_returns": 1,
+    "query_attempts": 812,
+    "query_returns": 812,
+    "destroy_calls": 1,
+    "constructor_inflight": false,
+    "query_inflight": false,
+    "internal_rollout_steps": null,
+    "constructor_wall_s": 0.13025410496629775,
+    "query_wall_s": 0.027686076005920768,
+    "author_solve_attempts": 812,
+    "author_solve_returns": 812,
+    "native_solve_returncode": 0
+  },
+  "first_error": {
+    "stage": "normal",
+    "error": "AssertionError('SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/navigation.py\", line 80, in run\n    assert full['passed'],'SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED'\nAssertionError: SVG_CURRENT_CYCLE_COMPLETE_STOP_REFUSED\n"
+  },
+  "secondary_errors": [
+    {
+      "stage": "ORIGINAL_COMPONENT_INDEPENDENT_AUDIT",
+      "error": "AssertionError()",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/driver.py\", line 39, in attempt\n    try:return fn()\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/driver.py\", line 136, in <lambda>\n    result['independent_audit']=attempt('ORIGINAL_COMPONENT_INDEPENDENT_AUDIT',lambda:auditor.audit(task,audit_input,source,predictive_arrays=binding['predictive_arrays']))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/audit_component.py\", line 81, in audit\n    with predictive_arrays.load_full(proof)as z:ss=z['states'];uu=z['controls'];rr=z['requests'];mm=z['memory']\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/evidence_service.py\", line 81, in load_full\n    arrays=self.recipe.regenerate(record,clean,self.binding,lambda packet,requests:self.reconstruct(self.q,self.setup,packet,requests,None,None))\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v1907_dwa_reconstruction_contract/recipe.py\", line 79, in regenerate\n    arrays = callback(value['origin_packet'], requests)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/evidence_service.py\", line 81, in <lambda>\n    arrays=self.recipe.regenerate(record,clean,self.binding,lambda packet,requests:self.reconstruct(self.q,self.setup,packet,requests,None,None))\n  File \"<source-bound-original-DWA-prediction-loop>\", line 8, in reconstruct\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/work.py\", line 29, in step\n    tracker.before('python',1)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/evidence_service.py\", line 37, in before\n    return original(kind,count)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/work.py\", line 9, in before\n    assert sorted(os.sched_getaffinity(0))==[2]and time.time()<self.deadline\nAssertionError\n"
+    }
+  ],
+  "recorded_physical": {
+    "actual_native": 4255,
+    "fully_recorded_native": 4255,
+    "minimum_actual_clearance_m": 0.2669666896408098,
+    "minimum_self_margin_m": 0.00930553520703481,
+    "bad_contacts": 0,
+    "final_body": [
+      -0.8003316490988734,
+      -1.919565594611212,
+      0.07462089789173601,
+      -8.349341556236459e-06,
+      -4.45801852466532e-09
+    ],
+    "final_translation_speed_m_s": 8.352103462420576e-06,
+    "root_guard_native_count": 4255,
+    "goal_distance_m": 4.8010054816580405,
+    "first_actor_detection": null,
+    "actual_travel_after_detection_m": 0.0
+  },
+  "fullstate_replay": {
+    "replay_native": 4255,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "independent_audit": null,
+  "required_independent_audit_complete": false,
+  "original_failure_not_retried": true,
+  "old_frozen_source_unchanged": true,
+  "q1159_subset": {
+    "cpp_native": 0,
+    "python_native": 6830420,
+    "cpp_completed_native": 0,
+    "python_completed_native": 6830420,
+    "inflight": null,
+    "cpp_calls": 0,
+    "python_calls": 6830420,
+    "cpp_constructor_returns": 0,
+    "python_constructor_returns": 3096,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "total_modelwork": null,
+  "predictive_rebuild_subset_completed_native": 3247230,
+  "predictive_rebuild_wall_s": 555.29129460291,
+  "recipe_records": 1623,
+  "unspent_audit_hold_count": 152,
+  "geometry_refusal": {
+    "origin_native": 4055,
+    "raw_prediction_minimum_m": 0.24201717403272938,
+    "required_raw_m": 0.24353421020226934,
+    "shortfall_m": 0.0015170361695399648,
+    "failed_checks": [
+      "full_raw_geometry",
+      "terminal_full_cycle_hold"
+    ]
+  },
+  "machine_wall_s": 1303.806026698032,
+  "owner_wall_s": 1310.192231404013,
+  "source_paths_SHA256": {
+    "runs/v2095_svg_common_full_route/rounds/common_01__SVGMPPI/actual/RESULT.json": "221bb6bbdde02c04c960dd95c0d483bd7483cc9b74768103bb0ae15fd7bd8d3e",
+    "runs/v2095_svg_common_full_route/rounds/common_01__SVGMPPI/COMPLETION.json": "f3749a33f64275ecd352abbc010f7088ff850e5074572d31e35e4a30412d239d",
+    "runs/v2095_svg_common_full_route/rounds/common_01__SVGMPPI/actual/cycle_000811_shadow.json": "474e265a17ed367c48a0095850ab4d8dc89aff19de08e4dbd2338774b5f66a73",
+    "runs/v2095_svg_common_full_route/rounds/common_01__SVGMPPI/actual/SVG_NATIVE_CLOSED.json": "e8956c0388dbcd052923abfa03b117bc4072c6d7a82b5336d94d7ab70aa93644",
+    "runs/v2095_svg_common_full_route/rounds/common_01__SVGMPPI/FORMAL_CLOSED_EVENT.json": "1122311d9628e5db95b077b386cc6563ec040853b6c0ad23836f5f9ab3452784"
+  },
+  "created_local": "2026-11-26T18:36:22.964328+08:00",
+  "derivation_only_no_new_model_or_audit": true,
+  "late_after_original_archive": true,
+  "original_archive_remains_unchanged": true
+}

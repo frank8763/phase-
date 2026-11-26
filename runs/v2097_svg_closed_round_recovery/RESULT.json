@@ -1,0 +1,11 @@
+{
+  "closed": true,
+  "passed": false,
+  "models": 0,
+  "physical_native": 0,
+  "replay": 0,
+  "new_audit": false,
+  "first_error": "ModuleNotFoundError(\"No module named 'reserved_census'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2097_svg_closed_round_recovery/recover.py\", line 39, in recover\n    scope=dict(helper.__dict__);exec(compile(function,str(helper.__file__),'exec'),scope);code=scope['deliver'](RID);result.update(passed=code==0,returncode=code)\n                                                                                               ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/evidence.py\", line 15, in deliver\n    return h.hexdigest()\n           ^^^^^^^^^^^^^^\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/evidence.py\", line 19, in load\n    spec=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(spec);sys.modules[n]=m;spec.loader.exec_module(m);return m\n                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap_external>\", line 995, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2095_svg_common_full_route/reservation.py\", line 2, in <module>\n    from reserved_census import admission,transport_current_upper\nModuleNotFoundError: No module named 'reserved_census'\n",
+  "transport_worker": "remote_delivery_dualroute_2097"
+}

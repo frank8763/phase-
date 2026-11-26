@@ -1,0 +1,7 @@
+# One closed SVG archive transport recovery
+
+User requested checking the existing first formal round. Its immutable RESULT has primary original complete-stop refusal and secondary incomplete independent audit; whole false/technical censor retained. Owner, native and dispatcher are closed. Original transport failed six GETs at its first Release metadata request, before any upload or remote mutation. Preserve FAILED records and original archive/index bytes.
+
+One600s metadata-only I/O episode uses the already software-qualified V2062 bounded proxy/direct client, six attempts per GET/36 reads total/single uncertain write rule. Same immutable original runtime archive5835members/13286943B and existing source Release459191052/solebf4e652e; no new push/ref, source freeze, reseal, navigation, optimizer, replay or independent audit. CPU5; original execution locks held idle, REVIEW original SHA; Stage untouched. Verify every actual remote part/member/whole/index SHA; exactSHA-size-mtime-device-inode transport duplicate cleanup; originals retained. Only then append canonical storage barrier with scientific outcome false and original technical censor.
+
+This helper is later than original source/runtime archive and is NOT claimed to be in bf4e Git or that sealed archive. Exact helper and qualified-client SHA are recorded in the recovery PATCH_PROOF and canonical barrier. No automatic next task or retry on exhausted recovery.

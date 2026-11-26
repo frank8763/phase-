@@ -1,0 +1,1 @@
+One first original common02 SVG task, after new SOURCE/remote chain. Bound5400=4200normal+1200close; model CPU2/native7/geometry4/IO5, original gates and task224/240archive/32download/512root/15GiB unchanged. Preserve common01 technical censor; no rerun or tuning, no automatic remaining10. Full remote SHA and exact transport cleanup then canonical barrier even non-success.
