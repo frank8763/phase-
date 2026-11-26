@@ -1,0 +1,51 @@
+{
+  "closed": true,
+  "software_passed": true,
+  "saved_input_source_sha256": "603e5eb3dfb176f787db1c7d12177c25c2344655263ab1f093063b655c7cb636",
+  "actual_two_frame_byte_SHA_equal": true,
+  "sent_frames": [
+    {
+      "sequence": 0,
+      "bytes": 423628,
+      "sha256": "a66bdbaf960fae9bfd89a6ba2597bd492f0b5c9854eb4fcf0a850dfba478cfd9"
+    },
+    {
+      "sequence": 1,
+      "bytes": 423689,
+      "sha256": "3e73820d08d04877eef48990a9ff271646f2519e528de863206203af99f4521a"
+    }
+  ],
+  "total_transport_bytes": 847317,
+  "kernel_socket_buffers": {
+    "send": 131072,
+    "receive": 131072
+  },
+  "persistent_map_transport_file_bytes": 0,
+  "original_output_boundary_unchanged": true,
+  "negative_cases": [
+    "concurrent_pending_request",
+    "wrong_frame_ack",
+    "concurrent_pending_request",
+    "wrong_frame_ack",
+    "message_count_cap",
+    "original_raw_writable_descriptor_still_blocked",
+    "closed_channel",
+    "frame_size_cap",
+    "poisoned_after_failed_frame",
+    "foreign_owner"
+  ],
+  "new_production_peer_qualified": false,
+  "persistent_optimizer_qualified": false,
+  "formal_method_admitted": false,
+  "models": 0,
+  "optimizer_calls": 0,
+  "physics": 0,
+  "replay": 0,
+  "formal_slots": 0,
+  "source_hashes": {
+    "experiments/v2083_svg_bounded_frame_channel/channel.py": "074ae2400db9fd1b050c19dcdb394184fc822c72a1b732a49fd11c5740568e06",
+    "experiments/v2083_svg_bounded_frame_channel/qualify_software.py": "e0879559530a08aa36073803f41a02e340ca01714f41fb750a960f9fbb6f556b",
+    "experiments/v1436_pathlib_control_rename/bounded_io.py": "87741a30dba7a15da512bc08e4e1178f6de6cc258c1f07129cbcbd44499944f8",
+    "runs/v2079_svg_file_bound_transport/actual/SVG_CURRENT_SOLVER_FRAME.json": "603e5eb3dfb176f787db1c7d12177c25c2344655263ab1f093063b655c7cb636"
+  }
+}

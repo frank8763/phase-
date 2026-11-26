@@ -1,0 +1,12 @@
+{
+  "explicit_software_peer_only": true,
+  "returncode": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2084_svg_persistent_current_vehicle/software_peer.py\", line 3, in <module>\n    from peer_contract import decode\nModuleNotFoundError: No module named 'peer_contract'\n",
+  "models": 0,
+  "solver_DLLs": 0,
+  "constructors": 0,
+  "queries": 0,
+  "physics": 0,
+  "source_qualification_not_repeated": true,
+  "diagnosis": "Isolated Python -I excludes script directory; explicit software peer imports sibling decoder before inserting its own source directory"
+}
