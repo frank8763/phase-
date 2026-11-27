@@ -21,3 +21,12 @@ PCBF初始化对照固定原3个开发输入、独立软件open正例和occupied
 4. 能力门通过后冻结最终版本、全任务输入SHA和主/次终点与时间/计算预算，再运行新的分层确认任务。原安全门不降，失败/技术中断/未执行全部保留。新地图、actor相位和多actor是分开的研究因素；不把已暴露输入作为新确认。
 
 以上有部分真实车辆和软件结果，有部分待实现依赖，不能表述“四种正式对照均启动”或“公平比较已完成”。目前没有新的正式claim。V2131两组件runtime均完成实际远端block/member/whole/indexSHA和exacteligible运输清理，原车模型线空闲；V2134为有限CPU6数学后台任务。所有Stage资源保持隔离，无新训练/实机。
+
+
+## 2026-11-27T12:13:11.372299+08:00 追加：PCBF候选资格与真实后台
+
+V2134未执行的6个数学case现真实完成11个NLP返回并完全远端校验/精确运输清理。minimal分支3个保存current输入及独立open均aux/performance status0、原残差门通过；current5/10仍有约.002的收紧slack，但原ideal全体raw几何仍通过。旧额外zero-slack gate把这些数学上合格、硬几何合格的候选挡掉，不应当成PCBF原生方法失败。
+
+V2135单一新PCBF暴露开发组件已实际后台启动（source18415/sole2347ce31b836bee61d3302e60546fcd27deb0f75，source115members89676B每实际远端block/member/whole/indexSHA及cleanup/sourcechain通过）。仅删除额外zero-slack提案限制；仍要求严格优化status+residual、原ideal硬几何/command域，以及逐次完整原车10+2200shadow、5+2200admission及实际/接触/重放门，完整保留每次预测slack。名义控制、车辆模型、物理净空等原阈值全部不改，不宣称满足原PCBF终端/不确定性定理。
+
+最近记录PCBF已9次求解/45正常步，仅partial，最终以机器RESULT/独立审核/COMPLETION和runtimebarrier共同判断；尚无全程成功或正式claim。PSF已闭组件不重复。SCCR186特征和原车采样、PRIEST朝向足迹表示仍未资格，不能称四个正式都在跑。本报告/launchcheckpoint晚于封档本地材料，不追加旧sourcepush或重封runtime。

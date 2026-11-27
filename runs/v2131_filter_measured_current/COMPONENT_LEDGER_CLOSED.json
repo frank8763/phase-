@@ -1,0 +1,122 @@
+{
+  "closed": true,
+  "components": [
+    {
+      "method": "PSF",
+      "passed": true,
+      "actual": 2300,
+      "replay": 2300,
+      "normal": 100,
+      "source_unchanged": true,
+      "primary": null,
+      "secondary": [],
+      "replay_error": 0.0,
+      "contact_mismatch": 0,
+      "badcontacts": 0,
+      "minactual": 0.3149935901720855,
+      "audit": {
+        "passed": true,
+        "scope": "FILTER_FRESH_CURRENT_VEHICLE_COMPONENT_WITH_COMPLETE_STOP",
+        "whole_navigation_passed": false,
+        "component_complete_original_stop": true,
+        "actual_native": 2300,
+        "own_replay_native": 2300,
+        "maximum_controller_error": 5.551115123125783e-17,
+        "maximum_memory_error": 5.551115123125783e-17,
+        "maximum_actual_tracking": [
+          0.00032124763695472007,
+          7.27402945908639e-06,
+          1.1278819399604342e-05
+        ],
+        "normal_native_with_current_admission": 100,
+        "minimum_actual_clearance_m": 0.3149935901720855,
+        "canonical_first_error": null,
+        "original_generic_audit_seam": {
+          "generic_original_statements_preserved": 30,
+          "original_SHA256": "be03f551bfe6fcdecfbd6adcb88ecd1254a515336adebc696833878154540946",
+          "generic_AST_SHA256": "324366ca2ba25a010aeec864ab1db49517d8d95ace9e85beebac7f3240d37d6b",
+          "removed_only_old_discovery_and_whole_task_scope": true
+        },
+        "causal_sources_rebuilt_from_whitelist": true,
+        "independent_saved_prediction_geometry_profiles": 41,
+        "internal_Allocator_constructions": null,
+        "total_modelwork": null,
+        "new_physical_native_during_audit": 0,
+        "compact_query_audit": {
+          "query_records": 20,
+          "NLP_returns": 20,
+          "optimizer_work_total": null
+        }
+      },
+      "runtime_proof_sha256": "48b717d6273d494e3a922a251d03e34def9a3d78ddf6021a28746ea92a871b2d",
+      "late_to_runtime_archive": true
+    },
+    {
+      "method": "PCBF",
+      "passed": false,
+      "actual": 210,
+      "replay": 210,
+      "normal": 10,
+      "source_unchanged": true,
+      "primary": {
+        "error": "AssertionError('FILTER_CURRENT_NUMERICAL_OR_HARD_GEOMETRY_REFUSED')",
+        "stage": "normal",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2131_filter_measured_current/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2131_filter_measured_current/navigation.py\", line 46, in run\n    assert proposal is not None,'FILTER_CURRENT_NUMERICAL_OR_HARD_GEOMETRY_REFUSED'\nAssertionError: FILTER_CURRENT_NUMERICAL_OR_HARD_GEOMETRY_REFUSED\n"
+      },
+      "secondary": [],
+      "replay_error": 0.0,
+      "contact_mismatch": 0,
+      "badcontacts": 0,
+      "minactual": 0.3149935523090339,
+      "audit": {
+        "passed": true,
+        "scope": "INDEPENDENT_ACTUAL_PREFIX_ONLY_CANONICAL_FAILURE_PRESERVED",
+        "whole_navigation_passed": false,
+        "component_complete_original_stop": false,
+        "actual_native": 210,
+        "own_replay_native": 210,
+        "maximum_controller_error": 5.551115123125783e-17,
+        "maximum_memory_error": 5.551115123125783e-17,
+        "maximum_actual_tracking": [
+          0.0003212356003454296,
+          7.283216677196505e-06,
+          1.2238983469240052e-05
+        ],
+        "normal_native_with_current_admission": 10,
+        "minimum_actual_clearance_m": 0.3149935523090339,
+        "canonical_first_error": {
+          "stage": "normal",
+          "error": "AssertionError('FILTER_CURRENT_NUMERICAL_OR_HARD_GEOMETRY_REFUSED')",
+          "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2131_filter_measured_current/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2131_filter_measured_current/navigation.py\", line 46, in run\n    assert proposal is not None,'FILTER_CURRENT_NUMERICAL_OR_HARD_GEOMETRY_REFUSED'\nAssertionError: FILTER_CURRENT_NUMERICAL_OR_HARD_GEOMETRY_REFUSED\n"
+        },
+        "original_generic_audit_seam": {
+          "generic_original_statements_preserved": 30,
+          "original_SHA256": "be03f551bfe6fcdecfbd6adcb88ecd1254a515336adebc696833878154540946",
+          "generic_AST_SHA256": "324366ca2ba25a010aeec864ab1db49517d8d95ace9e85beebac7f3240d37d6b",
+          "removed_only_old_discovery_and_whole_task_scope": true
+        },
+        "causal_sources_rebuilt_from_whitelist": true,
+        "independent_saved_prediction_geometry_profiles": 4,
+        "internal_Allocator_constructions": null,
+        "total_modelwork": null,
+        "new_physical_native_during_audit": 0,
+        "compact_query_audit": {
+          "query_records": 3,
+          "NLP_returns": 5,
+          "optimizer_work_total": null
+        }
+      },
+      "runtime_proof_sha256": "56280ca1f2a29655ad39f28185330cf4da64c9ff7cf864dbd094de6d2479b0fb",
+      "late_to_runtime_archive": true
+    }
+  ],
+  "total_actual": 2510,
+  "total_replay": 2510,
+  "whole_navigation_passed": false,
+  "new_formal_tasks": 0,
+  "all_remote_closed": true,
+  "all_known_vehicle_owners_gone": true,
+  "locks_idle": true,
+  "unix": 1795752060.8505623,
+  "late_to_sealed_runtime": true
+}
