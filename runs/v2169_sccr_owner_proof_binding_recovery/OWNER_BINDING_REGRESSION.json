@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "closed": true,
+  "red_old_missing_proof_and_green_corrected_actual_guard": true,
+  "cases": [
+    {
+      "case": "old",
+      "error": "[Errno 2] No such file or directory: '/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/runs/v2168_sccr_live_union/COMPONENT_INTERFACE_PROOF.json'",
+      "answer": null,
+      "source_sha256": "15674635c48c511432e544f8265eb3035ffe7afb528e5d7eae438eb20c5ac0d0",
+      "full_original_tail_retained_unreachable": true
+    },
+    {
+      "case": "corrected",
+      "error": null,
+      "answer": "OWNER_PROOF_BINDING_OK",
+      "source_sha256": "e4c886b56a276bc2f96698a0f00b6374dcc15f41164596d28d4e14b7afbce032",
+      "full_original_tail_retained_unreachable": true
+    }
+  ],
+  "all_pre_child_literal_read_dependencies": [
+    {
+      "path": "NEW_SOURCE/SOURCE_QUALIFICATION.json",
+      "provenance": "generated and remote-checked before launcher; no extra missing proof filename"
+    },
+    {
+      "path": "NEW_SOURCE/POST_SOURCE_STORAGE_BARRIER.json",
+      "provenance": "generated and remote-checked before launcher; no extra missing proof filename"
+    },
+    {
+      "path": "NEW_SOURCE/CURRENT_SOURCE_REMOTE_RECOVERY.json",
+      "provenance": "generated and remote-checked before launcher; no extra missing proof filename"
+    },
+    {
+      "path": "NEW_SOURCE/SOURCE_FREEZE.json",
+      "provenance": "generated and remote-checked before launcher; no extra missing proof filename"
+    },
+    {
+      "path": "NEW_SOURCE/AUTHORIZATION.json",
+      "provenance": "generated and remote-checked before launcher; no extra missing proof filename"
+    },
+    {
+      "path": "runs/v2168_sccr_live_union/PHYSICAL_SEAM_PROOF.json",
+      "sha256": "92d09a166de5e0dfd7e808868df0338cef82dbf0cd3ec620ead6fd1a3d2536b5"
+    },
+    {
+      "path": "runs/v2090_svg_persistent_counter_fixture/COMPLETION.json",
+      "sha256": "86110869cc377d6c9aac8b616f90a3fb09531698006af9a22619d5072f60a491"
+    },
+    {
+      "path": "NEW_COMPONENT/PILOT_TASK.json",
+      "sha256": "a7bf1ec7f7f17b7a799c5701690b8325360219ded889ade1cb57ade9bd309fe8"
+    },
+    {
+      "path": "runs/v1805_common_algorithm_registry/TASKS_METHODS_LOCKED.json",
+      "sha256": "5c7c8623350a3392113459bfe5539ea802f96bd7d45c42ecc830c9e1102faa02"
+    }
+  ],
+  "new_source_and_component_root_binding_verified": true,
+  "old_failed_owner_not_reexecuted": true,
+  "original_owner_body_only_one_proof_lookup_change": true,
+  "models": 0,
+  "renderer_constructors": 0,
+  "NN_inference": 0,
+  "physics": 0,
+  "replay": 0,
+  "source_once_claimed": false
+}
