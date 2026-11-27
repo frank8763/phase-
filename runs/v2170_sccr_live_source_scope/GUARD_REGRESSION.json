@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "closed": true,
+  "scope": "ACTUAL_ORIGINAL_HISTORY_GUARD_SOURCE_STAGE_REGRESSION_SOFTWARE_ONLY",
+  "old_live_rehash_red": true,
+  "prebootstrap_runtime_source_metadata_green": true,
+  "original_guard_unchanged_and_direct_history_read_still_red": true,
+  "negative_cases": [
+    {
+      "case": "old_live_all_source_rehash",
+      "error": "FRESH_HISTORY_READ_FORBIDDEN BODY_COMMANDS.json"
+    },
+    {
+      "case": "original_direct_history_read_still_forbidden",
+      "error": "FRESH_HISTORY_READ_FORBIDDEN BODY_COMMANDS.json"
+    },
+    {
+      "case": "cold_bootstrap_after_initializer",
+      "error": "SOURCE_BOOTSTRAP_AFTER_INITIALIZER_FORBIDDEN"
+    },
+    {
+      "case": "changed_freeze_authority",
+      "error": "SOURCE_BOOTSTRAP_AUTHORITY_CHANGED"
+    },
+    {
+      "case": "changed_admission_authority",
+      "error": "SOURCE_BOOTSTRAP_AUTHORITY_CHANGED"
+    },
+    {
+      "case": "changed_task_authority",
+      "error": "SOURCE_BOOTSTRAP_AUTHORITY_CHANGED"
+    },
+    {
+      "case": "changed_complete_manifest",
+      "error": "SOURCE_BOOTSTRAP_MANIFEST_CHANGED"
+    },
+    {
+      "case": "runtime_source_changed",
+      "error": "RUNTIME_READABLE_SOURCE_HASH_CHANGED"
+    },
+    {
+      "case": "immutable_cached_manifest",
+      "error": "TypeError"
+    }
+  ],
+  "cached_objects_only_path_SHA_strings": true,
+  "source_SHA256": {
+    "experiments/v2170_sccr_live_source_scope/guard_regression.py": "8a1fa0f5b7a94dbaf000c722718ef7d3d2718427c7dfe0ddba8f921f21b99bcd",
+    "experiments/v2170_sccr_live_source_scope/source_scope.py": "954d4ace624e76d5193769ede01c35720c59e35840ec1b7ec5abf9f5cec5f765",
+    "experiments/v1180_fresh_recovery_chain/chain_tools.py": "4556674072eb86cd9cd7c74558fcfddef9069d5a8ea5871bc2525d3da03f09d8"
+  },
+  "models": 0,
+  "NN_inference": 0,
+  "renderer_constructors": 0,
+  "physics": 0,
+  "replay": 0,
+  "old_scientific_qualification_reexecuted": false,
+  "source_once_claimed": false
+}

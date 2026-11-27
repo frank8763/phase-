@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "closed": true,
+  "scope": "PRODUCTION_CONTEXT_ADMISSION_WITH_REAL_ORIGINAL_HISTORY_GUARD_AND_OUTPUT_BOUNDARY",
+  "explicit_software_authority_fixture_only": true,
+  "real_component_never_authorized": true,
+  "preinitializer_full_source_bootstrap_passed": true,
+  "postinitializer_and_six_live_authority_metadata_calls_passed": true,
+  "original_history_guard_unchanged": true,
+  "negative_cases": [
+    {
+      "case": "old_direct_read_still_blocked",
+      "error": "FRESH_HISTORY_READ_FORBIDDEN BODY_COMMANDS.json"
+    },
+    {
+      "case": "cold_actual_admission_after_initializer",
+      "error": "SOURCE_BOOTSTRAP_AFTER_INITIALIZER_FORBIDDEN"
+    },
+    {
+      "case": "foreign_write_stays_blocked",
+      "error": "BOUNDED_OUTPUT_PATH_ESCAPE"
+    },
+    {
+      "case": "runtime_source_tamper_rejected",
+      "error": "RUNTIME_READABLE_SOURCE_HASH_CHANGED"
+    }
+  ],
+  "emitted_fixture_bytes": 16486,
+  "models": 0,
+  "NN_inference": 0,
+  "renderer_constructors": 0,
+  "physics": 0,
+  "replay": 0,
+  "source_once_claimed": false,
+  "source_SHA256": {
+    "experiments/v2170_sccr_live_source_scope/live_admission_check.py": "dd9674f7556d6f7df38226fa60b34b8c450b111b63803691d4556928fbde5e0f",
+    "experiments/v2170_sccr_live_source_scope/context.py": "81b052e7aaa02df2a3a4738f2aad813316b82a9abb301bf9409ec40e166d69e1",
+    "experiments/v2170_sccr_live_source_scope/source_scope.py": "954d4ace624e76d5193769ede01c35720c59e35840ec1b7ec5abf9f5cec5f765",
+    "experiments/v2170_sccr_live_source_scope/history_binding.py": "48a74487691f873dab6d60cd4bbfd9aeea39d2a869751a4cbb11106ede1d0005",
+    "experiments/v1180_fresh_recovery_chain/chain_tools.py": "4556674072eb86cd9cd7c74558fcfddef9069d5a8ea5871bc2525d3da03f09d8"
+  }
+}

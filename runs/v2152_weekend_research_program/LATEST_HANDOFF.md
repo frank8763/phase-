@@ -1,3 +1,98 @@
+# AUTHORITATIVE latest 2026-11-27T19:14:54.527987+08:00: C2170 Source29324 PASS / remotepending /0models
+
+C2170 allcheapchecks finished BEFORE newAUTH at19:12. Source EXACTONCE PASS29324=29215inherit+109delta/408005Braw (uncompressedtarupper1155525<2MiB),0model/NN/render/physics/replay.50runtime/sensor/actor/physical/safety modules byteexactC2169; onlyactualintegrationcontext/source_scope lifecycle +closedgate/priorclosedbinding. REALproductioncontext.admission testedbefore/afterinitializer marker withactualoldhistoryguard AND OutputBoundary simultaneous: sixlive-consumer metadata callsPASS, directhistoryreadstillRED/coldafterinitializerRED/source-tamperRED/foreignwriteRED. Allauthorityfiles wereEXPLICITsoftwarefixture underS/software_authority, actualO NEVERauthorized/noactualmodels. NewStage-hiddenrealnamespace107/186/samplerrootrefusalPASSbeforeTorch/MuJoCo. Fullparent37rawactualmembers bound to prior115memberRuntimeindexSHA/fullremoteproof; no oldrawduplicated orredownload/requal. Newbaseline/reservation validated12616exactclosedmembers and11MiBretainedC2169/new9MiBextra currentuppercredit (old19notdoublecount); allprior15250522112/initialroom20938752/peak16080994304<old16095019008/15GiB. Actualallruns15180292096 crosscheck NOTbaseline reset.
+
+SOURCE NOW FROZEN including PREPARATION_CHECKPOINT/BASELINE/proofs/AUTH. DoNOTeditfrozenS/Cfiles; futurecheckpointsuseLATE* underO orprogram. NewAUTH9000sroot/required6900beforephysical, nooldclockextension. NeednewsoleGitcommit30push5ref/Sourcearchive2/fullactualremoteeachblock-member-whole-indexSHA/cleanup/inherit thenlaunch.py ONE2210actual/replay LOGONLYcomponent. Expectednewtagphase-v2170-sccr-live-source-scope-20261127; no old3b4push. Ifthisactualintegrationfails, safelyclose/fullremote andSTOP SCCRcapabilitybranch/switchotherresearch asprotocol (no2ndintegrationrepair). FullSCCRrisk/path/innercontrol stillpending eveniflogonlysensorcomponentpasses. Formal120 remains72closed7whole48unexecuted. Currentnoowner/model/actualyet.
+
+# AUTHORITATIVE latest 2026-11-27T19:00:29.803338+08:00: C2170 SourceScope software+9MiB exact credit PASS / NO Source or models
+
+C2170 context.py draft now built/ASTparsed: pure source_scope.SourceScope metadata bootstrap plus priorclosedbinding/closedgate ONLY; originaldriver.run admission atline8 BEFORE history.install13/execute15 verified; live callsites driver/union_sampler/private_snapshot/policy enumerated. No runtimephysical/sensor/actor/decision body changes. SourceScope regression remainsPASS with exactoriginalhistoryguard/directoldreadstillrefused; no models/NN/render/physics/replay/newSource/AUTH/owner. OriginalV2169failure cannotrerun/requal/push/archiveagain.
+
+Additional storage credit now EXACTLY PROVED9MiB9437184B from CURRENT closeduppers, separatefrom already19MiB (NOdoublecredit): four existing groups27->26MiB,13->12,24->22,17->16 (5MiBextra); closed10scopeband48->45 (3MiB); closedS2162/63/64band16->15 (1MiB). Reused oldimmutable SHA-pinned full inventories, verified12616members EACH SHA-size-blocks-mtime-device-inode plus exactpathsets/currentdu. No rawdeletion/baseline14873092096reset/capexpand. NewCLOSED_V2169_INVENTORY pins fullclosed root;11MiB charged for11202560B. Proposedallprior15250522112/initialrootroom20938752/peak16080994304<old16095019008/15GiB. Credits are PROPOSALuntil newbaseline/reservation validates refs; notmodeladmission. DoNOTwriteunderinventoriedC2169 oroldercreditedroots. Actualsource/rawretained, onlypreviousduplicate transportsremoved.
+
+IMPORTANT next source candidate design: doNOTblindcopyC2169.preflight.candidate loop addingALLclosedC2169inventory rows toSOURCE thenreseal duplicate11MiB actualraw under2MiB sourcecap. NewSOURCE inherits29215 existingSOURCE members and newC2170code/proofs, pins prior source+runtime actualremote index/wholeSHA/cleanup/barrier/COMPLETION/RUNTIME_CLOSED_REVIEW/machineRESULT/LAUNCH_IDENTITY/owner.console necessarysmallmetadata. Priorphysicalraw alreadycovered115member5165645B verifiedRuntimeRelease; referenceits actualremote indexSHA instead ofduplicating raw intoSource. FullCLOSED_V2169 inventory mayremain source metadata withrefoldRuntime chain; source transport evidence/recoverymetadata late to original3b4Git, newSource cancover refs exactly. Keep modelCODE/inputscomplete Sourcechain andalloldrawretained/checkedexternalowner; no omission ofscientificfailures. This SourceScope isONEallowedactualintegrationrevision; afteranotheractualintegrationfailurecloseSCCRcapabilitybranch/switch, not3rdclone.
+
+Nextfinish SAMEC2170: register baseline+reservation, derive runtime49bodyidentity andsourceRootnewonly, realnamespace/prelude/bootstrap under originalhistoryguard/OutputBoundary/completeSourceinput whitelist tests BEFORE AUTH9000/6900reserve/onceSOURCE. Thennewunique30push5ref/fullactualremote, one2210component. Noothermodeljobs/currentowners. Paperfairness scope unchangedformal12072closed7whole48unexecuted.
+
+# AUTHORITATIVE latest 2026-11-27T18:52:33.837882+08:00: V2169 CLOSED / C2170 SourceScope software PASS / capacity pending
+
+V2169 original source29215/sole3b4e/Release460468229 remains frozen: owner proof repair worked, init1 then first live UnionSampler.admission rehashed all source under original history guard and refused historical BODY_COMMANDS. No own actors/renderers/forward/sensor frames. Machine learned counts null preserved; source-derived explicit0 separate/internalfactory unknown. Canonical error unchanged.200errorstop/200ownreplay/error0/contactmismatch0/prefixauditPASS only, no complete component/arrival. Runtime115members5165645B all actualremote block/member/whole/indexSHA+exactcleanup/barrier CLOSED; originalowners80733start1672123/child80741start1672305 gone. No rerun/requal/replay/audit/push/reseal or writes under this closed root after next inventory.
+
+C2170 new source_scope.py caches ONLY immutable path/SHA and PID/boot/freeze/admission/task authority metadata. GUARD_REGRESSION passed ACTUAL original history_guard code: old live rehash RED, prebootstrap runtime verification GREEN, direct historical read STILL RED plus cold/authority/manifest/runtime-source/immutability negatives.0models/NN/render/physics/replay/Source; no old scientific qualification rerun. Planned first bootstrap before ORIGINAL driver.history.install/INITIALIZATION_ATTEMPT; all source bytes checked before factory and by owner before/after child, all runtime-readable code/model bytes rechecked live; original guard stays exact. This uses ONE allowed live integration revision; another actual failure closes SCCR capability branch/switches independent research. Context integration not yet written (last ad-hoc metadata script parse error executed nothing).
+
+Capacity is NOT admitted. ClosedS2169 actual11202560B must charge11MiB; existing initializer headroom then lacks exact bytes recorded below. Need legitimate EXACT CLOSED unused-upper credit inventory, no15GiB/task224/IO272/root512 expansion/globalbaseline14873092096 reset/raw/currentinput/anchor delete. C2162 CLOSED_INCREMENT already credited19MiB: do not doublecredit. Next inspect individual old incremental bands/roots and exact SHA-size-blocks-mtime-device-inode unused uppers, then full integration preflight/newSource/newuniqueGit/fullremote before final2210component. No new AUTH/once/Source/model/owner/actual exists. Formal120 unchanged72closed7whole48unexecuted.
+
+Compact checkpoint:
+```json
+{
+  "updated": "2026-11-27T18:52:33.837882+08:00",
+  "stage": "V2169_FULLY_CLOSED_SOURCE_SCOPE_GUARD_REGRESSION_PASS_CAPACITY_CREDIT_PENDING",
+  "source_once_claimed": false,
+  "source_clock_started": false,
+  "new_models_authorized": false,
+  "new_models": 0,
+  "new_NN_inference": 0,
+  "new_renderer_constructors": 0,
+  "new_physics": 0,
+  "new_replay": 0,
+  "prior_V2169": {
+    "closed": true,
+    "passed": false,
+    "source_members": 29215,
+    "sole_commit": "3b4e0409500e4c900b58f8d13aa57a05f6bad279",
+    "Release": 460468229,
+    "actual_native": 200,
+    "own_replay_native": 200,
+    "canonical_initializations": 1,
+    "internal_factory_counts": null,
+    "canonical_learned_accounting": null,
+    "source_derived_explicit_new_actor_renderer_forward_counts_zero": true,
+    "replay_maxerror": 0,
+    "contact_mismatch": 0,
+    "bad_contacts": 0,
+    "min_actual_clearance_m": 0.31498918194116166,
+    "min_self_margin_m": 0.009944851725426362,
+    "goal_distance_m": 8.000063036649994,
+    "independent_actual_prefix_audit_passed": true,
+    "sensor_frames": 0,
+    "normal_native": 0,
+    "first_error": "FRESH_HISTORY_READ_FORBIDDEN BODY_COMMANDS.json",
+    "secondary_errors": [],
+    "runtime_members": 115,
+    "runtime_archive_bytes": 5165645,
+    "all_actual_remote_SHA_cleanup_barrier": true,
+    "q1159_subset": {
+      "CPP": 0,
+      "Python": 0,
+      "PythonPredictor_constructor_returns": 1,
+      "internal_Allocator": null,
+      "total_work": null
+    }
+  },
+  "one_allowed_live_integration_revision": "PREINITIALIZER_SOURCE_HASH_METADATA_BINDING_WITH_UNCHANGED_HISTORY_GUARD",
+  "original_history_direct_read_still_refused": true,
+  "cached_only_path_SHA_strings_not_history_content": true,
+  "context_draft_ready": false,
+  "remaining": [
+    "integrate SourceScope with pre-history driver admission and live call sites",
+    "exact closed storage unused-upper credit before another initializer",
+    "one new configured source qualification/remotechain then final allowed live integration attempt"
+  ],
+  "formal120_closed": 72,
+  "formal120_whole": 7,
+  "formal120_unexecuted": 48,
+  "global_locks_idle": true,
+  "storage": {
+    "prior_closed_allocated_bytes": 11202560,
+    "proposed_prior_closed_upper_bytes": 11534336,
+    "initial_task_room_without_new_credit": 11501568,
+    "initializer_terminal_error_minimum": 17899520,
+    "additional_exact_closed_credit_needed_bytes": 6397952,
+    "no_cap_expand_baseline_reset_or_raw_delete": true
+  }
+}
+```
+
 # AUTHORITATIVE latest 2026-11-27T18:42:28.750821+08:00: V2169 one proof-binding Source29215 PASS / remotePENDING /0models
 
 V2168 CLOSED prechildfailure fullyremote82members101172B, machineRESULTmissing/nullcounts retained/source-derived0separate, norelauch/requal/repush. C2169 originalowner.py ONLYreplace missingSOURCE/COMPONENT_INTERFACE_PROOF with alreadyfrozenR/runs/v2168_sccr_live_union/PHYSICAL_SEAM_PROOF. RedactualoldFileNotFound/greencorrectedguardpassed, ENTIREownerASTtailkeptunreachable; everypre-childliteralread classifiedexistingor5generatedfutureSourcefiles. NewactualStage-hiddennamespaceRootguardrefuses107actor/186actor/samplerBEFORE Torch/MuJoCo.49runtime/sensor/actor/physicalmodules byteexactC2168; contextonlypriorclosedbinding, source/IO/reservationglueownnewscope. Alloldray/sampler/audit/backendqualifications inheritedbysourceidentity NOTreexecuted.

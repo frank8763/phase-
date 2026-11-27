@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "closed": true,
+  "stage": "UNQUALIFIED_AUTHORITY_SOURCE_LIFECYCLE_SEAM",
+  "parent_context_sha256": "7cd70bbd21deea6bc9bf120e21c290ef00b763b14f6665e6ce0f3c45ebcc42f5",
+  "draft_context_sha256": "81b052e7aaa02df2a3a4738f2aad813316b82a9abb301bf9409ec40e166d69e1",
+  "source_scope_sha256": "954d4ace624e76d5193769ede01c35720c59e35840ec1b7ec5abf9f5cec5f765",
+  "original_driver_bootstrap_line": 8,
+  "original_history_guard_install_line": 13,
+  "original_execute_line": 15,
+  "source_bootstrap_strictly_precedes_history_guard_and_factory": true,
+  "live_call_sites": [
+    {
+      "module": "driver.py",
+      "admission_lines": [
+        8
+      ],
+      "body_not_changed": true
+    },
+    {
+      "module": "union_sampler.py",
+      "admission_lines": [
+        8
+      ],
+      "body_not_changed": true
+    },
+    {
+      "module": "private_snapshot.py",
+      "admission_lines": [
+        17
+      ],
+      "body_not_changed": true
+    },
+    {
+      "module": "policy.py",
+      "admission_lines": [
+        8
+      ],
+      "body_not_changed": true
+    }
+  ],
+  "only_predecessor_binding_and_source_verification_lifecycle_and_closed_gate_changed": true,
+  "all_physical_sensor_actor_decision_and_safety_bodies_not_changed": true,
+  "models": 0,
+  "NN_inference": 0,
+  "renderer_constructors": 0,
+  "physics": 0,
+  "replay": 0,
+  "source_once_claimed": false,
+  "real_live_integration_not_yet_qualified": true
+}
