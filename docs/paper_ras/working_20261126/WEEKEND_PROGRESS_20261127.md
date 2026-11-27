@@ -34,3 +34,17 @@ V2168 已实现当前测量位置上的完整传感联合生产器及107→186�
 V2168在创建车辆前因旧证明文件名缺失而结束，机器RESULT缺失及未知计数保留；源推导的零调用另列。V2169修复这一入口后完成1次车辆初始化，但在首次完整传感采样前，运行期全源哈希校验触及被原始隔离门禁止的历史BODY_COMMANDS文件并拒绝。原门未放宽。该轮完成200步错误收尾和200步自有回放，完整状态/控制/mocap回放误差0、接触不一致0，独立实际前缀审核通过；0正常控制、0完整传感帧，无导航或机制收益结论。内部factory模型/策略数未知，自己的新增策略与渲染调用源推导0与机器null分账。两轮原始失败和运行证据均已远端逐项SHA验证并闭账。
 
 V2170只准备一次源校验生命周期修复：初始化前完整源验证与权限哈希绑定，运行期验证允许读取的源文件，原历史读取隔离门保持；缓存只有路径/哈希字符串。纯软件回归及新的已关闭预留核验通过，实际完整传感与策略组件仍未启动。现有共同120项继续保持72关闭、7完整到达、48未执行；这些组件不计入正式性能分母。
+
+### 2026-11-27T19:36:42.362771+08:00：完整传感与双冻结策略组件实测通过
+
+V2170在一项已暴露课程上取得原生步0/5/10的三帧完整186维观测，完成2个冻结actor的2次权重加载和6次推理；策略输出仅记录。实际执行10步零控制及2200步完整停车，共2210步及等长自有回放；完整状态/控制/mocap回放误差0，接触不一致0、坏接触0，最小实际净距0.31498918194116166m。独立审核核验三帧特征与五个完整预测剖面，未重复神经推理或渲染。内厂模型/策略/渲染数与完整工作量仍未知；q1159恢复子集Python11030/CPP0及6次PythonPredictor返回另列。
+
+源29324项与运行147成员/6694713B均已在Release460506353逐块/成员/整包/索引实读SHA验证并闭账。该结果证明注册观测适配与冻结网络接口可工作，未验证完整SCCR风险融合、路径恢复、非零控制或全程到达。十方法相同传感包可用性的复制接口通过，不代表十个算法已执行。历史包装器传感调用节奏、相机别名适配及零动作历史的范围继续披露。原120正式任务仍为72关闭、7完整到达、48未执行。下一步用这三帧和实际actor输出核对原v3风险/安全盾/控制单位，不再重复本组件推理或物理试验。
+
+
+### SCCR applicability boundary, V2171 (2026-11-27T19:51:23.518125+08:00)
+
+Complete measured186-input/two-frozen-actor acquisition passed only as a log-only component (V2170). V2171 saved-input source arithmetic validates risk/shield interfaces but finds the historical environment performs post-step direct vehicle position/orientation/velocity corrections, incompatible with the common no-state-injection plant. Native full-environment SCCR is not a valid drop-in comparator. A separately identified controller-only common-plant adaptation remains unqualified; residual-policy output is not body velocity or a final safe actuator command. Three all-clear saved frames and synthetic risk/negative tests are not navigation outcomes. No new formal samples; original120 remains72closed/7whole/48unexecuted. See `docs/SCCR_CONTROL_CONTRACT_V2171_REPORT.md`.
+
+
+SCCR control-adapter preparation (V2173/V2174): original inner-controller arithmetic, nonzero actuator-unit equations and recovery negatives passed on saved inputs only. Raw virtual requests exceed the shared speed domain. An explicitly labelled common-command projection passed software domain checks; it changes actuation interpretation and is not native environment equivalence or physical qualification. Any future shared-route controller-module comparison must be separated from full-system comparisons and disclose frontend/adapter policy uniformly. No new formal sample or navigation arrival. Details: `docs/SCCR_INNER_CONTROL_V2173_V2174_REPORT.md`.

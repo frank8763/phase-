@@ -182,3 +182,11 @@ The historical64-row snapshot and mechanism readout remain under `runs/v2111_pap
 6. Rastgar, F., et al. PRIEST: Projection Guided Sampling-Based Optimization for Autonomous Navigation. IEEE Robotics and Automation Letters 9(3), 2630–2637, 2024. https://doi.org/10.1109/LRA.2024.3357311
 7. Wabersich, K. P., Zeilinger, M. N. A predictive safety filter for learning-based control of constrained nonlinear dynamical systems. Automatica 129, 109597, 2021. https://doi.org/10.1016/j.automatica.2021.109597
 8. Wabersich, K. P., Zeilinger, M. N. Predictive Control Barrier Functions: Enhanced Safety Mechanisms for Learning-Based Control. IEEE Transactions on Automatic Control 68(5), 2638–2651, 2023. https://doi.org/10.1109/TAC.2022.3175628
+
+
+### SCCR applicability boundary, V2171 (2026-11-27T19:51:23.518125+08:00)
+
+Complete measured186-input/two-frozen-actor acquisition passed only as a log-only component (V2170). V2171 saved-input source arithmetic validates risk/shield interfaces but finds the historical environment performs post-step direct vehicle position/orientation/velocity corrections, incompatible with the common no-state-injection plant. Native full-environment SCCR is not a valid drop-in comparator. A separately identified controller-only common-plant adaptation remains unqualified; residual-policy output is not body velocity or a final safe actuator command. Three all-clear saved frames and synthetic risk/negative tests are not navigation outcomes. No new formal samples; original120 remains72closed/7whole/48unexecuted. See `docs/SCCR_CONTROL_CONTRACT_V2171_REPORT.md`.
+
+
+SCCR control-adapter preparation (V2173/V2174): original inner-controller arithmetic, nonzero actuator-unit equations and recovery negatives passed on saved inputs only. Raw virtual requests exceed the shared speed domain. An explicitly labelled common-command projection passed software domain checks; it changes actuation interpretation and is not native environment equivalence or physical qualification. Any future shared-route controller-module comparison must be separated from full-system comparisons and disclose frontend/adapter policy uniformly. No new formal sample or navigation arrival. Details: `docs/SCCR_INNER_CONTROL_V2173_V2174_REPORT.md`.
