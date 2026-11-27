@@ -1,0 +1,63 @@
+{
+  "parent": "experiments/v2144_sccr_depth_resource_units",
+  "files": [
+    "run_phase.py",
+    "error_stop.py",
+    "oracle.py",
+    "resource_policy.py",
+    "response.py",
+    "capture.py",
+    "native_worker.py",
+    "nominal.py",
+    "geometry.py",
+    "request.py",
+    "work_budget.py",
+    "resources.py",
+    "evidence_service.py",
+    "work.py",
+    "thread_observation.py",
+    "runtime_binding.py",
+    "granted_quota.py",
+    "observation.py",
+    "compact_json.py",
+    "quota.py",
+    "filter_scope.py",
+    "kinematics.py",
+    "input_frame.py",
+    "history_binding.py",
+    "generic_audit.py",
+    "cpu_policy.py",
+    "audit_budget.py",
+    "direct_bits.py",
+    "pilot_entry.py",
+    "current_request.py",
+    "native_namespace.py",
+    "peer_contract.py",
+    "filter.py",
+    "base_quota.py",
+    "channel.py",
+    "native_client.py",
+    "proposal_gate.py"
+  ],
+  "byte_identical": true,
+  "qualification_not_repeated": true,
+  "explicit_changed_seams": {
+    "driver.py": {
+      "parent_sha256": "84559ced8d5abe5919c9fc1223c2db6f415b133baba7374dd3495a9a789bdc01",
+      "new_sha256": "6912b425097f090a1032ec9a48c3a565e90ddc3dbeb4cf6fe5e9705efc54e659"
+    },
+    "depth.py": {
+      "parent_sha256": "000bdcbfcdb17f21e32ac9bcc089cb2da2f8e631bfbfc7e28eab6a0391acdc07",
+      "new_sha256": "eb4a794f1b20a00b24fdd5fb97e786ad38f6c045b819961681efe230497e1adf"
+    },
+    "owner.py": {
+      "parent_sha256": "b7d6da50db0484d3ec20a018e00ba659daf107a04db2d41b1e733fa2e683d599",
+      "new_sha256": "15674635c48c511432e544f8265eb3035ffe7afb528e5d7eae438eb20c5ac0d0"
+    }
+  },
+  "changed_seam_notes": {
+    "driver.py": "method identity metadata plus durable learned-progress read during closure; physical/model/replay/audit driver body unchanged",
+    "depth.py": "renderer closed if constructor metadata save fails; original extractor/capture/audit unchanged",
+    "owner.py": "new root-clock reserve guard before model/once admission; original physical owner otherwise exact"
+  }
+}

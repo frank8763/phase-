@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "error": "ImportError(\"cannot import name 'put' from 'context' (unknown location)\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2168_sccr_live_union/sampler_preflight.py\", line 102, in <module>\n    sampler=module('preflight_production_sampler',C/'union_sampler.py')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2168_sccr_live_union/sampler_preflight.py\", line 22, in module\n    sp=importlib.util.spec_from_file_location(n,p);m=importlib.util.module_from_spec(sp);sys.modules[n]=m;sp.loader.exec_module(m);return m\n  File \"<frozen importlib._bootstrap_external>\", line 883, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 241, in _call_with_frames_removed\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2168_sccr_live_union/union_sampler.py\", line 2, in <module>\n    from context import R,C,O,read,put,load,sha,digest,admission\nImportError: cannot import name 'put' from 'context' (unknown location)\n",
+  "models": 0,
+  "physics": 0,
+  "source_once_claimed": false
+}

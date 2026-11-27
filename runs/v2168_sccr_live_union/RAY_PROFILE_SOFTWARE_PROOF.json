@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "closed": true,
+  "saved_measured_cases": [
+    {
+      "native": 0,
+      "primary_meter_ranges_byte_exact": true,
+      "noise_indices": [
+        2,
+        2
+      ],
+      "feature_lengths": {
+        "core_lidar36_raw_m": 36,
+        "phase6_lidar32": 32,
+        "phase7_depth15": 15,
+        "phase17_lidar32": 32,
+        "phase17_depth15": 15
+      },
+      "input_arrays_unmodified": true,
+      "private_geometry_fixture_not_a_live_model": true
+    },
+    {
+      "native": 5,
+      "primary_meter_ranges_byte_exact": true,
+      "noise_indices": [
+        3,
+        3
+      ],
+      "feature_lengths": {
+        "core_lidar36_raw_m": 36,
+        "phase6_lidar32": 32,
+        "phase7_depth15": 15,
+        "phase17_lidar32": 32,
+        "phase17_depth15": 15
+      },
+      "input_arrays_unmodified": true,
+      "private_geometry_fixture_not_a_live_model": true
+    },
+    {
+      "native": 10,
+      "primary_meter_ranges_byte_exact": true,
+      "noise_indices": [
+        4,
+        4
+      ],
+      "feature_lengths": {
+        "core_lidar36_raw_m": 36,
+        "phase6_lidar32": 32,
+        "phase7_depth15": 15,
+        "phase17_lidar32": 32,
+        "phase17_depth15": 15
+      },
+      "input_arrays_unmodified": true,
+      "private_geometry_fixture_not_a_live_model": true
+    }
+  ],
+  "negative_cases": [
+    "wrong_actor_radius",
+    "future_actor_metadata",
+    "stale_private_world",
+    "primary_range_mismatch",
+    "wrong_noise_counter"
+  ],
+  "models": 0,
+  "renderer_constructors": 0,
+  "neural_inference": 0,
+  "physics": 0,
+  "replay": 0,
+  "physical_audit": 0,
+  "source_once_claimed": false,
+  "private_current_snapshot_and_original_noise_profile_software_passed": true,
+  "all_live_union_or_policy_not_yet_qualified": true,
+  "source_SHA256": {
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000000_origin.json": "1b89cb8838f0de8855052b2e0906d597b8ac8a17941cdd99a8dc432cffb8023c",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/FULL_STATE_NPLUS1.npz": "8c75d2a5187f75c231f0674c6c2cc65e08b09bd060cb52f5fab9130a6433e69f",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/physics/SETUP.json": "e30514a431eafc4aa6ce30d8a06affb8374b19b6bab3c18c943a2edf8a38980b",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000001_origin.json": "6efb74513ed5216b3ce5cb58fdae0ab83eacab44aa346e9d44d8ee1a85bbc080",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000002_origin.json": "981152835a32b69728544f292cf007a4607b47fd3d181daf850e7ea5744c61fd",
+    "experiments/v2168_sccr_live_union/ray_profile_check.py": "8d60adf1d6b0c205f13b64c199b39cd6939a165141ff581cb8f01484774cc2c9",
+    "experiments/v2168_sccr_live_union/union_features.py": "63bbd5222aba732d2d94e19c5837df38119f40d8537b9e0033157aa56b804792",
+    "experiments/v2168_sccr_live_union/private_snapshot.py": "2e747d0bc15b98ede1de900fd347b1c1d5eddedb20cb63927b9dc5caac5b1d0f"
+  }
+}

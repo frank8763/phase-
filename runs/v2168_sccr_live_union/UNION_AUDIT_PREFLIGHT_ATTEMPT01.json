@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2168_sccr_live_union/union_audit_preflight.py\", line 18, in <module>\n    features,profile=rays.blocks(np,dict(native=k,sim_time=.01*k,body=receipt['packet']['body']),world,receipt['scan'],task['seed'],setup['noise'])\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2168_sccr_live_union/union_features.py\", line 21, in blocks\n    k=measured['native'];assert type(k)is int and k>=0 and k%5==0 and world['native']==scan['native_tick']==k and world['sim_time']==measured['sim_time']==scan['time']and abs(measured['sim_time']-.01*k)<=1e-8\nAssertionError\n",
+  "models": 0,
+  "physics": 0,
+  "source_once_claimed": false
+}

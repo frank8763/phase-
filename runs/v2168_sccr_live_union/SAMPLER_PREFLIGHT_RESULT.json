@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "closed": true,
+  "scope": "PRODUCTION_SAMPLER_WITH_EXPLICIT_FAKE_PHYSICAL_NN_RENDER_BOUNDARIES",
+  "cases": [
+    {
+      "three_complete_frames": true,
+      "forward_stub_calls": 6,
+      "constructor_stub_calls": 2,
+      "production_sensor_and_observation_functions": true,
+      "actor_outputs_not_executed": true,
+      "all_packets_in_memory_explicit_software_fixture": true
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "route_missing",
+      "error": "AssertionError('UNION_PUBLIC_ROUTE_NOT_FOUND')"
+    },
+    {
+      "case": "route_invalid",
+      "error": "AssertionError('UNION_PUBLIC_ROUTE_REFUSED')"
+    },
+    {
+      "case": "depth_module_load",
+      "error": "RuntimeError('EXPLICIT_FAKE_DEPTH_IMPORT_FAILURE')"
+    },
+    {
+      "case": "policy_load",
+      "error": "RuntimeError('EXPLICIT_FAKE_POLICY_LOAD_FAILURE')"
+    },
+    {
+      "case": "actor_constructor_107",
+      "error": "RuntimeError('EXPLICIT_FAKE_ACTOR_CONSTRUCTOR_FAILURE')"
+    },
+    {
+      "case": "actor_constructor_186",
+      "error": "RuntimeError('EXPLICIT_FAKE_ACTOR_CONSTRUCTOR_FAILURE')"
+    },
+    {
+      "case": "render_failure",
+      "error": "RuntimeError('EXPLICIT_FAKE_RENDER_FAILURE')"
+    },
+    {
+      "case": "base_forward_failure",
+      "error": "RuntimeError('EXPLICIT_FAKE_FORWARD_FAILURE')"
+    },
+    {
+      "case": "residual_forward_failure",
+      "error": "RuntimeError('EXPLICIT_FAKE_FORWARD_FAILURE')"
+    },
+    {
+      "case": "actual_state_mutation",
+      "error": "AssertionError('UNION_SENSOR_OR_NETWORK_MUTATED_ACTUAL_STATE')"
+    },
+    {
+      "case": "nonzero_prior_request",
+      "error": "AssertionError('UNION_COMPONENT_REQUIRES_ONLY_ZERO_REQUEST_HISTORY')"
+    },
+    {
+      "case": "foreign_clock",
+      "error": "AssertionError()"
+    },
+    {
+      "case": "duplicate_native",
+      "error": "AssertionError()"
+    },
+    {
+      "case": "private_snapshot_admission_before_model_access",
+      "error": "AssertionError('EXPLICIT_SOFTWARE_ADMISSION_DENIAL')"
+    },
+    {
+      "case": "sampler_admission_before_vehicle_access",
+      "error": "AssertionError('EXPLICIT_SOFTWARE_ADMISSION_DENIAL')"
+    }
+  ],
+  "source_SHA256": {
+    "experiments/v2168_sccr_live_union/union_sampler.py": "765741ca90b7fcfc24bc749552f39aa1464f25c5f9582546de2b97235718e9c3",
+    "experiments/v2168_sccr_live_union/private_snapshot.py": "cec7b9ad5d76bd40c03619fe8ff79b3cfc0de8233af311f360556f0ed775115a",
+    "experiments/v2168_sccr_live_union/union_features.py": "63bbd5222aba732d2d94e19c5837df38119f40d8537b9e0033157aa56b804792",
+    "experiments/v2168_sccr_live_union/assemble.py": "b411b09d25b6030db962c85f8bcf8f3384bc9f4b8547d0040c8cba53f7954a44",
+    "experiments/v2168_sccr_live_union/sampler_preflight.py": "680cd7679c445a701e0160618cda9782e2223b39b7ee0cceb73d2fd548913f7c"
+  },
+  "software_stub_receipt_inputs_SHA256": {
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000000_origin.json": "1b89cb8838f0de8855052b2e0906d597b8ac8a17941cdd99a8dc432cffb8023c",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000001_origin.json": "6efb74513ed5216b3ce5cb58fdae0ab83eacab44aa346e9d44d8ee1a85bbc080",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000002_origin.json": "981152835a32b69728544f292cf007a4607b47fd3d181daf850e7ea5744c61fd"
+  },
+  "models": 0,
+  "renderer_constructors": 0,
+  "neural_inference": 0,
+  "physics": 0,
+  "replay": 0,
+  "source_once_claimed": false,
+  "all_generated_packets_only_in_memory_not_actual_sensor_evidence": true,
+  "real_live_union_not_yet_qualified": true,
+  "wall_s": 0.9359240459998546
+}

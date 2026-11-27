@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "error": "TypeError(\"cannot pickle 'module' object\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2168_sccr_live_union/union_audit_preflight.py\", line 32, in <module>\n    a=copy.deepcopy(inputs[-1]);a[8][0,0]+=.2;reject('captured_mocap_disagrees_with_sensor_world',a)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/copy.py\", line 146, in deepcopy\n    y = copier(x, memo)\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/copy.py\", line 206, in _deepcopy_list\n    append(deepcopy(a, memo))\n  File \"/home/linghu/miniconda3/envs/mk_mujoco/lib/python3.10/copy.py\", line 161, in deepcopy\n    rv = reductor(4)\nTypeError: cannot pickle 'module' object\n",
+  "models": 0,
+  "physics": 0,
+  "source_once_claimed": false
+}

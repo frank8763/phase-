@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "closed": true,
+  "scope": "INDEPENDENT_UNION_ARITHMETIC_SOFTWARE_ONLY_EXPLICIT_FAKE_POLICY_OUTPUTS",
+  "saved_measured_fixture_cases": [
+    {
+      "native": 0,
+      "passed": true,
+      "fullstate_current_mocap_geometry_bound": true,
+      "primary_noise_profile_byte_exact": true,
+      "complete186_arithmetic_byte_exact": true,
+      "NN_forward_reexecuted": 0,
+      "renderer_reexecuted": 0
+    },
+    {
+      "native": 5,
+      "passed": true,
+      "fullstate_current_mocap_geometry_bound": true,
+      "primary_noise_profile_byte_exact": true,
+      "complete186_arithmetic_byte_exact": true,
+      "NN_forward_reexecuted": 0,
+      "renderer_reexecuted": 0
+    },
+    {
+      "native": 10,
+      "passed": true,
+      "fullstate_current_mocap_geometry_bound": true,
+      "primary_noise_profile_byte_exact": true,
+      "complete186_arithmetic_byte_exact": true,
+      "NN_forward_reexecuted": 0,
+      "renderer_reexecuted": 0
+    }
+  ],
+  "negative_cases": [
+    "captured_mocap_disagrees_with_sensor_world",
+    "private_geometry_changed",
+    "receipt_body_mismatch",
+    "sensor_ray_mismatch",
+    "private_actor_field_in_consumer_packet",
+    "unjustified_nonzero_previous_actuation",
+    "full186_changed",
+    "saved_base_action_unbound_to186",
+    "residual_outside_original_domain",
+    "forward_count_gap",
+    "unclosed_forward",
+    "unequal_sensor_availability",
+    "waypoint_not_from_measured_source",
+    "noise_counter_changed",
+    "rendered_depth_unbound"
+  ],
+  "models": 0,
+  "NN_inference": 0,
+  "render": 0,
+  "physics": 0,
+  "replay": 0,
+  "source_once_claimed": false,
+  "synthetic_packets_in_memory_only_not_new_live_evidence": true,
+  "live_union_audit_not_executed": true,
+  "wall_s": 1.7143218370001705,
+  "source_SHA256": {
+    "experiments/v2168_sccr_live_union/union_audit_preflight.py": "1f2db1345b3b9ec6cd41e6de95e96fd175de46fd6445ea3e0bb0afa90d5644d8",
+    "experiments/v2168_sccr_live_union/union_audit.py": "94d2e73db236abbd9458303a60734a385fd080008b0bff7064137852a827cf8b",
+    "experiments/v2168_sccr_live_union/assemble.py": "b411b09d25b6030db962c85f8bcf8f3384bc9f4b8547d0040c8cba53f7954a44",
+    "experiments/v2168_sccr_live_union/union_features.py": "63bbd5222aba732d2d94e19c5837df38119f40d8537b9e0033157aa56b804792",
+    "runs/v2168_sccr_live_union/PUBLIC_ROUTE_PREFLIGHT.json": "102109f7b8785e38c6acd0e8cbbece06dc684f8f195d3622d2070b9b7ce3feb5"
+  }
+}
