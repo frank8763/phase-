@@ -59,7 +59,7 @@
   "active_preparation": null,
   "active_round": null,
   "active_run": null,
-  "active_source_round": null,
+  "active_source_round": "v2141_pcbf_progress_scope",
   "active_window": null,
   "active_zero_model_diagnostic": null,
   "active_zero_model_storage_worker": null,
@@ -13469,7 +13469,7 @@
     "research_only": true,
     "research_sources": "Primary papers, author repositories and official implementations; no performance replication"
   },
-  "models_now_authorized": false,
+  "models_now_authorized": true,
   "morning_check_20261124": {
     "all_owned_processes_gone": true,
     "both_locks_idle": true,
@@ -14129,7 +14129,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "FOUR_METHOD_PARALLEL_PREPARATION_PCBF250_SOURCE_PASS_REMOTE_PENDING",
+  "status": "PCBF250_ACTUAL_RUNNING_OTHER_THREE_INTERFACE_PREPARATIONS_CLOSED",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -14553,7 +14553,7 @@
   },
   "overnight_component_Phase_qualification": false,
   "overnight_final_diagnosis": "runs/v2113_overnight_transport_diagnosis/CHECKPOINT.json",
-  "active_finite_campaign": null,
+  "active_finite_campaign": "runs/v2141_pcbf_progress_scope",
   "finite_daytime_campaign_hard_end_unix": 1795778837.7023675,
   "current_common07_transport_recovered": true,
   "latest_remaining_method_components": "runs/v2123_causal_footprint_filters",
@@ -14596,8 +14596,8 @@
   "PSF_PCBF_fullfootprint_NLP_accepted": 6,
   "PSF_PCBF_fullfootprint_NLP_expected_refusals": 3,
   "PSF_PCBF_fullfootprint_NLP_numerical_failures": 3,
-  "latest_Phase_progress_local": "2026-11-27T12:46:52.288051+08:00",
-  "live_model_jobs": 0,
+  "latest_Phase_progress_local": "2026-11-27T12:50:02.670780+08:00",
+  "live_model_jobs": 1,
   "PRIEST_new_adapter_vehicle_closed": true,
   "PRIEST_new_adapter_actual_native": 200,
   "PRIEST_new_adapter_own_replay_native": 200,
@@ -14607,22 +14607,22 @@
   "PSF_PCBF_continuous_current_vehicle_qualified": true,
   "PSF_PCBF_common_formal_tasks_executed": 0,
   "latest_filter_vehicle_source": "runs/v2141_pcbf_progress_scope",
-  "latest_filter_vehicle_source_commit": "dcde311e6b4cea40d83d89ab8ecfc30114fb8fb5",
+  "latest_filter_vehicle_source_commit": "89ab48f352beb7dc967380ea6c19bca3324f1349",
   "latest_filter_vehicle_component_ledger": "runs/v2137_psf_progress_control/COMPONENT_LEDGER_CLOSED.json",
   "latest_filter_vehicle_pipeline_closed": true,
   "latest_filter_launch_identity": {
-    "pid": 1694655,
-    "pgid": 1694655,
-    "start_ticks": "39296558",
+    "pid": 1701542,
+    "pgid": 1701542,
+    "start_ticks": "39438862",
     "boot_id": "638061fd-af0c-4457-bf58-e0e51e42aedf",
-    "unix": 1795753503.9273887,
+    "unix": 1795754926.9683936,
     "cpu": 5,
     "models_started_at_launch": 0,
     "fixed_order": [
-      "PSF"
+      "PCBF"
     ],
-    "scope": "PSF_250_CURRENT_PROGRESS_ORIGINAL_HARD_PHYSICAL_GATES_COMPONENT",
-    "source_commit": "dcde311e6b4cea40d83d89ab8ecfc30114fb8fb5"
+    "scope": "PCBF_250_CURRENT_PROGRESS_ORIGINAL_HARD_PHYSICAL_GATES_COMPONENT",
+    "source_commit": "89ab48f352beb7dc967380ea6c19bca3324f1349"
   },
   "latest_filter_continuous_attempt_closed": true,
   "latest_filter_continuous_attempt_passed": true,
@@ -14633,14 +14633,14 @@
   "latest_filter_clock_draft": "runs/v2129_filter_measured_clock",
   "latest_filter_clock_draft_regression_passed": true,
   "latest_filter_clock_draft_physically_admitted": false,
-  "latest_filter_component_checkpoint": "runs/v2137_psf_progress_control/FINAL_CHECKPOINT.json",
+  "latest_filter_component_checkpoint": "runs/v2141_pcbf_progress_scope/ACTUAL_LAUNCH_HEALTH.json",
   "remaining_four_comparison_scope": "development qualification then NEW equal camera-depth confirmation; old120 unchanged",
   "SCCR_equal_camera_depth_new_group_authorized": true,
   "PSF_twenty_current_vehicle_component_qualified": true,
   "PCBF_twenty_current_vehicle_component_qualified": true,
   "remaining_four_preparation_readout": "runs/v2132_remaining_method_qualification",
   "next_math_preparation_source": "runs/v2133_pcbf_slack_initialization",
-  "live_mathematical_jobs": 0,
+  "live_mathematical_jobs": 1,
   "latest_pcbf_math_identity": {
     "pid": 1685257,
     "pgid": 1685257,
@@ -14661,7 +14661,7 @@
   },
   "PCBF_component_partial_queries": null,
   "PCBF_component_partial_normal_native": null,
-  "latest_remaining_method_report": "docs/paper_ras/working_20261126/EQUAL_SENSOR_CONFIRMATION_PREPARATION_20261127.md",
+  "latest_remaining_method_report": "docs/paper_ras/working_20261126/FOUR_METHOD_PARALLEL_START_20261127.md",
   "PSF_PCBF_full_route_vehicle_qualified": false,
   "PSF_progress_component_running": false,
   "PSF_progress_component_passed": true,
@@ -14683,5 +14683,9 @@
   "PCBF_latest_closed_current_queries": 20,
   "PCBF_latest_closed_normal_native": 100,
   "latest_remaining_parallel_software": "runs/v2140_remaining_parallel_interfaces/RESULT.json",
-  "latest_remaining_parallel_software_closed": true
+  "latest_remaining_parallel_software_closed": true,
+  "PCBF_progress_component_running": true,
+  "PCBF_progress_component_passed": null,
+  "PCBF_progress_component_partial_queries": 68,
+  "PCBF_progress_component_partial_normal_native": 340
 }
