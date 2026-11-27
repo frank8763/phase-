@@ -1,0 +1,200 @@
+{
+  "passed": true,
+  "closed": true,
+  "synthetic_packet_cases": 40,
+  "negative_cases": [
+    "missing_separate_depth_block",
+    "private_truth_field",
+    "nonfinite_sensor",
+    "future_sensor_clock",
+    "dimension_padding_not_allowed",
+    "unqualified_actual_producer"
+  ],
+  "model_initializations": 0,
+  "policy_deserializations": 0,
+  "policy_inferences": 0,
+  "renderer_constructors": 0,
+  "actual_sensor_acquisitions": 0,
+  "physics": 0,
+  "replay": 0,
+  "formal_tasks": 0,
+  "original_assembly_AST_only": true,
+  "complete_186_builder_software_prepared": true,
+  "actual_full186_or_full_SCCR_not_qualified": true,
+  "Phase21_risk_fusion_pending": true,
+  "source_SHA256": {
+    "runtime/mk-mini/training/envs/mkmini_indoor_room_astar_sac_env.py": "590f1c05fe03983092a8cb9284350f5400ce6aa6f6f30093654b46457b34db75",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase3_depth_astar_sac_env.py": "c5009d06ddebcbc1cd0e4866efea9de7c0929131cf62e1fba21b8e8123c30c2f",
+    "runtime/mk-mini/training/phase6_clean/envs/mkmini_phase6_lidar_camera_astar_sac_env.py": "3360aefee734a1ca285fca519e517603bc2b14bef07f22eea9bb12be10a67beb",
+    "runtime/mk-mini/training/phase7_camera_depth/envs/mkmini_phase7_depth_camera_aux_env.py": "9929fb14e4d0c012edd6585cdb7e9d1131d672ca0962b75ca704e1d8d628ecfa",
+    "runtime/mk-mini/training/phase7_residual_camera_aux/envs/mkmini_phase7_residual_camera_aux_env.py": "28a5f68d80eb862a55a263e4eb42243e18e346a891c90972d12948abb0634f5a",
+    "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17c_lidar_camera_fusion_env.py": "670211bd47bc1ea0b131feae9cb4ff05aa3fe52942976dacfe9785fcc4be18ad",
+    "runtime/mk-mini/training/phase6_clean/envs/sensor_utils.py": "253afa968e364fc92493a1a3061ebefbcd875ffc8281657bfbaf995d6053aa5b",
+    "runtime/mk-mini/training/phase14_lidar_depth_nav/envs/phase14_sensor_utils.py": "253afa968e364fc92493a1a3061ebefbcd875ffc8281657bfbaf995d6053aa5b",
+    "runtime/mk-mini/training/phase7_camera_depth/envs/camera_depth_utils.py": "28b7131ce909a85d7e95c77e3c1f45909e3f8f2d7070efb2130cf3650494592c",
+    "experiments/v2155_sccr_full_observation_assembly/check.py": "12cae98cc5b810aa86d1850470c482c086ec655ad33b7a8853b6b692dd757fb0",
+    "experiments/v2155_sccr_full_observation_assembly/assemble.py": "40e9f4f747720ad10ed36d88017be5c3082b59b7926f643d2f243d0760d968e2"
+  },
+  "cases": [
+    {
+      "native": 0,
+      "observation_sha256": "aff017bdbebb4f67e15906a7451091d6d4245d05eb443a98b1af32c8b5094268"
+    },
+    {
+      "native": 5,
+      "observation_sha256": "0258b14e79f581e65e61b672a79b365c45ca4dd89420055fe5ff0aeeedfa8e2f"
+    },
+    {
+      "native": 10,
+      "observation_sha256": "82d6440148a300794c1d20b2c0bf9e9b4f98b2588b3c833dd4d3902f8593dc42"
+    },
+    {
+      "native": 15,
+      "observation_sha256": "36ece71a1907bc9a36075daf150136ff19e16e0779bb1bcf27059d37399b732e"
+    },
+    {
+      "native": 20,
+      "observation_sha256": "0bb8cddfdebd79c29ad45a30ab6021cb183af5c1b10f7c17132ad7e1189962db"
+    },
+    {
+      "native": 25,
+      "observation_sha256": "5d1450fd6f8983802c9c08090b5ad9ca135c74acc452c272e9680775e700d221"
+    },
+    {
+      "native": 30,
+      "observation_sha256": "d1522b688f4da3f5f89e0babee395641cb93a1fd8055735fd59d69ce98b0ed84"
+    },
+    {
+      "native": 35,
+      "observation_sha256": "695d101018dd6239b258a79a4480cd2c7233aca45838149c4cfb941ded14db4a"
+    },
+    {
+      "native": 40,
+      "observation_sha256": "59b4aca7b44c4dd9c433d5a7b77c3625382933e986a842c5b54fbaf9556e7c51"
+    },
+    {
+      "native": 45,
+      "observation_sha256": "ad4e54e5c7420992101aee45fa67fa8d2364ec601790e01b4f54b41683b39c74"
+    },
+    {
+      "native": 50,
+      "observation_sha256": "f60ae830b4de58168591d0bf2f2de5a0a7766fe774168635aeb66cf0a368d7ca"
+    },
+    {
+      "native": 55,
+      "observation_sha256": "5d284fa3990a721b5cb8f365627048d31d635cfe5547ef38ddf8bea58ae5bd89"
+    },
+    {
+      "native": 60,
+      "observation_sha256": "709c5735295616525085fac8c8f3696c036957bb25b4ebf4c441133fa762ccc8"
+    },
+    {
+      "native": 65,
+      "observation_sha256": "84b60cbc22338869e0a030e2d1856c80773e2efe3f045fe0e21784d796739ddc"
+    },
+    {
+      "native": 70,
+      "observation_sha256": "1a2a7ef5faefa01144725c48242074ca76587969a1edf35314faea1cedb7d99f"
+    },
+    {
+      "native": 75,
+      "observation_sha256": "3ae1537dd7151e40a02ff8df389e44507aade567eee587718818c4227733ba32"
+    },
+    {
+      "native": 80,
+      "observation_sha256": "9cfc315d2cba6b380d3c32c679e5b9f20967db95e352f5afa0b077fdd01755ff"
+    },
+    {
+      "native": 85,
+      "observation_sha256": "84d87d443232347a6aa29286d86d69cbaacdb8b670cb66f0ebddff18b11953d0"
+    },
+    {
+      "native": 90,
+      "observation_sha256": "4df0537cf08994d1fc826847333d39f03cbcb0aba3a54101110f5aad1115166e"
+    },
+    {
+      "native": 95,
+      "observation_sha256": "5be1de343584535bd82c2c10ab2b80c2643c09a02e63bf4c32082b85beab9bca"
+    },
+    {
+      "native": 100,
+      "observation_sha256": "350e8a8a2c586413488f7de5582690f5fdae4c82aa31aede59a1d0cf36d3fb0d"
+    },
+    {
+      "native": 105,
+      "observation_sha256": "f4747738698218f9cfbc52fd08b226b9a18cc9619b48cf29ff26a65d600c7bf1"
+    },
+    {
+      "native": 110,
+      "observation_sha256": "5239489b9bf6ecf2577ab4068bceb1482d337bdd1d9e04c22d93fd0859c5e14c"
+    },
+    {
+      "native": 115,
+      "observation_sha256": "ff26b671cf5ffdae2d60ec5d3a3f98c87216b855c8aec68135da2115e4e917bc"
+    },
+    {
+      "native": 120,
+      "observation_sha256": "131acca1dbf0a9dace40600badebabd775b080b5fbaf0f96adcf8bbd2b9f3aa8"
+    },
+    {
+      "native": 125,
+      "observation_sha256": "ca598d022954d86a85ff22b525f75d29c906b4edbe27ab90cc117237da5316fb"
+    },
+    {
+      "native": 130,
+      "observation_sha256": "fe1d5fbb5df75258334bb603a096ad322a9596bfc26a9bcad80ff1d5913f026e"
+    },
+    {
+      "native": 135,
+      "observation_sha256": "2ec0ca4e1cadfdc366e644cc72668b1584ea7e62ef117a78ed56072b5f2eac16"
+    },
+    {
+      "native": 140,
+      "observation_sha256": "b1a70f72be74df81e1f00b76a9724837ecf3c3ca76e75fc9f4a9576dd23526a7"
+    },
+    {
+      "native": 145,
+      "observation_sha256": "41d62be97a9a6524d46b0762b1f86fb903013b001b5a38044f33fa2703b3bcfd"
+    },
+    {
+      "native": 150,
+      "observation_sha256": "b9c01a982ad7e2438a556880723369146654e077a45c214fca0e8445fc8e20f0"
+    },
+    {
+      "native": 155,
+      "observation_sha256": "e311bd21df1eca06f9523c2cdaf2a24f52e3d9458d2a52031f68a6a8f6472c56"
+    },
+    {
+      "native": 160,
+      "observation_sha256": "fed0362b47551878a26d8bfcbf262c6d1165fd0e031d069f3399a286a02685c8"
+    },
+    {
+      "native": 165,
+      "observation_sha256": "4ec3dd7e1c781426fd1760ddca94dd95cdca67e5147d78398409d5bb1ddfc04d"
+    },
+    {
+      "native": 170,
+      "observation_sha256": "60c5e9ce567bf715119e88ada84f4c08b0f0cd3ec695af6c5bbfa8f183f96137"
+    },
+    {
+      "native": 175,
+      "observation_sha256": "0e1831b96bd08b170eee41c8e60559e586376784cf6db9b06a0113bc8b14c063"
+    },
+    {
+      "native": 180,
+      "observation_sha256": "427e51b9524ce36292e635f088b051961f3ce65dfa6cf18ffadc86a623c8152a"
+    },
+    {
+      "native": 185,
+      "observation_sha256": "0cc94f69a0c17ed71dc3f49c4aa42cba2d5f5f815a7690983b689f0096399860"
+    },
+    {
+      "native": 190,
+      "observation_sha256": "ad3e47fbef036dc4d5ce776e4a7620841bdf471d18429f8332ff689a85bbe904"
+    },
+    {
+      "native": 195,
+      "observation_sha256": "0120b74042cdde6a46e314015a9cceb28cdc86cf4558d5799d021301a0deaa55"
+    }
+  ]
+}

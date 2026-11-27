@@ -27,6 +27,7 @@ def main():
  fig.subplots_adjust(left=.13,bottom=.2,top=.84,right=.98)
  base=OUT/'common_120_disposition_20261127'
  for ext in ['png','pdf','svg']:fig.savefig(base.with_suffix('.'+ext),dpi=180,metadata={'Creator':'Phase canonical evidence figure'})
+ svg=base.with_suffix('.svg');svg.write_text('\n'.join(line.rstrip()for line in svg.read_text().splitlines())+'\n')
  plt.close(fig)
  provenance=dict(passed=True,canonical_records_SHA_verified=72,locked_denominator=120,counts=dict(whole=7,valid_refusal=53,technical=12,unexecuted=48),models=0,optimizer_calls=0,physics=0,replay=0,new_physical_audits=0,input_SHA256=pins,outputs={str(base.with_suffix('.'+ext).relative_to(R)):sha(base.with_suffix('.'+ext))for ext in ['png','pdf','svg']},source_sha256=sha(Path(__file__)),limitation='Disposition only, not fair-algorithm/statistical superiority evidence; development components excluded')
  (S/'PROVENANCE.json').write_text(json.dumps(provenance,indent=2)+'\n');assert sha(p)==pins[str(p.relative_to(R))];print(json.dumps(provenance))
