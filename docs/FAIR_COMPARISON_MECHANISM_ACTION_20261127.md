@@ -298,3 +298,56 @@ before that extra check finished. This gap is preserved. The corrected702-member
 stat/SHA and five link-text checks completed before any push or numerical
 work; no link target was inspected. Source qualification is not rerun or
 relabelled as numerical admission. All120/20/new8 outcomes remain unchanged.
+
+## Actual raw-interface mathematical result,28November
+
+V2184 closed with one DWA and one upstream raw RPP query on the fixed exposed
+common input and0.6m path. DWA returned speed0.009999999999999998m/s and yaw
+4.85722573273506e-17rad/s; RPP returned0.1m/s and0rad/s. Both passed the same
+strict command predicate without clipping/retry. This checks native interfaces,
+not physical tracking/stopping/arrival. Source/runtime actual-remote verification
+and eligible transport cleanup are closed. Late I/O helper provenance and
+preparation failures are disclosed in RAW_CONTROLLER_INTERFACE_V2184_20261128.md.
+Original120/20/new8 and the physical recording capacity limitation remain.
+
+## Complete186 route and previous-action context, saved-data boundary
+
+The186 block includes route/waypoint/goal, previous virtual action and a frozen
+base-policy output; it is not merely a camera vector. A matching dimension and
+origin packet alone cannot bind these semantics. The additive ContextBoundary
+now binds the measured origin, float32 body path, waypoint, goal, previous action
+units and same-episode commit, producer source pins and the exact feature bytes.
+It preserves the previously tested shared_interface.py and all V2184 code.
+
+One actual archived V2176 native0 frame contains complete186 values and an
+existing independent-prefix review. Its nominal rear path converted to body
+centres matches the saved feature path exactly in float32. The new software
+check provides those saved bytes/context to all10method labels: envelopes and
+candidate requests match exactly;12mismatched-context negatives refuse and
+poison the boundary. No producer, learned actor, renderer, model, native
+controller, replay or independent physical audit was reexecuted. Historical
+timestamps remain historical. These are10data envelopes, not10run algorithms.
+
+V2176's original functional refusal,200actual/200replay and incomplete original
+SCCR qualification remain unchanged. This saved-data positive does not qualify
+the new live186 producer, original Phase21risk fusion, camera-input distribution,
+control-history/waypoint lifecycle or physical comparison. Complete live
+freshness/capture/independent qualification remains necessary. The result and
+new helpers are LOCAL after26769; no earlier Source/Release coverage is claimed.
+
+## Timing-observer procedural software coverage
+
+A separate fixed mock test executes copies of the exact original timing
+function and no_time transform, with and without observational hooks. All
+Engine, geometry, search, binding, reserve, clock and checkpoint dependencies
+are explicitly fake; no legacy module or actual planner/model is loaded.
+For both variants, retained fast return, changed wait choice, all40infeasible
+and deadline interruption give identical before/after answers, first exceptions
+and fake call traces(8cases/16mock function executions). Retained cases perform
+zero fake simulations, completed cases40, interrupted cases7; incomplete choice
+and causal navigation benefit remain unknown. This extends AST-removal checks
+to mock control flow; it does not establish actual numerical decision/clock
+identity, physical activation, equal work or mechanism benefit. Initial system
+Python lacked NumPy before any mock function ran; the test then used the
+existing Phase Python under read-only namespace with only S2182 writable.
+No package, source qualification or numerical experiment was added.

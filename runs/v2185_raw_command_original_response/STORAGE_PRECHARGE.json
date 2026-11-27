@@ -1,0 +1,50 @@
+{
+  "scope": "V2185_PREPARATION_ONLY_NO_SOURCE_OR_MODEL_AUTHORITY",
+  "created_at": "2026-11-28T06:23:56.565624+08:00",
+  "metadata_precharge_bytes": 131072,
+  "predictive_payload_precharge_bytes": 2097152,
+  "payload_from_original_task224MiB_not_metadata": true,
+  "original_task_cap_bytes": 234881024,
+  "original_IO_cap_bytes": 285212672,
+  "original_root_cap_bytes": 536870912,
+  "metadata_source_archive_readback_not_yet_sized": true,
+  "closed_inventory_path": "runs/v2152_weekend_research_program/CLOSED_V2184_PREPARATION_BAND.json",
+  "closed_inventory_sha256": "e879fea66bdf0772e80d21161cb62fcf4eefa763e8b6f987be852c7f1908835c",
+  "closed_checker_sha256": "c2725aeee43135bc247204e59d7493fb85db71aa537304d49f2df35cbdc31d56",
+  "closed_charge_bytes": 196608,
+  "other_parallel_allocated_bytes": 684032,
+  "parallel_peak_with_new_metadata": 1011712,
+  "parallel_cap": 1048576,
+  "capacity_path": "runs/v2181_combined_close_reservation/CAPACITY_CANDIDATE.json",
+  "capacity_sha256": "b42ba4e5bf69871052b0b35f53963a6dba6058af36b08fbedbb930c5c4e70a1e",
+  "baseline_unchanged": 14873092096,
+  "all_prior_evidence_upper_unchanged": 15231647744,
+  "new_global_credit_bytes": 0,
+  "conservative_peak_with2MiB_payload_IO272_root512": 16068411392,
+  "global_limit": 16106127360,
+  "mutable_parent_allocated": 901120,
+  "typed_raw_array_bytes": 705808,
+  "proposed_two_NPZ_header_upper": 8192,
+  "typed_shape_source_witnesses": {
+    "experiments/v1003_causal_recovery_execution/predictor.py": "7c7e3d1ad8e543f6e0ab27e0027fabedcdd0a70e505985aaf2ff9c12ed6564b0",
+    "experiments/v1922_dwa_five_admission_checked/response.py": "2992219d4201523de4a4e7cb8aa9af520dbf72c413771a6d331e351221eb8700"
+  },
+  "unadmitted_entry_refusal": 77,
+  "original_input_and_raw_output_files_SHA256": {
+    "runs/v1978_rpp_first_common_round/actual/cycle_0000_origin.json": "148fd93bb04ab5b6231e5b9f723c4ddd0c3db60c32f869db029d96fd63b2d9be",
+    "runs/v1978_rpp_first_common_round/actual/physics/SETUP.json": "0511d9c61e07d0db0f89a3cb943f51350ee0c76878cd2706874432ef85278d45",
+    "runs/v2184_fair_raw_controller_math/RUNTIME/EVIDENCE.json.gz": "72bb2a3263c7efdaa34287671aeea314c0dbfde474b16361a8d1adb47543ab50",
+    "runs/v2184_fair_raw_controller_math/RUNTIME/RESULT.json": "0f9e79e72519a43a4ffc1de738612bc14cdff8c4f3fd6979c7266fafbc65b4ac",
+    "runs/v2184_fair_raw_controller_math/RUNTIME_REMOTE_CLOSURE.json": "1491f532a00ca7bf9ef09d7433e62e92dc39f3858732ea43beca7118f7663d23"
+  },
+  "Source_or_predictor_imports_constructors_steps_models_physics": 0,
+  "preparation_first_failure": "Before creating S2185, fixed() rejected the four original public map provenance fields(source/source_sha256/bootstrap_seed/scope). Exact six-field whitelist now preserves them; no geometry/input/model/parameter changed.",
+  "remaining": [
+    "owner",
+    "exact stored NPZ header bound",
+    "full source readiness and qualification",
+    "all remote source recovery",
+    "one admitted numeric run",
+    "exact runtime recovery"
+  ]
+}
