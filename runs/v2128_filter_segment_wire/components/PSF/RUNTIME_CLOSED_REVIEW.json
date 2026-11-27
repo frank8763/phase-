@@ -1,0 +1,74 @@
+{
+  "closed": true,
+  "passed": false,
+  "scientific_navigation_passed": false,
+  "scope": "TECHNICAL_FLOAT_CLOCK_INTERFACE_FAILURE_PREFIX_ONLY",
+  "actual_native": 210,
+  "normal_native": 10,
+  "error_stop_native": 200,
+  "own_replay_native": 210,
+  "canonical_vehicle_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "successful_current_optimizer_queries": 2,
+  "returned_NLPs": 2,
+  "third_frame_refused_before_optimizer": true,
+  "canonical_machine_first_error": {
+    "error": "AssertionError('FILTER_NATIVE_PEER_ERROR:{\"error\": \"AssertionError()\", \"traceback\": \"Traceback (most recent call last):\\\\n  File \\\\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_worker.py\\\\\", line 35, in <module>\\\\n    try:main()\\\\n  File \\\\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_worker.py\\\\\", line 20, in main\\\\n    frame,ack=decode(raw,calls,METHOD,auth[\\'run_id\\']);current=frame[\\'current\\'];request=frame[\\'request\\']\\\\n  File \\\\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/peer_contract.py\\\\\", line 14, in decode\\\\n    assert request[\\'input_sha256\\']==current[\\'input_sha256\\'] and request[\\'case\\'][\\'pose\\']==current[\\'pose\\']and request[\\'case\\'][\\'nominal\\']==current[\\'nominal_twist\\'] and request[\\'case\\'][\\'gear\\']==current[\\'gear\\']and request[\\'case\\'][\\'causal\\']==current[\\'causal\\']and request[\\'case\\'][\\'sim_time\\']==current[\\'sim_time\\']\\\\nAssertionError\\\\n\"}')",
+    "stage": "normal",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/navigation.py\", line 44, in run\n    else:answer=client.query(frame)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_client.py\", line 49, in query\n    reply=self.wait('FILTER_REPLY ',600);assert reply['transport_ack']==self.pending and reply['passed'],'FILTER_CURRENT_TRANSPORT_ACK'\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_client.py\", line 32, in wait\n    if kind=='FILTER_ERROR ':self.messages.pop(i);raise AssertionError('FILTER_NATIVE_PEER_ERROR:'+json.dumps(msg))\nAssertionError: FILTER_NATIVE_PEER_ERROR:{\"error\": \"AssertionError()\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_worker.py\\\", line 35, in <module>\\n    try:main()\\n  File \\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_worker.py\\\", line 20, in main\\n    frame,ack=decode(raw,calls,METHOD,auth['run_id']);current=frame['current'];request=frame['request']\\n  File \\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/peer_contract.py\\\", line 14, in decode\\n    assert request['input_sha256']==current['input_sha256'] and request['case']['pose']==current['pose']and request['case']['nominal']==current['nominal_twist'] and request['case']['gear']==current['gear']and request['case']['causal']==current['causal']and request['case']['sim_time']==current['sim_time']\\nAssertionError\\n\"}\n"
+  },
+  "canonical_machine_secondary_errors": [
+    {
+      "error": "AssertionError('FILTER_NATIVE_EOF_BEFORE_REPLY')",
+      "stage": "PERSISTENT_FILTER_PEER_CLOSE"
+    }
+  ],
+  "independent_actual_prefix_audit": {
+    "actual_native": 210,
+    "canonical_first_error": {
+      "error": "AssertionError('FILTER_NATIVE_PEER_ERROR:{\"error\": \"AssertionError()\", \"traceback\": \"Traceback (most recent call last):\\\\n  File \\\\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_worker.py\\\\\", line 35, in <module>\\\\n    try:main()\\\\n  File \\\\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_worker.py\\\\\", line 20, in main\\\\n    frame,ack=decode(raw,calls,METHOD,auth[\\'run_id\\']);current=frame[\\'current\\'];request=frame[\\'request\\']\\\\n  File \\\\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/peer_contract.py\\\\\", line 14, in decode\\\\n    assert request[\\'input_sha256\\']==current[\\'input_sha256\\'] and request[\\'case\\'][\\'pose\\']==current[\\'pose\\']and request[\\'case\\'][\\'nominal\\']==current[\\'nominal_twist\\'] and request[\\'case\\'][\\'gear\\']==current[\\'gear\\']and request[\\'case\\'][\\'causal\\']==current[\\'causal\\']and request[\\'case\\'][\\'sim_time\\']==current[\\'sim_time\\']\\\\nAssertionError\\\\n\"}')",
+      "stage": "normal",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/navigation.py\", line 44, in run\n    else:answer=client.query(frame)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_client.py\", line 49, in query\n    reply=self.wait('FILTER_REPLY ',600);assert reply['transport_ack']==self.pending and reply['passed'],'FILTER_CURRENT_TRANSPORT_ACK'\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_client.py\", line 32, in wait\n    if kind=='FILTER_ERROR ':self.messages.pop(i);raise AssertionError('FILTER_NATIVE_PEER_ERROR:'+json.dumps(msg))\nAssertionError: FILTER_NATIVE_PEER_ERROR:{\"error\": \"AssertionError()\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_worker.py\\\", line 35, in <module>\\n    try:main()\\n  File \\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/native_worker.py\\\", line 20, in main\\n    frame,ack=decode(raw,calls,METHOD,auth['run_id']);current=frame['current'];request=frame['request']\\n  File \\\"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2128_filter_segment_wire/peer_contract.py\\\", line 14, in decode\\n    assert request['input_sha256']==current['input_sha256'] and request['case']['pose']==current['pose']and request['case']['nominal']==current['nominal_twist'] and request['case']['gear']==current['gear']and request['case']['causal']==current['causal']and request['case']['sim_time']==current['sim_time']\\nAssertionError\\n\"}\n"
+    },
+    "causal_sources_rebuilt_from_whitelist": true,
+    "compact_query_audit": {
+      "NLP_returns": 2,
+      "optimizer_work_total": null,
+      "query_records": 2
+    },
+    "component_complete_original_stop": false,
+    "independent_saved_prediction_geometry_profiles": 4,
+    "internal_Allocator_constructions": null,
+    "maximum_actual_tracking": [
+      0.00032124763695472007,
+      7.27402945908639e-06,
+      1.1278819399604342e-05
+    ],
+    "maximum_controller_error": 5.551115123125783e-17,
+    "maximum_memory_error": 5.551115123125783e-17,
+    "minimum_actual_clearance_m": 0.31499259810103963,
+    "new_physical_native_during_audit": 0,
+    "normal_native_with_current_admission": 10,
+    "original_generic_audit_seam": {
+      "generic_AST_SHA256": "324366ca2ba25a010aeec864ab1db49517d8d95ace9e85beebac7f3240d37d6b",
+      "generic_original_statements_preserved": 30,
+      "original_SHA256": "be03f551bfe6fcdecfbd6adcb88ecd1254a515336adebc696833878154540946",
+      "removed_only_old_discovery_and_whole_task_scope": true
+    },
+    "own_replay_native": 210,
+    "passed": true,
+    "scope": "INDEPENDENT_ACTUAL_PREFIX_ONLY_CANONICAL_FAILURE_PRESERVED",
+    "total_modelwork": null,
+    "whole_navigation_passed": false
+  },
+  "whole_goal": false,
+  "formal_assignments_executed": 0,
+  "PCBF_unclaimed": true,
+  "all_source_SHA_after_child": true,
+  "runtime_full_remote_proof_sha256": "60c464a2f4539a2c9ce1787dd1ccb3e1101437caaa4e246e8109f533897b5e3f",
+  "canonical_barrier_sha256": "ae6c5821dfb70d83d42894404ba98daf71e68bd61891d00857d102e1001de306",
+  "late_to_runtime_archive": true,
+  "raw_result_sha256": "b5600d9dc5a7f49d9e8a3888191fd2bb57869bb051860bec1371bed4a3d5975f",
+  "unknown_total_modelwork": true,
+  "unix": 1795749136.8372252
+}
