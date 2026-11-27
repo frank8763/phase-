@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "old_real_third_frame_failure_reproduced": true,
+  "exact_measured_clock_preserved": true,
+  "original_native_clock_tolerance": 1e-08,
+  "rows": [
+    {
+      "sequence": 0,
+      "native": 0,
+      "measured_time": 0.0,
+      "recomputed_time": 0.0,
+      "difference_s": 0.0
+    },
+    {
+      "sequence": 1,
+      "native": 5,
+      "measured_time": 0.05,
+      "recomputed_time": 0.05,
+      "difference_s": 0.0
+    },
+    {
+      "sequence": 2,
+      "native": 10,
+      "measured_time": 0.09999999999999999,
+      "recomputed_time": 0.1,
+      "difference_s": 1.3877787807814457e-17
+    }
+  ],
+  "synthetic_decoder_only_clock_cases": 58,
+  "negative_cases": [
+    "stale_sequence",
+    "foreign_method",
+    "changed_clock_or_digest"
+  ],
+  "models": 0,
+  "optimizer_queries": 0,
+  "physical_native": 0,
+  "production_builder_decoder": true,
+  "source_sha256": {
+    "experiments/v2135_pcbf_soft_prediction/clock_checks.py": "3d8d97a757ff20a12b208a661b8f5d5d0654959a5ab358e475076bf40b2d4070",
+    "experiments/v2135_pcbf_soft_prediction/current_request.py": "69e42f0eec5f5c535a011da0e43561d1b5876614991c32ae37fb6409720227c7",
+    "experiments/v2135_pcbf_soft_prediction/peer_contract.py": "5add24301b7269ebe1d910a145f3468331f375a3d1c210c81852864c9e647388"
+  }
+}
