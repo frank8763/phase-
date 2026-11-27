@@ -1,0 +1,89 @@
+{
+  "cases": [
+    {
+      "id": "origin_forward",
+      "state": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gear": 1,
+      "nominal_twist": [
+        0.2,
+        0.1
+      ]
+    },
+    {
+      "id": "near_terminal_forward",
+      "state": [
+        0.28,
+        0.0,
+        3.141592653589793
+      ],
+      "gear": 1,
+      "nominal_twist": [
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "id": "near_terminal_reverse",
+      "state": [
+        0.28,
+        0.0,
+        0.0
+      ],
+      "gear": -1,
+      "nominal_twist": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "id": "inside_turn",
+      "state": [
+        -0.1,
+        0.1,
+        0.3
+      ],
+      "gear": 1,
+      "nominal_twist": [
+        0.2,
+        -0.1
+      ]
+    },
+    {
+      "id": "finite_horizon_far",
+      "state": [
+        0.6,
+        0.0,
+        0.0
+      ],
+      "gear": -1,
+      "nominal_twist": [
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "id": "outside_soft_recovery",
+      "state": [
+        1.4,
+        0.0,
+        0.0
+      ],
+      "gear": -1,
+      "nominal_twist": [
+        -0.1,
+        0.0
+      ]
+    }
+  ],
+  "methods": [
+    "PSF",
+    "PCBF"
+  ],
+  "numeric_cases": 12,
+  "maximum_NLP_returns": 18,
+  "unexposed_formal": false
+}
