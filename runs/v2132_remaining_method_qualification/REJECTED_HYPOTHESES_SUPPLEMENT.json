@@ -1,0 +1,39 @@
+{
+  "closed": true,
+  "models": 0,
+  "solver_calls": 0,
+  "physical_native": 0,
+  "old_diagnostic_ASSERT_failures_retained": true,
+  "PRIEST": {
+    "old_initial_ellipse_violations": 50,
+    "minimum_old_normalized_squared_distance": 0.44706819121032426,
+    "body_center_circle_candidate_initial_violations": 3,
+    "minimum_candidate_normalized_squared_distance": 0.6348125978037876,
+    "body_center_candidate_radius": 0.8570115087130606,
+    "body_center_circle_does_NOT_solve_input_feasibility": true,
+    "next_requirement": "orientation-aware body representation or independently justified conservative decomposition and matching polynomial reference; do not launch until initial-boundary feasibility passes",
+    "original_fullstop_deficit_m": 0.0005324704039397221
+  },
+  "PCBF": {
+    "original_status": 8,
+    "original_success": false,
+    "original_objective": 0.00476252911710847,
+    "original_residual": 2.1073805931207112e-08,
+    "fixed_zero_slack_witness_NOT_feasible": true,
+    "fixed_witness_maximum_residual": 0.0020113959183539754,
+    "fixed_witness_worst_constraint": "7:circle_8",
+    "initial_exact_nonnegative_slack_residual": 0.0,
+    "initial_exact_nonnegative_slack_objective": 0.00505697959176965,
+    "old_interior_slack_objective": 24.84505697959177,
+    "no_global_optimality_or_zero_slack_claim": true,
+    "proposed_future_initialization": "slack=max(initial constraint,0) removes unnecessary artificial .01 slack, only as separately qualified new development variant",
+    "no_solver_retry_or_status_relaxation": true
+  },
+  "input_sha256": {
+    "runs/v2122_priest_quiescent_handoff/vehicle/actual/PRIEST_OPTIMIZER_REQUEST.json": "93c2f637f5d66ec1710cef6c45cc8f644611845604c5fa61e9841383b49ecc9c",
+    "runs/v2122_priest_quiescent_handoff/vehicle/actual/cycle_000000_shadow.json": "7065928d1c3e46ce1d8740f172bbc0cfbd7750032086c008c369892d4ac4524d",
+    "runs/v2122_priest_quiescent_handoff/vehicle/actual/cycle_000000_origin.json": "144a5c61848e4dd86d2420d06f2c5011fb4e51e5d1206b994cf62d9f65e9d874",
+    "runs/v2131_filter_measured_current/components/PCBF/actual/FILTER_QUERY_002_INPUT.json": "a32f6dae39aa804bed655fad794f4e99d631d8a2315414c564d8f5d1a9f3d939",
+    "runs/v2131_filter_measured_current/components/PCBF/actual/FILTER_QUERY_002_RESULT.json": "cdf4d9f3c9711256560549caf5e87995783ecaaed7019c83bd0176bd20d36ab7"
+  }
+}
