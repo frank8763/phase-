@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-11-28T05:21:02.874171+08:00",
+  "status": "V2184_SOURCE_ONLY_PASS_WAITING_UNIQUE_REMOTE_RECOVERY",
+  "source_qualification_sha256": "723224d0e9b967876441067f8cf0b86150db4ea773ee3ca128002bd7691687a7",
+  "source_members": 29678,
+  "new_files": 23,
+  "software_counts": {
+    "negative": 12,
+    "positive": 7,
+    "real_host_unadmitted_cli": 1,
+    "source_AST_files": 13
+  },
+  "real_readonly_namespace_refusals": 2,
+  "archive_forecast_bytes": 62372,
+  "original_archive_forecast_failure_preserved": true,
+  "storage_partition": "EXACT_REMOTE_GIT_BYTES_FOR_CODE_PLUS_RELEASE_BINARY_INPUT_METADATA",
+  "capacity_recheck": {
+    "all_prior_evidence_upper": 15231647744,
+    "budget": {
+      "other_preparation_allocated": 671744,
+      "root_actual_allocated": 65536,
+      "root_precharged": 360448,
+      "stage": "source"
+    },
+    "checked_at": "2026-11-28T05:20:00.396562+08:00",
+    "conservative_peak": 16066674688,
+    "exact_closed_members": 702,
+    "inventory_path": "runs/v2181_combined_close_reservation/CLOSED_BAND_INVENTORY.json.gz",
+    "inventory_sha256": "adf34acb8999a8b293298a1e90cd1efbbf30123deaa20dfcc38b82b8dab89ee3",
+    "limit": 16106127360,
+    "mutable_S2152_S2181_allocated_bytes": 847872,
+    "mutable_cap": 2097152,
+    "new_credit_or_deletion": 0,
+    "ordering_gap": "Extra inventory verifier IsADirectoryError followed a directory symlink; subsequent source-only qualifier still ran because shell newline was not conditional. Second verifier expected null symlink SHA incorrectly; actual manifest hashes link text. This complete exact check is AFTER source-only qualification and BEFORE push/archive/numerics. No source rerun or numerical work occurred.",
+    "original_baseline": 14873092096,
+    "passed": true,
+    "source_qualification_already_closed": true,
+    "symlink_identities_not_followed": 5
+  },
+  "source_claims": 1,
+  "numerical_queries_DLL_FFI_models_physics": 0,
+  "all_original_formal_counts_unchanged": true,
+  "budget": {
+    "other_preparation_allocated": 671744,
+    "root_precharged": 360448,
+    "root_actual_allocated": 69632,
+    "stage": "source"
+  }
+}
