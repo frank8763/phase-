@@ -1,0 +1,112 @@
+{
+  "closed": true,
+  "passed": false,
+  "classification": "TECHNICAL_EVIDENCE_BYTE_GRANT_REFUSAL_NOT_ALGORITHM_LOSS",
+  "canonical_first_error": {
+    "stage": "normal",
+    "error": "AssertionError('BYTE_GRANT_EXHAUSTED')",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2151_psf_wrapper_identity_binding/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2151_psf_wrapper_identity_binding/navigation.py\", line 78, in run\n    quota.admit(2*1024**2,'FILTER_NATIVE_AND_COMPLETE_PREDICTIONS_HEADROOM')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2151_psf_wrapper_identity_binding/granted_quota.py\", line 47, in admit\n    assert pending+growth<=grant['remaining_bytes']+sum(self.spend_credits.values()),'BYTE_GRANT_EXHAUSTED'\nAssertionError: BYTE_GRANT_EXHAUSTED\n"
+  },
+  "machine_secondary_errors": [],
+  "normal_native": 4995,
+  "error_stop_native": 200,
+  "actual_native": 5195,
+  "own_replay_native": 5195,
+  "model_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "whole_goal": false,
+  "original_goal_distance_m": 4.472713391469523,
+  "endpoint_displacement_m": 3.8349917255771095,
+  "bad_contacts": 0,
+  "minimum_actual_clearance_m": 0.31491276882562547,
+  "first_actor_detection": null,
+  "replay": {
+    "replay_native": 5195,
+    "maximum_qpos_qvel_ctrl_mocap_error": 0.0,
+    "contact_mismatched_ticks": 0,
+    "passed": true
+  },
+  "independent_prefix_audit": {
+    "passed": true,
+    "scope": "INDEPENDENT_ACTUAL_PREFIX_ONLY_CANONICAL_FAILURE_PRESERVED",
+    "whole_navigation_passed": false,
+    "component_complete_original_stop": false,
+    "actual_native": 5195,
+    "own_replay_native": 5195,
+    "maximum_controller_error": 5.551115123125783e-17,
+    "maximum_memory_error": 5.551115123125783e-17,
+    "maximum_actual_tracking": [
+      0.00032124763695472007,
+      0.00013860724905245814,
+      0.0017542283046415863
+    ],
+    "normal_native_with_current_admission": 4995,
+    "minimum_actual_clearance_m": 0.31491276882562547,
+    "canonical_first_error": {
+      "stage": "normal",
+      "error": "AssertionError('BYTE_GRANT_EXHAUSTED')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2151_psf_wrapper_identity_binding/driver.py\", line 90, in execute\n    result['navigation']=navigator.run(v,binding,task,source,out,save,quota,refresh)\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2151_psf_wrapper_identity_binding/navigation.py\", line 78, in run\n    quota.admit(2*1024**2,'FILTER_NATIVE_AND_COMPLETE_PREDICTIONS_HEADROOM')\n  File \"/home/linghu/Documents/Codex/2026-10-31/new-chat/phase-/experiments/v2151_psf_wrapper_identity_binding/granted_quota.py\", line 47, in admit\n    assert pending+growth<=grant['remaining_bytes']+sum(self.spend_credits.values()),'BYTE_GRANT_EXHAUSTED'\nAssertionError: BYTE_GRANT_EXHAUSTED\n"
+    },
+    "original_generic_audit_seam": {
+      "generic_original_statements_preserved": 30,
+      "original_SHA256": "be03f551bfe6fcdecfbd6adcb88ecd1254a515336adebc696833878154540946",
+      "generic_AST_SHA256": "324366ca2ba25a010aeec864ab1db49517d8d95ace9e85beebac7f3240d37d6b",
+      "removed_only_old_discovery_and_whole_task_scope": true
+    },
+    "causal_sources_rebuilt_from_whitelist": true,
+    "independent_saved_prediction_geometry_profiles": 1998,
+    "internal_Allocator_constructions": null,
+    "total_modelwork": null,
+    "new_physical_native_during_audit": 0,
+    "compact_query_audit": {
+      "query_records": 999,
+      "NLP_returns": 999,
+      "optimizer_work_total": null
+    },
+    "lossless_metadata_pack": {
+      "records": 9994,
+      "pack_bytes": 16290670,
+      "index_bytes": 4065522,
+      "all_raw_bytes_SHA_verified": true
+    }
+  },
+  "predictive_evidence_accounting": {
+    "full_records": 0,
+    "recipe_records": 1998,
+    "recipe_reserved_native": 4410585,
+    "rebuilt_native": 4410585,
+    "rebuild_wall_s": 775.2810689019907,
+    "unspent_audit_holds": {},
+    "poisoned": false,
+    "original_python_subset_cap": 25000000,
+    "maximum_rebuild_subset_native": 11100000,
+    "total_modelwork": null,
+    "live_reconstruction_canary_passed": true,
+    "cache_bytes": 1006992,
+    "pack_bytes": 3024215
+  },
+  "q1159_recovered_work_subset": {
+    "cpp_native": 0,
+    "python_native": 8823380,
+    "cpp_completed_native": 0,
+    "python_completed_native": 8823380,
+    "inflight": null,
+    "cpp_calls": 0,
+    "python_calls": 8823380,
+    "cpp_constructor_returns": 0,
+    "python_constructor_returns": 3998,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "total_modelwork": null,
+  "formal_tasks": 0,
+  "late_after_runtime_archive": true,
+  "existing_runtime_archive_covers_original_machine_results_not_this_late_review": true,
+  "source_commit": "8355ae311807aa9bb8687914c4b3f062f80cc42a",
+  "runtime_members": 10133,
+  "runtime_archive_bytes": 28465712,
+  "remote_and_transport_barrier_closed": true,
+  "REVIEW_exact": true,
+  "dual_locks_idle": true,
+  "all_known_host_identities_gone": true
+}

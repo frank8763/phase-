@@ -144,6 +144,10 @@ PRIEST's saved original input placed all50 inflated obstacle constraints in conf
 
 These findings motivate independent capability positive controls and a new frozen equal-information comparison. They do not retrospectively repair old results or establish fair baseline treatment by themselves.
 
+The subsequent exposed PSF long-route attempt completed 999 numerical queries and 4,995 normal native steps before a byte-grant refusal, followed by the prescribed 200-step error stop. Its 5,195 actual steps and exact own replay were captured; all 1,998 saved prediction profiles passed the first independent prefix audit. Endpoint displacement was 3.835m, while the original goal remained 4.473m away and no actor return had been detected. This is an auditable technical censor with a nontrivial curved driving prefix, not a whole arrival or a dynamic-avoidance result.
+
+A separate PCBF development experiment applied fixed variable units to the same ideal nonlinear program. On four saved inputs and a synthetic open positive, both optimization stages converged with the original success and residual gates; a synthetic occupied negative remained inadmissible under the unchanged exact hard-geometry check. The known saved input that previously returned auxiliary status8 returned status0 after conditioning. The twelve new numerical returns passed a first arithmetic audit without another solve. This is exposed numerical-development evidence; physical validation of the conditioned implementation remains pending. The worker wrote all numerical evidence before a NumPy-boolean final-console serialization error; the outer pipeline remains recorded as failed.
+
 ### 6.6 Locked-task outcome disposition
 
 ![Disposition of all 120 locked method–task slots](figures/common_120_disposition_20261127.png)
