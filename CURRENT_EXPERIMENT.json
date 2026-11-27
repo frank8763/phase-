@@ -57,7 +57,7 @@
   "active_math_round": null,
   "active_overnight_campaign": null,
   "active_preparation": null,
-  "active_round": null,
+  "active_round": "v2151_psf_full_route_development",
   "active_run": null,
   "active_source_round": null,
   "active_window": null,
@@ -13469,7 +13469,7 @@
     "research_only": true,
     "research_sources": "Primary papers, author repositories and official implementations; no performance replication"
   },
-  "models_now_authorized": false,
+  "models_now_authorized": true,
   "morning_check_20261124": {
     "all_owned_processes_gone": true,
     "both_locks_idle": true,
@@ -14129,7 +14129,7 @@
     "path": "records/navigation_review_20261112/CURRENT_EXPERIMENT_HISTORY.json",
     "sha256": "fe62a003cfe21a3fbb4fa19961f15bd4d87c52b5228bf56c212ce190fca0ee36"
   },
-  "status": "POST_BOOT_PSF_SOURCE_FROZEN_REMOTE_RECOVERY_PENDING",
+  "status": "PSF_FULL_ROUTE_DEVELOPMENT_ACTUALLY_RUNNING",
   "storage": {
     "all222_source_decompressed_sha_verified": true,
     "latest_closed_archive": "records/nav2_v1090_20261112/RECORD_INDEX.json",
@@ -14712,10 +14712,18 @@
   "latest_transport_recovery": "runs/v2145_verified_whole_transport_recovery/RESULT.json",
   "verified_duplicate_freed_allocated_bytes": 121692160,
   "latest_manuscript_update": "runs/v2146_manuscript_evidence_update/PROVENANCE.json",
-  "current_original_vehicle_model_jobs": 0,
+  "current_original_vehicle_model_jobs": 1,
   "PCBF_latest_closed_actual_native": 605,
   "latest_psf_fullroute_source": "runs/v2151_psf_wrapper_identity_binding",
-  "latest_psf_fullroute_checkpoint": "runs/v2151_psf_wrapper_identity_binding/SOURCE_QUALIFICATION.json",
+  "latest_psf_fullroute_checkpoint": "runs/v2151_psf_wrapper_identity_binding/ACTUAL_LAUNCH_HEALTH.json",
   "latest_weekend_authorization": "2026-11-27_USER_DELEGATED_THROUGH_SUNDAY_MORNING",
-  "weekend_assumed_local_finish": "2026-11-29T09:00:00+08:00"
+  "weekend_assumed_local_finish": "2026-11-29T09:00:00+08:00",
+  "latest_psf_fullroute_launch_identity": {
+    "CPU": 2,
+    "boot_id": "5914b06d-0553-4874-9b42-e69b34a68c2b",
+    "pgid": 11010,
+    "pid": 11010,
+    "start_ticks": "70538"
+  },
+  "PSF_fullroute_whole_goal_pending": true
 }

@@ -144,6 +144,12 @@ PRIEST's saved original input placed all50 inflated obstacle constraints in conf
 
 These findings motivate independent capability positive controls and a new frozen equal-information comparison. They do not retrospectively repair old results or establish fair baseline treatment by themselves.
 
+### 6.6 Locked-task outcome disposition
+
+![Disposition of all 120 locked method–task slots](figures/common_120_disposition_20261127.png)
+
+**Figure 1.** Every locked method–task slot in the 27 November snapshot. A denotes an audited whole arrival, R an auditable finite refusal, T a technical censor, and a dash an unexecuted slot. The twelve tasks are repeated phases/directions within the same known field, not independent maps. Development components, source-only failures and current unfinished runs are excluded. An R label establishes evidence closure for the recorded refusal; it does not by itself establish native-method applicability, interface fairness or statistical superiority.
+
 ## 7. Discussion
 
 The strongest present result is that RP-CCR can complete a full dynamic recovery chain under its original simulation contract and can reproduce some complete executions exactly. The current common tasks also provide seven successful new-phase examples. The evidence infrastructure allows refusals and technical failures to remain visible rather than treating a successful process or a collision-free prefix as a navigation success.
