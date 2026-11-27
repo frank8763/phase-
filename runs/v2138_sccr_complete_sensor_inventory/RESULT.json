@@ -1,0 +1,349 @@
+{
+  "passed": true,
+  "closed": true,
+  "model_initializations": 0,
+  "actual_sensor_acquisitions": 0,
+  "renderer_constructors": 0,
+  "policy_deserializations": 0,
+  "policy_inferences": 0,
+  "optimizer_calls": 0,
+  "physics": 0,
+  "replay": 0,
+  "formal_tasks": 0,
+  "outer_class_chain": [
+    {
+      "path": "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17c_lidar_camera_fusion_env.py",
+      "class_name": "MkMiniPhase17CLidarCameraFusionEnv",
+      "observation_methods": [
+        {
+          "name": "_phase17c_build_obs",
+          "line": 147
+        }
+      ]
+    },
+    {
+      "path": "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17b_safety_shield_env.py",
+      "class_name": "MkMiniPhase17BSafetyShieldEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17_fusion_safety_env.py",
+      "class_name": "MkMiniPhase17BRandomObstacleEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17a_random_scene_robust_env.py",
+      "class_name": "MkMiniPhase17ARandomSceneRobustEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase14_lidar_depth_nav/envs/mkmini_phase14_phase9_yawsync_fast_nav_env.py",
+      "class_name": "MkMiniPhase14Phase9YawSyncFastNavEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9i1_kinematic_guard_env.py",
+      "class_name": "MkMiniPhase9I1KinematicGuardEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9h3_kinematic_yaw_sync_env.py",
+      "class_name": "MkMiniPhase9H3KinematicYawSyncEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9h2_2_confirmed_env.py",
+      "class_name": "MkMiniPhase9H22YawRateClosedLoopEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9h2_1_confirmed_env.py",
+      "class_name": "MkMiniPhase9H2SteerFirstNoDiffEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9_static_no_dynamic_env.py",
+      "class_name": "MkMiniPhase9StaticNoDynamicEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/phase7_residual_camera_aux/envs/mkmini_phase7_residual_camera_aux_env.py",
+      "class_name": "MkMiniPhase7ResidualCameraAuxEnv",
+      "observation_methods": [
+        {
+          "name": "_base_action",
+          "line": 75
+        },
+        {
+          "name": "_make_obs",
+          "line": 81
+        }
+      ]
+    }
+  ],
+  "inner_class_chain": [
+    {
+      "path": "runtime/mk-mini/training/phase7_camera_depth/envs/mkmini_phase7_depth_camera_aux_env.py",
+      "class_name": "MkMiniPhase7DepthCameraAuxEnv",
+      "observation_methods": [
+        {
+          "name": "_build_phase7_obs",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "path": "runtime/mk-mini/training/phase6_clean/envs/mkmini_phase6_lidar_camera_astar_sac_env.py",
+      "class_name": "MkMiniPhase6LidarCameraAstarSacEnv",
+      "observation_methods": [
+        {
+          "name": "_build_phase6_obs",
+          "line": 117
+        }
+      ]
+    },
+    {
+      "path": "runtime/mk-mini/training/final_envs/mkmini_real_indoor_phase5_wheel_fast_corner_env_final_diff.py",
+      "class_name": "MkMiniRealIndoorPhase5WheelFastCornerEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_phase5_wheel_corner_residual_safe_env.py",
+      "class_name": "MkMiniRealIndoorPhase5WheelCornerResidualSafeEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_phase5_wheel_residual_safe_astar_sac_env.py",
+      "class_name": "MkMiniRealIndoorPhase5WheelResidualSafeAStarSACEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_phase5_wheel_safe_astar_sac_env.py",
+      "class_name": "MkMiniRealIndoorPhase5WheelSafeAStarSACEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_phase5_wheel_astar_sac_env.py",
+      "class_name": "MkMiniRealIndoorPhase5WheelAStarSACEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_phase4_recovery_sac_env.py",
+      "class_name": "MkMiniRealIndoorPhase4RecoverySACEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_phase4_pursuit_residual_sac_env.py",
+      "class_name": "MkMiniRealIndoorPhase4PursuitResidualSACEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_phase3_depth_astar_sac_env.py",
+      "class_name": "MkMiniRealIndoorPhase3DepthAStarSACEnv",
+      "observation_methods": [
+        {
+          "name": "_get_depth_features",
+          "line": 46
+        },
+        {
+          "name": "_get_obs",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_phase2_astar_sac_env.py",
+      "class_name": "MkMiniRealIndoorPhase2AStarSACEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_curriculum_astar_sac_env.py",
+      "class_name": "MkMiniRealIndoorCurriculumAStarSACEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_real_indoor_astar_sac_env.py",
+      "class_name": "MkMiniRealIndoorAStarSACEnv",
+      "observation_methods": []
+    },
+    {
+      "path": "runtime/mk-mini/training/envs/mkmini_indoor_room_astar_sac_env.py",
+      "class_name": "MkMiniIndoorRoomAStarSACEnv",
+      "observation_methods": [
+        {
+          "name": "_get_obs",
+          "line": 215
+        }
+      ]
+    }
+  ],
+  "original_depth_AST_sha256": "dd051384f4c9cc6295b531d2499c79d6f42d632fbb8d4579f0729b7baeac63bb",
+  "layout": [
+    {
+      "name": "core_36_lidar",
+      "start": 0,
+      "end": 36
+    },
+    {
+      "name": "goal_waypoint_and_previous_action",
+      "start": 36,
+      "end": 42
+    },
+    {
+      "name": "rendered_depth_24",
+      "start": 42,
+      "end": 66
+    },
+    {
+      "name": "phase6_32_lidar",
+      "start": 66,
+      "end": 98
+    },
+    {
+      "name": "phase6_goal_camera",
+      "start": 98,
+      "end": 103
+    },
+    {
+      "name": "phase6_lidar_safety",
+      "start": 103,
+      "end": 107
+    },
+    {
+      "name": "phase7_ray_depth_and_summary",
+      "start": 107,
+      "end": 127
+    },
+    {
+      "name": "original_base_policy_action",
+      "start": 127,
+      "end": 129
+    },
+    {
+      "name": "phase17_32_lidar",
+      "start": 129,
+      "end": 161
+    },
+    {
+      "name": "phase17_goal_camera",
+      "start": 161,
+      "end": 166
+    },
+    {
+      "name": "phase17_ray_depth_and_summary",
+      "start": 166,
+      "end": 186
+    }
+  ],
+  "depth_feature_cases": [
+    {
+      "name": "constant",
+      "passed": true,
+      "synthetic_renderer_calls": 1,
+      "actual_renderer_calls": 0,
+      "source_fallback_used": false,
+      "feature_sha256": "fa218314cbb9e7c8c83cdd479124af94e67518a9914fee5f3e5678dfd9885fcd",
+      "maximum_reference_error": 0.0
+    },
+    {
+      "name": "ramp",
+      "passed": true,
+      "synthetic_renderer_calls": 1,
+      "actual_renderer_calls": 0,
+      "source_fallback_used": false,
+      "feature_sha256": "fbe94e3d050bfa56eaa39ecdf050a77a1ccde96feade342f2f680cb192c071e1",
+      "maximum_reference_error": 0.0
+    },
+    {
+      "name": "nonfinite",
+      "passed": true,
+      "synthetic_renderer_calls": 1,
+      "actual_renderer_calls": 0,
+      "source_fallback_used": false,
+      "feature_sha256": "5f3e5dedb74e06d338a8a320251a65ace79d15edf87161324d55b91ba9d557d2",
+      "maximum_reference_error": 0.0
+    },
+    {
+      "name": "three_channel",
+      "passed": true,
+      "synthetic_renderer_calls": 1,
+      "actual_renderer_calls": 0,
+      "source_fallback_used": false,
+      "feature_sha256": "fbe94e3d050bfa56eaa39ecdf050a77a1ccde96feade342f2f680cb192c071e1",
+      "maximum_reference_error": 0.0
+    },
+    {
+      "name": "missing_camera",
+      "passed": true,
+      "synthetic_renderer_calls": 0,
+      "actual_renderer_calls": 0,
+      "source_fallback_used": true,
+      "feature_sha256": "849203e6b4e586413022ab65a115f70a9e41cb0ee678fa1984c90f7d4a5f33ad",
+      "maximum_reference_error": 0.0
+    },
+    {
+      "name": "render_failure",
+      "passed": true,
+      "synthetic_renderer_calls": 1,
+      "actual_renderer_calls": 0,
+      "source_fallback_used": true,
+      "feature_sha256": "849203e6b4e586413022ab65a115f70a9e41cb0ee678fa1984c90f7d4a5f33ad",
+      "maximum_reference_error": 0.0
+    }
+  ],
+  "original_appended_camera_depth_dims": 50,
+  "additional_core_rendered_depth_dims": 24,
+  "total_direct_camera_depth_feature_dims": 74,
+  "original_full186_builder_qualified": false,
+  "physical_sensor_noise_sampling_qualified": false,
+  "all_ten_method_equal_sensor_group_status": "DRAFT_REQUIRES_PHYSICAL_PRODUCER_AND_METHOD_CAPABILITY_QUALIFICATION",
+  "frozen_policy_metadata": {
+    "Phase6": {
+      "path": "runtime/mk-mini/training/phase6_clean/confirmed/phase6_v1_lidar_main_camera_goal_55k_confirmed.zip",
+      "bytes": 4201009,
+      "sha256": "75f6ad4e6c522fd5caa881fb2672754499616f4b0550d109d55c560ba481665a",
+      "deserialized": false
+    },
+    "Phase20": {
+      "path": "runtime/mk-mini/training/phase20_unknown_obstacle_adaptation/checkpoints/stage_b_randomized/phase20_stage_b_325000_steps.zip",
+      "bytes": 5095528,
+      "sha256": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f",
+      "deserialized": false
+    }
+  },
+  "input_SHA256": {
+    "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17c_lidar_camera_fusion_env.py": "670211bd47bc1ea0b131feae9cb4ff05aa3fe52942976dacfe9785fcc4be18ad",
+    "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17b_safety_shield_env.py": "a5ed86e520dd64d2a95a88a50c68322f7c2ef4c8f32c9412534551016638e922",
+    "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17_fusion_safety_env.py": "6b78583212a5445b2ef11cdbb65828687181bf6f54f58189c41727571cd19469",
+    "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17a_random_scene_robust_env.py": "92441461c1e4bf0dd8c0205f0d106683da897cc7d3486c12f40a0b308ff9627a",
+    "runtime/mk-mini/training/phase14_lidar_depth_nav/envs/mkmini_phase14_phase9_yawsync_fast_nav_env.py": "b4604507b309b2749c00d8a2470ce599256ab06020d21838c6ea7f92b45e6f87",
+    "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9i1_kinematic_guard_env.py": "6101fdda86b6572771bab16bc10c1ffcd5e9989f140a634d1480585c34237819",
+    "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9h3_kinematic_yaw_sync_env.py": "76beaad2a779c0d3982f8ce249f1ae39a17c46d86c7a75c80a2addf69ef2b311",
+    "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9h2_2_confirmed_env.py": "adf814d926fca2da1d0178bcdfc2288921fa65fdc5371d844cd151ba5743c3be",
+    "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9h2_1_confirmed_env.py": "c26d9e8970c2af5c16bf0f52e6e81d33d2e48e4cd73f970e9669bb8cff9cb401",
+    "runtime/mk-mini/training/phase9_static_no_dynamic/envs/mkmini_phase9_static_no_dynamic_env.py": "f8d166a0266d293d4549b15622748417fbbef414d00d7f30f80e0cea65337560",
+    "runtime/mk-mini/training/phase7_residual_camera_aux/envs/mkmini_phase7_residual_camera_aux_env.py": "28a5f68d80eb862a55a263e4eb42243e18e346a891c90972d12948abb0634f5a",
+    "runtime/mk-mini/training/phase7_camera_depth/envs/mkmini_phase7_depth_camera_aux_env.py": "9929fb14e4d0c012edd6585cdb7e9d1131d672ca0962b75ca704e1d8d628ecfa",
+    "runtime/mk-mini/training/phase6_clean/envs/mkmini_phase6_lidar_camera_astar_sac_env.py": "3360aefee734a1ca285fca519e517603bc2b14bef07f22eea9bb12be10a67beb",
+    "runtime/mk-mini/training/final_envs/mkmini_real_indoor_phase5_wheel_fast_corner_env_final_diff.py": "346001cd06789713304dafb06da85a73bbb6f01180f3b8d5f3faa361fa87d432",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase5_wheel_corner_residual_safe_env.py": "ea1e3058b2e69cfd4d5e5056e2eda265032b715cacf94bfb10b7288632f904ee",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase5_wheel_residual_safe_astar_sac_env.py": "477a8ac540b4108539dfec7bb462722607718012dec1f9714f08cf0d8a19590e",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase5_wheel_safe_astar_sac_env.py": "0da1ffbbe7be37b607b8f6b6db668e9fa545c470843d0ee7e26a87bfbe41f771",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase5_wheel_astar_sac_env.py": "9a1dbf93b6ed75170688c65ab682558b4bfec260923a37466000a77be9218699",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase4_recovery_sac_env.py": "a88bb24c815960b671bd007c856f51b909f90c8a2f3456e3174e09ce6fc490bc",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase4_pursuit_residual_sac_env.py": "382f10f8bee7641e24be62fd3fb8fa15fe469e144af783b05488b01bd7d30412",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase3_depth_astar_sac_env.py": "c5009d06ddebcbc1cd0e4866efea9de7c0929131cf62e1fba21b8e8123c30c2f",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase2_astar_sac_env.py": "1543d2b83f8cc82bac9861bed6d48ed7076cf9013c5181f796584a805bf28ef9",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_curriculum_astar_sac_env.py": "dfd93d097fd491f6850f69d84b2708e14216be7b0497a787a356e119171679d2",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_astar_sac_env.py": "d872ea769f4322269e519642626729cf0899a4a3d0f57cb8997bbd72500cb22f",
+    "runtime/mk-mini/training/envs/mkmini_indoor_room_astar_sac_env.py": "590f1c05fe03983092a8cb9284350f5400ce6aa6f6f30093654b46457b34db75",
+    "runtime/mk-mini/training/phase6_clean/confirmed/phase6_v1_lidar_main_camera_goal_55k_confirmed.zip": "75f6ad4e6c522fd5caa881fb2672754499616f4b0550d109d55c560ba481665a",
+    "runtime/mk-mini/training/phase20_unknown_obstacle_adaptation/checkpoints/stage_b_randomized/phase20_stage_b_325000_steps.zip": "4072c19e02ba5c7c6b218a268c4ff1d987d2352eada01a3de918854d7173fc9f"
+  },
+  "all_original_inputs_unchanged": true,
+  "wall_s": 0.08024499396560714,
+  "source_SHA256": {
+    "experiments/v2138_sccr_complete_sensor_inventory/PROTOCOL.md": "e325b90fdb3a865349f2a25ac7ed19503f2aae1ecd8184a92a62e2d2b92618df",
+    "experiments/v2138_sccr_complete_sensor_inventory/audit.py": "ca41521136bbfdddbed59ecbd61dda615f9ee592a152fb700e2a72eead95cd97"
+  }
+}

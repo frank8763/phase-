@@ -1,0 +1,128 @@
+{
+  "closed": true,
+  "passed": true,
+  "scope": "PSF_250_CURRENT_PROGRESS_COMPONENT_NOT_FULL_NAVIGATION",
+  "source_commit": "dcde311e6b4cea40d83d89ab8ecfc30114fb8fb5",
+  "model_initializations": 1,
+  "internal_factory_model_constructions": null,
+  "normal_native": 1250,
+  "complete_stop_native": 2200,
+  "actual_native": 3450,
+  "own_replay_native": 3450,
+  "current_queries": 250,
+  "NLP_returns": 250,
+  "endpoint_displacement_m": 0.9610509757920921,
+  "goal_distance_m": 7.038949047584893,
+  "minimum_actual_clearance_m": 0.31491276882562547,
+  "bad_contacts": 0,
+  "replay_state_ctrl_mocap_maximum_error": 0.0,
+  "contact_mismatched_ticks": 0,
+  "first_error": null,
+  "secondary_errors": [],
+  "independent_audit": {
+    "passed": true,
+    "scope": "FILTER_FRESH_CURRENT_VEHICLE_COMPONENT_WITH_COMPLETE_STOP",
+    "whole_navigation_passed": false,
+    "component_complete_original_stop": true,
+    "actual_native": 3450,
+    "own_replay_native": 3450,
+    "maximum_controller_error": 5.551115123125783e-17,
+    "maximum_memory_error": 5.551115123125783e-17,
+    "maximum_actual_tracking": [
+      0.00032124763695472007,
+      2.1491809962457227e-05,
+      0.0002576938747149088
+    ],
+    "normal_native_with_current_admission": 1250,
+    "minimum_actual_clearance_m": 0.31491276882562547,
+    "canonical_first_error": null,
+    "original_generic_audit_seam": {
+      "generic_original_statements_preserved": 30,
+      "original_SHA256": "be03f551bfe6fcdecfbd6adcb88ecd1254a515336adebc696833878154540946",
+      "generic_AST_SHA256": "324366ca2ba25a010aeec864ab1db49517d8d95ace9e85beebac7f3240d37d6b",
+      "removed_only_old_discovery_and_whole_task_scope": true
+    },
+    "causal_sources_rebuilt_from_whitelist": true,
+    "independent_saved_prediction_geometry_profiles": 501,
+    "internal_Allocator_constructions": null,
+    "total_modelwork": null,
+    "new_physical_native_during_audit": 0,
+    "compact_query_audit": {
+      "query_records": 250,
+      "NLP_returns": 250,
+      "optimizer_work_total": null
+    }
+  },
+  "q1159_modelwork_subset": {
+    "cpp_native": 0,
+    "python_native": 1105950,
+    "cpp_completed_native": 0,
+    "python_completed_native": 1105950,
+    "inflight": null,
+    "cpp_calls": 0,
+    "python_calls": 1105950,
+    "cpp_constructor_returns": 0,
+    "python_constructor_returns": 502,
+    "internal_Allocator_constructions": null,
+    "poisoned": false
+  },
+  "total_modelwork": null,
+  "whole_navigation_passed": false,
+  "formal_tasks": 0,
+  "first_actor_detection": null,
+  "no_observed_actor_encounter_in_this_component": true,
+  "all_source_SHA_after_child": true,
+  "runtime_remote_members": 3271,
+  "runtime_archive_bytes": 21237302,
+  "runtime_every_block_member_whole_index_SHA": true,
+  "exact_verified_transport_cleanup": true,
+  "all_known_host_identities_gone": [
+    {
+      "identity_path": "runs/v2137_psf_progress_control/LAUNCH_IDENTITY.json",
+      "pid": 1694655,
+      "start_ticks": "39296558",
+      "gone": true
+    },
+    {
+      "identity_path": "runs/v2137_psf_progress_control/components/PSF/OWNED_CHILD.json",
+      "pid": 1694673,
+      "start_ticks": "39297145",
+      "gone": true
+    },
+    {
+      "identity_path": "runs/v2137_psf_progress_control/workers/PSF_archive.IDENTITY.json",
+      "pid": 1695559,
+      "start_ticks": "39318736",
+      "gone": true
+    },
+    {
+      "identity_path": "runs/v2137_psf_progress_control/workers/PSF_delivery.IDENTITY.json",
+      "pid": 1695574,
+      "start_ticks": "39319287",
+      "gone": true
+    },
+    {
+      "identity_path": "runs/v2137_psf_progress_control/workers/PSF_owner.IDENTITY.json",
+      "pid": 1694671,
+      "start_ticks": "39296973",
+      "gone": true
+    },
+    {
+      "identity_path": "runs/v2137_psf_progress_control/workers/PSF_ref.IDENTITY.json",
+      "pid": 1695573,
+      "start_ticks": "39319237",
+      "gone": true
+    }
+  ],
+  "native_peer_PID_is_namespace_local_do_not_probe_host": true,
+  "native_peer_saved_close_returncode": 0,
+  "review_restored_exact": true,
+  "global_locks_idle": true,
+  "all_runs_allocated_bytes": 15161696256,
+  "not_a_new_baseline_or_future_admission": true,
+  "local_time": "2026-11-27T12:32:26.408380+08:00",
+  "late_after_runtime_archive": true,
+  "canonical_RESULT_sha256": "f69cd3f61ac76ed81c32bd878942f2263c87f52f8f1753a1000100926953573a",
+  "runtime_remote_proof_sha256": "323573c6250c7cec59091ec8b11ef9790b59e5af982bf70b119472a1a1ebfee3",
+  "post_component_barrier_sha256": "6ab08703d229299af3a0e3f1b08b62169dd5b49fb9f6628a2fb0abe5cc96dc44"
+}
