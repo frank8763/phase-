@@ -1,0 +1,25 @@
+{
+  "unix": 1795748497.3558347,
+  "stage": "STORAGE_HEADROOM_REGRESSION_PASSED",
+  "models": 0,
+  "optimizer_queries": 0,
+  "prior_technical_component_closed": true,
+  "prior_whole_source_root_allocated_bytes": 12099584,
+  "prior_additional_upper_bytes": 16777216,
+  "ranked_hypotheses": [
+    {
+      "name": "automatic_stage_grant_uses_task_headroom_only",
+      "verdict": "CONFIRMED_WITH_ORIGINAL_PRODUCTION_SEAM"
+    },
+    {
+      "name": "old272MiB_IO_reserve_in_base_quota",
+      "verdict": "RETAINED_CONSERVATIVELY_NOT_REMOVED"
+    },
+    {
+      "name": "old_raw_evidence_exceeded_prior_bound",
+      "verdict": "NOT_OBSERVED_PRIOR_CANONICAL_PRECLAIM_PASSED"
+    }
+  ],
+  "single_production_change": "automatic grant min task and root headroom",
+  "changed_algorithm_or_safety_gates": false
+}
