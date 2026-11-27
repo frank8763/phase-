@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "models": 0,
+  "NLP": 0,
+  "policy_deserializations": 0,
+  "policy_inferences": 0,
+  "actual_fresh_sensor_acquisitions": 0,
+  "renderer_constructors": 0,
+  "physics": 0,
+  "replay": 0,
+  "physical_audit": 0,
+  "formal_tasks": 0,
+  "closed": true,
+  "saved_actual_input_integrations": [
+    {
+      "native": 0,
+      "complete186_sha256": "6299986816813b780756731394dd3e55d95ec0523c3e0b08ae176920bdc88147",
+      "sensor_packet_sha256": "ccf24929223ac80aef65c90857cce696ed29eb94e890bdbb1fd70982bdd6668e",
+      "all_ten_equal": true,
+      "policy_provider_explicit_stub": true,
+      "original_ray_blocks": [
+        36,
+        32,
+        15,
+        32,
+        15
+      ],
+      "ranges_m": [
+        5.0,
+        3.0,
+        3.5,
+        3.0,
+        3.0
+      ],
+      "rendered_depth24_from_saved_actual": true
+    },
+    {
+      "native": 5,
+      "complete186_sha256": "f95e616eea88ed7433186952127322460afb91834187e0923e6a54b62739e39b",
+      "sensor_packet_sha256": "e47e8a9fd516da485e07f17f1621b2907c2f974d47808577aa60d015df284fce",
+      "all_ten_equal": true,
+      "policy_provider_explicit_stub": true,
+      "original_ray_blocks": [
+        36,
+        32,
+        15,
+        32,
+        15
+      ],
+      "ranges_m": [
+        5.0,
+        3.0,
+        3.5,
+        3.0,
+        3.0
+      ],
+      "rendered_depth24_from_saved_actual": true
+    },
+    {
+      "native": 10,
+      "complete186_sha256": "389667b953174511858fb1f62ab08f9898708bcb8ad0726b4a7f1d23d0da7ead",
+      "sensor_packet_sha256": "1d8841fc6f0c63d87817e334900e482e4e1a365cdba77304b7fe10a15f1a2f29",
+      "all_ten_equal": true,
+      "policy_provider_explicit_stub": true,
+      "original_ray_blocks": [
+        36,
+        32,
+        15,
+        32,
+        15
+      ],
+      "ranges_m": [
+        5.0,
+        3.0,
+        3.5,
+        3.0,
+        3.0
+      ],
+      "rendered_depth24_from_saved_actual": true
+    }
+  ],
+  "negative_cases": [
+    "live_mode_before_qualification",
+    "stale_private_geometry",
+    "future_measured_time",
+    "short_depth_no_padding",
+    "private_truth_packet",
+    "foreign_method"
+  ],
+  "stale_origin_counterexample_detected": true,
+  "resident_module_restored_even_exception": true,
+  "actual_full_union_not_qualified": true,
+  "full_SCCR_not_qualified": true,
+  "policy_provider_is_fixture_only": true,
+  "private_geometry_excluded_from_consumer": true,
+  "all_ten_methods_same_sensors": true,
+  "input_and_source_SHA256": {
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000000_origin.json": "1b89cb8838f0de8855052b2e0906d597b8ac8a17941cdd99a8dc432cffb8023c",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/SCCR_DEPTH_000000.npz": "abc99d415e4d2182a25c8616733c6d61a0fdd3722be0a2fb3725357b0105fe55",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/SCCR_DEPTH_000000.json": "3f89e73be836f3f3bd06bdf59a7001ad9e7a7ab22eee7f7f469cd8b88ed42a62",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000001_origin.json": "6efb74513ed5216b3ce5cb58fdae0ab83eacab44aa346e9d44d8ee1a85bbc080",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/SCCR_DEPTH_000005.npz": "6cff7322a9e87984c60709e993afb1a96bc6e413c41ff9f8d7580dd3fbcffba5",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/SCCR_DEPTH_000005.json": "205af513bbb8f5727ba116258f8079b4e7bbf543cb5ab6453378916d0da6664f",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/cycle_000002_origin.json": "981152835a32b69728544f292cf007a4607b47fd3d181daf850e7ea5744c61fd",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/SCCR_DEPTH_000010.npz": "b60d761d23929c224b831377a740e205c649c981b9ac1998e53e141fe51bb4a1",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/SCCR_DEPTH_000010.json": "c6eea33919e7a579e4aeb1bfa999a921198c49885a8b36c43461ff0154252c76",
+    "runs/v2144_sccr_depth_resource_units/components/SCCR/actual/FULL_STATE_NPLUS1.npz": "8c75d2a5187f75c231f0674c6c2cc65e08b09bd060cb52f5fab9130a6433e69f",
+    "runtime/mk-mini/training/envs/mkmini_real_indoor_phase3_depth_astar_sac_env.py": "c5009d06ddebcbc1cd0e4866efea9de7c0929131cf62e1fba21b8e8123c30c2f",
+    "runtime/mk-mini/training/phase6_clean/envs/sensor_utils.py": "253afa968e364fc92493a1a3061ebefbcd875ffc8281657bfbaf995d6053aa5b",
+    "runtime/mk-mini/training/phase14_lidar_depth_nav/envs/phase14_sensor_utils.py": "253afa968e364fc92493a1a3061ebefbcd875ffc8281657bfbaf995d6053aa5b",
+    "runtime/mk-mini/training/phase7_camera_depth/envs/camera_depth_utils.py": "28b7131ce909a85d7e95c77e3c1f45909e3f8f2d7070efb2130cf3650494592c",
+    "runtime/mk-mini/training/phase17_fusion_safety_sac_nav/envs/mkmini_phase17c_lidar_camera_fusion_env.py": "670211bd47bc1ea0b131feae9cb4ff05aa3fe52942976dacfe9785fcc4be18ad",
+    "runtime/mk-mini/training/envs/mkmini_indoor_room_astar_sac_env.py": "590f1c05fe03983092a8cb9284350f5400ce6aa6f6f30093654b46457b34db75",
+    "experiments/v2155_sccr_full_observation_assembly/assemble.py": "40e9f4f747720ad10ed36d88017be5c3082b59b7926f643d2f243d0760d968e2",
+    "experiments/v2164_sccr_measured_union_sensor/check.py": "336b631ee973153e0c669c7225abbb02d9adac4e9a10c74e52f49380abf1c74f",
+    "experiments/v2164_sccr_measured_union_sensor/union.py": "fe277386bc69c3882ae941cfe185cb4744c13a9b493020a3d5d8748c984d0e54"
+  },
+  "next": "live private geometry/current receipt binding then two frozen policies/risk fusion under new source"
+}

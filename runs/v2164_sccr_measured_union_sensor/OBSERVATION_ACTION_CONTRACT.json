@@ -1,0 +1,25 @@
+{
+  "source_derived": true,
+  "new_model_calls": 0,
+  "new_policy_calls": 0,
+  "previous_observation_feature_semantics": [
+    "virtual_steering_command_rad",
+    "virtual_rear_wheel_speed_rad_s"
+  ],
+  "not_body_v_omega": true,
+  "original_assignment": "self.prev_action = np.array([steer_cmd, wheel_speed], dtype=np.float32)",
+  "source_sha256": "9a1dbf93b6ed75170688c65ab682558b4bfec260923a37466000a77be9218699",
+  "final_override_source_sha256": "346001cd06789713304dafb06da85a73bbb6f01180f3b8d5f3faa361fa87d432",
+  "original_final_max_steer": 0.45,
+  "original_final_max_wheel_speed": 24.0,
+  "original_wheel_radius": 0.12,
+  "core_previous_action_indices": [
+    40,
+    41
+  ],
+  "legacy_assembler_packet_field": "previous_body_command",
+  "legacy_field_must_contain_original_actuator_units_or_explicit_adapter": true,
+  "zero_previous_action_in_saved_fixture_not_a_nonzero_semantics_test": true,
+  "no_silent_speed_clipping_or_policy_reinterpretation": true,
+  "policy_and_original_riskfusion_not_yet_qualified": true
+}
