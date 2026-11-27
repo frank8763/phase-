@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "closed": true,
+  "models": 0,
+  "DLLs": 0,
+  "solvers": 0,
+  "physics": 0,
+  "replay": 0,
+  "complete_generated_transport_tests": [
+    {
+      "episode": 0,
+      "complete_module_compiles": true,
+      "sha256": "56422798fc1f77e68f48dca2c7f655135d9c81cbd3f5ca7c7b2c9bbafb01dfcc"
+    },
+    {
+      "episode": 1,
+      "complete_module_compiles": true,
+      "sha256": "fd38f26d1c8a194931207b1e9ca5f0e5345f4cd908d0f98696ec09d414f7b640"
+    },
+    {
+      "episode": 2,
+      "complete_module_compiles": true,
+      "sha256": "551f636ca29d36fe2c0e03a312b0a6f5a3a882177364aaca666440d102e2b687"
+    }
+  ],
+  "actual_queue_tests": [
+    {
+      "name": "functional_continues",
+      "actual_campaign_main": true,
+      "owners": 2,
+      "closed": 2,
+      "stop_reason": "FINITE_QUEUE_COMPLETE"
+    },
+    {
+      "name": "technical_stops",
+      "actual_campaign_main": true,
+      "owners": 1,
+      "closed": 1,
+      "stop_reason": "TECHNICAL_CENSOR_AFFECTED_NUMERIC_LINE_STOPPED"
+    },
+    {
+      "name": "budget_stops_next",
+      "actual_campaign_main": true,
+      "owners": 1,
+      "closed": 1,
+      "stop_reason": "COMPLETE_WINDOW_AND_TRANSPORT_RESERVE_UNAVAILABLE"
+    },
+    {
+      "name": "transport_stops_without_duplicate_owner",
+      "actual_campaign_main": true,
+      "owners": 1,
+      "closed": 0,
+      "stop_reason": "AssertionError('RUNTIME_FULL_REMOTE_BARRIER_FAILED')"
+    }
+  ],
+  "three_premutation_only_episodes_verified": true,
+  "uncertain_write_retry_rejected": true,
+  "exact_alias_reused_corrupt_alias_rejected": true,
+  "unchanged_numerical_modules": [
+    "driver.py",
+    "navigation.py",
+    "error_stop.py",
+    "resource_policy.py",
+    "binding.py",
+    "response.py",
+    "capture.py",
+    "native_worker.py",
+    "console_codec.py",
+    "compact_record.py",
+    "resources.py",
+    "evidence_service.py",
+    "work.py",
+    "runtime_binding.py",
+    "granted_quota.py",
+    "observation.py",
+    "compact_json.py",
+    "quota.py",
+    "parallel_events.py",
+    "input_frame.py",
+    "audit_component.py",
+    "history_binding.py",
+    "generic_audit.py",
+    "cpu_policy.py",
+    "audit_budget.py",
+    "direct_bits.py",
+    "peer_contract.py",
+    "base_quota.py",
+    "software_peer.py",
+    "channel.py",
+    "native_client.py"
+  ],
+  "original_owner_byte_exact": true,
+  "unadmitted_model_entries_refused": true
+}
