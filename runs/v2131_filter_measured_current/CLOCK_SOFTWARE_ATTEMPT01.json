@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "models": 0,
+  "optimizer_queries": 0,
+  "physical_native": 0,
+  "error": "KeyError: experiments/v2131_filter_measured_current/request.py in historical builder fixture with new context scope",
+  "cause": "old current builder imports new context C; not production vehicle runtime",
+  "correction": "historical decoder consumes exact already-pinned saved old frame; new production builder independently rebuilds measured receipt",
+  "unix": 1795750345.3865328
+}

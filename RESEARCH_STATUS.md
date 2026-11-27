@@ -3317,3 +3317,9 @@ V2125直接接PSF/PCBF原车首current接口，21原低层物理/控制/capture/
 
 
 2026-11-27T11:18:00.290765+08:00 用户查看多算法结果：V2130仅CPU4只读metadata readout，按(task,method)合并冻结base44及REGISTERED/CLOSED事件，逐核72canonical resultSHA及全输入前后hash不变，0model-NLPphysicsreplay新独审/正式claim。当前120固定分母72closed(7whole53validrefusal12technicalcensor)/48unexecuted；RPCCR12:7whole2valid3tech，DWA12:0/10/2，TEB12:0/10/2，RPP12:0/9/3，MPPI12:0/11/1，SVG12:0/11/1。SCCR/PRIEST/PSF/PCBF各12未执行，组件不并formal；SCCR输入适用性blocked非算法失败。新完整12task×6method结果表 docs/paper_ras/working_20261126/COMMON_RESULTS_20261127.md；原ledger不改/无新后台/只local小报告及provenance，不声称旧Release覆盖。
+
+
+2026-11-27T11:21:43.272914+08:00 用户质疑全部外部基线零到达的比较有效性；只读原51baseline可核非成功首错逐项确认：32complete-stop预测门(DWA10/MPPI11/SVG11)、16gear-curvature(RPP9/TEB7)、3TEBfinitequery；另9baseline技术中断，全部原记录不变。明确validrefusal仅证据可核不代表已建立公平性；当前72记录只能支持登记实现+执行合同描述，不能作RPCCR普遍/统计优越主证据。新paper validity review记录基本能力正对照/同等开发适配预算/系统与模块分层/新冻结任务确认优先，未新训练模型求解物理重放任务或后台，未改旧安全合同。见docs/paper_ras/working_20261126/COMPARISON_VALIDITY_REVIEW_20261127.md及V2130/VALIDITY_REVIEW.json，local晚分析不冒旧remote覆盖。
+
+
+2026-11-27T11:33:38.052782+08:00 用户明确剩余四方法要有效比较并启动，另选择所有参比均可同相机/深度新确认组以纳SCCR；原120登记和失败不改，不仅SCCR开额外真值权限。V2131先原PSF/PCBF measuredcurrent连续组件：仅currentbuilder保原测量simtime，origin/case不重算，原1e-8native一致性+测量字段精确一致；navigation/NLP/response/audit及门不改。真实原输入0/5/10+58floatboundary/3负例、真实readonly peer两方法各20累加dt与10channel拒例通过；最初历史builder fixture contextscope KeyError零model单列保，后用已pinned历史frame过旧decoder+实际新builder修正夹具，非source或车辆retry。SOURCE一次PASS18257=18100inherit+157delta/0model-NLPphysicsreplayformal；newarchive一次待newsolepush/fullremotechain后才2组件PSF→PCBF，每20query100normal+2200stop原门。prior额外16MiB含V2128/late、parallel2MiB，peak16024428544<oldjoint；不renew baseline/扩额删raw。其余SCCR共同相机深度构造与PRIEST拒绝归因先独立CPU4有界准备，不谎称四个正式都启动。新公平确认须能力正对照/同信息/声明开发预算/冻结新任务；原formal72closed7whole48unexecuted。
